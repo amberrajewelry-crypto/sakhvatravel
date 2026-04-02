@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://sakhva-travel.com/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/"/>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/tour/kazbegi/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/tour/kazbegi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/tour/kazbegi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/tour/kazbegi/"/>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/tour/old-tbilisi/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/tour/old-tbilisi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/tour/old-tbilisi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/tour/old-tbilisi/"/>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/tour/kakheti/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/tour/kakheti/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/tour/kakheti/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/tour/kakheti/"/>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+</urlset>
