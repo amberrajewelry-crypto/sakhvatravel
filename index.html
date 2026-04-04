@@ -195,7 +195,8 @@ video::-webkit-media-controls-start-playback-button{display:none!important;-webk
 .tcard{width:200px;height:310px;perspective:900px;cursor:pointer;-webkit-user-select:none;user-select:none;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
 .tcard-inner{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .8s cubic-bezier(.4,0,.2,1)}
 .tcard.flipped .tcard-inner{transform:rotateY(180deg)}
-.tcard-back,.tcard-front{position:absolute;inset:0;border-radius:18px;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.tcard-back,.tcard-front{position:absolute;inset:0;border-radius:18px;backface-visibility:hidden;-webkit-backface-visibility:hidden;pointer-events:none}
+.tcard.flipped .tcard-front{pointer-events:auto}
 .tcard-back{background:linear-gradient(160deg,#1e4d35 0%,#163d6b 100%);display:flex;align-items:center;justify-content:center;box-shadow:0 12px 40px rgba(0,0,0,.4);border:1.5px solid rgba(255,255,255,.12)}
 .tcard-back::before{content:'';position:absolute;inset:10px;border-radius:10px;border:1px solid rgba(255,255,255,.14)}
 .tcard-back-deco{display:flex;flex-direction:column;align-items:center;gap:10px}
