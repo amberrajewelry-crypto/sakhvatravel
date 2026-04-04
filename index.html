@@ -400,6 +400,12 @@ video::-webkit-media-controls-start-playback-button{display:none!important;-webk
   .hero-btns{flex-direction:column;align-items:center;gap:10px}
   .btn-primary,.btn-outline-hero{width:100%;max-width:100%;justify-content:center;padding:14px 20px}
   #quiz-btn{width:100%;max-width:100%;justify-content:center}
+  /* Mobile hero: text at top, buttons near stats at bottom */
+  #hero{align-items:flex-start}
+  .hero-wrap{padding-top:calc(72px + 28px);padding-bottom:0}
+  .hero-sub{margin-bottom:0}
+  .hero-btns{position:absolute;bottom:calc(72px + 20px);left:0;right:0;padding:0 20px;z-index:20;width:100%;box-sizing:border-box}
+  .hero-stats{bottom:0}
   .filter-row{gap:6px;flex-wrap:wrap}
   .ftab{padding:7px 12px;font-size:10px}
   .foot-grid{gap:20px}
@@ -1165,7 +1171,7 @@ body{animation:page-in .4s ease}
         <p class="tarot-sub" data-ru="Вытяни случайный тур — получи скидку 5%" data-en="Draw a random tour — get 5% off">Вытяни случайный тур — получи скидку 5%</p>
       </div>
       <div class="tarot-cards">
-        <div class="tcard" id="fortuneCard" onclick="drawFortune()" role="button" aria-label="Вытянуть тур">
+        <div class="tcard" id="fortuneCard" role="button" aria-label="Вытянуть тур">
           <div class="tcard-inner">
             <div class="tcard-back">
               <div class="tcard-back-deco">
@@ -1857,13 +1863,21 @@ const FORTUNE_TOURS=[
 function drawFortune(){
   const card=document.getElementById('fortuneCard')
   const front=document.getElementById('fortuneFront')
-  if(card.classList.contains('flipped'))return
+  if(!card||card.classList.contains('flipped'))return
   const t=FORTUNE_TOURS[Math.floor(Math.random()*FORTUNE_TOURS.length)]
   const disc=Math.round(t.gel*0.95)
   const waMsg=encodeURIComponent(`Хочу ${t.name} промокод СУДЬБА5`)
   front.innerHTML=`<img src="${t.img}" alt="${t.name}"><div class="tcard-front-body"><div class="tcard-front-badge">−5% скидка</div><div class="tcard-front-name">${t.name}</div><div class="tcard-front-prices"><span class="tcard-front-old">₾${t.gel}</span><span class="tcard-front-new">₾${disc}</span></div><a href="https://wa.me/995511272623?text=${waMsg}" class="tcard-front-link" target="_blank" rel="noopener">Забронировать</a></div>`
   setTimeout(()=>card.classList.add('flipped'),50)
 }
+// ── Fortune card iOS touch fix ──
+;(function(){
+  const fc=document.getElementById('fortuneCard')
+  if(!fc)return
+  let lastTouch=0
+  fc.addEventListener('touchend',function(){lastTouch=Date.now();drawFortune()},{passive:true})
+  fc.addEventListener('click',function(){if(Date.now()-lastTouch>400)drawFortune()})
+})()
 </script>
 
 <!-- PREMIUM EFFECTS -->
