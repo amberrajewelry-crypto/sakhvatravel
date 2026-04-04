@@ -77,10 +77,10 @@ ul{list-style:none}
 #hero-bg{position:absolute;inset:0;overflow:hidden;background:#111;pointer-events:none}
 #hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.18) 0%,rgba(0,0,0,.28) 60%,rgba(0,0,0,.42) 100%);z-index:1}
 #hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;pointer-events:none}
-#hero-video::-webkit-media-controls,
-#hero-video::-webkit-media-controls-panel,
-#hero-video::-webkit-media-controls-overlay-play-button,
-#hero-video::-webkit-media-controls-start-playback-button{display:none!important;opacity:0!important;-webkit-appearance:none}
+video::-webkit-media-controls,video::-webkit-media-controls-panel,
+video::-webkit-media-controls-overlay-play-button,
+video::-webkit-media-controls-start-playback-button{display:none!important;-webkit-appearance:none!important}
+#hero-tap{position:absolute;inset:0;z-index:4;background:transparent;-webkit-tap-highlight-color:transparent}
 #hero-block{position:absolute;inset:0;z-index:5}
 .hero-wrap{position:relative;z-index:20;text-align:center;padding:0 clamp(20px,5vw,80px);max-width:860px;width:100%}
 .hero-h1{font-size:clamp(26px,4.4vw,58px);font-weight:700;color:#fff;line-height:1.08;letter-spacing:-.01em;margin-bottom:14px;opacity:0;animation:fadeUp .9s cubic-bezier(.22,1,.36,1) .3s forwards}
@@ -912,6 +912,7 @@ body{animation:page-in .4s ease}
     <video id="hero-video" src="/images/hero.mp4" autoplay muted loop playsinline webkit-playsinline x-webkit-airplay="deny" preload="auto"
       disablepictureinpicture controlsList="nodownload nofullscreen noremoteplayback">
     </video>
+    <div id="hero-tap" aria-hidden="true"></div>
     <div id="hero-block" aria-hidden="true"></div>
   </div>
   <div class="hero-wrap">
@@ -1613,10 +1614,14 @@ if(hv){
   hvPlay()
   hv.addEventListener('canplay',hvPlay,{once:true})
   setTimeout(hvPlay,500)
-  hv.addEventListener('click',e=>{e.preventDefault();e.stopPropagation()},true)
-  document.getElementById('hero-bg').addEventListener('click',e=>{
-    if(!e.target.closest('a,button,[onclick]')){e.preventDefault();e.stopPropagation()}
-  },true)
+  // Прозрачный overlay перекрывает нативную кнопку ▶ Safari iOS
+  // На первый тач/клик — запускаем видео и убираем overlay
+  const tap=document.getElementById('hero-tap')
+  if(tap){
+    const onTap=()=>{hvPlay();tap.style.display='none'}
+    tap.addEventListener('touchstart',onTap,{once:true,passive:true})
+    tap.addEventListener('click',onTap,{once:true})
+  }
 }
 
 // CTA video: lazy load when near viewport (saves 13MB on initial load)
