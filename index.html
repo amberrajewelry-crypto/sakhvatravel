@@ -1171,7 +1171,7 @@ body{animation:page-in .4s ease}
         <p class="tarot-sub" data-ru="Вытяни случайный тур — получи скидку 5%" data-en="Draw a random tour — get 5% off">Вытяни случайный тур — получи скидку 5%</p>
       </div>
       <div class="tarot-cards">
-        <div class="tcard" id="fortuneCard" role="button" aria-label="Вытянуть тур">
+        <div class="tcard" id="fortuneCard" role="button" tabindex="0" aria-label="Вытянуть тур">
           <div class="tcard-inner">
             <div class="tcard-back">
               <div class="tcard-back-deco">
@@ -1870,13 +1870,19 @@ function drawFortune(){
   front.innerHTML=`<img src="${t.img}" alt="${t.name}"><div class="tcard-front-body"><div class="tcard-front-badge">−5% скидка</div><div class="tcard-front-name">${t.name}</div><div class="tcard-front-prices"><span class="tcard-front-old">₾${t.gel}</span><span class="tcard-front-new">₾${disc}</span></div><a href="https://wa.me/995511272623?text=${waMsg}" class="tcard-front-link" target="_blank" rel="noopener">Забронировать</a></div>`
   setTimeout(()=>card.classList.add('flipped'),50)
 }
-// ── Fortune card iOS touch fix ──
+// ── Fortune card touch (iOS-safe, document delegation) ──
 ;(function(){
-  const fc=document.getElementById('fortuneCard')
-  if(!fc)return
-  let lastTouch=0
-  fc.addEventListener('touchend',function(){lastTouch=Date.now();drawFortune()},{passive:true})
-  fc.addEventListener('click',function(){if(Date.now()-lastTouch>400)drawFortune()})
+  let touched=false
+  document.addEventListener('touchstart',function(e){
+    if(!e.target.closest('#fortuneCard'))return
+    touched=true
+    drawFortune()
+  },{passive:true})
+  document.addEventListener('click',function(e){
+    if(!e.target.closest('#fortuneCard'))return
+    if(!touched)drawFortune()
+    touched=false
+  })
 })()
 </script>
 
@@ -1958,12 +1964,8 @@ document.querySelectorAll('.btn-primary,.btn-wa').forEach(btn=>{
   btn.addEventListener('mouseleave',()=>{btn.style.transform=''})
 })
 
-// ── Float buttons delay (5s) ──
-setTimeout(()=>{
-  document.getElementById('waf')?.classList.add('show')
-  document.getElementById('tgf')?.classList.add('show')
-  document.getElementById('igf')?.classList.add('show')
-},5000)
+// ── Float buttons: show immediately ──
+;['waf','tgf','igf'].forEach(id=>document.getElementById(id)?.classList.add('show'))
 
 // ── Social proof popup ──
 ;(function(){
