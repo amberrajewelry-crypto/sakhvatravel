@@ -192,7 +192,7 @@ video::-webkit-media-controls-start-playback-button{display:none!important;-webk
 .tarot-title{font-size:22px;font-weight:800;color:#111827;margin-bottom:8px;letter-spacing:-.01em}
 .tarot-sub{font-size:14px;color:#6B7280}
 .tarot-cards{display:flex;justify-content:center;margin-bottom:28px}
-.tcard{width:180px;height:260px;perspective:900px;cursor:pointer}
+.tcard{width:200px;height:310px;perspective:900px;cursor:pointer}
 .tcard-inner{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .8s cubic-bezier(.4,0,.2,1)}
 .tcard.flipped .tcard-inner{transform:rotateY(180deg)}
 .tcard-back,.tcard-front{position:absolute;inset:0;border-radius:18px;backface-visibility:hidden;-webkit-backface-visibility:hidden}
@@ -201,18 +201,18 @@ video::-webkit-media-controls-start-playback-button{display:none!important;-webk
 .tcard-back-deco{display:flex;flex-direction:column;align-items:center;gap:10px}
 .tcard-back-label{font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.4)}
 .tcard-front{background:#fff;transform:rotateY(180deg);display:flex;flex-direction:column;align-items:center;gap:0;padding:0;overflow:hidden;box-shadow:0 12px 40px rgba(0,0,0,.3)}
-.tcard-front img{width:100%;height:110px;object-fit:cover;border-radius:0;flex-shrink:0}
-.tcard-front-body{padding:12px 14px;display:flex;flex-direction:column;align-items:center;gap:6px;width:100%}
+.tcard-front img{width:100%;height:168px;object-fit:cover;border-radius:0;flex-shrink:0}
+.tcard-front-body{padding:10px 12px 12px;display:flex;flex-direction:column;align-items:center;gap:4px;width:100%}
 .tcard-front-badge{background:#EEF2FF;color:#1A56DB;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:9999px}
 .tcard-front-name{font-size:12px;font-weight:700;color:#111827;text-align:center;line-height:1.3}
 .tcard-front-prices{display:flex;align-items:center;gap:6px}
 .tcard-front-old{font-size:11px;color:#9CA3AF;text-decoration:line-through}
 .tcard-front-new{font-size:15px;font-weight:800;color:#16A34A}
-.tcard-front-link{font-size:10px;background:#1A56DB;color:#fff;padding:6px 16px;border-radius:9999px;font-weight:700;letter-spacing:.05em;text-decoration:none;margin-top:2px}
+.tcard-front-link{font-size:10px;background:#1A56DB;color:#fff;padding:6px 18px;border-radius:9999px;font-weight:700;letter-spacing:.05em;text-decoration:none;margin-top:3px}
 .tarot-btn{background:#1A3D2E;color:#fff;padding:14px 40px;border-radius:9999px;font-size:13px;font-weight:800;letter-spacing:.06em;cursor:pointer;transition:background .2s,transform .15s,opacity .2s;border:none;font-family:inherit;box-shadow:0 4px 16px rgba(26,61,46,.3)}
 .tarot-btn:hover{background:#145A38;transform:translateY(-1px)}
 .tarot-btn:disabled{opacity:0;pointer-events:none}
-@media(max-width:580px){.tcard{width:150px;height:220px}.tarot-wrap{padding:32px 16px}.tarot-title{font-size:21px}}
+@media(max-width:580px){.tcard{width:170px;height:270px}.tcard-front img{height:140px}.tarot-wrap{padding:32px 16px}.tarot-title{font-size:21px}}
 
 /* ── WHY ── */
 #why{background:#fff}
