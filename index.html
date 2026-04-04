@@ -31,9 +31,9 @@
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&display=swap"></noscript>
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:80px}
+html{scroll-behavior:auto;scroll-padding-top:80px}
 section[id],div[id]{scroll-margin-top:80px}
-body{font-family:'Raleway',system-ui,sans-serif;color:#111827;background:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body{font-family:'Raleway',system-ui,sans-serif;color:#111827;background:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased;overscroll-behavior-y:contain}
 a{text-decoration:none;color:inherit}
 img{max-width:100%;display:block;object-fit:cover}
 button{border:none;background:none;font-family:inherit;cursor:pointer}
@@ -1783,21 +1783,67 @@ function filterTours(tab,cat){
   })
 }
 
-// ── CAROUSEL drag + arrows ──
+// ── SMOOTH SCROLL (anchor links) ──
+;(function(){
+  function easeInOutQuart(t){return t<.5?8*t*t*t*t:1-Math.pow(-2*t+2,4)/2}
+  function smoothScrollTo(y,dur){
+    const s=window.scrollY,d=y-s;let t0=null
+    function step(ts){
+      if(!t0)t0=ts
+      const p=Math.min((ts-t0)/dur,1)
+      window.scrollTo(0,s+d*easeInOutQuart(p))
+      if(p<1)requestAnimationFrame(step)
+    }
+    requestAnimationFrame(step)
+  }
+  document.addEventListener('click',e=>{
+    const a=e.target.closest('a[href^="#"]')
+    if(!a)return
+    const id=a.getAttribute('href').slice(1)
+    if(!id)return
+    const el=document.getElementById(id)
+    if(!el)return
+    e.preventDefault()
+    smoothScrollTo(el.getBoundingClientRect().top+window.scrollY-80,680)
+  })
+})()
+
+// ── CAROUSEL drag + momentum ──
 (function(){
   const grid=document.getElementById('allGrid')
   const prev=document.getElementById('crPrev')
   const next=document.getElementById('crNext')
   if(!grid)return
-  let isDragging=false,startX=0,scrollStart=0
-  grid.addEventListener('mousedown',e=>{isDragging=true;startX=e.pageX;scrollStart=grid.scrollLeft;grid.classList.add('dragging')})
-  document.addEventListener('mousemove',e=>{if(!isDragging)return;grid.scrollLeft=scrollStart-(e.pageX-startX)})
-  document.addEventListener('mouseup',()=>{isDragging=false;grid.classList.remove('dragging')})
-  grid.addEventListener('touchstart',e=>{startX=e.touches[0].pageX;scrollStart=grid.scrollLeft},{passive:true})
-  grid.addEventListener('touchmove',e=>{grid.scrollLeft=scrollStart-(e.touches[0].pageX-startX)},{passive:true})
-  const cardW=()=>(grid.querySelector('.atc')||{offsetWidth:260+18}).offsetWidth+18
-  if(prev)prev.addEventListener('click',()=>grid.scrollBy({left:-cardW()*2,behavior:'smooth'}))
-  if(next)next.addEventListener('click',()=>grid.scrollBy({left:cardW()*2,behavior:'smooth'}))
+  let isDragging=false,startX=0,scrollStart=0,lastX=0,lastT=0,vel=0,rafId=null
+  function stopMomentum(){if(rafId){cancelAnimationFrame(rafId);rafId=null}}
+  function applyMomentum(){
+    stopMomentum()
+    const friction=0.88
+    function step(){
+      vel*=friction
+      grid.scrollLeft+=vel
+      if(Math.abs(vel)>0.5)rafId=requestAnimationFrame(step)
+    }
+    rafId=requestAnimationFrame(step)
+  }
+  function onStart(x){isDragging=true;startX=x;scrollStart=grid.scrollLeft;lastX=x;lastT=Date.now();vel=0;stopMomentum();grid.classList.add('dragging')}
+  function onMove(x){
+    if(!isDragging)return
+    const now=Date.now(),dt=now-lastT
+    if(dt>0)vel=(lastX-x)/dt*16
+    lastX=x;lastT=now
+    grid.scrollLeft=scrollStart-(x-startX)
+  }
+  function onEnd(){isDragging=false;grid.classList.remove('dragging');if(Math.abs(vel)>1)applyMomentum()}
+  grid.addEventListener('mousedown',e=>onStart(e.pageX))
+  document.addEventListener('mousemove',e=>{if(isDragging)onMove(e.pageX)})
+  document.addEventListener('mouseup',onEnd)
+  grid.addEventListener('touchstart',e=>onStart(e.touches[0].pageX),{passive:true})
+  grid.addEventListener('touchmove',e=>onMove(e.touches[0].pageX),{passive:true})
+  grid.addEventListener('touchend',onEnd,{passive:true})
+  const cardW=()=>(grid.querySelector('.atc')||{offsetWidth:278}).offsetWidth+18
+  if(prev)prev.addEventListener('click',()=>{stopMomentum();grid.scrollBy({left:-cardW()*2,behavior:'smooth'})})
+  if(next)next.addEventListener('click',()=>{stopMomentum();grid.scrollBy({left:cardW()*2,behavior:'smooth'})})
 })()
 
 // ── FORTUNE CARD ──
