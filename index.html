@@ -362,6 +362,8 @@ video::-webkit-media-controls-start-playback-button{display:none!important;-webk
   .foot-grid{grid-template-columns:1fr;gap:28px}
   .nav-links{display:none}
   .burger{display:flex}
+  #nav{justify-content:center}
+  .burger{position:absolute;right:clamp(16px,3.5vw,56px)}
 }
 @media(max-width:580px){
   .tours-grid,.rev-grid{grid-template-columns:1fr}
@@ -909,7 +911,7 @@ body{animation:page-in .4s ease}
 <!-- HERO -->
 <header id="hero">
   <div id="hero-bg">
-    <video id="hero-video" src="/images/hero.mp4" autoplay muted loop playsinline webkit-playsinline x-webkit-airplay="deny" preload="auto"
+    <video id="hero-video" src="/images/hero.mp4" muted loop playsinline webkit-playsinline x-webkit-airplay="deny" preload="auto"
       disablepictureinpicture controlsList="nodownload nofullscreen noremoteplayback">
     </video>
     <div id="hero-tap" aria-hidden="true"></div>
