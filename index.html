@@ -192,7 +192,7 @@ video::-webkit-media-controls-start-playback-button{display:none!important;-webk
 .tarot-title{font-size:22px;font-weight:800;color:#111827;margin-bottom:8px;letter-spacing:-.01em}
 .tarot-sub{font-size:14px;color:#6B7280}
 .tarot-cards{display:flex;justify-content:center;margin-bottom:28px}
-.tcard{width:200px;height:310px;perspective:900px;cursor:pointer}
+.tcard{width:200px;height:310px;perspective:900px;cursor:pointer;-webkit-user-select:none;user-select:none;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
 .tcard-inner{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .8s cubic-bezier(.4,0,.2,1)}
 .tcard.flipped .tcard-inner{transform:rotateY(180deg)}
 .tcard-back,.tcard-front{position:absolute;inset:0;border-radius:18px;backface-visibility:hidden;-webkit-backface-visibility:hidden}
@@ -1870,19 +1870,12 @@ function drawFortune(){
   front.innerHTML=`<img src="${t.img}" alt="${t.name}"><div class="tcard-front-body"><div class="tcard-front-badge">−5% скидка</div><div class="tcard-front-name">${t.name}</div><div class="tcard-front-prices"><span class="tcard-front-old">₾${t.gel}</span><span class="tcard-front-new">₾${disc}</span></div><a href="https://wa.me/995511272623?text=${waMsg}" class="tcard-front-link" target="_blank" rel="noopener">Забронировать</a></div>`
   setTimeout(()=>card.classList.add('flipped'),50)
 }
-// ── Fortune card touch (iOS-safe, document delegation) ──
+// ── Fortune card ──
 ;(function(){
-  let touched=false
-  document.addEventListener('touchstart',function(e){
-    if(!e.target.closest('#fortuneCard'))return
-    touched=true
-    drawFortune()
-  },{passive:true})
-  document.addEventListener('click',function(e){
-    if(!e.target.closest('#fortuneCard'))return
-    if(!touched)drawFortune()
-    touched=false
-  })
+  var fc=document.getElementById('fortuneCard')
+  if(!fc)return
+  fc.onclick=function(){drawFortune()}
+  fc.ontouchstart=function(e){e.preventDefault();drawFortune()}
 })()
 </script>
 
