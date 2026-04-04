@@ -1,0 +1,168 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://sakhva-travel.com/tour/kazbegi/#webpage",
+      "url": "https://sakhva-travel.com/tour/kazbegi/",
+      "name": "Казбеги из Тбилиси за 1 день 2026 — от ₾128 | Частный гид",
+      "description": "Казбеги за 1 день из Тбилиси с частным гидом. Гергети, Военно-Грузинская дорога. От ₾128/чел. До 6 человек. Ответ за 15 минут.",
+      "inLanguage": "ru",
+      "isPartOf": { "@id": "https://sakhva-travel.com/#website" },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://sakhva-travel.com/images/og-kazbegi.jpg"
+      },
+      "dateModified": "2026-04-03",
+      "breadcrumb": { "@id": "https://sakhva-travel.com/tour/kazbegi/#breadcrumb" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://sakhva-travel.com/tour/kazbegi/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://sakhva-travel.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Туры",
+          "item": "https://sakhva-travel.com/#tours"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Казбеги",
+          "item": "https://sakhva-travel.com/tour/kazbegi/"
+        }
+      ]
+    },
+    {
+      "@type": "TouristTrip",
+      "@id": "https://sakhva-travel.com/tour/kazbegi/#trip",
+      "name": "Казбеги из Тбилиси за 1 день — частный тур",
+      "url": "https://sakhva-travel.com/tour/kazbegi/",
+      "description": "Тур по Военно-Грузинской дороге из Тбилиси. Ананури, Гудаури, Гергетская Троица, вид на Казбек 5047м. Частный гид Тимур, до 6 человек.",
+      "image": "https://sakhva-travel.com/images/og-kazbegi.jpg",
+      "touristType": "Туристы, семьи, пары, друзья",
+      "itinerary": {
+        "@type": "ItemList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Выезд из Тбилиси 08:00" },
+          { "@type": "ListItem", "position": 2, "name": "Крепость Ананури 10:00" },
+          { "@type": "ListItem", "position": 3, "name": "Гудаури 11:30" },
+          { "@type": "ListItem", "position": 4, "name": "Степанцминда 13:00" },
+          { "@type": "ListItem", "position": 5, "name": "Гергетская Троица 14:00–17:00" },
+          { "@type": "ListItem", "position": 6, "name": "Возвращение в Тбилиси 22:00" }
+        ]
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "128",
+        "priceCurrency": "GEL",
+        "availability": "https://schema.org/InStock",
+        "url": "https://sakhva-travel.com/tour/kazbegi/",
+        "validFrom": "2026-01-01"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "87",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "provider": {
+        "@type": "TouristInformationCenter",
+        "@id": "https://sakhva-travel.com/#business",
+        "name": "Sakhva Travel",
+        "url": "https://sakhva-travel.com/",
+        "telephone": "+995511272623"
+      },
+      "subjectOf": { "@id": "https://sakhva-travel.com/tour/kazbegi/#webpage" }
+    },
+    {
+      "@type": "TouristAttraction",
+      "@id": "https://sakhva-travel.com/tour/kazbegi/#gergeti",
+      "name": "Гергетская Троица",
+      "description": "Средневековая церковь Святой Троицы на высоте 2170м с видом на вершину Казбек 5047м.",
+      "url": "https://sakhva-travel.com/tour/kazbegi/",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 42.6564,
+        "longitude": 44.6997
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Степанцминда",
+        "addressCountry": "GE"
+      },
+      "touristType": "Русскоязычные туристы"
+    },
+    {
+      "@type": "TouristAttraction",
+      "@id": "https://sakhva-travel.com/tour/kazbegi/#ananuris",
+      "name": "Крепость Ананури",
+      "description": "Средневековая феодальная крепость XVI–XVII века на берегу Жинвальского водохранилища по дороге в Казбеги.",
+      "url": "https://sakhva-travel.com/tour/kazbegi/",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 42.0706,
+        "longitude": 44.7136
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ананури",
+        "addressCountry": "GE"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://sakhva-travel.com/tour/kazbegi/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Сколько стоит тур в Казбеги из Тбилиси?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Цена от ₾128 с человека при группе до 6 человек. В стоимость включены: комфортный автомобиль с кондиционером, услуги частного гида Тимура на русском или английском языке, все остановки и фотостопы по маршруту. Питание и личные расходы оплачиваются отдельно."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли доехать до Гергетской Троицы пешком?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, подъём пешком занимает около 1,5–2 часов в одну сторону. Тропа хорошо размечена. Также можно взять такси-джип прямо у подножия горы. В нашем туре мы планируем время с учётом пешей прогулки — у вас будет 2,5–3 часа на Гергетской Троице и окрестностях."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Работает ли тур зимой?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, мы работаем круглый год. Зимой Казбеги особенно красив — снежные вершины, заснеженная Гергетская Троица. Дорога в целом открыта, но погода может быть непредсказуемой. Гид заранее проверяет условия и информирует вас о возможных изменениях маршрута."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как отменить или перенести тур?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Бесплатная отмена или перенос за 24 часа до начала тура. Просто напишите нам в WhatsApp или Telegram — мы всё организуем без штрафов."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Откуда начинается тур и где точка встречи?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Тур начинается из центра Тбилиси в 08:00. Гид приедет к вашему отелю или апартаментам — мы согласовываем точку встречи индивидуально. Дополнительная плата за трансфер не взимается в пределах центра города."
+          }
+        }
+      ]
+    }
+  ]
+}

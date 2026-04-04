@@ -1,0 +1,170 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://sakhva-travel.com/tour/kakheti/#webpage",
+      "url": "https://sakhva-travel.com/tour/kakheti/",
+      "name": "Тур в Кахетию из Тбилиси 2026 — от ₾128 | Дегустация вина",
+      "description": "Экскурсия в Кахетию из Тбилиси. Сигнаги — город любви, монастырь Бодбе, дегустация квеври-вина в семейном марани. Гид Тимур. От ₾128/чел. Трансфер включён.",
+      "inLanguage": "ru",
+      "isPartOf": { "@id": "https://sakhva-travel.com/#website" },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://sakhva-travel.com/images/og-kakheti.jpg"
+      },
+      "dateModified": "2026-04-03",
+      "breadcrumb": { "@id": "https://sakhva-travel.com/tour/kakheti/#breadcrumb" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://sakhva-travel.com/tour/kakheti/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://sakhva-travel.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Туры",
+          "item": "https://sakhva-travel.com/#tours"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Кахетия и Сигнаги",
+          "item": "https://sakhva-travel.com/tour/kakheti/"
+        }
+      ]
+    },
+    {
+      "@type": "TouristTrip",
+      "@id": "https://sakhva-travel.com/tour/kakheti/#trip",
+      "name": "Кахетия и Сигнаги из Тбилиси — тур с дегустацией вина",
+      "url": "https://sakhva-travel.com/tour/kakheti/",
+      "description": "Однодневный тур в Кахетию из Тбилиси. Сигнаги — город любви, монастырь Бодбе, дегустация квеври-вина в семейном марани. Гид Тимур.",
+      "image": "https://sakhva-travel.com/images/og-kakheti.jpg",
+      "touristType": "Пары, любители вина, туристы",
+      "itinerary": {
+        "@type": "ItemList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Выезд из Тбилиси 08:30" },
+          { "@type": "ListItem", "position": 2, "name": "Сигнаги 10:30" },
+          { "@type": "ListItem", "position": 3, "name": "Монастырь Бодбе 12:00" },
+          { "@type": "ListItem", "position": 4, "name": "Обед в деревне 13:30" },
+          { "@type": "ListItem", "position": 5, "name": "Дегустация в марани 15:00" },
+          { "@type": "ListItem", "position": 6, "name": "Возвращение в Тбилиси 18:30" }
+        ]
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "128",
+        "priceCurrency": "GEL",
+        "availability": "https://schema.org/InStock",
+        "url": "https://sakhva-travel.com/tour/kakheti/",
+        "validFrom": "2026-01-01"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "52",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "provider": {
+        "@type": "TouristInformationCenter",
+        "@id": "https://sakhva-travel.com/#business",
+        "name": "Sakhva Travel",
+        "url": "https://sakhva-travel.com/",
+        "telephone": "+995511272623"
+      },
+      "subjectOf": { "@id": "https://sakhva-travel.com/tour/kakheti/#webpage" }
+    },
+    {
+      "@type": "TouristAttraction",
+      "@id": "https://sakhva-travel.com/tour/kakheti/#signagi",
+      "name": "Сигнаги",
+      "description": "Город любви в Кахетии. Полностью отреставрированный средневековый город с крепостной стеной, видом на Алазанскую долину и горы Большого Кавказа.",
+      "url": "https://sakhva-travel.com/tour/kakheti/",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 41.6158,
+        "longitude": 45.9228
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Сигнаги",
+        "addressRegion": "Кахетия",
+        "addressCountry": "GE"
+      },
+      "touristType": "Пары, туристы"
+    },
+    {
+      "@type": "TouristAttraction",
+      "@id": "https://sakhva-travel.com/tour/kakheti/#bodbe",
+      "name": "Монастырь Бодбе",
+      "description": "Женский монастырь IV века, место погребения Святой Нино — просветительницы Грузии. Расположен на склоне холма с видом на Алазанскую долину.",
+      "url": "https://sakhva-travel.com/tour/kakheti/",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 41.5997,
+        "longitude": 45.9278
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Сигнаги",
+        "addressRegion": "Кахетия",
+        "addressCountry": "GE"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://sakhva-travel.com/tour/kakheti/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Что такое квеври и как делают грузинское вино?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Квеври — это большой глиняный кувшин яйцевидной формы, вкопанный в землю. Виноград давят вместе с кожицей, косточками и гребнями, помещают в квеври и оставляют бродить 6 месяцев при постоянной температуре. Получается янтарное (оранжевое) вино с особым вкусом — танинным, сложным. Грузинский метод виноделия — древнейший в мире, ему более 8000 лет. В марани вы попробуете именно такое вино."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужно ли разбираться в вине, чтобы ехать в Кахетию?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Совсем нет. Тур подходит как для знатоков вина, так и для тех, кто вообще не разбирается. Тимур расскажет всё доступно — историю грузинского виноделия, особенности квеври, разницу между сортами. Хозяин марани покажет весь процесс и объяснит, как отличить хорошее вино от плохого. Вы уйдёте с новыми знаниями и бутылкой отличного вина."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли купить вино в марани с собой?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, это одна из приятных особенностей визита в семейное марани. Цены на домашнее вино значительно ниже магазинных, а качество — выше. Обычно можно купить 1–5 литров в пластиковые бутылки или взять авторские бутылки. Стоимость ~₾14–43 за литр в зависимости от сорта."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что такое монастырь Бодбе и почему туда едут?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Монастырь Бодбе IV века — место погребения Святой Нино, просветительницы Грузии. Именно она принесла христианство в страну в 337 году. Монастырь стоит на склоне холма среди кипарисов с потрясающим видом на Алазанскую долину. Это одно из самых почитаемых мест в Грузии — тихое, камерное, с особой атмосферой."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "В какое время года лучше ехать в Кахетию?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Лучшее время — сентябрь-октябрь, это период сбора винограда (ртвели). Виноградники золотеют, в марани кипит работа, можно поучаствовать в давке винограда ногами. Весна (апрель-май) тоже хороша — всё зелёное и цветущее. Мы работаем весь год."
+          }
+        }
+      ]
+    }
+  ]
+}

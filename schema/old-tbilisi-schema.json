@@ -1,0 +1,168 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://sakhva-travel.com/tour/old-tbilisi/#webpage",
+      "url": "https://sakhva-travel.com/tour/old-tbilisi/",
+      "name": "Пешеходная экскурсия по Старому Тбилиси 2026 — от ₾100 | Sakhva Travel",
+      "description": "Авторская пешеходная экскурсия по Старому Тбилиси с частным гидом. Дворы-колодцы, серные бани, крепость Нарикала. От ₾100/чел.",
+      "inLanguage": "ru",
+      "isPartOf": { "@id": "https://sakhva-travel.com/#website" },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://sakhva-travel.com/images/og-tbilisi.jpg"
+      },
+      "dateModified": "2026-04-03",
+      "breadcrumb": { "@id": "https://sakhva-travel.com/tour/old-tbilisi/#breadcrumb" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://sakhva-travel.com/tour/old-tbilisi/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://sakhva-travel.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Туры",
+          "item": "https://sakhva-travel.com/#tours"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Старый Тбилиси",
+          "item": "https://sakhva-travel.com/tour/old-tbilisi/"
+        }
+      ]
+    },
+    {
+      "@type": "TouristTrip",
+      "@id": "https://sakhva-travel.com/tour/old-tbilisi/#trip",
+      "name": "Пешеходная экскурсия по Старому Тбилиси с гидом",
+      "url": "https://sakhva-travel.com/tour/old-tbilisi/",
+      "description": "Авторская пешеходная экскурсия по Старому Тбилиси. Дворы-колодцы, серные бани Абанотубани, крепость Нарикала, армянский квартал, мечеть и синагога — Тбилиси многонациональный.",
+      "image": "https://sakhva-travel.com/images/og-tbilisi.jpg",
+      "touristType": "Русскоязычные туристы",
+      "itinerary": {
+        "@type": "ItemList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Метро Руставели — встреча" },
+          { "@type": "ListItem", "position": 2, "name": "Проспект Руставели и Площадь Свободы" },
+          { "@type": "ListItem", "position": 3, "name": "Серные бани Абанотубани" },
+          { "@type": "ListItem", "position": 4, "name": "Крепость Нарикала — смотровая" },
+          { "@type": "ListItem", "position": 5, "name": "Мтацминда — фуникулёр по желанию" },
+          { "@type": "ListItem", "position": 6, "name": "Старый город — дворы, балконы, церкви" }
+        ]
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "100",
+        "priceCurrency": "GEL",
+        "availability": "https://schema.org/InStock",
+        "url": "https://sakhva-travel.com/tour/old-tbilisi/",
+        "validFrom": "2026-01-01"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "31",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "provider": {
+        "@type": "TouristInformationCenter",
+        "@id": "https://sakhva-travel.com/#business",
+        "name": "Sakhva Travel",
+        "url": "https://sakhva-travel.com/",
+        "telephone": "+995511272623"
+      },
+      "subjectOf": { "@id": "https://sakhva-travel.com/tour/old-tbilisi/#webpage" }
+    },
+    {
+      "@type": "TouristAttraction",
+      "@id": "https://sakhva-travel.com/tour/old-tbilisi/#narikala",
+      "name": "Крепость Нарикала",
+      "description": "Средневековая крепость IV века в сердце Старого Тбилиси. Панорамная смотровая площадка с видом на весь город и реку Мтквари.",
+      "url": "https://sakhva-travel.com/tour/old-tbilisi/",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 41.6884,
+        "longitude": 44.8110
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Тбилиси",
+        "addressCountry": "GE"
+      },
+      "isAccessibleForFree": true
+    },
+    {
+      "@type": "TouristAttraction",
+      "@id": "https://sakhva-travel.com/tour/old-tbilisi/#abanotubani",
+      "name": "Серные бани Абанотубани",
+      "description": "Исторический банный квартал Тбилиси с куполообразными крышами. Серные источники были известны ещё в V веке. По легенде, именно здесь царь Вахтанг Горгасали основал Тбилиси.",
+      "url": "https://sakhva-travel.com/tour/old-tbilisi/",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 41.6869,
+        "longitude": 44.8131
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Тбилиси",
+        "addressCountry": "GE"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://sakhva-travel.com/tour/old-tbilisi/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Сколько стоит экскурсия по Старому Тбилиси?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "От ₾100 с человека в группе до 6 человек. Мини-группа до 4 чел — от ₾157/чел. Приватная экскурсия — от ₾456 за группу. Оплата в день экскурсии."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько длится экскурсия по Тбилиси?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "5–6 часов. Можно продлить до 7–8 часов по желанию — цена обсуждается."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что включает экскурсия по Старому Тбилиси?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Серные бани снаружи, крепость Нарикала, дворы-колодцы, армянский квартал, Метехи, Сиони, Анчисхати. Гид рассказывает историю каждого места на русском."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Откуда начинается экскурсия?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Встречаемся у метро Руставели или Площади Свободы. Или забираем из вашего отеля — уточните при бронировании."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужно ли заходить внутрь платных объектов?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Вход в крепость Нарикала бесплатный. Серные бани снаружи — бесплатно, внутрь по желанию (от 20 лари/чел). Церкви бесплатно."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://sakhva-travel.com/#website",
+      "url": "https://sakhva-travel.com/",
+      "name": "Sakhva Travel",
+      "description": "Частный русскоязычный гид по Грузии. Казбеги, Кахетия, скрытые места Тбилиси. До 6 человек.",
+      "inLanguage": "ru",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://sakhva-travel.com/?s={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://sakhva-travel.com/#webpage",
+      "url": "https://sakhva-travel.com/",
+      "name": "Частный гид в Тбилиси на русском 2026 — от ₾100 | Sakhva Travel",
+      "description": "Частный русскоязычный гид Тимур. Казбеги от ₾128, скрытые места Тбилиси от ₾100, Кахетия. До 6 чел. Бесплатная отмена. Ответ за 15 минут.",
+      "inLanguage": "ru",
+      "isPartOf": { "@id": "https://sakhva-travel.com/#website" },
+      "about": { "@id": "https://sakhva-travel.com/#business" },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://sakhva-travel.com/images/og-cover.jpg"
+      },
+      "dateModified": "2026-04-03"
+    },
+    {
+      "@type": "TouristInformationCenter",
+      "@id": "https://sakhva-travel.com/#business",
+      "name": "Sakhva Travel",
+      "url": "https://sakhva-travel.com/",
+      "telephone": "+995511272623",
+      "email": "help@sakhva-travel.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Тбилиси",
+        "addressRegion": "Тбилиси",
+        "addressCountry": "GE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 41.6938,
+        "longitude": 44.8015
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday", "Tuesday", "Wednesday", "Thursday",
+          "Friday", "Saturday", "Sunday"
+        ],
+        "opens": "08:00",
+        "closes": "22:00"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "87",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "priceRange": "₾₾",
+      "currenciesAccepted": "GEL, USD, EUR",
+      "paymentAccepted": "Cash, Card",
+      "description": "Частный русскоязычный гид по Грузии. Казбеги, Кахетия, скрытые места Тбилиси. До 6 человек.",
+      "image": "https://sakhva-travel.com/images/og-cover.jpg",
+      "sameAs": [
+        "https://t.me/+995557587855",
+        "https://wa.me/995511272623"
+      ],
+      "hasMap": "https://www.google.com/maps?q=41.6938,44.8015",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Georgia"
+      },
+      "employee": { "@id": "https://sakhva-travel.com/#guide-timur" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://sakhva-travel.com/#guide-timur",
+      "name": "Тимур",
+      "jobTitle": "Частный гид по Грузии",
+      "description": "Профессиональный русскоязычный гид в Тбилиси с опытом более 3 лет. Проводит туры в Казбеги, Кахетию, по скрытым местам Тбилиси.",
+      "worksFor": { "@id": "https://sakhva-travel.com/#business" },
+      "knowsLanguage": ["ru", "en"],
+      "areaServed": {
+        "@type": "Country",
+        "name": "Georgia"
+      },
+      "telephone": "+995511272623",
+      "url": "https://sakhva-travel.com/"
+    },
+    {
+      "@type": "TouristTrip",
+      "@id": "https://sakhva-travel.com/#trip-kazbegi",
+      "name": "Казбеги за 1 день из Тбилиси",
+      "url": "https://sakhva-travel.com/tour/kazbegi/",
+      "description": "Военно-Грузинская дорога, крепость Ананури, Гергетская Троица с видом на Казбек 5047м. Гид на русском.",
+      "touristType": "Русскоязычные туристы",
+      "offers": {
+        "@type": "Offer",
+        "price": "128",
+        "priceCurrency": "GEL",
+        "availability": "https://schema.org/InStock",
+        "url": "https://sakhva-travel.com/tour/kazbegi/"
+      },
+      "provider": { "@id": "https://sakhva-travel.com/#business" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://sakhva-travel.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Сколько стоит тур в Казбеги в 2026?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "От ₾128 с человека. Трансфер, гид Тимур, входные билеты. До 6 человек. Выезд 08:00, возвращение ~22:00."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как забронировать тур? Нужна ли предоплата?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Напишите в WhatsApp +995 511 272 623. Ответ за 15 минут. Предоплата не нужна — оплата в день тура."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли отменить или перенести тур?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Бесплатная отмена за 24 часа. Для Казбеги — бесплатный перенос при плохой погоде."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Когда лучший сезон для Казбеги?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Май–июнь и сентябрь–октябрь. Зимой горы в снегу — красиво. Работаем круглый год."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужна ли виза в Грузию в 2026?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Россия, Беларусь, Казахстан, Украина — безвизовый въезд до 365 дней."
+          }
+        }
+      ]
+    }
+  ]
+}
