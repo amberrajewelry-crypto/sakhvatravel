@@ -1,0 +1,714 @@
+[
+  {
+    "url": "https://sakhva-travel.com",
+    "slug": "homepage",
+    "issues": [],
+    "warnings": [
+      {
+        "type": "small_touch_targets",
+        "severity": "MEDIUM",
+        "detail": "15 interactive elements smaller than 44x44px",
+        "elements": [
+          {
+            "tag": "A",
+            "text": "\u041f\u043e\u0434\u0440\u043e\u0431\u043d\u0435\u0435",
+            "href": "https://sakhva-travel.com/#faq",
+            "width": 71,
+            "height": 15,
+            "classes": "",
+            "top": 735
+          },
+          {
+            "tag": "BUTTON",
+            "text": "\u041f\u0440\u0438\u043d\u044f\u0442\u044c",
+            "href": "",
+            "width": 327,
+            "height": 30,
+            "classes": "cookie-btn",
+            "top": 768
+          },
+          {
+            "tag": "BUTTON",
+            "text": "",
+            "href": "",
+            "width": 32,
+            "height": 24,
+            "classes": "burger",
+            "top": 24
+          },
+          {
+            "tag": "A",
+            "text": "\u041f\u043e\u0434\u0440\u043e\u0431\u043d\u0435\u0435 \u2192",
+            "href": "https://sakhva-travel.com/tour/old-tbilisi/",
+            "width": 118,
+            "height": 35,
+            "classes": "tc-cta",
+            "top": 1497
+          },
+          {
+            "tag": "A",
+            "text": "\u041f\u043e\u0434\u0440\u043e\u0431\u043d\u0435\u0435 \u2192",
+            "href": "https://sakhva-travel.com/tour/kazbegi/",
+            "width": 118,
+            "height": 35,
+            "classes": "tc-cta",
+            "top": 2025
+          },
+          {
+            "tag": "A",
+            "text": "\u041f\u043e\u0434\u0440\u043e\u0431\u043d\u0435\u0435 \u2192",
+            "href": "https://sakhva-travel.com/tour/kakheti/",
+            "width": 118,
+            "height": 35,
+            "classes": "tc-cta",
+            "top": 2554
+          },
+          {
+            "tag": "BUTTON",
+            "text": "\u0412\u0441\u0435",
+            "href": "",
+            "width": 46,
+            "height": 33,
+            "classes": "ftab on",
+            "top": 2859
+          },
+          {
+            "tag": "BUTTON",
+            "text": "\u0414\u043b\u044f \u0441\u0432\u043e\u0438\u0445 \ud83d\udd25",
+            "href": "",
+            "width": 99,
+            "height": 33,
+            "classes": "ftab",
+            "top": 2859
+          },
+          {
+            "tag": "BUTTON",
+            "text": "\u0412\u044b\u0435\u0437\u0434\u044b",
+            "href": "",
+            "width": 69,
+            "height": 33,
+            "classes": "ftab",
+            "top": 2859
+          },
+          {
+            "tag": "BUTTON",
+            "text": "\u041f\u043e \u0433\u043e\u0440\u043e\u0434\u0443",
+            "href": "",
+            "width": 82,
+            "height": 33,
+            "classes": "ftab",
+            "top": 2859
+          },
+          {
+            "tag": "BUTTON",
+            "text": "\u041f\u0440\u0435\u043c\u0438\u0443\u043c",
+            "href": "",
+            "width": 76,
+            "height": 27,
+            "classes": "ftab",
+            "top": 2898
+          },
+          {
+            "tag": "A",
+            "text": "\u041f\u043e\u0434\u0440\u043e\u0431\u043d\u0435\u0435",
+            "href": "https://sakhva-travel.com/tour/emigrant/",
+            "width": 94,
+            "height": 31,
+            "classes": "atc-btn",
+            "top": 3281
+          },
+          {
+            "tag": "A",
+            "text": "\u041f\u043e\u0434\u0440\u043e\u0431\u043d\u0435\u0435",
+            "href": "https://sakhva-travel.com/tour/tbilisi-hidden/",
+            "width": 94,
+            "height": 31,
+            "classes": "atc-btn",
+            "top": 3711
+          },
+          {
+            "tag": "A",
+            "text": "\u041f\u043e\u0434\u0440\u043e\u0431\u043d\u0435\u0435",
+            "href": "https://sakhva-travel.com/tour/old-tbilisi/",
+            "width": 94,
+            "height": 31,
+            "classes": "atc-btn",
+            "top": 4121
+          },
+          {
+            "tag": "A",
+            "text": "\u041f\u043e\u0434\u0440\u043e\u0431\u043d\u0435\u0435",
+            "href": "https://sakhva-travel.com/tour/kazbegi/",
+            "width": 94,
+            "height": 31,
+            "classes": "atc-btn",
+            "top": 4531
+          }
+        ]
+      },
+      {
+        "type": "small_font_size",
+        "severity": "MEDIUM",
+        "detail": "10 elements with font-size < 12px (risk of unreadable text on mobile)",
+        "elements": [
+          {
+            "tag": "SPAN",
+            "text": "\u041e\u0442\u0437\u044b\u0432\u043e\u0432",
+            "fontSize": "8px",
+            "classes": "hs-lbl"
+          },
+          {
+            "tag": "SPAN",
+            "text": "\u0420\u0435\u0439\u0442\u0438\u043d\u0433",
+            "fontSize": "8px",
+            "classes": "hs-lbl"
+          },
+          {
+            "tag": "SPAN",
+            "text": "\u0413\u043e\u0434\u0430 \u043e\u043f\u044b\u0442\u0430",
+            "fontSize": "8px",
+            "classes": "hs-lbl"
+          },
+          {
+            "tag": "SPAN",
+            "text": "\u0422\u0443\u0440\u0438\u0441\u0442\u043e\u0432",
+            "fontSize": "8px",
+            "classes": "hs-lbl"
+          },
+          {
+            "tag": "SPAN",
+            "text": "\u041a\u0430\u0437\u0431\u0435\u0433\u0438 \u0437\u0430 1 \u0434\u0435\u043d\u044c",
+            "fontSize": "10px",
+            "classes": "ticker-item"
+          },
+          {
+            "tag": "SPAN",
+            "text": "\u043e\u0442 \u20be128 \u0441 \u0433\u0438\u0434\u043e\u043c",
+            "fontSize": "10px",
+            "classes": "ticker-item"
+          },
+          {
+            "tag": "SPAN",
+            "text": "\u041e\u0442\u0432\u0435\u0442 \u0437\u0430 15 \u043c\u0438\u043d\u0443\u0442",
+            "fontSize": "10px",
+            "classes": "ticker-item"
+          },
+          {
+            "tag": "SPAN",
+            "text": "\u0421\u043a\u0440\u044b\u0442\u044b\u0435 \u043c\u0435\u0441\u0442\u0430 \u0422\u0431\u0438\u043b\u0438\u0441\u0438",
+            "fontSize": "10px",
+            "classes": "ticker-item"
+          },
+          {
+            "tag": "SPAN",
+            "text": "\u043e\u0442 \u20be100 / \u0447\u0435\u043b",
+            "fontSize": "10px",
+            "classes": "ticker-item"
+          },
+          {
+            "tag": "SPAN",
+            "text": "\u0411\u0435\u0441\u043f\u043b\u0430\u0442\u043d\u0430\u044f \u043e\u0442\u043c\u0435\u043d\u0430 24\u0447",
+            "fontSize": "10px",
+            "classes": "ticker-item"
+          }
+        ]
+      },
+      {
+        "type": "no_hamburger_menu",
+        "severity": "MEDIUM",
+        "detail": "No hamburger/mobile menu toggle found in nav (nav height=72px). Full nav may render raw on mobile.",
+        "element": "nav / header ."
+      },
+      {
+        "type": "potential_contrast_issues",
+        "severity": "MEDIUM",
+        "detail": "1 elements may have low contrast (light text on light background)",
+        "elements": [
+          {
+            "tag": "BUTTON",
+            "text": "\u2728 \u041f\u043e\u0434\u043e\u0431\u0440\u0430\u0442\u044c \u0442\u0443\u0440",
+            "color": "rgb(255, 255, 255)",
+            "bg": "rgba(255, 255, 255, 0.15)",
+            "classes": ""
+          }
+        ]
+      }
+    ],
+    "passes": [
+      "No horizontal overflow detected",
+      "H1 visible above fold: '\u0427\u0430\u0441\u0442\u043d\u044b\u0439 \u0433\u0438\u0434 \u043f\u043e \u0413\u0440\u0443\u0437\u0438\u0438\u043d\u0430 \u0440\u0443\u0441\u0441\u043a\u043e\u043c' (top=233px, font=33.75px)",
+      "2 CTA(s) visible above fold: ['\u041f\u0440\u0438\u043d\u044f\u0442\u044c', '\u2728 \u041f\u043e\u0434\u043e\u0431\u0440\u0430\u0442\u044c \u0442\u0443\u0440']",
+      "Viewport meta tag present: 'width=device-width, initial-scale=1.0'",
+      "Hero section visible: '#hero' height=812px",
+      "All images fit within viewport width"
+    ],
+    "screenshot_atf": "/Users/vladimir/sakhva-travel/screenshots/homepage_mobile_atf.png",
+    "screenshot_full": "/Users/vladimir/sakhva-travel/screenshots/homepage_mobile_full.png"
+  },
+  {
+    "url": "https://sakhva-travel.com/tour/night-tbilisi/",
+    "slug": "night-tbilisi",
+    "issues": [],
+    "warnings": [
+      {
+        "type": "small_touch_targets",
+        "severity": "MEDIUM",
+        "detail": "15 interactive elements smaller than 44x44px",
+        "elements": [
+          {
+            "tag": "A",
+            "text": "SAKHVA\n    TRAVEL",
+            "href": "https://sakhva-travel.com/",
+            "width": 83,
+            "height": 25,
+            "classes": "nav-logo",
+            "top": 24
+          },
+          {
+            "tag": "BUTTON",
+            "text": "",
+            "href": "",
+            "width": 32,
+            "height": 24,
+            "classes": "burger",
+            "top": 24
+          },
+          {
+            "tag": "A",
+            "text": "\u0413\u043b\u0430\u0432\u043d\u0430\u044f",
+            "href": "https://sakhva-travel.com/",
+            "width": 54,
+            "height": 14,
+            "classes": "",
+            "top": 120
+          },
+          {
+            "tag": "A",
+            "text": "\u0422\u0443\u0440\u044b",
+            "href": "https://sakhva-travel.com/#tours",
+            "width": 33,
+            "height": 14,
+            "classes": "",
+            "top": 120
+          },
+          {
+            "tag": "A",
+            "text": "+995 511 272 623",
+            "href": "tel:+995511272623",
+            "width": 343,
+            "height": 43,
+            "classes": "btn-primary",
+            "top": 6437
+          },
+          {
+            "tag": "A",
+            "text": "\u041a\u0430\u0437\u0431\u0435\u0433\u0438 \u0437\u0430 1 \u0434\u0435\u043d\u044c \u2014 \u043e\u0442 \u20be128",
+            "href": "https://sakhva-travel.com/tour/kazbegi/",
+            "width": 343,
+            "height": 16,
+            "classes": "",
+            "top": 6741
+          },
+          {
+            "tag": "A",
+            "text": "\u0421\u043a\u0440\u044b\u0442\u044b\u0435 \u043c\u0435\u0441\u0442\u0430 \u0422\u0431\u0438\u043b\u0438\u0441\u0438 \u2014 \u043e\u0442 \u20be100",
+            "href": "https://sakhva-travel.com/tour/tbilisi-hidden/",
+            "width": 343,
+            "height": 16,
+            "classes": "",
+            "top": 6766
+          },
+          {
+            "tag": "A",
+            "text": "\u041a\u0430\u0445\u0435\u0442\u0438\u044f \u0438 \u0421\u0438\u0433\u043d\u0430\u0433\u0438 \u2014 \u043e\u0442 \u20be128",
+            "href": "https://sakhva-travel.com/tour/kakheti/",
+            "width": 343,
+            "height": 16,
+            "classes": "",
+            "top": 6791
+          },
+          {
+            "tag": "A",
+            "text": "\u0422\u0443\u0440 + \u0443\u0436\u0438\u043d \u0443 \u043c\u0435\u0441\u0442\u043d\u044b\u0445 \u2014 \u043e\u0442 \u20be185",
+            "href": "https://sakhva-travel.com/tour/dinner/",
+            "width": 343,
+            "height": 16,
+            "classes": "",
+            "top": 6816
+          },
+          {
+            "tag": "A",
+            "text": "\u0413\u0430\u0439\u0434: \u041a\u0430\u0437\u0431\u0435\u0433\u0438 2026",
+            "href": "https://sakhva-travel.com/blog/kazbegi-iz-tbilisi-2026/",
+            "width": 343,
+            "height": 15,
+            "classes": "",
+            "top": 6884
+          },
+          {
+            "tag": "A",
+            "text": "15 \u0441\u043a\u0440\u044b\u0442\u044b\u0445 \u043c\u0435\u0441\u0442 \u0422\u0431\u0438\u043b\u0438\u0441\u0438",
+            "href": "https://sakhva-travel.com/blog/skrytye-mesta-tbilisi/",
+            "width": 343,
+            "height": 15,
+            "classes": "",
+            "top": 6908
+          },
+          {
+            "tag": "A",
+            "text": "\u0412\u0438\u0437\u0430 \u0432 \u0413\u0440\u0443\u0437\u0438\u044e 2026",
+            "href": "https://sakhva-travel.com/blog/viza-v-gruziyu-2026/",
+            "width": 343,
+            "height": 15,
+            "classes": "",
+            "top": 6932
+          },
+          {
+            "tag": "A",
+            "text": "\u0421\u0435\u0440\u043d\u044b\u0435 \u0431\u0430\u043d\u0438 \u0422\u0431\u0438\u043b\u0438\u0441\u0438",
+            "href": "https://sakhva-travel.com/blog/sernye-bani-tbilisi/",
+            "width": 343,
+            "height": 15,
+            "classes": "",
+            "top": 6956
+          },
+          {
+            "tag": "A",
+            "text": "\u041d\u0430 \u0433\u043b\u0430\u0432\u043d\u0443\u044e",
+            "href": "https://sakhva-travel.com/",
+            "width": 60,
+            "height": 13,
+            "classes": "",
+            "top": 7034
+          },
+          {
+            "tag": "A",
+            "text": "\u041d\u0430\u043f\u0438\u0441\u0430\u0442\u044c",
+            "href": "mailto:sakhvatravel@gmail.com",
+            "width": 49,
+            "height": 13,
+            "classes": "",
+            "top": 7034
+          }
+        ]
+      },
+      {
+        "type": "small_font_size",
+        "severity": "MEDIUM",
+        "detail": "10 elements with font-size < 12px (risk of unreadable text on mobile)",
+        "elements": [
+          {
+            "tag": "SPAN",
+            "text": "TRAVEL",
+            "fontSize": "7px",
+            "classes": "nav-logo-sub"
+          },
+          {
+            "tag": "DIV",
+            "text": "\u041d\u043e\u043a\u0442\u0443\u0440\u0438\u0437\u043c \u00b7 2026",
+            "fontSize": "10px",
+            "classes": "hero-badge"
+          },
+          {
+            "tag": "SPAN",
+            "text": "/ \u0441 \u0447\u0435\u043b. ($27)",
+            "fontSize": "11px",
+            "classes": "stat-lab"
+          },
+          {
+            "tag": "SPAN",
+            "text": "\u0434\u043b\u0438\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u044c",
+            "fontSize": "11px",
+            "classes": "stat-lab"
+          },
+          {
+            "tag": "SPAN",
+            "text": "\u0441\u0442\u0430\u0440\u0442 \u0442\u0443\u0440\u0430",
+            "fontSize": "11px",
+            "classes": "stat-lab"
+          },
+          {
+            "tag": "SPAN",
+            "text": "\u0431\u0435\u0441\u043f\u043b\u0430\u0442\u043d\u0430\u044f \u043e\u0442\u043c\u0435\u043d\u0430",
+            "fontSize": "11px",
+            "classes": "stat-lab"
+          },
+          {
+            "tag": "DIV",
+            "text": "\u041a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u044f",
+            "fontSize": "10px",
+            "classes": "qi-label"
+          },
+          {
+            "tag": "DIV",
+            "text": "\u042f\u0437\u044b\u043a",
+            "fontSize": "10px",
+            "classes": "qi-label"
+          },
+          {
+            "tag": "DIV",
+            "text": "\u0421\u0442\u0430\u0440\u0442",
+            "fontSize": "10px",
+            "classes": "qi-label"
+          },
+          {
+            "tag": "DIV",
+            "text": "\u041c\u0435\u0441\u0442\u043e \u0432\u0441\u0442\u0440\u0435\u0447\u0438",
+            "fontSize": "10px",
+            "classes": "qi-label"
+          }
+        ]
+      },
+      {
+        "type": "no_hamburger_menu",
+        "severity": "MEDIUM",
+        "detail": "No hamburger/mobile menu toggle found in nav (nav height=72px). Full nav may render raw on mobile.",
+        "element": "nav / header ."
+      }
+    ],
+    "passes": [
+      "No horizontal overflow detected",
+      "H1 visible above fold: '\u041d\u043e\u0447\u043d\u043e\u0439 \u0422\u0431\u0438\u043b\u0438\u0441\u0438 \u2014 \u043e\u0442 \u20be71 \u0441 \u0447\u0430\u0441\u0442\u043d\u044b\u043c \u0433\u0438\u0434\u043e\u043c' (top=197px, font=28px)",
+      "3 CTA(s) visible above fold: ['\u0417\u0430\u0431\u0440\u043e\u043d\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 WhatsApp', '\u041d\u0430\u043f\u0438\u0441\u0430\u0442\u044c \u0432 Telegram', '\u0422\u0443\u0440\u044b']",
+      "Viewport meta tag present: 'width=device-width,initial-scale=1'",
+      "Hero section visible: '[class*=\"hero\"]' height=721px",
+      "All images fit within viewport width",
+      "No obvious contrast issues detected"
+    ],
+    "screenshot_atf": "/Users/vladimir/sakhva-travel/screenshots/night-tbilisi_mobile_atf.png",
+    "screenshot_full": "/Users/vladimir/sakhva-travel/screenshots/night-tbilisi_mobile_full.png"
+  },
+  {
+    "url": "https://sakhva-travel.com/tour/photo/",
+    "slug": "photo-tour",
+    "issues": [],
+    "warnings": [
+      {
+        "type": "small_touch_targets",
+        "severity": "MEDIUM",
+        "detail": "15 interactive elements smaller than 44x44px",
+        "elements": [
+          {
+            "tag": "A",
+            "text": "SAKHVA\n    TRAVEL",
+            "href": "https://sakhva-travel.com/",
+            "width": 83,
+            "height": 25,
+            "classes": "nav-logo",
+            "top": 24
+          },
+          {
+            "tag": "BUTTON",
+            "text": "",
+            "href": "",
+            "width": 32,
+            "height": 24,
+            "classes": "burger",
+            "top": 24
+          },
+          {
+            "tag": "A",
+            "text": "\u0413\u043b\u0430\u0432\u043d\u0430\u044f",
+            "href": "https://sakhva-travel.com/",
+            "width": 54,
+            "height": 14,
+            "classes": "",
+            "top": 120
+          },
+          {
+            "tag": "A",
+            "text": "\u0422\u0443\u0440\u044b",
+            "href": "https://sakhva-travel.com/#tours",
+            "width": 33,
+            "height": 14,
+            "classes": "",
+            "top": 120
+          },
+          {
+            "tag": "A",
+            "text": "+995 511 272 623",
+            "href": "tel:+995511272623",
+            "width": 343,
+            "height": 43,
+            "classes": "btn-primary",
+            "top": 6726
+          },
+          {
+            "tag": "A",
+            "text": "\u041a\u0430\u0437\u0431\u0435\u0433\u0438 \u0437\u0430 1 \u0434\u0435\u043d\u044c \u2014 \u043e\u0442 \u20be128",
+            "href": "https://sakhva-travel.com/tour/kazbegi/",
+            "width": 343,
+            "height": 16,
+            "classes": "",
+            "top": 7030
+          },
+          {
+            "tag": "A",
+            "text": "\u0421\u043a\u0440\u044b\u0442\u044b\u0435 \u043c\u0435\u0441\u0442\u0430 \u0422\u0431\u0438\u043b\u0438\u0441\u0438 \u2014 \u043e\u0442 \u20be100",
+            "href": "https://sakhva-travel.com/tour/tbilisi-hidden/",
+            "width": 343,
+            "height": 16,
+            "classes": "",
+            "top": 7055
+          },
+          {
+            "tag": "A",
+            "text": "\u0422\u0443\u0440 + \u0443\u0436\u0438\u043d \u0443 \u043c\u0435\u0441\u0442\u043d\u044b\u0445 \u2014 \u043e\u0442 \u20be185",
+            "href": "https://sakhva-travel.com/tour/dinner/",
+            "width": 343,
+            "height": 16,
+            "classes": "",
+            "top": 7080
+          },
+          {
+            "tag": "A",
+            "text": "\u041d\u043e\u0447\u043d\u043e\u0439 \u0422\u0431\u0438\u043b\u0438\u0441\u0438 \u2014 \u043e\u0442 \u20be71",
+            "href": "https://sakhva-travel.com/tour/night-tbilisi/",
+            "width": 343,
+            "height": 16,
+            "classes": "",
+            "top": 7105
+          },
+          {
+            "tag": "A",
+            "text": "\u0413\u0430\u0439\u0434: \u041a\u0430\u0437\u0431\u0435\u0433\u0438 2026",
+            "href": "https://sakhva-travel.com/blog/kazbegi-iz-tbilisi-2026/",
+            "width": 343,
+            "height": 15,
+            "classes": "",
+            "top": 7173
+          },
+          {
+            "tag": "A",
+            "text": "15 \u0441\u043a\u0440\u044b\u0442\u044b\u0445 \u043c\u0435\u0441\u0442 \u0422\u0431\u0438\u043b\u0438\u0441\u0438",
+            "href": "https://sakhva-travel.com/blog/skrytye-mesta-tbilisi/",
+            "width": 343,
+            "height": 15,
+            "classes": "",
+            "top": 7197
+          },
+          {
+            "tag": "A",
+            "text": "\u0421\u0435\u0440\u043d\u044b\u0435 \u0431\u0430\u043d\u0438 \u0422\u0431\u0438\u043b\u0438\u0441\u0438",
+            "href": "https://sakhva-travel.com/blog/sernye-bani-tbilisi/",
+            "width": 343,
+            "height": 15,
+            "classes": "",
+            "top": 7221
+          },
+          {
+            "tag": "A",
+            "text": "\u0412\u0438\u0437\u0430 \u0432 \u0413\u0440\u0443\u0437\u0438\u044e 2026",
+            "href": "https://sakhva-travel.com/blog/viza-v-gruziyu-2026/",
+            "width": 343,
+            "height": 15,
+            "classes": "",
+            "top": 7245
+          },
+          {
+            "tag": "A",
+            "text": "\u041d\u0430 \u0433\u043b\u0430\u0432\u043d\u0443\u044e",
+            "href": "https://sakhva-travel.com/",
+            "width": 60,
+            "height": 13,
+            "classes": "",
+            "top": 7323
+          },
+          {
+            "tag": "A",
+            "text": "\u041d\u0430\u043f\u0438\u0441\u0430\u0442\u044c",
+            "href": "mailto:sakhvatravel@gmail.com",
+            "width": 49,
+            "height": 13,
+            "classes": "",
+            "top": 7323
+          }
+        ]
+      },
+      {
+        "type": "small_font_size",
+        "severity": "MEDIUM",
+        "detail": "10 elements with font-size < 12px (risk of unreadable text on mobile)",
+        "elements": [
+          {
+            "tag": "SPAN",
+            "text": "TRAVEL",
+            "fontSize": "7px",
+            "classes": "nav-logo-sub"
+          },
+          {
+            "tag": "DIV",
+            "text": "\u041f\u0440\u0435\u043c\u0438\u0443\u043c \u00b7 \u0424\u043e\u0442\u043e \u00b7 2026",
+            "fontSize": "10px",
+            "classes": "hero-badge"
+          },
+          {
+            "tag": "SPAN",
+            "text": "/ \u0441 \u0447\u0435\u043b. ($75)",
+            "fontSize": "11px",
+            "classes": "stat-lab"
+          },
+          {
+            "tag": "SPAN",
+            "text": "\u0434\u043b\u0438\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u044c",
+            "fontSize": "11px",
+            "classes": "stat-lab"
+          },
+          {
+            "tag": "SPAN",
+            "text": "\u043e\u0431\u0440\u0430\u0431\u043e\u0442\u0430\u043d\u043d\u044b\u0445",
+            "fontSize": "11px",
+            "classes": "stat-lab"
+          },
+          {
+            "tag": "SPAN",
+            "text": "\u0441\u0440\u043e\u043a \u0434\u043e\u0441\u0442\u0430\u0432\u043a\u0438 \u0444\u043e\u0442\u043e",
+            "fontSize": "11px",
+            "classes": "stat-lab"
+          },
+          {
+            "tag": "DIV",
+            "text": "\u041a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u044f",
+            "fontSize": "10px",
+            "classes": "qi-label"
+          },
+          {
+            "tag": "DIV",
+            "text": "\u0421\u0442\u0430\u0440\u0442",
+            "fontSize": "10px",
+            "classes": "qi-label"
+          },
+          {
+            "tag": "DIV",
+            "text": "\u0414\u043b\u0438\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u044c",
+            "fontSize": "10px",
+            "classes": "qi-label"
+          },
+          {
+            "tag": "DIV",
+            "text": "\u0420\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442",
+            "fontSize": "10px",
+            "classes": "qi-label"
+          }
+        ]
+      },
+      {
+        "type": "no_hamburger_menu",
+        "severity": "MEDIUM",
+        "detail": "No hamburger/mobile menu toggle found in nav (nav height=72px). Full nav may render raw on mobile.",
+        "element": "nav / header ."
+      }
+    ],
+    "passes": [
+      "No horizontal overflow detected",
+      "H1 visible above fold: '\u0422\u0443\u0440 + \u0444\u043e\u0442\u043e\u0441\u0435\u0441\u0441\u0438\u044f \u0432 \u0422\u0431\u0438\u043b\u0438\u0441\u0438 \u2014 \u043e\u0442 \u20be196 \u0441 \u0433\u0438\u0434\u043e\u043c' (top=197px, font=28px)",
+      "3 CTA(s) visible above fold: ['\u0417\u0430\u0431\u0440\u043e\u043d\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 WhatsApp', '\u041d\u0430\u043f\u0438\u0441\u0430\u0442\u044c \u0432 Telegram', '\u0422\u0443\u0440\u044b']",
+      "Viewport meta tag present: 'width=device-width,initial-scale=1'",
+      "Hero section visible: '[class*=\"hero\"]' height=781px",
+      "All images fit within viewport width",
+      "No obvious contrast issues detected"
+    ],
+    "screenshot_atf": "/Users/vladimir/sakhva-travel/screenshots/photo-tour_mobile_atf.png",
+    "screenshot_full": "/Users/vladimir/sakhva-travel/screenshots/photo-tour_mobile_full.png"
+  }
+]
