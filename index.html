@@ -1865,11 +1865,8 @@ function drawFortune(){
   if(card.classList.contains('flipped'))return
   const t=FORTUNE_TOURS[Math.floor(Math.random()*FORTUNE_TOURS.length)]
   const disc=Math.round(t.gel*0.95)
-  const curLang=localStorage.getItem('lang')||'ru'
-  const waMsg=curLang==='en'
-    ?encodeURIComponent(`Hi! I want to book "${t.name}" with 5% off — promo code FORTUNE5`)
-    :encodeURIComponent(`Привет! Хочу забронировать "${t.name}" со скидкой 5% — промокод FORTUNE5`)
-  front.innerHTML=`<img src="${t.img}" alt="${t.name}"><div class="tcard-front-body"><div class="tcard-front-badge">−5% скидка</div><div class="tcard-front-name">${t.name}</div><div class="tcard-front-prices"><span class="tcard-front-old">₾${t.gel}</span><span class="tcard-front-new">₾${disc}</span></div><a href="https://wa.me/995511272623?text=${waMsg}" class="tcard-front-link" target="_blank">Забронировать</a></div>`
+  const waMsg=encodeURIComponent(`Хочу ${t.name} промокод СУДЬБА5`)
+  front.innerHTML=`<img src="${t.img}" alt="${t.name}"><div class="tcard-front-body"><div class="tcard-front-badge">−5% скидка</div><div class="tcard-front-name">${t.name}</div><div class="tcard-front-prices"><span class="tcard-front-old">₾${t.gel}</span><span class="tcard-front-new">₾${disc}</span></div><a href="https://wa.me/995511272623?text=${waMsg}" class="tcard-front-link" target="_blank" rel="noopener">Забронировать</a></div>`
   setTimeout(()=>{card.classList.add('flipped');btn.disabled=true},50)
 }
 </script>
@@ -1961,19 +1958,19 @@ setTimeout(()=>{
 
 // ── Social proof popup ──
 ;(function(){
-  const proofs=[
-    {av:'😊',name:'Алексей из Москвы',msg:'забронировал тур в Казбеги 🏔️'},
-    {av:'🌸',name:'Марина из Тбилиси',msg:'выбрала скрытые места Тбилиси'},
-    {av:'🍷',name:'Семья Петровых',msg:'записались на тур в Кахетию 🍷'},
-    {av:'✈️',name:'Дмитрий из Алматы',msg:'только что написал в WhatsApp'},
-    {av:'😍',name:'Катя и Рома',msg:'поставили ⭐⭐⭐⭐⭐ за Казбеги'},
-    {av:'🧳',name:'Ирина из Питера',msg:'забронировала тур для эмигрантов'},
-    {av:'🏔️',name:'Андрей из Берлина',msg:'уже третий тур с Тимуром'},
-    {av:'🌿',name:'Юля и Паша',msg:'записались на Кахетию + дегустацию'},
-    {av:'💻',name:'James from London',msg:'booked Digital Nomad tour'},
-    {av:'☀️',name:'Наташа из Еревана',msg:'выбрала ночной Тбилиси 🌙'},
-    {av:'🎭',name:'Саша из Тель-Авива',msg:'рекомендует тур Советский Тбилиси'},
+  const notifications=[
+    {name:'Алексей',city:'Москвы',tour:'тур в Казбеги 🏔️',f:false},
+    {name:'Марина',city:'Петербурга',tour:'тур по Тбилиси 🏙️',f:true},
+    {name:'Дмитрий',city:'Минска',tour:'тур в Кахетию 🍷',f:false},
+    {name:'Елена',city:'Алматы',tour:'Slow Travel пакет ✈️',f:true},
+    {name:'Сергей',city:'Тбилиси',tour:'тур для эмигрантов 🏠',f:false},
+    {name:'Катя',city:'Берлина',tour:'Digital Nomad тур 💻',f:true},
+    {name:'Андрей',city:'Еревана',tour:'ночной Тбилиси 🌙',f:false},
+    {name:'Юля',city:'Тель-Авива',tour:'Советский Тбилиси 🎭',f:true},
+    {name:'Ирина',city:'Алматы',tour:'тур + ужин у местных 🍽️',f:true},
+    {name:'Паша',city:'Москвы',tour:'фотосессию в Тбилиси 📸',f:false},
   ]
+  const proofs=notifications.map(n=>({av:n.name[0],name:`${n.name} из ${n.city}`,msg:`забронировал${n.f?'а':''} ${n.tour}`}))
   let idx=0
   function show(){
     const p=proofs[idx%proofs.length];idx++
