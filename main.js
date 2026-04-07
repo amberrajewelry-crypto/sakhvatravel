@@ -292,14 +292,14 @@ if(savedLang&&savedLang!=='ru') setLang(savedLang)
 function acceptCookies(){
   localStorage.setItem('cookies_v4','1');
   gtag('consent','update',{analytics_storage:'granted',ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted'});
-  document.getElementById('cookie-bar').classList.remove('show')
+  document.getElementById('cookie-bar').classList.remove('show');document.body.classList.remove('cookie-visible')
 }
 function declineCookies(){
   localStorage.setItem('cookies_v4','0');
   gtag('consent','update',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});
-  document.getElementById('cookie-bar').classList.remove('show')
+  document.getElementById('cookie-bar').classList.remove('show');document.body.classList.remove('cookie-visible')
 }
-if(!localStorage.getItem('cookies_v4'))setTimeout(()=>document.getElementById('cookie-bar').classList.add('show'),1500)
+if(!localStorage.getItem('cookies_v4'))setTimeout(()=>{document.getElementById('cookie-bar').classList.add('show');document.body.classList.add('cookie-visible')},1500)
 
 // ── CONTACT MODAL ──
 // ── PAYMENT MODAL ──
