@@ -1975,6 +1975,7 @@ body{animation:page-in .4s ease}
     <button class="chat-quick-btn" onclick="chatQuick('Какие туры есть?')">🗺 Туры</button>
     <button class="chat-quick-btn" onclick="chatQuick('Как забронировать тур?')">📅 Бронирование</button>
     <button class="chat-quick-btn" onclick="chatQuick('Нужна ли виза в Грузию?')">✈️ Виза</button>
+    <a href="https://t.me/SakhvaGuideBot" target="_blank" class="chat-quick-btn" style="text-decoration:none;background:#EFF6FF;border-color:#93C5FD;">📱 Забронировать в боте</a>
   </div>
   <div id="chat-input-row">
     <textarea id="chat-input" placeholder="Напишите вопрос..." rows="1" onkeydown="chatKeyDown(event)"></textarea>
@@ -2001,7 +2002,7 @@ body{animation:page-in .4s ease}
     box.classList.toggle('open',chatOpen)
     document.getElementById('chat-badge').style.display='none'
     if(chatOpen && document.getElementById('chat-msgs').children.length===0){
-      chatAddMsg('bot','Привет! 👋 Я помогу подобрать тур по Тбилиси и Грузии. Спрашивайте про маршруты, цены, визы — или просто расскажите что хотите увидеть!')
+      chatAddMsg('bot','Привет! 👋 Я помогу подобрать тур по Тбилиси и Грузии. Спрашивайте про маршруты, цены, визы. Для быстрой брони — <a href="https://t.me/SakhvaGuideBot" target="_blank" style="color:#1A56DB;font-weight:700">Telegram бот</a> 📱')
     }
     if(chatOpen) setTimeout(function(){document.getElementById('chat-input').focus()},100)
   }
@@ -2044,7 +2045,7 @@ body{animation:page-in .4s ease}
         // Offer WhatsApp only after 5+ messages as a soft suggestion
         if(msgCount>=5 && msgCount%4===1){
           setTimeout(function(){
-            chatAddMsg('bot','Кстати, если хотите — Тимур лично ответит в <a href="https://wa.me/995511272623" target="_blank" style="color:#1A56DB;font-weight:700">WhatsApp</a> за 15 минут 😊')
+            chatAddMsg('bot','Готовы забронировать? → <a href="https://t.me/SakhvaGuideBot" target="_blank" style="color:#1A56DB;font-weight:700">Telegram бот</a> — выбор тура за 2 минуты 📱 Или <a href="https://wa.me/995511272623" target="_blank" style="color:#25D366;font-weight:700">WhatsApp</a> Тимуру 😊')
           },800)
         }
       } else {
