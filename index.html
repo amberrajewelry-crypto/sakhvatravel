@@ -301,6 +301,7 @@ video::-webkit-media-controls-start-playback-button{display:none!important;-webk
   .how-grid{grid-template-columns:1fr;gap:12px}
   .hw-arrow{display:none}
 }
+.section-label{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#2d6a4f;margin-bottom:12px}
 
 /* ── GUIDE ── */
 #guide{background:#F9FAFB}
@@ -322,6 +323,7 @@ video::-webkit-media-controls-start-playback-button{display:none!important;-webk
 .gf-sub{font-size:11px;color:#9CA3AF;margin-top:1px}
 
 /* ── REVIEWS ── */
+.review-stars{color:#f59e0b;font-size:16px;margin-bottom:6px}
 #reviews{background:#fff}
 .rev-head{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:36px;flex-wrap:wrap;gap:12px}
 .rev-score{font-size:56px;font-weight:800;color:#1A56DB;line-height:1}
@@ -511,7 +513,7 @@ video::-webkit-media-controls-start-playback-button{display:none!important;-webk
 }
 
 /* ── COOKIE BANNER ── */
-#cookie-bar{position:fixed;bottom:0;left:0;right:0;background:rgba(15,17,26,0.96);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-top:1px solid rgba(255,255,255,.08);color:#fff;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;z-index:9999;font-size:13px;line-height:1.4;transform:translateY(100%);transition:transform .4s cubic-bezier(.22,1,.36,1)}
+#cookie-bar{position:fixed;bottom:0;left:0;right:0;background:rgba(17,24,39,0.95);border-top:1px solid rgba(255,255,255,.08);color:#fff;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;z-index:9998;font-size:13px;line-height:1.4;transform:translateY(100%);transition:transform .4s cubic-bezier(.22,1,.36,1)}
 #cookie-bar.show{transform:translateY(0)}
 #cookie-bar a{color:#60A5FA;text-decoration:underline}
 .cookie-btns{display:flex;gap:8px;flex-shrink:0}
@@ -1623,30 +1625,30 @@ body{animation:page-in .4s ease}
 <section class="sec" id="how" style="background:#F9FAFB">
   <div class="si">
     <div class="sec-head reveal">
-      <div class="sec-label" data-ru="Просто и быстро" data-en="Simple &amp; fast">Просто и быстро</div>
-      <h2 class="sec-title" data-ru="Как забронировать тур" data-en="How to book a tour">Как забронировать тур</h2>
+      <span class="section-label">ПРОЦЕСС</span>
+      <h2 class="sec-title" data-ru="Как это работает" data-en="How it works">Как это работает</h2>
       <p class="sec-sub" data-ru="Три шага — от сообщения до незабываемого дня" data-en="Three steps — from message to unforgettable day">Три шага — от сообщения до незабываемого дня</p>
     </div>
     <div class="how-grid">
       <div class="hw reveal">
         <div class="hw-num">01</div>
         <div class="hw-icon">📅</div>
-        <h3 class="hw-title" data-ru="Заполните форму онлайн" data-en="Fill the form online">Заполните форму онлайн</h3>
-        <p class="hw-text" data-ru="Выберите тур и дату в календаре — займёт 2 минуты. Или напишите в WhatsApp / Telegram." data-en="Pick your tour and date from the calendar — takes 2 minutes. Or message us on WhatsApp.">Выберите тур и дату в календаре — займёт 2 минуты. Или напишите в WhatsApp / Telegram.</p>
+        <h3 class="hw-title" data-ru="Выбери маршрут" data-en="Choose a route">Выбери маршрут</h3>
+        <p class="hw-text" data-ru="Выбери готовый тур или расскажи что хочешь увидеть" data-en="Choose a ready tour or tell us what you want to see">Выбери готовый тур или расскажи что хочешь увидеть</p>
       </div>
       <div class="hw-arrow reveal" style="transition-delay:.08s">→</div>
       <div class="hw reveal" style="transition-delay:.1s">
         <div class="hw-num">02</div>
         <div class="hw-icon">✅</div>
-        <h3 class="hw-title" data-ru="Подтверждение" data-en="Confirmation">Подтверждение</h3>
-        <p class="hw-text" data-ru="Тимур напишет в течение 2 часов, уточнит детали и время встречи. Предоплата не нужна." data-en="Timur writes within 2 hours to confirm details and meeting time. No prepayment needed.">Тимур напишет в течение 2 часов, уточнит детали и время встречи. Предоплата не нужна.</p>
+        <h3 class="hw-title" data-ru="Оплати онлайн" data-en="Pay online">Оплати онлайн</h3>
+        <p class="hw-text" data-ru="Крипто, карта через WhatsApp или Stripe" data-en="Crypto, card via WhatsApp or Stripe">Крипто, карта через WhatsApp или Stripe</p>
       </div>
       <div class="hw-arrow reveal" style="transition-delay:.18s">→</div>
       <div class="hw reveal" style="transition-delay:.2s">
         <div class="hw-num">03</div>
         <div class="hw-icon">🗺</div>
-        <h3 class="hw-title" data-ru="День тура" data-en="Tour day">День тура</h3>
-        <p class="hw-text" data-ru="Встречаемся, уезжаем. Оплата в день экскурсии наличными или картой. Никаких сюрпризов." data-en="We meet and go. Pay on the day of the tour — cash or card. No surprises.">Встречаемся, уезжаем. Оплата в день экскурсии наличными или картой. Никаких сюрпризов.</p>
+        <h3 class="hw-title" data-ru="Встреча у отеля" data-en="Meeting at hotel">Встреча у отеля</h3>
+        <p class="hw-text" data-ru="Тимур заберёт тебя прямо от отеля" data-en="Timur will pick you up right from your hotel">Тимур заберёт тебя прямо от отеля</p>
       </div>
     </div>
     <div style="text-align:center;margin-top:40px;display:flex;gap:12px;flex-wrap:wrap;justify-content:center" class="reveal">
@@ -1701,7 +1703,7 @@ body{animation:page-in .4s ease}
 <section class="sec" id="reviews" style="background:#F9FAFB">
   <div class="si">
     <div class="rev-head reveal">
-      <div><div class="sec-label" data-ru="Отзывы 2026" data-en="Reviews 2026">Отзывы 2026</div><h2 class="sec-title" data-ru="Что говорят туристы" data-en="What tourists say">Что говорят туристы</h2></div>
+      <div><div class="sec-label" data-ru="Отзывы 2026" data-en="Reviews 2026">Отзывы 2026</div><h2 class="sec-title" data-ru="Что говорят путешественники" data-en="What travelers say">Что говорят путешественники</h2></div>
       <div>
         <div class="rev-score" id="rev-score">4.9</div>
         <div class="rev-stars" id="rev-stars">★★★★★</div>
@@ -1711,20 +1713,20 @@ body{animation:page-in .4s ease}
     <div class="rev-grid" id="rev-grid">
       <div class="rc reveal">
         <div class="rc-source"><svg width="14" height="14" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg> Google</div>
-        <div class="rc-top"><div class="rc-av">О</div><div><div class="rc-name" data-ru="Ольга Т." data-en="Olga T.">Ольга Т.</div><div class="rc-meta" data-ru="Москва · март 2026" data-en="Moscow · March 2026">Москва · март 2026</div></div></div>
-        <div class="rc-stars" style="color:#F59E0B;font-size:12px;letter-spacing:1px;margin-bottom:10px">★★★★★</div>
+        <div class="rc-top"><div class="rc-av">О</div><div><div class="rc-name" data-ru="Ольга Т. 🇷🇺" data-en="Olga T. 🇷🇺">Ольга Т. 🇷🇺</div><div class="rc-meta" data-ru="Москва · март 2026" data-en="Moscow · March 2026">Москва · март 2026</div></div></div>
+        <div class="review-stars">★★★★★</div>
         <p class="rc-text" data-ru="Казбеги превзошёл все ожидания. Тимур знал где остановиться для лучших фото, выехали рано — горы без облаков. Гергетская церковь в снегу — навсегда в памяти." data-en="Kazbegi exceeded all expectations. Timur knew exactly where to stop for the best photos, we set off early — mountains without clouds. Gergeti church in the snow — forever in my memory.">Казбеги превзошёл все ожидания. Тимур знал где остановиться для лучших фото, выехали рано — горы без облаков. Гергетская церковь в снегу — навсегда в памяти.</p>
       </div>
       <div class="rc reveal" style="transition-delay:.1s">
         <div class="rc-source"><svg width="14" height="14" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg> Google</div>
-        <div class="rc-top"><div class="rc-av" style="background:#7C3AED">Д</div><div><div class="rc-name" data-ru="Дмитрий С." data-en="Dmitry S.">Дмитрий С.</div><div class="rc-meta" data-ru="Санкт-Петербург · февраль 2026" data-en="St. Petersburg · Feb 2026">Санкт-Петербург · февраль 2026</div></div></div>
-        <div class="rc-stars" style="color:#F59E0B;font-size:12px;letter-spacing:1px;margin-bottom:10px">★★★★★</div>
+        <div class="rc-top"><div class="rc-av" style="background:#7C3AED">Д</div><div><div class="rc-name" data-ru="Дмитрий С. 🇷🇺" data-en="Dmitry S. 🇷🇺">Дмитрий С. 🇷🇺</div><div class="rc-meta" data-ru="Санкт-Петербург · февраль 2026" data-en="St. Petersburg · Feb 2026">Санкт-Петербург · февраль 2026</div></div></div>
+        <div class="review-stars">★★★★★</div>
         <p class="rc-text" data-ru="Лучший опыт в Грузии. Тимур показал Тбилиси, которого нет в путеводителе — дворики, серные бани, харчо в кафе без вывески. Никакого туристического шаблона." data-en="Best experience in Georgia. Timur showed the Tbilisi that's not in any guidebook — courtyards, sulfur baths, kharchо in a café with no sign. No tourist clichés whatsoever.">Лучший опыт в Грузии. Тимур показал Тбилиси, которого нет в путеводителе — дворики, серные бани, харчо в кафе без вывески. Никакого туристического шаблона.</p>
       </div>
       <div class="rc reveal" style="transition-delay:.2s">
         <div class="rc-source"><svg width="14" height="14" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg> Google</div>
-        <div class="rc-top"><div class="rc-av" style="background:#059669">С</div><div><div class="rc-name" data-ru="Светлана Р." data-en="Svetlana R.">Светлана Р.</div><div class="rc-meta" data-ru="Тбилиси · январь 2026" data-en="Tbilisi · Jan 2026">Тбилиси · январь 2026</div></div></div>
-        <div class="rc-stars" style="color:#F59E0B;font-size:12px;letter-spacing:1px;margin-bottom:10px">★★★★★</div>
+        <div class="rc-top"><div class="rc-av" style="background:#059669">С</div><div><div class="rc-name" data-ru="Светлана Р. 🇷🇺" data-en="Svetlana R. 🇷🇺">Светлана Р. 🇷🇺</div><div class="rc-meta" data-ru="Тбилиси · январь 2026" data-en="Tbilisi · Jan 2026">Тбилиси · январь 2026</div></div></div>
+        <div class="review-stars">★★★★★</div>
         <p class="rc-text" data-ru="Поехали в Кахетию с семьёй. Вино прямо из квеври, хинкали у хозяйки, закат над Сигнаги. Дети в восторге. Уже договорились на Казбеги весной!" data-en="Went to Kakheti with the family. Wine straight from the qvevri, khinkali at the host's house, sunset over Signagi. Kids were thrilled. Already planned Kazbegi for spring!">Поехали в Кахетию с семьёй. Вино прямо из квеври, хинкали у хозяйки, закат над Сигнаги. Дети в восторге. Уже договорились на Казбеги весной!</p>
       </div>
     </div>
