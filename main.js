@@ -91,7 +91,7 @@ const TOURS={
     wa:'Хочу+забронировать+Скрытые+места+Тбилиси',wa_en:'I+want+to+book+Hidden+Tbilisi+tour'
   },
   'old-tbilisi':{
-    badge:'live',img:'https://images.unsplash.com/photo-1565008576549-57569a49371d?w=600&q=80',
+    badge:'live',img:'/images/og-tbilisi.jpg',
     cat:'По городу · 3–4 ч',name:'Старый Тбилиси',gel:'₾71',usd:'$27',
     cat_en:'City tour · 3–4 h',name_en:'Old Tbilisi',
     desc:'Классический маршрут по историческому центру — для тех, кто в Тбилиси впервые или хочет понять город. Серные бани, Нарикала, Мецехи, главные легенды и истории.',
@@ -127,7 +127,7 @@ const TOURS={
     wa:'Хочу+забронировать+Тур+для+эмигрантов',wa_en:'I+want+to+book+Expat+Tour'
   },
   'digital-nomad':{
-    badge:'live',img:'/images/digital-nomad-tour.webp',
+    badge:'live',img:'/images/digital-nomad-tbilisi.jpg',
     cat:'Digital Nomad · 3 ч',name:'Digital Nomad Welcome Tour',gel:'₾83',usd:'$31',
     cat_en:'Digital Nomad · 3 h',name_en:'Digital Nomad Welcome Tour',
     desc:'3 часа на английском: лучшие коворкинги, кафе с быстрым WiFi, районы для удалёнщиков. Идеально для первой недели в Тбилиси. Покажем где работать, жить и тусоваться.',
@@ -793,7 +793,7 @@ document.querySelectorAll('.btn-primary,.btn-wa').forEach(btn=>{
     {name:'Скрытые места Тбилиси',gel:100,img:'/images/tbilisi-hidden.webp',url:'/tour/tbilisi-hidden/'},
     {name:'Казбеги за 1 день',gel:128,img:'/images/kazbegi-tour.webp',url:'/tour/kazbegi/'},
     {name:'Сигнаги и Кахетия',gel:128,img:'/images/kakheti-tour.webp',url:'/tour/kakheti/'},
-    {name:'Старый Тбилиси',gel:71,img:'https://images.unsplash.com/photo-1565008576549-57569a49371d?w=600&q=80',url:'/tour/old-tbilisi/'},
+    {name:'Старый Тбилиси',gel:71,img:'/images/og-tbilisi.jpg',url:'/tour/old-tbilisi/'},
     {name:'Тур для эмигрантов',gel:83,img:'/images/emigrant-tour.webp',url:'/tour/emigrant/'},
     {name:'Ночной Тбилиси',gel:71,img:'/images/night-tbilisi-tour.webp',url:'/tour/night-tbilisi/'},
     {name:'Тур + ужин у местных',gel:185,img:'/images/dinner-tour.webp',url:'/tour/dinner/'},
