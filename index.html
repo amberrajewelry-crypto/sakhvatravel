@@ -715,6 +715,17 @@ body{animation:page-in .4s ease}
 @media(hover:none){.wripple{display:none}}
 @media(max-width:960px){.tc:hover,.atc:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(0,0,0,.1)}}
 
+/* ── TRUST STRIP ── */
+.trust-strip{background:#f8f9fa;padding:24px 0;border-bottom:1px solid #e5e7eb}
+.trust-strip-inner{max-width:1100px;margin:0 auto;display:flex;justify-content:center;gap:48px;padding:0 24px;flex-wrap:wrap}
+.trust-item{text-align:center}
+.trust-num{display:block;font-size:28px;font-weight:800;color:#1A3D2E;line-height:1}
+.trust-label{display:block;font-size:13px;color:#6B7280;margin-top:4px}
+@media(max-width:640px){.trust-strip-inner{gap:24px}.trust-num{font-size:22px}}
+
+/* ── HERO BADGE ── */
+.hero-badge{display:inline-block;background:rgba(45,106,79,0.85);color:#fff;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:5px 12px;border-radius:4px;margin-bottom:16px}
+
 </style>
 <script type="application/ld+json">
 {
@@ -1317,11 +1328,12 @@ body{animation:page-in .4s ease}
     <div id="hero-block" aria-hidden="true"></div>
   </div>
   <div class="hero-wrap">
+    <span class="hero-badge">AUTHENTIC GEORGIA</span>
     <h1 class="hero-h1" data-ru="Частный гид по Тбилиси<br>и Грузии на русском" data-en="Private Tour Guide<br>in Tbilisi & Georgia">Частный гид по Тбилиси<br>и Грузии на русском</h1>
-    <p class="hero-sub" data-ru="Тбилиси, Казбеги, Кахетия — маленькие группы до 6 человек. Казбеги от ₾128, Тбилиси от ₾100" data-en="Tbilisi, Kazbegi, Kakheti — private groups up to 6. Kazbegi from $49, Tbilisi from $38">Тбилиси, Казбеги, Кахетия — маленькие группы до 6 человек. Казбеги от ₾128, Тбилиси от ₾100</p>
+    <p class="hero-sub" data-ru="Казбеги от $49 · Тбилиси от $38 · Группы до 6 человек" data-en="Kazbegi from $49 · Tbilisi from $38 · Groups up to 6">Казбеги от $49 · Тбилиси от $38 · Группы до 6 человек</p>
     <div class="hero-btns">
-      <button id="quiz-btn" onclick="openQuiz()" class="btn-primary" data-ru="✨ Подобрать тур" data-en="✨ Find my tour" style="border:none;cursor:pointer;font-family:inherit">✨ Подобрать тур</button>
-      <button onclick="openBooking()" class="btn-outline-hero" style="cursor:pointer;font-family:inherit" data-ru="📅 Забронировать онлайн" data-en="📅 Book online">📅 Забронировать онлайн</button>
+      <button id="quiz-btn" onclick="openQuiz()" class="btn-primary" data-ru="Выбрать тур →" data-en="Choose tour →" style="border:none;cursor:pointer;font-family:inherit">Выбрать тур →</button>
+      <a href="https://wa.me/995511234567" class="btn-outline-hero" data-ru="Написать в WhatsApp" data-en="Write on WhatsApp">Написать в WhatsApp</a>
     </div>
   </div>
   <div class="hero-stats">
@@ -1331,6 +1343,28 @@ body{animation:page-in .4s ease}
     <div><span class="hs-val counter" data-target="500">500+</span><span class="hs-lbl" data-ru="Туристов" data-en="Tourists">Туристов</span></div>
   </div>
 </header>
+
+<!-- TRUST STRIP -->
+<section class="trust-strip">
+  <div class="trust-strip-inner">
+    <div class="trust-item">
+      <span class="trust-num">500+</span>
+      <span class="trust-label">довольных туристов</span>
+    </div>
+    <div class="trust-item">
+      <span class="trust-num">4.9★</span>
+      <span class="trust-label">рейтинг Google</span>
+    </div>
+    <div class="trust-item">
+      <span class="trust-num">До 6</span>
+      <span class="trust-label">человек в группе</span>
+    </div>
+    <div class="trust-item">
+      <span class="trust-num">С 2014</span>
+      <span class="trust-label">ведём туры</span>
+    </div>
+  </div>
+</section>
 
 <!-- TICKER -->
 <div id="ticker" aria-hidden="true">
