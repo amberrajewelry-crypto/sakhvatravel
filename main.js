@@ -91,7 +91,7 @@ const TOURS={
     wa:'Хочу+забронировать+Скрытые+места+Тбилиси',wa_en:'I+want+to+book+Hidden+Tbilisi+tour'
   },
   'old-tbilisi':{
-    badge:'live',img:'/images/old-tbilisi-tour.webp',
+    badge:'live',img:'https://images.unsplash.com/photo-1565008576549-57569a49371d?w=600&q=80',
     cat:'По городу · 3–4 ч',name:'Старый Тбилиси',gel:'₾71',usd:'$27',
     cat_en:'City tour · 3–4 h',name_en:'Old Tbilisi',
     desc:'Классический маршрут по историческому центру — для тех, кто в Тбилиси впервые или хочет понять город. Серные бани, Нарикала, Мецехи, главные легенды и истории.',
@@ -779,16 +779,9 @@ document.querySelectorAll('.btn-primary,.btn-wa').forEach(btn=>{
   fetch('/api/reviews').then(r=>r.ok?r.json():null).then(data=>{
     if(!data||data.error||!data.reviews||!data.reviews.length)return
     const grid=document.getElementById('rev-grid')
-    if(grid){grid.innerHTML=data.reviews.map(renderCard).join('');requestAnimationFrame(()=>{grid.querySelectorAll('.rc.reveal').forEach(el=>el.classList.add('on'))})}
+    if(grid){grid.innerHTML=data.reviews.slice(0,3).map(renderCard).join('');requestAnimationFrame(()=>{grid.querySelectorAll('.rc.reveal').forEach(el=>el.classList.add('on'))})}
     const sc=document.getElementById('rev-score')
     if(sc&&data.rating)sc.textContent=data.rating.toFixed(1)
-    const cnt=document.getElementById('rev-count')
-    const total=data.total||0
-    if(cnt&&total){
-      const isEn=document.documentElement.lang==='en'
-      cnt.textContent=isEn?`${total} reviews · Google`:`${total} отзывов · Google`
-      cnt.removeAttribute('data-ru');cnt.removeAttribute('data-en')
-    }
   }).catch(()=>{})
 })()
 
@@ -800,7 +793,7 @@ document.querySelectorAll('.btn-primary,.btn-wa').forEach(btn=>{
     {name:'Скрытые места Тбилиси',gel:100,img:'/images/tbilisi-hidden.webp',url:'/tour/tbilisi-hidden/'},
     {name:'Казбеги за 1 день',gel:128,img:'/images/kazbegi-tour.webp',url:'/tour/kazbegi/'},
     {name:'Сигнаги и Кахетия',gel:128,img:'/images/kakheti-tour.webp',url:'/tour/kakheti/'},
-    {name:'Старый Тбилиси',gel:71,img:'/images/old-tbilisi-tour.webp',url:'/tour/old-tbilisi/'},
+    {name:'Старый Тбилиси',gel:71,img:'https://images.unsplash.com/photo-1565008576549-57569a49371d?w=600&q=80',url:'/tour/old-tbilisi/'},
     {name:'Тур для эмигрантов',gel:83,img:'/images/emigrant-tour.webp',url:'/tour/emigrant/'},
     {name:'Ночной Тбилиси',gel:71,img:'/images/night-tbilisi-tour.webp',url:'/tour/night-tbilisi/'},
     {name:'Тур + ужин у местных',gel:185,img:'/images/dinner-tour.webp',url:'/tour/dinner/'},
@@ -827,7 +820,7 @@ document.querySelectorAll('.btn-primary,.btn-wa').forEach(btn=>{
       +'<b style="font-size:15px;color:#16A34A">₾'+disc+'</b>'
       +'</div>'
       +'<div style="font-size:9px;color:#9CA3AF">промокод <b style="color:#374151">СУДЬБА5</b></div>'
-      +'<a href="https://wa.me/995511272623?text='+wa+'" target="_blank" rel="noopener" style="display:block;background:#1A56DB;color:#fff;font-size:11px;font-weight:700;padding:7px 18px;border-radius:9999px;text-decoration:none;margin-top:3px">Забронировать</a>'
+      +'<a href="https://wa.me/995511272623?text='+wa+'" target="_blank" rel="noopener" style="display:block;background:#2d6a4f;color:#fff;font-size:11px;font-weight:700;padding:7px 18px;border-radius:9999px;text-decoration:none;margin-top:3px">Забронировать</a>'
       +'</div>'
   }
   card.addEventListener('touchend', go, {passive:false})
