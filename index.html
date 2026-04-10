@@ -714,6 +714,11 @@ body{animation:page-in .4s ease}
 /* Mobile: suppress water ripple on touch devices */
 @media(hover:none){.wripple{display:none}}
 @media(max-width:960px){.tc:hover,.atc:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(0,0,0,.1)}}
+.duration-badge{position:absolute;top:10px;left:10px;background:rgba(0,0,0,0.65);color:#fff;font-size:11px;font-weight:700;padding:4px 8px;border-radius:4px;z-index:2}.tc-img .duration-badge{top:44px;left:14px}
+.hit-badge{position:absolute;top:10px;right:10px;background:#d97706;color:#fff;font-size:10px;font-weight:800;padding:3px 8px;border-radius:4px;text-transform:uppercase;z-index:2}
+.card-book-btn{display:block;width:100%;padding:10px;background:#2d6a4f;color:#fff;text-align:center;border-radius:8px;font-weight:700;font-size:14px;margin-top:12px;transition:background .2s}
+.card-book-btn:hover{background:#245a42}
+.section-subtitle{color:#6B7280;font-size:16px;margin-top:8px}
 
 </style>
 <script type="application/ld+json">
@@ -1360,6 +1365,7 @@ body{animation:page-in .4s ease}
       <div class="sec-label" data-ru="Туры 2026" data-en="Tours 2026">Туры 2026</div>
       <h2 class="sec-title" data-ru="Наши лучшие туры" data-en="Our best tours">Наши лучшие туры</h2>
       <p class="sec-sub" data-ru="Частные. Гибкие. Настоящие." data-en="Private. Flexible. Authentic.">Частные. Гибкие. Настоящие.</p>
+      <p class="section-subtitle" data-ru="Авторские маршруты по Грузии с местным гидом" data-en="Handcrafted routes across Georgia with a local guide">Авторские маршруты по Грузии с местным гидом</p>
     </div>
     <div class="tours-grid">
 
@@ -1367,6 +1373,8 @@ body{animation:page-in .4s ease}
         <div class="tc-img">
           <img src="/images/tbilisi-hidden.webp" alt="Скрытые места Тбилиси 2026" loading="eager" width="800" height="270" fetchpriority="high">
           <div class="tc-badge" data-ru="Хит продаж" data-en="Bestseller">Хит продаж</div>
+          <span class="duration-badge">3 часа</span>
+          <span class="hit-badge">ХИТ</span>
           <div class="tc-price-tag"><span class="price-main" data-gel="₾100" data-usd="$38">₾100</span><small class="price-sub" data-ru="/чел" data-en="/pp">/чел</small></div>
         </div>
         <div class="tc-body">
@@ -1383,6 +1391,7 @@ body{animation:page-in .4s ease}
             <div class="tc-price"><span class="price-main" data-gel="₾100" data-usd="$38">₾100</span> <span class="price-sub" data-ru="с чел." data-en="per person">с чел.</span></div>
             <a href="/tour/tbilisi-hidden/" class="tc-cta" data-ru="Подробнее →" data-en="Details →">Подробнее →</a>
           </div>
+          <a href="/tour/tbilisi-hidden/" class="card-book-btn" data-ru="Забронировать" data-en="Book Now">Забронировать</a>
         </div>
       </article>
 
@@ -1390,6 +1399,8 @@ body{animation:page-in .4s ease}
         <div class="tc-img">
           <img src="/images/kazbegi-tour.webp" alt="Казбеги за 1 день 2026" loading="lazy" width="800" height="270">
           <div class="tc-badge blue" data-ru="Рекомендуем" data-en="Top pick">Рекомендуем</div>
+          <span class="duration-badge">12 часов</span>
+          <span class="hit-badge">ХИТ</span>
           <div class="tc-price-tag"><span class="price-main" data-gel="₾128" data-usd="$49">₾128</span><small class="price-sub" data-ru="/чел" data-en="/pp">/чел</small></div>
         </div>
         <div class="tc-body">
@@ -1406,6 +1417,7 @@ body{animation:page-in .4s ease}
             <div class="tc-price"><span class="price-main" data-gel="₾128" data-usd="$49">₾128</span> <span class="price-sub" data-ru="с чел." data-en="per person">с чел.</span></div>
             <a href="/tour/kazbegi/" class="tc-cta" data-ru="Подробнее →" data-en="Details →">Подробнее →</a>
           </div>
+          <a href="/tour/kazbegi/" class="card-book-btn" data-ru="Забронировать" data-en="Book Now">Забронировать</a>
         </div>
       </article>
 
@@ -1413,6 +1425,7 @@ body{animation:page-in .4s ease}
         <div class="tc-img">
           <img src="/images/kakheti-tour.webp" alt="Кахетия и Сигнаги 2026" loading="lazy" width="800" height="270">
           <div class="tc-badge green" data-ru="Новинка" data-en="New">Новинка</div>
+          <span class="duration-badge">10 часов</span>
           <div class="tc-price-tag"><span class="price-main" data-gel="₾128" data-usd="$49">₾128</span><small class="price-sub" data-ru="/чел" data-en="/pp">/чел</small></div>
         </div>
         <div class="tc-body">
@@ -1429,6 +1442,7 @@ body{animation:page-in .4s ease}
             <div class="tc-price"><span class="price-main" data-gel="₾128" data-usd="$49">₾128</span> <span class="price-sub" data-ru="с чел." data-en="per person">с чел.</span></div>
             <a href="/tour/kakheti/" class="tc-cta" data-ru="Подробнее →" data-en="Details →">Подробнее →</a>
           </div>
+          <a href="/tour/kakheti/" class="card-book-btn" data-ru="Забронировать" data-en="Book Now">Забронировать</a>
         </div>
       </article>
 
@@ -1459,122 +1473,134 @@ body{animation:page-in .4s ease}
     <div id="allGrid">
 
       <div class="atc" data-cat="свои">
-        <div class="atc-img"><img src="/images/emigrant-tour.webp" alt="Тур для эмигрантов" loading="lazy" width="260" height="210"><span class="atc-status hot" data-ru="⭐ Новинка" data-en="⭐ New">⭐ Новинка</span></div>
+        <div class="atc-img"><img src="/images/emigrant-tour.webp" alt="Тур для эмигрантов" loading="lazy" width="260" height="210"><span class="atc-status hot" data-ru="⭐ Новинка" data-en="⭐ New">⭐ Новинка</span><span class="duration-badge">4 часа</span></div>
         <div class="atc-body">
           <div class="atc-cat" data-ru="Для своих" data-en="Local picks">Для своих</div>
           <div class="atc-name" data-ru="Тур для эмигрантов" data-en="Expat Tour">Тур для эмигрантов</div>
           <p class="atc-desc" data-ru="Тайные бары, местные рынки, районы где живут грузины. Для тех, кто в Тбилиси надолго." data-en="Hidden bars, local markets, real Georgian neighborhoods. For those staying in Tbilisi long-term.">Тайные бары, местные рынки, районы где живут грузины. Для тех, кто в Тбилиси надолго.</p>
           <div class="atc-foot"><div class="atc-price"><span data-ru="от" data-en="from">от</span> <span class="price-main" data-gel="₾83" data-usd="$31">₾83</span> <small class="price-sub" data-ru="/чел" data-en="/pp">/чел</small></div><a href="/tour/emigrant/" class="atc-btn" data-ru="Подробнее" data-en="Details">Подробнее</a></div>
+          <a href="/tour/emigrant/" class="card-book-btn" data-ru="Забронировать" data-en="Book Now">Забронировать</a>
         </div>
       </div>
 
       <div class="atc" data-cat="выезды">
-        <div class="atc-img"><img src="/images/mtskheta-tour.webp" alt="Тур в Мцхету из Тбилиси" loading="lazy" width="260" height="210"><span class="atc-status hot" data-ru="⭐ Новинка" data-en="⭐ New">⭐ Новинка</span></div>
+        <div class="atc-img"><img src="/images/mtskheta-tour.webp" alt="Тур в Мцхету из Тбилиси" loading="lazy" width="260" height="210"><span class="atc-status hot" data-ru="⭐ Новинка" data-en="⭐ New">⭐ Новинка</span><span class="duration-badge">6 часов</span></div>
         <div class="atc-body">
           <div class="atc-cat" data-ru="Выезд · 4–5 ч" data-en="Day trip · 4–5 h">Выезд · 4–5 ч</div>
           <div class="atc-name" data-ru="Мцхета — древняя столица Грузии" data-en="Mtskheta — Ancient Capital of Georgia">Мцхета — древняя столица Грузии</div>
           <p class="atc-desc" data-ru="Монастырь Джвари, собор Светицховели, старый город. ЮНЕСКО в 40 минутах от Тбилиси." data-en="Jvari Monastery, Svetitskhoveli Cathedral, old town. UNESCO World Heritage 40 min from Tbilisi.">Монастырь Джвари, собор Светицховели, старый город. ЮНЕСКО в 40 минутах от Тбилиси.</p>
           <div class="atc-foot"><div class="atc-price"><span data-ru="от" data-en="from">от</span> <span class="price-main" data-gel="₾40" data-usd="$15">₾40</span> <small class="price-sub" data-ru="/чел" data-en="/pp">/чел</small></div><a href="/tour/mtskheta/" class="atc-btn" data-ru="Подробнее" data-en="Details">Подробнее</a></div>
+          <a href="/tour/mtskheta/" class="card-book-btn" data-ru="Забронировать" data-en="Book Now">Забронировать</a>
         </div>
       </div>
 
       <div class="atc" data-cat="свои">
-        <div class="atc-img"><img src="/images/digital-nomad-tour.webp" alt="Digital Nomad Tour Tbilisi" loading="lazy" width="260" height="210"><span class="atc-status hot" data-ru="⭐ Новинка" data-en="⭐ New">⭐ Новинка</span></div>
+        <div class="atc-img"><img src="/images/digital-nomad-tour.webp" alt="Digital Nomad Tour Tbilisi" loading="lazy" width="260" height="210"><span class="atc-status hot" data-ru="⭐ Новинка" data-en="⭐ New">⭐ Новинка</span><span class="duration-badge">4 часа</span></div>
         <div class="atc-body">
           <div class="atc-cat">Digital Nomad</div>
           <div class="atc-name" data-ru="Digital Nomad Welcome Tour" data-en="Digital Nomad Welcome Tour">Digital Nomad Welcome Tour</div>
           <p class="atc-desc" data-ru="3 часа на английском: коворкинги, лучшие кафе, районы для удалёнщиков. Идеально для первой недели." data-en="3 hours in English: coworking spaces, best WiFi cafes, nomad-friendly neighborhoods. Perfect for your first week.">3 часа на английском: коворкинги, лучшие кафе, районы для удалёнщиков. Идеально для первой недели.</p>
           <div class="atc-foot"><div class="atc-price"><span data-ru="от" data-en="from">от</span> <span class="price-main" data-gel="₾83" data-usd="$31">₾83</span> <small class="price-sub" data-ru="/чел" data-en="/pp">/чел</small></div><a href="/tour/digital-nomad/" class="atc-btn" data-ru="Подробнее" data-en="Details">Подробнее</a></div>
+          <a href="/tour/digital-nomad/" class="card-book-btn" data-ru="Забронировать" data-en="Book Now">Забронировать</a>
         </div>
       </div>
 
       <div class="atc" data-cat="город">
-        <div class="atc-img"><img src="/images/tbilisi-hidden.webp" alt="Скрытые места Тбилиси — тур с гидом" loading="lazy" width="260" height="210"><span class="atc-status live" data-ru="Хит продаж" data-en="Bestseller">Хит продаж</span></div>
+        <div class="atc-img"><img src="/images/tbilisi-hidden.webp" alt="Скрытые места Тбилиси — тур с гидом" loading="lazy" width="260" height="210"><span class="atc-status live" data-ru="Хит продаж" data-en="Bestseller">Хит продаж</span><span class="duration-badge">3 часа</span><span class="hit-badge">ХИТ</span></div>
         <div class="atc-body">
           <div class="atc-cat" data-ru="По городу · 5–6 ч" data-en="City tour · 5–6 h">По городу · 5–6 ч</div>
           <div class="atc-name" data-ru="Скрытые места Тбилиси" data-en="Hidden Tbilisi">Скрытые места Тбилиси</div>
           <p class="atc-desc" data-ru="Дворы-колодцы, серные бани, армянский квартал. Тбилиси без путеводителей." data-en="Hidden courtyards, sulfur baths, Armenian quarter. Tbilisi beyond the guidebooks.">Дворы-колодцы, серные бани, армянский квартал. Тбилиси без путеводителей.</p>
           <div class="atc-foot"><div class="atc-price"><span data-ru="от" data-en="from">от</span> <span class="price-main" data-gel="₾100" data-usd="$38">₾100</span> <small class="price-sub" data-ru="/чел" data-en="/pp">/чел</small></div><a href="/tour/tbilisi-hidden/" class="atc-btn" data-ru="Подробнее" data-en="Details">Подробнее</a></div>
+          <a href="/tour/tbilisi-hidden/" class="card-book-btn" data-ru="Забронировать" data-en="Book Now">Забронировать</a>
         </div>
       </div>
 
       <div class="atc" data-cat="выезды">
-        <div class="atc-img"><img src="/images/kazbegi-tour.webp" alt="Тур в Казбеги из Тбилиси с частным гидом" loading="lazy" width="260" height="210"><span class="atc-status live" data-ru="Рекомендуем" data-en="Top pick">Рекомендуем</span></div>
+        <div class="atc-img"><img src="/images/kazbegi-tour.webp" alt="Тур в Казбеги из Тбилиси с частным гидом" loading="lazy" width="260" height="210"><span class="atc-status live" data-ru="Рекомендуем" data-en="Top pick">Рекомендуем</span><span class="duration-badge">12 часов</span><span class="hit-badge">ХИТ</span></div>
         <div class="atc-body">
           <div class="atc-cat" data-ru="Выезд · 12–14 ч" data-en="Day trip · 12–14 h">Выезд · 12–14 ч</div>
           <div class="atc-name" data-ru="Казбеги за 1 день" data-en="Kazbegi in 1 day">Казбеги за 1 день</div>
           <p class="atc-desc" data-ru="Военно-Грузинская дорога, Гергетская Троица, Казбек 5047м." data-en="Georgian Military Highway, Gergeti Trinity Church, Mt. Kazbek 5047m.">Военно-Грузинская дорога, Гергетская Троица, Казбек 5047м.</p>
           <div class="atc-foot"><div class="atc-price"><span data-ru="от" data-en="from">от</span> <span class="price-main" data-gel="₾128" data-usd="$49">₾128</span> <small class="price-sub" data-ru="/чел" data-en="/pp">/чел</small></div><a href="/tour/kazbegi/" class="atc-btn" data-ru="Подробнее" data-en="Details">Подробнее</a></div>
+          <a href="/tour/kazbegi/" class="card-book-btn" data-ru="Забронировать" data-en="Book Now">Забронировать</a>
         </div>
       </div>
 
       <div class="atc" data-cat="выезды">
-        <div class="atc-img"><img src="/images/kakheti-tour.webp" alt="Тур в Кахетию с частным гидом из Тбилиси" loading="lazy" width="260" height="210"><span class="atc-status live" data-ru="Новинка" data-en="New">Новинка</span></div>
+        <div class="atc-img"><img src="/images/kakheti-tour.webp" alt="Тур в Кахетию с частным гидом из Тбилиси" loading="lazy" width="260" height="210"><span class="atc-status live" data-ru="Новинка" data-en="New">Новинка</span><span class="duration-badge">10 часов</span></div>
         <div class="atc-body">
           <div class="atc-cat" data-ru="Выезд · 10–12 ч" data-en="Day trip · 10–12 h">Выезд · 10–12 ч</div>
           <div class="atc-name" data-ru="Сигнаги и Кахетия" data-en="Signagi & Kakheti">Сигнаги и Кахетия</div>
           <p class="atc-desc" data-ru="Город любви, монастырь Бодбе, квеври-вино, обед у хозяйки." data-en="City of love, Bodbe Monastery, qvevri wine, lunch at a local family.">Город любви, монастырь Бодбе, квеври-вино, обед у хозяйки.</p>
           <div class="atc-foot"><div class="atc-price"><span data-ru="от" data-en="from">от</span> <span class="price-main" data-gel="₾128" data-usd="$49">₾128</span> <small class="price-sub" data-ru="/чел" data-en="/pp">/чел</small></div><a href="/tour/kakheti/" class="atc-btn" data-ru="Подробнее" data-en="Details">Подробнее</a></div>
+          <a href="/tour/kakheti/" class="card-book-btn" data-ru="Забронировать" data-en="Book Now">Забронировать</a>
         </div>
       </div>
 
       <div class="atc" data-cat="город">
-        <div class="atc-img"><img src="/images/night-tbilisi-tour.webp" alt="Ночной Тбилиси" loading="lazy" width="260" height="210"><span class="atc-status live" data-ru="Доступно" data-en="Available">Доступно</span></div>
+        <div class="atc-img"><img src="/images/night-tbilisi-tour.webp" alt="Ночной Тбилиси" loading="lazy" width="260" height="210"><span class="atc-status live" data-ru="Доступно" data-en="Available">Доступно</span><span class="duration-badge">2 часа</span></div>
         <div class="atc-body">
           <div class="atc-cat" data-ru="Ноктуризм · 2.5 ч" data-en="Night tour · 2.5 h">Ноктуризм · 2.5 ч</div>
           <div class="atc-name" data-ru="Ночной Тбилиси" data-en="Night Tbilisi">Ночной Тбилиси</div>
           <p class="atc-desc" data-ru="Серные бани в темноте, Мост Мира, рестораны во дворах. Старт в 20:00." data-en="Sulfur baths at night, Bridge of Peace, courtyard restaurants. Starts at 20:00.">Серные бани в темноте, Мост Мира, рестораны во дворах. Старт в 20:00.</p>
           <div class="atc-foot"><div class="atc-price"><span data-ru="от" data-en="from">от</span> <span class="price-main" data-gel="₾71" data-usd="$27">₾71</span> <small class="price-sub" data-ru="/чел" data-en="/pp">/чел</small></div><a href="/tour/night-tbilisi/" class="atc-btn" data-ru="Подробнее →" data-en="Details →">Подробнее →</a></div>
+          <a href="/tour/night-tbilisi/" class="card-book-btn" data-ru="Забронировать" data-en="Book Now">Забронировать</a>
         </div>
       </div>
 
       <div class="atc" data-cat="премиум">
-        <div class="atc-img"><img src="/images/dinner-tour.webp" alt="Тур и ужин у местных" loading="lazy" width="260" height="210"><span class="atc-status hot" data-ru="Хит" data-en="Hit">Хит</span></div>
+        <div class="atc-img"><img src="/images/dinner-tour.webp" alt="Тур и ужин у местных" loading="lazy" width="260" height="210"><span class="atc-status hot" data-ru="Хит" data-en="Hit">Хит</span><span class="duration-badge">4 часа</span></div>
         <div class="atc-body">
           <div class="atc-cat" data-ru="Премиум" data-en="Premium">Премиум</div>
           <div class="atc-name" data-ru="Тур + ужин у местных" data-en="Tour + dinner with locals">Тур + ужин у местных</div>
           <p class="atc-desc" data-ru="После маршрута — домашний ужин у грузинской семьи: хинкали, вино, живое общение." data-en="After the tour — home dinner with a Georgian family: khinkali, wine, real conversation.">После маршрута — домашний ужин у грузинской семьи: хинкали, вино, живое общение.</p>
           <div class="atc-foot"><div class="atc-price"><span data-ru="от" data-en="from">от</span> <span class="price-main" data-gel="₾185" data-usd="$70">₾185</span> <small class="price-sub" data-ru="/чел" data-en="/pp">/чел</small></div><a href="/tour/dinner/" class="atc-btn" data-ru="Подробнее →" data-en="Details →">Подробнее →</a></div>
+          <a href="/tour/dinner/" class="card-book-btn" data-ru="Забронировать" data-en="Book Now">Забронировать</a>
         </div>
       </div>
 
       <div class="atc" data-cat="город">
-        <div class="atc-img"><img src="/images/soviet-tour.webp" alt="Советский Тбилиси" loading="lazy" width="260" height="210"><span class="atc-status live" data-ru="Доступно" data-en="Available">Доступно</span></div>
+        <div class="atc-img"><img src="/images/soviet-tour.webp" alt="Советский Тбилиси" loading="lazy" width="260" height="210"><span class="atc-status live" data-ru="Доступно" data-en="Available">Доступно</span><span class="duration-badge">3 часа</span></div>
         <div class="atc-body">
           <div class="atc-cat" data-ru="Нишевый" data-en="Niche">Нишевый</div>
           <div class="atc-name" data-ru="Советский Тбилиси" data-en="Soviet Tbilisi">Советский Тбилиси</div>
           <p class="atc-desc" data-ru="Конструктивизм, панельные районы, советские мозаики. Для ностальгирующих из СНГ." data-en="Constructivism, Soviet-era blocks, iconic mosaics. For history and architecture lovers.">Конструктивизм, панельные районы, советские мозаики. Для ностальгирующих из СНГ.</p>
           <div class="atc-foot"><div class="atc-price"><span data-ru="от" data-en="from">от</span> <span class="price-main" data-gel="₾86" data-usd="$32">₾86</span> <small class="price-sub" data-ru="/чел" data-en="/pp">/чел</small></div><a href="/tour/soviet/" class="atc-btn" data-ru="Подробнее →" data-en="Details →">Подробнее →</a></div>
+          <a href="/tour/soviet/" class="card-book-btn" data-ru="Забронировать" data-en="Book Now">Забронировать</a>
         </div>
       </div>
 
       <div class="atc" data-cat="премиум">
-        <div class="atc-img"><img src="/images/slow-travel-tour.webp" alt="Slow Travel 3 дня" loading="lazy" width="260" height="210"><span class="atc-status hot" data-ru="Хит" data-en="Hit">Хит</span></div>
+        <div class="atc-img"><img src="/images/slow-travel-tour.webp" alt="Slow Travel 3 дня" loading="lazy" width="260" height="210"><span class="atc-status hot" data-ru="Хит" data-en="Hit">Хит</span><span class="duration-badge">3 дня</span></div>
         <div class="atc-body">
           <div class="atc-cat" data-ru="Премиум · 3 дня" data-en="Premium · 3 days">Премиум · 3 дня</div>
           <div class="atc-name" data-ru="Slow Travel пакет" data-en="Slow Travel package">Slow Travel пакет</div>
           <p class="atc-desc" data-ru="3 дня с Тимуром: каждый день новый маршрут + трансфер из аэропорта." data-en="3 days with Timur: a new route each day + airport transfer included.">3 дня с Тимуром: каждый день новый маршрут + трансфер из аэропорта.</p>
           <div class="atc-foot"><div class="atc-price"><span data-ru="от" data-en="from">от</span> <span class="price-main" data-gel="₾424" data-usd="$161">₾424</span> <small class="price-sub" data-ru="/чел" data-en="/pp">/чел</small></div><a href="/tour/slow-travel/" class="atc-btn" data-ru="Подробнее →" data-en="Details →">Подробнее →</a></div>
+          <a href="/tour/slow-travel/" class="card-book-btn" data-ru="Забронировать" data-en="Book Now">Забронировать</a>
         </div>
       </div>
 
       <div class="atc" data-cat="премиум">
-        <div class="atc-img"><img src="/images/photo-tour.webp" alt="Тур и фотосессия" loading="lazy" width="260" height="210"><span class="atc-status live" data-ru="Доступно" data-en="Available">Доступно</span></div>
+        <div class="atc-img"><img src="/images/photo-tour.webp" alt="Тур и фотосессия" loading="lazy" width="260" height="210"><span class="atc-status live" data-ru="Доступно" data-en="Available">Доступно</span><span class="duration-badge">3 часа</span></div>
         <div class="atc-body">
           <div class="atc-cat" data-ru="Премиум · Фото" data-en="Premium · Photo">Премиум · Фото</div>
           <div class="atc-name" data-ru="Тур + фотосессия" data-en="Tour + photo session">Тур + фотосессия</div>
           <p class="atc-desc" data-ru="Тур + профессиональный фотограф. 30–50 обработанных фото. Популярно у пар." data-en="Tour + professional photographer. 30–50 edited photos. Popular with couples.">Тур + профессиональный фотограф. 30–50 обработанных фото. Популярно у пар.</p>
           <div class="atc-foot"><div class="atc-price"><span data-ru="от" data-en="from">от</span> <span class="price-main" data-gel="₾196" data-usd="$75">₾196</span> <small class="price-sub" data-ru="/чел" data-en="/pp">/чел</small></div><a href="/tour/photo/" class="atc-btn" data-ru="Подробнее →" data-en="Details →">Подробнее →</a></div>
+          <a href="/tour/photo/" class="card-book-btn" data-ru="Забронировать" data-en="Book Now">Забронировать</a>
         </div>
       </div>
 
       <div class="atc" data-cat="город">
-        <div class="atc-img"><img src="/images/old-tbilisi-tour.webp" alt="Старый Тбилиси — тур с гидом" loading="lazy" width="260" height="210"><span class="atc-status live" data-ru="Доступно" data-en="Available">Доступно</span></div>
+        <div class="atc-img"><img src="/images/old-tbilisi-tour.webp" alt="Старый Тбилиси — тур с гидом" loading="lazy" width="260" height="210"><span class="atc-status live" data-ru="Доступно" data-en="Available">Доступно</span><span class="duration-badge">2 часа</span></div>
         <div class="atc-body">
           <div class="atc-cat" data-ru="По городу · 3–4 ч" data-en="City tour · 3–4 h">По городу · 3–4 ч</div>
           <div class="atc-name" data-ru="Старый Тбилиси" data-en="Old Tbilisi">Старый Тбилиси</div>
           <p class="atc-desc" data-ru="Серные бани, Нарикала, Метехи, Старый базар. Классический маршрут для тех, кто в Тбилиси впервые." data-en="Sulfur baths, Narikala, Metekhi, Old Bazaar. Classic route for first-time visitors to Tbilisi.">Серные бани, Нарикала, Метехи, Старый базар. Классический маршрут для тех, кто в Тбилиси впервые.</p>
           <div class="atc-foot"><div class="atc-price"><span data-ru="от" data-en="from">от</span> <span class="price-main" data-gel="₾71" data-usd="$27">₾71</span> <small class="price-sub" data-ru="/чел" data-en="/pp">/чел</small></div><a href="/tour/old-tbilisi/" class="atc-btn" data-ru="Подробнее" data-en="Details">Подробнее</a></div>
+          <a href="/tour/old-tbilisi/" class="card-book-btn" data-ru="Забронировать" data-en="Book Now">Забронировать</a>
         </div>
       </div>
 
