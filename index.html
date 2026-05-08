@@ -894,9 +894,20 @@ var io=new IntersectionObserver(function(entries){
 if(entries[0].isIntersecting){
 io.disconnect();
 g.querySelectorAll('img[data-src]').forEach(function(i){i.src=i.getAttribute('data-src');i.removeAttribute('data-src')});
+g.querySelectorAll('video').forEach(function(v){v.load();v.play().catch(function(){})});
 }
 },{rootMargin:'200px'});
 io.observe(g);
+})();
+// Fallback: запустить видео галереи после любого взаимодействия (iOS)
+(function(){
+function playGalleryVideos(){
+var g=document.getElementById('gallery');
+if(g)g.querySelectorAll('video').forEach(function(v){v.play().catch(function(){})});
+}
+document.addEventListener('touchstart',playGalleryVideos,{once:true,passive:true});
+document.addEventListener('scroll',playGalleryVideos,{once:true,passive:true});
+document.addEventListener('click',playGalleryVideos,{once:true});
 })();
 (function(){
 if(window.innerWidth>768)return;
