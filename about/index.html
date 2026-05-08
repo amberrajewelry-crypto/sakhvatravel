@@ -36,7 +36,8 @@
 <script>
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
 gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',wait_for_update:500})
-if(localStorage.getItem('cookies_v4')==='1'){gtag('consent','update',{analytics_storage:(_ck||_gc)?'granted':'denied',ad_storage:'granted',ad_user_data:'granted',ad_personalization:_ck?'granted':'denied'})}
+var _ck=localStorage.getItem('cookies_v4')==='1',_gc=location.search.indexOf('gclid')>-1;
+if(_ck){gtag('consent','update',{analytics_storage:(_ck||_gc)?'granted':'denied',ad_storage:'granted',ad_user_data:'granted',ad_personalization:_ck?'granted':'denied'})}
 </script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3X83YZHY6S"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-3X83YZHY6S');gtag('config','AW-8133499399');</script>
