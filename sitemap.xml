@@ -1,160 +1,1018 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
   <url>
     <loc>https://sakhva-travel.com/</loc>
-    <lastmod>2026-04-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/og-cover.webp</image:loc>
+      <image:title>Sakhva Travel — частный гид по Грузии</image:title>
+    </image:image>
+    <lastmod>2026-05-06</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/tours/</loc>
+    <lastmod>2026-05-06</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/en/tours/</loc>
+    <lastmod>2026-05-06</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/tours/day-trips/</loc>
+    <lastmod>2026-04-23</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/tours/walking/</loc>
+    <lastmod>2026-04-23</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/tours/wine/</loc>
+    <lastmod>2026-04-23</lastmod>
   </url>
 
   <url>
     <loc>https://sakhva-travel.com/tour/kazbegi/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/kazbegi-tour.webp</image:loc>
+      <image:title>Казбеги за 1 день — Гергетская Троица</image:title>
+    </image:image>
     <lastmod>2026-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://sakhva-travel.com/tour/old-tbilisi/</loc>
-    <lastmod>2026-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://sakhva-travel.com/tour/kutaisi/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/kutaisi-tour.webp</image:loc>
+      <image:title>Кутаиси — пещера Прометея и водопад Кинчха</image:title>
+    </image:image>
+    <lastmod>2026-04-28</lastmod>
   </url>
 
   <url>
     <loc>https://sakhva-travel.com/tour/kakheti/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/kakheti-tour.webp</image:loc>
+      <image:title>Кахетия и Сигнаги — тур из Тбилиси</image:title>
+    </image:image>
     <lastmod>2026-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://sakhva-travel.com/tour/emigrant/</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://sakhva-travel.com/tour/batumi/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/batumi-tour.webp</image:loc>
+      <image:title>Батуми за 1 день из Тбилиси</image:title>
+    </image:image>
+    <lastmod>2026-04-28</lastmod>
   </url>
 
-  <url>
-    <loc>https://sakhva-travel.com/tour/tbilisi-hidden/</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
 
   <url>
     <loc>https://sakhva-travel.com/tour/night-tbilisi/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/night-tbilisi-tour.webp</image:loc>
+      <image:title>Ночной Тбилиси с частным гидом</image:title>
+    </image:image>
     <lastmod>2026-04-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://sakhva-travel.com/tour/dinner/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/dinner-tour.webp</image:loc>
+      <image:title>Тур и ужин у грузинской семьи</image:title>
+    </image:image>
     <lastmod>2026-04-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://sakhva-travel.com/tour/soviet/</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/soviet-tour.webp</image:loc>
+      <image:title>Обзорная экскурсия по Тбилиси</image:title>
+    </image:image>
+    <lastmod>2026-05-01</lastmod>
   </url>
+
 
   <url>
     <loc>https://sakhva-travel.com/tour/slow-travel/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/slow-travel-tour.webp</image:loc>
+      <image:title>Slow Travel — 3 дня в Грузии</image:title>
+    </image:image>
     <lastmod>2026-04-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
 
-  <url>
-    <loc>https://sakhva-travel.com/tour/photo/</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
   <url>
     <loc>https://sakhva-travel.com/tour/digital-nomad/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/digital-nomad-tour.webp</image:loc>
+      <image:title>Digital Nomad Tour Tbilisi</image:title>
+    </image:image>
     <lastmod>2026-04-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
 
   <url>
+    <loc>https://sakhva-travel.com/tour/mtskheta/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/mtskheta-tour.webp</image:loc>
+      <image:title>Тур в Мцхету — монастырь Джвари</image:title>
+    </image:image>
+    <lastmod>2026-04-10</lastmod>
+  </url>
+
+
+  <url>
     <loc>https://sakhva-travel.com/blog/</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-04-10</lastmod>
   </url>
 
   <url>
     <loc>https://sakhva-travel.com/blog/kazbegi-iz-tbilisi-2026/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/kazbegi-iz-tbilisi-2026.webp</image:loc>
+      <image:title>Kazbegi Iz Tbilisi 2026</image:title>
+    </image:image>
     <lastmod>2026-04-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://sakhva-travel.com/blog/kogda-ekhat-v-kazbegi/</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/kogda-ekhat-v-kazbegi.webp</image:loc>
+      <image:title>Kogda Ekhat V Kazbegi</image:title>
+    </image:image>
+    <lastmod>2026-05-05</lastmod>
   </url>
 
   <url>
     <loc>https://sakhva-travel.com/blog/kakheti-za-1-den/</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/kakheti-za-1-den.webp</image:loc>
+      <image:title>Kakheti Za 1 Den</image:title>
+    </image:image>
+    <lastmod>2026-05-05</lastmod>
   </url>
 
   <url>
     <loc>https://sakhva-travel.com/blog/sernye-bani-tbilisi/</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/sernye-bani-tbilisi.webp</image:loc>
+      <image:title>Sernye Bani Tbilisi</image:title>
+    </image:image>
+    <lastmod>2026-05-05</lastmod>
   </url>
 
   <url>
     <loc>https://sakhva-travel.com/blog/skrytye-mesta-tbilisi/</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/skrytye-mesta-tbilisi.webp</image:loc>
+      <image:title>Skrytye Mesta Tbilisi</image:title>
+    </image:image>
+    <lastmod>2026-05-05</lastmod>
   </url>
 
   <url>
     <loc>https://sakhva-travel.com/blog/tbilisi-dlya-relokantov/</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/tbilisi-dlya-relokantov.webp</image:loc>
+      <image:title>Tbilisi Dlya Relokantov</image:title>
+    </image:image>
+    <lastmod>2026-05-05</lastmod>
   </url>
 
   <url>
     <loc>https://sakhva-travel.com/blog/viza-v-gruziyu-2026/</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/viza-v-gruziyu-2026.webp</image:loc>
+      <image:title>Viza V Gruziyu 2026</image:title>
+    </image:image>
+    <lastmod>2026-05-05</lastmod>
   </url>
 
   <url>
     <loc>https://sakhva-travel.com/blog/digital-nomad-tbilisi/</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/digital-nomad-tbilisi.webp</image:loc>
+      <image:title>Digital Nomad Tbilisi</image:title>
+    </image:image>
+    <lastmod>2026-05-05</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/aeroport-tbilisi/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/aeroport-tbilisi.webp</image:loc>
+      <image:title>Aeroport Tbilisi</image:title>
+    </image:image>
+    <lastmod>2026-04-05</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/chastny-gid-tbilisi-cena/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/chastny-gid-tbilisi-cena.webp</image:loc>
+      <image:title>Chastny Gid Tbilisi Cena</image:title>
+    </image:image>
+    <lastmod>2026-04-05</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/borzhomi/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/borzhomi.webp</image:loc>
+      <image:title>Borzhomi</image:title>
+    </image:image>
+    <lastmod>2026-05-05</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/uplistsikhe/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/uplistsikhe.webp</image:loc>
+      <image:title>Uplistsikhe</image:title>
+    </image:image>
+    <lastmod>2026-05-05</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/vardzia/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/vardzia.webp</image:loc>
+      <image:title>Vardzia</image:title>
+    </image:image>
+    <lastmod>2026-05-05</lastmod>
+  </url>
+
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/batumi-iz-tbilisi/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/batumi-iz-tbilisi.webp</image:loc>
+      <image:title>Batumi Iz Tbilisi</image:title>
+    </image:image>
+    <lastmod>2026-04-10</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/byudzhet-gruziya/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/byudzhet-gruziya.webp</image:loc>
+      <image:title>Byudzhet Gruziya</image:title>
+    </image:image>
+    <lastmod>2026-04-10</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/chto-privezti-iz-gruzii/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/chto-privezti-iz-gruzii.webp</image:loc>
+      <image:title>Chto Privezti Iz Gruzii</image:title>
+    </image:image>
+    <lastmod>2026-04-10</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/david-gareji/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/david-gareji.webp</image:loc>
+      <image:title>David Gareji</image:title>
+    </image:image>
+    <lastmod>2026-04-10</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/degustatsiya-vina-gruziya/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/degustatsiya-vina-gruziya.webp</image:loc>
+      <image:title>Degustatsiya Vina Gruziya</image:title>
+    </image:image>
+    <lastmod>2026-05-05</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/gruzinskoe-vino-gid/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/gruzinskoe-vino-gid.webp</image:loc>
+      <image:title>Gruzinskoe Vino Gid</image:title>
+    </image:image>
+    <lastmod>2026-05-05</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/gruziya-7-dney/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/gruziya-7-dney.webp</image:loc>
+      <image:title>Gruziya 7 Dney</image:title>
+    </image:image>
+    <lastmod>2026-05-05</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/gruziya-kogda-ekhat/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/gruziya-kogda-ekhat.webp</image:loc>
+      <image:title>Gruziya Kogda Ekhat</image:title>
+    </image:image>
+    <lastmod>2026-05-05</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/gruziya-s-detmi/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/gruziya-s-detmi.webp</image:loc>
+      <image:title>Gruziya S Detmi</image:title>
+    </image:image>
+    <lastmod>2026-04-10</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/gruziya-samostoyatelno-ili-s-gidom/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/gruziya-samostoyatelno-ili-s-gidom.webp</image:loc>
+      <image:title>Gruziya Samostoyatelno Ili S Gidom</image:title>
+    </image:image>
+    <lastmod>2026-04-10</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/gruziya-zimoy/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/gruziya-zimoy.webp</image:loc>
+      <image:title>Gruziya Zimoy</image:title>
+    </image:image>
+    <lastmod>2026-04-10</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/kakheti-osenyu/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/kakheti-osenyu.webp</image:loc>
+      <image:title>Kakheti Osenyu</image:title>
+    </image:image>
+    <lastmod>2026-04-10</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/kazbegi-chto-posmotret/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/kazbegi-chto-posmotret.webp</image:loc>
+      <image:title>Kazbegi Chto Posmotret</image:title>
+    </image:image>
+    <lastmod>2026-05-05</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/kazbegi-ili-kakheti/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/kazbegi-ili-kakheti.webp</image:loc>
+      <image:title>Kazbegi Ili Kakheti</image:title>
+    </image:image>
+    <lastmod>2026-05-05</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/kazbegi-samostoyatelno-ili-s-gidom/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/kazbegi-samostoyatelno-ili-s-gidom.webp</image:loc>
+      <image:title>Kazbegi Samostoyatelno Ili S Gidom</image:title>
+    </image:image>
+    <lastmod>2026-05-05</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/kazbegi-zimoy/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/kazbegi-zimoy.webp</image:loc>
+      <image:title>Kazbegi Zimoy</image:title>
+    </image:image>
+    <lastmod>2026-04-10</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/mtskheta-iz-tbilisi/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/mtskheta-iz-tbilisi.webp</image:loc>
+      <image:title>Mtskheta Iz Tbilisi</image:title>
+    </image:image>
+    <lastmod>2026-04-10</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/nochnoy-tbilisi/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/nochnoy-tbilisi.webp</image:loc>
+      <image:title>Nochnoy Tbilisi</image:title>
+    </image:image>
+    <lastmod>2026-04-10</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/restorany-tbilisi/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/restorany-tbilisi.webp</image:loc>
+      <image:title>Restorany Tbilisi</image:title>
+    </image:image>
+    <lastmod>2026-04-10</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/sovetskiy-tbilisi/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/sovetskiy-tbilisi.webp</image:loc>
+      <image:title>Sovetskiy Tbilisi</image:title>
+    </image:image>
+    <lastmod>2026-04-10</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/svanetiya/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/svanetiya.webp</image:loc>
+      <image:title>Svanetiya</image:title>
+    </image:image>
+    <lastmod>2026-04-10</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/tbilisi-besplatno/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/tbilisi-besplatno.webp</image:loc>
+      <image:title>Tbilisi Besplatno</image:title>
+    </image:image>
+    <lastmod>2026-04-10</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/tbilisi-fotolokatsii/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/tbilisi-fotolokatsii.webp</image:loc>
+      <image:title>Tbilisi Fotolokatsii</image:title>
+    </image:image>
+    <lastmod>2026-04-10</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/tbilisi-v-dozhd/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/tbilisi-v-dozhd.webp</image:loc>
+      <image:title>Tbilisi V Dozhd</image:title>
+    </image:image>
+    <lastmod>2026-04-10</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/tbilisi-za-1-den/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/tbilisi-za-1-den.webp</image:loc>
+      <image:title>Tbilisi Za 1 Den</image:title>
+    </image:image>
+    <lastmod>2026-05-05</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/tbilisi-za-3-dnya/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/tbilisi-za-3-dnya.webp</image:loc>
+      <image:title>Tbilisi Za 3 Dnya</image:title>
+    </image:image>
+    <lastmod>2026-05-05</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/ushchelye-truso/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/ushchelye-truso.webp</image:loc>
+      <image:title>Ushchelye Truso</image:title>
+    </image:image>
+    <lastmod>2026-04-10</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/voenno-gruzinskaya-doroga/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/voenno-gruzinskaya-doroga.webp</image:loc>
+      <image:title>Voenno Gruzinskaya Doroga</image:title>
+    </image:image>
+    <lastmod>2026-05-05</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/en/</loc>
+    <lastmod>2026-04-22</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/en/tour/kazbegi/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/kazbegi-tour.webp</image:loc>
+      <image:title>Казбеги за 1 день — Гергетская Троица (EN)</image:title>
+    </image:image>
+    <lastmod>2026-04-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/en/tour/tbilisi/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/old-tbilisi-tour.webp</image:loc>
+      <image:title>Walking tour of Old Tbilisi (EN)</image:title>
+    </image:image>
+    <lastmod>2026-04-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/en/tour/kakheti/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/kakheti-tour.webp</image:loc>
+      <image:title>Кахетия и Сигнаги — тур из Тбилиси (EN)</image:title>
+    </image:image>
+    <lastmod>2026-04-01</lastmod>
+  </url>
+
+
+  <url>
+    <loc>https://sakhva-travel.com/en/tour/night-tbilisi/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/night-tbilisi-tour.webp</image:loc>
+      <image:title>Ночной Тбилиси с частным гидом (EN)</image:title>
+    </image:image>
+    <lastmod>2026-04-21</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/en/tour/dinner/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/dinner-tour.webp</image:loc>
+      <image:title>Тур и ужин у грузинской семьи (EN)</image:title>
+    </image:image>
+    <lastmod>2026-04-21</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/en/tour/kutaisi/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/kutaisi-tour.webp</image:loc>
+      <image:title>Кутаиси — пещера Прометея и водопад Кинчха (EN)</image:title>
+    </image:image>
+    <lastmod>2026-04-28</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/en/tour/batumi/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/batumi-tour.webp</image:loc>
+      <image:title>Батуми за 1 день из Тбилиси (EN)</image:title>
+    </image:image>
+    <lastmod>2026-04-28</lastmod>
+  </url>
+
+
+  <url>
+    <loc>https://sakhva-travel.com/en/tour/mtskheta/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/mtskheta-tour.webp</image:loc>
+      <image:title>Тур в Мцхету — монастырь Джвари (EN)</image:title>
+    </image:image>
+    <lastmod>2026-04-21</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/en/tour/soviet/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/soviet-tour.webp</image:loc>
+      <image:title>Обзорная экскурсия по Тбилиси (EN)</image:title>
+    </image:image>
+    <lastmod>2026-04-21</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/en/tour/digital-nomad/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/digital-nomad-tour.webp</image:loc>
+      <image:title>Digital Nomad Tour Tbilisi (EN)</image:title>
+    </image:image>
+    <lastmod>2026-04-21</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/en/tour/slow-travel/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/slow-travel-tour.webp</image:loc>
+      <image:title>Slow Travel — 3 дня в Грузии (EN)</image:title>
+    </image:image>
+    <lastmod>2026-04-21</lastmod>
   </url>
 
 
   <url>
     <loc>https://sakhva-travel.com/about/</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <lastmod>2026-05-06</lastmod>
   </url>
 
+  <url>
+    <loc>https://sakhva-travel.com/en/about/</loc>
+    <lastmod>2026-05-06</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/contacts/</loc>
+    <lastmod>2026-05-06</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/privacy/</loc>
+    <lastmod>2026-05-06</lastmod>
+  </url>
+
+
+  <url>
+    <loc>https://sakhva-travel.com/chastniy-gid-tbilisi/</loc>
+    <lastmod>2026-04-22</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/</loc>
+    <lastmod>2026-04-22</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/kazbegi-day-trip-from-tbilisi/</loc>
+    <lastmod>2026-04-22</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/kakheti-wine-tour/</loc>
+    <lastmod>2026-04-22</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/georgia-visa-2026/</loc>
+    <lastmod>2026-04-22</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/what-to-buy-in-georgia/</loc>
+    <lastmod>2026-04-22</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/hidden-gems-tbilisi/</loc>
+    <lastmod>2026-04-22</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/tbilisi-one-day-itinerary/</loc>
+    <lastmod>2026-04-22</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/georgia-guide-or-solo/</loc>
+    <lastmod>2026-04-22</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/best-restaurants-tbilisi/</loc>
+    <lastmod>2026-04-22</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/sulfur-baths-tbilisi/</loc>
+    <lastmod>2026-04-22</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/tbilisi-3-day-itinerary/</loc>
+    <lastmod>2026-04-22</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/mtskheta-day-trip/</loc>
+    <lastmod>2026-04-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/batumi-from-tbilisi/</loc>
+    <lastmod>2026-04-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/georgia-7-day-itinerary/</loc>
+    <lastmod>2026-04-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/david-gareja-monastery/</loc>
+    <lastmod>2026-04-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/borjomi-from-tbilisi/</loc>
+    <lastmod>2026-04-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/svaneti-guide/</loc>
+    <lastmod>2026-04-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/georgian-food-guide/</loc>
+    <lastmod>2026-04-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/tbilisi-nightlife/</loc>
+    <lastmod>2026-04-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/digital-nomad-tbilisi/</loc>
+    <lastmod>2026-04-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/georgia-with-kids/</loc>
+    <lastmod>2026-04-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/en/contacts/</loc>
+    <lastmod>2026-04-27</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/en/tours/day-trips/</loc>
+    <lastmod>2026-04-23</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/en/tours/walking/</loc>
+    <lastmod>2026-04-23</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/en/tours/wine/</loc>
+    <lastmod>2026-04-23</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/skolko-stoit-gid-tbilisi/</loc>
+    <lastmod>2026-04-23</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/russkoyazychny-gid-tbilisi/</loc>
+    <lastmod>2026-04-23</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/chastny-gid-ili-gruppa-tbilisi/</loc>
+    <lastmod>2026-04-23</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/uslugi-chastnogo-gida-tbilisi/</loc>
+    <lastmod>2026-04-23</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/gid-tbilisi-vs-gid-gruziya/</loc>
+    <lastmod>2026-04-23</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/transfer-tbilisi-kazbegi/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/transfer-tbilisi-kazbegi.webp</image:loc>
+      <image:title>Transfer Tbilisi Kazbegi</image:title>
+    </image:image>
+    <lastmod>2026-05-05</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/blog/gruzinskaya-kukhnya-chto-poprobovat/</loc>
+    <lastmod>2026-05-05</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/blog/tbilisi-s-detmi-chto-posmotret/</loc>
+    <lastmod>2026-05-05</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/tbilisi-airport-guide/</loc>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/georgia-budget-travel/</loc>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/private-vs-group-tour-tbilisi/</loc>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/private-guide-cost-tbilisi/</loc>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/tbilisi-guide-vs-georgia-guide/</loc>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/georgian-wine-guide/</loc>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/best-time-visit-georgia/</loc>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/georgia-in-winter/</loc>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/kakheti-in-autumn/</loc>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/kakheti-one-day-trip/</loc>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/things-to-see-kazbegi/</loc>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/kazbegi-vs-kakheti/</loc>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/kazbegi-solo-vs-guided/</loc>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/kazbegi-in-winter/</loc>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/best-time-visit-kazbegi/</loc>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/soviet-tbilisi-tour/</loc>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/free-things-tbilisi/</loc>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/tbilisi-for-expats/</loc>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/tbilisi-photo-spots/</loc>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/tbilisi-with-kids-guide/</loc>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/tbilisi-rainy-day/</loc>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/transfer-tbilisi-to-kazbegi/</loc>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/uplistsikhe-cave-city/</loc>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/truso-valley-hike/</loc>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/vardzia-cave-monastery/</loc>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/georgian-military-highway/</loc>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/russian-speaking-guide-tbilisi/</loc>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/guide-cost-tbilisi/</loc>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/private-guide-services-tbilisi/</loc>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/blog/rayony-tbilisi-gde-ostanovitsya/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/rayony-tbilisi-gde-ostanovitsya.webp</image:loc>
+      <image:title>Rayony Tbilisi Gde Ostanovitsya</image:title>
+    </image:image>
+    <lastmod>2026-05-03</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/blog/oshibki-turistov-tbilisi/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/oshibki-turistov-tbilisi.webp</image:loc>
+      <image:title>Oshibki Turistov Tbilisi</image:title>
+    </image:image>
+    <lastmod>2026-05-03</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/blog/tseny-v-tbilisi-2026/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/tseny-v-tbilisi-2026.webp</image:loc>
+      <image:title>Tseny V Tbilisi 2026</image:title>
+    </image:image>
+    <lastmod>2026-05-03</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/tbilisi-neighborhoods-where-to-stay/</loc>
+    <lastmod>2026-05-03</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/tourist-mistakes-tbilisi/</loc>
+    <lastmod>2026-05-03</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/tbilisi-prices-2026/</loc>
+    <lastmod>2026-05-03</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/blog/tbilisi-vecherom/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/tbilisi-vecherom.webp</image:loc>
+      <image:title>Tbilisi Vecherom</image:title>
+    </image:image>
+    <lastmod>2026-05-04</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/blog/gruziya-perviy-raz/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/gruziya-perviy-raz.webp</image:loc>
+      <image:title>Gruziya Perviy Raz</image:title>
+    </image:image>
+    <lastmod>2026-05-04</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/blog/chto-posmotret-v-tbilisi/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/chto-posmotret-v-tbilisi.webp</image:loc>
+      <image:title>Chto Posmotret V Tbilisi</image:title>
+    </image:image>
+    <lastmod>2026-05-05</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/ekskursii-v-tbilisi/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/ekskursii-v-tbilisi.webp</image:loc>
+      <image:title>Ekskursii V Tbilisi</image:title>
+    </image:image>
+    <lastmod>2026-05-05</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/skolko-stoit-otdyh-v-gruzii/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/skolko-stoit-otdyh-v-gruzii.webp</image:loc>
+      <image:title>Skolko Stoit Otdyh V Gruzii</image:title>
+    </image:image>
+    <lastmod>2026-05-05</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/what-to-see-in-tbilisi/</loc>
+    <lastmod>2026-05-05</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/tbilisi-tours-guide/</loc>
+    <lastmod>2026-05-05</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/en/blog/georgia-trip-cost/</loc>
+    <lastmod>2026-05-05</lastmod>
+  </url>
 
 </urlset>
