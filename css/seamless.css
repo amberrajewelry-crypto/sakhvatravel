@@ -1164,9 +1164,17 @@ EXTRA ANIMATIONS — CSS-only enhancements
 /* ── TOUR CARD PRICE — animate on reveal ── */
 .tc-price {
 transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+font-size:46px !important;
+font-weight:800 !important;
+color:#F59E0B !important;
+text-align:center !important;
+width:100% !important;
 }
 .tc:hover .tc-price {
 transform: scale(1.05) !important;
+}
+.price-sub {
+font-size:16px !important;
 }
 /* ── WHY-US NUMBERS — count-up style pulse on reveal ── */
 .wc-num {
