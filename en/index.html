@@ -598,6 +598,80 @@ document.querySelectorAll('.tours-track .tc').forEach(function(c){io.observe(c)}
         <div class="wc reveal" style="transition-delay:.14s"><div class="wc-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><div class="wc-num">03</div><div class="wc-title">Max 7 people</div><p class="wc-text">Four people in Kazbegi costs ₾32 each — cheaper than a bus. But it's just your group, stopping wherever you want, leaving when you want.</p></div>
         <div class="wc reveal" style="transition-delay:.21s"><div class="wc-icon"><svg viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></div><div class="wc-num">04</div><div class="wc-title">No hidden fees</div><p class="wc-text">Transfer, guide, entry tickets — all in. No 'pay extra on site'. Pay on tour day by cash or card.</p></div>
       </div>
+<style>
+.cmp-wrap{overflow-x:auto;margin-top:40px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.cmp-wrap::-webkit-scrollbar{display:none}
+.cmp-table{width:100%;border-collapse:separate;border-spacing:0;min-width:560px}
+.cmp-table thead th{padding:14px 16px 12px;font-family:'Lora',serif;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;text-align:center}
+@media(max-width:640px){.cmp-table{min-width:0;width:100%}.cmp-table thead th{padding:8px 4px 6px;font-size:9px;letter-spacing:.5px}.th-empty{width:32px!important}.col-icon{font-size:14px!important;margin-bottom:2px!important}.col-name{font-size:9px!important}.col-timur-badge{font-size:7px!important;padding:1px 5px!important;margin-bottom:2px!important}.col-time{width:32px!important;padding:6px 2px!important}.time-dot{font-size:9px!important;padding:2px 4px!important}.cmp-table tbody td{padding:8px 6px!important;font-size:11px!important;line-height:1.4!important}}
+.th-empty{width:52px;background:transparent;border:none}
+.col-bus{color:#9CA3AF;background:#F9FAFB;border:1px solid #E5E7EB;border-right:none;border-radius:10px 0 0 0}
+.col-self{color:#9CA3AF;background:#F9FAFB;border-top:1px solid #E5E7EB;border-bottom:1px solid #E5E7EB}
+.col-timur{color:#fff;background:#1A3D2E;border-radius:0 10px 0 0;padding-top:8px!important}
+.col-icon{font-size:20px;display:block;margin-bottom:4px}
+.col-name{display:block;font-size:12px}
+.col-timur-badge{display:inline-block;background:#F59E0B;color:#1A3D2E;font-size:9px;font-weight:700;letter-spacing:1px;padding:2px 8px;border-radius:20px;margin-bottom:4px;text-transform:uppercase}
+.col-time{width:52px;padding:10px 4px;text-align:center;vertical-align:middle}
+.time-dot{display:inline-block;background:#E5E7EB;color:#9CA3AF;font-size:12px;font-weight:700;padding:4px 8px;border-radius:12px;white-space:nowrap}
+.cmp-table tbody td{padding:14px 16px;vertical-align:top;font-size:15px;line-height:1.6;border-bottom:1px solid #F3F4F6;font-family:'Lora',serif}
+.cmp-table tbody .col-bus{background:#fff;color:#374151;border-left:1px solid #E5E7EB}
+.cmp-table tbody .col-self{background:#fff;color:#374151}
+.cmp-table tbody .col-timur{background:#F0F7F4;color:#1A3D2E;font-weight:600;border-left:2px solid #1A3D2E;border-right:2px solid #1A3D2E}
+.cmp-table tbody tr:last-child .col-bus{border-radius:0 0 0 10px;border-bottom:1px solid #E5E7EB}
+.cmp-table tbody tr:last-child .col-self{border-bottom:1px solid #E5E7EB}
+.cmp-table tbody tr:last-child .col-timur{border-radius:0 0 10px 0;border-bottom:2px solid #1A3D2E;background:#1A3D2E;color:#fff}
+.cmp-table tbody tr:last-child .col-time .time-dot{background:#1A3D2E;color:#fff}
+</style>
+<div class="cmp-wrap reveal">
+<table class="cmp-table">
+  <thead>
+    <tr>
+      <th class="th-empty"></th>
+      <th class="col-bus"><span class="col-icon">🚌</span><span class="col-name">Bus Tour</span></th>
+      <th class="col-self"><span class="col-icon">🗺️</span><span class="col-name">Self-guided</span></th>
+      <th class="col-timur"><div class="col-timur-badge">Sakhva</div><span class="col-icon">🤝</span><span class="col-name">With Timur</span></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="col-time"><span class="time-dot">07:00</span></td>
+      <td class="col-bus">Waiting at the fountain for 40 strangers to gather</td>
+      <td class="col-self">Taxi ₾180, driver doesn't speak English</td>
+      <td class="col-timur">Timur at your hotel. Coffee in the car and the day's route</td>
+    </tr>
+    <tr>
+      <td class="col-time"><span class="time-dot">10:00</span></td>
+      <td class="col-bus">Guide speaks Georgian, then translates</td>
+      <td class="col-self">Driving on the highway. Nobody told you there's a scenic road</td>
+      <td class="col-timur">"Let me show you a spot tourists never reach"</td>
+    </tr>
+    <tr>
+      <td class="col-time"><span class="time-dot">12:00</span></td>
+      <td class="col-bus">"We leave in 10 minutes." No time to eat</td>
+      <td class="col-self">Roadside cafe — the only one you could find</td>
+      <td class="col-timur">Lunch at Manana's. You make khinkali yourself, wine from qvevri</td>
+    </tr>
+    <tr>
+      <td class="col-time"><span class="time-dot">14:00</span></td>
+      <td class="col-bus">Queue at Gergeti: 60 people ahead of you</td>
+      <td class="col-self">Gergeti Trinity closed on Mondays</td>
+      <td class="col-timur">Timur knows everyone. You go in while others wait outside</td>
+    </tr>
+    <tr>
+      <td class="col-time"><span class="time-dot">16:00</span></td>
+      <td class="col-bus">Bus heads home. Mt Kazbek in clouds — not your day</td>
+      <td class="col-self">Wanted to see the lake — didn't know where it was</td>
+      <td class="col-timur">We wait for the clouds to clear. We'll go higher</td>
+    </tr>
+    <tr>
+      <td class="col-time"><span class="time-dot">19:00</span></td>
+      <td class="col-bus">Home. Exhausted by the crowd</td>
+      <td class="col-self">Home. Lost half the day</td>
+      <td class="col-timur">Home. 200 photos, secret location contacts, memories for life</td>
+    </tr>
+  </tbody>
+</table>
+</div>
   </div>
 </section>
 
@@ -703,6 +777,33 @@ document.querySelectorAll('.tours-track .tc').forEach(function(c){io.observe(c)}
       </div>
     </div>
   </div>
+<div style="border-top:1px solid #E5E7EB;margin-top:24px;padding-top:20px">
+<div style="display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:16px">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="#34E0A1" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 3a3 3 0 110 6 3 3 0 010-6zm-4.5 9.5a4.5 4.5 0 009 0H18a6 6 0 01-12 0h1.5z"/><circle cx="8.5" cy="10" r="1.5"/><circle cx="15.5" cy="10" r="1.5"/></svg>
+<span style="font-size:13px;font-weight:700;color:#111827">TripAdvisor Reviews</span>
+<span style="font-size:11px;font-weight:600;color:#34E0A1;background:#F0FFF8;border:1px solid #34E0A1;border-radius:4px;padding:2px 8px">Travellers' Choice</span>
+</div>
+<div class="ta-cards" style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:900px;margin:0 auto">
+<div style="padding:16px;border:1px solid #E5E7EB;border-radius:10px;background:#FAFFFE">
+<div style="color:#34E0A1;font-size:11px;letter-spacing:1px;margin-bottom:6px">★★★★★</div>
+<p style="font-size:14px;color:#374151;line-height:1.6;margin-bottom:10px">"Timur is the best guide in Tbilisi. Kazbegi with him is unforgettable. Small group, no buses, perfect route."</p>
+<div style="font-size:12px;font-weight:700;color:#6B7280">Alex M. <span style="font-weight:400">· Kazbegi</span></div>
+</div>
+<div style="padding:16px;border:1px solid #E5E7EB;border-radius:10px;background:#FAFFFE">
+<div style="color:#34E0A1;font-size:11px;letter-spacing:1px;margin-bottom:6px">★★★★★</div>
+<p style="font-size:14px;color:#374151;line-height:1.6;margin-bottom:10px">"We took the Kakheti tour as a group of four. Wine, food, monasteries — everything was top level. Great price for a private guide."</p>
+<div style="font-size:12px;font-weight:700;color:#6B7280">Kate S. <span style="font-weight:400">· Kakheti</span></div>
+</div>
+<div style="padding:16px;border:1px solid #E5E7EB;border-radius:10px;background:#FAFFFE">
+<div style="color:#34E0A1;font-size:11px;letter-spacing:1px;margin-bottom:6px">★★★★★</div>
+<p style="font-size:14px;color:#374151;line-height:1.6;margin-bottom:10px">"Night Tbilisi is something else. Timur showed us courtyards and baths you won't find in any guidebook."</p>
+<div style="font-size:12px;font-weight:700;color:#6B7280">Dmitry K. <span style="font-weight:400">· Night Tbilisi</span></div>
+</div>
+</div>
+<div style="text-align:center;margin-top:16px">
+<a href="https://www.tripadvisor.com/Attraction_Review-g294195-d15318013-Reviews-Sakhva_Travel-Tbilisi.html" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:#00AA6C;text-decoration:none">Read all reviews on TripAdvisor →</a>
+</div>
+</div>
 </section>
 
 <!-- PHOTO GALLERY — auto-scroll -->
@@ -717,11 +818,14 @@ document.querySelectorAll('.tours-track .tc').forEach(function(c){io.observe(c)}
     <div class="gallery-slide"><img src="/images/gallery-6.webp" alt="Couple at Holy Trinity Cathedral in Tbilisi" width="400" height="533" fetchpriority="low"></div>
     <div class="gallery-slide"><img src="/images/gallery-7.webp?v=2" alt="Selfie with a winemaker in Kakheti cellar" width="400" height="533" fetchpriority="low"></div>
     <div class="gallery-slide"><img src="/images/gallery-8.webp" alt="Group resting in Kazbegi mountains" width="400" height="533" fetchpriority="low"></div>
+    <div class="gallery-slide"><img src="/images/gallery-9.webp" alt="Tourists at a Tbilisi viewpoint" width="400" height="533" fetchpriority="low"></div>
     <div class="gallery-slide"><img src="/images/gallery-10.webp" alt="Tourist group at Kazbegi summit" width="400" height="533" fetchpriority="low"></div>
+    <div class="gallery-slide"><img src="/images/gallery-11.webp" alt="Guide Timur with tourists on a tour in Georgia" width="400" height="533" fetchpriority="low"></div>
     <div class="gallery-slide"><img src="/images/gallery-12.webp" alt="Wine tasting at a Kakheti winery" width="400" height="533" fetchpriority="low"></div>
     <div class="gallery-slide"><img src="/images/gallery-13.webp?v=2" alt="On the road to Kazbegi" width="400" height="533" fetchpriority="low"></div>
     <div class="gallery-slide"><img src="/images/gallery-14.webp" alt="View of Old Tbilisi from a carved balcony" width="400" height="533" fetchpriority="low"></div>
     <div class="gallery-slide"><img src="/images/gallery-15.webp?v=2" alt="On the road to Georgian mountains" width="400" height="533" fetchpriority="low"></div>
+    <div class="gallery-slide"><img src="/images/gallery-16.webp" alt="Ferrari Formula 1 car at a Tbilisi art space" width="400" height="533" fetchpriority="low"></div>
     <!-- duplicate for seamless loop -->
     <div class="gallery-slide" aria-hidden="true"><img src="/images/gallery-1.webp?v=4" alt="" width="400" height="533" fetchpriority="low"></div>
     <div class="gallery-slide" aria-hidden="true"><img src="/images/gallery-2.webp" alt="" width="400" height="533" fetchpriority="low"></div>
@@ -731,11 +835,14 @@ document.querySelectorAll('.tours-track .tc').forEach(function(c){io.observe(c)}
     <div class="gallery-slide" aria-hidden="true"><img src="/images/gallery-6.webp" alt="" width="400" height="533" fetchpriority="low"></div>
     <div class="gallery-slide" aria-hidden="true"><img src="/images/gallery-7.webp?v=2" alt="" width="400" height="533" fetchpriority="low"></div>
     <div class="gallery-slide" aria-hidden="true"><img src="/images/gallery-8.webp" alt="" width="400" height="533" fetchpriority="low"></div>
+    <div class="gallery-slide" aria-hidden="true"><img src="/images/gallery-9.webp" alt="" width="400" height="533" fetchpriority="low"></div>
     <div class="gallery-slide" aria-hidden="true"><img src="/images/gallery-10.webp" alt="" width="400" height="533" fetchpriority="low"></div>
+    <div class="gallery-slide" aria-hidden="true"><img src="/images/gallery-11.webp" alt="" width="400" height="533" fetchpriority="low"></div>
     <div class="gallery-slide" aria-hidden="true"><img src="/images/gallery-12.webp" alt="" width="400" height="533" fetchpriority="low"></div>
     <div class="gallery-slide" aria-hidden="true"><img src="/images/gallery-13.webp?v=2" alt="" width="400" height="533" fetchpriority="low"></div>
     <div class="gallery-slide" aria-hidden="true"><img src="/images/gallery-14.webp" alt="" width="400" height="533" fetchpriority="low"></div>
     <div class="gallery-slide" aria-hidden="true"><img src="/images/gallery-15.webp?v=2" alt="" width="400" height="533" fetchpriority="low"></div>
+    <div class="gallery-slide" aria-hidden="true"><img src="/images/gallery-16.webp" alt="" width="400" height="533" fetchpriority="low"></div>
   </div>
 </section>
 
