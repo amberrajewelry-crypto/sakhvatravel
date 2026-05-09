@@ -267,7 +267,8 @@ img[loading="lazy"]{decoding:async}
 .tc-calc-total{font-size:22px!important}
 .tc-calc-curr button{padding:4px 0;font-size:10px}
 .tc-calc-ppl-label{font-size:9px;margin-bottom:5px}
-.tc-calc-ppl button{height:26px;font-size:12px}
+.tc-calc-ppl{gap:3px!important}
+.tc-calc-ppl button{height:26px;font-size:11px;min-width:0;padding:0}
 .tc-calc-disc{font-size:10px;padding:1px 7px;margin-bottom:6px}
 .tc-calc-curr{margin-bottom:7px;margin-top:6px}
 .tours-progress{display:none}
@@ -446,7 +447,7 @@ html{scroll-behavior:auto}
 <div class="lang-sw">
 <span class="lang-btn on" id="btnRu">RU</span>
 <span class="lang-sep">|</span>
-<a class="lang-btn" id="btnEn" href="/en/" style="text-decoration:none">EN</a>
+<a class="lang-btn" id="btnEn" href="/en/" onclick="localStorage.setItem('lang','en')" style="text-decoration:none">EN</a>
 </div>
 </div>
 <button type="button" class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
@@ -1202,7 +1203,7 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeGallery
 
 <section id="lead-magnet" style="position:relative;z-index:2;padding:32px clamp(16px,3.5vw,56px) 40px;background:#fff;border-top:1px solid #E8E0D8">
 <div style="max-width:760px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap">
-<p style="font-family:'Lora',serif;font-size:17px;font-weight:400;color:#111827;letter-spacing:-0.02em;margin:0" data-ru="Гайд: 15 мест в Тбилиси не из путеводителя + скидка 5%" data-en="Guide: 15 places in Tbilisi not in any guidebook + 5% off">Гайд: 15 мест в Тбилиси не из путеводителя + скидка 5%</p>
+<p style="font-family:'Lora',serif;font-size:clamp(13px,3.8vw,17px);font-weight:400;color:#111827;letter-spacing:-0.02em;margin:0;white-space:nowrap" data-ru="Гайд: 15 мест в Тбилиси + скидка 5%" data-en="Guide: 15 hidden Tbilisi spots + 5% off">Гайд: 15 мест в Тбилиси + скидка 5%</p>
 <form id="magnet-form" onsubmit="event.preventDefault();var em=this.querySelector('input').value.trim();if(!em)return;var btn=this.querySelector('button');btn.disabled=true;btn.textContent='...';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em,lang:document.documentElement.lang||'ru'})}).then(function(){document.getElementById('magnet-form').style.display='none';document.getElementById('magnet-ok').style.display='flex'}).catch(function(){document.getElementById('magnet-form').style.display='none';document.getElementById('magnet-ok').style.display='flex'})" style="display:flex;gap:8px;flex-shrink:0">
 <input type="email" placeholder="Email" required style="width:200px;padding:11px 16px;border:1px solid #E5E7EB;border-radius:8px;background:#fff;color:#111827;font-family:'Lora',serif;font-size:16px;outline:none">
 <button type="submit" style="padding:11px 20px;background:#1A3D2E;color:#fff;border:none;border-radius:8px;font-family:'Lora',serif;font-size:14px;cursor:pointer;white-space:nowrap" data-ru="Получить" data-en="Get it">Получить</button>
