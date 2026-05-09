@@ -1028,6 +1028,34 @@
     <loc>https://sakhva-travel.com/blog/bani-tbilisi/</loc>
     <lastmod>2026-05-09</lastmod>
   </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/narikala-tbilisi/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/og-narikala.jpg</image:loc>
+      <image:title>Крепость Нарикала в Тбилиси — история и виды</image:title>
+    </image:image>
+    <lastmod>2026-05-10</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/kutaisi-iz-tbilisi/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/kutaisi-tour.webp</image:loc>
+      <image:title>Кутаиси из Тбилиси за 1 день — маршрут и советы</image:title>
+    </image:image>
+    <lastmod>2026-05-10</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/kakheti-chto-posmotret/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/og-kakheti.jpg</image:loc>
+      <image:title>Что посмотреть в Кахетии — маршрут, монастыри, вино</image:title>
+    </image:image>
+    <lastmod>2026-05-10</lastmod>
+  </url>
+
   <url>
     <loc>https://sakhva-travel.com/ekskursiya/art-tur-tbilisi/</loc>
     <lastmod>2026-05-09</lastmod>
