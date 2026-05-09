@@ -52,7 +52,7 @@ gtag('consent','update',{analytics_storage:(_ck||_gc)?'granted':'denied',ad_stor
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:80px;background:#0a1628}
 section[id],div[id]{scroll-margin-top:80px}
-body{font-family:'Lora',Georgia,serif;color:#111827;background:transparent;overflow-x:clip;-webkit-font-smoothing:antialiased;overscroll-behavior-y:contain}
+body{font-family:'Lora',Georgia,serif;color:#111827;background:transparent;overflow-x:hidden;-webkit-font-smoothing:antialiased;overscroll-behavior-y:contain}
 h1,h2,h3,.section-title{font-family:'Lora',Georgia,serif;font-weight:400}
 a{text-decoration:none;color:inherit}
 img{max-width:100%;display:block;object-fit:cover}
@@ -807,7 +807,7 @@ document.querySelectorAll('.tours-track .tc').forEach(function(c){io.observe(c)}
 </section>
 
 <!-- PHOTO GALLERY — auto-scroll -->
-<section class="gallery-sec" id="gallery" style="margin:0;padding:0">
+<section class="gallery-sec" id="gallery" style="margin:0;padding:0;overflow:hidden;max-width:100vw">
   <h2 class="sec-title" data-anim="up" style="text-align:center;padding:24px 20px 16px;margin:0;font-size:clamp(20px,5.5vw,48px)">Photos from our tours</h2>
   <div class="gallery-track">
     <div class="gallery-slide"><img src="/images/gallery-1.webp?v=4" alt="Tourist group at monastery arch with mountain views" width="400" height="533" fetchpriority="low"></div>
