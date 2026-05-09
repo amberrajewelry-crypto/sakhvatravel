@@ -52,7 +52,7 @@ gtag('consent','update',{analytics_storage:(_ck||_gc)?'granted':'denied',ad_stor
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:80px;background:#0a1628;overflow-x:hidden}
 section[id],div[id]{scroll-margin-top:80px}
-body{font-family:'Lora',Georgia,serif;color:#111827;background:transparent;overflow-x:hidden;-webkit-font-smoothing:antialiased;overscroll-behavior-y:contain}
+body{font-family:'Lora',Georgia,serif;color:#111827;background:transparent;overflow-x:hidden;-webkit-font-smoothing:antialiased}
 h1,h2,h3,.section-title{font-family:'Lora',Georgia,serif;font-weight:400}
 a{text-decoration:none;color:inherit}
 img{max-width:100%;display:block;object-fit:cover}
@@ -1012,15 +1012,14 @@ if(sec){
   sec.addEventListener('wheel',function(e){
     if(cooldown)return;
     var ax=Math.abs(e.deltaX),ay=Math.abs(e.deltaY);
-    if(ax>ay*3&&ax>15){
-      e.preventDefault();
+    if(ax>ay*1.5&&ax>8){
       accX+=e.deltaX;
       clearTimeout(swipeTimer);
-      swipeTimer=setTimeout(function(){accX=0},250);
-      if(accX>120){show(cur+1);accX=0;setCooldown()}
-      else if(accX<-120){show(cur-1);accX=0;setCooldown()}
+      swipeTimer=setTimeout(function(){accX=0},300);
+      if(accX>60){show(cur+1);accX=0;setCooldown()}
+      else if(accX<-60){show(cur-1);accX=0;setCooldown()}
     }
-  },{passive:false});
+  },{passive:true});
   var tx=0;
   sec.addEventListener('touchstart',function(e){tx=e.touches[0].clientX},{passive:true});
   sec.addEventListener('touchend',function(e){
