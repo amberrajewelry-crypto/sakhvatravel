@@ -1047,7 +1047,8 @@ style="border:0"></iframe>
 <div class="gallery-btn-wrap">
 <button id="gallery-expand-btn" onclick="expandGallery()" class="btn-primary" style="font-size:14px;padding:14px 36px" data-ru="Смотреть все фото и видео" data-en="See all photos &amp; videos">Смотреть все фото и видео</button>
 </div>
-<div id="gallery-full" style="display:none;max-width:1280px;margin:24px auto 0;padding:0 20px">
+<div id="gallery-modal">
+<button class="gm-close" onclick="closeGallery()" aria-label="Закрыть">&#x2715;</button>
 <div class="gm-grid">
 <div class="gm-item"><img src="/images/gallery-1.webp?v=4" alt="Группа туристов у арки монастыря с видом на горы" loading="lazy" width="400" height="533"></div>
 <div class="gm-item"><img src="/images/gallery-2.webp" alt="Группа туристов у Гергетской церкви в Казбеги" loading="lazy" width="400" height="533"></div>
@@ -1086,23 +1087,18 @@ style="border:0"></iframe>
 </div>
 <script>
 function expandGallery(){
-var g=document.getElementById('gallery-full');
-var btn=document.getElementById('gallery-expand-btn');
-if(g.style.display==='none'){
-  g.style.display='block';
-  g.querySelectorAll('video').forEach(function(v){v.play().catch(function(){})});
-  setTimeout(function(){g.scrollIntoView({behavior:'smooth',block:'start'})},50);
-  btn.setAttribute('data-ru','Скрыть');
-  btn.setAttribute('data-en','Hide');
-  btn.textContent='Скрыть';
-}else{
-  g.style.display='none';
-  g.querySelectorAll('video').forEach(function(v){v.pause()});
-  btn.setAttribute('data-ru','Смотреть все фото и видео');
-  btn.setAttribute('data-en','See all photos & videos');
-  btn.textContent='Смотреть все фото и видео';
+  var m=document.getElementById('gallery-modal');
+  m.classList.add('gm-open');
+  document.body.style.overflow='hidden';
+  m.querySelectorAll('video').forEach(function(v){v.play().catch(function(){})});
 }
+function closeGallery(){
+  var m=document.getElementById('gallery-modal');
+  m.classList.remove('gm-open');
+  document.body.style.overflow='';
+  m.querySelectorAll('video').forEach(function(v){v.pause()});
 }
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeGallery()});
 </script>
 </section>
 <section class="sec reveal" id="blog">
