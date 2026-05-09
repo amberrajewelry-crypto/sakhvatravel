@@ -270,7 +270,14 @@ img[loading="lazy"]{decoding:async}
 .tours-slides{overflow-x:auto;overflow-y:hidden;padding:0 calc((100vw - 85vw) / 2);-webkit-overflow-scrolling:touch;scroll-snap-type:x mandatory;scrollbar-width:none}
 .tours-slides::-webkit-scrollbar{display:none}
 .tours-track{flex-wrap:nowrap;gap:16px;transform:none!important;transition:none}
-.tours-track .tc{flex:0 0 85vw;max-width:85vw;scroll-snap-align:center;height:460px}
+.tours-track .tc{flex:0 0 85vw;max-width:85vw;scroll-snap-align:center;height:560px}
+.tc-calc{padding:9px 12px 11px}
+.tc-calc-total{font-size:22px!important}
+.tc-calc-curr button{padding:4px 0;font-size:10px}
+.tc-calc-ppl-label{font-size:9px;margin-bottom:5px}
+.tc-calc-ppl button{height:26px;font-size:12px}
+.tc-calc-disc{font-size:10px;padding:1px 7px;margin-bottom:6px}
+.tc-calc-curr{margin-bottom:7px;margin-top:6px}
 .tours-progress{display:none}
 .tours-nav{display:none}
 .tours-bottom-cta{position:relative;bottom:auto;left:auto;transform:none;padding:0 16px;margin-top:12px}
@@ -802,7 +809,9 @@ document.addEventListener('click',function(e){
 </div>
 <script>function waToggle(el){var open=el.classList.contains('open');document.querySelectorAll('.wa-item').forEach(function(i){i.classList.remove('open')});if(!open)el.classList.add('open')}</script>
 <style>
-.cmp-wrap{overflow-x:auto;margin-top:40px}
+.cmp-wrap{overflow-x:auto;margin-top:40px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.cmp-wrap::-webkit-scrollbar{display:none}
+@media(max-width:640px){.cmp-wrap::after{content:'← свайп →';display:block;text-align:center;font-size:11px;color:#9CA3AF;padding-top:8px;letter-spacing:.05em}}
 .cmp-table{width:100%;border-collapse:separate;border-spacing:0;min-width:560px}
 .cmp-table thead th{padding:14px 16px 12px;font-family:'Lora',serif;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;text-align:center}
 .th-empty{width:52px;background:transparent;border:none}
