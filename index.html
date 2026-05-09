@@ -815,36 +815,28 @@ document.addEventListener('click',function(e){
 <style>
 .cmp-wrap{overflow-x:auto;margin-top:40px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
 .cmp-wrap::-webkit-scrollbar{display:none}
-.cmp-table{width:100%;border-collapse:separate;border-spacing:0;min-width:560px}
-.cmp-table thead th{padding:14px 16px 12px;font-family:'Lora',serif;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;text-align:center}
-@media(max-width:640px){
-.cmp-table{min-width:0;width:100%}
-.cmp-table thead th{padding:10px 6px 8px;font-size:11px;letter-spacing:.3px}
-.th-empty{width:36px!important}
-.col-icon{font-size:16px!important;margin-bottom:2px!important}
-.col-name{font-size:11px!important}
-.col-timur-badge{font-size:8px!important;padding:1px 5px!important;margin-bottom:2px!important}
-.col-time{width:36px!important;padding:6px 2px!important}
-.time-dot{font-size:10px!important;padding:2px 4px!important}
-.cmp-table tbody td{padding:10px 8px!important;font-size:13px!important;line-height:1.5!important}
-}
-.th-empty{width:52px;background:transparent;border:none}
-.col-bus{color:#9CA3AF;background:#F9FAFB;border:1px solid #E5E7EB;border-right:none;border-radius:10px 0 0 0;width:28%}
-.col-self{color:#9CA3AF;background:#F9FAFB;border-top:1px solid #E5E7EB;border-bottom:1px solid #E5E7EB;width:28%}
-.col-timur{color:#fff;background:#1A3D2E;border-radius:0 10px 0 0;padding-top:8px!important;width:44%}
+.cmp-table{width:100%;border-collapse:separate;border-spacing:0}
+.cmp-table thead th{padding:14px 16px 12px;font-family:'Lora',serif;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;text-align:center;width:33.33%}
+.col-bus{color:#9CA3AF;background:#F9FAFB;border-radius:10px 0 0 0}
+.col-self{color:#9CA3AF;background:#F9FAFB}
+.col-timur{color:#fff;background:#1A3D2E;border-radius:0 10px 0 0;padding-top:8px!important}
 .col-icon{font-size:20px;display:block;margin-bottom:4px}
 .col-name{display:block;font-size:12px}
 .col-timur-badge{display:inline-block;background:#F59E0B;color:#1A3D2E;font-size:9px;font-weight:700;letter-spacing:1px;padding:2px 8px;border-radius:20px;margin-bottom:4px;text-transform:uppercase}
-.col-time{width:52px;padding:10px 4px;text-align:center;vertical-align:middle}
-.time-dot{display:inline-block;background:#E5E7EB;color:#9CA3AF;font-size:12px;font-weight:700;padding:4px 8px;border-radius:12px;white-space:nowrap}
-.cmp-table tbody td{padding:14px 16px;vertical-align:top;font-size:15px;line-height:1.6;border-bottom:1px solid #F3F4F6;font-family:'Lora',serif}
-.cmp-table tbody .col-bus{background:#fff;color:#374151;border-left:1px solid #E5E7EB}
+.cmp-table tbody td{padding:14px 16px;vertical-align:top;font-size:15px;line-height:1.6;font-family:'Lora',serif;text-align:center;border:none;width:33.33%}
+.cmp-table tbody .col-bus{background:#fff;color:#374151}
 .cmp-table tbody .col-self{background:#fff;color:#374151}
-.cmp-table tbody .col-timur{background:#F0F7F4;color:#1A3D2E;font-weight:600;border-left:2px solid #1A3D2E;border-right:2px solid #1A3D2E}
-.cmp-table tbody tr:last-child .col-bus{border-radius:0 0 0 10px;border-bottom:1px solid #E5E7EB}
-.cmp-table tbody tr:last-child .col-self{border-bottom:1px solid #E5E7EB}
-.cmp-table tbody tr:last-child .col-timur{border-radius:0 0 10px 0;border-bottom:2px solid #1A3D2E;background:#1A3D2E;color:#fff}
-.cmp-table tbody tr:last-child .col-time .time-dot{background:#1A3D2E;color:#fff}
+.cmp-table tbody .col-timur{background:#F0F7F4;color:#1A3D2E;font-weight:600}
+.cmp-table tbody tr:last-child .col-bus{border-radius:0 0 0 10px}
+.cmp-table tbody tr:last-child .col-self{}
+.cmp-table tbody tr:last-child .col-timur{border-radius:0 0 10px 0;background:#1A3D2E;color:#fff}
+@media(max-width:640px){
+.cmp-table thead th{padding:10px 6px 8px;font-size:11px;letter-spacing:.3px}
+.col-icon{font-size:16px!important;margin-bottom:2px!important}
+.col-name{font-size:11px!important}
+.col-timur-badge{font-size:8px!important;padding:1px 5px!important;margin-bottom:2px!important}
+.cmp-table tbody td{padding:10px 8px!important;font-size:13px!important;line-height:1.5!important}
+}
 </style>
 <div class="cmp-wrap reveal">
 <table class="cmp-table">
@@ -1029,10 +1021,10 @@ style="border:0"></iframe>
 <section class="gallery-sec" id="gallery" style="margin:0;padding:0">
 <h2 class="sec-title" data-anim="up" data-ru="Фото и видео с наших туров" data-en="Photos &amp; videos from our tours" style="text-align:center;padding:24px 20px 20px;margin:0;font-size:clamp(20px,5.5vw,48px)">Фото и видео с наших туров</h2>
 <div class="gallery-preview">
-<div class="gp-item"><video autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;display:block"><source src="/images/gallery-17.webm" type="video/webm"></video></div>
-<div class="gp-item"><video autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;display:block"><source src="/images/gallery-18.webm" type="video/webm"></video></div>
-<div class="gp-item"><video autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;display:block"><source src="/images/gallery-19.webm" type="video/webm"></video></div>
-<div class="gp-item"><video autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;display:block"><source src="/images/gallery-28.webm" type="video/webm"></video></div>
+<div class="gp-item"><video autoplay muted loop playsinline preload="metadata" style="width:100%;height:100%;object-fit:cover;display:block"><source src="/images/gallery-17.mp4" type="video/mp4"><source src="/images/gallery-17.webm" type="video/webm"></video></div>
+<div class="gp-item"><video autoplay muted loop playsinline preload="metadata" style="width:100%;height:100%;object-fit:cover;display:block"><source src="/images/gallery-18.mp4" type="video/mp4"><source src="/images/gallery-18.webm" type="video/webm"></video></div>
+<div class="gp-item"><video autoplay muted loop playsinline preload="metadata" style="width:100%;height:100%;object-fit:cover;display:block"><source src="/images/gallery-19.mp4" type="video/mp4"><source src="/images/gallery-19.webm" type="video/webm"></video></div>
+<div class="gp-item"><video autoplay muted loop playsinline preload="metadata" style="width:100%;height:100%;object-fit:cover;display:block"><source src="/images/gallery-28.mp4" type="video/mp4"><source src="/images/gallery-28.webm" type="video/webm"></video></div>
 </div>
 <div class="gallery-btn-wrap">
 <a href="/gallery/" class="btn-primary" style="font-size:14px;padding:14px 36px;display:inline-block;text-decoration:none" data-ru="Смотреть все фото и видео" data-en="See all photos &amp; videos">Смотреть все фото и видео</a>
