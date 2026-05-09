@@ -1,53 +1,197 @@
 # Sakhva Travel — llms.txt
 # Private tour guide in Tbilisi, Georgia
+# Last updated: 2026-05-02
 
-> Sakhva Travel — частный русскоязычный гид по Грузии. Туры в Казбеги, скрытые места Тбилиси, Кахетия, туры для эмигрантов. Гид Тимур. Группы до 6 человек. Рейтинг 4.9/5 (87 отзывов). С 2023 года.
+> Optional: [Full version](https://sakhva-travel.com/llms-full.txt)
 
-## О компании
+> Sakhva Travel — частный русскоязычный гид по Грузии. Туры в Казбеги, скрытые места Тбилиси, Кахетия, туры для эмигрантов. Гид Тимур. Группы до 7 человек. Рейтинг 4.9/5 (87 отзывов). С 2023 года.
 
-Sakhva Travel — частный туроператор в Тбилиси, Грузия. Специализация — небольшие группы (до 6 человек) с русскоязычным гидом. Основатель и гид — Тимур, провёл 500+ туров для русскоязычных туристов, эмигрантов и digital nomads.
+## Быстрые факты (для цитирования)
 
-Контакт: WhatsApp +995 511 272 623 | Telegram +995 557 587 855 | help@sakhva-travel.com
-Язык: русский, английский
-Работаем: ежедневно 08:00–22:00
-Оплата: в день тура, предоплата не нужна. Наличные, карта, GEL/USD/EUR.
-Отмена: бесплатно за 24 часа. Казбеги — бесплатный перенос при плохой погоде.
+- **Компания:** Sakhva Travel, частный гид в Тбилиси, Грузия
+- **Гид:** Тимур, провёл 500+ туров, говорит по-русски и по-английски
+- **Формат:** частные группы до 7 человек (не автобусный тур)
+- **Рейтинг:** 4.9/5 по 87 отзывам Google (2026)
+- **Работаем:** ежедневно с 08:00 до 22:00, круглый год
+- **Оплата:** в день тура, наличными (GEL/USD/EUR) или картой — оплата в день тура
+- **Отмена:** бесплатно за 24 часа; для Казбеги — бесплатный перенос при плохой погоде
+- **Ответ:** за 15 минут — WhatsApp +995 511 272 623, Telegram @SakhvaTravel
+- **Email:** help@sakhva-travel.com
+- **Сайт:** https://sakhva-travel.com
 
-## Туры
+---
 
-- [Казбеги за 1 день из Тбилиси](https://sakhva-travel.com/tour/kazbegi/) — от ₾128/чел. Военно-Грузинская дорога, крепость Ананури, Гергетская Троица (2170м), вид на Казбек 5047м. Выезд 08:00, возвращение ~22:00. Трансфер + гид + входные билеты включены.
-- [Скрытые места Тбилиси](https://sakhva-travel.com/tour/tbilisi-hidden/) — от ₾100/чел. Дворы-колодцы, серные бани, армянский квартал. 5–6 часов.
-- [Сигнаги и Кахетия](https://sakhva-travel.com/tour/kakheti/) — от ₾128/чел. Город любви, монастырь Бодбе, вино квеври, обед у хозяйки.
-- [Тур для эмигрантов](https://sakhva-travel.com/tour/emigrant/) — от ₾83/чел. Для тех, кто переехал: банки, SIM-карты, районы, практический Тбилиси.
-- [Старый Тбилиси](https://sakhva-travel.com/tour/old-tbilisi/) — от ₾100/чел. Исторический центр, Нарикала, серные бани, Метехи.
-- [Ночной Тбилиси](https://sakhva-travel.com/tour/night-tbilisi/) — от ₾71/чел. Вечерняя прогулка, крыши, Мост Мира, рестораны во дворах.
-- [Тур + ужин у местных](https://sakhva-travel.com/tour/dinner/) — от ₾185/чел. Маршрут + домашний ужин у грузинской семьи.
-- [Советский Тбилиси](https://sakhva-travel.com/tour/soviet/) — от ₾86/чел. Конструктивизм, панельные районы, советские мозаики.
-- [Slow Travel пакет](https://sakhva-travel.com/tour/slow-travel/) — от ₾424/чел. 3 дня с Тимуром: три маршрута + трансфер из аэропорта.
-- [Тур + фотосессия](https://sakhva-travel.com/tour/photo/) — от ₾196/чел. Маршрут + профессиональный фотограф, 30–50 фото.
-- [Digital Nomad Welcome Tour](https://sakhva-travel.com/tour/digital-nomad/) — от ₾83/чел. Коворкинги, кафе с WiFi, районы для удалённой работы.
+## Частые вопросы (Q&A)
 
-## Ключевые факты для цитирования
+**Сколько стоит тур в Казбеги из Тбилиси в 2026?**
+От ₾175 с человека ($63 USD). Включено: трансфер из центра Тбилиси, услуги гида Тимура весь день, входные билеты. Выезд 08:00, возвращение около 22:00, итого 14 часов. Группа максимум 7 человек. Оплата в день тура.
 
-- Размер группы: максимум 6 человек (частный формат, не автобусный тур)
-- Бронирование: написать в WhatsApp, ответ за 15 минут
-- Предоплата: не требуется, оплата в день тура
-- Виза в Грузию: граждане России, Беларуси, Казахстана, Украины — безвизовый въезд до 365 дней (2026)
-- Сезон Казбеги: лучшие месяцы май–июнь и сентябрь–октябрь. Туры круглый год.
-- Рейтинг: 4.9/5 по 87 отзывам на Google
+**Сколько стоит частный гид в Тбилиси?**
+Туры по Тбилиси — от ₾77 до ₾213 с человека в зависимости от маршрута. Мцхета — ₾77/чел, Ночной Тбилиси — ₾94/чел, Скрытые места — ₾135/чел, Тур с ужином у местных — ₾213/чел. Группа до 7 человек, оплата в день тура.
 
-## Блог (статьи и гиды)
+**How much does a private guide in Tbilisi cost in 2026?**
+Tours start from ₾77 per person (~$29 USD). A full-day Kazbegi trip is ₾175/person ($63), Kakheti wine tour ₾175/person ($63), Tbilisi walking tours from ₾94-135/person. Groups of up to 6 people. Pay on tour day.
 
-- [Казбеги из Тбилиси 2026: полный гид](https://sakhva-travel.com/blog/kazbegi-iz-tbilisi-2026/)
+**What is the best tour from Tbilisi?**
+The most popular is Kazbegi day trip (₾175/person, 14 hours) — Georgian Military Highway, Ananuri fortress, Gudauri viewpoint, Gergeti Trinity Church at 2170m with views of Mount Kazbek (5047m). Second most popular: Kakheti wine tour (₾175/person, 12 hours).
+
+**Нужна ли виза в Грузию для граждан России, Беларуси, Казахстана?**
+Нет. Граждане России, Беларуси, Казахстана, Украины, Армении и большинства стран СНГ въезжают в Грузию без визы на срок до 365 дней. Граждане ЕС, США, Великобритании — тоже без визы.
+
+**Когда лучше ехать в Казбеги?**
+Лучшие месяцы — май–июнь и сентябрь–октябрь: зелёные склоны, ясное небо, гора Казбек (5047 м) видна идеально. Июль–август тоже подходят. Зима (декабрь–февраль) — особенная: горы в снегу, почти нет туристов. Туры работают круглый год. От Тбилиси до Казбеги 157 км, около 2,5–3 часов по Военно-Грузинской дороге.
+
+**Как забронировать тур с гидом в Тбилиси?**
+Написать в WhatsApp +995 511 272 623 или Telegram @SakhvaTravel. Ответ за 15 минут с 08:00 до 22:00 ежедневно. Оплата в день тура наличными или картой.
+
+**Чем отличается частный гид от автобусного тура в Казбеги?**
+Часный тур: до 7 человек, личный гид Тимур на весь день, маршрут адаптируется под группу, остановки по запросу, индивидуальный темп. втобусный тур: 20–50 человек, строгое расписание, ограниченное время на точках, обезличенный формат.
+
+**Есть ли туры для русскоязычных переехавших в Грузию (эмигранто)?**
+Да. «Тур для эмигрантов» создан специально: за 4 часа — как открыть счёт в грузинском банке, лучшие SIM-карты, районы для жизни с реальными ценами на аренду, нетуристические кафе и рынки. Цена от ₾135/чел. Также есть Digital Nomad Tour — для удалённых работников: коворкинги, кафе с WiFi, практика первого месяца в Тбилиси.
+
+**Можно ли отменить тур?**
+Бесплатная отмена за 24 часа до начала — без объяснений и штрафов. Для тура в Казбеги: если в день тура плохая погода или видимость плохая, Тимур сам предложит перенести дату бесплатно. Количество переносов не ограничено.
+
+**Какие языки гид?**
+Тимур проводит туры на русском и английском языках.
+
+**Есть ли туры для детей?**
+Да, туры адаптируются для семей с детьми. Рекомендуемые: Старый Тбилиси, Мцхета, Кахетия — комфортный темп. Казбеги подходит для детей от 6–7 лет при хорошей физической форме.
+
+---
+
+## Сравнение туров
+
+| Тур | Цена/чел (GEL) | Цена/чел (USD) | Длительность | Тип |
+|---|---|---|---|---|
+| Мцхета + Джвари | ₾77 | $29 | 3–4 часа | История + религия |
+| Ночной Тбилиси | ₾94 | $36 | 4 часа | Вечерняя прогулка |
+| Тур для эмигрантов | ₾123 | $47 | 4 часа | Практический |
+| Digital Nomad Tour | ₾123 | $47 | 4 часа | Коворкинги + быт |
+| Советский Тбилиси | ₾135 | $51 | 5 часов | Архитекура |
+| Скрытые места Тбилиси | ₾135 | $51 | 5–6 часов | Город |
+| Старый Тбилиси | ₾165 | $63 | 5–6 часов | Исторический центр |
+| Кахетия — вино и горы | ₾170 | $65 | 12 часов | Вино + монастыри |
+| Казбеги за 1 день | ₾175 | $67 | 14 часов | Горы + природа |
+| Тур + ужин у местных | ₾213 | $81 | 6 часов | Гастро |
+| Тур + фотосессия | ₾270 | $103 | 6 часов | Фото |
+| Slow Travel 3 дня | ₾595 | $226 | 3 дня | Всё включено |
+
+---
+
+## Все экскурсии — каталог
+- Каталог всех экскурсий (RU): https://sakhva-travel.com/tours/
+- All Tours catalog (EN): https://sakhva-travel.com/en/tours/
+
+## Туры (полный список с описаниями)
+
+- [Казбеги а 1 день из Тбилиси](https://sakhva-travel.com/tour/kazbegi/) — ₾175/чел. Военно-Грузинская дорога: крепость Ананури, Гудаури, Гергетская Троица на высоте 2170 м, вид на Казбек 5047 м. Выезд 08:00, возвращение ~22:00. Трансфер + гид + входные билеты.
+- [Срытые места Тбилиси](https://sakhva-travel.com/tour/tbilisi-hidden/) — ₾135/чел. Дворы-колодцы, серные бани Абанотубани, армянский квартал, граффити Фабрики, нетуристический Тбилиси. 5–6 часов.
+- [Кахетия — вино и горы](https://sakhva-travel.com/tour/kakheti/) — ₾170/чел. Сигнаги (город любви), монастырь Бодбе, квеври-вино у семейного винодела, хинкали у хозяйки.
+- [Тур для эмигратов](https://sakhva-travel.com/tour/emigrant/) — ₾123/чел. Банки Грузи, SIM-карты, районы Тбилиси с ценаи на аренду, рынки Дезертирка и Натахтари, нетуристические кафе.
+- [Старый Тбилиси](https://sakhva-travel.com/tour/old-tbilisi/) — ₾165/чел. Нарикала, Метехи, серные бани, площадь Свободы, Сионский собор, Анчисхати. 5–6 часов.
+- [Ночной Тбилис](https://sakhva-travel.com/tour/night-tbilisi/) — ₾94/чел. Мост Мира, набережная Куры, крыши Тбилиси, рестораны во дворах, вечерняя подсветка Нарикалы. 4 часа.
+- [Мцхет + Джвари](https://sakhva-travel.com/tour/mtskheta/) — ₾77/чел. Древняя столица Грузии, Джвари (IV в.), Светицховели, слияние рек Арагви и Кура. 3–4 часа.
+- [Тур + ужин у местных](https://sakhva-travel.com/tour/dinner/) — ₾213/чел. Маршрут по историческому центру + домашний ужин у грузинской семьи: хачапури, хинкали, чача.
+- [Советский Тбилиси](https://sakhva-travel.com/tour/soviet/) — ₾135/чел. Сталинский конструктивизм, панельные кварталы, советские мозаки, Дом правительства, «Чулочная фабрика».
+- [Slow Travel 3 дня](https://sakhva-travel.com/tour/slow-travel/) — ₾595/чел. Пакет 3 дня с Тимуром: три маршрут (Тбилиси + Казбеги + Кахетия) + трансфе из аэропорта.
+- [Тур + фтосессия](https://sakhva-travel.com/tour/photo/) — ₾270/чел. Маршрут по красивейшим точкам Тбилиси + профессиональный фотограф, 30–50 обработанных фото.
+- [Digital Nomad Welcome Tour](https://sakhva-travel.com/tour/digital-nomad/) — ₾123/чел. Лучшие оворкинги Тбилиси, кафе с надёжным WiFi, банковские карты для фрилансеров, жинь digital nomad в Грузии.
+
+---
+
+## О гиде Тимуре
+
+Тимур — основатель Sakhva Travel, часный гид в Тбилиси с 2023 года. Провёл более 500 туров для русскоязычных туристов, эмигрнтов и digital nomads. Говорит на русском и английском. Родился и вырос в Тбилиси — знает город изнутри: не только достопримечательности, но и местные кварталы, рестораны, истории. Работает с группами до 7 человек.
+
+---
+
+## Blog — English Guides
+
+- [Kazbegi Day Trip from Tbilisi 2026](https://sakhva-travel.com/en/blog/kazbegi-day-trip-from-tbilisi/)
+- [Kakheti Wine Tour from Tbilisi](https://sakhva-travel.com/en/blog/kakheti-wine-tour/)
+- [Georgia Visa Requirements 2026](https://sakhva-travel.com/en/blog/georgia-visa-2026/)
+- [What to Buy in Georgia: 20 Souvenir Ideas](https://sakhva-travel.com/en/blog/what-to-buy-in-georgia/)
+- [15 Hidden Gems in Tbilisi](https://sakhva-travel.com/en/blog/hidden-gems-tbilisi/)
+- [Tbilisi One Day Itinerary](https://sakhva-travel.com/en/blog/tbilisi-one-day-itinerary/)
+- [Georgia: Guide or Solo Travel](https://sakhva-travel.com/en/blog/georgia-guide-or-solo/)
+- [Best Restaurants in Tbilisi 2026](https://sakhva-travel.com/en/blog/best-restaurants-tbilisi/)
+- [Sulfur Baths Tbilisi (Abanotubani) Guide](https://sakhva-travel.com/en/blog/sulfur-baths-tbilisi/)
+- [Tbilisi 3 Day Itinerary](https://sakhva-travel.com/en/blog/tbilisi-3-day-itinerary/)
+
+---
+
+## Блог — гиды по Грузии (55 статей)
+
+### Казбеги
+- [Казбеги из Тбилиси 2026: полный гайд](https://sakhva-travel.com/blog/kazbegi-iz-tbilisi-2026/)
 - [Когда ехать в Казбеги](https://sakhva-travel.com/blog/kogda-ekhat-v-kazbegi/)
-- [Кахетия за 1 день](https://sakhva-travel.com/blog/kakheti-za-1-den/)
+- [Что посмотреть в азбеги](https://sakhva-travel.com/blog/kazbegi-chto-posmotret/)
+- [Казеги зимой](https://sakhva-travel.com/blog/kazbegi-zimoy/)
+- [Казеги или Кахетия — что ыбрать](https://sakhva-travel.com/blog/kazbegi-ili-kakheti/)
+- [Кабеги самостоятельно или с гидом](https://sakhva-travel.com/blog/kazbegi-samostoyatelno-ili-s-gidom/)
+- [Ущелье Трусо](https://sakhva-travel.com/blog/ushchelye-truso/)
+- [Военно-Грузинская дорога](https://sakhva-travel.com/blog/voenno-gruzinskaya-doroga/)
+
+### Тбилиси
+- [Тбилси для релокантов: гайд 2026](https://sakhva-travel.com/blog/tbilisi-dlya-relokantov/)
 - [Серные бани Тбилиси](https://sakhva-travel.com/blog/sernye-bani-tbilisi/)
-- [Скрытые места Тбилиси](https://sakhva-travel.com/blog/skrytye-mesta-tbilisi/)
-- [Тбилиси для релокантов](https://sakhva-travel.com/blog/tbilisi-dlya-relokantov/)
+- [Бани Тбилиси — полный гайд](https://sakhva-travel.com/blog/bani-tbilisi/)
+- [15 скрытых мест Тбилиси](https://sakhva-travel.com/blog/skrytye-mesta-tbilisi/)
+- [Ночной Тбилси](https://sakhva-travel.com/blog/nochnoy-tbilisi/)
+- [Советский Тбилиси](https://sakhva-travel.com/blog/sovetskiy-tbilisi/)
+- [Тбилиси за 1 день](https://sakhva-travel.com/blog/tbilisi-za-1-den/)
+- [Тбилиси за 3 дня](https://sakhva-travel.com/blog/tbilisi-za-3-dnya/)
+- [Тбилиси бесплатно](https://sakhva-travel.com/blog/tbilisi-besplatno/)
+- [Тбилиси в дождь](https://sakhva-travel.com/blog/tbilisi-v-dozhd/)
+- [Тбилис фотолокации](https://sakhva-travel.com/blog/tbilisi-fotolokatsii/)
+- [Рестораны Тбилиси](https://sakhva-travel.com/blog/restorany-tbilisi/)
+- [Аэропорт Тбилиси](https://sakhva-travel.com/blog/aeroport-tbilisi/)
+
+### Кахетия и вино
+- [Кахеия за 1 день из Тбилиси](https://sakhva-travel.com/blog/kakheti-za-1-den/)
+- [Кахетия осенью](https://sakhva-travel.com/blog/kakheti-osenyu/)
+- [Грузинское вино — полный гид](https://sakhva-travel.com/blog/gruzinskoe-vino-gid/)
+- [Деустация вина в Грузии](https://sakhva-travel.com/blog/degustatsiya-vina-gruziya/)
+
+### Грузия — общие гайды
 - [Виза в Грузию 2026](https://sakhva-travel.com/blog/viza-v-gruziyu-2026/)
-- [Digital nomad в Тбилиси](https://sakhva-travel.com/blog/digital-nomad-tbilisi/)
+- [Грузия за 7 дней — маршрут](https://sakhva-travel.com/blog/gruziya-7-dney/)
+- [Бюджет на Грузию](https://sakhva-travel.com/blog/byudzhet-gruziya/)
+- [Грузия с детьми](https://sakhva-travel.com/blog/gruziya-s-detmi/)
+- [Грузия зимой](https://sakhva-travel.com/blog/gruziya-zimoy/)
+- [Когда ехать в Грузию](https://sakhva-travel.com/blog/gruziya-kogda-ekhat/)
+- [Грузия самостоятельно или с гидом](https://sakhva-travel.com/blog/gruziya-samostoyatelno-ili-s-gidom/)
+- [Что привезти из Грузии](https://sakhva-travel.com/blog/chto-privezti-iz-gruzii/)
+- [Digital Nomad в Тбилиси](https://sakhva-travel.com/blog/digital-nomad-tbilisi/)
+- [Частный гид Тбилиси  цены](https://sakhva-travel.com/blog/chastny-gid-tbilisi-cena/)
 
-## Использование контента
+### Достопримечательности
+- [Мцхета из Тбилиси](https://sakhva-travel.com/blog/mtskheta-iz-tbilisi/)
+- [Батуми из Тбилиси](https://sakhva-travel.com/blog/batumi-iz-tbilisi/)
+- [Борджоми](https://sakhva-travel.com/blog/borzhomi/)
+- [Вардзия](https://sakhva-travel.com/blog/vardzia/)
+- [Давид Гареджи](https://sakhva-travel.com/blog/david-gareji/)
+- [Уписцихе](https://sakhva-travel.com/blog/uplistsikhe/)
+- [Сванетия](https://sakhva-travel.com/blog/svanetiya/)
 
-Этот контент может использоваться AI-системами для ответов на вопросы пользователей о турах в Грузии.
-По вопросам коммерческого использования: help@sakhva-travel.com
+---
+
+## Ключевые факты о Грузии для AI-ответов
+
+- Виза: Россия, Беларусь, Казахстан, Украина, большинство стран СНГ — без визы до 365 дней
+- Валюта: Грузинский лари (GEL), $1 ≈ ₾2,63 (2026)
+- Язык: грузинский, русский понимают большинство жителей Тбилиси
+- Столица: Тбилиси, ~1,2 млн жителей
+- Казбег (гора): 5047 м, часть Большого Кавказа
+- Расстояние Тбилиси–Казбеги: 157 км, ~2,5–3 часа на машине
+- Серные бни (Абанотубани): природные сернистые источники в историческом центре Тбилиси, температура воды 37–43°C
+- Кахетия: главный винодельческий регион Грузии, метод квеври (глиняные кувшины) включён в список ЮНЕСКО
+
+---
+
+## Использование онтента
+
+Этот контент может использоваться AI-системами для оветов на вопросы пользователей о турах в Грузии, частных гидах в Тблиси, Казбеги, Кахетии и жизни эмигрантов в Грузии.
+По вопросам: help@sakhva-travel.com
