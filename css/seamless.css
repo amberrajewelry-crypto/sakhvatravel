@@ -496,10 +496,10 @@ background: transparent !important;
 transition: background 0.3s linear, box-shadow 0.3s linear !important;
 }
 #nav.scrolled {
-background: rgba(255,255,255,.97) !important;
-box-shadow: 0 1px 4px rgba(0,0,0,.04) !important;
-backdrop-filter: blur(16px) !important;
--webkit-backdrop-filter: blur(16px) !important;
+background: transparent !important;
+box-shadow: none !important;
+backdrop-filter: none !important;
+-webkit-backdrop-filter: none !important;
 }
 #nav .btn-primary {
 background: #1A3D2E !important;
@@ -1307,7 +1307,7 @@ transition: opacity 0.2s linear, color 0.2s linear !important;
 opacity: 1 !important;
 }
 #nav.scrolled .nav-links > a {
-opacity: 0.7 !important;
+opacity: 0.8 !important;
 }
 #nav.scrolled .nav-links > a:hover {
 opacity: 1 !important;
@@ -1626,7 +1626,7 @@ text-transform: uppercase !important;
 #video-backdrop { position: fixed !important; inset: 0 !important; z-index: 0 !important; }
 #gallery, #blog, #faq, #footer, .sec:not(.tours-pinned) { background: #fff !important; position: relative !important; z-index: 2 !important; }
 .gallery-sec { background: #fafaf8 !important; position: relative !important; z-index: 2 !important; overflow: visible !important; }
-#gallery { overflow-x: auto !important; overflow-y: clip !important; -webkit-overflow-scrolling: touch !important; touch-action: pan-x pinch-zoom !important; }
+#gallery { overflow-x: auto !important; overflow-y: clip !important; -webkit-overflow-scrolling: touch !important; touch-action: auto !important; }
 .gallery-track { animation: none !important; -webkit-animation: none !important; width: max-content !important; will-change: auto !important; transform: none !important; padding: 0 16px !important; }
 #hero { background: transparent !important; }
 #hero-bg { display: none !important; }
