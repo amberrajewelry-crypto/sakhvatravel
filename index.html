@@ -631,23 +631,110 @@ v.play().catch(function(){});
 document.querySelectorAll('.tours-track .tc').forEach(function(c){io.observe(c)});
 })();
 </script>
+<style>
+.tc-calc{padding:12px 14px 14px;background:rgba(0,0,0,.45);backdrop-filter:blur(8px)}
+.tc-calc-price-row{display:flex;align-items:baseline;gap:7px;margin-bottom:3px}
+.tc-calc-total{font-size:26px;font-weight:700;color:#fff;line-height:1}
+.tc-calc-old{font-size:15px;color:rgba(255,255,255,.45);text-decoration:line-through;line-height:1;align-self:center}
+.tc-calc-label{font-size:12px;color:rgba(255,255,255,.5)}
+.tc-calc-disc{display:none;background:#F59E0B;color:#111;font-size:11px;font-weight:700;padding:2px 9px;border-radius:20px;margin-bottom:9px;width:fit-content}
+.tc-calc-curr{display:flex;gap:3px;margin-bottom:10px;margin-top:8px}
+.tc-calc-curr button{flex:1;padding:5px 0;border:1px solid rgba(255,255,255,.18);background:transparent;color:rgba(255,255,255,.5);font-family:'Lora',serif;font-size:11px;font-weight:700;border-radius:6px;cursor:pointer;transition:all .15s}
+.tc-calc-curr button.on{background:rgba(255,255,255,.18);color:#fff;border-color:rgba(255,255,255,.35)}
+.tc-calc-ppl-label{font-size:10px;color:rgba(255,255,255,.4);letter-spacing:.1em;text-transform:uppercase;margin-bottom:7px}
+.tc-calc-ppl{display:flex;gap:4px;margin-bottom:12px}
+.tc-calc-ppl button{flex:1;height:30px;border-radius:7px;border:1.5px solid rgba(255,255,255,.15);background:transparent;color:rgba(255,255,255,.55);font-family:'Lora',serif;font-size:13px;font-weight:700;cursor:pointer;transition:all .15s}
+.tc-calc-ppl button:hover{border-color:rgba(255,255,255,.4);color:#fff}
+.tc-calc-ppl button.on{background:#1A3D2E;border-color:#1A3D2E;color:#fff}
+.tc-calc-ppl button.d10,.tc-calc-ppl button.d15{border-color:rgba(245,158,11,.4);color:rgba(245,158,11,.8)}
+.tc-calc-ppl button.d10.on,.tc-calc-ppl button.d15.on{background:#F59E0B;border-color:#F59E0B;color:#111}
+</style>
 <script>
 (function(){
-var cur=localStorage.getItem("curr_v1")||"gel";
-document.querySelectorAll(".tc-foot").forEach(function(foot){
-var sw=document.createElement("div");
-sw.className="tc-curr-sw";
-sw.innerHTML='<button class="tc-curr'+(cur==="gel"?" on":"")+'" data-c="gel">₾ GEL</button><button class="tc-curr'+(cur==="rub"?" on":"")+'" data-c="rub">₽ RUB</button><button class="tc-curr'+(cur==="usd"?" on":"")+'" data-c="usd">$ USD</button><button class="tc-curr'+(cur==="eur"?" on":"")+'" data-c="eur">€ EUR</button>';
-foot.insertBefore(sw,foot.firstChild);
-});
-document.addEventListener("click",function(e){
-var b=e.target.closest(".tc-curr");
-if(!b)return;
-var c=b.getAttribute("data-c");
-document.querySelectorAll(".tc-curr").forEach(function(x){x.classList.toggle("on",x.getAttribute("data-c")===c)});
-document.querySelectorAll(".curr-btn").forEach(function(x){x.classList.toggle("active",x.getAttribute("data-curr")===c)});
-var ev=document.querySelector('.curr-btn[data-curr="'+c+'"]');
-if(ev)ev.click();
+var SYM={gel:'₾',rub:'₽',usd:'$',eur:'€'};
+var RATE_RUB=90,RATE_EUR=0.92;
+function disc(n){return n>=6?0.15:n>=4?0.10:0}
+
+function buildCalc(foot){
+  var pm=foot.querySelector('.price-main');
+  if(!pm)return;
+  var gel=parseInt((pm.getAttribute('data-gel')||'').replace(/\D/g,''))||0;
+  var usd=parseInt((pm.getAttribute('data-usd')||'').replace(/\D/g,''))||0;
+  var prices={gel:gel,usd:usd,rub:Math.round(usd*RATE_RUB),eur:Math.round(usd*RATE_EUR)};
+  var cta=foot.querySelector('.tc-cta');
+  var ctaHtml=cta?cta.outerHTML:'';
+  var cur=localStorage.getItem('curr_v1')||'gel';
+
+  var pplBtns='';
+  for(var i=1;i<=7;i++){
+    var cls=i>=6?'d15':i>=4?'d10':'';
+    if(i===1)cls+=' on';
+    pplBtns+='<button class="'+cls.trim()+'" data-n="'+i+'">'+i+'</button>';
+  }
+  var currBtns=['gel','rub','usd','eur'].map(function(c){
+    return '<button data-c="'+c+'"'+(c===cur?' class="on"':'')+'>'+SYM[c]+' '+c.toUpperCase()+'</button>';
+  }).join('');
+
+  var div=document.createElement('div');
+  div.className='tc-calc';
+  div.dataset.curr=cur;
+  div.dataset.ppl='1';
+  div.dataset.gel=prices.gel;
+  div.dataset.rub=prices.rub;
+  div.dataset.usd=prices.usd;
+  div.dataset.eur=prices.eur;
+  div.innerHTML=
+    '<div class="tc-calc-price-row"><span class="tc-calc-total"></span><span class="tc-calc-old"></span><span class="tc-calc-label"></span></div>'+
+    '<div class="tc-calc-disc"></div>'+
+    '<div class="tc-calc-curr">'+currBtns+'</div>'+
+    '<div class="tc-calc-ppl-label" data-ru="Количество человек" data-en="Number of people">Количество человек</div>'+
+    '<div class="tc-calc-ppl">'+pplBtns+'</div>'+
+    ctaHtml;
+  foot.parentNode.replaceChild(div,foot);
+  updateCalc(div);
+}
+
+function updateCalc(card){
+  var c=card.dataset.curr||'gel';
+  var n=parseInt(card.dataset.ppl||1);
+  var base=parseInt(card.dataset[c])||0;
+  var d=disc(n);
+  var full=base*n;
+  var final=d>0?Math.round(full*(1-d)):full;
+  var sym=SYM[c];
+  card.querySelector('.tc-calc-total').textContent=sym+final;
+  var oldEl=card.querySelector('.tc-calc-old');
+  var discEl=card.querySelector('.tc-calc-disc');
+  if(d>0){
+    oldEl.textContent=sym+full;oldEl.style.display='inline';
+    discEl.textContent='−'+(d*100|0)+'% скидка за компанию';discEl.style.display='block';
+  }else{
+    oldEl.style.display='none';discEl.style.display='none';
+  }
+  card.querySelector('.tc-calc-label').textContent='итого · '+n+' чел.';
+}
+
+document.querySelectorAll('.tc-foot').forEach(buildCalc);
+
+document.addEventListener('click',function(e){
+  var cb=e.target.closest('.tc-calc-curr button');
+  if(cb){
+    var card=cb.closest('.tc-calc');
+    card.querySelectorAll('.tc-calc-curr button').forEach(function(b){b.classList.remove('on')});
+    cb.classList.add('on');
+    card.dataset.curr=cb.dataset.c;
+    localStorage.setItem('curr_v1',cb.dataset.c);
+    updateCalc(card);
+    return;
+  }
+  var pb=e.target.closest('.tc-calc-ppl button');
+  if(pb){
+    var card=pb.closest('.tc-calc');
+    card.querySelectorAll('.tc-calc-ppl button').forEach(function(b){b.classList.remove('on')});
+    pb.classList.add('on');
+    card.dataset.ppl=pb.dataset.n;
+    updateCalc(card);
+  }
 });
 })();
 </script>
