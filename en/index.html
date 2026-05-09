@@ -221,7 +221,13 @@ img[loading="lazy"]{decoding:async}
 .gallery-slide img{width:100%;height:100%;object-fit:cover;display:block}
 @keyframes galleryScroll{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}
 @-webkit-keyframes galleryScroll{from{-webkit-transform:translate3d(0,0,0)}to{-webkit-transform:translate3d(-50%,0,0)}}
-@media(max-width:580px){.gallery-slide{flex:0 0 200px}}
+@media(max-width:767px){
+#gallery{overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+#gallery::-webkit-scrollbar{display:none}
+.gallery-track{animation:none;-webkit-animation:none;width:auto;scroll-snap-type:x mandatory;padding:0 16px;gap:12px}
+.gallery-slide{flex:0 0 200px;scroll-snap-align:start}
+.gallery-slide[aria-hidden="true"]{display:none}
+}
 @media(prefers-reduced-motion:reduce){
 html{scroll-behavior:auto}
 .tours-pinned{height:auto}
