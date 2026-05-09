@@ -1626,7 +1626,7 @@ text-transform: uppercase !important;
 #video-backdrop { position: fixed !important; inset: 0 !important; z-index: 0 !important; }
 #gallery, #blog, #faq, #footer, .sec:not(.tours-pinned) { background: #fff !important; position: relative !important; z-index: 2 !important; }
 .gallery-sec { background: #fafaf8 !important; position: relative !important; z-index: 2 !important; overflow: visible !important; }
-#gallery { overflow-x: auto !important; overflow-y: hidden !important; -webkit-overflow-scrolling: touch !important; }
+#gallery { overflow-x: auto !important; overflow-y: clip !important; -webkit-overflow-scrolling: touch !important; touch-action: pan-x pinch-zoom !important; }
 .gallery-track { animation: none !important; -webkit-animation: none !important; width: max-content !important; will-change: auto !important; transform: none !important; padding: 0 16px !important; }
 #hero { background: transparent !important; }
 #hero-bg { display: none !important; }
