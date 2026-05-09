@@ -4,8 +4,6 @@
 # Default: allow all
 User-agent: *
 Allow: /
-Disallow: /yandex_54a6ffc3cdb9742e.html
-Disallow: /google8598dd92e7bc33ca.html
 
 # Search engines
 User-agent: Googlebot
