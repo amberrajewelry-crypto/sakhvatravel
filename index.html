@@ -287,7 +287,8 @@ img[loading="lazy"]{decoding:async}
 #gallery{background:#fafaf8;padding:0 0 56px}
 .gallery-preview{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;max-width:1280px;margin:0 auto;padding:0 20px}
 .gp-item{border-radius:12px;overflow:hidden;aspect-ratio:3/4;cursor:pointer;position:relative}
-.gp-item img,.gp-item video{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s ease}
+.gp-item img,.gp-item video{width:100%;height:100%;object-fit:cover;-webkit-object-fit:cover;display:block;transition:transform .35s ease;background:#000}
+.gm-item img,.gm-item video{object-fit:cover;-webkit-object-fit:cover;background:#000}
 .gp-item:hover img,.gp-item:hover video{transform:scale(1.04)}
 .gallery-btn-wrap{text-align:center;margin-top:32px}
 #gallery-modal{display:none;position:fixed;inset:0;z-index:99999;background:rgba(11,24,18,.95);overflow-y:auto;-webkit-overflow-scrolling:touch}
@@ -1043,13 +1044,9 @@ style="border:0"></iframe>
 <div class="gp-item"><video autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;display:block"><source src="/images/gallery-33.webm" type="video/webm"></video></div>
 </div>
 <div class="gallery-btn-wrap">
-<button onclick="openGalleryModal()" class="btn-primary" style="font-size:14px;padding:14px 36px" data-ru="Смотреть все фото и видео" data-en="See all photos &amp; videos">Смотреть все фото и видео</button>
+<button id="gallery-expand-btn" onclick="expandGallery()" class="btn-primary" style="font-size:14px;padding:14px 36px" data-ru="Смотреть все фото и видео" data-en="See all photos &amp; videos">Смотреть все фото и видео</button>
 </div>
-<div id="gallery-modal" role="dialog" aria-modal="true" aria-label="Все фото с туров">
-<div class="gm-header">
-<span class="gm-title" data-ru="Фото и видео с наших туров" data-en="Photos &amp; videos from our tours">Фото и видео с наших туров</span>
-<button class="gm-close" onclick="closeGalleryModal()" aria-label="Закрыть">&times;</button>
-</div>
+<div id="gallery-full" style="display:none;max-width:1280px;margin:24px auto 0;padding:0 20px">
 <div class="gm-grid">
 <div class="gm-item"><img src="/images/gallery-1.webp?v=4" alt="Группа туристов у арки монастыря с видом на горы" loading="lazy" width="400" height="533"></div>
 <div class="gm-item"><img src="/images/gallery-2.webp" alt="Группа туристов у Гергетской церкви в Казбеги" loading="lazy" width="400" height="533"></div>
@@ -1087,19 +1084,24 @@ style="border:0"></iframe>
 </div>
 </div>
 <script>
-function openGalleryModal(){
-var m=document.getElementById('gallery-modal');
-m.classList.add('gm-open');
-document.body.style.overflow='hidden';
-m.scrollTop=0;
-m.querySelectorAll('video').forEach(function(v){v.play().catch(function(){})});
+function expandGallery(){
+var g=document.getElementById('gallery-full');
+var btn=document.getElementById('gallery-expand-btn');
+if(g.style.display==='none'){
+  g.style.display='block';
+  g.querySelectorAll('video').forEach(function(v){v.play().catch(function(){})});
+  setTimeout(function(){g.scrollIntoView({behavior:'smooth',block:'start'})},50);
+  btn.setAttribute('data-ru','Скрыть');
+  btn.setAttribute('data-en','Hide');
+  btn.textContent='Скрыть';
+}else{
+  g.style.display='none';
+  g.querySelectorAll('video').forEach(function(v){v.pause()});
+  btn.setAttribute('data-ru','Смотреть все фото и видео');
+  btn.setAttribute('data-en','See all photos & videos');
+  btn.textContent='Смотреть все фото и видео';
 }
-function closeGalleryModal(){
-document.getElementById('gallery-modal').classList.remove('gm-open');
-document.body.style.overflow='';
-document.getElementById('gallery-modal').querySelectorAll('video').forEach(function(v){v.pause()});
 }
-document.addEventListener('keydown',function(e){if(e.key==='Escape')closeGalleryModal()});
 </script>
 </section>
 <section class="sec reveal" id="blog">
