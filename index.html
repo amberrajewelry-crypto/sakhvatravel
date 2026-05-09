@@ -835,9 +835,9 @@ document.addEventListener('click',function(e){
 .cmp-table tbody td{padding:10px 8px!important;font-size:13px!important;line-height:1.5!important}
 }
 .th-empty{width:52px;background:transparent;border:none}
-.col-bus{color:#9CA3AF;background:#F9FAFB;border:1px solid #E5E7EB;border-right:none;border-radius:10px 0 0 0}
-.col-self{color:#9CA3AF;background:#F9FAFB;border-top:1px solid #E5E7EB;border-bottom:1px solid #E5E7EB}
-.col-timur{color:#fff;background:#1A3D2E;border-radius:0 10px 0 0;padding-top:8px!important}
+.col-bus{color:#9CA3AF;background:#F9FAFB;border:1px solid #E5E7EB;border-right:none;border-radius:10px 0 0 0;width:28%}
+.col-self{color:#9CA3AF;background:#F9FAFB;border-top:1px solid #E5E7EB;border-bottom:1px solid #E5E7EB;width:28%}
+.col-timur{color:#fff;background:#1A3D2E;border-radius:0 10px 0 0;padding-top:8px!important;width:44%}
 .col-icon{font-size:20px;display:block;margin-bottom:4px}
 .col-name{display:block;font-size:12px}
 .col-timur-badge{display:inline-block;background:#F59E0B;color:#1A3D2E;font-size:9px;font-weight:700;letter-spacing:1px;padding:2px 8px;border-radius:20px;margin-bottom:4px;text-transform:uppercase}
@@ -856,7 +856,6 @@ document.addEventListener('click',function(e){
 <table class="cmp-table">
   <thead>
     <tr>
-      <th class="th-empty"></th>
       <th class="col-bus"><span class="col-icon">🚌</span><span class="col-name">Автобусный тур</span></th>
       <th class="col-self"><span class="col-icon">🗺️</span><span class="col-name">Самостоятельно</span></th>
       <th class="col-timur"><div class="col-timur-badge">Sakhva</div><span class="col-icon">🤝</span><span class="col-name">С Тимуром</span></th>
@@ -864,37 +863,31 @@ document.addEventListener('click',function(e){
   </thead>
   <tbody>
     <tr>
-      <td class="col-time"><span class="time-dot">07:00</span></td>
       <td class="col-bus">Ждёте у фонтана пока соберутся 40 незнакомцев</td>
       <td class="col-self">Такси ₾180, водитель не говорит по-русски</td>
       <td class="col-timur">Тимур у отеля. В машине кофе и маршрут на день</td>
     </tr>
     <tr>
-      <td class="col-time"><span class="time-dot">10:00</span></td>
       <td class="col-bus">Гид говорит на грузинском, потом переводит</td>
       <td class="col-self">Едете по трассе. Никто не сказал что есть дорога с видом</td>
       <td class="col-timur">«Покажу место — туристы сюда не доезжают»</td>
     </tr>
     <tr>
-      <td class="col-time"><span class="time-dot">12:00</span></td>
       <td class="col-bus">«Выезжаем через 10 минут». Не успели поесть</td>
       <td class="col-self">Кафе у дороги — единственное что нашли</td>
       <td class="col-timur">Обед у Мананы. Хинкали лепите сами, вино из квеври</td>
     </tr>
     <tr>
-      <td class="col-time"><span class="time-dot">14:00</span></td>
       <td class="col-bus">Очередь на Гергети: 60 человек впереди вас</td>
       <td class="col-self">Гергетская Троица закрыта по понедельникам</td>
       <td class="col-timur">У Тимура связи везде. Заходите пока другие стоят снаружи</td>
     </tr>
     <tr>
-      <td class="col-time"><span class="time-dot">16:00</span></td>
       <td class="col-bus">Автобус едет домой. Казбек в облаках — не ваш день</td>
       <td class="col-self">Хотели к озеру — не знали где оно</td>
       <td class="col-timur">Ждём пока облака разойдутся. Поднимемся выше</td>
     </tr>
     <tr>
-      <td class="col-time"><span class="time-dot">19:00</span></td>
       <td class="col-bus">Дома. Устали от толпы</td>
       <td class="col-self">Дома. Потеряли полдень</td>
       <td class="col-timur">Дома. 200 фото, контакты секретных локаций и эмоции на всю жизнь</td>
