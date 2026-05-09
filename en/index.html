@@ -215,19 +215,13 @@ img[loading="lazy"]{decoding:async}
 .tours-pinned-h2{position:relative;top:auto;padding-top:8px;margin-bottom:12px;font-size:clamp(22px,6vw,32px)}
 .tours-overlay{background:linear-gradient(180deg,rgba(0,0,0,.55) 0%,rgba(0,0,0,.7) 100%)}
 }
-#gallery{overflow:hidden;background:#fafaf8}
-.gallery-track{display:flex;gap:10px;width:max-content;will-change:transform;-webkit-animation:galleryScroll 50s linear infinite;animation:galleryScroll 50s linear infinite}
-.gallery-slide{flex:0 0 320px;overflow:hidden;border-radius:8px;aspect-ratio:3/4}
-.gallery-slide img{width:100%;height:100%;object-fit:cover;display:block}
-@keyframes galleryScroll{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}
-@-webkit-keyframes galleryScroll{from{-webkit-transform:translate3d(0,0,0)}to{-webkit-transform:translate3d(-50%,0,0)}}
-@media(max-width:767px){
-#gallery{overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
-#gallery::-webkit-scrollbar{display:none}
-.gallery-track{animation:none;-webkit-animation:none;width:auto;scroll-snap-type:x mandatory;padding:0 16px;gap:12px}
-.gallery-slide{flex:0 0 200px;scroll-snap-align:start}
-.gallery-slide[aria-hidden="true"]{display:none}
-}
+#gallery{background:#fafaf8}
+.gallery-preview{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;max-width:1280px;margin:0 auto;padding:0 20px}
+.gp-item{position:relative;aspect-ratio:3/4;overflow:hidden;border-radius:8px;background:#0b1812}
+.gp-item video{width:100%;height:100%;object-fit:cover;display:block}
+.gallery-btn-wrap{text-align:center;margin-top:20px;padding-bottom:8px}
+@media(max-width:900px){.gallery-preview{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:767px){.gallery-preview{gap:6px;padding:0 12px}}
 @media(prefers-reduced-motion:reduce){
 html{scroll-behavior:auto}
 .tours-pinned{height:auto}
@@ -807,43 +801,17 @@ document.querySelectorAll('.tours-track .tc').forEach(function(c){io.observe(c)}
 </div>
 </section>
 
-<!-- PHOTO GALLERY — auto-scroll -->
-<section class="gallery-sec" id="gallery" style="margin:0;padding:0;overflow:hidden;max-width:100vw">
-  <h2 class="sec-title" data-anim="up" style="text-align:center;padding:24px 20px 16px;margin:0;font-size:clamp(20px,5.5vw,48px)">Photos from our tours</h2>
-  <div class="gallery-track">
-    <div class="gallery-slide"><img src="/images/gallery-1.webp?v=4" alt="Tourist group at monastery arch with mountain views" width="400" height="533" fetchpriority="low"></div>
-    <div class="gallery-slide"><img src="/images/gallery-2.webp" alt="Tourists at Gergeti Trinity Church in Kazbegi" width="400" height="533" fetchpriority="low"></div>
-    <div class="gallery-slide"><img src="/images/gallery-3.webp?v=2" alt="Couple at Chronicle of Georgia monument in Tbilisi" width="400" height="533" fetchpriority="low"></div>
-    <div class="gallery-slide"><img src="/images/gallery-4.webp" alt="Family walk on a guided tour" width="400" height="533" fetchpriority="low"></div>
-    <div class="gallery-slide"><img src="/images/gallery-5.webp" alt="Tourist at Batumi seafront sculpture" width="400" height="533" fetchpriority="low"></div>
-    <div class="gallery-slide"><img src="/images/gallery-6.webp" alt="Couple at Holy Trinity Cathedral in Tbilisi" width="400" height="533" fetchpriority="low"></div>
-    <div class="gallery-slide"><img src="/images/gallery-7.webp?v=2" alt="Selfie with a winemaker in Kakheti cellar" width="400" height="533" fetchpriority="low"></div>
-    <div class="gallery-slide"><img src="/images/gallery-8.webp" alt="Group resting in Kazbegi mountains" width="400" height="533" fetchpriority="low"></div>
-    <div class="gallery-slide"><img src="/images/gallery-9.webp" alt="Tourists at a Tbilisi viewpoint" width="400" height="533" fetchpriority="low"></div>
-    <div class="gallery-slide"><img src="/images/gallery-10.webp" alt="Tourist group at Kazbegi summit" width="400" height="533" fetchpriority="low"></div>
-    <div class="gallery-slide"><img src="/images/gallery-11.webp" alt="Guide Timur with tourists on a tour in Georgia" width="400" height="533" fetchpriority="low"></div>
-    <div class="gallery-slide"><img src="/images/gallery-12.webp" alt="Wine tasting at a Kakheti winery" width="400" height="533" fetchpriority="low"></div>
-    <div class="gallery-slide"><img src="/images/gallery-13.webp?v=2" alt="On the road to Kazbegi" width="400" height="533" fetchpriority="low"></div>
-    <div class="gallery-slide"><img src="/images/gallery-14.webp" alt="View of Old Tbilisi from a carved balcony" width="400" height="533" fetchpriority="low"></div>
-    <div class="gallery-slide"><img src="/images/gallery-15.webp?v=2" alt="On the road to Georgian mountains" width="400" height="533" fetchpriority="low"></div>
-    <div class="gallery-slide"><img src="/images/gallery-16.webp" alt="Ferrari Formula 1 car at a Tbilisi art space" width="400" height="533" fetchpriority="low"></div>
-    <!-- duplicate for seamless loop -->
-    <div class="gallery-slide" aria-hidden="true"><img src="/images/gallery-1.webp?v=4" alt="" width="400" height="533" fetchpriority="low"></div>
-    <div class="gallery-slide" aria-hidden="true"><img src="/images/gallery-2.webp" alt="" width="400" height="533" fetchpriority="low"></div>
-    <div class="gallery-slide" aria-hidden="true"><img src="/images/gallery-3.webp?v=2" alt="" width="400" height="533" fetchpriority="low"></div>
-    <div class="gallery-slide" aria-hidden="true"><img src="/images/gallery-4.webp" alt="" width="400" height="533" fetchpriority="low"></div>
-    <div class="gallery-slide" aria-hidden="true"><img src="/images/gallery-5.webp" alt="" width="400" height="533" fetchpriority="low"></div>
-    <div class="gallery-slide" aria-hidden="true"><img src="/images/gallery-6.webp" alt="" width="400" height="533" fetchpriority="low"></div>
-    <div class="gallery-slide" aria-hidden="true"><img src="/images/gallery-7.webp?v=2" alt="" width="400" height="533" fetchpriority="low"></div>
-    <div class="gallery-slide" aria-hidden="true"><img src="/images/gallery-8.webp" alt="" width="400" height="533" fetchpriority="low"></div>
-    <div class="gallery-slide" aria-hidden="true"><img src="/images/gallery-9.webp" alt="" width="400" height="533" fetchpriority="low"></div>
-    <div class="gallery-slide" aria-hidden="true"><img src="/images/gallery-10.webp" alt="" width="400" height="533" fetchpriority="low"></div>
-    <div class="gallery-slide" aria-hidden="true"><img src="/images/gallery-11.webp" alt="" width="400" height="533" fetchpriority="low"></div>
-    <div class="gallery-slide" aria-hidden="true"><img src="/images/gallery-12.webp" alt="" width="400" height="533" fetchpriority="low"></div>
-    <div class="gallery-slide" aria-hidden="true"><img src="/images/gallery-13.webp?v=2" alt="" width="400" height="533" fetchpriority="low"></div>
-    <div class="gallery-slide" aria-hidden="true"><img src="/images/gallery-14.webp" alt="" width="400" height="533" fetchpriority="low"></div>
-    <div class="gallery-slide" aria-hidden="true"><img src="/images/gallery-15.webp?v=2" alt="" width="400" height="533" fetchpriority="low"></div>
-    <div class="gallery-slide" aria-hidden="true"><img src="/images/gallery-16.webp" alt="" width="400" height="533" fetchpriority="low"></div>
+<!-- PHOTO GALLERY -->
+<section class="gallery-sec" id="gallery" style="padding:40px 0 32px">
+  <h2 class="sec-title" data-anim="up" style="text-align:center;padding:0 20px 24px;margin:0;font-size:clamp(20px,5.5vw,48px)">Photos from our tours</h2>
+  <div class="gallery-preview">
+    <div class="gp-item"><video autoplay muted loop playsinline><source src="/images/gallery-17.webm" type="video/webm"></video></div>
+    <div class="gp-item"><video autoplay muted loop playsinline><source src="/images/gallery-18.webm" type="video/webm"></video></div>
+    <div class="gp-item" style="overflow:hidden"><video autoplay muted loop playsinline style="transform:scale(1.6)"><source src="/images/gallery-19.webm" type="video/webm"></video></div>
+    <div class="gp-item"><video autoplay muted loop playsinline><source src="/images/gallery-28.webm" type="video/webm"></video></div>
+  </div>
+  <div class="gallery-btn-wrap">
+    <a href="/gallery/" class="btn-primary" style="font-size:14px;padding:14px 36px;display:inline-block;text-decoration:none">See all photos &amp; videos</a>
   </div>
 </section>
 
