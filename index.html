@@ -664,44 +664,77 @@ if(ev)ev.click();
 <div class="wc reveal" style="transition-delay:.14s"><div class="wc-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><div class="wc-num">03</div><div class="wc-title" data-ru="Одна цена — и всё." data-en="One price — all in.">Одна цена — и всё.</div><p class="wc-text" data-ru="Трансфер, гид, парковки, дегустации — посчитано до выезда. К концу поездки цифра не меняется." data-en="Transfer, guide, parking, tastings — calculated before departure. The number doesn't change by the end of the trip.">Трансфер, гид, парковки, дегустации — посчитано до выезда. К концу поездки цифра не меняется.</p></div>
 <div class="wc reveal" style="transition-delay:.21s"><div class="wc-icon"><svg viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></div><div class="wc-num">04</div><div class="wc-title" data-ru="Маршрут — ваш, не наш!" data-en="Your route, not ours!">Маршрут — ваш, не наш!</div><p class="wc-text" data-ru="Понравилось место — стоим, сколько хотите. Захотели свернуть к озеру, которого нет в программе — сворачиваем. Устали — едем в отель, не устали — заезжаем ещё к виноделу. Мы не везём вас по графику. Мы помогаем вам провести день так, как захочется именно сегодня." data-en="Liked a spot — we stay as long as you want. Want to detour to a lake not on the itinerary — we detour. Tired — we head back, not tired — we visit a winemaker. We don't run you on a schedule. We help you spend the day exactly as you want it today.">Понравилось место — стоим, сколько хотите. Захотели свернуть к озеру, которого нет в программе — сворачиваем. Устали — едем в отель, не устали — заезжаем ещё к виноделу. Мы не везём вас по графику. Мы помогаем вам провести день так, как захочется именно сегодня.</p></div>
 </div>
-<div class="price-grid" style="margin-top:40px">
-<div class="pc reveal">
-<div class="pc-name" data-ru="Группа" data-en="Group">Группа</div>
-<div class="pc-sub" data-ru="до 7 человек" data-en="up to 7 people">до 7 человек</div>
-<div class="pc-price" data-ru="от ₾120" data-en="from ₾120">от ₾120</div>
-<div class="pc-pper" data-ru="с человека" data-en="per person">с человека</div>
-<div class="pc-feats">
-<div class="pc-feat" data-ru="Гид Тимур на весь день" data-en="Guide Timur all day">Гид Тимур на весь день</div>
-<div class="pc-feat" data-ru="Авторский маршрут" data-en="Custom route">Авторский маршрут</div>
-<div class="pc-feat" data-ru="Трансфер от отеля" data-en="Hotel transfer">Трансфер от отеля</div>
-</div>
-<a href="#" onclick="openContact();return false" class="pc-btn" data-ru="Записаться" data-en="Sign up">Записаться</a>
-</div>
-<div class="pc featured reveal" style="transition-delay:.07s">
-<div class="pc-badge" data-ru="Рекомендуем" data-en="Recommended">Рекомендуем</div>
-<div class="pc-name" data-ru="Мини-группа" data-en="Small group">Мини-группа</div>
-<div class="pc-sub" data-ru="до 4 человек" data-en="up to 4 people">до 4 человек</div>
-<div class="pc-price" data-ru="от ₾200" data-en="from ₾200">от ₾200</div>
-<div class="pc-pper" data-ru="с человека" data-en="per person">с человека</div>
-<div class="pc-feats">
-<div class="pc-feat" data-ru="Всё из группы" data-en="Everything from group">Всё из группы</div>
-<div class="pc-feat" data-ru="Больше остановок" data-en="More stops">Больше остановок</div>
-<div class="pc-feat" data-ru="Встреча у вашего отеля" data-en="Hotel pickup">Встреча у вашего отеля</div>
-</div>
-<a href="#" onclick="openContact();return false" class="pc-btn" data-ru="Забронировать" data-en="Book now">Забронировать</a>
-</div>
-<div class="pc reveal" style="transition-delay:.14s">
-<div class="pc-name" data-ru="Приватная" data-en="Private">Приватная</div>
-<div class="pc-sub" data-ru="только вы · 1–6 чел" data-en="just you · 1–6 ppl">только вы · 1–6 чел</div>
-<div class="pc-price" data-ru="от ₾500" data-en="from ₾500">от ₾500</div>
-<div class="pc-pper" data-ru="за группу" data-en="per group">за группу</div>
-<div class="pc-feats">
-<div class="pc-feat" data-ru="Весь маршрут под вас" data-en="Fully custom route">Весь маршрут под вас</div>
-<div class="pc-feat" data-ru="Гибкое время старта" data-en="Flexible start time">Гибкое время старта</div>
-<div class="pc-feat" data-ru="Встреча у вашего отеля" data-en="Hotel pickup">Встреча у вашего отеля</div>
-</div>
-<a href="#" onclick="openContact();return false" class="pc-btn" data-ru="Обсудить" data-en="Discuss">Обсудить</a>
-</div>
+<style>
+.cmp-wrap{overflow-x:auto;margin-top:40px}
+.cmp-table{width:100%;border-collapse:separate;border-spacing:0;min-width:560px}
+.cmp-table thead th{padding:12px 14px 10px;font-family:'Lora',serif;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;text-align:center}
+.th-empty{width:52px;background:transparent;border:none}
+.col-bus{color:#9CA3AF;background:#F9FAFB;border:1px solid #E5E7EB;border-right:none;border-radius:10px 0 0 0}
+.col-self{color:#9CA3AF;background:#F9FAFB;border-top:1px solid #E5E7EB;border-bottom:1px solid #E5E7EB}
+.col-timur{color:#fff;background:#1A3D2E;border-radius:0 10px 0 0;padding-top:8px!important}
+.col-icon{font-size:16px;display:block;margin-bottom:2px}
+.col-name{display:block;font-size:10px}
+.col-timur-badge{display:inline-block;background:#F59E0B;color:#1A3D2E;font-size:9px;font-weight:700;letter-spacing:1px;padding:2px 8px;border-radius:20px;margin-bottom:4px;text-transform:uppercase}
+.col-time{width:52px;padding:10px 4px;text-align:center;vertical-align:middle}
+.time-dot{display:inline-block;background:#E5E7EB;color:#9CA3AF;font-size:10px;font-weight:700;padding:3px 6px;border-radius:12px;white-space:nowrap}
+.cmp-table tbody td{padding:9px 13px;vertical-align:top;font-size:12.5px;line-height:1.5;border-bottom:1px solid #F3F4F6;font-family:'Lora',serif}
+.cmp-table tbody .col-bus{background:#fff;color:#9CA3AF;border-left:1px solid #E5E7EB}
+.cmp-table tbody .col-self{background:#fff;color:#9CA3AF}
+.cmp-table tbody .col-timur{background:#F0F7F4;color:#1A3D2E;font-weight:600;border-left:2px solid #1A3D2E;border-right:2px solid #1A3D2E}
+.cmp-table tbody tr:last-child .col-bus{border-radius:0 0 0 10px;border-bottom:1px solid #E5E7EB}
+.cmp-table tbody tr:last-child .col-self{border-bottom:1px solid #E5E7EB}
+.cmp-table tbody tr:last-child .col-timur{border-radius:0 0 10px 0;border-bottom:2px solid #1A3D2E;background:#1A3D2E;color:#fff}
+.cmp-table tbody tr:last-child .col-time .time-dot{background:#1A3D2E;color:#fff}
+</style>
+<div class="cmp-wrap reveal">
+<table class="cmp-table">
+  <thead>
+    <tr>
+      <th class="th-empty"></th>
+      <th class="col-bus"><span class="col-icon">🚌</span><span class="col-name">Автобусный тур</span></th>
+      <th class="col-self"><span class="col-icon">🗺️</span><span class="col-name">Самостоятельно</span></th>
+      <th class="col-timur"><div class="col-timur-badge">Sakhva</div><span class="col-icon">🤝</span><span class="col-name">С Тимуром</span></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="col-time"><span class="time-dot">07:00</span></td>
+      <td class="col-bus">Ждёте у фонтана пока соберутся 40 незнакомцев</td>
+      <td class="col-self">Такси ₾180, водитель не говорит по-русски</td>
+      <td class="col-timur">Тимур у отеля. В машине кофе и маршрут на день</td>
+    </tr>
+    <tr>
+      <td class="col-time"><span class="time-dot">10:00</span></td>
+      <td class="col-bus">Гид говорит на грузинском, потом переводит</td>
+      <td class="col-self">Едете по трассе. Никто не сказал что есть дорога с видом</td>
+      <td class="col-timur">«Покажу место — туристы сюда не доезжают»</td>
+    </tr>
+    <tr>
+      <td class="col-time"><span class="time-dot">12:00</span></td>
+      <td class="col-bus">«Выезжаем через 10 минут». Не успели поесть</td>
+      <td class="col-self">Кафе у дороги — единственное что нашли</td>
+      <td class="col-timur">Обед у Мананы. Хинкали лепите сами, вино из квеври</td>
+    </tr>
+    <tr>
+      <td class="col-time"><span class="time-dot">14:00</span></td>
+      <td class="col-bus">Очередь на Гергети: 60 человек впереди вас</td>
+      <td class="col-self">Гергетская Троица закрыта по понедельникам</td>
+      <td class="col-timur">У Тимура связи везде. Заходите пока другие стоят снаружи</td>
+    </tr>
+    <tr>
+      <td class="col-time"><span class="time-dot">16:00</span></td>
+      <td class="col-bus">Автобус едет домой. Казбек в облаках — не ваш день</td>
+      <td class="col-self">Хотели к озеру — не знали где оно</td>
+      <td class="col-timur">Ждём пока облака разойдутся. Поднимемся выше</td>
+    </tr>
+    <tr>
+      <td class="col-time"><span class="time-dot">19:00</span></td>
+      <td class="col-bus">Дома. Устали от толпы</td>
+      <td class="col-self">Дома. Потеряли полдень</td>
+      <td class="col-timur">Дома. 200 фото, контакты секретных локаций и эмоции на всю жизнь</td>
+    </tr>
+  </tbody>
+</table>
 </div>
 </div>
 </section>
