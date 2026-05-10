@@ -1,7 +1,24 @@
 
-// NAV scroll
+// NAV scroll + light/dark detection
 window.addEventListener('scroll',()=>{
-  var h=document.getElementById('hero');document.getElementById('nav').classList.toggle('scrolled',window.scrollY>(h?h.offsetHeight-80:60))
+  var nav=document.getElementById('nav'),h=document.getElementById('hero'),scrolled=window.scrollY>(h?h.offsetHeight-80:60);
+  nav.classList.toggle('scrolled',scrolled);
+  if(scrolled){
+    nav.style.pointerEvents='none';
+    var el=document.elementFromPoint(window.innerWidth/2,40);
+    nav.style.pointerEvents='';
+    var dark=false;
+    while(el&&el!==document.body){
+      var bg=getComputedStyle(el).backgroundColor;
+      if(bg&&bg!=='rgba(0, 0, 0, 0)'&&bg!=='transparent'){
+        var m=bg.match(/\d+/g);
+        if(m){dark=(parseInt(m[0])*299+parseInt(m[1])*587+parseInt(m[2])*114)/1000<128}
+        break
+      }
+      el=el.parentElement
+    }
+    nav.classList.toggle('nav-light',!dark);nav.classList.toggle('nav-dark',dark)
+  }else{nav.classList.remove('nav-light','nav-dark')}
 },{passive:true})
 
 // ── TOUR DETAIL MODAL ──

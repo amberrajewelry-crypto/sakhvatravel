@@ -73,11 +73,12 @@ button{border:none;background:none;font-family:inherit;cursor:pointer}
 ul{list-style:none}
 /* ── NAV ── */
 #nav{position:fixed;top:0;left:0;right:0;z-index:900;height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(16px,3.5vw,56px);transition:background .3s,box-shadow .3s;background:rgba(0,0,0,.35)}
-#nav.scrolled{background:rgba(255,255,255,.95)!important;backdrop-filter:blur(8px)!important;-webkit-backdrop-filter:blur(8px)!important;box-shadow:0 1px 4px rgba(0,0,0,.08)!important}
-#nav.scrolled .nav-links a{color:#1a1a1a;text-shadow:none}
-#nav.scrolled .nav-links a:hover{color:#1a3d2e}
-#nav.scrolled .lang-switch a{color:#1a1a1a}
-#nav.scrolled .lang-switch a.active{color:#1a3d2e}
+#nav.scrolled.nav-light{background:rgba(255,255,255,.95)!important;backdrop-filter:blur(8px)!important;-webkit-backdrop-filter:blur(8px)!important;box-shadow:0 1px 4px rgba(0,0,0,.08)!important}
+#nav.scrolled.nav-light .nav-links a{color:#1a1a1a;text-shadow:none}
+#nav.scrolled.nav-light .nav-links a:hover{color:#1a3d2e}
+#nav.scrolled.nav-light .lang-switch a{color:#1a1a1a}
+#nav.scrolled.nav-light .lang-switch a.active{color:#1a3d2e}
+#nav.scrolled.nav-light .nav-btn{background:#1a3d2e;color:#fff!important}
 .nav-logo{display:flex;align-items:center;text-decoration:none;color:#fff;transition:color .3s;margin-left:-12px}
 .logo-svg{width:148px;height:70px;display:block;transition:color .3s}
 .nav-links{display:flex;align-items:center;gap:24px}
