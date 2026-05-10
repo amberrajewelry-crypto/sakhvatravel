@@ -255,7 +255,7 @@ section.sec.sec-over-video:nth-child(even) {
   display: none !important;
 }
 .tc-overlay .tc-type {
-  color: rgba(255,255,255,.85) !important;
+  color: #d97706 !important;
 }
 .tc-overlay .tc-name {
   color: #d97706 !important;

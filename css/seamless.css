@@ -161,7 +161,7 @@ background: linear-gradient(0deg,rgba(0,0,0,.88) 0%,rgba(0,0,0,.55) 60%,transpar
 padding: 60px 24px 20px !important;
 }
 .tc-overlay .tc-type {
-color: rgba(255,255,255,.5) !important;
+color: #d97706 !important;
 font-size: 10px !important;
 font-weight: 600 !important;
 letter-spacing: .14em !important;
