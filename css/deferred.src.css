@@ -19,7 +19,7 @@
 
 /* ── SECTIONS ── */
 .sec{padding:clamp(56px,7vw,96px) clamp(16px,3.5vw,56px)}
-#why,#how,#incl{background:#FAFAF8}
+#why,#how{background:transparent}#incl{background:#FAFAF8}
 #tours{background:transparent}
 #guide,#reviews,#faq{background:#fff}
 .si{max-width:1100px;margin:0 auto}
@@ -124,7 +124,7 @@
 .tc-fav:hover{transform:scale(1.18)}
 
 /* ── WHY ── */
-#why{background:#fff}
+#why{background:transparent}
 .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 .why-wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:28px;align-items:stretch}
 .why-photo{border-radius:16px;overflow:hidden;height:420px}
@@ -139,13 +139,13 @@
 
 /* ── HOW IT WORKS ── */
 .how-grid{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;align-items:start;gap:16px;max-width:860px;margin:0 auto}
-.hw{background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:28px 24px;text-align:center;transition:box-shadow .25s,transform .25s,border-color .25s}
-.hw:hover{box-shadow:0 8px 24px rgba(232,116,42,.1);transform:translateY(-3px);border-color:rgba(232,116,42,.3)}
-.hw-num{font-size:10px;font-weight:700;letter-spacing:.2em;color:#1A3D2E;margin-bottom:10px}
+.hw{background:rgba(255,255,255,.08);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.15);border-radius:12px;padding:28px 24px;text-align:center;transition:box-shadow .25s,transform .25s,border-color .25s}
+.hw:hover{box-shadow:0 8px 24px rgba(245,158,11,.12);transform:translateY(-3px);border-color:rgba(245,158,11,.4)}
+.hw-num{font-size:10px;font-weight:700;letter-spacing:.2em;color:#F59E0B;margin-bottom:10px}
 .hw-icon{font-size:36px;margin-bottom:12px}
-.hw-title{font-size:16px;font-weight:700;color:#111827;margin-bottom:8px}
-.hw-text{font-size:13px;color:#6B7280;line-height:1.6}
-.hw-arrow{font-size:24px;color:#D1D5DB;align-self:center;text-align:center;padding-top:20px}
+.hw-title{font-size:16px;font-weight:700;color:#fff;margin-bottom:8px}
+.hw-text{font-size:13px;color:rgba(255,255,255,.8);line-height:1.6}
+.hw-arrow{font-size:24px;color:rgba(255,255,255,.4);align-self:center;text-align:center;padding-top:20px}
 @media(max-width:700px){
   .how-grid{grid-template-columns:1fr;gap:8px}
   .hw-arrow{display:none}
