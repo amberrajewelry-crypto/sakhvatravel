@@ -1515,4 +1515,40 @@
     <loc>https://sakhva-travel.com/en/ekskursiya/voennaya-gruzinskaya-doroga/</loc>
     <lastmod>2026-05-10</lastmod>
   </url>
+  <url>
+    <loc>https://sakhva-travel.com/blog/tbilisskoe-ozero/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/tbilisskoe-ozero.webp</image:loc>
+      <image:title>Тбилисское озеро и Черепашье озеро</image:title>
+    </image:image>
+    <lastmod>2026-05-11</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/botanicheskiy-sad-tbilisi/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/botanicheskiy-sad-tbilisi.webp</image:loc>
+      <image:title>Ботанический сад Тбилиси</image:title>
+    </image:image>
+    <lastmod>2026-05-11</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/stamba-tbilisi/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/stamba-tbilisi.webp</image:loc>
+      <image:title>Stamba Hotel Тбилиси</image:title>
+    </image:image>
+    <lastmod>2026-05-11</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/fabrika-tbilisi/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/fabrika-tbilisi.webp</image:loc>
+      <image:title>Фабрика Тбилиси</image:title>
+    </image:image>
+    <lastmod>2026-05-11</lastmod>
+  </url>
+
 </urlset>
