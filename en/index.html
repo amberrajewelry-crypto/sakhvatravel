@@ -361,10 +361,11 @@ html{scroll-behavior:auto}
   </a>
   <div class="nav-links">
     <a href="#tours">Tours</a>
-    <a href="/en/about/">About</a>
-    <a href="/en/blog/">Blog</a>
+    <a href="#guide">About</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#blog">Blog</a>
     <a href="#faq">FAQ</a>
-    <a href="/en/contacts/">Contacts</a>
+    <a href="#footer">Contacts</a>
     <button onclick="openPayment()" class="nav-btn" style="border:none;cursor:pointer;font-family:inherit">Pay online</button>
     <div class="lang-sw">
       <a class="lang-btn" href="/" onclick="localStorage.setItem('lang','ru')" style="text-decoration:none">RU</a>
@@ -376,10 +377,11 @@ html{scroll-behavior:auto}
 </nav>
 <div class="drawer" id="drawer">
   <a href="#tours" onclick="closeDrawer()">Tours</a>
-  <a href="/en/about/" onclick="closeDrawer()">About</a>
-  <a href="/en/blog/" onclick="closeDrawer()">Blog</a>
+  <a href="#guide" onclick="closeDrawer()">About</a>
+  <a href="#reviews" onclick="closeDrawer()">Reviews</a>
+  <a href="#blog" onclick="closeDrawer()">Blog</a>
   <a href="#faq" onclick="closeDrawer()">FAQ</a>
-  <a href="/en/contacts/" onclick="closeDrawer()">Contacts</a>
+  <a href="#footer" onclick="closeDrawer()">Contacts</a>
   <div style="display:flex;gap:12px;padding:15px 0;border-bottom:1px solid #f3f4f6">
     <a href="/" onclick="localStorage.setItem('lang','ru')" style="flex:1;padding:10px;border-radius:9999px;border:2px solid #1A3D2E;background:#fff;color:#1A3D2E;font-weight:700;font-size:13px;text-align:center;text-decoration:none">RU</a>
     <span style="flex:1;padding:10px;border-radius:9999px;border:2px solid #1A3D2E;background:#1A3D2E;color:#fff;font-weight:700;font-size:13px;text-align:center">EN</span>
@@ -700,8 +702,8 @@ document.querySelectorAll('.tours-track .tc').forEach(function(c){io.observe(c)}
 <section class="sec reveal" id="guide">
   <div class="si">
     <div class="sec-head reveal" style="text-align:center;margin-bottom:24px">
-      <div class="sec-label" data-anim="down">Your guide</div>
-      <h2 class="sec-title" data-anim="up" style="font-size:clamp(24px,3vw,42px)">Who is your guide Timur and why do tourists trust him?</h2>
+      <div class="sec-label" data-anim="down">About us</div>
+      <h2 class="sec-title" data-anim="up" style="font-size:clamp(24px,3vw,42px)">Who we are and why tourists trust us</h2>
     </div>
     <div class="guide-wrap">
       <div class="guide-img-wrap reveal-left on">
@@ -711,12 +713,13 @@ document.querySelectorAll('.tours-track .tc').forEach(function(c){io.observe(c)}
         <div class="guide-badge" data-anim="scale"><div class="guide-badge-num">500+</div><div class="guide-badge-lbl">Tourists</div></div>
       </div>
       <div class="guide-content reveal-right on" style="transition-delay:.15s">
-        <p class="guide-bio">I was born in Tbilisi, grew up in the Caucasus — and returned home 10 years ago. Not as a tourist, but for good. Tbilisi is a city that reveals itself gradually: first you see the facades, then the courtyards, then the people. I show you the third layer.</p>
-        <p class="guide-bio" style="margin-top:10px">I know when to set off for Kazbegi so the mountains are cloud-free. I know which courtyard in the Old Town makes the best homemade wine. I know the unmarked cafe where locals eat khinkali at 7am. You can't Google this — it comes with years. Since 2023 I've guided over 500 tourists and never repeated the same route twice — because every group is different.</p>
+        <p class="guide-bio">Sakhva Travel is a private guide service in Tbilisi, founded by Timur in 2023. Timur was born in Tbilisi, grew up in the Caucasus, and returned home 10 years ago — not as a tourist, but for good. Sakhva Travel grew out of this personal knowledge of the city.</p>
+        <p class="guide-bio" style="margin-top:10px">We show Georgia the way a local sees it: not from a checklist of sights, but in layers. First the facades, then the courtyards, then the people. We know when to head to Kazbegi so the mountains are cloud-free. We know which courtyard in the Old Town makes the best homemade wine. We know the unmarked cafe where locals eat khinkali at 7am. You can't Google this — it comes with years.</p>
+        <p class="guide-bio" style="margin-top:10px">Since 2023, over 500 tourists have traveled with Sakhva Travel, and no route has ever been repeated — because every group is different.</p>
         <div class="guide-facts">
-          <div class="gf"><div class="gf-icon">🗓</div><div><div class="gf-title">Guide since 2023</div><div class="gf-sub">500+ tourists, rating 4.9</div></div></div>
-          <div class="gf"><div class="gf-icon">🌐</div><div><div class="gf-title">Russian & English guide</div><div class="gf-sub">Understands what matters most to visitors</div></div></div>
-          <div class="gf"><div class="gf-icon">📍</div><div><div class="gf-title">Lives in Tbilisi</div><div class="gf-sub">Up-to-date spots, not an old guidebook</div></div></div>
+          <div class="gf"><div class="gf-icon">🗓</div><div><div class="gf-title">Operating since 2023</div><div class="gf-sub">500+ tourists, rating 4.9</div></div></div>
+          <div class="gf"><div class="gf-icon">🌐</div><div><div class="gf-title">Russian-speaking service</div><div class="gf-sub">We understand what matters to Russian-speaking tourists</div></div></div>
+          <div class="gf"><div class="gf-icon">📍</div><div><div class="gf-title">Based in Tbilisi</div><div class="gf-sub">Up-to-date spots, not an old guidebook</div></div></div>
           <div class="gf"><div class="gf-icon">⭐</div><div><div class="gf-title">4.9 / 5 · 87 reviews</div><div class="gf-sub">Google · Personal recommendations</div></div></div>
         </div>
         <a href="https://wa.me/995511272623?text=Hi!%20I'd%20like%20to%20book%20a%20tour" class="btn-wa" style="display:inline-flex;padding:14px 32px">
