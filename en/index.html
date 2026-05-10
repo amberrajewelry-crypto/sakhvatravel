@@ -61,11 +61,12 @@ ul{list-style:none}
 
 /* ── NAV ── */
 #nav{position:fixed;top:0;left:0;right:0;z-index:900;height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(16px,3.5vw,56px);transition:background .3s,box-shadow .3s;background:rgba(0,0,0,.35)}
-#nav.scrolled.nav-light .nav-links a{color:#1a1a1a!important;text-shadow:none!important}
-#nav.scrolled.nav-light .nav-links a:hover{color:#1a3d2e!important}
-#nav.scrolled.nav-light .lang-switch a{color:#1a1a1a!important}
-#nav.scrolled.nav-light .lang-switch a.active{color:#1a3d2e!important}
-#nav.scrolled.nav-light .logo-svg{filter:brightness(0) saturate(100%)}
+#nav.scrolled{background:rgba(255,255,255,.97);box-shadow:0 1px 4px rgba(0,0,0,.08)}
+#nav.scrolled .nav-links a{color:#1a1a1a!important;text-shadow:none!important}
+#nav.scrolled .nav-links a:hover{color:#1a3d2e!important}
+#nav.scrolled .lang-switch a{color:#1a1a1a!important}
+#nav.scrolled .lang-switch a.active{color:#1a3d2e!important}
+#nav.scrolled .logo-svg{filter:brightness(0) saturate(100%)}
 .nav-logo{display:flex;align-items:center;text-decoration:none;color:#fff;transition:color .3s}
 .logo-svg{width:148px;height:66px;display:block;transition:color .3s}
 .nav-links{display:flex;align-items:center;gap:24px}
