@@ -1687,3 +1687,10 @@ flex: 0 0 200px !important;
 #why .sec-sub, #how .sec-sub { color: rgba(255,255,255,.8) !important }
 #how .group-discount-bar { background: rgba(255,255,255,.1) !important; border-color: rgba(255,255,255,.2) !important; color: #F59E0B !important }
 #how .btn-primary { background: rgba(255,255,255,.12) !important; border: 1.5px solid rgba(255,255,255,.4) !important; color: #fff !important }
+#why .wc { background: rgba(255,255,255,.08) !important; backdrop-filter: blur(12px) !important; -webkit-backdrop-filter: blur(12px) !important; border: 1px solid rgba(255,255,255,.15) !important }
+#why .wc:hover { background: rgba(255,255,255,.15) !important }
+#why .wc-num { color: #F59E0B !important }
+#why .wc-title { color: #fff !important }
+#why .wc-text { color: rgba(255,255,255,.8) !important }
+#why .wc-icon { background: rgba(245,158,11,.15) !important }
+#why .wc-icon svg { stroke: #F59E0B !important }
