@@ -57,7 +57,8 @@ body {
   text-align: center !important;
 }
 .sec-sub {
-  color: #d97706 !important;
+  color: #fff !important;
+  font-weight: 600 !important;
   font-size: 16px !important;
   line-height: 1.7 !important;
   max-width: 560px !important;
@@ -154,7 +155,8 @@ section.sec.sec-over-video:nth-child(even) {
   margin-bottom: 6px !important;
 }
 .tc-desc {
-  color: #d97706 !important;
+  color: #fff !important;
+  font-weight: 600 !important;
   font-size: 14px !important;
   line-height: 1.6 !important;
 }
@@ -255,10 +257,12 @@ section.sec.sec-over-video:nth-child(even) {
   display: none !important;
 }
 .tc-overlay .tc-type {
-  color: #d97706 !important;
+  color: #fff !important;
+  font-weight: 700 !important;
 }
 .tc-overlay .tc-name {
-  color: #d97706 !important;
+  color: #fff !important;
+  font-weight: 700 !important;
   font-size: 22px !important;
   text-shadow: 0 1px 8px rgba(0,0,0,.4) !important;
   margin-bottom: 0 !important;
@@ -295,7 +299,8 @@ section.sec.sec-over-video:nth-child(even) {
 .ftab {
   background: #fff !important;
   border-color: #e8e0d8 !important;
-  color: #d97706 !important;
+  color: #fff !important;
+  font-weight: 600 !important;
   transition: border-color 0.2s linear, color 0.2s linear, background 0.25s linear !important;
 }
 .ftab:hover {
@@ -312,7 +317,8 @@ section.sec.sec-over-video:nth-child(even) {
 .group-discount-bar {
   background: linear-gradient(135deg, rgba(232, 116, 42, .08) 0%, rgba(245, 158, 11, .06) 100%) !important;
   border-color: rgba(232, 116, 42, .25) !important;
-  color: #d97706 !important;
+  color: #fff !important;
+  font-weight: 600 !important;
 }
 
 /* ── WHY US — Aker: radius morph, no border, warm bg ── */
@@ -344,7 +350,8 @@ section.sec.sec-over-video:nth-child(even) {
   color: #1a1a1a !important;
 }
 .wc-text {
-  color: #d97706 !important;
+  color: #fff !important;
+  font-weight: 600 !important;
 }
 
 /* ── GUIDE ── */
@@ -400,7 +407,8 @@ section.sec.sec-over-video:nth-child(even) {
   color: #fff !important;
 }
 .fa-inner {
-  color: #d97706 !important;
+  color: #fff !important;
+  font-weight: 600 !important;
 }
 
 /* ── BLOG CARDS — Aker hover ── */
@@ -433,7 +441,8 @@ section.sec.sec-over-video:nth-child(even) {
   color: #e8742a !important;
 }
 .tcard-front-promo {
-  color: #d97706 !important;
+  color: #fff !important;
+  font-weight: 600 !important;
 }
 .tcard-front-link {
   background: #e8742a !important;
@@ -476,7 +485,8 @@ section.sec.sec-over-video:nth-child(even) {
 .pre-footer-cta p {
   font-size: 16px !important;
   line-height: 1.7 !important;
-  color: #d97706 !important;
+  color: #fff !important;
+  font-weight: 600 !important;
   max-width: 500px !important;
   margin-left: auto !important;
   margin-right: auto !important;
@@ -555,7 +565,8 @@ main + .sticky-wa + footer {
   width: 100% !important;
 }
 .foot-right a {
-  color: #d97706 !important;
+  color: #fff !important;
+  font-weight: 600 !important;
   font-size: 14px !important;
 }
 .foot-right a:hover {
@@ -563,7 +574,8 @@ main + .sticky-wa + footer {
 }
 .foot-soc-inline a {
   border-color: #e8e0d8 !important;
-  color: #d97706 !important;
+  color: #fff !important;
+  font-weight: 600 !important;
   width: 40px !important;
   height: 40px !important;
   transition: background 0.25s linear,
@@ -578,11 +590,13 @@ main + .sticky-wa + footer {
   transform: translateY(-2px) !important;
 }
 .foot-copy {
-  color: #d97706 !important;
+  color: #fff !important;
+  font-weight: 600 !important;
   font-size: 13px !important;
 }
 .foot-legal a {
-  color: #d97706 !important;
+  color: #fff !important;
+  font-weight: 600 !important;
   font-size: 13px !important;
 }
 .foot-legal a:hover {
@@ -690,7 +704,8 @@ main + .sticky-wa + footer {
   display: none !important;
 }
 .curr-btn {
-  color: #d97706 !important;
+  color: #fff !important;
+  font-weight: 600 !important;
   border-color: #e8e0d8 !important;
   background: #fff !important;
   transition: background 0.25s linear, color 0.2s linear, border-color 0.2s linear !important;
@@ -1247,7 +1262,8 @@ h3 {
   grid-row: 2 !important;
   align-self: end !important;
   font-size: 13px !important;
-  color: #d97706 !important;
+  color: #fff !important;
+  font-weight: 600 !important;
   padding-bottom: 8px !important;
   transition: color 0.2s linear !important;
 }
@@ -1491,7 +1507,8 @@ h3 {
   color: #4B5563 !important;
 }
 .tc-desc {
-  color: #d97706 !important;
+  color: #fff !important;
+  font-weight: 600 !important;
 }
 .hw-text {
   color: rgba(255,255,255,.8) !important;
