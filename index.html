@@ -60,9 +60,9 @@ gtag('consent','update',{analytics_storage:(_ck||_gc)?'granted':'denied',ad_stor
 <style>
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:80px;background:#0a1628;overflow-x:hidden}
+html{scroll-behavior:smooth;scroll-padding-top:80px;background:#0a1628;overflow-x:clip}
 section[id],div[id]{scroll-margin-top:80px}
-body{font-family:'Lora',Georgia,serif;color:#111827;background:transparent;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body{font-family:'Lora',Georgia,serif;color:#111827;background:transparent;overflow-x:clip;-webkit-font-smoothing:antialiased;-webkit-overflow-scrolling:touch}
 h1,h2,h3,.section-title{font-family:'Lora',Georgia,serif;font-weight:400}
 a{text-decoration:none;color:inherit}
 img{max-width:100%;display:block;object-fit:cover}
@@ -665,7 +665,7 @@ document.querySelectorAll('.tours-track .tc').forEach(function(c){io.observe(c)}
 (function(){
 var SYM={gel:'₾',rub:'₽',usd:'$',eur:'€'};
 var RATE_RUB=90,RATE_EUR=0.92;
-function disc(n){return n>=6?0.15:n>=4?0.10:0}
+function disc(n){return n>=4?0.10:0}
 
 function buildCalc(foot){
   var pm=foot.querySelector('.price-main');
