@@ -127,6 +127,22 @@ ul{list-style:none}
 body{animation:page-in .4s ease}
 /* Critical layout: prevent CLS from deferred CSS */
 .sec{padding:clamp(16px,2.5vw,28px) clamp(16px,3.5vw,56px);background:#fff}
+/* ── WHY & HOW sections: video background visible ── */
+#why,#how{background:transparent;position:relative}
+#why>.si,#how>.si{position:relative;z-index:1}
+#why .sec-head,#how .sec-head{background:rgba(10,22,40,.65);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-radius:16px;padding:28px 32px;margin-bottom:28px}
+#why .sec-label,#how .sec-label{color:#F59E0B!important}
+#why .sec-label::before,#how .sec-label::before{background:#F59E0B!important}
+#why .sec-title,#how .sec-title{color:#fff!important}
+#why .sec-sub,#how .sec-sub{color:rgba(255,255,255,.8)!important}
+#how .group-discount-bar{background:rgba(10,22,40,.6)!important;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-color:rgba(255,255,255,.2)!important;color:#F59E0B!important}
+#why .wc{background:rgba(255,255,255,.08)!important;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.15)!important}
+#why .wc:hover{background:rgba(255,255,255,.15)!important;border-color:rgba(245,158,11,.3)!important}
+#why .wc-num{color:#F59E0B!important}
+#why .wc-title{color:#fff!important}
+#why .wc-text{color:rgba(255,255,255,.8)!important}
+#why .wc-icon{background:rgba(245,158,11,.15)!important}
+#why .wc-icon svg{stroke:#F59E0B!important}
 .si{max-width:1100px;margin:0 auto}
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
 .reveal.on{opacity:1;transform:translateY(0)}
@@ -194,6 +210,7 @@ img[loading="lazy"]{decoding:async}
 .tours-track .tc-overlay .tc-cta:hover{background:#1A3D2E;border-color:#1A3D2E}
 .tours-progress{display:none!important}
 .tours-pinned~.sec{position:relative;z-index:2;background:#fff}
+.tours-pinned~#why,.tours-pinned~#how{background:transparent}
 .tours-pinned~.gallery-sec{position:relative;z-index:2}
 @media(max-width:768px){
 .tours-pinned{height:auto}
@@ -222,10 +239,10 @@ html{scroll-behavior:auto}
 }
 @media(max-width:640px){.ta-cards{display:flex!important;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding-bottom:4px;scrollbar-width:none;margin-left:-16px;margin-right:-16px;padding-left:16px;padding-right:16px}.ta-cards::-webkit-scrollbar{display:none}.ta-cards>div{flex:0 0 80vw!important;scroll-snap-align:start;min-width:0}}
 </style>
-<link rel="preload" href="/css/deferred.css?v=48" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="/css/deferred.css?v=48"></noscript>
-<link rel="preload" href="/css/seamless.css?v=56" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="/css/seamless.css?v=56"></noscript>
+<link rel="preload" href="/css/deferred.css?v=51" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/css/deferred.css?v=51"></noscript>
+<link rel="preload" href="/css/seamless.css?v=57" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/css/seamless.css?v=57"></noscript>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[
 {"@type":"WebSite","@id":"https://sakhva-travel.com/en/#website","url":"https://sakhva-travel.com/en/","name":"Sakhva Travel","description":"Private guide in Georgia. Kazbegi, Kakheti, hidden gems of Tbilisi. Up to 7 people.","inLanguage":"en"},
 {"@type":"WebPage","@id":"https://sakhva-travel.com/en/#webpage","url":"https://sakhva-travel.com/en/","name":"Private Guide in Tbilisi 2026 ★4.9 | Sakhva Travel","description":"Private guide Timur. Kazbegi from ₾175, hidden Tbilisi from ₾140, Kakheti. Up to 7 people. Free cancellation. Reply in 15 min.","inLanguage":"en","isPartOf":{"@id":"https://sakhva-travel.com/en/#website"},"about":{"@id":"https://sakhva-travel.com/#business"},"primaryImageOfPage":{"@type":"ImageObject","url":"https://sakhva-travel.com/images/og-cover.webp"},"datePublished":"2024-03-01","dateModified":"2026-05-04"},
@@ -410,7 +427,7 @@ html{scroll-behavior:auto}
       <div><span class="hs-val">3+</span><span class="hs-lbl">Years exp.</span></div>
       <div><span class="hs-val">500+</span><span class="hs-lbl">Tourists</span></div>
     </div>
-    <h1 class="hero-h1 hero-typewriter">Private Guide in Tbilisi — from ₾77</h1>
+    <h1 class="hero-h1 hero-typewriter">Private Guide in Tbilisi</h1>
     <p class="hero-sub" style="opacity:1;animation:none;font-size:clamp(16px,2.2vw,22px);font-weight:400;margin-bottom:28px">Not a scheduled tour, but a day with a local friend</p>
 
     <div class="hero-btns" style="justify-content:center">
@@ -588,28 +605,28 @@ document.querySelectorAll('.tours-track .tc').forEach(function(c){io.observe(c)}
         <div class="wc reveal" style="transition-delay:.21s"><div class="wc-icon"><svg viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></div><div class="wc-num">04</div><div class="wc-title">No hidden fees</div><p class="wc-text">Transfer, guide, entry tickets — all in. No 'pay extra on site'. Pay on tour day by cash or card.</p></div>
       </div>
 <style>
-.cmp-wrap{overflow-x:auto;margin-top:40px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.cmp-wrap{overflow-x:auto;margin-top:40px;-webkit-overflow-scrolling:touch;scrollbar-width:none;background:rgba(255,255,255,.08);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-radius:14px;border:1px solid rgba(255,255,255,.12)}
 .cmp-wrap::-webkit-scrollbar{display:none}
 .cmp-table{width:100%;border-collapse:separate;border-spacing:0;min-width:560px}
 .cmp-table thead th{padding:14px 16px 12px;font-family:'Lora',serif;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;text-align:center}
 @media(max-width:640px){.cmp-table{min-width:0;width:100%}.cmp-table thead th{padding:8px 4px 6px;font-size:9px;letter-spacing:.5px}.th-empty{width:32px!important}.col-icon{font-size:14px!important;margin-bottom:2px!important}.col-name{font-size:9px!important}.col-timur-badge{font-size:7px!important;padding:1px 5px!important;margin-bottom:2px!important}.col-time{width:32px!important;padding:6px 2px!important}.time-dot{font-size:9px!important;padding:2px 4px!important}.cmp-table tbody td{padding:8px 6px!important;font-size:11px!important;line-height:1.4!important}}
 .th-empty{width:52px;background:transparent;border:none}
-.col-bus{color:#9CA3AF;background:#F9FAFB;border:1px solid #E5E7EB;border-right:none;border-radius:10px 0 0 0}
-.col-self{color:#9CA3AF;background:#F9FAFB;border-top:1px solid #E5E7EB;border-bottom:1px solid #E5E7EB}
-.col-timur{color:#fff;background:#1A3D2E;border-radius:0 10px 0 0;padding-top:8px!important}
+.col-bus{color:rgba(255,255,255,.85);background:rgba(255,255,255,.06);border-radius:10px 0 0 0}
+.col-self{color:rgba(255,255,255,.85);background:rgba(255,255,255,.06)}
+.col-timur{color:#fff;background:rgba(26,61,46,.85);border-radius:0 10px 0 0;padding-top:8px!important}
 .col-icon{font-size:20px;display:block;margin-bottom:4px}
 .col-name{display:block;font-size:12px}
 .col-timur-badge{display:inline-block;background:#F59E0B;color:#1A3D2E;font-size:9px;font-weight:700;letter-spacing:1px;padding:2px 8px;border-radius:20px;margin-bottom:4px;text-transform:uppercase}
 .col-time{width:52px;padding:10px 4px;text-align:center;vertical-align:middle}
-.time-dot{display:inline-block;background:#E5E7EB;color:#9CA3AF;font-size:12px;font-weight:700;padding:4px 8px;border-radius:12px;white-space:nowrap}
-.cmp-table tbody td{padding:14px 16px;vertical-align:top;font-size:15px;line-height:1.6;border-bottom:1px solid #F3F4F6;font-family:'Lora',serif}
-.cmp-table tbody .col-bus{background:#fff;color:#374151;border-left:1px solid #E5E7EB}
-.cmp-table tbody .col-self{background:#fff;color:#374151}
-.cmp-table tbody .col-timur{background:#F0F7F4;color:#1A3D2E;font-weight:600;border-left:2px solid #1A3D2E;border-right:2px solid #1A3D2E}
-.cmp-table tbody tr:last-child .col-bus{border-radius:0 0 0 10px;border-bottom:1px solid #E5E7EB}
-.cmp-table tbody tr:last-child .col-self{border-bottom:1px solid #E5E7EB}
-.cmp-table tbody tr:last-child .col-timur{border-radius:0 0 10px 0;border-bottom:2px solid #1A3D2E;background:#1A3D2E;color:#fff}
-.cmp-table tbody tr:last-child .col-time .time-dot{background:#1A3D2E;color:#fff}
+.time-dot{display:inline-block;background:rgba(255,255,255,.15);color:rgba(255,255,255,.7);font-size:12px;font-weight:700;padding:4px 8px;border-radius:12px;white-space:nowrap}
+.cmp-table tbody td{padding:14px 16px;vertical-align:top;font-size:15px;line-height:1.6;border-bottom:1px solid rgba(255,255,255,.08);font-family:'Lora',serif}
+.cmp-table tbody .col-bus{background:rgba(255,255,255,.05);color:#fff;font-weight:500}
+.cmp-table tbody .col-self{background:rgba(255,255,255,.05);color:#fff;font-weight:500}
+.cmp-table tbody .col-timur{background:rgba(26,61,46,.7);color:#fff;font-weight:600}
+.cmp-table tbody tr:last-child .col-bus{border-radius:0 0 0 10px}
+.cmp-table tbody tr:last-child .col-self{}
+.cmp-table tbody tr:last-child .col-timur{border-radius:0 0 10px 0;background:rgba(26,61,46,.9);color:#fff}
+.cmp-table tbody tr:last-child .col-time .time-dot{background:rgba(26,61,46,.8);color:#fff}
 </style>
 <div class="cmp-wrap reveal">
 <table class="cmp-table">
