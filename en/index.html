@@ -50,9 +50,9 @@ gtag('consent','update',{analytics_storage:(_ck||_gc)?'granted':'denied',ad_stor
 <style>
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:80px;background:#0a1628;overflow-x:hidden}
+html{scroll-behavior:smooth;scroll-padding-top:80px;background:#0a1628;overflow-x:clip}
 section[id],div[id]{scroll-margin-top:80px}
-body{font-family:'Lora',Georgia,serif;color:#111827;background:transparent;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body{font-family:'Lora',Georgia,serif;color:#111827;background:transparent;overflow-x:clip;-webkit-font-smoothing:antialiased}
 h1,h2,h3,.section-title{font-family:'Lora',Georgia,serif;font-weight:400}
 a{text-decoration:none;color:inherit}
 img{max-width:100%;display:block;object-fit:cover}
@@ -361,11 +361,10 @@ html{scroll-behavior:auto}
   </a>
   <div class="nav-links">
     <a href="#tours">Tours</a>
-    <a href="/en/blog/">Blog</a>
     <a href="/en/about/">About</a>
-    <a href="#reviews">Reviews</a>
+    <a href="/en/blog/">Blog</a>
     <a href="#faq">FAQ</a>
-    <a href="https://wa.me/995511272623" style="font-size:12px;font-weight:600;letter-spacing:.02em;text-transform:none">+995 511 272 623</a>
+    <a href="/en/contacts/">Contacts</a>
     <button onclick="openPayment()" class="nav-btn" style="border:none;cursor:pointer;font-family:inherit">Pay online</button>
     <div class="lang-sw">
       <a class="lang-btn" href="/" onclick="localStorage.setItem('lang','ru')" style="text-decoration:none">RU</a>
@@ -377,11 +376,10 @@ html{scroll-behavior:auto}
 </nav>
 <div class="drawer" id="drawer">
   <a href="#tours" onclick="closeDrawer()">Tours</a>
-  <a href="/en/blog/" onclick="closeDrawer()">Blog</a>
   <a href="/en/about/" onclick="closeDrawer()">About</a>
-  <a href="#reviews" onclick="closeDrawer()">Reviews</a>
+  <a href="/en/blog/" onclick="closeDrawer()">Blog</a>
   <a href="#faq" onclick="closeDrawer()">FAQ</a>
-  <a href="https://wa.me/995511272623" onclick="closeDrawer()">+995 511 272 623</a>
+  <a href="/en/contacts/" onclick="closeDrawer()">Contacts</a>
   <div style="display:flex;gap:12px;padding:15px 0;border-bottom:1px solid #f3f4f6">
     <a href="/" onclick="localStorage.setItem('lang','ru')" style="flex:1;padding:10px;border-radius:9999px;border:2px solid #1A3D2E;background:#fff;color:#1A3D2E;font-weight:700;font-size:13px;text-align:center;text-decoration:none">RU</a>
     <span style="flex:1;padding:10px;border-radius:9999px;border:2px solid #1A3D2E;background:#1A3D2E;color:#fff;font-weight:700;font-size:13px;text-align:center">EN</span>
