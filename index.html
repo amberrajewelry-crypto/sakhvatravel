@@ -644,19 +644,27 @@ html{scroll-behavior:auto}
 </div>
 </section>
 <script>
-/* Video IO: play only visible cards */
+/* Video IO: preload nearby + play visible cards */
 (function(){
-var io=new IntersectionObserver(function(entries){
+var preloadIO=new IntersectionObserver(function(entries){
 entries.forEach(function(e){
+if(!e.isIntersecting)return;
 var v=e.target.querySelector('video[data-src]');
-if(!v)return;
-if(e.isIntersecting){
-if(!v.src){v.src=v.dataset.src;v.load()}
-v.play().catch(function(){});
-}else{v.pause()}
+if(!v||v.src)return;
+v.src=v.dataset.src;
+v.load();
+preloadIO.unobserve(e.target);
 });
-},{threshold:0.3});
-document.querySelectorAll('.tours-track .tc').forEach(function(c){io.observe(c)});
+},{rootMargin:'200px 0px'});
+var playIO=new IntersectionObserver(function(entries){
+entries.forEach(function(e){
+var v=e.target.querySelector('video');
+if(!v)return;
+if(e.isIntersecting){v.play().catch(function(){});}
+else{v.pause()}
+});
+},{threshold:0.05});
+document.querySelectorAll('.tours-track .tc').forEach(function(c){preloadIO.observe(c);playIO.observe(c)});
 })();
 </script>
 <style>
