@@ -13,7 +13,7 @@ window.addEventListener('scroll',()=>{
         if(bg&&bg!=='rgba(0, 0, 0, 0)'&&bg!=='transparent'){
           var m=bg.match(/\d+/g);
           if(m){dark=(parseInt(m[0])*299+parseInt(m[1])*587+parseInt(m[2])*114)/1000<128}
-        }else if(s.tagName==='HEADER'){dark=true}
+        }else if(s.tagName==='HEADER'||s.classList.contains('tours-pinned')||s.classList.contains('comparison-section')||s.classList.contains('cta-block')){dark=true}
         break
       }
     }
