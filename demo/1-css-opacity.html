@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demo 1 — CSS Opacity + Sticky</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: system-ui, sans-serif; background: #0a0a0a; color: #fff; }
+
+.intro {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+}
+.intro h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+.intro p { font-size: 1.1rem; opacity: 0.6; max-width: 500px; }
+
+/* Each section = 200vh to give scroll room */
+.scroll-section {
+  position: relative;
+  height: 200vh;
+}
+
+.scroll-section .image {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.scroll-section .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Overlay image sits on top, fades out as you scroll */
+.scroll-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+}
+
+.scroll-section .overlay img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.05s linear;
+}
+
+.label {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.7);
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  z-index: 100;
+  pointer-events: none;
+}
+
+.outro {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  opacity: 0.5;
+}
+</style>
+</head>
+<body>
+
+<div class="intro">
+  <h1>1. CSS Opacity + Sticky</h1>
+  <p>Чистый CSS + минимальный JS. Два изображения наложены, при скролле верхнее плавно исчезает. Вес: 0 KB библиотек.</p>
+</div>
+
+<!-- Transition 1 → 2 -->
+<div class="scroll-section" id="s1">
+  <div class="image">
+    <img src="../images/kakheti-tour.webp" alt="Kakheti">
+  </div>
+  <div class="overlay" id="overlay1">
+    <img src="../images/kazbegi-tour.webp" alt="Kazbegi">
+  </div>
+</div>
+
+<!-- Transition 2 → 3 -->
+<div class="scroll-section" id="s2">
+  <div class="image">
+    <img src="../images/borzhomi.webp" alt="Borzhomi">
+  </div>
+  <div class="overlay" id="overlay2">
+    <img src="../images/kakheti-tour.webp" alt="Kakheti">
+  </div>
+</div>
+
+<!-- Transition 3 → 4 -->
+<div class="scroll-section" id="s3">
+  <div class="image">
+    <img src="../images/dinner-tour.webp" alt="Dinner">
+  </div>
+  <div class="overlay" id="overlay3">
+    <img src="../images/borzhomi.webp" alt="Borzhomi">
+  </div>
+</div>
+
+<div class="outro">Scroll complete</div>
+<div class="label">Техника: position:sticky + opacity via scroll %</div>
+
+<script>
+document.addEventListener('scroll', () => {
+  const sections = document.querySelectorAll('.scroll-section');
+  sections.forEach((section, i) => {
+    const rect = section.getBoundingClientRect();
+    const sectionHeight = section.offsetHeight;
+    const viewportH = window.innerHeight;
+
+    // How far through this section (0 = top visible, 1 = bottom visible)
+    const scrolled = -rect.top / (sectionHeight - viewportH);
+    const progress = Math.max(0, Math.min(1, scrolled));
+
+    const overlay = section.querySelector('.overlay img');
+    if (overlay) {
+      overlay.style.opacity = 1 - progress;
+    }
+  });
+}, { passive: true });
+</script>
+
+</body>
+</html>

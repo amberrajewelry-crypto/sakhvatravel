@@ -720,11 +720,13 @@ function updateCalc(card){
   var discEl=card.querySelector('.tc-calc-disc');
   if(d>0){
     oldEl.textContent=sym+full;oldEl.style.display='inline';
-    discEl.textContent='−'+(d*100|0)+'% скидка за компанию';discEl.style.display='block';
+    var discTxt=(document.documentElement.lang==='en')?'% group discount':'% скидка за компанию';
+    discEl.textContent='−'+(d*100|0)+discTxt;discEl.style.display='block';
   }else{
     oldEl.style.display='none';discEl.style.display='none';
   }
-  card.querySelector('.tc-calc-label').textContent='итого · '+n+' чел.';
+  var labelTxt=(document.documentElement.lang==='en')?'total · '+n+' ppl':'итого · '+n+' чел.';
+  card.querySelector('.tc-calc-label').textContent=labelTxt;
 }
 
 document.querySelectorAll('.tc-foot').forEach(buildCalc);

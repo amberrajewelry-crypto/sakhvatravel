@@ -1,0 +1,176 @@
+# PRD: Sakhva Travel — UX/UI Redesign
+## Based on: Full UX audit + Google Stitch reference design
+
+### Project Overview
+Redesign sakhva-travel.com to improve conversion, trust, and visual quality.
+Stack: Static HTML + Vercel Serverless. Main file: index.html (2086 lines).
+Reference design: Stitch-generated HTML at /tmp/sakhva-stitch-homepage.html
+Current colors to replace: blue #1A56DB → green #2d6a4f
+Fonts to add: Montserrat (headlines), keep Inter/Raleway (body)
+
+---
+
+## PHASE 1: Header Redesign (CRITICAL)
+
+### 1.1 Remove "ОПЛАТИТЬ" button from nav
+- The payment CTA in the header creates anxiety before user has chosen a tour
+- Remove .nav-btn element that triggers #pm-modal from the nav
+- Keep payment modal functionality, just move trigger to tour pages only
+
+### 1.2 Simplify navigation
+- Current: ТУРЫ | БЛОГ | ВСЕ ТУРЫ | КАК БРОНИРОВАТЬ | ГИД | ОТЗЫВЫ | FAQ + phone + pay button + RU/EN = 10+ elements
+- Target: Туры | Блог | О гиде | Отзывы + phone number + "Выбрать тур" CTA + RU/EN
+- Remove duplicate "ВСЕ ТУРЫ" (same as "ТУРЫ")
+- Remove "КАК БРОНИРОВАТЬ" from main nav (move to FAQ section)
+
+### 1.3 Replace all blue CTAs with green
+- Find all instances of #1A56DB and replace with #2d6a4f
+- Update hover states proportionally
+- Update gradient on nav-btn to green tones
+
+### 1.4 Add mobile sticky bottom bar
+- Fixed bar at bottom of mobile viewport (below 768px)
+- Two buttons: "Выбрать тур" (green, left) + "WhatsApp" (white/outline, right)
+- Hide on desktop
+- z-index above content, below modals
+
+---
+
+## PHASE 2: Hero Section Redesign (HIGH IMPACT)
+
+### 2.1 Add trust strip below hero
+- 4 stat blocks in a horizontal row below the video/image:
+  [500+ туристов] [4.9★ Google] [До 6 человек] [С 2014]
+- Light background (#f8f9fa), padding 24px, centered
+- Icons + number + label format
+
+### 2.2 Update hero subheadline
+- Remove GEL prices from subheadline
+- New text: "Казбеги от $49 · Тбилиси от $38 · Группы до 6 человек"
+- Add "AUTHENTIC GEORGIA" badge above H1 (small caps, green pill)
+
+### 2.3 Update hero CTA buttons
+- Primary: green #2d6a4f background, "Выбрать тур →"
+- Secondary: outline white, WhatsApp icon + "Написать Тимуру"
+- Both buttons: border-radius 8px, consistent sizing
+
+---
+
+## PHASE 3: Tour Cards (CONVERSION)
+
+### 3.1 Show price immediately on card
+- Price should be visible without hover
+- Format: "$49" large, "₾128 / 4500₽" small below
+- Position: bottom of card, before Book Now button
+
+### 3.2 Add duration badge
+- Top-left overlay on card image: "12 часов" or "1 день"
+- Small pill, semi-transparent dark background
+
+### 3.3 Add popularity badges
+- "ХИТ" badge on: Казбеги, Скрытые места Тбилиси
+- "НОВИНКА" badge on newest tour
+- Top-right corner of card image
+
+### 3.4 Add "Book Now" button to each card
+- Green button at bottom of card
+- Links to /tour/[slug] page
+
+### 3.5 Update section title
+- "Наши маршруты" → "Избранные маршруты" with subtitle
+- Add "Посмотреть все →" link top-right of section
+
+---
+
+## PHASE 4: "How it Works" Section
+
+### 4.1 Redesign process section
+- 3 steps with large numbered icons
+- Step 1: "Выбери маршрут" — browse tours or use quiz
+- Step 2: "Оплати онлайн" — crypto, card via WhatsApp, Stripe soon
+- Step 3: "Встреча у отеля" — guide picks you up in Tbilisi
+- Clean horizontal layout desktop, vertical mobile
+- Section label: "КАК ЭТО РАБОТАЕТ" in small caps green
+
+---
+
+## PHASE 5: Testimonials Section
+
+### 5.1 Move testimonials higher on page
+- Currently buried — move above FAQ
+
+### 5.2 Enhance review cards
+- Add country flag emoji next to reviewer name
+- Add avatar (photo or colored initial)
+- Show star rating (★★★★★) on each card
+- Section title: "Что говорят путешественники"
+
+---
+
+## PHASE 6: Tour Detail Pages (ALL 12 TOURS)
+
+### 6.1 Add sticky booking panel (desktop)
+- Fixed right panel: 380px wide, appears after scroll past hero
+- Contains: tour name, price ($49 per person), duration, group size warning
+- "ЗАБРОНИРОВАТЬ" button (full width, green)
+- "Написать в WhatsApp" text link below button
+- Urgency text: "Группа до 6 человек · Ближайшие даты"
+
+### 6.2 Add photo gallery at top
+- Replace text-only top with 3-photo gallery
+- Main photo large left, 2 small photos right column
+- Click to open lightbox
+
+### 6.3 Add "Включено / Не включено" checklist
+- Two-column layout with icons
+- ✅ Включено: транспорт, гид, программа
+- ❌ Не включено: еда, входные билеты, личные расходы
+
+### 6.4 Add breadcrumb navigation
+- "Главная > Туры > Казбеги за 1 день"
+- Below header, above tour content
+
+### 6.5 Add urgency element
+- "Осталось мест на эту неделю: X" near booking button
+- Static for now (can be dynamic later)
+
+---
+
+## PHASE 7: Typography & Color System
+
+### 7.1 Add Montserrat font for headlines
+- Import Montserrat 700, 800 from Google Fonts
+- Apply to: h1, h2, h3, .section-title
+- Keep Raleway/Inter for body text
+
+### 7.2 Global color replace
+- Replace all #1A56DB (blue) with #2d6a4f (green)
+- Replace all #1A3D2E (dark green) — keep as is, it's correct
+- Update :root CSS variables if present
+
+### 7.3 Cookie banner improvement
+- Replace full-screen modal cookie banner with thin bottom bar (48px)
+- Less intrusive, especially on mobile
+
+---
+
+## PHASE 8: Mobile Optimization
+
+### 8.1 Sticky bottom bar (already in Phase 1.4, implement here)
+### 8.2 Fix tour card spacing on 390px
+- Cards should be full width on mobile
+- Proper 16px horizontal padding
+### 8.3 Test all CTAs thumb-accessible
+- No important buttons in top 20% of mobile screen
+- WhatsApp always reachable
+
+---
+
+## Success Criteria
+- Header reduced from 10 to 5 elements
+- Price visible on tour cards without interaction
+- Trust strip visible on homepage without scroll
+- All CTAs changed from blue to green
+- Booking panel present on tour pages
+- Mobile sticky bar working
+- Cookie banner non-intrusive

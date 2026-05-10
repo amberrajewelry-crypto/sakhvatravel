@@ -39,3 +39,7 @@ node_modules/
 # tasks.json
 # tasks/ 
 .worktrees/
+.env*.local
+
+# Local Netlify folder
+.netlify

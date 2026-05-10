@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<yml_catalog date="2026-05-04 19:40">
+  <shop>
+    <name>Sakhva Travel</name>
+    <company>Sakhva Travel</company>
+    <url>https://sakhva-travel.com</url>
+    <currencies>
+      <currency id="GEL" rate="1"/>
+    </currencies>
+    <categories>
+      <category id="1">Исполнитель</category>
+      <category id="10" parentId="1">Туризм и экскурсии</category>
+    </categories>
+    <sets>
+      <set id="tbilisi-tours">
+        <url>https://sakhva-travel.com/</url>
+      </set>
+    </sets>
+    <offers>
+
+      <offer id="kazbegi">
+        <name>Sakhva Travel — тур в Казбеги из Тбилиси</name>
+        <url>https://sakhva-travel.com/tour/kazbegi/</url>
+        <price from="true">175</price>
+        <currencyId>GEL</currencyId>
+        <categoryId>10</categoryId>
+        <set-ids>tbilisi-tours</set-ids>
+        <picture>https://sakhva-travel.com/images/og-kazbegi.jpg</picture>
+        <description>Индивидуальный тур в Казбеги на 1 день — Военно-Грузинская дорога, Гергетская Троица, Ананури. Трансфер включён.</description>
+        <sales_notes>12-14 часов, трансфер включён</sales_notes>
+        <param name="Рейтинг">4.9</param>
+        <param name="Число отзывов">87</param>
+        <param name="Годы опыта">7</param>
+        <param name="Регион">Тбилиси</param>
+        <param name="Конверсия">90</param>
+        <param name="Ссылка на телефон">tel:+995511272623</param>
+        <param name="Ссылка на чат">https://wa.me/995511272623</param>
+        <param name="Ссылка на создание заказа">https://sakhva-travel.com/tour/kazbegi/</param>
+        <param name="Ссылка на профиль исполнителя">https://sakhva-travel.com/about/</param>
+        <param name="Исполнитель проверен">true</param>
+        <param name="Организация">false</param>
+        <param name="Выполняется по адресу заказчика">true</param>
+        <param name="Об исполнителе">Частный гид Тимур — 7 лет опыта, 500+ туров, русскоязычный гид по Грузии</param>
+        <param name="Отзыв на исполнителя - 1" unit="5.0">Потрясающий тур! Тимур отличный гид, показал все лучшие места</param>
+        <param name="Отзыв на исполнителя - 2" unit="5.0">Военно-Грузинская дорога — незабываемо. Спасибо Тимуру за организацию</param>
+      </offer>
+
+      <offer id="kakheti">
+        <name>Sakhva Travel — тур в Кахетию с дегустацией</name>
+        <url>https://sakhva-travel.com/tour/kakheti/</url>
+        <price from="true">170</price>
+        <currencyId>GEL</currencyId>
+        <categoryId>10</categoryId>
+        <set-ids>tbilisi-tours</set-ids>
+        <picture>https://sakhva-travel.com/images/og-kakheti.jpg</picture>
+        <description>Тур в Кахетию из Тбилиси — винодельни, Сигнахи, Бодбе, дегустация грузинского вина. Индивидуальная экскурсия.</description>
+        <sales_notes>10-12 часов, дегустация включена</sales_notes>
+        <param name="Рейтинг">4.9</param>
+        <param name="Число отзывов">87</param>
+        <param name="Годы опыта">7</param>
+        <param name="Регион">Тбилиси</param>
+        <param name="Конверсия">90</param>
+        <param name="Ссылка на телефон">tel:+995511272623</param>
+        <param name="Ссылка на чат">https://wa.me/995511272623</param>
+        <param name="Ссылка на создание заказа">https://sakhva-travel.com/tour/kakheti/</param>
+        <param name="Ссылка на профиль исполнителя">https://sakhva-travel.com/about/</param>
+        <param name="Исполнитель проверен">true</param>
+        <param name="Организация">false</param>
+        <param name="Выполняется по адресу заказчика">true</param>
+        <param name="Об исполнителе">Частный гид Тимур — 7 лет опыта, 500+ туров, русскоязычный гид по Грузии</param>
+      </offer>
+
+      <offer id="mtskheta">
+        <name>Sakhva Travel — экскурсия в Мцхету</name>
+        <url>https://sakhva-travel.com/tour/mtskheta/</url>
+        <price from="true">90</price>
+        <currencyId>GEL</currencyId>
+        <categoryId>10</categoryId>
+        <set-ids>tbilisi-tours</set-ids>
+        <picture>https://sakhva-travel.com/images/mtskheta-tour.webp</picture>
+        <description>Экскурсия в Мцхету из Тбилиси — Джвари, Светицховели, древняя столица Грузии. Полдня с частным гидом.</description>
+        <sales_notes>4-5 часов, трансфер включён</sales_notes>
+        <param name="Рейтинг">4.9</param>
+        <param name="Число отзывов">87</param>
+        <param name="Годы опыта">7</param>
+        <param name="Регион">Тбилиси</param>
+        <param name="Конверсия">90</param>
+        <param name="Ссылка на телефон">tel:+995511272623</param>
+        <param name="Ссылка на чат">https://wa.me/995511272623</param>
+        <param name="Ссылка на создание заказа">https://sakhva-travel.com/tour/mtskheta/</param>
+        <param name="Ссылка на профиль исполнителя">https://sakhva-travel.com/about/</param>
+        <param name="Исполнитель проверен">true</param>
+        <param name="Организация">false</param>
+        <param name="Выполняется по адресу заказчика">true</param>
+        <param name="Об исполнителе">Частный гид Тимур — 7 лет опыта, 500+ туров, русскоязычный гид по Грузии</param>
+      </offer>
+
+      <offer id="night-tbilisi">
+        <name>Sakhva Travel — ночной тур по Тбилиси</name>
+        <url>https://sakhva-travel.com/tour/night-tbilisi/</url>
+        <price from="true">94</price>
+        <currencyId>GEL</currencyId>
+        <categoryId>10</categoryId>
+        <set-ids>tbilisi-tours</set-ids>
+        <picture>https://sakhva-travel.com/images/og-night-tbilisi.jpg</picture>
+        <description>Ночной тур по Тбилиси — подсветка старого города, крепость Нарикала, серные бани, мост Мира. Атмосферная прогулка.</description>
+        <sales_notes>3-4 часа, пешком</sales_notes>
+        <param name="Рейтинг">4.9</param>
+        <param name="Число отзывов">87</param>
+        <param name="Годы опыта">7</param>
+        <param name="Регион">Тбилиси</param>
+        <param name="Конверсия">90</param>
+        <param name="Ссылка на телефон">tel:+995511272623</param>
+        <param name="Ссылка на чат">https://wa.me/995511272623</param>
+        <param name="Ссылка на создание заказа">https://sakhva-travel.com/tour/night-tbilisi/</param>
+        <param name="Ссылка на профиль исполнителя">https://sakhva-travel.com/about/</param>
+        <param name="Исполнитель проверен">true</param>
+        <param name="Организация">false</param>
+        <param name="Выполняется по адресу заказчика">true</param>
+        <param name="Об исполнителе">Частный гид Тимур — 7 лет опыта, 500+ туров, русскоязычный гид по Грузии</param>
+      </offer>
+
+      <offer id="batumi">
+        <name>Sakhva Travel — тур в Батуми из Тбилиси</name>
+        <url>https://sakhva-travel.com/tour/batumi/</url>
+        <price from="true">201</price>
+        <currencyId>GEL</currencyId>
+        <categoryId>10</categoryId>
+        <set-ids>tbilisi-tours</set-ids>
+        <picture>https://sakhva-travel.com/images/batumi-tour.webp</picture>
+        <description>Тур в Батуми из Тбилиси — побережье Чёрного моря, ботанический сад, старый город. Индивидуальная поездка.</description>
+        <sales_notes>2 дня / 1 ночь, трансфер включён</sales_notes>
+        <param name="Рейтинг">4.9</param>
+        <param name="Число отзывов">87</param>
+        <param name="Годы опыта">7</param>
+        <param name="Регион">Тбилиси</param>
+        <param name="Конверсия">90</param>
+        <param name="Ссылка на телефон">tel:+995511272623</param>
+        <param name="Ссылка на чат">https://wa.me/995511272623</param>
+        <param name="Ссылка на создание заказа">https://sakhva-travel.com/tour/batumi/</param>
+        <param name="Ссылка на профиль исполнителя">https://sakhva-travel.com/about/</param>
+        <param name="Исполнитель проверен">true</param>
+        <param name="Организация">false</param>
+        <param name="Выполняется по адресу заказчика">true</param>
+        <param name="Об исполнителе">Частный гид Тимур — 7 лет опыта, 500+ туров, русскоязычный гид по Грузии</param>
+      </offer>
+
+      <offer id="old-tbilisi">
+        <name>Sakhva Travel — экскурсия по Старому Тбилиси</name>
+        <url>https://sakhva-travel.com/tour/old-tbilisi/</url>
+        <price from="true">140</price>
+        <currencyId>GEL</currencyId>
+        <categoryId>10</categoryId>
+        <set-ids>tbilisi-tours</set-ids>
+        <picture>https://sakhva-travel.com/images/og-tbilisi.jpg</picture>
+        <description>Пешая экскурсия по Старому Тбилиси — Абанотубани, Нарикала, Легвтахеви, Шардени. Архитектура и история.</description>
+        <sales_notes>4-5 часов, пешком</sales_notes>
+        <param name="Рейтинг">4.9</param>
+        <param name="Число отзывов">87</param>
+        <param name="Годы опыта">7</param>
+        <param name="Регион">Тбилиси</param>
+        <param name="Конверсия">90</param>
+        <param name="Ссылка на телефон">tel:+995511272623</param>
+        <param name="Ссылка на чат">https://wa.me/995511272623</param>
+        <param name="Ссылка на создание заказа">https://sakhva-travel.com/tour/old-tbilisi/</param>
+        <param name="Ссылка на профиль исполнителя">https://sakhva-travel.com/about/</param>
+        <param name="Исполнитель проверен">true</param>
+        <param name="Организация">false</param>
+        <param name="Выполняется по адресу заказчика">true</param>
+        <param name="Об исполнителе">Частный гид Тимур — 7 лет опыта, 500+ туров, русскоязычный гид по Грузии</param>
+      </offer>
+
+      <offer id="soviet">
+        <name>Sakhva Travel — обзорная экскурсия по Тбилиси</name>
+        <url>https://sakhva-travel.com/tour/soviet/</url>
+        <price from="true">135</price>
+        <currencyId>GEL</currencyId>
+        <categoryId>10</categoryId>
+        <set-ids>tbilisi-tours</set-ids>
+        <picture>https://sakhva-travel.com/images/og-soviet.jpg</picture>
+        <description>Обзорная экскурсия по Тбилиси — советское наследие, модерн, проспект Руставели, Фабрика. Город глазами местного.</description>
+        <sales_notes>5-6 часов, авто + пешком</sales_notes>
+        <param name="Рейтинг">4.9</param>
+        <param name="Число отзывов">87</param>
+        <param name="Годы опыта">7</param>
+        <param name="Регион">Тбилиси</param>
+        <param name="Конверсия">90</param>
+        <param name="Ссылка на телефон">tel:+995511272623</param>
+        <param name="Ссылка на чат">https://wa.me/995511272623</param>
+        <param name="Ссылка на создание заказа">https://sakhva-travel.com/tour/soviet/</param>
+        <param name="Ссылка на профиль исполнителя">https://sakhva-travel.com/about/</param>
+        <param name="Исполнитель проверен">true</param>
+        <param name="Организация">false</param>
+        <param name="Выполняется по адресу заказчика">true</param>
+        <param name="Об исполнителе">Частный гид Тимур — 7 лет опыта, 500+ туров, русскоязычный гид по Грузии</param>
+      </offer>
+
+      <offer id="kutaisi">
+        <name>Sakhva Travel — тур в Кутаиси из Тбилиси</name>
+        <url>https://sakhva-travel.com/tour/kutaisi/</url>
+        <price from="true">183</price>
+        <currencyId>GEL</currencyId>
+        <categoryId>10</categoryId>
+        <set-ids>tbilisi-tours</set-ids>
+        <picture>https://sakhva-travel.com/images/kutaisi-tour.webp</picture>
+        <description>Тур в Кутаиси — Гелати, Моцамета, пещера Прометея, каньон Окаце. Однодневная поездка из Тбилиси.</description>
+        <sales_notes>12-14 часов, трансфер включён</sales_notes>
+        <param name="Рейтинг">4.9</param>
+        <param name="Число отзывов">87</param>
+        <param name="Годы опыта">7</param>
+        <param name="Регион">Тбилиси</param>
+        <param name="Конверсия">90</param>
+        <param name="Ссылка на телефон">tel:+995511272623</param>
+        <param name="Ссылка на чат">https://wa.me/995511272623</param>
+        <param name="Ссылка на создание заказа">https://sakhva-travel.com/tour/kutaisi/</param>
+        <param name="Ссылка на профиль исполнителя">https://sakhva-travel.com/about/</param>
+        <param name="Исполнитель проверен">true</param>
+        <param name="Организация">false</param>
+        <param name="Выполняется по адресу заказчика">true</param>
+        <param name="Об исполнителе">Частный гид Тимур — 7 лет опыта, 500+ туров, русскоязычный гид по Грузии</param>
+      </offer>
+
+      <offer id="dinner">
+        <name>Sakhva Travel — тур + ужин у грузинской семьи</name>
+        <url>https://sakhva-travel.com/tour/dinner/</url>
+        <price from="true">213</price>
+        <currencyId>GEL</currencyId>
+        <categoryId>10</categoryId>
+        <set-ids>tbilisi-tours</set-ids>
+        <picture>https://sakhva-travel.com/images/og-dinner.jpg</picture>
+        <description>Уникальный тур с ужином у грузинской семьи — мастер-класс хинкали, домашнее вино, традиционное застолье.</description>
+        <sales_notes>5-6 часов, ужин включён</sales_notes>
+        <param name="Рейтинг">4.9</param>
+        <param name="Число отзывов">87</param>
+        <param name="Годы опыта">7</param>
+        <param name="Регион">Тбилиси</param>
+        <param name="Конверсия">90</param>
+        <param name="Ссылка на телефон">tel:+995511272623</param>
+        <param name="Ссылка на чат">https://wa.me/995511272623</param>
+        <param name="Ссылка на создание заказа">https://sakhva-travel.com/tour/dinner/</param>
+        <param name="Ссылка на профиль исполнителя">https://sakhva-travel.com/about/</param>
+        <param name="Исполнитель проверен">true</param>
+        <param name="Организация">false</param>
+        <param name="Выполняется по адресу заказчика">true</param>
+        <param name="Об исполнителе">Частный гид Тимур — 7 лет опыта, 500+ туров, русскоязычный гид по Грузии</param>
+      </offer>
+
+      <offer id="slow-travel">
+        <name>Sakhva Travel — Slow Travel Грузия 3 дня</name>
+        <url>https://sakhva-travel.com/tour/slow-travel/</url>
+        <price from="true">595</price>
+        <currencyId>GEL</currencyId>
+        <categoryId>10</categoryId>
+        <set-ids>tbilisi-tours</set-ids>
+        <picture>https://sakhva-travel.com/images/og-slow-travel.jpg</picture>
+        <description>Slow Travel по Грузии — 3 дня с частным гидом, деревни, виноделие, горы, нетуристические места.</description>
+        <sales_notes>3 дня, проживание + трансфер включены</sales_notes>
+        <param name="Рейтинг">4.9</param>
+        <param name="Число отзывов">87</param>
+        <param name="Годы опыта">7</param>
+        <param name="Регион">Тбилиси</param>
+        <param name="Конверсия">90</param>
+        <param name="Ссылка на телефон">tel:+995511272623</param>
+        <param name="Ссылка на чат">https://wa.me/995511272623</param>
+        <param name="Ссылка на создание заказа">https://sakhva-travel.com/tour/slow-travel/</param>
+        <param name="Ссылка на профиль исполнителя">https://sakhva-travel.com/about/</param>
+        <param name="Исполнитель проверен">true</param>
+        <param name="Организация">false</param>
+        <param name="Выполняется по адресу заказчика">true</param>
+        <param name="Об исполнителе">Частный гид Тимур — 7 лет опыта, 500+ туров, русскоязычный гид по Грузии</param>
+      </offer>
+
+      <offer id="digital-nomad">
+        <name>Sakhva Travel — Digital Nomad тур Тбилиси</name>
+        <url>https://sakhva-travel.com/tour/digital-nomad/</url>
+        <price from="true">123</price>
+        <currencyId>GEL</currencyId>
+        <categoryId>10</categoryId>
+        <set-ids>tbilisi-tours</set-ids>
+        <picture>https://sakhva-travel.com/images/og-tbilisi.jpg</picture>
+        <description>Тур для цифровых кочевников — коворкинги, районы для жизни, банки, SIM-карты, лайфхаки релоканта в Тбилиси.</description>
+        <sales_notes>4-5 часов, пешком + авто</sales_notes>
+        <param name="Рейтинг">4.9</param>
+        <param name="Число отзывов">87</param>
+        <param name="Годы опыта">7</param>
+        <param name="Регион">Тбилиси</param>
+        <param name="Конверсия">90</param>
+        <param name="Ссылка на телефон">tel:+995511272623</param>
+        <param name="Ссылка на чат">https://wa.me/995511272623</param>
+        <param name="Ссылка на создание заказа">https://sakhva-travel.com/tour/digital-nomad/</param>
+        <param name="Ссылка на профиль исполнителя">https://sakhva-travel.com/about/</param>
+        <param name="Исполнитель проверен">true</param>
+        <param name="Организация">false</param>
+        <param name="Выполняется по адресу заказчика">true</param>
+        <param name="Об исполнителе">Частный гид Тимур — 7 лет опыта, 500+ туров, русскоязычный гид по Грузии</param>
+      </offer>
+
+      <offer id="emigrant">
+        <name>Sakhva Travel — тур для эмигрантов Тбилиси</name>
+        <url>https://sakhva-travel.com/tour/emigrant/</url>
+        <price from="true">123</price>
+        <currencyId>GEL</currencyId>
+        <categoryId>10</categoryId>
+        <set-ids>tbilisi-tours</set-ids>
+        <picture>https://sakhva-travel.com/images/og-cover.webp</picture>
+        <description>Тур для релокантов — банки, аренда, районы, документы, SIM, транспорт. Всё что нужно знать при переезде в Тбилиси.</description>
+        <sales_notes>4-5 часов, пешком + авто</sales_notes>
+        <param name="Рейтинг">4.9</param>
+        <param name="Число отзывов">87</param>
+        <param name="Годы опыта">7</param>
+        <param name="Регион">Тбилиси</param>
+        <param name="Конверсия">90</param>
+        <param name="Ссылка на телефон">tel:+995511272623</param>
+        <param name="Ссылка на чат">https://wa.me/995511272623</param>
+        <param name="Ссылка на создание заказа">https://sakhva-travel.com/tour/emigrant/</param>
+        <param name="Ссылка на профиль исполнителя">https://sakhva-travel.com/about/</param>
+        <param name="Исполнитель проверен">true</param>
+        <param name="Организация">false</param>
+        <param name="Выполняется по адресу заказчика">true</param>
+        <param name="Об исполнителе">Частный гид Тимур — 7 лет опыта, 500+ туров, русскоязычный гид по Грузии</param>
+      </offer>
+
+    </offers>
+  </shop>
+</yml_catalog>

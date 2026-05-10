@@ -1,0 +1,29 @@
+{
+  "folder_id": "7866c289-662f-43d3-893d-0c640c4be923",
+  "profiles": {
+    "eaf28266-7fd6-4c52-893f-97bbecf95fd1": {"name":"SEO-User-01","persona":"relocant","geo":"moscow","lang":"ru","interests":["yoga","cafe","photography"],"homeCity":"Москва","gmail":true},
+    "5eb8e97b-5523-4e23-8db6-cc12cfd1cf97": {"name":"SEO-User-02","persona":"business","geo":"moscow","lang":"ru","interests":["finance","restaurants","flights"],"homeCity":"Мос��ва","gmail":true},
+    "bb690360-c68f-4fd2-9f07-f82572383402": {"name":"SEO-User-03","persona":"relocant","geo":"spb","lang":"ru","interests":["wine","history","cafe"],"homeCity":"Санкт-Пете��бург","gmail":true},
+    "819d7628-3b4b-456f-8e48-91f217458e2c": {"name":"SEO-User-04","persona":"tourist","geo":"spb","lang":"ru","interests":["photography","history","restaurants"],"homeCity":"Санкт-П��тербург","gmail":true},
+    "cacac083-4a93-4895-9c68-949c065424b3": {"name":"SEO-User-05","persona":"family","geo":"kazan","lang":"ru","interests":["kids","parks","restaurants"],"homeCity":"Казань","gmail":true},
+    "0e0dd9e6-65cf-424a-833b-3103572ff5d6": {"name":"SEO-User-06","persona":"tourist","geo":"novosibirsk","lang":"ru","interests":["hiking","photography","wine"],"homeCity":"Новосибирск","gmail":true},
+    "60b5c79f-da4f-4298-b097-6d305239d143": {"name":"SEO-User-07","persona":"relocant","geo":"ekb","lang":"ru","interests":["cafe","shopping","restaurants"],"homeCity":"Екатеринбург","gmail":true},
+    "f4baf31a-8fd8-4c06-b5f4-90a9b7411023": {"name":"SEO-User-08","persona":"family","geo":"krasnodar","lang":"ru","interests":["kids","wine","parks"],"homeCity":"Краснодар","gmail":true},
+    "3c412a60-9fe7-4782-ab8d-40a1a714ba80": {"name":"SEO-User-09","persona":"backpacker","geo":"moscow","lang":"ru","interests":["hostels","street-food","hiking"],"homeCity":"Москва","gmail":false},
+    "d1ceb77f-324f-42dd-be57-dae994036b39": {"name":"SEO-User-10","persona":"business","geo":"spb","lang":"ru","interests":["finance","flights","restaurants"],"homeCity":"Санкт-Петербург","gmail":true},
+    "5554c22e-a6af-495d-990a-961c92c1e10d": {"name":"SEO-User-11","persona":"tourist","geo":"moscow","lang":"ru","interests":["wine","history","photography"],"homeCity":"Москва","gmail":true},
+    "3320fe22-3a05-4f33-8b7f-abe1830076ee": {"name":"SEO-User-12","persona":"family","geo":"ekb","lang":"ru","interests":["kids","parks","street-food"],"homeCity":"Екатеринбург","gmail":true},
+    "79d33eec-2ad0-4a01-a1fe-a0111bac2054": {"name":"SEO-User-13","persona":"relocant","geo":"berlin","lang":"en","interests":["cafe","yoga","photography"],"homeCity":"Berlin","gmail":true},
+    "f0b97fd1-2943-481a-b497-ef1b366ebce3": {"name":"SEO-User-14","persona":"tourist","geo":"london","lang":"en","interests":["wine","history","restaurants"],"homeCity":"London","gmail":true},
+    "5ce8f669-03ca-4871-82a7-315366533d35": {"name":"SEO-User-15","persona":"tourist","geo":"paris","lang":"en","interests":["wine","photography","restaurants"],"homeCity":"Paris","gmail":true},
+    "28ade7ff-48f4-4bee-b73c-ee7c66658e86": {"name":"SEO-User-16","persona":"backpacker","geo":"istanbul","lang":"en","interests":["hostels","street-food","hiking"],"homeCity":"Istanbul","gmail":false},
+    "fe2b8a88-5750-449f-be48-b069fb0ef308": {"name":"SEO-User-17","persona":"business","geo":"dubai","lang":"en","interests":["finance","flights","restaurants"],"homeCity":"Dubai","gmail":true},
+    "a20935b9-46a7-4e71-88dd-1e135d9be28a": {"name":"SEO-User-18","persona":"tourist","geo":"nyc","lang":"en","interests":["wine","history","photography"],"homeCity":"New York","gmail":true},
+    "e2d0dd54-6c75-4f1e-b061-79e2b6cf7d42": {"name":"SEO-User-19","persona":"backpacker","geo":"berlin","lang":"en","interests":["hostels","hiking","street-food"],"homeCity":"Berlin","gmail":false},
+    "3791ae24-c304-4a88-aaa4-af1fcd93ab71": {"name":"SEO-User-20","persona":"business","geo":"london","lang":"en","interests":["finance","flights","wine"],"homeCity":"London","gmail":true}
+  },
+  "settings": {
+    "parallelLimit": 1,
+    "telegramNotify": true
+  }
+}

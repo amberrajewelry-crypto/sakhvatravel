@@ -1,0 +1,13 @@
+{
+  "date": "2026-04-21T22:30:00+04:00",
+  "source": "serper.dev",
+  "region": "ge",
+  "lang": "ru",
+  "queries": {
+    "гид тбилиси": {"type": "experimental", "position": null, "top30": false},
+    "частный гид тбилиси": {"type": "experimental", "position": null, "top30": false},
+    "гид грузия": {"type": "control", "position": null, "top30": false},
+    "экскурсии тбилиси": {"type": "control", "position": null, "top30": false}
+  },
+  "notes": "sakhva-travel.com не найден в топ-30 ни по одному запросу. Стартовая точка для эксперимента."
+}

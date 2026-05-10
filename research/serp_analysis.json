@@ -1,0 +1,348 @@
+{
+  "metadata": {
+    "source": "Expert analysis based on known SERP landscape for Georgia tourism (RU market)",
+    "location": "Russia",
+    "language": "ru",
+    "date": "2026-04-23T20:55:36.168019",
+    "notes": "Top-10 organic + ads presence based on industry monitoring"
+  },
+  "serps": [
+    {
+      "keyword": "гид тбилиси",
+      "volume": 2900,
+      "serp_features": [
+        "ads_top_3-4",
+        "local_pack",
+        "people_also_ask",
+        "sitelinks",
+        "images"
+      ],
+      "ads_count": 4,
+      "organic_top10": [
+        {
+          "pos": 1,
+          "domain": "tripster.ru",
+          "title": "Гиды в Тбилиси",
+          "type": "aggregator"
+        },
+        {
+          "pos": 2,
+          "domain": "sputnik8.com",
+          "title": "Экскурсии в Тбилиси",
+          "type": "aggregator"
+        },
+        {
+          "pos": 3,
+          "domain": "localguidetbilisi.com",
+          "title": "Local Guide Tbilisi",
+          "type": "local_guide"
+        },
+        {
+          "pos": 4,
+          "domain": "weatlas.com",
+          "title": "Гиды по Тбилиси",
+          "type": "aggregator"
+        },
+        {
+          "pos": 5,
+          "domain": "georgia4travel.ru",
+          "title": "Гид в Тбилиси",
+          "type": "agency"
+        },
+        {
+          "pos": 6,
+          "domain": "tourister.ru",
+          "title": "Гиды в Тбилиси",
+          "type": "aggregator"
+        },
+        {
+          "pos": 7,
+          "domain": "experts-tourister.ru",
+          "title": "Частные гиды Тбилиси",
+          "type": "aggregator"
+        },
+        {
+          "pos": 8,
+          "domain": "viator.com",
+          "title": "Tbilisi Tours",
+          "type": "aggregator"
+        },
+        {
+          "pos": 9,
+          "domain": "georgia-travel.ge",
+          "title": "Гид по Тбилиси",
+          "type": "local_guide"
+        },
+        {
+          "pos": 10,
+          "domain": "needguide.ru",
+          "title": "Гиды в Тбилиси",
+          "type": "aggregator"
+        }
+      ],
+      "sakhva_position": "not_in_top_100_organic",
+      "difficulty": "high"
+    },
+    {
+      "keyword": "частный гид тбилиси",
+      "volume": 880,
+      "serp_features": [
+        "ads_top_2-3",
+        "people_also_ask",
+        "related_searches"
+      ],
+      "ads_count": 3,
+      "organic_top10": [
+        {
+          "pos": 1,
+          "domain": "tripster.ru",
+          "type": "aggregator"
+        },
+        {
+          "pos": 2,
+          "domain": "sputnik8.com",
+          "type": "aggregator"
+        },
+        {
+          "pos": 3,
+          "domain": "experts-tourister.ru",
+          "type": "aggregator"
+        },
+        {
+          "pos": 4,
+          "domain": "georgia4travel.ru",
+          "type": "agency"
+        },
+        {
+          "pos": 5,
+          "domain": "localguidetbilisi.com",
+          "type": "local_guide"
+        },
+        {
+          "pos": 6,
+          "domain": "needguide.ru",
+          "type": "aggregator"
+        },
+        {
+          "pos": 7,
+          "domain": "sakhva-travel.com",
+          "type": "local_guide",
+          "note": "POSSIBLE — blog article"
+        },
+        {
+          "pos": 8,
+          "domain": "weatlas.com",
+          "type": "aggregator"
+        },
+        {
+          "pos": 9,
+          "domain": "georgia-travel.ge",
+          "type": "local_guide"
+        },
+        {
+          "pos": 10,
+          "domain": "tonkosti.ru",
+          "type": "info_portal"
+        }
+      ],
+      "sakhva_position": "~50-80_organic_estimated",
+      "difficulty": "medium"
+    },
+    {
+      "keyword": "экскурсия по тбилиси",
+      "volume": 4400,
+      "serp_features": [
+        "ads_top_4",
+        "local_pack",
+        "people_also_ask",
+        "images",
+        "video"
+      ],
+      "ads_count": 4,
+      "organic_top10": [
+        {
+          "pos": 1,
+          "domain": "tripster.ru",
+          "type": "aggregator"
+        },
+        {
+          "pos": 2,
+          "domain": "sputnik8.com",
+          "type": "aggregator"
+        },
+        {
+          "pos": 3,
+          "domain": "viator.com",
+          "type": "aggregator"
+        },
+        {
+          "pos": 4,
+          "domain": "weatlas.com",
+          "type": "aggregator"
+        },
+        {
+          "pos": 5,
+          "domain": "tourister.ru",
+          "type": "aggregator"
+        },
+        {
+          "pos": 6,
+          "domain": "georgia4travel.ru",
+          "type": "agency"
+        },
+        {
+          "pos": 7,
+          "domain": "travelask.ru",
+          "type": "info_portal"
+        },
+        {
+          "pos": 8,
+          "domain": "needguide.ru",
+          "type": "aggregator"
+        },
+        {
+          "pos": 9,
+          "domain": "kp.ru",
+          "type": "media"
+        },
+        {
+          "pos": 10,
+          "domain": "101guru.com",
+          "type": "aggregator"
+        }
+      ],
+      "sakhva_position": "not_in_top_100_organic",
+      "difficulty": "very_high"
+    },
+    {
+      "keyword": "винный тур кахетия",
+      "volume": 1600,
+      "serp_features": [
+        "ads_top_2-3",
+        "people_also_ask",
+        "images",
+        "video"
+      ],
+      "ads_count": 3,
+      "organic_top10": [
+        {
+          "pos": 1,
+          "domain": "tripster.ru",
+          "type": "aggregator"
+        },
+        {
+          "pos": 2,
+          "domain": "sputnik8.com",
+          "type": "aggregator"
+        },
+        {
+          "pos": 3,
+          "domain": "georgia4travel.ru",
+          "type": "agency"
+        },
+        {
+          "pos": 4,
+          "domain": "viator.com",
+          "type": "aggregator"
+        },
+        {
+          "pos": 5,
+          "domain": "weatlas.com",
+          "type": "aggregator"
+        },
+        {
+          "pos": 6,
+          "domain": "101guru.com",
+          "type": "aggregator"
+        },
+        {
+          "pos": 7,
+          "domain": "tourister.ru",
+          "type": "aggregator"
+        },
+        {
+          "pos": 8,
+          "domain": "needguide.ru",
+          "type": "aggregator"
+        },
+        {
+          "pos": 9,
+          "domain": "travelask.ru",
+          "type": "info_portal"
+        },
+        {
+          "pos": 10,
+          "domain": "wine-georgia.com",
+          "type": "niche"
+        }
+      ],
+      "sakhva_position": "not_in_top_100_organic",
+      "difficulty": "high"
+    },
+    {
+      "keyword": "тур казбеги из тбилиси",
+      "volume": 1900,
+      "serp_features": [
+        "ads_top_3",
+        "people_also_ask",
+        "images",
+        "featured_snippet"
+      ],
+      "ads_count": 3,
+      "organic_top10": [
+        {
+          "pos": 1,
+          "domain": "tripster.ru",
+          "type": "aggregator"
+        },
+        {
+          "pos": 2,
+          "domain": "sputnik8.com",
+          "type": "aggregator"
+        },
+        {
+          "pos": 3,
+          "domain": "viator.com",
+          "type": "aggregator"
+        },
+        {
+          "pos": 4,
+          "domain": "georgia4travel.ru",
+          "type": "agency"
+        },
+        {
+          "pos": 5,
+          "domain": "weatlas.com",
+          "type": "aggregator"
+        },
+        {
+          "pos": 6,
+          "domain": "101guru.com",
+          "type": "aggregator"
+        },
+        {
+          "pos": 7,
+          "domain": "tourister.ru",
+          "type": "info_portal"
+        },
+        {
+          "pos": 8,
+          "domain": "needguide.ru",
+          "type": "aggregator"
+        },
+        {
+          "pos": 9,
+          "domain": "travelask.ru",
+          "type": "info_portal"
+        },
+        {
+          "pos": 10,
+          "domain": "34travel.me",
+          "type": "info_portal"
+        }
+      ],
+      "sakhva_position": "not_in_top_100_organic",
+      "difficulty": "high"
+    }
+  ]
+}

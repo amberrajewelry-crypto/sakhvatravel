@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demo 3 — GSAP ScrollTrigger</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: system-ui, sans-serif; background: #0a0a0a; color: #fff; }
+
+.intro {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+}
+.intro h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+.intro p { font-size: 1.1rem; opacity: 0.6; max-width: 600px; }
+
+.panels-wrapper {
+  position: relative;
+}
+
+.panel {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.panel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.panel .caption {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  font-size: 3rem;
+  font-weight: 800;
+  text-shadow: 0 4px 30px rgba(0,0,0,0.7);
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+/* Scroll indicator */
+.scroll-indicator {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 100;
+}
+
+.scroll-indicator .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.3);
+  transition: background 0.3s, transform 0.3s;
+}
+
+.scroll-indicator .dot.active {
+  background: #fff;
+  transform: scale(1.4);
+}
+
+.label {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.7);
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  z-index: 100;
+  pointer-events: none;
+}
+
+.outro {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.outro h2 { font-size: 1.8rem; }
+.outro p { opacity: 0.5; }
+</style>
+</head>
+<body>
+
+<div class="intro">
+  <h1>3. GSAP ScrollTrigger</h1>
+  <p>Индустриальный стандарт. <code>scrub: true</code> привязывает анимацию к скроллу 1:1. Поддерживает: fade, scale, clip-path, parallax, pin.</p>
+</div>
+
+<div class="scroll-indicator">
+  <div class="dot active" data-i="0"></div>
+  <div class="dot" data-i="1"></div>
+  <div class="dot" data-i="2"></div>
+  <div class="dot" data-i="3"></div>
+</div>
+
+<div class="panels-wrapper">
+  <!-- Panel 1: Kazbegi — pinned, next panel covers it -->
+  <div class="panel" data-effect="parallax">
+    <img src="../images/kazbegi-tour.webp" alt="Kazbegi">
+    <div class="caption">Казбеги</div>
+  </div>
+
+  <!-- Panel 2: Kakheti — slides up over panel 1 -->
+  <div class="panel" data-effect="clip">
+    <img src="../images/kakheti-tour.webp" alt="Kakheti">
+    <div class="caption">Кахетия</div>
+  </div>
+
+  <!-- Panel 3: Borzhomi — scale zoom in -->
+  <div class="panel" data-effect="scale">
+    <img src="../images/borzhomi.webp" alt="Borzhomi">
+    <div class="caption">Боржоми</div>
+  </div>
+
+  <!-- Panel 4: Dinner — crossfade -->
+  <div class="panel" data-effect="fade">
+    <img src="../images/dinner-tour.webp" alt="Dinner Tour">
+    <div class="caption">Ужин-тур</div>
+  </div>
+</div>
+
+<div class="outro">
+  <h2>GSAP ScrollTrigger</h2>
+  <p>~30 KB, все браузеры, scrub = плавность</p>
+</div>
+
+<div class="label">Техника: GSAP ScrollTrigger + scrub + pin</div>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script>
+gsap.registerPlugin(ScrollTrigger);
+
+const panels = gsap.utils.toArray('.panel');
+const dots = document.querySelectorAll('.dot');
+
+panels.forEach((panel, i) => {
+  const img = panel.querySelector('img');
+  const caption = panel.querySelector('.caption');
+  const effect = panel.dataset.effect;
+
+  // Caption entrance
+  gsap.to(caption, {
+    opacity: 1,
+    y: 0,
+    duration: 1,
+    scrollTrigger: {
+      trigger: panel,
+      start: 'top 60%',
+      end: 'top 20%',
+      scrub: 1,
+    }
+  });
+
+  // Caption exit
+  gsap.to(caption, {
+    opacity: 0,
+    y: -30,
+    scrollTrigger: {
+      trigger: panel,
+      start: 'bottom 80%',
+      end: 'bottom 40%',
+      scrub: 1,
+    }
+  });
+
+  // Dot tracker
+  ScrollTrigger.create({
+    trigger: panel,
+    start: 'top center',
+    end: 'bottom center',
+    onEnter: () => setActiveDot(i),
+    onEnterBack: () => setActiveDot(i),
+  });
+
+  // Different transition effects per panel
+  if (i === 0) {
+    // Panel 1: parallax — image moves slower than scroll
+    gsap.to(img, {
+      yPercent: 30,
+      scale: 1.1,
+      scrollTrigger: {
+        trigger: panel,
+        start: 'top top',
+        end: 'bottom top',
+        scrub: true,
+        pin: true,
+        pinSpacing: false,
+      }
+    });
+  }
+
+  if (i === 1) {
+    // Panel 2: clip-path reveal — circle expands from center
+    gsap.fromTo(panel, {
+      clipPath: 'circle(0% at 50% 50%)',
+    }, {
+      clipPath: 'circle(150% at 50% 50%)',
+      scrollTrigger: {
+        trigger: panel,
+        start: 'top bottom',
+        end: 'top top',
+        scrub: true,
+      }
+    });
+  }
+
+  if (i === 2) {
+    // Panel 3: scale up from small
+    gsap.fromTo(img, {
+      scale: 0.6,
+      opacity: 0,
+    }, {
+      scale: 1,
+      opacity: 1,
+      scrollTrigger: {
+        trigger: panel,
+        start: 'top bottom',
+        end: 'top 20%',
+        scrub: true,
+      }
+    });
+  }
+
+  if (i === 3) {
+    // Panel 4: simple crossfade
+    gsap.fromTo(panel, {
+      opacity: 0,
+    }, {
+      opacity: 1,
+      scrollTrigger: {
+        trigger: panel,
+        start: 'top 80%',
+        end: 'top 30%',
+        scrub: true,
+      }
+    });
+  }
+});
+
+function setActiveDot(index) {
+  dots.forEach((d, i) => {
+    d.classList.toggle('active', i === index);
+  });
+}
+</script>
+
+</body>
+</html>

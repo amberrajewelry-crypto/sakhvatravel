@@ -4,8 +4,8 @@ export default async function handler(req, res) {
   const { message, history = [] } = req.body || {};
   if (!message) return res.status(400).json({ error: 'No message' });
 
-  const ANTHROPIC_KEY = process.env.ANTHROPIC_API_KEY;
-  if (!ANTHROPIC_KEY) return res.status(500).json({ error: 'No API key' });
+  const KEY = process.env.OPENAI_API_KEY;
+  if (!KEY) return res.status(500).json({ error: 'No API key' });
 
   const system = `Ты — AI-помощник Тимура, частного гида в Тбилиси (Грузия). Помогаешь туристам выбрать тур.
 
@@ -32,27 +32,26 @@ export default async function handler(req, res) {
 
   try {
     const messages = [
+      { role: 'system', content: system },
       ...history.slice(-8).map(m => ({ role: m.role, content: m.content })),
       { role: 'user', content: message }
     ];
 
-    const resp = await fetch('https://api.anthropic.com/v1/messages', {
+    const resp = await fetch('https://api.openai.com/v1/chat/completions', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'x-api-key': ANTHROPIC_KEY,
-        'anthropic-version': '2023-06-01'
+        'Authorization': `Bearer ${KEY}`
       },
       body: JSON.stringify({
-        model: 'claude-haiku-4-5-20251001',
+        model: 'gpt-4o-mini',
         max_tokens: 300,
-        system,
         messages
       })
     });
 
     const data = await resp.json();
-    const reply = data?.content?.[0]?.text || '';
+    const reply = data?.choices?.[0]?.message?.content || '';
     res.json({ reply });
   } catch (e) {
     res.status(500).json({ error: 'API error' });

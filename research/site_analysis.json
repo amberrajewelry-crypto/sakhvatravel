@@ -1,0 +1,132 @@
+{
+  "metadata": {
+    "source": "On-page analysis of sakhva-travel.com (live crawl)",
+    "date": "2026-04-23T20:56:25.737447"
+  },
+  "site_overview": {
+    "domain": "sakhva-travel.com",
+    "hosting": "Vercel",
+    "ssl": true,
+    "total_pages_sitemap": 98,
+    "languages": [
+      "ru",
+      "en"
+    ],
+    "hreflang": true,
+    "mobile_responsive": true
+  },
+  "homepage_seo": {
+    "title": "Частный гид в Тбилиси 2026 ★4.9 | Sakhva Travel",
+    "title_length": 50,
+    "title_score": "90/100",
+    "meta_description": "Частный русскоязычный гид Тимур. Казбеги от ₾195, скрытые места Тбилиси от ₾165, Кахетия. До 6 чел. Бесплатная отмена. Ответ за 15 минут.",
+    "meta_description_length": 137,
+    "meta_desc_score": "85/100",
+    "h1": "Частный гид в Тбилиси",
+    "h1_keywords": [
+      "частный",
+      "гид",
+      "тбилиси"
+    ],
+    "h2_count": 9,
+    "h2_list": [
+      "Туры с частным гидом по Тбилиси и Грузии",
+      "Не экскурсионное бюро",
+      "Как забронировать тур",
+      "Частный русскоязычный гид по Тбилиси — Тимур",
+      "Что говорят туристы",
+      "Без скрытых доплат",
+      "Гайды по Грузии",
+      "Частые вопросы"
+    ],
+    "canonical": "https://sakhva-travel.com/",
+    "og_tags": "complete",
+    "internal_links": 58,
+    "schema_markup": [
+      "WebSite",
+      "WebPage",
+      "TravelAgency",
+      "TouristInformationCenter",
+      "AggregateRating"
+    ]
+  },
+  "tracking": {
+    "ga4": "G-3X83YZHY6S",
+    "google_ads": "AW-8133499399",
+    "google_ads_conversion_tracking": true
+  },
+  "content_structure": {
+    "tour_pages_ru": 12,
+    "tour_pages_en": 11,
+    "blog_articles_ru": 42,
+    "blog_articles_en": 10,
+    "category_pages": 6,
+    "utility_pages": [
+      "about",
+      "contacts",
+      "privacy",
+      "policy"
+    ]
+  },
+  "keyword_targeting": {
+    "homepage_targets": [
+      "частный гид тбилиси",
+      "частный гид в тбилиси",
+      "русскоязычный гид тбилиси"
+    ],
+    "dedicated_landing_pages": {
+      "chastniy-gid-tbilisi": "частный гид тбилиси (dedicated URL)",
+      "tour/kazbegi": "тур казбеги",
+      "tour/kakheti": "винный тур кахетия",
+      "tour/old-tbilisi": "старый тбилиси экскурсия",
+      "tour/mtskheta": "мцхета экскурсия",
+      "tour/night-tbilisi": "ночной тбилиси"
+    },
+    "blog_keyword_coverage": [
+      "казбеги из тбилиси",
+      "кахетия за 1 день",
+      "серные бани тбилиси",
+      "скрытые места тбилиси",
+      "виза в грузию 2026",
+      "аэропорт тбилиси",
+      "частный гид тбилиси цена",
+      "борджоми",
+      "вардзиа",
+      "батуми из тбилиси",
+      "грузия с детьми",
+      "военно грузинская дорога",
+      "грузия зимой",
+      "сколько стоит гид тбилиси",
+      "русскоязычный гид тбилиси",
+      "частный гид или группа тбилиси"
+    ]
+  },
+  "strengths": [
+    "Strong title optimization for primary keyword",
+    "Schema markup (TravelAgency + AggregateRating)",
+    "Good hreflang implementation (ru/en)",
+    "42 blog articles create topical authority",
+    "Google Ads conversion tracking already set up (AW-8133499399)",
+    "Dedicated landing pages for key tour types",
+    "98 indexed pages provide depth"
+  ],
+  "weaknesses": [
+    "No meta keywords (minor, Google ignores)",
+    "Homepage size 249KB — could be large for mobile",
+    "Missing FAQ schema (FAQ H2 exists but no FAQPage schema)",
+    "Blog articles may lack internal linking to tour pages",
+    "No breadcrumb schema detected",
+    "No Review/Rating individual schema per tour page"
+  ],
+  "google_ads_readiness": {
+    "score": "75/100",
+    "conversion_tracking": "AW-8133499399 installed",
+    "landing_pages_exist": true,
+    "missing": [
+      "Dedicated Google Ads landing pages without navigation (higher conversion)",
+      "UTM parameter handling verification needed",
+      "Phone call tracking not detected",
+      "No WhatsApp click tracking as conversion"
+    ]
+  }
+}

@@ -2,6 +2,13 @@
   "cleanUrls": true,
   "trailingSlash": true,
   "redirects": [
+    { "source": "/service-account.json", "destination": "/404", "statusCode": 404 },
+    { "source": "/en/privacy/", "destination": "/privacy/", "statusCode": 301 },
+    { "source": "/blog/georgia-with-kids/", "destination": "/en/blog/georgia-with-kids/", "statusCode": 301 },
+    { "source": "/tour/tbilisi-hidden/", "destination": "/", "statusCode": 301 },
+    { "source": "/tour/photo/", "destination": "/", "statusCode": 301 },
+    { "source": "/en/tour/tbilisi-hidden/", "destination": "/en/", "statusCode": 301 },
+    { "source": "/en/tour/photo/", "destination": "/en/", "statusCode": 301 },
     {
       "source": "/:path*",
       "has": [
@@ -12,9 +19,87 @@
       ],
       "destination": "https://sakhva-travel.com/:path*",
       "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "travel-georgia-tbilisi.com"
+        }
+      ],
+      "destination": "https://sakhva-travel.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.travel-georgia-tbilisi.com"
+        }
+      ],
+      "destination": "https://sakhva-travel.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/tour/old-tbilisi/:path*",
+      "destination": "/tour/kutaisi/",
+      "permanent": true
+    },
+    {
+      "source": "/tour/emigrant/:path*",
+      "destination": "/tour/batumi/",
+      "permanent": true
+    },
+    {
+      "source": "/en/tour/old-tbilisi/:path*",
+      "destination": "/en/tour/kutaisi/",
+      "permanent": true
+    },
+    {
+      "source": "/en/tour/emigrant/:path*",
+      "destination": "/en/tour/batumi/",
+      "permanent": true
     }
   ],
   "headers": [
+    {
+      "source": "/main.js",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/js/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/css/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/fonts/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
     {
       "source": "/images/(.*\\.mp4)",
       "headers": [
@@ -38,6 +123,15 @@
         {
           "key": "Cache-Control",
           "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/((?!api/|images/|fonts/|main\\.js).*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, s-maxage=3600, stale-while-revalidate=86400"
         }
       ]
     },
@@ -66,7 +160,7 @@
         },
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.clarity.ms https://c.clarity.ms https://c.bing.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https://www.google-analytics.com https://www.googletagmanager.com https://lh3.googleusercontent.com; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://www.clarity.ms https://c.clarity.ms https://formspree.io https://api.indexnow.org https://api.nowpayments.io https://api.yookassa.ru https://api.anthropic.com; frame-src https://www.google.com https://yookassa.ru; media-src 'self';"
+          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://www.googletagmanager.com https://www.clarity.ms https://c.clarity.ms https://scripts.clarity.ms https://z.clarity.ms https://c.bing.com https://www.google-analytics.com https://mc.yandex.ru https://us-assets.i.posthog.com https://static.cloudflareinsights.com https://www.googleadservices.com https://googleads.g.doubleclick.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https://www.google-analytics.com https://www.googletagmanager.com https://lh3.googleusercontent.com https://images.unsplash.com https://res.cloudinary.com https://c.clarity.ms https://c.bing.com https://pagead2.googlesyndication.com https://mc.yandex.ru https://i.pravatar.cc https://googleads.g.doubleclick.net https://www.googleadservices.com https://www.google.com https://www.google.ge; connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://analytics.google.com https://www.google.com https://www.clarity.ms https://c.clarity.ms https://z.clarity.ms https://l.clarity.ms https://j.clarity.ms https://n.clarity.ms https://v.clarity.ms https://formspree.io https://api.indexnow.org https://api.nowpayments.io https://api.yookassa.ru https://fonts.googleapis.com https://pagead2.googlesyndication.com https://mc.yandex.ru wss://mc.yandex.ru https://us.i.posthog.com; frame-src https://www.google.com https://maps.google.com https://yookassa.ru; media-src 'self';"
         }
       ]
     }

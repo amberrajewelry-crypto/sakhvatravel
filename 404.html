@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Страница не найдена | Sakhva Travel</title>
+<meta name="robots" content="noindex,follow">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Lora',Georgia,serif;background:#f9fafb;color:#111827;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;text-align:center}
+.code{font-size:120px;font-weight:800;color:#1A3D2E;line-height:1;margin-bottom:8px}
+h1{font-size:24px;font-weight:700;margin-bottom:12px}
+p{font-size:16px;color:#6B7280;max-width:480px;margin-bottom:32px;line-height:1.6}
+.links{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.links a{display:inline-flex;align-items:center;gap:6px;padding:12px 24px;border-radius:9999px;font-size:14px;font-weight:600;text-decoration:none;transition:background .2s,transform .15s;min-height:44px}
+.btn-main{background:#1A3D2E;color:#fff}
+.btn-main:hover{background:#145A38;transform:translateY(-1px)}
+.btn-outline{border:1.5px solid #d1d5db;color:#374151}
+.btn-outline:hover{background:#f3f4f6}
+</style>
+</head>
+<body>
+<div class="code">404</div>
+<h1 id="t404">Страница не найдена</h1>
+<p id="d404">Возможно, страница была перемещена или удалена. Перейдите на главную или выберите раздел ниже.</p>
+<div class="links" id="l404">
+  <a href="/" class="btn-main">На главную</a>
+  <a href="/tours/" class="btn-outline">Все туры</a>
+  <a href="/blog/" class="btn-outline">Блог</a>
+  <a href="/about/" class="btn-outline">О гиде</a>
+</div>
+<script>
+if(location.pathname.startsWith('/en/')||navigator.language.startsWith('en')){
+  document.getElementById('t404').textContent='Page not found';
+  document.getElementById('d404').textContent='This page may have been moved or deleted. Go to the homepage or choose a section below.';
+  document.getElementById('l404').innerHTML='<a href="/en/" class="btn-main">Homepage</a><a href="/en/tours/" class="btn-outline">All tours</a><a href="/en/blog/" class="btn-outline">Blog</a><a href="/about/" class="btn-outline">About</a>';
+  document.title='Page not found | Sakhva Travel';
+}
+</script>
+</body>
+</html>

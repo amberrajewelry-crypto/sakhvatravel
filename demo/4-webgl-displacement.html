@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demo 4 — WebGL Displacement Morph</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: system-ui, sans-serif; background: #0a0a0a; color: #fff; overflow-x: hidden; }
+
+.intro {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+}
+.intro h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+.intro p { font-size: 1.1rem; opacity: 0.6; max-width: 600px; margin-bottom: 0.5rem; }
+
+.canvas-container {
+  position: relative;
+  height: 400vh;
+}
+
+#glCanvas {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: block;
+}
+
+.label {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.7);
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  z-index: 100;
+  pointer-events: none;
+}
+
+.progress-ring {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  z-index: 100;
+}
+
+.progress-ring circle {
+  fill: none;
+  stroke-width: 3;
+}
+.progress-ring .bg { stroke: rgba(255,255,255,0.15); }
+.progress-ring .fg {
+  stroke: #10b981;
+  stroke-dasharray: 138.23;
+  stroke-dashoffset: 138.23;
+  transform: rotate(-90deg);
+  transform-origin: center;
+  transition: stroke-dashoffset 0.1s;
+}
+
+.outro {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.outro h2 { font-size: 1.8rem; }
+.outro p { opacity: 0.5; font-size: 0.95rem; }
+</style>
+</head>
+<body>
+
+<div class="intro">
+  <h1>4. WebGL Displacement</h1>
+  <p>Фрагментный шейдер смешивает две текстуры через displacement map — картинка "деформируется" и перетекает в другую.</p>
+  <p style="opacity:0.4; font-size:0.9rem">Это настоящий морфинг, не просто fade.</p>
+</div>
+
+<svg class="progress-ring" viewBox="0 0 50 50">
+  <circle class="bg" cx="25" cy="25" r="22"/>
+  <circle class="fg" id="progressCircle" cx="25" cy="25" r="22"/>
+</svg>
+
+<div class="canvas-container">
+  <canvas id="glCanvas"></canvas>
+</div>
+
+<div class="outro">
+  <h2>WebGL Displacement</h2>
+  <p>Шейдер: displacement map + mix(). Ноль библиотек, чистый WebGL.</p>
+</div>
+
+<div class="label">Техника: WebGL fragment shader + displacement</div>
+
+<script>
+// Image pairs for transitions
+const imageSrcs = [
+  '../images/kazbegi-tour.webp',
+  '../images/kakheti-tour.webp',
+  '../images/borzhomi.webp',
+  '../images/dinner-tour.webp',
+];
+
+const canvas = document.getElementById('glCanvas');
+const gl = canvas.getContext('webgl');
+
+// Vertex shader
+const vsSource = `
+  attribute vec2 a_position;
+  attribute vec2 a_texCoord;
+  varying vec2 v_texCoord;
+  void main() {
+    gl_Position = vec4(a_position, 0.0, 1.0);
+    v_texCoord = a_texCoord;
+  }
+`;
+
+// Fragment shader with displacement
+const fsSource = `
+  precision mediump float;
+  varying vec2 v_texCoord;
+  uniform sampler2D u_image0;
+  uniform sampler2D u_image1;
+  uniform float u_progress;
+  uniform float u_intensity;
+
+  void main() {
+    // Displacement based on progress
+    float displacement = u_intensity * u_progress;
+
+    // Distort UVs in opposite directions
+    vec2 uv = v_texCoord;
+
+    // Wave displacement pattern
+    float wave = sin(uv.y * 10.0 + u_progress * 3.14159) * 0.5 + 0.5;
+
+    vec2 uv1 = uv + vec2(displacement * wave, displacement * 0.3);
+    vec2 uv2 = uv - vec2(displacement * (1.0 - wave), displacement * 0.2);
+
+    vec4 color1 = texture2D(u_image0, uv1);
+    vec4 color2 = texture2D(u_image1, uv2);
+
+    // Smooth step for transition
+    float mixer = smoothstep(0.0, 1.0, u_progress);
+
+    gl_FragColor = mix(color1, color2, mixer);
+  }
+`;
+
+function createShader(gl, type, source) {
+  const shader = gl.createShader(type);
+  gl.shaderSource(shader, source);
+  gl.compileShader(shader);
+  if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
+    console.error(gl.getShaderInfoLog(shader));
+    gl.deleteShader(shader);
+    return null;
+  }
+  return shader;
+}
+
+function createProgram(gl, vs, fs) {
+  const program = gl.createProgram();
+  gl.attachShader(program, vs);
+  gl.attachShader(program, fs);
+  gl.linkProgram(program);
+  if (!gl.getProgramParameter(program, gl.LINK_STATUS)) {
+    console.error(gl.getProgramInfoLog(program));
+    return null;
+  }
+  return program;
+}
+
+const vs = createShader(gl, gl.VERTEX_SHADER, vsSource);
+const fs = createShader(gl, gl.FRAGMENT_SHADER, fsSource);
+const program = createProgram(gl, vs, fs);
+
+// Geometry — fullscreen quad
+const positionBuffer = gl.createBuffer();
+gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
+gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([
+  -1, -1,  1, -1,  -1, 1,
+  -1,  1,  1, -1,   1, 1,
+]), gl.STATIC_DRAW);
+
+const texCoordBuffer = gl.createBuffer();
+gl.bindBuffer(gl.ARRAY_BUFFER, texCoordBuffer);
+gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([
+  0, 1,  1, 1,  0, 0,
+  0, 0,  1, 1,  1, 0,
+]), gl.STATIC_DRAW);
+
+// Attributes
+const posLoc = gl.getAttribLocation(program, 'a_position');
+const texLoc = gl.getAttribLocation(program, 'a_texCoord');
+
+// Uniforms
+const u_image0 = gl.getUniformLocation(program, 'u_image0');
+const u_image1 = gl.getUniformLocation(program, 'u_image1');
+const u_progress = gl.getUniformLocation(program, 'u_progress');
+const u_intensity = gl.getUniformLocation(program, 'u_intensity');
+
+// Load textures
+const textures = [];
+let loadedCount = 0;
+
+function loadTexture(src, index) {
+  const tex = gl.createTexture();
+  gl.bindTexture(gl.TEXTURE_2D, tex);
+  // Placeholder pixel
+  gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, 1, 1, 0, gl.RGBA, gl.UNSIGNED_BYTE, new Uint8Array([0,0,0,255]));
+
+  const img = new Image();
+  img.crossOrigin = 'anonymous';
+  img.onload = () => {
+    gl.bindTexture(gl.TEXTURE_2D, tex);
+    gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, img);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+    loadedCount++;
+    if (loadedCount === imageSrcs.length) render();
+  };
+  img.src = src;
+  textures[index] = tex;
+}
+
+imageSrcs.forEach((src, i) => loadTexture(src, i));
+
+// Resize
+function resize() {
+  canvas.width = canvas.clientWidth * devicePixelRatio;
+  canvas.height = canvas.clientHeight * devicePixelRatio;
+  gl.viewport(0, 0, canvas.width, canvas.height);
+}
+window.addEventListener('resize', resize);
+resize();
+
+// Render loop
+function render() {
+  const container = document.querySelector('.canvas-container');
+  const rect = container.getBoundingClientRect();
+  const scrollH = container.offsetHeight - window.innerHeight;
+  const rawProgress = Math.max(0, Math.min(1, -rect.top / scrollH));
+
+  // Map to transitions: 3 transitions across 4 images
+  const numTransitions = imageSrcs.length - 1;
+  const totalProgress = rawProgress * numTransitions;
+  const currentIndex = Math.min(Math.floor(totalProgress), numTransitions - 1);
+  const localProgress = totalProgress - currentIndex;
+
+  // Update progress ring
+  const circle = document.getElementById('progressCircle');
+  circle.style.strokeDashoffset = 138.23 * (1 - rawProgress);
+
+  resize();
+  gl.useProgram(program);
+
+  // Bind position
+  gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
+  gl.enableVertexAttribArray(posLoc);
+  gl.vertexAttribPointer(posLoc, 2, gl.FLOAT, false, 0, 0);
+
+  // Bind texcoords
+  gl.bindBuffer(gl.ARRAY_BUFFER, texCoordBuffer);
+  gl.enableVertexAttribArray(texLoc);
+  gl.vertexAttribPointer(texLoc, 2, gl.FLOAT, false, 0, 0);
+
+  // Bind textures
+  gl.activeTexture(gl.TEXTURE0);
+  gl.bindTexture(gl.TEXTURE_2D, textures[currentIndex]);
+  gl.uniform1i(u_image0, 0);
+
+  gl.activeTexture(gl.TEXTURE1);
+  gl.bindTexture(gl.TEXTURE_2D, textures[Math.min(currentIndex + 1, imageSrcs.length - 1)]);
+  gl.uniform1i(u_image1, 1);
+
+  gl.uniform1f(u_progress, localProgress);
+  gl.uniform1f(u_intensity, 0.15);
+
+  gl.drawArrays(gl.TRIANGLES, 0, 6);
+
+  requestAnimationFrame(render);
+}
+</script>
+
+</body>
+</html>

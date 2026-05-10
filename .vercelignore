@@ -1,0 +1,6 @@
+images/backup/
+.worktrees/
+.git/
+service-account.json
+mempalace.yaml
+entities.json

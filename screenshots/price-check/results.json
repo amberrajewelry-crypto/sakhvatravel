@@ -1,0 +1,478 @@
+[
+  {
+    "page": "homepage-ru",
+    "url": "https://sakhva-travel.com/",
+    "desktop_prices_found": [
+      "145",
+      "110",
+      "250",
+      "165",
+      "270",
+      "155",
+      "195",
+      "700",
+      "32",
+      "245",
+      "90"
+    ],
+    "desktop_old_prices": "none",
+    "desktop_expected_ok": true,
+    "desktop_missing_prices": "none",
+    "desktop_broken_imgs": [
+      "https://sakhva-travel.com/images/og-cover.jpg",
+      "https://sakhva-travel.com/images/soviet-tour.webp",
+      "https://sakhva-travel.com/images/mtskheta-tour.webp",
+      "https://sakhva-travel.com/images/digital-nomad-tour.webp",
+      "https://sakhva-travel.com/images/slow-travel-tour.webp",
+      "https://sakhva-travel.com/images/photo-tour.webp"
+    ],
+    "desktop_cta_whatsapp": 9,
+    "desktop_cta_telegram": 2,
+    "desktop_console_errors": [
+      "Failed to load resource: the server responded with a status of 404 ()"
+    ],
+    "desktop_price_cards": 0,
+    "mobile_prices_found": [
+      "145",
+      "110",
+      "250",
+      "165",
+      "270",
+      "155",
+      "195",
+      "700",
+      "32",
+      "245",
+      "90"
+    ],
+    "mobile_old_prices": "none",
+    "mobile_expected_ok": true,
+    "mobile_missing_prices": "none",
+    "mobile_broken_imgs": [
+      "https://sakhva-travel.com/images/og-cover.jpg",
+      "https://sakhva-travel.com/images/dinner-tour.webp",
+      "https://sakhva-travel.com/images/soviet-tour.webp",
+      "https://sakhva-travel.com/images/mtskheta-tour.webp",
+      "https://sakhva-travel.com/images/digital-nomad-tour.webp",
+      "https://sakhva-travel.com/images/slow-travel-tour.webp",
+      "https://sakhva-travel.com/images/photo-tour.webp"
+    ],
+    "mobile_cta_whatsapp": 9,
+    "mobile_cta_telegram": 2,
+    "mobile_hscroll": false,
+    "mobile_hamburger_exists": true,
+    "mobile_menu_works": true,
+    "mobile_overflow_elements": [
+      "BUTTON.ftab overflows by 29px",
+      "BUTTON.ftab overflows by 131px",
+      "ARTICLE.tc reveal on overflows by 283px",
+      "DIV.tc-img overflows by 283px",
+      "IMG. overflows by 283px"
+    ],
+    "mobile_console_errors": [
+      "Failed to load resource: the server responded with a status of 404 ()"
+    ],
+    "mobile_price_cards": 0
+  },
+  {
+    "page": "tour-mtskheta",
+    "url": "https://sakhva-travel.com/tour/mtskheta/",
+    "desktop_prices_found": [
+      "145",
+      "130",
+      "165",
+      "200",
+      "340",
+      "195",
+      "245",
+      "90"
+    ],
+    "desktop_old_prices": "none",
+    "desktop_expected_ok": true,
+    "desktop_missing_prices": "none",
+    "desktop_broken_imgs": "none",
+    "desktop_cta_whatsapp": 10,
+    "desktop_cta_telegram": 3,
+    "desktop_console_errors": [
+      "Failed to load resource: the server responded with a status of 404 ()"
+    ],
+    "desktop_price_cards": 0,
+    "mobile_prices_found": [
+      "145",
+      "130",
+      "165",
+      "200",
+      "340",
+      "195",
+      "245",
+      "90"
+    ],
+    "mobile_old_prices": "none",
+    "mobile_expected_ok": true,
+    "mobile_missing_prices": "none",
+    "mobile_broken_imgs": "none",
+    "mobile_cta_whatsapp": 10,
+    "mobile_cta_telegram": 3,
+    "mobile_hscroll": false,
+    "mobile_hamburger_exists": true,
+    "mobile_menu_works": true,
+    "mobile_overflow_elements": "none",
+    "mobile_console_errors": [
+      "Failed to load resource: the server responded with a status of 404 ()"
+    ],
+    "mobile_price_cards": 0
+  },
+  {
+    "page": "tour-kazbegi",
+    "url": "https://sakhva-travel.com/tour/kazbegi/",
+    "desktop_prices_found": [
+      "135",
+      "85",
+      "165",
+      "26",
+      "14",
+      "245"
+    ],
+    "desktop_old_prices": "none",
+    "desktop_expected_ok": true,
+    "desktop_missing_prices": "none",
+    "desktop_broken_imgs": "none",
+    "desktop_cta_whatsapp": 7,
+    "desktop_cta_telegram": 3,
+    "desktop_console_errors": "none",
+    "desktop_price_cards": 0,
+    "mobile_prices_found": [
+      "135",
+      "85",
+      "165",
+      "26",
+      "14",
+      "245"
+    ],
+    "mobile_old_prices": "none",
+    "mobile_expected_ok": true,
+    "mobile_missing_prices": "none",
+    "mobile_broken_imgs": "none",
+    "mobile_cta_whatsapp": 7,
+    "mobile_cta_telegram": 3,
+    "mobile_hscroll": false,
+    "mobile_hamburger_exists": true,
+    "mobile_menu_works": true,
+    "mobile_overflow_elements": "none",
+    "mobile_console_errors": "none",
+    "mobile_price_cards": 0
+  },
+  {
+    "page": "tour-old-tbilisi",
+    "url": "https://sakhva-travel.com/tour/old-tbilisi/",
+    "desktop_prices_found": [
+      "456",
+      "250",
+      "165",
+      "155",
+      "680",
+      "14",
+      "195",
+      "28",
+      "157"
+    ],
+    "desktop_old_prices": "none",
+    "desktop_expected_ok": true,
+    "desktop_missing_prices": "none",
+    "desktop_broken_imgs": "none",
+    "desktop_cta_whatsapp": 10,
+    "desktop_cta_telegram": 8,
+    "desktop_console_errors": [
+      "Failed to load resource: the server responded with a status of 400 ()"
+    ],
+    "desktop_price_cards": 0,
+    "mobile_prices_found": [
+      "456",
+      "250",
+      "165",
+      "155",
+      "680",
+      "14",
+      "195",
+      "28",
+      "157"
+    ],
+    "mobile_old_prices": "none",
+    "mobile_expected_ok": true,
+    "mobile_missing_prices": "none",
+    "mobile_broken_imgs": "none",
+    "mobile_cta_whatsapp": 10,
+    "mobile_cta_telegram": 8,
+    "mobile_hscroll": true,
+    "mobile_hamburger_exists": true,
+    "mobile_menu_works": true,
+    "mobile_overflow_elements": [
+      "DIV.rev vis overflows by 78px",
+      "DIV. overflows by 78px",
+      "DIV. overflows by 49px",
+      "DIV. overflows by 49px",
+      "DIV. overflows by 49px"
+    ],
+    "mobile_console_errors": "none",
+    "mobile_price_cards": 0
+  },
+  {
+    "page": "tour-kakheti",
+    "url": "https://sakhva-travel.com/tour/kakheti/",
+    "desktop_prices_found": [
+      "85",
+      "250",
+      "165",
+      "26",
+      "195",
+      "14",
+      "135"
+    ],
+    "desktop_old_prices": "none",
+    "desktop_expected_ok": true,
+    "desktop_missing_prices": "none",
+    "desktop_broken_imgs": "none",
+    "desktop_cta_whatsapp": 7,
+    "desktop_cta_telegram": 3,
+    "desktop_console_errors": "none",
+    "desktop_price_cards": 0,
+    "mobile_prices_found": [
+      "85",
+      "250",
+      "165",
+      "26",
+      "195",
+      "14",
+      "135"
+    ],
+    "mobile_old_prices": "none",
+    "mobile_expected_ok": true,
+    "mobile_missing_prices": "none",
+    "mobile_broken_imgs": "none",
+    "mobile_cta_whatsapp": 7,
+    "mobile_cta_telegram": 3,
+    "mobile_hscroll": false,
+    "mobile_hamburger_exists": true,
+    "mobile_menu_works": true,
+    "mobile_overflow_elements": "none",
+    "mobile_console_errors": "none",
+    "mobile_price_cards": 0
+  },
+  {
+    "page": "tour-night-tbilisi",
+    "url": "https://sakhva-travel.com/tour/night-tbilisi/",
+    "desktop_prices_found": [
+      "110",
+      "85",
+      "165",
+      "250",
+      "20",
+      "195",
+      "245"
+    ],
+    "desktop_old_prices": "none",
+    "desktop_expected_ok": true,
+    "desktop_missing_prices": "none",
+    "desktop_broken_imgs": "none",
+    "desktop_cta_whatsapp": 7,
+    "desktop_cta_telegram": 3,
+    "desktop_console_errors": "none",
+    "desktop_price_cards": 0,
+    "mobile_prices_found": [
+      "110",
+      "85",
+      "165",
+      "250",
+      "20",
+      "195",
+      "245"
+    ],
+    "mobile_old_prices": "none",
+    "mobile_expected_ok": true,
+    "mobile_missing_prices": "none",
+    "mobile_broken_imgs": "none",
+    "mobile_cta_whatsapp": 7,
+    "mobile_cta_telegram": 3,
+    "mobile_hscroll": false,
+    "mobile_hamburger_exists": true,
+    "mobile_menu_works": true,
+    "mobile_overflow_elements": "none",
+    "mobile_console_errors": "none",
+    "mobile_price_cards": 0
+  },
+  {
+    "page": "tour-dinner",
+    "url": "https://sakhva-travel.com/tour/dinner/",
+    "desktop_prices_found": [
+      "110",
+      "85",
+      "250",
+      "165",
+      "20",
+      "700",
+      "245"
+    ],
+    "desktop_old_prices": "none",
+    "desktop_expected_ok": true,
+    "desktop_missing_prices": "none",
+    "desktop_broken_imgs": "none",
+    "desktop_cta_whatsapp": 7,
+    "desktop_cta_telegram": 3,
+    "desktop_console_errors": "none",
+    "desktop_price_cards": 0,
+    "mobile_prices_found": [
+      "110",
+      "85",
+      "250",
+      "165",
+      "20",
+      "700",
+      "245"
+    ],
+    "mobile_old_prices": "none",
+    "mobile_expected_ok": true,
+    "mobile_missing_prices": "none",
+    "mobile_broken_imgs": "none",
+    "mobile_cta_whatsapp": 7,
+    "mobile_cta_telegram": 3,
+    "mobile_hscroll": false,
+    "mobile_hamburger_exists": true,
+    "mobile_menu_works": true,
+    "mobile_overflow_elements": "none",
+    "mobile_console_errors": "none",
+    "mobile_price_cards": 0
+  },
+  {
+    "page": "tour-slow-travel",
+    "url": "https://sakhva-travel.com/tour/slow-travel/",
+    "desktop_prices_found": [
+      "85",
+      "250",
+      "270",
+      "26",
+      "195",
+      "700",
+      "245"
+    ],
+    "desktop_old_prices": "none",
+    "desktop_expected_ok": true,
+    "desktop_missing_prices": "none",
+    "desktop_broken_imgs": "none",
+    "desktop_cta_whatsapp": 7,
+    "desktop_cta_telegram": 3,
+    "desktop_console_errors": "none",
+    "desktop_price_cards": 0,
+    "mobile_prices_found": [
+      "85",
+      "250",
+      "270",
+      "26",
+      "195",
+      "700",
+      "245"
+    ],
+    "mobile_old_prices": "none",
+    "mobile_expected_ok": true,
+    "mobile_missing_prices": "none",
+    "mobile_broken_imgs": "none",
+    "mobile_cta_whatsapp": 7,
+    "mobile_cta_telegram": 3,
+    "mobile_hscroll": false,
+    "mobile_hamburger_exists": true,
+    "mobile_menu_works": true,
+    "mobile_overflow_elements": "none",
+    "mobile_console_errors": "none",
+    "mobile_price_cards": 0
+  },
+  {
+    "page": "homepage-en",
+    "url": "https://sakhva-travel.com/en/",
+    "desktop_prices_found": [
+      "110",
+      "165",
+      "150",
+      "245",
+      "90"
+    ],
+    "desktop_old_prices": "none",
+    "desktop_expected_ok": true,
+    "desktop_missing_prices": "none",
+    "desktop_broken_imgs": [
+      "https://sakhva-travel.com/images/hidden-tbilisi-tour.webp"
+    ],
+    "desktop_cta_whatsapp": 3,
+    "desktop_cta_telegram": 0,
+    "desktop_console_errors": [
+      "Failed to load resource: the server responded with a status of 404 ()"
+    ],
+    "desktop_price_cards": 0,
+    "mobile_prices_found": [
+      "110",
+      "165",
+      "150",
+      "245",
+      "90"
+    ],
+    "mobile_old_prices": "none",
+    "mobile_expected_ok": true,
+    "mobile_missing_prices": "none",
+    "mobile_broken_imgs": [
+      "https://sakhva-travel.com/images/hidden-tbilisi-tour.webp"
+    ],
+    "mobile_cta_whatsapp": 3,
+    "mobile_cta_telegram": 0,
+    "mobile_hscroll": false,
+    "mobile_hamburger_exists": false,
+    "mobile_overflow_elements": "none",
+    "mobile_console_errors": [
+      "Failed to load resource: the server responded with a status of 404 ()"
+    ],
+    "mobile_price_cards": 0
+  },
+  {
+    "page": "tour-kazbegi-en",
+    "url": "https://sakhva-travel.com/en/tour/kazbegi/",
+    "desktop_prices_found": [
+      "145",
+      "245",
+      "165"
+    ],
+    "desktop_old_prices": "none",
+    "desktop_expected_ok": true,
+    "desktop_missing_prices": "none",
+    "desktop_broken_imgs": [
+      "https://sakhva-travel.com/images/old-tbilisi.webp",
+      "https://sakhva-travel.com/images/digital-nomad-tbilisi.jpg"
+    ],
+    "desktop_cta_whatsapp": 8,
+    "desktop_cta_telegram": 4,
+    "desktop_console_errors": [
+      "Failed to load resource: the server responded with a status of 404 ()",
+      "Failed to load resource: the server responded with a status of 404 ()"
+    ],
+    "desktop_price_cards": 0,
+    "mobile_prices_found": [
+      "145",
+      "245",
+      "165"
+    ],
+    "mobile_old_prices": "none",
+    "mobile_expected_ok": true,
+    "mobile_missing_prices": "none",
+    "mobile_broken_imgs": [
+      "https://sakhva-travel.com/images/old-tbilisi.webp",
+      "https://sakhva-travel.com/images/digital-nomad-tbilisi.jpg"
+    ],
+    "mobile_cta_whatsapp": 8,
+    "mobile_cta_telegram": 4,
+    "mobile_hscroll": false,
+    "mobile_hamburger_exists": true,
+    "mobile_menu_works": true,
+    "mobile_overflow_elements": "none",
+    "mobile_console_errors": [
+      "Failed to load resource: the server responded with a status of 404 ()",
+      "Failed to load resource: the server responded with a status of 404 ()"
+    ],
+    "mobile_price_cards": 0
+  }
+]

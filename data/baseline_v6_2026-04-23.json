@@ -1,0 +1,45 @@
+{
+  "date": "2026-04-23",
+  "version": "v6.0",
+  "domain_age_days": 21,
+  "indexed_pages": 0,
+  "queries": {
+    "гид тбилиси": {
+      "position": null,
+      "top3": ["needguide.ru", "tripster.ru", "needguide.ru"]
+    },
+    "частный гид тбилиси": {
+      "position": null,
+      "top3": ["tripster.ru", "sputnik8.com", "travel-mania.org"]
+    },
+    "экскурсии тбилиси с гидом": {
+      "position": null,
+      "top3": ["sputnik8.com", "tripster.ru", "tbilisi-tours.ru"]
+    },
+    "русскоязычный гид тбилиси": {
+      "position": null,
+      "top3": ["tripster.ru", "needguide.ru", "tonkosti.ru"]
+    },
+    "гид по грузии индивидуальный": {
+      "position": null,
+      "top3": ["tripster.ru", "needguide.ru", "tbilisi-tours.ru"]
+    },
+    "экскурсовод тбилиси на русском": {
+      "position": null,
+      "top3": ["sputnik8.com", "guidego.ru", "excursio.com"]
+    }
+  },
+  "competitors_top10": [
+    "tripster.ru",
+    "sputnik8.com",
+    "needguide.ru",
+    "travel-mania.org",
+    "tbilisi-tours.ru",
+    "tonkosti.ru",
+    "excursio.com",
+    "guidego.ru",
+    "tripzaza.com",
+    "tezeks.com"
+  ],
+  "notes": "Сайт НЕ в индексе Google. Домен 21 день. Все позиции = null (за пределами топ-100)."
+}

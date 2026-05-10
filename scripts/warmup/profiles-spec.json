@@ -1,0 +1,1782 @@
+[
+  {
+    "profile_id": "P01",
+    "name": "MSK_relocant_yoga_01",
+    "fingerprint": {
+      "os": "Windows 11",
+      "browser": "Stealthfox",
+      "browser_version": "126.0",
+      "screen_resolution": "1920x1080",
+      "timezone": "Europe/Moscow",
+      "language": "ru-RU,ru;q=0.9,en;q=0.8",
+      "webgl_vendor": "Google Inc. (NVIDIA)",
+      "webgl_renderer": "ANGLE (NVIDIA GeForce GTX 1660 SUPER)",
+      "canvas_noise": "P01_unique_seed",
+      "audio_context": "P01_unique_hash",
+      "fonts": ["Arial", "Calibri", "Consolas", "Segoe UI", "Tahoma", "Times New Roman", "Verdana"],
+      "hardware_concurrency": 8,
+      "device_memory": 16
+    },
+    "proxy": {
+      "type": "residential",
+      "provider": "Brightdata",
+      "country": "RU",
+      "city": "Moscow",
+      "sticky_session": true,
+      "rotation": "never_30d"
+    },
+    "identity": {
+      "first_name": "Марина",
+      "last_name": "Кузнецова",
+      "age": 28,
+      "gender": "F",
+      "email": "marina.kuznetsova.w84@gmail.com",
+      "google_account": "new_via_ru_sim"
+    },
+    "persona": "relocant",
+    "geo": "moscow",
+    "lang": "ru",
+    "interests": ["yoga", "cafe", "photography"],
+    "homeCity": "Москва",
+    "searchStyle": "long",
+    "warming_schedule": {
+      "day_1_7": {
+        "goal": "базовая активность БЕЗ упоминания Грузии",
+        "daily_time_min": [30, 45],
+        "searches": [
+          "погода москва", "курс доллара к рублю", "йога для начинающих видео",
+          "кофейни москва центр", "lightroom пресеты бесплатно",
+          "рецепты завтрак пп", "москва коворкинг цена", "новости москва сегодня"
+        ],
+        "sites": ["lenta.ru", "rbc.ru", "vk.com", "avito.ru", "ozon.ru", "yogajournal.ru"],
+        "youtube": ["утренняя йога 20 минут", "кофейни москвы влог", "мобильная фотография советы"]
+      },
+      "day_8_14": {
+        "goal": "расширение — travel-тематика общая",
+        "daily_time_min": [40, 60],
+        "searches": [
+          "куда поехать весной 2026", "безвизовые страны для россиян",
+          "йога ретрит за границей", "фотография путешествия советы",
+          "лучшие страны для релокации 2026", "digital nomad visa europe"
+        ],
+        "sites": ["booking.com", "skyscanner.ru", "aviasales.ru", "tripadvisor.com"],
+        "youtube": ["куда уехать из россии 2026", "best yoga retreats europe", "travel photography tips"]
+      },
+      "day_15_21": {
+        "goal": "первое касание Грузии — один из вариантов",
+        "daily_time_min": [45, 60],
+        "seed_searches": [
+          "релокация грузия 2026", "жизнь в тбилиси отзывы",
+          "грузия для фрилансеров", "йога тбилиси"
+        ],
+        "youtube": ["тбилиси влог релокант", "жизнь в грузии 2026", "тбилиси глазами москвича"],
+        "maps_saves": ["Тбилиси", "Fabrika Hostel Tbilisi"]
+      },
+      "day_22_28": {
+        "goal": "углубление интереса к Тбилиси",
+        "daily_time_min": [60, 90],
+        "queries": [
+          "экскурсии из тбилиси", "казбеги из тбилиси",
+          "кахетия винный тур", "тбилиси с гидом",
+          "аренда квартиры тбилиси", "лучшие районы тбилиси для жизни"
+        ],
+        "sites": ["tripadvisor.com/Attractions-g294195-Activities-Tbilisi.html", "booking.com/searchresults.html?ss=Tbilisi"],
+        "youtube": ["экскурсии тбилиси отзывы", "казбеги тур влог"]
+      }
+    },
+    "active_hours": {"start": 8, "end": 23, "tz": "Europe/Moscow"},
+    "cookie_target": 350,
+    "gmail": true
+  },
+  {
+    "profile_id": "P02",
+    "name": "MSK_business_finance_02",
+    "fingerprint": {
+      "os": "macOS Sonoma",
+      "browser": "Mizu",
+      "browser_version": "126.0",
+      "screen_resolution": "2560x1440",
+      "timezone": "Europe/Moscow",
+      "language": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+      "webgl_vendor": "Apple",
+      "webgl_renderer": "Apple M2 Pro",
+      "canvas_noise": "P02_unique_seed",
+      "audio_context": "P02_unique_hash",
+      "fonts": ["SF Pro", "Helvetica Neue", "Menlo", "Monaco", "Arial", "Times New Roman"],
+      "hardware_concurrency": 12,
+      "device_memory": 16
+    },
+    "proxy": {
+      "type": "residential",
+      "provider": "IPRoyal",
+      "country": "RU",
+      "city": "Moscow",
+      "sticky_session": true,
+      "rotation": "never_30d"
+    },
+    "identity": {
+      "first_name": "Алексей",
+      "last_name": "Волков",
+      "age": 42,
+      "gender": "M",
+      "email": "a.volkov.biz91@gmail.com",
+      "google_account": "new_via_ru_sim"
+    },
+    "persona": "business",
+    "geo": "moscow",
+    "lang": "ru",
+    "interests": ["finance", "restaurants", "flights"],
+    "homeCity": "Москва",
+    "searchStyle": "precise",
+    "warming_schedule": {
+      "day_1_7": {
+        "goal": "базовая активность — деловой паттерн",
+        "daily_time_min": [25, 40],
+        "searches": [
+          "курс доллара", "новости рынок москва", "ресторан для деловой встречи москва",
+          "бизнес джет чартер", "rbc ru главные новости",
+          "москва шереметьево расписание", "bloomberg россия"
+        ],
+        "sites": ["rbc.ru", "kommersant.ru", "investing.com", "booking.com", "aviasales.ru"],
+        "youtube": ["рынки сегодня обзор", "moscow restaurants michelin"]
+      },
+      "day_8_14": {
+        "goal": "travel — деловые поездки",
+        "daily_time_min": [35, 55],
+        "searches": [
+          "бизнес класс авиабилеты", "лучшие бизнес отели европа",
+          "налоговые льготы для IT грузия", "корпоратив за границей",
+          "private jet charter europe", "инвестиции недвижимость за рубежом"
+        ],
+        "sites": ["kayak.com", "hotels.com", "forbes.ru"],
+        "youtube": ["business class review 2026", "best business hotels europe"]
+      },
+      "day_15_21": {
+        "goal": "Грузия как деловое направление",
+        "daily_time_min": [40, 60],
+        "seed_searches": [
+          "грузия бизнес климат", "налоги грузия ИП 2026",
+          "georgia investment opportunities", "тбилиси деловой визит"
+        ],
+        "youtube": ["грузия бизнес иммиграция", "georgia tbilisi business trip"],
+        "maps_saves": ["Tbilisi Marriott", "Radisson Blu Iveria Tbilisi"]
+      },
+      "day_22_28": {
+        "goal": "premium-сегмент Тбилиси",
+        "daily_time_min": [50, 80],
+        "queries": [
+          "vip тур тбилиси", "приватный гид тбилиси",
+          "казбеги приватный тур", "кахетия дегустация",
+          "лучшие винодельни грузия", "тбилиси ресторан с видом"
+        ],
+        "sites": ["tripadvisor.com", "booking.com"],
+        "youtube": ["luxury georgia tour", "кахетия винодельни влог"]
+      }
+    },
+    "active_hours": {"start": 7, "end": 22, "tz": "Europe/Moscow"},
+    "cookie_target": 280,
+    "gmail": true
+  },
+  {
+    "profile_id": "P03",
+    "name": "SPB_relocant_wine_03",
+    "fingerprint": {
+      "os": "Windows 11",
+      "browser": "Stealthfox",
+      "browser_version": "125.0",
+      "screen_resolution": "1920x1200",
+      "timezone": "Europe/Moscow",
+      "language": "ru-RU,ru;q=0.9,en;q=0.8",
+      "webgl_vendor": "Google Inc. (AMD)",
+      "webgl_renderer": "ANGLE (AMD Radeon RX 6700 XT)",
+      "canvas_noise": "P03_unique_seed",
+      "audio_context": "P03_unique_hash",
+      "fonts": ["Arial", "Calibri", "Consolas", "Georgia", "Segoe UI", "Tahoma", "Verdana"],
+      "hardware_concurrency": 12,
+      "device_memory": 16
+    },
+    "proxy": {
+      "type": "residential",
+      "provider": "Soax",
+      "country": "RU",
+      "city": "Saint Petersburg",
+      "sticky_session": true,
+      "rotation": "never_30d"
+    },
+    "identity": {
+      "first_name": "Дмитрий",
+      "last_name": "Соколов",
+      "age": 33,
+      "gender": "M",
+      "email": "d.sokolov.spb77@gmail.com",
+      "google_account": "new_via_ru_sim"
+    },
+    "persona": "relocant",
+    "geo": "spb",
+    "lang": "ru",
+    "interests": ["wine", "history", "cafe"],
+    "homeCity": "Санкт-Петербург",
+    "searchStyle": "long",
+    "warming_schedule": {
+      "day_1_7": {
+        "goal": "базовая жизнь питерца",
+        "daily_time_min": [30, 45],
+        "searches": [
+          "погода петербург", "фонтанка ру новости", "винотека спб",
+          "музеи петербурга", "кофейня петербург невский",
+          "исторические подкасты", "курс доллара", "новости петербург"
+        ],
+        "sites": ["fontanka.ru", "dp.ru", "vk.com", "avito.ru", "vivino.com"],
+        "youtube": ["история петербурга", "wine tasting guide", "кофейни петербурга"]
+      },
+      "day_8_14": {
+        "goal": "расширение — travel общий",
+        "daily_time_min": [40, 55],
+        "searches": [
+          "куда поехать из петербурга", "страны без визы для россиян 2026",
+          "винные регионы мира", "переезд из россии в европу",
+          "history tours europe", "лучшие города для жизни"
+        ],
+        "sites": ["booking.com", "aviasales.ru", "wine-searcher.com", "tripadvisor.com"],
+        "youtube": ["wine regions to visit", "best cities for relocation 2026"]
+      },
+      "day_15_21": {
+        "goal": "первое касание Грузии",
+        "daily_time_min": [45, 60],
+        "seed_searches": [
+          "грузия релокация 2026 отзывы", "грузинское вино рейтинг",
+          "тбилиси винные бары", "история грузии кратко"
+        ],
+        "youtube": ["грузинское вино дегустация", "тбилиси влог спб переезд"],
+        "maps_saves": ["Тбилиси", "Кахетия"]
+      },
+      "day_22_28": {
+        "goal": "углубление — туры и вино",
+        "daily_time_min": [55, 85],
+        "queries": [
+          "кахетия винный тур", "экскурсии из тбилиси",
+          "мцхета как добраться", "тбилиси с гидом цена",
+          "казбеги из тбилиси", "тбилиси фуникулёр"
+        ],
+        "sites": ["tripadvisor.com", "vivino.com"],
+        "youtube": ["кахетия тур влог", "грузия экскурсии отзывы"]
+      }
+    },
+    "active_hours": {"start": 9, "end": 24, "tz": "Europe/Moscow"},
+    "cookie_target": 320,
+    "gmail": true
+  },
+  {
+    "profile_id": "P04",
+    "name": "SPB_tourist_photo_04",
+    "fingerprint": {
+      "os": "macOS Sonoma",
+      "browser": "Mizu",
+      "browser_version": "125.0",
+      "screen_resolution": "2560x1600",
+      "timezone": "Europe/Moscow",
+      "language": "ru-RU,ru;q=0.9,en;q=0.8",
+      "webgl_vendor": "Apple",
+      "webgl_renderer": "Apple M1",
+      "canvas_noise": "P04_unique_seed",
+      "audio_context": "P04_unique_hash",
+      "fonts": ["SF Pro", "Helvetica Neue", "Menlo", "Georgia", "Arial", "Courier New"],
+      "hardware_concurrency": 8,
+      "device_memory": 8
+    },
+    "proxy": {
+      "type": "residential",
+      "provider": "Brightdata",
+      "country": "RU",
+      "city": "Saint Petersburg",
+      "sticky_session": true,
+      "rotation": "never_30d"
+    },
+    "identity": {
+      "first_name": "Екатерина",
+      "last_name": "Павлова",
+      "age": 30,
+      "gender": "F",
+      "email": "katya.pavlova.foto@gmail.com",
+      "google_account": "new_via_ru_sim"
+    },
+    "persona": "tourist",
+    "geo": "spb",
+    "lang": "ru",
+    "interests": ["photography", "history", "restaurants"],
+    "homeCity": "Санкт-Петербург",
+    "searchStyle": "long",
+    "warming_schedule": {
+      "day_1_7": {
+        "goal": "фотограф-турист из СПб",
+        "daily_time_min": [30, 45],
+        "searches": [
+          "погода петербург", "фотолокации петербург", "ресторан невский проспект",
+          "lightroom обработка", "фонтанка ру", "музей эрмитаж часы работы",
+          "лучшие кафе петербурга", "уличная фотография советы"
+        ],
+        "sites": ["fontanka.ru", "vk.com", "500px.com", "unsplash.com", "afisha.ru"],
+        "youtube": ["street photography tips", "петербург фото влог"]
+      },
+      "day_8_14": {
+        "goal": "поиск направления для поездки",
+        "daily_time_min": [40, 55],
+        "searches": [
+          "куда поехать фотографировать", "самые фотогеничные города",
+          "best photography destinations 2026", "рестораны европы рейтинг",
+          "авиабилеты из петербурга дёшево", "исторические города для поездки"
+        ],
+        "sites": ["booking.com", "tripadvisor.com", "aviasales.ru", "flickr.com"],
+        "youtube": ["best travel photography destinations", "food tour europe vlog"]
+      },
+      "day_15_21": {
+        "goal": "Грузия как фото-направление",
+        "daily_time_min": [45, 60],
+        "seed_searches": [
+          "грузия фотолокации", "тбилиси старый город фото",
+          "куда поехать без визы фотографировать", "грузинская кухня рестораны тбилиси"
+        ],
+        "youtube": ["тбилиси фото влог", "georgia photography travel", "грузинская кухня обзор"],
+        "maps_saves": ["Old Tbilisi", "Narikala Fortress"]
+      },
+      "day_22_28": {
+        "goal": "конкретные туры Тбилиси",
+        "daily_time_min": [55, 80],
+        "queries": [
+          "тбилиси пешеходная экскурсия", "гид тбилиси отзывы",
+          "казбеги экскурсия фото", "кахетия тур из тбилиси",
+          "тбилиси серные бани", "мцхета джвари фото"
+        ],
+        "sites": ["tripadvisor.com", "getyourguide.com"],
+        "youtube": ["tbilisi walking tour 4k", "казбеги влог фото"]
+      }
+    },
+    "active_hours": {"start": 10, "end": 1, "tz": "Europe/Moscow"},
+    "cookie_target": 310,
+    "gmail": true
+  },
+  {
+    "profile_id": "P05",
+    "name": "KZN_family_kids_05",
+    "fingerprint": {
+      "os": "Windows 11",
+      "browser": "Stealthfox",
+      "browser_version": "126.0",
+      "screen_resolution": "1366x768",
+      "timezone": "Europe/Moscow",
+      "language": "ru-RU,ru;q=0.9",
+      "webgl_vendor": "Google Inc. (Intel)",
+      "webgl_renderer": "ANGLE (Intel UHD Graphics 630)",
+      "canvas_noise": "P05_unique_seed",
+      "audio_context": "P05_unique_hash",
+      "fonts": ["Arial", "Calibri", "Segoe UI", "Tahoma", "Times New Roman", "Verdana", "Comic Sans MS"],
+      "hardware_concurrency": 4,
+      "device_memory": 8
+    },
+    "proxy": {
+      "type": "residential",
+      "provider": "Soax",
+      "country": "RU",
+      "city": "Kazan",
+      "sticky_session": true,
+      "rotation": "never_30d"
+    },
+    "identity": {
+      "first_name": "Гульнара",
+      "last_name": "Хасанова",
+      "age": 35,
+      "gender": "F",
+      "email": "gulnara.khasanova.kzn@gmail.com",
+      "google_account": "new_via_ru_sim"
+    },
+    "persona": "family",
+    "geo": "kazan",
+    "lang": "ru",
+    "interests": ["kids", "parks", "restaurants"],
+    "homeCity": "Казань",
+    "searchStyle": "long",
+    "warming_schedule": {
+      "day_1_7": {
+        "goal": "мама из Казани — обычная жизнь",
+        "daily_time_min": [25, 40],
+        "searches": [
+          "погода казань", "детские площадки казань", "ресторан казань с детской комнатой",
+          "рецепты для детей быстро", "казань парки аттракционы",
+          "новости казань сегодня", "wildberries детская одежда", "казань школа каникулы"
+        ],
+        "sites": ["business-gazeta.ru", "vk.com", "ozon.ru", "wildberries.ru", "ok.ru"],
+        "youtube": ["рецепты для детей", "казань с детьми влог"]
+      },
+      "day_8_14": {
+        "goal": "семейные путешествия — общее",
+        "daily_time_min": [35, 50],
+        "searches": [
+          "куда поехать с детьми на каникулы", "безопасные страны для отдыха с ребёнком",
+          "семейные отели всё включено", "авиабилеты казань дешёво",
+          "лучшие курорты для семей 2026", "отдых с детьми отзывы"
+        ],
+        "sites": ["booking.com", "tripadvisor.com", "aviasales.ru"],
+        "youtube": ["отдых с детьми куда поехать", "family travel tips"]
+      },
+      "day_15_21": {
+        "goal": "Грузия — безопасно ли с детьми",
+        "daily_time_min": [40, 55],
+        "seed_searches": [
+          "грузия с детьми отзывы 2026", "тбилиси безопасно ли с ребёнком",
+          "грузия семейный отдых", "батуми с детьми"
+        ],
+        "youtube": ["грузия с детьми влог", "тбилиси семейный отдых", "батуми с ребёнком"],
+        "maps_saves": ["Tbilisi Zoo", "Mtatsminda Park"]
+      },
+      "day_22_28": {
+        "goal": "конкретные экскурсии с детьми",
+        "daily_time_min": [50, 75],
+        "queries": [
+          "тбилиси экскурсия с детьми", "казбеги семейный тур",
+          "кахетия с детьми", "тбилиси детский парк",
+          "грузия море с ребёнком батуми", "тбилиси канатная дорога"
+        ],
+        "sites": ["tripadvisor.com", "booking.com"],
+        "youtube": ["тбилиси с детьми тур", "грузия с ребёнком 2026"]
+      }
+    },
+    "active_hours": {"start": 9, "end": 22, "tz": "Europe/Moscow"},
+    "cookie_target": 250,
+    "gmail": true
+  },
+  {
+    "profile_id": "P06",
+    "name": "NSK_tourist_hiking_06",
+    "fingerprint": {
+      "os": "Windows 11",
+      "browser": "Stealthfox",
+      "browser_version": "124.0",
+      "screen_resolution": "1920x1080",
+      "timezone": "Asia/Novosibirsk",
+      "language": "ru-RU,ru;q=0.9,en;q=0.7",
+      "webgl_vendor": "Google Inc. (NVIDIA)",
+      "webgl_renderer": "ANGLE (NVIDIA GeForce RTX 3060)",
+      "canvas_noise": "P06_unique_seed",
+      "audio_context": "P06_unique_hash",
+      "fonts": ["Arial", "Calibri", "Consolas", "Segoe UI", "Tahoma", "Times New Roman"],
+      "hardware_concurrency": 8,
+      "device_memory": 16
+    },
+    "proxy": {
+      "type": "residential",
+      "provider": "Brightdata",
+      "country": "RU",
+      "city": "Novosibirsk",
+      "sticky_session": true,
+      "rotation": "never_30d"
+    },
+    "identity": {
+      "first_name": "Андрей",
+      "last_name": "Петров",
+      "age": 29,
+      "gender": "M",
+      "email": "andrey.petrov.nsk55@gmail.com",
+      "google_account": "new_via_ru_sim"
+    },
+    "persona": "tourist",
+    "geo": "novosibirsk",
+    "lang": "ru",
+    "interests": ["hiking", "photography", "wine"],
+    "homeCity": "Новосибирск",
+    "searchStyle": "short",
+    "warming_schedule": {
+      "day_1_7": {
+        "goal": "активный турист из Новосиба",
+        "daily_time_min": [30, 45],
+        "searches": [
+          "погода новосибирск", "ngs.ru новости", "треккинг алтай маршруты",
+          "горный велосипед новосибирск", "фотография горы советы",
+          "курс доллара", "alltrails маршруты сибирь", "вино красное рекомендации"
+        ],
+        "sites": ["ngs.ru", "vk.com", "alltrails.com", "wikiloc.com", "avito.ru"],
+        "youtube": ["треккинг алтай влог", "hiking gear review 2026", "фото горы обработка"]
+      },
+      "day_8_14": {
+        "goal": "горный туризм за рубежом",
+        "daily_time_min": [40, 55],
+        "searches": [
+          "лучшие треки мира", "горный туризм европа", "best hiking destinations 2026",
+          "авиабилеты из новосибирска дёшево", "wine regions to visit hiking",
+          "фототуры горы за рубежом"
+        ],
+        "sites": ["booking.com", "aviasales.ru", "alltrails.com", "wikiloc.com"],
+        "youtube": ["best hikes in europe", "travel photography mountains"]
+      },
+      "day_15_21": {
+        "goal": "Кавказ / Грузия — горы",
+        "daily_time_min": [45, 60],
+        "seed_searches": [
+          "треккинг грузия маршруты", "казбеги горы фото",
+          "сванетия треккинг", "грузия горы отзывы"
+        ],
+        "youtube": ["georgia trekking vlog", "казбеги треккинг", "сванетия поход"],
+        "maps_saves": ["Mount Kazbek", "Svaneti"]
+      },
+      "day_22_28": {
+        "goal": "экскурсии из Тбилиси в горы",
+        "daily_time_min": [55, 80],
+        "queries": [
+          "казбеги из тбилиси", "экскурсии из тбилиси горы",
+          "кахетия винный тур", "тбилиси гид треккинг",
+          "мцхета из тбилиси", "грузия достопримечательности"
+        ],
+        "sites": ["tripadvisor.com", "viator.com", "alltrails.com"],
+        "youtube": ["kazbegi day trip tbilisi", "кахетия тур влог"]
+      }
+    },
+    "active_hours": {"start": 8, "end": 23, "tz": "Asia/Novosibirsk"},
+    "cookie_target": 300,
+    "gmail": true
+  },
+  {
+    "profile_id": "P07",
+    "name": "EKB_relocant_cafe_07",
+    "fingerprint": {
+      "os": "Windows 10",
+      "browser": "Stealthfox",
+      "browser_version": "126.0",
+      "screen_resolution": "1680x1050",
+      "timezone": "Asia/Yekaterinburg",
+      "language": "ru-RU,ru;q=0.9,en;q=0.7",
+      "webgl_vendor": "Google Inc. (Intel)",
+      "webgl_renderer": "ANGLE (Intel HD Graphics 4600)",
+      "canvas_noise": "P07_unique_seed",
+      "audio_context": "P07_unique_hash",
+      "fonts": ["Arial", "Calibri", "Consolas", "Segoe UI", "Tahoma", "Times New Roman", "Verdana"],
+      "hardware_concurrency": 4,
+      "device_memory": 8
+    },
+    "proxy": {
+      "type": "residential",
+      "provider": "IPRoyal",
+      "country": "RU",
+      "city": "Yekaterinburg",
+      "sticky_session": true,
+      "rotation": "never_30d"
+    },
+    "identity": {
+      "first_name": "Ольга",
+      "last_name": "Сидорова",
+      "age": 31,
+      "gender": "F",
+      "email": "olga.sidorova.ekb23@gmail.com",
+      "google_account": "new_via_ru_sim"
+    },
+    "persona": "relocant",
+    "geo": "ekb",
+    "lang": "ru",
+    "interests": ["cafe", "shopping", "restaurants"],
+    "homeCity": "Екатеринбург",
+    "searchStyle": "long",
+    "warming_schedule": {
+      "day_1_7": {
+        "goal": "девушка из Екб — кафе и шоппинг",
+        "daily_time_min": [30, 45],
+        "searches": [
+          "погода екатеринбург", "e1 ru новости", "кофейни екатеринбург",
+          "wildberries скидки", "новые рестораны екатеринбург",
+          "ozon промокод", "курс доллара", "рецепты десерт"
+        ],
+        "sites": ["e1.ru", "vk.com", "wildberries.ru", "ozon.ru", "avito.ru"],
+        "youtube": ["кофейни екатеринбурга", "шоппинг влог", "рестораны обзор"]
+      },
+      "day_8_14": {
+        "goal": "мечтает уехать — общее",
+        "daily_time_min": [40, 55],
+        "searches": [
+          "куда уехать из россии 2026", "лучшие города для жизни за рубежом",
+          "релокация IT фрилансер", "визы для переезда",
+          "кафе за границей бизнес", "шоппинг европа"
+        ],
+        "sites": ["booking.com", "aviasales.ru", "tripadvisor.com"],
+        "youtube": ["релокация 2026 куда ехать", "жизнь за границей влог"]
+      },
+      "day_15_21": {
+        "goal": "Грузия — один из вариантов",
+        "daily_time_min": [45, 60],
+        "seed_searches": [
+          "релокация грузия из екатеринбурга", "тбилиси кафе лучшие",
+          "грузия шоппинг цены", "жизнь в тбилиси отзывы 2026"
+        ],
+        "youtube": ["тбилиси влог переезд", "кафе тбилиси обзор", "грузия жизнь отзывы"],
+        "maps_saves": ["Тбилиси", "Leselidze Street"]
+      },
+      "day_22_28": {
+        "goal": "экскурсии перед переездом",
+        "daily_time_min": [55, 80],
+        "queries": [
+          "экскурсии тбилиси для новичков", "казбеги из тбилиси",
+          "кахетия тур", "тбилиси с гидом на русском",
+          "мцхета экскурсия", "тбилиси ночная экскурсия"
+        ],
+        "sites": ["tripadvisor.com", "booking.com"],
+        "youtube": ["тбилиси экскурсии влог", "казбеги тур отзывы"]
+      }
+    },
+    "active_hours": {"start": 9, "end": 23, "tz": "Asia/Yekaterinburg"},
+    "cookie_target": 270,
+    "gmail": true
+  },
+  {
+    "profile_id": "P08",
+    "name": "KRD_family_wine_08",
+    "fingerprint": {
+      "os": "Android 14",
+      "browser": "Mizu",
+      "browser_version": "126.0",
+      "screen_resolution": "412x915",
+      "timezone": "Europe/Moscow",
+      "language": "ru-RU,ru;q=0.9",
+      "webgl_vendor": "Qualcomm",
+      "webgl_renderer": "Adreno (TM) 730",
+      "canvas_noise": "P08_unique_seed",
+      "audio_context": "P08_unique_hash",
+      "fonts": ["Roboto", "Noto Sans", "Droid Sans"],
+      "hardware_concurrency": 8,
+      "device_memory": 8
+    },
+    "proxy": {
+      "type": "residential",
+      "provider": "Soax",
+      "country": "RU",
+      "city": "Krasnodar",
+      "sticky_session": true,
+      "rotation": "never_30d"
+    },
+    "identity": {
+      "first_name": "Наталья",
+      "last_name": "Иванова",
+      "age": 38,
+      "gender": "F",
+      "email": "natali.ivanova.krd@gmail.com",
+      "google_account": "new_via_ru_sim"
+    },
+    "persona": "family",
+    "geo": "krasnodar",
+    "lang": "ru",
+    "interests": ["kids", "wine", "parks"],
+    "homeCity": "Краснодар",
+    "searchStyle": "long",
+    "warming_schedule": {
+      "day_1_7": {
+        "goal": "мама из Краснодара с интересом к вину",
+        "daily_time_min": [25, 40],
+        "searches": [
+          "погода краснодар", "93 ру новости", "детские парки краснодар",
+          "вино краснодарский край", "рестораны краснодар с верандой",
+          "ozon доставка краснодар", "каникулы дети", "рецепты быстрый ужин"
+        ],
+        "sites": ["93.ru", "vk.com", "ok.ru", "ozon.ru", "vivino.com"],
+        "youtube": ["краснодар с детьми", "вина краснодарского края", "парки краснодара"]
+      },
+      "day_8_14": {
+        "goal": "семейный отдых + вино",
+        "daily_time_min": [35, 50],
+        "searches": [
+          "куда поехать с детьми из краснодара", "винные туры россия",
+          "семейный отдых море 2026", "гастро туры семейные",
+          "авиабилеты краснодар дёшево", "дегустация вина выходные"
+        ],
+        "sites": ["booking.com", "aviasales.ru", "wine-searcher.com"],
+        "youtube": ["винные туры россия", "отдых с детьми 2026"]
+      },
+      "day_15_21": {
+        "goal": "Грузия — вино + дети",
+        "daily_time_min": [40, 55],
+        "seed_searches": [
+          "грузия с детьми из краснодара", "грузинское вино дегустация тбилиси",
+          "батуми с детьми", "кахетия семейный тур"
+        ],
+        "youtube": ["кахетия вино влог", "грузия с детьми 2026", "батуми семейный отдых"],
+        "maps_saves": ["Kakheti", "Batumi"]
+      },
+      "day_22_28": {
+        "goal": "экскурсии Тбилиси семейные",
+        "daily_time_min": [50, 75],
+        "queries": [
+          "тбилиси с детьми экскурсия", "кахетия винный тур с детьми",
+          "казбеги семейный тур", "тбилиси детский парк мтацминда",
+          "грузия зоопарк тбилиси", "тбилиси канатная дорога"
+        ],
+        "sites": ["tripadvisor.com", "booking.com"],
+        "youtube": ["тбилиси с детьми тур 2026"]
+      }
+    },
+    "active_hours": {"start": 8, "end": 22, "tz": "Europe/Moscow"},
+    "cookie_target": 230,
+    "gmail": true
+  },
+  {
+    "profile_id": "P09",
+    "name": "MSK_backpacker_hostel_09",
+    "fingerprint": {
+      "os": "Android 14",
+      "browser": "Mizu",
+      "browser_version": "125.0",
+      "screen_resolution": "393x873",
+      "timezone": "Europe/Moscow",
+      "language": "ru-RU,ru;q=0.9,en;q=0.8",
+      "webgl_vendor": "Qualcomm",
+      "webgl_renderer": "Adreno (TM) 640",
+      "canvas_noise": "P09_unique_seed",
+      "audio_context": "P09_unique_hash",
+      "fonts": ["Roboto", "Noto Sans", "Droid Sans", "Droid Serif"],
+      "hardware_concurrency": 8,
+      "device_memory": 6
+    },
+    "proxy": {
+      "type": "residential",
+      "provider": "IPRoyal",
+      "country": "RU",
+      "city": "Moscow",
+      "sticky_session": true,
+      "rotation": "never_30d"
+    },
+    "identity": {
+      "first_name": "Кирилл",
+      "last_name": "Смирнов",
+      "age": 24,
+      "gender": "M",
+      "email": "kirill.smirnov.travel24@gmail.com",
+      "google_account": "new_via_ru_sim"
+    },
+    "persona": "backpacker",
+    "geo": "moscow",
+    "lang": "ru",
+    "interests": ["hostels", "street-food", "hiking"],
+    "homeCity": "Москва",
+    "searchStyle": "short",
+    "warming_schedule": {
+      "day_1_7": {
+        "goal": "молодой бэкпекер из Москвы",
+        "daily_time_min": [25, 40],
+        "searches": [
+          "погода москва", "стрит фуд москва", "хостелы дёшево",
+          "треккинг подмосковье", "pikabu", "дёшево поесть москва",
+          "рюкзак для путешествий", "автостоп россия"
+        ],
+        "sites": ["lenta.ru", "pikabu.ru", "vk.com", "avito.ru", "hostelworld.com"],
+        "youtube": ["автостоп россия", "бюджетные путешествия", "street food moscow"]
+      },
+      "day_8_14": {
+        "goal": "бюджетные путешествия",
+        "daily_time_min": [35, 50],
+        "searches": [
+          "дешёвые страны для путешествий 2026", "автостоп европа",
+          "бюджетный треккинг за границей", "стрит фуд лучшие страны",
+          "хостелы европа рейтинг", "hitchhiking tips"
+        ],
+        "sites": ["hostelworld.com", "rome2rio.com", "aviasales.ru"],
+        "youtube": ["budget travel europe", "hitchhiking caucasus", "cheapest countries to visit"]
+      },
+      "day_15_21": {
+        "goal": "Грузия — бюджетно",
+        "daily_time_min": [40, 55],
+        "seed_searches": [
+          "грузия бюджетно 2026", "автостоп грузия",
+          "хостелы тбилиси дёшево", "стрит фуд тбилиси"
+        ],
+        "youtube": ["грузия бюджетно влог", "тбилиси хостелы обзор", "автостоп кавказ"],
+        "maps_saves": ["Fabrika Tbilisi", "Pushkin 10 Hostel"]
+      },
+      "day_22_28": {
+        "goal": "бесплатные / дешёвые туры Тбилиси",
+        "daily_time_min": [45, 70],
+        "queries": [
+          "бесплатный тур тбилиси", "тбилиси пешком маршрут",
+          "казбеги самостоятельно маршрутка", "мцхета автобус из тбилиси",
+          "сванетия бюджетно", "тбилиси стрит фуд карта"
+        ],
+        "sites": ["tripadvisor.com", "wikivoyage.org", "hostelworld.com"],
+        "youtube": ["тбилиси пешком влог", "казбеги самостоятельно"]
+      }
+    },
+    "active_hours": {"start": 11, "end": 2, "tz": "Europe/Moscow"},
+    "cookie_target": 220,
+    "gmail": false
+  },
+  {
+    "profile_id": "P10",
+    "name": "SPB_business_flights_10",
+    "fingerprint": {
+      "os": "macOS Sonoma",
+      "browser": "Mizu",
+      "browser_version": "126.0",
+      "screen_resolution": "3024x1964",
+      "timezone": "Europe/Moscow",
+      "language": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+      "webgl_vendor": "Apple",
+      "webgl_renderer": "Apple M3 Max",
+      "canvas_noise": "P10_unique_seed",
+      "audio_context": "P10_unique_hash",
+      "fonts": ["SF Pro", "Helvetica Neue", "Menlo", "Monaco", "Arial", "Georgia"],
+      "hardware_concurrency": 16,
+      "device_memory": 36
+    },
+    "proxy": {
+      "type": "residential",
+      "provider": "Brightdata",
+      "country": "RU",
+      "city": "Saint Petersburg",
+      "sticky_session": true,
+      "rotation": "never_30d"
+    },
+    "identity": {
+      "first_name": "Сергей",
+      "last_name": "Морозов",
+      "age": 45,
+      "gender": "M",
+      "email": "s.morozov.spb.biz@gmail.com",
+      "google_account": "new_via_ru_sim"
+    },
+    "persona": "business",
+    "geo": "spb",
+    "lang": "ru",
+    "interests": ["finance", "flights", "restaurants"],
+    "homeCity": "Санкт-Петербург",
+    "searchStyle": "precise",
+    "warming_schedule": {
+      "day_1_7": {
+        "goal": "топ-менеджер из СПб",
+        "daily_time_min": [20, 35],
+        "searches": [
+          "курс доллара", "dp ru деловые новости", "ресторан петербург деловой ужин",
+          "пулково расписание рейсов", "forbes россия",
+          "бизнес класс s7", "петербург новости бизнес"
+        ],
+        "sites": ["dp.ru", "fontanka.ru", "kommersant.ru", "investing.com", "kayak.com"],
+        "youtube": ["рынки обзор сегодня", "business travel tips"]
+      },
+      "day_8_14": {
+        "goal": "деловые поездки",
+        "daily_time_min": [30, 50],
+        "searches": [
+          "бизнес конференции 2026", "private jet europe",
+          "best business hotels", "корпоратив за рубежом",
+          "IT конференция грузия", "авиабилеты спб бизнес класс"
+        ],
+        "sites": ["kayak.com", "hotels.com", "booking.com"],
+        "youtube": ["business class lounge review", "best hotels for business"]
+      },
+      "day_15_21": {
+        "goal": "Грузия — деловой визит",
+        "daily_time_min": [35, 55],
+        "seed_searches": [
+          "тбилиси бизнес конференция", "грузия IT хаб",
+          "прямой рейс спб тбилиси", "отель marriott тбилиси"
+        ],
+        "youtube": ["тбилиси бизнес", "georgia startup ecosystem"],
+        "maps_saves": ["Tbilisi Marriott", "Stamba Hotel"]
+      },
+      "day_22_28": {
+        "goal": "VIP экскурсии Тбилиси",
+        "daily_time_min": [45, 70],
+        "queries": [
+          "приватный гид тбилиси", "vip тур казбеги",
+          "кахетия приватная дегустация", "тбилиси ресторан с видом",
+          "премиум экскурсии грузия", "тбилиси трансфер аэропорт"
+        ],
+        "sites": ["tripadvisor.com", "booking.com", "kayak.com"],
+        "youtube": ["luxury tbilisi tour", "кахетия премиум дегустация"]
+      }
+    },
+    "active_hours": {"start": 7, "end": 21, "tz": "Europe/Moscow"},
+    "cookie_target": 260,
+    "gmail": true
+  },
+  {
+    "profile_id": "P11",
+    "name": "MSK_tourist_wine_11",
+    "fingerprint": {
+      "os": "Windows 11",
+      "browser": "Stealthfox",
+      "browser_version": "125.0",
+      "screen_resolution": "2560x1440",
+      "timezone": "Europe/Moscow",
+      "language": "ru-RU,ru;q=0.9,en;q=0.8",
+      "webgl_vendor": "Google Inc. (NVIDIA)",
+      "webgl_renderer": "ANGLE (NVIDIA GeForce RTX 4070)",
+      "canvas_noise": "P11_unique_seed",
+      "audio_context": "P11_unique_hash",
+      "fonts": ["Arial", "Calibri", "Consolas", "Georgia", "Segoe UI", "Times New Roman"],
+      "hardware_concurrency": 12,
+      "device_memory": 32
+    },
+    "proxy": {
+      "type": "residential",
+      "provider": "Soax",
+      "country": "RU",
+      "city": "Moscow",
+      "sticky_session": true,
+      "rotation": "never_30d"
+    },
+    "identity": {
+      "first_name": "Виктория",
+      "last_name": "Лебедева",
+      "age": 34,
+      "gender": "F",
+      "email": "victoria.lebedeva.msk@gmail.com",
+      "google_account": "new_via_ru_sim"
+    },
+    "persona": "tourist",
+    "geo": "moscow",
+    "lang": "ru",
+    "interests": ["wine", "history", "photography"],
+    "homeCity": "Москва",
+    "searchStyle": "long",
+    "warming_schedule": {
+      "day_1_7": {
+        "goal": "культурная москвичка",
+        "daily_time_min": [30, 45],
+        "searches": [
+          "погода москва", "выставки москва 2026", "винотека москва центр",
+          "исторические фильмы рекомендации", "фотовыставка москва",
+          "lenta ru", "рецепты итальянская кухня", "москва музеи"
+        ],
+        "sites": ["lenta.ru", "rbc.ru", "vk.com", "vivino.com", "afisha.ru"],
+        "youtube": ["выставки москва обзор", "wine for beginners", "фотография обучение"]
+      },
+      "day_8_14": {
+        "goal": "культурный туризм",
+        "daily_time_min": [40, 55],
+        "searches": [
+          "лучшие города для культурного туризма", "винные регионы европы",
+          "исторические экскурсии за границей", "фототуры европа 2026",
+          "авиабилеты москва дёшево", "must visit cities 2026"
+        ],
+        "sites": ["booking.com", "tripadvisor.com", "aviasales.ru", "vivino.com"],
+        "youtube": ["wine regions europe tour", "cultural travel destinations 2026"]
+      },
+      "day_15_21": {
+        "goal": "Грузия — история + вино",
+        "daily_time_min": [45, 60],
+        "seed_searches": [
+          "грузия история виноделия", "тбилиси старый город",
+          "грузинское вино оранжевое", "культурные достопримечательности грузия"
+        ],
+        "youtube": ["грузия вино история", "тбилиси старый город влог", "georgian wine documentary"],
+        "maps_saves": ["Old Tbilisi", "Georgian National Museum"]
+      },
+      "day_22_28": {
+        "goal": "экскурсии — вино + история",
+        "daily_time_min": [55, 80],
+        "queries": [
+          "кахетия винный тур из тбилиси", "тбилиси обзорная экскурсия",
+          "мцхета джвари история", "тбилиси гид на русском",
+          "казбеги из тбилиси", "серные бани тбилиси"
+        ],
+        "sites": ["tripadvisor.com", "viator.com", "vivino.com"],
+        "youtube": ["кахетия винный тур влог", "тбилиси обзорная экскурсия"]
+      }
+    },
+    "active_hours": {"start": 9, "end": 23, "tz": "Europe/Moscow"},
+    "cookie_target": 330,
+    "gmail": true
+  },
+  {
+    "profile_id": "P12",
+    "name": "EKB_family_parks_12",
+    "fingerprint": {
+      "os": "Windows 10",
+      "browser": "Stealthfox",
+      "browser_version": "124.0",
+      "screen_resolution": "1366x768",
+      "timezone": "Asia/Yekaterinburg",
+      "language": "ru-RU,ru;q=0.9",
+      "webgl_vendor": "Google Inc. (Intel)",
+      "webgl_renderer": "ANGLE (Intel UHD Graphics 620)",
+      "canvas_noise": "P12_unique_seed",
+      "audio_context": "P12_unique_hash",
+      "fonts": ["Arial", "Calibri", "Comic Sans MS", "Segoe UI", "Tahoma", "Times New Roman"],
+      "hardware_concurrency": 4,
+      "device_memory": 4
+    },
+    "proxy": {
+      "type": "residential",
+      "provider": "IPRoyal",
+      "country": "RU",
+      "city": "Yekaterinburg",
+      "sticky_session": true,
+      "rotation": "never_30d"
+    },
+    "identity": {
+      "first_name": "Татьяна",
+      "last_name": "Белова",
+      "age": 37,
+      "gender": "F",
+      "email": "tatiana.belova.ekb37@gmail.com",
+      "google_account": "new_via_ru_sim"
+    },
+    "persona": "family",
+    "geo": "ekb",
+    "lang": "ru",
+    "interests": ["kids", "parks", "street-food"],
+    "homeCity": "Екатеринбург",
+    "searchStyle": "long",
+    "warming_schedule": {
+      "day_1_7": {
+        "goal": "мама из Екб — парки и дети",
+        "daily_time_min": [25, 40],
+        "searches": [
+          "погода екатеринбург", "e1 ru новости", "парки екатеринбург с детьми",
+          "стрит фуд екатеринбург", "детские секции екатеринбург",
+          "wildberries детское", "рецепты простые быстрые", "каникулы дети чем занять"
+        ],
+        "sites": ["e1.ru", "vk.com", "ok.ru", "wildberries.ru", "ozon.ru"],
+        "youtube": ["екатеринбург с детьми", "простые рецепты для детей"]
+      },
+      "day_8_14": {
+        "goal": "поездка с семьёй",
+        "daily_time_min": [35, 50],
+        "searches": [
+          "куда поехать с детьми из екатеринбурга", "семейный отдых 2026 бюджетно",
+          "парки развлечений за рубежом", "стрит фуд фестивали",
+          "авиабилеты екатеринбург", "дешёвый семейный отдых за границей"
+        ],
+        "sites": ["booking.com", "aviasales.ru", "tripadvisor.com"],
+        "youtube": ["семейный отдых куда поехать", "парки развлечений мира"]
+      },
+      "day_15_21": {
+        "goal": "Грузия — с детьми?",
+        "daily_time_min": [40, 55],
+        "seed_searches": [
+          "грузия с детьми безопасно", "тбилиси парки детские",
+          "батуми с детьми отзывы", "грузинская еда для детей"
+        ],
+        "youtube": ["грузия с детьми 2026", "тбилиси парки влог", "батуми дети"],
+        "maps_saves": ["Mtatsminda Park", "Tbilisi Zoo"]
+      },
+      "day_22_28": {
+        "goal": "экскурсии Тбилиси с детьми",
+        "daily_time_min": [50, 75],
+        "queries": [
+          "тбилиси экскурсия с детьми", "казбеги с детьми можно ли",
+          "тбилиси зоопарк", "мтацминда парк тбилиси",
+          "тбилиси канатная дорога", "кахетия с детьми"
+        ],
+        "sites": ["tripadvisor.com", "booking.com"],
+        "youtube": ["тбилиси с детьми экскурсия", "мтацминда парк обзор"]
+      }
+    },
+    "active_hours": {"start": 8, "end": 21, "tz": "Asia/Yekaterinburg"},
+    "cookie_target": 240,
+    "gmail": true
+  },
+  {
+    "profile_id": "P13",
+    "name": "BER_relocant_yoga_13",
+    "fingerprint": {
+      "os": "macOS Sonoma",
+      "browser": "Mizu",
+      "browser_version": "126.0",
+      "screen_resolution": "2560x1600",
+      "timezone": "Europe/Berlin",
+      "language": "en-US,en;q=0.9,de;q=0.8",
+      "webgl_vendor": "Apple",
+      "webgl_renderer": "Apple M2",
+      "canvas_noise": "P13_unique_seed",
+      "audio_context": "P13_unique_hash",
+      "fonts": ["SF Pro", "Helvetica Neue", "Menlo", "Arial", "Georgia", "Courier New"],
+      "hardware_concurrency": 8,
+      "device_memory": 16
+    },
+    "proxy": {
+      "type": "residential",
+      "provider": "Brightdata",
+      "country": "DE",
+      "city": "Berlin",
+      "sticky_session": true,
+      "rotation": "never_30d"
+    },
+    "identity": {
+      "first_name": "Lisa",
+      "last_name": "Weber",
+      "age": 29,
+      "gender": "F",
+      "email": "lisa.weber.ber29@gmail.com",
+      "google_account": "new_via_de_sim"
+    },
+    "persona": "relocant",
+    "geo": "berlin",
+    "lang": "en",
+    "interests": ["cafe", "yoga", "photography"],
+    "homeCity": "Berlin",
+    "searchStyle": "long",
+    "warming_schedule": {
+      "day_1_7": {
+        "goal": "digital nomad из Берлина",
+        "daily_time_min": [30, 45],
+        "searches": [
+          "berlin weather", "best cafes berlin", "yoga studio berlin",
+          "photography spots berlin", "spiegel news today",
+          "coworking berlin price", "recipe healthy breakfast", "events berlin this week"
+        ],
+        "sites": ["bbc.com", "spiegel.de", "reddit.com", "amazon.de", "unsplash.com"],
+        "youtube": ["berlin cafe vlog", "morning yoga 20 min", "street photography berlin"]
+      },
+      "day_8_14": {
+        "goal": "digital nomad travel",
+        "daily_time_min": [40, 55],
+        "searches": [
+          "best digital nomad destinations 2026", "yoga retreat abroad",
+          "cheapest flights from berlin", "photography travel destinations",
+          "remote work visa europe", "coworking abroad"
+        ],
+        "sites": ["booking.com", "skyscanner.com", "nomadlist.com"],
+        "youtube": ["digital nomad life 2026", "best yoga retreats", "travel photography tips"]
+      },
+      "day_15_21": {
+        "goal": "Georgia/Tbilisi — nomad option",
+        "daily_time_min": [45, 60],
+        "seed_searches": [
+          "tbilisi digital nomad 2026", "coworking tbilisi",
+          "yoga in tbilisi", "georgia remote work visa"
+        ],
+        "youtube": ["tbilisi digital nomad vlog", "georgia remote work", "yoga tbilisi"],
+        "maps_saves": ["Tbilisi", "Fabrika Tbilisi"]
+      },
+      "day_22_28": {
+        "goal": "tours and experiences Tbilisi",
+        "daily_time_min": [55, 80],
+        "queries": [
+          "tbilisi tours from locals", "kazbegi day trip from tbilisi",
+          "kakheti wine tour", "tbilisi walking tour",
+          "tbilisi guide english", "mtskheta from tbilisi"
+        ],
+        "sites": ["tripadvisor.com", "getyourguide.com", "viator.com"],
+        "youtube": ["tbilisi tour vlog", "kazbegi day trip"]
+      }
+    },
+    "active_hours": {"start": 9, "end": 24, "tz": "Europe/Berlin"},
+    "cookie_target": 320,
+    "gmail": true
+  },
+  {
+    "profile_id": "P14",
+    "name": "LDN_tourist_wine_14",
+    "fingerprint": {
+      "os": "Windows 11",
+      "browser": "Stealthfox",
+      "browser_version": "126.0",
+      "screen_resolution": "1920x1080",
+      "timezone": "Europe/London",
+      "language": "en-GB,en;q=0.9",
+      "webgl_vendor": "Google Inc. (NVIDIA)",
+      "webgl_renderer": "ANGLE (NVIDIA GeForce RTX 3070)",
+      "canvas_noise": "P14_unique_seed",
+      "audio_context": "P14_unique_hash",
+      "fonts": ["Arial", "Calibri", "Consolas", "Georgia", "Segoe UI", "Times New Roman"],
+      "hardware_concurrency": 8,
+      "device_memory": 16
+    },
+    "proxy": {
+      "type": "residential",
+      "provider": "IPRoyal",
+      "country": "GB",
+      "city": "London",
+      "sticky_session": true,
+      "rotation": "never_30d"
+    },
+    "identity": {
+      "first_name": "James",
+      "last_name": "Thompson",
+      "age": 36,
+      "gender": "M",
+      "email": "james.thompson.ldn36@gmail.com",
+      "google_account": "new_via_uk_sim"
+    },
+    "persona": "tourist",
+    "geo": "london",
+    "lang": "en",
+    "interests": ["wine", "history", "restaurants"],
+    "homeCity": "London",
+    "searchStyle": "short",
+    "warming_schedule": {
+      "day_1_7": {
+        "goal": "лондонец — вино и история",
+        "daily_time_min": [30, 45],
+        "searches": [
+          "london weather", "bbc news today", "best wine bars london",
+          "history documentaries 2026", "restaurants soho london",
+          "guardian news", "weekend activities london", "wine subscription uk"
+        ],
+        "sites": ["bbc.co.uk", "theguardian.com", "amazon.co.uk", "vivino.com", "tripadvisor.com"],
+        "youtube": ["wine tasting for beginners", "london restaurants review", "history documentary"]
+      },
+      "day_8_14": {
+        "goal": "holiday planning",
+        "daily_time_min": [40, 55],
+        "searches": [
+          "best holiday destinations 2026", "wine tour holidays europe",
+          "historical cities to visit", "cheap flights from london",
+          "best food destinations europe", "unesco world heritage sites"
+        ],
+        "sites": ["booking.com", "skyscanner.com", "tripadvisor.com", "lonelyplanet.com"],
+        "youtube": ["best european wine regions", "historic cities europe travel"]
+      },
+      "day_15_21": {
+        "goal": "Georgia — wine country discovery",
+        "daily_time_min": [45, 60],
+        "seed_searches": [
+          "georgia wine country", "tbilisi history",
+          "is georgia safe to visit", "flights london tbilisi"
+        ],
+        "youtube": ["georgia wine documentary", "tbilisi travel guide 2026", "is georgia safe"],
+        "maps_saves": ["Tbilisi", "Kakheti wine region"]
+      },
+      "day_22_28": {
+        "goal": "book tours Tbilisi",
+        "daily_time_min": [55, 80],
+        "queries": [
+          "tbilisi tours reviews", "kakheti wine tour from tbilisi",
+          "kazbegi day trip", "tbilisi walking tour guide",
+          "mtskheta from tbilisi", "tbilisi sulfur baths"
+        ],
+        "sites": ["tripadvisor.com", "getyourguide.com", "viator.com"],
+        "youtube": ["kakheti wine tour vlog", "tbilisi walking tour 4k"]
+      }
+    },
+    "active_hours": {"start": 8, "end": 23, "tz": "Europe/London"},
+    "cookie_target": 310,
+    "gmail": true
+  },
+  {
+    "profile_id": "P15",
+    "name": "PAR_tourist_photo_15",
+    "fingerprint": {
+      "os": "macOS Sonoma",
+      "browser": "Mizu",
+      "browser_version": "125.0",
+      "screen_resolution": "2560x1440",
+      "timezone": "Europe/Paris",
+      "language": "en-US,en;q=0.9,fr;q=0.8",
+      "webgl_vendor": "Apple",
+      "webgl_renderer": "Apple M1 Pro",
+      "canvas_noise": "P15_unique_seed",
+      "audio_context": "P15_unique_hash",
+      "fonts": ["SF Pro", "Helvetica Neue", "Menlo", "Arial", "Georgia", "Garamond"],
+      "hardware_concurrency": 10,
+      "device_memory": 16
+    },
+    "proxy": {
+      "type": "residential",
+      "provider": "Soax",
+      "country": "FR",
+      "city": "Paris",
+      "sticky_session": true,
+      "rotation": "never_30d"
+    },
+    "identity": {
+      "first_name": "Sophie",
+      "last_name": "Martin",
+      "age": 32,
+      "gender": "F",
+      "email": "sophie.martin.par32@gmail.com",
+      "google_account": "new_via_fr_sim"
+    },
+    "persona": "tourist",
+    "geo": "paris",
+    "lang": "en",
+    "interests": ["wine", "photography", "restaurants"],
+    "homeCity": "Paris",
+    "searchStyle": "long",
+    "warming_schedule": {
+      "day_1_7": {
+        "goal": "парижанка-фотограф",
+        "daily_time_min": [30, 45],
+        "searches": [
+          "paris weather", "le monde news", "best wine bars paris",
+          "photography exhibitions paris", "restaurants marais paris",
+          "france24 english", "weekend events paris", "natural wine paris"
+        ],
+        "sites": ["lemonde.fr", "france24.com", "amazon.fr", "500px.com", "tripadvisor.com"],
+        "youtube": ["paris photography spots", "natural wine guide", "paris restaurants review"]
+      },
+      "day_8_14": {
+        "goal": "travel + фото",
+        "daily_time_min": [40, 55],
+        "searches": [
+          "most photogenic cities europe", "wine destinations off the beaten path",
+          "cheap flights from paris", "food photography travel",
+          "hidden gem destinations 2026", "wine regions to visit"
+        ],
+        "sites": ["booking.com", "skyscanner.com", "flickr.com", "tripadvisor.com"],
+        "youtube": ["hidden gem travel destinations", "wine travel europe", "travel photography gear"]
+      },
+      "day_15_21": {
+        "goal": "Грузия — вино + фото",
+        "daily_time_min": [45, 60],
+        "seed_searches": [
+          "georgia wine oldest in the world", "tbilisi photography",
+          "is tbilisi worth visiting", "flights paris tbilisi"
+        ],
+        "youtube": ["tbilisi photography vlog", "georgia wine country", "tbilisi worth visiting"],
+        "maps_saves": ["Tbilisi Old Town", "Signagi"]
+      },
+      "day_22_28": {
+        "goal": "tours Tbilisi",
+        "daily_time_min": [55, 80],
+        "queries": [
+          "tbilisi photo tour", "kakheti wine tour from tbilisi",
+          "kazbegi mountains day trip", "tbilisi guide english speaking",
+          "signagi day trip from tbilisi", "tbilisi old town walking tour"
+        ],
+        "sites": ["tripadvisor.com", "getyourguide.com", "viator.com"],
+        "youtube": ["tbilisi photo vlog 4k", "kakheti wine tour 2026"]
+      }
+    },
+    "active_hours": {"start": 9, "end": 24, "tz": "Europe/Paris"},
+    "cookie_target": 300,
+    "gmail": true
+  },
+  {
+    "profile_id": "P16",
+    "name": "IST_backpacker_hostel_16",
+    "fingerprint": {
+      "os": "Android 14",
+      "browser": "Mizu",
+      "browser_version": "126.0",
+      "screen_resolution": "412x915",
+      "timezone": "Europe/Istanbul",
+      "language": "en-US,en;q=0.9,tr;q=0.7",
+      "webgl_vendor": "Qualcomm",
+      "webgl_renderer": "Adreno (TM) 660",
+      "canvas_noise": "P16_unique_seed",
+      "audio_context": "P16_unique_hash",
+      "fonts": ["Roboto", "Noto Sans", "Droid Sans"],
+      "hardware_concurrency": 8,
+      "device_memory": 6
+    },
+    "proxy": {
+      "type": "residential",
+      "provider": "IPRoyal",
+      "country": "TR",
+      "city": "Istanbul",
+      "sticky_session": true,
+      "rotation": "never_30d"
+    },
+    "identity": {
+      "first_name": "Emre",
+      "last_name": "Yilmaz",
+      "age": 25,
+      "gender": "M",
+      "email": "emre.yilmaz.ist25@gmail.com",
+      "google_account": "new_via_tr_sim"
+    },
+    "persona": "backpacker",
+    "geo": "istanbul",
+    "lang": "en",
+    "interests": ["hostels", "street-food", "hiking"],
+    "homeCity": "Istanbul",
+    "searchStyle": "short",
+    "warming_schedule": {
+      "day_1_7": {
+        "goal": "молодой путешественник из Стамбула",
+        "daily_time_min": [25, 40],
+        "searches": [
+          "istanbul weather", "street food istanbul best spots", "hiking near istanbul",
+          "hostelworld istanbul", "daily sabah news",
+          "cheap eats istanbul", "backpack gear essentials", "reddit travel"
+        ],
+        "sites": ["dailysabah.com", "reddit.com", "hostelworld.com", "hepsiburada.com", "instagram.com"],
+        "youtube": ["istanbul street food tour", "hiking bosphorus trail", "backpacking tips 2026"]
+      },
+      "day_8_14": {
+        "goal": "бюджетные путешествия из Стамбула",
+        "daily_time_min": [35, 50],
+        "searches": [
+          "cheapest countries from istanbul", "backpacking caucasus",
+          "hiking trails near turkey", "budget travel 2026",
+          "hostel tips for beginners", "street food festivals europe"
+        ],
+        "sites": ["hostelworld.com", "rome2rio.com", "skyscanner.com", "wikiloc.com"],
+        "youtube": ["backpacking caucasus", "cheapest countries to travel from turkey"]
+      },
+      "day_15_21": {
+        "goal": "Грузия — соседняя страна бюджетно",
+        "daily_time_min": [40, 55],
+        "seed_searches": [
+          "georgia from istanbul cheap", "tbilisi backpacking",
+          "hiking in georgia caucasus", "street food tbilisi"
+        ],
+        "youtube": ["tbilisi budget travel", "georgia hiking caucasus", "street food tbilisi vlog"],
+        "maps_saves": ["Tbilisi", "Kazbegi"]
+      },
+      "day_22_28": {
+        "goal": "бесплатные туры и хайкинг Тбилиси",
+        "daily_time_min": [45, 70],
+        "queries": [
+          "free walking tour tbilisi", "kazbegi hiking from tbilisi",
+          "tbilisi hostels best", "mtskheta bus from tbilisi",
+          "tbilisi street food map", "svaneti trekking budget"
+        ],
+        "sites": ["hostelworld.com", "wikivoyage.org", "tripadvisor.com"],
+        "youtube": ["tbilisi free walking tour", "kazbegi hiking vlog"]
+      }
+    },
+    "active_hours": {"start": 10, "end": 1, "tz": "Europe/Istanbul"},
+    "cookie_target": 210,
+    "gmail": false
+  },
+  {
+    "profile_id": "P17",
+    "name": "DXB_business_finance_17",
+    "fingerprint": {
+      "os": "macOS Sonoma",
+      "browser": "Mizu",
+      "browser_version": "126.0",
+      "screen_resolution": "3456x2234",
+      "timezone": "Asia/Dubai",
+      "language": "en-US,en;q=0.9,ar;q=0.5",
+      "webgl_vendor": "Apple",
+      "webgl_renderer": "Apple M3 Pro",
+      "canvas_noise": "P17_unique_seed",
+      "audio_context": "P17_unique_hash",
+      "fonts": ["SF Pro", "Helvetica Neue", "Menlo", "Monaco", "Arial", "Georgia"],
+      "hardware_concurrency": 12,
+      "device_memory": 18
+    },
+    "proxy": {
+      "type": "residential",
+      "provider": "Brightdata",
+      "country": "AE",
+      "city": "Dubai",
+      "sticky_session": true,
+      "rotation": "never_30d"
+    },
+    "identity": {
+      "first_name": "Omar",
+      "last_name": "Al-Rashid",
+      "age": 40,
+      "gender": "M",
+      "email": "omar.alrashid.dxb@gmail.com",
+      "google_account": "new_via_ae_sim"
+    },
+    "persona": "business",
+    "geo": "dubai",
+    "lang": "en",
+    "interests": ["finance", "flights", "restaurants"],
+    "homeCity": "Dubai",
+    "searchStyle": "precise",
+    "warming_schedule": {
+      "day_1_7": {
+        "goal": "бизнесмен из Дубая",
+        "daily_time_min": [20, 35],
+        "searches": [
+          "dubai weather", "gulf news business", "restaurants difc dubai",
+          "flights business class emirates", "bloomberg markets today",
+          "dubai events this week", "khaleeji times", "investment news today"
+        ],
+        "sites": ["gulfnews.com", "bloomberg.com", "investing.com", "amazon.ae", "noon.com"],
+        "youtube": ["market analysis today", "dubai restaurants review", "business travel tips"]
+      },
+      "day_8_14": {
+        "goal": "деловые путешествия",
+        "daily_time_min": [30, 50],
+        "searches": [
+          "best business destinations 2026", "emerging markets investment",
+          "flights from dubai business class", "luxury hotels europe",
+          "private tours vip", "investment opportunities eastern europe"
+        ],
+        "sites": ["kayak.com", "hotels.com", "booking.com", "ft.com"],
+        "youtube": ["business class review emirates", "luxury hotel reviews"]
+      },
+      "day_15_21": {
+        "goal": "Georgia — investment hub",
+        "daily_time_min": [35, 55],
+        "seed_searches": [
+          "georgia business opportunities", "tbilisi investment climate",
+          "flights dubai tbilisi", "luxury hotels tbilisi"
+        ],
+        "youtube": ["georgia investment 2026", "tbilisi luxury travel", "georgia business"],
+        "maps_saves": ["Tbilisi Marriott", "Rooms Hotel Tbilisi"]
+      },
+      "day_22_28": {
+        "goal": "VIP experience Tbilisi",
+        "daily_time_min": [45, 70],
+        "queries": [
+          "private guide tbilisi english", "vip wine tour kakheti",
+          "kazbegi private tour", "tbilisi best restaurants fine dining",
+          "georgia luxury travel", "tbilisi airport private transfer"
+        ],
+        "sites": ["tripadvisor.com", "booking.com", "kayak.com"],
+        "youtube": ["tbilisi luxury tour", "kakheti private wine tour"]
+      }
+    },
+    "active_hours": {"start": 7, "end": 22, "tz": "Asia/Dubai"},
+    "cookie_target": 260,
+    "gmail": true
+  },
+  {
+    "profile_id": "P18",
+    "name": "NYC_tourist_history_18",
+    "fingerprint": {
+      "os": "Windows 11",
+      "browser": "Stealthfox",
+      "browser_version": "126.0",
+      "screen_resolution": "2560x1440",
+      "timezone": "America/New_York",
+      "language": "en-US,en;q=0.9",
+      "webgl_vendor": "Google Inc. (NVIDIA)",
+      "webgl_renderer": "ANGLE (NVIDIA GeForce RTX 4080)",
+      "canvas_noise": "P18_unique_seed",
+      "audio_context": "P18_unique_hash",
+      "fonts": ["Arial", "Calibri", "Consolas", "Georgia", "Segoe UI", "Times New Roman", "Verdana"],
+      "hardware_concurrency": 16,
+      "device_memory": 32
+    },
+    "proxy": {
+      "type": "residential",
+      "provider": "Soax",
+      "country": "US",
+      "city": "New York",
+      "sticky_session": true,
+      "rotation": "never_30d"
+    },
+    "identity": {
+      "first_name": "Michael",
+      "last_name": "Chen",
+      "age": 38,
+      "gender": "M",
+      "email": "michael.chen.nyc38@gmail.com",
+      "google_account": "new_via_us_sim"
+    },
+    "persona": "tourist",
+    "geo": "nyc",
+    "lang": "en",
+    "interests": ["wine", "history", "photography"],
+    "homeCity": "New York",
+    "searchStyle": "long",
+    "warming_schedule": {
+      "day_1_7": {
+        "goal": "культурный нью-йоркец",
+        "daily_time_min": [30, 45],
+        "searches": [
+          "new york weather", "nytimes today", "wine bars manhattan",
+          "history museums nyc", "photography galleries new york",
+          "restaurants brooklyn", "weekend events nyc", "new york times opinion"
+        ],
+        "sites": ["nytimes.com", "washingtonpost.com", "reddit.com", "amazon.com", "500px.com"],
+        "youtube": ["nyc wine bars review", "history channel documentary", "street photography nyc"]
+      },
+      "day_8_14": {
+        "goal": "international travel planning",
+        "daily_time_min": [40, 55],
+        "searches": [
+          "best international destinations 2026", "wine country tours europe",
+          "historical destinations off beaten path", "flights from jfk cheap",
+          "best food cities world", "photography travel destinations underrated"
+        ],
+        "sites": ["booking.com", "kayak.com", "tripadvisor.com", "lonelyplanet.com"],
+        "youtube": ["underrated travel destinations 2026", "wine country europe vlog"]
+      },
+      "day_15_21": {
+        "goal": "Georgia — undiscovered gem",
+        "daily_time_min": [45, 60],
+        "seed_searches": [
+          "georgia country travel 2026", "is tbilisi worth visiting",
+          "oldest wine country in the world", "tbilisi history"
+        ],
+        "youtube": ["georgia travel guide 2026", "tbilisi travel vlog", "georgian wine history"],
+        "maps_saves": ["Tbilisi", "Kakheti"]
+      },
+      "day_22_28": {
+        "goal": "book Tbilisi tours",
+        "daily_time_min": [55, 80],
+        "queries": [
+          "tbilisi guided tours english", "kakheti wine tour from tbilisi",
+          "kazbegi day trip reviews", "tbilisi old town walking tour",
+          "mtskheta jvari monastery", "tbilisi guide recommendations"
+        ],
+        "sites": ["tripadvisor.com", "getyourguide.com", "viator.com"],
+        "youtube": ["tbilisi guided tour vlog", "kakheti wine tour 2026"]
+      }
+    },
+    "active_hours": {"start": 8, "end": 24, "tz": "America/New_York"},
+    "cookie_target": 340,
+    "gmail": true
+  },
+  {
+    "profile_id": "P19",
+    "name": "BER_backpacker_hike_19",
+    "fingerprint": {
+      "os": "Windows 11",
+      "browser": "Stealthfox",
+      "browser_version": "124.0",
+      "screen_resolution": "1920x1080",
+      "timezone": "Europe/Berlin",
+      "language": "en-US,en;q=0.9,de;q=0.7",
+      "webgl_vendor": "Google Inc. (AMD)",
+      "webgl_renderer": "ANGLE (AMD Radeon RX 580)",
+      "canvas_noise": "P19_unique_seed",
+      "audio_context": "P19_unique_hash",
+      "fonts": ["Arial", "Calibri", "Consolas", "Segoe UI", "Tahoma", "Times New Roman"],
+      "hardware_concurrency": 8,
+      "device_memory": 8
+    },
+    "proxy": {
+      "type": "residential",
+      "provider": "Soax",
+      "country": "DE",
+      "city": "Berlin",
+      "sticky_session": true,
+      "rotation": "never_30d"
+    },
+    "identity": {
+      "first_name": "Max",
+      "last_name": "Schneider",
+      "age": 26,
+      "gender": "M",
+      "email": "max.schneider.ber26@gmail.com",
+      "google_account": "new_via_de_sim"
+    },
+    "persona": "backpacker",
+    "geo": "berlin",
+    "lang": "en",
+    "interests": ["hostels", "hiking", "street-food"],
+    "homeCity": "Berlin",
+    "searchStyle": "short",
+    "warming_schedule": {
+      "day_1_7": {
+        "goal": "бэкпекер из Берлина",
+        "daily_time_min": [25, 40],
+        "searches": [
+          "berlin weather", "street food berlin kreuzberg", "hiking trails near berlin",
+          "hostelworld berlin", "dw news english",
+          "backpacking gear budget", "reddit backpacking", "cheap eats berlin"
+        ],
+        "sites": ["dw.com", "reddit.com", "hostelworld.com", "amazon.de", "wikiloc.com"],
+        "youtube": ["berlin street food tour", "hiking germany", "backpacking budget tips"]
+      },
+      "day_8_14": {
+        "goal": "бюджетные поездки из Берлина",
+        "daily_time_min": [35, 50],
+        "searches": [
+          "cheapest flights from berlin", "backpacking eastern europe",
+          "best hiking in europe", "street food festivals europe 2026",
+          "budget travel tips", "hitchhiking europe"
+        ],
+        "sites": ["hostelworld.com", "rome2rio.com", "skyscanner.com", "wikiloc.com"],
+        "youtube": ["backpacking eastern europe", "best hikes in europe", "budget travel europe"]
+      },
+      "day_15_21": {
+        "goal": "Кавказ / Грузия — хайкинг",
+        "daily_time_min": [40, 55],
+        "seed_searches": [
+          "hiking caucasus georgia", "tbilisi backpacking guide",
+          "cheap flights berlin tbilisi", "georgia trekking routes"
+        ],
+        "youtube": ["georgia caucasus hiking", "tbilisi backpacking vlog", "trekking svaneti"],
+        "maps_saves": ["Kazbegi", "Mestia Svaneti"]
+      },
+      "day_22_28": {
+        "goal": "дешёвые туры и треки из Тбилиси",
+        "daily_time_min": [45, 70],
+        "queries": [
+          "free walking tour tbilisi", "kazbegi hiking day trip",
+          "tbilisi hostels best 2026", "mtskheta from tbilisi bus",
+          "svaneti trekking guide", "tbilisi street food best"
+        ],
+        "sites": ["hostelworld.com", "wikiloc.com", "tripadvisor.com"],
+        "youtube": ["tbilisi hiking guide", "kazbegi trekking from tbilisi"]
+      }
+    },
+    "active_hours": {"start": 10, "end": 1, "tz": "Europe/Berlin"},
+    "cookie_target": 230,
+    "gmail": false
+  },
+  {
+    "profile_id": "P20",
+    "name": "LDN_business_wine_20",
+    "fingerprint": {
+      "os": "macOS Sonoma",
+      "browser": "Mizu",
+      "browser_version": "126.0",
+      "screen_resolution": "3024x1964",
+      "timezone": "Europe/London",
+      "language": "en-GB,en;q=0.9",
+      "webgl_vendor": "Apple",
+      "webgl_renderer": "Apple M2 Max",
+      "canvas_noise": "P20_unique_seed",
+      "audio_context": "P20_unique_hash",
+      "fonts": ["SF Pro", "Helvetica Neue", "Menlo", "Monaco", "Arial", "Georgia", "Palatino"],
+      "hardware_concurrency": 12,
+      "device_memory": 32
+    },
+    "proxy": {
+      "type": "residential",
+      "provider": "Brightdata",
+      "country": "GB",
+      "city": "London",
+      "sticky_session": true,
+      "rotation": "never_30d"
+    },
+    "identity": {
+      "first_name": "Charlotte",
+      "last_name": "Davies",
+      "age": 41,
+      "gender": "F",
+      "email": "charlotte.davies.ldn41@gmail.com",
+      "google_account": "new_via_uk_sim"
+    },
+    "persona": "business",
+    "geo": "london",
+    "lang": "en",
+    "interests": ["finance", "flights", "wine"],
+    "homeCity": "London",
+    "searchStyle": "precise",
+    "warming_schedule": {
+      "day_1_7": {
+        "goal": "бизнес-леди из Лондона",
+        "daily_time_min": [25, 40],
+        "searches": [
+          "london weather", "ft.com markets", "wine bars mayfair london",
+          "flights heathrow business class", "bbc news business",
+          "restaurants city of london", "investment news uk", "events london finance"
+        ],
+        "sites": ["bbc.co.uk", "ft.com", "theguardian.com", "amazon.co.uk", "vivino.com"],
+        "youtube": ["market analysis weekly", "london wine bars review", "business travel hacks"]
+      },
+      "day_8_14": {
+        "goal": "деловые + винные путешествия",
+        "daily_time_min": [35, 50],
+        "searches": [
+          "best business travel destinations 2026", "wine tours europe luxury",
+          "flights from london business class cheap", "investment conferences abroad",
+          "michelin restaurants europe", "emerging wine regions"
+        ],
+        "sites": ["booking.com", "kayak.com", "vivino.com", "hotels.com"],
+        "youtube": ["luxury wine tours europe", "business travel tips 2026"]
+      },
+      "day_15_21": {
+        "goal": "Georgia — wine + emerging market",
+        "daily_time_min": [40, 55],
+        "seed_searches": [
+          "georgia wine country cradle of wine", "tbilisi emerging destination",
+          "flights london tbilisi direct", "georgia investment uk"
+        ],
+        "youtube": ["georgia wine history", "tbilisi luxury travel guide", "invest in georgia"],
+        "maps_saves": ["Tbilisi", "Rooms Hotel Tbilisi", "Kakheti"]
+      },
+      "day_22_28": {
+        "goal": "premium tours Tbilisi",
+        "daily_time_min": [50, 75],
+        "queries": [
+          "private guide tbilisi english speaking", "luxury wine tour kakheti",
+          "kazbegi private tour", "tbilisi fine dining",
+          "georgia luxury travel experience", "tbilisi guide recommendations tripadvisor"
+        ],
+        "sites": ["tripadvisor.com", "getyourguide.com", "booking.com"],
+        "youtube": ["luxury kakheti wine tour", "tbilisi private tour vlog"]
+      }
+    },
+    "active_hours": {"start": 7, "end": 22, "tz": "Europe/London"},
+    "cookie_target": 290,
+    "gmail": true
+  }
+]

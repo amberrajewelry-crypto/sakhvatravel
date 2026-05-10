@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demo 2 — CSS Scroll Timeline</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: system-ui, sans-serif; background: #0a0a0a; color: #fff; }
+
+.intro {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+}
+.intro h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+.intro p { font-size: 1.1rem; opacity: 0.6; max-width: 600px; }
+.intro .warn { color: #f59e0b; font-size: 0.9rem; margin-top: 1rem; }
+
+/* Stack container */
+.scroll-stack {
+  position: relative;
+  height: 400vh; /* Long scroll area */
+  timeline-scope: --stack-scroll;
+}
+
+.scroll-stack::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  scroll-timeline: --stack-scroll block;
+}
+
+.image-layer {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.image-layer img {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Pure CSS animations bound to scroll */
+@keyframes fadeOut1 {
+  0%, 20% { opacity: 1; }
+  33% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@keyframes fadeOut2 {
+  0%, 33% { opacity: 1; }
+  50% { opacity: 1; }
+  66% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@keyframes fadeOut3 {
+  0%, 60% { opacity: 1; }
+  75% { opacity: 1; }
+  90% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+.img1 {
+  z-index: 4;
+  animation: fadeOut1 linear both;
+  animation-timeline: scroll(root);
+}
+
+.img2 {
+  z-index: 3;
+  animation: fadeOut2 linear both;
+  animation-timeline: scroll(root);
+}
+
+.img3 {
+  z-index: 2;
+  animation: fadeOut3 linear both;
+  animation-timeline: scroll(root);
+}
+
+.img4 {
+  z-index: 1;
+  /* Last image stays */
+}
+
+.label {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.7);
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  z-index: 100;
+  pointer-events: none;
+}
+
+/* Progress bar — also pure CSS */
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #10b981, #3b82f6);
+  z-index: 200;
+  width: 0%;
+  animation: growBar linear both;
+  animation-timeline: scroll(root);
+}
+
+@keyframes growBar {
+  from { width: 0%; }
+  to { width: 100%; }
+}
+
+/* Caption overlay */
+.caption {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  font-weight: 700;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.8);
+  z-index: 50;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.caption:nth-child(1) { animation: showCaption1 linear both; animation-timeline: scroll(root); }
+.caption:nth-child(2) { animation: showCaption2 linear both; animation-timeline: scroll(root); }
+.caption:nth-child(3) { animation: showCaption3 linear both; animation-timeline: scroll(root); }
+.caption:nth-child(4) { animation: showCaption4 linear both; animation-timeline: scroll(root); }
+
+@keyframes showCaption1 { 0% { opacity: 1; } 20% { opacity: 1; } 30% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes showCaption2 { 0% { opacity: 0; } 30% { opacity: 0; } 33% { opacity: 1; } 55% { opacity: 1; } 65% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes showCaption3 { 0% { opacity: 0; } 60% { opacity: 0; } 65% { opacity: 1; } 85% { opacity: 1; } 90% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes showCaption4 { 0% { opacity: 0; } 88% { opacity: 0; } 95% { opacity: 1; } 100% { opacity: 1; } }
+
+.outro {
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  opacity: 0.4;
+}
+</style>
+</head>
+<body>
+
+<div class="intro">
+  <h1>2. CSS Scroll Timeline</h1>
+  <p>Ноль JavaScript. Анимации привязаны к скроллу через <code>animation-timeline: scroll()</code>. Браузер сам рассчитывает прогресс.</p>
+  <p class="warn">Chrome/Edge 115+. Safari — пока не поддерживает.</p>
+</div>
+
+<div class="progress-bar"></div>
+
+<div class="scroll-stack">
+  <div class="image-layer">
+    <img class="img4" src="../images/dinner-tour.webp" alt="Dinner Tour">
+    <img class="img3" src="../images/borzhomi.webp" alt="Borzhomi">
+    <img class="img2" src="../images/kakheti-tour.webp" alt="Kakheti">
+    <img class="img1" src="../images/kazbegi-tour.webp" alt="Kazbegi">
+  </div>
+
+  <div class="caption">Казбеги</div>
+  <div class="caption">Кахетия</div>
+  <div class="caption">Боржоми</div>
+  <div class="caption">Ужин</div>
+</div>
+
+<div class="outro">CSS-only scroll animation</div>
+<div class="label">Техника: animation-timeline: scroll() — 0 JS</div>
+
+</body>
+</html>

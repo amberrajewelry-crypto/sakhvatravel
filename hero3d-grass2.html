@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+	<title>Sakhva Travel — Гид в Тбилиси и Грузии</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+
+		:root {
+			--color-accent:  rgba(195, 115, 18, 0.95);
+			--color-heading: #18100a;
+			--color-label:   rgba(175, 98, 12, 0.88);
+			--color-body:    rgba(55, 38, 18, 0.88);
+		}
+
+		*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+		html, body {
+			width: 100%;
+			min-height: 100%;
+			background: #f0ebe2;
+			overflow-x: hidden;
+			font-family: 'Inter', system-ui, sans-serif;
+			color: #18100a;
+		}
+
+		canvas { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 0; }
+
+		#scroll-container { position: relative; z-index: 1; pointer-events: none; will-change: transform; }
+
+		.section {
+			position: relative;
+			min-height: 100vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 80px 40px;
+			pointer-events: none;
+		}
+		.section * { pointer-events: auto; }
+
+		.hero {
+			min-height: 110vh;
+			flex-direction: column;
+			gap: 20px;
+			text-align: center;
+			justify-content: flex-start;
+			padding-top: 6vh;
+		}
+
+		.hero-tag {
+			font-size: 11px; letter-spacing: 4px; text-transform: uppercase;
+			opacity: 0; transform: translateY(30px);
+			color: var(--color-label); font-weight: 500;
+			text-shadow: 0 1px 16px rgba(255,255,255,0.8);
+		}
+
+		.hero h1 {
+			font-family: 'Playfair Display', serif;
+			font-size: clamp(48px, 8vw, 110px);
+			font-weight: 400; line-height: 1.05; letter-spacing: -1px;
+			opacity: 0; transform: translateY(40px);
+			color: var(--color-heading);
+			text-shadow: 0 2px 30px rgba(255,255,255,0.9), 0 0 60px rgba(255,255,255,0.5);
+		}
+
+		.hero h1 em {
+			font-style: italic; color: var(--color-accent);
+			text-shadow: 0 0 30px rgba(195,115,18,0.25), 0 2px 20px rgba(255,255,255,0.8);
+		}
+
+		.hero-sub {
+			font-size: clamp(14px, 1.5vw, 18px); line-height: 1.7; max-width: 520px;
+			opacity: 0; transform: translateY(30px);
+			color: var(--color-body); font-weight: 300;
+			text-shadow: 0 1px 12px rgba(255,255,255,0.7);
+		}
+
+		.wind-btn {
+			display: inline-flex; align-items: center; gap: 8px;
+			padding: 10px 24px;
+			border: 1px solid rgba(175,98,12,0.3); border-radius: 32px;
+			background: rgba(255,250,242,0.72); backdrop-filter: blur(12px);
+			color: var(--color-accent); font-size: 12px; font-weight: 500;
+			letter-spacing: 1.5px; text-transform: uppercase;
+			cursor: pointer; transition: all 0.4s;
+			opacity: 0; transform: translateY(20px);
+		}
+		.wind-btn:hover { background: rgba(255,245,230,0.88); border-color: rgba(175,98,12,0.5); transform: translateY(-2px) !important; }
+		.wind-btn svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+
+		.scroll-hint {
+			position: relative; margin-top: auto; margin-bottom: 12vh;
+			display: flex; flex-direction: column; align-items: center; gap: 8px;
+			opacity: 0; transform: translateY(0);
+		}
+
+		html { scroll-snap-type: y proximity; }
+		.section { scroll-snap-align: start; }
+
+		.scroll-hint span {
+			font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+			color: var(--color-label); text-shadow: 0 1px 12px rgba(255,255,255,0.8);
+		}
+		.scroll-line {
+			width: 1px; height: 40px;
+			background: linear-gradient(to bottom, rgba(175,98,12,0.5), transparent);
+			animation: scrollPulse 2s ease-in-out infinite;
+		}
+		@keyframes scrollPulse { 0%,100% { opacity:0.3; transform:scaleY(0.6); } 50% { opacity:1; transform:scaleY(1); } }
+
+		.manifesto { flex-direction: column; gap: 40px; text-align: center; }
+		.manifesto-label {
+			font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+			color: var(--color-label); opacity: 0; transform: translateY(20px);
+			text-shadow: 0 1px 12px rgba(255,255,255,0.7);
+		}
+		.manifesto h2 {
+			font-family: 'Playfair Display', serif;
+			font-size: clamp(28px, 4vw, 56px); font-weight: 400; line-height: 1.3; max-width: 800px;
+			opacity: 0; transform: translateY(40px); color: var(--color-heading);
+			text-shadow: 0 2px 30px rgba(255,255,255,0.8);
+		}
+		.manifesto h2 em { font-style: italic; color: var(--color-accent); }
+
+		.pillars { flex-direction: column; gap: 60px; }
+		.pillars-header { text-align: center; opacity: 0; transform: translateY(20px); }
+		.pillars-header span { font-size: 10px; letter-spacing: 4px; text-transform: uppercase; color: var(--color-label); }
+
+		.pillar-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; max-width: 960px; width: 100%; }
+		@media (max-width: 768px) { .pillar-grid { grid-template-columns: 1fr; max-width: 400px; } }
+
+		.pillar-card {
+			border: 1px solid rgba(175,98,12,0.18); border-radius: 16px; padding: 36px 28px;
+			background: rgba(255,251,244,0.88); backdrop-filter: blur(22px);
+			opacity: 0; transform: translateY(40px);
+			transition: border-color 0.4s, background 0.4s;
+			box-shadow: 0 8px 40px rgba(0,0,0,0.08);
+		}
+		.pillar-card:hover { border-color: rgba(175,98,12,0.38); background: rgba(255,251,244,0.96); }
+		.pillar-num { font-size: 11px; letter-spacing: 2px; color: var(--color-accent); margin-bottom: 16px; font-weight: 500; }
+		.pillar-card h3 { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 400; margin-bottom: 12px; color: var(--color-heading); }
+		.pillar-card p { font-size: 13px; line-height: 1.7; color: var(--color-body); font-weight: 300; }
+		.pillar-price { display: inline-block; margin-top: 14px; font-size: 13px; font-weight: 500; color: var(--color-accent); }
+
+		.stats-section { flex-direction: column; gap: 50px; text-align: center; }
+		.stats-label { font-size: 10px; letter-spacing: 4px; text-transform: uppercase; color: var(--color-label); opacity: 0; transform: translateY(20px); text-shadow: 0 1px 12px rgba(255,255,255,0.7); }
+		.stats-grid { display: flex; gap: 60px; flex-wrap: wrap; justify-content: center; }
+		.stat-item { opacity: 0; transform: translateY(30px); text-align: center; }
+		.stat-num { font-family: 'Playfair Display', serif; font-size: clamp(40px, 5vw, 64px); font-weight: 400; color: var(--color-accent); line-height: 1; text-shadow: 0 2px 24px rgba(255,255,255,0.9); }
+		.stat-unit { font-size: 14px; letter-spacing: 1px; color: var(--color-body); margin-top: 8px; font-weight: 300; }
+
+		.quote-section { flex-direction: column; gap: 20px; text-align: center; min-height: 80vh; }
+		.quote-section blockquote {
+			font-family: 'Playfair Display', serif;
+			font-size: clamp(22px, 3.5vw, 42px); font-weight: 400; font-style: italic; line-height: 1.4; max-width: 720px;
+			color: var(--color-heading); opacity: 0; transform: translateY(40px);
+			text-shadow: 0 2px 30px rgba(255,255,255,0.8);
+		}
+		.quote-attr { font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: var(--color-label); opacity: 0; transform: translateY(20px); }
+
+		.cta-section { flex-direction: column; gap: 30px; text-align: center; align-items: center; justify-content: center; min-height: 100vh; padding: 0 40px; margin-bottom: 0; }
+		.cta-section h2 { font-family: 'Playfair Display', serif; font-size: clamp(32px, 5vw, 60px); font-weight: 400; line-height: 1.2; opacity: 0; transform: translateY(30px); text-align: center; color: var(--color-heading); text-shadow: 0 2px 30px rgba(255,255,255,0.8); }
+		.cta-section h2 em { font-style: italic; color: var(--color-accent); }
+		.cta-sub { font-size: 15px; color: var(--color-body); max-width: 420px; line-height: 1.7; font-weight: 300; opacity: 0; transform: translateY(20px); }
+		.cta-btn {
+			display: inline-flex; align-items: center; gap: 10px; padding: 14px 36px;
+			border: 1px solid rgba(175,98,12,0.35); border-radius: 40px;
+			background: rgba(255,251,242,0.80); color: var(--color-accent);
+			font-size: 13px; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase;
+			text-decoration: none; cursor: pointer; transition: all 0.4s;
+			opacity: 0; transform: translateY(20px); backdrop-filter: blur(10px);
+		}
+		.cta-btn:hover { background: rgba(255,245,228,0.92); border-color: rgba(175,98,12,0.6); transform: translateY(-2px) !important; }
+
+		.footer { min-height: 0; padding: 0; display: none; }
+
+		.site-footer { position: relative; z-index: 2; border-top: 1px solid rgba(175,98,12,0.12); background: #f0ebe2; padding: 60px 40px 40px; }
+		.site-footer-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 40px; }
+		@media (max-width: 768px) { .site-footer-inner { grid-template-columns: 1fr 1fr; gap: 30px; } }
+		@media (max-width: 480px) { .site-footer-inner { grid-template-columns: 1fr; } }
+		.sf-brand { display: flex; flex-direction: column; gap: 14px; }
+		.sf-brand-name { font-family: 'Playfair Display', serif; font-size: 22px; color: var(--color-heading); letter-spacing: 1px; }
+		.sf-brand-desc { font-size: 12px; line-height: 1.7; color: var(--color-body); font-weight: 300; max-width: 260px; }
+		.sf-col-title { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: var(--color-label); margin-bottom: 16px; font-weight: 500; }
+		.sf-col a { display: block; font-size: 12px; color: var(--color-body); text-decoration: none; margin-bottom: 10px; transition: color 0.3s; font-weight: 300; }
+		.sf-col a:hover { color: var(--color-accent); }
+		.sf-bottom { max-width: 1100px; margin: 40px auto 0; padding-top: 24px; border-top: 1px solid rgba(175,98,12,0.08); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+		.sf-copy { font-size: 11px; color: rgba(55,38,18,0.4); letter-spacing: 0.5px; }
+		.sf-socials { display: flex; gap: 18px; }
+		.sf-socials a { font-size: 11px; color: rgba(55,38,18,0.45); text-decoration: none; letter-spacing: 1px; text-transform: uppercase; transition: color 0.3s; }
+		.sf-socials a:hover { color: var(--color-accent); }
+
+		/* ── Settings Panel ── */
+		.settings-panel {
+			position: fixed; top: 50%; right: 24px;
+			transform: translateY(-50%) translateX(12px) scale(0.95);
+			width: 340px; max-height: 85vh; overflow-y: auto;
+			background: rgba(250,245,236,0.94); backdrop-filter: blur(20px);
+			border: 1px solid rgba(175,98,12,0.18); border-radius: 16px; padding: 24px 22px;
+			z-index: 300; pointer-events: auto; opacity: 0; visibility: hidden;
+			transition: all 0.3s cubic-bezier(0.16,1,0.3,1);
+		}
+		.settings-panel.open { opacity: 1; transform: translateY(-50%) translateX(0) scale(1); visibility: visible; }
+		.settings-panel::-webkit-scrollbar { width: 4px; }
+		.settings-panel::-webkit-scrollbar-thumb { background: rgba(175,98,12,0.2); border-radius: 2px; }
+		.sp-section { margin-bottom: 18px; }
+		.sp-section-title { font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: rgba(175,98,12,0.55); margin-bottom: 12px; padding-bottom: 6px; border-bottom: 1px solid rgba(175,98,12,0.1); }
+		.sp-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px; }
+		.sp-label { font-size: 11px; color: rgba(55,38,18,0.65); font-weight: 400; }
+		.sp-val { font-size: 10px; color: rgba(175,98,12,0.6); min-width: 32px; text-align: right; font-variant-numeric: tabular-nums; }
+		.sp-slider { width: 100%; margin-bottom: 12px; -webkit-appearance: none; appearance: none; height: 3px; border-radius: 2px; background: rgba(175,98,12,0.15); outline: none; }
+		.sp-slider::-webkit-slider-thumb { -webkit-appearance: none; width: 12px; height: 12px; border-radius: 50%; background: rgba(175,98,12,0.6); cursor: pointer; }
+		.sp-toggle-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+		.sp-toggle { position: relative; width: 36px; height: 20px; border-radius: 10px; background: rgba(175,98,12,0.18); cursor: pointer; transition: background 0.3s; }
+		.sp-toggle.active { background: rgba(175,98,12,0.55); }
+		.sp-toggle::after { content: ''; position: absolute; top: 3px; left: 3px; width: 14px; height: 14px; border-radius: 50%; background: rgba(255,240,220,0.9); transition: transform 0.3s; }
+		.sp-toggle.active::after { transform: translateX(16px); }
+		.sp-color-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+		.sp-color-input { -webkit-appearance: none; appearance: none; width: 32px; height: 20px; border: 1px solid rgba(175,98,12,0.25); border-radius: 4px; background: none; cursor: pointer; padding: 0; }
+		.sp-color-input::-webkit-color-swatch-wrapper { padding: 0; }
+		.sp-color-input::-webkit-color-swatch { border: none; border-radius: 3px; }
+
+		/* ── Nav ── */
+		.nav-float { position: fixed; top: 24px; left: 0; right: 0; display: flex; justify-content: space-between; align-items: center; padding: 0 40px; z-index: 100; pointer-events: none; opacity: 0; transition: opacity 0.6s; }
+		.nav-float.visible { opacity: 1; }
+		.nav-logo { font-family: 'Playfair Display', serif; font-size: 18px; color: var(--color-heading); letter-spacing: 1px; pointer-events: auto; }
+		.nav-links { display: flex; gap: 28px; pointer-events: auto; }
+		.nav-links a { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--color-body); text-decoration: none; transition: color 0.3s; font-weight: 500; }
+		.nav-links a:hover { color: var(--color-accent); }
+		.nav-hamburger { display: none; pointer-events: auto; width: 36px; height: 36px; background: rgba(255,250,242,0.6); backdrop-filter: blur(12px); border: 1px solid rgba(175,98,12,0.2); border-radius: 8px; cursor: pointer; position: relative; flex-shrink: 0; transition: background 0.3s; }
+		.nav-hamburger span { position: absolute; left: 50%; transform: translateX(-50%); width: 16px; height: 1.5px; background: var(--color-body); border-radius: 1px; transition: transform 0.3s, opacity 0.3s; }
+		.nav-hamburger span:nth-child(1) { top: 10px; }
+		.nav-hamburger span:nth-child(2) { top: 17px; }
+		.nav-hamburger span:nth-child(3) { top: 24px; }
+		.nav-hamburger.open span:nth-child(1) { transform: translateX(-50%) translateY(7px) rotate(45deg); }
+		.nav-hamburger.open span:nth-child(2) { opacity: 0; transform: translateX(-50%); }
+		.nav-hamburger.open span:nth-child(3) { transform: translateX(-50%) translateY(-7px) rotate(-45deg); }
+		.settings-gear { position: fixed; bottom: 20px; right: 20px; z-index: 200; width: 32px; height: 32px; border-radius: 50%; background: rgba(255,250,242,0.55); backdrop-filter: blur(12px); border: 1px solid rgba(175,98,12,0.2); cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.3s, transform 0.3s; pointer-events: auto; opacity: 0.5; }
+		.settings-gear:hover { opacity: 1; background: rgba(255,245,228,0.7); transform: rotate(30deg); }
+		.settings-gear.active { opacity: 1; }
+		.settings-gear svg { width: 16px; height: 16px; fill: none; stroke: rgba(175,98,12,0.7); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+		.nav-mobile-overlay { position: fixed; top: 0; right: 0; width: 100%; height: 100vh; background: rgba(240,235,226,0.93); backdrop-filter: blur(24px); z-index: 99; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 32px; opacity: 0; visibility: hidden; transition: opacity 0.35s, visibility 0.35s; pointer-events: none; }
+		.nav-mobile-overlay.open { opacity: 1; visibility: visible; pointer-events: auto; }
+		.nav-mobile-overlay a { font-size: 14px; letter-spacing: 3px; text-transform: uppercase; color: var(--color-body); text-decoration: none; font-weight: 500; transform: translateY(10px); opacity: 0; transition: color 0.3s, transform 0.3s, opacity 0.3s; }
+		.nav-mobile-overlay.open a { opacity: 1; transform: translateY(0); }
+		.nav-mobile-overlay.open a:nth-child(1) { transition-delay: 0.06s; }
+		.nav-mobile-overlay.open a:nth-child(2) { transition-delay: 0.12s; }
+		.nav-mobile-overlay.open a:nth-child(3) { transition-delay: 0.18s; }
+		.nav-mobile-overlay.open a:nth-child(4) { transition-delay: 0.24s; }
+		.nav-mobile-overlay a:hover { color: var(--color-accent); }
+		@media (max-width: 768px) { .nav-links { display: none; } .nav-hamburger { display: block; } .nav-float { padding: 0 24px; } }
+
+		.progress-bar { position: fixed; top: 0; left: 0; height: 2px; background: rgba(195,115,18,0.6); z-index: 200; width: 0; transition: width 0.1s linear; }
+
+		/* ── Vinyl Player ── */
+		.vinyl-player {
+			position: fixed; bottom: 30px; left: 30px; z-index: 150;
+			display: flex; flex-direction: column; align-items: center; gap: 10px;
+			pointer-events: auto; opacity: 0; transform: translateY(12px);
+			transition: opacity 1.2s ease 2.5s, transform 1.2s ease 2.5s;
+			user-select: none;
+		}
+		.vinyl-player.visible { opacity: 1; transform: translateY(0); }
+
+		.vinyl-turntable { position: relative; width: 130px; height: 130px; }
+
+		.vinyl-disk {
+			width: 130px; height: 130px; border-radius: 50%;
+			background: #1a0f02;
+			background-image:
+				repeating-radial-gradient(circle, transparent, transparent 2.5px, rgba(255,255,255,0.025) 2.5px, rgba(255,255,255,0.025) 3px);
+			box-shadow: 0 4px 28px rgba(0,0,0,0.4), inset 0 0 0 1px rgba(255,255,255,0.07);
+			cursor: pointer; position: relative; overflow: hidden;
+			transition: box-shadow 0.4s;
+		}
+		.vinyl-disk:hover { box-shadow: 0 6px 36px rgba(195,115,18,0.3), inset 0 0 0 1px rgba(195,115,18,0.2); }
+		.vinyl-disk.spinning { animation: vinylSpin 2.4s linear infinite; }
+		@keyframes vinylSpin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+		.vinyl-label {
+			position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+			width: 52px; height: 52px; border-radius: 50%;
+			background-image: url('images/vineyard.jpg');
+			background-size: cover; background-position: center;
+			border: 2px solid rgba(195,115,18,0.45);
+			box-shadow: 0 0 0 1px rgba(0,0,0,0.25), 0 2px 8px rgba(0,0,0,0.3);
+		}
+		.vinyl-center-dot { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 7px; height: 7px; border-radius: 50%; background: rgba(195,115,18,0.85); z-index: 2; }
+
+		.vinyl-arm-wrap {
+			position: absolute; top: -6px; right: -14px; width: 50px; height: 72px;
+			transform-origin: 88% 12%; transform: rotate(-26deg);
+			transition: transform 0.9s cubic-bezier(0.4,0,0.2,1);
+			z-index: 3; pointer-events: none;
+		}
+		.vinyl-arm-wrap.playing { transform: rotate(0deg); }
+
+		.vinyl-info {
+			display: flex; align-items: center; gap: 8px;
+			background: rgba(255,251,244,0.82); backdrop-filter: blur(12px);
+			border: 1px solid rgba(175,98,12,0.22); border-radius: 20px;
+			padding: 5px 14px; cursor: pointer;
+			transition: background 0.3s, border-color 0.3s;
+		}
+		.vinyl-info:hover { background: rgba(255,248,238,0.92); border-color: rgba(175,98,12,0.4); }
+
+		.vinyl-dot {
+			width: 7px; height: 7px; border-radius: 50%;
+			background: rgba(175,98,12,0.35); transition: background 0.3s;
+			flex-shrink: 0;
+		}
+		.vinyl-dot.playing { background: rgba(195,115,18,0.9); animation: dotPulse 1.2s ease-in-out infinite; }
+		@keyframes dotPulse { 0%,100% { transform:scale(1); opacity:0.9; } 50% { transform:scale(1.5); opacity:0.6; } }
+		.vinyl-text { font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--color-label); font-weight: 500; white-space: nowrap; }
+
+		@media (max-width: 768px) {
+			.vinyl-player { bottom: 80px; left: 16px; }
+			.vinyl-turntable, .vinyl-disk { width: 96px; height: 96px; }
+			.vinyl-label { width: 38px; height: 38px; }
+			.vinyl-arm-wrap { width: 38px; height: 54px; right: -10px; }
+		}
+
+		.revealed { opacity: 1 !important; transform: translateY(0) !important; transition: opacity 0.9s cubic-bezier(0.16,1,0.3,1), transform 0.9s cubic-bezier(0.16,1,0.3,1); }
+		.delay-1 { transition-delay: 0.1s !important; }
+		.delay-2 { transition-delay: 0.25s !important; }
+		.delay-3 { transition-delay: 0.4s !important; }
+		.delay-4 { transition-delay: 0.55s !important; }
+	</style>
+
+	<script type="importmap">
+		{
+			"imports": {
+				"three": "https://unpkg.com/three@0.183.0/build/three.webgpu.js",
+				"three/webgpu": "https://unpkg.com/three@0.183.0/build/three.webgpu.js",
+				"three/tsl": "https://unpkg.com/three@0.183.0/build/three.tsl.js",
+				"three/addons/": "https://unpkg.com/three@0.183.0/examples/jsm/"
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<div class="progress-bar" id="progressBar"></div>
+
+	<nav class="nav-float" id="navFloat">
+		<div class="nav-logo">Sakhva Travel</div>
+		<div class="nav-links">
+			<a href="javascript:void(0)" data-nav="1">О нас</a>
+			<a href="javascript:void(0)" data-nav="2">Туры</a>
+			<a href="javascript:void(0)" data-nav="3">Отзывы</a>
+			<a href="javascript:void(0)" data-nav="5">Забронировать</a>
+		</div>
+		<button class="nav-hamburger" id="navHamburger" aria-label="Меню">
+			<span></span><span></span><span></span>
+		</button>
+	</nav>
+
+	<div class="nav-mobile-overlay" id="navMobileOverlay">
+		<a href="javascript:void(0)" data-nav-mobile="1">О нас</a>
+		<a href="javascript:void(0)" data-nav-mobile="2">Туры</a>
+		<a href="javascript:void(0)" data-nav-mobile="3">Отзывы</a>
+		<a href="javascript:void(0)" data-nav-mobile="5">Забронировать</a>
+	</div>
+
+	<!-- Vinyl record player — грузинская музыка -->
+	<div class="vinyl-player" id="vinylPlayer">
+		<div class="vinyl-turntable">
+			<div class="vinyl-arm-wrap" id="vinylArm">
+				<svg width="50" height="72" viewBox="0 0 50 72" fill="none">
+					<circle cx="42" cy="8" r="5.5" fill="rgba(175,98,12,0.75)" stroke="rgba(195,115,18,0.5)" stroke-width="1.2"/>
+					<line x1="42" y1="13.5" x2="10" y2="66" stroke="rgba(175,98,12,0.65)" stroke-width="2.2" stroke-linecap="round"/>
+					<circle cx="10" cy="67" r="3.5" fill="rgba(175,98,12,0.55)"/>
+				</svg>
+			</div>
+			<div class="vinyl-disk" id="vinylDisk">
+				<div class="vinyl-label"></div>
+				<div class="vinyl-center-dot"></div>
+			</div>
+		</div>
+		<div class="vinyl-info" id="vinylInfo">
+			<div class="vinyl-dot" id="vinylDot"></div>
+			<span class="vinyl-text" id="vinylText">Грузинская музыка</span>
+		</div>
+	</div>
+
+	<!-- Грузинская музыка -->
+	<audio id="georgianMusic" loop preload="auto">
+		<source src="music/georgian.mp3" type="audio/mpeg">
+	</audio>
+
+	<button class="settings-gear" id="settingsGear" aria-label="Settings">
+		<svg viewBox="0 0 24 24"><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z"/></svg>
+	</button>
+	<div class="settings-panel" id="settingsPanel"></div>
+
+	<div id="scroll-container">
+		<section class="section hero" id="heroSection" data-stage="0">
+			<span class="hero-tag" data-reveal data-delay="1">Тбилиси · Грузия · 2026</span>
+			<h1 data-reveal data-delay="2">Грузия с<br><em>настоящим</em> гидом</h1>
+			<p class="hero-sub" data-reveal data-delay="3">Авторские туры по Тбилиси, Казбеги и Кахетии. Гид Тимур — 7 лет в Грузии, 1000+ довольных туристов.</p>
+			<button class="wind-btn" data-reveal data-delay="3" id="windBtn">
+				<svg viewBox="0 0 24 24"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"/></svg>
+				Ощутить ветер
+			</button>
+			<div class="scroll-hint" data-reveal data-delay="4">
+				<span>Исследовать</span>
+				<div class="scroll-line"></div>
+			</div>
+		</section>
+
+		<section class="section manifesto" data-stage="1">
+			<span class="manifesto-label" data-reveal>Наш подход</span>
+			<h2 data-reveal data-delay="1">Лучший способ узнать Грузию — не с туристической группой, а с человеком, который <em>живёт</em> здесь и влюблён в каждый уголок этой страны.</h2>
+		</section>
+
+		<section class="section pillars" data-stage="2">
+			<div class="pillars-header" data-reveal><span>Три главных маршрута</span></div>
+			<div class="pillar-grid">
+				<div class="pillar-card" data-reveal data-delay="1">
+					<div class="pillar-num">01</div>
+					<h3>Казбеги</h3>
+					<p>Горные вершины Кавказа, монастырь Гергети на высоте 2170 м, военно-грузинская дорога. Вид, который меняет людей.</p>
+					<span class="pillar-price">от €45 / чел.</span>
+				</div>
+				<div class="pillar-card" data-reveal data-delay="2">
+					<div class="pillar-num">02</div>
+					<h3>Кахетия</h3>
+					<p>Родина грузинского вина. Виноградники, семейные марани, дегустация квеврового вина прямо в подвале у местных фермеров.</p>
+					<span class="pillar-price">от €45 / чел.</span>
+				</div>
+				<div class="pillar-card" data-reveal data-delay="3">
+					<div class="pillar-num">03</div>
+					<h3>Тбилиси</h3>
+					<p>Старый город, серные бани, Нарикала, живые дворики. Ночные прогулки с историями и лучшими хинкали в городе.</p>
+					<span class="pillar-price">от €35 / чел.</span>
+				</div>
+			</div>
+		</section>
+
+		<section class="section stats-section" data-stage="3">
+			<span class="stats-label" data-reveal>Цифры говорят сами</span>
+			<div class="stats-grid">
+				<div class="stat-item" data-reveal data-delay="1"><div class="stat-num">1000+</div><div class="stat-unit">Довольных туристов</div></div>
+				<div class="stat-item" data-reveal data-delay="2"><div class="stat-num">7 лет</div><div class="stat-unit">Живу в Грузии</div></div>
+				<div class="stat-item" data-reveal data-delay="3"><div class="stat-num">12</div><div class="stat-unit">Авторских маршрутов</div></div>
+				<div class="stat-item" data-reveal data-delay="4"><div class="stat-num">5★</div><div class="stat-unit">Средний рейтинг</div></div>
+			</div>
+		</section>
+
+		<section class="section quote-section" data-stage="4">
+			<blockquote data-reveal>«Тимур — лучший гид, которого мы встречали. Не просто показывает места — он рассказывает живые истории, будто сам там был тысячу лет назад.»</blockquote>
+			<span class="quote-attr" data-reveal data-delay="1">— Катя М., Москва · Казбеги, 2025</span>
+		</section>
+
+		<section class="section cta-section" data-stage="5">
+			<h2 data-reveal>Забронируй своё<br>путешествие в <em>Грузию</em></h2>
+			<p class="cta-sub" data-reveal data-delay="1">Напиши Тимуру в WhatsApp или Telegram — через 5 минут у тебя будет личный маршрут.</p>
+			<a href="https://wa.me/995511272623" class="cta-btn" data-reveal data-delay="2" target="_blank" rel="noopener">Написать Тимуру →</a>
+		</section>
+
+		<section class="section footer" data-stage="6"></section>
+	</div>
+
+	<footer class="site-footer">
+		<div class="site-footer-inner">
+			<div class="sf-brand">
+				<div class="sf-brand-name">Sakhva Travel</div>
+				<p class="sf-brand-desc">Авторские туры по Грузии с гидом Тимуром. Тбилиси, Казбеги, Кахетия и многое другое.</p>
+			</div>
+			<div class="sf-col">
+				<div class="sf-col-title">Туры</div>
+				<a href="/tour/kazbegi/">Казбеги</a>
+				<a href="/tour/kakheti/">Кахетия</a>
+				<a href="/tour/tbilisi-night/">Ночной Тбилиси</a>
+				<a href="/tour/batumi/">Батуми</a>
+			</div>
+			<div class="sf-col">
+				<div class="sf-col-title">О проекте</div>
+				<a href="/about/">О гиде Тимуре</a>
+				<a href="/blog/">Блог о Грузии</a>
+				<a href="https://sakhva-travel.com">Основной сайт</a>
+			</div>
+			<div class="sf-col">
+				<div class="sf-col-title">Связаться</div>
+				<a href="https://wa.me/995511272623">WhatsApp</a>
+				<a href="https://t.me/SakhvaGuideBot?start=site">Telegram</a>
+			</div>
+		</div>
+		<div class="sf-bottom">
+			<span class="sf-copy">© 2026 Sakhva Travel · Тимур · Тбилиси, Грузия</span>
+			<div class="sf-socials">
+				<a href="https://wa.me/995511272623">WhatsApp</a>
+				<a href="https://t.me/SakhvaGuideBot?start=site">Telegram</a>
+				<a href="/blog/">Блог</a>
+			</div>
+		</div>
+	</footer>
+
+	<script type="module">
+		import * as THREE from 'three/webgpu';
+		import {
+			Fn, uniform, float, vec3, instancedArray, instanceIndex, uv,
+			positionGeometry, positionWorld, sin, cos, pow, smoothstep, mix,
+			sqrt, select, hash, time, deltaTime, PI, mx_noise_float,
+			pass, mrt, output, transformedNormalView,
+		} from 'three/tsl';
+		import { dof } from 'three/addons/tsl/display/DepthOfFieldNode.js';
+
+		const BLADE_COUNT = 120000;
+		const FIELD_SIZE = 30;
+		const BACKGROUND_HEX = '#f0ebe2';
+		const GROUND_HEX = '#c8a870';
+		const BLADE_BASE_HEX = '#1a2e06';
+		const BLADE_TIP_HEX = '#c8b840';
+
+		const skyColors = {
+			top:     new THREE.Color('#1a2d52'),
+			midHigh: new THREE.Color('#2d5080'),
+			midLow:  new THREE.Color('#7a9ec0'),
+			horizon: new THREE.Color('#e8dcc8'),
+		};
+
+		function buildSkyTexture() {
+			const w = 2, h = 512;
+			const canvas = document.createElement('canvas');
+			canvas.width = w; canvas.height = h;
+			const ctx = canvas.getContext('2d');
+			const grad = ctx.createLinearGradient(0, 0, 0, h);
+			grad.addColorStop(0.0,  '#' + skyColors.top.getHexString());
+			grad.addColorStop(0.35, '#' + skyColors.midHigh.getHexString());
+			grad.addColorStop(0.65, '#' + skyColors.midLow.getHexString());
+			grad.addColorStop(1.0,  '#' + skyColors.horizon.getHexString());
+			ctx.fillStyle = grad; ctx.fillRect(0, 0, w, h);
+			const tex = new THREE.CanvasTexture(canvas);
+			tex.mapping = THREE.EquirectangularReflectionMapping;
+			tex.colorSpace = THREE.SRGBColorSpace;
+			tex.needsUpdate = true;
+			return tex;
+		}
+
+		const scene = new THREE.Scene();
+		scene.background = buildSkyTexture();
+		scene.fog = new THREE.FogExp2('#c8b8a0', 0.018);
+
+		const camera = new THREE.PerspectiveCamera(38, innerWidth / innerHeight, 0.1, 100);
+		camera.position.set(0, 8, 18);
+		camera.lookAt(0, 0, 0);
+
+		const renderer = new THREE.WebGPURenderer({ antialias: true });
+		const isMobile = window.innerWidth < 768;
+		const maxDPR = window.innerWidth < 1200 ? 1.5 : Math.min(devicePixelRatio, 2);
+		renderer.setPixelRatio(maxDPR);
+		renderer.setSize(innerWidth, innerHeight);
+		renderer.toneMapping = THREE.ACESFilmicToneMapping;
+		renderer.toneMappingExposure = 1.0;
+		document.body.appendChild(renderer.domElement);
+		await renderer.init();
+
+		const bladeData = instancedArray(BLADE_COUNT, 'vec4');
+		const bendState = instancedArray(BLADE_COUNT, 'vec4');
+		const bladeBound = instancedArray(BLADE_COUNT, 'float');
+
+		const mouseWorld = uniform(new THREE.Vector3(99999, 0, 99999));
+		const mouseRadius = uniform(6.1);
+		const mouseStrength = uniform(4.0);
+		const outerRadius = uniform(9.4);
+		const outerStrength = uniform(1.45);
+		const camSphereWorld = uniform(new THREE.Vector3(99999, 0, 99999));
+		const camSphereRadius = uniform(15.0);
+		const camSphereStrength = uniform(5.9);
+		const grassDensity = uniform(1.0);
+		const windSpeed = uniform(1.3);
+		const windAmplitude = uniform(0.21);
+		const bladeWidth = uniform(4.0);
+		const bladeTipWidth = uniform(0.19);
+		const bladeHeight = uniform(1.6);
+		const bladeHeightVariation = uniform(0.5);
+		const bladeLean = uniform(1.1);
+		const noiseAmplitude = uniform(1.85);
+		const noiseFrequency = uniform(0.3);
+		const noise2Amplitude = uniform(0.2);
+		const noise2Frequency = uniform(15);
+		const bladeColorVariation = uniform(0.93);
+		const groundRadius = uniform(13.8);
+		const groundFalloff = uniform(2.4);
+		const bladeBaseColor = uniform(new THREE.Color(BLADE_BASE_HEX));
+		const bladeTipColor = uniform(new THREE.Color(BLADE_TIP_HEX));
+		const backgroundColor = uniform(new THREE.Color(BACKGROUND_HEX));
+		const groundColor = uniform(new THREE.Color(GROUND_HEX));
+		const fogStart = uniform(6.5);
+		const fogEnd = uniform(12.0);
+		const fogIntensity = uniform(1.0);
+		const fogColor = uniform(new THREE.Color('#e0d4c0'));
+		const goldenTipColor = uniform(new THREE.Color('#d4b838'));
+		const greenTipColor = uniform(new THREE.Color('#4a7a14'));
+		const midColor = uniform(new THREE.Color('#2d4e0e'));
+		const focusDistanceU = uniform(31.83);
+		const focalLengthU = uniform(10.0);
+		const bokehScaleU = uniform(12.5);
+		let dofEnabled = true;
+		let mouseFocusDist = 10.0;
+		let autoFocusSmoothed = 10.0;
+
+		// Camera position uniforms for mountain atmospheric haze
+		const camPX = uniform(0);
+		const camPY = uniform(7.2);
+		const camPZ = uniform(19.6);
+
+		const noise2D = Fn(([x, z]) => mx_noise_float(vec3(x, float(0), z)).mul(0.5).add(0.5));
+
+		const computeInit = Fn(() => {
+			const blade = bladeData.element(instanceIndex);
+			const col = instanceIndex.mod(283);
+			const row = instanceIndex.div(283);
+			const jx = hash(instanceIndex).sub(0.5);
+			const jz = hash(instanceIndex.add(7919)).sub(0.5);
+			const wx = col.toFloat().add(jx).div(float(283)).sub(0.5).mul(FIELD_SIZE);
+			const wz = row.toFloat().add(jz).div(float(283)).sub(0.5).mul(FIELD_SIZE);
+			blade.x.assign(wx); blade.y.assign(wz);
+			blade.z.assign(hash(instanceIndex.add(1337)).mul(PI.mul(2)));
+			const n1 = noise2D(wx.mul(noiseFrequency), wz.mul(noiseFrequency));
+			const n2 = noise2D(wx.mul(noiseFrequency.mul(noise2Frequency)).add(50), wz.mul(noiseFrequency.mul(noise2Frequency)).add(50));
+			const clump = n1.mul(noiseAmplitude).sub(noise2Amplitude).add(n2.mul(noise2Amplitude).mul(2)).max(0);
+			blade.w.assign(clump);
+			const edgeNoise = noise2D(wx.mul(0.25).add(100), wz.mul(0.25).add(100));
+			const maxR = float(12.0).add(edgeNoise.sub(0.5).mul(6.0));
+			const dist = sqrt(wx.mul(wx).add(wz.mul(wz)));
+			const boundary = float(1).sub(smoothstep(maxR.sub(1.5), maxR, dist));
+			bladeBound.element(instanceIndex).assign(select(boundary.lessThan(0.05), float(0), boundary));
+		})().compute(BLADE_COUNT);
+
+		const computeUpdate = Fn(() => {
+			const blade = bladeData.element(instanceIndex);
+			const bend = bendState.element(instanceIndex);
+			const bx = blade.x, bz = blade.y;
+			const w1 = sin(bx.mul(0.35).add(bz.mul(0.12)).add(time.mul(windSpeed)));
+			const w2 = sin(bx.mul(0.18).add(bz.mul(0.28)).add(time.mul(windSpeed.mul(0.67))).add(1.7));
+			const windX = w1.add(w2).mul(windAmplitude);
+			const windZ = w1.sub(w2).mul(windAmplitude.mul(0.55));
+			const lw = deltaTime.mul(4.0).saturate();
+			bend.x.assign(mix(bend.x, windX, lw));
+			bend.y.assign(mix(bend.y, windZ, lw));
+			const dx = bx.sub(mouseWorld.x), dz = bz.sub(mouseWorld.z);
+			const dist = sqrt(dx.mul(dx).add(dz.mul(dz))).add(0.0001);
+			const falloff = float(1).sub(dist.div(mouseRadius).saturate());
+			const influence = falloff.mul(falloff).mul(mouseStrength);
+			const pushX = dx.div(dist).mul(influence), pushZ = dz.div(dist).mul(influence);
+			const odist = sqrt(dx.mul(dx).add(dz.mul(dz))).add(0.0001);
+			const ofalloff = float(1).sub(odist.div(outerRadius).saturate());
+			const oinfluence = ofalloff.mul(ofalloff).mul(outerStrength);
+			const opushX = dx.div(odist).mul(oinfluence), opushZ = dz.div(odist).mul(oinfluence);
+			const cdx = bx.sub(camSphereWorld.x), cdz = bz.sub(camSphereWorld.z);
+			const cdist = sqrt(cdx.mul(cdx).add(cdz.mul(cdz))).add(0.0001);
+			const cfalloff = float(1).sub(cdist.div(camSphereRadius).saturate());
+			const cinfluence = cfalloff.mul(cfalloff).mul(camSphereStrength);
+			const cpushX = cdx.div(cdist).mul(cinfluence), cpushZ = cdz.div(cdist).mul(cinfluence);
+			const totalPushX = pushX.add(opushX).add(cpushX);
+			const totalPushZ = pushZ.add(opushZ).add(cpushZ);
+			const targetMag = sqrt(totalPushX.mul(totalPushX).add(totalPushZ.mul(totalPushZ)));
+			const lm = select(targetMag.greaterThan(sqrt(bend.z.mul(bend.z).add(bend.w.mul(bend.w)))), deltaTime.mul(12.0), deltaTime.mul(1)).saturate();
+			bend.z.assign(mix(bend.z, totalPushX, lm));
+			bend.w.assign(mix(bend.w, totalPushZ, lm));
+		})().compute(BLADE_COUNT);
+
+		function createBladeGeometry() {
+			const segs = 5, W = 0.055, H = 1.0;
+			const verts = [], norms = [], uvArr = [], idx = [];
+			for (let i = 0; i <= segs; i++) {
+				const t = i / segs, y = t * H, hw = W * 0.5 * (1.0 - t * 0.82);
+				verts.push(-hw, y, 0, hw, y, 0); norms.push(0, 0, 1, 0, 0, 1); uvArr.push(0, t, 1, t);
+			}
+			for (let i = 0; i < segs; i++) { const b = i * 2; idx.push(b, b+1, b+2, b+1, b+3, b+2); }
+			const geo = new THREE.BufferGeometry();
+			geo.setAttribute('position', new THREE.Float32BufferAttribute(verts, 3));
+			geo.setAttribute('normal', new THREE.Float32BufferAttribute(norms, 3));
+			geo.setAttribute('uv', new THREE.Float32BufferAttribute(uvArr, 2));
+			geo.setIndex(idx);
+			return geo;
+		}
+
+		const grassMat = new THREE.MeshBasicNodeMaterial({ side: THREE.DoubleSide, fog: true });
+
+		grassMat.positionNode = Fn(() => {
+			const blade = bladeData.element(instanceIndex);
+			const bend = bendState.element(instanceIndex);
+			const worldX = blade.x, worldZ = blade.y, rotY = blade.z;
+			const boundary = bladeBound.element(instanceIndex);
+			const visible = select(hash(instanceIndex.add(9999)).lessThan(grassDensity.mul(0.5)), float(1), float(0));
+			const hVar = hash(instanceIndex.add(5555)).mul(bladeHeightVariation);
+			const heightScale = float(0.35).add(blade.w).add(hVar).mul(boundary).mul(visible);
+			const taper = float(1).sub(uv().y.mul(float(1).sub(bladeTipWidth)));
+			const lx = positionGeometry.x.mul(bladeWidth).mul(taper).mul(heightScale.sign());
+			const ly = positionGeometry.y.mul(heightScale).mul(bladeHeight);
+			const cY = cos(rotY), sY = sin(rotY);
+			const rx = lx.mul(cY), rz = lx.mul(sY);
+			const t = uv().y;
+			const bendFactor = pow(t, 1.8);
+			const staticBendX = hash(instanceIndex.add(7777)).sub(0.5).mul(bladeLean);
+			const staticBendZ = hash(instanceIndex.add(8888)).sub(0.5).mul(bladeLean);
+			const bendX = staticBendX.add(bend.x).add(bend.z);
+			const bendZ = staticBendZ.add(bend.y).add(bend.w);
+			const relX = rx.add(bendX.mul(bendFactor).mul(bladeHeight));
+			const relY = ly;
+			const relZ = rz.add(bendZ.mul(bendFactor).mul(bladeHeight));
+			const origLen = sqrt(rx.mul(rx).add(ly.mul(ly)).add(rz.mul(rz)));
+			const newLen = sqrt(relX.mul(relX).add(relY.mul(relY)).add(relZ.mul(relZ)));
+			const scale = origLen.div(newLen.max(0.0001));
+			return vec3(worldX.add(relX.mul(scale)), relY.mul(scale), worldZ.add(relZ.mul(scale)));
+		})();
+
+		grassMat.colorNode = Fn(() => {
+			const t = uv().y;
+			const clump = bladeData.element(instanceIndex).w.saturate();
+			const bladeHash = hash(instanceIndex.add(4242));
+			const isGolden = bladeHash.lessThan(0.4);
+			const lowerGrad = smoothstep(float(0.0), float(0.45), t);
+			const upperGrad = smoothstep(float(0.4), float(0.85), t);
+			const tipMix = float(1).sub(bladeColorVariation).add(clump.mul(bladeColorVariation));
+			const greenTip = mix(greenTipColor, bladeTipColor, tipMix);
+			const warmTip = mix(greenTipColor, goldenTipColor, tipMix);
+			const tipFinal = mix(greenTip, warmTip, select(isGolden, float(1), float(0)));
+			const lowerColor = mix(bladeBaseColor, midColor, lowerGrad);
+			const grassColor = mix(lowerColor, tipFinal, upperGrad);
+			const blade = bladeData.element(instanceIndex);
+			const dist = sqrt(blade.x.mul(blade.x).add(blade.y.mul(blade.y)));
+			const fogFactor = smoothstep(fogStart, fogEnd, dist).mul(fogIntensity);
+			return mix(grassColor, fogColor, fogFactor);
+		})();
+
+		grassMat.opacityNode = Fn(() => {
+			const blade = bladeData.element(instanceIndex);
+			const dist = sqrt(blade.x.mul(blade.x).add(blade.y.mul(blade.y)));
+			const fadeEnd = select(fogIntensity.greaterThan(0.01), fogEnd.add(2.0), float(15.0));
+			const fadeFactor = float(1).sub(smoothstep(fadeEnd.sub(5.0), fadeEnd, dist));
+			return smoothstep(float(0.0), float(0.1), uv().y).mul(fadeFactor);
+		})();
+		grassMat.transparent = true;
+
+		const bladeGeo = createBladeGeometry();
+		const grass = new THREE.InstancedMesh(bladeGeo, grassMat, BLADE_COUNT);
+		grass.frustumCulled = false;
+		scene.add(grass);
+		const dummy = new THREE.Object3D();
+		for (let i = 0; i < BLADE_COUNT; i++) grass.setMatrixAt(i, dummy.matrix);
+		grass.instanceMatrix.needsUpdate = true;
+
+		const groundMat = new THREE.MeshBasicNodeMaterial();
+		groundMat.colorNode = Fn(() => {
+			const wx = positionWorld.x, wz = positionWorld.z;
+			const dist = sqrt(wx.mul(wx).add(wz.mul(wz)));
+			const edgeNoise = noise2D(wx.mul(0.25).add(100), wz.mul(0.25).add(100));
+			const maxR = groundRadius.add(edgeNoise.sub(0.5).mul(4.0));
+			const t = smoothstep(maxR.sub(groundFalloff), maxR, dist);
+			return mix(groundColor, backgroundColor, t);
+		})();
+		const ground = new THREE.Mesh(new THREE.PlaneGeometry(FIELD_SIZE * 5, FIELD_SIZE * 5), groundMat);
+		ground.rotation.x = -Math.PI / 2;
+		scene.add(ground);
+
+		scene.add(new THREE.AmbientLight(0xffffff, 0.6));
+		const dirLight = new THREE.DirectionalLight(0xfff4e0, 1.5);
+		dirLight.position.set(5, 10, 7);
+		scene.add(dirLight);
+
+		// ─── Горы Кавказа ──────────────────────────────────────────────────────
+		{
+			const layers = [
+				{ z: -38, w: 125, h: 26, seed: 3.72, cL: [0.55,0.62,0.68], cM: [0.78,0.86,0.90] },
+				{ z: -28, w:  98, h: 20, seed: 5.18, cL: [0.42,0.52,0.60], cM: [0.68,0.78,0.84] },
+				{ z: -19, w:  78, h: 15, seed: 1.85, cL: [0.32,0.42,0.52], cM: [0.58,0.68,0.76] },
+			];
+			layers.forEach(({ z, w, h, seed, cL, cM }) => {
+				const geo = new THREE.PlaneGeometry(w, h + 8, 4, 4);
+				const mat = new THREE.MeshBasicNodeMaterial({ transparent: true, depthWrite: false, fog: false });
+				const fSeed = float(seed), fW = float(w), fH = float(h);
+				const getMtnH = Fn(([wx]) => {
+					const nx = wx.div(fW.mul(float(0.48)));
+					const env = float(1).sub(nx.mul(nx).min(float(1)));
+					const h1 = sin(wx.mul(float(0.055)).add(fSeed)).mul(fH.mul(float(0.44)));
+					const h2 = sin(wx.mul(float(0.110)).add(fSeed.mul(float(1.7)))).mul(fH.mul(float(0.22)));
+					const h3 = sin(wx.mul(float(0.190)).add(fSeed.mul(float(2.5)))).mul(fH.mul(float(0.11)));
+					const h4 = sin(wx.mul(float(0.340)).add(fSeed.mul(float(3.3)))).mul(fH.mul(float(0.055)));
+					return h1.add(h2).add(h3).add(h4).mul(sqrt(env.max(float(0.001)))).add(fH.mul(float(0.22)));
+				});
+				mat.colorNode = Fn(() => {
+					const wy = positionWorld.y, wx = positionWorld.x;
+					const mh = getMtnH([wx]);
+					const tHt = smoothstep(float(-2), mh, wy).saturate();
+					const tSnow = smoothstep(mh.mul(float(0.68)), mh.mul(float(0.94)), wy);
+					const vL = vec3(float(cL[0]), float(cL[1]), float(cL[2]));
+					const vM = vec3(float(cM[0]), float(cM[1]), float(cM[2]));
+					const vSnow = vec3(float(0.92), float(0.90), float(0.88));
+					const mtnCol = mix(mix(vL, vM, tHt), vSnow, tSnow);
+					const dx = positionWorld.x.sub(camPX), dy = positionWorld.y.sub(camPY), dz = positionWorld.z.sub(camPZ);
+					const dist = sqrt(dx.mul(dx).add(dy.mul(dy)).add(dz.mul(dz)));
+					const hazeT = smoothstep(float(10), float(70), dist).mul(float(0.72));
+					return mix(mtnCol, vec3(float(0.91), float(0.88), float(0.82)), hazeT);
+				})();
+				mat.opacityNode = Fn(() => {
+					const wy = positionWorld.y, wx = positionWorld.x;
+					const mh = getMtnH([wx]);
+					const cut = smoothstep(mh.sub(float(0.15)), mh.add(float(0.10)), wy).oneMinus();
+					const bottom = smoothstep(float(-5), float(-1.5), wy);
+					const dx = positionWorld.x.sub(camPX), dz = positionWorld.z.sub(camPZ);
+					const dist2d = sqrt(dx.mul(dx).add(dz.mul(dz)));
+					const distFade = smoothstep(float(65), float(15), dist2d).mul(float(0.30)).add(float(0.68));
+					return cut.mul(bottom).mul(distFade);
+				})();
+				const mesh = new THREE.Mesh(geo, mat);
+				mesh.position.set(0, h * 0.5 - 2.5, z);
+				mesh.renderOrder = -2;
+				scene.add(mesh);
+			});
+		}
+
+		const postProcessing = new THREE.PostProcessing(renderer);
+		const scenePass = pass(scene, camera);
+		scenePass.setMRT(mrt({ output: output, normal: transformedNormalView }));
+		const sceneColor = scenePass.getTextureNode('output');
+		const sceneViewZ = scenePass.getViewZNode();
+		const dofOutput = dof(sceneColor, sceneViewZ, focusDistanceU, focalLengthU, bokehScaleU);
+		postProcessing.outputNode = isMobile ? sceneColor : dofOutput;
+		if (isMobile) dofEnabled = false;
+		postProcessing.needsUpdate = true;
+		function rebuildPipeline() { postProcessing.outputNode = dofEnabled ? dofOutput : sceneColor; postProcessing.needsUpdate = true; }
+
+		const raycaster = new THREE.Raycaster();
+		const mouseNDC = new THREE.Vector2();
+		const grassPlane = new THREE.Plane(new THREE.Vector3(0, 1, 0), 0);
+		const hitPoint = new THREE.Vector3();
+		window.addEventListener('mousemove', (e) => {
+			mouseNDC.set((e.clientX / innerWidth) * 2 - 1, -(e.clientY / innerHeight) * 2 + 1);
+			raycaster.setFromCamera(mouseNDC, camera);
+			if (raycaster.ray.intersectPlane(grassPlane, hitPoint)) { mouseWorld.value.copy(hitPoint); mouseFocusDist = camera.position.distanceTo(hitPoint); }
+		});
+		window.addEventListener('mouseleave', () => mouseWorld.value.set(99999, 0, 99999));
+		let resizeTimeout;
+		window.addEventListener('resize', () => { clearTimeout(resizeTimeout); resizeTimeout = setTimeout(() => { camera.aspect = innerWidth / innerHeight; camera.updateProjectionMatrix(); renderer.setPixelRatio(window.innerWidth < 1200 ? 1.5 : Math.min(devicePixelRatio, 2)); renderer.setSize(innerWidth, innerHeight); }, 100); });
+
+		// ─── Vinyl Player ──────────────────────────────────────────────────────
+		const vinylPlayer  = document.getElementById('vinylPlayer');
+		const vinylDisk    = document.getElementById('vinylDisk');
+		const vinylArm     = document.getElementById('vinylArm');
+		const vinylDot     = document.getElementById('vinylDot');
+		const vinylText    = document.getElementById('vinylText');
+		const vinylInfo    = document.getElementById('vinylInfo');
+		const georgianAudio = document.getElementById('georgianMusic');
+		let vinylPlaying = false;
+
+		function vinylToggle() {
+			vinylPlaying = !vinylPlaying;
+			vinylDisk.classList.toggle('spinning', vinylPlaying);
+			vinylArm.classList.toggle('playing', vinylPlaying);
+			vinylDot.classList.toggle('playing', vinylPlaying);
+			vinylText.textContent = vinylPlaying ? 'Играет...' : 'Грузинская музыка';
+			if (georgianAudio.src && georgianAudio.readyState > 0) {
+				vinylPlaying ? georgianAudio.play().catch(() => {}) : georgianAudio.pause();
+			}
+		}
+
+		vinylDisk.addEventListener('click', vinylToggle);
+		vinylInfo.addEventListener('click', vinylToggle);
+
+		// Show vinyl player after page load
+		setTimeout(() => vinylPlayer.classList.add('visible'), 500);
+
+		// ─── Settings Panel ─────────────────────────────────────────────────────
+		const settingsPanel = document.getElementById('settingsPanel');
+		let settingsOpen = false;
+		const settingsGear = document.getElementById('settingsGear');
+		function toggleSettings() { settingsOpen = !settingsOpen; settingsPanel.classList.toggle('open', settingsOpen); settingsGear.classList.toggle('active', settingsOpen); }
+		settingsGear.addEventListener('click', toggleSettings);
+		window.addEventListener('keydown', (e) => { if ((e.key === 's' || e.key === 'S') && e.target.tagName !== 'INPUT' && e.target.tagName !== 'TEXTAREA') toggleSettings(); });
+
+		function buildSettings() {
+			const colorControls = [
+				{ label: 'Background', u: backgroundColor, extra: (hex) => { scene.background.set(hex); } },
+				{ label: 'Ground', u: groundColor },
+			];
+			let html = '';
+			html += `<div class="sp-section"><div class="sp-section-title">Global Colors</div>`;
+			colorControls.forEach((c, idx) => {
+				const id = `sp_color_${idx}`;
+				html += `<div class="sp-color-row"><span class="sp-label">${c.label}</span><input type="color" class="sp-color-input" id="${id}" value="${'#' + c.u.value.getHexString()}"></div>`;
+			});
+			html += `</div>`;
+			html += `<div class="sp-section"><div class="sp-section-title">Sky Gradient</div>`;
+			const skyControls = [{ label: 'Top', key: 'top' }, { label: 'Mid High', key: 'midHigh' }, { label: 'Mid Low', key: 'midLow' }, { label: 'Horizon', key: 'horizon' }];
+			skyControls.forEach((c, idx) => {
+				html += `<div class="sp-color-row"><span class="sp-label">${c.label}</span><input type="color" class="sp-color-input" id="sp_sky_${idx}" value="${'#' + skyColors[c.key].getHexString()}"></div>`;
+			});
+			html += `</div>`;
+			html += `<div class="sp-section"><div class="sp-section-title">Camera Path</div>`;
+			html += `<div style="display:flex;gap:6px;margin-bottom:12px;">`;
+			html += `<button id="modeScrollBtn" style="flex:1;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;padding:7px 0;border:1px solid rgba(175,98,12,0.3);border-radius:6px;background:rgba(195,115,18,0.18);color:rgba(175,98,12,0.9);cursor:pointer;font-weight:500;">⏵ Scroll</button>`;
+			html += `<button id="modeEditBtn" style="flex:1;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;padding:7px 0;border:1px solid rgba(175,98,12,0.12);border-radius:6px;background:rgba(175,98,12,0.06);color:rgba(175,98,12,0.4);cursor:pointer;font-weight:500;">✎ Edit</button>`;
+			html += `</div>`;
+			html += `<div id="modeHint" style="font-size:10px;color:rgba(55,38,18,0.4);margin-bottom:10px;line-height:1.5;">Scroll mode — camera follows scroll naturally.</div>`;
+			html += `<div style="display:flex;justify-content:flex-end;margin-bottom:10px;"><button id="copyPathBtn" style="font-size:9px;letter-spacing:1px;text-transform:uppercase;padding:4px 10px;border:1px solid rgba(175,98,12,0.2);border-radius:4px;background:rgba(175,98,12,0.06);color:rgba(175,98,12,0.5);cursor:pointer;">Copy JSON</button></div>`;
+			cameraPath.forEach((kf, i) => {
+				const name = stageNames[i] || `Stage ${i}`;
+				html += `<div class="cp-stage" id="cp_stage_${i}" data-stage="${i}" style="margin-bottom:8px;border:1px solid rgba(175,98,12,0.1);border-radius:8px;overflow:hidden;cursor:pointer;transition:opacity 0.3s;">`;
+				html += `<div class="cp-header" data-stage="${i}" style="display:flex;justify-content:space-between;align-items:center;padding:8px 10px;background:rgba(175,98,12,0.04);">`;
+				html += `<span class="sp-label" style="font-weight:500;pointer-events:none;">${name}</span><span style="font-size:9px;color:rgba(175,98,12,0.3);pointer-events:none;" id="cp_${i}_arrow">▸</span></div>`;
+				html += `<div class="cp-controls" id="cp_${i}_controls" style="display:none;padding:6px 10px 10px;">`;
+				[['Pos X',1,-10,10],['Pos Y',2,0.1,15],['Pos Z',3,0,25],['Look X',4,-5,5],['Look Y',5,-2,3],['Look Z',6,-10,10]].forEach(([lbl,idx,mn,mx]) => {
+					const k = ['px','py','pz','lx','ly','lz'][idx-1];
+					html += `<div class="sp-row"><span class="sp-label">${lbl}</span><span class="sp-val" id="cp_${i}_${k}_v">${kf[idx].toFixed(1)}</span></div>`;
+					html += `<input type="range" class="sp-slider" id="cp_${i}_${k}" min="${mn}" max="${mx}" step="0.1" value="${kf[idx]}">`;
+				});
+				html += `<div style="height:1px;background:rgba(175,98,12,0.08);margin:8px 0;"></div>`;
+				html += `<div style="font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(175,98,12,0.3);margin-bottom:8px;">Depth of Field</div>`;
+				html += `<div class="sp-toggle-row"><span class="sp-label">DoF Enabled</span><div class="sp-toggle ${kf[9] ? 'active' : ''}" id="cp_${i}_dof"></div></div>`;
+				html += `<div id="cp_${i}_dof_controls" style="${kf[9] ? '' : 'opacity:0.3;pointer-events:none;'}">`;
+				html += `<div class="sp-toggle-row"><span class="sp-label">Auto Focus</span><div class="sp-toggle ${kf[8] ? 'active' : ''}" id="cp_${i}_af"></div></div>`;
+				html += `<div id="cp_${i}_manual_focus" style="${kf[8] ? 'opacity:0.3;pointer-events:none;' : ''}">`;
+				html += `<div class="sp-row"><span class="sp-label">Focus Dist</span><span class="sp-val" id="cp_${i}_fd_v">${kf[7].toFixed(1)}</span></div>`;
+				html += `<input type="range" class="sp-slider" id="cp_${i}_fd" min="0.3" max="40" step="0.1" value="${kf[7]}"></div>`;
+				html += `<div class="sp-row"><span class="sp-label">Focal Length</span><span class="sp-val" id="cp_${i}_fl_v">${kf[10].toFixed(1)}</span></div>`;
+				html += `<input type="range" class="sp-slider" id="cp_${i}_fl" min="0.1" max="20" step="0.1" value="${kf[10]}">`;
+				html += `<div class="sp-row"><span class="sp-label">Bokeh Scale</span><span class="sp-val" id="cp_${i}_bk_v">${kf[11].toFixed(1)}</span></div>`;
+				html += `<input type="range" class="sp-slider" id="cp_${i}_bk" min="0" max="40" step="0.5" value="${kf[11]}">`;
+				html += `</div></div></div>`;
+			});
+			html += `</div>`;
+			html += `<div class="sp-section"><div class="sp-section-title">Rendering</div>`;
+			html += `<div class="sp-toggle-row"><span class="sp-label">Depth of Field</span><div class="sp-toggle ${!isMobile ? 'active' : ''}" id="globalDofToggle"></div></div></div>`;
+			html += `<div class="sp-section"><div class="sp-section-title">Debug</div>`;
+			html += `<div class="sp-toggle-row"><span class="sp-label">FPS Counter</span><div class="sp-toggle" id="fpsToggle"></div></div></div>`;
+			settingsPanel.innerHTML = html;
+
+			skyControls.forEach((c, idx) => {
+				const input = document.getElementById(`sp_sky_${idx}`);
+				input.addEventListener('input', () => { skyColors[c.key].set(input.value); scene.background = buildSkyTexture(); });
+			});
+			colorControls.forEach((c, idx) => {
+				const input = document.getElementById(`sp_color_${idx}`);
+				input.addEventListener('input', () => { c.u.value.set(input.value); if (c.extra) c.extra(input.value); });
+			});
+
+			let activeStage = -1, cameraOverride = -1, editorMode = 'scroll', expandedStage = -1;
+			const modeScrollBtn = document.getElementById('modeScrollBtn');
+			const modeEditBtn = document.getElementById('modeEditBtn');
+			const modeHint = document.getElementById('modeHint');
+
+			function setMode(mode) {
+				editorMode = mode;
+				if (mode === 'scroll') {
+					modeScrollBtn.style.background = 'rgba(195,115,18,0.18)'; modeScrollBtn.style.color = 'rgba(175,98,12,0.9)';
+					modeEditBtn.style.background = 'rgba(175,98,12,0.06)'; modeEditBtn.style.color = 'rgba(175,98,12,0.4)';
+					modeHint.textContent = 'Scroll mode — camera follows scroll naturally.';
+					if (activeStage >= 0) { const el = document.getElementById(`cp_${activeStage}_controls`); if (el) el.style.display = 'none'; }
+					activeStage = -1; cameraOverride = -1;
+					cameraPath.forEach((_, j) => { const el = document.getElementById(`cp_stage_${j}`); if (el) { el.style.opacity = '0.5'; el.style.pointerEvents = 'none'; } });
+				} else {
+					modeEditBtn.style.background = 'rgba(195,115,18,0.18)'; modeEditBtn.style.color = 'rgba(175,98,12,0.9)';
+					modeScrollBtn.style.background = 'rgba(175,98,12,0.06)'; modeScrollBtn.style.color = 'rgba(175,98,12,0.4)';
+					modeHint.textContent = 'Edit mode — click a stage to lock camera.';
+					cameraPath.forEach((_, j) => { const el = document.getElementById(`cp_stage_${j}`); if (el) { el.style.opacity = '1'; el.style.pointerEvents = 'auto'; } });
+					selectStage(activeStage >= 0 ? activeStage : 0);
+				}
+			}
+			modeScrollBtn.addEventListener('click', () => setMode('scroll'));
+			modeEditBtn.addEventListener('click', () => setMode('edit'));
+
+			function selectStage(i) {
+				if (activeStage >= 0 && activeStage !== i) {
+					const prev = document.getElementById(`cp_stage_${activeStage}`); if (prev) prev.style.borderColor = 'rgba(175,98,12,0.1)';
+					if (expandedStage === activeStage) { const pc = document.getElementById(`cp_${activeStage}_controls`); if (pc) pc.style.display = 'none'; expandedStage = -1; }
+				}
+				const stEl = document.getElementById(`cp_stage_${i}`); if (stEl) stEl.style.borderColor = 'rgba(175,98,12,0.4)';
+				activeStage = i; cameraOverride = i;
+				modeHint.textContent = `Editing: ${stageNames[i]}`;
+				currentScrollT = cameraPath[i][0]; targetScrollT = cameraPath[i][0];
+				const kf = cameraPath[i], sp = stageParams[i];
+				camera.position.set(kf[1], kf[2], kf[3]);
+				lookTarget.set(kf[4], kf[5], kf[6]); camera.lookAt(lookTarget);
+				fogStart.value = sp.fogStart; fogEnd.value = sp.fogEnd; fogIntensity.value = sp.fogIntensity;
+				fogColor.value.setRGB(sp.fogR, sp.fogG, sp.fogB);
+				// scene.fog stays warm haze for mountains — do NOT update from grass params
+				grassDensity.value = sp.grassDensity; bladeWidth.value = sp.bladeWidth; bladeTipWidth.value = sp.bladeTipWidth;
+				bladeHeight.value = sp.bladeHeight; bladeHeightVariation.value = sp.bladeHeightVar; bladeLean.value = sp.bladeLean;
+				_baseWindSpeed = sp.windSpeed; _baseWindAmp = sp.windAmplitude; windSpeed.value = sp.windSpeed; windAmplitude.value = sp.windAmplitude;
+				noiseAmplitude.value = sp.noiseAmp; noiseFrequency.value = sp.noiseFreq; noise2Amplitude.value = sp.noise2Amp; noise2Frequency.value = sp.noise2Freq;
+				mouseRadius.value = sp.mouseRadius; mouseStrength.value = sp.mouseStrength; outerRadius.value = sp.outerRadius; outerStrength.value = sp.outerStrength;
+				bladeBaseColor.value.setRGB(sp.bladeBaseR, sp.bladeBaseG, sp.bladeBaseB);
+				bladeTipColor.value.setRGB(sp.bladeTipR, sp.bladeTipG, sp.bladeTipB);
+				goldenTipColor.value.setRGB(sp.goldenTipR, sp.goldenTipG, sp.goldenTipB);
+				greenTipColor.value.setRGB(sp.greenTipR, sp.greenTipG, sp.greenTipB);
+				midColor.value.setRGB(sp.midR, sp.midG, sp.midB);
+				bladeColorVariation.value = sp.colorVar; camSphereRadius.value = sp.camSphereRadius; camSphereStrength.value = sp.camSphereStrength;
+				const shouldDof = !!kf[9]; if (shouldDof !== dofEnabled) { dofEnabled = shouldDof; rebuildPipeline(); }
+				if (dofEnabled) { focusDistanceU.value = kf[7]; focalLengthU.value = kf[10]; bokehScaleU.value = kf[11]; }
+			}
+			setMode('scroll');
+
+			cameraPath.forEach((kf, i) => {
+				const header = document.querySelector(`#cp_stage_${i} .cp-header`);
+				header.addEventListener('click', () => {
+					if (editorMode !== 'edit') return;
+					if (activeStage === i) {
+						const ctrl = document.getElementById(`cp_${i}_controls`), arr = document.getElementById(`cp_${i}_arrow`);
+						if (expandedStage === i) { if (ctrl) ctrl.style.display = 'none'; if (arr) arr.textContent = '▸'; expandedStage = -1; }
+						else { if (ctrl) ctrl.style.display = 'block'; if (arr) arr.textContent = '▾'; expandedStage = i; }
+						return;
+					}
+					selectStage(i);
+				});
+
+				[['px',1],['py',2],['pz',3],['lx',4],['ly',5],['lz',6]].forEach(([k,idx]) => {
+					const sl = document.getElementById(`cp_${i}_${k}`), vl = document.getElementById(`cp_${i}_${k}_v`);
+					sl.addEventListener('input', () => { kf[idx] = parseFloat(sl.value); vl.textContent = kf[idx].toFixed(1); });
+				});
+				const dofTog = document.getElementById(`cp_${i}_dof`), dofCtrl = document.getElementById(`cp_${i}_dof_controls`);
+				dofTog.addEventListener('click', () => { kf[9] = kf[9] ? 0 : 1; dofTog.classList.toggle('active', !!kf[9]); dofCtrl.style.opacity = kf[9] ? '1' : '0.3'; dofCtrl.style.pointerEvents = kf[9] ? 'auto' : 'none'; });
+				const fdSl = document.getElementById(`cp_${i}_fd`), fdV = document.getElementById(`cp_${i}_fd_v`);
+				fdSl.addEventListener('input', () => { kf[7] = parseFloat(fdSl.value); fdV.textContent = kf[7].toFixed(1); });
+				const afTog = document.getElementById(`cp_${i}_af`), mfEl = document.getElementById(`cp_${i}_manual_focus`);
+				afTog.addEventListener('click', () => { kf[8] = kf[8] ? 0 : 1; afTog.classList.toggle('active', !!kf[8]); mfEl.style.opacity = kf[8] ? '0.3' : '1'; mfEl.style.pointerEvents = kf[8] ? 'none' : 'auto'; });
+				const flSl = document.getElementById(`cp_${i}_fl`), flV = document.getElementById(`cp_${i}_fl_v`);
+				flSl.addEventListener('input', () => { kf[10] = parseFloat(flSl.value); flV.textContent = kf[10].toFixed(1); });
+				const bkSl = document.getElementById(`cp_${i}_bk`), bkV = document.getElementById(`cp_${i}_bk_v`);
+				bkSl.addEventListener('input', () => { kf[11] = parseFloat(bkSl.value); bkV.textContent = kf[11].toFixed(1); });
+
+				stageParamKeys.forEach(k => {
+					const sid = `sp_stage_${i}_${k}`, sl = document.getElementById(sid), vl = document.getElementById(`${sid}_v`);
+					if (sl && vl) sl.addEventListener('input', () => { const v = parseFloat(sl.value); stageParams[i][k] = v; vl.textContent = v.toFixed(2); });
+				});
+			});
+
+			const copyPathBtn = document.getElementById('copyPathBtn');
+			copyPathBtn.addEventListener('click', () => {
+				const json = JSON.stringify(cameraPath.map((kf, i) => ({ stage: stageNames[i], pos: { x: kf[1], y: kf[2], z: kf[3] }, look: { x: kf[4], y: kf[5], z: kf[6] }, dof: { focus: kf[7], auto: !!kf[8], on: !!kf[9], fl: kf[10], bk: kf[11] } })), null, 2);
+				navigator.clipboard.writeText(json).then(() => { const o = copyPathBtn.textContent; copyPathBtn.textContent = 'Copied!'; setTimeout(() => copyPathBtn.textContent = o, 1500); }).catch(() => {});
+			});
+
+			document.getElementById('globalDofToggle').addEventListener('click', function() {
+				this.classList.toggle('active'); const en = this.classList.contains('active'); dofEnabled = en; rebuildPipeline();
+			});
+			document.getElementById('fpsToggle').addEventListener('click', function() { this.classList.toggle('active'); fpsEnabled = this.classList.contains('active'); if (fpsOverlay) fpsOverlay.style.display = fpsEnabled ? 'block' : 'none'; });
+		}
+
+		let fpsEnabled = false;
+		const fpsOverlay = document.createElement('div');
+		fpsOverlay.style.cssText = 'position:fixed;top:10px;left:10px;z-index:400;font:12px/1 "Inter",monospace;color:rgba(175,98,12,0.6);background:rgba(255,250,242,0.5);padding:5px 10px;border-radius:6px;pointer-events:none;display:none;';
+		document.body.appendChild(fpsOverlay);
+		let fpsFrames = 0, fpsLast = performance.now();
+
+		let windBurst = 0, _baseWindSpeed = 1.3, _baseWindAmp = 0.21;
+		let globalDofEnabled = !isMobile;
+
+		document.getElementById('windBtn').addEventListener('click', () => { windBurst = 4.0; });
+
+		const stageNames = ['Hero', 'Manifesto', 'Pillars', 'Stats', 'Quote', 'CTA', 'Footer'];
+
+		const stageParamDefs = {
+			fogStart:    { def: 6.5,  min: 0,   max: 20, step: 0.5  },
+			fogEnd:      { def: 12.0, min: 1,   max: 30, step: 0.5  },
+			fogIntensity:{ def: 1.0,  min: 0,   max: 1,  step: 0.01 },
+			fogR:        { def: 0.878,min: 0, max: 1, step: 0.01, isColor: 'fogColor', ch: 'r' },
+			fogG:        { def: 0.831,min: 0, max: 1, step: 0.01, isColor: 'fogColor', ch: 'g' },
+			fogB:        { def: 0.753,min: 0, max: 1, step: 0.01, isColor: 'fogColor', ch: 'b' },
+			grassDensity:     { def: 1.0,  min: 0,   max: 1,  step: 0.01 },
+			bladeWidth:       { def: 4.0,  min: 0.2, max: 4,  step: 0.05 },
+			bladeTipWidth:    { def: 0.19, min: 0,   max: 1,  step: 0.01 },
+			bladeHeight:      { def: 1.6,  min: 0.1, max: 2,  step: 0.05 },
+			bladeHeightVar:   { def: 0.5,  min: 0,   max: 1,  step: 0.01 },
+			bladeLean:        { def: 1.1,  min: 0,   max: 3,  step: 0.05 },
+			windSpeed:        { def: 1.3,  min: 0, max: 5, step: 0.1  },
+			windAmplitude:    { def: 0.21, min: 0, max: 1, step: 0.01 },
+			noiseAmp:         { def: 1.85, min: 0,    max: 4,  step: 0.05 },
+			noiseFreq:        { def: 0.3,  min: 0.01, max: 1,  step: 0.01 },
+			noise2Amp:        { def: 0.2,  min: 0,    max: 1,  step: 0.01 },
+			noise2Freq:       { def: 15,   min: 1,    max: 30, step: 0.5  },
+			mouseRadius:      { def: 6.1,  min: 0.5, max: 8,  step: 0.1  },
+			mouseStrength:    { def: 4.0,  min: 0,   max: 5,  step: 0.1  },
+			outerRadius:      { def: 9.4,  min: 1,   max: 12, step: 0.1  },
+			outerStrength:    { def: 1.45, min: 0,   max: 3,  step: 0.05 },
+			camSphereRadius:  { def: 15.0, min: 1,  max: 15, step: 0.1 },
+			camSphereStrength:{ def: 5.9,  min: 0,  max: 6,  step: 0.1 },
+			bladeBaseR: { def: 0.004, min: 0, max: 1, step: 0.01, isColor: 'bladeBaseColor', ch: 'r' },
+			bladeBaseG: { def: 0.012, min: 0, max: 1, step: 0.01, isColor: 'bladeBaseColor', ch: 'g' },
+			bladeBaseB: { def: 0.001, min: 0, max: 1, step: 0.01, isColor: 'bladeBaseColor', ch: 'b' },
+			bladeTipR:  { def: 0.784, min: 0, max: 1, step: 0.01, isColor: 'bladeTipColor', ch: 'r' },
+			bladeTipG:  { def: 0.722, min: 0, max: 1, step: 0.01, isColor: 'bladeTipColor', ch: 'g' },
+			bladeTipB:  { def: 0.251, min: 0, max: 1, step: 0.01, isColor: 'bladeTipColor', ch: 'b' },
+			goldenTipR: { def: 0.831, min: 0, max: 1, step: 0.01, isColor: 'goldenTipColor', ch: 'r' },
+			goldenTipG: { def: 0.722, min: 0, max: 1, step: 0.01, isColor: 'goldenTipColor', ch: 'g' },
+			goldenTipB: { def: 0.220, min: 0, max: 1, step: 0.01, isColor: 'goldenTipColor', ch: 'b' },
+			greenTipR:  { def: 0.290, min: 0, max: 1, step: 0.01, isColor: 'greenTipColor', ch: 'r' },
+			greenTipG:  { def: 0.478, min: 0, max: 1, step: 0.01, isColor: 'greenTipColor', ch: 'g' },
+			greenTipB:  { def: 0.078, min: 0, max: 1, step: 0.01, isColor: 'greenTipColor', ch: 'b' },
+			midR: { def: 0.176, min: 0, max: 1, step: 0.01, isColor: 'midColor', ch: 'r' },
+			midG: { def: 0.306, min: 0, max: 1, step: 0.01, isColor: 'midColor', ch: 'g' },
+			midB: { def: 0.055, min: 0, max: 1, step: 0.01, isColor: 'midColor', ch: 'b' },
+			colorVar: { def: 0.93, min: 0, max: 1, step: 0.01 },
+		};
+
+		const stageParamKeys = Object.keys(stageParamDefs);
+		function getDefaultParams() { const p = {}; stageParamKeys.forEach(k => { p[k] = stageParamDefs[k].def; }); return p; }
+
+		// [scroll, posX, posY, posZ, lookX, lookY, lookZ, focusDist, autoFocus, dofOn, focalLen, bokehScale, afSpeed, afMin, afMax]
+		const cameraPath = [
+			[0.00, -2.8,  7.2, 19.6,  0.5, 1.5,  0.4, 22.0, 1, 1, 10.0, 12.5, 5.0, 1.0, 40.0],
+			[0.14,  0,    2.2, 14.0,  0,  -2.0,   0,   15.0, 1, 1,  8.0, 10.0, 5.0, 1.0, 30.0],
+			[0.28,  7.5, 10.9, 15.8,  0,   0.0,   0.7, 10.0, 1, 1,  6.0,  8.0, 5.0, 0.5, 20.0],
+			[0.43, -8.0,  6.8, 21.6,  0,   0.2,   0,    7.0, 1, 1,  5.0, 10.0, 5.0, 0.5, 15.0],
+			[0.57, -1.0,  5.3, 25.0, -1.2, 3.0,   0,    5.0, 1, 1,  4.0, 14.0, 6.0, 1.1, 21.5],
+			[0.78, -1.6,  2.4,  0.0, -1.2,-2.0,   0.0, 16.4, 1, 0, 20.0, 18.0,19.0, 2.8, 12.5],
+			[1.00,  0,   15.0,  0.0, -5,   3.0,  -5,    9.8, 1, 1, 13.8,  0.0,17.5, 1.2,  9.0],
+		];
+
+		const stageParams = cameraPath.map(() => getDefaultParams());
+
+		// Apply golden grass overrides
+		(function applyExportedParams() {
+			const exported = [
+				{ bladeBaseR:0.004, bladeBaseG:0.013, bladeBaseB:0.001, bladeTipR:0.578, bladeTipG:0.479, bladeTipB:0.051, goldenTipR:0.658, goldenTipG:0.479, goldenTipB:0.040, greenTipR:0.068, greenTipG:0.195, greenTipB:0.007, midR:0.026, midG:0.076, midB:0.004 },
+				{ bladeBaseR:0.004, bladeBaseG:0.013, bladeBaseB:0.001, bladeTipR:0.578, bladeTipG:0.479, bladeTipB:0.051, goldenTipR:0.658, goldenTipG:0.479, goldenTipB:0.040, greenTipR:0.068, greenTipG:0.195, greenTipB:0.007, midR:0.026, midG:0.076, midB:0.004 },
+				{ bladeBaseR:0, bladeBaseG:0.013, bladeBaseB:0.001, bladeTipR:0.898, bladeTipG:0.804, bladeTipB:0.804, goldenTipR:0.663, goldenTipG:0.286, goldenTipB:0.039, greenTipR:0.192, greenTipG:0.153, greenTipB:0.008, midR:0.075, midG:0.008, midB:0.004, colorVar:1 },
+				{ fogStart:0, fogEnd:12.5, bladeHeight:2, bladeHeightVar:1, bladeLean:0, bladeBaseR:0.004, bladeBaseG:0.013, bladeBaseB:0.001, bladeTipR:0.578, bladeTipG:0.479, bladeTipB:0.051, goldenTipR:0.658, goldenTipG:0.479, goldenTipB:0.040, greenTipR:0.068, greenTipG:0.195, greenTipB:0.007, midR:0.026, midG:0.076, midB:0.004 },
+				{ bladeBaseR:0.004, bladeBaseG:0.013, bladeBaseB:0.001, bladeTipR:0.578, bladeTipG:0.479, bladeTipB:0.051, goldenTipR:0.658, goldenTipG:0.479, goldenTipB:0.040, greenTipR:0.068, greenTipG:0.195, greenTipB:0.007, midR:0.026, midG:0.076, midB:0.004 },
+				{ fogStart:7, bladeTipWidth:0.27, bladeHeight:0.9, bladeHeightVar:0, bladeLean:0, bladeBaseR:0.004, bladeBaseG:0.013, bladeBaseB:0.001, bladeTipR:0.578, bladeTipG:0.479, bladeTipB:0.051, goldenTipR:0.658, goldenTipG:0.479, goldenTipB:0.040, greenTipR:0.068, greenTipG:0.195, greenTipB:0.007, midR:0.026, midG:0.076, midB:0.004 },
+				{ fogStart:2, fogEnd:10, bladeHeight:2, bladeHeightVar:0, bladeLean:0, bladeTipR:0.329, bladeTipG:0.306, bladeTipB:0.051, goldenTipR:0.659, goldenTipG:0.478, goldenTipB:0.039, greenTipR:0.067, greenTipG:0.196, greenTipB:0.008, midR:0, midG:0, midB:0 },
+			];
+			exported.forEach((ov, i) => { Object.keys(ov).forEach(k => { if (k in stageParams[i]) stageParams[i][k] = ov[k]; }); });
+		})();
+
+		function lerpCam(scrollT) {
+			const snap = 0.005;
+			for (let j = 0; j < cameraPath.length; j++) {
+				if (Math.abs(cameraPath[j][0] - scrollT) < snap) {
+					const kf = cameraPath[j];
+					return { px: kf[1], py: kf[2], pz: kf[3], lx: kf[4], ly: kf[5], lz: kf[6], fd: kf[7], af: kf[8], dofOn: kf[9], fl: kf[10], bk: kf[11], afSpd: kf[12], afMin: kf[13], afMax: kf[14], params: { ...stageParams[j] } };
+				}
+			}
+			let i = 0;
+			for (let j = 1; j < cameraPath.length; j++) { if (cameraPath[j][0] >= scrollT) { i = j - 1; break; } if (j === cameraPath.length - 1) i = j - 1; }
+			const a = cameraPath[i], b = cameraPath[Math.min(i + 1, cameraPath.length - 1)];
+			const range = b[0] - a[0], t = range > 0 ? Math.max(0, Math.min(1, (scrollT - a[0]) / range)) : 0;
+			const ease = t * t * (3 - 2 * t);
+			const iB = Math.min(i + 1, cameraPath.length - 1);
+			const pA = stageParams[i], pB = stageParams[iB];
+			const lerpedParams = {};
+			stageParamKeys.forEach(k => { lerpedParams[k] = pA[k] + (pB[k] - pA[k]) * ease; });
+			return { px: a[1]+(b[1]-a[1])*ease, py: a[2]+(b[2]-a[2])*ease, pz: a[3]+(b[3]-a[3])*ease, lx: a[4]+(b[4]-a[4])*ease, ly: a[5]+(b[5]-a[5])*ease, lz: a[6]+(b[6]-a[6])*ease, fd: a[7]+(b[7]-a[7])*ease, af: a[8]+(b[8]-a[8])*ease, dofOn: a[9]+(b[9]-a[9])*ease, fl: a[10]+(b[10]-a[10])*ease, bk: a[11]+(b[11]-a[11])*ease, afSpd: a[12]+(b[12]-a[12])*ease, afMin: a[13]+(b[13]-a[13])*ease, afMax: a[14]+(b[14]-a[14])*ease, params: lerpedParams };
+		}
+
+		let currentScrollT = 0, targetScrollT = 0;
+		function getScrollProgress() { const s = window.pageYOffset, d = document.documentElement.scrollHeight - window.innerHeight; return d > 0 ? Math.min(1, Math.max(0, s / d)) : 0; }
+
+		function syncCameraPathToDOM() {
+			const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+			if (scrollable <= 0) return;
+			cameraPath.forEach((kf, i) => { const sec = document.querySelector(`.section[data-stage="${i}"]`); if (sec) kf[0] = Math.min(1, Math.max(0, sec.offsetTop / scrollable)); });
+			cameraPath[cameraPath.length - 1][0] = 1.0;
+		}
+		syncCameraPathToDOM();
+		window.addEventListener('resize', () => setTimeout(syncCameraPathToDOM, 100));
+		window.addEventListener('load', () => { setTimeout(syncCameraPathToDOM, 200); setTimeout(syncCameraPathToDOM, 1000); });
+
+		let _scrollDirty = false;
+		window.addEventListener('scroll', () => { _scrollDirty = true; }, { passive: true });
+		window.addEventListener('touchmove', () => { _scrollDirty = true; }, { passive: true });
+
+		const progressBar = document.getElementById('progressBar');
+		const navFloat = document.getElementById('navFloat');
+
+		const revealObserver = new IntersectionObserver((entries) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) { const el = entry.target; const delay = el.dataset.delay || '0'; el.classList.add('revealed', `delay-${delay}`); revealObserver.unobserve(el); }
+			});
+		}, { threshold: 0.1, rootMargin: '0px 0px -18% 0px' });
+		document.querySelectorAll('[data-reveal]').forEach(el => revealObserver.observe(el));
+		setTimeout(() => { const hint = document.querySelector('.scroll-hint'); if (hint && !hint.classList.contains('revealed')) hint.classList.add('revealed', 'delay-4'); }, 800);
+
+		document.querySelectorAll('[data-nav]').forEach(link => {
+			link.addEventListener('click', (e) => { e.preventDefault(); const sec = document.querySelector(`.section[data-stage="${link.dataset.nav}"]`); if (sec) sec.scrollIntoView({ behavior: 'smooth', block: 'start' }); });
+		});
+
+		const navHamburger = document.getElementById('navHamburger');
+		const navMobileOverlay = document.getElementById('navMobileOverlay');
+		navHamburger.addEventListener('click', () => { navHamburger.classList.toggle('open'); navMobileOverlay.classList.toggle('open'); });
+		document.querySelectorAll('[data-nav-mobile]').forEach(link => {
+			link.addEventListener('click', (e) => { e.preventDefault(); const sec = document.querySelector(`.section[data-stage="${link.dataset.navMobile}"]`); navHamburger.classList.remove('open'); navMobileOverlay.classList.remove('open'); if (sec) sec.scrollIntoView({ behavior: 'smooth', block: 'start' }); });
+		});
+
+		buildSettings();
+
+		await renderer.computeAsync(computeInit);
+		renderer.domElement.style.opacity = '0';
+		renderer.domElement.style.transition = 'opacity 0.4s ease';
+		for (let i = 0; i < 3; i++) { renderer.compute(computeUpdate); postProcessing.render(); await new Promise(r => requestAnimationFrame(r)); }
+		renderer.domElement.style.opacity = '1';
+
+		const clock = new THREE.Clock();
+		const lookTarget = new THREE.Vector3();
+		const _siteFooter = document.querySelector('.site-footer');
+		const _scrollHint = document.querySelector('.scroll-hint');
+
+		function animate() {
+			const dt = Math.min(clock.getDelta(), 0.05);
+			if (_scrollDirty) { targetScrollT = getScrollProgress(); _scrollDirty = false; }
+			currentScrollT += (targetScrollT - currentScrollT) * Math.min(1, dt * 6);
+
+			const override = window._getCameraOverride ? window._getCameraOverride() : -1;
+			let cam;
+			if (override >= 0 && override < cameraPath.length) {
+				const kf = cameraPath[override];
+				cam = { px: kf[1], py: kf[2], pz: kf[3], lx: kf[4], ly: kf[5], lz: kf[6], fd: kf[7], af: kf[8], dofOn: kf[9], fl: kf[10], bk: kf[11], afSpd: kf[12], afMin: kf[13], afMax: kf[14], params: stageParams[override] };
+			} else { cam = lerpCam(currentScrollT); }
+
+			camera.position.set(cam.px, cam.py, cam.pz);
+			lookTarget.set(cam.lx, cam.ly, cam.lz); camera.lookAt(lookTarget);
+
+			// Sync camera to mountain uniforms
+			camPX.value = camera.position.x;
+			camPY.value = camera.position.y;
+			camPZ.value = camera.position.z;
+
+			if (_siteFooter) { const ft = _siteFooter.getBoundingClientRect().top; renderer.domElement.style.transform = ft < window.innerHeight ? `translateY(-${window.innerHeight - ft}px)` : ''; }
+			progressBar.style.width = (currentScrollT * 100) + '%';
+			navFloat.classList.toggle('visible', currentScrollT > 0.08);
+			if (_scrollHint) _scrollHint.style.opacity = Math.max(0, 1 - currentScrollT * 15);
+
+			camSphereWorld.value.set(camera.position.x, 0, camera.position.z);
+
+			if (cam.params) {
+				const p = cam.params;
+				fogStart.value = p.fogStart; fogEnd.value = p.fogEnd; fogIntensity.value = p.fogIntensity;
+				fogColor.value.setRGB(p.fogR, p.fogG, p.fogB);
+				// scene.fog stays warm haze for mountains — NOT updated from grass params
+				grassDensity.value = p.grassDensity; bladeWidth.value = p.bladeWidth; bladeTipWidth.value = p.bladeTipWidth;
+				bladeHeight.value = p.bladeHeight; bladeHeightVariation.value = p.bladeHeightVar; bladeLean.value = p.bladeLean;
+				_baseWindSpeed = p.windSpeed; _baseWindAmp = p.windAmplitude;
+				noiseAmplitude.value = p.noiseAmp; noiseFrequency.value = p.noiseFreq;
+				noise2Amplitude.value = p.noise2Amp; noise2Frequency.value = p.noise2Freq;
+				mouseRadius.value = p.mouseRadius; mouseStrength.value = p.mouseStrength;
+				outerRadius.value = p.outerRadius; outerStrength.value = p.outerStrength;
+				bladeBaseColor.value.setRGB(p.bladeBaseR, p.bladeBaseG, p.bladeBaseB);
+				bladeTipColor.value.setRGB(p.bladeTipR, p.bladeTipG, p.bladeTipB);
+				goldenTipColor.value.setRGB(p.goldenTipR, p.goldenTipG, p.goldenTipB);
+				greenTipColor.value.setRGB(p.greenTipR, p.greenTipG, p.greenTipB);
+				midColor.value.setRGB(p.midR, p.midG, p.midB);
+				bladeColorVariation.value = p.colorVar;
+				camSphereRadius.value = p.camSphereRadius; camSphereStrength.value = p.camSphereStrength;
+			}
+
+			const camHeight = camera.position.y;
+			const proximityT = Math.max(0, 1 - camHeight / 10);
+			const proxCurve = proximityT * proximityT;
+			camSphereRadius.value = Math.min(15, camSphereRadius.value * (0.3 + proxCurve * 0.7));
+			camSphereStrength.value = camSphereStrength.value * (0.1 + proxCurve * 0.9);
+
+			windSpeed.value = _baseWindSpeed; windAmplitude.value = _baseWindAmp;
+			if (windBurst > 0) {
+				windBurst -= dt * 0.6;
+				const burstT = Math.max(0, windBurst / 4.0);
+				const eased = burstT * burstT * (3 - 2 * burstT);
+				windSpeed.value += eased * 4.5; windAmplitude.value += eased * 0.45;
+			}
+
+			{
+				const dofWeight = typeof cam.dofOn === 'number' ? cam.dofOn : 1;
+				const shouldDof = globalDofEnabled && dofWeight > 0.5;
+				if (shouldDof !== dofEnabled) { dofEnabled = shouldDof; rebuildPipeline(); }
+				if (dofEnabled) {
+					const autoWeight = Math.max(0, Math.min(1, typeof cam.af === 'number' ? cam.af : 0));
+					const mouseOnField = mouseWorld.value.x < 9000;
+					const afSpeed = cam.afSpd || 5.0, afMin = cam.afMin || 0.5, afMax = cam.afMax || 40.0;
+					let rawAF = mouseOnField ? mouseFocusDist : Math.max(0.5, Math.sqrt(cam.py * cam.py + cam.pz * cam.pz) * 0.9);
+					rawAF = Math.max(afMin, Math.min(afMax, rawAF));
+					autoFocusSmoothed += (rawAF - autoFocusSmoothed) * Math.min(1, dt * afSpeed);
+					const targetFocus = cam.fd * (1 - autoWeight) + autoFocusSmoothed * autoWeight;
+					focusDistanceU.value += (targetFocus - focusDistanceU.value) * Math.min(1, dt * 8);
+					focalLengthU.value += (cam.fl - focalLengthU.value) * Math.min(1, dt * 6);
+					bokehScaleU.value += (cam.bk - bokehScaleU.value) * Math.min(1, dt * 6);
+				}
+			}
+
+			fpsFrames++;
+			const fpsNow = performance.now();
+			if (fpsNow - fpsLast >= 500) { if (fpsEnabled && fpsOverlay) fpsOverlay.textContent = (fpsFrames / ((fpsNow - fpsLast) / 1000)).toFixed(0) + ' FPS'; fpsFrames = 0; fpsLast = fpsNow; }
+
+			renderer.compute(computeUpdate);
+			postProcessing.render();
+		}
+
+		window._getCameraOverride = () => -1;
+		renderer.setAnimationLoop(animate);
+	</script>
+</body>
+</html>
