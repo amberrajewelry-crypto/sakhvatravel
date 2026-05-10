@@ -1131,9 +1131,9 @@ flex-shrink: 0 !important;
 font-size: 14px !important;
 }
 }
-/* ── HOW section — warm bg ── */
+/* ── HOW section — video bg ── */
 #how {
-background: #F9F8F8 !important;
+background: transparent !important;
 }
 /* (CTA styles moved to main block above) */
 /* ── REVIEWS — Aker: cards more breathing ── */
@@ -1680,3 +1680,10 @@ flex: 0 0 200px !important;
 }
 }
 /* FIX 3: Section transitions — removed, broke hero→tours flow */
+/* ── WHY & HOW — video background overrides ── */
+#why .sec-label, #how .sec-label { color: #F59E0B !important }
+#why .sec-label::before, #how .sec-label::before { background: #F59E0B !important }
+#why .sec-title, #how .sec-title { color: #fff !important }
+#why .sec-sub, #how .sec-sub { color: rgba(255,255,255,.8) !important }
+#how .group-discount-bar { background: rgba(255,255,255,.1) !important; border-color: rgba(255,255,255,.2) !important; color: #F59E0B !important }
+#how .btn-primary { background: rgba(255,255,255,.12) !important; border: 1.5px solid rgba(255,255,255,.4) !important; color: #fff !important }

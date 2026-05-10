@@ -1105,8 +1105,10 @@ h3 {
 
 /* ── HOW-IT-WORKS CARDS — Aker: no border, bg-shift, radius morph ── */
 .hw {
-  border: none !important;
-  background: #F9F8F8 !important;
+  border: 1px solid rgba(255,255,255,.15) !important;
+  background: rgba(255,255,255,.08) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
   border-radius: 16px !important;
   transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
               box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
@@ -1114,15 +1116,15 @@ h3 {
               background 0.3s linear !important;
 }
 .hw:hover {
-  background: #fff !important;
+  background: rgba(255,255,255,.15) !important;
   transform: translateY(-6px) !important;
-  box-shadow: 0 12px 32px rgba(0,0,0,.08) !important;
+  box-shadow: 0 12px 32px rgba(245,158,11,.12) !important;
   border-radius: 24px !important;
 }
 .hw-num {
   font-size: 13px !important;
   font-weight: 600 !important;
-  color: #e8742a !important;
+  color: #F59E0B !important;
   letter-spacing: 0.15em !important;
 }
 .hw-icon {
@@ -1135,9 +1137,10 @@ h3 {
 .hw-title {
   font-size: 17px !important;
   letter-spacing: -0.01em !important;
+  color: #fff !important;
 }
 .hw-arrow {
-  color: #e8742a !important;
+  color: rgba(255,255,255,.4) !important;
   font-size: 28px !important;
   opacity: 0.4 !important;
 }
@@ -1450,8 +1453,8 @@ h3 {
   background: transparent !important;
   padding-top: clamp(32px, 4vw, 56px) !important;
 }
-#why { background: #F9F8F8 !important }
-#how { background: #fff !important }
+#why { background: transparent !important }
+#how { background: transparent !important }
 #guide { background: #F9F8F8 !important }
 #reviews { background: #fff !important }
 #incl { background: #F9F8F8 !important }
@@ -1491,7 +1494,7 @@ h3 {
   color: #6B7280 !important;
 }
 .hw-text {
-  color: #6B7280 !important;
+  color: rgba(255,255,255,.8) !important;
 }
 
 /* ── HERO STATS — counter glow ── */
