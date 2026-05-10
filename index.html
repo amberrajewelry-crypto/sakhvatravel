@@ -189,8 +189,8 @@ body{opacity:1}
 /* Scroll progress bar */
 #scroll-progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,#F59E0B,#e8742a)!important;z-index:10000;width:0;transition:none;pointer-events:none;animation:none!important}
 /* Tour card image zoom on hover */
-.tours-track .tc-media video{transition:transform .6s cubic-bezier(.22,1,.36,1)}
-.tours-track .tc:hover .tc-media video{transform:scale(1.06)}
+.tours-track .tc-media video{transition:transform .6s cubic-bezier(.22,1,.36,1);image-rendering:auto}
+.tours-track .tc:hover .tc-media video{transform:scale(1.02)}
 /* CTA pulse */
 @keyframes ctaPulse{0%,100%{box-shadow:0 4px 14px rgba(245,158,11,.4)}50%{box-shadow:0 4px 28px rgba(245,158,11,.7)}}
 .btn-wa{animation:ctaPulse 3s ease-in-out infinite}
@@ -517,7 +517,7 @@ html{scroll-behavior:auto}
 </div>
 <div class="tours-slides"><div class="tours-track">
 <article class="tc tc-video" data-anim="scale" data-anim-d="1" data-cat="выезды">
-<div class="tc-media"><video muted loop playsinline preload="none" poster="/images/kazbegi-tour.webp" data-src="/images/kazbegi-hero-video.mp4"></video></div>
+<div class="tc-media"><video muted loop playsinline preload="none" poster="/images/kazbegi-tour.webp" data-src="/images/tours-bg-video-v2.mp4"></video></div>
 <div class="tc-badge blue" data-ru="Рекомендуем" data-en="Top pick">Рекомендуем</div>
 <div class="tc-dur" data-ru="12–14 часов" data-en="12–14 hours">12–14 часов</div>
 <div class="tc-overlay">
