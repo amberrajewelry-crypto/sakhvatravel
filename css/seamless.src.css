@@ -258,7 +258,7 @@ section.sec.sec-over-video:nth-child(even) {
   color: rgba(255,255,255,.85) !important;
 }
 .tc-overlay .tc-name {
-  color: #fff !important;
+  color: #d97706 !important;
   font-size: 22px !important;
   text-shadow: 0 1px 8px rgba(0,0,0,.4) !important;
   margin-bottom: 0 !important;
