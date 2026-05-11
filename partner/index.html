@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Партнёрский кабинет — Sakhva Travel</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="/favicon.ico">
+<style>
+@font-face{font-family:'Lora';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/lora-10.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:'Lora';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/lora-14.woff2) format('woff2');unicode-range:U+0000-00FF}
+@font-face{font-family:'Lora';font-style:normal;font-weight:700;font-display:swap;src:url(/fonts/lora-10.woff2) format('woff2');unicode-range:U+0301,U+0400-045F}
+@font-face{font-family:'Lora';font-style:normal;font-weight:700;font-display:swap;src:url(/fonts/lora-14.woff2) format('woff2');unicode-range:U+0000-00FF}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Lora',Georgia,serif;background:#0F1A15;color:#E5E7EB;min-height:100vh}
+.top{background:#1A3D2E;padding:16px 24px;display:flex;align-items:center;justify-content:space-between}
+.top-logo{color:#fff;font-size:18px;font-weight:700;letter-spacing:.05em;text-decoration:none}
+.top-label{color:rgba(255,255,255,.6);font-size:12px;letter-spacing:.15em;text-transform:uppercase}
+.wrap{max-width:720px;margin:0 auto;padding:24px 16px 60px}
+/* Login */
+.login{text-align:center;padding:80px 0}
+.login h1{font-size:clamp(22px,5vw,32px);color:#fff;margin-bottom:8px}
+.login p{color:#9CA3AF;font-size:14px;margin-bottom:32px}
+.login-input{width:100%;max-width:320px;padding:14px 20px;border:2px solid #2D5A3E;border-radius:12px;background:#162B20;color:#fff;font-size:18px;font-family:'Lora',serif;text-align:center;outline:none;letter-spacing:.1em}
+.login-input:focus{border-color:#4ADE80}
+.login-input::placeholder{color:#6B7280;letter-spacing:.05em}
+.login-btn{display:block;width:100%;max-width:320px;margin:16px auto 0;padding:14px;background:#4ADE80;color:#0F1A15;border:none;border-radius:12px;font-size:16px;font-weight:700;font-family:'Lora',serif;cursor:pointer;letter-spacing:.05em;transition:background .2s}
+.login-btn:hover{background:#22C55E}
+.login-err{color:#F87171;font-size:13px;margin-top:12px;display:none}
+/* Dashboard */
+.dash{display:none}
+.dash-head{margin-bottom:28px}
+.dash-name{font-size:clamp(20px,4vw,28px);color:#fff;margin-bottom:4px}
+.dash-slug{color:#4ADE80;font-size:14px;font-weight:700;letter-spacing:.05em}
+.dash-date{color:#6B7280;font-size:12px;margin-top:4px}
+/* Cards */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:28px}
+@media(max-width:520px){.cards{grid-template-columns:1fr}}
+.card{background:#162B20;border:1px solid #2D5A3E;border-radius:14px;padding:20px;text-align:center}
+.card-num{font-size:clamp(28px,6vw,40px);font-weight:700;color:#fff;line-height:1}
+.card-label{font-size:11px;color:#9CA3AF;letter-spacing:.15em;text-transform:uppercase;margin-top:6px}
+.card-num.green{color:#4ADE80}
+/* Table */
+.sec{margin-bottom:24px}
+.sec-title{font-size:14px;font-weight:700;color:#9CA3AF;letter-spacing:.12em;text-transform:uppercase;margin-bottom:12px}
+.tbl{width:100%;border-collapse:collapse}
+.tbl th{text-align:left;font-size:11px;color:#6B7280;letter-spacing:.1em;text-transform:uppercase;padding:8px 12px;border-bottom:1px solid #2D5A3E}
+.tbl td{padding:10px 12px;border-bottom:1px solid rgba(45,90,62,.3);font-size:14px;color:#D1D5DB}
+.tbl tr:last-child td{border:none}
+.bar-wrap{background:#1A3D2E;border-radius:4px;height:6px;flex:1;margin-left:12px}
+.bar{background:#4ADE80;height:6px;border-radius:4px;min-width:2px}
+.bar-row{display:flex;align-items:center}
+/* Link */
+.copy-wrap{background:#162B20;border:1px solid #2D5A3E;border-radius:12px;padding:16px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:28px}
+.copy-url{color:#4ADE80;font-size:15px;font-weight:700;word-break:break-all}
+.copy-btn{background:#2D5A3E;color:#fff;border:none;padding:8px 16px;border-radius:8px;font-size:12px;font-weight:700;cursor:pointer;white-space:nowrap;font-family:'Lora',serif}
+.copy-btn:hover{background:#3D7A5E}
+/* Loading */
+.loading{text-align:center;padding:40px;color:#6B7280;font-size:14px}
+.promo-box{background:#162B20;border:1px solid #2D5A3E;border-radius:12px;padding:16px 20px;margin-bottom:28px;text-align:center}
+.promo-code{font-size:24px;font-weight:700;color:#4ADE80;letter-spacing:.15em}
+.promo-label{font-size:11px;color:#9CA3AF;letter-spacing:.12em;text-transform:uppercase;margin-top:4px}
+</style>
+</head>
+<body>
+<div class="top">
+  <a href="/" class="top-logo">SAKHVA TRAVEL</a>
+  <span class="top-label">Partner</span>
+</div>
+<div class="wrap">
+  <!-- Login -->
+  <div class="login" id="login-view">
+    <h1>Партнёрский кабинет</h1>
+    <p>Введите ваш партнёрский код для просмотра статистики</p>
+    <input type="text" class="login-input" id="slug-input" placeholder="Код партнёра" autocomplete="off" autofocus>
+    <button class="login-btn" id="login-btn" onclick="loadStats()">Войти</button>
+    <div class="login-err" id="login-err">Партнёр не найден. Проверьте код.</div>
+  </div>
+
+  <!-- Dashboard -->
+  <div class="dash" id="dash-view">
+    <div class="dash-head">
+      <div class="dash-name" id="d-name"></div>
+      <div class="dash-slug" id="d-slug"></div>
+      <div class="dash-date" id="d-date"></div>
+    </div>
+
+    <div class="copy-wrap">
+      <span class="copy-url" id="d-url"></span>
+      <button class="copy-btn" onclick="copyLink()">Копировать</button>
+    </div>
+
+    <div class="promo-box">
+      <div class="promo-code" id="d-promo"></div>
+      <div class="promo-label">Промокод для клиентов</div>
+    </div>
+
+    <div class="cards">
+      <div class="card"><div class="card-num" id="d-today">0</div><div class="card-label">Сегодня</div></div>
+      <div class="card"><div class="card-num green" id="d-month">0</div><div class="card-label">За 30 дней</div></div>
+      <div class="card"><div class="card-num" id="d-total">0</div><div class="card-label">Всего</div></div>
+    </div>
+
+    <div class="sec" id="sec-countries" style="display:none">
+      <div class="sec-title">География</div>
+      <table class="tbl"><tbody id="tbl-countries"></tbody></table>
+    </div>
+
+    <div class="sec" id="sec-referrers" style="display:none">
+      <div class="sec-title">Источники</div>
+      <table class="tbl"><tbody id="tbl-referrers"></tbody></table>
+    </div>
+
+    <div class="sec" id="sec-devices" style="display:none">
+      <div class="sec-title">Устройства</div>
+      <table class="tbl"><tbody id="tbl-devices"></tbody></table>
+    </div>
+
+    <button class="login-btn" style="max-width:200px;background:#2D5A3E;color:#fff;margin-top:20px" onclick="logout()">Выйти</button>
+  </div>
+</div>
+
+<script>
+var _slug='';
+var inp=document.getElementById('slug-input');
+inp.addEventListener('keydown',function(e){if(e.key==='Enter')loadStats()});
+
+// Auto-login from localStorage
+var saved=localStorage.getItem('partner_dash');
+if(saved){inp.value=saved;loadStats()}
+
+function loadStats(){
+  var s=inp.value.trim().toLowerCase();
+  if(!s)return inp.focus();
+  _slug=s;
+  document.getElementById('login-err').style.display='none';
+  document.getElementById('login-btn').textContent='Загрузка...';
+  document.getElementById('login-btn').disabled=true;
+
+  fetch('/api/partner-stats?slug='+encodeURIComponent(s))
+    .then(function(r){return r.json()})
+    .then(function(d){
+      document.getElementById('login-btn').textContent='Войти';
+      document.getElementById('login-btn').disabled=false;
+      if(d.error){
+        document.getElementById('login-err').style.display='block';
+        return;
+      }
+      localStorage.setItem('partner_dash',s);
+      showDash(d);
+    })
+    .catch(function(){
+      document.getElementById('login-btn').textContent='Войти';
+      document.getElementById('login-btn').disabled=false;
+      document.getElementById('login-err').style.display='block';
+    });
+}
+
+function showDash(d){
+  document.getElementById('login-view').style.display='none';
+  document.getElementById('dash-view').style.display='block';
+
+  document.getElementById('d-name').textContent=d.partner;
+  document.getElementById('d-slug').textContent='sakhva.link/'+d.slug;
+  document.getElementById('d-date').textContent='Создана: '+new Date(d.created).toLocaleDateString('ru-RU');
+  document.getElementById('d-url').textContent='https://sakhva.link/'+d.slug;
+  document.getElementById('d-promo').textContent=d.slug.toUpperCase()+'10';
+
+  document.getElementById('d-today').textContent=d.today||0;
+  document.getElementById('d-month').textContent=d.last30days||0;
+  document.getElementById('d-total').textContent=d.totalClicks||0;
+
+  renderTable('countries','sec-countries','tbl-countries',d.countries,d.last30days||d.totalClicks);
+  renderTable('referrers','sec-referrers','tbl-referrers',d.referrers,d.last30days||d.totalClicks);
+  renderTable('os','sec-devices','tbl-devices',d.os,d.last30days||d.totalClicks);
+}
+
+function renderTable(key,secId,tblId,data,total){
+  if(!data||!data.length)return;
+  document.getElementById(secId).style.display='';
+  var tb=document.getElementById(tblId);
+  tb.innerHTML='';
+  var max=Math.max.apply(null,data.map(function(x){return x.count||x.clicks||0}));
+  data.slice(0,8).forEach(function(item){
+    var name=item.country||item.referrer||item.os||item.browser||item.name||'Прямой';
+    var count=item.count||item.clicks||0;
+    var pct=total>0?Math.round(count/total*100):0;
+    var barW=max>0?Math.round(count/max*100):0;
+    var tr=document.createElement('tr');
+    tr.innerHTML='<td style="width:40%">'+name+'</td><td style="width:20%;text-align:right;font-weight:700;color:#fff">'+count+'</td><td style="width:15%;text-align:right;color:#6B7280;font-size:12px">'+pct+'%</td><td style="width:25%"><div class="bar-wrap"><div class="bar" style="width:'+barW+'%"></div></div></td>';
+    tb.appendChild(tr);
+  });
+}
+
+function copyLink(){
+  var url='https://sakhva.link/'+_slug;
+  navigator.clipboard.writeText(url).then(function(){
+    var btn=document.querySelector('.copy-btn');
+    btn.textContent='Скопировано!';
+    setTimeout(function(){btn.textContent='Копировать'},2000);
+  });
+}
+
+function logout(){
+  localStorage.removeItem('partner_dash');
+  document.getElementById('dash-view').style.display='none';
+  document.getElementById('login-view').style.display='block';
+  inp.value='';
+  inp.focus();
+}
+</script>
+</body>
+</html>

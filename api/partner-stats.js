@@ -1,0 +1,63 @@
+// Partner stats API — proxies Short.io API, hides API key
+module.exports = async (req, res) => {
+  res.setHeader('Access-Control-Allow-Origin', 'https://sakhva-travel.com');
+  res.setHeader('Access-Control-Allow-Methods', 'GET');
+
+  const { slug } = req.query;
+  if (!slug || !/^[a-z0-9-]{2,30}$/i.test(slug)) {
+    return res.status(400).json({ error: 'Invalid slug' });
+  }
+
+  const API_KEY = 'sk_G5i9bbtG1zBif5vi';
+  const DOMAIN_ID = 1782098;
+
+  try {
+    // Get link by path
+    const linkRes = await fetch(
+      `https://api.short.io/api/links?domain_id=${DOMAIN_ID}&path=${encodeURIComponent(slug)}`,
+      { headers: { Authorization: API_KEY } }
+    );
+    const linkData = await linkRes.json();
+    const links = linkData.links || linkData;
+    const link = Array.isArray(links) ? links.find(l => l.path === slug) : null;
+
+    if (!link) {
+      return res.status(404).json({ error: 'Link not found' });
+    }
+
+    // Get link statistics
+    const now = new Date();
+    const monthAgo = new Date(now);
+    monthAgo.setDate(monthAgo.getDate() - 30);
+
+    const statsRes = await fetch(
+      `https://statistics.short.io/statistics/link/${link.id}?period=last30&tz=Asia/Tbilisi`,
+      { headers: { Authorization: API_KEY } }
+    );
+    const stats = await statsRes.json();
+
+    // Get today's clicks
+    const todayStr = now.toISOString().slice(0, 10);
+    const todayRes = await fetch(
+      `https://statistics.short.io/statistics/link/${link.id}?period=today&tz=Asia/Tbilisi`,
+      { headers: { Authorization: API_KEY } }
+    );
+    const todayStats = await todayRes.json();
+
+    return res.status(200).json({
+      partner: link.title || slug,
+      slug: link.path,
+      totalClicks: link.clicks || 0,
+      created: link.createdAt,
+      today: todayStats.humanClicks || todayStats.totalClicks || 0,
+      last30days: stats.humanClicks || stats.totalClicks || 0,
+      countries: stats.countries || [],
+      browsers: stats.browsers || [],
+      os: stats.os || [],
+      referrers: stats.referrers || [],
+      timeline: stats.timeline || []
+    });
+  } catch (e) {
+    return res.status(500).json({ error: 'Failed to fetch stats' });
+  }
+};
