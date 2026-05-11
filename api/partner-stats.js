@@ -8,7 +8,7 @@ module.exports = async (req, res) => {
     return res.status(400).json({ error: 'Invalid slug' });
   }
 
-  const API_KEY = 'sk_G5i9bbtG1zBif5vi';
+  const API_KEY = process.env.SHORTIO_API_KEY || 'sk_G5i9bbtG1zBif5vi';
   const DOMAIN_ID = 1782098;
 
   try {
@@ -25,24 +25,22 @@ module.exports = async (req, res) => {
       return res.status(404).json({ error: 'Link not found' });
     }
 
-    // Get link statistics
-    const now = new Date();
-    const monthAgo = new Date(now);
-    monthAgo.setDate(monthAgo.getDate() - 30);
+    // Parallel: last30 stats + today stats
+    const [statsRes, todayRes] = await Promise.all([
+      fetch(
+        `https://statistics.short.io/statistics/link/${link.id}?period=last30&tz=Asia/Tbilisi`,
+        { headers: { Authorization: API_KEY } }
+      ),
+      fetch(
+        `https://statistics.short.io/statistics/link/${link.id}?period=today&tz=Asia/Tbilisi`,
+        { headers: { Authorization: API_KEY } }
+      )
+    ]);
 
-    const statsRes = await fetch(
-      `https://statistics.short.io/statistics/link/${link.id}?period=last30&tz=Asia/Tbilisi`,
-      { headers: { Authorization: API_KEY } }
-    );
-    const stats = await statsRes.json();
-
-    // Get today's clicks
-    const todayStr = now.toISOString().slice(0, 10);
-    const todayRes = await fetch(
-      `https://statistics.short.io/statistics/link/${link.id}?period=today&tz=Asia/Tbilisi`,
-      { headers: { Authorization: API_KEY } }
-    );
-    const todayStats = await todayRes.json();
+    const [stats, todayStats] = await Promise.all([
+      statsRes.json(),
+      todayRes.json()
+    ]);
 
     return res.status(200).json({
       partner: link.title || slug,
@@ -55,7 +53,7 @@ module.exports = async (req, res) => {
       browsers: stats.browsers || [],
       os: stats.os || [],
       referrers: stats.referrers || [],
-      timeline: stats.timeline || []
+      timeline: stats.clicksTimeline || stats.timeline || []
     });
   } catch (e) {
     return res.status(500).json({ error: 'Failed to fetch stats' });
