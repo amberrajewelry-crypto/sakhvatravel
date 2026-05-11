@@ -42,18 +42,32 @@ module.exports = async (req, res) => {
       todayRes.json()
     ]);
 
+    // Parse clickStatistics chart data
+    let timeline = [];
+    if (stats.clickStatistics && stats.clickStatistics.datasets) {
+      const ds = stats.clickStatistics.datasets[0];
+      if (ds && ds.data) {
+        timeline = ds.data.map(p => ({
+          date: p.x.slice(0, 10),
+          clicks: parseInt(p.y, 10) || 0
+        }));
+      }
+    }
+
     return res.status(200).json({
       partner: link.title || slug,
       slug: link.path,
-      totalClicks: link.clicks || 0,
+      totalClicks: stats.totalClicks || stats.humanClicks || 0,
       created: link.createdAt,
       today: todayStats.humanClicks || todayStats.totalClicks || 0,
       last30days: stats.humanClicks || stats.totalClicks || 0,
-      countries: stats.countries || [],
-      browsers: stats.browsers || [],
-      os: stats.os || [],
-      referrers: stats.referrers || [],
-      timeline: stats.clicksTimeline || stats.timeline || []
+      countries: (stats.country || []).map(c => ({ name: c.countryName || c.country, count: c.score })),
+      cities: (stats.city || []).map(c => ({ name: c.name || c.city, count: c.score })),
+      browsers: (stats.browser || []).map(b => ({ name: b.browser, count: b.score })),
+      os: (stats.os || []).map(o => ({ name: o.os, count: o.score })),
+      referrers: (stats.referer || []).map(r => ({ name: r.referer || 'Прямой', count: r.score })),
+      social: (stats.social || []).filter(s => s.social).map(s => ({ name: s.social, count: s.score })),
+      timeline
     });
   } catch (e) {
     return res.status(500).json({ error: 'Failed to fetch stats' });

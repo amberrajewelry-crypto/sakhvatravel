@@ -15,7 +15,7 @@
 @font-face{font-family:'Lora';font-style:normal;font-weight:700;font-display:swap;src:url(/fonts/lora-14.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Lora',Georgia,serif;background:#0a1628;color:#E5E7EB;min-height:100vh;-webkit-font-smoothing:antialiased;-webkit-overflow-scrolling:touch}
+body{font-family:'Lora',Georgia,serif;background:#0a1628;color:#E5E7EB;min-height:100vh;-webkit-font-smoothing:antialiased}
 
 /* Nav */
 .top{background:rgba(0,0,0,.35);padding:0 clamp(16px,3.5vw,56px);height:72px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100}
@@ -37,22 +37,18 @@ body{font-family:'Lora',Georgia,serif;background:#0a1628;color:#E5E7EB;min-heigh
 
 /* Dashboard */
 .dash{display:none}
-
-/* Header */
 .dash-head{margin-bottom:32px;padding-bottom:24px;border-bottom:1px solid rgba(255,255,255,.06)}
 .dash-name{font-size:clamp(22px,4vw,32px);color:#fff;font-weight:600;letter-spacing:-.01em}
 .dash-slug{color:#F59E0B;font-size:14px;font-weight:600;letter-spacing:.05em;margin-top:4px}
 .dash-date{color:#6B7280;font-size:12px;margin-top:6px}
 
-/* Link + Promo row */
+/* Link + Promo */
 .link-promo{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:28px}
 @media(max-width:560px){.link-promo{grid-template-columns:1fr}}
-
 .copy-wrap{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:18px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px}
 .copy-url{color:#F59E0B;font-size:14px;font-weight:600;word-break:break-all}
 .copy-btn{background:#1a3d2e;color:#fff;border:none;padding:8px 18px;border-radius:9999px;font-size:11px;font-weight:700;cursor:pointer;white-space:nowrap;font-family:'Lora',serif;letter-spacing:.08em;text-transform:uppercase;transition:filter .2s;box-shadow:0 2px 6px rgba(26,61,46,.3)}
 .copy-btn:hover{filter:brightness(1.15)}
-
 .promo-box{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:18px 20px;text-align:center;display:flex;flex-direction:column;justify-content:center}
 .promo-code{font-size:22px;font-weight:700;color:#F59E0B;letter-spacing:.15em}
 .promo-label{font-size:10px;color:#6B7280;letter-spacing:.12em;text-transform:uppercase;margin-top:6px}
@@ -71,13 +67,15 @@ body{font-family:'Lora',Georgia,serif;background:#0a1628;color:#E5E7EB;min-heigh
 .chart{display:flex;align-items:flex-end;gap:2px;height:120px}
 .chart-bar{flex:1;background:#1a3d2e;border-radius:3px 3px 0 0;min-height:2px;transition:background .2s;position:relative;cursor:default}
 .chart-bar:hover{background:#F59E0B}
-.chart-bar .tip{display:none;position:absolute;bottom:100%;left:50%;transform:translateX(-50%);background:#111;color:#fff;font-size:10px;padding:3px 8px;border-radius:6px;white-space:nowrap;margin-bottom:4px}
+.chart-bar .tip{display:none;position:absolute;bottom:100%;left:50%;transform:translateX(-50%);background:#111;color:#fff;font-size:10px;padding:3px 8px;border-radius:6px;white-space:nowrap;margin-bottom:4px;z-index:5}
 .chart-bar:hover .tip{display:block}
 .chart-dates{display:flex;justify-content:space-between;margin-top:8px}
 .chart-dates span{font-size:10px;color:#6B7280}
 
-/* Table sections */
-.sec{margin-bottom:24px}
+/* Sections */
+.sections{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:8px}
+@media(max-width:560px){.sections{grid-template-columns:1fr}}
+.sec-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:18px 16px}
 .sec-title{font-size:13px;font-weight:700;color:#9CA3AF;letter-spacing:.1em;text-transform:uppercase;margin-bottom:14px}
 .tbl{width:100%;border-collapse:collapse}
 .tbl td{padding:10px 12px;border-bottom:1px solid rgba(255,255,255,.06);font-size:14px;color:#D1D5DB}
@@ -85,11 +83,6 @@ body{font-family:'Lora',Georgia,serif;background:#0a1628;color:#E5E7EB;min-heigh
 .bar-wrap{background:rgba(255,255,255,.06);border-radius:4px;height:5px;flex:1;margin-left:12px}
 .bar{background:#F59E0B;height:5px;border-radius:4px;min-width:2px}
 .bar-row{display:flex;align-items:center}
-
-/* Sections grid */
-.sections{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-@media(max-width:560px){.sections{grid-template-columns:1fr}}
-.sec-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:18px 16px}
 
 /* Logout */
 .logout-btn{display:block;width:180px;margin:32px auto 0;padding:12px;background:rgba(255,255,255,.06);color:#9CA3AF;border:1px solid rgba(255,255,255,.08);border-radius:9999px;font-size:12px;font-weight:700;font-family:'Lora',serif;cursor:pointer;letter-spacing:.1em;text-transform:uppercase;transition:all .2s}
@@ -145,13 +138,13 @@ body{font-family:'Lora',Georgia,serif;background:#0a1628;color:#E5E7EB;min-heigh
 
     <div class="sections">
       <div class="sec-card" id="sec-countries" style="display:none">
-        <div class="sec-title">География</div>
+        <div class="sec-title">Страны</div>
         <table class="tbl"><tbody id="tbl-countries"></tbody></table>
       </div>
 
-      <div class="sec-card" id="sec-referrers" style="display:none">
-        <div class="sec-title">Источники</div>
-        <table class="tbl"><tbody id="tbl-referrers"></tbody></table>
+      <div class="sec-card" id="sec-cities" style="display:none">
+        <div class="sec-title">Города</div>
+        <table class="tbl"><tbody id="tbl-cities"></tbody></table>
       </div>
 
       <div class="sec-card" id="sec-browsers" style="display:none">
@@ -162,6 +155,16 @@ body{font-family:'Lora',Georgia,serif;background:#0a1628;color:#E5E7EB;min-heigh
       <div class="sec-card" id="sec-devices" style="display:none">
         <div class="sec-title">Устройства</div>
         <table class="tbl"><tbody id="tbl-devices"></tbody></table>
+      </div>
+
+      <div class="sec-card" id="sec-referrers" style="display:none">
+        <div class="sec-title">Источники</div>
+        <table class="tbl"><tbody id="tbl-referrers"></tbody></table>
+      </div>
+
+      <div class="sec-card" id="sec-social" style="display:none">
+        <div class="sec-title">Соцсети</div>
+        <table class="tbl"><tbody id="tbl-social"></tbody></table>
       </div>
     </div>
 
@@ -220,9 +223,11 @@ function showDash(d){
 
   renderChart(d.timeline||[]);
   renderTable('sec-countries','tbl-countries',d.countries,d.last30days||d.totalClicks);
-  renderTable('sec-referrers','tbl-referrers',d.referrers,d.last30days||d.totalClicks);
+  renderTable('sec-cities','tbl-cities',d.cities,d.last30days||d.totalClicks);
   renderTable('sec-browsers','tbl-browsers',d.browsers,d.last30days||d.totalClicks);
   renderTable('sec-devices','tbl-devices',d.os,d.last30days||d.totalClicks);
+  renderTable('sec-referrers','tbl-referrers',d.referrers,d.last30days||d.totalClicks);
+  renderTable('sec-social','tbl-social',d.social,d.last30days||d.totalClicks);
 }
 
 function renderChart(timeline){
@@ -230,13 +235,14 @@ function renderChart(timeline){
   document.getElementById('chart-section').style.display='';
   var el=document.getElementById('chart');
   el.innerHTML='';
-  var max=Math.max.apply(null,timeline.map(function(x){return x.clicks||x.humanClicks||0}));
+  var max=Math.max.apply(null,timeline.map(function(x){return x.clicks||0}));
   if(max===0)max=1;
   timeline.forEach(function(item){
-    var clicks=item.clicks||item.humanClicks||0;
+    var clicks=item.clicks||0;
     var h=Math.max(2,Math.round(clicks/max*110));
-    var date=item.date||item.day||'';
-    var short=date.slice(5);
+    var date=item.date||'';
+    var parts=date.split('-');
+    var short=parts.length>=3?(parts[2]+'.'+parts[1]):'';
     var bar=document.createElement('div');
     bar.className='chart-bar';
     bar.style.height=h+'px';
@@ -245,9 +251,8 @@ function renderChart(timeline){
   });
   var dates=document.getElementById('chart-dates');
   if(timeline.length>1){
-    var first=(timeline[0].date||timeline[0].day||'').slice(5);
-    var last=(timeline[timeline.length-1].date||timeline[timeline.length-1].day||'').slice(5);
-    dates.innerHTML='<span>'+first+'</span><span>'+last+'</span>';
+    var fmt=function(d){var p=d.split('-');return p.length>=3?(p[2]+'.'+p[1]):d};
+    dates.innerHTML='<span>'+fmt(timeline[0].date||'')+'</span><span>'+fmt(timeline[timeline.length-1].date||'')+'</span>';
   }
 }
 
@@ -256,10 +261,10 @@ function renderTable(secId,tblId,data,total){
   document.getElementById(secId).style.display='';
   var tb=document.getElementById(tblId);
   tb.innerHTML='';
-  var max=Math.max.apply(null,data.map(function(x){return x.count||x.clicks||0}));
+  var max=Math.max.apply(null,data.map(function(x){return x.count||0}));
   data.slice(0,8).forEach(function(item){
-    var name=item.country||item.referrer||item.os||item.browser||item.name||'Прямой';
-    var count=item.count||item.clicks||0;
+    var name=item.name||'Прямой';
+    var count=item.count||0;
     var pct=total>0?Math.round(count/total*100):0;
     var barW=max>0?Math.round(count/max*100):0;
     var tr=document.createElement('tr');
