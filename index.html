@@ -1634,6 +1634,7 @@ update();
 <div class="cm-field"><label data-ru="Ваше имя" data-en="Your name">Ваше имя</label><input type="text" id="cm-name" placeholder="Имя" data-ru="Имя" data-en="Name"></div>
 <div class="cm-field"><label data-ru="Телефон или WhatsApp" data-en="Phone or WhatsApp">Телефон или WhatsApp</label><input type="tel" id="cm-phone" placeholder="+7 или +995..." required data-ru="+7 или +995..." data-en="+995..."></div>
 <div class="cm-field"><label data-ru="Сообщение (необязательно)" data-en="Message (optional)">Сообщение (необязательно)</label><textarea id="cm-msg" placeholder="Даты, количество человек, вопросы..." data-ru="Даты, количество человек, вопросы..." data-en="Dates, number of people, questions..."></textarea></div>
+<div class="cm-field" id="cm-promo-wrap" style="display:none"><label data-ru="Промокод" data-en="Promo code">Промокод</label><input type="text" id="cm-promo" readonly style="background:#F0FDF4;color:#16A34A;font-weight:700;border:1px solid #86EFAC;padding:10px 14px;border-radius:8px;font-size:16px;width:100%;box-sizing:border-box"></div>
 <button class="cm-submit" id="cm-submit-btn" data-ru="Отправить →" data-en="Send →">Отправить →</button>
 <script>document.getElementById('cm-submit-btn').addEventListener('click',function(){if(typeof sendContact==='function'){sendContact()}else{alert('Страница загружается, подождите секунду')}})</script>
 </div>

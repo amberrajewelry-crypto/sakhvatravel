@@ -7,20 +7,19 @@ var s=localStorage.getItem('partner');
 var ts=parseInt(localStorage.getItem('partner_ts')||'0');
 if(!s||Date.now()-ts>30*86400000){localStorage.removeItem('partner');localStorage.removeItem('partner_ts');return}
 var code=s.toUpperCase()+'10';
-// Append promo to all WhatsApp links
+function patchLinks(){
 document.querySelectorAll('a[href*="wa.me"]').forEach(function(a){
-var h=a.href;
-if(h.indexOf(code)===-1){
-a.href=h+(h.indexOf('text=')>-1?'+Промокод+'+code:'?text=Промокод+'+code)
-}
-});
-// Append promo to Telegram bot links
+if(a.href.indexOf(code)===-1){
+a.href=a.href+(a.href.indexOf('text=')>-1?'+Промокод+'+code:'?text=Промокод+'+code)}});
 document.querySelectorAll('a[href*="t.me/SakhvaGuideBot"]').forEach(function(a){
 if(a.href.indexOf('start=')>-1){a.href=a.href.replace(/start=[^&]*/,'start='+code)}
-else{a.href=a.href+(a.href.indexOf('?')>-1?'&':'?')+'start='+code}
-});
-// Show promo in booking form
-var pw=document.getElementById('bm-promo-wrap');
-var pi=document.getElementById('bm-promo');
-if(pw&&pi){pw.style.display='';pi.value=code}
+else{a.href=a.href+(a.href.indexOf('?')>-1?'&':'?')+'start='+code}});}
+function showPromo(wrapId,inputId){
+var w=document.getElementById(wrapId),i=document.getElementById(inputId);
+if(w&&i){w.style.display='';i.value=code}}
+patchLinks();
+showPromo('bm-promo-wrap','bm-promo');
+showPromo('cm-promo-wrap','cm-promo');
+// Re-patch when modals open (class changes)
+new MutationObserver(function(){patchLinks();showPromo('bm-promo-wrap','bm-promo');showPromo('cm-promo-wrap','cm-promo')}).observe(document.body,{attributes:true,subtree:true,attributeFilter:['class']});
 })();
