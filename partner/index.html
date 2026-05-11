@@ -6,6 +6,8 @@
 <title>Партнёрский кабинет — Sakhva Travel</title>
 <meta name="robots" content="noindex,nofollow">
 <link rel="icon" href="/favicon.ico">
+<link rel="preload" href="/fonts/lora-10.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/lora-14.woff2" as="font" type="font/woff2" crossorigin>
 <style>
 @font-face{font-family:'Lora';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/lora-10.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
 @font-face{font-family:'Lora';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/lora-14.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
@@ -15,92 +17,107 @@
 @font-face{font-family:'Lora';font-style:normal;font-weight:700;font-display:swap;src:url(/fonts/lora-14.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Lora',Georgia,serif;background:#0a1628;color:#E5E7EB;min-height:100vh;-webkit-font-smoothing:antialiased}
+html{background:#0a1628}
+body{font-family:'Lora',Georgia,serif;color:#E5E7EB;min-height:100vh;-webkit-font-smoothing:antialiased;background:#0a1628}
 
-/* Nav */
-.top{background:rgba(0,0,0,.35);padding:0 clamp(16px,3.5vw,56px);height:72px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100}
-.top-logo{color:#fff;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;text-decoration:none}
-.top-label{color:rgba(255,255,255,.6);font-size:12px;font-weight:700;letter-spacing:.15em;text-transform:uppercase}
+/* Nav — exact match of main site */
+.nav{position:sticky;top:0;z-index:100;height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(16px,3.5vw,56px);background:rgba(0,0,0,.35)}
+.nav-logo{color:#fff;font-family:'Lora',Georgia,serif;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;text-decoration:none}
+.nav-tag{font-family:'Lora',Georgia,serif;font-size:12px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.6)}
 
-.wrap{max-width:760px;margin:0 auto;padding:32px 20px 80px}
+.wrap{max-width:780px;margin:0 auto;padding:40px clamp(16px,3.5vw,56px) 100px}
 
 /* Login */
-.login{text-align:center;padding:100px 0 60px}
-.login h1{font-size:clamp(24px,5vw,36px);color:#fff;font-weight:600;margin-bottom:8px;letter-spacing:-.01em}
-.login p{color:#9CA3AF;font-size:15px;margin-bottom:36px}
-.login-input{width:100%;max-width:340px;padding:16px 24px;border:1px solid rgba(255,255,255,.12);border-radius:12px;background:rgba(255,255,255,.05);color:#fff;font-size:18px;font-family:'Lora',serif;text-align:center;outline:none;letter-spacing:.1em;transition:border-color .2s}
-.login-input:focus{border-color:rgba(245,158,11,.5)}
-.login-input::placeholder{color:#6B7280;letter-spacing:.05em}
-.login-btn{display:block;width:100%;max-width:340px;margin:16px auto 0;padding:14px;background:#1a3d2e;color:#fff;border:none;border-radius:9999px;font-size:14px;font-weight:700;font-family:'Lora',serif;cursor:pointer;letter-spacing:.1em;text-transform:uppercase;transition:filter .2s,box-shadow .2s;box-shadow:0 2px 10px rgba(26,61,46,.4),inset 0 1px 0 rgba(255,255,255,.15)}
-.login-btn:hover{filter:brightness(1.15)}
-.login-err{color:#F87171;font-size:13px;margin-top:14px;display:none}
+.login{text-align:center;padding:80px 0 40px}
+.login h1{font-family:'Lora',Georgia,serif;font-size:clamp(26px,5vw,40px);color:#fff;font-weight:400;margin-bottom:10px;letter-spacing:-.02em}
+.login p{color:rgba(255,255,255,.5);font-size:15px;margin-bottom:40px}
+.login-field{display:flex;flex-direction:column;align-items:center;gap:14px}
+.login-input{width:100%;max-width:360px;padding:16px 24px;border:1.5px solid rgba(255,255,255,.1);border-radius:12px;background:rgba(10,22,40,.65);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#fff;font-size:18px;font-family:'Lora',serif;text-align:center;outline:none;letter-spacing:.08em;transition:border-color .25s}
+.login-input:focus{border-color:#F59E0B}
+.login-input::placeholder{color:rgba(255,255,255,.25);letter-spacing:.04em}
+.login-btn{width:100%;max-width:360px;padding:15px;background:#1A3D2E;color:#fff;border:none;border-radius:9999px;font-size:13px;font-weight:700;font-family:'Lora',serif;cursor:pointer;letter-spacing:.12em;text-transform:uppercase;transition:filter .2s,box-shadow .2s;box-shadow:0 4px 14px rgba(26,61,46,.35),inset 0 1px 0 rgba(255,255,255,.15)}
+.login-btn:hover{filter:brightness(1.2)}
+.login-err{color:#F87171;font-size:13px;margin-top:8px;display:none}
 
 /* Dashboard */
 .dash{display:none}
-.dash-head{margin-bottom:32px;padding-bottom:24px;border-bottom:1px solid rgba(255,255,255,.06)}
-.dash-name{font-size:clamp(22px,4vw,32px);color:#fff;font-weight:600;letter-spacing:-.01em}
-.dash-slug{color:#F59E0B;font-size:14px;font-weight:600;letter-spacing:.05em;margin-top:4px}
-.dash-date{color:#6B7280;font-size:12px;margin-top:6px}
+
+/* Glass card mixin */
+.glass{background:rgba(10,22,40,.65);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.08);border-radius:16px}
+
+/* Header */
+.dash-head{margin-bottom:28px}
+.dash-name{font-family:'Lora',Georgia,serif;font-size:clamp(24px,4.5vw,36px);color:#fff;font-weight:400;letter-spacing:-.02em}
+.dash-meta{display:flex;align-items:center;gap:16px;margin-top:8px;flex-wrap:wrap}
+.dash-slug{color:#F59E0B;font-size:14px;font-weight:600;letter-spacing:.04em}
+.dash-date{color:rgba(255,255,255,.35);font-size:12px}
 
 /* Link + Promo */
-.link-promo{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:28px}
+.link-promo{display:grid;grid-template-columns:1fr auto;gap:14px;margin-bottom:24px}
 @media(max-width:560px){.link-promo{grid-template-columns:1fr}}
-.copy-wrap{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:18px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px}
-.copy-url{color:#F59E0B;font-size:14px;font-weight:600;word-break:break-all}
-.copy-btn{background:#1a3d2e;color:#fff;border:none;padding:8px 18px;border-radius:9999px;font-size:11px;font-weight:700;cursor:pointer;white-space:nowrap;font-family:'Lora',serif;letter-spacing:.08em;text-transform:uppercase;transition:filter .2s;box-shadow:0 2px 6px rgba(26,61,46,.3)}
-.copy-btn:hover{filter:brightness(1.15)}
-.promo-box{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:18px 20px;text-align:center;display:flex;flex-direction:column;justify-content:center}
-.promo-code{font-size:22px;font-weight:700;color:#F59E0B;letter-spacing:.15em}
-.promo-label{font-size:10px;color:#6B7280;letter-spacing:.12em;text-transform:uppercase;margin-top:6px}
+.copy-wrap{padding:20px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.copy-url{color:#F59E0B;font-size:15px;font-weight:600;word-break:break-all;letter-spacing:.02em}
+.copy-btn{background:#1A3D2E;color:#fff;border:none;padding:9px 22px;border-radius:9999px;font-size:11px;font-weight:700;cursor:pointer;white-space:nowrap;font-family:'Lora',serif;letter-spacing:.1em;text-transform:uppercase;transition:filter .2s;box-shadow:0 2px 10px rgba(26,61,46,.4),inset 0 1px 0 rgba(255,255,255,.2)}
+.copy-btn:hover{filter:brightness(1.2)}
+.promo-box{padding:20px 32px;text-align:center;display:flex;flex-direction:column;justify-content:center;min-width:180px}
+.promo-code{font-size:24px;font-weight:700;color:#F59E0B;letter-spacing:.2em}
+.promo-label{font-size:9px;color:rgba(255,255,255,.35);letter-spacing:.15em;text-transform:uppercase;margin-top:6px}
 
-/* Cards */
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:32px}
+/* Metric cards */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:28px}
 @media(max-width:520px){.cards{grid-template-columns:1fr}}
-.card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:22px;text-align:center}
-.card-num{font-size:clamp(28px,6vw,42px);font-weight:700;color:#fff;line-height:1}
-.card-label{font-size:10px;color:#6B7280;letter-spacing:.15em;text-transform:uppercase;margin-top:8px}
-.card-num.amber{color:#F59E0B}
+.card{padding:24px 20px;text-align:center}
+.card-num{font-size:clamp(32px,7vw,48px);font-weight:700;color:#fff;line-height:1;letter-spacing:-.02em}
+.card-label{font-size:9px;color:rgba(255,255,255,.4);letter-spacing:.2em;text-transform:uppercase;margin-top:10px}
+.card-num.accent{color:#F59E0B}
 
 /* Chart */
-.chart-wrap{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:20px;margin-bottom:28px}
-.chart-title{font-size:13px;font-weight:700;color:#9CA3AF;letter-spacing:.1em;text-transform:uppercase;margin-bottom:16px}
-.chart{display:flex;align-items:flex-end;gap:2px;height:120px}
-.chart-bar{flex:1;background:#1a3d2e;border-radius:3px 3px 0 0;min-height:2px;transition:background .2s;position:relative;cursor:default}
-.chart-bar:hover{background:#F59E0B}
-.chart-bar .tip{display:none;position:absolute;bottom:100%;left:50%;transform:translateX(-50%);background:#111;color:#fff;font-size:10px;padding:3px 8px;border-radius:6px;white-space:nowrap;margin-bottom:4px;z-index:5}
+.chart-wrap{padding:24px;margin-bottom:24px}
+.sec-label{font-size:11px;font-weight:700;color:#F59E0B;letter-spacing:.15em;text-transform:uppercase;margin-bottom:4px}
+.sec-label::before{content:'';display:inline-block;width:12px;height:2px;background:#F59E0B;margin-right:10px;vertical-align:middle}
+.chart-title{font-family:'Lora',Georgia,serif;font-size:18px;color:#fff;font-weight:400;margin-bottom:20px}
+.chart{display:flex;align-items:flex-end;gap:2px;height:130px;padding:0 2px}
+.chart-bar{flex:1;background:linear-gradient(180deg,#1A3D2E 0%,rgba(26,61,46,.4) 100%);border-radius:4px 4px 0 0;min-height:2px;transition:all .2s;position:relative;cursor:default}
+.chart-bar:hover{background:linear-gradient(180deg,#F59E0B 0%,rgba(245,158,11,.3) 100%)}
+.chart-bar .tip{display:none;position:absolute;bottom:100%;left:50%;transform:translateX(-50%);background:rgba(0,0,0,.85);color:#fff;font-size:10px;padding:4px 10px;border-radius:8px;white-space:nowrap;margin-bottom:6px;z-index:5;backdrop-filter:blur(4px)}
 .chart-bar:hover .tip{display:block}
-.chart-dates{display:flex;justify-content:space-between;margin-top:8px}
-.chart-dates span{font-size:10px;color:#6B7280}
+.chart-dates{display:flex;justify-content:space-between;margin-top:10px;padding:0 2px}
+.chart-dates span{font-size:10px;color:rgba(255,255,255,.3)}
 
-/* Sections */
-.sections{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:8px}
+/* Data sections */
+.sections{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
 @media(max-width:560px){.sections{grid-template-columns:1fr}}
-.sec-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:18px 16px}
-.sec-title{font-size:13px;font-weight:700;color:#9CA3AF;letter-spacing:.1em;text-transform:uppercase;margin-bottom:14px}
+.sec-card{padding:20px}
+.sec-card .sec-label{margin-bottom:2px}
+.sec-card-title{font-family:'Lora',Georgia,serif;font-size:16px;color:#fff;font-weight:400;margin-bottom:16px}
 .tbl{width:100%;border-collapse:collapse}
-.tbl td{padding:10px 12px;border-bottom:1px solid rgba(255,255,255,.06);font-size:14px;color:#D1D5DB}
+.tbl td{padding:9px 10px;border-bottom:1px solid rgba(255,255,255,.05);font-size:13px;color:rgba(255,255,255,.7)}
 .tbl tr:last-child td{border:none}
-.bar-wrap{background:rgba(255,255,255,.06);border-radius:4px;height:5px;flex:1;margin-left:12px}
-.bar{background:#F59E0B;height:5px;border-radius:4px;min-width:2px}
-.bar-row{display:flex;align-items:center}
+.tbl td:nth-child(2){text-align:right;font-weight:700;color:#fff;font-size:14px}
+.tbl td:nth-child(3){text-align:right;color:rgba(255,255,255,.3);font-size:11px;width:40px}
+.bar-wrap{background:rgba(255,255,255,.05);border-radius:3px;height:4px;width:100%}
+.bar{background:linear-gradient(90deg,#F59E0B,rgba(245,158,11,.4));height:4px;border-radius:3px;min-width:2px}
+.bar-cell{width:30%}
 
 /* Logout */
-.logout-btn{display:block;width:180px;margin:32px auto 0;padding:12px;background:rgba(255,255,255,.06);color:#9CA3AF;border:1px solid rgba(255,255,255,.08);border-radius:9999px;font-size:12px;font-weight:700;font-family:'Lora',serif;cursor:pointer;letter-spacing:.1em;text-transform:uppercase;transition:all .2s}
-.logout-btn:hover{color:#fff;border-color:rgba(255,255,255,.2)}
+.logout-btn{display:block;width:160px;margin:36px auto 0;padding:11px;background:transparent;color:rgba(255,255,255,.35);border:1px solid rgba(255,255,255,.08);border-radius:9999px;font-size:11px;font-weight:700;font-family:'Lora',serif;cursor:pointer;letter-spacing:.12em;text-transform:uppercase;transition:all .25s}
+.logout-btn:hover{color:rgba(255,255,255,.7);border-color:rgba(255,255,255,.2)}
 </style>
 </head>
 <body>
-<div class="top">
-  <a href="/" class="top-logo">Sakhva Travel</a>
-  <span class="top-label">Partner</span>
+<div class="nav">
+  <a href="/" class="nav-logo">Sakhva Travel</a>
+  <span class="nav-tag">Partner</span>
 </div>
 <div class="wrap">
   <!-- Login -->
   <div class="login" id="login-view">
     <h1>Партнёрский кабинет</h1>
-    <p>Введите ваш партнёрский код для просмотра статистики</p>
-    <input type="text" class="login-input" id="slug-input" placeholder="Код партнёра" autocomplete="off" autofocus>
-    <button class="login-btn" id="login-btn" onclick="loadStats()">Войти</button>
+    <p>Введите код для просмотра статистики</p>
+    <div class="login-field">
+      <input type="text" class="login-input" id="slug-input" placeholder="Код партнёра" autocomplete="off" autofocus>
+      <button class="login-btn" id="login-btn" onclick="loadStats()">Войти</button>
+    </div>
     <div class="login-err" id="login-err">Партнёр не найден. Проверьте код.</div>
   </div>
 
@@ -108,62 +125,65 @@ body{font-family:'Lora',Georgia,serif;background:#0a1628;color:#E5E7EB;min-heigh
   <div class="dash" id="dash-view">
     <div class="dash-head">
       <div class="dash-name" id="d-name"></div>
-      <div class="dash-slug" id="d-slug"></div>
-      <div class="dash-date" id="d-date"></div>
+      <div class="dash-meta">
+        <span class="dash-slug" id="d-slug"></span>
+        <span class="dash-date" id="d-date"></span>
+      </div>
     </div>
 
     <div class="link-promo">
-      <div class="copy-wrap">
+      <div class="glass copy-wrap">
         <span class="copy-url" id="d-url"></span>
         <button class="copy-btn" onclick="copyLink()">Копировать</button>
       </div>
-      <div class="promo-box">
+      <div class="glass promo-box">
         <div class="promo-code" id="d-promo"></div>
-        <div class="promo-label">Промокод для клиентов</div>
+        <div class="promo-label">Промокод</div>
       </div>
     </div>
 
     <div class="cards">
-      <div class="card"><div class="card-num" id="d-today">0</div><div class="card-label">Сегодня</div></div>
-      <div class="card"><div class="card-num amber" id="d-month">0</div><div class="card-label">За 30 дней</div></div>
-      <div class="card"><div class="card-num" id="d-total">0</div><div class="card-label">Всего</div></div>
+      <div class="glass card"><div class="card-num" id="d-today">0</div><div class="card-label">Сегодня</div></div>
+      <div class="glass card"><div class="card-num accent" id="d-month">0</div><div class="card-label">За 30 дней</div></div>
+      <div class="glass card"><div class="card-num" id="d-total">0</div><div class="card-label">Всего</div></div>
     </div>
 
-    <!-- Timeline chart -->
-    <div class="chart-wrap" id="chart-section" style="display:none">
+    <div class="glass chart-wrap" id="chart-section" style="display:none">
+      <div class="sec-label">Аналитика</div>
       <div class="chart-title">Клики за 30 дней</div>
       <div class="chart" id="chart"></div>
       <div class="chart-dates" id="chart-dates"></div>
     </div>
 
     <div class="sections">
-      <div class="sec-card" id="sec-countries" style="display:none">
-        <div class="sec-title">Страны</div>
+      <div class="glass sec-card" id="sec-countries" style="display:none">
+        <div class="sec-label">Гео</div>
+        <div class="sec-card-title">Страны</div>
         <table class="tbl"><tbody id="tbl-countries"></tbody></table>
       </div>
-
-      <div class="sec-card" id="sec-cities" style="display:none">
-        <div class="sec-title">Города</div>
+      <div class="glass sec-card" id="sec-cities" style="display:none">
+        <div class="sec-label">Гео</div>
+        <div class="sec-card-title">Города</div>
         <table class="tbl"><tbody id="tbl-cities"></tbody></table>
       </div>
-
-      <div class="sec-card" id="sec-browsers" style="display:none">
-        <div class="sec-title">Браузеры</div>
+      <div class="glass sec-card" id="sec-browsers" style="display:none">
+        <div class="sec-label">Техно</div>
+        <div class="sec-card-title">Браузеры</div>
         <table class="tbl"><tbody id="tbl-browsers"></tbody></table>
       </div>
-
-      <div class="sec-card" id="sec-devices" style="display:none">
-        <div class="sec-title">Устройства</div>
+      <div class="glass sec-card" id="sec-devices" style="display:none">
+        <div class="sec-label">Техно</div>
+        <div class="sec-card-title">Устройства</div>
         <table class="tbl"><tbody id="tbl-devices"></tbody></table>
       </div>
-
-      <div class="sec-card" id="sec-referrers" style="display:none">
-        <div class="sec-title">Источники</div>
+      <div class="glass sec-card" id="sec-referrers" style="display:none">
+        <div class="sec-label">Трафик</div>
+        <div class="sec-card-title">Источники</div>
         <table class="tbl"><tbody id="tbl-referrers"></tbody></table>
       </div>
-
-      <div class="sec-card" id="sec-social" style="display:none">
-        <div class="sec-title">Соцсети</div>
+      <div class="glass sec-card" id="sec-social" style="display:none">
+        <div class="sec-label">Трафик</div>
+        <div class="sec-card-title">Соцсети</div>
         <table class="tbl"><tbody id="tbl-social"></tbody></table>
       </div>
     </div>
@@ -185,13 +205,13 @@ function loadStats(){
   if(!s)return inp.focus();
   _slug=s;
   document.getElementById('login-err').style.display='none';
-  document.getElementById('login-btn').textContent='Загрузка...';
+  document.getElementById('login-btn').textContent='ЗАГРУЗКА...';
   document.getElementById('login-btn').disabled=true;
 
   fetch('/api/partner-stats?slug='+encodeURIComponent(s))
     .then(function(r){return r.json()})
     .then(function(d){
-      document.getElementById('login-btn').textContent='Войти';
+      document.getElementById('login-btn').textContent='ВОЙТИ';
       document.getElementById('login-btn').disabled=false;
       if(d.error){
         document.getElementById('login-err').style.display='block';
@@ -201,7 +221,7 @@ function loadStats(){
       showDash(d);
     })
     .catch(function(){
-      document.getElementById('login-btn').textContent='Войти';
+      document.getElementById('login-btn').textContent='ВОЙТИ';
       document.getElementById('login-btn').disabled=false;
       document.getElementById('login-err').style.display='block';
     });
@@ -213,7 +233,7 @@ function showDash(d){
 
   document.getElementById('d-name').textContent=d.partner;
   document.getElementById('d-slug').textContent='sakhva.link/'+d.slug;
-  document.getElementById('d-date').textContent='Создана: '+new Date(d.created).toLocaleDateString('ru-RU');
+  document.getElementById('d-date').textContent='с '+new Date(d.created).toLocaleDateString('ru-RU');
   document.getElementById('d-url').textContent='https://sakhva.link/'+d.slug;
   document.getElementById('d-promo').textContent=d.slug.toUpperCase()+'10';
 
@@ -239,7 +259,7 @@ function renderChart(timeline){
   if(max===0)max=1;
   timeline.forEach(function(item){
     var clicks=item.clicks||0;
-    var h=Math.max(2,Math.round(clicks/max*110));
+    var h=Math.max(2,Math.round(clicks/max*120));
     var date=item.date||'';
     var parts=date.split('-');
     var short=parts.length>=3?(parts[2]+'.'+parts[1]):'';
@@ -268,7 +288,7 @@ function renderTable(secId,tblId,data,total){
     var pct=total>0?Math.round(count/total*100):0;
     var barW=max>0?Math.round(count/max*100):0;
     var tr=document.createElement('tr');
-    tr.innerHTML='<td style="width:45%">'+name+'</td><td style="width:18%;text-align:right;font-weight:700;color:#fff">'+count+'</td><td style="width:12%;text-align:right;color:#6B7280;font-size:11px">'+pct+'%</td><td style="width:25%"><div class="bar-wrap"><div class="bar" style="width:'+barW+'%"></div></div></td>';
+    tr.innerHTML='<td>'+name+'</td><td>'+count+'</td><td>'+pct+'%</td><td class="bar-cell"><div class="bar-wrap"><div class="bar" style="width:'+barW+'%"></div></div></td>';
     tb.appendChild(tr);
   });
 }
@@ -277,8 +297,11 @@ function copyLink(){
   var url='https://sakhva.link/'+_slug;
   navigator.clipboard.writeText(url).then(function(){
     var btn=document.querySelector('.copy-btn');
-    btn.textContent='Скопировано!';
-    setTimeout(function(){btn.textContent='Копировать'},2000);
+    var old=btn.textContent;
+    btn.textContent='Готово';
+    btn.style.background='#F59E0B';
+    btn.style.color='#0a1628';
+    setTimeout(function(){btn.textContent=old;btn.style.background='';btn.style.color=''},1500);
   });
 }
 
