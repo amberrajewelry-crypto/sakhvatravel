@@ -1033,9 +1033,9 @@ document.addEventListener('click',function(e){
 (function(){
   function loadDeferred(src){var s=document.createElement('script');s.src=src;s.defer=true;document.body.appendChild(s)}
   if('requestIdleCallback' in window){
-    requestIdleCallback(function(){loadDeferred('/main.js?v=34');loadDeferred('/scripts/scroll-effects.js')},{timeout:2000});
+    requestIdleCallback(function(){loadDeferred('/main.js?v=35');loadDeferred('/scripts/scroll-effects.js')},{timeout:2000});
   } else {
-    setTimeout(function(){loadDeferred('/main.js?v=34');loadDeferred('/scripts/scroll-effects.js')},100);
+    setTimeout(function(){loadDeferred('/main.js?v=35');loadDeferred('/scripts/scroll-effects.js')},100);
   }
 })();
 </script>
@@ -1254,6 +1254,7 @@ window.toggleFaq=function(btn){
 <div class="cm-field"><label>Your name</label><input type="text" id="cm-name" placeholder="Name"></div>
 <div class="cm-field"><label>Phone or WhatsApp</label><input type="tel" id="cm-phone" placeholder="+995..." required></div>
 <div class="cm-field"><label>Message (optional)</label><textarea id="cm-msg" placeholder="Dates, number of people, questions..."></textarea></div>
+<div class="cm-field" id="cm-promo-wrap" style="display:none"><label>Promo code</label><input type="text" id="cm-promo" readonly style="background:#F0FDF4;color:#16A34A;font-weight:700;border:1px solid #86EFAC;padding:10px 14px;border-radius:8px;font-size:16px;width:100%;box-sizing:border-box"></div>
 <button class="cm-submit" id="cm-submit-btn">Send →</button>
 <script>document.getElementById('cm-submit-btn').addEventListener('click',function(){if(typeof sendContact==='function'){sendContact()}else{alert('Page is loading, please wait')}})</script>
 </div>
