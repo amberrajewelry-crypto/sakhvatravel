@@ -1,4 +1,4 @@
-// Partner leads API — queries PostHog for conversions by partner slug
+// Partner leads API — reads conversions from Airtable
 module.exports = async (req, res) => {
   res.setHeader('Access-Control-Allow-Origin', 'https://sakhva-travel.com');
   res.setHeader('Access-Control-Allow-Methods', 'GET');
@@ -8,48 +8,29 @@ module.exports = async (req, res) => {
     return res.status(400).json({ error: 'Invalid slug' });
   }
 
-  const PH_KEY = process.env.POSTHOG_PERSONAL_API_KEY || '';
-  const PROJECT_ID = '360981';
+  const TOKEN = process.env.AIRTABLE_TOKEN;
+  const BASE = 'appvP72OjZeVJ0XWh';
+  const TABLE = 'Partner Leads';
 
-  // If no PostHog key, return 0 (will be configured later)
-  if (!PH_KEY) {
+  if (!TOKEN) {
     return res.status(200).json({ leads: 0, events: [] });
   }
 
   try {
-    // Query PostHog for cta_click and form_submit events with partner=slug
-    const query = {
-      query: {
-        kind: 'EventsQuery',
-        select: ['event', 'timestamp', 'properties.channel', 'properties.tour'],
-        where: [`properties.partner = '${slug}'`],
-        event: ['cta_click', 'form_submit'],
-        after: '-30d',
-        limit: 50,
-        orderBy: ['timestamp DESC']
-      }
-    };
+    const formula = encodeURIComponent(`{Partner}='${slug}'`);
+    const url = `https://api.airtable.com/v0/${BASE}/${encodeURIComponent(TABLE)}?filterByFormula=${formula}&sort%5B0%5D%5Bfield%5D=Timestamp&sort%5B0%5D%5Bdirection%5D=desc&maxRecords=50`;
 
-    const phRes = await fetch(
-      `https://us.posthog.com/api/projects/${PROJECT_ID}/query/`,
-      {
-        method: 'POST',
-        headers: {
-          'Authorization': `Bearer ${PH_KEY}`,
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(query)
-      }
-    );
+    const atRes = await fetch(url, {
+      headers: { 'Authorization': `Bearer ${TOKEN}` }
+    });
+    const data = await atRes.json();
 
-    const data = await phRes.json();
-
-    if (data.results) {
-      const events = data.results.map(r => ({
-        event: r[0],
-        time: r[1],
-        channel: r[2] || null,
-        tour: r[3] || null
+    if (data.records) {
+      const events = data.records.map(r => ({
+        channel: r.fields.Channel || 'unknown',
+        page: r.fields.Page || '/',
+        date: r.fields.Date || '',
+        time: r.fields.Timestamp || ''
       }));
 
       return res.status(200).json({

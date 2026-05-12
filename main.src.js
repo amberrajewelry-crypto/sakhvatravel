@@ -549,7 +549,9 @@ async function bmSubmit(){
     gtag('event','generate_lead',{event_category:'booking',event_label:bkSt.tourName,value:5,currency:'USD'})
     gtag('event','form_submit',{event_category:'booking',event_label:bkSt.tourName,value:1})
   }
-  if(typeof posthog!=='undefined'){posthog.capture('form_submit',{tour:bkSt.tourName,page:location.pathname,partner:localStorage.getItem('partner')||null})}
+  var _bp=localStorage.getItem('partner')||null
+  if(_bp){try{fetch('/api/partner-conversion',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({partner:_bp,channel:'booking',page:location.pathname})})}catch(e){}}
+  if(typeof posthog!=='undefined'){posthog.capture('form_submit',{tour:bkSt.tourName,page:location.pathname,partner:_bp})}
   document.getElementById('bm-success-meta').textContent=bkSt.tourName+' · '+dateFmt+' · '+guests+(isEn?' pax':' чел.')
   bmShowStep(4)
 }
@@ -1047,6 +1049,9 @@ function toggleMusic(){
     var tel=e.target.closest('a[href*="tel:"]')
     var book=e.target.closest('.btn-book,#fab-main,[data-action="book"]')
     var _p=localStorage.getItem('partner')||null
+    if(_p&&(wa||tg||tel||book)){
+      try{fetch('/api/partner-conversion',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({partner:_p,channel:wa?'whatsapp':tg?'telegram':tel?'phone':'book',page:location.pathname})})}catch(e){}
+    }
     if(wa){
       posthog.capture('cta_click',{channel:'whatsapp',page:location.pathname,partner:_p})
       posthog.capture('whatsapp_click',{partner:_p})
