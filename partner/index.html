@@ -309,7 +309,6 @@ function showDash(d){
   document.getElementById('d-name').textContent=d.partner;
   document.getElementById('d-slug').textContent='sakhva.link/'+d.slug;
   document.getElementById('d-date').textContent='с '+new Date(d.created).toLocaleDateString('ru-RU');
-  document.getElementById('d-url').textContent='https://sakhva.link/'+d.slug;
   document.getElementById('d-promo').textContent=promo;
 
   var today=d.today||0, month=d.last30days||0, total=d.totalClicks||0;
