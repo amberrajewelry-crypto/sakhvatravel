@@ -61,7 +61,7 @@ const TOURS={
   },
   borjomi:{
     badge:'new',img:'/images/borjomi-tour.webp',
-    cat:'Из Тбилиси · 10–12 ч',name:'Боржоми и Рабати',gel:'₾178',usd:'$68',
+    cat:'Из Тбилиси · 10–12 ч',name:'Боржоми',gel:'₾178',usd:'$68',
     cat_en:'From Tbilisi · 10–12 h',name_en:'Borjomi &amp; Rabati',
     desc:'Минеральные источники Боржоми, Центральный парк, канатная дорога и средневековая крепость Рабати в Ахалцихе.',
     desc_en:'Borjomi mineral springs, Central Park, cable car and medieval Rabati Fortress in Akhaltsikhe.',
@@ -425,7 +425,7 @@ const BK_TOURS=[
   {id:'kutaisi',      icon:'🏛️',name:'Кутаиси за 1 день',        name_en:'Kutaisi in 1 day',            price:'₾215 / чел.',  price_en:'$70 / person',  price_usd:70,  price_rub:7500},
   {id:'kakheti',      icon:'🍷',name:'Кахетия — вино и природа', name_en:'Kakheti — wine & nature',     price:'₾195 / чел.', price_en:'$74 / person',  price_usd:74,  price_rub:6900},
   {id:'batumi',       icon:'🌊',name:'Батуми за 1 день',          name_en:'Batumi in 1 day',             price:'₾237 / чел.',  price_en:'$85 / person',  price_usd:85,  price_rub:8300},
-  {id:'borjomi',      icon:'🏔️',name:'Боржоми и Рабати',         name_en:'Borjomi &amp; Rabati',         price:'₾178 / чел.',  price_en:'$68 / person',  price_usd:68,  price_rub:6200},
+  {id:'borjomi',      icon:'🏔️',name:'Боржоми',                   name_en:'Borjomi',         price:'₾178 / чел.',  price_en:'$68 / person',  price_usd:68,  price_rub:6200},
   {id:'night-tbilisi',icon:'🌙',name:'Ночной Тбилиси',          name_en:'Night Tbilisi',                price:'₾110 / чел.',  price_en:'$42 / person',  price_usd:42,  price_rub:3900},
   {id:'dinner',       icon:'🍽️',name:'Тур + ужин у местных',    name_en:'Tour + dinner with locals',   price:'₾250 / чел.', price_en:'$95 / person',  price_usd:95,  price_rub:8800},
   {id:'soviet',       icon:'🏙️',name:'Тбилиси обзорная',        name_en:'Tbilisi Overview',            price:'₾135 / чел.',  price_en:'$51 / person',  price_usd:51,  price_rub:4700},
