@@ -42,6 +42,25 @@ body{font-family:'Lora',Georgia,serif;color:#1a1a1a;-webkit-font-smoothing:antia
 /* Dashboard */
 .dash{display:none}
 @keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+@keyframes countUp{from{opacity:0;transform:scale(.8)}to{opacity:1;transform:scale(1)}}
+@keyframes slideIn{from{opacity:0;transform:translateX(-12px)}to{opacity:1;transform:translateX(0)}}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(26,61,46,.15)}50%{box-shadow:0 0 0 8px rgba(26,61,46,0)}}
+@keyframes barGrow{from{width:0}to{width:var(--w)}}
+.card-num{animation:countUp .6s ease-out both}
+.card:nth-child(1) .card-num{animation-delay:.2s}
+.card:nth-child(2) .card-num{animation-delay:.35s}
+.card:nth-child(3) .card-num{animation-delay:.5s}
+.card:nth-child(4) .card-num{animation-delay:.65s}
+.data-card{animation:fadeUp .5s ease-out both}
+.data-card:nth-child(1){animation-delay:.3s}
+.data-card:nth-child(2){animation-delay:.38s}
+.data-card:nth-child(3){animation-delay:.46s}
+.data-card:nth-child(4){animation-delay:.54s}
+.data-card:nth-child(5){animation-delay:.62s}
+.data-card:nth-child(6){animation-delay:.7s}
+.activity-item{animation:slideIn .4s ease-out both}
+.qr-img{animation:pulse 2s ease-in-out 1s 3}
+.chart-bar{animation:fadeUp .3s ease-out both}
 .dash>*{animation:fadeUp .5s ease-out both}
 .dash>*:nth-child(1){animation-delay:0s}
 .dash>*:nth-child(2){animation-delay:.06s}
@@ -93,7 +112,7 @@ body{font-family:'Lora',Georgia,serif;color:#1a1a1a;-webkit-font-smoothing:antia
 .card-num{font-size:clamp(32px,7vw,44px);font-weight:700;color:#1a1a1a;line-height:1;letter-spacing:-.03em}
 .card-sub{font-size:8px;color:#a3a3a3;letter-spacing:.22em;text-transform:uppercase;margin-top:8px}
 .card-num.accent{color:#1A3D2E}
-.card.highlight{border-color:#1A3D2E;border-width:1.5px;background:linear-gradient(180deg,#fff 0%,rgba(26,61,46,.02) 100%)}
+.card.highlight{border-color:#ebebeb;border-width:1px;background:#fff}
 .card-delta{font-size:11px;font-weight:600;margin-top:6px;display:inline-flex;align-items:center;gap:3px;padding:2px 8px;border-radius:6px}
 .card-delta.up{color:#059669;background:rgba(5,150,105,.06)}
 .card-delta.down{color:#dc2626;background:rgba(220,38,38,.06)}
@@ -364,9 +383,9 @@ function showDash(d){
   document.getElementById('d-promo').textContent=promo;
 
   var today=d.today||0, month=d.last30days||0, total=d.totalClicks||0;
-  document.getElementById('d-today').textContent=today;
-  document.getElementById('d-month').textContent=month;
-  document.getElementById('d-total').textContent=total;
+  animateNum('d-today',today,400);
+  animateNum('d-month',month,600);
+  animateNum('d-total',total,800);
 
   // Deltas
   var timeline=d.timeline||[];
@@ -423,6 +442,19 @@ function setDelta(id,current,previous){
   var arrow=pct>=0?'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>':'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>';
   el.innerHTML=arrow+(pct>=0?'+':'')+pct+'%';
   el.className='card-delta '+(pct>=0?'up':'down');
+}
+
+function animateNum(id,target,duration){
+  var el=document.getElementById(id);
+  if(!target||target<2){el.textContent=target;return}
+  var start=performance.now();
+  function step(now){
+    var t=Math.min((now-start)/duration,1);
+    var ease=1-Math.pow(1-t,3);
+    el.textContent=Math.round(ease*target);
+    if(t<1)requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
 }
 
 function renderActivity(timeline){
@@ -505,13 +537,13 @@ function renderTable(secId,tblId,data,total){
   var tb=document.getElementById(tblId);
   tb.innerHTML='';
   var max=Math.max.apply(null,data.map(function(x){return x.count||0}));
-  data.slice(0,8).forEach(function(item){
+  data.slice(0,8).forEach(function(item,idx){
     var name=item.name||'Прямой';
     var count=item.count||0;
     var pct=total>0?Math.round(count/total*100):0;
     var barW=max>0?Math.round(count/max*100):0;
     var tr=document.createElement('tr');
-    tr.innerHTML='<td>'+name+'</td><td>'+count+'</td><td>'+pct+'%</td><td class="bar-cell"><div class="bar-wrap"><div class="bar" style="width:'+barW+'%"></div></div></td>';
+    tr.innerHTML='<td>'+name+'</td><td>'+count+'</td><td>'+pct+'%</td><td class="bar-cell"><div class="bar-wrap"><div class="bar" style="--w:'+barW+'%;width:0;animation:barGrow .6s ease-out '+(0.3+idx*0.1)+'s forwards"></div></div></td>';
     tb.appendChild(tr);
   });
 }
