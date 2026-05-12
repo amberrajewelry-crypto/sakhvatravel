@@ -549,7 +549,7 @@ async function bmSubmit(){
     gtag('event','generate_lead',{event_category:'booking',event_label:bkSt.tourName,value:5,currency:'USD'})
     gtag('event','form_submit',{event_category:'booking',event_label:bkSt.tourName,value:1})
   }
-  if(typeof posthog!=='undefined'){posthog.capture('form_submit',{tour:bkSt.tourName,page:location.pathname})}
+  if(typeof posthog!=='undefined'){posthog.capture('form_submit',{tour:bkSt.tourName,page:location.pathname,partner:localStorage.getItem('partner')||null})}
   document.getElementById('bm-success-meta').textContent=bkSt.tourName+' · '+dateFmt+' · '+guests+(isEn?' pax':' чел.')
   bmShowStep(4)
 }
@@ -1046,21 +1046,22 @@ function toggleMusic(){
     var tg=e.target.closest('a[href*="t.me"]')
     var tel=e.target.closest('a[href*="tel:"]')
     var book=e.target.closest('.btn-book,#fab-main,[data-action="book"]')
+    var _p=localStorage.getItem('partner')||null
     if(wa){
-      posthog.capture('cta_click',{channel:'whatsapp',page:location.pathname})
-      posthog.capture('whatsapp_click')
+      posthog.capture('cta_click',{channel:'whatsapp',page:location.pathname,partner:_p})
+      posthog.capture('whatsapp_click',{partner:_p})
       if(typeof gtag==='function'){gtag('event','generate_lead',{event_category:'booking',event_label:'whatsapp',value:1});gtag('event','whatsapp_click',{event_category:'contact',event_label:'whatsapp'})}
     }
     else if(tg){
-      posthog.capture('cta_click',{channel:'telegram',page:location.pathname})
+      posthog.capture('cta_click',{channel:'telegram',page:location.pathname,partner:_p})
       if(typeof gtag==='function'){gtag('event','generate_lead',{event_category:'booking',event_label:'telegram',value:1})}
     }
     else if(tel){
-      posthog.capture('cta_click',{channel:'phone',page:location.pathname})
+      posthog.capture('cta_click',{channel:'phone',page:location.pathname,partner:_p})
       if(typeof gtag==='function'){gtag('event','generate_lead',{event_category:'booking',event_label:'phone',value:1})}
     }
     else if(book){
-      posthog.capture('cta_click',{channel:'book_button',page:location.pathname})
+      posthog.capture('cta_click',{channel:'book_button',page:location.pathname,partner:_p})
       if(typeof gtag==='function'){gtag('event','generate_lead',{event_category:'booking',event_label:document.title||'unknown',value:1})}
     }
   })

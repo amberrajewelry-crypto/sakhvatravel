@@ -425,6 +425,17 @@ function showDash(d){
   // Activity feed from timeline
   renderActivity(timeline);
 
+  // Fetch leads
+  fetch('/api/partner-leads?slug='+encodeURIComponent(d.slug))
+    .then(function(r){return r.json()})
+    .then(function(ld){
+      animateNum('d-leads',ld.leads||0,500);
+      if(ld.leads>0){
+        document.getElementById('d-delta-leads').innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>'+ld.leads;
+        document.getElementById('d-delta-leads').className='card-delta up';
+      }
+    }).catch(function(){});
+
   renderChart(timeline);
   renderTable('sec-countries','tbl-countries',d.countries,month||total);
   renderTable('sec-cities','tbl-cities',d.cities,month||total);
