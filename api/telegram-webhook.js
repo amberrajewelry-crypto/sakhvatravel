@@ -92,6 +92,15 @@ const TOURS = {
     img: 'https://sakhva-travel.com/images/soviet-tour.webp',
     url: 'sakhva-travel.com/tour/soviet', urlEn: 'sakhva-travel.com/en/tour/soviet'
   },
+  borjomi: {
+    name: 'Боржоми и Рабати', nameEn: 'Borjomi & Rabati',
+    price: '€51', gel: '₾178',
+    emoji: '🏔️', duration: '10-12 часов', durationEn: '10-12 hours',
+    desc: 'Минеральные источники Боржоми, парк, канатная дорога и крепость Рабати в Ахалцихе.',
+    descEn: 'Borjomi mineral springs, park, cable car and Rabati Fortress in Akhaltsikhe.',
+    img: 'https://sakhva-travel.com/images/borjomi-tour.webp',
+    url: 'sakhva-travel.com/tour/borjomi', urlEn: 'sakhva-travel.com/en/tour/borjomi'
+  },
   nomad: {
     name: 'Digital Nomad Tour', nameEn: 'Digital Nomad Tour',
     price: '€35', gel: '₾123',
@@ -310,6 +319,7 @@ function findTourByKeyword(text) {
     emigrant: ['релокант', 'эмигрант', 'переех', 'emigrant', 'переезд'],
     dinner: ['ужин', 'dinner', 'домашн', 'гастро'],
     soviet: ['обзорн', 'overview', 'по городу', 'city tour', 'весь тбилиси', 'full tbilisi'],
+    borjomi: ['боржом', 'borjomi', 'рабати', 'rabati', 'ахалцихе', 'akhaltsikhe', 'минеральн'],
     nomad: ['nomad', 'номад', 'коворкинг', 'digital', 'фриланс'],
     slow: ['slow', '3 дня', 'три дня', 'несколько дней']
   }
