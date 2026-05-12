@@ -49,15 +49,15 @@ const TOURS={
   },
   soviet:{
     badge:'live',img:'/images/soviet-tour.webp',
-    cat:'Нишевый · 3 ч',name:'Советский Тбилиси',gel:'₾155',usd:'$59',
-    cat_en:'Niche · 3 h',name_en:'Soviet Tbilisi',
-    desc:'Конструктивизм, панельные кварталы, советские мозаики и истории о жизни при СССР. Для тех, кто вырос в СНГ — волна ностальгии гарантирована.',
-    desc_en:'Constructivism, Soviet-era blocks, iconic mosaics and stories of life under the USSR. A wave of nostalgia for those who grew up in the post-Soviet space.',
-    includes:['Гид Тимур (вырос в Тбилиси в 90-е)','Трансфер по маршруту','Фото советских мозаик и архитектуры'],
-    includes_en:['Guide Timur (grew up in Tbilisi in the 90s)','Transfer along the route','Photos of Soviet mosaics &amp; architecture'],
-    route:['Район Варкетили: панельный Тбилиси','Советские мозаики на стенах домов','Заброшенный НИИ: конструктивизм изнутри','Рынок Дезертирка: советская торговля жива','Кафе-советская столовая с аутентичным меню'],
-    route_en:['Varketili district: Soviet-era Tbilisi','Soviet mosaics on apartment building walls','Abandoned research institute: constructivism inside','Dezerter Bazaar: Soviet trading lives on','Soviet-style canteen café with authentic menu'],
-    wa:'Хочу+забронировать+Советский+Тбилиси',wa_en:'I+want+to+book+Soviet+Tbilisi+tour'
+    cat:'По городу · 4–5 ч',name:'Тбилиси обзорная',gel:'₾135',usd:'$51',
+    cat_en:'City tour · 4–5 h',name_en:'Tbilisi Overview',
+    desc:'Мост Дружбы, серные бани, храм Метехи, Самеба, Дом Юстиции, площадь Свободы, Мтацминда и Летопись Грузии.',
+    desc_en:'Bridge of Peace, sulfur baths, Metekhi Church, Sameba, House of Justice, Freedom Square, Mtatsminda and Chronicle of Georgia.',
+    includes:['Гид Тимур на весь маршрут','Трансфер между локациями','Фотостопы на лучших смотровых'],
+    includes_en:['Guide Timur throughout','Transfer between locations','Photo stops at the best viewpoints'],
+    route:['Мост Дружбы','Серные бани (Абанотубани)','Храм Метехи','Самеба','Дом Юстиции','Площадь Свободы','Мтацминда и Летопись Грузии'],
+    route_en:['Bridge of Peace','Sulfur baths (Abanotubani)','Metekhi Church','Sameba Cathedral','House of Justice','Freedom Square','Mtatsminda &amp; Chronicle of Georgia'],
+    wa:'Хочу+забронировать+Тбилиси+обзорная',wa_en:'I+want+to+book+Tbilisi+Overview+tour'
   },
   'slow-travel':{
     badge:'hot',img:'/images/slow-travel-tour.webp',
@@ -415,7 +415,7 @@ const BK_TOURS=[
   {id:'batumi',       icon:'🌊',name:'Батуми за 1 день',          name_en:'Batumi in 1 day',             price:'₾237 / чел.',  price_en:'$85 / person',  price_usd:85,  price_rub:8300},
   {id:'night-tbilisi',icon:'🌙',name:'Ночной Тбилиси',          name_en:'Night Tbilisi',                price:'₾110 / чел.',  price_en:'$42 / person',  price_usd:42,  price_rub:3900},
   {id:'dinner',       icon:'🍽️',name:'Тур + ужин у местных',    name_en:'Tour + dinner with locals',   price:'₾250 / чел.', price_en:'$95 / person',  price_usd:95,  price_rub:8800},
-  {id:'soviet',       icon:'🎭',name:'Советский Тбилиси',        name_en:'Soviet Tbilisi',              price:'₾155 / чел.',  price_en:'$59 / person',  price_usd:59,  price_rub:5500},
+  {id:'soviet',       icon:'🏙️',name:'Тбилиси обзорная',        name_en:'Tbilisi Overview',            price:'₾135 / чел.',  price_en:'$51 / person',  price_usd:51,  price_rub:4700},
   {id:'slow-travel',  icon:'✈️',name:'Slow Travel 3 дня',       name_en:'Slow Travel 3 days',          price:'₾700 / чел.', price_en:'$266 / person', price_usd:266, price_rub:24900},
   {id:'photo',        icon:'📸',name:'Тур + фотосессия',         name_en:'Tour + photo session',        price:'₾270 / чел.', price_en:'$103 / person',  price_usd:103,  price_rub:9500},
   {id:'digital-nomad',icon:'💻',name:'Digital Nomad Tour',      name_en:'Digital Nomad Tour',           price:'₾145 / чел.',  price_en:'$55 / person',  price_usd:55,  price_rub:5100},

@@ -84,11 +84,11 @@ const TOURS = {
     url: 'sakhva-travel.com/tour/dinner', urlEn: 'sakhva-travel.com/en/tour/dinner'
   },
   soviet: {
-    name: 'Советский Тбилиси', nameEn: 'Soviet Tbilisi',
+    name: 'Тбилиси обзорная', nameEn: 'Tbilisi Overview',
     price: '€39', gel: '₾135',
-    emoji: '🏗', duration: '4-5 часов', durationEn: '4-5 hours',
-    desc: 'Конструктивизм, панельные районы, советские мозаики. Для ностальгирующих из СНГ.',
-    descEn: 'Constructivism, panel buildings, Soviet mosaics. Nostalgia tour.',
+    emoji: '🏙️', duration: '4-5 часов', durationEn: '4-5 hours',
+    desc: 'Мост Дружбы, серные бани, Метехи, Самеба, Мтацминда. Весь Тбилиси за один день.',
+    descEn: 'Bridge of Peace, sulfur baths, Metekhi, Sameba, Mtatsminda. Full Tbilisi in one day.',
     img: 'https://sakhva-travel.com/images/soviet-tour.webp',
     url: 'sakhva-travel.com/tour/soviet', urlEn: 'sakhva-travel.com/en/tour/soviet'
   },
@@ -309,7 +309,7 @@ function findTourByKeyword(text) {
     photo: ['фото', 'photo', 'фотосесс', 'снимк', 'instagram'],
     emigrant: ['релокант', 'эмигрант', 'переех', 'emigrant', 'переезд'],
     dinner: ['ужин', 'dinner', 'домашн', 'гастро'],
-    soviet: ['совет', 'soviet', 'брутализм', 'мозаик', 'ссср'],
+    soviet: ['обзорн', 'overview', 'по городу', 'city tour', 'весь тбилиси', 'full tbilisi'],
     nomad: ['nomad', 'номад', 'коворкинг', 'digital', 'фриланс'],
     slow: ['slow', '3 дня', 'три дня', 'несколько дней']
   }
