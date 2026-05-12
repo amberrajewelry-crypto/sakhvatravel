@@ -75,8 +75,9 @@ body{font-family:'Lora',Georgia,serif;color:#1a1a1a;-webkit-font-smoothing:antia
 .copy-btn svg,.share-wa-btn svg{width:13px;height:13px;flex-shrink:0}
 
 /* Cards */
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:36px}
-@media(max-width:520px){.cards{grid-template-columns:1fr}}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:36px}
+@media(max-width:680px){.cards{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:420px){.cards{grid-template-columns:1fr}}
 .card{background:#fff;border:1px solid #ebebeb;border-radius:16px;padding:24px 20px 20px;text-align:center;box-shadow:0 1px 3px rgba(0,0,0,.03);transition:box-shadow .2s,transform .2s;position:relative}
 .card:hover{box-shadow:0 4px 20px rgba(0,0,0,.06);transform:translateY(-2px)}
 .card-icon{margin:0 auto 12px;width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center}
@@ -87,6 +88,8 @@ body{font-family:'Lora',Georgia,serif;color:#1a1a1a;-webkit-font-smoothing:antia
 .card-icon.month svg{color:#1A3D2E}
 .card-icon.total{background:rgba(245,158,11,.08)}
 .card-icon.total svg{color:#f59e0b}
+.card-icon.leads{background:rgba(139,92,246,.08)}
+.card-icon.leads svg{color:#8b5cf6}
 .card-num{font-size:clamp(32px,7vw,44px);font-weight:700;color:#1a1a1a;line-height:1;letter-spacing:-.03em}
 .card-sub{font-size:8px;color:#a3a3a3;letter-spacing:.22em;text-transform:uppercase;margin-top:8px}
 .card-num.accent{color:#1A3D2E}
@@ -240,6 +243,12 @@ body{font-family:'Lora',Georgia,serif;color:#1a1a1a;-webkit-font-smoothing:antia
         <div class="card-sub">Всего</div>
         <div class="card-delta neutral" id="d-delta-total">--</div>
       </div>
+      <div class="card">
+        <div class="card-icon leads"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4-4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div>
+        <div class="card-num" id="d-leads">0</div>
+        <div class="card-sub">Лиды</div>
+        <div class="card-delta neutral" id="d-delta-leads">скоро</div>
+      </div>
     </div>
 
     <div class="chart-section" id="chart-section">
@@ -390,7 +399,7 @@ function showDash(d){
   +'<a class="share-ch tg" href="https://t.me/share/url?url=https://sakhva.link/'+d.slug+'&text='+encodeURIComponent('Закажи тур у Sakhva Travel со скидкой 10% — промокод '+promo)+'" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg>Telegram</a>';
 
   // QR code
-  var qrUrl='https://api.qrserver.com/v1/create-qr-code/?size=280x280&data='+encodeURIComponent('https://sakhva.link/'+d.slug);
+  var qrUrl='https://quickchart.io/qr?text='+encodeURIComponent('https://sakhva.link/'+d.slug)+'&size=280&margin=2';
   document.getElementById('qr-img').src=qrUrl;
   document.getElementById('qr-download').href=qrUrl;
 
