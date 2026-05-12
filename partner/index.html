@@ -151,6 +151,33 @@ body{font-family:'Lora',Georgia,serif;color:#1a1a1a;-webkit-font-smoothing:antia
 .share-ch.tg{background:#229ED9}
 .share-ch svg{width:14px;height:14px}
 
+/* QR section */
+.qr-section{background:#fff;border:1px solid #ebebeb;border-radius:16px;padding:24px;box-shadow:0 1px 3px rgba(0,0,0,.03);margin-bottom:16px;display:flex;align-items:center;gap:24px}
+@media(max-width:520px){.qr-section{flex-direction:column;text-align:center}}
+.qr-img{width:140px;height:140px;border-radius:10px;border:1px solid #f0f0f0;flex-shrink:0}
+.qr-info{}
+.qr-title{font-size:10px;font-weight:700;color:#a3a3a3;letter-spacing:.15em;text-transform:uppercase;margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.qr-title::before{content:'';width:3px;height:12px;background:#1A3D2E;border-radius:2px}
+@media(max-width:520px){.qr-title{justify-content:center}}
+.qr-desc{font-size:13px;color:#525252;line-height:1.6;margin-bottom:14px}
+.qr-download{display:inline-flex;align-items:center;gap:6px;background:#1A3D2E;color:#fff;border:none;padding:9px 20px;border-radius:10px;font-size:10px;font-weight:700;font-family:'Lora',serif;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;transition:all .2s;text-decoration:none;box-shadow:0 2px 8px rgba(26,61,46,.2)}
+.qr-download:hover{background:#245a3f;transform:translateY(-1px)}
+.qr-download svg{width:13px;height:13px}
+
+/* Activity feed */
+.activity-section{background:#fff;border:1px solid #ebebeb;border-radius:16px;padding:24px;box-shadow:0 1px 3px rgba(0,0,0,.03);margin-bottom:16px;display:none}
+.activity-title{font-size:10px;font-weight:700;color:#a3a3a3;letter-spacing:.15em;text-transform:uppercase;margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.activity-title::before{content:'';width:3px;height:12px;background:#3b82f6;border-radius:2px}
+.activity-list{list-style:none}
+.activity-item{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid #f5f5f5;font-size:13px}
+.activity-item:last-child{border:none}
+.activity-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.activity-dot.green{background:#059669}
+.activity-dot.gray{background:#d4d4d4}
+.activity-date{color:#a3a3a3;font-size:11px;min-width:50px}
+.activity-text{color:#1a1a1a;font-weight:500}
+.activity-detail{color:#a3a3a3;font-size:11px;margin-left:auto}
+
 /* Footer */
 .dash-footer{text-align:center;margin-top:48px;padding-top:28px;border-top:1px solid #ebebeb}
 .logout-btn{background:transparent;color:#a3a3a3;border:none;font-size:11px;font-weight:600;font-family:'Lora',serif;cursor:pointer;letter-spacing:.1em;text-transform:uppercase;transition:color .2s;padding:8px 20px}
@@ -255,6 +282,22 @@ body{font-family:'Lora',Georgia,serif;color:#1a1a1a;-webkit-font-smoothing:antia
       </div>
     </div>
 
+    <!-- QR Code -->
+    <div class="qr-section" id="qr-section">
+      <img class="qr-img" id="qr-img" alt="QR code" src="">
+      <div class="qr-info">
+        <div class="qr-title">QR-код вашей ссылки</div>
+        <div class="qr-desc">Распечатайте или покажите на экране — клиенты отсканируют камерой и перейдут на сайт с вашим промокодом</div>
+        <a class="qr-download" id="qr-download" href="#" download="sakhva-qr.png"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Скачать PNG</a>
+      </div>
+    </div>
+
+    <!-- Activity feed -->
+    <div class="activity-section" id="activity-section">
+      <div class="activity-title">Последняя активность</div>
+      <ul class="activity-list" id="activity-list"></ul>
+    </div>
+
     <div class="share-panel" id="share-panel">
       <div class="share-label">Поделиться</div>
       <div class="share-text" id="share-text">
@@ -346,6 +389,14 @@ function showDash(d){
   ch.innerHTML='<a class="share-ch wa" href="https://wa.me/?text='+encodeURIComponent(shareMsg)+'" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>WhatsApp</a>'
   +'<a class="share-ch tg" href="https://t.me/share/url?url=https://sakhva.link/'+d.slug+'&text='+encodeURIComponent('Закажи тур у Sakhva Travel со скидкой 10% — промокод '+promo)+'" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg>Telegram</a>';
 
+  // QR code
+  var qrUrl='https://api.qrserver.com/v1/create-qr-code/?size=280x280&data='+encodeURIComponent('https://sakhva.link/'+d.slug);
+  document.getElementById('qr-img').src=qrUrl;
+  document.getElementById('qr-download').href=qrUrl;
+
+  // Activity feed from timeline
+  renderActivity(timeline);
+
   renderChart(timeline);
   renderTable('sec-countries','tbl-countries',d.countries,month||total);
   renderTable('sec-cities','tbl-cities',d.cities,month||total);
@@ -363,6 +414,30 @@ function setDelta(id,current,previous){
   var arrow=pct>=0?'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>':'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>';
   el.innerHTML=arrow+(pct>=0?'+':'')+pct+'%';
   el.className='card-delta '+(pct>=0?'up':'down');
+}
+
+function renderActivity(timeline){
+  if(!timeline||!timeline.length)return;
+  var active=timeline.filter(function(d){return(d.clicks||0)>0}).reverse().slice(0,10);
+  if(!active.length)return;
+  document.getElementById('activity-section').style.display='';
+  var list=document.getElementById('activity-list');
+  list.innerHTML='';
+  var months=['янв','фев','мар','апр','мая','июн','июл','авг','сен','окт','ноя','дек'];
+  active.forEach(function(item){
+    var clicks=item.clicks||0;
+    var parts=(item.date||'').split('-');
+    var day=parts[2]||'';
+    var mon=months[parseInt(parts[1]||1)-1]||'';
+    var isToday=item.date===(new Date().toISOString().slice(0,10));
+    var li=document.createElement('li');
+    li.className='activity-item';
+    li.innerHTML='<span class="activity-dot '+(isToday?'green':'gray')+'"></span>'
+      +'<span class="activity-date">'+day+' '+mon+'</span>'
+      +'<span class="activity-text">'+clicks+' '+(clicks===1?'клик':clicks<5?'клика':'кликов')+'</span>'
+      +'<span class="activity-detail">'+(isToday?'сегодня':'')+'</span>';
+    list.appendChild(li);
+  });
 }
 
 function renderChart(timeline){
