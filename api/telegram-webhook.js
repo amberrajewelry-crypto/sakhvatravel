@@ -4,7 +4,7 @@ export const config = { runtime: 'edge' }
 const TOURS = {
   kazbegi: {
     name: 'Казбеги за 1 день', nameEn: 'Kazbegi Day Trip',
-    price: '€56', gel: '₾205',
+    price: '€50', gel: '₾175',
     emoji: '🏔', duration: '10-12 часов', durationEn: '10-12 hours',
     desc: 'Военно-Грузинская дорога, крепость Ананури, Гергетская Троица с видом на Казбек (5047 м). Трансфер + гид + билеты.',
     descEn: 'Georgian Military Highway, Ananuri fortress, Gergeti Trinity Church with Kazbek view (5047m). Transfer + guide + tickets.',
@@ -13,7 +13,7 @@ const TOURS = {
   },
   kakheti: {
     name: 'Кахетия и вино', nameEn: 'Kakheti Wine Tour',
-    price: '€56', gel: '₾205',
+    price: '€49', gel: '₾170',
     emoji: '🍷', duration: '10-12 часов', durationEn: '10-12 hours',
     desc: 'Город любви Сигнахи, монастырь Бодбе, дегустация квеври-вина, обед у хозяйки. Группы до 6 чел.',
     descEn: 'City of Love Sighnaghi, Bodbe monastery, qvevri wine tasting, lunch at local home.',
@@ -22,7 +22,7 @@ const TOURS = {
   },
   tbilisi: {
     name: 'Старый Тбилиси', nameEn: 'Old Tbilisi Walking Tour',
-    price: '€47', gel: '₾165',
+    price: '€26', gel: '₾90',
     emoji: '🏛', duration: '3-4 часа', durationEn: '3-4 hours',
     desc: 'Серные бани Абанотубани, крепость Нарикала, монастырь Метехи, Старый базар. Пешая прогулка с гидом.',
     descEn: 'Sulfur baths, Narikala fortress, Metekhi church, Old Bazaar. 3-4 hour walk with guide.',
@@ -31,7 +31,7 @@ const TOURS = {
   },
   hidden: {
     name: 'Скрытые места Тбилиси', nameEn: 'Hidden Tbilisi',
-    price: '€47', gel: '₾165',
+    price: '€27', gel: '₾94',
     emoji: '🔍', duration: '5-6 часов', durationEn: '5-6 hours',
     desc: 'Дворы-колодцы, серные бани, армянский квартал, стрит-арт, локальные кафе. Нетуристический маршрут.',
     descEn: 'Courtyards, street art, local cafes, Armenian quarter. Off the beaten path.',
@@ -40,7 +40,7 @@ const TOURS = {
   },
   night: {
     name: 'Ночной Тбилиси', nameEn: 'Night Tbilisi',
-    price: '€31', gel: '₾110',
+    price: '€27', gel: '₾94',
     emoji: '🌙', duration: '2.5-3 часа', durationEn: '2.5-3 hours',
     desc: 'Серные бани при свечах, подсвеченный Мост Мира, ужин во дворе. Старт в 20:00.',
     descEn: 'Candlelit sulfur baths, illuminated Bridge of Peace, dinner in a courtyard. Start at 8pm.',
@@ -58,7 +58,7 @@ const TOURS = {
   },
   photo: {
     name: 'Тур + фотосессия', nameEn: 'Tour + Photoshoot',
-    price: '€77', gel: '₾270',
+    price: '€56', gel: '₾196',
     emoji: '📸', duration: '3-4 часа', durationEn: '3-4 hours',
     desc: 'Экскурсия + профессиональный фотограф. 30-50 обработанных фото на лучших локациях. Популярно у пар.',
     descEn: 'Tour + professional photographer. 30-50 edited photos at best locations.',
@@ -76,7 +76,7 @@ const TOURS = {
   },
   dinner: {
     name: 'Тур + ужин у местных', nameEn: 'Tour + Local Dinner',
-    price: '€71', gel: '₾250',
+    price: '€61', gel: '₾213',
     emoji: '🍽', duration: '6-7 часов', durationEn: '6-7 hours',
     desc: 'Экскурсия + домашний ужин у грузинской семьи: хинкали, квеври-вино, живое общение.',
     descEn: 'Tour + homemade dinner with a Georgian family: khinkali, qvevri wine.',
@@ -85,7 +85,7 @@ const TOURS = {
   },
   soviet: {
     name: 'Советский Тбилиси', nameEn: 'Soviet Tbilisi',
-    price: '€44', gel: '₾155',
+    price: '€39', gel: '₾135',
     emoji: '🏗', duration: '4-5 часов', durationEn: '4-5 hours',
     desc: 'Конструктивизм, панельные районы, советские мозаики. Для ностальгирующих из СНГ.',
     descEn: 'Constructivism, panel buildings, Soviet mosaics. Nostalgia tour.',
@@ -94,7 +94,7 @@ const TOURS = {
   },
   nomad: {
     name: 'Digital Nomad Tour', nameEn: 'Digital Nomad Tour',
-    price: '€41', gel: '₾145',
+    price: '€35', gel: '₾123',
     emoji: '💻', duration: '3 часа', durationEn: '3 hours',
     desc: 'Лучшие коворкинги, кафе с Wi-Fi, районы для удалённой работы. На русском и английском.',
     descEn: 'Best coworkings, cafes with Wi-Fi, neighborhoods for remote work.',
@@ -103,7 +103,7 @@ const TOURS = {
   },
   slow: {
     name: 'Slow Travel — 3 дня', nameEn: 'Slow Travel — 3 Days',
-    price: '€200', gel: '₾700',
+    price: '€170', gel: '₾595',
     emoji: '🌿', duration: '3 дня', durationEn: '3 days',
     desc: 'Каждый день новый маршрут: Тбилиси + Кахетия + Мцхета. Трансфер из аэропорта включён. Полное погружение.',
     descEn: 'Different route each day: Tbilisi + Kakheti + Mtskheta. Airport transfer included.',
