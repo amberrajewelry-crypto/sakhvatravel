@@ -1931,4 +1931,48 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/gruziya-v-sentyabre/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/kakheti-autumn.webp</image:loc>
+      <image:title>Грузия в сентябре — ртвели, виноградники Кахетии</image:title>
+    </image:image>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/noviy-god-v-gruzii/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/gruziya-zimoy.webp</image:loc>
+      <image:title>Новый год в Грузии — Тбилиси зимой</image:title>
+    </image:image>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/khachapuri-po-adzharski/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/gruzinskaya-kukhnya.webp</image:loc>
+      <image:title>Хачапури по-аджарски — рецепт, история и где есть в Тбилиси</image:title>
+    </image:image>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://sakhva-travel.com/blog/kurs-lari-k-rublyu/</loc>
+    <image:image>
+      <image:loc>https://sakhva-travel.com/images/blog/tseny-v-tbilisi-2026.webp</image:loc>
+      <image:title>Курс лари к рублю 2026 — где менять деньги в Тбилиси</image:title>
+    </image:image>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
