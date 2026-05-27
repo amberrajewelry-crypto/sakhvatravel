@@ -968,7 +968,7 @@ ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webv
         var h=getDurationHours(t);
         if(curDur==='short'&&h>=4)return false;
         if(curDur==='half'&&(h<4||h>8))return false;
-        if(curDur==='full'&&(h<8||h>12))return false;
+        if(curDur==='full'&&(h<=8||t.days>=2))return false;
         if(curDur==='multi'&&(!t.days||t.days<2))return false;
       }
       return true;
