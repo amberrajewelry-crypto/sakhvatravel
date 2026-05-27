@@ -80,12 +80,16 @@ body,h1,h2,h3,h4,h5,h6,p,a,span,div,li,td,th,label,input,textarea,button,blockqu
 /* Calendar dropdown */
 .cal-modal{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.4);z-index:1000;display:none;align-items:flex-start;justify-content:center;padding:80px 16px}
 .cal-modal.on{display:flex}
-.cal-box{background:#fff;border-radius:14px;width:100%;max-width:420px;max-height:80vh;overflow-y:auto;box-shadow:0 20px 60px rgba(0,0,0,.2);padding:24px}
-.cal-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}
+.cal-box{background:#fff;border-radius:14px;width:100%;max-width:420px;max-height:85vh;display:flex;flex-direction:column;box-shadow:0 20px 60px rgba(0,0,0,.2);padding:0}
+.cal-scroll{overflow-y:auto;flex:1;padding:0 24px}
+.cal-head{padding:24px 24px 0}
+.cal-bottom{padding:12px 24px 24px;border-top:1px solid #E5E7EB;flex-shrink:0}
+.cal-guests{margin-top:0}
+.cal-head{display:flex;justify-content:space-between;align-items:center;padding:24px 24px 12px}
 .cal-head h3{font-size:22px;font-weight:700;margin:0}
 .cal-close{width:36px;height:36px;border:none;background:#F3F4F6;border-radius:50%;cursor:pointer;font-size:18px;display:flex;align-items:center;justify-content:center}
 .cal-month{font-size:16px;font-weight:700;margin:16px 0 8px;color:#111}
-.cal-week{display:grid;grid-template-columns:repeat(7,1fr);text-align:center;font-size:12px;font-weight:600;color:#9CA3AF;margin-bottom:4px}
+.cal-week{display:grid;grid-template-columns:repeat(7,1fr);text-align:center;font-size:12px;font-weight:600;color:#9CA3AF;padding:8px 0;margin-bottom:4px;position:sticky;top:0;background:#fff;z-index:1}
 .cal-week .wknd{color:#EF4444}
 .cal-days{display:grid;grid-template-columns:repeat(7,1fr);gap:2px;margin-bottom:8px}
 .cal-day{height:40px;display:flex;align-items:center;justify-content:center;font-size:14px;border-radius:8px;cursor:default;color:#D1D5DB}
@@ -959,10 +963,14 @@ ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webv
 <div class="cal-modal" id="cal-modal">
   <div class="cal-box">
     <div class="cal-head"><h3>Даты</h3><button class="cal-close" onclick="this.closest('.cal-modal').classList.remove('on')">&times;</button></div>
-    <div class="cal-week"><span>ПН</span><span>ВТ</span><span>СР</span><span>ЧТ</span><span>ПТ</span><span class="wknd">СБ</span><span class="wknd">ВС</span></div>
-    <div id="cal-body"></div>
-    <div class="cal-guests"><span>Участники</span><div class="cal-guests-ctrl"><button id="cal-minus">&minus;</button><div class="g-val" id="cal-gval">1</div><button id="cal-plus">+</button></div></div>
-    <div class="cal-footer"><button class="cal-apply" id="cal-apply">Показать</button><button class="cal-reset" id="cal-reset">Сбросить</button></div>
+    <div class="cal-scroll">
+      <div class="cal-week"><span>ПН</span><span>ВТ</span><span>СР</span><span>ЧТ</span><span>ПТ</span><span class="wknd">СБ</span><span class="wknd">ВС</span></div>
+      <div id="cal-body"></div>
+    </div>
+    <div class="cal-bottom">
+      <div class="cal-guests"><span>Участники</span><div class="cal-guests-ctrl"><button id="cal-minus">&minus;</button><div class="g-val" id="cal-gval">1</div><button id="cal-plus">+</button></div></div>
+      <div class="cal-footer"><button class="cal-apply" id="cal-apply">Показать</button><button class="cal-reset" id="cal-reset">Сбросить</button></div>
+    </div>
   </div>
 </div>
 <script>
