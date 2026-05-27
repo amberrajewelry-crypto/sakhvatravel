@@ -526,10 +526,10 @@ ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webv
       Формат проведения
       <svg viewBox="0 0 20 20" fill="currentColor" style="width:12px;height:12px"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg>
     </button>
-    <div class="cf-dd">
-      <div class="cf-item active" data-format="all">Все форматы</div>
-      <div class="cf-item" data-format="individual">Индивидуальная</div>
-      <div class="cf-item" data-format="group">Мини-группа (1-8 чел.)</div>
+    <div class="cf-dd" style="min-width:280px;padding:10px 0">
+      <div class="cf-item active" data-format="all" style="padding:12px 18px"><strong>Все форматы</strong></div>
+      <div class="cf-item" data-format="individual" style="padding:12px 18px"><strong>Индивидуальная</strong><br><span style="font-size:12px;color:#6B7280;font-weight:400">Личная встреча с гидом только для вас и вашей компании</span></div>
+      <div class="cf-item" data-format="group" style="padding:12px 18px"><strong>Мини-группа</strong><br><span style="font-size:12px;color:#6B7280;font-weight:400">Групповой формат до 8 человек с другими участниками</span></div>
     </div>
   </div>
   <div class="cf-wrap">
@@ -924,11 +924,56 @@ ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webv
     }
   });
 
-  // Dates dropdown — link to WhatsApp booking
+  // Dates dropdown — load from Airtable schedule API
   var ddDates=document.getElementById('dd-dates');
   if(ddDates){
-    ddDates.innerHTML='<div class="cf-item" style="color:#1A3D2E;font-weight:600">Все даты доступны</div>'
-      +'<a href="https://wa.me/995511272623?text=Хочу+забронировать+экскурсию" class="cf-item" style="color:#25D366;font-weight:600;display:block;text-decoration:none">Написать для бронирования</a>';
+    fetch('/api/schedule').then(function(r){return r.json()}).then(function(data){
+      if(!data||!data.length||data.error){
+        ddDates.innerHTML='<div class="cf-item" style="color:#1A3D2E;font-weight:600">Все даты доступны</div>'
+          +'<a href="https://wa.me/995511272623?text=Хочу+забронировать+экскурсию" class="cf-item" style="color:#25D366;font-weight:600;display:block;text-decoration:none">Написать для бронирования</a>';
+        return;
+      }
+      var months=['янв','фев','мар','апр','мая','июн','июл','авг','сен','окт','ноя','дек'];
+      var days=['Вс','Пн','Вт','Ср','Чт','Пт','Сб'];
+      var html='';
+      var grouped={};
+      data.forEach(function(s){
+        var d=s.date;
+        if(!grouped[d])grouped[d]=[];
+        grouped[d].push(s);
+      });
+      var dateKeys=Object.keys(grouped).sort().slice(0,10);
+      dateKeys.forEach(function(dk){
+        var dt=new Date(dk+'T12:00:00');
+        var label=days[dt.getDay()]+', '+dt.getDate()+' '+months[dt.getMonth()];
+        var tours=grouped[dk];
+        var cnt=tours.length;
+        var lowSpots=tours.some(function(t){return t.status==='мало мест'});
+        var spotsBadge=lowSpots?'<span style="color:#F59E0B;font-size:11px;margin-left:6px">мало мест</span>':'';
+        html+='<div class="cf-item cf-date-item" data-date="'+dk+'" style="display:flex;justify-content:space-between;align-items:center">'
+          +'<span><strong>'+label+'</strong> <span style="color:#9CA3AF;font-size:12px">'+cnt+' экск.</span>'+spotsBadge+'</span>'
+          +'</div>';
+      });
+      html+='<div style="border-top:1px solid #E5E7EB;margin-top:4px;padding-top:4px">'
+        +'<a href="https://wa.me/995511272623?text=Хочу+забронировать+экскурсию+на+другую+дату" class="cf-item" style="color:#25D366;font-weight:600;display:block;text-decoration:none;font-size:13px">Другая дата? Написать</a>'
+        +'</div>';
+      ddDates.innerHTML=html;
+      // Click handler for date filter
+      ddDates.querySelectorAll('.cf-date-item').forEach(function(item){
+        item.addEventListener('click',function(){
+          var sel=this.dataset.date;
+          ddDates.querySelectorAll('.cf-date-item').forEach(function(i){i.classList.remove('active')});
+          this.classList.add('active');
+          var btn=ddDates.parentElement.querySelector('.cf-btn');
+          var dt=new Date(sel+'T12:00:00');
+          btn.innerHTML=btn.innerHTML.replace(/[^\<]*<svg/,'<svg').replace(/^/,days[dt.getDay()]+', '+dt.getDate()+' '+months[dt.getMonth()]+' ');
+          ddDates.parentElement.classList.remove('open');
+        });
+      });
+    }).catch(function(){
+      ddDates.innerHTML='<div class="cf-item" style="color:#1A3D2E;font-weight:600">Все даты доступны</div>'
+        +'<a href="https://wa.me/995511272623?text=Хочу+забронировать+экскурсию" class="cf-item" style="color:#25D366;font-weight:600;display:block;text-decoration:none">Написать для бронирования</a>';
+    });
   }
 })();
 </script>
