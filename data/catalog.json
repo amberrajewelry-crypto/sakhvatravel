@@ -9,7 +9,7 @@
       "hours": 10,
       "days": 0,
       "durationText": "10ч",
-      "image": "https://sakhva-travel.com/images/kakheti-tour.webp",
+      "image": "/images/chacha-tour-600.webp",
       "format": "group",
       "tags": [
         "Гастро",
@@ -27,7 +27,7 @@
       "hours": 11,
       "days": 0,
       "durationText": "11ч",
-      "image": "https://sakhva-travel.com/images/kakheti-tour.webp",
+      "image": "/images/degustatsiya-tour-600.webp",
       "format": "group",
       "tags": [
         "Гастро",
@@ -45,7 +45,7 @@
       "hours": 5,
       "days": 0,
       "durationText": "5ч",
-      "image": "https://sakhva-travel.com/images/kazbegi-tour.webp",
+      "image": "/images/ananuri-tour-600.webp",
       "format": "individual",
       "tags": [
         "Казбеги"
@@ -96,7 +96,7 @@
       "hours": 5,
       "days": 0,
       "durationText": "5ч",
-      "image": "https://sakhva-travel.com/images/kazbegi-tour.webp",
+      "image": "/images/gudauri-tour-600.webp",
       "format": "individual",
       "tags": [
         "Казбеги"
@@ -113,7 +113,7 @@
       "hours": 5,
       "days": 0,
       "durationText": "5ч",
-      "image": "https://sakhva-travel.com/images/mtskheta-tour.webp",
+      "image": "/images/jvari-tour-600.webp",
       "format": "individual",
       "tags": [
         "Казбеги"
@@ -181,7 +181,7 @@
       "hours": 5,
       "days": 0,
       "durationText": "5ч",
-      "image": "https://sakhva-travel.com/images/kakheti-tour.webp",
+      "image": "/images/sighnaghi-tour-600.webp",
       "format": "individual",
       "tags": [
         "Кахетия"
@@ -198,7 +198,7 @@
       "hours": 14,
       "days": 0,
       "durationText": "14ч",
-      "image": "https://sakhva-travel.com/images/kazbegi-tour.webp",
+      "image": "/images/truso-tour-600.webp",
       "format": "group",
       "tags": [
         "Казбеги"
@@ -215,7 +215,7 @@
       "hours": 48,
       "days": 0,
       "durationText": "48ч",
-      "image": "https://sakhva-travel.com/images/kazbegi-tour.webp",
+      "image": "/images/tusheti-tour-600.webp",
       "format": "group",
       "tags": [
         "За городом"
@@ -266,7 +266,7 @@
       "hours": 4,
       "days": 0,
       "durationText": "4ч",
-      "image": "https://sakhva-travel.com/images/dinner-tour.webp",
+      "image": "/images/khachapuri-tour-600.webp",
       "format": "individual",
       "tags": [
         "Гастро",
@@ -284,7 +284,7 @@
       "hours": 10,
       "days": 0,
       "durationText": "10ч",
-      "image": "https://sakhva-travel.com/images/kakheti-tour.webp",
+      "image": "/images/kvevri-tour-600.webp",
       "format": "group",
       "tags": [
         "Винные"
@@ -318,7 +318,7 @@
       "hours": 72,
       "days": 0,
       "durationText": "72ч",
-      "image": "https://sakhva-travel.com/images/kazbegi-tour.webp",
+      "image": "/images/priklyuchenie-tour-600.webp",
       "format": "group",
       "tags": [
         "Активный"
@@ -403,7 +403,7 @@
       "hours": 5,
       "days": 0,
       "durationText": "5ч",
-      "image": "https://sakhva-travel.com/images/mtskheta-tour.webp",
+      "image": "/images/pensionery-tour-600.webp",
       "format": "individual",
       "tags": [
         "Для детей"
@@ -420,7 +420,7 @@
       "hours": 168,
       "days": 0,
       "durationText": "168ч",
-      "image": "https://sakhva-travel.com/images/batumi-tour.webp",
+      "image": "/images/leto-batumi-tour-600.webp",
       "format": "group",
       "tags": [
         "Сезонные"
@@ -437,7 +437,7 @@
       "hours": 120,
       "days": 0,
       "durationText": "120ч",
-      "image": "https://sakhva-travel.com/images/kazbegi-tour.webp",
+      "image": "/images/noviy-god-tour-600.webp",
       "format": "group",
       "tags": [
         "Сезонные"
@@ -471,7 +471,7 @@
       "hours": 5,
       "days": 0,
       "durationText": "5ч",
-      "image": "https://sakhva-travel.com/images/mtskheta-tour.webp",
+      "image": "/images/hramy-tour-600.webp",
       "format": "individual",
       "tags": [
         "Пешеходные"
@@ -488,7 +488,7 @@
       "hours": 15,
       "days": 2,
       "durationText": "2 дня",
-      "image": "https://sakhva-travel.com/images/batumi-tour.webp",
+      "image": "/images/tbilisi-batumi-tour-600.webp",
       "format": "group",
       "tags": [
         "Батуми"
@@ -505,7 +505,7 @@
       "hours": 4,
       "days": 0,
       "durationText": "4ч",
-      "image": "https://sakhva-travel.com/images/kakheti-tour.webp",
+      "image": "/images/alazani-tour-600.webp",
       "format": "individual",
       "tags": [
         "Винные",
@@ -523,7 +523,7 @@
       "hours": 5,
       "days": 0,
       "durationText": "5ч",
-      "image": "https://sakhva-travel.com/images/dinner-tour.webp",
+      "image": "/images/vinniy-bar-tour-600.webp",
       "format": "individual",
       "tags": [
         "Винные"
@@ -540,7 +540,7 @@
       "hours": 10,
       "days": 0,
       "durationText": "10ч",
-      "image": "https://sakhva-travel.com/images/kakheti-tour.webp",
+      "image": "/images/kindzmarauli-tour-600.webp",
       "format": "group",
       "tags": [
         "Винные",
@@ -558,7 +558,7 @@
       "hours": 5,
       "days": 0,
       "durationText": "5ч",
-      "image": "https://sakhva-travel.com/images/old-tbilisi-tour.webp",
+      "image": "/images/art-tur-tour-600.webp",
       "format": "individual",
       "tags": [
         "Пешеходные",
@@ -576,7 +576,7 @@
       "hours": 3,
       "days": 0,
       "durationText": "3ч",
-      "image": "https://sakhva-travel.com/images/old-tbilisi-tour.webp",
+      "image": "/images/abanotubani-tour-600.webp",
       "format": "individual",
       "tags": [
         "Старый Тбилиси"
@@ -593,7 +593,7 @@
       "hours": 12,
       "days": 0,
       "durationText": "12ч",
-      "image": "https://sakhva-travel.com/images/old-tbilisi-tour.webp",
+      "image": "/images/david-gareji-tour-600.webp",
       "format": "individual",
       "tags": [
         "За городом"
@@ -610,7 +610,7 @@
       "hours": 3,
       "days": 0,
       "durationText": "3ч",
-      "image": "https://sakhva-travel.com/images/old-tbilisi-tour.webp",
+      "image": "/images/mtatsminda-tour-600.webp",
       "format": "individual",
       "tags": [
         "Старый Тбилиси"
@@ -627,7 +627,7 @@
       "hours": 3,
       "days": 0,
       "durationText": "3ч",
-      "image": "https://sakhva-travel.com/images/old-tbilisi-tour.webp",
+      "image": "/images/narikala-tour-600.webp",
       "format": "individual",
       "tags": [
         "Старый Тбилиси"
@@ -663,7 +663,7 @@
       "hours": 10,
       "days": 0,
       "durationText": "10ч",
-      "image": "https://sakhva-travel.com/images/old-tbilisi-tour.webp",
+      "image": "/images/uplistsikhe-tour-600.webp",
       "format": "individual",
       "tags": [
         "За городом"
@@ -680,7 +680,7 @@
       "hours": 14,
       "days": 0,
       "durationText": "14ч",
-      "image": "https://sakhva-travel.com/images/old-tbilisi-tour.webp",
+      "image": "/images/vardzia-tour-600.webp",
       "format": "individual",
       "tags": [
         "За городом"
@@ -697,7 +697,7 @@
       "hours": 14,
       "days": 0,
       "durationText": "14ч",
-      "image": "https://sakhva-travel.com/images/old-tbilisi-tour.webp",
+      "image": "/images/zugdidi-tour-600.webp",
       "format": "individual",
       "tags": [
         "За городом"
@@ -714,7 +714,7 @@
       "hours": 5,
       "days": 0,
       "durationText": "5ч",
-      "image": "https://sakhva-travel.com/images/old-tbilisi-tour.webp",
+      "image": "/images/family-tur-tour-600.webp",
       "format": "individual",
       "tags": [
         "Для детей"
@@ -731,7 +731,7 @@
       "hours": 5,
       "days": 0,
       "durationText": "5ч",
-      "image": "https://sakhva-travel.com/images/old-tbilisi-tour.webp",
+      "image": "/images/gruppa-tour-600.webp",
       "format": "individual",
       "tags": [
         "За городом"
@@ -748,7 +748,7 @@
       "hours": 5,
       "days": 0,
       "durationText": "5ч",
-      "image": "https://sakhva-travel.com/images/old-tbilisi-tour.webp",
+      "image": "/images/korporativ-tour-600.webp",
       "format": "individual",
       "tags": [
         "Мастер-классы"
@@ -765,7 +765,7 @@
       "hours": 5,
       "days": 0,
       "durationText": "5ч",
-      "image": "https://sakhva-travel.com/images/old-tbilisi-tour.webp",
+      "image": "/images/shopping-tour-600.webp",
       "format": "individual",
       "tags": [
         "Старый Тбилиси"
@@ -782,7 +782,7 @@
       "hours": 72,
       "days": 0,
       "durationText": "72ч",
-      "image": "https://sakhva-travel.com/images/old-tbilisi-tour.webp",
+      "image": "/images/svadba-tour-600.webp",
       "format": "individual",
       "tags": [
         "Фото",
@@ -800,7 +800,7 @@
       "hours": 5,
       "days": 0,
       "durationText": "5ч",
-      "image": "https://sakhva-travel.com/images/old-tbilisi-tour.webp",
+      "image": "/images/transfer-tour-600.webp",
       "format": "individual",
       "tags": [
         "За городом"
@@ -817,7 +817,7 @@
       "hours": 5,
       "days": 0,
       "durationText": "5ч",
-      "image": "https://sakhva-travel.com/images/old-tbilisi-tour.webp",
+      "image": "/images/deti-tour-600.webp",
       "format": "individual",
       "tags": [
         "Для детей",
@@ -835,7 +835,7 @@
       "hours": 0,
       "days": 3,
       "durationText": "2-3 дня",
-      "image": "/images/kazbegi-tour-600.webp",
+      "image": "/images/svaneti-tour-600.webp",
       "format": "group",
       "tags": [
         "За городом",
@@ -853,7 +853,7 @@
       "hours": 0,
       "days": 3,
       "durationText": "3 дня",
-      "image": "/images/kazbegi-tour-600.webp",
+      "image": "/images/3-dnya-tour-600.webp",
       "format": "individual",
       "tags": [
         "Многодневные"
@@ -870,7 +870,7 @@
       "hours": 0,
       "days": 5,
       "durationText": "5 дней",
-      "image": "/images/kakheti-tour-600.webp",
+      "image": "/images/5-dney-tour-600.webp",
       "format": "individual",
       "tags": [
         "Многодневные"
@@ -887,7 +887,7 @@
       "hours": 0,
       "days": 7,
       "durationText": "7 дней",
-      "image": "/images/kakheti-tour-600.webp",
+      "image": "/images/7-dney-tour-600.webp",
       "format": "group",
       "tags": [
         "Многодневные"
@@ -904,7 +904,7 @@
       "hours": 0,
       "days": 10,
       "durationText": "10 дней",
-      "image": "/images/kazbegi-tour-600.webp",
+      "image": "/images/10-dney-tour-600.webp",
       "format": "individual",
       "tags": [
         "Многодневные"
@@ -921,7 +921,7 @@
       "hours": 0,
       "days": 7,
       "durationText": "7-10 дней",
-      "image": "/images/kazbegi-tour-600.webp",
+      "image": "/images/armeniya-tour-600.webp",
       "format": "individual",
       "tags": [
         "Многодневные"
@@ -938,7 +938,7 @@
       "hours": 0,
       "days": 4,
       "durationText": "3-4 дня",
-      "image": "/images/kakheti-tour-600.webp",
+      "image": "/images/tbilisi-kazbegi-kakheti-tour-600.webp",
       "format": "individual",
       "tags": [
         "Многодневные"
@@ -955,7 +955,7 @@
       "hours": 0,
       "days": 5,
       "durationText": "4-5 дней",
-      "image": "/images/kazbegi-tour-600.webp",
+      "image": "/images/ushguli-tour-600.webp",
       "format": "individual",
       "tags": [
         "Многодневные",
@@ -973,7 +973,7 @@
       "hours": 0,
       "days": 14,
       "durationText": "10-14 дней",
-      "image": "/images/kakheti-tour-600.webp",
+      "image": "/images/vsya-gruziya-tour-600.webp",
       "format": "individual",
       "tags": [
         "Многодневные"
