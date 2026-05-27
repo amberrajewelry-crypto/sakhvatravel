@@ -90,9 +90,13 @@ body,h1,h2,h3,h4,h5,h6,p,a,span,div,li,td,th,label,input,textarea,button,blockqu
 .cal-days{display:grid;grid-template-columns:repeat(7,1fr);gap:2px;margin-bottom:8px}
 .cal-day{height:40px;display:flex;align-items:center;justify-content:center;font-size:14px;border-radius:8px;cursor:default;color:#D1D5DB}
 .cal-day.avail{color:#111;font-weight:600;cursor:pointer}
-.cal-day.avail:hover{background:#E8F5E9}
-.cal-day.today{border:2px solid #1A3D2E;border-radius:8px;font-weight:700}
-.cal-day.selected{background:#1A3D2E;color:#fff!important;border-radius:8px}
+.cal-day.avail:hover{background:#E8F5E9;border-radius:8px}
+.cal-day.today{font-weight:700}
+.cal-day.range-start{background:#1A3D2E;color:#fff!important;border-radius:8px 0 0 8px}
+.cal-day.range-end{background:#1A3D2E;color:#fff!important;border-radius:0 8px 8px 0}
+.cal-day.range-start.range-end{border-radius:8px}
+.cal-day.in-range{background:#D1FAE5;color:#111;border-radius:0}
+.cal-day.single{background:#1A3D2E;color:#fff!important;border-radius:8px}
 .cal-guests{display:flex;align-items:center;justify-content:space-between;padding:16px 0;border-top:1px solid #E5E7EB;margin-top:12px}
 .cal-guests span{font-size:15px;font-weight:600}
 .cal-guests-ctrl{display:flex;align-items:center;gap:0}
@@ -963,8 +967,7 @@ ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webv
 </div>
 <script>
 (function(){
-  var calSelected=null;
-  var calGuests=1;
+  var calStart=null,calEnd=null,calGuests=1;
   var monthsFull=['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'];
   var monthsShort=['янв','фев','мар','апр','мая','июн','июл','авг','сен','окт','ноя','дек'];
 
@@ -992,7 +995,13 @@ ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webv
         var isPast=ds<todayStr;
         if(ds===todayStr)cls+=' today';
         if(!isPast)cls+=' avail';
-        if(ds===calSelected)cls+=' selected';
+        if(calStart&&calEnd){
+          if(ds===calStart)cls+=' range-start';
+          else if(ds===calEnd)cls+=' range-end';
+          else if(ds>calStart&&ds<calEnd)cls+=' in-range';
+        }else if(calStart&&!calEnd&&ds===calStart){
+          cls+=' single';
+        }
         html+='<div class="'+cls+'" data-d="'+ds+'">'+d+'</div>';
       }
       html+='</div>';
@@ -1000,12 +1009,24 @@ ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webv
     container.innerHTML=html;
     container.querySelectorAll('.cal-day.avail').forEach(function(el){
       el.addEventListener('click',function(){
-        container.querySelectorAll('.cal-day.selected').forEach(function(s){s.classList.remove('selected')});
-        this.classList.add('selected');
-        calSelected=this.dataset.d;
+        var d=this.dataset.d;
+        if(!calStart||calEnd||(d<calStart)){
+          calStart=d;calEnd=null;
+        }else{
+          calEnd=d;
+        }
+        renderCalendar();
+        updateApplyBtn();
       });
     });
   }
+
+  function updateApplyBtn(){
+    var btn=document.getElementById('cal-apply');
+    var count=document.querySelectorAll('#cat-grid .ccard').length||33;
+    btn.textContent='Показать '+count;
+  }
+  updateApplyBtn();
 
   document.getElementById('cal-minus').addEventListener('click',function(){
     if(calGuests>1){calGuests--;document.getElementById('cal-gval').textContent=calGuests}
@@ -1015,20 +1036,29 @@ ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webv
   });
   document.getElementById('cal-apply').addEventListener('click',function(){
     var label=document.getElementById('btn-dates-label');
-    if(calSelected){
-      var dt=new Date(calSelected+'T12:00:00');
-      var dayNames=['Вс','Пн','Вт','Ср','Чт','Пт','Сб'];
-      label.textContent=dayNames[dt.getDay()]+', '+dt.getDate()+' '+monthsShort[dt.getMonth()]+', '+calGuests+' чел.';
+    if(calStart&&calEnd){
+      var ds=new Date(calStart+'T12:00:00');
+      var de=new Date(calEnd+'T12:00:00');
+      var sameMonth=ds.getMonth()===de.getMonth();
+      if(sameMonth){
+        label.textContent=ds.getDate()+'\u2013'+de.getDate()+' '+monthsShort[ds.getMonth()]+', '+calGuests+' чел.';
+      }else{
+        label.textContent=ds.getDate()+' '+monthsShort[ds.getMonth()]+' \u2013 '+de.getDate()+' '+monthsShort[de.getMonth()]+', '+calGuests+' чел.';
+      }
+    }else if(calStart){
+      var dt=new Date(calStart+'T12:00:00');
+      label.textContent=dt.getDate()+' '+monthsShort[dt.getMonth()]+', '+calGuests+' чел.';
     }else{
       label.textContent='Любые даты, '+calGuests+' чел.';
     }
     document.getElementById('cal-modal').classList.remove('on');
   });
   document.getElementById('cal-reset').addEventListener('click',function(){
-    calSelected=null;calGuests=1;
+    calStart=null;calEnd=null;calGuests=1;
     document.getElementById('cal-gval').textContent='1';
     document.getElementById('btn-dates-label').textContent='Любые даты, 1 чел.';
     renderCalendar();
+    updateApplyBtn();
   });
   document.getElementById('cal-modal').addEventListener('click',function(e){
     if(e.target===this)this.classList.remove('on');
