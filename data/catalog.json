@@ -980,12 +980,51 @@
       ],
       "type": "tour",
       "url": "/ekskursiya/tur-vsya-gruziya/"
+    },
+    {
+      "slug": "ekskursiya-telavi-iz-tbilisi",
+      "title": "Экскурсия в Телави из Тбилиси — винная столица Кахетии",
+      "description": "Экскурсия в Телави из Тбилиси с русскоязычным гидом от ₾185. Крепость Батонисцихе, Алазанская долина, винодельни, Алаверди. 11 часов, до 7 человек.",
+      "price": 185,
+      "currency": "GEL",
+      "hours": 11,
+      "days": 0,
+      "durationText": "11ч",
+      "image": "/images/telavi-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "За городом",
+        "Кахетия",
+        "Винные"
+      ],
+      "type": "excursion",
+      "url": "/ekskursiya/ekskursiya-telavi-iz-tbilisi/"
+    },
+    {
+      "slug": "ekskursiya-gomis-mta-iz-batumi",
+      "title": "Гомис Мта и Мачахела из Батуми — горная Аджария",
+      "description": "Экскурсия Гомис Мта и ущелье Мачахела из Батуми с русскоязычным гидом от ₾220. Выше облаков, водопады, древние мосты. 8-9 часов.",
+      "price": 220,
+      "currency": "GEL",
+      "hours": 9,
+      "days": 0,
+      "durationText": "9ч",
+      "image": "/images/gomis-mta-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "За городом",
+        "Батуми",
+        "Активный",
+        "Горные"
+      ],
+      "type": "excursion",
+      "url": "/ekskursiya/ekskursiya-gomis-mta-iz-batumi/"
     }
   ],
   "stats": {
     "totalExcursions": 33,
     "totalTours": 7,
-    "total": 40,
+    "total": 59,
     "skippedNoImage": 20
   },
   "generated": "2026-05-27T11:03:07.211Z"
