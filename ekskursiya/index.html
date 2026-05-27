@@ -54,6 +54,24 @@ body,h1,h2,h3,h4,h5,h6,p,a,span,div,li,td,th,label,input,textarea,button,blockqu
 .cf-item:hover{background:#F3F4F6}
 .cf-item.active{color:#1A3D2E;font-weight:600}
 .cf-item.active::before{content:'\2713 ';color:#1A3D2E}
+.cf-btn-adv{background:#F9FAFB;border:1px dashed #D1D5DB;color:#374151;font-weight:600}
+.cf-btn-adv:hover{border-color:#1A3D2E;color:#1A3D2E;background:#F0FAF4}
+.adv-panel{max-height:0;overflow:hidden;transition:max-height .3s ease,opacity .3s;opacity:0;max-width:1200px;margin:0 auto}
+.adv-panel.on{max-height:300px;opacity:1;margin-bottom:20px}
+.adv-inner{padding:16px clamp(16px,3.5vw,56px);display:flex;flex-wrap:wrap;gap:24px;align-items:flex-end}
+.adv-group{display:flex;flex-direction:column;gap:8px}
+.adv-label{font-size:12px;font-weight:600;color:#6B7280;text-transform:uppercase;letter-spacing:.05em}
+.adv-btns{display:flex;gap:6px;flex-wrap:wrap}
+.adv-btn{padding:7px 14px;border:1px solid #E5E7EB;border-radius:20px;background:#fff;font-size:13px;font-family:inherit;cursor:pointer;color:#374151;transition:all .15s}
+.adv-btn:hover{border-color:#1A3D2E;color:#1A3D2E}
+.adv-btn.active{background:#1A3D2E;color:#fff;border-color:#1A3D2E}
+.adv-actions{display:flex;gap:10px;align-items:center;margin-left:auto}
+.adv-apply{padding:9px 22px;background:#1A3D2E;color:#fff;border:none;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;transition:background .15s}
+.adv-apply:hover{background:#15332A}
+.adv-reset{padding:9px 16px;background:none;border:none;color:#6B7280;font-size:13px;cursor:pointer;font-family:inherit;text-decoration:underline}
+.adv-reset:hover{color:#1A3D2E}
+.cat-count{max-width:1200px;margin:0 auto 12px;padding:0 clamp(16px,3.5vw,56px);font-size:13px;color:#6B7280}
+@media(max-width:640px){.cat-filters{gap:8px}.cf-btn{padding:8px 12px;font-size:12px}.adv-inner{gap:16px}.adv-btn{padding:6px 12px;font-size:12px}.adv-actions{margin-left:0;width:100%}.adv-apply{flex:1}}
 .cat-pills{display:flex;flex-wrap:wrap;gap:8px;max-width:1200px;margin:0 auto 28px;padding:0 clamp(16px,3.5vw,56px)}
 .pill{padding:8px 16px;border-radius:20px;border:1px solid #E5E7EB;background:#fff;font-size:13px;font-family:inherit;cursor:pointer;color:#374151;transition:all .15s}
 .pill:hover{border-color:#1A3D2E;color:#1A3D2E}
@@ -555,19 +573,19 @@ ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webv
   <div class="cf-wrap">
     <button class="cf-btn" onclick="this.parentElement.classList.toggle('open')">
       <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="5" r="3"/><path d="M2 14c0-3 2.5-5 6-5s6 2 6 5"/></svg>
-      Формат проведения
+      <span id="btn-format-label">Формат проведения</span>
       <svg viewBox="0 0 20 20" fill="currentColor" style="width:12px;height:12px"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg>
     </button>
     <div class="cf-dd" style="min-width:280px;padding:10px 0">
-      <div class="cf-item active" data-format="all" style="padding:12px 18px"><strong>Все форматы</strong></div>
-      <div class="cf-item" data-format="individual" style="padding:12px 18px"><strong>Индивидуальная</strong><br><span style="font-size:12px;color:#6B7280;font-weight:400">Личная встреча с гидом только для вас и вашей компании</span></div>
-      <div class="cf-item" data-format="group" style="padding:12px 18px"><strong>Мини-группа</strong><br><span style="font-size:12px;color:#6B7280;font-weight:400">Групповой формат до 8 человек с другими участниками</span></div>
+      <div class="cf-item active" data-flt-format="all" style="padding:12px 18px"><strong>Все форматы</strong></div>
+      <div class="cf-item" data-flt-format="individual" style="padding:12px 18px"><strong>Индивидуальная</strong><br><span style="font-size:12px;color:#6B7280;font-weight:400">Личная встреча с гидом только для вас</span></div>
+      <div class="cf-item" data-flt-format="group" style="padding:12px 18px"><strong>Мини-группа</strong><br><span style="font-size:12px;color:#6B7280;font-weight:400">До 8 человек с другими участниками</span></div>
     </div>
   </div>
   <div class="cf-wrap">
     <button class="cf-btn" onclick="this.parentElement.classList.toggle('open')">
       <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M4 8h4.5V4"/></svg>
-      ₾ Валюта
+      <span id="btn-cur-label">₾ Валюта</span>
       <svg viewBox="0 0 20 20" fill="currentColor" style="width:12px;height:12px"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg>
     </button>
     <div class="cf-dd" id="dd-currency">
@@ -577,10 +595,59 @@ ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webv
       <div class="cf-item" data-cur="RUB">₽ RUB — Рубль</div>
     </div>
   </div>
+  <div class="cf-wrap">
+    <button class="cf-btn" onclick="this.parentElement.classList.toggle('open')">
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 4h12M4 8h8M6 12h4"/></svg>
+      <span id="btn-price-label">Цена</span>
+      <svg viewBox="0 0 20 20" fill="currentColor" style="width:12px;height:12px"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg>
+    </button>
+    <div class="cf-dd" style="min-width:200px;padding:10px 0">
+      <div class="cf-item active" data-flt-price="all" style="padding:10px 18px"><strong>Любая цена</strong></div>
+      <div class="cf-item" data-flt-price="low" style="padding:10px 18px">до ₾150</div>
+      <div class="cf-item" data-flt-price="mid" style="padding:10px 18px">₾150 — ₾300</div>
+      <div class="cf-item" data-flt-price="high" style="padding:10px 18px">₾300+</div>
+    </div>
+  </div>
+  <button class="cf-btn cf-btn-adv" id="btn-adv-filters" onclick="document.getElementById('adv-panel').classList.toggle('on')">
+    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 4h12M2 8h12M2 12h12"/><circle cx="5" cy="4" r="1.5" fill="currentColor"/><circle cx="11" cy="8" r="1.5" fill="currentColor"/><circle cx="7" cy="12" r="1.5" fill="currentColor"/></svg>
+    Фильтры
+  </button>
+</div>
+
+<!-- Advanced Filters Panel -->
+<div class="adv-panel" id="adv-panel">
+  <div class="adv-inner">
+    <div class="adv-group">
+      <div class="adv-label">Длительность</div>
+      <div class="adv-btns" id="adv-dur">
+        <button class="adv-btn active" data-dur="all">Любая</button>
+        <button class="adv-btn" data-dur="short">до 4ч</button>
+        <button class="adv-btn" data-dur="half">4–8ч</button>
+        <button class="adv-btn" data-dur="full">Полный день</button>
+        <button class="adv-btn" data-dur="multi">Многодневные</button>
+      </div>
+    </div>
+    <div class="adv-group">
+      <div class="adv-label">Сортировка</div>
+      <div class="adv-btns" id="adv-sort">
+        <button class="adv-btn active" data-sort="popular">По популярности</button>
+        <button class="adv-btn" data-sort="price-asc">Сначала дешёвые</button>
+        <button class="adv-btn" data-sort="price-desc">Сначала дорогие</button>
+        <button class="adv-btn" data-sort="duration">По длительности</button>
+      </div>
+    </div>
+    <div class="adv-actions">
+      <button class="adv-apply" id="adv-apply-btn">Показать</button>
+      <button class="adv-reset" id="adv-reset-btn">Сбросить всё</button>
+    </div>
+  </div>
 </div>
 
 <!-- Pill tags -->
 <div class="cat-pills" id="cat-pills"></div>
+
+<!-- Count -->
+<div class="cat-count" id="cat-count"></div>
 
 <!-- Cards grid (JS-rendered) -->
 <div class="cat-grid" id="cat-grid"></div>
@@ -847,10 +914,13 @@ ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webv
   var curCurrency='GEL';
   var curTag='all';
   var curFormat='all';
+  var curPrice='all';
+  var curDur='all';
+  var curSort='popular';
   var items=[];
-  var reviews=['4.9 (87 отзывов)','4.9 (460+ туров)','4.9 (рекомендуют 98%)'];
+  var reviews=['4.9 (26 отзывов)','4.9 (460+ туров)','4.9 (рекомендуют 98%)'];
 
-  fetch('/data/catalog.json?v=20260527').then(function(r){return r.json()}).then(function(data){
+  fetch('/data/catalog.json?v=20260527b').then(function(r){return r.json()}).then(function(data){
     items=data.excursions||[];
     renderPills();
     renderCards();
@@ -878,14 +948,44 @@ ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webv
     });
   }
 
+  function getDurationHours(t){
+    if(t.days&&t.days>0)return t.days*24;
+    return t.hours||0;
+  }
+
   function renderCards(){
     var grid=document.getElementById('cat-grid');
+    var countEl=document.getElementById('cat-count');
     var filtered=items.filter(function(t){
       if(curTag!=='all'&&t.tags.indexOf(curTag)===-1)return false;
+      if(curFormat!=='all'&&t.format!==curFormat)return false;
+      if(curPrice!=='all'){
+        if(curPrice==='low'&&t.price>=150)return false;
+        if(curPrice==='mid'&&(t.price<150||t.price>300))return false;
+        if(curPrice==='high'&&t.price<=300)return false;
+      }
+      if(curDur!=='all'){
+        var h=getDurationHours(t);
+        if(curDur==='short'&&h>=4)return false;
+        if(curDur==='half'&&(h<4||h>8))return false;
+        if(curDur==='full'&&(h<8||h>12))return false;
+        if(curDur==='multi'&&(!t.days||t.days<2))return false;
+      }
       return true;
     });
+    if(curSort==='price-asc')filtered.sort(function(a,b){return a.price-b.price});
+    else if(curSort==='price-desc')filtered.sort(function(a,b){return b.price-a.price});
+    else if(curSort==='duration')filtered.sort(function(a,b){return getDurationHours(a)-getDurationHours(b)});
     var rate=RATES[curCurrency]||1;
     var sym={GEL:'\u20BE',USD:'$',EUR:'\u20AC',RUB:'\u20BD'}[curCurrency]||'\u20BE';
+    if(countEl){
+      if(filtered.length===items.length){countEl.textContent=''}
+      else{countEl.textContent='Найдено '+filtered.length+' из '+items.length+' экскурсий'}
+    }
+    if(filtered.length===0){
+      grid.innerHTML='<p style="color:#6B7280;padding:20px;text-align:center;grid-column:1/-1">Ничего не найдено. Попробуйте изменить фильтры.</p>';
+      return;
+    }
     grid.innerHTML=filtered.map(function(t,i){
       var price=Math.round(t.price*rate);
       var rev=reviews[i%reviews.length];
@@ -907,14 +1007,77 @@ ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webv
     }).join('');
   }
 
-  // Format filter — decorative only, no filtering
-  document.querySelectorAll('[data-format]').forEach(function(el){
+  // Format filter
+  document.querySelectorAll('[data-flt-format]').forEach(function(el){
     el.addEventListener('click',function(){
       var dd=el.closest('.cf-dd');
       dd.querySelectorAll('.cf-item').forEach(function(i){i.classList.remove('active')});
       el.classList.add('active');
+      curFormat=el.getAttribute('data-flt-format');
+      if(curFormat==='all')document.getElementById('btn-format-label').textContent='Формат проведения';
+      else document.getElementById('btn-format-label').textContent=el.querySelector('strong').textContent;
       el.closest('.cf-wrap').classList.remove('open');
+      renderCards();
     });
+  });
+
+  // Price filter
+  document.querySelectorAll('[data-flt-price]').forEach(function(el){
+    el.addEventListener('click',function(){
+      var dd=el.closest('.cf-dd');
+      dd.querySelectorAll('.cf-item').forEach(function(i){i.classList.remove('active')});
+      el.classList.add('active');
+      curPrice=el.getAttribute('data-flt-price');
+      var labels={all:'Цена',low:'до \u20BE150',mid:'\u20BE150–300',high:'\u20BE300+'};
+      document.getElementById('btn-price-label').textContent=labels[curPrice]||'Цена';
+      el.closest('.cf-wrap').classList.remove('open');
+      renderCards();
+    });
+  });
+
+  // Duration filter (advanced panel)
+  document.querySelectorAll('#adv-dur .adv-btn').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      document.querySelectorAll('#adv-dur .adv-btn').forEach(function(b){b.classList.remove('active')});
+      btn.classList.add('active');
+      curDur=btn.getAttribute('data-dur');
+    });
+  });
+
+  // Sort buttons (advanced panel)
+  document.querySelectorAll('#adv-sort .adv-btn').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      document.querySelectorAll('#adv-sort .adv-btn').forEach(function(b){b.classList.remove('active')});
+      btn.classList.add('active');
+      curSort=btn.getAttribute('data-sort');
+    });
+  });
+
+  // Apply button in advanced panel
+  var applyBtn=document.getElementById('adv-apply-btn');
+  if(applyBtn)applyBtn.addEventListener('click',function(){
+    document.getElementById('adv-panel').classList.remove('on');
+    renderCards();
+  });
+
+  // Reset all filters
+  var resetBtn=document.getElementById('adv-reset-btn');
+  if(resetBtn)resetBtn.addEventListener('click',function(){
+    curFormat='all';curPrice='all';curDur='all';curSort='popular';curTag='all';
+    document.querySelectorAll('#adv-dur .adv-btn, #adv-sort .adv-btn').forEach(function(b){b.classList.remove('active')});
+    document.querySelector('#adv-dur [data-dur="all"]').classList.add('active');
+    document.querySelector('#adv-sort [data-sort="popular"]').classList.add('active');
+    document.querySelectorAll('[data-flt-format]').forEach(function(i){i.classList.remove('active')});
+    document.querySelector('[data-flt-format="all"]').classList.add('active');
+    document.querySelectorAll('[data-flt-price]').forEach(function(i){i.classList.remove('active')});
+    document.querySelector('[data-flt-price="all"]').classList.add('active');
+    document.getElementById('btn-format-label').textContent='Формат проведения';
+    document.getElementById('btn-price-label').textContent='Цена';
+    var pillsEl=document.getElementById('cat-pills');
+    pillsEl.querySelectorAll('.pill').forEach(function(p){p.classList.remove('active')});
+    pillsEl.querySelector('[data-tag="all"]').classList.add('active');
+    document.getElementById('adv-panel').classList.remove('on');
+    renderCards();
   });
 
   // Currency filter
