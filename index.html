@@ -192,6 +192,11 @@ body,h1,h2,h3,h4,h5,h6,p,a,span,div,li,td,th,label,input,textarea,button,blockqu
   <h2 style="font-size:clamp(26px,3.5vw,38px);font-weight:700;color:#111;margin-bottom:6px;text-align:center" data-ru="Экскурсии в Тбилиси и Грузии">Экскурсии в Тбилиси и Грузии</h2>
   <p style="font-size:15px;color:#6B7280;text-align:center;margin-bottom:24px" data-ru="Авторские экскурсии на русском языке. Цены от ₾69">Авторские экскурсии на русском языке. Цены от ₾69</p>
 </div>
+<div id="hp-filters" style="display:flex;gap:10px;flex-wrap:wrap;max-width:1200px;margin:0 auto 20px;padding:0 clamp(16px,3.5vw,56px)">
+  <div class="cf-wrap"><button class="cf-btn" onclick="this.parentElement.classList.toggle('open')"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="5" r="3"/><path d="M2 14c0-3 2.5-5 6-5s6 2 6 5"/></svg><span id="hp-format-label">Формат</span><svg viewBox="0 0 20 20" fill="currentColor" style="width:12px;height:12px"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg></button><div class="cf-dd" style="min-width:280px;padding:10px 0"><div class="cf-item active" data-hp-format="all" style="padding:12px 18px"><strong>Все форматы</strong></div><div class="cf-item" data-hp-format="individual" style="padding:12px 18px"><strong>Индивидуальная</strong></div><div class="cf-item" data-hp-format="group" style="padding:12px 18px"><strong>Мини-группа</strong></div></div></div>
+  <div class="cf-wrap"><button class="cf-btn" onclick="this.parentElement.classList.toggle('open')"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M4 8h4.5V4"/></svg><span id="hp-cur-label">₾ GEL</span><svg viewBox="0 0 20 20" fill="currentColor" style="width:12px;height:12px"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg></button><div class="cf-dd"><div class="cf-item active" data-hp-cur="GEL">₾ GEL — Лари</div><div class="cf-item" data-hp-cur="USD">$ USD — Доллар</div><div class="cf-item" data-hp-cur="EUR">€ EUR — Евро</div><div class="cf-item" data-hp-cur="RUB">₽ RUB — Рубль</div></div></div>
+  <div class="cf-wrap"><button class="cf-btn" onclick="this.parentElement.classList.toggle('open')"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 4h12M4 8h8M6 12h4"/></svg><span id="hp-price-label">Цена</span><svg viewBox="0 0 20 20" fill="currentColor" style="width:12px;height:12px"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg></button><div class="cf-dd" style="min-width:200px;padding:10px 0"><div class="cf-item active" data-hp-price="all" style="padding:10px 18px"><strong>Любая цена</strong></div><div class="cf-item" data-hp-price="low" style="padding:10px 18px">до ₾150</div><div class="cf-item" data-hp-price="mid" style="padding:10px 18px">₾150 — ₾300</div><div class="cf-item" data-hp-price="high" style="padding:10px 18px">₾300+</div></div></div>
+</div>
 <div id="hp-pills" style="display:flex;flex-wrap:wrap;gap:8px;max-width:1200px;margin:0 auto 20px;padding:0 clamp(16px,3.5vw,56px)"></div>
 <div style="position:relative;max-width:1200px;margin:0 auto;padding:0 clamp(16px,3.5vw,56px) 0">
   <div id="hp-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-height:1080px;overflow:hidden"></div>
@@ -207,22 +212,29 @@ body,h1,h2,h3,h4,h5,h6,p,a,span,div,li,td,th,label,input,textarea,button,blockqu
 <script>
 (function(){
   var RATES={GEL:1,USD:0.38,EUR:0.35,RUB:34.5};
+  var SYMS={GEL:'\u20BE',USD:'$',EUR:'\u20AC',RUB:'\u20BD'};
   var reviews=['4.9 (26 отзывов)','4.9 (460+ туров)','4.9 (рекомендуют 98%)'];
-  fetch('/data/catalog.json?v=20260528').then(function(r){return r.json()}).then(function(data){
+  var curTag='all',curFormat='all',curCur='GEL',curPrice='all';
+  fetch('/data/catalog.json?v=20260528b').then(function(r){return r.json()}).then(function(data){
     var items=data.excursions||[];
     var grid=document.getElementById('hp-grid');
     var pills=document.getElementById('hp-pills');
-    // Render pills
-    var tagMap={};
-    items.forEach(function(t){t.tags.forEach(function(tg){tagMap[tg]=(tagMap[tg]||0)+1})});
-    var sorted=Object.entries(tagMap).sort(function(a,b){return b[1]-a[1]});
-    var curTag='all';
     function render(){
-      var filtered=items.filter(function(t){return curTag==='all'||t.tags.indexOf(curTag)!==-1});
+      var filtered=items.filter(function(t){
+        if(curTag!=='all'&&t.tags.indexOf(curTag)===-1)return false;
+        if(curFormat!=='all'&&t.format!==curFormat)return false;
+        if(curPrice!=='all'){
+          if(curPrice==='low'&&t.price>=150)return false;
+          if(curPrice==='mid'&&(t.price<150||t.price>300))return false;
+          if(curPrice==='high'&&t.price<=300)return false;
+        }
+        return true;
+      });
+      var rate=RATES[curCur]||1;var sym=SYMS[curCur]||'\u20BE';
       grid.innerHTML=filtered.map(function(t,i){
         var disc=t.discount||0;
-        var origPrice=t.price;
-        var price=disc?Math.round(t.price*(1-disc/100)):origPrice;
+        var origPrice=Math.round(t.price*rate);
+        var price=disc?Math.round(t.price*(1-disc/100)*rate):origPrice;
         var rev=reviews[i%reviews.length];
         var badgeBg=t.format==='group'?'rgba(245,158,11,.88)':'rgba(26,61,46,.85)';
         var badgeTxt=t.format==='group'?'Мини-группа':'Индивидуальная';
@@ -237,17 +249,19 @@ body,h1,h2,h3,h4,h5,h6,p,a,span,div,li,td,th,label,input,textarea,button,blockqu
           +'<div style="font-size:15px;font-weight:600;margin-bottom:4px;line-height:1.3">'+t.title+'</div>'
           +'<div style="font-size:12px;color:#6B7280;margin-bottom:12px;line-height:1.45;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">'+t.description+'</div>'
           +'<div style="display:flex;justify-content:space-between;align-items:center">'
-          +'<span style="font-size:17px;font-weight:700;color:#1A3D2E">'+(disc?'<span style="font-size:13px;color:#9CA3AF;text-decoration:line-through;margin-right:6px;font-weight:400">\u20BE'+origPrice+'</span>':'')+'\u20BE'+price+'</span>'
+          +'<span style="font-size:17px;font-weight:700;color:#1A3D2E">'+(disc?'<span style="font-size:13px;color:#9CA3AF;text-decoration:line-through;margin-right:6px;font-weight:400">'+sym+origPrice+'</span>':'')+sym+price+'</span>'
           +'<span style="font-size:12px;color:#6B7280"><span style="color:#F59E0B">\u2605</span> '+rev+'</span>'
           +'</div></div></a>';
       }).join('');
-      // Update show-all count
       var total=filtered.length;
       var showEl=document.getElementById('hp-showall');
       if(total<=9){grid.style.maxHeight='none';document.getElementById('hp-fade').style.display='none';showEl.style.display='none'}
       else{grid.style.maxHeight='1080px';document.getElementById('hp-fade').style.display='block';showEl.style.display='flex'}
     }
     // Pills
+    var tagMap={};
+    items.forEach(function(t){t.tags.forEach(function(tg){tagMap[tg]=(tagMap[tg]||0)+1})});
+    var sorted=Object.entries(tagMap).sort(function(a,b){return b[1]-a[1]});
     var html='<button style="padding:8px 16px;border-radius:20px;border:1px solid #1A3D2E;background:#1A3D2E;font-size:13px;cursor:pointer;color:#fff;font-family:inherit" data-tag="all">Все <span style="color:rgba(255,255,255,.6);margin-left:3px;font-size:12px">'+items.length+'</span></button>';
     sorted.forEach(function(e){
       html+='<button style="padding:8px 16px;border-radius:20px;border:1px solid #E5E7EB;background:#fff;font-size:13px;cursor:pointer;color:#374151;font-family:inherit;transition:all .15s" data-tag="'+e[0]+'">'+e[0]+' <span style="color:#9CA3AF;margin-left:3px;font-size:12px">'+e[1]+'</span></button>';
@@ -260,7 +274,51 @@ body,h1,h2,h3,h4,h5,h6,p,a,span,div,li,td,th,label,input,textarea,button,blockqu
       curTag=btn.getAttribute('data-tag');
       render();
     });
+    // Format filter
+    document.querySelectorAll('[data-hp-format]').forEach(function(el){
+      el.addEventListener('click',function(){
+        var dd=el.closest('.cf-dd');
+        dd.querySelectorAll('.cf-item').forEach(function(i){i.classList.remove('active')});
+        el.classList.add('active');
+        curFormat=el.getAttribute('data-hp-format');
+        document.getElementById('hp-format-label').textContent=curFormat==='all'?'Формат':el.querySelector('strong').textContent;
+        el.closest('.cf-wrap').classList.remove('open');
+        render();
+      });
+    });
+    // Currency filter
+    document.querySelectorAll('[data-hp-cur]').forEach(function(el){
+      el.addEventListener('click',function(){
+        var dd=el.closest('.cf-dd');
+        dd.querySelectorAll('.cf-item').forEach(function(i){i.classList.remove('active')});
+        el.classList.add('active');
+        curCur=el.getAttribute('data-hp-cur');
+        var syms={GEL:'\u20BE GEL',USD:'$ USD',EUR:'\u20AC EUR',RUB:'\u20BD RUB'};
+        document.getElementById('hp-cur-label').textContent=syms[curCur]||'Валюта';
+        el.closest('.cf-wrap').classList.remove('open');
+        render();
+      });
+    });
+    // Price filter
+    document.querySelectorAll('[data-hp-price]').forEach(function(el){
+      el.addEventListener('click',function(){
+        var dd=el.closest('.cf-dd');
+        dd.querySelectorAll('.cf-item').forEach(function(i){i.classList.remove('active')});
+        el.classList.add('active');
+        curPrice=el.getAttribute('data-hp-price');
+        var labels={all:'Цена',low:'до \u20BE150',mid:'\u20BE150\u2013300',high:'\u20BE300+'};
+        document.getElementById('hp-price-label').textContent=labels[curPrice]||'Цена';
+        el.closest('.cf-wrap').classList.remove('open');
+        render();
+      });
+    });
     render();
+  });
+  // Close hp dropdowns on outside click
+  document.addEventListener('click',function(e){
+    if(!e.target.closest('#hp-filters .cf-wrap')){
+      document.querySelectorAll('#hp-filters .cf-wrap.open').forEach(function(w){w.classList.remove('open')});
+    }
   });
 })();
 </script>
