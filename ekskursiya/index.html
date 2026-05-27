@@ -948,7 +948,21 @@ ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webv
     }
   });
 
-  // Calendar modal — load dates from Airtable
+})();
+</script>
+
+<!-- Calendar Modal -->
+<div class="cal-modal" id="cal-modal">
+  <div class="cal-box">
+    <div class="cal-head"><h3>Даты</h3><button class="cal-close" onclick="this.closest('.cal-modal').classList.remove('on')">&times;</button></div>
+    <div class="cal-week"><span>ПН</span><span>ВТ</span><span>СР</span><span>ЧТ</span><span>ПТ</span><span class="wknd">СБ</span><span class="wknd">ВС</span></div>
+    <div id="cal-body"></div>
+    <div class="cal-guests"><span>Участники</span><div class="cal-guests-ctrl"><button id="cal-minus">&minus;</button><div class="g-val" id="cal-gval">1</div><button id="cal-plus">+</button></div></div>
+    <div class="cal-footer"><button class="cal-apply" id="cal-apply">Показать</button><button class="cal-reset" id="cal-reset">Сбросить</button></div>
+  </div>
+</div>
+<script>
+(function(){
   var calSelected=null;
   var calGuests=1;
   var monthsFull=['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'];
@@ -962,15 +976,12 @@ ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webv
     var now=new Date();
     var todayStr=now.toISOString().split('T')[0];
     var html='';
-    // Render 3 months
     for(var m=0;m<3;m++){
       var year=now.getFullYear();
       var month=now.getMonth()+m;
       if(month>11){month-=12;year++}
-      var first=new Date(year,month,1);
       var daysInMonth=new Date(year,month+1,0).getDate();
-      var startDay=first.getDay();// 0=Sun
-      // Adjust to Mon start: Mon=0,...Sun=6
+      var startDay=new Date(year,month,1).getDay();
       var offset=(startDay+6)%7;
       html+='<div class="cal-month">'+monthsFull[month]+'</div>';
       html+='<div class="cal-days">';
@@ -987,7 +998,6 @@ ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webv
       html+='</div>';
     }
     container.innerHTML=html;
-    // Bind clicks
     container.querySelectorAll('.cal-day.avail').forEach(function(el){
       el.addEventListener('click',function(){
         container.querySelectorAll('.cal-day.selected').forEach(function(s){s.classList.remove('selected')});
@@ -997,15 +1007,12 @@ ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webv
     });
   }
 
-  // Guests counter
   document.getElementById('cal-minus').addEventListener('click',function(){
     if(calGuests>1){calGuests--;document.getElementById('cal-gval').textContent=calGuests}
   });
   document.getElementById('cal-plus').addEventListener('click',function(){
     if(calGuests<20){calGuests++;document.getElementById('cal-gval').textContent=calGuests}
   });
-
-  // Apply button
   document.getElementById('cal-apply').addEventListener('click',function(){
     var label=document.getElementById('btn-dates-label');
     if(calSelected){
@@ -1017,32 +1024,17 @@ ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webv
     }
     document.getElementById('cal-modal').classList.remove('on');
   });
-
-  // Reset button
   document.getElementById('cal-reset').addEventListener('click',function(){
     calSelected=null;calGuests=1;
     document.getElementById('cal-gval').textContent='1';
     document.getElementById('btn-dates-label').textContent='Любые даты, 1 чел.';
     renderCalendar();
   });
-
-  // Close on backdrop click
   document.getElementById('cal-modal').addEventListener('click',function(e){
     if(e.target===this)this.classList.remove('on');
   });
 })();
 </script>
-
-<!-- Calendar Modal -->
-<div class="cal-modal" id="cal-modal">
-  <div class="cal-box">
-    <div class="cal-head"><h3>Даты</h3><button class="cal-close" onclick="this.closest('.cal-modal').classList.remove('on')">&times;</button></div>
-    <div class="cal-week"><span>ПН</span><span>ВТ</span><span>СР</span><span>ЧТ</span><span>ПТ</span><span class="wknd">СБ</span><span class="wknd">ВС</span></div>
-    <div id="cal-body"></div>
-    <div class="cal-guests"><span>Участники</span><div class="cal-guests-ctrl"><button id="cal-minus">&minus;</button><div class="g-val" id="cal-gval">1</div><button id="cal-plus">+</button></div></div>
-    <div class="cal-footer"><button class="cal-apply" id="cal-apply">Показать</button><button class="cal-reset" id="cal-reset">Сбросить</button></div>
-  </div>
-</div>
 
 <footer id="footer">
   <div class="foot-grid">
