@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Туры по Грузии 2026 — многодневные авторские маршруты | Sakhva Travel</title>
+<title>Туры по Грузии — многодневные маршруты на 3-10 дней | Sakhva Travel</title>
 <meta name="description" content="Многодневные авторские туры по Грузии от 2 дней. 3, 5, 7, 10 дней с частным гидом. Грузия + Армения, Сванетия, Кахетия. Цены от ₾450.">
 <link rel="canonical" href="https://sakhva-travel.com/tury/">
-<meta property="og:title" content="Туры по Грузии 2026 — многодневные авторские маршруты | Sakhva Travel">
+<meta property="og:title" content="Туры по Грузии — многодневные авторские маршруты | Sakhva Travel">
 <meta property="og:description" content="Многодневные авторские туры по Грузии от 2 дней. 3, 5, 7, 10 дней с частным гидом. Грузия + Армения, Сванетия, Кахетия. Цены от ₾450.">
 <meta property="og:url" content="https://sakhva-travel.com/tury/">
 <meta property="og:image" content="https://sakhva-travel.com/images/og-cover.jpg">
@@ -99,7 +99,7 @@ ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webv
     "@type": "CollectionPage",
     "@id": "https://sakhva-travel.com/tury/",
     "url": "https://sakhva-travel.com/tury/",
-    "name": "Туры по Грузии 2026 — многодневные маршруты | Sakhva Travel",
+    "name": "Туры по Грузии — многодневные маршруты | Sakhva Travel",
     "description": "Многодневные авторские туры по Грузии от 2 дней. 3, 5, 7, 10 дней с частным гидом. Цены от ₾450.",
     "inLanguage": "ru",
     "provider": {
@@ -132,7 +132,7 @@ ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webv
     "@context": "https://schema.org",
     "@type": "ItemList",
     "@id": "https://sakhva-travel.com/tury/#list",
-    "name": "Туры по Грузии 2026 — многодневные",
+    "name": "Туры по Грузии — многодневные",
     "numberOfItems": 57,
     "itemListElement": [
       {
@@ -623,7 +623,7 @@ ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webv
   var items=[];
   var reviews=['4.9 (87 отзывов)','4.9 (460+ туров)','4.9 (рекомендуют 98%)'];
 
-  fetch('/data/catalog.json').then(function(r){return r.json()}).then(function(data){
+  fetch('/data/catalog.json?v=20260527').then(function(r){return r.json()}).then(function(data){
     items=data.tours||[];
     renderPills();
     renderCards();
