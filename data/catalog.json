@@ -565,6 +565,318 @@
       ],
       "type": "excursion",
       "url": "/ekskursiya/voennaya-gruzinskaya-doroga/"
+    },
+    {
+      "slug": "art-tur-tbilisi",
+      "title": "Арт-тур по Тбилиси 2026",
+      "description": "Арт-тур по Тбилиси с гидом от ₾145. Стрит-арт, галереи, мастерские художников, район Фабрика. 4 часа пешком.",
+      "price": 145,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5ч",
+      "image": "https://sakhva-travel.com/images/old-tbilisi-tour.webp",
+      "format": "individual",
+      "tags": [
+        "Пешеходные",
+        "Старый Тбилиси"
+      ],
+      "type": "excursion",
+      "url": "/ekskursiya/art-tur-tbilisi/"
+    },
+    {
+      "slug": "ekskursiya-abanotubani",
+      "title": "Экскурсия в Абанотубани и серные бани 2026",
+      "description": "Экскурсия в Абанотубани с гидом от ₾135. Серные бани, история квартала, посещение бани по желанию. 2–3 часа, до 7 человек.",
+      "price": 135,
+      "currency": "GEL",
+      "hours": 3,
+      "days": 0,
+      "durationText": "3ч",
+      "image": "https://sakhva-travel.com/images/old-tbilisi-tour.webp",
+      "format": "individual",
+      "tags": [
+        "Старый Тбилиси"
+      ],
+      "type": "excursion",
+      "url": "/ekskursiya/ekskursiya-abanotubani/"
+    },
+    {
+      "slug": "ekskursiya-david-gareji",
+      "title": "Экскурсия Давид Гареджи 2026",
+      "description": "Экскурсия в монастырь Давид Гареджи из Тбилиси с гидом от ₾225. Пещерный монастырь VI в., полупустыня, граница с Азербайджаном. Полный день.",
+      "price": 225,
+      "currency": "GEL",
+      "hours": 12,
+      "days": 0,
+      "durationText": "12ч",
+      "image": "https://sakhva-travel.com/images/old-tbilisi-tour.webp",
+      "format": "individual",
+      "tags": [
+        "За городом"
+      ],
+      "type": "excursion",
+      "url": "/ekskursiya/ekskursiya-david-gareji/"
+    },
+    {
+      "slug": "ekskursiya-mtatsminda",
+      "title": "Мтацминда и фуникулёр с гидом 2026",
+      "description": "Экскурсия на гору Мтацминда с гидом от ₾145. Фуникулёр, пантеон, парк аттракционов, лучший вид на Тбилиси. 3 часа, до 7 человек.",
+      "price": 145,
+      "currency": "GEL",
+      "hours": 3,
+      "days": 0,
+      "durationText": "3ч",
+      "image": "https://sakhva-travel.com/images/old-tbilisi-tour.webp",
+      "format": "individual",
+      "tags": [
+        "Старый Тбилиси"
+      ],
+      "type": "excursion",
+      "url": "/ekskursiya/ekskursiya-mtatsminda/"
+    },
+    {
+      "slug": "ekskursiya-narikala",
+      "title": "Крепость Нарикала с гидом 2026",
+      "description": "Экскурсия к крепости Нарикала в Тбилиси с гидом от ₾135. История персидской цитадели, панорамные виды, подъём на фуникулёре. 2–3 часа.",
+      "price": 135,
+      "currency": "GEL",
+      "hours": 3,
+      "days": 0,
+      "durationText": "3ч",
+      "image": "https://sakhva-travel.com/images/old-tbilisi-tour.webp",
+      "format": "individual",
+      "tags": [
+        "Старый Тбилиси"
+      ],
+      "type": "excursion",
+      "url": "/ekskursiya/ekskursiya-narikala/"
+    },
+    {
+      "slug": "ekskursiya-stary-tbilisi",
+      "title": "Экскурсия по Старому Тбилиси 2026",
+      "description": "Экскурсия по Старому Тбилиси с гидом от ₾145. История кварталов, легенды, дворики и балконы. 3 часа, группа до 7 человек, русский язык.",
+      "price": 145,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5ч",
+      "image": "https://sakhva-travel.com/images/old-tbilisi-tour.webp",
+      "format": "individual",
+      "tags": [
+        "Старый Тбилиси",
+        "Мастер-классы"
+      ],
+      "type": "excursion",
+      "url": "/ekskursiya/ekskursiya-stary-tbilisi/"
+    },
+    {
+      "slug": "ekskursiya-uplistsikhe-iz-tbilisi",
+      "title": "Экскурсия Уплисцихе из Тбилиси 2026",
+      "description": "Экскурсия в пещерный город Уплисцихе из Тбилиси с гидом от ₾175. Пещерный город I тыс. до н.э., Гори, Мцхета. Полный день.",
+      "price": 175,
+      "currency": "GEL",
+      "hours": 10,
+      "days": 0,
+      "durationText": "10ч",
+      "image": "https://sakhva-travel.com/images/old-tbilisi-tour.webp",
+      "format": "individual",
+      "tags": [
+        "За городом"
+      ],
+      "type": "excursion",
+      "url": "/ekskursiya/ekskursiya-uplistsikhe-iz-tbilisi/"
+    },
+    {
+      "slug": "ekskursiya-vardzia",
+      "title": "Экскурсия Вардзия из Тбилиси 2026",
+      "description": "Экскурсия в пещерный монастырь Вардзия из Тбилиси с гидом от ₾295. Монастырь XII в., 3000 пещер, крепость Рабати. Полный день.",
+      "price": 295,
+      "currency": "GEL",
+      "hours": 14,
+      "days": 0,
+      "durationText": "14ч",
+      "image": "https://sakhva-travel.com/images/old-tbilisi-tour.webp",
+      "format": "individual",
+      "tags": [
+        "За городом"
+      ],
+      "type": "excursion",
+      "url": "/ekskursiya/ekskursiya-vardzia/"
+    },
+    {
+      "slug": "ekskursiya-zugdidi",
+      "title": "Экскурсия в Зугдиди 2026",
+      "description": "Экскурсия в Зугдиди с гидом от ₾320. Дворец Дадиани, ботанический сад, ворота в Сванетию. Полный день из Тбилиси.",
+      "price": 320,
+      "currency": "GEL",
+      "hours": 14,
+      "days": 0,
+      "durationText": "14ч",
+      "image": "https://sakhva-travel.com/images/old-tbilisi-tour.webp",
+      "format": "individual",
+      "tags": [
+        "За городом"
+      ],
+      "type": "excursion",
+      "url": "/ekskursiya/ekskursiya-zugdidi/"
+    },
+    {
+      "slug": "family-tur-tbilisi",
+      "title": "Семейный тур по Тбилиси с детьми 2026",
+      "description": "Семейный тур по Тбилиси с гидом от ₾165. Парки, зоопарк, канатная дорога, серные бани — маршрут для семей с детьми от 4 лет.",
+      "price": 165,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5ч",
+      "image": "https://sakhva-travel.com/images/old-tbilisi-tour.webp",
+      "format": "individual",
+      "tags": [
+        "Для детей"
+      ],
+      "type": "excursion",
+      "url": "/ekskursiya/family-tur-tbilisi/"
+    },
+    {
+      "slug": "gruppa-10-chelovek-tbilisi",
+      "title": "Тур для группы 10+ человек 2026",
+      "description": "Тур по Тбилиси для большой группы 10+ человек с гидом от ₾95/чел. Гибкие маршруты, транспорт, скидки для групп. Любая продолжительность.",
+      "price": 95,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5ч",
+      "image": "https://sakhva-travel.com/images/old-tbilisi-tour.webp",
+      "format": "individual",
+      "tags": [
+        "За городом"
+      ],
+      "type": "excursion",
+      "url": "/ekskursiya/gruppa-10-chelovek-tbilisi/"
+    },
+    {
+      "slug": "korporativniy-tur-tbilisi",
+      "title": "Корпоративный тур по Тбилиси 2026",
+      "description": "Корпоративный тур по Тбилиси с гидом от ₾2200 за группу. Тимбилдинг, мастер-классы, ужин в ресторане. Компании 5–30 человек.",
+      "price": 2200,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5ч",
+      "image": "https://sakhva-travel.com/images/old-tbilisi-tour.webp",
+      "format": "individual",
+      "tags": [
+        "Мастер-классы"
+      ],
+      "type": "excursion",
+      "url": "/ekskursiya/korporativniy-tur-tbilisi/"
+    },
+    {
+      "slug": "peshaya-ekskursiya-tbilisi",
+      "title": "Пешая экскурсия по Тбилиси 2026",
+      "description": "Пешая экскурсия по Тбилиси с частным гидом от ₾135. Старый город, Метехи, серные бани, Нарикала. Маршрут 3-4 часа, группа до 7 человек.",
+      "price": 135,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5ч",
+      "image": "https://sakhva-travel.com/images/old-tbilisi-tour.webp",
+      "format": "individual",
+      "tags": [
+        "Пешеходные",
+        "Старый Тбилиси",
+        "Мастер-классы"
+      ],
+      "type": "excursion",
+      "url": "/ekskursiya/peshaya-ekskursiya-tbilisi/"
+    },
+    {
+      "slug": "shopping-tur-tbilisi",
+      "title": "Шоппинг-тур по Тбилиси 2026",
+      "description": "Шоппинг-тур по Тбилиси с гидом от ₾145. Базар Дезертирка, ювелирные ряды, антиквариат, грузинские сувениры. 4 часа, до 4 человек.",
+      "price": 145,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5ч",
+      "image": "https://sakhva-travel.com/images/old-tbilisi-tour.webp",
+      "format": "individual",
+      "tags": [
+        "Старый Тбилиси"
+      ],
+      "type": "excursion",
+      "url": "/ekskursiya/shopping-tur-tbilisi/"
+    },
+    {
+      "slug": "svadebny-tur-gruziya",
+      "title": "Свадебный тур в Грузию 2026",
+      "description": "Свадебный тур в Грузию с организацией от ₾1500. Церемония в горах, фотосессия, ужин в ресторане. Документы для регистрации брака.",
+      "price": 1500,
+      "currency": "GEL",
+      "hours": 72,
+      "days": 0,
+      "durationText": "72ч",
+      "image": "https://sakhva-travel.com/images/old-tbilisi-tour.webp",
+      "format": "individual",
+      "tags": [
+        "Фото",
+        "Романтика"
+      ],
+      "type": "excursion",
+      "url": "/ekskursiya/svadebny-tur-gruziya/"
+    },
+    {
+      "slug": "transfer-aeroport-tbilisi",
+      "title": "Трансфер из аэропорта Тбилиси 2026",
+      "description": "Трансфер из аэропорта Тбилиси с встречей с гидом от ₾55. Комфортный автомобиль, встреча в зале, первые советы по городу.",
+      "price": 55,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5ч",
+      "image": "https://sakhva-travel.com/images/old-tbilisi-tour.webp",
+      "format": "individual",
+      "tags": [
+        "За городом"
+      ],
+      "type": "excursion",
+      "url": "/ekskursiya/transfer-aeroport-tbilisi/"
+    },
+    {
+      "slug": "tur-dlya-detey-tbilisi",
+      "title": "Детский тур по Тбилиси 2026",
+      "description": "Детский тур по Тбилиси с гидом от ₾135. Интерактивная программа для детей 5–14 лет: крепость, канатная дорога, мороженое, легенды.",
+      "price": 135,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5ч",
+      "image": "https://sakhva-travel.com/images/old-tbilisi-tour.webp",
+      "format": "individual",
+      "tags": [
+        "Для детей",
+        "Активный"
+      ],
+      "type": "excursion",
+      "url": "/ekskursiya/tur-dlya-detey-tbilisi/"
+    },
+    {
+      "slug": "tur-dlya-relokantov-tbilisi",
+      "title": "Тур для релокантов в Тбилиси 2026",
+      "description": "Тур для релокантов в Тбилиси с гидом от ₾123. Практический маршрут: банки, районы, рынки, жизнь в Грузии. 4 часа, до 7 человек.",
+      "price": 123,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5ч",
+      "image": "https://sakhva-travel.com/images/old-tbilisi-tour.webp",
+      "format": "individual",
+      "tags": [
+        "Релоканты"
+      ],
+      "type": "excursion",
+      "url": "/ekskursiya/tur-dlya-relokantov-tbilisi/"
     }
   ],
   "tours": [
@@ -675,6 +987,40 @@
       "tags": [],
       "type": "tour",
       "url": "/ekskursiya/tur-vsya-gruziya/"
+    },
+    {
+      "slug": "ekskursiya-svaneti-iz-tbilisi",
+      "title": "Экскурсия Сванетия из Тбилиси 2026",
+      "description": "Экскурсия Сванетия из Тбилиси с гидом от ₾345. Местиа, сванские башни, горы 4000м+. 2–3 дня, до 7 человек.",
+      "price": 345,
+      "currency": "GEL",
+      "hours": 36,
+      "days": 3,
+      "durationText": "3 дней",
+      "image": "https://sakhva-travel.com/images/old-tbilisi-tour.webp",
+      "format": "individual",
+      "tags": [
+        "За городом"
+      ],
+      "type": "tour",
+      "url": "/ekskursiya/ekskursiya-svaneti-iz-tbilisi/"
+    },
+    {
+      "slug": "tur-tbilisi-svaneti",
+      "title": "Тбилиси",
+      "description": "Тур Тбилиси — Сванетия с гидом от ₾750. Перелёт или дорога, Местиа, башни, ледники, горные маршруты. 4–5 дней.",
+      "price": 750,
+      "currency": "GEL",
+      "hours": 36,
+      "days": 5,
+      "durationText": "5 дней",
+      "image": "https://sakhva-travel.com/images/old-tbilisi-tour.webp",
+      "format": "individual",
+      "tags": [
+        "За городом"
+      ],
+      "type": "tour",
+      "url": "/ekskursiya/tur-tbilisi-svaneti/"
     }
   ],
   "stats": {
