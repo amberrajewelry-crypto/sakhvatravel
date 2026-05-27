@@ -82,9 +82,20 @@ function parseSubpage(slug) {
   if (durHMatch) hours = parseInt(durHMatch[1]);
   if (durDMatch) days = parseInt(durDMatch[1]);
 
-  // OG image
+  // OG image, with fallback to hero <img src>
   const imgMatch = html.match(/<meta\s+property="og:image"\s+content="([^"]+)"/);
-  const image = imgMatch ? imgMatch[1] : '/images/og-cover.jpg';
+  let image = imgMatch ? imgMatch[1] : '/images/og-cover.jpg';
+
+  // Check if og:image file exists, fallback to hero img src
+  const imgLocalPath = image.replace('https://sakhva-travel.com', '');
+  const imgDiskPath = path.join(__dirname, '..', imgLocalPath.split('?')[0]);
+  if (!fs.existsSync(imgDiskPath)) {
+    // Try hero <img src="/images/...">
+    const heroMatch = html.match(/src="(\/images\/[a-z0-9_-]+(?:-\d+)?\.(?:webp|jpg|png))(?:\?[^"]*)?"/);
+    if (heroMatch) {
+      image = heroMatch[1];
+    }
+  }
 
   // Type
   const isMultiDay = MULTI_DAY_SLUGS.includes(slug);
@@ -156,13 +167,24 @@ const catalog = dirs.map(parseSubpage).filter(Boolean);
 const excursions = catalog.filter(t => t.type === 'excursion');
 const tours = catalog.filter(t => t.type === 'tour');
 
+// Filter out entries with generic/duplicate hero images
+const GENERIC_IMAGES = ['old-tbilisi-tour.webp', 'og-cover.jpg', 'og-cover.webp'];
+function hasUniqueImage(entry) {
+  const imgFile = entry.image.split('/').pop().split('?')[0];
+  return !GENERIC_IMAGES.includes(imgFile);
+}
+
+const excursionsFiltered = excursions.filter(hasUniqueImage);
+const toursFiltered = tours.filter(hasUniqueImage);
+
 const result = {
-  excursions,
-  tours,
+  excursions: excursionsFiltered,
+  tours: toursFiltered,
   stats: {
-    totalExcursions: excursions.length,
-    totalTours: tours.length,
-    total: catalog.length
+    totalExcursions: excursionsFiltered.length,
+    totalTours: toursFiltered.length,
+    total: excursionsFiltered.length + toursFiltered.length,
+    skippedNoImage: catalog.length - excursionsFiltered.length - toursFiltered.length
   },
   generated: new Date().toISOString()
 };
