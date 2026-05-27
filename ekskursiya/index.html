@@ -88,11 +88,13 @@ body,h1,h2,h3,h4,h5,h6,p,a,span,div,li,td,th,label,input,textarea,button,blockqu
 .ccard-badge{position:absolute;top:10px;left:10px;padding:4px 10px;border-radius:5px;font-size:11px;font-weight:600;color:#fff}
 .badge-ind{background:rgba(26,61,46,.85)}.badge-grp{background:rgba(245,158,11,.88)}
 .ccard-dur{position:absolute;top:10px;right:10px;padding:4px 10px;border-radius:5px;font-size:11px;background:rgba(0,0,0,.5);color:#fff}
+.ccard-disc{position:absolute;bottom:10px;right:10px;padding:4px 10px;border-radius:6px;font-size:13px;font-weight:700;background:#EF4444;color:#fff;letter-spacing:.02em}
 .ccard-body{padding:14px 14px 16px}
 .ccard-title{font-size:15px;font-weight:600;margin-bottom:4px;line-height:1.3}
 .ccard-desc{font-size:12px;color:#6B7280;margin-bottom:12px;line-height:1.45;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .ccard-foot{display:flex;justify-content:space-between;align-items:center}
 .ccard-price{font-size:17px;font-weight:700;color:#1A3D2E}
+.ccard-oldprice{font-size:13px;color:#9CA3AF;text-decoration:line-through;margin-right:6px;font-weight:400}
 .ccard-rate{font-size:12px;color:#6B7280}.ccard-rate .star{color:#F59E0B}
 
 /* Calendar dropdown */
@@ -987,7 +989,9 @@ ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webv
       return;
     }
     grid.innerHTML=filtered.map(function(t,i){
-      var price=Math.round(t.price*rate);
+      var disc=t.discount||0;
+      var origPrice=Math.round(t.price*rate);
+      var price=disc?Math.round(t.price*(1-disc/100)*rate):origPrice;
       var rev=reviews[i%reviews.length];
       var badgeCls=t.format==='group'?'badge-grp':'badge-ind';
       var badgeTxt=t.format==='group'?'Мини-группа':'Индивидуальная';
@@ -996,12 +1000,13 @@ ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webv
         +'<div class="ccard-img"><img src="'+imgSrc+'" alt="'+t.title+'" loading="lazy" decoding="async">'
         +'<span class="ccard-badge '+badgeCls+'">'+badgeTxt+'</span>'
         +(t.durationText?'<span class="ccard-dur">'+t.durationText+'</span>':'')
+        +(disc?'<span class="ccard-disc">-'+disc+'%</span>':'')
         +'</div>'
         +'<div class="ccard-body">'
         +'<div class="ccard-title">'+t.title+'</div>'
         +'<div class="ccard-desc">'+t.description+'</div>'
         +'<div class="ccard-foot">'
-        +'<span class="ccard-price">'+sym+price+'</span>'
+        +'<span class="ccard-price">'+(disc?'<span class="ccard-oldprice">'+sym+origPrice+'</span>':'')+sym+price+'</span>'
         +'<span class="ccard-rate"><span class="star">\u2605</span> '+rev+'</span>'
         +'</div></div></a>';
     }).join('');

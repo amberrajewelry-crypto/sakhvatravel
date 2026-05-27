@@ -34,7 +34,8 @@
         "Кахетия"
       ],
       "type": "excursion",
-      "url": "/ekskursiya/degustatsiya-vina-kakheti/"
+      "url": "/ekskursiya/degustatsiya-vina-kakheti/",
+      "discount": 10
     },
     {
       "slug": "ekskursiya-ananuri-iz-tbilisi",
@@ -51,7 +52,8 @@
         "Казбеги"
       ],
       "type": "excursion",
-      "url": "/ekskursiya/ekskursiya-ananuri-iz-tbilisi/"
+      "url": "/ekskursiya/ekskursiya-ananuri-iz-tbilisi/",
+      "discount": 10
     },
     {
       "slug": "ekskursiya-borjomi-iz-tbilisi",
@@ -68,7 +70,8 @@
         "За городом"
       ],
       "type": "excursion",
-      "url": "/ekskursiya/ekskursiya-borjomi-iz-tbilisi/"
+      "url": "/ekskursiya/ekskursiya-borjomi-iz-tbilisi/",
+      "discount": 10
     },
     {
       "slug": "ekskursiya-gori-iz-tbilisi",
@@ -136,7 +139,8 @@
         "Кахетия"
       ],
       "type": "excursion",
-      "url": "/ekskursiya/ekskursiya-kakheti-iz-tbilisi/"
+      "url": "/ekskursiya/ekskursiya-kakheti-iz-tbilisi/",
+      "discount": 10
     },
     {
       "slug": "ekskursiya-kazbegi-iz-tbilisi",
@@ -153,7 +157,8 @@
         "Казбеги"
       ],
       "type": "excursion",
-      "url": "/ekskursiya/ekskursiya-kazbegi-iz-tbilisi/"
+      "url": "/ekskursiya/ekskursiya-kazbegi-iz-tbilisi/",
+      "discount": 10
     },
     {
       "slug": "ekskursiya-mtskheta-iz-tbilisi",
@@ -170,7 +175,8 @@
         "За городом"
       ],
       "type": "excursion",
-      "url": "/ekskursiya/ekskursiya-mtskheta-iz-tbilisi/"
+      "url": "/ekskursiya/ekskursiya-mtskheta-iz-tbilisi/",
+      "discount": 10
     },
     {
       "slug": "ekskursiya-sighnaghi-iz-tbilisi",
@@ -187,7 +193,8 @@
         "Кахетия"
       ],
       "type": "excursion",
-      "url": "/ekskursiya/ekskursiya-sighnaghi-iz-tbilisi/"
+      "url": "/ekskursiya/ekskursiya-sighnaghi-iz-tbilisi/",
+      "discount": 10
     },
     {
       "slug": "ekskursiya-truso",
@@ -255,7 +262,8 @@
         "Гастро"
       ],
       "type": "excursion",
-      "url": "/ekskursiya/gastronomicheskiy-tur-tbilisi/"
+      "url": "/ekskursiya/gastronomicheskiy-tur-tbilisi/",
+      "discount": 5
     },
     {
       "slug": "khachapuri-master-klass",
@@ -307,7 +315,8 @@
         "Ночные"
       ],
       "type": "excursion",
-      "url": "/ekskursiya/nochnaya-ekskursiya-tbilisi/"
+      "url": "/ekskursiya/nochnaya-ekskursiya-tbilisi/",
+      "discount": 5
     },
     {
       "slug": "priklyuchencheskiy-tur-gruziya",
@@ -375,7 +384,8 @@
         "Батуми"
       ],
       "type": "excursion",
-      "url": "/ekskursiya/tur-batumi-iz-tbilisi/"
+      "url": "/ekskursiya/tur-batumi-iz-tbilisi/",
+      "discount": 15
     },
     {
       "slug": "tur-dlya-emigrantov-tbilisi",
@@ -599,7 +609,8 @@
         "За городом"
       ],
       "type": "excursion",
-      "url": "/ekskursiya/ekskursiya-david-gareji/"
+      "url": "/ekskursiya/ekskursiya-david-gareji/",
+      "discount": 5
     },
     {
       "slug": "ekskursiya-mtatsminda",
@@ -652,7 +663,8 @@
         "Пешеходные"
       ],
       "type": "excursion",
-      "url": "/ekskursiya/ekskursiya-stary-tbilisi/"
+      "url": "/ekskursiya/ekskursiya-stary-tbilisi/",
+      "discount": 15
     },
     {
       "slug": "ekskursiya-uplistsikhe-iz-tbilisi",
@@ -842,7 +854,8 @@
         "Горные"
       ],
       "type": "excursion",
-      "url": "/ekskursiya/ekskursiya-svaneti-iz-tbilisi/"
+      "url": "/ekskursiya/ekskursiya-svaneti-iz-tbilisi/",
+      "discount": 15
     },
     {
       "slug": "tur-gruziya-3-dnya",
@@ -859,7 +872,8 @@
         "Многодневные"
       ],
       "type": "tour",
-      "url": "/ekskursiya/tur-gruziya-3-dnya/"
+      "url": "/ekskursiya/tur-gruziya-3-dnya/",
+      "discount": 10
     },
     {
       "slug": "tur-gruziya-5-dney",
@@ -998,7 +1012,8 @@
         "Винные"
       ],
       "type": "excursion",
-      "url": "/ekskursiya/ekskursiya-telavi-iz-tbilisi/"
+      "url": "/ekskursiya/ekskursiya-telavi-iz-tbilisi/",
+      "discount": 10
     },
     {
       "slug": "ekskursiya-gomis-mta-iz-batumi",
