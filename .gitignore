@@ -43,3 +43,5 @@ node_modules/
 
 # Local Netlify folder
 .netlify
+.gstack/
+service-account.json

@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script>!function(){var l=localStorage.getItem("lang");if(!l){var bl=navigator.language||navigator.userLanguage||'';l=bl.slice(0,2)==='ru'?'ru':'en';localStorage.setItem('lang',l);document.cookie='lang_pref='+l+';path=/;max-age=31536000;SameSite=Lax'}if(l==='ru'){location.replace(location.pathname.replace(/^\/en/,'')||'/')}}()</script>
+<!-- Language redirect handled by Vercel Edge Middleware (middleware.js) -->
+<script>!function(){var c=document.cookie.match(/lang_pref=(\w+)/);if(c)return;var l=localStorage.getItem('lang');if(l){document.cookie='lang_pref='+l+';path=/;max-age=31536000;SameSite=Lax'}}()</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <link rel="dns-prefetch" href="https://us.i.posthog.com">
 <link rel="dns-prefetch" href="https://www.googletagmanager.com">
 <link rel="dns-prefetch" href="https://mc.yandex.ru">
-<link rel="preload" href="/images/hero-kazbegi-mob.webp?v=1" as="image" fetchpriority="high" type="image/webp" media="(max-width:767px)">
+<link rel="preload" href="/images/hero-main-mob.webp?v=1" as="image" fetchpriority="high" type="image/webp" media="(max-width:767px)">
 <link rel="preload" href="/images/hero-kazbegi.webp?v=1" as="image" fetchpriority="high" type="image/webp" media="(min-width:768px)">
 <title>Private Guide in Tbilisi 2026 ★4.9 | Sakhva Travel</title>
-<meta name="description" content="Private guide Timur in Tbilisi since 2023. Kazbegi ₾175, Kakheti wine tours ₾170, Kutaisi ₾183, Old Tbilisi ₾77. Up to 7 people, 500+ tourists, rating 4.9. Free cancellation 24h.">
+<meta name="description" content="Private guide Timur in Tbilisi. Kazbegi ₾175, Kakheti ₾170, Kutaisi ₾183, Old Tbilisi ₾77. Up to 7 people, 500+ tours, rating 4.9. Free cancellation 24h.">
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
 <meta name="google-site-verification" content="8598dd92e7bc33ca">
 <meta name="trustpilot-one-time-domain-verification-id" content="b652185b-ae93-4f14-9f7b-f885573b8b9c"/>
@@ -41,6 +42,8 @@ gtag('consent','update',{analytics_storage:(_ck||_gc)?'granted':'denied',ad_stor
 @font-face{font-family:'Lora';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/lora-14.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:'Lora';font-style:normal;font-weight:600;font-display:swap;src:url(/fonts/lora-14.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:'Lora';font-style:normal;font-weight:700;font-display:swap;src:url(/fonts/lora-14.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+
+body,h1,h2,h3,h4,h5,h6,p,a,span,div,li,td,th,label,input,textarea,button,blockquote{font-family:'Lora',Georgia,serif!important}
 </style>
 <link rel="preload" href="/fonts/all.css?v=2" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="/fonts/all.css?v=2"></noscript>
@@ -121,14 +124,14 @@ ul{list-style:none}
   .hero-micro{font-size:11px!important;margin-top:10px!important}
 }
 .hero-wrap{position:relative;z-index:20;text-align:center;padding:0 clamp(20px,5vw,80px);max-width:980px;width:100%;will-change:transform,opacity}
-.hero-h1{font-size:clamp(26px,4vw,52px);font-weight:700;color:#F59E0B;line-height:1.1;letter-spacing:-.01em;margin:0 auto 14px;opacity:0;text-shadow:0 2px 16px rgba(0,0,0,.35);overflow-wrap:normal;word-break:normal;-webkit-hyphens:none;hyphens:none}
+.hero-h1{font-size:clamp(26px,4vw,52px);font-weight:700;color:#F59E0B;line-height:1.1;letter-spacing:-.01em;margin:0 auto 14px;opacity:1;text-shadow:0 2px 16px rgba(0,0,0,.35);overflow-wrap:normal;word-break:normal;-webkit-hyphens:none;hyphens:none}
 .hero-sub{font-size:16px;font-weight:400;color:#F59E0B;margin-bottom:36px;opacity:0;animation:fadeUp .9s cubic-bezier(.22,1,.36,1) .5s forwards;text-shadow:0 1px 8px rgba(0,0,0,.3)}
 .hero-micro{font-size:13px;color:rgba(255,255,255,.9);margin-top:14px;opacity:0;animation:fadeUp .9s cubic-bezier(.22,1,.36,1) .8s forwards;text-shadow:0 1px 6px rgba(0,0,0,.4)}
 .hero-trust{display:inline-flex;align-items:center;gap:10px;margin-top:22px;background:rgba(255,255,255,.12);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.2);border-radius:9999px;padding:6px 16px 6px 6px}
 .hero-trust-avatar{width:36px;height:36px;border-radius:50%;object-fit:cover;flex-shrink:0;border:2px solid rgba(255,255,255,.5)}
 .hero-trust-text{display:flex;flex-direction:column;gap:1px}
 .hero-trust-text span{font-size:12px;font-weight:600;color:rgba(255,255,255,.9);line-height:1.3}
-.hero-trust-stars{font-size:12px;color:rgba(255,255,255,.7)!important;font-weight:400!important}
+.hero-trust-stars{font-size:12px;color:rgba(255,255,255,.7)!important;font-weight:400}
 .hero-btns{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:24px;opacity:0;animation:fadeUp 1s cubic-bezier(.22,1,.36,1) .7s forwards}
 .btn-primary{display:inline-flex;align-items:center;gap:8px;background:#1A3D2E;color:#fff;padding:14px 32px;border-radius:9999px;font-size:13px;font-weight:700;letter-spacing:.04em;transition:background .2s,transform .15s;box-shadow:0 4px 14px rgba(26,61,46,.35)}
 .btn-primary:hover{background:#145A38;transform:translateY(-1px)}
@@ -257,22 +260,22 @@ html{scroll-behavior:auto}
 <noscript><link rel="stylesheet" href="/css/seamless.css?v=64"></noscript>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[
 {"@type":"WebSite","@id":"https://sakhva-travel.com/en/#website","url":"https://sakhva-travel.com/en/","name":"Sakhva Travel","description":"Private guide in Georgia. Kazbegi, Kakheti, hidden gems of Tbilisi. Up to 7 people.","inLanguage":"en"},
-{"@type":"WebPage","@id":"https://sakhva-travel.com/en/#webpage","url":"https://sakhva-travel.com/en/","name":"Private Guide in Tbilisi 2026 ★4.9 | Sakhva Travel","description":"Private guide Timur. Kazbegi from ₾175, hidden Tbilisi from ₾140, Kakheti. Up to 7 people. Free cancellation. Reply in 15 min.","inLanguage":"en","isPartOf":{"@id":"https://sakhva-travel.com/en/#website"},"about":{"@id":"https://sakhva-travel.com/#business"},"primaryImageOfPage":{"@type":"ImageObject","url":"https://sakhva-travel.com/images/og-cover.jpg"},"datePublished":"2024-03-01","dateModified":"2026-05-04"},
+{"@type":"WebPage","@id":"https://sakhva-travel.com/en/#webpage","url":"https://sakhva-travel.com/en/","name":"Private Guide in Tbilisi 2026 ★4.9 | Sakhva Travel","description":"Private guide Timur. Kazbegi from ₾175, tours from ₾77, Kakheti. Up to 7 people. Free cancellation. Reply in 15 min.","inLanguage":"en","isPartOf":{"@id":"https://sakhva-travel.com/en/#website"},"about":{"@id":"https://sakhva-travel.com/#business"},"primaryImageOfPage":{"@type":"ImageObject","url":"https://sakhva-travel.com/images/og-cover.jpg"},"datePublished":"2024-03-01","dateModified":"2026-05-04"},
 {"@type":"TravelAgency","@id":"https://sakhva-travel.com/#business","name":"Sakhva Travel","url":"https://sakhva-travel.com/","telephone":"+995511272623","email":"help@sakhva-travel.com","address":{"@type":"PostalAddress","streetAddress":"14 Merab Kostava St","addressLocality":"Tbilisi","addressRegion":"Tbilisi","postalCode":"0108","addressCountry":"GE"},"geo":{"@type":"GeoCoordinates","latitude":41.7250505,"longitude":44.7789235},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"08:00","closes":"22:00"},"aggregateRating":{"@type":"AggregateRating","ratingValue":4.9,"reviewCount":87,"bestRating":5,"worstRating":1},"priceRange":"₾77–₾595","currenciesAccepted":"GEL, USD, EUR","paymentAccepted":"Cash, Card, Cryptocurrency","description":"Private guide in Georgia. Kazbegi, Kakheti, hidden gems of Tbilisi. Up to 7 people.","image":"https://sakhva-travel.com/images/og-cover.jpg","logo":{"@type":"ImageObject","url":"https://sakhva-travel.com/images/logo-schema.webp","width":300,"height":60},"sameAs":["https://t.me/SakhvaGuideBot?start=site","https://www.instagram.com/sakhvatravel","https://wa.me/995511272623","https://www.tripadvisor.com/Attraction_Review-g294195-d15318013-Reviews-Sakhva_Travel-Tbilisi.html","https://www.youtube.com/@SakhvaTravel","https://www.google.com/maps?cid=14070083063461040701"],"hasMap":"https://maps.google.com/maps?cid=14070083063461040701","areaServed":[{"@type":"City","name":"Tbilisi","sameAs":"https://www.wikidata.org/wiki/Q994"},{"@type":"Place","name":"Kazbegi","sameAs":"https://www.wikidata.org/wiki/Q210019"},{"@type":"Place","name":"Kakheti","sameAs":"https://www.wikidata.org/wiki/Q193261"},{"@type":"Country","name":"Georgia","sameAs":"https://www.wikidata.org/wiki/Q230"}],"foundingDate":"2023-01-01","employee":{"@id":"https://sakhva-travel.com/#guide-timur"}},
 {"@type":"Person","@id":"https://sakhva-travel.com/#guide-timur","name":"Timur","url":"https://sakhva-travel.com/about/","jobTitle":"Private guide in Georgia","description":"Professional guide in Tbilisi since 2023. Tours to Kazbegi, Kakheti, and hidden spots of Tbilisi.","worksFor":{"@id":"https://sakhva-travel.com/#business"},"knowsLanguage":["ru","en"],"sameAs":["https://www.instagram.com/sakhvatravel","https://t.me/SakhvaGuideBot?start=site","https://www.youtube.com/@SakhvaTravel"],"areaServed":[{"@type":"City","name":"Tbilisi","sameAs":"https://www.wikidata.org/wiki/Q994"},{"@type":"Country","name":"Georgia","sameAs":"https://www.wikidata.org/wiki/Q230"}],"telephone":"+995511272623","image":"https://sakhva-travel.com/images/timur.webp"},
-{"@type":"TouristTrip","@id":"https://sakhva-travel.com/en/#trip-kazbegi","name":"Kazbegi Day Trip from Tbilisi","url":"https://sakhva-travel.com/en/tour/kazbegi/","description":"Georgian Military Highway, Ananuri fortress, Gergeti Trinity Church with views of Mt. Kazbek 5047m. English-speaking guide.","touristType":"English-speaking tourists","offers":{"@type":"Offer","price":"175","priceCurrency":"GEL","availability":"https://schema.org/InStock","priceValidUntil":"2027-12-31","url":"https://sakhva-travel.com/en/tour/kazbegi/"},"duration":"PT14H","provider":{"@id":"https://sakhva-travel.com/#business"},"image":"https://sakhva-travel.com/images/kazbegi-tour.webp?v=2"},
-{"@type":"TouristTrip","@id":"https://sakhva-travel.com/en/#trip-kakheti","name":"Signagi & Kakheti Wine Tour from Tbilisi","url":"https://sakhva-travel.com/en/tour/kakheti/","description":"City of Love, Bodbe Monastery, qvevri wine, lunch with a local host. 10-12 hours.","touristType":"English-speaking tourists","offers":{"@type":"Offer","price":"170","priceCurrency":"GEL","availability":"https://schema.org/InStock","priceValidUntil":"2027-12-31","url":"https://sakhva-travel.com/en/tour/kakheti/"},"duration":"PT11H","provider":{"@id":"https://sakhva-travel.com/#business"},"image":"https://sakhva-travel.com/images/kakheti-tour.webp"},
-{"@type":"TouristTrip","@id":"https://sakhva-travel.com/en/#trip-kutaisi","name":"Kutaisi Day Trip from Tbilisi","url":"https://sakhva-travel.com/en/tour/kutaisi/","description":"Bagrati Cathedral, Okatse Canyon, Prometheus Cave & Kinchkha Waterfall. 12-13 hours with a private guide.","touristType":"English-speaking tourists","offers":{"@type":"Offer","price":"183","priceCurrency":"GEL","availability":"https://schema.org/InStock","priceValidUntil":"2027-12-31","url":"https://sakhva-travel.com/en/tour/kutaisi/"},"duration":"PT13H","provider":{"@id":"https://sakhva-travel.com/#business"},"image":"https://sakhva-travel.com/images/kutaisi-tour.webp"},
-{"@type":"TouristTrip","@id":"https://sakhva-travel.com/en/#trip-batumi","name":"Batumi Day Trip from Tbilisi","url":"https://sakhva-travel.com/en/tour/batumi/","description":"Batumi Boulevard, Old Town, cable car and seaside promenade. Georgia's Black Sea gem in one day.","touristType":"English-speaking tourists","offers":{"@type":"Offer","price":"201","priceCurrency":"GEL","availability":"https://schema.org/InStock","priceValidUntil":"2027-12-31","url":"https://sakhva-travel.com/en/tour/batumi/"},"duration":"PT15H","provider":{"@id":"https://sakhva-travel.com/#business"},"image":"https://sakhva-travel.com/images/batumi-tour.webp"},
-{"@type":"TouristTrip","@id":"https://sakhva-travel.com/en/#trip-night-tbilisi","name":"Night Tbilisi Tour","url":"https://sakhva-travel.com/en/tour/night-tbilisi/","description":"Sulfur baths by candlelight, illuminated Bridge of Peace, dinner in a courtyard. Starts at 20:00, 2.5 hours.","touristType":"English-speaking tourists","offers":{"@type":"Offer","price":"94","priceCurrency":"GEL","availability":"https://schema.org/InStock","priceValidUntil":"2027-12-31","url":"https://sakhva-travel.com/en/tour/night-tbilisi/"},"duration":"PT2H30M","provider":{"@id":"https://sakhva-travel.com/#business"},"image":"https://sakhva-travel.com/images/night-tbilisi-tour.webp"},
-{"@type":"TouristTrip","@id":"https://sakhva-travel.com/en/#trip-dinner","name":"Tour + Dinner with Locals in Tbilisi","url":"https://sakhva-travel.com/en/tour/dinner/","description":"Walking tour + home dinner with a Georgian family: khinkali, qvevri wine, live conversation. 6-7 hours.","touristType":"English-speaking tourists","offers":{"@type":"Offer","price":"213","priceCurrency":"GEL","availability":"https://schema.org/InStock","priceValidUntil":"2027-12-31","url":"https://sakhva-travel.com/en/tour/dinner/"},"duration":"PT7H","provider":{"@id":"https://sakhva-travel.com/#business"},"image":"https://sakhva-travel.com/images/dinner-tour.webp"},
-{"@type":"TouristTrip","@id":"https://sakhva-travel.com/en/#trip-soviet","name":"Tbilisi City Tour with Guide","url":"https://sakhva-travel.com/en/tour/soviet/","description":"Bridge of Peace, Abanotubani sulfur baths, Metekhi Church, Sameba, Freedom Square, Mtatsminda & Chronicles of Georgia. 4-5 hours.","touristType":"English-speaking tourists","offers":{"@type":"Offer","price":"135","priceCurrency":"GEL","availability":"https://schema.org/InStock","priceValidUntil":"2027-12-31","url":"https://sakhva-travel.com/en/tour/soviet/"},"duration":"PT5H","provider":{"@id":"https://sakhva-travel.com/#business"},"image":"https://sakhva-travel.com/images/soviet-tour.webp"},
-{"@type":"TouristTrip","@id":"https://sakhva-travel.com/en/#trip-mtskheta","name":"Mtskheta Tour from Tbilisi","url":"https://sakhva-travel.com/en/tour/mtskheta/","description":"Jvari Monastery, Svetitskhoveli Cathedral — UNESCO sites 40 minutes from Tbilisi. 3-4 hours.","touristType":"English-speaking tourists","offers":{"@type":"Offer","price":"77","priceCurrency":"GEL","availability":"https://schema.org/InStock","priceValidUntil":"2027-12-31","url":"https://sakhva-travel.com/en/tour/mtskheta/"},"duration":"PT5H","provider":{"@id":"https://sakhva-travel.com/#business"},"image":"https://sakhva-travel.com/images/og-mtskheta.jpg"},
-{"@type":"TouristTrip","@id":"https://sakhva-travel.com/en/#trip-digital-nomad","name":"Digital Nomad Tour Tbilisi","url":"https://sakhva-travel.com/en/tour/digital-nomad/","description":"3 hours: best coworking spaces, WiFi cafes, and neighborhoods for remote work in Tbilisi.","touristType":"Digital nomads, remote workers","offers":{"@type":"Offer","price":"123","priceCurrency":"GEL","availability":"https://schema.org/InStock","priceValidUntil":"2027-12-31","url":"https://sakhva-travel.com/en/tour/digital-nomad/"},"duration":"PT3H","provider":{"@id":"https://sakhva-travel.com/#business"},"image":"https://sakhva-travel.com/images/digital-nomad-tour.webp"},
-{"@type":"TouristTrip","@id":"https://sakhva-travel.com/en/#trip-slow-travel","name":"Slow Travel Package — 3 Days in Georgia","url":"https://sakhva-travel.com/en/tour/slow-travel/","description":"3 days with Timur: a new route every day, airport transfer included. Full immersion in Georgia.","touristType":"English-speaking tourists","offers":{"@type":"Offer","price":"595","priceCurrency":"GEL","availability":"https://schema.org/InStock","priceValidUntil":"2027-12-31","url":"https://sakhva-travel.com/en/tour/slow-travel/"},"duration":"P3D","provider":{"@id":"https://sakhva-travel.com/#business"},"image":"https://sakhva-travel.com/images/slow-travel-tour.webp"},
-{"@type":"TouristTrip","@id":"https://sakhva-travel.com/en/#trip-emigrant","name":"Expat Tour: Tbilisi Through Local Eyes","url":"https://sakhva-travel.com/en/tour/emigrant/","description":"Off-the-beaten-path route for expats: Deserter's Bazaar, Saburtalo, coworking spaces, hidden bars, tips for living in Tbilisi.","touristType":"Expats, digital nomads","offers":{"@type":"Offer","price":"123","priceCurrency":"GEL","availability":"https://schema.org/InStock","priceValidUntil":"2027-12-31","url":"https://sakhva-travel.com/en/tour/emigrant/"},"duration":"PT4H","provider":{"@id":"https://sakhva-travel.com/#business"},"image":"https://sakhva-travel.com/images/emigrant-tour.webp"},
-{"@type":"TouristTrip","@id":"https://sakhva-travel.com/en/#trip-old-tbilisi","name":"Old Tbilisi Walking Tour","url":"https://sakhva-travel.com/en/tour/tbilisi/","description":"Abanotubani, Shardeni, Meidan, Leghvtakhevi — atmospheric walk through the Old Town. 3-4 hours.","touristType":"English-speaking tourists","offers":{"@type":"Offer","price":"165","priceCurrency":"GEL","availability":"https://schema.org/InStock","priceValidUntil":"2027-12-31","url":"https://sakhva-travel.com/en/tour/tbilisi/"},"duration":"PT4H","provider":{"@id":"https://sakhva-travel.com/#business"},"image":"https://sakhva-travel.com/images/old-tbilisi-tour.webp"},
-{"@type":"ItemList","@id":"https://sakhva-travel.com/en/#tour-list","name":"Private Tours in Georgia with a Guide","description":"Private tours from Tbilisi. Kazbegi, Kakheti, hidden gems of Tbilisi and more.","numberOfItems":12,"itemListElement":[{"@type":"ListItem","position":1,"url":"https://sakhva-travel.com/en/tour/kazbegi/","name":"Kazbegi Day Trip"},{"@type":"ListItem","position":2,"url":"https://sakhva-travel.com/en/tour/kakheti/","name":"Signagi & Kakheti Wine Tour"},{"@type":"ListItem","position":3,"url":"https://sakhva-travel.com/en/tour/kutaisi/","name":"Kutaisi Day Trip"},{"@type":"ListItem","position":4,"url":"https://sakhva-travel.com/en/tour/batumi/","name":"Batumi Day Trip"},{"@type":"ListItem","position":5,"url":"https://sakhva-travel.com/en/tour/night-tbilisi/","name":"Night Tbilisi Tour"},{"@type":"ListItem","position":6,"url":"https://sakhva-travel.com/en/tour/dinner/","name":"Tour + Dinner with Locals"},{"@type":"ListItem","position":7,"url":"https://sakhva-travel.com/en/tour/soviet/","name":"Tbilisi City Tour"},{"@type":"ListItem","position":8,"url":"https://sakhva-travel.com/en/tour/slow-travel/","name":"Slow Travel — 3 Days in Georgia"},{"@type":"ListItem","position":9,"url":"https://sakhva-travel.com/en/tour/digital-nomad/","name":"Digital Nomad Tour Tbilisi"},{"@type":"ListItem","position":10,"url":"https://sakhva-travel.com/en/tour/mtskheta/","name":"Mtskheta Tour"},{"@type":"ListItem","position":11,"url":"https://sakhva-travel.com/en/tour/emigrant/","name":"Expat Tour Tbilisi"},{"@type":"ListItem","position":12,"url":"https://sakhva-travel.com/en/tour/tbilisi/","name":"Old Tbilisi Walking Tour"}]},
+{"@type":"TouristTrip","@id":"https://sakhva-travel.com/en/#trip-kazbegi","name":"Kazbegi Day Trip from Tbilisi","url":"https://sakhva-travel.com/ekskursiya/ekskursiya-kazbegi-iz-tbilisi/","description":"Georgian Military Highway, Ananuri fortress, Gergeti Trinity Church with views of Mt. Kazbek 5047m. English-speaking guide.","touristType":"English-speaking tourists","offers":{"@type":"Offer","price":"175","priceCurrency":"GEL","availability":"https://schema.org/InStock","priceValidUntil":"2027-12-31","url":"https://sakhva-travel.com/ekskursiya/ekskursiya-kazbegi-iz-tbilisi/"},"duration":"PT14H","provider":{"@id":"https://sakhva-travel.com/#business"},"image":"https://sakhva-travel.com/images/kazbegi-tour.webp?v=2"},
+{"@type":"TouristTrip","@id":"https://sakhva-travel.com/en/#trip-kakheti","name":"Signagi & Kakheti Wine Tour from Tbilisi","url":"https://sakhva-travel.com/ekskursiya/ekskursiya-kakheti-iz-tbilisi/","description":"City of Love, Bodbe Monastery, qvevri wine, lunch with a local host. 10-12 hours.","touristType":"English-speaking tourists","offers":{"@type":"Offer","price":"170","priceCurrency":"GEL","availability":"https://schema.org/InStock","priceValidUntil":"2027-12-31","url":"https://sakhva-travel.com/ekskursiya/ekskursiya-kakheti-iz-tbilisi/"},"duration":"PT11H","provider":{"@id":"https://sakhva-travel.com/#business"},"image":"https://sakhva-travel.com/images/kakheti-tour.webp"},
+{"@type":"TouristTrip","@id":"https://sakhva-travel.com/en/#trip-kutaisi","name":"Kutaisi Day Trip from Tbilisi","url":"https://sakhva-travel.com/ekskursiya/tur-kutaisi-iz-tbilisi/","description":"Bagrati Cathedral, Okatse Canyon, Prometheus Cave & Kinchkha Waterfall. 12-13 hours with a private guide.","touristType":"English-speaking tourists","offers":{"@type":"Offer","price":"183","priceCurrency":"GEL","availability":"https://schema.org/InStock","priceValidUntil":"2027-12-31","url":"https://sakhva-travel.com/ekskursiya/tur-kutaisi-iz-tbilisi/"},"duration":"PT13H","provider":{"@id":"https://sakhva-travel.com/#business"},"image":"https://sakhva-travel.com/images/kutaisi-tour.webp"},
+{"@type":"TouristTrip","@id":"https://sakhva-travel.com/en/#trip-batumi","name":"Batumi Day Trip from Tbilisi","url":"https://sakhva-travel.com/ekskursiya/tur-batumi-iz-tbilisi/","description":"Batumi Boulevard, Old Town, cable car and seaside promenade. Georgia's Black Sea gem in one day.","touristType":"English-speaking tourists","offers":{"@type":"Offer","price":"250","priceCurrency":"GEL","availability":"https://schema.org/InStock","priceValidUntil":"2027-12-31","url":"https://sakhva-travel.com/ekskursiya/tur-batumi-iz-tbilisi/"},"duration":"PT15H","provider":{"@id":"https://sakhva-travel.com/#business"},"image":"https://sakhva-travel.com/images/batumi-tour.webp"},
+{"@type":"TouristTrip","@id":"https://sakhva-travel.com/en/#trip-night-tbilisi","name":"Night Tbilisi Tour","url":"https://sakhva-travel.com/ekskursiya/nochnaya-ekskursiya-tbilisi/","description":"Sulfur baths by candlelight, illuminated Bridge of Peace, dinner in a courtyard. Starts at 20:00, 2.5 hours.","touristType":"English-speaking tourists","offers":{"@type":"Offer","price":"94","priceCurrency":"GEL","availability":"https://schema.org/InStock","priceValidUntil":"2027-12-31","url":"https://sakhva-travel.com/ekskursiya/nochnaya-ekskursiya-tbilisi/"},"duration":"PT2H30M","provider":{"@id":"https://sakhva-travel.com/#business"},"image":"https://sakhva-travel.com/images/night-tbilisi-tour.webp"},
+{"@type":"TouristTrip","@id":"https://sakhva-travel.com/en/#trip-dinner","name":"Tour + Dinner with Locals in Tbilisi","url":"https://sakhva-travel.com/ekskursiya/gastronomicheskiy-tur-tbilisi/","description":"Walking tour + home dinner with a Georgian family: khinkali, qvevri wine, live conversation. 6-7 hours.","touristType":"English-speaking tourists","offers":{"@type":"Offer","price":"213","priceCurrency":"GEL","availability":"https://schema.org/InStock","priceValidUntil":"2027-12-31","url":"https://sakhva-travel.com/ekskursiya/gastronomicheskiy-tur-tbilisi/"},"duration":"PT7H","provider":{"@id":"https://sakhva-travel.com/#business"},"image":"https://sakhva-travel.com/images/dinner-tour.webp"},
+{"@type":"TouristTrip","@id":"https://sakhva-travel.com/en/#trip-soviet","name":"Tbilisi City Tour with Guide","url":"https://sakhva-travel.com/ekskursiya/sovetskiy-tur-tbilisi/","description":"Bridge of Peace, Abanotubani sulfur baths, Metekhi Church, Sameba, Freedom Square, Mtatsminda & Chronicles of Georgia. 4-5 hours.","touristType":"English-speaking tourists","offers":{"@type":"Offer","price":"135","priceCurrency":"GEL","availability":"https://schema.org/InStock","priceValidUntil":"2027-12-31","url":"https://sakhva-travel.com/ekskursiya/sovetskiy-tur-tbilisi/"},"duration":"PT5H","provider":{"@id":"https://sakhva-travel.com/#business"},"image":"https://sakhva-travel.com/images/soviet-tour.webp"},
+{"@type":"TouristTrip","@id":"https://sakhva-travel.com/en/#trip-mtskheta","name":"Mtskheta Tour from Tbilisi","url":"https://sakhva-travel.com/ekskursiya/ekskursiya-mtskheta-iz-tbilisi/","description":"Jvari Monastery, Svetitskhoveli Cathedral — UNESCO sites 40 minutes from Tbilisi. 3-4 hours.","touristType":"English-speaking tourists","offers":{"@type":"Offer","price":"77","priceCurrency":"GEL","availability":"https://schema.org/InStock","priceValidUntil":"2027-12-31","url":"https://sakhva-travel.com/ekskursiya/ekskursiya-mtskheta-iz-tbilisi/"},"duration":"PT5H","provider":{"@id":"https://sakhva-travel.com/#business"},"image":"https://sakhva-travel.com/images/og-mtskheta.jpg"},
+{"@type":"TouristTrip","@id":"https://sakhva-travel.com/en/#trip-digital-nomad","name":"Digital Nomad Tour Tbilisi","url":"https://sakhva-travel.com/ekskursiya/tur-dlya-relokantov-tbilisi/","description":"3 hours: best coworking spaces, WiFi cafes, and neighborhoods for remote work in Tbilisi.","touristType":"Digital nomads, remote workers","offers":{"@type":"Offer","price":"123","priceCurrency":"GEL","availability":"https://schema.org/InStock","priceValidUntil":"2027-12-31","url":"https://sakhva-travel.com/ekskursiya/tur-dlya-relokantov-tbilisi/"},"duration":"PT3H","provider":{"@id":"https://sakhva-travel.com/#business"},"image":"https://sakhva-travel.com/images/digital-nomad-tour.webp"},
+{"@type":"TouristTrip","@id":"https://sakhva-travel.com/en/#trip-slow-travel","name":"Slow Travel Package — 3 Days in Georgia","url":"https://sakhva-travel.com/ekskursiya/tur-gruziya-7-dney/","description":"3 days with Timur: a new route every day, airport transfer included. Full immersion in Georgia.","touristType":"English-speaking tourists","offers":{"@type":"Offer","price":"595","priceCurrency":"GEL","availability":"https://schema.org/InStock","priceValidUntil":"2027-12-31","url":"https://sakhva-travel.com/ekskursiya/tur-gruziya-7-dney/"},"duration":"P3D","provider":{"@id":"https://sakhva-travel.com/#business"},"image":"https://sakhva-travel.com/images/slow-travel-tour.webp"},
+{"@type":"TouristTrip","@id":"https://sakhva-travel.com/en/#trip-emigrant","name":"Expat Tour: Tbilisi Through Local Eyes","url":"https://sakhva-travel.com/ekskursiya/tur-dlya-emigrantov-tbilisi/","description":"Off-the-beaten-path route for expats: Deserter's Bazaar, Saburtalo, coworking spaces, hidden bars, tips for living in Tbilisi.","touristType":"Expats, digital nomads","offers":{"@type":"Offer","price":"123","priceCurrency":"GEL","availability":"https://schema.org/InStock","priceValidUntil":"2027-12-31","url":"https://sakhva-travel.com/ekskursiya/tur-dlya-emigrantov-tbilisi/"},"duration":"PT4H","provider":{"@id":"https://sakhva-travel.com/#business"},"image":"https://sakhva-travel.com/images/emigrant-tour.webp"},
+{"@type":"TouristTrip","@id":"https://sakhva-travel.com/en/#trip-old-tbilisi","name":"Old Tbilisi Walking Tour","url":"https://sakhva-travel.com/en/tour/tbilisi/","description":"Abanotubani, Shardeni, Meidan, Leghvtakhevi — atmospheric walk through the Old Town. 3-4 hours.","touristType":"English-speaking tourists","offers":{"@type":"Offer","price":"94","priceCurrency":"GEL","availability":"https://schema.org/InStock","priceValidUntil":"2027-12-31","url":"https://sakhva-travel.com/en/tour/tbilisi/"},"duration":"PT4H","provider":{"@id":"https://sakhva-travel.com/#business"},"image":"https://sakhva-travel.com/images/old-tbilisi-tour.webp"},
+{"@type":"ItemList","@id":"https://sakhva-travel.com/en/#tour-list","name":"Private Tours in Georgia with a Guide","description":"Private tours from Tbilisi. Kazbegi, Kakheti, hidden gems of Tbilisi and more.","numberOfItems":12,"itemListElement":[{"@type":"ListItem","position":1,"url":"https://sakhva-travel.com/ekskursiya/ekskursiya-kazbegi-iz-tbilisi/","name":"Kazbegi Day Trip"},{"@type":"ListItem","position":2,"url":"https://sakhva-travel.com/ekskursiya/ekskursiya-kakheti-iz-tbilisi/","name":"Signagi & Kakheti Wine Tour"},{"@type":"ListItem","position":3,"url":"https://sakhva-travel.com/ekskursiya/tur-kutaisi-iz-tbilisi/","name":"Kutaisi Day Trip"},{"@type":"ListItem","position":4,"url":"https://sakhva-travel.com/ekskursiya/tur-batumi-iz-tbilisi/","name":"Batumi Day Trip"},{"@type":"ListItem","position":5,"url":"https://sakhva-travel.com/ekskursiya/nochnaya-ekskursiya-tbilisi/","name":"Night Tbilisi Tour"},{"@type":"ListItem","position":6,"url":"https://sakhva-travel.com/ekskursiya/gastronomicheskiy-tur-tbilisi/","name":"Tour + Dinner with Locals"},{"@type":"ListItem","position":7,"url":"https://sakhva-travel.com/ekskursiya/sovetskiy-tur-tbilisi/","name":"Tbilisi City Tour"},{"@type":"ListItem","position":8,"url":"https://sakhva-travel.com/ekskursiya/tur-gruziya-7-dney/","name":"Slow Travel — 3 Days in Georgia"},{"@type":"ListItem","position":9,"url":"https://sakhva-travel.com/ekskursiya/tur-dlya-relokantov-tbilisi/","name":"Digital Nomad Tour Tbilisi"},{"@type":"ListItem","position":10,"url":"https://sakhva-travel.com/ekskursiya/ekskursiya-mtskheta-iz-tbilisi/","name":"Mtskheta Tour"},{"@type":"ListItem","position":11,"url":"https://sakhva-travel.com/ekskursiya/tur-dlya-emigrantov-tbilisi/","name":"Expat Tour Tbilisi"},{"@type":"ListItem","position":12,"url":"https://sakhva-travel.com/en/tour/tbilisi/","name":"Old Tbilisi Walking Tour"}]},
 {"@type":"VideoObject","@id":"https://sakhva-travel.com/en/#video-guide","name":"Timur — Private Guide in Georgia","description":"Guide Timur talks about tours to Kazbegi, Kakheti and Mtskheta.","thumbnailUrl":"https://sakhva-travel.com/images/timur.webp","uploadDate":"2026-01-15T00:00:00+04:00","duration":"PT1M30S","contentUrl":"https://sakhva-travel.com/images/timur-video.mp4","publisher":{"@type":"Organization","name":"Sakhva Travel","logo":{"@type":"ImageObject","url":"https://sakhva-travel.com/images/logo-schema.webp","width":300,"height":60}}},
 {"@type":"FAQPage","@id":"https://sakhva-travel.com/en/#faq","mainEntity":[
 {"@type":"Question","name":"How much does a Kazbegi tour cost in 2026?","acceptedAnswer":{"@type":"Answer","text":"A private Kazbegi tour from Tbilisi costs from 175 GEL per person (approximately $65). The price includes a comfortable car transfer from your hotel in central Tbilisi, English-speaking guide Timur for the whole day, and entrance fees to all sites. Departure at 08:00, return to Tbilisi around 22:00 — 14 hours total. The route includes Ananuri Fortress, the Georgian Military Highway, the Arch of Friendship viewpoint, and Gergeti Trinity Church with views of Mount Kazbek at 5,047 meters. Maximum 7 people per group: no buses, no strangers. For a group of four, the cost is just 32 GEL per person — about $12, cheaper than any bus tour. Pay in cash or by card on the day of the tour, no prepayment required."}},
@@ -310,6 +313,10 @@ html{scroll-behavior:auto}
 {"@type":"Service","@id":"https://sakhva-travel.com/#service-wine","name":"Kakheti Wine Tour","description":"Private tour from Tbilisi to Kakheti with tastings at boutique wineries. Signagi, Bodbe, Tsinandali, Telavi.","provider":{"@id":"https://sakhva-travel.com/#business"},"areaServed":{"@type":"Place","name":"Kakheti"},"serviceType":"Wine Tour"},
 {"@type":"Service","@id":"https://sakhva-travel.com/#service-gastro","name":"Tbilisi Food Tour","description":"Georgian cuisine tasting: khinkali, khachapuri, churchkhela. Deserter's Bazaar, tone bakery, home dinner with locals.","provider":{"@id":"https://sakhva-travel.com/#business"},"areaServed":{"@type":"City","name":"Tbilisi"},"serviceType":"Food Tour"}
 ]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"></noscript>
 </head>
 <body>
 <div id="quiz-modal" role="dialog" aria-modal="true">
@@ -442,7 +449,7 @@ html{scroll-behavior:auto}
 
 <!-- HERO -->
 <header id="hero" style="background:#0a1628">
-<img id="hero-poster-img" src="/images/hero-kazbegi-mob.webp?v=1" srcset="/images/hero-kazbegi-mob.webp?v=1 768w, /images/hero-kazbegi.webp?v=1 1920w" sizes="100vw" alt="Gergeti Trinity Church with Mount Kazbegi — tours in Georgia" width="1920" height="1076" fetchpriority="high" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0">
+<img id="hero-poster-img" src="/images/hero-main-mob.webp?v=1" srcset="/images/hero-main-mob.webp?v=1 768w, /images/hero-kazbegi.webp?v=1 1920w" sizes="100vw" alt="Gergeti Trinity Church with Mount Kazbegi — tours in Georgia" width="1920" height="1076" fetchpriority="high" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0">
 <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.18) 0%,rgba(0,0,0,.28) 60%,rgba(0,0,0,.42) 100%);z-index:1"></div>
   <div class="hero-wrap">
     <div class="hero-stats-inline" style="display:flex;flex-wrap:wrap;justify-content:center;gap:clamp(20px,5vw,56px);margin-bottom:20px;opacity:0;animation:fadeUp .8s cubic-bezier(.22,1,.36,1) .2s forwards">
@@ -452,7 +459,7 @@ html{scroll-behavior:auto}
       <div><span class="hs-val counter" data-target="500">500+</span><span class="hs-lbl">Tourists</span></div>
     </div>
     <h1 class="hero-h1 hero-typewriter">Private Guide in Tbilisi — Tours in Georgia 2026</h1>
-    <p class="hero-sub" style="opacity:1;animation:none;font-size:clamp(16px,2.2vw,22px);font-weight:400;margin-bottom:28px">Tours from ₾140 · Not a scheduled tour, but a day with a local friend</p>
+    <p class="hero-sub" style="opacity:1;animation:none;font-size:clamp(16px,2.2vw,22px);font-weight:400;margin-bottom:28px">Tours from ₾77 · Not a scheduled tour, but a day with a local friend</p>
 
     <div class="hero-btns" style="justify-content:center">
       <button onclick="openContact()" class="btn-primary" style="cursor:pointer;font-family:inherit;font-size:16px;padding:14px 32px;border:none">Contact me</button>
@@ -482,7 +489,7 @@ html{scroll-behavior:auto}
 <h3 class="tc-name">Kazbegi in 1 day</h3>
 <p class="tc-desc">Georgian Military Highway, Gergeti church, mountains without clouds.</p>
 <div class="tc-spots"><span class="tc-spots-dot"></span>Booked 5 times this week</div>
-<div class="tc-foot"><div class="tc-price"><span class="price-main">₾175</span> <span class="price-sub">per person</span></div><a href="/en/tour/kazbegi/" class="tc-cta">Book now</a></div>
+<div class="tc-foot"><div class="tc-price"><span class="price-main">₾175</span> <span class="price-sub">per person</span></div><a href="/ekskursiya/ekskursiya-kazbegi-iz-tbilisi/" class="tc-cta">Book now</a></div>
 </div>
 </article>
 <article class="tc" data-anim="scale" data-anim-d="2">
@@ -494,7 +501,7 @@ html{scroll-behavior:auto}
 <h3 class="tc-name">Signagi & Kakheti</h3>
 <p class="tc-desc">City of love, Alazani Valley, wine from qvevri. Wine tasting included.</p>
 <div class="tc-spots"><span class="tc-spots-dot"></span>Booked 3 times this week</div>
-<div class="tc-foot"><div class="tc-price"><span class="price-main">₾170</span> <span class="price-sub">per person</span></div><a href="/en/tour/kakheti/" class="tc-cta">Book now</a></div>
+<div class="tc-foot"><div class="tc-price"><span class="price-main">₾170</span> <span class="price-sub">per person</span></div><a href="/ekskursiya/ekskursiya-kakheti-iz-tbilisi/" class="tc-cta">Book now</a></div>
 </div>
 </article>
 <article class="tc" data-anim="scale" data-anim-d="3">
@@ -506,7 +513,7 @@ html{scroll-behavior:auto}
 <h3 class="tc-name">Kutaisi</h3>
 <p class="tc-desc">Prometheus Cave, Martvili Canyon, Gelati Monastery (UNESCO).</p>
 <div class="tc-spots"><span class="tc-spots-dot"></span>3 spots left in May</div>
-<div class="tc-foot"><div class="tc-price"><span class="price-main">₾183</span> <span class="price-sub">per person</span></div><a href="/en/tour/kutaisi/" class="tc-cta">Book now</a></div>
+<div class="tc-foot"><div class="tc-price"><span class="price-main">₾183</span> <span class="price-sub">per person</span></div><a href="/ekskursiya/tur-kutaisi-iz-tbilisi/" class="tc-cta">Book now</a></div>
 </div>
 </article>
 <article class="tc" data-anim="scale" data-anim-d="1">
@@ -518,7 +525,7 @@ html{scroll-behavior:auto}
 <h3 class="tc-name">Batumi</h3>
 <p class="tc-desc">Black Sea, botanical garden, old town. Mountains to sea in one day.</p>
 <div class="tc-spots"><span class="tc-spots-dot"></span>Last 3 spots in May</div>
-<div class="tc-foot"><div class="tc-price"><span class="price-main">₾201</span> <span class="price-sub">per person</span></div><a href="/en/tour/batumi/" class="tc-cta">Book now</a></div>
+<div class="tc-foot"><div class="tc-price"><span class="price-main">₾250</span> <span class="price-sub">per person</span></div><a href="/ekskursiya/tur-batumi-iz-tbilisi/" class="tc-cta">Book now</a></div>
 </div>
 </article>
 <article class="tc" data-anim="scale" data-anim-d="2">
@@ -530,7 +537,7 @@ html{scroll-behavior:auto}
 <h3 class="tc-name">Borjomi</h3>
 <p class="tc-desc">Mineral springs, 19th-century park, cable car and medieval Rabati Fortress.</p>
 <div class="tc-spots"><span class="tc-spots-dot"></span>New route 2026</div>
-<div class="tc-foot"><div class="tc-price"><span class="price-main">₾178</span> <span class="price-sub">per person</span></div><a href="/en/tour/borjomi/" class="tc-cta">Book now</a></div>
+<div class="tc-foot"><div class="tc-price"><span class="price-main">₾178</span> <span class="price-sub">per person</span></div><a href="/ekskursiya/ekskursiya-borjomi-iz-tbilisi/" class="tc-cta">Book now</a></div>
 </div>
 </article>
 <article class="tc" data-anim="scale" data-anim-d="2">
@@ -542,7 +549,7 @@ html{scroll-behavior:auto}
 <h3 class="tc-name">Night Tbilisi</h3>
 <p class="tc-desc">Sulfur baths at night, Bridge of Peace, courtyard restaurants. Starts at 20:00.</p>
 <div class="tc-spots" style="color:#A5B4FC"><span class="tc-spots-dot" style="background:#818CF8"></span>Fri & Sat only</div>
-<div class="tc-foot"><div class="tc-price"><span class="price-main">₾94</span> <span class="price-sub">per person</span></div><a href="/en/tour/night-tbilisi/" class="tc-cta">Book now</a></div>
+<div class="tc-foot"><div class="tc-price"><span class="price-main">₾94</span> <span class="price-sub">per person</span></div><a href="/ekskursiya/nochnaya-ekskursiya-tbilisi/" class="tc-cta">Book now</a></div>
 </div>
 </article>
 <article class="tc" data-anim="scale" data-anim-d="3">
@@ -554,7 +561,7 @@ html{scroll-behavior:auto}
 <h3 class="tc-name">Tour + dinner with locals</h3>
 <p class="tc-desc">Home dinner with a Georgian family: khinkali, wine, real conversation.</p>
 <div class="tc-spots"><span class="tc-spots-dot"></span>Only 2 spots left</div>
-<div class="tc-foot"><div class="tc-price"><span class="price-main">₾213</span> <span class="price-sub">per person</span></div><a href="/en/tour/dinner/" class="tc-cta">Book now</a></div>
+<div class="tc-foot"><div class="tc-price"><span class="price-main">₾213</span> <span class="price-sub">per person</span></div><a href="/ekskursiya/gastronomicheskiy-tur-tbilisi/" class="tc-cta">Book now</a></div>
 </div>
 </article>
 <article class="tc" data-anim="scale" data-anim-d="1">
@@ -566,7 +573,7 @@ html{scroll-behavior:auto}
 <h3 class="tc-name">Tbilisi Overview</h3>
 <p class="tc-desc">Bridge of Peace, sulfur baths, Metekhi, Sameba, Mtatsminda.</p>
 <div class="tc-spots"><span class="tc-spots-dot"></span>Booked daily</div>
-<div class="tc-foot"><div class="tc-price"><span class="price-main">₾135</span> <span class="price-sub">per person</span></div><a href="/en/tour/soviet/" class="tc-cta">Book now</a></div>
+<div class="tc-foot"><div class="tc-price"><span class="price-main">₾135</span> <span class="price-sub">per person</span></div><a href="/ekskursiya/sovetskiy-tur-tbilisi/" class="tc-cta">Book now</a></div>
 </div>
 </article>
 <article class="tc" data-anim="scale" data-anim-d="2">
@@ -578,7 +585,7 @@ html{scroll-behavior:auto}
 <h3 class="tc-name">Mtskheta — Ancient Capital</h3>
 <p class="tc-desc">Jvari Monastery, Svetitskhoveli Cathedral, old town. UNESCO.</p>
 <div class="tc-spots"><span class="tc-spots-dot"></span>4 spots left this weekend</div>
-<div class="tc-foot"><div class="tc-price"><span class="price-main">₾77</span> <span class="price-sub">per person</span></div><a href="/en/tour/mtskheta/" class="tc-cta">Book now</a></div>
+<div class="tc-foot"><div class="tc-price"><span class="price-main">₾77</span> <span class="price-sub">per person</span></div><a href="/ekskursiya/ekskursiya-mtskheta-iz-tbilisi/" class="tc-cta">Book now</a></div>
 </div>
 </article>
 <article class="tc" data-anim="scale" data-anim-d="3">
@@ -590,7 +597,7 @@ html{scroll-behavior:auto}
 <h3 class="tc-name">Digital Nomad Welcome Tour</h3>
 <p class="tc-desc">Coworking spaces, best WiFi cafes, nomad-friendly neighborhoods.</p>
 <div class="tc-spots"><span class="tc-spots-dot"></span>Booked twice a week</div>
-<div class="tc-foot"><div class="tc-price"><span class="price-main">₾123</span> <span class="price-sub">per person</span></div><a href="/en/tour/digital-nomad/" class="tc-cta">Book now</a></div>
+<div class="tc-foot"><div class="tc-price"><span class="price-main">₾123</span> <span class="price-sub">per person</span></div><a href="/ekskursiya/tur-dlya-relokantov-tbilisi/" class="tc-cta">Book now</a></div>
 </div>
 </article>
 <article class="tc" data-anim="scale" data-anim-d="1">
@@ -602,7 +609,7 @@ html{scroll-behavior:auto}
 <h3 class="tc-name">Slow Travel package</h3>
 <p class="tc-desc">3 days with Timur: a new route each day + airport transfer included.</p>
 <div class="tc-spots"><span class="tc-spots-dot"></span>1 spot left in May</div>
-<div class="tc-foot"><div class="tc-price"><span class="price-main">₾595</span> <span class="price-sub">per person</span></div><a href="/en/tour/slow-travel/" class="tc-cta">Book now</a></div>
+<div class="tc-foot"><div class="tc-price"><span class="price-main">₾595</span> <span class="price-sub">per person</span></div><a href="/ekskursiya/tur-gruziya-7-dney/" class="tc-cta">Book now</a></div>
 </div>
 </article>
 </div></div><!-- /tours-slides -->
@@ -952,7 +959,70 @@ document.querySelectorAll('.tours-track .tc').forEach(function(c){io.observe(c)}
 </div>
 </section>
 
+<nav aria-label="Internal links" style="position:relative;z-index:2;background:#F9FAFB;padding:40px clamp(16px,3.5vw,56px)">
+<div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:32px">
+<div>
+<p style="font-family:'Lora',Georgia,serif;font-size:14px;font-weight:700;color:#111827;margin-bottom:12px">Tours</p>
+<a href="/ekskursiya/ekskursiya-kazbegi-iz-tbilisi/" style="display:block;font-size:13px;color:#4B5563;padding:4px 0">Kazbegi Day Trip</a>
+<a href="/ekskursiya/ekskursiya-kakheti-iz-tbilisi/" style="display:block;font-size:13px;color:#4B5563;padding:4px 0">Kakheti Wine Tour</a>
+<a href="/ekskursiya/ekskursiya-stary-tbilisi/" style="display:block;font-size:13px;color:#4B5563;padding:4px 0">Old Tbilisi Walking</a>
+<a href="/ekskursiya/ekskursiya-mtskheta-iz-tbilisi/" style="display:block;font-size:13px;color:#4B5563;padding:4px 0">Mtskheta from Tbilisi</a>
+<a href="/ekskursiya/nochnaya-ekskursiya-tbilisi/" style="display:block;font-size:13px;color:#4B5563;padding:4px 0">Night Tbilisi</a>
+</div>
+<div>
+<p style="font-family:'Lora',Georgia,serif;font-size:14px;font-weight:700;color:#111827;margin-bottom:12px">More Tours</p>
+<a href="/ekskursiya/tur-kutaisi-iz-tbilisi/" style="display:block;font-size:13px;color:#4B5563;padding:4px 0">Kutaisi Day Trip</a>
+<a href="/ekskursiya/tur-batumi-iz-tbilisi/" style="display:block;font-size:13px;color:#4B5563;padding:4px 0">Batumi from Tbilisi</a>
+<a href="/ekskursiya/ekskursiya-borjomi-iz-tbilisi/" style="display:block;font-size:13px;color:#4B5563;padding:4px 0">Borjomi & Rabati</a>
+<a href="/ekskursiya/gastronomicheskiy-tur-tbilisi/" style="display:block;font-size:13px;color:#4B5563;padding:4px 0">Georgian Dinner Tour</a>
+<a href="/ekskursiya/tur-gruziya-7-dney/" style="display:block;font-size:13px;color:#4B5563;padding:4px 0">Slow Travel 3 Days</a>
+</div>
+<div>
+<p style="font-family:'Lora',Georgia,serif;font-size:14px;font-weight:700;color:#111827;margin-bottom:12px">Blog</p>
+<a href="/en/blog/georgia-with-kids/" style="display:block;font-size:13px;color:#4B5563;padding:4px 0">Georgia with Kids</a>
+<a href="/en/blog/tbilisi-3-days/" style="display:block;font-size:13px;color:#4B5563;padding:4px 0">Tbilisi in 3 Days</a>
+<a href="/en/blog/kazbegi-guide/" style="display:block;font-size:13px;color:#4B5563;padding:4px 0">Kazbegi Guide</a>
+<a href="/en/blog/georgian-wine-guide/" style="display:block;font-size:13px;color:#4B5563;padding:4px 0">Georgian Wine Guide</a>
+<a href="/en/about/" style="display:block;font-size:13px;color:#4B5563;padding:4px 0">About Timur</a>
+</div>
+</div>
+</nav>
+
 <footer id="footer">
+<div style="max-width:1100px;margin:0 auto;padding:32px clamp(16px,3.5vw,56px) 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:24px 32px;font-size:13px;line-height:1.8;border-top:1px solid #E5E7EB">
+<div>
+<div style="font-weight:700;color:#1A3D2E;margin-bottom:8px;font-size:12px;letter-spacing:.1em;text-transform:uppercase">Tours</div>
+<a href="/ekskursiya/" style="display:block;color:#6B7280">All tours</a>
+<a href="/en/ekskursii-po-gruzii/" style="display:block;color:#6B7280">Day trips</a>
+<a href="/en/ekskursii-v-tbilisi/" style="display:block;color:#6B7280">Walking tours</a>
+<a href="/en/vinnye-tury-gruzia/" style="display:block;color:#6B7280">Wine tours</a>
+<a href="/ekskursiya/ekskursiya-kazbegi-iz-tbilisi/" style="display:block;color:#6B7280">Kazbegi</a>
+<a href="/ekskursiya/ekskursiya-kakheti-iz-tbilisi/" style="display:block;color:#6B7280">Kakheti</a>
+</div>
+<div>
+<div style="font-weight:700;color:#1A3D2E;margin-bottom:8px;font-size:12px;letter-spacing:.1em;text-transform:uppercase">Destinations</div>
+<a href="/en/tour/tbilisi/" style="display:block;color:#6B7280">Tbilisi</a>
+<a href="/ekskursiya/ekskursiya-mtskheta-iz-tbilisi/" style="display:block;color:#6B7280">Mtskheta</a>
+<a href="/ekskursiya/tur-batumi-iz-tbilisi/" style="display:block;color:#6B7280">Batumi</a>
+<a href="/ekskursiya/tur-kutaisi-iz-tbilisi/" style="display:block;color:#6B7280">Kutaisi</a>
+<a href="/ekskursiya/ekskursiya-borjomi-iz-tbilisi/" style="display:block;color:#6B7280">Borjomi</a>
+
+</div>
+<div>
+<div style="font-weight:700;color:#1A3D2E;margin-bottom:8px;font-size:12px;letter-spacing:.1em;text-transform:uppercase">Blog</div>
+<a href="/en/blog/" style="display:block;color:#6B7280">Travel guides</a>
+<a href="/en/blog/tbilisi-3-day-itinerary/" style="display:block;color:#6B7280">3-day itinerary</a>
+<a href="/en/blog/hidden-gems-tbilisi/" style="display:block;color:#6B7280">Hidden gems</a>
+<a href="/en/blog/best-time-visit-georgia/" style="display:block;color:#6B7280">Best time to visit</a>
+<a href="/en/blog/tbilisi-tours-guide/" style="display:block;color:#6B7280">Tours guide</a>
+</div>
+<div>
+<div style="font-weight:700;color:#1A3D2E;margin-bottom:8px;font-size:12px;letter-spacing:.1em;text-transform:uppercase">About</div>
+<a href="/en/about/" style="display:block;color:#6B7280">About guide</a>
+<a href="/en/contacts/" style="display:block;color:#6B7280">Contacts</a>
+<a href="/en/blog/" style="display:block;color:#6B7280">Blog</a>
+</div>
+</div>
   <div class="foot-bottom">
     <div class="foot-contacts" style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:16px">
       <a href="tel:+995511272623" style="color:#6B7280;font-size:14px;text-decoration:none;padding:8px 0;display:inline-block">+995 511 272 623</a>
@@ -1060,10 +1130,9 @@ document.addEventListener('click',function(e){
 (function(){
   function loadDeferred(src){var s=document.createElement('script');s.src=src;s.defer=true;document.body.appendChild(s)}
   if('requestIdleCallback' in window){
-    requestIdleCallback(function(){loadDeferred('/main.js?v=36');loadDeferred('/scripts/scroll-effects.js')},{timeout:2000});
-  } else {
-    setTimeout(function(){loadDeferred('/main.js?v=36');loadDeferred('/scripts/scroll-effects.js')},100);
-  }
+    window.addEventListener('load',function(){
+      setTimeout(function(){loadDeferred('/main.js?v=42');loadDeferred('/scripts/scroll-effects.js')},100);
+    });
 })();
 </script>
 
@@ -1076,21 +1145,22 @@ var prev=document.getElementById('tours-prev');
 var next=document.getElementById('tours-next');
 if(!cards.length||!prev||!next)return;
 var cur=0,visible=3,gap=24,maxIdx=Math.max(0,cards.length-visible);
-function sizeCards(){
-  var cont=track.parentElement;
-  var pad=parseFloat(getComputedStyle(cont).paddingLeft)+parseFloat(getComputedStyle(cont).paddingRight);
-  var w=(cont.clientWidth-pad-gap*(visible-1))/visible;
-  cards.forEach(function(c){c.style.width=Math.floor(w)+'px'});
+var cachedW=0;
+function measureOnce(){
+  if(cachedW)return;
+  requestAnimationFrame(function(){
+    cachedW=cards[0].getBoundingClientRect().width;
+  });
 }
-sizeCards();
+measureOnce();
 function show(i){
   cur=Math.max(0,Math.min(i,maxIdx));
-  var cardW=cards[0].offsetWidth;
-  track.style.transform='translateX(-'+(cur*(cardW+gap))+'px)';
+  if(!cachedW)cachedW=cards[0].getBoundingClientRect().width;
+  track.style.transform='translateX(-'+(cur*(cachedW+gap))+'px)';
 }
 prev.addEventListener('click',function(){show(cur-1)});
 next.addEventListener('click',function(){show(cur+1)});
-window.addEventListener('resize',function(){sizeCards();show(cur)});
+window.addEventListener('resize',function(){cachedW=0;measureOnce()});
 var sec=document.querySelector('.tours-pinned');
 if(sec){
   var accX=0,swipeTimer=null,cooldown=false;
