@@ -61,13 +61,6 @@
   </url>
 
   <url>
-    <loc>https://sakhva-travel.com/tury/</loc>
-    <lastmod>2026-05-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
     <loc>https://sakhva-travel.com/tury-v-gruziyu-iz-ekaterinburga/</loc>
     <lastmod>2026-05-17</lastmod>
   </url>
@@ -611,15 +604,6 @@
   </url>
 
   <url>
-    <loc>https://sakhva-travel.com/blog/byudzhet-gruziya/</loc>
-    <ns1:image>
-      <ns1:loc>https://sakhva-travel.com/images/blog/georgia-budget.webp</ns1:loc>
-      <ns1:title>Бюджет на Грузию 2026: сколько реально стоит поездка</ns1:title>
-    </ns1:image>
-    <lastmod>2026-05-17</lastmod>
-  </url>
-
-  <url>
     <loc>https://sakhva-travel.com/blog/chastny-gid-ili-gruppa-tbilisi/</loc>
     <ns1:image>
       <ns1:loc>https://sakhva-travel.com/images/og-cover.jpg</ns1:loc>
@@ -922,15 +906,6 @@
     <ns1:image>
       <ns1:loc>https://sakhva-travel.com/images/og-narikala.jpg</ns1:loc>
       <ns1:title>Нарикала Тбилиси 2026: история, как добраться, лучшие виды</ns1:title>
-    </ns1:image>
-    <lastmod>2026-05-15</lastmod>
-  </url>
-
-  <url>
-    <loc>https://sakhva-travel.com/blog/nochnoy-tbilisi/</loc>
-    <ns1:image>
-      <ns1:loc>https://sakhva-travel.com/images/blog/nochnoy-tbilisi.webp</ns1:loc>
-      <ns1:title>Ночной Тбилиси: что делать после заката</ns1:title>
     </ns1:image>
     <lastmod>2026-05-15</lastmod>
   </url>

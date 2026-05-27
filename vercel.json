@@ -67,6 +67,10 @@
     },
 
 
+    { "source": "/blog/nochnoy-tbilisi/", "destination": "/blog/tbilisi-vecherom/", "permanent": true },
+    { "source": "/blog/byudzhet-gruziya/", "destination": "/blog/skolko-stoit-otdyh-v-gruzii/", "permanent": true },
+    { "source": "/tury/", "destination": "/mnogodnevnye-tury-gruzia/", "permanent": true },
+
     { "source": "/odnodnevnye-ekskursii-iz-tbilisi/", "destination": "/ekskursii-v-gruzii/", "permanent": true },
     { "source": "/chastniy-gid-tbilisi/", "destination": "/ekskursii-v-tbilisi/", "permanent": true },
     { "source": "/tour/kazbegi/", "destination": "/ekskursiya/ekskursiya-kazbegi-iz-tbilisi/", "permanent": true },
