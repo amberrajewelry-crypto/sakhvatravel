@@ -1732,4 +1732,36 @@
     <lastmod>2026-05-25</lastmod>
   </url>
 
+  <!-- Hub pages (added 2026-05-27) -->
+  <url>
+    <loc>https://sakhva-travel.com/ekskursiya/batumi/</loc>
+    <lastmod>2026-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ekskursiya/kakheti/</loc>
+    <lastmod>2026-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ekskursiya/kazbegi/</loc>
+    <lastmod>2026-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/transfer/</loc>
+    <lastmod>2026-05-27</lastmod>
+  </url>
+
+  <!-- Geo pages KMV (added 2026-05-27) -->
+  <url>
+    <loc>https://sakhva-travel.com/tury-v-gruziyu-iz-pyatigorska/</loc>
+    <lastmod>2026-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/tury-v-gruziyu-iz-nalchika/</loc>
+    <lastmod>2026-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/tury-v-gruziyu-iz-kislovodska/</loc>
+    <lastmod>2026-05-27</lastmod>
+  </url>
+
 </urlset>
