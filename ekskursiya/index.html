@@ -76,6 +76,36 @@ body,h1,h2,h3,h4,h5,h6,p,a,span,div,li,td,th,label,input,textarea,button,blockqu
 .ccard-foot{display:flex;justify-content:space-between;align-items:center}
 .ccard-price{font-size:17px;font-weight:700;color:#1A3D2E}
 .ccard-rate{font-size:12px;color:#6B7280}.ccard-rate .star{color:#F59E0B}
+
+/* Calendar dropdown */
+.cal-modal{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.4);z-index:1000;display:none;align-items:flex-start;justify-content:center;padding:80px 16px}
+.cal-modal.on{display:flex}
+.cal-box{background:#fff;border-radius:14px;width:100%;max-width:420px;max-height:80vh;overflow-y:auto;box-shadow:0 20px 60px rgba(0,0,0,.2);padding:24px}
+.cal-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}
+.cal-head h3{font-size:22px;font-weight:700;margin:0}
+.cal-close{width:36px;height:36px;border:none;background:#F3F4F6;border-radius:50%;cursor:pointer;font-size:18px;display:flex;align-items:center;justify-content:center}
+.cal-month{font-size:16px;font-weight:700;margin:16px 0 8px;color:#111}
+.cal-week{display:grid;grid-template-columns:repeat(7,1fr);text-align:center;font-size:12px;font-weight:600;color:#9CA3AF;margin-bottom:4px}
+.cal-week .wknd{color:#EF4444}
+.cal-days{display:grid;grid-template-columns:repeat(7,1fr);gap:2px;margin-bottom:8px}
+.cal-day{height:40px;display:flex;align-items:center;justify-content:center;font-size:14px;border-radius:8px;cursor:default;color:#D1D5DB}
+.cal-day.avail{color:#111;font-weight:600;cursor:pointer;position:relative}
+.cal-day.avail:hover{background:#E8F5E9}
+.cal-day.avail.low::after{content:'';position:absolute;bottom:4px;left:50%;transform:translateX(-50%);width:5px;height:5px;border-radius:50%;background:#F59E0B}
+.cal-day.avail .dot{position:absolute;bottom:4px;left:50%;transform:translateX(-50%);width:5px;height:5px;border-radius:50%;background:#1A3D2E}
+.cal-day.today{border:2px solid #1A3D2E;border-radius:8px;font-weight:700}
+.cal-day.selected{background:#1A3D2E;color:#fff!important;border-radius:8px}
+.cal-day.selected .dot,.cal-day.selected::after{background:#fff}
+.cal-guests{display:flex;align-items:center;justify-content:space-between;padding:16px 0;border-top:1px solid #E5E7EB;margin-top:12px}
+.cal-guests span{font-size:15px;font-weight:600}
+.cal-guests-ctrl{display:flex;align-items:center;gap:0}
+.cal-guests-ctrl button{width:40px;height:40px;border:1px solid #D1D5DB;background:#fff;font-size:20px;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.cal-guests-ctrl button:first-child{border-radius:8px 0 0 8px}
+.cal-guests-ctrl button:last-child{border-radius:0 8px 8px 0}
+.cal-guests-ctrl .g-val{width:44px;height:40px;border-top:1px solid #D1D5DB;border-bottom:1px solid #D1D5DB;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:600}
+.cal-footer{display:flex;gap:12px;margin-top:12px}
+.cal-footer .cal-apply{flex:1;padding:14px;background:#1A3D2E;color:#fff;border:none;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer;font-family:inherit}
+.cal-footer .cal-reset{padding:14px 20px;background:none;border:none;color:#6B7280;font-size:14px;cursor:pointer;font-family:inherit}
 </style>
 <!-- PostHog -->
 <script>
@@ -511,14 +541,11 @@ ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webv
 <!-- Filters -->
 <div class="cat-filters">
   <div class="cf-wrap">
-    <button class="cf-btn" onclick="this.parentElement.classList.toggle('open')">
+    <button class="cf-btn" id="btn-dates" onclick="document.getElementById('cal-modal').classList.add('on')">
       <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
-      Любые даты, 1 чел.
+      <span id="btn-dates-label">Любые даты, 1 чел.</span>
       <svg viewBox="0 0 20 20" fill="currentColor" style="width:12px;height:12px"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg>
     </button>
-    <div class="cf-dd" id="dd-dates">
-      <div class="cf-item" style="padding:16px 18px;font-size:13px;color:#9CA3AF">Календарь загружается...</div>
-    </div>
   </div>
   <div class="cf-wrap">
     <button class="cf-btn" onclick="this.parentElement.classList.toggle('open')">
@@ -924,59 +951,115 @@ ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webv
     }
   });
 
-  // Dates dropdown — load from Airtable schedule API
-  var ddDates=document.getElementById('dd-dates');
-  if(ddDates){
-    fetch('/api/schedule').then(function(r){return r.json()}).then(function(data){
-      if(!data||!data.length||data.error){
-        ddDates.innerHTML='<div class="cf-item" style="color:#1A3D2E;font-weight:600">Все даты доступны</div>'
-          +'<a href="https://wa.me/995511272623?text=Хочу+забронировать+экскурсию" class="cf-item" style="color:#25D366;font-weight:600;display:block;text-decoration:none">Написать для бронирования</a>';
-        return;
-      }
-      var months=['янв','фев','мар','апр','мая','июн','июл','авг','сен','окт','ноя','дек'];
-      var days=['Вс','Пн','Вт','Ср','Чт','Пт','Сб'];
-      var html='';
-      var grouped={};
+  // Calendar modal — load dates from Airtable
+  var calAvail={};
+  var calLow={};
+  var calSelected=null;
+  var calGuests=1;
+  var monthsFull=['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'];
+  var monthsShort=['янв','фев','мар','апр','мая','июн','июл','авг','сен','окт','ноя','дек'];
+
+  fetch('/api/schedule').then(function(r){return r.json()}).then(function(data){
+    if(data&&data.length){
       data.forEach(function(s){
-        var d=s.date;
-        if(!grouped[d])grouped[d]=[];
-        grouped[d].push(s);
+        calAvail[s.date]=true;
+        if(s.status==='мало мест')calLow[s.date]=true;
       });
-      var dateKeys=Object.keys(grouped).sort().slice(0,10);
-      dateKeys.forEach(function(dk){
-        var dt=new Date(dk+'T12:00:00');
-        var label=days[dt.getDay()]+', '+dt.getDate()+' '+months[dt.getMonth()];
-        var tours=grouped[dk];
-        var cnt=tours.length;
-        var lowSpots=tours.some(function(t){return t.status==='мало мест'});
-        var spotsBadge=lowSpots?'<span style="color:#F59E0B;font-size:11px;margin-left:6px">мало мест</span>':'';
-        html+='<div class="cf-item cf-date-item" data-date="'+dk+'" style="display:flex;justify-content:space-between;align-items:center">'
-          +'<span><strong>'+label+'</strong> <span style="color:#9CA3AF;font-size:12px">'+cnt+' экск.</span>'+spotsBadge+'</span>'
-          +'</div>';
+    }
+    renderCalendar();
+  }).catch(function(){renderCalendar()});
+
+  function renderCalendar(){
+    var container=document.getElementById('cal-body');
+    if(!container)return;
+    var now=new Date();
+    var todayStr=now.toISOString().split('T')[0];
+    var html='';
+    // Render 3 months
+    for(var m=0;m<3;m++){
+      var year=now.getFullYear();
+      var month=now.getMonth()+m;
+      if(month>11){month-=12;year++}
+      var first=new Date(year,month,1);
+      var daysInMonth=new Date(year,month+1,0).getDate();
+      var startDay=first.getDay();// 0=Sun
+      // Adjust to Mon start: Mon=0,...Sun=6
+      var offset=(startDay+6)%7;
+      html+='<div class="cal-month">'+monthsFull[month]+'</div>';
+      html+='<div class="cal-days">';
+      for(var e=0;e<offset;e++)html+='<div class="cal-day"></div>';
+      for(var d=1;d<=daysInMonth;d++){
+        var ds=year+'-'+String(month+1).padStart(2,'0')+'-'+String(d).padStart(2,'0');
+        var cls='cal-day';
+        var isPast=ds<todayStr;
+        if(ds===todayStr)cls+=' today';
+        if(calAvail[ds]&&!isPast){
+          cls+=' avail';
+          if(calLow[ds])cls+=' low';
+        }
+        if(ds===calSelected)cls+=' selected';
+        var dot=calAvail[ds]&&!isPast&&!calLow[ds]?'<span class="dot"></span>':'';
+        html+='<div class="'+cls+'" data-d="'+ds+'">'+d+dot+'</div>';
+      }
+      html+='</div>';
+    }
+    container.innerHTML=html;
+    // Bind clicks
+    container.querySelectorAll('.cal-day.avail').forEach(function(el){
+      el.addEventListener('click',function(){
+        container.querySelectorAll('.cal-day.selected').forEach(function(s){s.classList.remove('selected')});
+        this.classList.add('selected');
+        calSelected=this.dataset.d;
       });
-      html+='<div style="border-top:1px solid #E5E7EB;margin-top:4px;padding-top:4px">'
-        +'<a href="https://wa.me/995511272623?text=Хочу+забронировать+экскурсию+на+другую+дату" class="cf-item" style="color:#25D366;font-weight:600;display:block;text-decoration:none;font-size:13px">Другая дата? Написать</a>'
-        +'</div>';
-      ddDates.innerHTML=html;
-      // Click handler for date filter
-      ddDates.querySelectorAll('.cf-date-item').forEach(function(item){
-        item.addEventListener('click',function(){
-          var sel=this.dataset.date;
-          ddDates.querySelectorAll('.cf-date-item').forEach(function(i){i.classList.remove('active')});
-          this.classList.add('active');
-          var btn=ddDates.parentElement.querySelector('.cf-btn');
-          var dt=new Date(sel+'T12:00:00');
-          btn.innerHTML=btn.innerHTML.replace(/[^\<]*<svg/,'<svg').replace(/^/,days[dt.getDay()]+', '+dt.getDate()+' '+months[dt.getMonth()]+' ');
-          ddDates.parentElement.classList.remove('open');
-        });
-      });
-    }).catch(function(){
-      ddDates.innerHTML='<div class="cf-item" style="color:#1A3D2E;font-weight:600">Все даты доступны</div>'
-        +'<a href="https://wa.me/995511272623?text=Хочу+забронировать+экскурсию" class="cf-item" style="color:#25D366;font-weight:600;display:block;text-decoration:none">Написать для бронирования</a>';
     });
   }
+
+  // Guests counter
+  document.getElementById('cal-minus').addEventListener('click',function(){
+    if(calGuests>1){calGuests--;document.getElementById('cal-gval').textContent=calGuests}
+  });
+  document.getElementById('cal-plus').addEventListener('click',function(){
+    if(calGuests<20){calGuests++;document.getElementById('cal-gval').textContent=calGuests}
+  });
+
+  // Apply button
+  document.getElementById('cal-apply').addEventListener('click',function(){
+    var label=document.getElementById('btn-dates-label');
+    if(calSelected){
+      var dt=new Date(calSelected+'T12:00:00');
+      var dayNames=['Вс','Пн','Вт','Ср','Чт','Пт','Сб'];
+      label.textContent=dayNames[dt.getDay()]+', '+dt.getDate()+' '+monthsShort[dt.getMonth()]+', '+calGuests+' чел.';
+    }else{
+      label.textContent='Любые даты, '+calGuests+' чел.';
+    }
+    document.getElementById('cal-modal').classList.remove('on');
+  });
+
+  // Reset button
+  document.getElementById('cal-reset').addEventListener('click',function(){
+    calSelected=null;calGuests=1;
+    document.getElementById('cal-gval').textContent='1';
+    document.getElementById('btn-dates-label').textContent='Любые даты, 1 чел.';
+    renderCalendar();
+  });
+
+  // Close on backdrop click
+  document.getElementById('cal-modal').addEventListener('click',function(e){
+    if(e.target===this)this.classList.remove('on');
+  });
 })();
 </script>
+
+<!-- Calendar Modal -->
+<div class="cal-modal" id="cal-modal">
+  <div class="cal-box">
+    <div class="cal-head"><h3>Даты</h3><button class="cal-close" onclick="this.closest('.cal-modal').classList.remove('on')">&times;</button></div>
+    <div class="cal-week"><span>ПН</span><span>ВТ</span><span>СР</span><span>ЧТ</span><span>ПТ</span><span class="wknd">СБ</span><span class="wknd">ВС</span></div>
+    <div id="cal-body"></div>
+    <div class="cal-guests"><span>Участники</span><div class="cal-guests-ctrl"><button id="cal-minus">&minus;</button><div class="g-val" id="cal-gval">1</div><button id="cal-plus">+</button></div></div>
+    <div class="cal-footer"><button class="cal-apply" id="cal-apply">Показать</button><button class="cal-reset" id="cal-reset">Сбросить</button></div>
+  </div>
+</div>
 
 <footer id="footer">
   <div class="foot-grid">
