@@ -89,13 +89,10 @@ body,h1,h2,h3,h4,h5,h6,p,a,span,div,li,td,th,label,input,textarea,button,blockqu
 .cal-week .wknd{color:#EF4444}
 .cal-days{display:grid;grid-template-columns:repeat(7,1fr);gap:2px;margin-bottom:8px}
 .cal-day{height:40px;display:flex;align-items:center;justify-content:center;font-size:14px;border-radius:8px;cursor:default;color:#D1D5DB}
-.cal-day.avail{color:#111;font-weight:600;cursor:pointer;position:relative}
+.cal-day.avail{color:#111;font-weight:600;cursor:pointer}
 .cal-day.avail:hover{background:#E8F5E9}
-.cal-day.avail.low::after{content:'';position:absolute;bottom:4px;left:50%;transform:translateX(-50%);width:5px;height:5px;border-radius:50%;background:#F59E0B}
-.cal-day.avail .dot{position:absolute;bottom:4px;left:50%;transform:translateX(-50%);width:5px;height:5px;border-radius:50%;background:#1A3D2E}
 .cal-day.today{border:2px solid #1A3D2E;border-radius:8px;font-weight:700}
 .cal-day.selected{background:#1A3D2E;color:#fff!important;border-radius:8px}
-.cal-day.selected .dot,.cal-day.selected::after{background:#fff}
 .cal-guests{display:flex;align-items:center;justify-content:space-between;padding:16px 0;border-top:1px solid #E5E7EB;margin-top:12px}
 .cal-guests span{font-size:15px;font-weight:600}
 .cal-guests-ctrl{display:flex;align-items:center;gap:0}
@@ -952,22 +949,12 @@ ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webv
   });
 
   // Calendar modal — load dates from Airtable
-  var calAvail={};
-  var calLow={};
   var calSelected=null;
   var calGuests=1;
   var monthsFull=['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'];
   var monthsShort=['янв','фев','мар','апр','мая','июн','июл','авг','сен','окт','ноя','дек'];
 
-  fetch('/api/schedule').then(function(r){return r.json()}).then(function(data){
-    if(data&&data.length){
-      data.forEach(function(s){
-        calAvail[s.date]=true;
-        if(s.status==='мало мест')calLow[s.date]=true;
-      });
-    }
-    renderCalendar();
-  }).catch(function(){renderCalendar()});
+  renderCalendar();
 
   function renderCalendar(){
     var container=document.getElementById('cal-body');
@@ -993,13 +980,9 @@ ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webv
         var cls='cal-day';
         var isPast=ds<todayStr;
         if(ds===todayStr)cls+=' today';
-        if(calAvail[ds]&&!isPast){
-          cls+=' avail';
-          if(calLow[ds])cls+=' low';
-        }
+        if(!isPast)cls+=' avail';
         if(ds===calSelected)cls+=' selected';
-        var dot=calAvail[ds]&&!isPast&&!calLow[ds]?'<span class="dot"></span>':'';
-        html+='<div class="'+cls+'" data-d="'+ds+'">'+d+dot+'</div>';
+        html+='<div class="'+cls+'" data-d="'+ds+'">'+d+'</div>';
       }
       html+='</div>';
     }
