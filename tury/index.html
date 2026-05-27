@@ -666,7 +666,6 @@ ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webv
         var label=t.days===1?'1 день':t.days<5?t.days+' дня':t.days+' дней';
         if(label!==curTag)return false;
       }
-      if(curFormat!=='all'&&t.format!==curFormat)return false;
       return true;
     });
     var rate=RATES[curCurrency]||1;
@@ -692,15 +691,13 @@ ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webv
     }).join('');
   }
 
-  // Format filter
+  // Format filter — decorative only
   document.querySelectorAll('[data-format]').forEach(function(el){
     el.addEventListener('click',function(){
       var dd=el.closest('.cf-dd');
       dd.querySelectorAll('.cf-item').forEach(function(i){i.classList.remove('active')});
       el.classList.add('active');
-      curFormat=el.getAttribute('data-format');
       el.closest('.cf-wrap').classList.remove('open');
-      renderCards();
     });
   });
 
@@ -726,24 +723,12 @@ ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webv
     }
   });
 
-  // Load calendar dates from Airtable
-  fetch('/api/spots').then(function(r){return r.json()}).then(function(data){
-    var ddDates=document.getElementById('dd-dates');
-    if(!ddDates)return;
-    if(data&&data.dates&&data.dates.length>0){
-      ddDates.innerHTML=data.dates.slice(0,14).map(function(d){
-        var dt=new Date(d.date);
-        var day=dt.toLocaleDateString('ru-RU',{day:'numeric',month:'short',weekday:'short'});
-        var avail=d.spots>0?'<span style="color:#059669">свободно</span>':'<span style="color:#DC2626">занято</span>';
-        return '<div class="cf-item">'+day+' — '+avail+'</div>';
-      }).join('');
-    } else {
-      ddDates.innerHTML='<div class="cf-item" style="color:#9CA3AF">Все даты доступны</div>';
-    }
-  }).catch(function(){
-    var ddDates=document.getElementById('dd-dates');
-    if(ddDates)ddDates.innerHTML='<div class="cf-item" style="color:#9CA3AF">Все даты доступны</div>';
-  });
+  // Dates dropdown — link to WhatsApp booking
+  var ddDates=document.getElementById('dd-dates');
+  if(ddDates){
+    ddDates.innerHTML='<div class="cf-item" style="color:#1A3D2E;font-weight:600">Все даты доступны</div>'
+      +'<a href="https://wa.me/995511272623?text=Хочу+забронировать+тур" class="cf-item" style="color:#25D366;font-weight:600;display:block;text-decoration:none">Написать для бронирования</a>';
+  }
 })();
 </script>
 
