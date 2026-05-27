@@ -77,9 +77,19 @@ body,h1,h2,h3,h4,h5,h6,p,a,span,div,li,td,th,label,input,textarea,button,blockqu
 .pill:hover{border-color:#1A3D2E;color:#1A3D2E}
 .pill.active{background:#1A3D2E;color:#fff;border-color:#1A3D2E}
 .pill .cnt{color:#9CA3AF;margin-left:3px;font-size:12px}.pill.active .cnt{color:rgba(255,255,255,.6)}
-.cat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:1200px;margin:0 auto;padding:0 clamp(16px,3.5vw,56px) 48px}
-@media(max-width:900px){.cat-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:600px){.cat-grid{grid-template-columns:1fr}}
+.cat-grid-wrap{position:relative;max-width:1200px;margin:0 auto;padding:0 clamp(16px,3.5vw,56px) 0}
+.cat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.cat-grid.collapsed{max-height:1080px;overflow:hidden}
+.cat-grid.collapsed+.cat-fade{display:block}
+.cat-fade{display:none;position:relative;margin-top:-120px;height:120px;background:linear-gradient(to bottom,rgba(255,255,255,0),rgba(255,255,255,1));pointer-events:none;z-index:2}
+.cat-showall{display:flex;justify-content:center;padding:24px 0 48px;position:relative;z-index:3}
+.cat-showall.hidden{display:none}
+.cat-showall-btn{padding:14px 36px;border:1px solid #D1D5DB;border-radius:9999px;background:#fff;font-size:14px;font-weight:600;color:#1A3D2E;cursor:pointer;font-family:inherit;transition:all .2s;display:flex;align-items:center;gap:8px}
+.cat-showall-btn:hover{background:#1A3D2E;color:#fff;border-color:#1A3D2E}
+.cat-showall-btn svg{width:16px;height:16px;transition:transform .2s}
+.cat-showall-btn:hover svg{transform:translateY(2px)}
+@media(max-width:900px){.cat-grid{grid-template-columns:repeat(2,1fr)}.cat-grid.collapsed{max-height:1400px}}
+@media(max-width:600px){.cat-grid{grid-template-columns:1fr}.cat-grid.collapsed{max-height:2700px}}
 .ccard{border-radius:12px;overflow:hidden;border:1px solid #F3F4F6;transition:all .2s;cursor:pointer;background:#fff;text-decoration:none;display:block;color:inherit}
 .ccard:hover{box-shadow:0 6px 24px rgba(0,0,0,.08);border-color:#E5E7EB}
 .ccard-img{position:relative;height:200px;overflow:hidden;background:#f3f4f6}
@@ -652,7 +662,16 @@ ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webv
 <div class="cat-count" id="cat-count"></div>
 
 <!-- Cards grid (JS-rendered) -->
-<div class="cat-grid" id="cat-grid"></div>
+<div class="cat-grid-wrap">
+  <div class="cat-grid collapsed" id="cat-grid"></div>
+  <div class="cat-fade"></div>
+</div>
+<div class="cat-showall" id="cat-showall">
+  <button class="cat-showall-btn" id="cat-showall-btn">
+    Показать все экскурсии
+    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"/></svg>
+  </button>
+</div>
 
 <!-- Noscript fallback for search engines -->
 <noscript>
@@ -1010,6 +1029,7 @@ ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webv
         +'<span class="ccard-rate"><span class="star">\u2605</span> '+rev+'</span>'
         +'</div></div></a>';
     }).join('');
+    updateShowAll(filtered.length);
   }
 
   // Format filter
@@ -1068,7 +1088,7 @@ ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webv
   // Reset all filters
   var resetBtn=document.getElementById('adv-reset-btn');
   if(resetBtn)resetBtn.addEventListener('click',function(){
-    curFormat='all';curPrice='all';curDur='all';curSort='popular';curTag='all';
+    curFormat='all';curPrice='all';curDur='all';curSort='popular';curTag='all';expanded=false;
     document.querySelectorAll('#adv-dur .adv-btn, #adv-sort .adv-btn').forEach(function(b){b.classList.remove('active')});
     document.querySelector('#adv-dur [data-dur="all"]').classList.add('active');
     document.querySelector('#adv-sort [data-sort="popular"]').classList.add('active');
@@ -1098,6 +1118,26 @@ ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webv
       el.closest('.cf-wrap').classList.remove('open');
       renderCards();
     });
+  });
+
+  // Show all / collapse logic
+  var expanded=false;
+  function updateShowAll(total){
+    var sw=document.getElementById('cat-showall');
+    var sb=document.getElementById('cat-showall-btn');
+    var gr=document.getElementById('cat-grid');
+    if(!sw||!sb)return;
+    if(expanded||total<=9){sw.classList.add('hidden');gr.classList.remove('collapsed');return}
+    sw.classList.remove('hidden');
+    gr.classList.add('collapsed');
+    sb.innerHTML='Показать все '+total+' экскурсий <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"/></svg>';
+  }
+  document.addEventListener('click',function(e){
+    if(e.target.closest('#cat-showall-btn')){
+      expanded=true;
+      document.getElementById('cat-grid').classList.remove('collapsed');
+      document.getElementById('cat-showall').classList.add('hidden');
+    }
   });
 
   // Close dropdowns on outside click
