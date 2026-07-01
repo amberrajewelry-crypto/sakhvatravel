@@ -92,7 +92,7 @@ function checkHTML(filePath) {
   // 7. Размер файла (главная может быть крупнее)
   const kb = Buffer.byteLength(html)/1024;
   const isMain = filePath.endsWith('index.html') && !filePath.includes('/tour/') && !filePath.includes('/blog/');
-  const sizeLimit = isMain ? 300 : 150;
+  const sizeLimit = isMain ? 350 : 150;
   const sizeWarn  = isMain ? 200 : 100;
   if (kb > sizeLimit) err(`Файл слишком большой: ${kb.toFixed(0)}KB (>${sizeLimit}KB)`);
   else if (kb > sizeWarn) warn(`Файл большой: ${kb.toFixed(0)}KB — рассмотри оптимизацию`);

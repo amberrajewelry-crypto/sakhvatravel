@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Sakhva AI Chat — Mockup</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f8f7f5;color:#111}
+
+/* Simulated page background */
+.page-bg{min-height:100vh;background:linear-gradient(180deg,#1A3D2E 0%,#1A3D2E 40vh,#fff 40vh);padding:40px 20px}
+.page-bg h1{color:#fff;font-size:clamp(28px,5vw,48px);text-align:center;padding-top:80px;font-weight:600}
+.page-bg p{color:rgba(255,255,255,.7);text-align:center;margin-top:12px;font-size:16px}
+
+/* ═══════════════════════════════════════
+   FAB BUTTON
+   ═══════════════════════════════════════ */
+.sakhva-chat-fab{
+  position:fixed;bottom:20px;right:20px;z-index:9999;
+  width:64px;height:64px;border-radius:50%;
+  background:#1A3D2E;border:none;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 4px 12px rgba(0,0,0,.15);
+  transition:transform .2s ease,opacity .15s ease;
+}
+.sakhva-chat-fab:hover{transform:scale(1.08)}
+.sakhva-chat-fab svg{width:28px;height:28px;fill:#fff}
+
+/* Tooltip */
+.sakhva-chat-fab .fab-tip{
+  position:absolute;right:76px;top:50%;transform:translateY(-50%);
+  background:#fff;color:#333;font-size:13px;font-weight:500;
+  padding:8px 14px;border-radius:8px;white-space:nowrap;
+  box-shadow:0 2px 8px rgba(0,0,0,.1);
+  opacity:0;pointer-events:none;transition:opacity .2s ease;
+}
+.sakhva-chat-fab .fab-tip::after{
+  content:'';position:absolute;right:-6px;top:50%;transform:translateY(-50%);
+  border:6px solid transparent;border-left-color:#fff;
+}
+.sakhva-chat-fab:hover .fab-tip{opacity:1}
+
+/* Mobile pulse */
+@keyframes fabPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+@media(max-width:768px){
+  .sakhva-chat-fab{width:56px;height:56px;bottom:88px;animation:fabPulse 3s ease-in-out infinite}
+  .sakhva-chat-fab .fab-tip{display:none}
+}
+
+/* ═══════════════════════════════════════
+   CHAT WINDOW
+   ═══════════════════════════════════════ */
+.sakhva-chat{
+  position:fixed;bottom:24px;right:24px;z-index:10000;
+  width:380px;height:600px;
+  background:#fff;border-radius:20px;
+  box-shadow:0 8px 40px rgba(0,0,0,.18);
+  display:flex;flex-direction:column;
+  overflow:hidden;
+  transform:scale(0.95);opacity:0;pointer-events:none;
+  transition:transform .25s cubic-bezier(.34,1.56,.64,1),opacity .2s ease;
+}
+.sakhva-chat.open{transform:scale(1);opacity:1;pointer-events:auto}
+
+@media(max-width:768px){
+  .sakhva-chat{
+    width:100%;height:100%;bottom:0;right:0;
+    border-radius:0;
+  }
+}
+
+/* Header */
+.sc-header{
+  display:flex;align-items:center;gap:12px;
+  padding:12px 16px;background:#1A3D2E;
+  flex-shrink:0;height:64px;
+}
+.sc-avatar{
+  width:40px;height:40px;border-radius:50%;
+  background:rgba(255,255,255,.15);
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+}
+.sc-avatar svg{width:22px;height:22px;fill:#fff}
+.sc-info{flex:1}
+.sc-name{color:#fff;font-size:15px;font-weight:700;line-height:1.2}
+.sc-status{color:#86EFAC;font-size:12px;display:flex;align-items:center;gap:5px}
+.sc-status::before{content:'';width:6px;height:6px;border-radius:50%;background:#86EFAC;display:inline-block}
+.sc-close{
+  width:32px;height:32px;border-radius:50%;border:none;
+  background:rgba(255,255,255,.1);cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  transition:background .15s;flex-shrink:0;
+}
+.sc-close:hover{background:rgba(255,255,255,.2)}
+.sc-close svg{width:16px;height:16px;stroke:#fff;stroke-width:2.5;fill:none}
+
+/* Body */
+.sc-body{
+  flex:1;overflow-y:auto;padding:16px;
+  display:flex;flex-direction:column;gap:12px;
+  background:#fff;
+}
+
+/* Messages */
+.sc-msg{display:flex;gap:8px;max-width:100%;animation:msgIn .3s ease}
+@keyframes msgIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+.sc-msg.ai{align-self:flex-start}
+.sc-msg.user{align-self:flex-end;flex-direction:row-reverse}
+
+.sc-msg-avatar{
+  width:28px;height:28px;border-radius:50%;
+  background:#1A3D2E;display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;margin-top:4px;
+}
+.sc-msg-avatar svg{width:14px;height:14px;fill:#fff}
+
+.sc-bubble{
+  padding:10px 14px;font-size:14px;line-height:1.5;
+  max-width:280px;word-wrap:break-word;
+}
+.sc-msg.ai .sc-bubble{
+  background:#F3F4F6;color:#1a1a1a;
+  border-radius:16px 16px 16px 4px;
+}
+.sc-msg.user .sc-bubble{
+  background:#1A3D2E;color:#fff;
+  border-radius:16px 16px 4px 16px;
+}
+.sc-time{font-size:11px;color:#9CA3AF;margin-top:4px;padding:0 36px}
+.sc-msg.user + .sc-time{text-align:right;padding-right:4px}
+
+/* Quick replies */
+.sc-quick{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.sc-quick button{
+  background:#F3F4F6;border:1px solid #E5E7EB;
+  padding:8px 14px;border-radius:9999px;font-size:12px;
+  color:#1A3D2E;font-weight:500;cursor:pointer;
+  transition:background .15s,border-color .15s;
+}
+.sc-quick button:hover{background:#E8F5EE;border-color:#1A3D2E}
+
+/* Typing indicator */
+.sc-typing{display:flex;gap:4px;padding:10px 14px;align-items:center}
+.sc-typing span{
+  width:8px;height:8px;border-radius:50%;background:#9CA3AF;
+  animation:typingDot .6s ease infinite;
+}
+.sc-typing span:nth-child(2){animation-delay:.15s}
+.sc-typing span:nth-child(3){animation-delay:.3s}
+@keyframes typingDot{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+
+/* ═══════════════════════════════════════
+   TOUR CARDS
+   ═══════════════════════════════════════ */
+.sc-cards{display:flex;flex-direction:column;gap:10px;margin-top:8px}
+.sc-card{
+  background:#fff;border:1px solid #E5E7EB;border-radius:12px;
+  overflow:hidden;transition:box-shadow .2s;
+}
+.sc-card:hover{box-shadow:0 2px 12px rgba(0,0,0,.08)}
+.sc-card-img{
+  width:100%;height:120px;object-fit:cover;display:block;
+}
+.sc-card-body{padding:12px}
+.sc-card-title{font-size:14px;font-weight:700;color:#1a1a1a;margin-bottom:4px}
+.sc-card-meta{font-size:12px;color:#6B7280;margin-bottom:8px}
+.sc-card-price{display:flex;align-items:baseline;gap:6px;margin-bottom:10px}
+.sc-card-price strong{font-size:18px;color:#1A3D2E;font-weight:700}
+.sc-card-price span{font-size:12px;color:#9CA3AF}
+.sc-card-btns{display:flex;gap:8px}
+.sc-card-btns .btn-book{
+  flex:1;background:#1A3D2E;color:#fff;border:none;
+  padding:8px 0;border-radius:8px;font-size:13px;font-weight:600;
+  cursor:pointer;transition:background .15s;
+}
+.sc-card-btns .btn-book:hover{background:#153326}
+.sc-card-btns .btn-detail{
+  flex:1;background:#fff;color:#1A3D2E;
+  border:1px solid #E5E7EB;padding:8px 0;border-radius:8px;
+  font-size:13px;font-weight:500;cursor:pointer;
+  transition:border-color .15s;
+}
+.sc-card-btns .btn-detail:hover{border-color:#1A3D2E}
+
+/* ═══════════════════════════════════════
+   INPUT BAR
+   ═══════════════════════════════════════ */
+.sc-input-wrap{
+  display:flex;align-items:center;gap:8px;
+  padding:10px 16px;border-top:1px solid #F3F4F6;
+  background:#fff;flex-shrink:0;
+}
+.sc-input{
+  flex:1;border:none;outline:none;font-size:14px;
+  padding:8px 0;color:#111;background:transparent;
+}
+.sc-input::placeholder{color:#9CA3AF}
+.sc-send{
+  width:40px;height:40px;border-radius:50%;border:none;
+  background:#1A3D2E;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  transition:background .15s,transform .1s;flex-shrink:0;
+}
+.sc-send:hover{background:#153326}
+.sc-send:active{transform:scale(0.95)}
+.sc-send svg{width:18px;height:18px;fill:#fff}
+.sc-send.disabled{background:#D1D5DB;pointer-events:none}
+
+.sc-honesty{
+  text-align:center;font-size:10px;color:#9CA3AF;
+  padding:4px 16px 10px;background:#fff;flex-shrink:0;
+}
+
+/* Sparkle SVG icon */
+.sparkle-icon{display:inline-flex}
+</style>
+</head>
+<body>
+
+<!-- Simulated page -->
+<div class="page-bg">
+  <h1>Sakhva Travel</h1>
+  <p>Mockup AI Chat Widget</p>
+</div>
+
+<!-- ═══ FAB BUTTON ═══ -->
+<button class="sakhva-chat-fab" id="chatFab" onclick="toggleChat()">
+  <span class="fab-tip">Подобрать тур за 30 секунд</span>
+  <svg viewBox="0 0 24 24"><path d="M12 2L9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61z"/></svg>
+</button>
+
+<!-- ═══ CHAT WINDOW ═══ -->
+<div class="sakhva-chat" id="chatWindow">
+  <!-- Header -->
+  <div class="sc-header">
+    <div class="sc-avatar">
+      <svg viewBox="0 0 24 24"><path d="M12 2L9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61z"/></svg>
+    </div>
+    <div class="sc-info">
+      <div class="sc-name">Sakhva-AI</div>
+      <div class="sc-status">Онлайн · отвечает мгновенно</div>
+    </div>
+    <button class="sc-close" onclick="toggleChat()">
+      <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+
+  <!-- Body -->
+  <div class="sc-body" id="chatBody">
+
+    <!-- AI greeting -->
+    <div class="sc-msg ai">
+      <div class="sc-msg-avatar"><svg viewBox="0 0 24 24"><path d="M12 2L9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61z"/></svg></div>
+      <div class="sc-bubble">Привет! Я Sakhva-AI, помогу подобрать идеальный тур по Грузии за 30 секунд. Расскажите кратко — кто едет, сколько дней в Тбилиси и что хотите увидеть?</div>
+    </div>
+    <div class="sc-time">только что</div>
+
+    <!-- Quick replies -->
+    <div class="sc-quick">
+      <button onclick="sendQuick(this)">Пара на 4 дня — вино и виды</button>
+      <button onclick="sendQuick(this)">Семья с детьми — спокойно</button>
+      <button onclick="sendQuick(this)">Я один — что посмотреть</button>
+    </div>
+
+  </div>
+
+  <!-- Input -->
+  <div class="sc-input-wrap">
+    <input class="sc-input" id="chatInput" placeholder="Напишите что хотите..." onkeydown="if(event.key==='Enter')sendMsg()">
+    <button class="sc-send" id="chatSend" onclick="sendMsg()">
+      <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+    </button>
+  </div>
+  <div class="sc-honesty">Sakhva-AI — это умный помощник. Хотите живого Тимура? Напишите «Тимур».</div>
+</div>
+
+<script>
+const chatWindow = document.getElementById('chatWindow');
+const chatFab = document.getElementById('chatFab');
+const chatBody = document.getElementById('chatBody');
+const chatInput = document.getElementById('chatInput');
+let isOpen = false;
+
+function toggleChat() {
+  isOpen = !isOpen;
+  chatWindow.classList.toggle('open', isOpen);
+  chatFab.style.opacity = isOpen ? '0' : '1';
+  chatFab.style.pointerEvents = isOpen ? 'none' : 'auto';
+  if (isOpen) chatInput.focus();
+}
+
+function sendQuick(btn) {
+  const text = btn.textContent;
+  btn.parentElement.remove();
+  addMsg('user', text);
+  setTimeout(() => showTyping(), 300);
+  setTimeout(() => {
+    removeTyping();
+    addMsg('ai', 'Отлично, для пары на 4 дня с любовью к вину и видам у меня три варианта:');
+    setTimeout(() => showCards(), 400);
+  }, 2000);
+}
+
+function sendMsg() {
+  const text = chatInput.value.trim();
+  if (!text) return;
+  chatInput.value = '';
+  addMsg('user', text);
+
+  // Check escalation
+  if (text.toLowerCase().includes('тимур')) {
+    setTimeout(() => showTyping(), 300);
+    setTimeout(() => {
+      removeTyping();
+      addMsg('ai', 'Конечно, передаю Тимуру. Он ответит в течение 15 минут в WhatsApp. Уточните номер чтобы он связался?');
+    }, 1200);
+    return;
+  }
+
+  setTimeout(() => showTyping(), 300);
+  setTimeout(() => {
+    removeTyping();
+    addMsg('ai', 'Хороший выбор! Давайте подберу лучшие варианты под ваш запрос...');
+    setTimeout(() => showTyping(), 500);
+    setTimeout(() => {
+      removeTyping();
+      addMsg('ai', 'Вот что рекомендую:');
+      setTimeout(() => showCards(), 300);
+    }, 2500);
+  }, 1500);
+}
+
+function addMsg(type, text) {
+  const msg = document.createElement('div');
+  msg.className = 'sc-msg ' + type;
+  if (type === 'ai') {
+    msg.innerHTML = `
+      <div class="sc-msg-avatar"><svg viewBox="0 0 24 24"><path d="M12 2L9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61z"/></svg></div>
+      <div class="sc-bubble">${text}</div>`;
+  } else {
+    msg.innerHTML = `<div class="sc-bubble">${text}</div>`;
+  }
+  chatBody.appendChild(msg);
+  const time = document.createElement('div');
+  time.className = 'sc-time';
+  time.textContent = 'только что';
+  if (type === 'user') time.style.textAlign = 'right';
+  chatBody.appendChild(time);
+  chatBody.scrollTop = chatBody.scrollHeight;
+}
+
+function showTyping() {
+  const d = document.createElement('div');
+  d.className = 'sc-msg ai';
+  d.id = 'typing';
+  d.innerHTML = `
+    <div class="sc-msg-avatar"><svg viewBox="0 0 24 24"><path d="M12 2L9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61z"/></svg></div>
+    <div class="sc-bubble"><div class="sc-typing"><span></span><span></span><span></span></div></div>`;
+  chatBody.appendChild(d);
+  chatBody.scrollTop = chatBody.scrollHeight;
+}
+
+function removeTyping() {
+  const t = document.getElementById('typing');
+  if (t) t.remove();
+}
+
+function showCards() {
+  const tours = [
+    { img: '/images/kazbegi-tour-600.webp', title: 'Экскурсия Казбеги из Тбилиси', meta: '10-12 часов · группа до 7 чел', price: '175', eur: '50' },
+    { img: '/images/kakheti-tour-card.webp', title: 'Кахетия — винный тур', meta: '11 часов · дегустация 5 вин', price: '158', eur: '45' },
+    { img: '/images/night-tbilisi-card.webp', title: 'Ночной Тбилиси с ужином', meta: '4 часа · гастро-вечер', price: '94', eur: '27' }
+  ];
+  const wrap = document.createElement('div');
+  wrap.className = 'sc-cards';
+  tours.forEach(t => {
+    wrap.innerHTML += `
+      <div class="sc-card">
+        <img class="sc-card-img" src="${t.img}" alt="${t.title}" onerror="this.style.background='linear-gradient(135deg,#1A3D2E,#2d6b4f)';this.style.height='120px'">
+        <div class="sc-card-body">
+          <div class="sc-card-title">${t.title}</div>
+          <div class="sc-card-meta">${t.meta}</div>
+          <div class="sc-card-price"><strong>от ₾${t.price}</strong><span>(${t.eur}€)</span></div>
+          <div class="sc-card-btns">
+            <button class="btn-detail">Подробнее</button>
+            <button class="btn-book">Забронировать</button>
+          </div>
+        </div>
+      </div>`;
+  });
+  chatBody.appendChild(wrap);
+
+  setTimeout(() => {
+    addMsg('ai', 'Кахетия закроет вино, Казбеги — горы и панорамы, ужин у местных — гастро. Итого ~380€ на двоих. Хотите забронируем что-то прямо сейчас?');
+  }, 600);
+  chatBody.scrollTop = chatBody.scrollHeight;
+}
+</script>
+</body>
+</html>

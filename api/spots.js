@@ -40,8 +40,19 @@ export default async function handler(req) {
 
   const token = process.env.AIRTABLE_TOKEN
   if (!token) {
+    // No Airtable token — return default availability (all open)
+    const url = new URL(req.url)
+    const qDate = url.searchParams.get('date')
+    if (qDate) {
+      return new Response(JSON.stringify({ available: true, spotsLeft: DEFAULT_MAX }), { headers })
+    }
     return new Response(JSON.stringify({}), { headers })
   }
+
+  // Quick check mode: ?tour=X&date=YYYY-MM-DD
+  const url = new URL(req.url)
+  const queryTour = url.searchParams.get('tour')
+  const queryDate = url.searchParams.get('date')
 
   const airtableHeaders = {
     'Authorization': `Bearer ${token}`,
@@ -98,6 +109,44 @@ export default async function handler(req) {
       for (const [date, guestsBooked] of Object.entries(dates)) {
         spots[tourId][date] = Math.max(0, max - guestsBooked)
       }
+    }
+
+    // Quick check mode: return single tour/date availability
+    if (queryTour && queryDate) {
+      // Match tour by name (Airtable stores tour names, not IDs)
+      // Look up in booked data
+      let spotsLeft = DEFAULT_MAX
+      let found = false
+      for (const [tourId, dates] of Object.entries(spots)) {
+        if (tourId === queryTour) {
+          if (dates[queryDate] !== undefined) {
+            spotsLeft = dates[queryDate]
+            found = true
+          }
+          break
+        }
+      }
+      // Also check by tour name in bookings directly
+      if (!found && bookingsData.records) {
+        let totalBooked = 0
+        for (const r of bookingsData.records) {
+          const tn = r.fields['Тур'] || ''
+          const d = r.fields['Дата тура']
+          const g = r.fields['Кол-во человек'] || 1
+          if (d === queryDate && tn.toLowerCase().includes(queryTour.replace(/-/g, ' ').substring(0, 6))) {
+            totalBooked += g
+          }
+        }
+        if (totalBooked > 0) {
+          spotsLeft = Math.max(0, DEFAULT_MAX - totalBooked)
+        }
+      }
+      return new Response(JSON.stringify({
+        available: spotsLeft > 0,
+        spotsLeft,
+        tour: queryTour,
+        date: queryDate
+      }), { headers })
     }
 
     return new Response(JSON.stringify(spots), { headers })

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="ru">
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-	<title>Sakhva Travel — Гид в Тбилиси и Грузии</title>
-	<style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<title>Sakhva Travel — Гид в Тбилиси и Грузии</title>
+<style>
 		@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
 
 		:root {
@@ -328,8 +329,7 @@
 		.delay-3 { transition-delay: 0.4s !important; }
 		.delay-4 { transition-delay: 0.55s !important; }
 	</style>
-
-	<script type="importmap">
+<script type="importmap">
 		{
 			"imports": {
 				"three": "https://unpkg.com/three@0.183.0/build/three.webgpu.js",
@@ -340,165 +340,150 @@
 		}
 	</script>
 </head>
-
 <body>
-	<div class="progress-bar" id="progressBar"></div>
-
-	<nav class="nav-float" id="navFloat">
-		<div class="nav-logo">Sakhva Travel</div>
-		<div class="nav-links">
-			<a href="javascript:void(0)" data-nav="1">О нас</a>
-			<a href="javascript:void(0)" data-nav="2">Туры</a>
-			<a href="javascript:void(0)" data-nav="3">Отзывы</a>
-			<a href="javascript:void(0)" data-nav="5">Забронировать</a>
-		</div>
-		<button class="nav-hamburger" id="navHamburger" aria-label="Меню">
-			<span></span><span></span><span></span>
-		</button>
-	</nav>
-
-	<div class="nav-mobile-overlay" id="navMobileOverlay">
-		<a href="javascript:void(0)" data-nav-mobile="1">О нас</a>
-		<a href="javascript:void(0)" data-nav-mobile="2">Туры</a>
-		<a href="javascript:void(0)" data-nav-mobile="3">Отзывы</a>
-		<a href="javascript:void(0)" data-nav-mobile="5">Забронировать</a>
-	</div>
-
-	<!-- Vinyl record player — грузинская музыка -->
-	<div class="vinyl-player" id="vinylPlayer">
-		<div class="vinyl-turntable">
-			<div class="vinyl-arm-wrap" id="vinylArm">
-				<svg width="50" height="72" viewBox="0 0 50 72" fill="none">
-					<circle cx="42" cy="8" r="5.5" fill="rgba(175,98,12,0.75)" stroke="rgba(195,115,18,0.5)" stroke-width="1.2"/>
-					<line x1="42" y1="13.5" x2="10" y2="66" stroke="rgba(175,98,12,0.65)" stroke-width="2.2" stroke-linecap="round"/>
-					<circle cx="10" cy="67" r="3.5" fill="rgba(175,98,12,0.55)"/>
-				</svg>
-			</div>
-			<div class="vinyl-disk" id="vinylDisk">
-				<div class="vinyl-label"></div>
-				<div class="vinyl-center-dot"></div>
-			</div>
-		</div>
-		<div class="vinyl-info" id="vinylInfo">
-			<div class="vinyl-dot" id="vinylDot"></div>
-			<span class="vinyl-text" id="vinylText">Грузинская музыка</span>
-		</div>
-	</div>
-
-	<!-- Грузинская музыка -->
-	<audio id="georgianMusic" loop preload="auto">
-		<source src="music/georgian.mp3" type="audio/mpeg">
-	</audio>
-
-	<button class="settings-gear" id="settingsGear" aria-label="Settings">
-		<svg viewBox="0 0 24 24"><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z"/></svg>
-	</button>
-	<div class="settings-panel" id="settingsPanel"></div>
-
-	<div id="scroll-container">
-		<section class="section hero" id="heroSection" data-stage="0">
-			<span class="hero-tag" data-reveal data-delay="1">Тбилиси · Грузия · 2026</span>
-			<h1 data-reveal data-delay="2">Грузия с<br><em>настоящим</em> гидом</h1>
-			<p class="hero-sub" data-reveal data-delay="3">Авторские туры по Тбилиси, Казбеги и Кахетии. Гид Тимур — 7 лет в Грузии, 1000+ довольных туристов.</p>
-			<button class="wind-btn" data-reveal data-delay="3" id="windBtn">
-				<svg viewBox="0 0 24 24"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"/></svg>
+<div class="progress-bar" id="progressBar"></div>
+<nav class="nav-float" id="navFloat">
+<div class="nav-logo">Sakhva Travel</div>
+<div class="nav-links">
+<a data-nav="1" href="javascript:void(0)">О нас</a>
+<a data-nav="2" href="javascript:void(0)">Туры</a>
+<a data-nav="3" href="javascript:void(0)">Отзывы</a>
+<a data-nav="5" href="javascript:void(0)">Забронировать</a>
+</div>
+<button aria-label="Меню" class="nav-hamburger" id="navHamburger">
+<span></span><span></span><span></span>
+</button>
+</nav>
+<div class="nav-mobile-overlay" id="navMobileOverlay">
+<a data-nav-mobile="1" href="javascript:void(0)">О нас</a>
+<a data-nav-mobile="2" href="javascript:void(0)">Туры</a>
+<a data-nav-mobile="3" href="javascript:void(0)">Отзывы</a>
+<a data-nav-mobile="5" href="javascript:void(0)">Забронировать</a>
+</div>
+<!-- Vinyl record player — грузинская музыка -->
+<div class="vinyl-player" id="vinylPlayer">
+<div class="vinyl-turntable">
+<div class="vinyl-arm-wrap" id="vinylArm">
+<svg fill="none" height="72" viewbox="0 0 50 72" width="50">
+<circle cx="42" cy="8" fill="rgba(175,98,12,0.75)" r="5.5" stroke="rgba(195,115,18,0.5)" stroke-width="1.2"></circle>
+<line stroke="rgba(175,98,12,0.65)" stroke-linecap="round" stroke-width="2.2" x1="42" x2="10" y1="13.5" y2="66"></line>
+<circle cx="10" cy="67" fill="rgba(175,98,12,0.55)" r="3.5"></circle>
+</svg>
+</div>
+<div class="vinyl-disk" id="vinylDisk">
+<div class="vinyl-label"></div>
+<div class="vinyl-center-dot"></div>
+</div>
+</div>
+<div class="vinyl-info" id="vinylInfo">
+<div class="vinyl-dot" id="vinylDot"></div>
+<span class="vinyl-text" id="vinylText">Грузинская музыка</span>
+</div>
+</div>
+<!-- Грузинская музыка -->
+<audio id="georgianMusic" loop="" preload="auto">
+<source src="music/georgian.mp3" type="audio/mpeg"/>
+</audio>
+<button aria-label="Settings" class="settings-gear" id="settingsGear">
+<svg viewbox="0 0 24 24"><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z"></path></svg>
+</button>
+<div class="settings-panel" id="settingsPanel"></div>
+<div id="scroll-container">
+<section class="section hero" data-stage="0" id="heroSection">
+<span class="hero-tag" data-delay="1" data-reveal="">Тбилиси · Грузия · 2026</span>
+<h1 data-delay="2" data-reveal="">Грузия с<br/><em>настоящим</em> гидом</h1>
+<p class="hero-sub" data-delay="3" data-reveal="">Авторские туры по Тбилиси, Казбеги и Кахетии. Гид Тимур — 7 лет в Грузии, 1000+ довольных туристов.</p>
+<button class="wind-btn" data-delay="3" data-reveal="" id="windBtn">
+<svg viewbox="0 0 24 24"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"></path></svg>
 				Ощутить ветер
 			</button>
-			<div class="scroll-hint" data-reveal data-delay="4">
-				<span>Исследовать</span>
-				<div class="scroll-line"></div>
-			</div>
-		</section>
-
-		<section class="section manifesto" data-stage="1">
-			<span class="manifesto-label" data-reveal>Наш подход</span>
-			<h2 data-reveal data-delay="1">Лучший способ узнать Грузию — не с туристической группой, а с человеком, который <em>живёт</em> здесь и влюблён в каждый уголок этой страны.</h2>
-		</section>
-
-		<section class="section pillars" data-stage="2">
-			<div class="pillars-header" data-reveal><span>Три главных маршрута</span></div>
-			<div class="pillar-grid">
-				<div class="pillar-card" data-reveal data-delay="1">
-					<div class="pillar-num">01</div>
-					<h3>Казбеги</h3>
-					<p>Горные вершины Кавказа, монастырь Гергети на высоте 2170 м, военно-грузинская дорога. Вид, который меняет людей.</p>
-					<span class="pillar-price">от €45 / чел.</span>
-				</div>
-				<div class="pillar-card" data-reveal data-delay="2">
-					<div class="pillar-num">02</div>
-					<h3>Кахетия</h3>
-					<p>Родина грузинского вина. Виноградники, семейные марани, дегустация квеврового вина прямо в подвале у местных фермеров.</p>
-					<span class="pillar-price">от €45 / чел.</span>
-				</div>
-				<div class="pillar-card" data-reveal data-delay="3">
-					<div class="pillar-num">03</div>
-					<h3>Тбилиси</h3>
-					<p>Старый город, серные бани, Нарикала, живые дворики. Ночные прогулки с историями и лучшими хинкали в городе.</p>
-					<span class="pillar-price">от €35 / чел.</span>
-				</div>
-			</div>
-		</section>
-
-		<section class="section stats-section" data-stage="3">
-			<span class="stats-label" data-reveal>Цифры говорят сами</span>
-			<div class="stats-grid">
-				<div class="stat-item" data-reveal data-delay="1"><div class="stat-num">1000+</div><div class="stat-unit">Довольных туристов</div></div>
-				<div class="stat-item" data-reveal data-delay="2"><div class="stat-num">7 лет</div><div class="stat-unit">Живу в Грузии</div></div>
-				<div class="stat-item" data-reveal data-delay="3"><div class="stat-num">12</div><div class="stat-unit">Авторских маршрутов</div></div>
-				<div class="stat-item" data-reveal data-delay="4"><div class="stat-num">5★</div><div class="stat-unit">Средний рейтинг</div></div>
-			</div>
-		</section>
-
-		<section class="section quote-section" data-stage="4">
-			<blockquote data-reveal>«Тимур — лучший гид, которого мы встречали. Не просто показывает места — он рассказывает живые истории, будто сам там был тысячу лет назад.»</blockquote>
-			<span class="quote-attr" data-reveal data-delay="1">— Катя М., Москва · Казбеги, 2025</span>
-		</section>
-
-		<section class="section cta-section" data-stage="5">
-			<h2 data-reveal>Забронируй своё<br>путешествие в <em>Грузию</em></h2>
-			<p class="cta-sub" data-reveal data-delay="1">Напиши Тимуру в WhatsApp или Telegram — через 5 минут у тебя будет личный маршрут.</p>
-			<a href="https://wa.me/995511272623" class="cta-btn" data-reveal data-delay="2" target="_blank" rel="noopener">Написать Тимуру →</a>
-		</section>
-
-		<section class="section footer" data-stage="6"></section>
-	</div>
-
-	<footer class="site-footer">
-		<div class="site-footer-inner">
-			<div class="sf-brand">
-				<div class="sf-brand-name">Sakhva Travel</div>
-				<p class="sf-brand-desc">Авторские туры по Грузии с гидом Тимуром. Тбилиси, Казбеги, Кахетия и многое другое.</p>
-			</div>
-			<div class="sf-col">
-				<div class="sf-col-title">Туры</div>
-				<a href="/tour/kazbegi/">Казбеги</a>
-				<a href="/tour/kakheti/">Кахетия</a>
-				<a href="/tour/tbilisi-night/">Ночной Тбилиси</a>
-				<a href="/tour/batumi/">Батуми</a>
-			</div>
-			<div class="sf-col">
-				<div class="sf-col-title">О проекте</div>
-				<a href="/about/">О гиде Тимуре</a>
-				<a href="/blog/">Блог о Грузии</a>
-				<a href="https://sakhva-travel.com">Основной сайт</a>
-			</div>
-			<div class="sf-col">
-				<div class="sf-col-title">Связаться</div>
-				<a href="https://wa.me/995511272623">WhatsApp</a>
-				<a href="https://t.me/SakhvaGuideBot?start=site">Telegram</a>
-			</div>
-		</div>
-		<div class="sf-bottom">
-			<span class="sf-copy">© 2026 Sakhva Travel · Тимур · Тбилиси, Грузия</span>
-			<div class="sf-socials">
-				<a href="https://wa.me/995511272623">WhatsApp</a>
-				<a href="https://t.me/SakhvaGuideBot?start=site">Telegram</a>
-				<a href="/blog/">Блог</a>
-			</div>
-		</div>
-	</footer>
-
-	<script type="module">
+<div class="scroll-hint" data-delay="4" data-reveal="">
+<span>Исследовать</span>
+<div class="scroll-line"></div>
+</div>
+</section>
+<section class="section manifesto" data-stage="1">
+<span class="manifesto-label" data-reveal="">Наш подход</span>
+<h2 data-delay="1" data-reveal="">Лучший способ узнать Грузию — не с туристической группой, а с человеком, который <em>живёт</em> здесь и влюблён в каждый уголок этой страны.</h2>
+</section>
+<section class="section pillars" data-stage="2">
+<div class="pillars-header" data-reveal=""><span>Три главных маршрута</span></div>
+<div class="pillar-grid">
+<div class="pillar-card" data-delay="1" data-reveal="">
+<div class="pillar-num">01</div>
+<h3>Казбеги</h3>
+<p>Горные вершины Кавказа, монастырь Гергети на высоте 2170 м, военно-грузинская дорога. Вид, который меняет людей.</p>
+<span class="pillar-price">от €45 / чел.</span>
+</div>
+<div class="pillar-card" data-delay="2" data-reveal="">
+<div class="pillar-num">02</div>
+<h3>Кахетия</h3>
+<p>Родина грузинского вина. Виноградники, семейные марани, дегустация квеврового вина прямо в подвале у местных фермеров.</p>
+<span class="pillar-price">от €45 / чел.</span>
+</div>
+<div class="pillar-card" data-delay="3" data-reveal="">
+<div class="pillar-num">03</div>
+<h3>Тбилиси</h3>
+<p>Старый город, серные бани, Нарикала, живые дворики. Ночные прогулки с историями и лучшими хинкали в городе.</p>
+<span class="pillar-price">от €35 / чел.</span>
+</div>
+</div>
+</section>
+<section class="section stats-section" data-stage="3">
+<span class="stats-label" data-reveal="">Цифры говорят сами</span>
+<div class="stats-grid">
+<div class="stat-item" data-delay="1" data-reveal=""><div class="stat-num">1000+</div><div class="stat-unit">Довольных туристов</div></div>
+<div class="stat-item" data-delay="2" data-reveal=""><div class="stat-num">7 лет</div><div class="stat-unit">Живу в Грузии</div></div>
+<div class="stat-item" data-delay="3" data-reveal=""><div class="stat-num">12</div><div class="stat-unit">Авторских маршрутов</div></div>
+<div class="stat-item" data-delay="4" data-reveal=""><div class="stat-num">5★</div><div class="stat-unit">Средний рейтинг</div></div>
+</div>
+</section>
+<section class="section quote-section" data-stage="4">
+<blockquote data-reveal="">«Тимур — лучший гид, которого мы встречали. Не просто показывает места — он рассказывает живые истории, будто сам там был тысячу лет назад.»</blockquote>
+<span class="quote-attr" data-delay="1" data-reveal="">— Катя М., Москва · Казбеги, 2025</span>
+</section>
+<section class="section cta-section" data-stage="5">
+<h2 data-reveal="">Забронируй своё<br/>путешествие в <em>Грузию</em></h2>
+<p class="cta-sub" data-delay="1" data-reveal="">Напиши Тимуру в WhatsApp или Telegram — через 5 минут у тебя будет личный маршрут.</p>
+<a class="cta-btn" data-delay="2" data-reveal="" href="https://wa.me/995511272623" rel="noopener" target="_blank">Написать Тимуру →</a>
+</section>
+<section class="section footer" data-stage="6"></section>
+</div>
+<footer class="site-footer">
+<div class="site-footer-inner">
+<div class="sf-brand">
+<div class="sf-brand-name">Sakhva Travel</div>
+<p class="sf-brand-desc">Авторские туры по Грузии с гидом Тимуром. Тбилиси, Казбеги, Кахетия и многое другое.</p>
+</div>
+<div class="sf-col">
+<div class="sf-col-title">Туры</div>
+<a href="/ekskursiya/ekskursiya-kazbegi-iz-tbilisi/">Казбеги</a>
+<a href="/ekskursiya/ekskursiya-kakheti-iz-tbilisi/">Кахетия</a>
+<a href="/tour/tbilisi-night/">Ночной Тбилиси</a>
+<a href="/ekskursiya/tur-batumi-iz-tbilisi/">Батуми</a>
+</div>
+<div class="sf-col">
+<div class="sf-col-title">О проекте</div>
+<a href="/about/">О гиде Тимуре</a>
+<a href="/blog/">Блог о Грузии</a>
+<a href="https://sakhva-travel.com">Основной сайт</a>
+</div>
+<div class="sf-col">
+<div class="sf-col-title">Связаться</div>
+<a href="https://wa.me/995511272623">WhatsApp</a>
+<a href="https://t.me/SakhvaGuideBot?start=site">Telegram</a>
+</div>
+</div>
+<div class="sf-bottom">
+<span class="sf-copy">© 2026 Sakhva Travel · Тимур · Тбилиси, Грузия</span>
+<div class="sf-socials">
+<a href="https://wa.me/995511272623">WhatsApp</a>
+<a href="https://t.me/SakhvaGuideBot?start=site">Telegram</a>
+<a href="/blog/">Блог</a>
+</div>
+</div>
+</footer>
+<script type="module">
 		import * as THREE from 'three/webgpu';
 		import {
 			Fn, uniform, float, vec3, instancedArray, instanceIndex, uv,

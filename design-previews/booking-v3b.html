@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>V3b · Airbnb Card — Бронирование</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --ink:#0D1411; --ink2:#566159; --ink3:#9AA39C; --line:#E9EBE6;
+  --green:#0E5C3F; --green2:#15784F; --lime:#CFEF55; --mist:#F5F7F3;
+  --ease:cubic-bezier(.32,.72,0,1);
+}
+html,body{height:100%}
+body{font-family:'Plus Jakarta Sans',sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased;
+  background:radial-gradient(70% 60% at 20% 10%,rgba(52,160,110,.5),transparent 55%),
+  radial-gradient(60% 60% at 95% 100%,rgba(207,239,85,.18),transparent 55%),
+  linear-gradient(155deg,#0e5c3f,#0a2419);overflow:hidden}
+.stage{height:100dvh;display:flex;align-items:center;justify-content:center;padding:24px}
+@media(max-height:760px){body{overflow:auto}.stage{height:auto;min-height:100dvh;padding:80px 24px 40px}}
+.topbar{position:fixed;top:0;left:0;right:0;z-index:5;display:flex;align-items:center;justify-content:space-between;padding:22px 30px}
+.brand{font-weight:800;font-size:16px;letter-spacing:-.02em;color:#fff}.brand span{color:var(--lime)}
+.topbar a{padding:8px 16px;border-radius:999px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);backdrop-filter:blur(12px);color:#fff;font-size:12.5px;font-weight:700;text-decoration:none;transition:.3s var(--ease)}
+.topbar a:hover{background:rgba(255,255,255,.2)}
+
+/* card */
+.card{width:100%;max-width:430px;background:#fff;border-radius:30px;padding:24px;box-shadow:0 50px 100px -40px rgba(0,0,0,.6)}
+.thead{display:flex;align-items:center;gap:13px;margin-bottom:18px}
+.thumb{width:58px;height:58px;border-radius:17px;flex-shrink:0;position:relative;overflow:hidden;background:radial-gradient(120% 90% at 20% 0%,#1c8a5c,transparent 60%),linear-gradient(150deg,#0c4a33,#0e5c3f)}
+.thumb b{position:absolute;left:0;right:0;bottom:5px;text-align:center;color:var(--lime);font-size:9px;font-weight:700}
+.thead .ti h2{font-size:17px;font-weight:800;letter-spacing:-.02em}
+.thead .ti .m{font-size:12px;color:var(--ink2);margin-top:2px}
+.thead .pr{margin-left:auto;text-align:right}
+.thead .pr b{font-size:19px;font-weight:800;color:var(--green);letter-spacing:-.02em}
+.thead .pr s{display:block;font-size:11px;color:var(--ink3)}
+
+.r2{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px}
+.f label{display:block;font-size:11.5px;font-weight:700;margin-bottom:6px}
+.inp{width:100%;padding:11px 13px;border:1.5px solid var(--line);border-radius:12px;background:var(--mist);font-family:inherit;font-size:14px;font-weight:500;color:var(--ink);outline:none;transition:.3s var(--ease)}
+.inp::placeholder{color:var(--ink3)}
+.inp:focus{border-color:var(--green2);background:#fff;box-shadow:0 0 0 4px rgba(21,120,79,.1)}
+
+.lbl{font-size:11.5px;font-weight:700;margin-bottom:7px}
+.dates{display:flex;gap:7px;overflow-x:auto;padding-bottom:3px;margin-bottom:12px;scrollbar-width:none}
+.dates::-webkit-scrollbar{display:none}
+.date{flex:0 0 auto;width:48px;padding:8px 0;border:1.5px solid var(--line);border-radius:13px;background:var(--mist);cursor:pointer;text-align:center;transition:transform .25s var(--ease),background .25s,border-color .25s}
+.date span{display:block;font-size:9.5px;font-weight:700;text-transform:uppercase;color:var(--ink3)}
+.date b{display:block;font-size:15px;font-weight:800;margin-top:1px}
+.date.few b{color:#b06a12}
+.date:hover{transform:translateY(-2px);background:#eef6f0}
+.date.on{background:var(--green);border-color:var(--green);transform:translateY(-2px);box-shadow:0 10px 18px -8px rgba(14,92,63,.6)}
+.date.on span,.date.on b{color:#fff}
+
+.row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}
+.step{display:flex;align-items:center;justify-content:space-between;border:1.5px solid var(--line);border-radius:12px;background:var(--mist);padding:5px 7px}
+.step button{width:32px;height:32px;border:none;border-radius:9px;background:#fff;cursor:pointer;font-size:17px;color:var(--green);box-shadow:0 3px 8px -4px rgba(13,20,17,.3);transition:.2s var(--ease)}
+.step button:hover{background:var(--green);color:#fff}
+.step .val{font-size:16px;font-weight:800}
+
+.seg{display:grid;grid-template-columns:1fr 1fr 1fr;gap:7px;margin-bottom:14px}
+.opt{border:1.5px solid var(--line);border-radius:12px;padding:9px 6px;cursor:pointer;background:var(--mist);text-align:center;transition:.3s var(--ease)}
+.opt .ot{font-size:10.5px;font-weight:800}.opt .op{font-size:15px;font-weight:800;color:var(--green2);margin-top:2px}
+.opt.on{border-color:var(--green);background:#fff;box-shadow:0 12px 24px -18px rgba(14,92,63,.5)}
+
+.ptabs{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:16px}
+.ptab{border:1.5px solid var(--line);border-radius:13px;padding:10px 6px;cursor:pointer;background:var(--mist);display:flex;flex-direction:column;align-items:center;gap:6px;transition:transform .35s var(--ease),border-color .35s,background .35s}
+.ptab:hover{transform:translateY(-2px);background:#fff}
+.ptab .pi{width:32px;height:32px;border-radius:10px;background:#fff;border:1.5px solid var(--line);display:flex;align-items:center;justify-content:center}
+.ptab .pn{font-size:10.5px;font-weight:700}
+.ptab.on{border-color:var(--green);background:#fff;box-shadow:0 12px 24px -18px rgba(14,92,63,.5)}
+.ptab.on .pi{background:var(--green);border-color:var(--green)}.ptab.on .pi svg{stroke:#fff}
+
+.pay{width:100%;display:flex;align-items:center;justify-content:center;gap:10px;padding:15px;border-radius:16px;background:var(--green);color:#fff;border:none;font-family:inherit;font-size:15.5px;font-weight:800;cursor:pointer;transition:transform .4s var(--ease),background .4s}
+.pay:hover{background:var(--green2);transform:translateY(-2px)}.pay:active{transform:scale(.99)}
+.pay .pc{width:30px;height:30px;border-radius:50%;background:rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;transition:transform .4s var(--ease)}
+.pay:hover .pc{transform:translate(3px,-1px)}
+.hint{text-align:center;font-size:11.5px;color:var(--ink3);font-weight:600;margin-top:11px;display:flex;align-items:center;justify-content:center;gap:6px}
+svg{display:block}
+.card{opacity:0;transform:translateY(26px) scale(.98);filter:blur(8px);transition:opacity .9s var(--ease),transform .9s var(--ease),filter .9s var(--ease)}
+.card.in{opacity:1;transform:none;filter:none}
+[data-rv]{opacity:0;transform:translateY(12px);transition:opacity .6s var(--ease),transform .6s var(--ease)}
+.card.in [data-rv]{opacity:1;transform:none}
+</style>
+</head>
+<body>
+<div class="topbar"><span class="brand">sakhva<span>·</span>travel</span><a href="#">Связаться</a></div>
+<div class="stage">
+  <div class="card">
+    <div class="thead" data-rv>
+      <div class="thumb"><b>2170м</b></div>
+      <div class="ti"><h2>Казбеги из Тбилиси</h2><div class="m">12 часов · ★ 4.9 · с гидом Тимуром</div></div>
+      <div class="pr"><b>₾175</b><s>₾220</s></div>
+    </div>
+
+    <div class="r2" data-rv>
+      <div class="f"><label>Имя</label><input class="inp" placeholder="Ваше имя"></div>
+      <div class="f"><label>WhatsApp / TG</label><input class="inp" placeholder="+995 · @user"></div>
+    </div>
+
+    <div class="lbl" data-rv>Дата · Июль 2026</div>
+    <div class="dates" data-rv>
+      <div class="date"><span>пн</span><b>7</b></div><div class="date"><span>вт</span><b>8</b></div><div class="date"><span>ср</span><b>9</b></div>
+      <div class="date"><span>чт</span><b>10</b></div><div class="date few"><span>пт</span><b>11</b></div><div class="date on"><span>сб</span><b>12</b></div>
+      <div class="date"><span>вс</span><b>13</b></div><div class="date"><span>пн</span><b>14</b></div><div class="date"><span>вт</span><b>15</b></div><div class="date few"><span>пт</span><b>18</b></div>
+    </div>
+
+    <div class="row" data-rv>
+      <div class="f"><label>Гостей</label><div class="step"><button>−</button><span class="val">2</span><button>+</button></div></div>
+      <div class="f"><label>Email для чека</label><input class="inp" placeholder="email@…"></div>
+    </div>
+
+    <div class="lbl" data-rv>Вариант оплаты</div>
+    <div class="seg" data-rv>
+      <div class="opt on"><div class="ot">Предоплата</div><div class="op">₾35</div></div>
+      <div class="opt"><div class="ot">Полная</div><div class="op">₾350</div></div>
+      <div class="opt"><div class="ot">Другая</div><div class="op">₾—</div></div>
+    </div>
+
+    <div class="lbl" data-rv>Способ оплаты</div>
+    <div class="ptabs" data-rv>
+      <div class="ptab on"><div class="pi"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#15784f" stroke-width="1.4"><rect x="2" y="5" width="20" height="14" rx="2.5"/><path d="M2 10h20"/></svg></div><div class="pn">Visa·MC</div></div>
+      <div class="ptab"><div class="pi"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#15784f" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><path d="M9 8h4.5a2.5 2.5 0 010 5H9m0 0h5.5a2.5 2.5 0 010 5H9M12 6v2m0 8v2"/></svg></div><div class="pn">Крипто</div></div>
+      <div class="ptab"><div class="pi"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#15784f" stroke-width="1.4"><rect x="4" y="3" width="16" height="18" rx="2.5"/><path d="M9 7h6M9 11h6M12 17v.01"/></svg></div><div class="pn">СБП·QR</div></div>
+    </div>
+
+    <button class="pay">Оплатить ₾35 <span class="pc"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+    <div class="hint"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#15784f" stroke-width="1.6"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 018 0v3"/></svg> Пока ничего не спишется · отмена за 24 часа</div>
+  </div>
+</div>
+
+<script>
+function bindGroup(sel){document.querySelectorAll(sel).forEach(function(o){o.addEventListener('click',function(){o.parentNode.querySelectorAll(sel).forEach(function(x){x.classList.remove('on')});o.classList.add('on')})})}
+bindGroup('.date');bindGroup('.opt');bindGroup('.ptab');
+requestAnimationFrame(function(){setTimeout(function(){document.querySelector('.card').classList.add('in')},80)});
+</script>
+</body>
+</html>

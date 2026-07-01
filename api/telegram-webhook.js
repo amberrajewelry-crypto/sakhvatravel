@@ -1,37 +1,46 @@
 export const config = { runtime: 'edge' }
 
-// Prices updated from site schema (GEL ÷ 3.5 ≈ EUR, rounded)
+// Prices synced with site main.js TOURS + BK_TOURS (2026-05-25)
 const TOURS = {
   kazbegi: {
-    name: 'Казбеги за 1 день', nameEn: 'Kazbegi Day Trip',
-    price: '€50', gel: '₾175',
-    emoji: '🏔', duration: '10-12 часов', durationEn: '10-12 hours',
-    desc: 'Военно-Грузинская дорога, крепость Ананури, Гергетская Троица с видом на Казбек (5047 м). Трансфер + гид + билеты.',
-    descEn: 'Georgian Military Highway, Ananuri fortress, Gergeti Trinity Church with Kazbek view (5047m). Transfer + guide + tickets.',
+    name: 'Казбеги за 1 день', nameEn: 'Kazbegi in 1 day',
+    price: '$78', gel: '₾205',
+    emoji: '🏔', duration: '12-14 часов', durationEn: '12-14 hours',
+    desc: 'Военно-Грузинская дорога, крепость Ананури, Гергетская Троица с видом на Казбек (5047 м). Трансфер + гид.',
+    descEn: 'Georgian Military Highway, Ananuri fortress, Gergeti Trinity Church with Kazbek view (5047m). Transfer + guide.',
     img: 'https://sakhva-travel.com/images/kazbegi-tour.webp',
     url: 'sakhva-travel.com/tour/kazbegi', urlEn: 'sakhva-travel.com/en/tour/kazbegi'
   },
   kakheti: {
-    name: 'Кахетия и вино', nameEn: 'Kakheti Wine Tour',
-    price: '€49', gel: '₾170',
+    name: 'Сигнаги и Кахетия', nameEn: 'Signagi & Kakheti',
+    price: '$74', gel: '₾195',
     emoji: '🍷', duration: '10-12 часов', durationEn: '10-12 hours',
-    desc: 'Город любви Сигнахи, монастырь Бодбе, дегустация квеври-вина, обед у хозяйки. Группы до 6 чел.',
-    descEn: 'City of Love Sighnaghi, Bodbe monastery, qvevri wine tasting, lunch at local home.',
+    desc: 'Город любви Сигнаги, монастырь Бодбе, дегустация квеври-вина, обед у хозяйки.',
+    descEn: 'City of Love Signagi, Bodbe monastery, qvevri wine tasting, lunch at local home.',
     img: 'https://sakhva-travel.com/images/kakheti-tour.webp',
     url: 'sakhva-travel.com/tour/kakheti', urlEn: 'sakhva-travel.com/en/tour/kakheti'
   },
-  tbilisi: {
-    name: 'Старый Тбилиси', nameEn: 'Old Tbilisi Walking Tour',
-    price: '€26', gel: '₾90',
-    emoji: '🏛', duration: '3-4 часа', durationEn: '3-4 hours',
-    desc: 'Серные бани Абанотубани, крепость Нарикала, монастырь Метехи, Старый базар. Пешая прогулка с гидом.',
-    descEn: 'Sulfur baths, Narikala fortress, Metekhi church, Old Bazaar. 3-4 hour walk with guide.',
-    img: 'https://sakhva-travel.com/images/old-tbilisi-tour.webp',
-    url: 'sakhva-travel.com/tour/old-tbilisi', urlEn: 'sakhva-travel.com/en/tour/tbilisi'
+  kutaisi: {
+    name: 'Кутаиси за 1 день', nameEn: 'Kutaisi in 1 day',
+    price: '$70', gel: '₾215',
+    emoji: '🏛', duration: '12-13 часов', durationEn: '12-13 hours',
+    desc: 'Храм Баграти, каньон Окаце, пещера Прометея и водопад Кинчха. Архитектура + природа за один день.',
+    descEn: 'Bagrati Cathedral, Okatse Canyon, Prometheus Cave and Kinchkha Waterfall.',
+    img: 'https://sakhva-travel.com/images/kutaisi-tour.webp',
+    url: 'sakhva-travel.com/tour/kutaisi', urlEn: 'sakhva-travel.com/en/tour/kutaisi'
+  },
+  batumi: {
+    name: 'Батуми за 1 день', nameEn: 'Batumi in 1 day',
+    price: '$85', gel: '₾237',
+    emoji: '🌊', duration: '15 часов', durationEn: '15 hours',
+    desc: 'Батумский бульвар, Старый город, канатная дорога и набережная. Черноморская жемчужина Грузии.',
+    descEn: 'Batumi Boulevard, Old Town, cable car and seafront. Georgia\'s Black Sea pearl.',
+    img: 'https://sakhva-travel.com/images/batumi-tour.webp',
+    url: 'sakhva-travel.com/tour/batumi', urlEn: 'sakhva-travel.com/en/tour/batumi'
   },
   hidden: {
     name: 'Скрытые места Тбилиси', nameEn: 'Hidden Tbilisi',
-    price: '€27', gel: '₾94',
+    price: '$63', gel: 'от ₾165',
     emoji: '🔍', duration: '5-6 часов', durationEn: '5-6 hours',
     desc: 'Дворы-колодцы, серные бани, армянский квартал, стрит-арт, локальные кафе. Нетуристический маршрут.',
     descEn: 'Courtyards, street art, local cafes, Armenian quarter. Off the beaten path.',
@@ -40,16 +49,16 @@ const TOURS = {
   },
   night: {
     name: 'Ночной Тбилиси', nameEn: 'Night Tbilisi',
-    price: '€27', gel: '₾94',
-    emoji: '🌙', duration: '2.5-3 часа', durationEn: '2.5-3 hours',
-    desc: 'Серные бани при свечах, подсвеченный Мост Мира, ужин во дворе. Старт в 20:00.',
-    descEn: 'Candlelit sulfur baths, illuminated Bridge of Peace, dinner in a courtyard. Start at 8pm.',
+    price: '$42', gel: '₾110',
+    emoji: '🌙', duration: '2.5 часа', durationEn: '2.5 hours',
+    desc: 'Серные бани в темноте, атмосферные дворики, рестораны куда не попасть без местного. Старт в 20:00.',
+    descEn: 'Sulfur baths at night, atmospheric courtyards, restaurants only locals know. Starts at 8pm.',
     img: 'https://sakhva-travel.com/images/night-tbilisi-tour.webp',
     url: 'sakhva-travel.com/tour/night-tbilisi', urlEn: 'sakhva-travel.com/en/tour/night-tbilisi'
   },
   mtskheta: {
-    name: 'Мцхета + Джвари', nameEn: 'Mtskheta + Jvari',
-    price: '€26', gel: '₾90',
+    name: 'Мцхета из Тбилиси', nameEn: 'Mtskheta from Tbilisi',
+    price: '$29', gel: '₾77',
     emoji: '⛪', duration: '4-5 часов', durationEn: '4-5 hours',
     desc: 'Древняя столица Грузии. Собор Светицховели + монастырь Джвари — объекты ЮНЕСКО. 40 мин от Тбилиси.',
     descEn: 'Ancient capital of Georgia. Svetitskhoveli + Jvari monastery — UNESCO sites. 40 min from Tbilisi.',
@@ -57,17 +66,17 @@ const TOURS = {
     url: 'sakhva-travel.com/tour/mtskheta', urlEn: 'sakhva-travel.com/en/tour/mtskheta'
   },
   photo: {
-    name: 'Тур + фотосессия', nameEn: 'Tour + Photoshoot',
-    price: '€56', gel: '₾196',
-    emoji: '📸', duration: '3-4 часа', durationEn: '3-4 hours',
-    desc: 'Экскурсия + профессиональный фотограф. 30-50 обработанных фото на лучших локациях. Популярно у пар.',
-    descEn: 'Tour + professional photographer. 30-50 edited photos at best locations.',
+    name: 'Тур + фотосессия', nameEn: 'Tour + Photo Session',
+    price: '$103', gel: '₾270',
+    emoji: '📸', duration: '4 часа', durationEn: '4 hours',
+    desc: 'Тур по лучшим локациям + профессиональный фотограф. 30-50 обработанных фото. Популярно у пар.',
+    descEn: 'Tour of best spots + professional photographer. 30-50 edited photos.',
     img: 'https://sakhva-travel.com/images/photo-tour.webp',
     url: 'sakhva-travel.com/tour/photo', urlEn: 'sakhva-travel.com/en/tour/photo'
   },
   emigrant: {
-    name: 'Тур для релокантов', nameEn: 'Expat Orientation Tour',
-    price: '€39', gel: '₾135',
+    name: 'Тур для релокантов', nameEn: 'Expat Tour Tbilisi',
+    price: '$47', gel: '₾123',
     emoji: '🧳', duration: '4-5 часов', durationEn: '4-5 hours',
     desc: 'Банки, SIM-карты, рынки, районы для аренды, тайные бары. Практический Тбилиси для переехавших.',
     descEn: 'Banks, SIM cards, markets, neighborhoods for rent. Practical Tbilisi for expats.',
@@ -75,17 +84,17 @@ const TOURS = {
     url: 'sakhva-travel.com/tour/emigrant', urlEn: 'sakhva-travel.com/en/tour/emigrant'
   },
   dinner: {
-    name: 'Тур + ужин у местных', nameEn: 'Tour + Local Dinner',
-    price: '€61', gel: '₾213',
-    emoji: '🍽', duration: '6-7 часов', durationEn: '6-7 hours',
-    desc: 'Экскурсия + домашний ужин у грузинской семьи: хинкали, квеври-вино, живое общение.',
-    descEn: 'Tour + homemade dinner with a Georgian family: khinkali, qvevri wine.',
+    name: 'Тур + ужин у местных', nameEn: 'Tour + Dinner with Locals',
+    price: '$95', gel: '₾250',
+    emoji: '🍽', duration: '4-5 часов', durationEn: '4-5 hours',
+    desc: 'Прогулка по Старому Тбилиси + домашний ужин у грузинской семьи: хинкали, квеври-вино, живые истории.',
+    descEn: 'Walk through Old Tbilisi + home dinner with a Georgian family: khinkali, qvevri wine.',
     img: 'https://sakhva-travel.com/images/dinner-tour.webp',
     url: 'sakhva-travel.com/tour/dinner', urlEn: 'sakhva-travel.com/en/tour/dinner'
   },
   soviet: {
     name: 'Тбилиси обзорная', nameEn: 'Tbilisi Overview',
-    price: '€39', gel: '₾135',
+    price: '$51', gel: '₾135',
     emoji: '🏙️', duration: '4-5 часов', durationEn: '4-5 hours',
     desc: 'Мост Дружбы, серные бани, Метехи, Самеба, Мтацминда. Весь Тбилиси за один день.',
     descEn: 'Bridge of Peace, sulfur baths, Metekhi, Sameba, Mtatsminda. Full Tbilisi in one day.',
@@ -93,8 +102,8 @@ const TOURS = {
     url: 'sakhva-travel.com/tour/soviet', urlEn: 'sakhva-travel.com/en/tour/soviet'
   },
   borjomi: {
-    name: 'Боржоми и Рабати', nameEn: 'Borjomi & Rabati',
-    price: '€51', gel: '₾178',
+    name: 'Боржоми', nameEn: 'Borjomi & Rabati',
+    price: '$68', gel: '₾178',
     emoji: '🏔️', duration: '10-12 часов', durationEn: '10-12 hours',
     desc: 'Минеральные источники Боржоми, парк, канатная дорога и крепость Рабати в Ахалцихе.',
     descEn: 'Borjomi mineral springs, park, cable car and Rabati Fortress in Akhaltsikhe.',
@@ -102,26 +111,52 @@ const TOURS = {
     url: 'sakhva-travel.com/tour/borjomi', urlEn: 'sakhva-travel.com/en/tour/borjomi'
   },
   nomad: {
-    name: 'Digital Nomad Tour', nameEn: 'Digital Nomad Tour',
-    price: '€35', gel: '₾123',
+    name: 'Digital Nomad Tour', nameEn: 'Digital Nomad Welcome Tour',
+    price: '$55', gel: '₾145',
     emoji: '💻', duration: '3 часа', durationEn: '3 hours',
     desc: 'Лучшие коворкинги, кафе с Wi-Fi, районы для удалённой работы. На русском и английском.',
     descEn: 'Best coworkings, cafes with Wi-Fi, neighborhoods for remote work.',
-    img: 'https://sakhva-travel.com/images/digital-nomad-tour.webp',
+    img: 'https://sakhva-travel.com/images/digital-nomad-tbilisi.jpg',
     url: 'sakhva-travel.com/tour/digital-nomad', urlEn: 'sakhva-travel.com/en/tour/digital-nomad'
   },
   slow: {
     name: 'Slow Travel — 3 дня', nameEn: 'Slow Travel — 3 Days',
-    price: '€170', gel: '₾595',
+    price: '$266', gel: '₾700',
     emoji: '🌿', duration: '3 дня', durationEn: '3 days',
-    desc: 'Каждый день новый маршрут: Тбилиси + Кахетия + Мцхета. Трансфер из аэропорта включён. Полное погружение.',
-    descEn: 'Different route each day: Tbilisi + Kakheti + Mtskheta. Airport transfer included.',
+    desc: 'Три дня с Тимуром — три маршрута. Тбилиси + Казбеги + Кахетия. Трансфер из аэропорта включён.',
+    descEn: 'Three days with Timur — three routes. Tbilisi + Kazbegi + Kakheti. Airport transfer included.',
     img: 'https://sakhva-travel.com/images/slow-travel-tour.webp',
     url: 'sakhva-travel.com/tour/slow-travel', urlEn: 'sakhva-travel.com/en/tour/slow-travel'
+  },
+  gori: {
+    name: 'Гори и Уплисцихе', nameEn: 'Gori & Uplistsikhe',
+    price: '$59', gel: '₾155',
+    emoji: '🏰', duration: '8-9 часов', durationEn: '8-9 hours',
+    desc: 'Пещерный город Уплисцихе, музей Сталина в Гори, крепость Горисцихе. История Грузии за один день.',
+    descEn: 'Cave city Uplistsikhe, Stalin Museum in Gori, Goristsikhe fortress. Georgian history in one day.',
+    img: 'https://sakhva-travel.com/images/gori-tour.webp',
+    url: 'sakhva-travel.com/tour/gori', urlEn: 'sakhva-travel.com/en/tour/gori'
   }
 }
 
-const TIMUR_PHOTO = 'https://sakhva-travel.com/images/timur-guide.jpg'
+const GUIDE_PHOTO = 'https://sakhva-travel.com/images/timur-guide.jpg'
+
+// --- Language memory (#2 — persistent via callback_data prefix, in-memory for speed) ---
+const LANG_CACHE = new Map()
+function setLang(chatId, lang) { LANG_CACHE.set(chatId, lang) }
+function getLang(chatId) { return LANG_CACHE.get(chatId) || null }
+
+// --- Tour categories for grid ---
+const TOUR_CATS = {
+  city: { ru: '🏙 По Тбилиси', en: '🏙 Tbilisi' },
+  daytrip: { ru: '🚗 Выездные', en: '🚗 Day trips' },
+  premium: { ru: '💎 Премиум', en: '💎 Premium' }
+}
+const TOUR_CAT_MAP = {
+  hidden: 'city', night: 'city', soviet: 'city', mtskheta: 'city', emigrant: 'city', nomad: 'city',
+  kazbegi: 'daytrip', kakheti: 'daytrip', kutaisi: 'daytrip', batumi: 'daytrip', borjomi: 'daytrip', gori: 'daytrip',
+  dinner: 'premium', photo: 'premium', slow: 'premium'
+}
 const IMG = 'https://sakhva-travel.com/images'
 
 const GALLERY = {
@@ -133,7 +168,10 @@ const GALLERY = {
   photo: [`${IMG}/og-photo-tour.jpg`],
   dinner: [`${IMG}/og-dinner.jpg`],
   soviet: [`${IMG}/og-soviet.jpg`],
-  slow: [`${IMG}/og-slow-travel.jpg`]
+  slow: [`${IMG}/og-slow-travel.jpg`],
+  kutaisi: [`${IMG}/kutaisi-tour-600.webp`],
+  batumi: [`${IMG}/batumi-tour-600.webp`],
+  gori: [`${IMG}/gori-tour-600.webp`]
 }
 
 const MONTHS_RU = {
@@ -178,7 +216,7 @@ function replyKb(lang) {
   }
 }
 
-// --- Inline tour grid ---
+// --- Inline tour grid (flat) ---
 function tourGrid(lang) {
   const p = lang + '.'
   const rows = []
@@ -195,6 +233,150 @@ function tourGrid(lang) {
     rows.push(row)
   }
   return { inline_keyboard: rows }
+}
+
+// --- Categorized tour grid (#9) ---
+function tourGridCat(lang, cat) {
+  const p = lang + '.'
+  const en = lang === 'e'
+  const rows = []
+
+  // Category filter buttons
+  const catRow = Object.entries(TOUR_CATS).map(([k, v]) => ({
+    text: (k === cat ? '• ' : '') + (en ? v.en : v.ru),
+    callback_data: `${p}cat:${k}`
+  }))
+  rows.push(catRow)
+
+  // Filtered tours
+  const filtered = Object.entries(TOURS).filter(([key]) => TOUR_CAT_MAP[key] === cat)
+  for (let i = 0; i < filtered.length; i += 2) {
+    const row = []
+    for (let j = i; j < Math.min(i + 2, filtered.length); j++) {
+      const [key, t] = filtered[j]
+      const label = en
+        ? `${t.emoji} ${t.nameEn.slice(0, 14)} — ${t.price}`
+        : `${t.emoji} ${t.name.slice(0, 14)} — ${t.gel}`
+      row.push({ text: label, callback_data: `${p}tour:${key}` })
+    }
+    rows.push(row)
+  }
+  return { inline_keyboard: rows }
+}
+
+// --- #4: Check Airtable for booked dates ---
+async function getBookedDates(tourName) {
+  const token = process.env.AIRTABLE_TOKEN
+  const baseId = process.env.AIRTABLE_BASE_ID || 'appvP72OjZeVJ0XWh'
+  if (!token) return []
+  try {
+    const formula = encodeURIComponent(`AND({Тур}='${tourName}', {Статус}!='отменена')`)
+    const res = await fetch(
+      `https://api.airtable.com/v0/${baseId}/tbl0rlhK4KyAMk8UB?filterByFormula=${formula}&fields[]=Дата тура`,
+      { headers: { 'Authorization': `Bearer ${token}` } }
+    )
+    const data = await res.json()
+    if (!data.records) return []
+    return data.records
+      .map(r => r.fields['Дата тура'])
+      .filter(Boolean)
+  } catch { return [] }
+}
+
+// --- #4 history: find returning user by chat_id ---
+async function findUserByChatId(chatId) {
+  const token = process.env.AIRTABLE_TOKEN
+  const baseId = process.env.AIRTABLE_BASE_ID || 'appvP72OjZeVJ0XWh'
+  if (!token) return null
+  try {
+    const formula = encodeURIComponent(`FIND('${chatId}', {Telegram ID})`)
+    const res = await fetch(
+      `https://api.airtable.com/v0/${baseId}/tblI8B0GUqQtGatWp?filterByFormula=${formula}&fields[]=Имя&fields[]=Маршрут&fields[]=Telegram ID&maxRecords=1`,
+      { headers: { 'Authorization': `Bearer ${token}` } }
+    )
+    const data = await res.json()
+    if (!data.records || !data.records.length) return null
+    return {
+      name: data.records[0].fields['Имя'],
+      tour: data.records[0].fields['Маршрут'],
+      recordId: data.records[0].id
+    }
+  } catch { return null }
+}
+
+// --- #3 reminder: get upcoming bookings for chat_id ---
+async function getUpcomingBookings(chatId) {
+  const token = process.env.AIRTABLE_TOKEN
+  const baseId = process.env.AIRTABLE_BASE_ID || 'appvP72OjZeVJ0XWh'
+  if (!token) return []
+  try {
+    const today = new Date().toISOString().split('T')[0]
+    const formula = encodeURIComponent(`AND(FIND('${chatId}', {Заметки}), {Дата тура}>='${today}', {Статус}!='отменена')`)
+    const res = await fetch(
+      `https://api.airtable.com/v0/${baseId}/tbl0rlhK4KyAMk8UB?filterByFormula=${formula}&fields[]=Тур&fields[]=Дата тура&fields[]=Статус&sort[0][field]=Дата тура&sort[0][direction]=asc&maxRecords=3`,
+      { headers: { 'Authorization': `Bearer ${token}` } }
+    )
+    const data = await res.json()
+    if (!data.records) return []
+    return data.records.map(r => ({
+      tour: r.fields['Тур'],
+      date: r.fields['Дата тура'],
+      status: r.fields['Статус']
+    }))
+  } catch { return [] }
+}
+
+// --- #6: PostHog server-side event ---
+async function trackEvent(event, properties) {
+  const key = process.env.POSTHOG_API_KEY
+  if (!key) return
+  fetch('https://us.i.posthog.com/capture/', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      api_key: key,
+      event,
+      properties: { ...properties, $lib: 'telegram-bot' },
+      distinct_id: properties.chat_id ? `tg_${properties.chat_id}` : 'bot'
+    })
+  }).catch(() => {})
+}
+
+// --- #1: AI fallback via OpenAI ---
+async function aiReply(question, lang) {
+  const key = process.env.OPENAI_API_KEY
+  if (!key) return null
+  const tourList = Object.entries(TOURS)
+    .map(([k, t]) => `${t.emoji} ${t.name} — ${t.gel}`)
+    .join(', ')
+
+  try {
+    const controller = new AbortController()
+    const timeout = setTimeout(() => controller.abort(), 8000)
+
+    const res = await fetch('https://api.openai.com/v1/chat/completions', {
+      method: 'POST',
+      headers: { 'Authorization': `Bearer ${key}`, 'Content-Type': 'application/json' },
+      signal: controller.signal,
+      body: JSON.stringify({
+        model: 'gpt-4o-mini',
+        max_tokens: 150,
+        temperature: 0.7,
+        messages: [
+          {
+            role: 'system',
+            content: `Бот Sakhva Travel. Гид: Тимур, Тбилиси, Грузия. Отвечай на русском. Макс 3 предложения. Без HTML тегов. Туры: ${tourList}. WhatsApp: +995511272623. 4.9★ Google Maps. Не придумывай данные.`
+          },
+          { role: 'user', content: question }
+        ]
+      })
+    })
+    clearTimeout(timeout)
+    const data = await res.json()
+    return data.choices?.[0]?.message?.content || null
+  } catch {
+    return null
+  }
 }
 
 // --- Telegram API helper ---
@@ -231,7 +413,8 @@ async function saveToAirtable(data) {
             'Дата': data.date || null,
             'Кол-во': parseInt(data.guests) || 1,
             'Статус': 'новый',
-            'Дата первого контакта': today
+            'Дата первого контакта': today,
+            'Telegram ID': String(data.chatId || '')
           }
         })
       }
@@ -253,7 +436,7 @@ async function saveToAirtable(data) {
             'Дата тура': data.date || null,
             'Кол-во человек': parseInt(data.guests) || 1,
             'Статус': 'новая',
-            'Заметки': `Telegram @${data.username || '—'}`,
+            'Заметки': `Telegram @${data.username || '—'} | chat:${data.chatId || '—'}`,
             'Клиент': [{ id: client.id }]
           }
         })
@@ -321,7 +504,10 @@ function findTourByKeyword(text) {
     soviet: ['обзорн', 'overview', 'по городу', 'city tour', 'весь тбилиси', 'full tbilisi'],
     borjomi: ['боржом', 'borjomi', 'рабати', 'rabati', 'ахалцихе', 'akhaltsikhe', 'минеральн'],
     nomad: ['nomad', 'номад', 'коворкинг', 'digital', 'фриланс'],
-    slow: ['slow', '3 дня', 'три дня', 'несколько дней']
+    slow: ['slow', '3 дня', 'три дня', 'несколько дней', 'пакет'],
+    kutaisi: ['кутаис', 'kutaisi', 'окаце', 'прометей', 'кинчха', 'баграт'],
+    batumi: ['батум', 'batumi', 'море', 'пляж', 'beach', 'sea', 'черноморск'],
+    gori: ['гори', 'gori', 'уплисцихе', 'uplistsikhe', 'сталин', 'пещерный город']
   }
   for (const [key, words] of Object.entries(map)) {
     for (const w of words) {
@@ -347,7 +533,7 @@ function matchConversation(lower, name, lang) {
     return {
       text: en
         ? `Hello${g}! 👋 I'm Timur's assistant in Tbilisi.\n\nPick a tour or ask me anything!`
-        : `Привет${g}! 👋 Я помощник гида Тимура в Тбилиси.\n\nВыберите тур из меню или задайте любой вопрос!`
+        : `Привет${g}! 👋 Я помощник гида Тимур в Тбилиси.\n\nВыберите тур из меню или задайте любой вопрос!`
     }
   }
   if (/спасибо|благодар|thanks|thank you/.test(lower)) {
@@ -425,13 +611,7 @@ function matchConversation(lower, name, lang) {
       }
     }
   }
-  if (/батум|batumi|море|пляж|beach|sea/.test(lower)) {
-    return {
-      text: en
-        ? '🏖 <b>Batumi:</b>\n\n5-6h by car or 30 min flight.\nTransfer Tbilisi → Batumi — from €120.\n\nI can arrange a tour!'
-        : '🏖 <b>Батуми:</b>\n\n5-6 часов на авто или 30 мин самолёт.\nТрансфер Тбилиси → Батуми — от €120.\n\nМогу организовать тур, пишите!'
-    }
-  }
+  // batumi now handled by tour keyword search
   if (/виз|visa|документ|паспорт|границ|passport/.test(lower)) {
     return {
       text: en
@@ -459,6 +639,17 @@ function matchConversation(lower, name, lang) {
         ? '⏱ <b>Duration:</b>\n\n🏛 Walking — 3-4h\n⛪ Mtskheta — 4-5h\n🏔 Kazbegi — 10-12h\n🍷 Kakheti — 10-12h\n🌿 Slow — 3 days\n\nStart 9-10am. Flexible!'
         : '⏱ <b>Длительность:</b>\n\n🏛 Пешие — 3-4 ч\n⛪ Мцхета — 4-5 ч\n🏔 Казбеги — 10-12 ч\n🍷 Кахетия — 10-12 ч\n🌿 Slow — 3 дня\n\nСтарт 9:00-10:00. Гибко!'
     }
+  }
+  // #8 — price questions
+  if (/сколько стоит|цена|прайс|price|cost|how much|расценк|тариф/.test(lower)) {
+    let p = en ? '💰 <b>Tour prices</b> (per person):\n\n' : '💰 <b>Цены на туры</b> (за человека):\n\n'
+    for (const [, t] of Object.entries(TOURS)) {
+      p += `${t.emoji} ${tourName(t, lang)} — ${en ? 'from ' : 'от '}${tourPrice(t, lang)}\n`
+    }
+    p += en
+      ? '\n✅ Transfer + guide + tickets included\n✅ Pay on tour day'
+      : '\n✅ Трансфер + гид + входные включены\n✅ Оплата в день тура'
+    return { text: p }
   }
   if (/релокац|переезд|жить в грузии|переехать|relocat|expat|moving/.test(lower)) {
     return {
@@ -498,69 +689,52 @@ export default async function handler(req) {
 
     await tg(BOT, 'answerCallbackQuery', { callback_query_id: cb.id })
 
-    // --- Language selection ---
+    // --- Language selection (legacy callback, redirect to RU) ---
     if (d === 'lang:r' || d === 'lang:e') {
-      const lang = d.split(':')[1]
-      const en = lang === 'e'
+      setLang(cid, 'r')
 
       await tg(BOT, 'sendMessage', {
         chat_id: cid,
-        text: en
-          ? [
-              `Hello${nm ? ', ' + nm : ''}! 👋`,
-              '',
-              "I'm <b>Timur</b>, your private guide in Tbilisi, Georgia.",
-              '',
-              '🗺 12 unique tours',
-              '💰 from €26/person, all included',
-              '🚗 Comfortable car with AC',
-              '📅 Book in 2 minutes',
-              '',
-              'Choose a tour below 👇'
-            ].join('\n')
-          : [
-              `Гамарджоба${nm ? ', ' + nm : ''}! 👋`,
-              '',
-              'Меня зовут <b>Тимур</b>, я частный гид в Тбилиси.',
-              '',
-              'Покажу настоящую Грузию — не туристические маршруты,',
-              'а места, куда ходят сами грузины.',
-              '',
-              '🗺 12 авторских туров',
-              '💰 от ₾90/чел, всё включено',
-              '🚗 Комфортный авто с кондиционером',
-              '📅 Бронь за 2 минуты',
-              '',
-              'Выберите тур или задайте вопрос — помогу! 👇'
-            ].join('\n'),
+        text: [
+          `Гамарджоба${nm ? ', ' + nm : ''}! 👋`,
+          '',
+          'Меня зовут <b>Тимур</b>, я частный гид в Тбилиси.',
+          '',
+          '🗺 15 авторских туров',
+          '💰 от ₾77/чел, всё включено',
+          '🚗 Комфортный авто с кондиционером',
+          '📅 Бронь за 2 минуты',
+          '',
+          'Выберите тур или задайте вопрос — помогу! 👇'
+        ].join('\n'),
         parse_mode: 'HTML',
-        reply_markup: replyKb(lang)
+        reply_markup: replyKb('r')
       })
 
       await tg(BOT, 'sendMessage', {
         chat_id: cid,
-        text: en ? '🗺 <b>Tour catalog:</b>' : '🗺 <b>Каталог туров:</b>',
+        text: '🗺 <b>Каталог туров:</b>',
         parse_mode: 'HTML',
-        reply_markup: tourGrid(lang)
+        reply_markup: tourGridCat('r', 'daytrip')
       })
       return new Response('OK')
     }
 
-    // Parse lang prefix from callback: "r.tour:kazbegi" or "e.tour:kazbegi"
-    // Also support legacy "tour:kazbegi" (default to Russian)
-    let lang = 'r'
+    // Parse action from callback: "r.tour:kazbegi" or "tour:kazbegi"
+    // Always Russian now
+    const lang = 'r'
     let action = d
     if (d.length > 2 && d[1] === '.') {
-      lang = d[0]
       action = d.slice(2)
     }
-    const en = lang === 'e'
+    const en = false
 
     // --- Tour card ---
     if (action.startsWith('tour:')) {
       const key = action.split(':')[1]
       const t = TOURS[key]
       if (!t) return new Response('OK')
+      trackEvent('bot_tour_view', { chat_id: cid, tour: key })
 
       const caption = [
         `${t.emoji} <b>${tourName(t, lang)}</b>`,
@@ -606,6 +780,7 @@ export default async function handler(req) {
       const key = action.split(':')[1]
       const t = TOURS[key]
       const tn = t ? tourName(t, lang) : (en ? 'tour' : 'тур')
+      trackEvent('bot_booking_start', { chat_id: cid, tour: key, tour_name: tn })
 
       await tg(BOT, 'sendMessage', {
         chat_id: cid,
@@ -675,7 +850,7 @@ export default async function handler(req) {
     if (action === 'about') {
       await tg(BOT, 'sendPhoto', {
         chat_id: cid,
-        photo: TIMUR_PHOTO,
+        photo: GUIDE_PHOTO,
         caption: en
           ? [
               'ℹ️ <b>Timur — your guide in Tbilisi</b>',
@@ -743,6 +918,17 @@ export default async function handler(req) {
             [{ text: en ? '⬅️ All tours' : '⬅️ Все туры', callback_data: `${lang}.menu` }]
           ]
         }
+      })
+      return new Response('OK')
+    }
+
+    // --- Category filter (#9) ---
+    if (action.startsWith('cat:')) {
+      const cat = action.split(':')[1]
+      await tg(BOT, 'editMessageReplyMarkup', {
+        chat_id: cid,
+        message_id: cb.message.message_id,
+        reply_markup: tourGridCat(lang, cat)
       })
       return new Response('OK')
     }
@@ -843,31 +1029,106 @@ export default async function handler(req) {
 
   // ========== MESSAGE ==========
   if (upd.message) {
+   try {
     const msg = upd.message
     const cid = msg.chat.id
     const txt = (msg.text || '').trim()
     const fname = msg.from?.first_name || ''
+
+
     const uname = msg.from?.username || ''
 
-    // --- /start → language picker ---
-    if (txt === '/start' || txt.startsWith('/start ')) {
+    // --- /start → Russian greeting with history check ---
+    if (txt === '/start' || txt.startsWith('/start ') || txt.toLowerCase() === 'старт' || txt.toLowerCase() === 'start') {
+      trackEvent('bot_start', { chat_id: cid, username: uname, first_name: fname })
+      setLang(cid, 'r')
+      // #10 — deep link tracking
+      const refMatch = txt.match(/\/start\s+(.+)/)
+      const refSource = refMatch ? refMatch[1] : null
+
+      // #4 — check if returning user
+      const [existingUser, upcoming] = await Promise.all([
+        findUserByChatId(cid),
+        getUpcomingBookings(cid)
+      ])
+
+      if (existingUser) {
+        // Returning user — personalized greeting
+        let welcomeBack = [
+          `С возвращением, <b>${existingUser.name || fname}</b>! 👋`,
+          ''
+        ]
+        if (upcoming.length > 0) {
+          welcomeBack.push('📋 <b>Ваши предстоящие туры:</b>')
+          for (const b of upcoming) {
+            welcomeBack.push(`• ${b.tour} — ${b.date}`)
+          }
+          welcomeBack.push('')
+        }
+        welcomeBack.push('Хотите забронировать ещё один тур? 👇')
+
+        await tg(BOT, 'sendMessage', {
+          chat_id: cid,
+          text: welcomeBack.join('\n'),
+          parse_mode: 'HTML',
+          reply_markup: replyKb('r')
+        })
+      } else {
+        // New user — standard greeting
+        await tg(BOT, 'sendMessage', {
+          chat_id: cid,
+          text: [
+            `Гамарджоба${fname ? ', ' + fname : ''}! 👋`,
+            '',
+            'Меня зовут <b>Тимур</b>, я частный гид в Тбилиси.',
+            '',
+            'Покажу настоящую Грузию — не туристические маршруты,',
+            'а места, куда ходят сами грузины.',
+            '',
+            '🗺 15 авторских туров',
+            '💰 от ₾77/чел, всё включено',
+            '🚗 Комфортный авто с кондиционером',
+            '📅 Бронь за 2 минуты',
+            '',
+            'Выберите тур или задайте вопрос — помогу! 👇'
+          ].join('\n'),
+          parse_mode: 'HTML',
+          reply_markup: replyKb('r')
+        })
+      }
+
       await tg(BOT, 'sendMessage', {
         chat_id: cid,
-        text: [
-          `${fname ? fname + ', ' : ''}🇬🇪`,
-          '',
-          '🇷🇺 Выберите язык',
-          '🇬🇧 Choose your language'
-        ].join('\n'),
-        reply_markup: {
-          inline_keyboard: [
-            [
-              { text: '🇷🇺 Русский', callback_data: 'lang:r' },
-              { text: '🇬🇧 English', callback_data: 'lang:e' }
-            ]
-          ]
-        }
+        text: '🗺 <b>Каталог туров:</b>',
+        parse_mode: 'HTML',
+        reply_markup: tourGridCat('r', 'daytrip')
       })
+
+      // Notify admin about new user
+      if (NOTIFY) {
+        await tg(BOT, 'sendMessage', {
+          chat_id: NOTIFY,
+          text: `👤 Новый пользователь в боте!\n\n${fname ? '📝 ' + fname : ''}${uname ? '\n💬 @' + uname : ''}\n🆔 ${cid}${refSource ? '\n📎 Источник: ' + refSource : ''}`,
+          parse_mode: 'HTML'
+        })
+      }
+
+      // #10 — save ref source to Airtable if available
+      if (refSource && process.env.AIRTABLE_TOKEN) {
+        const token = process.env.AIRTABLE_TOKEN
+        const baseId = process.env.AIRTABLE_BASE_ID || 'appvP72OjZeVJ0XWh'
+        fetch(`https://api.airtable.com/v0/${baseId}/tblI8B0GUqQtGatWp`, {
+          method: 'POST',
+          headers: { 'Authorization': `Bearer ${token}`, 'Content-Type': 'application/json' },
+          body: JSON.stringify({ fields: {
+            'Имя': fname || 'TG User',
+            'Источник': `Telegram Bot (${refSource})`,
+            'Телефон/WhatsApp': uname ? `@${uname}` : `tg:${cid}`,
+            'Статус': 'новый',
+            'Дата первого контакта': new Date().toISOString().split('T')[0]
+          }})
+        }).catch(() => {})
+      }
       return new Response('OK')
     }
 
@@ -885,19 +1146,15 @@ export default async function handler(req) {
       'ℹ️ About guide': 'about', '❓ FAQ': 'faq', '🔗 Share': 'share'
     }
 
-    let btnAction = ruButtons[txt]
-    let lang = 'r'
-    if (!btnAction) {
-      btnAction = enButtons[txt]
-      if (btnAction) lang = 'e'
-    }
-    const en = lang === 'e'
+    let btnAction = ruButtons[txt] || enButtons[txt] // EN buttons still work but respond in RU
+    const lang = 'r'
+    const en = false
 
     if (btnAction === 'tours') {
       await tg(BOT, 'sendMessage', {
         chat_id: cid,
-        text: en ? '🗺 <b>Tour catalog:</b>' : '🗺 <b>Каталог туров:</b>',
-        parse_mode: 'HTML', reply_markup: tourGrid(lang)
+        text: en ? '🗺 <b>Tour catalog:</b>\nChoose a category:' : '🗺 <b>Каталог туров:</b>\nВыберите категорию:',
+        parse_mode: 'HTML', reply_markup: tourGridCat(lang, 'daytrip')
       })
       return new Response('OK')
     }
@@ -926,18 +1183,20 @@ export default async function handler(req) {
     }
 
     if (btnAction === 'contacts') {
+      trackEvent('bot_contacts', { chat_id: cid, lang })
       await tg(BOT, 'sendMessage', {
         chat_id: cid,
         text: en
-          ? '📱 <b>Timur\'s contacts:</b>\n\n• WhatsApp: +995 511 272 623\n• Telegram: @SakhvaGuideBot\n• Website: sakhva-travel.com'
-          : '📱 <b>Контакты Тимура:</b>\n\n• WhatsApp: +995 511 272 623\n• Telegram: @SakhvaGuideBot\n• Сайт: sakhva-travel.com',
+          ? '📱 <b>Timur\'s contacts:</b>\n\n• WhatsApp: +995 511 272 623\n• Phone: +995 511 272 623\n• Telegram: @SakhvaGuideBot\n• Website: sakhva-travel.com'
+          : '📱 <b>Контакты Тимур:</b>\n\n• WhatsApp: +995 511 272 623\n• Телефон: +995 511 272 623\n• Telegram: @SakhvaGuideBot\n• Сайт: sakhva-travel.com',
         parse_mode: 'HTML',
         reply_markup: {
           inline_keyboard: [
             [
               { text: '📱 WhatsApp', url: 'https://wa.me/995511272623' },
-              { text: en ? '🌐 Website' : '🌐 Сайт', url: en ? 'https://sakhva-travel.com/en/' : 'https://sakhva-travel.com' }
-            ]
+              { text: '📞 +995 511 272 623', url: 'https://wa.me/995511272623?text=Позвоните+мне' }
+            ],
+            [{ text: en ? '🌐 Website' : '🌐 Сайт', url: en ? 'https://sakhva-travel.com/en/' : 'https://sakhva-travel.com' }]
           ]
         }
       })
@@ -947,7 +1206,7 @@ export default async function handler(req) {
     if (btnAction === 'about') {
       await tg(BOT, 'sendPhoto', {
         chat_id: cid,
-        photo: TIMUR_PHOTO,
+        photo: GUIDE_PHOTO,
         caption: en
           ? [
               'ℹ️ <b>Timur — your guide in Tbilisi</b>',
@@ -982,7 +1241,7 @@ export default async function handler(req) {
           inline_keyboard: [
             [{ text: en ? '⭐ Reviews' : '⭐ Отзывы', url: 'https://sakhva-travel.com/#reviews' }],
             [{ text: en ? '🗺 Choose tour' : '🗺 Выбрать тур', callback_data: `${lang}.menu` }],
-            [{ text: en ? '📱 Message Timur' : '📱 Написать Тимуру', url: 'https://wa.me/995511272623' }]
+            [{ text: en ? '📱 Message Timur' : '📱 Написать Тимур', url: 'https://wa.me/995511272623' }]
           ]
         }
       })
@@ -1021,7 +1280,7 @@ export default async function handler(req) {
               '❓ <b>Частые вопросы:</b>',
               '',
               '<b>Нужна ли предоплата?</b>',
-              'Нет. Оплата в день тура наличными, картой или крипто.',
+              'Да, 10% при бронировании. Остаток — в день тура наличными, картой или крипто.',
               '',
               '<b>Можно ли отменить?</b>',
               'Да, бесплатно за 24 часа.',
@@ -1046,7 +1305,7 @@ export default async function handler(req) {
           inline_keyboard: [
             [{ text: en ? '🗺 Choose tour' : '🗺 Выбрать тур', callback_data: `${lang}.menu` }],
             [{
-              text: en ? '📱 Ask Timur' : '📱 Спросить Тимура',
+              text: en ? '📱 Ask Timur' : '📱 Спросить Тимур',
               url: 'https://wa.me/995511272623?text=' +
                 encodeURIComponent(en ? 'Question about a tour' : 'Вопрос по туру')
             }]
@@ -1063,38 +1322,38 @@ export default async function handler(req) {
           ? [
               '🔥 <b>TOP-3 — most popular tours:</b>',
               '',
-              '1. 🏔 <b>Kazbegi Day Trip</b> — €56',
-              'Mountains, Trinity Church, Military Highway. Most impressive!',
+              '1. 🏔 <b>Kazbegi in 1 day</b> — $78',
+              'Mountains, Gergeti Trinity, Military Highway. Most impressive!',
               '',
-              '2. 🍷 <b>Kakheti Wine Tour</b> — €56',
-              'Sighnaghi, tasting, lunch at local home. For wine lovers.',
+              '2. 🍷 <b>Signagi & Kakheti</b> — $74',
+              'Signagi, wine tasting, lunch at local home. For wine lovers.',
               '',
-              '3. 🏛 <b>Old Tbilisi</b> — €47',
-              'Sulfur baths, Narikala, Metekhi. Perfect for day one.',
+              '3. 🌊 <b>Batumi in 1 day</b> — $85',
+              'Black Sea coast, Old Town, cable car. Georgia\'s seaside gem.',
               '',
-              '💡 First time in Georgia? Take Kazbegi + Old Tbilisi.'
+              '💡 First time in Georgia? Take Kazbegi + Kakheti.'
             ].join('\n')
           : [
               '🔥 <b>ТОП-3 — самые популярные туры:</b>',
               '',
               '1. 🏔 <b>Казбеги за 1 день</b> — ₾205',
-              'Горы, Троица, Военно-Грузинская дорога. Самый впечатляющий тур!',
+              'Горы, Гергетская Троица, Военно-Грузинская дорога. Самый впечатляющий!',
               '',
-              '2. 🍷 <b>Кахетия и вино</b> — ₾205',
-              'Сигнахи, дегустация, обед у хозяйки. Для ценителей вина.',
+              '2. 🍷 <b>Сигнаги и Кахетия</b> — ₾195',
+              'Сигнаги, дегустация, обед у хозяйки. Для ценителей вина.',
               '',
-              '3. 🏛 <b>Старый Тбилиси</b> — ₾165',
-              'Серные бани, Нарикала, Метехи. Идеально для первого дня.',
+              '3. 🌊 <b>Батуми за 1 день</b> — ₾237',
+              'Черноморское побережье, Старый город, канатка. Жемчужина Грузии.',
               '',
-              '💡 Первый раз в Грузии? Берите Казбеги + Старый Тбилиси.'
+              '💡 Первый раз в Грузии? Берите Казбеги + Кахетию.'
             ].join('\n'),
         parse_mode: 'HTML',
         reply_markup: {
           inline_keyboard: [
             [{ text: en ? '🏔 Kazbegi' : '🏔 Казбеги', callback_data: `${lang}.tour:kazbegi` }],
             [{ text: en ? '🍷 Kakheti' : '🍷 Кахетия', callback_data: `${lang}.tour:kakheti` }],
-            [{ text: en ? '🏛 Old Tbilisi' : '🏛 Старый Тбилиси', callback_data: `${lang}.tour:tbilisi` }],
-            [{ text: en ? '🗺 All 12 tours' : '🗺 Все 12 туров', callback_data: `${lang}.menu` }]
+            [{ text: en ? '🌊 Batumi' : '🌊 Батуми', callback_data: `${lang}.tour:batumi` }],
+            [{ text: en ? '🗺 All 15 tours' : '🗺 Все 15 туров', callback_data: `${lang}.menu` }]
           ]
         }
       })
@@ -1115,7 +1374,7 @@ export default async function handler(req) {
               '🔗 <b>Поделитесь ботом с друзьями!</b>',
               '',
               'Если вам понравился сервис — расскажите друзьям.',
-              'Им будет полезно, а Тимуру приятно 😊'
+              'Им будет полезно, а Тимур приятно 😊'
             ].join('\n'),
         parse_mode: 'HTML',
         reply_markup: {
@@ -1181,7 +1440,7 @@ export default async function handler(req) {
           '💰 <b>Цены</b> — актуальные цены в GEL и EUR',
           '📅 <b>Забронировать</b> — бронь за 2 минуты',
           '📱 <b>Контакты</b> — WhatsApp, сайт',
-          'ℹ️ <b>О гиде</b> — про Тимура',
+          'ℹ️ <b>О гиде</b> — про Тимур',
           '',
           'Или просто напишите вопрос:',
           '• «Что посмотреть за 1 день?»',
@@ -1226,17 +1485,32 @@ export default async function handler(req) {
           return new Response('OK')
         }
 
-        // Step 2: got phone → ask date
+        // Step 2: got phone → ask date (#4 — show booked dates)
         if (step.step === 'PHONE') {
           const nameM = rTxt.match(/NAME:([^\]|]+)/)
           const name = nameM ? nameM[1] : ''
           const phone = txt
 
+          // #4 — check busy dates
+          const booked = await getBookedDates(tour)
+          let busyHint = ''
+          if (booked.length > 0) {
+            const upcoming = booked
+              .filter(d => d >= new Date().toISOString().split('T')[0])
+              .sort()
+              .slice(0, 5)
+            if (upcoming.length > 0) {
+              busyHint = bEn
+                ? `\n\n⚠️ Busy dates: ${upcoming.join(', ')}`
+                : `\n\n⚠️ Занятые даты: ${upcoming.join(', ')}`
+            }
+          }
+
           await tg(BOT, 'sendMessage', {
             chat_id: cid,
             text: bEn
-              ? `📱 ${phone}\n\nWhat date? (e.g.: May 5, 15/06)\n\n<i>[STEP:DATE|TOUR:${tour}|NAME:${name}|PHONE:${phone}][LANG:${bLang}]</i>`
-              : `📱 ${phone}\n\nКакая дата? (например: 5 мая, 15.06)\n\n<i>[STEP:DATE|TOUR:${tour}|NAME:${name}|PHONE:${phone}][LANG:${bLang}]</i>`,
+              ? `📱 ${phone}\n\nWhat date? (e.g.: May 5, 15/06)${busyHint}\n\n<i>[STEP:DATE|TOUR:${tour}|NAME:${name}|PHONE:${phone}][LANG:${bLang}]</i>`
+              : `📱 ${phone}\n\nКакая дата? (например: 5 мая, 15.06)${busyHint}\n\n<i>[STEP:DATE|TOUR:${tour}|NAME:${name}|PHONE:${phone}][LANG:${bLang}]</i>`,
             parse_mode: 'HTML',
             reply_markup: {
               force_reply: true,
@@ -1278,7 +1552,8 @@ export default async function handler(req) {
           const date = dateM ? dateM[1] : ''
           const guests = txt.replace(/\D/g, '') || '1'
 
-          const booking = { name, phone, date, guests, tour, username: uname }
+          const booking = { name, phone, date, guests, tour, username: uname, chatId: cid }
+          trackEvent('bot_booking_complete', { chat_id: cid, tour, guests, date })
           const saved = await saveToAirtable(booking)
 
           await tg(BOT, 'sendMessage', {
@@ -1350,6 +1625,39 @@ export default async function handler(req) {
               parse_mode: 'HTML'
             })
           }
+
+          // #5 — follow-up: send tips message after booking
+          await tg(BOT, 'sendMessage', {
+            chat_id: cid,
+            text: bEn
+              ? [
+                  '📌 <b>Before your tour:</b>',
+                  '',
+                  '• Comfortable shoes recommended',
+                  '• Water bottle & sunscreen',
+                  '• Camera fully charged 📸',
+                  '',
+                  'Timur will confirm details via WhatsApp.',
+                  'After the tour — we\'d love your feedback! ⭐'
+                ].join('\n')
+              : [
+                  '📌 <b>Перед туром:</b>',
+                  '',
+                  '• Удобная обувь',
+                  '• Вода и солнцезащитный крем',
+                  '• Зарядите камеру 📸',
+                  '',
+                  'Тимур подтвердит детали в WhatsApp.',
+                  'После тура — будем рады вашему отзыву! ⭐'
+                ].join('\n'),
+            parse_mode: 'HTML',
+            reply_markup: {
+              inline_keyboard: [
+                [{ text: bEn ? '⭐ Leave a review' : '⭐ Оставить отзыв', callback_data: `${bLang}.review` }],
+                [{ text: bEn ? '🗺 More tours' : '🗺 Ещё туры', callback_data: `${bLang}.menu` }]
+              ]
+            }
+          })
           return new Response('OK')
         }
 
@@ -1364,7 +1672,7 @@ export default async function handler(req) {
           const booking = {
             name, phone: phone ? phone[0] : '',
             date, guests: guestsM ? guestsM[1] : '1',
-            tour: step.tour, username: uname
+            tour: step.tour, username: uname, chatId: cid
           }
           const saved = await saveToAirtable(booking)
 
@@ -1403,8 +1711,7 @@ export default async function handler(req) {
 
     // --- Smart matching ---
     const lower = txt.toLowerCase()
-    // Detect lang from text for free-form messages
-    const msgLang = detectLang(txt)
+    const msgLang = 'r' // always Russian
 
     // Tour keyword match
     const tourKey = findTourByKeyword(lower)
@@ -1446,30 +1753,58 @@ export default async function handler(req) {
       return new Response('OK')
     }
 
-    // Default — friendly + menu
+    // #1 — AI fallback instead of "didn't understand"
     const dEn = msgLang === 'e'
+    trackEvent('bot_ai_fallback', { chat_id: cid, text: txt, lang: msgLang })
+
+    const aiAnswer = await aiReply(txt, msgLang)
+    if (aiAnswer) {
+      // Strip all HTML — plain text is safest for AI-generated content
+      const cleanAnswer = aiAnswer.replace(/<[^>]*>/g, '')
+
+      await tg(BOT, 'sendMessage', {
+        chat_id: cid,
+        text: cleanAnswer,
+        reply_markup: {
+          inline_keyboard: [
+            [{ text: '🗺 Туры', callback_data: 'r.menu' }],
+            [
+              { text: '📱 WhatsApp', url: 'https://wa.me/995511272623' },
+              { text: '📞 +995 511 272 623', url: 'https://wa.me/995511272623?text=Позвоните+мне' }
+            ]
+          ]
+        }
+      })
+      return new Response('OK')
+    }
+
+    // Final fallback if AI also fails
     await tg(BOT, 'sendMessage', {
       chat_id: cid,
-      text: dEn
-        ? [
-            `${fname ? fname + ', I' : 'I'} didn't quite get that, but Timur can help!`,
-            '',
-            'Try:',
-            '• Pick a tour from the catalog 👇',
-            '• Ask about weather, prices, visa',
-            '• Message on WhatsApp directly'
-          ].join('\n')
-        : [
-            `${fname ? fname + ', я' : 'Я'} пока не понял вопрос, но Тимур точно поможет!`,
-            '',
-            'Попробуйте:',
-            '• Выбрать тур из каталога 👇',
-            '• Спросить про погоду, цены, визу',
-            '• Написать в WhatsApp напрямую'
-          ].join('\n'),
-      reply_markup: tourGrid(msgLang)
+      text: `${fname ? fname + ', ' : ''}Тимур поможет с этим вопросом!`,
+      reply_markup: {
+        inline_keyboard: [
+          [{ text: '🗺 Туры', callback_data: 'r.menu' }],
+          [
+            { text: '📱 WhatsApp', url: 'https://wa.me/995511272623' },
+            { text: '📞 +995 511 272 623', url: 'https://wa.me/995511272623?text=Позвоните+мне' }
+          ]
+        ]
+      }
     })
     return new Response('OK')
+   } catch (err) {
+    const cid = upd.message?.chat?.id
+    if (cid) {
+      const errText = `⚠️ Ошибка: ${err.message || String(err)}\n\n${(err.stack || '').split('\n').slice(0, 3).join('\n')}`
+      await fetch(`https://api.telegram.org/bot${BOT}/sendMessage`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ chat_id: cid, text: errText })
+      }).catch(() => {})
+    }
+    return new Response('OK')
+   }
   }
 
   return new Response('OK')

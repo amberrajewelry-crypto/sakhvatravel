@@ -1,0 +1,26 @@
+{
+  "_doc": "Каталог гидов Sakhva. Рендерится на /gidy-tbilisi/. Добавление гида: 1) добавить объект сюда (только РЕАЛЬНЫЕ люди, с их согласия — 152-ФЗ); 2) создать профиль /gid/<slug>/ из шаблона gid/_template/; 3) бамп ?v у guides.json в gidy-tbilisi/index.html; 4) predeploy + deploy + индекс. Фото класть в /images/, webp. status: active | upcoming.",
+  "guides": [
+    {
+      "slug": "timur",
+      "name": "Тимур",
+      "name_en": "Timur",
+      "photo": "/images/guide-timur-new.webp",
+      "photo_alt": "Тимур — частный гид в Тбилиси, основатель Sakhva Travel",
+      "role": "Основатель, частный гид",
+      "role_en": "Founder, private guide",
+      "languages": ["Русский", "English"],
+      "specialization": ["Авторские маршруты", "Горы Казбеги", "Вино Кахетии", "Старый Тбилиси"],
+      "specialization_en": ["Author routes", "Kazbegi mountains", "Kakheti wine", "Old Tbilisi"],
+      "experience_years": 3,
+      "tours_count": "500+",
+      "rating": 4.9,
+      "reviews_count": 90,
+      "short_bio": "Основатель Sakhva Travel. С 2023 года провёл больше 500 частных туров — от пеших прогулок по Старому Тбилиси до многодневных маршрутов через Сванетию и Тушетию.",
+      "short_bio_en": "Founder of Sakhva Travel. Since 2023 has led over 500 private tours — from walks around Old Tbilisi to multi-day routes through Svaneti and Tusheti.",
+      "profile_url": "/chastniy-gid-tbilisi/",
+      "profile_url_en": "/en/chastniy-gid-tbilisi/",
+      "status": "active"
+    }
+  ]
+}

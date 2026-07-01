@@ -1,0 +1,75 @@
+/* Extracted from inline <style id="dv"> — non-critical hover/spacing/animation CSS */
+/* STAGE 2: Typography fix */
+.btn-outline-hero{transition:all .3s cubic-bezier(.32,.72,0,1)!important}
+.btn-outline-hero:hover{background:rgba(255,255,255,.15)!important;border-color:#fff!important;transform:translateY(-2px)!important;box-shadow:0 6px 24px rgba(0,0,0,.2)!important}
+.btn-outline-hero:active{transform:translateY(0) scale(.98)!important}
+.sec-title{font-size:clamp(26px,3.2vw,38px)!important;line-height:1.18!important}
+.hw-title,.bc-h-title{font-size:22px!important;font-weight:700!important}
+.sec-label{font-size:13px!important;letter-spacing:.2em!important}
+@media(max-width:768px){.sec-title{font-size:clamp(22px,6vw,30px)!important}}
+/* STAGE 3: Unified spacing */
+#why,#how{padding-top:96px!important;padding-bottom:96px!important}
+#guide,#regions,#reviews,#blog{padding:96px clamp(16px,3.5vw,56px)!important}
+#faq{padding-top:96px!important;padding-bottom:96px!important}
+#gallery{padding-top:48px!important}
+#instagram{padding-top:80px!important;padding-bottom:80px!important}
+#excursions{padding-bottom:64px!important}
+@media(max-width:768px){
+#why,#how{padding-top:48px!important;padding-bottom:48px!important}
+#guide,#regions,#reviews,#blog{padding-top:48px!important;padding-bottom:48px!important}
+#faq{padding-top:48px!important;padding-bottom:48px!important}
+#instagram{padding-top:40px!important;padding-bottom:40px!important}
+}
+/* STAGE 4: Card hover */
+#hp-grid .tc{transition:transform .35s cubic-bezier(.32,.72,0,1),box-shadow .35s ease!important}
+#hp-grid .tc:hover{transform:translateY(-6px)!important;box-shadow:0 16px 48px rgba(0,0,0,.1)!important}
+#hp-grid .tc img{transition:transform .5s cubic-bezier(.32,.72,0,1)!important}
+#hp-grid .tc:hover img{transform:scale(1.04)!important}
+#rev-grid>div,.ta-card{transition:transform .3s cubic-bezier(.32,.72,0,1),box-shadow .3s ease!important}
+#rev-grid>div:hover,.ta-card:hover{transform:translateY(-4px)!important;box-shadow:0 12px 36px rgba(0,0,0,.08)!important}
+.bc-h{transition:transform .3s cubic-bezier(.32,.72,0,1),box-shadow .3s ease!important}
+.bc-h:hover{transform:translateY(-3px)!important;box-shadow:0 8px 28px rgba(0,0,0,.06)!important}
+/* STAGE 5: Section backgrounds */
+#excursions{background:#fff!important}
+#guide{background:#FAFAF8!important}
+#instagram{background:#fff!important}
+@keyframes ig-heart-up{0%{opacity:0;transform:scale(0) translate(0,0)}12%{opacity:1;transform:scale(1.15) translate(-4px,-8px)}30%{opacity:.9;transform:scale(1) translate(-10px,-25px)}60%{opacity:.6;transform:scale(.85) translate(-18px,-55px)}100%{opacity:0;transform:scale(.5) translate(-25px,-90px)}}
+.ig-heart{position:absolute;pointer-events:none;z-index:10;animation:ig-heart-up 1.6s ease-out forwards;filter:drop-shadow(0 1px 3px rgba(0,0,0,.25))}
+#why{background:#FAFAF8!important}
+#regions{background:#fff!important}
+#how{background:#FAFAF8!important}
+#how .hw{background:#fff!important;border:1px solid #E5E7EB!important;backdrop-filter:none!important}
+#how .hw-title{color:#111827!important}
+#how .hw-text{color:#4B5563!important}
+#how .hw-arrow{color:#9CA3AF!important}
+#reviews{background:#fff!important}
+#gallery{background:#FAFAF8!important}
+#blog{background:#fff!important}
+#faq{background:#FAFAF8!important}
+#faq .fa{overflow:hidden!important}
+#faq .fa-inner{color:#374151!important;font-size:15px!important;line-height:1.75!important}
+#faq .fa-inner strong{color:#111827!important}
+#faq .fq>span{color:#111827!important}
+#faq .fq-ic{color:#9CA3AF!important}
+#faq .fi.open .fq-ic{color:#F59E0B!important}
+/* STAGE 7: Animations & micro-interactions */
+.gp-item{position:relative!important}
+.gp-item::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(0,0,0,.35));opacity:0;transition:opacity .4s cubic-bezier(.32,.72,0,1);border-radius:12px;pointer-events:none}
+.gp-item:hover::after{opacity:1}
+.fq{transition:background .25s cubic-bezier(.32,.72,0,1)!important;border-radius:10px!important;padding:6px 10px!important;margin:0 -10px!important}
+.fq:hover{background:rgba(26,61,46,.04)!important}
+.fq-icon,.fq svg{transition:transform .4s cubic-bezier(.32,.72,0,1)!important}
+.fq.open .fq-icon,.fq.open>button>svg:last-child{transform:rotate(45deg)!important}
+.wa-chevron{transition:transform .4s cubic-bezier(.32,.72,0,1)!important}
+#guide img{transition:transform .7s cubic-bezier(.32,.72,0,1)!important}
+#guide img:hover{transform:scale(1.015)!important}
+#regions img{transition:transform .7s cubic-bezier(.32,.72,0,1)!important}
+#regions img:hover{transform:scale(1.03)!important}
+.hw-step{transition:transform .3s cubic-bezier(.32,.72,0,1),box-shadow .3s ease!important}
+.hw-step:hover{transform:translateY(-4px)!important;box-shadow:0 10px 30px rgba(0,0,0,.07)!important}
+#nav.scrolled::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,#F59E0B 20%,#F59E0B 80%,transparent);opacity:.45}
+.btn-primary,.btn-wa,.nav-btn,.cookie-btn,.pill,.curr-btn{transition:all .3s cubic-bezier(.32,.72,0,1)!important}
+#scroll-progress{background:linear-gradient(90deg,#F59E0B,#e8742a)!important}
+#hp-grid .tc{opacity:0;transform:translateY(24px);transition:opacity .6s cubic-bezier(.32,.72,0,1),transform .6s cubic-bezier(.32,.72,0,1),box-shadow .35s ease!important}
+#hp-grid .tc:nth-child(-n+9){opacity:1;transform:none}
+#hp-grid .tc.is-vis{opacity:1!important;transform:translateY(0)!important}

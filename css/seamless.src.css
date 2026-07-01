@@ -1834,6 +1834,7 @@ button:focus-visible {
   font-size: 17px !important;
   line-height: 1.75 !important;
   letter-spacing: 0.005em !important;
+  text-align: justify !important;
 }
 
 /* ── SECTION PADDING — more Aker-level breathing ── */
@@ -1914,7 +1915,7 @@ button:focus-visible {
   .hero-sub { font-size: 14px !important; margin-bottom: 18px !important; }
   .hero-btns { gap: 8px !important; margin-top: 16px !important; }
   .btn-primary { font-size: 14px !important; padding: 12px 24px !important; }
-  .hero-micro { font-size: 11px !important; margin-top: 10px !important; }
+  .hero-micro { font-size: 13px !important; margin-top: 10px !important; }
 }
 
 /* ══════════════════════════════════════

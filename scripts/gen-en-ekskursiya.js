@@ -57,7 +57,7 @@ const tr = {
   // Guide info
   'Тимур — Sakhva Travel': 'Timur — Sakhva Travel',
   'Тимур · Sakhva Travel · рейтинг 4.9 · 500+ туристов': 'Timur · Sakhva Travel · rating 4.9 · 500+ tourists',
-  'Тимур — частный русскоязычный гид с рейтингом 4.9. Группы до 7 человек, трансфер от отеля, оплата в день тура.': 'Timur is a private Russian-speaking guide with a 4.9 rating. Groups of up to 7 people, hotel transfer, pay on the day of the tour.',
+  'Тимур — частный русскоязычный гид с рейтингом 4.9. Группы до 7 человек, трансфер от отеля, предоплата 10%.': 'Timur is a private Russian-speaking guide with a 4.9 rating. Groups of up to 7 people, hotel transfer, pay on the day of the tour.',
   'Тбилиси, Грузия': 'Tbilisi, Georgia',
 
   // Breadcrumb

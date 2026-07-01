@@ -5,8 +5,8 @@
       "@type": "WebPage",
       "@id": "https://sakhva-travel.com/tour/old-tbilisi/#webpage",
       "url": "https://sakhva-travel.com/tour/old-tbilisi/",
-      "name": "Пешеходная экскурсия по Старому Тбилиси 2026 — от ₾165 | Sakhva Travel",
-      "description": "Авторская пешеходная экскурсия по Старому Тбилиси с частным гидом. Дворы-колодцы, серные бани, крепость Нарикала. От ₾100/чел.",
+      "name": "Пешеходная экскурсия по Старому Тбилиси 2026 — от ₾94 | Sakhva Travel",
+      "description": "Авторская пешеходная экскурсия по Старому Тбилиси с частным гидом. Дворы-колодцы, серные бани, крепость Нарикала. От ₾94/чел.",
       "inLanguage": "ru",
       "isPartOf": { "@id": "https://sakhva-travel.com/#website" },
       "primaryImageOfPage": {
@@ -61,7 +61,7 @@
       },
       "offers": {
         "@type": "Offer",
-        "price": "100",
+        "price": "94",
         "priceCurrency": "GEL",
         "availability": "https://schema.org/InStock",
         "url": "https://sakhva-travel.com/tour/old-tbilisi/",
@@ -127,7 +127,7 @@
           "name": "Сколько стоит экскурсия по Старому Тбилиси?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "От ₾100 с человека в группе до 6 человек. Мини-группа до 4 чел — от ₾157/чел. Приватная экскурсия — от ₾456 за группу. Оплата в день экскурсии."
+            "text": "От ₾94 с человека в группе до 6 человек. Мини-группа до 4 чел — от ₾148/чел. Приватная экскурсия — от ₾430 за группу. Оплата в день экскурсии."
           }
         },
         {

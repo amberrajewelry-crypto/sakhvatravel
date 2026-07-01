@@ -41,8 +41,9 @@ export default async function handler(req) {
         price_currency: 'usd',
         order_id: orderId,
         order_description: description || 'Sakhva Travel Tour',
-        success_url: `${siteUrl}/?payment=success`,
-        cancel_url: `${siteUrl}/?payment=cancel`
+        success_url: `${siteUrl}/payment-success.html?order_id=${orderId}&amount=${amount}&tour=${encodeURIComponent(description || '')}`,
+        cancel_url: `${siteUrl}/payment-fail.html?order_id=${orderId}`,
+        ipn_callback_url: `${siteUrl}/api/nowpayments-callback`
       })
     })
 

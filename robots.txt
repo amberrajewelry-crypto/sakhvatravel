@@ -4,6 +4,13 @@
 # Default: allow all
 User-agent: *
 Allow: /
+Disallow: /CLAUDE.md
+Disallow: /README.md
+Disallow: /demo/
+Disallow: /dashboard/
+Disallow: /partner/
+Disallow: /service-account.json
+Disallow: /.worktrees/
 
 # Search engines
 User-agent: Googlebot
@@ -11,6 +18,7 @@ Allow: /
 
 User-agent: YandexBot
 Allow: /
+Clean-param: gad_source&gad_campaignid&gad_adgroupid&gad_creative&gbraid&wbraid&gclid&utm_source&utm_medium&utm_campaign&utm_content&utm_term&yclid&fbclid /
 
 User-agent: Bingbot
 Allow: /
@@ -88,6 +96,6 @@ User-agent: meta-externalagent
 Disallow: /
 
 User-agent: Applebot-Extended
-Disallow: /
+Allow: /
 
-Sitemap: https://sakhva-travel.com/sitemap.xml
+Sitemap: https://sakhva-travel.com/sitemap-index.xml

@@ -5,8 +5,8 @@
       "@type": "WebPage",
       "@id": "https://sakhva-travel.com/tour/kakheti/#webpage",
       "url": "https://sakhva-travel.com/tour/kakheti/",
-      "name": "Тур в Кахетию из Тбилиси 2026 — от ₾195 | Дегустация вина",
-      "description": "Экскурсия в Кахетию из Тбилиси. Сигнаги — город любви, монастырь Бодбе, дегустация квеври-вина в семейном марани. Гид Тимур. От ₾128/чел. Трансфер включён.",
+      "name": "Тур в Кахетию из Тбилиси 2026 — от ₾170 | Дегустация вина",
+      "description": "Экскурсия в Кахетию из Тбилиси. Сигнаги — город любви, монастырь Бодбе, дегустация квеври-вина в семейном марани. Гид Тимур. От ₾170/чел. Трансфер включён.",
       "inLanguage": "ru",
       "isPartOf": { "@id": "https://sakhva-travel.com/#website" },
       "primaryImageOfPage": {
@@ -61,7 +61,7 @@
       },
       "offers": {
         "@type": "Offer",
-        "price": "128",
+        "price": "170",
         "priceCurrency": "GEL",
         "availability": "https://schema.org/InStock",
         "url": "https://sakhva-travel.com/tour/kakheti/",

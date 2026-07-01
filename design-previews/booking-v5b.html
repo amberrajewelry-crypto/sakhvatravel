@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>V5b · Bento Mono — Бронирование</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Newsreader:ital,opsz,wght@1,6..72,400&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#F7F6F3; --surface:#FFFFFF; --border:#EAEAEA; --ink:#211F1B; --ink2:#787774;
+  --soft:#F7F6F3; --accent:#346538; --accent-bg:#EDF3EC; --warn:#956400; --warn-bg:#FBF3DB; --cta:#181715;
+  --sans:-apple-system,BlinkMacSystemFont,'SF Pro Display','Helvetica Neue',sans-serif;
+  --serif:'Newsreader',Georgia,serif; --mono:'SF Mono',ui-monospace,monospace;
+  --ease:cubic-bezier(.16,1,.3,1);
+}
+html,body{height:100%}
+body{font-family:var(--sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;overflow:hidden;position:relative}
+body::after{content:'';position:fixed;inset:0;z-index:60;pointer-events:none;opacity:.03;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.stage{height:100dvh;display:flex;flex-direction:column;justify-content:center;max-width:1080px;margin:0 auto;padding:74px 24px 30px}
+@media(max-height:820px),(max-width:880px){body{overflow:auto}.stage{height:auto;min-height:100dvh}}
+.topbar{position:fixed;top:0;left:0;right:0;z-index:5;display:flex;align-items:center;justify-content:space-between;padding:20px 30px}
+.brand{font-family:var(--serif);font-size:19px;font-weight:500}.brand i{font-style:italic;color:var(--ink2)}
+.topbar a{font-size:13px;font-weight:500;color:var(--ink);text-decoration:none;border:1px solid var(--border);padding:8px 15px;border-radius:6px;background:var(--surface);transition:.2s var(--ease)}
+.topbar a:hover{background:var(--surface);box-shadow:0 2px 8px rgba(0,0,0,.04)}
+.head{margin-bottom:14px}
+.eg{display:inline-block;font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);background:var(--accent-bg);padding:4px 10px;border-radius:9999px;margin-bottom:10px}
+.head h1{font-family:var(--serif);font-size:clamp(26px,3.4vw,38px);font-weight:500;letter-spacing:-.02em;line-height:1.0}
+.head h1 i{font-style:italic;color:var(--ink2)}
+
+.bento{display:grid;grid-template-columns:repeat(12,1fr);gap:12px}
+@media(max-width:880px){.bento{grid-template-columns:1fr}}
+.tile{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px}
+.c7{grid-column:span 7}.c5{grid-column:span 5}.c4{grid-column:span 4}.c8{grid-column:span 8}.c12{grid-column:span 12}
+@media(max-width:880px){.c7,.c5,.c4,.c8,.c12{grid-column:span 1}}
+.lbl{display:block;font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--ink2);margin-bottom:12px}
+
+/* tour tile */
+.tour-tile{display:flex;flex-direction:column;justify-content:space-between}
+.tour-tile h2{font-family:var(--serif);font-size:26px;font-weight:500;letter-spacing:-.02em;line-height:1.05}
+.tour-tile .pr{display:flex;align-items:baseline;gap:10px;margin-top:8px}
+.tour-tile .pr b{font-family:var(--serif);font-size:24px;font-weight:500}
+.tour-tile .pr s{font-family:var(--mono);font-size:13px;color:var(--ink2)}
+.tour-tile .pr .save{font-size:10px;font-weight:600;text-transform:uppercase;color:var(--accent);background:var(--accent-bg);padding:3px 8px;border-radius:9999px}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px}
+.chip{font-size:11px;color:var(--ink2);border:1px solid var(--border);border-radius:9999px;padding:5px 11px}
+
+/* guide tile */
+.gtop{display:flex;align-items:center;gap:12px}
+.gav{width:42px;height:42px;border-radius:10px;background:var(--accent-bg);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-weight:500;color:var(--accent);font-size:18px}
+.gn{font-size:14px;font-weight:600}.gs{font-size:12px;color:var(--ink2);margin-top:1px}
+.gstats{display:flex;gap:8px;margin-top:14px}
+.stat{flex:1;border:1px solid var(--border);border-radius:8px;padding:11px}
+.stat b{font-family:var(--serif);font-size:20px;font-weight:500}
+.stat span{display:block;font-size:10px;color:var(--ink2);margin-top:1px}
+
+.tourbox{position:relative}
+.tourbox .ico{position:absolute;left:13px;top:50%;transform:translateY(-50%);pointer-events:none}
+.inp{width:100%;padding:11px 13px;border:1px solid var(--border);border-radius:8px;background:var(--surface);font-family:var(--sans);font-size:14px;color:var(--ink);outline:none;transition:.2s var(--ease)}
+.inp::placeholder{color:#b3b1ac}.inp:focus{border-color:var(--ink)}
+.inp.lg{padding:12px 13px 12px 40px;font-size:14.5px}
+.r2{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+.f label{display:block;font-size:10px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink2);margin-bottom:6px}
+
+.datehead{display:flex;align-items:center;justify-content:space-between;margin-bottom:7px}
+.datehead .all{font-size:10.5px;font-weight:600;color:var(--ink);cursor:pointer;background:none;border:none;font-family:var(--sans);border-bottom:1px solid var(--ink)}
+.dates{display:flex;gap:5px;overflow-x:auto;scrollbar-width:none}
+.dates::-webkit-scrollbar{display:none}
+.date{flex:0 0 auto;width:42px;padding:6px 0;border:1px solid var(--border);border-radius:8px;background:var(--surface);cursor:pointer;text-align:center;transition:.2s var(--ease)}
+.date span{display:block;font-size:8.5px;font-weight:600;text-transform:uppercase;color:var(--ink2)}
+.date b{display:block;font-family:var(--mono);font-size:12px;margin-top:1px}
+.date.few{background:var(--warn-bg);border-color:#f0e4c2}.date.few b{color:var(--warn)}
+.date:hover{background:var(--soft)}
+.date.on{background:var(--cta);border-color:var(--cta)}.date.on span,.date.on b{color:#fff}
+
+.step{display:flex;align-items:center;justify-content:space-between;border:1px solid var(--border);border-radius:8px;padding:4px 6px}
+.step button{width:28px;height:28px;border:1px solid var(--border);border-radius:6px;background:var(--soft);cursor:pointer;font-size:15px;color:var(--ink);transition:.15s var(--ease)}
+.step button:hover{background:var(--cta);color:#fff;border-color:var(--cta)}
+.step .val{font-family:var(--mono);font-size:14px}
+
+.seg{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-bottom:10px}
+.opt{border:1px solid var(--border);border-radius:8px;padding:8px 4px;cursor:pointer;background:var(--surface);text-align:center;transition:.2s var(--ease)}
+.opt .ot{font-size:9.5px;font-weight:600;text-transform:uppercase;color:var(--ink2)}
+.opt .op{font-family:var(--mono);font-size:13px;margin-top:2px}
+.opt:hover{background:var(--soft)}.opt.on{border-color:var(--cta);background:var(--soft)}.opt.on .ot{color:var(--ink)}
+.custom{margin-bottom:10px}
+
+.ptabs{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px}
+.ptab{border:1px solid var(--border);border-radius:8px;padding:8px 4px;cursor:pointer;background:var(--surface);display:flex;flex-direction:column;align-items:center;gap:5px;transition:.2s var(--ease)}
+.ptab:hover{background:var(--soft)}
+.ptab .pi{width:28px;height:28px;border-radius:7px;background:var(--soft);border:1px solid var(--border);display:flex;align-items:center;justify-content:center}
+.ptab .pn{font-size:9.5px;font-weight:600}
+.ptab.on{border-color:var(--cta)}.ptab.on .pi{background:var(--cta);border-color:var(--cta)}.ptab.on .pi svg{stroke:#fff}
+
+.due-tile{display:flex;align-items:center;gap:14px}
+.due-tile .k{font-size:10px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink2)}
+.due-tile .v{font-family:var(--serif);font-size:30px;font-weight:500;letter-spacing:-.02em;line-height:1}
+.pay{margin-left:auto;display:flex;align-items:center;gap:10px;padding:14px 16px 14px 22px;border-radius:6px;background:var(--cta);color:#fff;border:none;font-family:var(--sans);font-size:14.5px;font-weight:600;cursor:pointer;transition:.2s var(--ease)}
+.pay:hover{background:#322f2a}.pay:active{transform:scale(.99)}
+.pay .pc{width:28px;height:28px;border-radius:6px;background:rgba(255,255,255,.14);display:flex;align-items:center;justify-content:center;transition:.2s var(--ease)}
+.pay:hover .pc{transform:translateX(3px)}
+svg{display:block}
+[data-rv]{opacity:0;transform:translateY(12px);transition:opacity .6s var(--ease),transform .6s var(--ease)}
+[data-rv].in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+<div class="topbar"><span class="brand">Sakhva<i> Travel</i></span><a href="#">Связаться</a></div>
+<div class="stage">
+  <div class="head" data-rv><span class="eg">Онлайн-бронирование</span><h1>Забронируйте тур <i>за минуту.</i></h1></div>
+
+  <div class="bento">
+    <div class="tile tour-tile c7" data-rv>
+      <div>
+        <span class="lbl">Выбранный маршрут</span>
+        <h2 id="t-name">Казбеги из Тбилиси</h2>
+        <div class="pr"><b id="t-price">₾175</b><s id="t-old">₾220</s><span class="save" id="t-save">−₾90</span></div>
+      </div>
+      <div class="chips"><span class="chip">12 часов</span><span class="chip">рейтинг 4.9</span><span class="chip">до 7 гостей</span><span class="chip">отмена 24ч</span></div>
+    </div>
+    <div class="tile c5" data-rv>
+      <span class="lbl">Ваш гид</span>
+      <div class="gtop"><div class="gav">Т</div><div><div class="gn">Тимур</div><div class="gs">Частный гид · ответ за 15 мин</div></div></div>
+      <div class="gstats"><div class="stat"><b>500+</b><span>гостей</span></div><div class="stat"><b>4.9</b><span>рейтинг</span></div><div class="stat"><b>59</b><span>маршрутов</span></div></div>
+    </div>
+
+    <div class="tile c8" data-rv>
+      <span class="lbl">Детали поездки</span>
+      <div class="tourbox">
+        <span class="ico"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#787774" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg></span>
+        <input class="inp lg" id="f-tour" list="tours" placeholder="Начните вводить название тура…" autocomplete="off" value="Казбеги из Тбилиси">
+        <datalist id="tours"></datalist>
+      </div>
+      <div class="r2">
+        <div class="f"><label>Имя</label><input class="inp" placeholder="Ваше имя"></div>
+        <div class="f"><label>WhatsApp / Telegram</label><input class="inp" placeholder="+995 · @username"></div>
+      </div>
+      <div class="r2"><div class="f"><label>Гостей</label><div class="step"><button type="button" id="g-minus">−</button><span class="val" id="g-val">2</span><button type="button" id="g-plus">+</button></div></div><div class="f"><label>Email для чека</label><input class="inp" placeholder="email@example.com"></div></div>
+    </div>
+    <div class="tile c4" data-rv>
+      <div class="datehead"><span class="lbl" style="margin:0">Дата · Июль</span><button class="all" type="button">Месяц</button></div>
+      <div class="dates" id="dates"></div>
+      <label class="lbl" style="margin-top:14px">Вариант оплаты</label>
+      <div class="seg" id="seg">
+        <div class="opt on" data-t="prepay"><div class="ot">Предопл.</div><div class="op" id="op-prepay">₾35</div></div>
+        <div class="opt" data-t="full"><div class="ot">Полная</div><div class="op" id="op-full">₾350</div></div>
+        <div class="opt" data-t="custom"><div class="ot">Другая</div><div class="op">₾…</div></div>
+      </div>
+      <input class="inp custom" id="f-custom" type="number" placeholder="Сумма в GEL" style="display:none">
+    </div>
+
+    <div class="tile c12" data-rv>
+      <span class="lbl">Способ оплаты</span>
+      <div style="display:grid;grid-template-columns:2fr 1fr;gap:16px;align-items:center">
+        <div class="ptabs" id="ptabs">
+          <div class="ptab on"><div class="pi"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#211F1B" stroke-width="1.7"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></div><div class="pn">Visa·MC</div></div>
+          <div class="ptab"><div class="pi"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#211F1B" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M9 8h4.5a2.5 2.5 0 010 5H9m0 0h5.5a2.5 2.5 0 010 5H9M12 6v2m0 8v2"/></svg></div><div class="pn">Крипто</div></div>
+          <div class="ptab"><div class="pi"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#211F1B" stroke-width="1.7"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 7h6M9 11h6M12 17v.01"/></svg></div><div class="pn">СБП·QR</div></div>
+        </div>
+        <div class="due-tile"><div><div class="k">К оплате</div><div class="v" id="due">₾35</div></div><button class="pay" id="paybtn">Оплатить <span class="pc"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+var TOURS=[["Казбеги из Тбилиси",175,220],["Кахетия из Тбилиси",170,215],["Мцхета из Тбилиси",77,95],["Дегустация вина в Кахетии",225,280],["Боржоми из Тбилиси",178,225],["Гудаури из Тбилиси",225,280],["Сванетия из Тбилиси",345,430],["Давид Гареджи",225,280],["Ананури из Тбилиси",175,220],["Батуми из Тбилиси",250,315],["Ночной Тбилиси",94,120],["Старый Тбилиси",135,170],["Сигнахи из Тбилиси",175,220],["Вардзия из Тбилиси",295,370],["Гори и Уплисцихе",155,195],["Винный тур Тбилиси",165,205],["Тушетия",345,430],["Серные бани Тбилиси",135,170]];
+var pmap={},omap={},dl=document.getElementById('tours');
+TOURS.forEach(function(t){var o=document.createElement('option');o.value=t[0]+' — от ₾'+t[1];dl.appendChild(o);pmap[t[0]]=t[1];omap[t[0]]=t[2]});
+var DOW=['пн','вт','ср','чт','пт','сб','вс'],ds=document.getElementById('dates'),base=new Date(2026,6,7);
+for(var i=0;i<16;i++){var d=new Date(base.getTime()+i*86400000);var el=document.createElement('div');el.className='date'+(i===5?' on':'')+([4,11].indexOf(i)>=0?' few':'');el.innerHTML='<span>'+DOW[(d.getDay()+6)%7]+'</span><b>'+d.getDate()+'</b>';ds.appendChild(el)}
+var guests=2,payType='prepay',payVerb='Оплатить';
+function curTour(){var v=document.getElementById('f-tour').value;var n=v.split(' — ')[0].trim();return pmap[n]?n:null}
+function f(n){return '₾'+n}
+function recalc(){
+  var n=curTour();var tn=document.getElementById('t-name'),tp=document.getElementById('t-price'),to=document.getElementById('t-old'),tv=document.getElementById('t-save');
+  if(!n){tn.textContent='Выберите тур';tp.textContent='₾—';to.textContent='';tv.style.display='none';document.getElementById('op-prepay').textContent='₾—';document.getElementById('op-full').textContent='₾—';document.getElementById('due').textContent='₾—';return}
+  var per=pmap[n],oldper=omap[n],total=per*guests,oldtotal=oldper*guests,prepay=Math.round(total*0.1);
+  tn.textContent=n;tp.textContent=f(per);to.textContent=f(oldper);tv.style.display='inline-block';tv.textContent='−'+f(oldtotal-total);
+  document.getElementById('op-prepay').textContent=f(prepay);document.getElementById('op-full').textContent=f(total);
+  var due=payType==='prepay'?prepay:(payType==='full'?total:(parseInt(document.getElementById('f-custom').value)||0));
+  document.getElementById('due').textContent=f(due);document.getElementById('paybtn').firstChild.textContent=payVerb+' ';
+}
+document.getElementById('f-tour').addEventListener('input',recalc);
+document.getElementById('g-plus').addEventListener('click',function(){if(guests<20)guests++;document.getElementById('g-val').textContent=guests;recalc()});
+document.getElementById('g-minus').addEventListener('click',function(){if(guests>1)guests--;document.getElementById('g-val').textContent=guests;recalc()});
+document.getElementById('f-custom').addEventListener('input',recalc);
+document.querySelectorAll('#seg .opt').forEach(function(o){o.addEventListener('click',function(){document.querySelectorAll('#seg .opt').forEach(function(x){x.classList.remove('on')});o.classList.add('on');payType=o.getAttribute('data-t');document.getElementById('f-custom').style.display=payType==='custom'?'block':'none';recalc()})});
+document.querySelectorAll('#dates .date').forEach(function(o){o.addEventListener('click',function(){document.querySelectorAll('#dates .date').forEach(function(x){x.classList.remove('on')});o.classList.add('on')})});
+document.querySelectorAll('#ptabs .ptab').forEach(function(o,i){o.addEventListener('click',function(){document.querySelectorAll('#ptabs .ptab').forEach(function(x){x.classList.remove('on')});o.classList.add('on');payVerb=(i===0?'Оплатить':i===1?'Оплатить криптой':'Оплатить по СБП');recalc()})});
+recalc();
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.05});
+document.querySelectorAll('[data-rv]').forEach(function(el,i){el.style.transitionDelay=(Math.min(i,7)*70)+'ms';io.observe(el)});
+</script>
+</body>
+</html>

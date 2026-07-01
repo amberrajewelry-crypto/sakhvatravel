@@ -1,0 +1,1188 @@
+{
+  "excursions": [
+    {
+      "slug": "chacha-master-klass",
+      "title": "Chacha Masterclass in Kakheti",
+      "description": "Chacha masterclass in Kakheti. Traditional Georgian distillation, tasting different varieties. Half-day tour.",
+      "price": 170,
+      "currency": "GEL",
+      "hours": 10,
+      "days": 0,
+      "durationText": "10h",
+      "image": "/images/chacha-tour-600.webp",
+      "format": "group",
+      "tags": [
+        "Food",
+        "Classes"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/chacha-master-klass/"
+    },
+    {
+      "slug": "degustatsiya-vina-kakheti",
+      "title": "Kakheti Wine Tasting — 3 Wineries in 1 Day",
+      "description": "Wine tasting in Kakheti. Three family wineries, qvevri, orange and red wine. Full day, up to 7 people.",
+      "price": 225,
+      "currency": "GEL",
+      "hours": 11,
+      "days": 0,
+      "durationText": "11h",
+      "image": "/images/degustatsiya-tour-600.webp",
+      "format": "group",
+      "tags": [
+        "Food",
+        "Kakheti"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/degustatsiya-vina-kakheti/",
+      "discount": 10
+    },
+    {
+      "slug": "ekskursiya-ananuri-iz-tbilisi",
+      "title": "Ananuri Fortress from Tbilisi",
+      "description": "Tour to Ananuri Fortress. 16th-century fortress, Zhinvali Reservoir, start of the Georgian Military Highway. 5 hours.",
+      "price": 175,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5h",
+      "image": "/images/ananuri-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "Kazbegi"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/ekskursiya-ananuri-iz-tbilisi/",
+      "discount": 10
+    },
+    {
+      "slug": "ekskursiya-borjomi-iz-tbilisi",
+      "title": "Borjomi Day Trip from Tbilisi",
+      "description": "Borjomi day trip. Borjomi Park, mineral spring, Rabati Castle. Full day, up to 7 people.",
+      "price": 178,
+      "currency": "GEL",
+      "hours": 12,
+      "days": 0,
+      "durationText": "12h",
+      "image": "/images/borjomi-tour-600.webp",
+      "format": "group",
+      "tags": [
+        "Day trips"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/ekskursiya-borjomi-iz-tbilisi/",
+      "discount": 10
+    },
+    {
+      "slug": "ekskursiya-gori-iz-tbilisi",
+      "title": "Gori & Uplistsikhe from Tbilisi",
+      "description": "Gori and Uplistsikhe. Stalin Museum, ancient cave city, scenic drive through Kartli region. 8 hours.",
+      "price": 155,
+      "currency": "GEL",
+      "hours": 8,
+      "days": 0,
+      "durationText": "8h",
+      "image": "/images/gori-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "Day trips"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/ekskursiya-gori-iz-tbilisi/"
+    },
+    {
+      "slug": "ekskursiya-gudauri-iz-tbilisi",
+      "title": "Gudauri from Tbilisi — Ski Resort & Cross Pass",
+      "description": "Gudauri — ski resort, Cross Pass viewpoint, Friendship Monument. Stunning mountain scenery. 5 hours.",
+      "price": 225,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5h",
+      "image": "/images/gudauri-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "Kazbegi"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/ekskursiya-gudauri-iz-tbilisi/"
+    },
+    {
+      "slug": "ekskursiya-jvari-iz-tbilisi",
+      "title": "Jvari Monastery from Tbilisi",
+      "description": "Jvari Monastery — 6th-century UNESCO site overlooking the confluence of Aragvi and Mtkvari rivers. 5 hours.",
+      "price": 145,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5h",
+      "image": "/images/jvari-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "Kazbegi"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/ekskursiya-jvari-iz-tbilisi/"
+    },
+    {
+      "slug": "ekskursiya-kakheti-iz-tbilisi",
+      "title": "Full Kakheti Tour from Tbilisi",
+      "description": "Full Kakheti tour — Sighnaghi, Bodbe Monastery, Alazani Valley wineries. Wine tasting included. 11 hours.",
+      "price": 170,
+      "currency": "GEL",
+      "hours": 11,
+      "days": 0,
+      "durationText": "11h",
+      "image": "/images/kakheti-tour-600.webp",
+      "format": "group",
+      "tags": [
+        "Kakheti"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/ekskursiya-kakheti-iz-tbilisi/",
+      "discount": 10
+    },
+    {
+      "slug": "ekskursiya-kazbegi-iz-tbilisi",
+      "title": "Kazbegi Day Trip from Tbilisi",
+      "description": "Kazbegi day trip — Gergeti Trinity Church, Georgian Military Highway, Ananuri Fortress. Full day, up to 7 people.",
+      "price": 175,
+      "currency": "GEL",
+      "hours": 14,
+      "days": 0,
+      "durationText": "14h",
+      "image": "/images/kazbegi-tour-600.webp",
+      "format": "group",
+      "tags": [
+        "Kazbegi"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/ekskursiya-kazbegi-iz-tbilisi/",
+      "discount": 10
+    },
+    {
+      "slug": "ekskursiya-mtskheta-iz-tbilisi",
+      "title": "Mtskheta Tour from Tbilisi",
+      "description": "Mtskheta tour — ancient capital, Jvari Monastery, Svetitskhoveli Cathedral. UNESCO World Heritage. 4 hours.",
+      "price": 98,
+      "currency": "GEL",
+      "hours": 4,
+      "days": 0,
+      "durationText": "4h",
+      "image": "/images/mtskheta-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "Day trips"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/ekskursiya-mtskheta-iz-tbilisi/",
+      "discount": 10
+    },
+    {
+      "slug": "ekskursiya-sighnaghi-iz-tbilisi",
+      "title": "Sighnaghi from Tbilisi — City of Love",
+      "description": "Sighnaghi — the City of Love, Bodbe Monastery, wine tasting in Kakheti. 5 hours.",
+      "price": 175,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5h",
+      "image": "/images/sighnaghi-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "Kakheti"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/ekskursiya-sighnaghi-iz-tbilisi/",
+      "discount": 10
+    },
+    {
+      "slug": "ekskursiya-truso",
+      "title": "Truso Valley Hiking Tour",
+      "description": "Truso Valley hike — mineral lakes, travertine formations, abandoned villages. Mars-like landscapes near Kazbegi. 14 hours.",
+      "price": 265,
+      "currency": "GEL",
+      "hours": 14,
+      "days": 0,
+      "durationText": "14h",
+      "image": "/images/truso-tour-600.webp",
+      "format": "group",
+      "tags": [
+        "Kazbegi"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/ekskursiya-truso/"
+    },
+    {
+      "slug": "ekskursiya-tusheti",
+      "title": "Tusheti Adventure Tour",
+      "description": "Tusheti adventure — remote mountain villages, Abano Pass, medieval towers. 2-day expedition to Georgia's wildest region.",
+      "price": 345,
+      "currency": "GEL",
+      "hours": 0,
+      "days": 2,
+      "durationText": "48h",
+      "image": "/images/tusheti-tour-600.webp",
+      "format": "group",
+      "tags": [
+        "Day trips"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/ekskursiya-tusheti/"
+    },
+    {
+      "slug": "fotosessiya-tbilisi",
+      "title": "Photo Tour Tbilisi",
+      "description": "Photo tour in Tbilisi with a local guide. Best spots, golden hour, hidden courtyards and panoramic viewpoints. 5 hours.",
+      "price": 145,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5h",
+      "image": "https://sakhva-travel.com/images/photo-tour.webp",
+      "format": "individual",
+      "tags": [
+        "Photo"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/fotosessiya-tbilisi/"
+    },
+    {
+      "slug": "gastronomicheskiy-tur-tbilisi",
+      "title": "Food Tour + Dinner with Locals",
+      "description": "Food tour in Tbilisi. Local markets, street food, dinner with a Georgian family. 5 hours.",
+      "price": 165,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5h",
+      "image": "/images/dinner-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "Food"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/gastronomicheskiy-tur-tbilisi/",
+      "discount": 5
+    },
+    {
+      "slug": "khachapuri-master-klass",
+      "title": "Khachapuri Cooking Class",
+      "description": "Khachapuri cooking class — learn to make traditional Georgian cheese bread with a local host. 4 hours.",
+      "price": 145,
+      "currency": "GEL",
+      "hours": 4,
+      "days": 0,
+      "durationText": "4h",
+      "image": "/images/khachapuri-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "Food",
+        "Classes"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/khachapuri-master-klass/"
+    },
+    {
+      "slug": "kvevri-vino-tur",
+      "title": "Qvevri Wine Experience",
+      "description": "Qvevri wine experience — ancient winemaking in clay vessels. Visit family cellars in Kakheti. 10 hours.",
+      "price": 175,
+      "currency": "GEL",
+      "hours": 10,
+      "days": 0,
+      "durationText": "10h",
+      "image": "/images/kvevri-tour-600.webp",
+      "format": "group",
+      "tags": [
+        "Wine"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/kvevri-vino-tur/"
+    },
+    {
+      "slug": "nochnaya-ekskursiya-tbilisi",
+      "title": "Night Tbilisi Tour",
+      "description": "Night Tbilisi tour — illuminated Old Town, sulfur baths district, Narikala Fortress, wine bars. 5 hours.",
+      "price": 100,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5h",
+      "image": "/images/night-tbilisi-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "Night"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/nochnaya-ekskursiya-tbilisi/",
+      "discount": 5
+    },
+    {
+      "slug": "priklyuchencheskiy-tur-gruziya",
+      "title": "Adventure Tour Georgia",
+      "description": "Adventure tour in Georgia — rafting, trekking, canyoning. Multi-day active expedition. 3 days.",
+      "price": 395,
+      "currency": "GEL",
+      "hours": 0,
+      "days": 3,
+      "durationText": "72h",
+      "image": "/images/priklyuchenie-tour-600.webp",
+      "format": "group",
+      "tags": [
+        "Active"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/priklyuchencheskiy-tur-gruziya/"
+    },
+    {
+      "slug": "romanticheskiy-tur-tbilisi",
+      "title": "Romantic Tour Tbilisi",
+      "description": "Romantic tour in Tbilisi — hidden courtyards, candlelit dinner, sunset viewpoints, wine tasting. 5 hours.",
+      "price": 165,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5h",
+      "image": "https://sakhva-travel.com/images/night-tbilisi-tour.webp",
+      "format": "individual",
+      "tags": [
+        "Romance"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/romanticheskiy-tur-tbilisi/"
+    },
+    {
+      "slug": "sovetskiy-tur-tbilisi",
+      "title": "Tbilisi City Tour with Guide",
+      "description": "Tbilisi city tour — Soviet architecture, modernist landmarks, brutalist buildings, history walk. 5 hours.",
+      "price": 135,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5h",
+      "image": "/images/soviet-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "Old Tbilisi"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/sovetskiy-tur-tbilisi/"
+    },
+    {
+      "slug": "tur-batumi-iz-tbilisi",
+      "title": "Batumi Day Trip from Tbilisi",
+      "description": "Batumi day trip. Black Sea coast, botanical garden, Ali and Nino statue, Old Town. Full day.",
+      "price": 250,
+      "currency": "GEL",
+      "hours": 15,
+      "days": 0,
+      "durationText": "15h",
+      "image": "/images/batumi-tour-600.webp",
+      "format": "group",
+      "tags": [
+        "Batumi"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/tur-batumi-iz-tbilisi/",
+      "discount": 15
+    },
+    {
+      "slug": "tur-dlya-emigrantov-tbilisi",
+      "title": "Expat Tour: Tbilisi Through Local Eyes",
+      "description": "Expat tour in Tbilisi — neighborhoods, coworking spots, local tips, hidden gems for digital nomads. 5 hours.",
+      "price": 123,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5h",
+      "image": "/images/digital-nomad-tour.webp",
+      "format": "individual",
+      "tags": [
+        "Expats"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/tur-dlya-emigrantov-tbilisi/"
+    },
+    {
+      "slug": "tur-dlya-pensionerov-gruziya",
+      "title": "Senior-Friendly Georgia Tour",
+      "description": "Senior-friendly Georgia tour — comfortable pace, accessible routes, cultural highlights. 5 hours.",
+      "price": 145,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5h",
+      "image": "/images/pensionery-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "Family"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/tur-dlya-pensionerov-gruziya/"
+    },
+    {
+      "slug": "tur-gruziya-leto",
+      "title": "Summer Georgia Tour",
+      "description": "Summer Georgia tour — mountains, beaches, festivals. Multi-day itinerary for the best of Georgian summer.",
+      "price": 750,
+      "currency": "GEL",
+      "hours": 0,
+      "days": 7,
+      "durationText": "168h",
+      "image": "/images/leto-batumi-tour-600.webp",
+      "format": "group",
+      "tags": [
+        "Seasonal"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/tur-gruziya-leto/"
+    },
+    {
+      "slug": "tur-gruziya-noviy-god",
+      "title": "New Year in Georgia",
+      "description": "New Year in Georgia — festive Tbilisi, supra dinner, winter in Kazbegi. Holiday celebration package.",
+      "price": 850,
+      "currency": "GEL",
+      "hours": 0,
+      "days": 5,
+      "durationText": "120h",
+      "image": "/images/noviy-god-tour-600.webp",
+      "format": "group",
+      "tags": [
+        "Seasonal"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/tur-gruziya-noviy-god/"
+    },
+    {
+      "slug": "tur-kutaisi-iz-tbilisi",
+      "title": "Kutaisi Day Trip from Tbilisi",
+      "description": "Kutaisi day trip — Gelati Monastery, Prometheus Cave, Bagrati Cathedral. 13 hours.",
+      "price": 183,
+      "currency": "GEL",
+      "hours": 13,
+      "days": 0,
+      "durationText": "13h",
+      "image": "/images/kutaisi-tour-600.webp",
+      "format": "group",
+      "tags": [
+        "Day trips"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/tur-kutaisi-iz-tbilisi/"
+    },
+    {
+      "slug": "tur-po-hramam-tbilisi",
+      "title": "Churches Tour Tbilisi",
+      "description": "Churches tour in Tbilisi — Sioni Cathedral, Metekhi, Anchiskhati, Armenian cathedral. Walking tour. 5 hours.",
+      "price": 145,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5h",
+      "image": "/images/hramy-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "Walking"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/tur-po-hramam-tbilisi/"
+    },
+    {
+      "slug": "tur-batumi-2-dnya",
+      "title": "Tbilisi to Batumi 2-Day Tour",
+      "description": "Tbilisi to Batumi 2-day tour — Black Sea coast, botanical garden, Adjarian cuisine. Overnight in Batumi.",
+      "price": 650,
+      "currency": "GEL",
+      "hours": 15,
+      "days": 2,
+      "durationText": "2 days",
+      "image": "/images/tbilisi-batumi-tour-600.webp",
+      "format": "group",
+      "tags": [
+        "Batumi"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/tur-batumi-2-dnya/"
+    },
+    {
+      "slug": "vinniy-marshrut-alazani",
+      "title": "Alazani Valley Wine Route",
+      "description": "Alazani Valley wine route — family wineries, qvevri cellars, vineyard views. Half-day. 4 hours.",
+      "price": 175,
+      "currency": "GEL",
+      "hours": 4,
+      "days": 0,
+      "durationText": "4h",
+      "image": "/images/alazani-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "Wine",
+        "Kakheti"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/vinniy-marshrut-alazani/"
+    },
+    {
+      "slug": "vinniy-tur-tbilisi",
+      "title": "Tbilisi Wine Walk",
+      "description": "Tbilisi wine walk — natural wine bars, urban wineries, sommelier-guided tasting. 5 hours.",
+      "price": 165,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5h",
+      "image": "/images/vinniy-bar-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "Wine"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/vinniy-tur-tbilisi/"
+    },
+    {
+      "slug": "vinodelie-kindzmarauli",
+      "title": "Kindzmarauli Winemaking Tour",
+      "description": "Kindzmarauli winemaking tour — legendary semi-sweet wine, family vineyards in Kvareli. 10 hours.",
+      "price": 225,
+      "currency": "GEL",
+      "hours": 10,
+      "days": 0,
+      "durationText": "10h",
+      "image": "/images/kindzmarauli-tour-600.webp",
+      "format": "group",
+      "tags": [
+        "Wine",
+        "Kakheti"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/vinodelie-kindzmarauli/"
+    },
+    {
+      "slug": "art-tur-tbilisi",
+      "title": "Art Tour Tbilisi",
+      "description": "Art tour in Tbilisi — street art, galleries, creative spaces, Fabrika, Blue Gallery. 5 hours.",
+      "price": 145,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5h",
+      "image": "/images/art-tur-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "Walking",
+        "Old Tbilisi"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/art-tur-tbilisi/"
+    },
+    {
+      "slug": "ekskursiya-abanotubani",
+      "title": "Abanotubani Sulfur Baths Tour",
+      "description": "Abanotubani sulfur baths tour — historic bathhouse district, hammam tradition, waterfall. 3 hours.",
+      "price": 135,
+      "currency": "GEL",
+      "hours": 3,
+      "days": 0,
+      "durationText": "3h",
+      "image": "/images/abanotubani-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "Old Tbilisi"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/ekskursiya-abanotubani/"
+    },
+    {
+      "slug": "ekskursiya-david-gareji",
+      "title": "David Gareja Monastery",
+      "description": "David Gareja Monastery — 6th-century cave monastery on the Azerbaijan border. Desert landscapes. 12 hours.",
+      "price": 225,
+      "currency": "GEL",
+      "hours": 12,
+      "days": 0,
+      "durationText": "12h",
+      "image": "/images/david-gareji-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "Day trips"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/ekskursiya-david-gareji/",
+      "discount": 5
+    },
+    {
+      "slug": "ekskursiya-mtatsminda",
+      "title": "Mtatsminda Park & Funicular",
+      "description": "Mtatsminda Park & Funicular — panoramic views of Tbilisi, amusement park, Pantheon of Writers. 3 hours.",
+      "price": 145,
+      "currency": "GEL",
+      "hours": 3,
+      "days": 0,
+      "durationText": "3h",
+      "image": "/images/mtatsminda-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "Old Tbilisi"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/ekskursiya-mtatsminda/"
+    },
+    {
+      "slug": "ekskursiya-narikala",
+      "title": "Narikala Fortress Tour",
+      "description": "Narikala Fortress tour — cable car ride, fortress walls, views over the Kura River. 3 hours.",
+      "price": 135,
+      "currency": "GEL",
+      "hours": 3,
+      "days": 0,
+      "durationText": "3h",
+      "image": "/images/narikala-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "Old Tbilisi"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/ekskursiya-narikala/"
+    },
+    {
+      "slug": "ekskursiya-stary-tbilisi",
+      "title": "Old Tbilisi Walking Tour",
+      "description": "Old Tbilisi walking tour — narrow streets, carved balconies, sulfur baths, Narikala, Leghvtakhevi waterfall. 5 hours.",
+      "price": 135,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5h",
+      "image": "https://sakhva-travel.com/images/old-tbilisi-tour.webp",
+      "format": "individual",
+      "tags": [
+        "Old Tbilisi",
+        "Classes",
+        "Walking"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/ekskursiya-stary-tbilisi/",
+      "discount": 15
+    },
+    {
+      "slug": "ekskursiya-uplistsikhe-iz-tbilisi",
+      "title": "Uplistsikhe Cave City from Tbilisi",
+      "description": "Uplistsikhe and Mtskheta — two ancient cities in one day. Cave town and UNESCO capital. 10 hours.",
+      "price": 175,
+      "currency": "GEL",
+      "hours": 10,
+      "days": 0,
+      "durationText": "10h",
+      "image": "/images/uplistsikhe-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "Day trips"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/ekskursiya-uplistsikhe-iz-tbilisi/"
+    },
+    {
+      "slug": "ekskursiya-vardzia",
+      "title": "Vardzia Cave Monastery Tour",
+      "description": "Vardzia cave monastery — 12th-century rock-hewn complex, Khertvisi Fortress. 14 hours.",
+      "price": 295,
+      "currency": "GEL",
+      "hours": 14,
+      "days": 0,
+      "durationText": "14h",
+      "image": "/images/vardzia-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "Day trips"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/ekskursiya-vardzia/"
+    },
+    {
+      "slug": "ekskursiya-zugdidi",
+      "title": "Zugdidi & Dadiani Palace",
+      "description": "Zugdidi and Dadiani Palace tour — Samegrelo region, royal residence, gateway to Svaneti. 14 hours.",
+      "price": 320,
+      "currency": "GEL",
+      "hours": 14,
+      "days": 0,
+      "durationText": "14h",
+      "image": "/images/zugdidi-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "Day trips"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/ekskursiya-zugdidi/"
+    },
+    {
+      "slug": "family-tur-tbilisi",
+      "title": "Family Tour Tbilisi",
+      "description": "Family tour in Tbilisi — kid-friendly activities, parks, funicular, interactive museums. 5 hours.",
+      "price": 165,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5h",
+      "image": "/images/family-tur-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "Family"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/family-tur-tbilisi/"
+    },
+    {
+      "slug": "gruppa-10-chelovek-tbilisi",
+      "title": "Group Tour 10+ People",
+      "description": "Group tour for 10+ people in Tbilisi. Flexible routes, transport, group discounts. Any duration.",
+      "price": 95,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5h",
+      "image": "/images/gruppa-tour-600.webp",
+      "format": "group",
+      "tags": [
+        "Day trips"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/gruppa-10-chelovek-tbilisi/"
+    },
+    {
+      "slug": "korporativniy-tur-tbilisi",
+      "title": "Corporate Tour Tbilisi",
+      "description": "Corporate tour in Tbilisi — team building, wine tasting, supra dinner, customizable program. 5 hours.",
+      "price": 2200,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5h",
+      "image": "/images/korporativ-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "Classes"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/korporativniy-tur-tbilisi/"
+    },
+    {
+      "slug": "shopping-tur-tbilisi",
+      "title": "Shopping Tour Tbilisi",
+      "description": "Shopping tour in Tbilisi — Dry Bridge flea market, antiques, local brands, souvenirs. 5 hours.",
+      "price": 145,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5h",
+      "image": "/images/shopping-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "Old Tbilisi"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/shopping-tur-tbilisi/"
+    },
+    {
+      "slug": "svadebny-tur-gruziya",
+      "title": "Wedding Tour Georgia",
+      "description": "Wedding tour in Georgia — ceremony venues, photographer, Georgian feast, mountain backdrop. 3 days.",
+      "price": 1500,
+      "currency": "GEL",
+      "hours": 0,
+      "days": 3,
+      "durationText": "72h",
+      "image": "/images/svadba-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "Photo",
+        "Romance"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/svadebny-tur-gruziya/"
+    },
+    {
+      "slug": "transfer-aeroport-tbilisi",
+      "title": "Airport Transfer Tbilisi",
+      "description": "Airport transfer Tbilisi — meet and greet, comfortable car, fixed price. Any time.",
+      "price": 90,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5h",
+      "image": "/images/transfer-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "Day trips"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/transfer-aeroport-tbilisi/"
+    },
+    {
+      "slug": "tur-dlya-detey-tbilisi",
+      "title": "Kids Tour Tbilisi",
+      "description": "Kids tour in Tbilisi — puppet theater, cable car, parks, interactive activities. 5 hours.",
+      "price": 135,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5h",
+      "image": "/images/deti-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "Family",
+        "Active"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/tur-dlya-detey-tbilisi/"
+    },
+    {
+      "slug": "ekskursiya-svaneti-iz-tbilisi",
+      "title": "Svaneti Tour from Tbilisi",
+      "description": "Svaneti tour — medieval towers, Ushguli village, Caucasus mountains. 2-3 days.",
+      "price": 345,
+      "currency": "GEL",
+      "hours": 0,
+      "days": 3,
+      "durationText": "2-3 days",
+      "image": "/images/svaneti-tour-600.webp",
+      "format": "group",
+      "tags": [
+        "Day trips",
+        "Mountain"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/ekskursiya-svaneti-iz-tbilisi/",
+      "discount": 15
+    },
+    {
+      "slug": "tur-gruziya-3-dnya",
+      "title": "Georgia in 3 Days",
+      "description": "Georgia in 3 days — Tbilisi, Kazbegi, Kakheti. Compact itinerary with all highlights. Private guide.",
+      "price": 450,
+      "currency": "GEL",
+      "hours": 0,
+      "days": 3,
+      "durationText": "3 days",
+      "image": "/images/3-dnya-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "Multi-day"
+      ],
+      "type": "tour",
+      "url": "/en/ekskursiya/tur-gruziya-3-dnya/",
+      "discount": 10
+    },
+    {
+      "slug": "tur-gruziya-5-dney",
+      "title": "Georgia in 5 Days",
+      "description": "Georgia in 5 days — extended route with Mtskheta, Kazbegi, Kakheti and Tbilisi deep dive.",
+      "price": 1200,
+      "currency": "GEL",
+      "hours": 0,
+      "days": 5,
+      "durationText": "5 days",
+      "image": "/images/5-dney-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "Multi-day"
+      ],
+      "type": "tour",
+      "url": "/en/ekskursiya/tur-gruziya-5-dney/"
+    },
+    {
+      "slug": "tur-gruziya-7-dney",
+      "title": "Slow Travel — 7 Days in Georgia",
+      "description": "Slow travel — 7 days in Georgia. Relaxed pace, local experiences, off-the-beaten-path stops.",
+      "price": 595,
+      "currency": "GEL",
+      "hours": 0,
+      "days": 7,
+      "durationText": "7 days",
+      "image": "/images/7-dney-tour-600.webp",
+      "format": "group",
+      "tags": [
+        "Multi-day"
+      ],
+      "type": "tour",
+      "url": "/en/ekskursiya/tur-gruziya-7-dney/"
+    },
+    {
+      "slug": "tur-gruziya-10-dney",
+      "title": "Georgia in 10 Days",
+      "description": "Georgia in 10 days — full immersion. All regions, all highlights, exclusive local experiences.",
+      "price": 3200,
+      "currency": "GEL",
+      "hours": 0,
+      "days": 10,
+      "durationText": "10 days",
+      "image": "/images/10-dney-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "Multi-day"
+      ],
+      "type": "tour",
+      "url": "/en/ekskursiya/tur-gruziya-10-dney/"
+    },
+    {
+      "slug": "tur-gruziya-armeniya",
+      "title": "Georgia + Armenia Combined Tour",
+      "description": "Georgia + Armenia combined tour — two Caucasus countries in one trip. 7-10 days.",
+      "price": 950,
+      "currency": "GEL",
+      "hours": 0,
+      "days": 7,
+      "durationText": "7-10 days",
+      "image": "/images/armeniya-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "Multi-day"
+      ],
+      "type": "tour",
+      "url": "/en/ekskursiya/tur-gruziya-armeniya/"
+    },
+    {
+      "slug": "tur-kazbegi-kakheti-2-dnya",
+      "title": "Tbilisi-Kazbegi-Kakheti Package",
+      "description": "Tbilisi-Kazbegi-Kakheti package — mountains and wine in 3-4 days. Private guide.",
+      "price": 550,
+      "currency": "GEL",
+      "hours": 0,
+      "days": 4,
+      "durationText": "3-4 days",
+      "image": "/images/tbilisi-kazbegi-kakheti-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "Multi-day"
+      ],
+      "type": "tour",
+      "url": "/en/ekskursiya/tur-kazbegi-kakheti-2-dnya/"
+    },
+    {
+      "slug": "tur-svaneti-4-dnya",
+      "title": "Tbilisi to Svaneti Tour",
+      "description": "Tbilisi to Svaneti tour — Mestia, Ushguli, Caucasus glaciers. 4-5 day adventure.",
+      "price": 750,
+      "currency": "GEL",
+      "hours": 0,
+      "days": 5,
+      "durationText": "4-5 days",
+      "image": "/images/ushguli-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "Multi-day",
+        "Mountain"
+      ],
+      "type": "tour",
+      "url": "/en/ekskursiya/tur-svaneti-4-dnya/"
+    },
+    {
+      "slug": "tur-vsya-gruziya",
+      "title": "All of Georgia Tour",
+      "description": "All of Georgia tour — every region in one trip. 10-14 days of complete exploration.",
+      "price": 1400,
+      "currency": "GEL",
+      "hours": 0,
+      "days": 14,
+      "durationText": "10-14 days",
+      "image": "/images/vsya-gruziya-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "Multi-day"
+      ],
+      "type": "tour",
+      "url": "/en/ekskursiya/tur-vsya-gruziya/"
+    },
+    {
+      "slug": "ekskursiya-telavi-iz-tbilisi",
+      "title": "Telavi from Tbilisi — Heart of Kakheti",
+      "description": "Telavi — wine capital of Kakheti, Alaverdi Monastery, Tsinandali Palace. 11 hours.",
+      "price": 185,
+      "currency": "GEL",
+      "hours": 11,
+      "days": 0,
+      "durationText": "11h",
+      "image": "/images/telavi-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "Day trips",
+        "Kakheti",
+        "Wine"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/ekskursiya-telavi-iz-tbilisi/",
+      "discount": 10
+    },
+    {
+      "slug": "ekskursiya-gomis-mta-iz-batumi",
+      "title": "Gomis Mta from Batumi",
+      "description": "Gomis Mta from Batumi — mountain Adjara, Machakhela gorge, alpine meadows. 9 hours.",
+      "price": 220,
+      "currency": "GEL",
+      "hours": 9,
+      "days": 0,
+      "durationText": "9h",
+      "image": "/images/gomis-mta-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "Day trips",
+        "Batumi",
+        "Active",
+        "Mountain"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/ekskursiya-gomis-mta-iz-batumi/"
+    },
+    {
+      "slug": "ekskursiya-dashbashi-iz-tbilisi",
+      "title": "Dashbashi Canyon Tour from Tbilisi",
+      "description": "Dashbashi Canyon day trip from ₾135. Diamond Waterfall, glass bridge, Tsalka reservoir. 8–9 hours, up to 7 people.",
+      "price": 135,
+      "currency": "GEL",
+      "hours": 9,
+      "days": 0,
+      "durationText": "8–9h",
+      "image": "/images/dashbashi-canyon-tour.webp",
+      "format": "group",
+      "tags": [
+        "Day trips",
+        "Active"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/ekskursiya-dashbashi-iz-tbilisi/"
+    },
+    {
+      "slug": "ekskursiya-kanyony-zapadnoy-gruzii",
+      "title": "West Georgia Canyons — Martvili & Okatse",
+      "description": "West Georgia canyons day trip from ₾320. Martvili boat ride, Okatse Canyon, Kinchkha waterfall and Prometheus Cave. 12–13 h.",
+      "price": 320,
+      "currency": "GEL",
+      "hours": 13,
+      "days": 0,
+      "durationText": "12–13h",
+      "image": "/images/kanyony-zapadnoy-gruzii-tour.webp",
+      "format": "group",
+      "tags": [
+        "Day trips",
+        "Active"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/ekskursiya-kanyony-zapadnoy-gruzii/"
+    },
+    {
+      "slug": "ekskursiya-racha-iz-tbilisi",
+      "title": "Racha Tour from Tbilisi — Nikortsminda & Wine",
+      "description": "Racha day trip from ₾290. The carved Nikortsminda church, Lake Shaori, mountain villages and Khvanchkara wine. 12–13 h.",
+      "price": 290,
+      "currency": "GEL",
+      "hours": 13,
+      "days": 0,
+      "durationText": "12–13h",
+      "image": "/images/racha-tur-nikortsminda.webp",
+      "format": "group",
+      "tags": [
+        "Day trips",
+        "Mountain",
+        "Wine"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/ekskursiya-racha-iz-tbilisi/"
+    },
+    {
+      "slug": "ekskursiya-hevsuretia-shatili",
+      "title": "Khevsureti Tour — Shatili & Mutso (4x4)",
+      "description": "Khevsureti 4x4 day trip from ₾340. Medieval towers of Shatili, Mutso fortress, Datvisjvari pass. Summer only, up to 7 people.",
+      "price": 340,
+      "currency": "GEL",
+      "hours": 14,
+      "days": 0,
+      "durationText": "13–14h",
+      "image": "/images/hevsureti-shatili-tour.webp",
+      "format": "group",
+      "tags": [
+        "Day trips",
+        "Mountain",
+        "Active"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/ekskursiya-hevsuretia-shatili/"
+    },
+    {
+      "slug": "ekskursiya-bakuriani-iz-tbilisi",
+      "title": "Bakuriani Tour from Tbilisi — Mountain Resort",
+      "description": "Bakuriani day trip from ₾160. Mountain resort, the historic narrow-gauge railway, cable cars and pine forests. 9–10 h.",
+      "price": 160,
+      "currency": "GEL",
+      "hours": 10,
+      "days": 0,
+      "durationText": "9–10h",
+      "image": "/images/bakuriani-tour.webp",
+      "format": "group",
+      "tags": [
+        "Day trips",
+        "Mountain",
+        "Family"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/ekskursiya-bakuriani-iz-tbilisi/"
+    },
+    {
+      "slug": "ekskursiya-ureki-iz-tbilisi",
+      "title": "Ureki Tour — Black Sea Magnetic Sand",
+      "description": "Ureki day trip from ₾180. Black magnetic sand, warm shallow Black Sea and a family beach. 12 hours, up to 7 people.",
+      "price": 180,
+      "currency": "GEL",
+      "hours": 12,
+      "days": 0,
+      "durationText": "12h",
+      "image": "/images/ureki-magnitnye-peski.webp",
+      "format": "group",
+      "tags": [
+        "Day trips",
+        "Family",
+        "Seasonal"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/ekskursiya-ureki-iz-tbilisi/"
+    },
+    {
+      "slug": "progulka-po-kure-tbilisi",
+      "title": "Kura River Boat Walk in Tbilisi",
+      "description": "Kura (Mtkvari) river boat walk in Tbilisi from ₾80. Metekhi, the Bridge of Peace and Narikala from the water. 1.5–2 hours, best at sunset.",
+      "price": 80,
+      "currency": "GEL",
+      "hours": 2,
+      "days": 0,
+      "durationText": "1.5–2h",
+      "image": "/images/progulka-po-kure-tbilisi.webp",
+      "format": "group",
+      "tags": [
+        "Old Tbilisi",
+        "Romance"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/progulka-po-kure-tbilisi/"
+    },
+    {
+      "slug": "konny-tur-stepantsminda",
+      "title": "Horse Riding Tour in Stepantsminda",
+      "description": "Horse riding tour in Stepantsminda from ₾240. Ride the Gergeti valley with views of Mount Kazbek. No experience needed. 11–12 h.",
+      "price": 240,
+      "currency": "GEL",
+      "hours": 12,
+      "days": 0,
+      "durationText": "11–12h",
+      "image": "/images/konny-tur-stepantsminda.webp",
+      "format": "group",
+      "tags": [
+        "Day trips",
+        "Kazbegi",
+        "Active"
+      ],
+      "type": "excursion",
+      "url": "/en/ekskursiya/konny-tur-stepantsminda/"
+    }
+  ]
+}

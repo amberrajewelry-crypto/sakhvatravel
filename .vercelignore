@@ -4,3 +4,12 @@ images/backup/
 service-account.json
 mempalace.yaml
 entities.json
+gid/_template/
+scripts/_schema_dup_backup/
+scripts/_schema_dupkey_backup/
+# junk/prototype HTML — не деплоить (краулятся как мусор)
+*.backup.html
+index.backup-*.html
+preview-*.html
+tour-cards-proto.html
+tour-cards-video.html
