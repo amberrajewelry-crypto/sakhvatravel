@@ -278,6 +278,76 @@
       "statusCode": 301
     },
     {
+      "source": "/en/tour/batumi/",
+      "destination": "/en/ekskursiya/tur-batumi-iz-tbilisi/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/tour/borjomi/",
+      "destination": "/en/ekskursiya/ekskursiya-borjomi-iz-tbilisi/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/tour/digital-nomad/",
+      "destination": "/en/ekskursiya/tur-dlya-emigrantov-tbilisi/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/tour/emigrant/",
+      "destination": "/en/ekskursiya/tur-dlya-emigrantov-tbilisi/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/tour/dinner/",
+      "destination": "/en/ekskursiya/gastronomicheskiy-tur-tbilisi/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/tour/kakheti/",
+      "destination": "/en/ekskursiya/ekskursiya-kakheti-iz-tbilisi/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/tour/kazbegi/",
+      "destination": "/en/ekskursiya/ekskursiya-kazbegi-iz-tbilisi/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/tour/kutaisi/",
+      "destination": "/en/ekskursiya/tur-kutaisi-iz-tbilisi/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/tour/mtskheta/",
+      "destination": "/en/ekskursiya/ekskursiya-mtskheta-iz-tbilisi/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/tour/night-tbilisi/",
+      "destination": "/en/ekskursiya/nochnaya-ekskursiya-tbilisi/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/tour/slow-travel/",
+      "destination": "/en/ekskursiya/tur-gruziya-7-dney/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/tour/soviet/",
+      "destination": "/en/ekskursiya/sovetskiy-tur-tbilisi/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/tour/tbilisi-overview/",
+      "destination": "/en/ekskursiya/ekskursiya-stary-tbilisi/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/tour/tbilisi/",
+      "destination": "/en/ekskursiya/ekskursiya-stary-tbilisi/",
+      "statusCode": 301
+    },
+    {
       "source": "/en/tour/:path(.*)",
       "destination": "/en/tours-in-georgia/",
       "statusCode": 301
