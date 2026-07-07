@@ -35,7 +35,7 @@ node scripts/predeploy-check.js <изменённый файл> index.html
 - Deploy: `cd /Users/vladimir/sakhva-travel && npx vercel deploy --prod --scope amberrajewelry-cryptos-projects`
 - Vercel проект: amberrajewelry-cryptos-projects/sakhva-travel
 - Vercel Team ID: team_k0iaVI0CPoD0ENniwdu3J4wM
-- Vercel Project ID: prj_xTbrGsinMvIj3C7PftWlJ7IByOiA
+- Vercel Project ID: prj_HyyV19W7zflvjEnKpy2cdHqmacww (актуальный, из .vercel/project.json; старый prj_xTbr… устарел после пере-линка проекта 04.07)
 - Vercel Token: в ~/Library/Application Support/com.vercel.cli/auth.json
 
 ## Стек

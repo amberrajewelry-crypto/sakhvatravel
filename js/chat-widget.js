@@ -458,7 +458,9 @@ ${b.discount_percent ? `<div class="sc-booking-row"><span>Скидка</span><sp
         localStorage.setItem(CFG.visitsKey, visits.toString());
       }
 
-      if (visits >= 2 && !isOpen) {
+      // Proactive auto-open only on desktop — on mobile it covers content and raises bounce
+      const isMobile = window.matchMedia('(max-width:768px)').matches;
+      if (visits >= 2 && !isOpen && !isMobile) {
         setTimeout(() => {
           if (!isOpen) toggle();
         }, 10000);

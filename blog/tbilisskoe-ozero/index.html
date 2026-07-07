@@ -22,7 +22,7 @@
 <link href="https://sakhva-travel.com/turbo-feed.xml" rel="alternate" title="Turbo" type="application/rss+xml"/>
 <link href="/sitemap-index.xml" rel="sitemap" type="application/xml"/>
 <link href="https://sakhva-travel.com/blog/tbilisskoe-ozero/" hreflang="ru" rel="alternate"/>
-<link href="https://sakhva-travel.com/en/blog/tbilisi-lakes/" hreflang="x-default" rel="alternate"/>
+<link href="https://sakhva-travel.com/blog/tbilisskoe-ozero/" hreflang="x-default" rel="alternate"/>
 <link href="https://sakhva-travel.com/en/blog/tbilisi-lakes/" hreflang="en" rel="alternate"/>
 <meta content="index,follow,max-image-preview:large,max-snippet:-1" name="robots"/>
 <meta content="article" property="og:type"/>
@@ -209,7 +209,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 </a>
 <div class="nav-links">
 <a href="/tury-v-gruziyu/">Туры в Грузию</a>
-<a href="/#tours">Экскурсии</a>
+<a href="/#tours">Экскурсии</a><a href="/prices/">Цены</a>
 <a href="/#guide">О нас</a>
 <a href="/#reviews">Отзывы</a>
 <a href="/blog/">Блог</a>
@@ -254,10 +254,10 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <article>
 <div class="article-wrap">
 <div class="author-byline">
-<img alt="Тимур — частный гид в Тбилиси" height="40" loading="lazy" src="/images/timur.webp" width="40"/>
+<img alt="Тимур — автор туров по Грузии" height="40" loading="lazy" src="/images/timur.webp" width="40"/>
 <div class="author-info">
 <a class="author-name" href="/about/">Тимур · Sakhva Travel</a>
-<span class="author-creds">Частный гид с 2023 · 500+ туров · 4.9/5 рейтинг</span>
+<span class="author-creds">Индивидуальная экскурсия с 2023 · 500+ туров · 4.9/5 рейтинг</span>
 </div>
 </div>
 <div class="blog-discount-btn" style="text-align:center;margin:16px 0 8px">
@@ -503,13 +503,13 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <img alt="Тимур — гид Sakhva Travel" height="64" loading="lazy" src="/images/timur.webp" style="border-radius:50%;object-fit:cover;flex-shrink:0" width="64"/>
 <div style="flex:1;min-width:200px">
 <p style="margin:0 0 6px;font-size:17px;font-weight:700;color:#1a3d2e"><a href="/about/" style="color:inherit;text-decoration:none">Тимур · Sakhva Travel</a></p>
-<p style="margin:0 0 8px;font-size:13px;color:#6B7280">Частный гид в Тбилиси с 2023 года. Провёл 500+ экскурсий. Рейтинг 4.9 из 5 на Google. Живу в Грузии, знаю страну изнутри.</p>
+<p style="margin:0 0 8px;font-size:13px;color:#6B7280">Индивидуальная экскурсия в Тбилиси с 2023 года. Провёл 500+ экскурсий. Рейтинг 4.9 из 5 на Google. Живу в Грузии, знаю страну изнутри.</p>
 <a href="/booking/" style="display:inline-block;padding:8px 18px;background:#1A3D2E;color:#fff;font-size:13px;font-weight:600;border-radius:9999px;text-decoration:none">Забронировать экскурсию</a>
 </div>
 </div>
 <footer id="footer">
 <div class="foot-grid">
-<div><div class="foot-brand">Sakhva Travel</div><p class="foot-desc">Частный русскоязычный гид по Грузии 2026. Тбилиси, Казбеги, Кахетия.</p></div>
+<div><div class="foot-brand">Sakhva Travel</div><p class="foot-desc">Русскоязычный гид по Грузии 2026. Тбилиси, Казбеги, Кахетия.</p></div>
 <div><h4>Туры</h4><div class="foot-links"><a href="/ekskursiya/ekskursiya-kazbegi-iz-tbilisi/">Казбеги за 1 день — от ₾175</a><a href="/ekskursiya/nochnaya-ekskursiya-tbilisi/">Ночной Тбилиси — от ₾100</a><a href="/ekskursiya/ekskursiya-kakheti-iz-tbilisi/">Кахетия и Сигнаги — от ₾170</a><a href="/ekskursiya/tur-dlya-emigrantov-tbilisi/">Тур для эмигрантов — от ₾123</a></div></div>
 <div><h4>Блог</h4><div class="foot-links"><a href="/blog/kazbegi-iz-tbilisi-2026/">Гайд: Казбеги 2026</a><a href="/blog/skrytye-mesta-tbilisi/">15 скрытых мест Тбилиси</a><a href="/blog/viza-v-gruziyu-2026/">Виза в Грузию 2026</a><a href="/blog/kakheti-za-1-den/">Кахетия за 1 день</a></div></div>
 </div>
@@ -564,6 +564,6 @@ function openContact(){document.getElementById('contact-modal').style.display='f
 function closeContact(){document.getElementById('contact-modal').style.display='none';document.body.style.overflow=''}
 function sendContact(){var name=document.getElementById('cm-name').value.trim();var phone=document.getElementById('cm-phone').value.trim();var msg=document.getElementById('cm-msg').value.trim();if(!phone){document.getElementById('cm-phone').style.borderColor='#EF4444';return}var page=document.title;fetch('/api/booking/',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:name||'(blog)',phone:phone,tour:'Скидка 10% — блог: '+page,note:msg||'Blog discount form'})}).then(function(){document.getElementById('cm-form').style.display='none';document.getElementById('cm-success').style.display='block';setTimeout(closeContact,3000)}).catch(function(){document.getElementById('cm-form').style.display='none';document.getElementById('cm-success').style.display='block';setTimeout(closeContact,3000)});try{fetch('https://formspree.io/f/mzdkyywe',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify({type:'blog_discount',name:name,phone:phone,page:page,message:msg})})}catch(e){}}
 </script>
-<script defer="" src="/js/chat-widget.js?v=32"></script>
+<script defer="" src="/js/chat-widget.js?v=33"></script>
 </body>
 </html>

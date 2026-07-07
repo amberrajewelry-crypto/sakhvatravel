@@ -22,7 +22,7 @@
 <link href="/sitemap-index.xml" rel="sitemap" type="application/xml"/>
 <link href="https://sakhva-travel.com/en/blog/digital-nomad-tbilisi/" hreflang="en" rel="alternate"/>
 <link href="https://sakhva-travel.com/blog/digital-nomad-tbilisi/" hreflang="ru" rel="alternate"/>
-<link href="https://sakhva-travel.com/en/blog/digital-nomad-tbilisi/" hreflang="x-default" rel="alternate"/>
+<link href="https://sakhva-travel.com/blog/digital-nomad-tbilisi/" hreflang="x-default" rel="alternate"/>
 <meta content="index,follow,max-image-preview:large,max-snippet:-1" name="robots"/>
 <meta content="article" property="og:type"/>
 <meta content="Digital Nomad Tbilisi 2026 — Coworking, Cost &amp; WiFi Guide" property="og:title"/>
@@ -213,7 +213,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <line stroke="#F59E0B" stroke-linecap="round" stroke-width=".9" x1="88" x2="114" y1="60" y2="60"></line>
 </svg></a>
 <div class="nav-links">
-<a href="/en/#tours">Tours</a>
+<a href="/en/#tours">Tours</a><a href="/en/prices/">Prices</a>
 <a href="/en/#guide">About</a>
 <a href="/en/#reviews">Reviews</a>
 <a href="/en/blog/">Blog</a>
@@ -258,10 +258,10 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <article>
 <div class="article-wrap">
 <div class="author-byline">
-<img alt="Timur — private guide in Tbilisi" height="40" loading="lazy" src="/images/timur.webp" width="40"/>
+<img alt="Timur — Georgia tour author" height="40" loading="lazy" src="/images/timur.webp" width="40"/>
 <div class="author-info">
 <a class="author-name" href="/en/about/">Timur · Sakhva Travel</a>
-<span class="author-creds">Private guide since 2023 · 500+ tours · 4.9/5 rating · Hosts 30+ nomads/month</span>
+<span class="author-creds">Guiding in Georgia since 2023 · 500+ tours · 4.9/5 rating · Hosts 30+ nomads/month</span>
 </div>
 </div>
 <div class="blog-discount-btn" style="text-align:center;margin:16px 0 8px">
@@ -462,7 +462,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <img alt="Timur — guide in Tbilisi" height="64" loading="lazy" src="/images/timur.webp" style="border-radius:50%;flex-shrink:0" width="64"/>
 <div>
 <div style="font-size:16px;font-weight:700;color:#111827;margin-bottom:4px">Author: <a href="/en/about/" style="color:#1A3D2E">Timur Sakhvadze</a></div>
-<p style="font-size:13px;color:#6B7280;line-height:1.5;margin:0">Private guide in Tbilisi since 2023. 500+ tours, 4.9/5 rating from 87 Google reviews. Tours across Tbilisi, Kazbegi, Kakheti and all of Georgia.</p>
+<p style="font-size:13px;color:#6B7280;line-height:1.5;margin:0">Private tours in Tbilisi since 2023. 500+ tours, 4.9/5 rating from 87 Google reviews. Tours across Tbilisi, Kazbegi, Kakheti and all of Georgia.</p>
 </div>
 </div>
 <div style="max-width:800px;margin:32px auto;padding:20px 24px;background:#f0fdf4;border-radius:12px;border:1px solid #bbf7d0;display:flex;align-items:center;gap:16px;flex-wrap:wrap">
@@ -534,7 +534,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <img alt="Timur — Sakhva Travel guide" height="64" loading="lazy" src="/images/timur.webp" style="border-radius:50%;object-fit:cover;flex-shrink:0" width="64"/>
 <div style="flex:1;min-width:200px">
 <p style="margin:0 0 6px;font-size:17px;font-weight:700;color:#1a3d2e"><a href="/en/about/" style="color:inherit;text-decoration:none">Timur · Sakhva Travel</a></p>
-<p style="margin:0 0 8px;font-size:13px;color:#6B7280">Private guide in Tbilisi since 2023. 500+ tours completed. 4.9/5 rating on Google. Living in Georgia, knowing the country from inside.</p>
+<p style="margin:0 0 8px;font-size:13px;color:#6B7280">Private tours in Tbilisi since 2023. 500+ tours completed. 4.9/5 rating on Google. Living in Georgia, knowing the country from inside.</p>
 <a href="/en/booking/" style="display:inline-block;padding:8px 18px;background:#1A3D2E;color:#fff;font-size:13px;font-weight:600;border-radius:9999px;text-decoration:none">Book a Tour</a>
 </div>
 </div>
@@ -580,6 +580,6 @@ function openContact(){document.getElementById('contact-modal').style.display='f
 function closeContact(){document.getElementById('contact-modal').style.display='none';document.body.style.overflow=''}
 function sendContact(){var name=document.getElementById('cm-name').value.trim();var phone=document.getElementById('cm-phone').value.trim();var msg=document.getElementById('cm-msg').value.trim();if(!phone){document.getElementById('cm-phone').style.borderColor='#EF4444';return}var page=document.title;fetch('/api/booking/',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:name||'(blog)',phone:phone,tour:'10% discount — blog: '+page,note:msg||'Blog discount form EN'})}).then(function(){document.getElementById('cm-form').style.display='none';document.getElementById('cm-success').style.display='block';setTimeout(closeContact,3000)}).catch(function(){document.getElementById('cm-form').style.display='none';document.getElementById('cm-success').style.display='block';setTimeout(closeContact,3000)});try{fetch('https://formspree.io/f/mzdkyywe',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify({type:'blog_discount',name:name,phone:phone,page:page,message:msg})})}catch(e){}}
 </script>
-<script defer="" src="/js/chat-widget.js?v=32"></script>
+<script defer="" src="/js/chat-widget.js?v=33"></script>
 </article></body>
 </html>

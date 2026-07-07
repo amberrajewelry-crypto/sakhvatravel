@@ -21,7 +21,7 @@
 <link href="https://sakhva-travel.com/turbo-feed.xml" rel="alternate" title="Turbo" type="application/rss+xml"/>
 <link href="https://sakhva-travel.com/blog/tury-v-kazbegi-2026/" hreflang="ru" rel="alternate"/>
 <link href="https://sakhva-travel.com/en/blog/kazbegi-complete-guide/" hreflang="en" rel="alternate"/>
-<link href="https://sakhva-travel.com/en/blog/kazbegi-complete-guide/" hreflang="x-default" rel="alternate"/>
+<link href="https://sakhva-travel.com/blog/tury-v-kazbegi-2026/" hreflang="x-default" rel="alternate"/>
 <meta content="index,follow,max-image-preview:large,max-snippet:-1" name="robots"/>
 <meta content="article" property="og:type"/>
 <meta content="Казбеги 2026: полный гайд — что посмотреть, дорога и советы" property="og:title"/>
@@ -335,7 +335,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <p class="sources-title">Официальные источники</p>
 <ul>
 <li><a href="https://georgia.travel/" rel="noopener noreferrer" target="_blank">Национальный парк Казбеги — GNTA</a></li>
-<li><a href="https://meteo.ge" rel="noopener noreferrer" target="_blank">Прогноз погоды — Meteo Georgia</a></li>
+<li><a href="https://meteo.gov.ge" rel="noopener noreferrer" target="_blank">Прогноз погоды — Meteo Georgia</a></li>
 <li><a href="https://gnta.ge" rel="noopener noreferrer" target="_blank">Туризм Грузии — GNTA</a></li>
 </ul>
 </div>
@@ -490,6 +490,6 @@ function openContact(){document.getElementById('contact-modal').style.display='f
 function closeContact(){document.getElementById('contact-modal').style.display='none';document.body.style.overflow=''}
 function sendContact(){var name=document.getElementById('cm-name').value.trim();var phone=document.getElementById('cm-phone').value.trim();var msg=document.getElementById('cm-msg').value.trim();if(!phone){document.getElementById('cm-phone').style.borderColor='#EF4444';return}var page=document.title;fetch('/api/booking/',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:name||'(blog)',phone:phone,tour:'Скидка 10% — блог: '+page,note:msg||'Blog discount form'})}).then(function(){document.getElementById('cm-form').style.display='none';document.getElementById('cm-success').style.display='block';setTimeout(closeContact,3000)}).catch(function(){document.getElementById('cm-form').style.display='none';document.getElementById('cm-success').style.display='block';setTimeout(closeContact,3000)});try{fetch('https://formspree.io/f/mzdkyywe',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify({type:'blog_discount',name:name,phone:phone,page:page,message:msg})})}catch(e){}}
 </script>
-<script defer="" src="/js/chat-widget.js?v=32"></script>
+<script defer="" src="/js/chat-widget.js?v=33"></script>
 </body>
 </html>
