@@ -85,7 +85,7 @@ footer a{color:#34E0A1;text-decoration:none}
 <div style="padding:32px clamp(16px,3.5vw,56px) 0;max-width:1200px;margin:0 auto">
   <nav style="font-size:13px;color:#6B7280;margin-bottom:10px"><a href="/" style="color:#1A3D2E;text-decoration:underline;text-underline-offset:2px">Главная</a> <span>›</span> Экскурсии</nav>
   <h1 style="font-size:clamp(28px,4vw,42px);font-weight:700;color:#111;margin-bottom:6px">Экскурсии в Тбилиси и Грузии</h1>
-  <p style="font-size:15px;color:#6B7280;margin-bottom:16px">Авторские экскурсии на русском языке. Цены от ₾100</p>
+  <p style="font-size:15px;color:#6B7280;margin-bottom:16px">Авторские экскурсии на русском языке. <a href="/prices/" style="color:#1A3D2E;font-weight:700">Цены от ₾100 — весь прайс-лист</a></p>
   <div style="max-width:800px;font-size:14px;line-height:1.7;color:#4B5563;margin-bottom:28px">
     <p>67 частных экскурсий по Грузии с гидом Тимуром — от пешеходных прогулок по Старому Тбилиси до многодневных туров через Сванетию и Тушетию. Каждый маршрут разработан на основе 500+ проведённых туров с 2023 года.</p>
     <p style="margin-top:8px">Горные дороги Казбеги, семейные винодельни Кахетии, серные бани Абанотубани, пещерные города и каньоны запада — маршруты под любой сезон и компанию. Группы до 7 человек, бесплатная отмена за сутки, предоплата 10%.</p>
@@ -239,6 +239,7 @@ footer a{color:#34E0A1;text-decoration:none}
   <h3 style="font-size:20px;font-weight:700;color:#fff;margin-bottom:8px">Планируете поездку в Грузию?</h3>
   <p style="font-size:14px;color:rgba(255,255,255,.6);margin-bottom:16px">Сравните все форматы туров — пакетные, экскурсионные и авторские. Цены от 2 700 ₽.</p>
   <a href="/tury-v-gruziyu/" style="display:inline-block;background:#F59E0B;color:#111827;padding:12px 28px;border-radius:9999px;font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;text-decoration:none">Все туры в Грузию →</a>
+  <a href="/prices/" style="display:inline-block;margin-left:10px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,.4);padding:12px 28px;border-radius:9999px;font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;text-decoration:none">Цены →</a>
 </div>
 
 <footer>
@@ -261,7 +262,7 @@ footer a{color:#34E0A1;text-decoration:none}
 (function(){
   var RATES={GEL:1,USD:0.38,EUR:0.35,RUB:34.5};
   var SYMS={GEL:'\u20BE',USD:'$',EUR:'\u20AC',RUB:'\u20BD'};
-  var reviews=['4.9 (26 отзывов)','4.9 (460+ туров)','4.9 (рекомендуют 98%)'];
+  var reviews=['4.9 (90+ отзывов)','4.9 (460+ туров)','4.9 (рекомендуют 98%)'];
   var curTag='all',curFormat='all',curCur='GEL',curPrice='all';
   fetch('/data/catalog.json?v=20260627').then(function(r){return r.json()}).then(function(data){
     var items=data.excursions||[];
@@ -391,6 +392,6 @@ k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,function(c
 (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
 ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});
 </script>
-<script src="/js/chat-widget.js?v=32" defer></script>
+<script src="/js/chat-widget.js?v=33" defer></script>
 </body>
 </html>
