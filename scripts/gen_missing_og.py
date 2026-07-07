@@ -2,7 +2,7 @@
 """Generate 13 missing OG images for blog articles."""
 import requests, os, time, sys
 
-OPENAI_API_KEY = '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'
+OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY')
 IMAGES_DIR = os.path.join(os.path.dirname(__file__), '..', 'images', 'blog')
 
 PROMPTS = {

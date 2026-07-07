@@ -9,6 +9,7 @@ Disallow: /README.md
 Disallow: /demo/
 Disallow: /dashboard/
 Disallow: /partner/
+Disallow: /scripts/
 Disallow: /service-account.json
 Disallow: /.worktrees/
 
