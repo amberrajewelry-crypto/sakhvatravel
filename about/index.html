@@ -13,7 +13,7 @@
   <link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/about/">
   <link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/about/">
   <meta property="og:type" content="profile">
-  <meta property="og:title" content="Тимур — автор туров по Грузии | Sakhva Travel">
+  <meta property="og:title" content="Тимур — авторские туры и экскурсии по Грузии | Sakhva Travel">
   <meta property="og:description" content="Индивидуальная экскурсия Тимур. 500+ туров по Грузии. Рейтинг 4.9/5 по 90+ отзывам. Казбеги, Кахетия, Тбилиси. Группы до 7 человек.">
   <meta property="og:url" content="https://sakhva-travel.com/about/">
   <meta property="og:image" content="https://sakhva-travel.com/images/timur.jpg">
@@ -23,7 +23,7 @@
   <meta property="og:locale" content="ru_RU">
   <meta property="og:site_name" content="Sakhva Travel">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Тимур — автор туров по Грузии">
+  <meta name="twitter:title" content="Тимур — авторские туры и экскурсии по Грузии | Sakhva Travel">
   <meta name="twitter:description" content="500+ туров, рейтинг 4.9/5. Казбеги, Кахетия, Тбилиси. Группы до 7 человек.">
   <meta name="twitter:image" content="https://sakhva-travel.com/images/timur.webp?v=3">
   <meta name="author" content="Тимур, Sakhva Travel">
@@ -102,7 +102,7 @@ if(_ck){gtag('consent','update',{analytics_storage:(_ck||_gc)?'granted':'denied'
         "contactPoint": {
           "@type": "ContactPoint",
           "contactType": "Бронирование туров",
-          "telephone": ["+79286345100", "+995511272623"],
+          "telephone": "+995511272623",
           "availableLanguage": ["Russian", "English"],
           "hoursAvailable": {
             "@type": "OpeningHoursSpecification",
@@ -120,7 +120,7 @@ if(_ck){gtag('consent','update',{analytics_storage:(_ck||_gc)?'granted':'denied'
           "https://www.google.com/maps?cid=14070083063461040701",
           "https://t.me/SakhvaGuideBot?start=site"
         ],
-        "telephone": ["+79286345100", "+995511272623"],
+        "telephone": "+995511272623",
         "email": "help@sakhva-travel.com"
       },
       {
@@ -231,6 +231,18 @@ if(_ck){gtag('consent','update',{analytics_storage:(_ck||_gc)?'granted':'denied'
     .val-icon{font-size:28px;margin-bottom:12px}
     .val-title{font-size:14px;font-weight:700;color:#111827;margin-bottom:6px}
     .val-text{font-size:13px;color:#6B7280;line-height:1.6}
+
+    /* TEAM */
+    .team-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:32px}
+    .team-card{display:flex;gap:20px;background:#F9FAFB;border:1px solid #F3F4F6;border-radius:16px;padding:20px;transition:box-shadow .2s,border-color .2s;color:#111827}
+    .team-card:hover{box-shadow:0 6px 20px rgba(0,0,0,.07);border-color:#1A3D2E}
+    .team-card img{width:120px;height:150px;border-radius:12px;object-fit:cover;flex-shrink:0}
+    .team-body{display:flex;flex-direction:column}
+    .team-name{font-size:17px;font-weight:800;color:#111827;margin-bottom:3px}
+    .team-role{font-size:12px;font-weight:700;color:#1A3D2E;letter-spacing:.02em;margin-bottom:8px}
+    .team-desc{font-size:13px;color:#6B7280;line-height:1.6;margin-bottom:10px}
+    .team-more{font-size:12px;font-weight:700;color:#1A3D2E;margin-top:auto}
+    @media(max-width:560px){.team-grid{grid-template-columns:1fr}.team-card img{width:96px;height:120px}}
 
     /* TIMELINE */
     .timeline{display:flex;flex-direction:column;gap:0;margin-top:24px}
@@ -351,7 +363,7 @@ k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,function(c
 ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true})};
 if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{setTimeout(f,3000)}})();
 </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/109038950" alt=""  style="position:absolute;left:-9999px" alt=""></div></noscript><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></head>
+<noscript><div><img alt="" src="https://mc.yandex.ru/watch/109038950" style="position:absolute;left:-9999px"/></div></noscript><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><link rel="preconnect" href="https://mc.yandex.ru" crossorigin></head>
 <body>
 
 <!-- NAV -->
@@ -518,6 +530,34 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
         <div class="val-title">4.9/5 рейтинг</div>
         <div class="val-text">90+ отзывов на Google и Tripadvisor. Честная оценка без накруток.</div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- КОМАНДА -->
+<section class="section" id="team">
+  <div class="sec-inner">
+    <div class="sec-label">Команда</div>
+    <h2 class="sec-title">Гиды Sakhva Travel</h2>
+    <div class="team-grid">
+      <a href="/about/" class="team-card">
+        <img src="/images/timur.webp?v=3" alt="Тимур Сахвадзе — гид по Казбеги и Кахетии" width="120" height="150" loading="lazy">
+        <div class="team-body">
+          <div class="team-name">Тимур Сахвадзе</div>
+          <div class="team-role">Основатель · Казбеги, Кахетия, Тбилиси</div>
+          <p class="team-desc">Лицензированный гид (№8247109128), 500+ туров с 2023 года. Русский, английский.</p>
+          <span class="team-more">Подробнее о Тимуре →</span>
+        </div>
+      </a>
+      <a href="/about/saba/" class="team-card">
+        <img src="/images/saba.webp" alt="Саба — гид по Батуми и Сванетии" width="120" height="150" loading="lazy">
+        <div class="team-body">
+          <div class="team-name">Саба</div>
+          <div class="team-role">Гид · Батуми, Аджария, Сванетия</div>
+          <p class="team-desc">Лицензированный гид (№9332412411), 10 лет опыта. Русский, английский, грузинский.</p>
+          <span class="team-more">Подробнее о Сабе →</span>
+        </div>
+      </a>
     </div>
   </div>
 </section>

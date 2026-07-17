@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
+<head><link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><link rel="preconnect" href="https://mc.yandex.ru" crossorigin>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Бронирование экскурсии | Sakhva Travel</title>
@@ -22,9 +22,6 @@
 <meta name="twitter:title" content="Бронирование экскурсии | Sakhva Travel">
 <meta name="twitter:description" content="Онлайн-бронирование экскурсий по Грузии с оплатой картой. Предоплата 10%, отмена бесплатно за 24 часа.">
 <meta name="twitter:image" content="https://sakhva-travel.com/images/og-cover.jpg">
-<link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/booking/">
-<link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/booking/">
-<link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/en/booking/">
 <link rel="stylesheet" href="/fonts/lora.css">
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
@@ -107,7 +104,7 @@ h1{font-size:clamp(26px,4vw,36px);font-weight:600;color:#111827;letter-spacing:-
 </style>
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,function(c){'requestIdleCallback'in window?requestIdleCallback(c,{timeout:4000}):setTimeout(c,1500)}(function(){a.parentNode.insertBefore(k,a)})})(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/109038950" style="position:absolute;left:-9999px" alt=""></div></noscript>
+<noscript><div><img alt="" src="https://mc.yandex.ru/watch/109038950" style="position:absolute;left:-9999px"/></div></noscript>
 <!-- /Yandex.Metrika counter -->
 </head>
 <body>
@@ -391,7 +388,7 @@ h1{font-size:clamp(26px,4vw,36px);font-weight:600;color:#111827;letter-spacing:-
     </details>
     <details style="background:#fff;border-radius:12px;border:1px solid #E5E7EB;padding:16px 20px">
       <summary style="font-size:14px;font-weight:700;color:#111827;cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between">Какие способы оплаты?<span style="color:#9CA3AF;font-size:18px;transition:transform .2s">+</span></summary>
-      <p style="font-size:14px;color:#6B7280;line-height:1.6;margin:12px 0 0">СБП (QR-код для российских банков), криптовалюта (BTC, ETH, USDT через NOWPayments), банковские карты Visa/Mastercard (через TBC Bank Грузии).</p>
+      <p style="font-size:14px;color:#6B7280;line-height:1.6;margin:12px 0 0">СБП (QR-код для российских банков), криптовалюта (BTC, ETH, USDT через NOWPayments), банковские карты Visa/Mastercard (через Bank of Georgia).</p>
     </details>
   </div>
 </div>
@@ -757,12 +754,12 @@ function payWithCrypto() {
   .catch(function(e){ alert('Ошибка: ' + e.message); });
 }
 
-// Card (Flitt)
+// Card (BOG — Bank of Georgia)
 function payWithCard() {
   if (!ofertaOk()) return;
   var d = getBookingData(); if (!d) return;
   sendBookingNotification(d);
-  fetch('/api/create-flitt-payment/', {
+  fetch('/api/create-bog-payment/', {
     method: 'POST',
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify({amount: d.payAmount, orderId: 'SK-' + Date.now(), description: (d.isFull ? 'FULL ' : 'PREPAY ') + d.tour + ', ' + d.date + ', ' + d.people + ' чел', email: d.email, lang: 'ru'})

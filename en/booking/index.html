@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><link rel="preconnect" href="https://mc.yandex.ru" crossorigin>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Tour Booking | Sakhva Travel</title>
@@ -10,9 +10,6 @@
 <link rel="canonical" href="https://sakhva-travel.com/en/booking/">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Tour Booking","url":"https://sakhva-travel.com/en/booking/","inLanguage":"en","isPartOf":{"@type":"WebSite","name":"Sakhva Travel","url":"https://sakhva-travel.com/"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sakhva-travel.com/en/"},{"@type":"ListItem","position":2,"name":"Booking"}]}</script>
-<link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/booking/">
-<link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/booking/">
-<link href="https://sakhva-travel.com/booking/" hreflang="x-default" rel="alternate"/>
 <meta property="og:type" content="website">
 <meta property="og:title" content="Tour Booking | Sakhva Travel">
 <meta property="og:description" content="Book a private tour in Georgia online. Visa, Mastercard, Bank of Georgia. 10% prepayment, free cancellation up to 24 hours before the tour.">
@@ -369,7 +366,7 @@ h1{font-size:clamp(26px,4vw,36px);font-weight:600;color:#111827;letter-spacing:-
     </details>
     <details style="background:#fff;border-radius:12px;border:1px solid #E5E7EB;padding:16px 20px">
       <summary style="font-size:14px;font-weight:700;color:#111827;cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between">Payment methods?<span style="color:#9CA3AF;font-size:18px;transition:transform .2s">+</span></summary>
-      <p style="font-size:14px;color:#6B7280;line-height:1.6;margin:12px 0 0">SBP (QR code for Russian banks), cryptocurrency (BTC, ETH, USDT via NOWPayments), Visa/Mastercard (via TBC Bank Georgia).</p>
+      <p style="font-size:14px;color:#6B7280;line-height:1.6;margin:12px 0 0">SBP (QR code for Russian banks), cryptocurrency (BTC, ETH, USDT via NOWPayments), Visa/Mastercard (via Bank of Georgia).</p>
     </details>
   </div>
 </div>
@@ -677,12 +674,12 @@ function payWithCrypto() {
   .catch(function(e){ alert('Error: ' + e.message); });
 }
 
-// Card (Flitt)
+// Card (BOG — Bank of Georgia)
 function payWithCard() {
   if (!ofertaOk()) return;
   var d = getBookingData(); if (!d) return;
   sendBookingNotification(d);
-  fetch('/api/create-flitt-payment/', {
+  fetch('/api/create-bog-payment/', {
     method: 'POST',
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify({amount: d.payAmount, orderId: 'SK-' + Date.now(), description: (d.isFull ? 'FULL ' : 'PREPAY ') + d.tour + ', ' + d.date + ', ' + d.people + ' pax', email: d.email, lang: 'en'})
@@ -735,7 +732,7 @@ k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,function(c
 (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
 ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});
 </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/109038950" alt=""  style="position:absolute;left:-9999px" alt=""></div></noscript>
+<noscript><div><img alt="" src="https://mc.yandex.ru/watch/109038950" style="position:absolute;left:-9999px"/></div></noscript>
 <div id="oferta-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:100000;align-items:center;justify-content:center;padding:20px" onclick="if(event.target===this)closeOfertaModal()">
   <div style="background:#fff;border-radius:16px;max-width:760px;width:100%;max-height:88vh;display:flex;flex-direction:column;overflow:hidden">
     <div style="display:flex;align-items:center;justify-content:space-between;padding:16px 20px;border-bottom:1px solid #E5E7EB;flex-shrink:0">

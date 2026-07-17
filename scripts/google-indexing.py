@@ -58,9 +58,15 @@ def submit_url(service, url: str, action: str = "URL_UPDATED"):
 
 
 def get_sitemap_urls() -> list[str]:
-    tree = ET.parse(str(SITEMAP))
+    import glob
     ns = {"ns": "http://www.sitemaps.org/schemas/sitemap/0.9"}
-    return [loc.text for loc in tree.findall(".//ns:loc", ns)]
+    urls = []
+    for sm in sorted(glob.glob("sitemap-*.xml")):
+        if "index" in sm:
+            continue
+        tree = ET.parse(sm)
+        urls += [loc.text for loc in tree.findall(".//ns:loc", ns)]
+    return sorted(set(urls))
 
 
 def main():

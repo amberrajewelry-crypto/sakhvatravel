@@ -28,11 +28,6 @@
       "statusCode": 301
     },
     {
-      "source": "/en/ekskursiya/ekskursiya-jvari-iz-tbilisi/",
-      "destination": "/ekskursiya/ekskursiya-jvari-iz-tbilisi/",
-      "statusCode": 301
-    },
-    {
       "source": "/blog/tury-v-gruziyu-2026/",
       "destination": "/tury-v-gruziyu/",
       "statusCode": 301
@@ -434,7 +429,7 @@
     },
     {
       "source": "/en/ekskursiya/jvari-tour-from-tbilisi/",
-      "destination": "/ekskursiya/ekskursiya-jvari-iz-tbilisi/",
+      "destination": "/en/ekskursiya/ekskursiya-jvari-iz-tbilisi/",
       "statusCode": 301
     },
     {
@@ -473,14 +468,14 @@
       "statusCode": 301
     },
     {
-      "source": "/:path*",
+      "source": "/:path(.*)",
       "has": [
         {
           "type": "host",
           "value": "www.sakhva-travel.com"
         }
       ],
-      "destination": "https://sakhva-travel.com/:path*",
+      "destination": "https://sakhva-travel.com/:path",
       "statusCode": 301
     },
     {
@@ -1594,18 +1589,28 @@
       "statusCode": 301
     },
     {
-      "source": "/ru/ekskursiya/:path*",
-      "destination": "/ekskursiya/:path*",
+      "source": "/ru/tours-in-georgia/",
+      "destination": "/tury-v-gruziyu/",
       "statusCode": 301
     },
     {
-      "source": "/ru/blog/:path*",
-      "destination": "/blog/:path*",
+      "source": "/ru/blog/chto-posmotret-v-kazbegi/",
+      "destination": "/blog/kazbegi-iz-tbilisi-2026/",
       "statusCode": 301
     },
     {
-      "source": "/ru/:path*",
-      "destination": "/:path*",
+      "source": "/ru/ekskursiya/:path(.*)",
+      "destination": "/ekskursiya/:path",
+      "statusCode": 301
+    },
+    {
+      "source": "/ru/blog/:path(.*)",
+      "destination": "/blog/:path",
+      "statusCode": 301
+    },
+    {
+      "source": "/ru/:path(.*)",
+      "destination": "/:path",
       "statusCode": 301
     },
     {
@@ -1885,7 +1890,7 @@
     },
     {
       "source": "/en/ekskursiya/jvari-tour-tbilisi/",
-      "destination": "/ekskursiya/ekskursiya-jvari-iz-tbilisi/",
+      "destination": "/en/ekskursiya/ekskursiya-jvari-iz-tbilisi/",
       "statusCode": 301
     },
     {

@@ -12,6 +12,7 @@ Disallow: /partner/
 Disallow: /scripts/
 Disallow: /service-account.json
 Disallow: /.worktrees/
+Disallow: /index.html.base-clean
 
 # Search engines
 User-agent: Googlebot
@@ -23,6 +24,21 @@ Clean-param: gad_source&gad_campaignid&gad_adgroupid&gad_creative&gbraid&wbraid&
 
 User-agent: Bingbot
 Allow: /
+
+# SEO-аудит краулеры — явно открыть весь сайт (кроме служебного)
+User-agent: AhrefsBot
+Allow: /
+Disallow: /dashboard/
+Disallow: /partner/
+Disallow: /demo/
+Disallow: /scripts/
+
+User-agent: AhrefsSiteAudit
+Allow: /
+Disallow: /dashboard/
+Disallow: /partner/
+Disallow: /demo/
+Disallow: /scripts/
 
 # AI Search crawlers — ALLOW (override Cloudflare blocks)
 User-agent: GPTBot
