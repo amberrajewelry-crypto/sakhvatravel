@@ -417,6 +417,21 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <div class="article-wrap"><div class="article-body">
 <h2>Военно-Грузинская дорога: маршрут с историей</h2>
 <p>Путь в Казбеги идёт по Военно-Грузинской дороге — самому известному горному тракту Кавказа. Её проложили русские инженеры в конце XVIII века, соединив Тбилиси и Владикавказ через Крестовый перевал. Дорога тянется 208 км вдоль рек Арагви и Терек, поднимаясь с 500 до 2395 метров. По ней ехали Пушкин, Лермонтов и Грибоедов — и описывали ровно те же виды, что открываются сегодня: крепость Ананури над бирюзовым Жинвальским водохранилищем, зелёные террасы Гудаури, суровые скалы Дарьяльского ущелья. Тимур останавливается там, где автобусные туры проезжают мимо — у старых сторожевых башен, минеральных источников Гудаури и панорамы Арки Дружбы народов.</p>
+<div id="route-map" style="height:380px;border-radius:12px;margin:18px 0 6px;background:#EAEFF2;border:1px solid #E5E7EB"></div>
+<p style="font-size:13px;color:#6B7280;margin:0 0 8px;text-align:center">Маршрут экскурсии: Тбилиси → крепость Ананури → Гудаури → Крестовый перевал → Степанцминда → церковь Гергети</p>
+<script>
+(function(){var el=document.getElementById('route-map');if(!el)return;var loaded=false;
+function load(){if(loaded)return;loaded=true;
+var css=document.createElement('link');css.rel='stylesheet';css.href='https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css';document.head.appendChild(css);
+var js=document.createElement('script');js.src='https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js';
+js.onload=function(){var pts=[['Тбилиси — старт',41.7151,44.8271],['Крепость Ананури',42.1637,44.7028],['Гудаури',42.4779,44.4805],['Крестовый перевал · 2395 м',42.5044,44.4530],['Степанцминда (Казбеги)',42.6570,44.6415],['Церковь Гергети',42.6626,44.6203]];
+var map=L.map('route-map',{scrollWheelZoom:false}).setView([42.19,44.62],8);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap',maxZoom:17}).addTo(map);
+var ll=[];pts.forEach(function(p){L.marker([p[1],p[2]]).addTo(map).bindPopup(p[0]);ll.push([p[1],p[2]]);});
+L.polyline(ll,{color:'#1A3D2E',weight:3,opacity:.75}).addTo(map);map.fitBounds(ll,{padding:[28,28]});};
+document.body.appendChild(js);}
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(e){if(e[0].isIntersecting){load();io.disconnect();}},{rootMargin:'250px'});io.observe(el);}else{load();}})();
+</script>
 <h2>Высота и самочувствие: что важно знать</h2>
 <p>За один день маршрут поднимает вас с 500 метров (Тбилиси) до 2395 метров (Крестовый перевал) и 2170 метров у церкви Гергети. Перепад ощутимый, но безопасный: подъём постепенный, а на высоте вы проводите не больше 2–3 часов. У некоторых на перевале появляется лёгкая одышка или закладывает уши — это нормально и проходит за минуты. Совет: пейте больше воды, не бегите вверх по тропе к Гергети, а если поднимаетесь на внедорожнике — сделайте паузу перед выходом на смотровую. Людям с сердечно-сосудистыми заболеваниями стоит предупредить гида заранее, чтобы скорректировать темп.</p>
 <h2>Казбеги по сезонам: когда ехать</h2>
