@@ -6,7 +6,7 @@
 DRY-RUN: python3 scripts/gen_route_maps.py            -> отчёт по каждому туру
 WRITE:   python3 scripts/gen_route_maps.py --write    -> вставка в файлы
 """
-import re, glob, sys, json
+import re, glob, sys, json, os
 
 MAPS_KEY = "AIzaSyB8lmxnn0XEUQKhPIJZsDw8MRuKURD2RXQ"  # gen-lang-client, referrer sakhva-travel.com
 
@@ -141,6 +141,31 @@ LABEL = {
  'tbilisi_zoo':'Зоопарк',
 }
 
+EN_LABEL = {
+ 'tbilisi':'Tbilisi','mtskheta':'Mtskheta','jvari_mon':'Jvari Monastery','svetitskhoveli':'Svetitskhoveli','samtavro':'Samtavro',
+ 'gori':'Gori','stalin_museum':'Stalin Museum','uplistsikhe':'Uplistsikhe','ananuri':'Ananuri','zhinvali':'Zhinvali',
+ 'pasanauri':'Pasanauri','gudauri':'Gudauri','friendship_arch':'Friendship Arch','cross_pass':'Jvari Pass',
+ 'stepantsminda':'Stepantsminda','gergeti':'Gergeti Church','truso':'Truso Valley','telavi':'Telavi','alaverdi':'Alaverdi',
+ 'ikalto':'Ikalto','tsinandali':'Tsinandali','kvareli':'Kvareli','sighnaghi':'Sighnaghi','bodbe':'Bodbe','gombori':'Gombori Pass',
+ 'sagarejo':'Sagarejo','david_gareja':'David Gareja','udabno':'Udabno','kutaisi':'Kutaisi','gelati':'Gelati',
+ 'prometheus':'Prometheus Cave','martvili':'Martvili','okatse':'Okatse','kinchkha':'Kinchkha','zugdidi':'Zugdidi','dadiani':'Dadiani Palace',
+ 'borjomi':'Borjomi','borjomi_np':'Borjomi Park','bakuriani':'Bakuriani','vardzia':'Vardzia','rabati':'Rabati',
+ 'dashbashi':'Dashbashi','tsalka':'Tsalka Lake','nikortsminda':'Nikortsminda','shaori':'Shaori Lake','ambrolauri':'Ambrolauri',
+ 'mestia':'Mestia','ushguli':'Ushguli','shatili':'Shatili','mutso':'Mutso','datvisjvari':'Datvisjvari Pass',
+ 'omalo':'Omalo','abano_pass':'Abano Pass','keselo':'Keselo','shenako':'Shenako','dartlo':'Dartlo',
+ 'batumi':'Batumi','batumi_boulevard':'Batumi Boulevard','gonio':'Gonio','batumi_botanical':'Botanical Garden',
+ 'machakhela':'Machakhela','gomis_mta':'Gomismta','khulo':'Khulo','ureki':'Ureki','nasakirali':'Nasakirali',
+ 'yerevan':'Yerevan','garni':'Garni','geghard':'Geghard','sevan':'Lake Sevan','dilijan':'Dilijan',
+ 'narikala':'Narikala','metekhi':'Metekhi','abanotubani':'Abanotubani','bridge_peace':'Bridge of Peace','rike_park':'Rike Park',
+ 'mtatsminda_park':'Mtatsminda','mtatsminda_pantheon':'Pantheon','funicular':'Funicular','mother_georgia':'Mother Georgia',
+ 'botanical_tbilisi':'Botanical Garden','freedom_square':'Freedom Square','shardeni':'Shardeni St','sioni':'Sioni',
+ 'anchiskhati':'Anchiskhati','meidan':'Meidan Sq','legvtakhevi':'Legvtakhevi','sameba':'Sameba','dry_bridge':'Dry Bridge',
+ 'deserter_bazaar':'Deserter Bazaar','fabrika':'Fabrika','vera':'Vera','rustaveli_ave':'Rustaveli Ave',
+ 'kote_afkhazi':'Kote Afkhazi St','kura_embankment':'Kura Embankment','chugureti':'Chughureti','sololaki':'Sololaki',
+ 'saburtalo':'Saburtalo','highways_ministry':'Highway Ministry','chronicle':'Chronicle of Georgia','wedding_palace':'Wedding Palace',
+ 'tbilisi_zoo':'Zoo',
+}
+
 DAY_PREFIX = re.compile(r'^(Дни?\s+[\d–\-—]+\s*[—-]\s*|День\s+\d+\s*[—-]\s*)')
 
 def resolve(raw, slug):
@@ -203,20 +228,71 @@ def build_block(pts):
     caption=' → '.join(LABEL[k] for k in pts)
     return BLOCK.replace('__STOPS__', js).replace('__KEY__', MAPS_KEY).replace('__CAPTION__', caption)
 
+# EN-вариант блока: английские подписи, caption "Route:", language=en
+BLOCK_EN = (BLOCK
+    .replace('language=ru&region=GE', 'language=en&region=GE')
+    .replace('Маршрут: __CAPTION__', 'Route: __CAPTION__'))
+
+def build_block_en(pts):
+    stops=[{'name':EN_LABEL[k],'lat':C[k][0],'lng':C[k][1]} for k in pts]
+    js=json.dumps(stops, ensure_ascii=False)
+    caption=' → '.join(EN_LABEL[k] for k in pts)
+    return BLOCK_EN.replace('__STOPS__', js).replace('__KEY__', MAPS_KEY).replace('__CAPTION__', caption)
+
+# якорь для H2, размечающего маршрут/программу (EN-прозаические/многодневные)
+H2_ROUTE = re.compile(r'<h2[^>]*>[^<]*(?:route|itinerary|programme|program|day-by-day|schedule)[^<]*</h2>', re.I)
+
 def insert_map(path, block):
     html=open(path, encoding='utf-8').read()
     if 'tour-route-map' in html or 'kazbegi-map' in html:
         return 'already'
-    m=re.search(r'<div class="route-grid">', html)
-    if not m: return 'no-grid'
-    end=html.find('</section>', m.end())
-    if end<0: return 'no-section-end'
-    new=html[:end] + block + '\n' + html[end:]
-    open(path,'w',encoding='utf-8').write(new)
-    return 'ok'
+    # 1) route-grid / route-list — вставка после программы (перед </section>)
+    m=re.search(r'<(?:div|ul) class="route-(?:grid|list)">', html)
+    if m:
+        end=html.find('</section>', m.end())
+        if end<0: return 'no-section-end'
+        new=html[:end] + block + '\n' + html[end:]
+        open(path,'w',encoding='utf-8').write(new); return 'ok'
+    # 2) прозаическая разметка — вставка перед первым H2 «route/itinerary/...»
+    m2=H2_ROUTE.search(html)
+    if m2:
+        pos=m2.start()
+        new=html[:pos] + block + '\n' + html[pos:]
+        open(path,'w',encoding='utf-8').write(new); return 'ok-h2'
+    return 'no-anchor'
+
+def missing_en_labels():
+    # проверка, что все ключи из C{} покрыты EN_LABEL
+    return sorted(k for k in C if k not in EN_LABEL)
 
 if __name__ == '__main__':
     write = '--write' in sys.argv
+    en = '--en' in sys.argv
+    if en:
+        # EN-туры: переиспользуем точки RU по слугу (паритет), английские подписи
+        miss = missing_en_labels()
+        if miss:
+            print('НЕТ EN-подписей для ключей:', miss); sys.exit(1)
+        tours = sorted(glob.glob('ekskursiya/*/index.html'))
+        ok=0; skip=0; wrote=0; noen=0
+        for t in tours:
+            slug, pts = tour_points(t)
+            if slug == 'ekskursiya-kazbegi-iz-tbilisi':
+                continue
+            if len(pts) < 2:
+                skip+=1; continue
+            en_path = f'en/ekskursiya/{slug}/index.html'
+            if not os.path.exists(en_path):
+                noen+=1; print(f"[нет EN] {slug}"); continue
+            ok+=1
+            labels=[EN_LABEL[k] for k in pts]
+            status=''
+            if write:
+                status=insert_map(en_path, build_block_en(pts))
+                if status=='ok': wrote+=1
+            print(f"[{len(pts)}] {slug}: {labels}" + (f"  -> {status}" if write else ''))
+        print(f"\nEN итого: карта у {ok} туров, пропуск {skip}, без EN {noen}" + (f", записано {wrote}" if write else ''))
+        sys.exit(0)
     tours = sorted(glob.glob('ekskursiya/*/index.html'))
     ok=0; skip=0; wrote=0
     for t in tours:
