@@ -160,9 +160,9 @@ EN_LABEL = {
  'mtatsminda_park':'Mtatsminda','mtatsminda_pantheon':'Pantheon','funicular':'Funicular','mother_georgia':'Mother Georgia',
  'botanical_tbilisi':'Botanical Garden','freedom_square':'Freedom Square','shardeni':'Shardeni St','sioni':'Sioni',
  'anchiskhati':'Anchiskhati','meidan':'Meidan Sq','legvtakhevi':'Legvtakhevi','sameba':'Sameba','dry_bridge':'Dry Bridge',
- 'deserter_bazaar':'Deserter Bazaar','fabrika':'Fabrika','vera':'Vera','rustaveli_ave':'Rustaveli Ave',
+ 'deserter_bazaar':"Deserters' Bazaar",'fabrika':'Fabrika','vera':'Vera','rustaveli_ave':'Rustaveli Ave',
  'kote_afkhazi':'Kote Afkhazi St','kura_embankment':'Kura Embankment','chugureti':'Chughureti','sololaki':'Sololaki',
- 'saburtalo':'Saburtalo','highways_ministry':'Highway Ministry','chronicle':'Chronicle of Georgia','wedding_palace':'Wedding Palace',
+ 'saburtalo':'Saburtalo','highways_ministry':'Ministry of Highways','chronicle':'Chronicle of Georgia','wedding_palace':'Wedding Palace',
  'tbilisi_zoo':'Zoo',
 }
 

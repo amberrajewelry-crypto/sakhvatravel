@@ -151,7 +151,7 @@
 (function(){
   var el=document.getElementById('tour-route-map');if(!el)return;var booted=false;
   window.__tourRouteMapInit=function(){
-    var stops=[{"name": "Highway Ministry", "lat": 41.709, "lng": 44.735}, {"name": "Saburtalo", "lat": 41.735, "lng": 44.75}, {"name": "Rustaveli Ave", "lat": 41.698, "lng": 44.799}, {"name": "Wedding Palace", "lat": 41.712, "lng": 44.832}, {"name": "Chronicle of Georgia", "lat": 41.79, "lng": 44.777}];
+    var stops=[{"name": "Ministry of Highways", "lat": 41.709, "lng": 44.735}, {"name": "Saburtalo", "lat": 41.735, "lng": 44.75}, {"name": "Rustaveli Ave", "lat": 41.698, "lng": 44.799}, {"name": "Wedding Palace", "lat": 41.712, "lng": 44.832}, {"name": "Chronicle of Georgia", "lat": 41.79, "lng": 44.777}];
     var map=new google.maps.Map(el,{zoom:8,mapTypeControl:false,streetViewControl:false,fullscreenControl:true,gestureHandling:'cooperative',clickableIcons:false});
     new google.maps.Polyline({path:stops.map(function(s){return{lat:s.lat,lng:s.lng};}),strokeColor:'#1A3D2E',strokeOpacity:.85,strokeWeight:4,map:map});
     stops.forEach(function(s,i){
@@ -177,7 +177,7 @@
   if('IntersectionObserver' in window){var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){boot();io.disconnect();}});},{rootMargin:'250px'});io.observe(el);}else{boot();}
 })();
 </script>
-<p style="font-size:13px;color:#6B7280;margin:8px 0 0;text-align:center">Route: Highway Ministry → Saburtalo → Rustaveli Ave → Wedding Palace → Chronicle of Georgia</p>
+<p style="font-size:13px;color:#6B7280;margin:8px 0 0;text-align:center">Route: Ministry of Highways → Saburtalo → Rustaveli Ave → Wedding Palace → Chronicle of Georgia</p>
 </section>
 <div style="background:#F0FDF4;border-radius:16px;padding:28px 24px;margin:32px auto;max-width:800px">
 <h2 style="font-family:'Lora',serif;font-size:22px;color:#1A3D2E;margin:0 0 12px;font-weight:600">Why Choose the Soviet Tour</h2>

@@ -129,7 +129,7 @@
 (function(){
   var el=document.getElementById('tour-route-map');if(!el)return;var booted=false;
   window.__tourRouteMapInit=function(){
-    var stops=[{"name": "Deserter Bazaar", "lat": 41.7095, "lng": 44.792}, {"name": "Dry Bridge", "lat": 41.698, "lng": 44.796}, {"name": "Kote Afkhazi St", "lat": 41.6905, "lng": 44.8075}, {"name": "Shardeni St", "lat": 41.6905, "lng": 44.8085}];
+    var stops=[{"name": "Deserters' Bazaar", "lat": 41.7095, "lng": 44.792}, {"name": "Dry Bridge", "lat": 41.698, "lng": 44.796}, {"name": "Kote Afkhazi St", "lat": 41.6905, "lng": 44.8075}, {"name": "Shardeni St", "lat": 41.6905, "lng": 44.8085}];
     var map=new google.maps.Map(el,{zoom:8,mapTypeControl:false,streetViewControl:false,fullscreenControl:true,gestureHandling:'cooperative',clickableIcons:false});
     new google.maps.Polyline({path:stops.map(function(s){return{lat:s.lat,lng:s.lng};}),strokeColor:'#1A3D2E',strokeOpacity:.85,strokeWeight:4,map:map});
     stops.forEach(function(s,i){
@@ -155,7 +155,7 @@
   if('IntersectionObserver' in window){var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){boot();io.disconnect();}});},{rootMargin:'250px'});io.observe(el);}else{boot();}
 })();
 </script>
-<p style="font-size:13px;color:#6B7280;margin:8px 0 0;text-align:center">Route: Deserter Bazaar → Dry Bridge → Kote Afkhazi St → Shardeni St</p>
+<p style="font-size:13px;color:#6B7280;margin:8px 0 0;text-align:center">Route: Deserters' Bazaar → Dry Bridge → Kote Afkhazi St → Shardeni St</p>
 </section>
 <div class="article-wrap"><div class="article-body">
 <h2>Dezertirebi Bazaar</h2>
