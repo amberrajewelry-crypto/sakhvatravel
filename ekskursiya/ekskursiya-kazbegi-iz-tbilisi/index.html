@@ -427,7 +427,7 @@ var js=document.createElement('script');js.src='https://cdn.jsdelivr.net/npm/lea
 js.onload=function(){var pts=[['Тбилиси — старт',41.7151,44.8271],['Крепость Ананури',42.1637,44.7028],['Гудаури',42.4779,44.4805],['Крестовый перевал · 2395 м',42.5044,44.4530],['Степанцминда (Казбеги)',42.6570,44.6415],['Церковь Гергети',42.6626,44.6203]];
 var map=L.map('route-map',{scrollWheelZoom:false}).setView([42.19,44.62],8);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap',maxZoom:17}).addTo(map);
-var ll=[];pts.forEach(function(p){L.marker([p[1],p[2]]).addTo(map).bindPopup(p[0]);ll.push([p[1],p[2]]);});
+var ll=[];function ic(n){return L.divIcon({html:'<div style="background:#1A3D2E;color:#fff;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.4)">'+n+'</div>',className:'',iconSize:[24,24],iconAnchor:[12,12]});}pts.forEach(function(p,i){L.marker([p[1],p[2]],{icon:ic(i+1)}).addTo(map).bindPopup(p[0]);ll.push([p[1],p[2]]);});
 L.polyline(ll,{color:'#1A3D2E',weight:3,opacity:.75}).addTo(map);map.fitBounds(ll,{padding:[28,28]});};
 document.body.appendChild(js);}
 if('IntersectionObserver' in window){var io=new IntersectionObserver(function(e){if(e[0].isIntersecting){load();io.disconnect();}},{rootMargin:'250px'});io.observe(el);}else{load();}})();
