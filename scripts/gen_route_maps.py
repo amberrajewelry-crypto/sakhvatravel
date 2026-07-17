@@ -204,17 +204,24 @@ BLOCK = '''<div id="tour-route-map" style="margin:18px 0 6px;height:420px;border
     var stops=__STOPS__;
     var map=new google.maps.Map(el,{zoom:8,mapTypeControl:false,streetViewControl:false,fullscreenControl:true,gestureHandling:'cooperative',clickableIcons:false});
     new google.maps.Polyline({path:stops.map(function(s){return{lat:s.lat,lng:s.lng};}),strokeColor:'#1A3D2E',strokeOpacity:.85,strokeWeight:4,map:map});
-    function Label(pos,text,dir){this.pos=pos;this.text=text;this.dir=dir;this.div=null;}
-    Label.prototype=new google.maps.OverlayView();
-    Label.prototype.onAdd=function(){var d=document.createElement('div');d.style.cssText='position:absolute;background:#fff;border:1px solid #1A3D2E;color:#14331f;font:600 12px/1.2 Arial,sans-serif;padding:3px 7px;border-radius:6px;box-shadow:0 1px 3px rgba(0,0,0,.3);white-space:nowrap';d.textContent=this.text;this.div=d;this.getPanes().floatPane.appendChild(d);};
-    Label.prototype.draw=function(){var p=this.getProjection().fromLatLngToDivPixel(this.pos);if(!p||!this.div)return;var d=this.div;d.style.top=p.y+'px';if(this.dir<0){d.style.left=(p.x-16)+'px';d.style.transform='translate(-100%,-50%)';}else{d.style.left=(p.x+16)+'px';d.style.transform='translate(0,-50%)';}};
-    Label.prototype.onRemove=function(){if(this.div&&this.div.parentNode)this.div.parentNode.removeChild(this.div);this.div=null;};
-    var b=new google.maps.LatLngBounds();
-    stops.forEach(function(s,i){var pos={lat:s.lat,lng:s.lng};
-      new google.maps.Marker({position:pos,map:map,label:{text:String(i+1),color:'#fff',fontWeight:'700',fontSize:'12px'},icon:{path:google.maps.SymbolPath.CIRCLE,scale:13,fillColor:'#1A3D2E',fillOpacity:1,strokeColor:'#fff',strokeWeight:2}});
-      new Label(new google.maps.LatLng(s.lat,s.lng),(i+1)+'. '+s.name,(i%2===0)?1:-1).setMap(map);
-      b.extend(pos);});
-    map.fitBounds(b,{top:46,right:120,bottom:30,left:120});
+    stops.forEach(function(s,i){
+      new google.maps.Marker({position:{lat:s.lat,lng:s.lng},map:map,label:{text:String(i+1),color:'#fff',fontWeight:'700',fontSize:'12px'},icon:{path:google.maps.SymbolPath.CIRCLE,scale:13,fillColor:'#1A3D2E',fillOpacity:1,strokeColor:'#fff',strokeWeight:2},zIndex:20+i});
+    });
+    // единый слой подписей с анти-наездом (жадный вертикальный declutter)
+    function LabelLayer(){this.divs=null;}
+    LabelLayer.prototype=new google.maps.OverlayView();
+    LabelLayer.prototype.onAdd=function(){var pane=this.getPanes().floatPane;this.divs=stops.map(function(s,i){var d=document.createElement('div');d.style.cssText='position:absolute;background:#fff;border:1px solid #1A3D2E;color:#14331f;font:600 12px/1.2 Arial,sans-serif;padding:3px 7px;border-radius:6px;box-shadow:0 1px 3px rgba(0,0,0,.3);white-space:nowrap;pointer-events:none';d.textContent=(i+1)+'. '+s.name;pane.appendChild(d);return d;});};
+    LabelLayer.prototype.draw=function(){var proj=this.getProjection();if(!proj||!this.divs)return;var divs=this.divs;
+      var boxes=stops.map(function(s,i){var p=proj.fromLatLngToDivPixel(new google.maps.LatLng(s.lat,s.lng));return{i:i,px:p.x,py:p.y,w:divs[i].offsetWidth,h:divs[i].offsetHeight,dir:(i%2===0)?1:-1};});
+      var placed=[];
+      boxes.slice().sort(function(a,b){return a.py-b.py;}).forEach(function(bx){
+        var lx=bx.dir>0?bx.px+16:bx.px-16-bx.w;var ly=bx.py-bx.h/2;var g=0,moved=true;
+        while(moved&&g++<60){moved=false;for(var k=0;k<placed.length;k++){var q=placed[k];if(lx<q.lx+q.w&&lx+bx.w>q.lx&&ly<q.ly+q.h&&ly+bx.h>q.ly){ly=q.ly+q.h+3;moved=true;}}}
+        bx.lx=lx;bx.ly=ly;placed.push(bx);var d=divs[bx.i];d.style.left=lx+'px';d.style.top=ly+'px';});};
+    LabelLayer.prototype.onRemove=function(){if(this.divs){this.divs.forEach(function(d){if(d.parentNode)d.parentNode.removeChild(d);});this.divs=null;}};
+    new LabelLayer().setMap(map);
+    var b=new google.maps.LatLngBounds();stops.forEach(function(s){b.extend({lat:s.lat,lng:s.lng});});
+    map.fitBounds(b,{top:52,right:150,bottom:36,left:150});
   };
   function boot(){if(booted)return;booted=true;var s=document.createElement('script');s.async=true;s.src='https://maps.googleapis.com/maps/api/js?key=__KEY__&callback=__tourRouteMapInit&language=ru&region=GE';document.head.appendChild(s);}
   if('IntersectionObserver' in window){var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){boot();io.disconnect();}});},{rootMargin:'250px'});io.observe(el);}else{boot();}
@@ -261,6 +268,17 @@ def insert_map(path, block):
         open(path,'w',encoding='utf-8').write(new); return 'ok-h2'
     return 'no-anchor'
 
+# перезапись существующего блока tour-route-map новым шаблоном (in-place, позиция сохраняется)
+BLOCK_RE = re.compile(r'<div id="tour-route-map".*?(?:Маршрут|Route): [^<]*</p>', re.S)
+
+def replace_map(path, block):
+    html=open(path, encoding='utf-8').read()
+    if 'tour-route-map' not in html: return 'no-map'
+    n=len(BLOCK_RE.findall(html))
+    if n!=1: return f'match={n}'
+    new=BLOCK_RE.sub(lambda m: block, html, count=1)
+    open(path,'w',encoding='utf-8').write(new); return 'ok'
+
 def missing_en_labels():
     # проверка, что все ключи из C{} покрыты EN_LABEL
     return sorted(k for k in C if k not in EN_LABEL)
@@ -268,6 +286,24 @@ def missing_en_labels():
 if __name__ == '__main__':
     write = '--write' in sys.argv
     en = '--en' in sys.argv
+    if '--refresh' in sys.argv:
+        # перезапись всех существующих блоков новым шаблоном (RU build_block, EN build_block_en)
+        miss = missing_en_labels()
+        if miss: print('НЕТ EN-подписей:', miss); sys.exit(1)
+        ru_ok=en_ok=err=0
+        for t in sorted(glob.glob('ekskursiya/*/index.html')):
+            slug, pts = tour_points(t)
+            if slug == 'ekskursiya-kazbegi-iz-tbilisi' or len(pts) < 2: continue
+            st=replace_map(t, build_block(pts))
+            if st=='ok': ru_ok+=1
+            else: err+=1; print(f"  RU {slug}: {st}")
+            ep=f'en/ekskursiya/{slug}/index.html'
+            if os.path.exists(ep) and 'tour-route-map' in open(ep,encoding='utf-8').read():
+                st=replace_map(ep, build_block_en(pts))
+                if st=='ok': en_ok+=1
+                else: err+=1; print(f"  EN {slug}: {st}")
+        print(f"\nRefresh: RU {ru_ok}, EN {en_ok}, ошибок {err}")
+        sys.exit(0)
     if en:
         # EN-туры: переиспользуем точки RU по слугу (паритет), английские подписи
         miss = missing_en_labels()
