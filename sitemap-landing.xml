@@ -340,11 +340,35 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/armenia/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/armenia/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/armenia/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/armenia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/armenia/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
+    <loc>https://sakhva-travel.com/ge/armenia/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/armenia/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/armenia/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/armenia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/armenia/"/>
+  </url>
+  <url>
     <loc>https://sakhva-travel.com/azerbaijan/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/azerbaijan/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/azerbaijan/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/azerbaijan/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/azerbaijan/"/>
     <lastmod>2026-07-09</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/azerbaijan/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/azerbaijan/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/azerbaijan/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/azerbaijan/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/azerbaijan/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/abkhazia/</loc>
@@ -392,10 +416,18 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/armenia/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/armenia/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/armenia/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/armenia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/armenia/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/azerbaijan/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/azerbaijan/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/azerbaijan/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/azerbaijan/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/azerbaijan/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>

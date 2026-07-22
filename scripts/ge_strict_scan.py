@@ -20,6 +20,7 @@ BRANDS = {
     "Ferrari","Formula","SIM","Go","RUB","Georgia","Tbilisi","Batumi","Kazbegi",
     "VK","VKontakte","YouTube","UTC","GB","TBC","Bank","Belavia","Lonely","Planet",
     "vs","Bolt","Yandex.Go","Skyscanner","Threads","Mir","American","Express","Homo","erectus","georgicus",
+    "ASAN",
 }
 ROMAN_RE = re.compile(r'^[IVXLCDM]{1,7}$')                    # римские цифры (века)
 # переключатель языков — коды остаются латиницей (это НЕ англ-остаток)

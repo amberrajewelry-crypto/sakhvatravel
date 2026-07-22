@@ -26,7 +26,7 @@ BRANDS = {
     "Tripster", "UNESCO", "GEL", "USD", "EUR", "QR", "USB", "AC", "4WD", "SUV",
     "flydubai", "Emirates", "Turkish Airlines", "Georgian Airways", "Wizz Air",
     "Pegasus", "FlyArystan", "SCAT", "Red Wings", "Azimuth", "Aeroflot",
-    "S7", "Nordwind", "Utair", "Pobeda", "Slow Travel", "Bo3",
+    "S7", "Nordwind", "Utair", "Pobeda", "Slow Travel", "Bo3", "ASAN",
 }
 
 def load_tm():
