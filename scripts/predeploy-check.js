@@ -62,6 +62,23 @@ function checkHTML(filePath) {
     Object.entries(ui).forEach(([k,v]) => v ? ok(`UI: ${k}`) : err(`UI отсутствует: ${k}`));
   }
 
+  // 4b. GE-специфичные проверки (только для /ge/ страниц)
+  if (filePath.includes('/ge/') || /\/ge\/index\.html$/.test(filePath)) {
+    /<html[^>]*lang="ka"/.test(html) ? ok('GE: lang="ka"') : err('GE: нет lang="ka"');
+    /hreflang="ka"/.test(html) ? ok('GE: hreflang ka') : err('GE: нет hreflang ka');
+    const can = (html.match(/<link[^>]*rel="canonical"[^>]*>/)||[''])[0];
+    if (!can) err('GE: нет canonical');
+    else if (can.includes('/ge/')) ok('GE: canonical-self → /ge/');
+    else err(`GE: canonical не /ge/ (${can.slice(0,80)})`);
+    /noto-sans-georgian/.test(html) && /\/css\/ge\.css/.test(html)
+      ? ok('GE: шрифт Noto + ge.css') : err('GE: нет preload шрифта/ge.css');
+    const title = (html.match(/<title>(.*?)<\/title>/s)||[,''])[1];
+    /[Ⴀ-ჿ]/.test(title) ? ok('GE: <title> на грузинском')
+      : warn('GE: <title> без груз. вязи — возможно не переведён');
+    /hreflang="ru"/.test(html) && /hreflang="en"/.test(html)
+      ? ok('GE: квадра hreflang ru+en+ka') : err('GE: неполная квадра hreflang');
+  }
+
   // 5. Проверка мёртвых CSS классов (определены но не используются в HTML)
   const styleMatch = html.match(/<style>([\s\S]*?)<\/style>/);
   if (styleMatch) {
