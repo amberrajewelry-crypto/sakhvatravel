@@ -82,7 +82,19 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/kvemo-kartli/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/kvemo-kartli/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/kvemo-kartli/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/kvemo-kartli/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/kvemo-kartli/"/>
     <lastmod>2026-07-09</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/kvemo-kartli/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/kvemo-kartli/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/kvemo-kartli/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/kvemo-kartli/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/kvemo-kartli/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/adjara/</loc>
@@ -122,11 +134,35 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/racha/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/racha/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/racha/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/racha/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/racha/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
+    <loc>https://sakhva-travel.com/ge/racha/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/racha/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/racha/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/racha/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/racha/"/>
+  </url>
+  <url>
     <loc>https://sakhva-travel.com/samegrelo/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/samegrelo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/samegrelo/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/samegrelo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/samegrelo/"/>
     <lastmod>2026-07-09</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/samegrelo/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/samegrelo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/samegrelo/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/samegrelo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/samegrelo/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/kakheti/</loc>
@@ -154,6 +190,10 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/kvemo-kartli/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/kvemo-kartli/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/kvemo-kartli/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/kvemo-kartli/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/kvemo-kartli/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
@@ -178,10 +218,18 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/racha/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/racha/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/racha/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/racha/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/racha/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/samegrelo/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/samegrelo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/samegrelo/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/samegrelo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/samegrelo/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
