@@ -8,6 +8,12 @@
 import sys, glob, re
 from pathlib import Path
 
+# regex-правила: унаследованные из EN дефекты, число варьируется (цена «от ₾N»
+# — русское «от» в ценниках EN site-wide → груз. постфикс «-დან»)
+CHROME_RE = [
+    (re.compile(r'>от\s+(&#8382;|₾|\$|€|USD|EUR|GEL)\s?([\d,\.]+)<'), r'>\1\2-დან<'),
+]
+
 # aria-label и текст-ноды общего UI. НЕ включать бренды (Visa/Mir/Threads…) — латиница.
 CHROME = [
     ('aria-label="Menu"', 'aria-label="მენიუ"'),
@@ -36,6 +42,8 @@ def apply(f):
         c = html.count(old)
         if c:
             html = html.replace(old, new); n += c
+    for rx, rep in CHROME_RE:
+        html, c = rx.subn(rep, html); n += c
     if n:
         Path(f).write_text(html, encoding="utf-8")
     return n

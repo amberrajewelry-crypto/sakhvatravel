@@ -106,7 +106,19 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/guria/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/guria/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/guria/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/guria/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/guria/"/>
     <lastmod>2026-07-09</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/guria/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/guria/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/guria/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/guria/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/guria/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/racha/</loc>
@@ -158,6 +170,10 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/guria/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/guria/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/guria/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/guria/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/guria/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
