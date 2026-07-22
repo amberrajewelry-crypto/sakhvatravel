@@ -63,9 +63,9 @@ ul{list-style:none}
 .nav-logo{display:flex;align-items:center;text-decoration:none;color:#fff;transition:color .3s}
 .logo-svg{width:148px;height:66px;display:block}
 .nav-links{display:flex;align-items:center;gap:24px}
-.nav-links a{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#fff;transition:color .2s}
+.nav-links a{white-space:nowrap;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#fff;transition:color .2s}
 .nav-links a:hover{color:#1A3D2E}
-.nav-btn{background:#1A3D2E;color:#fff!important;padding:9px 22px;border-radius:9999px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;transition:background .2s!important}
+.nav-btn{white-space:normal;background:#1A3D2E;color:#fff!important;padding:9px 22px;border-radius:9999px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;transition:background .2s!important}
 .nav-btn:hover{background:#1A3D2E!important}
 .burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:10px 8px;min-width:44px;min-height:44px;justify-content:center;align-items:center}
 .burger span{display:block;width:24px;height:2px;background:#fff;border-radius:2px;transition:.3s}
@@ -182,7 +182,7 @@ ul{list-style:none}
 .d-lang-btn{flex:1;padding:9px;border-radius:9999px;border:2px solid #1A3D2E;background:#fff;color:#1A3D2E;font-weight:700;font-size:12px;cursor:pointer;font-family:inherit;transition:all .2s}
 .d-lang-btn.on{background:#1A3D2E;color:#fff}
 h1,h2,h3,.section-title{font-family:'Lora',Georgia,serif !important;font-weight:400 !important}
-@media(max-width:768px){.foot-grid div h4{font-size:11px}.foot-copy,.foot-legal a{font-size:12px}.foot-links a{padding:8px 0;display:inline-block;min-height:44px;line-height:28px}.foot-legal{gap:0}.foot-legal a{padding:10px 12px;display:inline-block}.fa-inner{font-size:14px}.nav-links a{font-size:12px}}
+@media(max-width:768px){.foot-grid div h4{font-size:11px}.foot-copy,.foot-legal a{font-size:12px}.foot-links a{padding:8px 0;display:inline-block;min-height:44px;line-height:28px}.foot-legal{gap:0}.foot-legal a{padding:10px 12px;display:inline-block}.fa-inner{font-size:14px}.nav-links a{white-space:nowrap;font-size:12px}}
 body,h1,h2,h3,h4,h5,h6,p,a,span,div,li,td,th,label,input,textarea,button,blockquote{font-family:'Lora',Georgia,serif!important}
 </style>
 <!-- PostHog -->
@@ -237,7 +237,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <a href="/#guide">О нас</a>
 <a href="/#reviews">Отзывы</a>
 <a href="/blog/">Блог</a>
-<a href="/#faq">FAQ</a>
+<a href="/voprosy/">Вопросы</a>
 <a href="/contacts/">Контакты</a>
 <a class="nav-btn" href="/booking/">Забронировать</a>
 <div class="lang-sw">
@@ -253,7 +253,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <a href="/#guide" onclick="closeDrawer()">О нас</a>
 <a href="/#reviews" onclick="closeDrawer()">Отзывы</a>
 <a href="/blog/" onclick="closeDrawer()">Блог</a>
-<a href="/#faq" onclick="closeDrawer()">FAQ</a>
+<a href="/voprosy/" onclick="closeDrawer()">Вопросы</a>
 <a href="/contacts/" onclick="closeDrawer()">Контакты</a>
 <div class="d-lang">
 <button class="d-lang-btn on" id="dBtnRu" onclick="setLang('ru');closeDrawer()">RU</button>
@@ -435,7 +435,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 </div>
 <section id="faq">
 <div class="faq-inner">
-<h2>Частые вопросы о хинкали</h2>
+<h2>Вопросы о хинкали</h2>
 <div class="fi">
 <button class="fq" onclick="toggleFaq(this)">Как правильно есть хинкали?<span class="fq-ic">+</span></button>
 <div class="fa"><div class="fa-inner">Берите хинкали руками за хвостик, надкусывайте сбоку у основания, выпивайте бульон — он самый ценный, потом ешьте тесто с мясом. Хвостик не едят — по нему официант считает, сколько штук вы съели. Вилка и нож — моветон в любой грузинской хинкальной.</div></div>

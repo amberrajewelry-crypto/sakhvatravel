@@ -439,6 +439,16 @@ export default async function handler(req) {
     })
   }
 
+  // Only serve requests coming from our own site (limits OpenAI cost abuse).
+  const ALLOWED_ORIGIN = 'https://sakhva-travel.com'
+  const _o = req.headers.get('origin') || ''
+  const _r = req.headers.get('referer') || ''
+  if (_o !== ALLOWED_ORIGIN && !_r.startsWith(ALLOWED_ORIGIN + '/') && _r !== ALLOWED_ORIGIN) {
+    return new Response(JSON.stringify({ error: 'Forbidden' }), {
+      status: 403, headers: { 'Content-Type': 'application/json' }
+    })
+  }
+
   const KEY = process.env.OPENAI_API_KEY
   if (!KEY) {
     return new Response(JSON.stringify({

@@ -47,10 +47,10 @@ ul{list-style:none}
 #nav.scrolled .nav-logo{color:#1A3D2E}
 .logo-svg{width:148px;height:66px;display:block}
 .nav-links{display:flex;align-items:center;gap:24px}
-.nav-links a{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.85);transition:color .2s}
-#nav.scrolled .nav-links a{color:#4B5563}
+.nav-links a{white-space:nowrap;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.85);transition:color .2s}
+#nav.scrolled .nav-links a{white-space:nowrap;color:#4B5563}
 .nav-links a:hover{color:#F59E0B}
-.nav-btn{background:#1A3D2E;color:#fff!important;padding:9px 22px;border-radius:9999px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;transition:background .2s!important}
+.nav-btn{white-space:normal;background:#1A3D2E;color:#fff!important;padding:9px 22px;border-radius:9999px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;transition:background .2s!important}
 .nav-btn:hover{background:#145A38!important}
 .burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;min-width:44px;min-height:44px;justify-content:center;align-items:center}
 .burger span{display:block;width:24px;height:2px;background:#fff;border-radius:2px;transition:.3s}
@@ -175,7 +175,7 @@ if(_ck||_gc){gtag('consent','update',{analytics_storage:(_ck||_gc)?'granted':'de
 <a href="/#reviews">Отзывы</a>
 <a href="/#gallery">Медиа</a>
 <a href="/blog/">Блог</a>
-<a href="/#faq">FAQ</a>
+<a href="/voprosy/">Вопросы</a>
 <a href="/#footer">Контакты</a>
 <a href="#" class="nav-btn" onclick="event.preventDefault();if(typeof openContact==='function')openContact();else window.location.href='https://wa.me/995511272623'">Оплатить онлайн</a><div class="lang-sw"><span class="lang-btn on">RU</span><span class="lang-sep">|</span><a class="lang-btn" href="/en/guria/" style="text-decoration:none" onclick="document.cookie='lang_pref=en;path=/;max-age=31536000;SameSite=Lax'">EN</a></div>
 </div>
@@ -188,7 +188,7 @@ if(_ck||_gc){gtag('consent','update',{analytics_storage:(_ck||_gc)?'granted':'de
 <a href="/#reviews" onclick="closeDrawer()">Отзывы</a>
 <a href="/#gallery" onclick="closeDrawer()">Медиа</a>
 <a href="/blog/" onclick="closeDrawer()">Блог</a>
-<a href="/#faq" onclick="closeDrawer()">FAQ</a>
+<a href="/voprosy/" onclick="closeDrawer()">Вопросы</a>
 <a href="/#footer" onclick="closeDrawer()">Контакты</a>
 <a href="/booking/" class="d-btn">Забронировать онлайн</a>
 </div>
@@ -288,7 +288,7 @@ Telegram
 </div>
 
 <div class="faq-wrap">
-<h2>Частые вопросы о Гурии</h2>
+<h2>Вопросы о Гурии</h2>
 <div class="fi"><button class="fq" onclick="toggleFaq(this)"><span>Как добраться в Гурию?</span><span class="fq-ic">+</span></button><div class="fa"><div class="fa-inner">Из Тбилиси до Гурии около 4 часов 30 минут на автомобиле. Регион расположен между Кутаиси (1:30) и Батуми (1:00). Удобнее всего добраться на машине или с экскурсией — по пути можно заехать в Озургети и на чайные плантации. Маршрутки ходят из Тбилиси через Кутаиси.</div></div></div>
 <div class="fi"><button class="fq" onclick="toggleFaq(this)"><span>Стоит ли ехать в Гурию?</span><span class="fq-ic">+</span></button><div class="fa"><div class="fa-inner">Да, если хотите увидеть настоящую нетуристическую Грузию. В Гурии практически нет иностранных туристов — только местные жители с их уникальными традициями, гурийский хачапури с яйцом, чайные плантации и высокогорный курорт Бахмаро. Это Грузия без фильтров.</div></div></div>
 <div class="fi"><button class="fq" onclick="toggleFaq(this)"><span>Когда открыт Бахмаро?</span><span class="fq-ic">+</span></button><div class="fa"><div class="fa-inner">Дорога в Бахмаро открыта с июня по октябрь — зимой перевал заваливает снегом. Лучшее время для посещения — июль и август, когда погода стабильная, а горный воздух особенно чист. Бахмаро находится на высоте 2050 метров, температура летом +15-20°C даже в жару на побережье.</div></div></div>

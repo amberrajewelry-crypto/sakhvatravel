@@ -6,6 +6,12 @@ module.exports = async (req, res) => {
   if (req.method === 'OPTIONS') return res.status(200).end();
   if (req.method !== 'POST') return res.status(405).json({ error: 'POST only' });
 
+  // Same-site only (blocks external spam of the leads table)
+  const ref = req.headers.referer || req.headers.origin || '';
+  if (!ref.startsWith('https://sakhva-travel.com')) {
+    return res.status(403).json({ error: 'Forbidden' });
+  }
+
   const { partner, channel, page } = req.body || {};
   if (!partner || !/^[a-z0-9-]{2,30}$/i.test(partner)) {
     return res.status(400).json({ error: 'Invalid partner' });

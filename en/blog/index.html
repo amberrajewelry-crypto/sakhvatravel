@@ -52,9 +52,9 @@ button{border:none;background:none;font-family:inherit;cursor:pointer}
 .nav-logo{display:flex;align-items:center;text-decoration:none;color:#1A3D2E}
 .logo-svg{width:148px;height:66px;display:block}
 .nav-links{display:flex;align-items:center;gap:24px}
-.nav-links a{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#4B5563;transition:color .2s}
+.nav-links a{white-space:nowrap;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#4B5563;transition:color .2s}
 .nav-links a:hover,.nav-links a.on{color:#1A3D2E}
-.nav-btn{background:#1A3D2E;color:#fff!important;padding:9px 22px;border-radius:9999px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;transition:background .2s!important}
+.nav-btn{white-space:normal;background:#1A3D2E;color:#fff!important;padding:9px 22px;border-radius:9999px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;transition:background .2s!important}
 .nav-btn:hover{background:#1A3D2E!important}
 .burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:10px 8px;min-width:44px;min-height:44px;justify-content:center;align-items:center}
 .burger span{display:block;width:24px;height:2px;background:#111827;border-radius:2px;transition:.3s}
@@ -162,11 +162,10 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
   </a>
   <div class="nav-links">
     <a href="/en/georgia-travel-guide/">Tours in Georgia</a><a href="/en/tours-in-georgia/">Excursions</a><a href="/en/prices/">Prices</a>
-    <a href="/en/georgia-travel-guide/">Tours in Georgia</a>
     <a href="/en/#guide">About</a>
     <a href="/en/#reviews">Reviews</a>
     <a href="/en/blog/">Blog</a>
-    <a href="/en/#faq">FAQ</a>
+    <a href="/en/faq/">FAQ</a>
     <a href="/en/contacts/">Contacts</a>
     <a href="/en/booking/" class="nav-btn">Book Now</a><div class="lang-sw"><a class="lang-btn" href="/blog/" style="text-decoration:none" onclick="document.cookie='lang_pref=ru;path=/;max-age=31536000;SameSite=Lax'">RU</a><span class="lang-sep">|</span><span class="lang-btn on">EN</span></div>
   </div>
@@ -177,7 +176,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
   <a href="/en/#guide" onclick="closeDrawer()">About</a>
   <a href="/en/#reviews" onclick="closeDrawer()">Reviews</a>
   <a href="/en/blog/" onclick="closeDrawer()">Blog</a>
-  <a href="/en/#faq" onclick="closeDrawer()">FAQ</a>
+  <a href="/en/faq/" onclick="closeDrawer()">FAQ</a>
   <a href="/en/contacts/" onclick="closeDrawer()">Contacts</a>
   </div>
 
@@ -194,6 +193,80 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <div class="blog-wrap">
 
   <div class="blog-grid" id="blogGrid">
+
+    <a href="/en/blog/gifts-from-tbilisi/" class="bc">
+      <div class="bc-img">
+        <img src="/images/blog/chto-podarit-iz-tbilisi.jpg" alt="Gifts from Tbilisi — minankari enamel, chacha, churchkhela" width="600" height="315" loading="lazy">
+        <span class="bc-tag red">New</span>
+      </div>
+      <div class="bc-body">
+        <div class="bc-cat">Georgia</div>
+        <h3 class="bc-title">Gifts from Tbilisi: A Georgian Gift Guide by Recipient & Budget</h3>
+        <p class="bc-desc">What to bring home for her, him, kids and colleagues — gift ideas with prices in lari and where to buy in Tbilisi without overpaying.</p>
+        <div class="bc-foot"><span class="bc-read">Read more →</span><span class="bc-time">9 min</span></div>
+      </div>
+    </a>
+
+    <a href="/en/blog/georgian-phrases-tourists/" class="bc">
+      <div class="bc-img">
+        <img src="/images/blog/gruzinskie-frazy.webp" alt="Georgian phrases — 40 words for tourists with pronunciation" width="1200" height="630" loading="lazy">
+        <span class="bc-tag red">New</span>
+      </div>
+      <div class="bc-body">
+        <div class="bc-cat">Language & Culture</div>
+        <h3 class="bc-title">Georgian Phrases: 40 Words Every Tourist Needs</h3>
+        <p class="bc-desc">40 useful phrases with pronunciation: greetings, café, taxi, shopping, emergencies. How to say thank you in Georgian.</p>
+        <div class="bc-foot"><span class="bc-read">Read more →</span><span class="bc-time">8 min</span></div>
+      </div>
+    </a>
+    <a href="/en/blog/tipping-in-georgia/" class="bc">
+      <div class="bc-img">
+        <img src="/images/blog/chaevye-v-gruzii.webp" alt="Tipping in Georgia — how much in cafés, taxis and hotels" width="1200" height="630" loading="lazy">
+        <span class="bc-tag red">New</span>
+      </div>
+      <div class="bc-body">
+        <div class="bc-cat">Practical</div>
+        <h3 class="bc-title">Tipping in Georgia: How Much and to Whom</h3>
+        <p class="bc-desc">How much in a restaurant, what a service charge is, whether to tip drivers and guides. A clear cheat sheet.</p>
+        <div class="bc-foot"><span class="bc-read">Read more →</span><span class="bc-time">7 min</span></div>
+      </div>
+    </a>
+    <a href="/en/blog/tbilisi-taxi-guide/" class="bc">
+      <div class="bc-img">
+        <img src="/images/blog/taksi-tbilisi.webp" alt="Tbilisi taxi — Bolt, Yandex Go, prices and tips" width="1200" height="630" loading="lazy">
+        <span class="bc-tag red">New</span>
+      </div>
+      <div class="bc-body">
+        <div class="bc-cat">Transport</div>
+        <h3 class="bc-title">Tbilisi Taxi Guide: Bolt, Yandex, Prices</h3>
+        <p class="bc-desc">The apps, real city and airport prices, paying by card, street taxis and haggling. How not to overpay.</p>
+        <div class="bc-foot"><span class="bc-read">Read more →</span><span class="bc-time">7 min</span></div>
+      </div>
+    </a>
+    <a href="/en/blog/georgian-sweets-desserts/" class="bc">
+      <div class="bc-img">
+        <img src="/images/blog/gruzinskie-sladosti.webp" alt="Georgian sweets — churchkhela, pelamushi, gozinaki" width="1200" height="630" loading="lazy">
+        <span class="bc-tag red">New</span>
+      </div>
+      <div class="bc-body">
+        <div class="bc-cat">Food</div>
+        <h3 class="bc-title">Georgian Sweets: Churchkhela & What to Try</h3>
+        <p class="bc-desc">Churchkhela, pelamushi, gozinaki, tklapi, kada and nazuki — what they are and where to try them in Tbilisi.</p>
+        <div class="bc-foot"><span class="bc-read">Read more →</span><span class="bc-time">8 min</span></div>
+      </div>
+    </a>
+    <a href="/en/blog/money-cards-georgia/" class="bc">
+      <div class="bc-img">
+        <img src="/images/blog/karty-nalichnye-gruziya.webp" alt="Money and cards in Georgia — what works, ATMs, cash" width="1200" height="630" loading="lazy">
+        <span class="bc-tag red">New</span>
+      </div>
+      <div class="bc-body">
+        <div class="bc-cat">Practical</div>
+        <h3 class="bc-title">Money & Cards in Georgia: What Works</h3>
+        <p class="bc-desc">Visa/Mastercard yes, Mir no, UnionPay partly. Where to withdraw cash, ATMs, fees and the DCC trap.</p>
+        <div class="bc-foot"><span class="bc-read">Read more →</span><span class="bc-time">8 min</span></div>
+      </div>
+    </a>
 
     <a href="/en/blog/georgian-alphabet/" class="bc">
       <div class="bc-img">

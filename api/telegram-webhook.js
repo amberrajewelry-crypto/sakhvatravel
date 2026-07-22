@@ -673,6 +673,14 @@ export default async function handler(req) {
     return new Response('OK', { status: 200 })
   }
 
+  // Verify Telegram secret token (enforced once TELEGRAM_WEBHOOK_SECRET is set
+  // and the webhook re-registered via /api/set-webhook). Forged updates are
+  // silently accepted (200) but not processed.
+  const whSecret = process.env.TELEGRAM_WEBHOOK_SECRET
+  if (whSecret && req.headers.get('x-telegram-bot-api-secret-token') !== whSecret) {
+    return new Response('OK', { status: 200 })
+  }
+
   const BOT = process.env.TELEGRAM_BOT_TOKEN
   const NOTIFY = process.env.TELEGRAM_CHAT_ID
   if (!BOT) return new Response('No token', { status: 500 })

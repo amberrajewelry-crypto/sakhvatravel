@@ -20,7 +20,43 @@ export default async function handler(req) {
     return new Response('Invalid JSON', { status: 400 })
   }
 
-  const { payment_status, order_id, pay_amount, pay_currency, actually_paid, price_amount, price_currency } = body
+  // --- Authoritative verification (no shared secret / dashboard step needed) ---
+  // Never trust the callback body. Re-fetch the payment straight from the
+  // NOWPayments API with our server-side API key and act only on THAT status.
+  // A forged callback carries a bogus/absent payment_id or a not-yet-finished
+  // payment — both rejected here.
+  const apiKey = process.env.NOWPAYMENTS_API_KEY
+  if (!apiKey) {
+    return new Response('Not configured', { status: 500 })
+  }
+  const paymentId = body.payment_id || body.paymentId
+  if (!paymentId) {
+    return new Response('No payment_id', { status: 200 })
+  }
+  let vp
+  try {
+    const vr = await fetch(`https://api.nowpayments.io/v1/payment/${encodeURIComponent(paymentId)}`, {
+      headers: { 'x-api-key': apiKey }
+    })
+    if (!vr.ok) {
+      return new Response('Verification failed', { status: 401 })
+    }
+    vp = await vr.json()
+  } catch {
+    return new Response('Verification error', { status: 502 })
+  }
+
+  // Bind the verified payment to the booking; trust API values only.
+  if (body.order_id && vp.order_id && String(vp.order_id) !== String(body.order_id)) {
+    return new Response('Order mismatch', { status: 401 })
+  }
+  const payment_status = vp.payment_status
+  const order_id = vp.order_id || body.order_id
+  const pay_amount = vp.pay_amount
+  const pay_currency = vp.pay_currency
+  const actually_paid = vp.actually_paid
+  const price_amount = vp.price_amount
+  const price_currency = vp.price_currency
 
   // Only process finished payments
   if (payment_status !== 'finished' && payment_status !== 'confirmed') {

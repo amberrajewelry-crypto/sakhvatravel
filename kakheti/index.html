@@ -47,10 +47,10 @@ ul{list-style:none}
 #nav.scrolled .nav-logo{color:#1A3D2E}
 .logo-svg{width:148px;height:66px;display:block}
 .nav-links{display:flex;align-items:center;gap:24px}
-.nav-links a{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.85);transition:color .2s}
-#nav.scrolled .nav-links a{color:#4B5563}
+.nav-links a{white-space:nowrap;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.85);transition:color .2s}
+#nav.scrolled .nav-links a{white-space:nowrap;color:#4B5563}
 .nav-links a:hover{color:#F59E0B}
-.nav-btn{background:#1A3D2E;color:#fff!important;padding:9px 22px;border-radius:9999px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;transition:background .2s!important}
+.nav-btn{white-space:normal;background:#1A3D2E;color:#fff!important;padding:9px 22px;border-radius:9999px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;transition:background .2s!important}
 .nav-btn:hover{background:#145A38!important}
 .burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;min-width:44px;min-height:44px;justify-content:center;align-items:center}
 .burger span{display:block;width:24px;height:2px;background:#fff;border-radius:2px;transition:.3s}
@@ -177,7 +177,7 @@ if(_ck||_gc){gtag('consent','update',{analytics_storage:(_ck||_gc)?'granted':'de
 <a href="/#reviews">Отзывы</a>
 <a href="/#gallery">Медиа</a>
 <a href="/blog/">Блог</a>
-<a href="/#faq">FAQ</a>
+<a href="/voprosy/">Вопросы</a>
 <a href="/#footer">Контакты</a>
 <a href="#" class="nav-btn" onclick="event.preventDefault();if(typeof openContact==='function')openContact();else window.location.href='https://wa.me/995511272623'">Оплатить онлайн</a><div class="lang-sw"><span class="lang-btn on">RU</span><span class="lang-sep">|</span><a class="lang-btn" href="/en/kakheti/" style="text-decoration:none" onclick="document.cookie='lang_pref=en;path=/;max-age=31536000;SameSite=Lax'">EN</a></div>
 </div>
@@ -190,7 +190,7 @@ if(_ck||_gc){gtag('consent','update',{analytics_storage:(_ck||_gc)?'granted':'de
 <a href="/#reviews" onclick="closeDrawer()">Отзывы</a>
 <a href="/#gallery" onclick="closeDrawer()">Медиа</a>
 <a href="/blog/" onclick="closeDrawer()">Блог</a>
-<a href="/#faq" onclick="closeDrawer()">FAQ</a>
+<a href="/voprosy/" onclick="closeDrawer()">Вопросы</a>
 <a href="/#footer" onclick="closeDrawer()">Контакты</a>
 <a href="/booking/" class="d-btn">Забронировать онлайн</a>
 </div>
@@ -309,7 +309,7 @@ Telegram
 </div>
 
 <div class="faq-wrap">
-<h2>Частые вопросы о Кахетии</h2>
+<h2>Вопросы о Кахетии</h2>
 <div class="fi"><button class="fq" onclick="toggleFaq(this)"><span>Как добраться в Кахетию из Тбилиси?</span><span class="fq-ic">+</span></button><div class="fa"><div class="fa-inner">Из Тбилиси до Кахетии 110 км по трассе, время в пути примерно 1 час 50 минут на автомобиле. Можно доехать маршруткой от станции метро Самгори (5-7 лари) или заказать частный трансфер. Самый удобный вариант — <a href="/ekskursiya/degustatsiya-vina-kakheti/">экскурсия с гидом</a>: забирают от отеля и привозят обратно.</div></div></div>
 <div class="fi"><button class="fq" onclick="toggleFaq(this)"><span>Сколько стоит экскурсия в Кахетию с гидом?</span><span class="fq-ic">+</span></button><div class="fa"><div class="fa-inner">Экскурсия в Кахетию с русскоязычным гидом Sakhva Travel стоит от 170 лари на человека (около 60 евро). В стоимость входит трансфер от отеля, услуги гида на весь день, входные билеты и дегустация вина. Группа до 7 человек.</div></div></div>
 <div class="fi"><button class="fq" onclick="toggleFaq(this)"><span>Когда лучше ехать в Кахетию?</span><span class="fq-ic">+</span></button><div class="fa"><div class="fa-inner">Лучшее время — сентябрь и октябрь, когда проходит ртвели (сбор урожая винограда). Весна (апрель-май) тоже прекрасна: цветущие долины и мало туристов. Летом жарко (до +38°C), но винодельни с кондиционерами. Зимой тихо и атмосферно.</div></div></div>

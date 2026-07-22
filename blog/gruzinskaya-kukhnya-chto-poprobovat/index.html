@@ -61,9 +61,9 @@ ul{list-style:none}
 .nav-logo{display:flex;align-items:center;text-decoration:none;color:#fff;transition:color .3s}
 .logo-svg{width:148px;height:66px;display:block}
 .nav-links{display:flex;align-items:center;gap:24px}
-.nav-links a{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#fff;transition:color .2s}
+.nav-links a{white-space:nowrap;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#fff;transition:color .2s}
 .nav-links a:hover{color:#1A3D2E}
-.nav-btn{background:#1A3D2E;color:#fff!important;padding:9px 22px;border-radius:9999px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;transition:background .2s!important}
+.nav-btn{white-space:normal;background:#1A3D2E;color:#fff!important;padding:9px 22px;border-radius:9999px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;transition:background .2s!important}
 .nav-btn:hover{background:#1A3D2E!important}
 .burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:10px 8px;min-width:44px;min-height:44px;justify-content:center;align-items:center}
 .burger span{display:block;width:24px;height:2px;background:#fff;border-radius:2px;transition:.3s}
@@ -178,7 +178,7 @@ ul{list-style:none}
 .dish-card-name{font-size:19px;font-weight:800;color:#111827;margin-bottom:8px}
 .dish-card-price{display:inline-block;background:#F0FDF4;color:#1A3D2E;font-size:12px;font-weight:700;padding:4px 10px;border-radius:9999px;margin-bottom:10px}
 .dish-card p{font-size:14px;color:#374151;line-height:1.8;margin-bottom:0}
-h1,h2,h3,.section-title{font-family:'Lora',Georgia,serif !important;font-weight:400 !important}@media(max-width:768px){.foot-grid div h4{font-size:11px}.foot-copy,.foot-legal a{font-size:12px}.foot-links a{padding:8px 0;display:inline-block;min-height:44px;line-height:28px}.foot-legal{gap:0}.foot-legal a{padding:10px 12px;display:inline-block}.fa-inner{font-size:14px}.nav-links a{font-size:12px}}
+h1,h2,h3,.section-title{font-family:'Lora',Georgia,serif !important;font-weight:400 !important}@media(max-width:768px){.foot-grid div h4{font-size:11px}.foot-copy,.foot-legal a{font-size:12px}.foot-links a{padding:8px 0;display:inline-block;min-height:44px;line-height:28px}.foot-legal{gap:0}.foot-legal a{padding:10px 12px;display:inline-block}.fa-inner{font-size:14px}.nav-links a{white-space:nowrap;font-size:12px}}
 body,h1,h2,h3,h4,h5,h6,p,a,span,div,li,td,th,label,input,textarea,button,blockquote{font-family:'Lora',Georgia,serif!important}
 </style>
 <!-- PostHog -->
@@ -227,7 +227,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <a href="/#guide">О нас</a>
 <a href="/#reviews">Отзывы</a>
 <a href="/blog/">Блог</a>
-<a href="/#faq">FAQ</a>
+<a href="/voprosy/">Вопросы</a>
 <a href="/contacts/">Контакты</a>
 <a class="nav-btn" href="/booking/">Забронировать</a>
 <div class="lang-sw">
@@ -243,7 +243,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <a href="/#guide" onclick="closeDrawer()">О нас</a>
 <a href="/#reviews" onclick="closeDrawer()">Отзывы</a>
 <a href="/blog/" onclick="closeDrawer()">Блог</a>
-<a href="/#faq" onclick="closeDrawer()">FAQ</a>
+<a href="/voprosy/" onclick="closeDrawer()">Вопросы</a>
 <a href="/contacts/" onclick="closeDrawer()">Контакты</a>
 <div class="d-lang">
 <button class="d-lang-btn on" id="dBtnRu" onclick="setLang('ru');closeDrawer()">RU</button>
@@ -311,6 +311,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <p>Крупные пельмени с мясным фаршем и бульоном внутри. Едят руками, хвостик не едят. Нормальная порция — 6–10 штук.</p>
 </div>
 <p>Хинкали едят руками: берёте за хвостик, надкусываете снизу, выпиваете бульон — самое ценное. Потом едите тесто с мясом. Хвостик оставляете на тарелке — официант по нему считает съеденные штуки. Классика — свинина с говядиной, есть варианты с грибами и картошкой. Горные хинкали (мтиулури) — поменьше, острее.</p>
+<p>Про сами <a href="/blog/khinkali-gruzinskie/">хинкали — как их правильно есть и где в Тбилиси лучшие</a> — есть отдельный разбор.</p>
 <div class="info-box"><strong>Где едят хинкали сами тбилисцы:</strong> Ищите заведения без английского меню на Агмашенебели и в районе Чугурети. Нет вывески, пластиковые стулья, телевизор с футболом — вы пришли туда, куда надо. Цена: 0.8–1 ₾ за штуку. На Шардени те же хинкали стоят 2.5–3 ₾.</div>
 <h2 id="khachapuri">Какой хачапури самый вкусный: три вида и главные отличия</h2>
 <div class="dish-card">

@@ -62,9 +62,9 @@ ul{list-style:none}
 .nav-logo{display:flex;align-items:center;text-decoration:none;color:#fff;transition:color .3s}
 .logo-svg{width:148px;height:66px;display:block}
 .nav-links{display:flex;align-items:center;gap:24px}
-.nav-links a{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#fff;transition:color .2s}
+.nav-links a{white-space:nowrap;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#fff;transition:color .2s}
 .nav-links a:hover{color:#1A3D2E}
-.nav-btn{background:#1A3D2E;color:#fff!important;padding:9px 22px;border-radius:9999px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;transition:background .2s!important}
+.nav-btn{white-space:normal;background:#1A3D2E;color:#fff!important;padding:9px 22px;border-radius:9999px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;transition:background .2s!important}
 .nav-btn:hover{background:#1A3D2E!important}
 .burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;min-width:44px;min-height:44px;justify-content:center;align-items:center}
 .burger span{display:block;width:24px;height:2px;background:#fff;border-radius:2px;transition:.3s}
@@ -163,7 +163,7 @@ ul{list-style:none}
 #lang-notice a{color:#1A3D2E;font-weight:600}
 .author-byline{display:flex;align-items:center;gap:12px;background:#F9FAFB;border:1px solid #E5E7EB;border-radius:12px;padding:14px 18px;margin-bottom:32px}.author-byline img{width:40px;height:40px;border-radius:50%;object-fit:cover;flex-shrink:0}.author-info{display:flex;flex-direction:column;gap:2px}.author-name{font-size:14px;font-weight:700;color:#111827;text-decoration:none}.author-name:hover{color:#1A3D2E}.author-creds{font-size:12px;color:#6B7280}
 .article-lead{background:#F0FDF4;border-left:3px solid #1A3D2E;border-radius:8px;padding:14px 18px;font-size:16px;color:#1e3a5f;line-height:1.75;margin-bottom:28px}
-h1,h2,h3,.section-title{font-family:'Lora',Georgia,serif !important;font-weight:400 !important}@media(max-width:768px){.foot-grid div h4{font-size:11px}.foot-copy,.foot-legal a{font-size:12px}.foot-links a{padding:8px 0;display:inline-block;min-height:44px;line-height:28px}.foot-legal{gap:0}.foot-legal a{padding:10px 12px;display:inline-block}.fa-inner{font-size:14px}.nav-links a{font-size:12px}}
+h1,h2,h3,.section-title{font-family:'Lora',Georgia,serif !important;font-weight:400 !important}@media(max-width:768px){.foot-grid div h4{font-size:11px}.foot-copy,.foot-legal a{font-size:12px}.foot-links a{padding:8px 0;display:inline-block;min-height:44px;line-height:28px}.foot-legal{gap:0}.foot-legal a{padding:10px 12px;display:inline-block}.fa-inner{font-size:14px}.nav-links a{white-space:nowrap;font-size:12px}}
 body,h1,h2,h3,h4,h5,h6,p,a,span,div,li,td,th,label,input,textarea,button,blockquote{font-family:'Lora',Georgia,serif!important}
 </style>
 <!-- PostHog -->
@@ -207,7 +207,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <a href="/#guide">О нас</a>
 <a href="/#reviews">Отзывы</a>
 <a href="/blog/">Блог</a>
-<a href="/#faq">FAQ</a>
+<a href="/voprosy/">Вопросы</a>
 <a href="/contacts/">Контакты</a>
 <a class="nav-btn" href="/booking/">Забронировать</a>
 <div class="lang-sw">
@@ -270,6 +270,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 
 <p>Грузия стала одним из главных направлений для русскоязычных путешественников. По данным Национальной туристической администрации, только в 2024 году Грузию посетило более 1,2 миллиона туристов из стран СНГ. И большинство из них ищут гида, с которым можно говорить свободно — без языкового барьера, без неловких пауз при поиске слов, без потери нюансов при переводе.</p>
 <p>Разница между «говорю по-русски» и «свободно говорю по-русски» огромна. Я слышал истории туристов, у которых «русскоязычный» гид с трудом формулировал предложения и путался в падежах. Это не придирки — это реальное ощущение: вы платите деньги и три часа слушаете ломаный текст.</p>
+<p>Ещё до языка стоит определиться, <a href="/blog/gid-tbilisi-vs-gid-gruziya/">нужен гид по Тбилиси или по всей Грузии</a> — это разные специализации.</p>
 <p>За три года работы ко мне приходило около 15 туристов, которые пересаживались с другого гида прямо в середине поездки. Самая частая причина — не плохие знания, а именно языковой барьер: гид не мог ответить на вопрос вне заученного текста. Одно голосовое в WhatsApp до бронирования экономит и деньги, и нервы.</p>
 <div class="info-box">Тбилиси — один из немногих городов мира, где русский язык de facto является вторым туристическим языком. Большинство в старом городе его понимают. Но понимать и рассказывать историю — это разные вещи.</div>
 <h2 id="s2">Три источника гидов: фрилансер, платформа или консьерж</h2>
@@ -418,7 +419,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 </div>
 <section id="faq">
 <div class="faq-inner">
-<h2>Частые вопросы</h2>
+<h2>Вопросы</h2>
 <div class="fi">
 <button class="fq" onclick="toggleFaq(this)">Как проверить, что гид действительно хорошо говорит по-русски?<span class="fq-ic">+</span></button>
 <div class="fa"><div class="fa-inner">Попросите голосовое сообщение в WhatsApp или позвоните до бронирования. Хороший гид говорит свободно, без акцента, может объяснять сложные исторические темы живым языком. Если вам присылают только текст — насторожитесь: это не гарантия владения устной речью.</div></div>

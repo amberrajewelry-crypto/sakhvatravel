@@ -3,10 +3,24 @@
 
 export const config = { runtime: 'edge' }
 
+const ALLOWED_ORIGIN = 'https://sakhva-travel.com'
+function sameOrigin(req) {
+  const o = req.headers.get('origin') || ''
+  const r = req.headers.get('referer') || ''
+  return o === ALLOWED_ORIGIN || r.startsWith(ALLOWED_ORIGIN + '/') || r === ALLOWED_ORIGIN
+}
+
 export default async function handler(req) {
   if (req.method !== 'POST') {
     return new Response(JSON.stringify({ error: 'Method not allowed' }), {
       status: 405, headers: { 'Content-Type': 'application/json' }
+    })
+  }
+
+  // Only allow calls originating from our own site (blocks abuse of the mailer).
+  if (!sameOrigin(req)) {
+    return new Response(JSON.stringify({ error: 'Forbidden' }), {
+      status: 403, headers: { 'Content-Type': 'application/json' }
     })
   }
 

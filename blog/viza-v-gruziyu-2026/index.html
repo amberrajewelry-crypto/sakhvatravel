@@ -63,9 +63,9 @@ ul{list-style:none}
 .nav-logo{display:flex;align-items:center;text-decoration:none;color:#fff;transition:color .3s}
     .logo-svg{width:148px;height:66px;display:block}
 .nav-links{display:flex;align-items:center;gap:24px}
-.nav-links a{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#fff;transition:color .2s}
+.nav-links a{white-space:nowrap;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#fff;transition:color .2s}
 .nav-links a:hover{color:#1A3D2E}
-.nav-btn{background:#1A3D2E;color:#fff!important;padding:9px 22px;border-radius:9999px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;transition:background .2s!important}
+.nav-btn{white-space:normal;background:#1A3D2E;color:#fff!important;padding:9px 22px;border-radius:9999px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;transition:background .2s!important}
 .nav-btn:hover{background:#1A3D2E!important}
 .burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:10px 8px;min-width:44px;min-height:44px;justify-content:center;align-items:center}
 .burger span{display:block;width:24px;height:2px;background:#fff;border-radius:2px;transition:.3s}
@@ -163,7 +163,7 @@ ul{list-style:none}
 @media(max-width:580px){.related-grid{grid-template-columns:1fr}}
 @media(max-width:480px){.article-body{padding:32px 18px}.price-table{font-size:13px}.article-toc{padding:16px 18px}input,select,textarea{font-size:16px!important}}
 .author-byline{display:flex;align-items:center;gap:12px;background:#F9FAFB;border:1px solid #E5E7EB;border-radius:12px;padding:14px 18px;margin-bottom:32px}.author-byline img{width:40px;height:40px;border-radius:50%;object-fit:cover;flex-shrink:0}.author-info{display:flex;flex-direction:column;gap:2px}.author-name{font-size:14px;font-weight:700;color:#111827;text-decoration:none}.author-name:hover{color:#1A3D2E}.author-creds{font-size:12px;color:#6B7280}
-h1,h2,h3,.section-title{font-family:'Lora',Georgia,serif !important;font-weight:400 !important}@media(max-width:768px){.foot-grid div h4{font-size:11px}.foot-copy,.foot-legal a{font-size:12px}.foot-links a{padding:8px 0;display:inline-block;min-height:44px;line-height:28px}.foot-legal{gap:0}.foot-legal a{padding:10px 12px;display:inline-block}.fa-inner{font-size:14px}.nav-links a{font-size:12px}}
+h1,h2,h3,.section-title{font-family:'Lora',Georgia,serif !important;font-weight:400 !important}@media(max-width:768px){.foot-grid div h4{font-size:11px}.foot-copy,.foot-legal a{font-size:12px}.foot-links a{padding:8px 0;display:inline-block;min-height:44px;line-height:28px}.foot-legal{gap:0}.foot-legal a{padding:10px 12px;display:inline-block}.fa-inner{font-size:14px}.nav-links a{white-space:nowrap;font-size:12px}}
 body,h1,h2,h3,h4,h5,h6,p,a,span,div,li,td,th,label,input,textarea,button,blockquote{font-family:'Lora',Georgia,serif!important}
 
 .lang-sw{display:flex;align-items:center;gap:4px;margin-left:8px}
@@ -222,7 +222,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <a href="/#guide">О нас</a>
 <a href="/#reviews">Отзывы</a>
 <a href="/blog/">Блог</a>
-<a href="/#faq">FAQ</a>
+<a href="/voprosy/">Вопросы</a>
 <a href="/contacts/">Контакты</a>
 <a class="nav-btn" href="/booking/">Забронировать</a><div class="lang-sw"><span class="lang-btn on">RU</span><span class="lang-sep">|</span><a class="lang-btn" href="/blog/viza-v-gruziyu-2026/" style="text-decoration:none">EN</a></div>
 </div>
@@ -233,7 +233,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <a href="/#guide" onclick="closeDrawer()">О нас</a>
 <a href="/#reviews" onclick="closeDrawer()">Отзывы</a>
 <a href="/blog/" onclick="closeDrawer()">Блог</a>
-<a href="/#faq" onclick="closeDrawer()">FAQ</a>
+<a href="/voprosy/" onclick="closeDrawer()">Вопросы</a>
 <a href="/contacts/" onclick="closeDrawer()">Контакты</a>
 </div>
 <header class="article-hero">
@@ -277,7 +277,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <li><a href="#remote-work">Можно ли работать удалённо из Грузии?</a></li>
 <li><a href="#checklist">Что сделать в первые дни в Грузии?</a></li>
 <li><a href="#longterm">Как получить ВНЖ в Грузии?</a></li>
-<li><a href="#faq">Частые вопросы</a></li>
+<li><a href="/voprosy/">Вопросы</a></li>
 </ol>
 </nav>
 <div class="article-body">
@@ -370,7 +370,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <p><strong>Разрешение на постоянное проживание</strong>: доступно после 6 лет непрерывного ВНЖ. Либо по упрощённой процедуре — при наличии недвижимости в Грузии стоимостью от $100 000.</p>
 <p><strong>Статус «Лица без определённого гражданства»</strong>: отдельный случай, для тех кто официально не является гражданином какой-либо страны. Грузия предоставляет им статус и документы.</p>
 <p>Для большинства цифровых кочевников и туристов всё это не нужно: 365-дневный безвизовый режим полностью покрывает потребности. Если хотите остаться надолго — сначала проконсультируйтесь с местным юристом по иммиграционным вопросам. Стоимость консультации 50-100 лари. Сколько потратить на жизнь в Грузии — разобрано в статье <a href="/blog/skolko-stoit-otdyh-v-gruzii/">бюджет в Грузии</a>: реальные цифры по жилью, еде и транспорту.</p>
-<h2 id="faq-text">Частые вопросы о визе в Грузию</h2>
+<h2 id="faq-text">Вопросы о визе в Грузию</h2>
 <p><strong>Нужно ли что-то подавать перед поездкой?</strong> Нет. Никаких заявок, анкет, электронных разрешений. Просто приезжаете с паспортом.</p>
 <p><strong>Можно ли въехать через третьи страны?</strong> Да. Грузия не требует прямых рейсов. Через Стамбул, Дубай, Ереван, Баку — всё работает.</p>
 <p><strong>Можно ли работать удалённо на иностранного работодателя?</strong> Де-факто да, де-юре — серая зона. Официальной преследования нет, но юридически это рабочая деятельность. Рекомендуем открыть ИП для официальности.</p>
@@ -432,7 +432,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 </div>
 <section id="faq">
 <div class="faq-inner">
-<h2>Частые вопросы о визе в Грузию</h2>
+<h2>Вопросы о визе в Грузию</h2>
 <div class="fi">
 <button class="fq" onclick="toggleFaq(this)">Нужна ли виза в Грузию для россиян в 2026 году?<span class="fq-ic">+</span></button>
 <div class="fa"><div class="fa-inner">Нет. Граждане России могут въехать в Грузию без визы и находиться до 365 дней в году. Нужен только загранпаспорт.</div></div>

@@ -50,9 +50,9 @@ if(localStorage.getItem('cookies_v4')==='1'){gtag('consent','update',{analytics_
     .nav-logo{display:flex;align-items:center;text-decoration:none;color:#1A3D2E}
     .logo-svg{width:148px;height:66px;display:block}
     .nav-links{display:flex;align-items:center;gap:24px}
-    .nav-links a{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#4B5563;transition:color .2s}
+    .nav-links a{white-space:nowrap;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#4B5563;transition:color .2s}
     .nav-links a:hover{color:#2d6a4f}
-    .nav-btn{background:#2d6a4f;color:#fff!important;padding:9px 22px;border-radius:9999px;font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;transition:background .2s!important}
+    .nav-btn{white-space:normal;background:#2d6a4f;color:#fff!important;padding:9px 22px;border-radius:9999px;font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;transition:background .2s!important}
     .nav-btn:hover{background:#1f4d39!important}
     .burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:10px 8px;min-width:44px;min-height:44px;justify-content:center;align-items:center}
     .burger span{display:block;width:24px;height:2px;background:#111827;border-radius:2px;transition:.3s}
@@ -251,11 +251,10 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
   </a>
   <div class="nav-links">
     <a href="/en/georgia-travel-guide/">Tours in Georgia</a><a href="/en/tours-in-georgia/">Excursions</a><a href="/en/prices/">Prices</a>
-    <a href="/en/georgia-travel-guide/">Tours in Georgia</a>
     <a href="/en/#guide">About</a>
     <a href="/en/#reviews">Reviews</a>
     <a href="/en/blog/">Blog</a>
-    <a href="/en/#faq">FAQ</a>
+    <a href="/en/faq/">FAQ</a>
     <a href="/en/contacts/">Contacts</a>
     <a href="/en/booking/" class="nav-btn">Book Now</a><div class="lang-sw"><a class="lang-btn" href="/about/" style="text-decoration:none" onclick="document.cookie='lang_pref=ru;path=/;max-age=31536000;SameSite=Lax'">RU</a><span class="lang-sep">|</span><span class="lang-btn on">EN</span></div>
   </div>
@@ -268,7 +267,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
   <a href="/en/#guide" onclick="closeDrawer()">About</a>
   <a href="/en/#reviews" onclick="closeDrawer()">Reviews</a>
   <a href="/en/blog/" onclick="closeDrawer()">Blog</a>
-  <a href="/en/#faq" onclick="closeDrawer()">FAQ</a>
+  <a href="/en/faq/" onclick="closeDrawer()">FAQ</a>
   <a href="/en/contacts/" onclick="closeDrawer()">Contacts</a>
   <a href="/en/booking/" class="d-btn">Book Now</a>
 </div>
@@ -408,7 +407,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
       <a href="/en/about/saba/" class="team-card">
         <img src="/images/saba.webp" alt="Saba — guide for Batumi and Svaneti" width="120" height="150" loading="lazy">
         <div class="team-body">
-          <div class="team-name">Saba</div>
+          <div class="team-name">Saba Skhavadze</div>
           <div class="team-role">Guide · Batumi, Adjara, Svaneti</div>
           <p class="team-desc">Licensed guide (No. 9332412411), 10 years of experience. English, Russian, Georgian.</p>
           <span class="team-more">More about Saba →</span>

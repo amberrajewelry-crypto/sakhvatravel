@@ -13,6 +13,13 @@ export default async function handler(req) {
     return new Response('', { status: 405 })
   }
 
+  // Same-site only (blocks external spam of the conversations table)
+  const _o = req.headers.get('origin') || ''
+  const _r = req.headers.get('referer') || ''
+  if (_o !== 'https://sakhva-travel.com' && !_r.startsWith('https://sakhva-travel.com')) {
+    return new Response(JSON.stringify({ error: 'forbidden' }), { status: 403 })
+  }
+
   const token = process.env.AIRTABLE_TOKEN
   if (!token) {
     return new Response(JSON.stringify({ error: 'no_token' }), { status: 200 })

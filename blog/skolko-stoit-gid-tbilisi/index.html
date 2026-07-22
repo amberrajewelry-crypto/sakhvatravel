@@ -62,9 +62,9 @@ ul{list-style:none}
 .nav-logo{display:flex;align-items:center;text-decoration:none;color:#fff;transition:color .3s}
 .logo-svg{width:148px;height:66px;display:block}
 .nav-links{display:flex;align-items:center;gap:24px}
-.nav-links a{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#fff;transition:color .2s}
+.nav-links a{white-space:nowrap;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#fff;transition:color .2s}
 .nav-links a:hover{color:#1A3D2E}
-.nav-btn{background:#1A3D2E;color:#fff!important;padding:9px 22px;border-radius:9999px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;transition:background .2s!important}
+.nav-btn{white-space:normal;background:#1A3D2E;color:#fff!important;padding:9px 22px;border-radius:9999px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;transition:background .2s!important}
 .nav-btn:hover{background:#1A3D2E!important}
 .burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;min-width:44px;min-height:44px;justify-content:center;align-items:center}
 .burger span{display:block;width:24px;height:2px;background:#fff;border-radius:2px;transition:.3s}
@@ -163,7 +163,7 @@ ul{list-style:none}
 #lang-notice a{color:#1A3D2E;font-weight:600}
 .author-byline{display:flex;align-items:center;gap:12px;background:#F9FAFB;border:1px solid #E5E7EB;border-radius:12px;padding:14px 18px;margin-bottom:32px}.author-byline img{width:40px;height:40px;border-radius:50%;object-fit:cover;flex-shrink:0}.author-info{display:flex;flex-direction:column;gap:2px}.author-name{font-size:14px;font-weight:700;color:#111827;text-decoration:none}.author-name:hover{color:#1A3D2E}.author-creds{font-size:12px;color:#6B7280}
 .article-lead{background:#F0FDF4;border-left:3px solid #1A3D2E;border-radius:8px;padding:14px 18px;font-size:16px;color:#1e3a5f;line-height:1.75;margin-bottom:28px}
-h1,h2,h3,.section-title{font-family:'Lora',Georgia,serif !important;font-weight:400 !important}@media(max-width:768px){.foot-grid div h4{font-size:11px}.foot-copy,.foot-legal a{font-size:12px}.foot-links a{padding:8px 0;display:inline-block;min-height:44px;line-height:28px}.foot-legal{gap:0}.foot-legal a{padding:10px 12px;display:inline-block}.fa-inner{font-size:14px}.nav-links a{font-size:12px}}
+h1,h2,h3,.section-title{font-family:'Lora',Georgia,serif !important;font-weight:400 !important}@media(max-width:768px){.foot-grid div h4{font-size:11px}.foot-copy,.foot-legal a{font-size:12px}.foot-links a{padding:8px 0;display:inline-block;min-height:44px;line-height:28px}.foot-legal{gap:0}.foot-legal a{padding:10px 12px;display:inline-block}.fa-inner{font-size:14px}.nav-links a{white-space:nowrap;font-size:12px}}
 body,h1,h2,h3,h4,h5,h6,p,a,span,div,li,td,th,label,input,textarea,button,blockquote{font-family:'Lora',Georgia,serif!important}
 </style>
 <!-- PostHog -->
@@ -207,7 +207,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <a href="/#guide">О нас</a>
 <a href="/#reviews">Отзывы</a>
 <a href="/blog/">Блог</a>
-<a href="/#faq">FAQ</a>
+<a href="/voprosy/">Вопросы</a>
 <a href="/contacts/">Контакты</a>
 <a class="nav-btn" href="/booking/">Забронировать</a>
 <div class="lang-sw">
@@ -278,6 +278,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 </ul>
 <p>Теперь посмотрите, что происходит при бронировании через агрегатор. Платформа забирает комиссию от <strong>20% до 35%</strong> с каждого тура. Гид не работает в убыток — он поднимает цену ровно на эту комиссию. В итоге вы переплачиваете посреднику треть стоимости за то, что он просто свёл вас с гидом.</p>
 <p>Это первый и главный фактор формирования цены. Второй — опыт и специализация гида. Новичок с 20 отзывами будет дешевле на 30–40%, чем гид с рейтингом 4.9 и 500+ туристами. Но разница в качестве очевидна: маршрут, истории, умение работать с группой в нестандартных ситуациях.</p>
+<p>На цену и на впечатления влияет и формат: <a href="/blog/chastny-gid-ili-gruppa-tbilisi/">частная экскурсия или групповая</a> — разница ощутимая.</p>
 <p>Я начинал в 2023 году с ценой на 40% ниже текущей — и это было честно, потому что опыта было мало. Сейчас, после 500+ туров, я знаю, какой маршрут сработает для семьи с детьми, а какой — для пары, которая хочет вино и тишину. Эта разница стоит денег.</p>
 <div class="info-box">
 <strong>Важно знать:</strong> цена в объявлении на агрегаторе — не то, что достанется гиду. С суммы в 200€ гид получает 130–160€ после вычета комиссии платформы. При прямом бронировании та же 200€ идёт гиду полностью — и он может дать вам скидку 15–20%, оставаясь в плюсе.
@@ -412,7 +413,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 </div>
 <a href="https://www.tripadvisor.ru/Attraction_Review-g294195-d15318013-Reviews-Sakhva_Travel-Tbilisi.html" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;padding:10px 20px;background:#00AA6C;color:#fff;font-size:13px;font-weight:700;border-radius:9999px;text-decoration:none;white-space:nowrap" target="_blank">Читать отзывы</a>
 </div>
-<section id="faq"><div class="faq-inner"><h2>Частые вопросы о ценах на гида в Тбилиси</h2>
+<section id="faq"><div class="faq-inner"><h2>Вопросы о ценах на гида в Тбилиси</h2>
 <div class="fi"><button class="fq" onclick="toggleFaq(this)">Сколько стоит час работы индивидуальной экскурсии в Тбилиси в 2026 году?<span class="fq-ic">+</span></button><div class="fa"><div class="fa-inner">Стоимость часа работы индивидуальной экскурсии в Тбилиси варьируется от 45€ (≈125₾) до 80€ (≈223₾) в зависимости от опыта и включённых услуг. У меня ставка 50€/час — это включает транспорт на машине, гида на русском/английском и персональный маршрут. Фиксированные туры выгоднее: например, 4-часовая прогулка по Старому городу обойдётся в 130€, что дешевле почасового расчёта.</div></div></div>
 <div class="fi"><button class="fq" onclick="toggleFaq(this)">Почему индивидуальный тур по Грузии дешевле, чем на Tripster или GetYourGuide?<span class="fq-ic">+</span></button><div class="fa"><div class="fa-inner">Агрегаторы берут с гида комиссию от 20% до 35% за каждое бронирование. Гид вынужден закладывать эту комиссию в цену для туриста. При прямом бронировании вы платите только за сам тур без наценки посредника. Разница в цене на одинаковые маршруты составляет 15–40% в пользу прямого бронирования.</div></div></div>
 <div class="fi"><button class="fq" onclick="toggleFaq(this)">Есть ли скидки на индивидуальной экскурсии в Тбилиси для группы или семьи?<span class="fq-ic">+</span></button><div class="fa"><div class="fa-inner">Да. При группе от 4 человек скидка составляет 10% от общей стоимости тура. Семьи с детьми до 12 лет получают адаптированный маршрут и скидку 15%. При бронировании двух и более туров подряд — скидка 10% на каждый последующий тур.</div></div></div>

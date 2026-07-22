@@ -60,9 +60,9 @@ ul{list-style:none}
 .nav-logo{display:flex;align-items:center;text-decoration:none;color:#fff;transition:color .3s}
 .logo-svg{width:148px;height:66px;display:block}
 .nav-links{display:flex;align-items:center;gap:24px}
-.nav-links a{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#fff;transition:color .2s}
+.nav-links a{white-space:nowrap;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#fff;transition:color .2s}
 .nav-links a:hover{color:#1A56DB}
-.nav-btn{background:#1A3D2E;color:#fff!important;padding:9px 22px;border-radius:9999px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;transition:background .2s!important}
+.nav-btn{white-space:normal;background:#1A3D2E;color:#fff!important;padding:9px 22px;border-radius:9999px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;transition:background .2s!important}
 .nav-btn:hover{background:#1E429F!important}
 .burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:10px 8px;min-width:44px;min-height:44px;justify-content:center;align-items:center}
 .burger span{display:block;width:24px;height:2px;background:#fff;border-radius:2px;transition:.3s}
@@ -171,7 +171,7 @@ ul{list-style:none}
 .sources-block li::before{content:"→";position:absolute;left:0;color:#16a34a}
 .sources-block a{color:#1A56DB}
 h1,h2,h3,.section-title{font-family:'Lora',Georgia,serif !important;font-weight:400 !important}
-@media(max-width:768px){.foot-grid div h4{font-size:11px}.foot-copy,.foot-legal a{font-size:12px}.foot-links a{padding:8px 0;display:inline-block;min-height:44px;line-height:28px}.foot-legal{gap:0}.foot-legal a{padding:10px 12px;display:inline-block}.fa-inner{font-size:14px}.nav-links a{font-size:12px}}
+@media(max-width:768px){.foot-grid div h4{font-size:11px}.foot-copy,.foot-legal a{font-size:12px}.foot-links a{padding:8px 0;display:inline-block;min-height:44px;line-height:28px}.foot-legal{gap:0}.foot-legal a{padding:10px 12px;display:inline-block}.fa-inner{font-size:14px}.nav-links a{white-space:nowrap;font-size:12px}}
 
 body,h1,h2,h3,h4,h5,h6,p,a,span,div,li,td,th,label,input,textarea,button,blockquote{font-family:'Lora',Georgia,serif!important}
 </style>
@@ -323,7 +323,7 @@ ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webv
     <a href="/#guide">О нас</a>
     <a href="/#reviews">Отзывы</a>
     <a href="/blog/">Блог</a>
-    <a href="/#faq">FAQ</a>
+    <a href="/voprosy/">Вопросы</a>
     <a href="/contacts/">Контакты</a>
     <a href="https://wa.me/995511272623?text=Хочу+узнать+про+туры+2026" class="nav-btn">Написать</a>
     <div class="lang-sw">
@@ -339,7 +339,7 @@ ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webv
   <a href="/#guide" onclick="closeDrawer()">О нас</a>
   <a href="/#reviews" onclick="closeDrawer()">Отзывы</a>
   <a href="/blog/" onclick="closeDrawer()">Блог</a>
-  <a href="/#faq" onclick="closeDrawer()">FAQ</a>
+  <a href="/voprosy/" onclick="closeDrawer()">Вопросы</a>
   <a href="/contacts/" onclick="closeDrawer()">Контакты</a>
   <div class="d-lang">
     <button class="d-lang-btn on" id="dBtnRu" onclick="setLang('ru');closeDrawer()">RU</button>
@@ -376,7 +376,7 @@ ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webv
 
   <nav class="article-toc">
 <h2>Содержание</h2>
-<ol><li><a href="#chto-eto">Что такое каньон Мартвили</a></li><li><a href="#istoriya">История: купальня князей Дадиани</a></li><li><a href="#lodka">Прогулка на лодке — главное впечатление</a></li><li><a href="#ceny">Цены и часы работы 2026</a></li><li><a href="#kak-dobratsya">Как добраться до Мартвили</a></li><li><a href="#verkhniy">Верхний каньон: тропы и подвесные мостики</a></li><li><a href="#timing">Тайминг дня и по сезонам</a></li><li><a href="#den-plan">Пример дня из Кутаиси: Мартвили + Окаце по часам</a></li><li><a href="#ryadom">Что посмотреть рядом за один день</a></li><li><a href="#faq">Частые вопросы</a></li></ol>
+<ol><li><a href="#chto-eto">Что такое каньон Мартвили</a></li><li><a href="#istoriya">История: купальня князей Дадиани</a></li><li><a href="#lodka">Прогулка на лодке — главное впечатление</a></li><li><a href="#ceny">Цены и часы работы 2026</a></li><li><a href="#kak-dobratsya">Как добраться до Мартвили</a></li><li><a href="#verkhniy">Верхний каньон: тропы и подвесные мостики</a></li><li><a href="#timing">Тайминг дня и по сезонам</a></li><li><a href="#den-plan">Пример дня из Кутаиси: Мартвили + Окаце по часам</a></li><li><a href="#ryadom">Что посмотреть рядом за один день</a></li><li><a href="/voprosy/">Вопросы</a></li></ol>
 </nav>
 
   <div class="article-body">
@@ -415,7 +415,7 @@ ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webv
   </div>
 </div>
 
-<section id="faq"><div class="faq-inner"><h2>Частые вопросы</h2><div class="fi"><button class="fq" onclick="toggleFaq(this)">Где находится каньон Мартвили?<span class="fq-ic">+</span></button><div class="fa"><div class="fa-inner">В регионе Самегрело на западе Грузии, у города Мартвили. Ближе всего от Кутаиси (~45 км) и Зугдиди (~45 км).</div></div></div><div class="fi"><button class="fq" onclick="toggleFaq(this)">Сколько стоит вход в каньон Мартвили в 2026?<span class="fq-ic">+</span></button><div class="fa"><div class="fa-inner">Входной билет ~17 ₾, лодочная прогулка отдельно ~17 ₾, зиплайн около 20 ₾.</div></div></div><div class="fi"><button class="fq" onclick="toggleFaq(this)">Во сколько работает каньон Мартвили?<span class="fq-ic">+</span></button><div class="fa"><div class="fa-inner">Летом 10:00–18:00, касса и лодки закрываются раньше, около 17:00. Приезжать лучше к открытию, чтобы избежать очереди на лодку.</div></div></div><div class="fi"><button class="fq" onclick="toggleFaq(this)">Как добраться до Мартвили из Кутаиси?<span class="fq-ic">+</span></button><div class="fa"><div class="fa-inner">Около 45 км, ~1 час на такси, аренде авто или в составе тура. Общественным транспортом неудобно.</div></div></div><div class="fi"><button class="fq" onclick="toggleFaq(this)">Что посмотреть рядом с Мартвили?<span class="fq-ic">+</span></button><div class="fa"><div class="fa-inner">Каньон Окаце с подвесной тропой, водопад Кинчха и пещеру Прометея — всё объединяется в один день из Кутаиси.</div></div></div><div class="fi"><button class="fq" onclick="toggleFaq(this)">Можно ли купаться в каньоне Мартвили?<span class="fq-ic">+</span></button><div class="fa"><div class="fa-inner">Нет, разрешена только лодочная прогулка; исторически это была купальня князей Дадиани.</div></div></div></div></section>
+<section id="faq"><div class="faq-inner"><h2>Вопросы</h2><div class="fi"><button class="fq" onclick="toggleFaq(this)">Где находится каньон Мартвили?<span class="fq-ic">+</span></button><div class="fa"><div class="fa-inner">В регионе Самегрело на западе Грузии, у города Мартвили. Ближе всего от Кутаиси (~45 км) и Зугдиди (~45 км).</div></div></div><div class="fi"><button class="fq" onclick="toggleFaq(this)">Сколько стоит вход в каньон Мартвили в 2026?<span class="fq-ic">+</span></button><div class="fa"><div class="fa-inner">Входной билет ~17 ₾, лодочная прогулка отдельно ~17 ₾, зиплайн около 20 ₾.</div></div></div><div class="fi"><button class="fq" onclick="toggleFaq(this)">Во сколько работает каньон Мартвили?<span class="fq-ic">+</span></button><div class="fa"><div class="fa-inner">Летом 10:00–18:00, касса и лодки закрываются раньше, около 17:00. Приезжать лучше к открытию, чтобы избежать очереди на лодку.</div></div></div><div class="fi"><button class="fq" onclick="toggleFaq(this)">Как добраться до Мартвили из Кутаиси?<span class="fq-ic">+</span></button><div class="fa"><div class="fa-inner">Около 45 км, ~1 час на такси, аренде авто или в составе тура. Общественным транспортом неудобно.</div></div></div><div class="fi"><button class="fq" onclick="toggleFaq(this)">Что посмотреть рядом с Мартвили?<span class="fq-ic">+</span></button><div class="fa"><div class="fa-inner">Каньон Окаце с подвесной тропой, водопад Кинчха и пещеру Прометея — всё объединяется в один день из Кутаиси.</div></div></div><div class="fi"><button class="fq" onclick="toggleFaq(this)">Можно ли купаться в каньоне Мартвили?<span class="fq-ic">+</span></button><div class="fa"><div class="fa-inner">Нет, разрешена только лодочная прогулка; исторически это была купальня князей Дадиани.</div></div></div></div></section>
 
 <section class="related"><h2>Читайте также</h2><div class="related-grid"><div class="rc-card"><div class="rc-card-label">Маршрут</div><h3>Кутаиси за 1 день</h3><p>Багратиони, Гелати, пещеры — план из Тбилиси</p><a href="/blog/kutaisi-iz-tbilisi/">Читать →</a></div><div class="rc-card"><div class="rc-card-label">Гайд</div><h3>Что посмотреть в Грузии</h3><p>Полный список направлений от местного гида</p><a href="/blog/chto-posmotret-v-gruzii/">Читать →</a></div><div class="rc-card"><div class="rc-card-label">Тур</div><h3>Каньоны Западной Грузии</h3><p>Мартвили, Окаце и Прометей за один день</p><a href="/ekskursiya/ekskursiya-kanyony-zapadnoy-gruzii/">Смотреть тур →</a></div></div></section>
 

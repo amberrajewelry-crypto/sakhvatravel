@@ -66,10 +66,10 @@ if(_ck||_gc){gtag('consent','update',{analytics_storage:(_ck||_gc)?'granted':'de
     #nav.scrolled .nav-logo{color:#1A3D2E}
     .logo-svg{width:148px;height:66px;display:block}
     .nav-links{display:flex;align-items:center;gap:24px}
-    .nav-links a{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.85);transition:color .2s}
-    #nav.scrolled .nav-links a{color:#4B5563}
+    .nav-links a{white-space:nowrap;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.85);transition:color .2s}
+    #nav.scrolled .nav-links a{white-space:nowrap;color:#4B5563}
     .nav-links a:hover{color:#1A3D2E}
-    .nav-btn{background:#1A3D2E;color:#fff!important;padding:9px 22px;border-radius:9999px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;transition:background .2s!important}
+    .nav-btn{white-space:normal;background:#1A3D2E;color:#fff!important;padding:9px 22px;border-radius:9999px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;transition:background .2s!important}
     .nav-btn:hover{background:#1A3D2E!important}
     .burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:10px 8px;min-width:44px;min-height:44px;justify-content:center;align-items:center}
     .burger span{display:block;width:24px;height:2px;background:#fff;border-radius:2px;transition:.3s}
@@ -198,7 +198,7 @@ posthog.init('phc_UqL7ychAdg6sU0vOBr2z8ACypL6NgvRUKQ9u9If99Il',{api_host:'https:
 <a href="/#guide">О нас</a>
 <a href="/#reviews">Отзывы</a>
 <a href="/blog/">Блог</a>
-<a href="/#faq">FAQ</a>
+<a href="/voprosy/">Вопросы</a>
 <a href="/contacts/">Контакты</a>
 <a class="nav-btn" href="/booking/">Забронировать</a></div>
 <button aria-label="Меню" class="burger" id="burger"><span></span><span></span><span></span></button>
@@ -208,7 +208,7 @@ posthog.init('phc_UqL7ychAdg6sU0vOBr2z8ACypL6NgvRUKQ9u9If99Il',{api_host:'https:
 <a href="/#guide" onclick="closeDrawer()">О нас</a>
 <a href="/#reviews" onclick="closeDrawer()">Отзывы</a>
 <a href="/blog/" onclick="closeDrawer()">Блог</a>
-<a href="/#faq" onclick="closeDrawer()">FAQ</a>
+<a href="/voprosy/" onclick="closeDrawer()">Вопросы</a>
 <a href="/contacts/" onclick="closeDrawer()">Контакты</a>
 </div>
 <section class="page-hero">

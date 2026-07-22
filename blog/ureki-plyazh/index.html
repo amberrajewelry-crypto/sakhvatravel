@@ -60,9 +60,9 @@ ul{list-style:none}
 .nav-logo{display:flex;align-items:center;text-decoration:none;color:#fff;transition:color .3s}
 .logo-svg{width:148px;height:66px;display:block}
 .nav-links{display:flex;align-items:center;gap:24px}
-.nav-links a{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#fff;transition:color .2s}
+.nav-links a{white-space:nowrap;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#fff;transition:color .2s}
 .nav-links a:hover{color:#1A56DB}
-.nav-btn{background:#1A3D2E;color:#fff!important;padding:9px 22px;border-radius:9999px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;transition:background .2s!important}
+.nav-btn{white-space:normal;background:#1A3D2E;color:#fff!important;padding:9px 22px;border-radius:9999px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;transition:background .2s!important}
 .nav-btn:hover{background:#1E429F!important}
 .burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:10px 8px;min-width:44px;min-height:44px;justify-content:center;align-items:center}
 .burger span{display:block;width:24px;height:2px;background:#fff;border-radius:2px;transition:.3s}
@@ -171,7 +171,7 @@ ul{list-style:none}
 .sources-block li::before{content:"→";position:absolute;left:0;color:#16a34a}
 .sources-block a{color:#1A56DB}
 h1,h2,h3,.section-title{font-family:'Lora',Georgia,serif !important;font-weight:400 !important}
-@media(max-width:768px){.foot-grid div h4{font-size:11px}.foot-copy,.foot-legal a{font-size:12px}.foot-links a{padding:8px 0;display:inline-block;min-height:44px;line-height:28px}.foot-legal{gap:0}.foot-legal a{padding:10px 12px;display:inline-block}.fa-inner{font-size:14px}.nav-links a{font-size:12px}}
+@media(max-width:768px){.foot-grid div h4{font-size:11px}.foot-copy,.foot-legal a{font-size:12px}.foot-links a{padding:8px 0;display:inline-block;min-height:44px;line-height:28px}.foot-legal{gap:0}.foot-legal a{padding:10px 12px;display:inline-block}.fa-inner{font-size:14px}.nav-links a{white-space:nowrap;font-size:12px}}
 
 body,h1,h2,h3,h4,h5,h6,p,a,span,div,li,td,th,label,input,textarea,button,blockquote{font-family:'Lora',Georgia,serif!important}
 </style>
@@ -323,7 +323,7 @@ ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webv
     <a href="/#guide">О нас</a>
     <a href="/#reviews">Отзывы</a>
     <a href="/blog/">Блог</a>
-    <a href="/#faq">FAQ</a>
+    <a href="/voprosy/">Вопросы</a>
     <a href="/contacts/">Контакты</a>
     <a href="https://wa.me/995511272623?text=Хочу+узнать+про+туры+2026" class="nav-btn">Написать</a>
     <div class="lang-sw">
@@ -339,7 +339,7 @@ ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webv
   <a href="/#guide" onclick="closeDrawer()">О нас</a>
   <a href="/#reviews" onclick="closeDrawer()">Отзывы</a>
   <a href="/blog/" onclick="closeDrawer()">Блог</a>
-  <a href="/#faq" onclick="closeDrawer()">FAQ</a>
+  <a href="/voprosy/" onclick="closeDrawer()">Вопросы</a>
   <a href="/contacts/" onclick="closeDrawer()">Контакты</a>
   <div class="d-lang">
     <button class="d-lang-btn on" id="dBtnRu" onclick="setLang('ru');closeDrawer()">RU</button>
@@ -376,7 +376,7 @@ ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webv
 
   <nav class="article-toc">
 <h2>Содержание</h2>
-<ol><li><a href="#pesok">Магнитный чёрный песок: что это и зачем</a></li><li><a href="#deti">Почему Уреки — лучший пляж Грузии для детей</a></li><li><a href="#vs-batumi">Уреки или Батуми — что выбрать</a></li><li><a href="#kak-dobratsya">Как добраться до Уреки</a></li><li><a href="#zhilyo">Где жить и сколько стоит</a></li><li><a href="#chem-zanyatsya">Что делать в Уреки кроме пляжа</a></li><li><a href="#infrastruktura">Еда и инфраструктура Уреки</a></li><li><a href="#dlya-par">Уреки не только для семей: чем занять вечер</a></li><li><a href="#kogda">Когда ехать и на сколько</a></li><li><a href="#faq">Частые вопросы</a></li></ol>
+<ol><li><a href="#pesok">Магнитный чёрный песок: что это и зачем</a></li><li><a href="#deti">Почему Уреки — лучший пляж Грузии для детей</a></li><li><a href="#vs-batumi">Уреки или Батуми — что выбрать</a></li><li><a href="#kak-dobratsya">Как добраться до Уреки</a></li><li><a href="#zhilyo">Где жить и сколько стоит</a></li><li><a href="#chem-zanyatsya">Что делать в Уреки кроме пляжа</a></li><li><a href="#infrastruktura">Еда и инфраструктура Уреки</a></li><li><a href="#dlya-par">Уреки не только для семей: чем занять вечер</a></li><li><a href="#kogda">Когда ехать и на сколько</a></li><li><a href="/voprosy/">Вопросы</a></li></ol>
 </nav>
 
   <div class="article-body">
@@ -417,7 +417,7 @@ ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webv
   </div>
 </div>
 
-<section id="faq"><div class="faq-inner"><h2>Частые вопросы</h2><div class="fi"><button class="fq" onclick="toggleFaq(this)">Где находится Уреки?<span class="fq-ic">+</span></button><div class="fa"><div class="fa-inner">На побережье Гурии, ~50 км к северу от Батуми и ~310 км от Тбилиси. Рядом — посёлок Магнетити.</div></div></div><div class="fi"><button class="fq" onclick="toggleFaq(this)">Чем полезен магнитный песок Уреки?<span class="fq-ic">+</span></button><div class="fa"><div class="fa-inner">Он содержит магнетит; песку приписывают пользу для опорно-двигательного аппарата и кровообращения. Доказательная база скромная, но песок сильно прогревается и приятен для тепловых процедур.</div></div></div><div class="fi"><button class="fq" onclick="toggleFaq(this)">Подходит ли Уреки для отдыха с детьми?<span class="fq-ic">+</span></button><div class="fa"><div class="fa-inner">Да, это один из лучших детских пляжей Грузии: очень пологий вход, мелко, мягкий песок без гальки, вода до +28 °C и почти нет волн.</div></div></div><div class="fi"><button class="fq" onclick="toggleFaq(this)">Как добраться до Уреки из Тбилиси?<span class="fq-ic">+</span></button><div class="fa"><div class="fa-inner">Поездом до станции Кобулети, затем 20 минут на такси; либо на машине за 4,5–5 часов через Кутаиси.</div></div></div><div class="fi"><button class="fq" onclick="toggleFaq(this)">Когда лучший сезон в Уреки?<span class="fq-ic">+</span></button><div class="fa"><div class="fa-inner">Июнь–сентябрь. Оптимально — конец июня и первая половина сентября: тёплая вода, меньше людей и ниже цены.</div></div></div><div class="fi"><button class="fq" onclick="toggleFaq(this)">Чем Уреки лучше Батуми?<span class="fq-ic">+</span></button><div class="fa"><div class="fa-inner">Мягкий песок вместо гальки, пологий безопасный вход, тише и дешевле — для отдыха с детьми Уреки выигрывает.</div></div></div></div></section>
+<section id="faq"><div class="faq-inner"><h2>Вопросы</h2><div class="fi"><button class="fq" onclick="toggleFaq(this)">Где находится Уреки?<span class="fq-ic">+</span></button><div class="fa"><div class="fa-inner">На побережье Гурии, ~50 км к северу от Батуми и ~310 км от Тбилиси. Рядом — посёлок Магнетити.</div></div></div><div class="fi"><button class="fq" onclick="toggleFaq(this)">Чем полезен магнитный песок Уреки?<span class="fq-ic">+</span></button><div class="fa"><div class="fa-inner">Он содержит магнетит; песку приписывают пользу для опорно-двигательного аппарата и кровообращения. Доказательная база скромная, но песок сильно прогревается и приятен для тепловых процедур.</div></div></div><div class="fi"><button class="fq" onclick="toggleFaq(this)">Подходит ли Уреки для отдыха с детьми?<span class="fq-ic">+</span></button><div class="fa"><div class="fa-inner">Да, это один из лучших детских пляжей Грузии: очень пологий вход, мелко, мягкий песок без гальки, вода до +28 °C и почти нет волн.</div></div></div><div class="fi"><button class="fq" onclick="toggleFaq(this)">Как добраться до Уреки из Тбилиси?<span class="fq-ic">+</span></button><div class="fa"><div class="fa-inner">Поездом до станции Кобулети, затем 20 минут на такси; либо на машине за 4,5–5 часов через Кутаиси.</div></div></div><div class="fi"><button class="fq" onclick="toggleFaq(this)">Когда лучший сезон в Уреки?<span class="fq-ic">+</span></button><div class="fa"><div class="fa-inner">Июнь–сентябрь. Оптимально — конец июня и первая половина сентября: тёплая вода, меньше людей и ниже цены.</div></div></div><div class="fi"><button class="fq" onclick="toggleFaq(this)">Чем Уреки лучше Батуми?<span class="fq-ic">+</span></button><div class="fa"><div class="fa-inner">Мягкий песок вместо гальки, пологий безопасный вход, тише и дешевле — для отдыха с детьми Уреки выигрывает.</div></div></div></div></section>
 
 <section class="related"><h2>Читайте также</h2><div class="related-grid"><div class="rc-card"><div class="rc-card-label">Гайд</div><h3>Грузия с детьми</h3><p>Куда ехать и что нужно знать для поездки с ребёнком</p><a href="/blog/gruziya-s-detmi/">Читать →</a></div><div class="rc-card"><div class="rc-card-label">Транспорт</div><h3>Поезд Тбилиси — Батуми</h3><p>Расписание, цены и места у моря к побережью</p><a href="/blog/poezd-tbilisi-batumi/">Читать →</a></div><div class="rc-card"><div class="rc-card-label">Тур</div><h3>Тур в Уреки с гидом</h3><p>Выезд к морю и на магнитный песок из Тбилиси</p><a href="/ekskursiya/ekskursiya-ureki-iz-tbilisi/">Смотреть тур →</a></div></div></section>
 

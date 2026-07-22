@@ -52,9 +52,9 @@ ul{list-style:none}
 .nav-logo{display:flex;align-items:center;text-decoration:none;color:#1A3D2E}
 .logo-svg{width:148px;height:66px;display:block}
 .nav-links{display:flex;align-items:center;gap:24px}
-.nav-links a{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#4B5563;transition:color .2s}
+.nav-links a{white-space:nowrap;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#4B5563;transition:color .2s}
 .nav-links a:hover{color:#1A3D2E}
-.nav-btn{background:#1A3D2E;color:#fff!important;padding:9px 22px;border-radius:9999px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;transition:background .2s!important}
+.nav-btn{white-space:normal;background:#1A3D2E;color:#fff!important;padding:9px 22px;border-radius:9999px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;transition:background .2s!important}
 .nav-btn:hover{background:#1A3D2E!important}
 .burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:10px 8px;min-width:44px;min-height:44px;justify-content:center;align-items:center}
 .burger span{display:block;width:24px;height:2px;background:#111827;border-radius:2px;transition:.3s}
@@ -198,7 +198,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
     <a href="/#guide">О нас</a>
     <a href="/#reviews">Отзывы</a>
     <a href="/blog/">Блог</a>
-    <a href="/#faq">FAQ</a>
+    <a href="/voprosy/">Вопросы</a>
     <a href="/contacts/">Контакты</a>
     <a href="/booking/" class="nav-btn">Забронировать</a>
   </div>
@@ -532,7 +532,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"Групповые туры в Грузию — Sakhva Travel","description":"Групповые и корпоративные туры по Грузии с гидом Тимуром для компаний от 4 человек.","brand":{"@type":"Brand","name":"Sakhva Travel"},"aggregateRating":{"@type":"AggregateRating","ratingValue":4.9,"reviewCount":40,"bestRating":5,"worstRating":1},"review":[{"@type":"Review","author":{"@type":"Person","name":"Михаил Д."},"reviewRating":{"@type":"Rating","ratingValue":5,"bestRating":5,"worstRating":1},"reviewBody":"В этом году ездили компанией в Грузию. Спасибо Тимуру и всей команде — было невероятно!","datePublished":"2026-06-02"},{"@type":"Review","author":{"@type":"Person","name":"Сергей"},"reviewRating":{"@type":"Rating","ratingValue":5,"bestRating":5,"worstRating":1},"reviewBody":"Брали тур для компании четырёх человек. Тимур — профессионал до мозга костей: знает историю, умеет рассказывать интересно.","datePublished":"2026-03-20"},{"@type":"Review","author":{"@type":"Person","name":"Amovei"},"reviewRating":{"@type":"Rating","ratingValue":5,"bestRating":5,"worstRating":1},"reviewBody":"Wonderful trip to Kakheti! The wine was amazing — everyone should visit Georgian vineyards at least once.","datePublished":"2025-11-06"},{"@type":"Review","author":{"@type":"Person","name":"Giorgi V."},"reviewRating":{"@type":"Rating","ratingValue":5,"bestRating":5,"worstRating":1},"reviewBody":"Отличный гид. Показал и рассказал всё о Солнечной Грузии. Отлично говорит на русском языке.","datePublished":"2025-09-01"},{"@type":"Review","author":{"@type":"Person","name":"Виталий"},"reviewRating":{"@type":"Rating","ratingValue":5,"bestRating":5,"worstRating":1},"reviewBody":"Очень хороший гид. Классно провели время! Программа индивидуальная, рекомендую!","datePublished":"2025-11-03"},{"@type":"Review","author":{"@type":"Person","name":"Nugo Shengelia"},"reviewRating":{"@type":"Rating","ratingValue":5,"bestRating":5,"worstRating":1},"reviewBody":"Настоятельно рекомендую, если хотите лучшие рекомендации и услуги для путешествий по Грузии.","datePublished":"2026-04-02"}],"offers":{"@type":"AggregateOffer","priceCurrency":"RUB","lowPrice":"2030","highPrice":"7700","offerCount":"14","availability":"https://schema.org/InStock","hasMerchantReturnPolicy":{"@type":"MerchantReturnPolicy","applicableCountry":"GE","returnPolicyCategory":"https://schema.org/MerchantReturnFiniteReturnWindow","merchantReturnDays":1,"returnMethod":"https://schema.org/ReturnByMail","returnFees":"https://schema.org/FreeReturn","refundType":"https://schema.org/FullRefund","url":"https://sakhva-travel.com/policy/"},"shippingDetails":{"@type":"OfferShippingDetails","shippingRate":{"@type":"MonetaryAmount","value":"0","currency":"GEL"},"shippingDestination":{"@type":"DefinedRegion","addressCountry":"GE"},"deliveryTime":{"@type":"ShippingDeliveryTime","handlingTime":{"@type":"QuantitativeValue","minValue":0,"maxValue":0,"unitCode":"DAY"},"transitTime":{"@type":"QuantitativeValue","minValue":0,"maxValue":0,"unitCode":"DAY"}}},"termsOfService":"https://sakhva-travel.com/terms/","priceValidUntil":"2026-12-31"},"url":"https://sakhva-travel.com/grupovye-tury-v-gruziyu/","image":"https://sakhva-travel.com/images/blog/og-old-tbilisi.webp"}</script>
 
 <section class="faq-section">
-  <h2>Частые вопросы о групповых турах</h2>
+  <h2>Вопросы о групповых турах</h2>
 
   <div class="faq-item">
     <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Со скольки человек начинается групповая скидка?</div>

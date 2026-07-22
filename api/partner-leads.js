@@ -3,6 +3,12 @@ module.exports = async (req, res) => {
   res.setHeader('Access-Control-Allow-Origin', 'https://sakhva-travel.com');
   res.setHeader('Access-Control-Allow-Methods', 'GET');
 
+  // Same-site only (blocks external enumeration of partner leads)
+  const ref = req.headers.referer || req.headers.origin || '';
+  if (!ref.startsWith('https://sakhva-travel.com')) {
+    return res.status(403).json({ error: 'Forbidden' });
+  }
+
   const { slug } = req.query;
   if (!slug || !/^[a-z0-9-]{2,30}$/i.test(slug)) {
     return res.status(400).json({ error: 'Invalid slug' });

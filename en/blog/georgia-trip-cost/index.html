@@ -65,9 +65,9 @@ ul{list-style:none}
 .nav-logo{display:flex;align-items:center;text-decoration:none;color:#1A3D2E;transition:color .3s}
     .logo-svg{width:148px;height:66px;display:block}
 .nav-links{display:flex;align-items:center;gap:24px}
-.nav-links a{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#4B5563;transition:color .2s}
+.nav-links a{white-space:nowrap;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#4B5563;transition:color .2s}
 .nav-links a:hover{color:#1A3D2E}
-.nav-btn{background:#1A3D2E;color:#fff!important;padding:9px 22px;border-radius:9999px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;transition:background .2s!important}
+.nav-btn{white-space:normal;background:#1A3D2E;color:#fff!important;padding:9px 22px;border-radius:9999px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;transition:background .2s!important}
 .nav-btn:hover{background:#1A3D2E!important}
 .burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:10px 8px;min-width:44px;min-height:44px;justify-content:center;align-items:center}
 .burger span{display:block;width:24px;height:2px;background:#111827;border-radius:2px;transition:.3s}
@@ -154,7 +154,7 @@ ul{list-style:none}
 @media(max-width:480px){.article-body{padding:32px 18px}.price-table{font-size:13px}.article-toc{padding:16px 18px}input,select,textarea{font-size:16px!important}}
 .author-byline{display:flex;align-items:center;gap:12px;background:#F9FAFB;border:1px solid #E5E7EB;border-radius:12px;padding:14px 18px;margin-bottom:32px}.author-byline img{width:40px;height:40px;border-radius:50%;object-fit:cover;flex-shrink:0}.author-info{display:flex;flex-direction:column;gap:2px}.author-name{font-size:14px;font-weight:700;color:#111827;text-decoration:none}.author-name:hover{color:#1A3D2E}.author-creds{font-size:12px;color:#6B7280}
 .article-lead{background:#F0FDF4;border-left:3px solid #1A3D2E;border-radius:8px;padding:14px 18px;font-size:16px;color:#1e3a5f;line-height:1.75;margin-bottom:28px}
-h1,h2,h3,.section-title{font-family:'Lora',Georgia,serif !important;font-weight:400 !important}@media(max-width:768px){.foot-grid div h4{font-size:11px}.foot-copy,.foot-legal a{font-size:12px}.foot-links a{padding:8px 0;display:inline-block;min-height:44px;line-height:28px}.foot-legal{gap:0}.foot-legal a{padding:10px 12px;display:inline-block}.fa-inner{font-size:14px}.nav-links a{font-size:12px}}
+h1,h2,h3,.section-title{font-family:'Lora',Georgia,serif !important;font-weight:400 !important}@media(max-width:768px){.foot-grid div h4{font-size:11px}.foot-copy,.foot-legal a{font-size:12px}.foot-links a{padding:8px 0;display:inline-block;min-height:44px;line-height:28px}.foot-legal{gap:0}.foot-legal a{padding:10px 12px;display:inline-block}.fa-inner{font-size:14px}.nav-links a{white-space:nowrap;font-size:12px}}
 .budget-card{background:#F9FAFB;border:1px solid #E5E7EB;border-radius:12px;padding:20px 24px;margin:20px 0}
 .budget-card h4{font-size:16px;font-weight:700;color:#111827;margin-bottom:12px}
 .budget-card .budget-total{font-size:22px;font-weight:700;color:#1A3D2E;margin-top:12px}
@@ -207,11 +207,10 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 </a>
 <div class="nav-links">
 <a href="/en/georgia-travel-guide/">Tours in Georgia</a><a href="/en/tours-in-georgia/">Excursions</a><a href="/en/prices/">Prices</a>
-<a href="/en/georgia-travel-guide/">Tours in Georgia</a>
 <a href="/en/#guide">About</a>
 <a href="/en/#reviews">Reviews</a>
 <a href="/en/blog/">Blog</a>
-<a href="/en/#faq">FAQ</a>
+<a href="/en/faq/">FAQ</a>
 <a href="/en/contacts/">Contacts</a>
 <a class="nav-btn" href="/en/booking/">Book Now</a><div class="lang-sw"><a class="lang-btn" href="/blog/skolko-stoit-otdyh-v-gruzii/" style="text-decoration:none">RU</a><span class="lang-sep">|</span><span class="lang-btn on">EN</span></div>
 </div>
@@ -222,7 +221,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <a href="/en/#guide" onclick="closeDrawer()">About</a>
 <a href="/en/#reviews" onclick="closeDrawer()">Reviews</a>
 <a href="/en/blog/" onclick="closeDrawer()">Blog</a>
-<a href="/en/#faq" onclick="closeDrawer()">FAQ</a>
+<a href="/en/faq/" onclick="closeDrawer()">FAQ</a>
 <a href="/en/contacts/" onclick="closeDrawer()">Contacts</a>
 </div>
 <header class="article-hero">
@@ -267,6 +266,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <p>Georgia in 2026 is no longer the ultra-cheap destination people wrote about in 2019. Prices have risen 30-40% over the past three years. But compared to Western Europe, Turkey, or the UAE, the value for money here remains exceptional. For the cost of an Italian weekend, you can spend a full week with wine, khinkali, mountains, and a private tour. Don't forget to <a href="/en/blog/travel-insurance-georgia-2026/" style="color:#1A3D2E;font-weight:600">get travel insurance</a> — mandatory for entering Georgia since 2026.</p>
 
 <p>I will break down the budget by category: accommodation, food, transport, tours, and activities. For each category, three levels: budget, comfort, and luxury. At the end, ready-made calculations for 3, 5, and 7 days that you can use for planning. All amounts are in Georgian lari (GEL) with conversions to US dollars.</p>
+<p>For the capital specifically, see <a href="/en/blog/tbilisi-prices-2026/">Tbilisi prices in 2026</a> — day-to-day costs broken down.</p>
 <figure style="margin:0 0 24px;border-radius:12px;overflow:hidden">
 <img alt="View of Tbilisi from Narikala Fortress — old town, Kura river, and Bridge of Peace" fetchpriority="high" height="630" loading="eager" src="/images/blog/skolko-stoit-otdyh-v-gruzii.webp" style="width:100%;display:block" width="1200"/>
 </figure>

@@ -1,35 +1,11 @@
 [
   {
-    "url": "https://sakhva-travel.com/about/",
+    "url": "https://sakhva-travel.com/blog/aeroport-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-03T05:25:11Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/abkhazia/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-25T07:49:26Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/adjara/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-01T21:26:28Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/azerbaijan/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-25T08:46:11Z"
+    "lastCrawl": "2026-07-17T20:00:14Z"
   },
   {
     "url": "https://sakhva-travel.com/avtorskie-tury-gruzia/",
@@ -45,7 +21,55 @@
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-07T03:10:25Z"
+    "lastCrawl": "2026-07-15T22:50:25Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/about/saba/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-19T06:41:51Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/abkhazia/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-11T07:22:42Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-19T11:03:14Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/about/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-19T00:16:27Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/azerbaijan/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-06-25T08:46:11Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/adjara/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-13T23:51:15Z"
   },
   {
     "url": "https://sakhva-travel.com/armenia/",
@@ -61,55 +85,23 @@
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-10T18:56:30Z"
+    "lastCrawl": "2026-07-13T15:18:11Z"
   },
   {
-    "url": "https://sakhva-travel.com/",
+    "url": "https://sakhva-travel.com/blog/chaevye-v-gruzii/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-05T06:23:24Z"
+    "lastCrawl": "2026-07-19T10:46:56Z"
   },
   {
-    "url": "https://sakhva-travel.com/blog/aeroport-tbilisi/",
+    "url": "https://sakhva-travel.com/blog/batumi-iz-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-06T20:35:32Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/blog/arenda-avto-tbilisi/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-21T16:34:57Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/blog/chto-privezti-iz-gruzii/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T15:49:12Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/blog/botanicheskiy-sad-tbilisi/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-06T20:43:32Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/blog/chto-posmotret-v-gruzii/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-10T18:56:29Z"
+    "lastCrawl": "2026-07-18T13:58:09Z"
   },
   {
     "url": "https://sakhva-travel.com/blog/chacha-gruzinskaya/",
@@ -117,23 +109,15 @@
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-08T19:03:20Z"
+    "lastCrawl": "2026-07-18T20:49:23Z"
   },
   {
-    "url": "https://sakhva-travel.com/blog/chto-posmotret-v-tbilisi/",
+    "url": "https://sakhva-travel.com/blog/arenda-kvartiry-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-27T13:01:14Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/blog/chastny-gid-ili-gruppa-tbilisi/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-09T19:48:28Z"
+    "lastCrawl": "2026-07-16T03:52:16Z"
   },
   {
     "url": "https://sakhva-travel.com/blog/basseyny-tbilisi/",
@@ -144,28 +128,36 @@
     "lastCrawl": "2026-07-06T03:47:19Z"
   },
   {
-    "url": "https://sakhva-travel.com/blog/arenda-kvartiry-tbilisi/",
+    "url": "https://sakhva-travel.com/blog/arenda-avto-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-08T23:37:09Z"
+    "lastCrawl": "2026-07-14T17:31:43Z"
   },
   {
-    "url": "https://sakhva-travel.com/blog/batumi-iz-tbilisi/",
+    "url": "https://sakhva-travel.com/blog/chastny-gid-ili-gruppa-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T11:47:49Z"
+    "lastCrawl": "2026-06-09T19:48:28Z"
   },
   {
-    "url": "https://sakhva-travel.com/blog/david-gareji/",
+    "url": "https://sakhva-travel.com/blog/botanicheskiy-sad-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-15T00:50:37Z"
+    "lastCrawl": "2026-07-18T12:07:37Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/blog/chernoe-more-gruzii/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-16T03:51:38Z"
   },
   {
     "url": "https://sakhva-travel.com/blog/digital-nomad-tbilisi/",
@@ -176,22 +168,6 @@
     "lastCrawl": "2026-07-04T22:37:03Z"
   },
   {
-    "url": "https://sakhva-travel.com/blog/degustatsiya-vina-gruziya/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-08T19:03:26Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/blog/fabrika-tbilisi/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-03T23:42:49Z"
-  },
-  {
     "url": "https://sakhva-travel.com/blog/gid-tbilisi-vs-gid-gruziya/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
@@ -200,20 +176,28 @@
     "lastCrawl": "2026-06-25T21:08:46Z"
   },
   {
-    "url": "https://sakhva-travel.com/blog/gruziya-7-dney/",
+    "url": "https://sakhva-travel.com/blog/chto-posmotret-v-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-06T16:25:27Z"
+    "lastCrawl": "2026-07-12T14:21:07Z"
   },
   {
-    "url": "https://sakhva-travel.com/blog/gruziya-kogda-ekhat/",
-    "verdict": "NEUTRAL",
-    "coverageState": "Страница просканирована, но пока не проиндексирована",
+    "url": "https://sakhva-travel.com/blog/chto-privezti-iz-gruzii/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-02T11:30:53Z"
+    "lastCrawl": "2026-07-16T04:25:13Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/blog/chto-posmotret-v-gruzii/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-06-10T18:56:29Z"
   },
   {
     "url": "https://sakhva-travel.com/blog/gruzinskaya-kukhnya-chto-poprobovat/",
@@ -224,6 +208,38 @@
     "lastCrawl": "2026-06-08T19:03:28Z"
   },
   {
+    "url": "https://sakhva-travel.com/blog/fabrika-tbilisi/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-16T17:09:26Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/blog/gruzinskie-frazy/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-19T12:35:56Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/blog/david-gareji/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-08T17:48:01Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/blog/degustatsiya-vina-gruziya/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-06-08T19:03:26Z"
+  },
+  {
     "url": "https://sakhva-travel.com/blog/gruziya-perviy-raz/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
@@ -232,12 +248,12 @@
     "lastCrawl": "2026-07-04T00:57:49Z"
   },
   {
-    "url": "https://sakhva-travel.com/blog/gruzinskoe-vino-gid/",
+    "url": "https://sakhva-travel.com/blog/gruziya-7-dney/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T09:05:05Z"
+    "lastCrawl": "2026-07-15T09:50:11Z"
   },
   {
     "url": "https://sakhva-travel.com/blog/gruziya-s-detmi/",
@@ -245,15 +261,55 @@
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T16:59:33Z"
+    "lastCrawl": "2026-07-19T12:15:30Z"
   },
   {
-    "url": "https://sakhva-travel.com/blog/gruziya-zimoy/",
+    "url": "https://sakhva-travel.com/blog/gruziya-kogda-ekhat/",
+    "verdict": "NEUTRAL",
+    "coverageState": "Страница просканирована, но пока не проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-02T11:30:53Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/blog/gruzinskie-tosty/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-27T10:52:14Z"
+    "lastCrawl": "2026-07-15T17:01:41Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/blog/gruzinskoe-vino-gid/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-12T20:54:11Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/blog/gruziya-v-mae/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-05T22:51:07Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/blog/gruzinskiy-alfavit/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-15T23:54:10Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/blog/gruzinskie-sladosti/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-20T04:41:17Z"
   },
   {
     "url": "https://sakhva-travel.com/blog/gruziya-samostoyatelno-ili-s-gidom/",
@@ -264,28 +320,12 @@
     "lastCrawl": "2026-06-08T19:03:28Z"
   },
   {
-    "url": "https://sakhva-travel.com/blog/gruziya-v-sentyabre/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-26T15:26:59Z"
-  },
-  {
     "url": "https://sakhva-travel.com/blog/kazbegi-ili-kakheti/",
-    "verdict": "NEUTRAL",
-    "coverageState": "Страница просканирована, но пока не проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-08T19:03:23Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/blog/istoriya-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-28T10:32:18Z"
+    "lastCrawl": "2026-07-07T16:36:45Z"
   },
   {
     "url": "https://sakhva-travel.com/blog/kakheti-za-1-den/",
@@ -293,15 +333,31 @@
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-03T04:36:40Z"
+    "lastCrawl": "2026-07-16T02:50:28Z"
   },
   {
-    "url": "https://sakhva-travel.com/blog/gruziya-v-mae/",
+    "url": "https://sakhva-travel.com/blog/istoriya-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-05T22:51:07Z"
+    "lastCrawl": "2026-07-17T20:35:07Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/blog/kanyon-martvili/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-13T03:06:44Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/blog/gruziya-v-sentyabre/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-08T09:55:58Z"
   },
   {
     "url": "https://sakhva-travel.com/blog/kakheti-osenyu/",
@@ -317,15 +373,31 @@
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-01T20:13:41Z"
+    "lastCrawl": "2026-07-13T01:25:14Z"
   },
   {
-    "url": "https://sakhva-travel.com/blog/kazbegi-zimoy/",
+    "url": "https://sakhva-travel.com/blog/gruziya-zimoy/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-27T08:36:09Z"
+    "lastCrawl": "2026-07-09T12:46:15Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/blog/kanatnaya-doroga-tbilisi/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-16T19:32:18Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/blog/karty-nalichnye-gruziya/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-19T05:41:16Z"
   },
   {
     "url": "https://sakhva-travel.com/blog/kazbegi-samostoyatelno-ili-s-gidom/",
@@ -336,54 +408,6 @@
     "lastCrawl": "2026-06-08T19:03:28Z"
   },
   {
-    "url": "https://sakhva-travel.com/blog/khinkali-gruzinskie/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-01T19:44:10Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/blog/khachapuri-po-adzharski/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-08T19:03:25Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/blog/kurs-lari-k-rublyu/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-06T15:41:29Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/blog/kogda-ekhat-v-kazbegi/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-03T21:12:49Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/blog/mtskheta-iz-tbilisi/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-28T18:18:27Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/blog/kluby-tbilisi/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-06T05:46:26Z"
-  },
-  {
     "url": "https://sakhva-travel.com/blog/kutaisi-iz-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
@@ -392,52 +416,68 @@
     "lastCrawl": "2026-07-05T00:06:48Z"
   },
   {
+    "url": "https://sakhva-travel.com/blog/kurs-lari-k-rublyu/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-16T21:04:49Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/blog/kazbegi-zimoy/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-15T11:43:03Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/blog/khachapuri-po-adzharski/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-11T12:42:43Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/blog/khinkali-gruzinskie/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-01T19:44:10Z"
+  },
+  {
     "url": "https://sakhva-travel.com/blog/metro-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T17:18:18Z"
+    "lastCrawl": "2026-07-13T20:06:30Z"
   },
   {
-    "url": "https://sakhva-travel.com/blog/muzei-tbilisi/",
+    "url": "https://sakhva-travel.com/blog/kluby-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-02T00:17:15Z"
+    "lastCrawl": "2026-07-16T21:31:31Z"
   },
   {
-    "url": "https://sakhva-travel.com/blog/restorany-tbilisi/",
+    "url": "https://sakhva-travel.com/blog/kogda-ekhat-v-kazbegi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-30T04:55:01Z"
+    "lastCrawl": "2026-07-17T05:43:41Z"
   },
   {
-    "url": "https://sakhva-travel.com/blog/noviy-god-v-gruzii/",
+    "url": "https://sakhva-travel.com/blog/mtskheta-iz-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-08T19:03:21Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/blog/nochnoy-tbilisi/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T03:06:59Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/blog/narikala-tbilisi/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-01T21:19:16Z"
+    "lastCrawl": "2026-07-18T18:33:09Z"
   },
   {
     "url": "https://sakhva-travel.com/blog/oteli-tbilisi-5-zvezd-v-centre/",
@@ -448,14 +488,6 @@
     "lastCrawl": "2026-06-30T07:06:24Z"
   },
   {
-    "url": "https://sakhva-travel.com/blog/oteli-tbilisi/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-01T16:18:09Z"
-  },
-  {
     "url": "https://sakhva-travel.com/blog/oshibki-turistov-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
@@ -464,12 +496,36 @@
     "lastCrawl": "2026-07-03T09:47:41Z"
   },
   {
-    "url": "https://sakhva-travel.com/blog/rayony-tbilisi-gde-ostanovitsya/",
-    "verdict": "NEUTRAL",
-    "coverageState": "Страница просканирована, но пока не проиндексирована",
+    "url": "https://sakhva-travel.com/blog/muzei-tbilisi/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-03T04:47:41Z"
+    "lastCrawl": "2026-07-02T00:17:15Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/blog/narikala-tbilisi/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-01T21:19:16Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/blog/poezd-tbilisi-batumi/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-13T04:20:37Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/blog/oteli-tbilisi/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-01T16:18:09Z"
   },
   {
     "url": "https://sakhva-travel.com/blog/pyatnica-v-tbilisi/",
@@ -477,39 +533,31 @@
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T21:50:12Z"
+    "lastCrawl": "2026-07-18T23:05:01Z"
   },
   {
-    "url": "https://sakhva-travel.com/blog/rouming-v-gruzii/",
+    "url": "https://sakhva-travel.com/blog/rayony-tbilisi-gde-ostanovitsya/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-10T18:56:29Z"
+    "lastCrawl": "2026-07-16T23:39:35Z"
   },
   {
-    "url": "https://sakhva-travel.com/blog/skolko-stoit-otdyh-v-gruzii/",
+    "url": "https://sakhva-travel.com/blog/nochnoy-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T20:07:03Z"
+    "lastCrawl": "2026-07-13T07:22:15Z"
   },
   {
-    "url": "https://sakhva-travel.com/blog/sernye-bani-tbilisi/",
+    "url": "https://sakhva-travel.com/blog/noviy-god-v-gruzii/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T13:07:41Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/blog/stamba-tbilisi/",
-    "verdict": "NEUTRAL",
-    "coverageState": "Страница просканирована, но пока не проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-05T22:51:26Z"
+    "lastCrawl": "2026-07-11T05:02:39Z"
   },
   {
     "url": "https://sakhva-travel.com/blog/russkoyazychny-gid-tbilisi/",
@@ -520,12 +568,28 @@
     "lastCrawl": "2026-06-08T19:03:27Z"
   },
   {
-    "url": "https://sakhva-travel.com/blog/sovetskiy-tbilisi/",
+    "url": "https://sakhva-travel.com/blog/restorany-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-08T19:03:19Z"
+    "lastCrawl": "2026-07-11T01:47:36Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/blog/skolko-stoit-otdyh-v-gruzii/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-13T10:39:17Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/blog/sernye-bani-tbilisi/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-19T06:45:12Z"
   },
   {
     "url": "https://sakhva-travel.com/blog/skolko-stoit-gid-tbilisi/",
@@ -536,6 +600,38 @@
     "lastCrawl": "2026-06-08T19:03:26Z"
   },
   {
+    "url": "https://sakhva-travel.com/blog/sovetskiy-tbilisi/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-06-08T19:03:19Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/blog/skrytye-mesta-tbilisi/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-14T10:36:12Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/blog/stamba-tbilisi/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-05T22:51:26Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/blog/rouming-v-gruzii/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-06-10T18:56:29Z"
+  },
+  {
     "url": "https://sakhva-travel.com/blog/strahovka-v-gruziyu/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
@@ -544,20 +640,60 @@
     "lastCrawl": "2026-07-01T20:28:18Z"
   },
   {
+    "url": "https://sakhva-travel.com/blog/taksi-tbilisi/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-19T07:02:06Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/blog/tbilisi-dlya-relokantov/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-19T01:26:31Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/blog/tbilisi-s-detmi-chto-posmotret/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-13T16:08:10Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/blog/tbilisi-za-1-den/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-14T02:50:35Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/blog/svyaz-i-internet-v-gruzii/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-18T16:28:18Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/blog/tbilisi-besplatno/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-09T06:30:31Z"
+  },
+  {
     "url": "https://sakhva-travel.com/blog/subbota-v-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-20T14:02:29Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/blog/skrytye-mesta-tbilisi/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-03T07:55:42Z"
+    "lastCrawl": "2026-07-17T21:02:58Z"
   },
   {
     "url": "https://sakhva-travel.com/blog/svanetiya/",
@@ -576,108 +712,20 @@
     "lastCrawl": "2026-06-08T19:03:24Z"
   },
   {
-    "url": "https://sakhva-travel.com/blog/svyaz-i-internet-v-gruzii/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-10T18:56:30Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/blog/tbilisi-besplatno/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-15T01:01:39Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/blog/tbilisi-za-3-dnya/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T19:29:33Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/blog/tbilisi-dlya-relokantov/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T10:57:50Z"
-  },
-  {
     "url": "https://sakhva-travel.com/blog/tbilisi-v-dozhd/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-03T02:05:40Z"
+    "lastCrawl": "2026-07-13T15:45:19Z"
   },
   {
-    "url": "https://sakhva-travel.com/blog/tbilisskoe-ozero/",
+    "url": "https://sakhva-travel.com/blog/tury-v-gori-2026/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-02T22:04:30Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/blog/tbilisi-za-1-den/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-01T20:04:34Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/blog/tbilisi-s-detmi-chto-posmotret/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-03T07:17:41Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/blog/transfer-tbilisi-kazbegi/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T22:55:48Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/blog/tury-v-batumi-2026/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-05T00:16:10Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/blog/tseny-v-tbilisi-2026/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-01T20:17:49Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/blog/tury-v-borzhomi-2026/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-06T15:42:29Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/blog/tury-v-kazbegi-2026/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-02T10:53:23Z"
+    "lastCrawl": "2026-07-19T21:54:54Z"
   },
   {
     "url": "https://sakhva-travel.com/blog/tury-v-kakheti-2026/",
@@ -688,92 +736,68 @@
     "lastCrawl": "2026-06-08T19:03:23Z"
   },
   {
-    "url": "https://sakhva-travel.com/blog/ushchelye-truso/",
+    "url": "https://sakhva-travel.com/blog/tbilisskoe-ozero/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-08T19:03:18Z"
+    "lastCrawl": "2026-07-17T15:53:00Z"
   },
   {
-    "url": "https://sakhva-travel.com/blog/tury-v-gori-2026/",
+    "url": "https://sakhva-travel.com/blog/transfer-tbilisi-kazbegi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-30T11:03:38Z"
+    "lastCrawl": "2026-07-13T20:31:30Z"
   },
   {
-    "url": "https://sakhva-travel.com/blog/tury-v-tbilisi-2026/",
+    "url": "https://sakhva-travel.com/blog/tbilisi-za-3-dnya/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-13T02:09:28Z"
+    "lastCrawl": "2026-07-04T19:29:33Z"
   },
   {
-    "url": "https://sakhva-travel.com/blog/uplistsikhe/",
+    "url": "https://sakhva-travel.com/blog/tury-v-kazbegi-2026/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-08T19:03:16Z"
+    "lastCrawl": "2026-07-02T10:53:23Z"
   },
   {
-    "url": "https://sakhva-travel.com/blog/uslugi-chastnogo-gida-tbilisi/",
+    "url": "https://sakhva-travel.com/blog/tury-v-borzhomi-2026/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-23T18:16:26Z"
+    "lastCrawl": "2026-07-17T04:38:42Z"
   },
   {
-    "url": "https://sakhva-travel.com/blog/vardzia/",
+    "url": "https://sakhva-travel.com/blog/tbilisoba/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T21:31:27Z"
+    "lastCrawl": "2026-07-17T10:02:53Z"
   },
   {
-    "url": "https://sakhva-travel.com/blog/viza-v-gruziyu-2026/",
+    "url": "https://sakhva-travel.com/blog/tseny-v-tbilisi-2026/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-01T05:10:58Z"
+    "lastCrawl": "2026-07-01T20:17:49Z"
   },
   {
-    "url": "https://sakhva-travel.com/blog/voenno-gruzinskaya-doroga/",
+    "url": "https://sakhva-travel.com/blog/tury-v-batumi-2026/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-08T19:03:14Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/blog/zagranpasport-v-gruziyu/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-01T20:23:52Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/cyprus/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-25T06:03:19Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/contacts/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T21:04:18Z"
+    "lastCrawl": "2026-07-17T10:28:52Z"
   },
   {
     "url": "https://sakhva-travel.com/blog/voskresene-v-tbilisi/",
@@ -784,12 +808,76 @@
     "lastCrawl": "2026-07-04T21:22:03Z"
   },
   {
-    "url": "https://sakhva-travel.com/egypt/",
+    "url": "https://sakhva-travel.com/blog/voenno-gruzinskaya-doroga/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-25T05:45:17Z"
+    "lastCrawl": "2026-06-08T19:03:14Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/blog/uslugi-chastnogo-gida-tbilisi/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-06-23T18:16:26Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/blog/viza-v-gruziyu-2026/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-01T05:10:58Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/blog/zagranpasport-v-gruziyu/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-11T17:39:49Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/blog/uplistsikhe/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-06-08T19:03:16Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/blog/tury-v-tbilisi-2026/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-18T19:10:21Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/blog/ushchelye-truso/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-06-08T19:03:18Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/blog/ureki-plyazh/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-13T14:48:28Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/blog/vardzia/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-04T21:31:27Z"
   },
   {
     "url": "https://sakhva-travel.com/ekskursionnye-tury-v-gruziyu/",
@@ -800,12 +888,52 @@
     "lastCrawl": "2026-07-01T20:13:24Z"
   },
   {
-    "url": "https://sakhva-travel.com/ekskursiya/",
+    "url": "https://sakhva-travel.com/ekskursiya/chacha-master-klass/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T20:35:12Z"
+    "lastCrawl": "2026-07-18T08:45:14Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/contacts/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-19T11:27:19Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/cyprus/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-17T14:45:59Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/egypt/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-06-25T05:45:17Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/ekskursiya/art-tur-tbilisi/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-18T22:22:10Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/ekskursiya/ekskursiya-abanotubani/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-18T06:32:11Z"
   },
   {
     "url": "https://sakhva-travel.com/ekskursiya/degustatsiya-vina-kakheti/",
@@ -816,28 +944,12 @@
     "lastCrawl": "2026-07-01T20:39:35Z"
   },
   {
-    "url": "https://sakhva-travel.com/ekskursiya/art-tur-tbilisi/",
+    "url": "https://sakhva-travel.com/ekskursiya/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-01T20:44:49Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/ekskursiya/chacha-master-klass/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-06T17:02:29Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/ekskursiya/ekskursiya-dashbashi-iz-tbilisi/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-26T22:10:06Z"
+    "lastCrawl": "2026-07-17T14:42:58Z"
   },
   {
     "url": "https://sakhva-travel.com/ekskursiya/ekskursiya-ananuri-iz-tbilisi/",
@@ -845,31 +957,7 @@
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-21T16:34:58Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/ekskursiya/ekskursiya-borjomi-iz-tbilisi/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T14:41:33Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/ekskursiya/ekskursiya-abanotubani/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-07T09:51:39Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/ekskursiya/ekskursiya-bakuriani-iz-tbilisi/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-25T16:43:43Z"
+    "lastCrawl": "2026-07-17T11:13:53Z"
   },
   {
     "url": "https://sakhva-travel.com/ekskursiya/ekskursiya-david-gareji/",
@@ -880,20 +968,20 @@
     "lastCrawl": "2026-06-07T11:06:53Z"
   },
   {
-    "url": "https://sakhva-travel.com/ekskursiya/ekskursiya-gomis-mta-iz-batumi/",
+    "url": "https://sakhva-travel.com/ekskursiya/ekskursiya-kakheti-iz-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-07T10:41:39Z"
+    "lastCrawl": "2026-07-19T12:51:53Z"
   },
   {
-    "url": "https://sakhva-travel.com/ekskursiya/ekskursiya-gudauri-iz-tbilisi/",
+    "url": "https://sakhva-travel.com/ekskursiya/ekskursiya-jvari-iz-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-27T05:10:09Z"
+    "lastCrawl": "2026-07-19T06:26:31Z"
   },
   {
     "url": "https://sakhva-travel.com/ekskursiya/ekskursiya-gori-iz-tbilisi/",
@@ -901,7 +989,7 @@
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-27T17:57:15Z"
+    "lastCrawl": "2026-07-17T10:32:54Z"
   },
   {
     "url": "https://sakhva-travel.com/ekskursiya/ekskursiya-hevsuretia-shatili/",
@@ -912,68 +1000,44 @@
     "lastCrawl": "2026-06-25T18:52:46Z"
   },
   {
-    "url": "https://sakhva-travel.com/ekskursiya/ekskursiya-jvari-iz-tbilisi/",
+    "url": "https://sakhva-travel.com/ekskursiya/ekskursiya-borjomi-iz-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-05T01:49:55Z"
+    "lastCrawl": "2026-07-17T10:43:53Z"
   },
   {
-    "url": "https://sakhva-travel.com/ekskursiya/ekskursiya-mtatsminda/",
+    "url": "https://sakhva-travel.com/ekskursiya/ekskursiya-dashbashi-iz-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-01T21:40:14Z"
+    "lastCrawl": "2026-07-17T21:21:43Z"
   },
   {
-    "url": "https://sakhva-travel.com/ekskursiya/ekskursiya-kakheti-iz-tbilisi/",
+    "url": "https://sakhva-travel.com/ekskursiya/ekskursiya-bakuriani-iz-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-06T11:25:27Z"
+    "lastCrawl": "2026-06-25T16:43:43Z"
   },
   {
-    "url": "https://sakhva-travel.com/ekskursiya/ekskursiya-kazbegi-iz-tbilisi/",
+    "url": "https://sakhva-travel.com/ekskursiya/ekskursiya-gudauri-iz-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T22:46:27Z"
+    "lastCrawl": "2026-06-27T05:10:09Z"
   },
   {
-    "url": "https://sakhva-travel.com/ekskursiya/ekskursiya-mtskheta-iz-tbilisi/",
+    "url": "https://sakhva-travel.com/ekskursiya/ekskursiya-gomis-mta-iz-batumi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T23:58:24Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/ekskursiya/ekskursiya-kanyony-zapadnoy-gruzii/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-25T11:30:51Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/ekskursiya/ekskursiya-narikala/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T16:31:24Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/ekskursiya/ekskursiya-stary-tbilisi/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T15:08:50Z"
+    "lastCrawl": "2026-07-07T10:41:39Z"
   },
   {
     "url": "https://sakhva-travel.com/ekskursiya/ekskursiya-racha-iz-tbilisi/",
@@ -981,7 +1045,39 @@
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-27T09:06:09Z"
+    "lastCrawl": "2026-07-17T20:44:13Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/ekskursiya/ekskursiya-stary-tbilisi/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-19T13:59:27Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/ekskursiya/ekskursiya-narikala/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-16T04:14:14Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/ekskursiya/ekskursiya-svaneti-iz-tbilisi/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-19T10:39:09Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/ekskursiya/ekskursiya-mtskheta-iz-tbilisi/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-19T07:22:31Z"
   },
   {
     "url": "https://sakhva-travel.com/ekskursiya/ekskursiya-sighnaghi-iz-tbilisi/",
@@ -992,44 +1088,60 @@
     "lastCrawl": "2026-07-06T10:46:26Z"
   },
   {
-    "url": "https://sakhva-travel.com/ekskursiya/ekskursiya-truso/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-21T19:04:58Z"
-  },
-  {
     "url": "https://sakhva-travel.com/ekskursiya/ekskursiya-telavi-iz-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-01T22:23:05Z"
+    "lastCrawl": "2026-07-18T11:28:33Z"
   },
   {
-    "url": "https://sakhva-travel.com/ekskursiya/ekskursiya-svaneti-iz-tbilisi/",
+    "url": "https://sakhva-travel.com/ekskursiya/ekskursiya-kazbegi-iz-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-06T21:25:32Z"
+    "lastCrawl": "2026-07-19T09:08:54Z"
   },
   {
-    "url": "https://sakhva-travel.com/ekskursiya/ekskursiya-tusheti/",
+    "url": "https://sakhva-travel.com/ekskursiya/ekskursiya-kanyony-zapadnoy-gruzii/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-01T22:02:15Z"
+    "lastCrawl": "2026-07-15T05:25:56Z"
   },
   {
-    "url": "https://sakhva-travel.com/ekskursiya/ekskursiya-uplistsikhe-iz-tbilisi/",
+    "url": "https://sakhva-travel.com/ekskursiya/ekskursiya-mtatsminda/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T19:48:18Z"
+    "lastCrawl": "2026-07-17T20:21:40Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/ekskursiya/gruppa-10-chelovek-tbilisi/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-08T06:37:56Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/ekskursiya/ekskursiya-truso/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-14T16:11:43Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/ekskursiya/fotosessiya-tbilisi/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-14T13:46:18Z"
   },
   {
     "url": "https://sakhva-travel.com/ekskursiya/ekskursiya-ureki-iz-tbilisi/",
@@ -1037,7 +1149,39 @@
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-25T09:22:14Z"
+    "lastCrawl": "2026-07-18T21:39:18Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/ekskursiya/family-tur-tbilisi/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-18T23:26:27Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/ekskursiya/ekskursiya-uplistsikhe-iz-tbilisi/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-16T11:03:20Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/ekskursiya/ekskursiya-tusheti/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-18T10:13:09Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/ekskursiya/gastronomicheskiy-tur-tbilisi/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-19T08:54:52Z"
   },
   {
     "url": "https://sakhva-travel.com/ekskursiya/ekskursiya-vardzia/",
@@ -1048,52 +1192,20 @@
     "lastCrawl": "2026-07-01T20:15:03Z"
   },
   {
-    "url": "https://sakhva-travel.com/ekskursiya/family-tur-tbilisi/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T18:23:57Z"
-  },
-  {
     "url": "https://sakhva-travel.com/ekskursiya/ekskursiya-zugdidi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-01T21:33:20Z"
+    "lastCrawl": "2026-07-17T21:12:37Z"
   },
   {
-    "url": "https://sakhva-travel.com/ekskursiya/fotosessiya-tbilisi/",
+    "url": "https://sakhva-travel.com/ekskursiya/progulka-po-kure-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T14:26:56Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/ekskursiya/gruppa-10-chelovek-tbilisi/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-26T09:41:53Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/ekskursiya/gastronomicheskiy-tur-tbilisi/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T15:35:52Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/ekskursiya/konny-tur-stepantsminda/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-27T04:47:07Z"
+    "lastCrawl": "2026-07-15T05:35:57Z"
   },
   {
     "url": "https://sakhva-travel.com/ekskursiya/khachapuri-master-klass/",
@@ -1104,12 +1216,28 @@
     "lastCrawl": "2026-07-01T16:04:12Z"
   },
   {
+    "url": "https://sakhva-travel.com/ekskursiya/shopping-tur-tbilisi/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-17T22:16:39Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/ekskursiya/nochnaya-ekskursiya-tbilisi/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-14T02:40:18Z"
+  },
+  {
     "url": "https://sakhva-travel.com/ekskursiya/kvevri-vino-tur/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-02T06:07:16Z"
+    "lastCrawl": "2026-07-14T03:28:05Z"
   },
   {
     "url": "https://sakhva-travel.com/ekskursiya/korporativniy-tur-tbilisi/",
@@ -1120,12 +1248,20 @@
     "lastCrawl": "2026-07-02T00:17:14Z"
   },
   {
-    "url": "https://sakhva-travel.com/ekskursiya/nochnaya-ekskursiya-tbilisi/",
+    "url": "https://sakhva-travel.com/ekskursiya/romanticheskiy-tur-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-28T20:12:29Z"
+    "lastCrawl": "2026-07-18T19:52:10Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/ekskursiya/konny-tur-stepantsminda/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-16T04:51:01Z"
   },
   {
     "url": "https://sakhva-travel.com/ekskursiya/priklyuchencheskiy-tur-gruziya/",
@@ -1133,39 +1269,7 @@
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-27T03:54:01Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/ekskursiya/progulka-po-kure-tbilisi/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-25T12:51:26Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/ekskursiya/romanticheskiy-tur-tbilisi/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-01T17:04:12Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/ekskursiya/svadebny-tur-gruziya/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-20T04:08:29Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/ekskursiya/shopping-tur-tbilisi/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T03:25:59Z"
+    "lastCrawl": "2026-07-11T16:23:08Z"
   },
   {
     "url": "https://sakhva-travel.com/ekskursiya/sovetskiy-tur-tbilisi/",
@@ -1173,7 +1277,23 @@
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-05T01:31:12Z"
+    "lastCrawl": "2026-07-12T23:44:29Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/ekskursiya/tur-batumi-iz-tbilisi/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-09T02:56:25Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/ekskursiya/tur-dlya-detey-tbilisi/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-14T20:28:33Z"
   },
   {
     "url": "https://sakhva-travel.com/ekskursiya/tur-batumi-2-dnya/",
@@ -1184,92 +1304,20 @@
     "lastCrawl": "2026-07-04T22:08:57Z"
   },
   {
-    "url": "https://sakhva-travel.com/ekskursiya/transfer-aeroport-tbilisi/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T13:59:40Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/ekskursiya/tur-batumi-iz-tbilisi/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T08:28:06Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/ekskursiya/tur-dlya-detey-tbilisi/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-22T21:50:17Z"
-  },
-  {
     "url": "https://sakhva-travel.com/ekskursiya/tur-dlya-emigrantov-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-29T21:08:41Z"
+    "lastCrawl": "2026-07-19T09:22:55Z"
   },
   {
-    "url": "https://sakhva-travel.com/ekskursiya/tur-dlya-pensionerov-gruziya/",
+    "url": "https://sakhva-travel.com/ekskursiya/transfer-aeroport-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T05:58:01Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/ekskursiya/tur-gruziya-10-dney/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-25T05:34:38Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/ekskursiya/tur-gruziya-3-dnya/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-01T19:53:00Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/ekskursiya/tur-gruziya-leto/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-29T11:00:32Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/ekskursiya/tur-gruziya-noviy-god/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-25T02:50:52Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/ekskursiya/tur-gruziya-7-dney/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-05T00:25:33Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/ekskursiya/tur-gruziya-armeniya/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T11:36:06Z"
+    "lastCrawl": "2026-07-17T10:17:54Z"
   },
   {
     "url": "https://sakhva-travel.com/ekskursiya/tur-gruziya-5-dney/",
@@ -1277,31 +1325,39 @@
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-01T19:44:22Z"
+    "lastCrawl": "2026-07-16T16:44:26Z"
   },
   {
-    "url": "https://sakhva-travel.com/ekskursiya/tur-kazbegi-kakheti-2-dnya/",
+    "url": "https://sakhva-travel.com/ekskursiya/svadebny-tur-gruziya/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-25T15:00:27Z"
+    "lastCrawl": "2026-07-08T08:57:57Z"
   },
   {
-    "url": "https://sakhva-travel.com/ekskursiya/tur-po-hramam-tbilisi/",
+    "url": "https://sakhva-travel.com/ekskursiya/tur-gruziya-10-dney/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T21:40:48Z"
+    "lastCrawl": "2026-07-17T10:13:52Z"
   },
   {
-    "url": "https://sakhva-travel.com/ekskursiya/tur-kutaisi-iz-tbilisi/",
+    "url": "https://sakhva-travel.com/ekskursiya/tur-gruziya-3-dnya/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-01T21:05:11Z"
+    "lastCrawl": "2026-07-17T16:25:09Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/ekskursiya/tur-dlya-pensionerov-gruziya/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-09T17:00:02Z"
   },
   {
     "url": "https://sakhva-travel.com/ekskursiya/tur-svaneti-4-dnya/",
@@ -1312,12 +1368,52 @@
     "lastCrawl": ""
   },
   {
-    "url": "https://sakhva-travel.com/ekskursiya/tur-vsya-gruziya/",
+    "url": "https://sakhva-travel.com/ekskursiya/tur-po-hramam-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-01T19:46:34Z"
+    "lastCrawl": "2026-07-18T09:39:06Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/ekskursiya/tur-gruziya-leto/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-11T20:53:30Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/ekskursiya/tur-kutaisi-iz-tbilisi/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-01T21:19:33Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/ekskursiya/tur-gruziya-armeniya/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-04T11:36:06Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/ekskursiya/tur-gruziya-7-dney/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-17T07:36:49Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/ekskursiya/tur-gruziya-noviy-god/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-20T03:02:05Z"
   },
   {
     "url": "https://sakhva-travel.com/ekskursiya/vinniy-marshrut-alazani/",
@@ -1325,55 +1421,23 @@
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-06T14:45:27Z"
+    "lastCrawl": "2026-07-17T19:41:04Z"
   },
   {
-    "url": "https://sakhva-travel.com/ekskursiya/vinniy-tur-tbilisi/",
+    "url": "https://sakhva-travel.com/ekskursiya/tur-kazbegi-kakheti-2-dnya/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-22T17:09:13Z"
+    "lastCrawl": "2026-07-17T07:36:48Z"
   },
   {
-    "url": "https://sakhva-travel.com/ekskursiya/vinodelie-kindzmarauli/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-06T04:54:26Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/en/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-05T17:00:21Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/en/abkhazia/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-27T20:31:49Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/en/about/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T21:59:33Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/en/adjara/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-18T06:41:06Z"
+    "url": "https://sakhva-travel.com/ekskursiya/tur-vsya-gruziya/",
+    "verdict": "ERROR",
+    "coverageState": "<HttpError 500 when requesting https://searchconsole.googleapis.com/v1/urlInspec",
+    "robotsTxtState": "?",
+    "indexingState": "?",
+    "lastCrawl": ""
   },
   {
     "url": "https://sakhva-travel.com/en/armenia/",
@@ -1392,12 +1456,92 @@
     "lastCrawl": "2026-06-26T13:06:24Z"
   },
   {
+    "url": "https://sakhva-travel.com/en/about/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-04T21:59:33Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-17T22:04:32Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/abkhazia/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-06-27T20:31:49Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/adjara/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-06-18T06:41:06Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/ekskursiya/vinniy-tur-tbilisi/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-14T13:01:56Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/ekskursiya/vinodelie-kindzmarauli/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-16T17:34:26Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/about/saba/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-19T08:57:57Z"
+  },
+  {
     "url": "https://sakhva-travel.com/en/blog/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
     "lastCrawl": "2026-07-06T09:56:26Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/blog/best-restaurants-tbilisi/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-08T19:03:01Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/blog/black-sea-georgia/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-16T05:55:50Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/blog/borjomi-from-tbilisi/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-08T21:38:33Z"
   },
   {
     "url": "https://sakhva-travel.com/en/blog/adjarian-khachapuri-guide/",
@@ -1408,20 +1552,12 @@
     "lastCrawl": "2026-06-22T19:40:13Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/blog/apartment-rental-tbilisi/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-05T04:29:33Z"
-  },
-  {
     "url": "https://sakhva-travel.com/en/blog/batumi-from-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-15T19:24:33Z"
+    "lastCrawl": "2026-07-09T14:55:14Z"
   },
   {
     "url": "https://sakhva-travel.com/en/blog/batumi-complete-guide/",
@@ -1432,14 +1568,6 @@
     "lastCrawl": "2026-07-04T02:47:54Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/blog/best-restaurants-tbilisi/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-25T05:20:52Z"
-  },
-  {
     "url": "https://sakhva-travel.com/en/blog/best-time-visit-georgia/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
@@ -1448,12 +1576,12 @@
     "lastCrawl": "2026-05-28T05:40:22Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/blog/borjomi-complete-guide/",
+    "url": "https://sakhva-travel.com/en/blog/apartment-rental-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T18:33:18Z"
+    "lastCrawl": "2026-06-05T04:29:33Z"
   },
   {
     "url": "https://sakhva-travel.com/en/blog/best-time-visit-kazbegi/",
@@ -1464,12 +1592,12 @@
     "lastCrawl": "2026-06-01T16:41:24Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/blog/borjomi-from-tbilisi/",
+    "url": "https://sakhva-travel.com/en/blog/borjomi-complete-guide/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-14T22:10:01Z"
+    "lastCrawl": "2026-07-16T16:00:11Z"
   },
   {
     "url": "https://sakhva-travel.com/en/blog/botanical-garden-tbilisi/",
@@ -1477,23 +1605,7 @@
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-30T20:42:37Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/en/blog/car-rental-georgia/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-04T21:39:46Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/en/blog/david-gareja-monastery/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-01T20:11:38Z"
+    "lastCrawl": "2026-07-17T19:47:47Z"
   },
   {
     "url": "https://sakhva-travel.com/en/blog/chacha-georgian-brandy/",
@@ -1504,12 +1616,20 @@
     "lastCrawl": "2026-06-11T01:56:42Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/blog/car-rental-tbilisi/",
-    "verdict": "NEUTRAL",
-    "coverageState": "URL неизвестен Google",
-    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawl": ""
+    "url": "https://sakhva-travel.com/en/blog/georgia-7-day-itinerary/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-05-28T19:20:14Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/blog/david-gareja-monastery/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-20T00:40:55Z"
   },
   {
     "url": "https://sakhva-travel.com/en/blog/digital-nomad-tbilisi/",
@@ -1520,20 +1640,20 @@
     "lastCrawl": "2026-07-01T20:04:52Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/blog/fabrika-tbilisi-guide/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-01T12:06:19Z"
+    "url": "https://sakhva-travel.com/en/blog/car-rental-tbilisi/",
+    "verdict": "NEUTRAL",
+    "coverageState": "Обнаружена, не проиндексирована",
+    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+    "indexingState": "INDEXING_STATE_UNSPECIFIED",
+    "lastCrawl": ""
   },
   {
-    "url": "https://sakhva-travel.com/en/blog/free-things-tbilisi/",
+    "url": "https://sakhva-travel.com/en/blog/car-rental-georgia/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-15T01:05:20Z"
+    "lastCrawl": "2026-07-15T02:38:47Z"
   },
   {
     "url": "https://sakhva-travel.com/en/blog/friday-in-tbilisi/",
@@ -1541,39 +1661,39 @@
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-05T03:23:39Z"
+    "lastCrawl": "2026-07-17T16:35:52Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/blog/georgia-7-day-itinerary/",
+    "url": "https://sakhva-travel.com/en/blog/fabrika-tbilisi-guide/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-05-28T19:20:14Z"
+    "lastCrawl": "2026-07-13T13:10:18Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/blog/georgia-budget-travel/",
+    "url": "https://sakhva-travel.com/en/blog/free-things-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-05-25T13:23:30Z"
+    "lastCrawl": "2026-07-08T19:46:03Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/blog/georgia-guide-or-solo/",
+    "url": "https://sakhva-travel.com/en/blog/georgia-visa-2026/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-05-30T19:44:21Z"
+    "lastCrawl": "2026-07-11T05:59:40Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/blog/georgia-first-time-tips/",
+    "url": "https://sakhva-travel.com/en/blog/georgia-in-winter/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-19T06:34:17Z"
+    "lastCrawl": "2026-05-24T11:00:25Z"
   },
   {
     "url": "https://sakhva-travel.com/en/blog/georgia-in-september/",
@@ -1589,23 +1709,39 @@
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-24T05:25:28Z"
+    "lastCrawl": "2026-07-09T21:49:20Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/blog/georgia-in-winter/",
+    "url": "https://sakhva-travel.com/en/blog/georgia-first-time-tips/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-05-24T11:00:25Z"
+    "lastCrawl": "2026-07-18T19:10:21Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/blog/georgia-passport-requirements/",
+    "url": "https://sakhva-travel.com/en/blog/georgia-with-kids/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-22T14:37:13Z"
+    "lastCrawl": "2026-07-16T16:19:26Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/blog/georgia-guide-or-solo/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-05-30T19:44:21Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/blog/georgia-budget-travel/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-05-25T13:23:30Z"
   },
   {
     "url": "https://sakhva-travel.com/en/blog/georgia-trip-cost/",
@@ -1616,20 +1752,12 @@
     "lastCrawl": "2026-05-23T09:32:13Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/blog/georgia-visa-2026/",
+    "url": "https://sakhva-travel.com/en/blog/georgia-passport-requirements/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-15T01:07:10Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/en/blog/georgia-with-kids/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-06T15:35:28Z"
+    "lastCrawl": "2026-07-12T21:39:13Z"
   },
   {
     "url": "https://sakhva-travel.com/en/blog/georgian-wine-guide/",
@@ -1637,7 +1765,7 @@
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-17T05:17:20Z"
+    "lastCrawl": "2026-07-19T07:03:51Z"
   },
   {
     "url": "https://sakhva-travel.com/en/blog/georgian-military-highway/",
@@ -1648,20 +1776,20 @@
     "lastCrawl": "2026-07-03T08:33:42Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/blog/georgian-lari-exchange-rate/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
+    "url": "https://sakhva-travel.com/en/blog/georgian-phrases-tourists/",
+    "verdict": "NEUTRAL",
+    "coverageState": "Страница просканирована, но пока не проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-04T20:35:59Z"
+    "lastCrawl": "2026-07-19T04:27:37Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/blog/history-of-tbilisi/",
+    "url": "https://sakhva-travel.com/en/blog/hidden-gems-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-13T16:29:40Z"
+    "lastCrawl": "2026-07-09T04:33:41Z"
   },
   {
     "url": "https://sakhva-travel.com/en/blog/gori-uplistsikhe-guide/",
@@ -1669,7 +1797,31 @@
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-08T03:27:38Z"
+    "lastCrawl": "2026-07-18T02:39:06Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/blog/georgian-alphabet/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-16T01:03:02Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/blog/georgian-toasts/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-15T15:51:32Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/blog/georgian-lari-exchange-rate/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-06-04T20:35:59Z"
   },
   {
     "url": "https://sakhva-travel.com/en/blog/georgian-food-guide/",
@@ -1680,12 +1832,12 @@
     "lastCrawl": "2026-05-22T18:27:11Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/blog/kakheti-complete-guide/",
+    "url": "https://sakhva-travel.com/en/blog/georgian-sweets-desserts/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-09T12:46:25Z"
+    "lastCrawl": "2026-07-18T22:07:27Z"
   },
   {
     "url": "https://sakhva-travel.com/en/blog/hotels-tbilisi/",
@@ -1696,20 +1848,28 @@
     "lastCrawl": "2026-07-04T08:51:05Z"
   },
   {
+    "url": "https://sakhva-travel.com/en/blog/kazbegi-solo-vs-guided/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-04T19:57:42Z"
+  },
+  {
     "url": "https://sakhva-travel.com/en/blog/kakheti-in-autumn/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-05-22T20:32:09Z"
+    "lastCrawl": "2026-07-14T09:01:15Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/blog/kakheti-one-day-trip/",
+    "url": "https://sakhva-travel.com/en/blog/history-of-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T16:17:19Z"
+    "lastCrawl": "2026-07-09T07:38:10Z"
   },
   {
     "url": "https://sakhva-travel.com/en/blog/kakheti-wine-tour/",
@@ -1717,7 +1877,7 @@
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-07T03:46:12Z"
+    "lastCrawl": "2026-07-16T14:38:26Z"
   },
   {
     "url": "https://sakhva-travel.com/en/blog/kazbegi-complete-guide/",
@@ -1725,7 +1885,23 @@
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-11T06:21:39Z"
+    "lastCrawl": "2026-07-18T02:39:12Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/blog/kakheti-complete-guide/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-06-09T12:46:25Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/blog/kazbegi-day-trip-from-tbilisi/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-08T07:28:57Z"
   },
   {
     "url": "https://sakhva-travel.com/en/blog/kazbegi-in-winter/",
@@ -1736,36 +1912,52 @@
     "lastCrawl": "2026-05-26T12:20:51Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/blog/hidden-gems-tbilisi/",
+    "url": "https://sakhva-travel.com/en/blog/kakheti-one-day-trip/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-14T22:04:00Z"
+    "lastCrawl": "2026-07-16T09:48:20Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/blog/kazbegi-day-trip-from-tbilisi/",
+    "url": "https://sakhva-travel.com/en/blog/new-year-in-georgia/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-14T21:46:53Z"
+    "lastCrawl": "2026-06-07T13:21:54Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/blog/kazbegi-solo-vs-guided/",
+    "url": "https://sakhva-travel.com/en/blog/mtskheta-day-trip/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T19:57:42Z"
+    "lastCrawl": "2026-07-20T01:47:05Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/blog/kazbegi-vs-kakheti/",
+    "url": "https://sakhva-travel.com/en/blog/private-guide-services-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-26T16:56:59Z"
+    "lastCrawl": "2026-05-15T11:35:01Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/blog/martvili-canyon/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-13T05:59:19Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/blog/private-guide-cost-tbilisi/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-18T08:47:15Z"
   },
   {
     "url": "https://sakhva-travel.com/en/blog/khinkali-georgian-dumplings/",
@@ -1784,14 +1976,6 @@
     "lastCrawl": "2026-07-01T20:32:42Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/blog/mtskheta-day-trip/",
-    "verdict": "NEUTRAL",
-    "coverageState": "Страница просканирована, но пока не проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-05-25T09:22:05Z"
-  },
-  {
     "url": "https://sakhva-travel.com/en/blog/narikala-fortress-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
@@ -1800,44 +1984,20 @@
     "lastCrawl": "2026-06-15T03:07:57Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/blog/private-guide-cost-tbilisi/",
+    "url": "https://sakhva-travel.com/en/blog/kazbegi-vs-kakheti/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-05-30T22:44:20Z"
+    "lastCrawl": "2026-07-09T05:12:37Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/blog/new-year-in-georgia/",
+    "url": "https://sakhva-travel.com/en/blog/money-cards-georgia/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-07T13:21:54Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/en/blog/private-vs-group-tour-tbilisi/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-05-23T16:37:36Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/en/blog/private-guide-services-tbilisi/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-05-15T11:35:01Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/en/blog/roaming-georgia/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-04T06:16:56Z"
+    "lastCrawl": "2026-07-19T07:52:05Z"
   },
   {
     "url": "https://sakhva-travel.com/en/blog/russian-speaking-guide-tbilisi/",
@@ -1848,12 +2008,20 @@
     "lastCrawl": "2026-07-04T20:16:27Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/blog/saturday-in-tbilisi/",
+    "url": "https://sakhva-travel.com/en/blog/private-vs-group-tour-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-14T06:06:27Z"
+    "lastCrawl": "2026-05-23T16:37:36Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/blog/roaming-georgia/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-06-04T06:16:56Z"
   },
   {
     "url": "https://sakhva-travel.com/en/blog/sim-card-internet-georgia/",
@@ -1864,28 +2032,12 @@
     "lastCrawl": "2026-06-14T22:26:02Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/blog/soviet-tbilisi-tour/",
+    "url": "https://sakhva-travel.com/en/blog/sulfur-baths-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-05-29T14:43:37Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/en/blog/stamba-hotel-tbilisi/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-05T16:52:23Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/en/blog/tbilisi-3-day-itinerary/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-01T20:09:17Z"
+    "lastCrawl": "2026-07-19T18:40:53Z"
   },
   {
     "url": "https://sakhva-travel.com/en/blog/sunday-in-tbilisi/",
@@ -1896,20 +2048,20 @@
     "lastCrawl": "2026-07-01T20:37:56Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/blog/sulfur-baths-tbilisi/",
+    "url": "https://sakhva-travel.com/en/blog/saturday-in-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-01T19:42:10Z"
+    "lastCrawl": "2026-07-09T05:51:34Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/blog/tbilisi-airport-guide/",
+    "url": "https://sakhva-travel.com/en/blog/stamba-hotel-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-20T22:43:48Z"
+    "lastCrawl": "2026-07-17T14:17:57Z"
   },
   {
     "url": "https://sakhva-travel.com/en/blog/svaneti-guide/",
@@ -1920,6 +2072,54 @@
     "lastCrawl": "2026-07-01T20:01:49Z"
   },
   {
+    "url": "https://sakhva-travel.com/en/blog/soviet-tbilisi-tour/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-05-29T14:43:37Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/blog/tbilisi-airport-guide/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-10T18:48:32Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/blog/tbilisi-batumi-train/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-13T06:48:40Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/blog/tbilisi-3-day-itinerary/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-01T20:09:17Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/blog/tbilisi-cable-car/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-16T16:13:12Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/blog/tbilisi-guide-vs-georgia-guide/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-11T17:41:09Z"
+  },
+  {
     "url": "https://sakhva-travel.com/en/blog/tbilisi-for-expats/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
@@ -1928,28 +2128,12 @@
     "lastCrawl": "2026-07-01T23:35:13Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/blog/tbilisi-guide-vs-georgia-guide/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-20T14:58:44Z"
-  },
-  {
     "url": "https://sakhva-travel.com/en/blog/tbilisi-lakes/",
-    "verdict": "NEUTRAL",
-    "coverageState": "URL неизвестен Google",
-    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawl": ""
-  },
-  {
-    "url": "https://sakhva-travel.com/en/blog/tbilisi-metro-guide/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T21:12:42Z"
+    "lastCrawl": "2026-07-17T11:28:52Z"
   },
   {
     "url": "https://sakhva-travel.com/en/blog/tbilisi-museums/",
@@ -1957,23 +2141,15 @@
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-27T15:58:15Z"
+    "lastCrawl": "2026-07-17T19:54:46Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/blog/tbilisi-photo-spots/",
+    "url": "https://sakhva-travel.com/en/blog/tbilisi-metro-guide/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-10T05:21:30Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/en/blog/tbilisi-nightlife/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T23:29:18Z"
+    "lastCrawl": "2026-07-19T08:26:48Z"
   },
   {
     "url": "https://sakhva-travel.com/en/blog/tbilisi-neighborhoods-where-to-stay/",
@@ -1984,12 +2160,36 @@
     "lastCrawl": "2026-07-01T20:33:43Z"
   },
   {
+    "url": "https://sakhva-travel.com/en/blog/tbilisi-photo-spots/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-17T02:46:40Z"
+  },
+  {
     "url": "https://sakhva-travel.com/en/blog/tbilisi-one-day-itinerary/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-15T01:16:22Z"
+    "lastCrawl": "2026-07-09T10:15:58Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/blog/tbilisi-nightlife/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-11T20:11:50Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/blog/tbilisi-with-kids-guide/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-01T20:46:28Z"
   },
   {
     "url": "https://sakhva-travel.com/en/blog/tbilisi-prices-2026/",
@@ -2000,20 +2200,12 @@
     "lastCrawl": "2026-07-01T19:48:47Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/blog/tbilisi-rainy-day/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-01T05:29:49Z"
-  },
-  {
     "url": "https://sakhva-travel.com/en/blog/tbilisi-techno-scene/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T22:18:18Z"
+    "lastCrawl": "2026-07-13T07:58:16Z"
   },
   {
     "url": "https://sakhva-travel.com/en/blog/tbilisi-tourist-guide/",
@@ -2032,28 +2224,36 @@
     "lastCrawl": "2026-07-01T21:01:05Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/blog/things-to-see-kazbegi/",
+    "url": "https://sakhva-travel.com/en/blog/tbilisi-taxi-guide/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-01T15:38:50Z"
+    "lastCrawl": "2026-07-19T03:13:57Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/blog/tbilisi-with-kids-guide/",
+    "url": "https://sakhva-travel.com/en/blog/tbilisi-rainy-day/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-01T20:46:28Z"
+    "lastCrawl": "2026-07-11T01:16:36Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/blog/tourist-mistakes-tbilisi/",
+    "url": "https://sakhva-travel.com/en/blog/truso-valley-hike/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T20:53:57Z"
+    "lastCrawl": "2026-07-15T20:54:33Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/blog/transfer-tbilisi-to-kazbegi/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-11T20:03:30Z"
   },
   {
     "url": "https://sakhva-travel.com/en/blog/uplistsikhe-cave-city/",
@@ -2064,14 +2264,6 @@
     "lastCrawl": "2026-05-28T19:50:14Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/blog/truso-valley-hike/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-01T20:29:21Z"
-  },
-  {
     "url": "https://sakhva-travel.com/en/blog/travel-insurance-georgia-2026/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
@@ -2080,12 +2272,20 @@
     "lastCrawl": "2026-06-04T03:41:02Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/blog/transfer-tbilisi-to-kazbegi/",
+    "url": "https://sakhva-travel.com/en/blog/ureki-beach/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-01T20:08:59Z"
+    "lastCrawl": "2026-07-13T05:09:59Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/blog/tipping-in-georgia/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-19T07:37:13Z"
   },
   {
     "url": "https://sakhva-travel.com/en/blog/vardzia-cave-monastery/",
@@ -2096,28 +2296,28 @@
     "lastCrawl": "2026-06-01T13:11:59Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/blog/what-to-buy-in-georgia/",
+    "url": "https://sakhva-travel.com/en/blog/tbilisoba/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T19:10:48Z"
+    "lastCrawl": "2026-07-17T01:44:07Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/blog/what-to-see-in-georgia/",
+    "url": "https://sakhva-travel.com/en/blog/tourist-mistakes-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-01T20:06:14Z"
+    "lastCrawl": "2026-07-19T12:39:35Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/blog/what-to-see-in-tbilisi/",
+    "url": "https://sakhva-travel.com/en/blog/things-to-see-kazbegi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-06T12:15:27Z"
+    "lastCrawl": "2026-06-01T15:38:50Z"
   },
   {
     "url": "https://sakhva-travel.com/en/cyprus/",
@@ -2128,20 +2328,28 @@
     "lastCrawl": "2026-06-26T08:33:47Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/contacts/",
+    "url": "https://sakhva-travel.com/en/ekskursiya/degustatsiya-vina-kakheti/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-18T10:38:16Z"
+    "lastCrawl": "2026-07-18T20:54:38Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/ekskursiya/art-tur-tbilisi/",
+    "url": "https://sakhva-travel.com/en/blog/what-to-buy-in-georgia/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-27T06:31:10Z"
+    "lastCrawl": "2026-07-13T05:40:15Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/blog/what-to-see-in-georgia/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-01T20:06:14Z"
   },
   {
     "url": "https://sakhva-travel.com/en/destinations/",
@@ -2152,20 +2360,20 @@
     "lastCrawl": "2026-06-28T03:03:50Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/ekskursiya/chacha-master-klass/",
+    "url": "https://sakhva-travel.com/en/contacts/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-01T20:21:06Z"
+    "lastCrawl": "2026-07-11T19:26:51Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/ekskursiya/degustatsiya-vina-kakheti/",
+    "url": "https://sakhva-travel.com/en/blog/what-to-see-in-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-06T07:27:26Z"
+    "lastCrawl": "2026-07-06T12:15:27Z"
   },
   {
     "url": "https://sakhva-travel.com/en/egypt/",
@@ -2176,20 +2384,20 @@
     "lastCrawl": "2026-06-26T04:10:14Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/ekskursiya/ekskursiya-abanotubani/",
+    "url": "https://sakhva-travel.com/en/ekskursiya/art-tur-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-01T19:44:42Z"
+    "lastCrawl": "2026-07-15T08:30:28Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/ekskursiya/ekskursiya-ananuri-iz-tbilisi/",
+    "url": "https://sakhva-travel.com/en/ekskursiya/chacha-master-klass/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-05T12:36:22Z"
+    "lastCrawl": "2026-07-01T20:21:06Z"
   },
   {
     "url": "https://sakhva-travel.com/en/ekskursiya/ekskursiya-bakuriani-iz-tbilisi/",
@@ -2198,6 +2406,54 @@
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
     "lastCrawl": "2026-06-26T06:20:51Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/ekskursiya/ekskursiya-gomis-mta-iz-batumi/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-05T19:30:21Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/ekskursiya/ekskursiya-david-gareji/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-14T18:51:43Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/ekskursiya/ekskursiya-hevsuretia-shatili/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-06-27T05:03:08Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/ekskursiya/ekskursiya-abanotubani/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-14T03:53:05Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/ekskursiya/ekskursiya-gudauri-iz-tbilisi/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-06-26T02:51:49Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/ekskursiya/ekskursiya-gori-iz-tbilisi/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-01T07:59:04Z"
   },
   {
     "url": "https://sakhva-travel.com/en/ekskursiya/ekskursiya-borjomi-iz-tbilisi/",
@@ -2216,28 +2472,12 @@
     "lastCrawl": "2026-06-25T12:24:34Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/ekskursiya/ekskursiya-gomis-mta-iz-batumi/",
+    "url": "https://sakhva-travel.com/en/ekskursiya/ekskursiya-ananuri-iz-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-05T19:30:21Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/en/ekskursiya/ekskursiya-gori-iz-tbilisi/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-01T07:59:04Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/en/ekskursiya/ekskursiya-gudauri-iz-tbilisi/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-26T02:51:49Z"
+    "lastCrawl": "2026-07-18T09:02:15Z"
   },
   {
     "url": "https://sakhva-travel.com/en/ekskursiya/ekskursiya-kakheti-iz-tbilisi/",
@@ -2245,79 +2485,7 @@
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T03:05:58Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/en/ekskursiya/ekskursiya-hevsuretia-shatili/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-27T05:03:08Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/en/ekskursiya/ekskursiya-david-gareji/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-28T10:07:25Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/en/ekskursiya/ekskursiya-kanyony-zapadnoy-gruzii/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-25T15:08:08Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/en/ekskursiya/ekskursiya-kazbegi-iz-tbilisi/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T16:45:28Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/en/ekskursiya/ekskursiya-mtskheta-iz-tbilisi/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T18:42:42Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/en/ekskursiya/ekskursiya-mtatsminda/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-26T03:56:35Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/en/ekskursiya/ekskursiya-svaneti-iz-tbilisi/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-06T16:40:31Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/en/ekskursiya/ekskursiya-narikala/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-01T19:29:17Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/en/ekskursiya/ekskursiya-telavi-iz-tbilisi/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T08:07:05Z"
+    "lastCrawl": "2026-07-19T10:14:59Z"
   },
   {
     "url": "https://sakhva-travel.com/en/ekskursiya/ekskursiya-stary-tbilisi/",
@@ -2333,7 +2501,39 @@
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-29T06:18:38Z"
+    "lastCrawl": "2026-07-17T19:53:31Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/ekskursiya/ekskursiya-narikala/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-17T20:06:58Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/ekskursiya/ekskursiya-kanyony-zapadnoy-gruzii/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-06-25T15:08:08Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/ekskursiya/ekskursiya-mtatsminda/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-06-26T03:56:35Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/ekskursiya/ekskursiya-mtskheta-iz-tbilisi/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-19T13:55:52Z"
   },
   {
     "url": "https://sakhva-travel.com/en/ekskursiya/ekskursiya-racha-iz-tbilisi/",
@@ -2344,12 +2544,28 @@
     "lastCrawl": "2026-06-25T10:15:25Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/ekskursiya/ekskursiya-truso/",
+    "url": "https://sakhva-travel.com/en/ekskursiya/ekskursiya-jvari-iz-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T20:31:51Z"
+    "lastCrawl": "2026-07-18T21:03:53Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/ekskursiya/ekskursiya-kazbegi-iz-tbilisi/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-04T16:45:28Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/ekskursiya/ekskursiya-telavi-iz-tbilisi/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-14T17:09:46Z"
   },
   {
     "url": "https://sakhva-travel.com/en/ekskursiya/ekskursiya-tusheti/",
@@ -2360,12 +2576,28 @@
     "lastCrawl": "2026-06-27T04:38:07Z"
   },
   {
+    "url": "https://sakhva-travel.com/en/ekskursiya/fotosessiya-tbilisi/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-06-28T10:17:43Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/ekskursiya/ekskursiya-svaneti-iz-tbilisi/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-13T13:15:19Z"
+  },
+  {
     "url": "https://sakhva-travel.com/en/ekskursiya/ekskursiya-vardzia/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-27T09:19:10Z"
+    "lastCrawl": "2026-07-11T09:52:39Z"
   },
   {
     "url": "https://sakhva-travel.com/en/ekskursiya/ekskursiya-uplistsikhe-iz-tbilisi/",
@@ -2373,31 +2605,7 @@
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-22T20:37:17Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/en/ekskursiya/ekskursiya-zugdidi/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-26T03:29:19Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/en/ekskursiya/gruppa-10-chelovek-tbilisi/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T19:01:27Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/en/ekskursiya/fotosessiya-tbilisi/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-28T10:17:43Z"
+    "lastCrawl": "2026-07-16T05:35:27Z"
   },
   {
     "url": "https://sakhva-travel.com/en/ekskursiya/family-tur-tbilisi/",
@@ -2408,12 +2616,20 @@
     "lastCrawl": "2026-07-05T17:22:50Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/ekskursiya/gastronomicheskiy-tur-tbilisi/",
+    "url": "https://sakhva-travel.com/en/ekskursiya/ekskursiya-zugdidi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-22T17:06:04Z"
+    "lastCrawl": "2026-06-26T03:29:19Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/ekskursiya/ekskursiya-truso/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-04T20:31:51Z"
   },
   {
     "url": "https://sakhva-travel.com/en/ekskursiya/ekskursiya-ureki-iz-tbilisi/",
@@ -2424,12 +2640,12 @@
     "lastCrawl": "2026-07-04T23:50:44Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/ekskursiya/khachapuri-master-klass/",
+    "url": "https://sakhva-travel.com/en/ekskursiya/gastronomicheskiy-tur-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-17T23:54:52Z"
+    "lastCrawl": "2026-06-22T17:06:04Z"
   },
   {
     "url": "https://sakhva-travel.com/en/ekskursiya/konny-tur-stepantsminda/",
@@ -2440,60 +2656,12 @@
     "lastCrawl": "2026-06-25T09:40:15Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/ekskursiya/korporativniy-tur-tbilisi/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-18T00:51:07Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/en/ekskursiya/kvevri-vino-tur/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-26T06:41:52Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/en/ekskursiya/priklyuchencheskiy-tur-gruziya/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-26T04:37:30Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/en/ekskursiya/sovetskiy-tur-tbilisi/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-27T11:45:26Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/en/ekskursiya/nochnaya-ekskursiya-tbilisi/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T12:37:49Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/en/ekskursiya/shopping-tur-tbilisi/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-28T15:47:40Z"
-  },
-  {
     "url": "https://sakhva-travel.com/en/ekskursiya/romanticheskiy-tur-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-01T20:00:10Z"
+    "lastCrawl": "2026-07-13T06:18:15Z"
   },
   {
     "url": "https://sakhva-travel.com/en/ekskursiya/progulka-po-kure-tbilisi/",
@@ -2504,60 +2672,52 @@
     "lastCrawl": "2026-06-28T03:14:33Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/ekskursiya/svadebny-tur-gruziya/",
+    "url": "https://sakhva-travel.com/en/ekskursiya/gruppa-10-chelovek-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-19T01:42:39Z"
+    "lastCrawl": "2026-07-04T19:01:27Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/ekskursiya/transfer-aeroport-tbilisi/",
+    "url": "https://sakhva-travel.com/en/ekskursiya/priklyuchencheskiy-tur-gruziya/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T20:25:48Z"
+    "lastCrawl": "2026-06-26T04:37:30Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/ekskursiya/tur-batumi-iz-tbilisi/",
+    "url": "https://sakhva-travel.com/en/ekskursiya/khachapuri-master-klass/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-01T20:31:31Z"
+    "lastCrawl": "2026-06-17T23:54:52Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/ekskursiya/tur-batumi-2-dnya/",
+    "url": "https://sakhva-travel.com/en/ekskursiya/korporativniy-tur-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T13:18:44Z"
+    "lastCrawl": "2026-07-17T20:08:13Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/ekskursiya/tur-gruziya-3-dnya/",
+    "url": "https://sakhva-travel.com/en/ekskursiya/nochnaya-ekskursiya-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-21T10:49:20Z"
+    "lastCrawl": "2026-07-14T16:36:54Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/ekskursiya/tur-dlya-detey-tbilisi/",
+    "url": "https://sakhva-travel.com/en/ekskursiya/kvevri-vino-tur/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-26T19:02:57Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/en/ekskursiya/tur-dlya-emigrantov-tbilisi/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-19T12:37:24Z"
+    "lastCrawl": "2026-06-26T06:41:52Z"
   },
   {
     "url": "https://sakhva-travel.com/en/ekskursiya/tur-gruziya-10-dney/",
@@ -2568,6 +2728,86 @@
     "lastCrawl": "2026-07-04T22:27:42Z"
   },
   {
+    "url": "https://sakhva-travel.com/en/ekskursiya/tur-dlya-emigrantov-tbilisi/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-13T14:49:23Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/ekskursiya/transfer-aeroport-tbilisi/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-17T16:14:27Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/ekskursiya/tur-batumi-2-dnya/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-04T13:18:44Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/ekskursiya/tur-dlya-detey-tbilisi/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-06-26T19:02:57Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/ekskursiya/sovetskiy-tur-tbilisi/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-06-27T11:45:26Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/ekskursiya/shopping-tur-tbilisi/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-06-28T15:47:40Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/ekskursiya/tur-batumi-iz-tbilisi/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-19T10:15:03Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/ekskursiya/svadebny-tur-gruziya/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-09T08:23:13Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/ekskursiya/tur-dlya-pensionerov-gruziya/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-17T21:31:22Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/ekskursiya/tur-gruziya-3-dnya/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-19T14:14:52Z"
+  },
+  {
     "url": "https://sakhva-travel.com/en/ekskursiya/tur-gruziya-5-dney/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
@@ -2576,36 +2816,12 @@
     "lastCrawl": "2026-06-18T15:28:05Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/ekskursiya/tur-dlya-pensionerov-gruziya/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T23:07:52Z"
-  },
-  {
     "url": "https://sakhva-travel.com/en/ekskursiya/tur-gruziya-7-dney/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-22T10:55:23Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/en/ekskursiya/tur-gruziya-armeniya/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-01T20:28:38Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/en/ekskursiya/tur-gruziya-leto/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T08:04:05Z"
+    "lastCrawl": "2026-07-17T22:14:12Z"
   },
   {
     "url": "https://sakhva-travel.com/en/ekskursiya/tur-gruziya-noviy-god/",
@@ -2616,12 +2832,20 @@
     "lastCrawl": "2026-07-06T14:51:27Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/ekskursiya/tur-kutaisi-iz-tbilisi/",
+    "url": "https://sakhva-travel.com/en/ekskursiya/tur-gruziya-leto/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T20:44:34Z"
+    "lastCrawl": "2026-07-12T13:53:06Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/ekskursiya/tur-gruziya-armeniya/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-01T20:28:38Z"
   },
   {
     "url": "https://sakhva-travel.com/en/ekskursiya/tur-kazbegi-kakheti-2-dnya/",
@@ -2630,6 +2854,30 @@
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
     "lastCrawl": "2026-06-26T21:37:57Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/ekskursiya/tur-kutaisi-iz-tbilisi/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-16T15:16:25Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/ekskursiya/tur-po-hramam-tbilisi/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-18T12:14:17Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/ekskursiya/tur-svaneti-4-dnya/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-06T23:55:27Z"
   },
   {
     "url": "https://sakhva-travel.com/en/ekskursiya/vinniy-marshrut-alazani/",
@@ -2648,52 +2896,12 @@
     "lastCrawl": "2026-07-01T19:57:24Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/ekskursiya/tur-svaneti-4-dnya/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-06T23:55:27Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/en/ekskursiya/tur-po-hramam-tbilisi/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-25T19:33:45Z"
-  },
-  {
     "url": "https://sakhva-travel.com/en/ekskursiya/vinniy-tur-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
     "lastCrawl": "2026-06-01T13:11:58Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/en/ekskursiya/vinodelie-kindzmarauli/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-01T21:43:14Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/en/gallery/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-04T18:08:41Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/en/georgia-travel-guide/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-01T20:20:28Z"
   },
   {
     "url": "https://sakhva-travel.com/en/imereti/",
@@ -2704,12 +2912,28 @@
     "lastCrawl": "2026-07-01T04:53:00Z"
   },
   {
+    "url": "https://sakhva-travel.com/en/georgia-travel-guide/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-01T20:20:28Z"
+  },
+  {
     "url": "https://sakhva-travel.com/en/kakheti/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
     "lastCrawl": "2026-07-04T19:38:57Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/faq/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-18T17:12:29Z"
   },
   {
     "url": "https://sakhva-travel.com/en/guria/",
@@ -2720,12 +2944,20 @@
     "lastCrawl": "2026-06-13T09:09:07Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/kvemo-kartli/",
+    "url": "https://sakhva-travel.com/en/gallery/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-23T19:53:26Z"
+    "lastCrawl": "2026-06-04T18:08:41Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/ekskursiya/vinodelie-kindzmarauli/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-01T21:43:14Z"
   },
   {
     "url": "https://sakhva-travel.com/en/mtskheta-mtianeti/",
@@ -2734,6 +2966,14 @@
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
     "lastCrawl": "2026-06-13T06:39:07Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/kvemo-kartli/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-18T23:51:27Z"
   },
   {
     "url": "https://sakhva-travel.com/en/maldives/",
@@ -2749,31 +2989,7 @@
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-28T17:02:39Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/en/prices/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-03T17:14:53Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/en/private-guide-tbilisi/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-12T12:49:19Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/en/racha/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-01T19:56:02Z"
+    "lastCrawl": "2026-07-15T17:00:45Z"
   },
   {
     "url": "https://sakhva-travel.com/en/samegrelo/",
@@ -2784,12 +3000,12 @@
     "lastCrawl": "2026-06-23T14:40:56Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/terms/",
+    "url": "https://sakhva-travel.com/en/private-guide-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-05T22:59:36Z"
+    "lastCrawl": "2026-06-12T12:49:19Z"
   },
   {
     "url": "https://sakhva-travel.com/en/samtskhe-javakheti/",
@@ -2800,12 +3016,12 @@
     "lastCrawl": "2026-07-01T19:55:12Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/tours-from-chelyabinsk/",
+    "url": "https://sakhva-travel.com/en/racha/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-04T18:37:41Z"
+    "lastCrawl": "2026-07-01T19:56:02Z"
   },
   {
     "url": "https://sakhva-travel.com/en/shida-kartli/",
@@ -2816,6 +3032,22 @@
     "lastCrawl": "2026-05-30T20:12:13Z"
   },
   {
+    "url": "https://sakhva-travel.com/en/prices/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-03T17:14:53Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/tours-from-chelyabinsk/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-14T17:38:23Z"
+  },
+  {
     "url": "https://sakhva-travel.com/en/thailand/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
@@ -2824,28 +3056,12 @@
     "lastCrawl": "2026-06-26T12:49:26Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/tours-from-kazakhstan/",
+    "url": "https://sakhva-travel.com/en/terms/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-04T19:21:14Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/en/tours-from-kislovodsk/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-04T18:03:49Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/en/tours-from-kazan/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-05T16:45:37Z"
+    "lastCrawl": "2026-06-05T22:59:36Z"
   },
   {
     "url": "https://sakhva-travel.com/en/tours-from-krasnodar/",
@@ -2853,7 +3069,31 @@
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-04T18:42:32Z"
+    "lastCrawl": "2026-07-14T17:58:59Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/tours-from-kazakhstan/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-17T17:29:26Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/tours-from-kazan/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-18T19:20:21Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/tours-from-makhachkala/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-15T00:37:59Z"
   },
   {
     "url": "https://sakhva-travel.com/en/tours-from-minsk/",
@@ -2861,7 +3101,23 @@
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-04T19:26:05Z"
+    "lastCrawl": "2026-07-17T18:55:04Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/tours-from-kislovodsk/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-14T18:40:11Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/tours-from-mineralnye-vody/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-14T22:16:45Z"
   },
   {
     "url": "https://sakhva-travel.com/en/tours-from-moscow/",
@@ -2872,28 +3128,12 @@
     "lastCrawl": "2026-06-04T19:11:34Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/tours-from-pyatigorsk/",
+    "url": "https://sakhva-travel.com/en/tours-from-nizhny-novgorod/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-12T10:08:19Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/en/tours-from-novosibirsk/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-04T18:28:01Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/en/tours-from-perm/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-04T18:52:12Z"
+    "lastCrawl": "2026-07-14T18:54:26Z"
   },
   {
     "url": "https://sakhva-travel.com/en/tours-from-nalchik/",
@@ -2904,20 +3144,12 @@
     "lastCrawl": "2026-06-14T22:33:55Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/tours-from-rostov/",
+    "url": "https://sakhva-travel.com/en/tours-from-perm/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-04T19:01:53Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/en/tours-from-saint-petersburg/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T09:17:05Z"
+    "lastCrawl": "2026-07-14T18:19:35Z"
   },
   {
     "url": "https://sakhva-travel.com/en/tours-from-samara/",
@@ -2928,12 +3160,60 @@
     "lastCrawl": "2026-06-14T02:14:14Z"
   },
   {
+    "url": "https://sakhva-travel.com/en/tours-from-rostov/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-15T09:00:11Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/tours-from-saint-petersburg/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-04T09:17:05Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/tours-from-novosibirsk/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-14T16:47:36Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/tours-from-saratov/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-14T21:38:46Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/tours-from-pyatigorsk/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-06-12T10:08:19Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/tours-from-stavropol/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-14T21:57:45Z"
+  },
+  {
     "url": "https://sakhva-travel.com/en/tours-from-sochi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-04T17:52:43Z"
+    "lastCrawl": "2026-07-14T18:56:44Z"
   },
   {
     "url": "https://sakhva-travel.com/en/tours-from-tashkent/",
@@ -2941,23 +3221,7 @@
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-04T20:25:26Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/en/tours-from-tyumen/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-04T18:18:20Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/en/tours-from-vladikavkaz/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-04T19:35:45Z"
+    "lastCrawl": "2026-07-07T18:21:45Z"
   },
   {
     "url": "https://sakhva-travel.com/en/tours-from-yerevan/",
@@ -2973,7 +3237,31 @@
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-04T19:06:43Z"
+    "lastCrawl": "2026-07-17T18:44:25Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/tours-from-ufa/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-14T20:39:12Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/tours-from-vladikavkaz/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-17T19:40:04Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/tours-from-volgograd/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-14T21:08:59Z"
   },
   {
     "url": "https://sakhva-travel.com/en/tours-from-yekaterinburg/",
@@ -2984,12 +3272,20 @@
     "lastCrawl": "2026-06-04T19:40:35Z"
   },
   {
+    "url": "https://sakhva-travel.com/en/tours-from-tyumen/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-14T16:15:28Z"
+  },
+  {
     "url": "https://sakhva-travel.com/en/tours-in-georgia/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-27T05:31:10Z"
+    "lastCrawl": "2026-07-19T04:42:43Z"
   },
   {
     "url": "https://sakhva-travel.com/en/turkey/",
@@ -3016,44 +3312,12 @@
     "lastCrawl": "2026-06-26T14:58:54Z"
   },
   {
-    "url": "https://sakhva-travel.com/en/wine-tours-georgia/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T17:37:03Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/gallery/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-01T05:22:52Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/gornye-tury-gruzia/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T10:34:05Z"
-  },
-  {
     "url": "https://sakhva-travel.com/guria/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-01T20:38:13Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/imereti/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-01T20:53:22Z"
+    "lastCrawl": "2026-07-10T19:22:32Z"
   },
   {
     "url": "https://sakhva-travel.com/grupovye-tury-v-gruziyu/",
@@ -3064,6 +3328,38 @@
     "lastCrawl": "2026-06-10T02:41:31Z"
   },
   {
+    "url": "https://sakhva-travel.com/gornye-tury-gruzia/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-04T10:34:05Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/gallery/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-01T05:22:52Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/en/wine-tours-georgia/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-04T17:37:03Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/imereti/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-01T20:53:22Z"
+  },
+  {
     "url": "https://sakhva-travel.com/individualnyy-tur-v-gruziyu/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
@@ -3072,12 +3368,12 @@
     "lastCrawl": "2026-06-09T22:31:26Z"
   },
   {
-    "url": "https://sakhva-travel.com/maldives/",
+    "url": "https://sakhva-travel.com/kakheti/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T10:06:05Z"
+    "lastCrawl": "2026-07-11T12:41:43Z"
   },
   {
     "url": "https://sakhva-travel.com/kvemo-kartli/",
@@ -3085,23 +3381,23 @@
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-28T02:50:27Z"
+    "lastCrawl": "2026-07-10T21:03:32Z"
   },
   {
-    "url": "https://sakhva-travel.com/mnogodnevnye-tury-gruzia/",
+    "url": "https://sakhva-travel.com/napravleniya/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T16:03:15Z"
+    "lastCrawl": "2026-07-15T12:22:44Z"
   },
   {
-    "url": "https://sakhva-travel.com/kakheti/",
+    "url": "https://sakhva-travel.com/racha/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-01T19:50:47Z"
+    "lastCrawl": "2026-07-10T20:37:32Z"
   },
   {
     "url": "https://sakhva-travel.com/mtskheta-mtianeti/",
@@ -3112,14 +3408,6 @@
     "lastCrawl": "2026-07-04T05:38:01Z"
   },
   {
-    "url": "https://sakhva-travel.com/napravleniya/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-25T14:10:57Z"
-  },
-  {
     "url": "https://sakhva-travel.com/privacy/",
     "verdict": "NEUTRAL",
     "coverageState": "Индексирование страницы запрещено тегом noindex",
@@ -3128,12 +3416,20 @@
     "lastCrawl": "2026-05-30T15:53:59Z"
   },
   {
-    "url": "https://sakhva-travel.com/racha/",
+    "url": "https://sakhva-travel.com/mnogodnevnye-tury-gruzia/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-30T03:40:02Z"
+    "lastCrawl": "2026-07-19T07:43:57Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/maldives/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-04T10:06:05Z"
   },
   {
     "url": "https://sakhva-travel.com/prices/",
@@ -3149,7 +3445,7 @@
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-01T19:51:38Z"
+    "lastCrawl": "2026-07-11T19:21:50Z"
   },
   {
     "url": "https://sakhva-travel.com/samtskhe-javakheti/",
@@ -3157,7 +3453,7 @@
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-01T19:29:34Z"
+    "lastCrawl": "2026-07-17T20:17:19Z"
   },
   {
     "url": "https://sakhva-travel.com/shida-kartli/",
@@ -3165,15 +3461,7 @@
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-20T05:29:28Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/terms/",
-    "verdict": "NEUTRAL",
-    "coverageState": "URL неизвестен Google",
-    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawl": ""
+    "lastCrawl": "2026-07-09T10:13:10Z"
   },
   {
     "url": "https://sakhva-travel.com/thailand/",
@@ -3184,20 +3472,20 @@
     "lastCrawl": "2026-06-25T07:31:05Z"
   },
   {
+    "url": "https://sakhva-travel.com/tury-v-batumi/",
+    "verdict": "NEUTRAL",
+    "coverageState": "Обнаружена, не проиндексирована",
+    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+    "indexingState": "INDEXING_STATE_UNSPECIFIED",
+    "lastCrawl": ""
+  },
+  {
     "url": "https://sakhva-travel.com/turkey/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
     "lastCrawl": "2026-07-04T20:43:28Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/tury-na-kazbek/",
-    "verdict": "NEUTRAL",
-    "coverageState": "URL неизвестен Google",
-    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawl": ""
   },
   {
     "url": "https://sakhva-travel.com/tury-v-gruziyu-iz-ekaterinburga/",
@@ -3208,20 +3496,28 @@
     "lastCrawl": "2026-07-05T03:04:55Z"
   },
   {
-    "url": "https://sakhva-travel.com/tury-v-batumi/",
-    "verdict": "NEUTRAL",
-    "coverageState": "Обнаружена, не проиндексирована",
-    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
-    "indexingState": "INDEXING_STATE_UNSPECIFIED",
-    "lastCrawl": ""
-  },
-  {
     "url": "https://sakhva-travel.com/tury-v-gruziyu-iz-chelyabinska/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
     "lastCrawl": "2026-07-04T13:04:05Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/terms/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-07T18:28:09Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/tury-na-kazbek/",
+    "verdict": "NEUTRAL",
+    "coverageState": "Обнаружена, не проиндексирована",
+    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+    "indexingState": "INDEXING_STATE_UNSPECIFIED",
+    "lastCrawl": ""
   },
   {
     "url": "https://sakhva-travel.com/tury-v-gruziyu-iz-erevana/",
@@ -3232,14 +3528,6 @@
     "lastCrawl": "2026-06-05T03:20:31Z"
   },
   {
-    "url": "https://sakhva-travel.com/tury-v-gruziyu-iz-kazani/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-04T14:51:20Z"
-  },
-  {
     "url": "https://sakhva-travel.com/tury-v-gruziyu-iz-kazahstana/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
@@ -3248,12 +3536,44 @@
     "lastCrawl": "2026-06-27T11:49:12Z"
   },
   {
+    "url": "https://sakhva-travel.com/tury-v-gruziyu-iz-kazani/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-06-04T14:51:20Z"
+  },
+  {
     "url": "https://sakhva-travel.com/tury-v-gruziyu-iz-kislovodska/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-01T20:00:27Z"
+    "lastCrawl": "2026-07-17T07:30:47Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/tury-v-gruziyu-iz-mineralnyh-vod/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-15T00:00:24Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/tury-v-gruziyu-iz-mahachkaly/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-14T23:12:57Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/tury-v-gruziyu-iz-moskvy/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-06-08T10:38:25Z"
   },
   {
     "url": "https://sakhva-travel.com/tury-v-gruziyu-iz-krasnodara/",
@@ -3264,6 +3584,14 @@
     "lastCrawl": "2026-06-05T10:41:03Z"
   },
   {
+    "url": "https://sakhva-travel.com/tury-v-gruziyu-iz-nalchika/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-11T19:59:30Z"
+  },
+  {
     "url": "https://sakhva-travel.com/tury-v-gruziyu-iz-minska/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
@@ -3272,12 +3600,12 @@
     "lastCrawl": "2026-06-12T18:00:26Z"
   },
   {
-    "url": "https://sakhva-travel.com/tury-v-gruziyu-iz-moskvy/",
+    "url": "https://sakhva-travel.com/tury-v-gruziyu-iz-nizhnego-novgoroda/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-08T10:38:25Z"
+    "lastCrawl": "2026-07-14T20:09:26Z"
   },
   {
     "url": "https://sakhva-travel.com/tury-v-gruziyu-iz-novosibirska/",
@@ -3296,44 +3624,12 @@
     "lastCrawl": "2026-07-04T18:08:52Z"
   },
   {
-    "url": "https://sakhva-travel.com/tury-v-gruziyu-iz-nalchika/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-16T14:39:30Z"
-  },
-  {
     "url": "https://sakhva-travel.com/tury-v-gruziyu-iz-pyatigorska/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
     "lastCrawl": "2026-07-04T18:52:03Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/tury-v-gruziyu-iz-rostova/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-01T23:13:13Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/tury-v-gruziyu-iz-samary/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-07T03:08:50Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/tury-v-gruziyu-iz-sochi/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-07T09:45:53Z"
   },
   {
     "url": "https://sakhva-travel.com/tury-v-gruziyu-iz-spb/",
@@ -3344,20 +3640,52 @@
     "lastCrawl": "2026-07-01T20:45:07Z"
   },
   {
+    "url": "https://sakhva-travel.com/tury-v-gruziyu-iz-rostova/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-01T23:13:13Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/tury-v-gruziyu-iz-sochi/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-06-07T09:45:53Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/tury-v-gruziyu-iz-samary/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-06-07T03:08:50Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/tury-v-gruziyu-iz-stavropolya/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-14T23:31:09Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/tury-v-gruziyu-iz-saratova/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-14T22:54:45Z"
+  },
+  {
     "url": "https://sakhva-travel.com/tury-v-gruziyu-iz-tashkenta/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-05T04:06:19Z"
-  },
-  {
-    "url": "https://sakhva-travel.com/tury-v-gruziyu-iz-vladikavkaza/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-22T17:22:44Z"
+    "lastCrawl": "2026-07-18T09:17:15Z"
   },
   {
     "url": "https://sakhva-travel.com/tury-v-gruziyu-iz-tyumeni/",
@@ -3368,6 +3696,14 @@
     "lastCrawl": "2026-06-10T05:24:31Z"
   },
   {
+    "url": "https://sakhva-travel.com/tury-v-gruziyu-iz-ufy/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-15T02:36:35Z"
+  },
+  {
     "url": "https://sakhva-travel.com/tury-v-gruziyu-letom/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
@@ -3376,12 +3712,12 @@
     "lastCrawl": "2026-06-26T21:40:58Z"
   },
   {
-    "url": "https://sakhva-travel.com/tury-v-gruziyu-iz-voronezha/",
+    "url": "https://sakhva-travel.com/tury-v-gruziyu-iz-volgograda/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-06-04T18:01:26Z"
+    "lastCrawl": "2026-07-14T22:19:56Z"
   },
   {
     "url": "https://sakhva-travel.com/tury-v-gruziyu-s-detmi/",
@@ -3392,6 +3728,30 @@
     "lastCrawl": "2026-06-28T01:31:49Z"
   },
   {
+    "url": "https://sakhva-travel.com/tury-v-gruziyu/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-16T15:41:27Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/tury-v-gruziyu-iz-vladikavkaza/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-14T19:46:22Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/tury-v-gruziyu-iz-voronezha/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-06-04T18:01:26Z"
+  },
+  {
     "url": "https://sakhva-travel.com/tury-v-gruziyu-zimoy/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
@@ -3400,12 +3760,12 @@
     "lastCrawl": "2026-06-10T10:11:32Z"
   },
   {
-    "url": "https://sakhva-travel.com/tury-v-gruziyu/",
+    "url": "https://sakhva-travel.com/tury-v-tbilisi/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T05:08:01Z"
+    "lastCrawl": "2026-07-01T19:21:09Z"
   },
   {
     "url": "https://sakhva-travel.com/tury-v-svaneti/",
@@ -3416,20 +3776,20 @@
     "lastCrawl": "2026-06-11T02:49:10Z"
   },
   {
-    "url": "https://sakhva-travel.com/tury-v-tbilisi/",
-    "verdict": "PASS",
-    "coverageState": "Страница отправлена и проиндексирована",
-    "robotsTxtState": "ALLOWED",
-    "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-01T18:21:08Z"
-  },
-  {
     "url": "https://sakhva-travel.com/uae/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
     "lastCrawl": "2026-06-25T04:47:47Z"
+  },
+  {
+    "url": "https://sakhva-travel.com/vinnye-tury-gruzia/",
+    "verdict": "PASS",
+    "coverageState": "Страница отправлена и проиндексирована",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawl": "2026-07-18T19:48:10Z"
   },
   {
     "url": "https://sakhva-travel.com/vietnam/",
@@ -3440,11 +3800,11 @@
     "lastCrawl": "2026-06-25T07:12:44Z"
   },
   {
-    "url": "https://sakhva-travel.com/vinnye-tury-gruzia/",
+    "url": "https://sakhva-travel.com/voprosy/",
     "verdict": "PASS",
     "coverageState": "Страница отправлена и проиндексирована",
     "robotsTxtState": "ALLOWED",
     "indexingState": "INDEXING_ALLOWED",
-    "lastCrawl": "2026-07-04T13:00:52Z"
+    "lastCrawl": "2026-07-19T07:22:20Z"
   }
 ]

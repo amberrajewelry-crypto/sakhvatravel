@@ -46,10 +46,10 @@ ul{list-style:none}
 #nav.scrolled .nav-logo{color:#1A3D2E}
 .logo-svg{width:148px;height:66px;display:block}
 .nav-links{display:flex;align-items:center;gap:24px}
-.nav-links a{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.85);transition:color .2s}
-#nav.scrolled .nav-links a{color:#4B5563}
+.nav-links a{white-space:nowrap;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.85);transition:color .2s}
+#nav.scrolled .nav-links a{white-space:nowrap;color:#4B5563}
 .nav-links a:hover{color:#F59E0B}
-.nav-btn{background:#1A3D2E;color:#fff!important;padding:9px 22px;border-radius:9999px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;transition:background .2s!important}
+.nav-btn{white-space:normal;background:#1A3D2E;color:#fff!important;padding:9px 22px;border-radius:9999px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;transition:background .2s!important}
 .nav-btn:hover{background:#145A38!important}
 .burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;min-width:44px;min-height:44px;justify-content:center;align-items:center}
 .burger span{display:block;width:24px;height:2px;background:#fff;border-radius:2px;transition:.3s}
@@ -156,8 +156,7 @@ if(_ck||_gc){gtag('consent','update',{analytics_storage:(_ck||_gc)?'granted':'de
 <a href="/en/about/">About</a>
 <a href="/en/#reviews">Reviews</a>
 <a href="/en/blog/">Blog</a>
-<a href="/en/#footer">Contacts</a>
-<a href="/en/tours-in-georgia/" class="nav-btn">Georgia Tours</a><div class="lang-sw"><a class="lang-btn" href="/armenia/" style="text-decoration:none">RU</a><span class="lang-sep">|</span><span class="lang-btn on">EN</span></div>
+<a href="/en/#footer">Contacts</a><div class="lang-sw"><a class="lang-btn" href="/armenia/" style="text-decoration:none">RU</a><span class="lang-sep">|</span><span class="lang-btn on">EN</span></div>
 </div>
 <button type="button" class="burger" id="burger" aria-label="Меню" onclick="var d=document.getElementById('drawer'),b=this,o=d.classList.toggle('on');b.classList.toggle('on',o);document.body.style.overflow=o?'hidden':''"><span></span><span></span><span></span></button>
 </nav>

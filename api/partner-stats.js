@@ -3,12 +3,21 @@ module.exports = async (req, res) => {
   res.setHeader('Access-Control-Allow-Origin', 'https://sakhva-travel.com');
   res.setHeader('Access-Control-Allow-Methods', 'GET');
 
+  // Same-site only (blocks external enumeration of partner stats)
+  const ref = req.headers.referer || req.headers.origin || '';
+  if (!ref.startsWith('https://sakhva-travel.com')) {
+    return res.status(403).json({ error: 'Forbidden' });
+  }
+
   const { slug } = req.query;
   if (!slug || !/^[a-z0-9-]{2,30}$/i.test(slug)) {
     return res.status(400).json({ error: 'Invalid slug' });
   }
 
-  const API_KEY = process.env.SHORTIO_API_KEY || 'sk_G5i9bbtG1zBif5vi';
+  const API_KEY = process.env.SHORTIO_API_KEY;
+  if (!API_KEY) {
+    return res.status(500).json({ error: 'Not configured' });
+  }
   const DOMAIN_ID = 1782098;
 
   try {
