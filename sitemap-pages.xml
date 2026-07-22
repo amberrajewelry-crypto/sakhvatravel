@@ -274,11 +274,27 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/shida-kartli/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/shida-kartli/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/shida-kartli/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/shida-kartli/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/shida-kartli/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
     <loc>https://sakhva-travel.com/shida-kartli/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/shida-kartli/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/shida-kartli/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/shida-kartli/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/shida-kartli/"/>
     <lastmod>2026-07-09</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/shida-kartli/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/shida-kartli/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/shida-kartli/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/shida-kartli/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/shida-kartli/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/prices/</loc>

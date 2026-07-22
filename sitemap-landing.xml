@@ -348,7 +348,19 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/abkhazia/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/abkhazia/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/abkhazia/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/abkhazia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/abkhazia/"/>
     <lastmod>2026-07-09</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/abkhazia/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/abkhazia/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/abkhazia/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/abkhazia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/abkhazia/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/turkey/</loc>
@@ -388,6 +400,10 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/abkhazia/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/abkhazia/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/abkhazia/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/abkhazia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/abkhazia/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
