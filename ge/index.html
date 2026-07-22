@@ -286,7 +286,7 @@ function declineCookies(){localStorage.setItem('cookies_v4','0');gtag('consent',
 <a href="#faq">FAQ</a>
 <a href="/en/contacts/">კონტაქტი</a>
 <a href="/en/booking/" class="nav-btn" style="text-decoration:none">დაჯავშნე ონლაინ</a><div class="lang-sw"><a class="lang-btn" href="/" onclick="document.cookie='lang_pref=ru;path=/;max-age=31536000;SameSite=Lax';localStorage.setItem('lang','ru')" style="text-decoration:none">RU</a><span class="lang-sep">|</span><a class="lang-btn" href="/en/" onclick="document.cookie='lang_pref=en;path=/;max-age=31536000;SameSite=Lax'" style="text-decoration:none">EN</a><span class="lang-sep">|</span><span class="lang-btn on">GE</span></div></div>
-<button type="button" class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+<button type="button" class="burger" id="burger" aria-label="მენიუ"><span></span><span></span><span></span></button>
 </nav>
 <div class="drawer" id="drawer">
 <script>function closeDrawer(){var d=document.getElementById('drawer'),b=document.getElementById('burger');d.classList.remove('on');b.classList.remove('on');document.body.style.overflow=''}</script>
@@ -1070,7 +1070,7 @@ else{show(keys[idx])}
 <a href="/en/gallery/" class="btn-primary" style="font-size:14px;padding:14px 36px;display:inline-block;text-decoration:none">ნახეთ ყველა ფოტო და ვიდეო</a>
 </div>
 <div id="gallery-modal">
-<button class="gm-close" onclick="closeGallery()" aria-label="Close">&#x2715;</button>
+<button class="gm-close" onclick="closeGallery()" aria-label="დახურვა">&#x2715;</button>
 <div class="gm-grid">
 <div class="gm-item"><img src="/images/gallery-1.webp?v=4" alt="ტურ-ჯგუფი მონასტრის თაღთან მთის ხედებით" loading="lazy" width="400" height="533"></div>
 <div class="gm-item"><img src="/images/gallery-2.webp" alt="ტურ-ჯგუფი გერგეტის ეკლესიასთან ყაზბეგში" loading="lazy" width="400" height="533"></div>
@@ -1281,7 +1281,7 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeGallery
 <svg viewBox="0 0 780 500" style="height:24px;width:36px" aria-label="Mastercard"><circle cx="312" cy="250" r="190" fill="#EB001B"/><circle cx="468" cy="250" r="190" fill="#F79E1B"/><path d="M390 113.4c-47.2 37.2-77.4 94.8-77.4 159.6s30.2 122.4 77.4 159.6c47.2-37.2 77.4-94.8 77.4-159.6S437.2 150.6 390 113.4z" fill="#FF5F00"/></svg>
 <svg viewBox="0 0 200 130" style="height:24px;width:36px" aria-label="Mir"><path d="M16 0h168c8.8 0 16 7.2 16 16v98c0 8.8-7.2 16-16 16H16c-8.8 0-16-7.2-16-16V16C0 7.2 7.2 0 16 0z" fill="#4DB45E"/><text x="100" y="82" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-weight="bold" font-size="52">MIR</text></svg>
 <svg viewBox="0 0 200 130" style="height:24px;width:36px" aria-label="American Express"><rect width="200" height="130" rx="16" fill="#6B7FBF"/><text x="100" y="80" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-weight="bold" font-size="38">AMEX</text></svg>
-<svg viewBox="0 0 200 130" style="height:24px;width:36px" aria-label="Crypto"><rect width="200" height="130" rx="16" fill="#F2A54A"/><text x="100" y="85" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-weight="bold" font-size="50">&#x20BF;</text></svg>
+<svg viewBox="0 0 200 130" style="height:24px;width:36px" aria-label="კრიპტო"><rect width="200" height="130" rx="16" fill="#F2A54A"/><text x="100" y="85" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-weight="bold" font-size="50">&#x20BF;</text></svg>
 </div>
 </div>
 <!-- Excursions -->
@@ -1354,7 +1354,7 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeGallery
 <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg>
 </button>
 </div>
-<button id="fab-main" onclick="(function(){var o=document.getElementById('fab-overlay');o.classList.toggle('open');o.style.display=o.classList.contains('open')?'flex':'none'})()" aria-label="Contact">💬</button>
+<button id="fab-main" onclick="(function(){var o=document.getElementById('fab-overlay');o.classList.toggle('open');o.style.display=o.classList.contains('open')?'flex':'none'})()" aria-label="კონტაქტი">💬</button>
 <script>document.addEventListener('click',function(e){if(!e.target.closest('#fab-main')&&!e.target.closest('#fab-overlay')){var o=document.getElementById('fab-overlay');if(o){o.classList.remove('open');o.style.display='none'}}});</script>
 <script>
 document.addEventListener('click',function(e){
@@ -1494,7 +1494,7 @@ update();
 <div id="tm-hero">
 <img id="tm-img" src="/images/og-cover.webp" alt="კერძო ტური თბილისსა და საქართველოში" loading="lazy" width="800" height="450">
 <span id="tm-badge" class="live">ხელმისაწვდომია</span>
-<button id="tm-close" onclick="closeTourModal()" aria-label="Close">×</button>
+<button id="tm-close" onclick="closeTourModal()" aria-label="დახურვა">×</button>
 </div>
 <div id="tm-body">
 <div id="tm-cat"></div>
@@ -1520,7 +1520,7 @@ update();
 <div class="bm-box">
 <div class="bm-head">
 <div class="bm-head-title">ონლაინ ჯავშანი</div>
-<button class="bm-close" onclick="closeBooking()" aria-label="Close">×</button>
+<button class="bm-close" onclick="closeBooking()" aria-label="დახურვა">×</button>
 </div>
 <div class="bm-progress"><div class="bm-progress-fill" id="bm-bar" style="width:25%"></div></div>
 <div class="bm-step active" data-bstep="1">
@@ -1542,13 +1542,13 @@ update();
 <button class="bcal-nav-btn" onclick="bmCalNav(1)">›</button>
 </div>
 <div class="bcal-header">
-<div class="bcal-wday">Mo</div>
-<div class="bcal-wday">Tu</div>
-<div class="bcal-wday">We</div>
-<div class="bcal-wday">Th</div>
-<div class="bcal-wday">Fr</div>
-<div class="bcal-wday">Sa</div>
-<div class="bcal-wday">Su</div>
+<div class="bcal-wday">ორშ</div>
+<div class="bcal-wday">სამ</div>
+<div class="bcal-wday">ოთხ</div>
+<div class="bcal-wday">ხუთ</div>
+<div class="bcal-wday">პარ</div>
+<div class="bcal-wday">შაბ</div>
+<div class="bcal-wday">კვი</div>
 </div>
 <div class="bcal-grid" id="bcal-grid"></div>
 <div class="bcal-legend">
@@ -1590,12 +1590,12 @@ update();
 </div>
 </div>
 </div>
-<div id="pay-modal" role="dialog" aria-modal="true" aria-label="Pay Online">
+<div id="pay-modal" role="dialog" aria-modal="true" aria-label="გადახდა ონლაინ">
 <div class="pm-bg" onclick="var m=document.getElementById('pay-modal');if(m){m.style.display='none';m.classList.remove('open')}document.body.style.overflow=''"></div>
 <div class="pm-box">
 <div class="pm-head">
 <div class="pm-title">გადაიხადეთ ონლაინ</div>
-<button class="pm-close" onclick="var m=document.getElementById('pay-modal');if(m){m.style.display='none';m.classList.remove('open')}document.body.style.overflow=''" aria-label="Close">&times;</button>
+<button class="pm-close" onclick="var m=document.getElementById('pay-modal');if(m){m.style.display='none';m.classList.remove('open')}document.body.style.overflow=''" aria-label="დახურვა">&times;</button>
 </div>
 <div id="pm-methods">
 <div class="pm-opt" onclick="showSBP()">
@@ -1664,7 +1664,7 @@ update();
 <div id="contact-modal" role="dialog" aria-modal="true" aria-label="დაგვიკავშირდით">
 <div class="cm-bg" onclick="closeContact()"></div>
 <div class="cm-box">
-<button class="cm-close" onclick="closeContact()" aria-label="Close">×</button>
+<button class="cm-close" onclick="closeContact()" aria-label="დახურვა">×</button>
 <div class="cm-title">დაუკავშირდით თიმურს</div>
 <div class="cm-sub">დატოვეთ კონტაქტი — თიმური დაგიკავშირდებათ</div>
 <div id="cm-form">
@@ -1856,7 +1856,7 @@ setTimeout(loadPostHog,8000);
 .qz-rec-meta{color:rgba(255,255,255,.5);font-size:12px}
 @media(max-width:480px){.qz-opts{grid-template-columns:1fr 1fr}.qz-opt{padding:16px 12px;font-size:14px}.qz-opt .qz-icon{font-size:24px}}
 </style>
-<button class="qz-close" onclick="var m=document.getElementById('quiz-modal');m.style.display='none';m.classList.remove('open');document.body.style.overflow=''" aria-label="Close">&times;</button>
+<button class="qz-close" onclick="var m=document.getElementById('quiz-modal');m.style.display='none';m.classList.remove('open');document.body.style.overflow=''" aria-label="დახურვა">&times;</button>
 <div class="qz-wrap">
 <div class="qz-progress" id="qz-progress">
 <div class="qz-bar"></div><div class="qz-bar"></div><div class="qz-bar"></div><div class="qz-bar"></div><div class="qz-bar"></div>

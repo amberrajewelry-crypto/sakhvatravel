@@ -49,16 +49,17 @@ def is_brandy(s):
     t = s.strip()
     if not has_letters(t):
         return True
-    # убрать HTML-entity (&copy; и пр.), бренды, числа, пунктуацию
-    rest = re.sub(r'&\w+;', ' ', t)
+    # убрать HTML-entity (&copy; и пр.), бренды, римские цифры веков, числа, пунктуацию
+    rest = re.sub(r'&#?x?\w+;', ' ', t)
     for b in sorted(BRANDS, key=len, reverse=True):
         rest = rest.replace(b, " ")
+    rest = re.sub(r'\b[IVXLCDM]{1,7}\b', ' ', rest)   # XII/XVI/I — века, не англ
     rest = re.sub(r'[0-9\W_]+', ' ', rest)
     return not re.search(r'[A-Za-z]{2,}', rest)
 
 # машинные значения, которые НЕЛЬЗЯ переводить (даже если латиница)
 _SKIP_EXACT = {"en_US", "ka_GE", "ru_RU", "summary_large_image", "article", "website",
-               "EN", "RU", "GE", "Menu", "index,follow"}
+               "EN", "RU", "GE", "index,follow"}
 _HUMAN_META = ("description", "og:title", "og:description", "twitter:title",
                "twitter:description", "og:image:alt")
 
@@ -97,7 +98,11 @@ def jsonld_candidates(html):
             continue
         def emit(v):
             t = v.strip()
-            if t and has_letters(t) and not is_georgian(t) and not is_brandy(t) and not _machine(t):
+            # НЕ гейтить по is_georgian: смешанная строка (груз. топоним + англ.
+            # предложение) обязана попасть в кандидаты. has_letters требует латиницу,
+            # поэтому чисто грузинские строки и так отсеиваются; is_brandy убирает
+            # строки, где латиница — только бренды.
+            if t and has_letters(t) and not is_brandy(t) and not _machine(t):
                 out.add(t)
             return v
         _walk_strings(data, emit)
@@ -109,7 +114,8 @@ def candidates(html):
     body = re.sub(r'<script.*?</script>', '', html, flags=re.S)
     body = re.sub(r'<style.*?</style>', '', body, flags=re.S)
     def ok(t):
-        return (t and has_letters(t) and not is_georgian(t)
+        # без is_georgian-гейта: ловим и смешанные строки (см. jsonld_candidates)
+        return (t and has_letters(t)
                 and not is_brandy(t) and not _machine(t))
     # текст-ноды
     for m in re.findall(r'>([^<>]+)<', body):

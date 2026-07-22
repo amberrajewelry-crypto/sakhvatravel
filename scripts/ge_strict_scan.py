@@ -19,20 +19,23 @@ BRANDS = {
     "Slow","Armenia","Airbnb","Bolt","Skyscanner","Magti","Geocell","Beeline",
     "Ferrari","Formula","SIM","Go","RUB","Georgia","Tbilisi","Batumi","Kazbegi",
     "VK","VKontakte","YouTube","UTC","GB","TBC","Bank","Belavia","Lonely","Planet",
-    "vs","Bolt","Yandex.Go","Skyscanner",
+    "vs","Bolt","Yandex.Go","Skyscanner","Threads","Mir","American","Express",
 }
 ROMAN_RE = re.compile(r'^[IVXLCDM]{1,7}$')                    # римские цифры (века)
 # переключатель языков — коды остаются латиницей (это НЕ англ-остаток)
 SWITCHER = {"RU","EN","GE","KA"}
 BRAND_RE = re.compile(r'\b(' + '|'.join(sorted(map(re.escape, BRANDS), key=len, reverse=True)) + r')\b')
-NAME_RE = re.compile(r'^[A-Z][a-z]+( [A-Z][a-z]*\.?)?$')      # автор отзыва
+# ЯВНЫЙ список авторов отзывов (латиница-транслит остаётся). Ломкий regex-матч
+# «[A-Z][a-z]+» глотал англ. UI-лейблы (Contact/Crypto/Pay Online) как «имена».
+AUTHORS = {"Amovei","Giorgi V.","Mikhail D","Mikhail D.","Nugo Shengelia",
+           "Tigran M.","Vitaly","Vladislav S.","Sergey","Amber R","Elena","Vitaliy"}
 CYR = re.compile(r'[а-яА-ЯёЁ]')                                # русский
 LAT = re.compile(r'[A-Za-z]{2,}')                             # английский
 JSONLD_KEYS = {"name","description","text","reviewBody","headline","alternateName"}
 
 def is_keep(t):
     """строка после снятия брендов/entity/чисел/пунктуации не содержит букв → keep"""
-    if NAME_RE.match(t): return True
+    if t in AUTHORS: return True
     if t.startswith('@'): return True
     if re.match(r'^@?[\w.\-]+@[\w.\-]+$', t): return True     # email
     if re.match(r'^https?://', t) or re.match(r'^[\w.\-]+\.(com|ge|ru|org)\b', t): return True
@@ -46,7 +49,7 @@ def flag(t):
     Репортит КОНКРЕТНЫЙ токен (кирилл-ран или лат-слово вне бренда), не весь текст."""
     t = t.strip()
     if not t or t in SWITCHER: return None
-    if NAME_RE.match(t) or t.startswith('@'): return None
+    if t in AUTHORS or t.startswith('@'): return None
     if re.match(r'^[\w.\-]+@[\w.\-]+', t): return None        # email
     if "'+" in t or "+t." in t: return None                  # JS-шаблон в атрибуте
     # русский: любой кирилл-ран (груз. алфавит не пересекается)
