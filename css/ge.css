@@ -17,7 +17,9 @@ html[lang="ka"] .nav-links a, html[lang="ka"] .nav-btn,
 html[lang="ka"] .btn-primary, html[lang="ka"] .btn-outline-hero,
 html[lang="ka"] .tg-info h3, html[lang="ka"] .sec-title,
 html[lang="ka"] .hero-h1, html[lang="ka"] .tours-pinned-h2 {
-  font-family: 'Noto Sans Georgian', 'Lora', 'Raleway', Georgia, serif;
+  /* !important — оверрайд-слой: инлайновый CSS страниц (.hero-h1, .nav .nav-links a)
+     выше по специфичности; без него Noto проигрывает и вязь падает в системный serif */
+  font-family: 'Noto Sans Georgian', 'Lora', 'Raleway', Georgia, serif !important;
 }
 
 /* Грузинский на 15-20% длиннее — снимаем nowrap там, где текст мог бы обрезаться */
