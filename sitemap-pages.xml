@@ -1,8 +1,20 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://sakhva-travel.com/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/"/>
     <lastmod>2026-07-09</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/contacts/</loc>
@@ -18,10 +30,18 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/about/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/about/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/about/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/about/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/about/"/>
     <lastmod>2026-07-16</lastmod>
   </url>
   <url>
@@ -70,7 +90,19 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/kakheti/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/kakheti/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/kakheti/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/kakheti/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/kakheti/"/>
     <lastmod>2026-07-09</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/kakheti/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/kakheti/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/kakheti/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/kakheti/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/kakheti/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/avtorskie-tury-gruzia/</loc>
@@ -110,6 +142,10 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/kakheti/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/kakheti/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/kakheti/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/kakheti/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/kakheti/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
@@ -130,7 +166,19 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/about/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/about/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/about/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/about/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/about/"/>
     <lastmod>2026-07-16</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/about/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/about/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/about/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/about/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/about/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/gallery/</loc>
