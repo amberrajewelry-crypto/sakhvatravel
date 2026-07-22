@@ -100,9 +100,46 @@ def transform(en_rel):
         sep = f'<span class="lang-sep"{sep_style}>|</span>'
         ge_span = f'<span class="lang-btn on"{btn_style}>GE</span>'
         return en_link + sep + ge_span
+    total_sw = 0
     html, n = re.subn(r'<span class="lang-btn on"( style="[^"]*")?>EN</span>', sw_repl, html)
-    if n == 0: die("не найден активный переключатель EN")
-    log.append(f"переключатель RU|EN|GE x{n}")
+    total_sw += n
+    # Вариант B: переключатель на <button> (desktop lang-btn / drawer d-lang-btn)
+    en_onclick = (f"document.cookie='lang_pref=en;path=/;max-age=31536000;SameSite=Lax';"
+                  f"window.location.href='/en{page_path}'")
+    def sw_btn_desktop(_):
+        return (f'<button class="lang-btn" onclick="{en_onclick}">EN</button>'
+                f'<span class="lang-sep">|</span>'
+                f'<button class="lang-btn on">GE</button>')
+    html, n = re.subn(r'<button class="lang-btn on">EN</button>', sw_btn_desktop, html)
+    total_sw += n
+    def sw_btn_drawer(_):
+        return (f'<button class="d-lang-btn" onclick="{en_onclick}">EN</button>'
+                f'<button class="d-lang-btn on">GE</button>')
+    html, n = re.subn(r'<button class="d-lang-btn on">EN</button>', sw_btn_drawer, html)
+    total_sw += n
+    # Вариант C: <div class="lang-sw"><a>RU</a><a class="on">EN</a></div>
+    #   Структурная замена (href игнорируем — шаг 3 их уже мог мутировать).
+    #   RU -> RU-двойник (page_path), EN -> /en, добавляем активный GE.
+    def sw_langsw(_):
+        return (f'<a href="{page_path}">RU</a>'
+                f'<a href="/en{page_path}">EN</a>'
+                f'<a href="/ge{page_path}" class="on">GE</a>')
+    # container-agnostic: пара анкоров RU + активный EN (любая обёртка/пробелы)
+    html, n = re.subn(r'<a href="[^"]*">RU</a>\s*<a href="[^"]*" class="on">EN</a>',
+                      sw_langsw, html)
+    total_sw += n
+    if total_sw == 0:
+        # Вариант D: голая nav-ссылка "RU" (без виджета; EN — текущая страница).
+        # RU-href сохраняем как в исходнике (RU-слаг может отличаться), дописываем EN+GE.
+        def sw_navru(m):
+            ru_href, attrs = m.group(1), m.group(2)
+            return (f'<a href="{ru_href}"{attrs}>RU</a>'
+                    f'<a href="/en{page_path}"{attrs}>EN</a>'
+                    f'<a href="/ge{page_path}"{attrs}>GE</a>')
+        html, n = re.subn(r'<a href="([^"]*)"([^>]*)>RU</a>', sw_navru, html)
+        total_sw += n
+    if total_sw == 0: die("не найден активный переключатель EN")
+    log.append(f"переключатель RU|EN|GE x{total_sw}")
 
     # 8. Инъекция шрифта + ge.css перед </head>
     if "noto-sans-georgian" not in html:
