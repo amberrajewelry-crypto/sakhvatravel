@@ -7,7 +7,7 @@ const BOT_UA_RE = /googlebot|yandexbot|bingbot|baiduspider|duckduckbot|slurp|msn
 const STATIC_EXT_RE = /\.(webp|jpg|jpeg|png|gif|svg|ico|mp4|mp3|woff|woff2|ttf|eot|css|js|txt|xml|json|pdf|gz|map|avif)$/i
 
 // Paths to skip entirely (static dirs, API, verification files, SEO files)
-const SKIP_PATH_RE = /^\/(?:en\/|api\/|_vercel\/|images\/|css\/|js\/|fonts\/|\.well-known\/)/i
+const SKIP_PATH_RE = /^\/(?:en\/|ge\/|api\/|_vercel\/|images\/|css\/|js\/|fonts\/|\.well-known\/)/i
 const SKIP_FILES = new Set([
   '/sitemap.xml',
   '/robots.txt',
@@ -52,6 +52,10 @@ export function middleware(request) {
     const enPath = '/en' + (pathname === '/' ? '/' : pathname)
     return Response.redirect(new URL(enPath, request.url), 302)
   }
+  if (langCookie === 'ge') {
+    const gePath = '/ge' + (pathname === '/' ? '/' : pathname)
+    return Response.redirect(new URL(gePath, request.url), 302)
+  }
 
   // 7. No cookie — parse Accept-Language header
   const acceptLang = (request.headers.get('accept-language') || '').trim()
@@ -65,6 +69,14 @@ export function middleware(request) {
   // Russian primary -> serve RU version as-is
   if (primary === 'ru') return
 
+  // Georgian primary -> 302 redirect to /ge/ version
+  if (primary === 'ka') {
+    const gePath = '/ge' + (pathname === '/' ? '/' : pathname)
+    const geResp = Response.redirect(new URL(gePath, request.url), 302)
+    geResp.headers.append('Set-Cookie', 'lang_pref=ge; Path=/; Max-Age=31536000; SameSite=Lax')
+    return geResp
+  }
+
   // Everything else -> 302 redirect to /en/ version
   const enPath = '/en' + (pathname === '/' ? '/' : pathname)
   const response = Response.redirect(new URL(enPath, request.url), 302)
@@ -75,5 +87,5 @@ export function middleware(request) {
 
 export const config = {
   // Matcher excludes static dirs upfront for performance (Vercel skips middleware entirely)
-  matcher: ['/((?!en/|api/|images/|fonts/|js/|css/|_vercel/).*)']
+  matcher: ['/((?!en/|ge/|api/|images/|fonts/|js/|css/|_vercel/).*)']
 }
