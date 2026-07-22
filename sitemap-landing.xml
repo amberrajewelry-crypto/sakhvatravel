@@ -312,7 +312,19 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/turkey/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/turkey/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/turkey/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/turkey/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/turkey/"/>
     <lastmod>2026-07-09</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/turkey/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/turkey/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/turkey/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/turkey/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/turkey/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/egypt/</loc>
@@ -320,7 +332,19 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/uae/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/uae/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/uae/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/uae/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/uae/"/>
     <lastmod>2026-07-09</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/uae/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/uae/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/uae/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/uae/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/uae/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/thailand/</loc>
@@ -388,6 +412,10 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/turkey/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/turkey/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/turkey/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/turkey/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/turkey/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
@@ -396,6 +424,10 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/uae/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/uae/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/uae/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/uae/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/uae/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
