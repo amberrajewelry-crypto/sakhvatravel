@@ -156,10 +156,20 @@ def cmd_apply(files):
             data2 = _walk_strings(data, lambda v: tm.get(v.strip(), v))
             new_json = json.dumps(data2, ensure_ascii=False, separators=(",", ":"))
             html = html[:m.start()] + m.group(1) + new_json + m.group(3) + html[m.end():]
-        # 2) видимый текст/атрибуты: якорная замена
+        # 2) видимый текст/атрибуты: якорная замена.
+        #    Защищаем ВСЕ <script> (инлайн-JS + JSON-LD уже переведён) — чтобы
+        #    bare-replace не задел JS-строки, совпадающие с лейблами (квиз/booking).
+        protected = {}
+        def _prot(m):
+            key = f"\x00SCRIPT{len(protected)}\x00"
+            protected[key] = m.group(0)
+            return key
+        html = re.sub(r'<script.*?</script>', _prot, html, flags=re.S)
         for k in keys:
             if k in html:
                 html = html.replace(k, tm[k])
+        for key, orig in protected.items():
+            html = html.replace(key, orig)
         Path(f).write_text(html, encoding="utf-8")
         # верификация: непереведённые видимые + JSON-LD
         left = list(candidates(html) | jsonld_candidates(html))

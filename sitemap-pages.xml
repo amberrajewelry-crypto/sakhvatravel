@@ -26,7 +26,19 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/imereti/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/imereti/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/imereti/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/imereti/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/imereti/"/>
     <lastmod>2026-07-09</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/imereti/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/imereti/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/imereti/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/imereti/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/imereti/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/</loc>
@@ -46,6 +58,10 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/imereti/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/imereti/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/imereti/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/imereti/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/imereti/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
@@ -70,7 +86,19 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/adjara/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/adjara/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/adjara/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/adjara/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/adjara/"/>
     <lastmod>2026-07-09</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/adjara/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/adjara/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/adjara/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/adjara/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/adjara/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/samtskhe-javakheti/</loc>
@@ -190,6 +218,10 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/adjara/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/adjara/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/adjara/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/adjara/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/adjara/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
