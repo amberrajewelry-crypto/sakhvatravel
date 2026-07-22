@@ -1462,38 +1462,38 @@ update();
 <div id="chat-head">
 <div id="chat-head-avatar">🧭</div>
 <div id="chat-head-info">
-<div id="chat-head-name">Sakhva Travel — AI assistant</div>
-<div id="chat-head-status">Online · responds instantly</div>
+<div id="chat-head-name">Sakhva Travel — AI-ასისტენტი</div>
+<div id="chat-head-status">ონლაინ · პასუხობს მყისვე</div>
 </div>
-<button id="chat-close" onclick="toggleChat()" aria-label="Close chat">×</button>
+<button id="chat-close" onclick="toggleChat()" aria-label="ჩატის დახურვა">×</button>
 </div>
 <div id="chat-msgs"></div>
 <div id="chat-quick">
-<button class="chat-quick-btn" onclick="chatQuick('How much is Kazbegi tour?')">💰 Prices</button>
-<button class="chat-quick-btn" onclick="chatQuick('What tours do you have?')">🗺 Tours</button>
-<button class="chat-quick-btn" onclick="chatQuick('How to book a tour?')">📅 Booking</button>
-<button class="chat-quick-btn" onclick="chatQuick('Do I need a visa?')">✈️ Visa</button>
+<button class="chat-quick-btn" onclick="chatQuick('How much is Kazbegi tour?')">💰 ფასები</button>
+<button class="chat-quick-btn" onclick="chatQuick('What tours do you have?')">🗺 ტურები</button>
+<button class="chat-quick-btn" onclick="chatQuick('How to book a tour?')">📅 ჯავშანი</button>
+<button class="chat-quick-btn" onclick="chatQuick('Do I need a visa?')">✈️ ვიზა</button>
 </div>
 <div id="chat-input-row">
-<textarea id="chat-input" placeholder="Type your question..." rows="1" onkeydown="chatKeyDown(event)" aria-label="Your question"></textarea>
-<button id="chat-send" onclick="chatSend()" aria-label="Send message">
+<textarea id="chat-input" placeholder="დაწერეთ თქვენი კითხვა..." rows="1" onkeydown="chatKeyDown(event)" aria-label="თქვენი კითხვა"></textarea>
+<button id="chat-send" onclick="chatSend()" aria-label="შეტყობინების გაგზავნა">
 <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
 </button>
 </div>
 </div>
 <script src="/js/ui-deferred.js?v=8" defer></script>
 <audio id="bg-music" loop preload="none"><source src="/images/bg-music.m4a" type="audio/mp4"><source src="/images/bg-music.mp3" type="audio/mpeg"></audio>
-<button id="music-toggle" onclick="window.sakhvaToggleMusic()" aria-label="Music" data-label="Sound">🔇</button>
-<div id="music-toast" style="display:none;position:fixed;bottom:70px;left:16px;z-index:1001;background:#1A3D2E;color:#fff;padding:10px 18px;border-radius:24px;font-size:14px;cursor:pointer;box-shadow:0 4px 20px rgba(0,0,0,.4);animation:mtoast .4s ease;font-family:inherit" onclick="this.style.display='none';document.getElementById('bg-music').volume=.25;document.getElementById('bg-music').play().then(function(){window._musicPlaying=true;document.getElementById('music-toggle').textContent='\uD83D\uDD0A'})">&#9835; Play music</div>
+<button id="music-toggle" onclick="window.sakhvaToggleMusic()" aria-label="მუსიკა" data-label="ხმა">🔇</button>
+<div id="music-toast" style="display:none;position:fixed;bottom:70px;left:16px;z-index:1001;background:#1A3D2E;color:#fff;padding:10px 18px;border-radius:24px;font-size:14px;cursor:pointer;box-shadow:0 4px 20px rgba(0,0,0,.4);animation:mtoast .4s ease;font-family:inherit" onclick="this.style.display='none';document.getElementById('bg-music').volume=.25;document.getElementById('bg-music').play().then(function(){window._musicPlaying=true;document.getElementById('music-toggle').textContent='\uD83D\uDD0A'})">&#9835; მუსიკის ჩართვა</div>
 
 <script>!function(){var a=document.getElementById('bg-music'),b=document.getElementById('music-toggle'),t=document.getElementById('music-toast');if(!a||!t)return;if(sessionStorage.getItem('music_muted')==='1')return;var saved=sessionStorage.getItem('music_time');if(saved){a.currentTime=parseFloat(saved);a.volume=.25;a.play().then(function(){window._musicPlaying=!0;b.textContent='\uD83D\uDD0A'}).catch(function(){})}else{setTimeout(function(){if(!window._musicPlaying)t.style.display='block'},3000);setTimeout(function(){if(t.style.display==='block'&&!window._musicPlaying)t.style.display='none'},12000)}}()</script>
 <script>window.sakhvaToggleMusic=function(){var a=document.getElementById('bg-music'),b=document.getElementById('music-toggle'),t=document.getElementById('music-toast');if(!a)return;if(!a.paused){a.pause();window._musicPlaying=false;if(b)b.textContent='🔇';try{sessionStorage.setItem('music_muted','1');sessionStorage.removeItem('music_time');}catch(e){}}else{a.volume=0.25;a.play().catch(function(){});window._musicPlaying=true;if(b)b.textContent='🔊';try{sessionStorage.removeItem('music_muted');}catch(e){}if(t)t.style.display='none';}};</script>
-<div id="tm" role="dialog" aria-modal="true" aria-label="Tour details">
+<div id="tm" role="dialog" aria-modal="true" aria-label="ტურის დეტალები">
 <div id="tm-bg" onclick="closeTourModal()"></div>
 <div id="tm-box">
 <div id="tm-hero">
 <img id="tm-img" src="/images/og-cover.webp" alt="Private tour in Tbilisi and Georgia" loading="lazy" width="800" height="450">
-<span id="tm-badge" class="live">Available</span>
+<span id="tm-badge" class="live">ხელმისაწვდომია</span>
 <button id="tm-close" onclick="closeTourModal()" aria-label="Close">×</button>
 </div>
 <div id="tm-body">
@@ -1501,17 +1501,17 @@ update();
 <div id="tm-name"></div>
 <div id="tm-desc"></div>
 <div class="tm-section">
-<div class="tm-section-title">What's included</div>
+<div class="tm-section-title">რა შედის</div>
 <div id="tm-includes" class="tm-items"></div>
 </div>
 <div class="tm-section">
-<div class="tm-section-title">Route / Program</div>
+<div class="tm-section-title">მარშრუტი / პროგრამა</div>
 <div id="tm-route" class="tm-items"></div>
 </div>
 </div>
 <div id="tm-foot">
-<div id="tm-price">from <span id="tm-gel"></span> <small>/person</small></div>
-<a id="tm-wa" href="#" target="_blank" rel="noopener noreferrer">Write on WhatsApp</a>
+<div id="tm-price">ფასი <span id="tm-gel"></span> <small>/ადამიანი</small></div>
+<a id="tm-wa" href="#" target="_blank" rel="noopener noreferrer">მისწერეთ WhatsApp-ზე</a>
 </div>
 </div>
 </div>
@@ -1519,23 +1519,23 @@ update();
 <div class="bm-bg" onclick="closeBooking()"></div>
 <div class="bm-box">
 <div class="bm-head">
-<div class="bm-head-title">Online booking</div>
+<div class="bm-head-title">ონლაინ ჯავშანი</div>
 <button class="bm-close" onclick="closeBooking()" aria-label="Close">×</button>
 </div>
 <div class="bm-progress"><div class="bm-progress-fill" id="bm-bar" style="width:25%"></div></div>
 <div class="bm-step active" data-bstep="1">
-<div class="bm-step-label">Step 1 of 3</div>
-<div class="bm-step-title">Choose a tour</div>
+<div class="bm-step-label">ნაბიჯი 1 / 3</div>
+<div class="bm-step-title">აირჩიეთ ტური</div>
 <div class="bm-tours-wrap">
 <button class="bm-arrow bm-arrow-l" onclick="bmScroll(-1)" aria-label="←">‹</button>
 <div class="bm-tours" id="bm-tour-list"></div>
 <button class="bm-arrow bm-arrow-r" onclick="bmScroll(1)" aria-label="→">›</button>
 </div>
-<button class="bm-next" id="bm-next1" onclick="bmStep(2)" disabled>Choose date →</button>
+<button class="bm-next" id="bm-next1" onclick="bmStep(2)" disabled>აირჩიეთ თარიღი →</button>
 </div>
 <div class="bm-step" data-bstep="2">
-<div class="bm-step-label">Step 2 of 3</div>
-<div class="bm-step-title">Choose a date</div>
+<div class="bm-step-label">ნაბიჯი 2 / 3</div>
+<div class="bm-step-title">აირჩიეთ თარიღი</div>
 <div class="bcal-nav">
 <button class="bcal-nav-btn" onclick="bmCalNav(-1)">‹</button>
 <div class="bcal-month-label" id="bcal-month-label"></div>
@@ -1552,40 +1552,40 @@ update();
 </div>
 <div class="bcal-grid" id="bcal-grid"></div>
 <div class="bcal-legend">
-<div class="bcal-leg"><span style="color:#16A34A;font-weight:700;font-size:9px">8</span><span>Many spots</span></div>
-<div class="bcal-leg"><span style="color:#F59E0B;font-weight:700;font-size:9px">3</span><span>Few spots</span></div>
-<div class="bcal-leg"><span style="color:#EF4444;font-weight:700;font-size:9px">1</span><span>Last spots</span></div>
-<div class="bcal-leg"><div class="bcal-leg-dot" style="background:#FEE2E2"></div><span>No spots</span></div>
+<div class="bcal-leg"><span style="color:#16A34A;font-weight:700;font-size:9px">8</span><span>ბევრი ადგილი</span></div>
+<div class="bcal-leg"><span style="color:#F59E0B;font-weight:700;font-size:9px">3</span><span>რამდენიმე ადგილი</span></div>
+<div class="bcal-leg"><span style="color:#EF4444;font-weight:700;font-size:9px">1</span><span>ბოლო ადგილები</span></div>
+<div class="bcal-leg"><div class="bcal-leg-dot" style="background:#FEE2E2"></div><span>ადგილები არ არის</span></div>
 </div>
-<button class="bm-next" id="bm-next2" onclick="bmStep(3)" disabled style="margin-top:14px">Next →</button>
-<button class="bm-back" onclick="bmStep(1)">← Back</button>
+<button class="bm-next" id="bm-next2" onclick="bmStep(3)" disabled style="margin-top:14px">შემდეგი →</button>
+<button class="bm-back" onclick="bmStep(1)">← უკან</button>
 </div>
 <div class="bm-step" data-bstep="3">
-<div class="bm-step-label">Step 3 of 3</div>
-<div class="bm-step-title">Your details</div>
+<div class="bm-step-label">ნაბიჯი 3 / 3</div>
+<div class="bm-step-title">თქვენი მონაცემები</div>
 <div class="bm-row">
-<div class="bm-field"><label>Name</label><input type="text" id="bm-name" placeholder="Name" autocomplete="given-name"></div>
-<div class="bm-field"><label>People</label><select id="bm-guests"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option></select></div>
+<div class="bm-field"><label>სახელი</label><input type="text" id="bm-name" placeholder="სახელი" autocomplete="given-name"></div>
+<div class="bm-field"><label>ადამიანები</label><select id="bm-guests"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option></select></div>
 </div>
 <div class="bm-field"><label>Email</label><input type="email" id="bm-email" placeholder="your@email.com" autocomplete="email"></div>
-<div class="bm-field"><label>Phone / WhatsApp</label><input type="tel" id="bm-phone" placeholder="+7 / +995..." autocomplete="tel"></div>
-<div class="bm-field"><label>Preferences (optional)</label><input type="text" id="bm-note" placeholder="..."></div>
-<div class="bm-field" id="bm-promo-wrap" style="display:none"><label>Promo code</label><input type="text" id="bm-promo" readonly style="background:#F0FDF4;color:#16A34A;font-weight:700;border-color:#86EFAC"></div>
-<button class="bm-next" onclick="bmSubmit()">Book now →</button>
-<div style="text-align:center;font-size:11px;color:#4B5563;margin-top:8px">🔒 Free cancellation 24h · Pay on tour day</div>
-<button class="bm-back" onclick="bmStep(2)">← Back</button>
+<div class="bm-field"><label>ტელეფონი / WhatsApp</label><input type="tel" id="bm-phone" placeholder="+7 / +995..." autocomplete="tel"></div>
+<div class="bm-field"><label>სურვილები (არასავალდებულო)</label><input type="text" id="bm-note" placeholder="..."></div>
+<div class="bm-field" id="bm-promo-wrap" style="display:none"><label>პრომოკოდი</label><input type="text" id="bm-promo" readonly style="background:#F0FDF4;color:#16A34A;font-weight:700;border-color:#86EFAC"></div>
+<button class="bm-next" onclick="bmSubmit()">დაჯავშნა →</button>
+<div style="text-align:center;font-size:11px;color:#4B5563;margin-top:8px">🔒 უფასო გაუქმება 24სთ · გადახდა ტურის დღეს</div>
+<button class="bm-back" onclick="bmStep(2)">← უკან</button>
 </div>
 <div class="bm-step" data-bstep="4">
 <div class="bm-success">
 <div class="bm-success-icon">🎉</div>
-<div class="bm-success-title">Request received!</div>
+<div class="bm-success-title">მოთხოვნა მიღებულია!</div>
 <div class="bm-success-meta" id="bm-success-meta"></div>
 <div class="bm-pay-box">
-<div class="bm-pay-title">Payment</div>
-<div class="bm-pay-opt">✅ <span>Prepayment 10% on booking, remainder — on tour day</span></div>
-<div class="bm-pay-opt">💳 <span>Payment: cash, card or Revolut / Wise</span></div>
+<div class="bm-pay-title">გადახდა</div>
+<div class="bm-pay-opt">✅ <span>წინასწარი გადახდა 10% დაჯავშნისას, დანარჩენი — ტურის დღეს</span></div>
+<div class="bm-pay-opt">💳 <span>გადახდა: ნაღდი, ბარათი ან Revolut / Wise</span></div>
 </div>
-<p style="margin-top:10px;font-size:11px;color:#4B5563">Timur will contact you within 2hhours</p>
+<p style="margin-top:10px;font-size:11px;color:#4B5563">თიმური დაგიკავშირდებათ 2 საათში</p>
 </div>
 </div>
 </div>
@@ -1594,91 +1594,91 @@ update();
 <div class="pm-bg" onclick="var m=document.getElementById('pay-modal');if(m){m.style.display='none';m.classList.remove('open')}document.body.style.overflow=''"></div>
 <div class="pm-box">
 <div class="pm-head">
-<div class="pm-title">Pay online</div>
+<div class="pm-title">გადაიხადეთ ონლაინ</div>
 <button class="pm-close" onclick="var m=document.getElementById('pay-modal');if(m){m.style.display='none';m.classList.remove('open')}document.body.style.overflow=''" aria-label="Close">&times;</button>
 </div>
 <div id="pm-methods">
 <div class="pm-opt" onclick="showSBP()">
 <div class="pm-opt-icon sbp"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div>
 <div class="pm-opt-info">
-<div class="pm-opt-name">QR code payment</div>
-<div class="pm-opt-desc">Fast transfer via QR payment system</div>
+<div class="pm-opt-name">QR-კოდით გადახდა</div>
+<div class="pm-opt-desc">სწრაფი გადარიცხვა QR-გადახდის სისტემით</div>
 </div>
 <div class="pm-opt-arrow">&rsaquo;</div>
 </div>
 <div class="pm-opt" onclick="showCrypto()">
 <div class="pm-opt-icon crypto"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M11.5 11.5v-3.5c1.75 0 2.5.58 2.5 1.75s-.75 1.75-2.5 1.75zm0 1v3.5c2 0 3-.58 3-1.75s-1-1.75-3-1.75zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1.5 14.25V18h-1v-1.67c-1.31-.11-2.56-.6-3.25-1.33l1.13-1.33c.58.5 1.37.89 2.12.89v-3.72c-2.06-.54-3.5-1.28-3.5-3.15 0-1.7 1.31-2.98 3.5-3.16V3h1v1.59c1.06.13 2.07.55 2.78 1.2l-1.06 1.27c-.47-.38-1.09-.68-1.72-.77v3.4c2.16.58 3.5 1.35 3.5 3.2 0 1.82-1.31 3.1-3.5 3.36z"/></svg></div>
 <div class="pm-opt-info">
-<div class="pm-opt-name">Cryptocurrency</div>
-<div class="pm-opt-desc">BTC, ETH, USDT — via NOWPayments</div>
+<div class="pm-opt-name">კრიპტოვალუტა</div>
+<div class="pm-opt-desc">BTC, ETH, USDT — NOWPayments-ით</div>
 </div>
 <div class="pm-opt-arrow">&rsaquo;</div>
 </div>
 <div class="pm-opt" onclick="showWise()">
 <div class="pm-opt-icon wise"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
 <div class="pm-opt-info">
-<div class="pm-opt-name">SWIFT / Wise transfer</div>
-<div class="pm-opt-desc">International transfer in any currency</div>
+<div class="pm-opt-name">SWIFT / Wise გადარიცხვა</div>
+<div class="pm-opt-desc">საერთაშორისო გადარიცხვა ნებისმიერ ვალუტაში</div>
 </div>
 <div class="pm-opt-arrow">&rsaquo;</div>
 </div>
 </div>
 <div id="pm-sbp" style="display:none;text-align:center">
-<button class="pm-back" onclick="pmBack()">&larr; <span>Back</span></button>
-<div class="pm-screen-title">QR payment</div>
-<p class="pm-screen-desc">Scan QR code with your phone camera or banking app</p>
+<button class="pm-back" onclick="pmBack()">&larr; <span>უკან</span></button>
+<div class="pm-screen-title">QR-გადახდა</div>
+<p class="pm-screen-desc">დაასკანერეთ QR-კოდი ტელეფონის კამერით ან საბანკო აპლიკაციით</p>
 <img src="/images/sbp-qr.png?v=2" loading="lazy" alt="QR-QR code for tour payment" width="220" height="220" style="width:220px;height:220px;border-radius:12px;border:1px solid #E5E7EB;display:block;margin:0 auto">
-<p class="pm-hint">After payment send receipt to WhatsApp</p>
-<a href="https://wa.me/995511272623?text=%D0%9E%D0%BF%D0%BB%D0%B0%D1%82%D0%B8%D0%BB%20%D1%87%D0%B5%D1%80%D0%B5%D0%B7%20%D0%A1%D0%91%D0%9F" target="_blank" rel="noopener noreferrer" class="pm-wa-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 0 0 .611.611l4.458-1.495A11.932 11.932 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.305 0-4.461-.644-6.3-1.758l-.44-.263-3.24 1.086 1.086-3.24-.263-.44A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg> Send receipt to WhatsApp</a>
+<p class="pm-hint">გადახდის შემდეგ გამოაგზავნეთ ქვითარი WhatsApp-ზე</p>
+<a href="https://wa.me/995511272623?text=%D0%9E%D0%BF%D0%BB%D0%B0%D1%82%D0%B8%D0%BB%20%D1%87%D0%B5%D1%80%D0%B5%D0%B7%20%D0%A1%D0%91%D0%9F" target="_blank" rel="noopener noreferrer" class="pm-wa-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 0 0 .611.611l4.458-1.495A11.932 11.932 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.305 0-4.461-.644-6.3-1.758l-.44-.263-3.24 1.086 1.086-3.24-.263-.44A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg> ქვითრის გაგზავნა WhatsApp-ზე</a>
 </div>
 <div id="pm-crypto" style="display:none;text-align:center">
-<button class="pm-back" onclick="pmBack()">&larr; <span>Back</span></button>
-<div class="pm-screen-title">Cryptocurrency payment</div>
-<p class="pm-screen-desc">We accept: BTC, ETH, USDT</p>
+<button class="pm-back" onclick="pmBack()">&larr; <span>უკან</span></button>
+<div class="pm-screen-title">კრიპტოვალუტით გადახდა</div>
+<p class="pm-screen-desc">ვიღებთ: BTC, ETH, USDT</p>
 <div class="pm-warning">
-<p class="pm-warning-title">Note: cryptocurrency payments are non-refundable</p>
-<p class="pm-warning-text">Please verify the amount before paying. Once sent, the transaction cannot be reversed.</p>
+<p class="pm-warning-title">გაითვალისწინეთ: კრიპტოგადახდები დაბრუნებას არ ექვემდებარება</p>
+<p class="pm-warning-text">გადახდამდე გადაამოწმეთ თანხა. გაგზავნის შემდეგ ტრანზაქცია შეუქცევადია.</p>
 <label>
 <input type="checkbox" id="pm-crypto-agree" onchange="document.getElementById('pm-crypto-btn').disabled=!this.checked">
-<span>I understand that cryptocurrency payments are irreversible</span>
+<span>ვაცნობიერებ, რომ კრიპტოგადახდები შეუქცევადია</span>
 </label>
 </div>
 <input type="number" id="pm-crypto-amount" class="pm-input" placeholder="Amount in USD" min="1" style="max-width:240px;margin:0 auto 14px">
 <br>
-<button id="pm-crypto-btn" onclick="payCrypto()" class="pm-pay-btn" disabled>Create invoice</button>
-<p class="pm-hint">Rate locked for 20 minutes</p>
+<button id="pm-crypto-btn" onclick="payCrypto()" class="pm-pay-btn" disabled>ინვოისის შექმნა</button>
+<p class="pm-hint">კურსი ფიქსირდება 20 წუთით</p>
 </div>
 <div id="pm-wise" style="display:none;text-align:center">
-<button class="pm-back" onclick="pmBack()">&larr; <span>Back</span></button>
-<div class="pm-screen-title">SWIFT / Wise transfer</div>
-<p class="pm-screen-desc">Transfer the amount via Wise — automatic conversion, no hidden fees</p>
+<button class="pm-back" onclick="pmBack()">&larr; <span>უკან</span></button>
+<div class="pm-screen-title">SWIFT / Wise გადარიცხვა</div>
+<p class="pm-screen-desc">გადარიცხეთ თანხა Wise-ით — ავტომატური კონვერტაცია, ფარული საკომისიოს გარეშე</p>
 <input type="number" id="pm-wise-amount" class="pm-input" placeholder="Amount in USD" min="1" style="max-width:240px;margin:0 auto 14px">
 <br>
-<a id="pm-wise-btn" href="https://wise.com/pay/business/amberra" target="_blank" rel="noopener noreferrer" class="pm-pay-btn" style="display:inline-flex;text-decoration:none" onclick="updateWiseLink()">Open Wise</a>
-<p class="pm-hint">After payment send confirmation to WhatsApp</p>
-<a href="https://wa.me/995511272623?text=%D0%9E%D0%BF%D0%BB%D0%B0%D1%82%D0%B8%D0%BB%20%D1%87%D0%B5%D1%80%D0%B5%D0%B7%20Wise" target="_blank" rel="noopener noreferrer" class="pm-wa-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 0 0 .611.611l4.458-1.495A11.932 11.932 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.305 0-4.461-.644-6.3-1.758l-.44-.263-3.24 1.086 1.086-3.24-.263-.44A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg> Send confirmation</a>
+<a id="pm-wise-btn" href="https://wise.com/pay/business/amberra" target="_blank" rel="noopener noreferrer" class="pm-pay-btn" style="display:inline-flex;text-decoration:none" onclick="updateWiseLink()">Wise-ის გახსნა</a>
+<p class="pm-hint">გადახდის შემდეგ გამოაგზავნეთ დადასტურება WhatsApp-ზე</p>
+<a href="https://wa.me/995511272623?text=%D0%9E%D0%BF%D0%BB%D0%B0%D1%82%D0%B8%D0%BB%20%D1%87%D0%B5%D1%80%D0%B5%D0%B7%20Wise" target="_blank" rel="noopener noreferrer" class="pm-wa-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 0 0 .611.611l4.458-1.495A11.932 11.932 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.305 0-4.461-.644-6.3-1.758l-.44-.263-3.24 1.086 1.086-3.24-.263-.44A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg> დადასტურების გაგზავნა</a>
 </div>
-<div class="pm-note">Choose your payment method</div>
+<div class="pm-note">აირჩიეთ გადახდის მეთოდი</div>
 </div>
 </div>
-<div id="contact-modal" role="dialog" aria-modal="true" aria-label="Contact us">
+<div id="contact-modal" role="dialog" aria-modal="true" aria-label="დაგვიკავშირდით">
 <div class="cm-bg" onclick="closeContact()"></div>
 <div class="cm-box">
 <button class="cm-close" onclick="closeContact()" aria-label="Close">×</button>
-<div class="cm-title">Contact Timur</div>
-<div class="cm-sub">Leave your contact — Timur will contact you</div>
+<div class="cm-title">დაუკავშირდით თიმურს</div>
+<div class="cm-sub">დატოვეთ კონტაქტი — თიმური დაგიკავშირდებათ</div>
 <div id="cm-form">
-<div class="cm-field"><label>Your name</label><input type="text" id="cm-name" placeholder="Name"></div>
-<div class="cm-field"><label>Phone or WhatsApp</label><input type="tel" id="cm-phone" placeholder="+7 or +995..." required></div>
-<div class="cm-field"><label>Message (optional)</label><textarea id="cm-msg" placeholder="Dates, number of people, questions..."></textarea></div>
-<div class="cm-field" id="cm-promo-wrap" style="display:none"><label>Promo code</label><input type="text" id="cm-promo" readonly style="background:#F0FDF4;color:#16A34A;font-weight:700;border:1px solid #86EFAC;padding:10px 14px;border-radius:8px;font-size:16px;width:100%;box-sizing:border-box"></div>
-<button class="cm-submit" id="cm-submit-btn">Send →</button>
+<div class="cm-field"><label>თქვენი სახელი</label><input type="text" id="cm-name" placeholder="სახელი"></div>
+<div class="cm-field"><label>ტელეფონი ან WhatsApp</label><input type="tel" id="cm-phone" placeholder="+7 ან +995..." required></div>
+<div class="cm-field"><label>შეტყობინება (არასავალდებულო)</label><textarea id="cm-msg" placeholder="თარიღები, ადამიანების რაოდენობა, კითხვები..."></textarea></div>
+<div class="cm-field" id="cm-promo-wrap" style="display:none"><label>პრომოკოდი</label><input type="text" id="cm-promo" readonly style="background:#F0FDF4;color:#16A34A;font-weight:700;border:1px solid #86EFAC;padding:10px 14px;border-radius:8px;font-size:16px;width:100%;box-sizing:border-box"></div>
+<button class="cm-submit" id="cm-submit-btn">გაგზავნა →</button>
 <script>document.getElementById('cm-submit-btn').addEventListener('click',function(){if(typeof sendContact==='function'){sendContact()}else{alert('Page loading, please wait')}})</script>
 </div>
 <div id="cm-success" style="display:none;text-align:center;padding:24px 0">
 <div style="width:48px;height:48px;background:#F0FDF4;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 12px"><svg width="24" height="24" fill="none" stroke="#16A34A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
-<div style="font-size:18px;font-weight:700;color:#111;margin-bottom:6px">Request sent</div>
-<div style="font-size:14px;color:#4B5563;line-height:1.5">Timur will contact you shortly</div>
+<div style="font-size:18px;font-weight:700;color:#111;margin-bottom:6px">მოთხოვნა გაგზავნილია</div>
+<div style="font-size:14px;color:#4B5563;line-height:1.5">თიმური მალე დაგიკავშირდებათ</div>
 </div>
 </div>
 </div>
@@ -1864,78 +1864,78 @@ setTimeout(loadPostHog,8000);
 
 <!-- Step 1: Interest -->
 <div class="qz-step active" data-step="1">
-<div class="qz-q">What do you want to see?</div>
-<div class="qz-sub">Choose a direction — we'll find the perfect tour</div>
+<div class="qz-q">რისი ნახვა გსურთ?</div>
+<div class="qz-sub">აირჩიეთ მიმართულება — ჩვენ ვიპოვით იდეალურ ტურს</div>
 <div class="qz-opts">
-<div class="qz-opt" onclick="qzSelect(1,this,'mountains')"><span class="qz-icon">&#9968;</span>Mountains & nature</div>
-<div class="qz-opt" onclick="qzSelect(1,this,'wine')"><span class="qz-icon">&#127863;</span>Wine & food</div>
-<div class="qz-opt" onclick="qzSelect(1,this,'city')"><span class="qz-icon">&#127963;</span>Old Tbilisi</div>
-<div class="qz-opt" onclick="qzSelect(1,this,'active')"><span class="qz-icon">&#127939;</span>Active adventure</div>
-<div class="qz-opt" onclick="qzSelect(1,this,'all')" style="grid-column:1/-1"><span class="qz-icon">&#10024;</span>A bit of everything — surprise me</div>
+<div class="qz-opt" onclick="qzSelect(1,this,'mountains')"><span class="qz-icon">&#9968;</span>მთები და ბუნება</div>
+<div class="qz-opt" onclick="qzSelect(1,this,'wine')"><span class="qz-icon">&#127863;</span>ღვინო და საკვები</div>
+<div class="qz-opt" onclick="qzSelect(1,this,'city')"><span class="qz-icon">&#127963;</span>ძველი თბილისი</div>
+<div class="qz-opt" onclick="qzSelect(1,this,'active')"><span class="qz-icon">&#127939;</span>აქტიური თავგადასავალი</div>
+<div class="qz-opt" onclick="qzSelect(1,this,'all')" style="grid-column:1/-1"><span class="qz-icon">&#10024;</span>ცოტა ყველაფრისგან — გამაკვირვეთ</div>
 </div>
 </div>
 
 <!-- Step 2: Duration -->
 <div class="qz-step" data-step="2">
-<div class="qz-q">How much time?</div>
-<div class="qz-sub">We'll adapt the route to your schedule</div>
+<div class="qz-q">რამდენი დრო?</div>
+<div class="qz-sub">მარშრუტს თქვენს გრაფიკზე მოვარგებთ</div>
 <div class="qz-opts">
-<div class="qz-opt" onclick="qzSelect(2,this,'half')"><span class="qz-icon">&#9201;</span>Half day<br><small style="color:rgba(255,255,255,.4)">3-5 hours</small></div>
-<div class="qz-opt" onclick="qzSelect(2,this,'full')"><span class="qz-icon">&#9728;</span>Full day<br><small style="color:rgba(255,255,255,.4)">8-14 hours</small></div>
-<div class="qz-opt" onclick="qzSelect(2,this,'multi')"><span class="qz-icon">&#128197;</span>2-3 days</div>
-<div class="qz-opt" onclick="qzSelect(2,this,'week')"><span class="qz-icon">&#127758;</span>Week+</div>
+<div class="qz-opt" onclick="qzSelect(2,this,'half')"><span class="qz-icon">&#9201;</span>ნახევარი დღე<br><small style="color:rgba(255,255,255,.4)">3-5 საათი</small></div>
+<div class="qz-opt" onclick="qzSelect(2,this,'full')"><span class="qz-icon">&#9728;</span>სრული დღე<br><small style="color:rgba(255,255,255,.4)">8-14 საათი</small></div>
+<div class="qz-opt" onclick="qzSelect(2,this,'multi')"><span class="qz-icon">&#128197;</span>2-3 დღე</div>
+<div class="qz-opt" onclick="qzSelect(2,this,'week')"><span class="qz-icon">&#127758;</span>კვირა+</div>
 </div>
-<button class="qz-back" onclick="qzBack()">&larr; Back</button>
+<button class="qz-back" onclick="qzBack()">&larr; უკან</button>
 </div>
 
 <!-- Step 3: People -->
 <div class="qz-step" data-step="3">
-<div class="qz-q">How many people?</div>
-<div class="qz-sub">Groups up to 7 people — price per person decreases</div>
+<div class="qz-q">რამდენი ადამიანი?</div>
+<div class="qz-sub">ჯგუფები 7 ადამიანამდე — ფასი ერთ ადამიანზე მცირდება</div>
 <div class="qz-opts">
 <div class="qz-opt" onclick="qzSelect(3,this,'1-2')"><span class="qz-icon">&#128108;</span>1-2</div>
 <div class="qz-opt" onclick="qzSelect(3,this,'3-4')"><span class="qz-icon">&#128106;</span>3-4</div>
 <div class="qz-opt" onclick="qzSelect(3,this,'5-7')"><span class="qz-icon">&#128101;</span>5-7</div>
 <div class="qz-opt" onclick="qzSelect(3,this,'8+')"><span class="qz-icon">&#127881;</span>8+</div>
 </div>
-<button class="qz-back" onclick="qzBack()">&larr; Back</button>
+<button class="qz-back" onclick="qzBack()">&larr; უკან</button>
 </div>
 
 <!-- Step 4: Budget -->
 <div class="qz-step" data-step="4">
-<div class="qz-q">Budget per person?</div>
-<div class="qz-sub">We'll help find the best option</div>
+<div class="qz-q">ბიუჯეტი ერთ ადამიანზე?</div>
+<div class="qz-sub">დაგეხმარებით საუკეთესო ვარიანტის პოვნაში</div>
 <div class="qz-opts">
 <div class="qz-opt" onclick="qzSelect(4,this,'low')"><span class="qz-icon">&#128176;</span>Up to $50</div>
 <div class="qz-opt" onclick="qzSelect(4,this,'mid')"><span class="qz-icon">&#128177;</span>$50-100</div>
 <div class="qz-opt" onclick="qzSelect(4,this,'high')"><span class="qz-icon">&#128142;</span>$100+</div>
-<div class="qz-opt" onclick="qzSelect(4,this,'any')"><span class="qz-icon">&#128587;</span>Doesn't matter</div>
+<div class="qz-opt" onclick="qzSelect(4,this,'any')"><span class="qz-icon">&#128587;</span>არ აქვს მნიშვნელობა</div>
 </div>
-<button class="qz-back" onclick="qzBack()">&larr; Back</button>
+<button class="qz-back" onclick="qzBack()">&larr; უკან</button>
 </div>
 
 <!-- Step 5: Contact -->
 <div class="qz-step" data-step="5">
-<div class="qz-q">Where to send the selection?</div>
-<div class="qz-sub">Timur will respond within 15 minutes</div>
+<div class="qz-q">სად გამოგიგზავნოთ შერჩევა?</div>
+<div class="qz-sub">თიმური უპასუხებს 15 წუთში</div>
 <div class="qz-toggle" id="qz-channel-toggle">
 <button class="on" onclick="qzChannel('wa',this)">WhatsApp</button>
 <button onclick="qzChannel('tg',this)">Telegram</button>
 </div>
-<input class="qz-input" id="qz-name" placeholder="Your name" style="margin-bottom:12px" autocomplete="given-name">
+<input class="qz-input" id="qz-name" placeholder="თქვენი სახელი" style="margin-bottom:12px" autocomplete="given-name">
 <input class="qz-input" id="qz-contact" placeholder="+7 999 123 45 67" type="tel" style="margin-bottom:20px" autocomplete="tel">
-<button class="qz-submit" id="qz-send" onclick="qzSubmit()">Get tour selection</button>
-<button class="qz-back" onclick="qzBack()">&larr; Back</button>
+<button class="qz-submit" id="qz-send" onclick="qzSubmit()">მიიღეთ ტურების შერჩევა</button>
+<button class="qz-back" onclick="qzBack()">&larr; უკან</button>
 </div>
 
 <!-- Result -->
 <div class="qz-step" data-step="result">
 <div class="qz-result">
 <div class="qz-result-icon">&#10004;&#65039;</div>
-<div class="qz-result-title">Request sent!</div>
-<div class="qz-result-sub">Timur will select the best tours and message you<br>within 15 minutes</div>
+<div class="qz-result-title">მოთხოვნა გაგზავნილია!</div>
+<div class="qz-result-sub">თიმური შეარჩევს საუკეთესო ტურებს და მოგწერთ<br>15 წუთში</div>
 <div class="qz-recs" id="qz-recs"></div>
-<button onclick="var m=document.getElementById('quiz-modal');m.style.display='none';m.classList.remove('open');document.body.style.overflow=''" class="qz-submit" style="margin-top:24px;background:#1A3D2E;color:#fff">Back to website</button>
+<button onclick="var m=document.getElementById('quiz-modal');m.style.display='none';m.classList.remove('open');document.body.style.overflow=''" class="qz-submit" style="margin-top:24px;background:#1A3D2E;color:#fff">საიტზე დაბრუნება</button>
 </div>
 </div>
 </div>
