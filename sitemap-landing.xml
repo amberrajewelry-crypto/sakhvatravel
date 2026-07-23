@@ -753,9 +753,21 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/tury-v-gruziyu-iz-volgograda/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/tury-v-gruziyu-iz-volgograda/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/tours-from-volgograd/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/tours-from-volgograd/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/tury-v-gruziyu-iz-volgograda/"/>
     <lastmod>2026-07-13</lastmod>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/tury-v-gruziyu-iz-volgograda/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/tours-from-volgograd/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/tury-v-gruziyu-iz-volgograda/"/>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/tours-from-volgograd/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/tury-v-gruziyu-iz-volgograda/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/tours-from-volgograd/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/tours-from-volgograd/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/tury-v-gruziyu-iz-volgograda/"/>
   </url>
   <url>
@@ -792,6 +804,10 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/tours-from-volgograd/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/tury-v-gruziyu-iz-volgograda/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/tours-from-volgograd/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/tours-from-volgograd/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/tury-v-gruziyu-iz-volgograda/"/>
     <lastmod>2026-07-13</lastmod>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/tury-v-gruziyu-iz-volgograda/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/tours-from-volgograd/"/>
