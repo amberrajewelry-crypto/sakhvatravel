@@ -475,10 +475,22 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/ekskursiya/kvevri-vino-tur/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/kvevri-vino-tur/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/kvevri-vino-tur/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/ekskursiya/kvevri-vino-tur/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/ekskursiya/kvevri-vino-tur/"/>
     <lastmod>2026-07-09</lastmod>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/kvevri-vino-tur/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/kvevri-vino-tur/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/ekskursiya/kvevri-vino-tur/" />
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/ekskursiya/kvevri-vino-tur/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/kvevri-vino-tur/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/kvevri-vino-tur/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/ekskursiya/kvevri-vino-tur/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/ekskursiya/kvevri-vino-tur/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/ekskursiya/tur-svaneti-4-dnya/</loc>
@@ -1263,6 +1275,10 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/ekskursiya/kvevri-vino-tur/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/kvevri-vino-tur/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/kvevri-vino-tur/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/ekskursiya/kvevri-vino-tur/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/ekskursiya/kvevri-vino-tur/"/>
     <lastmod>2026-07-09</lastmod>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/kvevri-vino-tur/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/kvevri-vino-tur/" />
