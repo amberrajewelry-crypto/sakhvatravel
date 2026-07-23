@@ -18,7 +18,7 @@ BRANDS = {
     "Azimuth","Aeroflot","S7","Nordwind","Utair","Pobeda","AI","GPS","OK",
     "Slow","Armenia","Airbnb","Bolt","Skyscanner","Magti","Geocell","Beeline",
     "Ferrari","Formula","SIM","Go","RUB","Georgia","Tbilisi","Batumi","Kazbegi",
-    "VK","VKontakte","YouTube","UTC","GB","TBC","Bank","ALA","NQZ","Guda","Puris Sakhli","Puris","Sakhli","Uzbekistan Airways","UZ","Air Astana","BYN","Belavia","Lonely","Planet",
+    "VK","VKontakte","YouTube","UTC","GB","TBC","Bank","ALA","NQZ","Guda","Puris Sakhli","Puris","Sakhli","Fabrika","Idiot","Uzbekistan Airways","UZ","Air Astana","BYN","Belavia","Lonely","Planet",
     "vs","Bolt","Yandex.Go","Skyscanner","Threads","Mir","American","Express","Homo","erectus","georgicus",
     "FlyOne","Armenia Airlines","ASAN","Silknet","Cellfie","UFA","IATA","Ural","Rossiya","CEK","KZN","SVX","OVB","KUF","ROV","KRR","AER","MRV","NAL","OGZ","MCX","VOG","GSV","VOZ","PEE","TJM","GOJ","LED","STW","MSQ","EVN","TAS","DME","SVO","VKO","BQS",
 }
