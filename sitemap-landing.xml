@@ -1014,9 +1014,21 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/tury-v-gruziyu-iz-mahachkaly/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/tury-v-gruziyu-iz-mahachkaly/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/tours-from-makhachkala/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/tours-from-makhachkala/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/tury-v-gruziyu-iz-mahachkaly/"/>
     <lastmod>2026-07-14</lastmod>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/tury-v-gruziyu-iz-mahachkaly/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/tours-from-makhachkala/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/tury-v-gruziyu-iz-mahachkaly/"/>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/tours-from-makhachkala/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/tury-v-gruziyu-iz-mahachkaly/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/tours-from-makhachkala/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/tours-from-makhachkala/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/tury-v-gruziyu-iz-mahachkaly/"/>
   </url>
   <url>
@@ -1040,6 +1052,10 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/tours-from-makhachkala/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/tury-v-gruziyu-iz-mahachkaly/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/tours-from-makhachkala/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/tours-from-makhachkala/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/tury-v-gruziyu-iz-mahachkaly/"/>
     <lastmod>2026-07-14</lastmod>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/tury-v-gruziyu-iz-mahachkaly/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/tours-from-makhachkala/"/>
