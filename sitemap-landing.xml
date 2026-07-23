@@ -376,7 +376,19 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/maldives/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/maldives/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/maldives/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/maldives/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/maldives/"/>
     <lastmod>2026-07-09</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/maldives/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/maldives/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/maldives/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/maldives/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/maldives/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/vietnam/</loc>
@@ -396,7 +408,19 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/cyprus/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/cyprus/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/cyprus/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/cyprus/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/cyprus/"/>
     <lastmod>2026-07-09</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/cyprus/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/cyprus/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/cyprus/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/cyprus/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/cyprus/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/armenia/</loc>
@@ -480,6 +504,10 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/maldives/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/maldives/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/maldives/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/maldives/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/maldives/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
@@ -492,6 +520,10 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/cyprus/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/cyprus/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/cyprus/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/cyprus/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/cyprus/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
