@@ -214,10 +214,22 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/ekskursiya/ekskursiya-vardzia/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/ekskursiya-vardzia/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/ekskursiya-vardzia/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/ekskursiya/ekskursiya-vardzia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/ekskursiya/ekskursiya-vardzia/"/>
     <lastmod>2026-07-17</lastmod>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/ekskursiya-vardzia/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/ekskursiya-vardzia/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/ekskursiya/ekskursiya-vardzia/" />
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/ekskursiya/ekskursiya-vardzia/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/ekskursiya-vardzia/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/ekskursiya-vardzia/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/ekskursiya/ekskursiya-vardzia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/ekskursiya/ekskursiya-vardzia/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/ekskursiya/family-tur-tbilisi/</loc>
@@ -1218,6 +1230,10 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/ekskursiya/ekskursiya-vardzia/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/ekskursiya-vardzia/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/ekskursiya-vardzia/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/ekskursiya/ekskursiya-vardzia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/ekskursiya/ekskursiya-vardzia/"/>
     <lastmod>2026-07-17</lastmod>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/ekskursiya-vardzia/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/ekskursiya-vardzia/" />
