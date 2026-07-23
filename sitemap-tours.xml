@@ -193,10 +193,22 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/ekskursiya/fotosessiya-tbilisi/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/fotosessiya-tbilisi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/fotosessiya-tbilisi/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/ekskursiya/fotosessiya-tbilisi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/ekskursiya/fotosessiya-tbilisi/"/>
     <lastmod>2026-07-17</lastmod>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/fotosessiya-tbilisi/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/fotosessiya-tbilisi/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/ekskursiya/fotosessiya-tbilisi/" />
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/ekskursiya/fotosessiya-tbilisi/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/fotosessiya-tbilisi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/fotosessiya-tbilisi/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/ekskursiya/fotosessiya-tbilisi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/ekskursiya/fotosessiya-tbilisi/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/ekskursiya/nochnaya-ekskursiya-tbilisi/</loc>
@@ -851,6 +863,10 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/ekskursiya/fotosessiya-tbilisi/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/fotosessiya-tbilisi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/fotosessiya-tbilisi/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/ekskursiya/fotosessiya-tbilisi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/ekskursiya/fotosessiya-tbilisi/"/>
     <lastmod>2026-07-17</lastmod>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/fotosessiya-tbilisi/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/fotosessiya-tbilisi/" />
