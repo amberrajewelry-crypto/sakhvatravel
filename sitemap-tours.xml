@@ -582,10 +582,22 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/ekskursiya/transfer-aeroport-tbilisi/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/transfer-aeroport-tbilisi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/transfer-aeroport-tbilisi/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/ekskursiya/transfer-aeroport-tbilisi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/ekskursiya/transfer-aeroport-tbilisi/"/>
     <lastmod>2026-07-09</lastmod>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/transfer-aeroport-tbilisi/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/transfer-aeroport-tbilisi/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/ekskursiya/transfer-aeroport-tbilisi/" />
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/ekskursiya/transfer-aeroport-tbilisi/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/transfer-aeroport-tbilisi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/transfer-aeroport-tbilisi/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/ekskursiya/transfer-aeroport-tbilisi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/ekskursiya/transfer-aeroport-tbilisi/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/ekskursiya/tur-kutaisi-iz-tbilisi/</loc>
@@ -882,6 +894,10 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/ekskursiya/transfer-aeroport-tbilisi/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/transfer-aeroport-tbilisi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/transfer-aeroport-tbilisi/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/ekskursiya/transfer-aeroport-tbilisi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/ekskursiya/transfer-aeroport-tbilisi/"/>
     <lastmod>2026-07-09</lastmod>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/transfer-aeroport-tbilisi/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/transfer-aeroport-tbilisi/" />
