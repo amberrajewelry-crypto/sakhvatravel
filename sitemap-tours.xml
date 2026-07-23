@@ -447,10 +447,22 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/ekskursiya/ekskursiya-truso/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/ekskursiya-truso/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/ekskursiya-truso/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/ekskursiya/ekskursiya-truso/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/ekskursiya/ekskursiya-truso/"/>
     <lastmod>2026-07-17</lastmod>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/ekskursiya-truso/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/ekskursiya-truso/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/ekskursiya/ekskursiya-truso/" />
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/ekskursiya/ekskursiya-truso/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/ekskursiya-truso/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/ekskursiya-truso/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/ekskursiya/ekskursiya-truso/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/ekskursiya/ekskursiya-truso/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/ekskursiya/vinodelie-kindzmarauli/</loc>
@@ -880,6 +892,10 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/ekskursiya/ekskursiya-truso/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/ekskursiya-truso/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/ekskursiya-truso/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/ekskursiya/ekskursiya-truso/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/ekskursiya/ekskursiya-truso/"/>
     <lastmod>2026-07-17</lastmod>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/ekskursiya-truso/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/ekskursiya-truso/" />
