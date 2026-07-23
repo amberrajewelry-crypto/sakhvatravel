@@ -20,7 +20,7 @@ BRANDS = {
     "Ferrari","Formula","SIM","Go","RUB","Georgia","Tbilisi","Batumi","Kazbegi",
     "VK","VKontakte","YouTube","UTC","GB","TBC","Bank","Belavia","Lonely","Planet",
     "vs","Bolt","Yandex.Go","Skyscanner","Threads","Mir","American","Express","Homo","erectus","georgicus",
-    "ASAN","Silknet","Cellfie","UFA","IATA","Ural","Rossiya","CEK","KZN","SVX","OVB","KUF","ROV","KRR","AER","MRV","NAL","OGZ","MCX","VOG","GSV","VOZ","PEE","TJM","GOJ","LED","STW","MSQ","EVN","TAS","DME","SVO","VKO","BQS",
+    "FlyOne","Armenia Airlines","ASAN","Silknet","Cellfie","UFA","IATA","Ural","Rossiya","CEK","KZN","SVX","OVB","KUF","ROV","KRR","AER","MRV","NAL","OGZ","MCX","VOG","GSV","VOZ","PEE","TJM","GOJ","LED","STW","MSQ","EVN","TAS","DME","SVO","VKO","BQS",
 }
 ROMAN_RE = re.compile(r'^[IVXLCDM]{1,7}$')                    # римские цифры (века)
 # переключатель языков — коды остаются латиницей (это НЕ англ-остаток)
