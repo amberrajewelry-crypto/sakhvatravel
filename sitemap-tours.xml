@@ -210,10 +210,22 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/ekskursiya/degustatsiya-vina-kakheti/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/degustatsiya-vina-kakheti/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/degustatsiya-vina-kakheti/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/ekskursiya/degustatsiya-vina-kakheti/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/ekskursiya/degustatsiya-vina-kakheti/"/>
     <lastmod>2026-07-17</lastmod>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/degustatsiya-vina-kakheti/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/degustatsiya-vina-kakheti/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/ekskursiya/degustatsiya-vina-kakheti/" />
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/ekskursiya/degustatsiya-vina-kakheti/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/degustatsiya-vina-kakheti/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/degustatsiya-vina-kakheti/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/ekskursiya/degustatsiya-vina-kakheti/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/ekskursiya/degustatsiya-vina-kakheti/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/ekskursiya/ekskursiya-stary-tbilisi/</loc>
@@ -615,6 +627,10 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/ekskursiya/degustatsiya-vina-kakheti/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/degustatsiya-vina-kakheti/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/degustatsiya-vina-kakheti/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/ekskursiya/degustatsiya-vina-kakheti/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/ekskursiya/degustatsiya-vina-kakheti/"/>
     <lastmod>2026-07-17</lastmod>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/degustatsiya-vina-kakheti/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/degustatsiya-vina-kakheti/" />
