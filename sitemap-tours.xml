@@ -107,10 +107,22 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/ekskursiya/chacha-master-klass/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/chacha-master-klass/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/chacha-master-klass/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/ekskursiya/chacha-master-klass/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/ekskursiya/chacha-master-klass/"/>
     <lastmod>2026-07-09</lastmod>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/chacha-master-klass/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/chacha-master-klass/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/ekskursiya/chacha-master-klass/" />
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/ekskursiya/chacha-master-klass/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/chacha-master-klass/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/chacha-master-klass/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/ekskursiya/chacha-master-klass/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/ekskursiya/chacha-master-klass/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/ekskursiya/tur-dlya-pensionerov-gruziya/</loc>
@@ -529,6 +541,10 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/ekskursiya/chacha-master-klass/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/chacha-master-klass/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/chacha-master-klass/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/ekskursiya/chacha-master-klass/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/ekskursiya/chacha-master-klass/"/>
     <lastmod>2026-07-09</lastmod>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/chacha-master-klass/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/chacha-master-klass/" />
