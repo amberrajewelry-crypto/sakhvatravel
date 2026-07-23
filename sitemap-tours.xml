@@ -1000,11 +1000,23 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/ekskursiya/ekskursiya-dashbashi-iz-tbilisi/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/ekskursiya-dashbashi-iz-tbilisi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/ekskursiya-dashbashi-iz-tbilisi/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/ekskursiya/ekskursiya-dashbashi-iz-tbilisi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/ekskursiya/ekskursiya-dashbashi-iz-tbilisi/"/>
     <lastmod>2026-07-17</lastmod>
         <image:image><image:loc>https://sakhva-travel.com/images/dashbashi-canyon-tour.webp</image:loc><image:caption>Дашбаши — каньон и стеклянный мост, Грузия</image:caption></image:image>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/ekskursiya-dashbashi-iz-tbilisi/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/ekskursiya-dashbashi-iz-tbilisi/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/ekskursiya/ekskursiya-dashbashi-iz-tbilisi/" />
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/ekskursiya/ekskursiya-dashbashi-iz-tbilisi/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/ekskursiya-dashbashi-iz-tbilisi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/ekskursiya-dashbashi-iz-tbilisi/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/ekskursiya/ekskursiya-dashbashi-iz-tbilisi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/ekskursiya/ekskursiya-dashbashi-iz-tbilisi/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/ekskursiya/ekskursiya-kanyony-zapadnoy-gruzii/</loc>
@@ -1076,6 +1088,10 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/ekskursiya/ekskursiya-dashbashi-iz-tbilisi/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/ekskursiya-dashbashi-iz-tbilisi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/ekskursiya-dashbashi-iz-tbilisi/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/ekskursiya/ekskursiya-dashbashi-iz-tbilisi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/ekskursiya/ekskursiya-dashbashi-iz-tbilisi/"/>
     <lastmod>2026-07-17</lastmod>
         <image:image><image:loc>https://sakhva-travel.com/images/dashbashi-canyon-tour.webp</image:loc><image:caption>Дашбаши — каньон и стеклянный мост, Грузия</image:caption></image:image>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/ekskursiya-dashbashi-iz-tbilisi/" />
