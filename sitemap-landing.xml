@@ -72,9 +72,21 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/tury-v-gruziyu-iz-chelyabinska/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/tury-v-gruziyu-iz-chelyabinska/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/tours-from-chelyabinsk/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/tours-from-chelyabinsk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/tury-v-gruziyu-iz-chelyabinska/"/>
     <lastmod>2026-07-09</lastmod>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/tury-v-gruziyu-iz-chelyabinska/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/tours-from-chelyabinsk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/tury-v-gruziyu-iz-chelyabinska/"/>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/tours-from-chelyabinsk/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/tury-v-gruziyu-iz-chelyabinska/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/tours-from-chelyabinsk/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/tours-from-chelyabinsk/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/tury-v-gruziyu-iz-chelyabinska/"/>
   </url>
   <url>
@@ -249,6 +261,10 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/tours-from-chelyabinsk/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/tury-v-gruziyu-iz-chelyabinska/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/tours-from-chelyabinsk/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/tours-from-chelyabinsk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/tury-v-gruziyu-iz-chelyabinska/"/>
     <lastmod>2026-07-10</lastmod>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/tury-v-gruziyu-iz-chelyabinska/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/tours-from-chelyabinsk/"/>
