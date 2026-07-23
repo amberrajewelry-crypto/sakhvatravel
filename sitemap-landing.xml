@@ -772,9 +772,21 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/tury-v-gruziyu-iz-saratova/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/tury-v-gruziyu-iz-saratova/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/tours-from-saratov/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/tours-from-saratov/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/tury-v-gruziyu-iz-saratova/"/>
     <lastmod>2026-07-13</lastmod>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/tury-v-gruziyu-iz-saratova/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/tours-from-saratov/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/tury-v-gruziyu-iz-saratova/"/>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/tours-from-saratov/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/tury-v-gruziyu-iz-saratova/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/tours-from-saratov/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/tours-from-saratov/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/tury-v-gruziyu-iz-saratova/"/>
   </url>
   <url>
@@ -815,6 +827,10 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/tours-from-saratov/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/tury-v-gruziyu-iz-saratova/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/tours-from-saratov/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/tours-from-saratov/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/tury-v-gruziyu-iz-saratova/"/>
     <lastmod>2026-07-13</lastmod>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/tury-v-gruziyu-iz-saratova/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/tours-from-saratov/"/>
