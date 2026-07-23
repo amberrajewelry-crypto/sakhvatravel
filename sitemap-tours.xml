@@ -1116,11 +1116,23 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/ekskursiya/ekskursiya-kanyony-zapadnoy-gruzii/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/ekskursiya-kanyony-zapadnoy-gruzii/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/ekskursiya-kanyony-zapadnoy-gruzii/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/ekskursiya/ekskursiya-kanyony-zapadnoy-gruzii/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/ekskursiya/ekskursiya-kanyony-zapadnoy-gruzii/"/>
     <lastmod>2026-07-17</lastmod>
         <image:image><image:loc>https://sakhva-travel.com/images/kanyony-zapadnoy-gruzii-tour.webp</image:loc><image:caption>Каньоны Западной Грузии — Мартвили</image:caption></image:image>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/ekskursiya-kanyony-zapadnoy-gruzii/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/ekskursiya-kanyony-zapadnoy-gruzii/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/ekskursiya/ekskursiya-kanyony-zapadnoy-gruzii/" />
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/ekskursiya/ekskursiya-kanyony-zapadnoy-gruzii/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/ekskursiya-kanyony-zapadnoy-gruzii/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/ekskursiya-kanyony-zapadnoy-gruzii/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/ekskursiya/ekskursiya-kanyony-zapadnoy-gruzii/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/ekskursiya/ekskursiya-kanyony-zapadnoy-gruzii/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/ekskursiya/ekskursiya-racha-iz-tbilisi/</loc>
@@ -1256,6 +1268,10 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/ekskursiya/ekskursiya-kanyony-zapadnoy-gruzii/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/ekskursiya-kanyony-zapadnoy-gruzii/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/ekskursiya-kanyony-zapadnoy-gruzii/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/ekskursiya/ekskursiya-kanyony-zapadnoy-gruzii/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/ekskursiya/ekskursiya-kanyony-zapadnoy-gruzii/"/>
     <lastmod>2026-07-17</lastmod>
         <image:image><image:loc>https://sakhva-travel.com/images/kanyony-zapadnoy-gruzii-tour.webp</image:loc><image:caption>Каньоны Западной Грузии — Мартвили</image:caption></image:image>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/ekskursiya-kanyony-zapadnoy-gruzii/" />
