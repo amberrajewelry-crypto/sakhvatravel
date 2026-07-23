@@ -28,7 +28,7 @@ SWITCHER = {"RU","EN","GE","KA"}
 BRAND_RE = re.compile(r'\b(' + '|'.join(sorted(map(re.escape, BRANDS), key=len, reverse=True)) + r')\b')
 # ЯВНЫЙ список авторов отзывов (латиница-транслит остаётся). Ломкий regex-матч
 # «[A-Z][a-z]+» глотал англ. UI-лейблы (Contact/Crypto/Pay Online) как «имена».
-AUTHORS = {"Amovei","Giorgi V.","Mikhail D","Mikhail D.","Nugo Shengelia",
+AUTHORS = {"Amovei","Giorgi V.","Mikhail D","Mikhail D.","Nugo Shengelia","Nugo S.",
            "Tigran M.","Vitaly","Vladislav S.","Sergey","Amber R","Elena","Vitaliy"}
 CYR = re.compile(r'[а-яА-ЯёЁ]')                                # русский
 LAT = re.compile(r'[A-Za-z]{2,}')                             # английский
