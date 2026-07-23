@@ -62,7 +62,8 @@ BRAND_RE = re.compile(r'\b(SAKHVA|TRAVEL|Sakhva|Timur|NOWPayments|WhatsApp|Teleg
     r'Bitcoin|Ethereum|FAQ|Viator|Tripster|Avatar|Ali|Nino|Jason|David|Constantine|'
     r'Bagrat|Trajan|Matthias|Andrey Krasnov|Wikipedia|Turkish Airlines|flydubai|'
     r'Georgian Airways|Pegasus|Aeroflot|Travel|Emirates|Red Wings|Azimuth|Nordwind|'
-    r'Utair|Pobeda|FlyArystan|SCAT|Airways|Georgian)\b')
+    r'Utair|Pobeda|FlyArystan|SCAT|Airways|Georgian|Turkish|RUB|UFA|Bolt|'
+    r'Magti|Geocell|Beeline|Silknet|Cellfie|ASAN|Airbnb|Mir|TBC|Bank)\b')
 # латиница-имена авторов отзывов (транслит, остаются латиницей — не остаток)
 NAME_RE = re.compile(r'^[A-Z][a-z]+( [A-Z][a-z]*\.?)?$')
 

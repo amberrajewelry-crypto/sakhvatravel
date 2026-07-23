@@ -61,7 +61,10 @@ def run():
         if m and re.search(r'[Ⴀ-ჿ]', m.group(1)):
             pilots.append(get_quad(h))
     print(f"пилотов: {len(pilots)}")
-    for ru, en, ka in sorted(pilots):
+    for ru, en, ka in sorted(pilots, key=lambda t: t[2] or ""):
+        if not ka or not ru or not en:
+            print(f"\n⏭ пропуск (неполная квадра ru={ru} en={en} ka={ka})")
+            continue
         print(f"\n{ka}")
         for lang, url in (("ru", ru), ("en", en)):
             done = False
