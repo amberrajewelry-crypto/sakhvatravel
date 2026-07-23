@@ -1124,11 +1124,23 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/ekskursiya/ekskursiya-racha-iz-tbilisi/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/ekskursiya-racha-iz-tbilisi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/ekskursiya-racha-iz-tbilisi/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/ekskursiya/ekskursiya-racha-iz-tbilisi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/ekskursiya/ekskursiya-racha-iz-tbilisi/"/>
     <lastmod>2026-07-17</lastmod>
         <image:image><image:loc>https://sakhva-travel.com/images/racha-tur-nikortsminda.webp</image:loc><image:caption>Рача — храм Никорцминда, Грузия</image:caption></image:image>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/ekskursiya-racha-iz-tbilisi/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/ekskursiya-racha-iz-tbilisi/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/ekskursiya/ekskursiya-racha-iz-tbilisi/" />
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/ekskursiya/ekskursiya-racha-iz-tbilisi/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/ekskursiya-racha-iz-tbilisi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/ekskursiya-racha-iz-tbilisi/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/ekskursiya/ekskursiya-racha-iz-tbilisi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/ekskursiya/ekskursiya-racha-iz-tbilisi/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/ekskursiya/ekskursiya-hevsuretia-shatili/</loc>
@@ -1252,6 +1264,10 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/ekskursiya/ekskursiya-racha-iz-tbilisi/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/ekskursiya-racha-iz-tbilisi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/ekskursiya-racha-iz-tbilisi/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/ekskursiya/ekskursiya-racha-iz-tbilisi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/ekskursiya/ekskursiya-racha-iz-tbilisi/"/>
     <lastmod>2026-07-17</lastmod>
         <image:image><image:loc>https://sakhva-travel.com/images/racha-tur-nikortsminda.webp</image:loc><image:caption>Рача — храм Никорцминда, Грузия</image:caption></image:image>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/ekskursiya-racha-iz-tbilisi/" />
