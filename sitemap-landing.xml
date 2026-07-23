@@ -170,9 +170,21 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/tury-v-gruziyu-iz-vladikavkaza/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/tury-v-gruziyu-iz-vladikavkaza/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/tours-from-vladikavkaz/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/tours-from-vladikavkaz/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/tury-v-gruziyu-iz-vladikavkaza/"/>
     <lastmod>2026-07-10</lastmod>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/tury-v-gruziyu-iz-vladikavkaza/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/tours-from-vladikavkaz/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/tury-v-gruziyu-iz-vladikavkaza/"/>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/tours-from-vladikavkaz/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/tury-v-gruziyu-iz-vladikavkaza/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/tours-from-vladikavkaz/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/tours-from-vladikavkaz/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/tury-v-gruziyu-iz-vladikavkaza/"/>
   </url>
   <url>
@@ -460,6 +472,10 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/tours-from-vladikavkaz/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/tury-v-gruziyu-iz-vladikavkaza/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/tours-from-vladikavkaz/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/tours-from-vladikavkaz/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/tury-v-gruziyu-iz-vladikavkaza/"/>
     <lastmod>2026-07-10</lastmod>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/tury-v-gruziyu-iz-vladikavkaza/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/tours-from-vladikavkaz/"/>
