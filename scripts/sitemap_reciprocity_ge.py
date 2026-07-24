@@ -39,10 +39,11 @@ def find_url_block(txt, loc_url):
     return (s, e, txt[s:e])
 
 def inject_alts(block, ru, en, ka):
-    if 'hreflang="ka"' in block:
-        return block, False
-    # вставить альтернативы после </loc>
-    return re.sub(r'(</loc>)', r'\1' + alts(ru, en, ka), block, count=1), True
+    # сначала удалить ВСЕ существующие xhtml:link (включая легаси-набор без ka),
+    # затем вставить единый чистый набор ru/en/ka/x-default. Идемпотентно.
+    cleaned = re.sub(r'\n\s*<xhtml:link[^>]*/>', '', block)
+    new = re.sub(r'(</loc>)', r'\1' + alts(ru, en, ka), cleaned, count=1)
+    return new, (new != block)
 
 def get_quad(ge_html):
     def hl(l):
