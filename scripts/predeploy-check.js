@@ -75,8 +75,10 @@ function checkHTML(filePath) {
     const title = (html.match(/<title>(.*?)<\/title>/s)||[,''])[1];
     /[Ⴀ-ჿ]/.test(title) ? ok('GE: <title> на грузинском')
       : warn('GE: <title> без груз. вязи — возможно не переведён');
-    /hreflang="ru"/.test(html) && /hreflang="en"/.test(html)
-      ? ok('GE: квадра hreflang ru+en+ka') : err('GE: неполная квадра hreflang');
+    const _hasRu = /hreflang="ru"/.test(html), _hasEn = /hreflang="en"/.test(html);
+    if (_hasRu && _hasEn) ok('GE: квадра hreflang ru+en+ka');
+    else if (_hasEn) warn('GE: hreflang en+ka без ru — кластер EN+GE (нет RU-двойника), проверь намеренность');
+    else err('GE: неполная квадра hreflang (нет en)');
   }
 
   // 5. Проверка мёртвых CSS классов (определены но не используются в HTML)

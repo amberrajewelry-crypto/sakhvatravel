@@ -61,6 +61,14 @@
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
+    <loc>https://sakhva-travel.com/ge/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/" />
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/" />
+    <lastmod>2026-07-24</lastmod>
+  </url>
+  <url>
     <loc>https://sakhva-travel.com/en/about/</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/about/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/about/" />
@@ -78,7 +86,17 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/private-guide-tbilisi/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/private-guide-tbilisi/" />
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/private-guide-tbilisi/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/en/private-guide-tbilisi/" />
     <lastmod>2026-07-09</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/private-guide-tbilisi/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/private-guide-tbilisi/" />
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/private-guide-tbilisi/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/en/private-guide-tbilisi/" />
+    <lastmod>2026-07-24</lastmod>
   </url>
   <url>
     <loc>https://sakhva-travel.com/gornye-tury-gruzia/</loc>
