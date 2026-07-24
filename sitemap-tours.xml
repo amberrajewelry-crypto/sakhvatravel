@@ -342,10 +342,19 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/ekskursiya/tur-vsya-gruziya/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/tur-vsya-gruziya/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/tur-vsya-gruziya/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/ekskursiya/tur-vsya-gruziya/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/ekskursiya/tur-vsya-gruziya/"/>
     <lastmod>2026-07-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/tur-vsya-gruziya/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/tur-vsya-gruziya/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/ekskursiya/tur-vsya-gruziya/" />
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/ekskursiya/tur-vsya-gruziya/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/tur-vsya-gruziya/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/tur-vsya-gruziya/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/ekskursiya/tur-vsya-gruziya/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/ekskursiya/tur-vsya-gruziya/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/ekskursiya/tur-gruziya-10-dney/</loc>
@@ -963,10 +972,11 @@
     </url>
   <url>
     <loc>https://sakhva-travel.com/en/ekskursiya/tur-vsya-gruziya/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/tur-vsya-gruziya/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/tur-vsya-gruziya/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/ekskursiya/tur-vsya-gruziya/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/ekskursiya/tur-vsya-gruziya/"/>
     <lastmod>2026-07-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/tur-vsya-gruziya/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/ekskursiya/tur-vsya-gruziya/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/ekskursiya/tur-vsya-gruziya/" />
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/ekskursiya/gastronomicheskiy-tur-tbilisi/</loc>
