@@ -2,7 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://sakhva-travel.com/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/"/>
     <lastmod>2026-07-09</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/blog/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/rayony-tbilisi-gde-ostanovitsya/</loc>
@@ -10,11 +22,35 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/tury-v-gori-2026/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/tury-v-gori-2026/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/gori-uplistsikhe-guide/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/gori-uplistsikhe-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/tury-v-gori-2026/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
+    <loc>https://sakhva-travel.com/ge/blog/gori-uplistsikhe-guide/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/tury-v-gori-2026/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/gori-uplistsikhe-guide/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/gori-uplistsikhe-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/tury-v-gori-2026/"/>
+  </url>
+  <url>
     <loc>https://sakhva-travel.com/blog/vardzia/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/vardzia/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/vardzia-cave-monastery/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/vardzia-cave-monastery/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/vardzia/"/>
     <lastmod>2026-07-09</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/blog/vardzia-cave-monastery/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/vardzia/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/vardzia-cave-monastery/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/vardzia-cave-monastery/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/vardzia/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/tbilisi-za-3-dnya/</loc>
@@ -22,15 +58,51 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/gruziya-zimoy/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/gruziya-zimoy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/georgia-in-winter/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/georgia-in-winter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/gruziya-zimoy/"/>
     <lastmod>2026-07-09</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/blog/georgia-in-winter/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/gruziya-zimoy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/georgia-in-winter/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/georgia-in-winter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/gruziya-zimoy/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/tury-v-batumi-2026/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/tury-v-batumi-2026/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/batumi-complete-guide/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/batumi-complete-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/tury-v-batumi-2026/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
+    <loc>https://sakhva-travel.com/ge/blog/batumi-complete-guide/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/tury-v-batumi-2026/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/batumi-complete-guide/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/batumi-complete-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/tury-v-batumi-2026/"/>
+  </url>
+  <url>
     <loc>https://sakhva-travel.com/blog/gruzinskoe-vino-gid/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/gruzinskoe-vino-gid/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/georgian-ღვინო-guide/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/georgian-ღვინო-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/gruzinskoe-vino-gid/"/>
     <lastmod>2026-07-09</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/blog/georgian-ღვინო-guide/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/gruzinskoe-vino-gid/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/georgian-ღვინო-guide/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/georgian-ღვინო-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/gruzinskoe-vino-gid/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/kazbegi-iz-tbilisi-2026/</loc>
@@ -42,15 +114,51 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/kakheti-osenyu/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/kakheti-osenyu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/kakheti-in-autumn/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/kakheti-in-autumn/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/kakheti-osenyu/"/>
     <lastmod>2026-07-09</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/blog/kakheti-in-autumn/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/kakheti-osenyu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/kakheti-in-autumn/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/kakheti-in-autumn/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/kakheti-osenyu/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/gruziya-7-dney/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/gruziya-7-dney/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/georgia-7-day-itinerary/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/georgia-7-day-itinerary/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/gruziya-7-dney/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
+    <loc>https://sakhva-travel.com/ge/blog/georgia-7-day-itinerary/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/gruziya-7-dney/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/georgia-7-day-itinerary/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/georgia-7-day-itinerary/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/gruziya-7-dney/"/>
+  </url>
+  <url>
     <loc>https://sakhva-travel.com/blog/strahovka-v-gruziyu/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/strahovka-v-gruziyu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/travel-insurance-georgia-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/travel-insurance-georgia-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/strahovka-v-gruziyu/"/>
     <lastmod>2026-07-09</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/blog/travel-insurance-georgia-2026/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/strahovka-v-gruziyu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/travel-insurance-georgia-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/travel-insurance-georgia-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/strahovka-v-gruziyu/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/svyaz-i-internet-v-gruzii/</loc>
@@ -70,11 +178,35 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/david-gareji/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/david-gareji/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/david-gareja-monastery/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/david-gareja-monastery/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/david-gareji/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
+    <loc>https://sakhva-travel.com/ge/blog/david-gareja-monastery/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/david-gareji/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/david-gareja-monastery/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/david-gareja-monastery/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/david-gareji/"/>
+  </url>
+  <url>
     <loc>https://sakhva-travel.com/blog/tury-v-borzhomi-2026/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/tury-v-borzhomi-2026/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/borjomi-complete-guide/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/borjomi-complete-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/tury-v-borzhomi-2026/"/>
     <lastmod>2026-07-09</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/blog/borjomi-complete-guide/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/tury-v-borzhomi-2026/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/borjomi-complete-guide/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/borjomi-complete-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/tury-v-borzhomi-2026/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/tbilisskoe-ozero/</loc>
@@ -82,7 +214,19 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/degustatsiya-vina-gruziya/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/degustatsiya-vina-gruziya/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/kakheti-ღვინო-ტური/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/kakheti-ღვინო-ტური/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/degustatsiya-vina-gruziya/"/>
     <lastmod>2026-07-09</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/blog/kakheti-ღვინო-ტური/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/degustatsiya-vina-gruziya/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/kakheti-ღვინო-ტური/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/kakheti-ღვინო-ტური/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/degustatsiya-vina-gruziya/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/tbilisi-fotolokatsii/</loc>
@@ -90,7 +234,19 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/kogda-ekhat-v-kazbegi/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/kogda-ekhat-v-kazbegi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/best-time-visit-kazbegi/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/best-time-visit-kazbegi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/kogda-ekhat-v-kazbegi/"/>
     <lastmod>2026-07-09</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/blog/best-time-visit-kazbegi/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/kogda-ekhat-v-kazbegi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/best-time-visit-kazbegi/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/best-time-visit-kazbegi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/kogda-ekhat-v-kazbegi/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/batumi-iz-tbilisi/</loc>
@@ -98,7 +254,19 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/skolko-stoit-otdyh-v-gruzii/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/skolko-stoit-otdyh-v-gruzii/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/georgia-trip-cost/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/georgia-trip-cost/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/skolko-stoit-otdyh-v-gruzii/"/>
     <lastmod>2026-07-09</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/blog/georgia-trip-cost/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/skolko-stoit-otdyh-v-gruzii/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/georgia-trip-cost/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/georgia-trip-cost/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/skolko-stoit-otdyh-v-gruzii/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/gid-tbilisi-vs-gid-gruziya/</loc>
@@ -110,7 +278,19 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/kazbegi-zimoy/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/kazbegi-zimoy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/kazbegi-in-winter/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/kazbegi-in-winter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/kazbegi-zimoy/"/>
     <lastmod>2026-07-09</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/blog/kazbegi-in-winter/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/kazbegi-zimoy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/kazbegi-in-winter/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/kazbegi-in-winter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/kazbegi-zimoy/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/stamba-tbilisi/</loc>
@@ -126,7 +306,19 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/gruziya-s-detmi/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/gruziya-s-detmi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/georgia-with-kids/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/georgia-with-kids/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/gruziya-s-detmi/"/>
     <lastmod>2026-07-09</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/blog/georgia-with-kids/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/gruziya-s-detmi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/georgia-with-kids/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/georgia-with-kids/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/gruziya-s-detmi/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/skolko-stoit-gid-tbilisi/</loc>
@@ -134,11 +326,35 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/tury-v-kazbegi-2026/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/tury-v-kazbegi-2026/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/kazbegi-complete-guide/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/kazbegi-complete-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/tury-v-kazbegi-2026/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
+    <loc>https://sakhva-travel.com/ge/blog/kazbegi-complete-guide/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/tury-v-kazbegi-2026/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/kazbegi-complete-guide/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/kazbegi-complete-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/tury-v-kazbegi-2026/"/>
+  </url>
+  <url>
     <loc>https://sakhva-travel.com/blog/uplistsikhe/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/uplistsikhe/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/uplistsikhe-cave-city/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/uplistsikhe-cave-city/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/uplistsikhe/"/>
     <lastmod>2026-07-09</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/blog/uplistsikhe-cave-city/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/uplistsikhe/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/uplistsikhe-cave-city/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/uplistsikhe-cave-city/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/uplistsikhe/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/oshibki-turistov-tbilisi/</loc>
@@ -154,7 +370,19 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/gruziya-perviy-raz/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/gruziya-perviy-raz/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/georgia-პირველი-time-tips/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/georgia-პირველი-time-tips/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/gruziya-perviy-raz/"/>
     <lastmod>2026-07-09</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/blog/georgia-პირველი-time-tips/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/gruziya-perviy-raz/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/georgia-პირველი-time-tips/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/georgia-პირველი-time-tips/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/gruziya-perviy-raz/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/restorany-tbilisi/</loc>
@@ -162,7 +390,19 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/viza-v-gruziyu-2026/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/viza-v-gruziyu-2026/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/georgia-visa-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/georgia-visa-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/viza-v-gruziyu-2026/"/>
     <lastmod>2026-07-09</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/blog/georgia-visa-2026/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/viza-v-gruziyu-2026/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/georgia-visa-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/georgia-visa-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/viza-v-gruziyu-2026/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/chastny-gid-ili-gruppa-tbilisi/</loc>
@@ -174,7 +414,19 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/voenno-gruzinskaya-doroga/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/voenno-gruzinskaya-doroga/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/georgian-military-highway/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/georgian-military-highway/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/voenno-gruzinskaya-doroga/"/>
     <lastmod>2026-07-09</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/blog/georgian-military-highway/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/voenno-gruzinskaya-doroga/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/georgian-military-highway/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/georgian-military-highway/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/voenno-gruzinskaya-doroga/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/russkoyazychny-gid-tbilisi/</loc>
@@ -182,7 +434,19 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/tury-v-kakheti-2026/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/tury-v-kakheti-2026/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/kakheti-complete-guide/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/kakheti-complete-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/tury-v-kakheti-2026/"/>
     <lastmod>2026-07-09</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/blog/kakheti-complete-guide/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/tury-v-kakheti-2026/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/kakheti-complete-guide/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/kakheti-complete-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/tury-v-kakheti-2026/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/mtskheta-iz-tbilisi/</loc>
@@ -194,7 +458,19 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/ushchelye-truso/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/ushchelye-truso/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/truso-valley-hike/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/truso-valley-hike/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/ushchelye-truso/"/>
     <lastmod>2026-07-09</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/blog/truso-valley-hike/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/ushchelye-truso/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/truso-valley-hike/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/truso-valley-hike/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/ushchelye-truso/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/tbilisi-dlya-relokantov/</loc>
@@ -218,7 +494,19 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/zagranpasport-v-gruziyu/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/zagranpasport-v-gruziyu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/georgia-passport-requirements/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/georgia-passport-requirements/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/zagranpasport-v-gruziyu/"/>
     <lastmod>2026-07-09</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/blog/georgia-passport-requirements/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/zagranpasport-v-gruziyu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/georgia-passport-requirements/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/georgia-passport-requirements/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/zagranpasport-v-gruziyu/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/tbilisi-besplatno/</loc>
@@ -234,6 +522,10 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/blog/batumi-complete-guide/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/tury-v-batumi-2026/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/batumi-complete-guide/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/batumi-complete-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/tury-v-batumi-2026/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
@@ -242,6 +534,10 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/blog/kakheti-complete-guide/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/tury-v-kakheti-2026/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/kakheti-complete-guide/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/kakheti-complete-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/tury-v-kakheti-2026/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
@@ -250,6 +546,10 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/blog/gori-uplistsikhe-guide/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/tury-v-gori-2026/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/gori-uplistsikhe-guide/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/gori-uplistsikhe-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/tury-v-gori-2026/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
@@ -270,6 +570,10 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/blog/georgia-in-may/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/gruziya-v-mae/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/georgia-in-may/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/georgia-in-may/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/gruziya-v-mae/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
@@ -278,10 +582,18 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/blog/georgia-visa-2026/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/viza-v-gruziyu-2026/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/georgia-visa-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/georgia-visa-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/viza-v-gruziyu-2026/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/blog/best-time-visit-georgia/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/gruziya-kogda-ekhat/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/best-time-visit-georgia/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/best-time-visit-georgia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/gruziya-kogda-ekhat/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
@@ -298,14 +610,26 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/blog/georgia-guide-or-solo/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/gruziya-samostoyatelno-ili-s-gidom/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/georgia-guide-or-solo/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/georgia-guide-or-solo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/gruziya-samostoyatelno-ili-s-gidom/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/blog/what-to-buy-in-georgia/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/chto-privezti-iz-gruzii/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/what-to-buy-in-georgia/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/what-to-buy-in-georgia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/chto-privezti-iz-gruzii/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/blog/kazbegi-complete-guide/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/tury-v-kazbegi-2026/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/kazbegi-complete-guide/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/kazbegi-complete-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/tury-v-kazbegi-2026/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
@@ -334,7 +658,19 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/kazbegi-ili-kakheti/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/kazbegi-ili-kakheti/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/kazbegi-vs-kakheti/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/kazbegi-vs-kakheti/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/kazbegi-ili-kakheti/"/>
     <lastmod>2026-07-09</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/blog/kazbegi-vs-kakheti/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/kazbegi-ili-kakheti/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/kazbegi-vs-kakheti/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/kazbegi-vs-kakheti/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/kazbegi-ili-kakheti/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/khinkali-gruzinskie/</loc>
@@ -346,7 +682,19 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/gruziya-samostoyatelno-ili-s-gidom/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/gruziya-samostoyatelno-ili-s-gidom/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/georgia-guide-or-solo/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/georgia-guide-or-solo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/gruziya-samostoyatelno-ili-s-gidom/"/>
     <lastmod>2026-07-09</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/blog/georgia-guide-or-solo/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/gruziya-samostoyatelno-ili-s-gidom/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/georgia-guide-or-solo/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/georgia-guide-or-solo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/gruziya-samostoyatelno-ili-s-gidom/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/arenda-avto-tbilisi/</loc>
@@ -354,15 +702,43 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/arenda-avto-gruziya/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/arenda-avto-gruziya/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/car-rental-georgia/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/car-rental-georgia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/arenda-avto-gruziya/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
+    <loc>https://sakhva-travel.com/ge/blog/car-rental-georgia/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/arenda-avto-gruziya/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/car-rental-georgia/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/car-rental-georgia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/arenda-avto-gruziya/"/>
+  </url>
+  <url>
     <loc>https://sakhva-travel.com/en/blog/car-rental-georgia/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/arenda-avto-gruziya/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/car-rental-georgia/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/car-rental-georgia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/arenda-avto-gruziya/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/kakheti-za-1-den/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/kakheti-za-1-den/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/kakheti-one-day-trip/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/kakheti-one-day-trip/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/kakheti-za-1-den/"/>
     <lastmod>2026-07-09</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/blog/kakheti-one-day-trip/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/kakheti-za-1-den/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/kakheti-one-day-trip/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/kakheti-one-day-trip/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/kakheti-za-1-den/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/oteli-tbilisi/</loc>
@@ -382,7 +758,19 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/chto-privezti-iz-gruzii/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/chto-privezti-iz-gruzii/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/what-to-buy-in-georgia/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/what-to-buy-in-georgia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/chto-privezti-iz-gruzii/"/>
     <lastmod>2026-07-09</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/blog/what-to-buy-in-georgia/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/chto-privezti-iz-gruzii/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/what-to-buy-in-georgia/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/what-to-buy-in-georgia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/chto-privezti-iz-gruzii/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/chto-podarit-iz-tbilisi/</loc>
@@ -394,7 +782,19 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/gruzinskaya-kukhnya-chto-poprobovat/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/gruzinskaya-kukhnya-chto-poprobovat/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/georgian-food-guide/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/georgian-food-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/gruzinskaya-kukhnya-chto-poprobovat/"/>
     <lastmod>2026-07-09</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/blog/georgian-food-guide/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/gruzinskaya-kukhnya-chto-poprobovat/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/georgian-food-guide/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/georgian-food-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/gruzinskaya-kukhnya-chto-poprobovat/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/arenda-kvartiry-tbilisi/</loc>
@@ -402,7 +802,19 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/gruziya-kogda-ekhat/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/gruziya-kogda-ekhat/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/best-time-visit-georgia/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/best-time-visit-georgia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/gruziya-kogda-ekhat/"/>
     <lastmod>2026-07-09</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/blog/best-time-visit-georgia/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/gruziya-kogda-ekhat/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/best-time-visit-georgia/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/best-time-visit-georgia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/gruziya-kogda-ekhat/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/sovetskiy-tbilisi/</loc>
@@ -414,11 +826,35 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/gruziya-v-sentyabre/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/gruziya-v-sentyabre/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/georgia-in-september/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/georgia-in-september/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/gruziya-v-sentyabre/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
+    <loc>https://sakhva-travel.com/ge/blog/georgia-in-september/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/gruziya-v-sentyabre/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/georgia-in-september/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/georgia-in-september/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/gruziya-v-sentyabre/"/>
+  </url>
+  <url>
     <loc>https://sakhva-travel.com/blog/chacha-gruzinskaya/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/chacha-gruzinskaya/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/chacha-georgian-brდაy/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/chacha-georgian-brდაy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/chacha-gruzinskaya/"/>
     <lastmod>2026-07-09</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/blog/chacha-georgian-brდაy/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/chacha-gruzinskaya/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/chacha-georgian-brდაy/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/chacha-georgian-brდაy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/chacha-gruzinskaya/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/metro-tbilisi/</loc>
@@ -430,7 +866,19 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/gruziya-v-mae/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/gruziya-v-mae/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/georgia-in-may/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/georgia-in-may/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/gruziya-v-mae/"/>
     <lastmod>2026-07-09</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/blog/georgia-in-may/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/gruziya-v-mae/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/georgia-in-may/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/georgia-in-may/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/gruziya-v-mae/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/blog/private-guide-cost-tbilisi/</loc>
@@ -486,6 +934,10 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/blog/kazbegi-vs-kakheti/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/kazbegi-ili-kakheti/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/kazbegi-vs-kakheti/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/kazbegi-vs-kakheti/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/kazbegi-ili-kakheti/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
@@ -498,6 +950,10 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/blog/truso-valley-hike/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/ushchelye-truso/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/truso-valley-hike/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/truso-valley-hike/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/ushchelye-truso/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
@@ -510,10 +966,18 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/blog/uplistsikhe-cave-city/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/uplistsikhe/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/uplistsikhe-cave-city/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/uplistsikhe-cave-city/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/uplistsikhe/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/blog/kazbegi-in-winter/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/kazbegi-zimoy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/kazbegi-in-winter/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/kazbegi-in-winter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/kazbegi-zimoy/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
@@ -522,6 +986,10 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/blog/georgia-trip-cost/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/skolko-stoit-otdyh-v-gruzii/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/georgia-trip-cost/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/georgia-trip-cost/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/skolko-stoit-otdyh-v-gruzii/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
@@ -542,10 +1010,18 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/blog/georgian-military-highway/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/voenno-gruzinskaya-doroga/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/georgian-military-highway/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/georgian-military-highway/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/voenno-gruzinskaya-doroga/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/blog/vardzia-cave-monastery/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/vardzia/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/vardzia-cave-monastery/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/vardzia-cave-monastery/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/vardzia/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
@@ -562,6 +1038,10 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/blog/best-time-visit-kazbegi/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/kogda-ekhat-v-kazbegi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/best-time-visit-kazbegi/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/best-time-visit-kazbegi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/kogda-ekhat-v-kazbegi/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
@@ -574,6 +1054,10 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/blog/georgian-food-guide/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/gruzinskaya-kukhnya-chto-poprobovat/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/georgian-food-guide/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/georgian-food-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/gruzinskaya-kukhnya-chto-poprobovat/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
@@ -582,6 +1066,10 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/blog/david-gareja-monastery/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/david-gareji/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/david-gareja-monastery/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/david-gareja-monastery/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/david-gareji/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
@@ -590,10 +1078,18 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/blog/georgia-in-winter/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/gruziya-zimoy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/georgia-in-winter/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/georgia-in-winter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/gruziya-zimoy/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/blog/georgia-7-day-itinerary/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/gruziya-7-dney/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/georgia-7-day-itinerary/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/georgia-7-day-itinerary/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/gruziya-7-dney/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
@@ -602,10 +1098,18 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/blog/kakheti-one-day-trip/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/kakheti-za-1-den/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/kakheti-one-day-trip/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/kakheti-one-day-trip/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/kakheti-za-1-den/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/blog/kakheti-in-autumn/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/kakheti-osenyu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/kakheti-in-autumn/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/kakheti-in-autumn/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/kakheti-osenyu/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
@@ -622,6 +1126,10 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
@@ -642,6 +1150,10 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/blog/georgia-with-kids/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/gruziya-s-detmi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/georgia-with-kids/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/georgia-with-kids/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/gruziya-s-detmi/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
@@ -650,6 +1162,10 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/blog/borjomi-complete-guide/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/tury-v-borzhomi-2026/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/borjomi-complete-guide/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/borjomi-complete-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/tury-v-borzhomi-2026/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
@@ -670,14 +1186,26 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/blog/georgia-in-september/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/gruziya-v-sentyabre/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/georgia-in-september/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/georgia-in-september/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/gruziya-v-sentyabre/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/blog/kutaisi-day-trip/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/kutaisi-iz-თბილიsi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/kutaisi-day-trip/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/kutaisi-day-trip/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/kutaisi-iz-თბილიsi/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/blog/travel-insurance-georgia-2026/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/strahovka-v-gruziyu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/travel-insurance-georgia-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/travel-insurance-georgia-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/strahovka-v-gruziyu/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
@@ -686,6 +1214,10 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/blog/georgia-passport-requirements/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/zagranpasport-v-gruziyu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/georgia-passport-requirements/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/georgia-passport-requirements/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/zagranpasport-v-gruziyu/"/>
     <lastmod>2026-07-09</lastmod>
   </url>
   <url>
@@ -750,7 +1282,19 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/ureki-plyazh/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/ureki-plyazh/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/ureki-beach/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/ureki-beach/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/ureki-plyazh/"/>
     <lastmod>2026-07-12</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/blog/ureki-beach/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/ureki-plyazh/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/ureki-beach/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/ureki-beach/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/ureki-plyazh/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/kanyon-martvili/</loc>
@@ -762,6 +1306,10 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/blog/ureki-beach/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/ureki-plyazh/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/ureki-beach/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/ureki-beach/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/ureki-plyazh/"/>
     <lastmod>2026-07-12</lastmod>
   </url>
   <url>
@@ -770,26 +1318,74 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/gruzinskiy-alfavit/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/gruzinskiy-alfavit/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/georgian-alphabet/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/georgian-alphabet/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/gruzinskiy-alfavit/"/>
     <lastmod>2026-07-15</lastmod>
   </url>
   <url>
+    <loc>https://sakhva-travel.com/ge/blog/georgian-alphabet/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/gruzinskiy-alfavit/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/georgian-alphabet/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/georgian-alphabet/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/gruzinskiy-alfavit/"/>
+  </url>
+  <url>
     <loc>https://sakhva-travel.com/en/blog/georgian-alphabet/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/gruzinskiy-alfavit/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/georgian-alphabet/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/georgian-alphabet/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/gruzinskiy-alfavit/"/>
     <lastmod>2026-07-15</lastmod>
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/gruzinskie-tosty/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/gruzinskie-tosty/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/georgian-toasts/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/georgian-toasts/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/gruzinskie-tosty/"/>
     <lastmod>2026-07-15</lastmod>
   </url>
   <url>
+    <loc>https://sakhva-travel.com/ge/blog/georgian-toasts/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/gruzinskie-tosty/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/georgian-toasts/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/georgian-toasts/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/gruzinskie-tosty/"/>
+  </url>
+  <url>
     <loc>https://sakhva-travel.com/en/blog/georgian-toasts/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/gruzinskie-tosty/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/georgian-toasts/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/georgian-toasts/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/gruzinskie-tosty/"/>
     <lastmod>2026-07-15</lastmod>
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/chernoe-more-gruzii/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/chernoe-more-gruzii/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/black-sea-georgia/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/black-sea-georgia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/chernoe-more-gruzii/"/>
     <lastmod>2026-07-15</lastmod>
   </url>
   <url>
+    <loc>https://sakhva-travel.com/ge/blog/black-sea-georgia/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/chernoe-more-gruzii/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/black-sea-georgia/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/black-sea-georgia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/chernoe-more-gruzii/"/>
+  </url>
+  <url>
     <loc>https://sakhva-travel.com/en/blog/black-sea-georgia/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/chernoe-more-gruzii/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/black-sea-georgia/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/black-sea-georgia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/chernoe-more-gruzii/"/>
     <lastmod>2026-07-15</lastmod>
   </url>
   <url>
@@ -810,7 +1406,19 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/gruzinskie-frazy/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/gruzinskie-frazy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/georgian-phrases-ტურიists/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/georgian-phrases-ტურიists/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/gruzinskie-frazy/"/>
     <lastmod>2026-07-18</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/blog/georgian-phrases-ტურიists/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/gruzinskie-frazy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/georgian-phrases-ტურიists/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/georgian-phrases-ტურიists/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/gruzinskie-frazy/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/chaevye-v-gruzii/</loc>
@@ -822,7 +1430,19 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/gruzinskie-sladosti/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/gruzinskie-sladosti/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/georgian-sweets-desserts/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/georgian-sweets-desserts/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/gruzinskie-sladosti/"/>
     <lastmod>2026-07-18</lastmod>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/blog/georgian-sweets-desserts/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/gruzinskie-sladosti/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/georgian-sweets-desserts/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/georgian-sweets-desserts/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/gruzinskie-sladosti/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/karty-nalichnye-gruziya/</loc>
@@ -834,6 +1454,10 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/blog/tipping-in-georgia/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/cჰაეvye-v-gruzii/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/tipping-in-georgia/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/tipping-in-georgia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/cჰაეvye-v-gruzii/"/>
     <lastmod>2026-07-18</lastmod>
   </url>
   <url>
@@ -842,6 +1466,10 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/blog/georgian-sweets-desserts/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/gruzinskie-sladosti/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/georgian-sweets-desserts/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/georgian-sweets-desserts/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/gruzinskie-sladosti/"/>
     <lastmod>2026-07-18</lastmod>
   </url>
   <url>

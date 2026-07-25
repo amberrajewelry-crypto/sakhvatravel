@@ -444,10 +444,26 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/about/saba/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/about/saba/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/about/saba/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/about/saba/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/about/saba/"/>
     <lastmod>2026-07-16</lastmod>
   </url>
   <url>
+    <loc>https://sakhva-travel.com/ge/about/saba/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/about/saba/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/about/saba/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/about/saba/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/about/saba/"/>
+  </url>
+  <url>
     <loc>https://sakhva-travel.com/en/about/saba/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/about/saba/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/about/saba/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/about/saba/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/about/saba/"/>
     <lastmod>2026-07-16</lastmod>
   </url>
   <url>

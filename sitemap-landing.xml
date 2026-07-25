@@ -936,4 +936,28 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/tury-v-gruziyu-iz-stavropolya/"/>
     <lastmod>2026-07-14</lastmod>
     </url>
+  <url>
+    <loc>https://sakhva-travel.com/partners/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/partners/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/partners/en/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/partners/ge/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/partners/"/>
+    <lastmod>2026-07-24</lastmod>
+    </url>
+  <url>
+    <loc>https://sakhva-travel.com/partners/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/partners/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/partners/en/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/partners/ge/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/partners/"/>
+    <lastmod>2026-07-24</lastmod>
+    </url>
+  <url>
+    <loc>https://sakhva-travel.com/partners/ge/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/partners/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/partners/en/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/partners/ge/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/partners/"/>
+    <lastmod>2026-07-24</lastmod>
+    </url>
 </urlset>
