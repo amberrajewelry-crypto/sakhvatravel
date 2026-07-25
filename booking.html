@@ -464,6 +464,14 @@ function isRangeEnd(dateStr) {
   return diff === days - 1;
 }
 
+// Russian plural helper: plur(1,'место','места','мест')
+function plur(n, one, few, many) {
+  var n10 = n % 10, n100 = n % 100;
+  if (n10 === 1 && n100 !== 11) return one;
+  if (n10 >= 2 && n10 <= 4 && (n100 < 10 || n100 >= 20)) return few;
+  return many;
+}
+
 // Get spot info for a specific date
 function getDateStatus(dateStr) {
   var tourId = getSelectedTourId();
@@ -473,21 +481,21 @@ function getDateStatus(dateStr) {
     if (s.date === dateStr) {
       // If tour filter matches or no tour selected
       if (!tourId || (s.tour && s.tour.toLowerCase().indexOf(tourId.replace(/-/g,' ').substring(0,8)) !== -1)) {
-        if (s.spotsLeft <= 0) return { status: 'full', spots: 0 };
-        if (s.spotsLeft <= 2) return { status: 'few', spots: s.spotsLeft };
-        return { status: 'avail', spots: s.spotsLeft };
+        if (s.spotsLeft <= 0) return { status: 'full', spots: 0, source: 'group' };
+        if (s.spotsLeft <= 2) return { status: 'few', spots: s.spotsLeft, source: 'group' };
+        return { status: 'avail', spots: s.spotsLeft, source: 'group' };
       }
     }
   }
   // Check spots endpoint
   if (tourId && calSpots[tourId] && calSpots[tourId][dateStr] !== undefined) {
     var left = calSpots[tourId][dateStr];
-    if (left <= 0) return { status: 'full', spots: 0 };
-    if (left <= 2) return { status: 'few', spots: left };
-    return { status: 'avail', spots: left };
+    if (left <= 0) return { status: 'full', spots: 0, source: 'group' };
+    if (left <= 2) return { status: 'few', spots: left, source: 'group' };
+    return { status: 'avail', spots: left, source: 'group' };
   }
   // Default: all future dates available (private tours, flexible schedule)
-  return { status: 'avail', spots: 7 };
+  return { status: 'avail', spots: 7, source: 'individual' };
 }
 
 function renderCalendar() {
@@ -552,7 +560,21 @@ function calSelect(dateStr, day) {
   }
   info.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16A34A" stroke-width="2" style="vertical-align:middle;margin-right:4px"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>' + dateText;
   var status = getDateStatus(dateStr);
-  if (status.spots > 0 && status.spots < 7) info.innerHTML += ' · <span style="color:#D97706">осталось ' + status.spots + ' мест</span>';
+  var availLine = '';
+  if (status.source === 'group') {
+    // Scheduled group departure — clarify remaining seats in the shared group
+    if (status.status === 'full') {
+      availLine = '<span style="color:#DC2626">Группа на эту дату заполнена — оформим индивидуальный тур</span>';
+    } else if (status.status === 'few') {
+      availLine = '<span style="color:#D97706">В сборной группе осталось ' + status.spots + ' ' + plur(status.spots, 'место','места','мест') + ' — бронируйте, пока есть</span>';
+    } else {
+      availLine = '<span style="color:#16A34A">В сборной группе есть места (' + status.spots + ')</span>';
+    }
+  } else {
+    // No scheduled group — flexible private/individual tour
+    availLine = '<span style="color:#16A34A">Свободно для индивидуального тура — подтвердим удобное время</span>';
+  }
+  info.innerHTML += '<div style="font-weight:600;margin-top:4px">' + availLine + '</div>';
   info.style.display = 'block';
   // Show time slots
   document.getElementById('time-slots').style.display = 'block';

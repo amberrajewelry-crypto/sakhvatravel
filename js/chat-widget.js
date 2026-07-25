@@ -5,6 +5,15 @@
 (function() {
   'use strict';
 
+  // Detect UI language. On /en/ pages <html lang="en"> is set server-side.
+  // On the homepage the EN switch (main.js setLang) only writes localStorage['lang']
+  // without touching <html lang>, so fall back to it.
+  function curLang() {
+    if (document.documentElement.lang === 'en') return 'en';
+    try { if (localStorage.getItem('lang') === 'en') return 'en'; } catch (e) {}
+    return 'ru';
+  }
+
   const CFG = {
     api: '/api/chat/',
     name: 'Sakhva-AI',
@@ -200,7 +209,7 @@
       els.send.classList.toggle('off', !els.input.value.trim());
     });
     els.send.classList.add('off');
-    if (document.documentElement.lang === 'en') {
+    if (curLang() === 'en') {
       els.input.placeholder = 'Type your message...';
     }
     // Fix mobile keyboard: scroll chat and adjust position
@@ -248,7 +257,7 @@
 
   function showGreeting() {
     const tourSlug = detectTourContext();
-    const isEN = document.documentElement.lang === 'en';
+    const isEN = curLang() === 'en';
     const greeting = tourSlug
       ? (isEN ? 'Hi! I see you\'re looking at this tour. Want to know details, available dates, or book it?' : 'Привет! Вижу вы смотрите этот тур. Хотите узнать подробности, свободные даты или забронировать?')
       : (isEN ? 'Hi! I\'m Sakhva-AI, I\'ll help you find the perfect tour in Georgia in 30 seconds. Tell me briefly \u2014 who\'s traveling, how many days, and what do you want to see?' : CFG.greeting);
@@ -405,7 +414,7 @@ ${b.discount_percent ? `<div class="sc-booking-row"><span>Скидка</span><sp
           history: history.slice(-10),
           sessionId,
           page: currentPage,
-          lang: document.documentElement.lang || 'ru'
+          lang: curLang()
         })
       });
 

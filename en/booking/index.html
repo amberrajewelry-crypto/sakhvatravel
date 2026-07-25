@@ -424,21 +424,21 @@ function getDateStatus(dateStr) {
     if (s.date === dateStr) {
       // If tour filter matches or no tour selected
       if (!tourId || (s.tour && s.tour.toLowerCase().indexOf(tourId.replace(/-/g,' ').substring(0,8)) !== -1)) {
-        if (s.spotsLeft <= 0) return { status: 'full', spots: 0 };
-        if (s.spotsLeft <= 2) return { status: 'few', spots: s.spotsLeft };
-        return { status: 'avail', spots: s.spotsLeft };
+        if (s.spotsLeft <= 0) return { status: 'full', spots: 0, source: 'group' };
+        if (s.spotsLeft <= 2) return { status: 'few', spots: s.spotsLeft, source: 'group' };
+        return { status: 'avail', spots: s.spotsLeft, source: 'group' };
       }
     }
   }
   // Check spots endpoint
   if (tourId && calSpots[tourId] && calSpots[tourId][dateStr] !== undefined) {
     var left = calSpots[tourId][dateStr];
-    if (left <= 0) return { status: 'full', spots: 0 };
-    if (left <= 2) return { status: 'few', spots: left };
-    return { status: 'avail', spots: left };
+    if (left <= 0) return { status: 'full', spots: 0, source: 'group' };
+    if (left <= 2) return { status: 'few', spots: left, source: 'group' };
+    return { status: 'avail', spots: left, source: 'group' };
   }
   // Default: all future dates available (private tours, flexible schedule)
-  return { status: 'avail', spots: 7 };
+  return { status: 'avail', spots: 7, source: 'individual' };
 }
 
 function renderCalendar() {
@@ -494,7 +494,21 @@ function calSelect(dateStr, day) {
   info.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16A34A" stroke-width="2" style="vertical-align:middle;margin-right:4px"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>' +
     day + ' ' + monthNames[dt.getMonth()] + ', ' + dayNames[dt.getDay()];
   var status = getDateStatus(dateStr);
-  if (status.spots > 0 && status.spots < 7) info.innerHTML += ' · <span style="color:#D97706">only ' + status.spots + ' spots left</span>';
+  var availLine = '';
+  if (status.source === 'group') {
+    // Scheduled group departure — clarify remaining seats in the shared group
+    if (status.status === 'full') {
+      availLine = '<span style="color:#DC2626">This group is full — we\'ll arrange a private tour</span>';
+    } else if (status.status === 'few') {
+      availLine = '<span style="color:#D97706">Only ' + status.spots + ' ' + (status.spots === 1 ? 'spot' : 'spots') + ' left in the group — book while available</span>';
+    } else {
+      availLine = '<span style="color:#16A34A">Spots available in the group (' + status.spots + ')</span>';
+    }
+  } else {
+    // No scheduled group — flexible private/individual tour
+    availLine = '<span style="color:#16A34A">Available for a private tour — we\'ll confirm a convenient time</span>';
+  }
+  info.innerHTML += '<div style="font-weight:600;margin-top:4px">' + availLine + '</div>';
   info.style.display = 'block';
   updatePrice();
 }
