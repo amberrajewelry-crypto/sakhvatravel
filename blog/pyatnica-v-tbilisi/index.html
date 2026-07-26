@@ -197,6 +197,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 </div>
 <button aria-label="Меню" class="burger" id="burger"><span></span><span></span><span></span></button>
 </nav>
+<main>
 <div class="drawer" id="drawer">
 <a href="/#tours" onclick="closeDrawer()">Туры</a>
 <a href="/#guide" onclick="closeDrawer()">О нас</a>
@@ -407,5 +408,6 @@ function sendContact(){var name=document.getElementById('cm-name').value.trim();
 (function(){var b=document.getElementById('burger'),d=document.getElementById('drawer');window.closeDrawer=function(){if(d){d.classList.remove('on')}if(b){b.classList.remove('on')}document.body.style.overflow=''};if(b&&d){b.addEventListener('click',function(){var o=d.classList.toggle('on');b.classList.toggle('on');document.body.style.overflow=o?'hidden':''})}})();
 </script>
 <script defer="" src="/js/chat-widget.js?v=34"></script>
+</main>
 </body>
 </html>
