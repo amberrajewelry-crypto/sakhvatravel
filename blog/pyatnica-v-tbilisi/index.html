@@ -81,13 +81,13 @@ ul{list-style:none}
 .drawer a:hover{color:#1A3D2E}
 .drawer .d-btn{margin-top:20px;background:#1A3D2E;color:#fff;text-align:center;padding:15px;border-radius:9999px;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
 .article-hero{background:#1F2937;padding:52px clamp(16px,3.5vw,56px) 48px;color:#fff}
-.breadcrumb{font-size:13px;color:rgba(255,255,255,.5);margin-bottom:16px;display:flex;align-items:center;gap:8px;min-height:44px;flex-wrap:wrap}
+.breadcrumb{font-size:13px;color:rgba(255,255,255,.8);margin-bottom:16px;display:flex;align-items:center;gap:8px;min-height:44px;flex-wrap:wrap}
 .breadcrumb a{color:rgba(255,255,255,.5);transition:color .2s;padding:4px 0;min-height:44px;display:inline-flex;align-items:center}
 .breadcrumb a:hover{color:#fff}
 .breadcrumb span{color:rgba(255,255,255,.3)}
 .article-label{font-size:10px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:#60A5FA;margin-bottom:12px}
 .article-h1{font-size:clamp(26px,3.5vw,46px);font-weight:700;line-height:1.15;margin-bottom:14px}
-.article-meta{font-size:12px;color:rgba(255,255,255,.45);display:flex;gap:16px;flex-wrap:wrap}
+.article-meta{font-size:12px;color:rgba(255,255,255,.8);display:flex;gap:16px;flex-wrap:wrap}
 .article-wrap{max-width:760px;margin:0 auto;padding:52px clamp(16px,3.5vw,32px)}
 .article-toc{background:#F0FDF4;border:1px solid #BFDBFE;border-radius:12px;padding:24px 28px;margin-bottom:40px}
 .article-toc .toc-hd{font-size:14px;font-weight:700;color:#1A3D2E;margin-bottom:12px;text-transform:uppercase;letter-spacing:.1em}
@@ -113,7 +113,7 @@ ul{list-style:none}
 .price-table tr:nth-child(even) td{background:#F9FAFB}
 .article-cta{background:#1F2937;border-radius:16px;padding:32px 28px;margin:40px 0;text-align:center}
 .article-cta h3{font-size:22px;font-weight:700;color:#fff;margin-bottom:8px}
-.article-cta p{font-size:13px;color:rgba(255,255,255,.5);margin-bottom:20px}
+.article-cta p{font-size:13px;color:rgba(255,255,255,.85);margin-bottom:20px}
 .related{padding:48px clamp(16px,3.5vw,56px);background:#F9FAFB}
 .related h2{font-size:22px;font-weight:700;color:#111827;margin-bottom:28px;max-width:760px;margin-left:auto;margin-right:auto}
 .related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:760px;margin:0 auto}
@@ -210,7 +210,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 </div>
 <a class="d-btn" href="/booking/">Забронировать онлайн</a>
 </div>
-<div id="content-ru">
+<div id="content-ru" role="main">
 <header class="article-hero">
 <div class="breadcrumb">
 <a href="/">Главная</a><span>/</span>
@@ -280,7 +280,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <li><strong>Хинкали</strong> — но не как основное, а в дополнение; берут по 5–7 штук на человека.</li>
 <li><strong>Саперави или ркацители</strong> — красное и белое; попросите домашнее (вино из квеври), если есть.</li>
 </ul>
-<p>Где именно ужинать в пятницу, я подробно разбираю в отдельном гиде по <a href="/blog/restorany-tbilisi/">ресторанам Тбилиси</a> — с конкретными адресами и ценами. А если хочется не просто поужинать, а понять грузинскую кухню с проводником — есть <a href="/ekskursiya/gastronomicheskiy-tur-tbilisi/" style="color:#16A34A;font-weight:600">гастрономический тур с дегустацией вина</a>: дегустация, рынок, домашнее застолье и марани (винный погреб).</p>
+<p>Где именно ужинать в пятницу, я подробно разбираю в отдельном гиде по <a href="/blog/restorany-tbilisi/">ресторанам Тбилиси</a> — с конкретными адресами и ценами. А если хочется не просто поужинать, а понять грузинскую кухню с проводником — есть <a href="/ekskursiya/gastronomicheskiy-tur-tbilisi/" style="color:#15803D;font-weight:600">гастрономический тур с дегустацией вина</a>: дегустация, рынок, домашнее застолье и марани (винный погреб).</p>
 
 <h2 id="bary-muzyka">Бары и живая музыка (22:00–00:00)</h2>
 <p>После ужина пятница ещё не заканчивается — наоборот, выходит на второе дыхание. Между застольем и клубом есть промежуток, который тбилисцы заполняют барами с живой музыкой и винотеками.</p>
@@ -292,7 +292,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <h2 id="klubnaya-noch">Клубная ночь: пятница и суббота</h2>
 <p>Вот здесь пятница раскрывается полностью. Главные техно-клубы Тбилиси — <strong>Bassiani</strong>, <strong>Khidi</strong>, <strong>Mtkvarze</strong>, <strong>Left Bank</strong> — работают именно по пятницам и субботам. В будни они почти всегда закрыты, так что пятничная ночь — один из двух шансов в неделю попасть на одну из лучших рейв-сцен Европы.</p>
 <p>Ночь здесь начинается поздно: приходить раньше часа ночи смысла нет, пик — с трёх утра до рассвета. Фейс-контроль серьёзный, съёмка запрещена, а атмосфера построена на уважении к пространству. Вход обычно стоит 30–60 лари в зависимости от лайнапа. Пятница чуть спокойнее субботы и проще для первого раза — толпа меньше, а попасть внутрь легче. Это не туристический аттракцион, а живая субкультура — и относиться к ней стоит соответственно.</p>
-<p>Я написал отдельный подробный разбор: какой клуб выбрать для первого раза, как пройти фейс-контроль Bassiani, сколько стоит вход и куда идти на афтепати. Всё это — в гиде <a href="/blog/kluby-tbilisi/">клубы Тбилиси и техно-сцена</a>. Если же хочется обзорно пройти вечерний город с проводником, прежде чем нырять в ночь, есть <a href="/ekskursiya/nochnaya-ekskursiya-tbilisi/" style="color:#16A34A;font-weight:600">ночная экскурсия по Тбилиси</a> — она про атмосферу вечернего города, а в клуб вы идёте уже сами, подготовленными.</p>
+<p>Я написал отдельный подробный разбор: какой клуб выбрать для первого раза, как пройти фейс-контроль Bassiani, сколько стоит вход и куда идти на афтепати. Всё это — в гиде <a href="/blog/kluby-tbilisi/">клубы Тбилиси и техно-сцена</a>. Если же хочется обзорно пройти вечерний город с проводником, прежде чем нырять в ночь, есть <a href="/ekskursiya/nochnaya-ekskursiya-tbilisi/" style="color:#15803D;font-weight:600">ночная экскурсия по Тбилиси</a> — она про атмосферу вечернего города, а в клуб вы идёте уже сами, подготовленными.</p>
 
 <h2 id="bez-klubov">Если клубы не для вас</h2>
 <p>Техно-марафон до полудня — не единственный сценарий пятницы. Многие гости (и я сам в спокойном настроении) выбирают другой финал вечера:</p>
@@ -341,9 +341,9 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <div style="background:#F0FDF4;border-left:4px solid #16A34A;border-radius:12px;padding:20px 24px;margin:32px auto;max-width:760px">
 <p style="font-size:16px;font-weight:700;color:#111827;margin-bottom:8px">Вечерние экскурсии по Тбилиси</p>
 <p style="font-size:14px;color:#374151;line-height:1.6;margin:0">
-<a href="/ekskursiya/nochnaya-ekskursiya-tbilisi/" style="color:#16A34A;font-weight:600">Ночная экскурсия по Тбилиси</a> ·
-    <a href="/ekskursiya/gastronomicheskiy-tur-tbilisi/" style="color:#16A34A;font-weight:600">Гастрономический тур</a> ·
-    <a href="/ekskursiya/ekskursiya-stary-tbilisi/" style="color:#16A34A;font-weight:600">Пешая экскурсия</a>
+<a href="/ekskursiya/nochnaya-ekskursiya-tbilisi/" style="color:#15803D;font-weight:600">Ночная экскурсия по Тбилиси</a> ·
+    <a href="/ekskursiya/gastronomicheskiy-tur-tbilisi/" style="color:#15803D;font-weight:600">Гастрономический тур</a> ·
+    <a href="/ekskursiya/ekskursiya-stary-tbilisi/" style="color:#15803D;font-weight:600">Пешая экскурсия</a>
 </p>
 </div>
 <div style="background:#F0FDF4;border-left:4px solid #1A3D2E;border-radius:12px;padding:20px 24px;margin:32px auto;max-width:760px">
@@ -372,7 +372,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <div aria-modal="true" id="contact-modal" role="dialog" style="display:none;position:fixed;inset:0;z-index:10000;align-items:center;justify-content:center;padding:20px">
 <div onclick="closeContact()" style="position:absolute;inset:0;background:rgba(0,0,0,.6);backdrop-filter:blur(4px)"></div>
 <div style="position:relative;background:#fff;border-radius:20px;padding:36px 32px;width:100%;max-width:480px;z-index:1">
-<button aria-label="Закрыть" onclick="closeContact()" style="position:absolute;top:12px;right:16px;background:none;border:none;font-size:24px;color:#9CA3AF;cursor:pointer">×</button>
+<button aria-label="Закрыть" onclick="closeContact()" style="position:absolute;top:12px;right:16px;background:none;border:none;font-size:24px;color:#6B7280;cursor:pointer">×</button>
 <div style="font-size:22px;font-weight:800;color:#111;margin-bottom:4px">Забронировать экскурсию</div>
 <div style="font-size:14px;color:#6B7280;margin-bottom:20px">Оставьте контакт — Тимур свяжется с вами</div>
 <div id="cm-form">

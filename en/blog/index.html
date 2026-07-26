@@ -42,7 +42,7 @@ s.onload=function(){gtag('js',new Date());gtag('config','G-3X83YZHY6S');gtag('co
 if('requestIdleCallback' in window){requestIdleCallback(function(){document.head.appendChild(s)},{timeout:3000})}
 else{setTimeout(function(){document.head.appendChild(s)},2000)}})();
 </script>
-<style>
+<style>.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{font-family:'Lora',Georgia,serif;color:#111827;background:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased}
@@ -194,7 +194,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 
 <div class="blog-wrap">
 
-  <div class="blog-grid" id="blogGrid">
+  <h2 class="sr-only">Blog articles</h2><div class="blog-grid" id="blogGrid">
 
     <a href="/en/blog/gifts-from-tbilisi/" class="bc">
       <div class="bc-img">

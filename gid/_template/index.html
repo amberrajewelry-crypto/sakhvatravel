@@ -44,7 +44,7 @@ body{font-family:'Lora',Georgia,serif;background:#fff;color:#1a3d2e;min-height:1
 .hero{display:grid;grid-template-columns:280px 1fr;gap:32px;max-width:1000px;margin:0 auto;padding:88px 24px 0;align-items:start}
 .hero-photo{width:100%;border-radius:18px;object-fit:cover;aspect-ratio:4/5;background:#f3f4f6}
 .hero-name{font-size:clamp(28px,4vw,40px);font-weight:700;color:#111;margin-bottom:4px}
-.hero-role{font-size:14px;color:#F59E0B;font-weight:600;margin-bottom:14px}
+.hero-role{font-size:14px;color:#B45309;font-weight:600;margin-bottom:14px}
 .hero-meta{display:flex;flex-wrap:wrap;gap:16px;font-size:14px;color:#6B7280;margin-bottom:18px}
 .hero-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
 .hero-tag{font-size:13px;color:#374151;background:#F3F4F6;border-radius:8px;padding:6px 12px}
@@ -53,8 +53,8 @@ body{font-family:'Lora',Georgia,serif;background:#fff;color:#1a3d2e;min-height:1
 .cta-secondary{display:inline-block;background:#fff;color:#1A3D2E;border:1px solid #1A3D2E;padding:12px 26px;border-radius:9999px;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;text-decoration:none}
 .bio{max-width:760px;margin:40px auto 0;padding:0 24px;font-size:15px;line-height:1.75;color:#374151}
 .bio h2{font-size:clamp(22px,3vw,28px);font-weight:700;color:#111;margin-bottom:14px}
-footer{background:#1a3d2e;color:#9CA3AF;text-align:center;padding:24px 20px;font-size:13px;margin-top:48px}
-footer a{color:#34E0A1;text-decoration:none}
+footer{background:#1a3d2e;color:#B7C3BD;text-align:center;padding:24px 20px;font-size:13px;margin-top:48px}
+footer a{color:#34E0A1;text-decoration:underline}
 @media(max-width:680px){.hero{grid-template-columns:1fr}.hero-photo{max-width:260px}}
 </style>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}</script>
@@ -92,7 +92,7 @@ footer a{color:#34E0A1;text-decoration:none}
     <h1 class="hero-name">{{NAME}}</h1>
     <div class="hero-role">{{ROLE}}</div>
     <div class="hero-meta">
-      <span><span style="color:#F59E0B">★</span> {{RATING}} ({{REVIEWS_COUNT}} отзывов)</span>
+      <span><span style="color:#B45309">★</span> {{RATING}} ({{REVIEWS_COUNT}} отзывов)</span>
       <span>{{TOURS_COUNT}} проведённых туров</span>
       <span>Опыт {{EXPERIENCE_YEARS}} года</span>
       <span>{{LANGS}}</span>

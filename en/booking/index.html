@@ -24,7 +24,7 @@
 <meta name="twitter:description" content="Book a private tour in Georgia online. 10% prepayment, free cancellation 24h before. Visa, Mastercard accepted.">
 <meta name="twitter:image" content="https://sakhva-travel.com/images/og-cover.jpg">
 <link rel="stylesheet" href="/fonts/lora.css">
-<style>
+<style>.footer-mini p a{text-decoration:underline;text-underline-offset:2px}
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 html{background:#f9fafb;scroll-behavior:smooth}
 body{font-family:'Lora',Georgia,serif;color:#111827;-webkit-font-smoothing:antialiased}
@@ -62,10 +62,10 @@ h1{font-size:clamp(26px,4vw,36px);font-weight:600;color:#111827;letter-spacing:-
 .btn-pay:disabled{background:#9CA3AF;cursor:not-allowed}
 .secure{display:flex;align-items:center;justify-content:center;gap:6px;margin-top:16px;font-size:12px;color:#6B7280}
 .secure svg{width:14px;height:14px;stroke:#16A34A;fill:none;stroke-width:2}
-.trust-badges{display:flex;align-items:center;justify-content:center;gap:20px;margin-top:24px;padding-top:20px;border-top:1px solid #E5E7EB;font-size:12px;color:#9CA3AF}
-.footer-mini{text-align:center;padding:32px 24px;font-size:12px;color:#9CA3AF}
+.trust-badges{display:flex;align-items:center;justify-content:center;gap:20px;margin-top:24px;padding-top:20px;border-top:1px solid #E5E7EB;font-size:12px;color:#6B7280}
+.footer-mini{text-align:center;padding:32px 24px;font-size:12px;color:#6B7280}
 .footer-mini a{color:#6B7280;text-decoration:none}
-.price-old{text-decoration:line-through;color:#9CA3AF;font-size:14px;font-weight:400}
+.price-old{text-decoration:line-through;color:#6B7280;font-size:14px;font-weight:400}
 .price-badge{display:inline-block;background:#FEF3C7;color:#92400E;font-size:11px;font-weight:700;padding:2px 8px;border-radius:6px;margin-left:8px}
 .urgency-inline{display:flex;align-items:center;gap:6px;font-size:13px;color:#d97706;font-weight:600;margin-top:6px}
 .urgency-dot{width:7px;height:7px;background:#d97706;border-radius:50%;animation:pulse-d 2s ease-in-out infinite}
@@ -87,12 +87,12 @@ h1{font-size:clamp(26px,4vw,36px);font-weight:600;color:#111827;letter-spacing:-
 .cal-day.full{color:#EF4444;text-decoration:line-through;pointer-events:none;background:#FEF2F2}
 .cal-day.selected{background:#1A3D2E!important;color:#fff!important;font-weight:700;border-radius:10px;box-shadow:0 2px 8px rgba(26,61,46,.3)}
 .cal-day .cal-spots{position:absolute;bottom:2px;left:50%;transform:translateX(-50%);font-size:8px;font-weight:700;white-space:nowrap}
-.cal-day.avail .cal-spots{color:#16A34A}
+.cal-day.avail .cal-spots{color:#15803D}
 .cal-day.few .cal-spots{color:#D97706}
 .cal-legend{display:flex;align-items:center;justify-content:center;gap:16px;padding:10px;border-top:1px solid #E5E7EB;font-size:11px;color:#6B7280}
 .cal-legend span{display:flex;align-items:center;gap:4px}
 .cal-legend i{width:10px;height:10px;border-radius:3px;display:inline-block}
-.cal-loading{text-align:center;padding:40px;font-size:13px;color:#9CA3AF}
+.cal-loading{text-align:center;padding:40px;font-size:13px;color:#6B7280}
 #mobile-sticky{display:none;position:fixed;bottom:0;left:0;right:0;z-index:899;background:rgba(255,255,255,.97);backdrop-filter:blur(12px);border-top:1px solid #e5e7eb;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));align-items:center;justify-content:space-between;gap:12px}
 #mobile-sticky .ms-price{font-size:18px;font-weight:700;color:#1A3D2E}
 #mobile-sticky .ms-sub{font-size:11px;color:#6B7280}
@@ -136,7 +136,7 @@ h1{font-size:clamp(26px,4vw,36px);font-weight:600;color:#111827;letter-spacing:-
       <div style="font-size:13px;color:#6B7280">Guiding in Georgia since 2023 · Reply in 15 min</div>
     </div>
     <div style="margin-left:auto;display:flex;align-items:center;gap:4px;background:#F0FDF4;padding:4px 10px;border-radius:8px;flex-shrink:0">
-      <span style="color:#F59E0B;font-size:14px">&#9733;</span>
+      <span style="color:#B45309;font-size:14px">&#9733;</span>
       <span style="font-size:13px;font-weight:700;color:#1A3D2E">4.9</span>
     </div>
   </div>
@@ -282,7 +282,7 @@ h1{font-size:clamp(26px,4vw,36px);font-weight:600;color:#111827;letter-spacing:-
         <div class="ps-row"><span class="ps-label">Direct price from guide <span class="price-badge" id="ps-discount-badge"></span></span><span class="ps-value" id="ps-total-price" style="color:#1A3D2E"></span></div>
         <div class="ps-row" style="border-top:1px solid #C8E6C9;padding-top:10px;margin-top:4px"><span class="ps-label" id="ps-prepay-label" style="font-weight:700">Prepayment (10%)</span><span class="ps-value ps-total" id="ps-prepay"></span></div>
         <p class="ps-note" id="ps-note-text">Balance paid to the guide on the tour day, in cash or by card</p>
-        <p style="font-size:11px;color:#16A34A;margin-top:6px;display:flex;align-items:center;gap:4px"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#16A34A" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> No marketplace fees — directly from the guide</p>
+        <p style="font-size:11px;color:#15803D;margin-top:6px;display:flex;align-items:center;gap:4px"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#16A34A" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> No marketplace fees — directly from the guide</p>
       </div>
 
       <!-- OFERTA ACCEPT -->
@@ -357,19 +357,19 @@ h1{font-size:clamp(26px,4vw,36px);font-weight:600;color:#111827;letter-spacing:-
   <h2 style="font-size:20px;font-weight:600;color:#111827;text-align:center;margin-bottom:20px">FAQ</h2>
   <div style="display:flex;flex-direction:column;gap:8px">
     <details style="background:#fff;border-radius:12px;border:1px solid #E5E7EB;padding:16px 20px">
-      <summary style="font-size:14px;font-weight:700;color:#111827;cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between">Why 10% prepayment?<span style="color:#9CA3AF;font-size:18px;transition:transform .2s">+</span></summary>
+      <summary style="font-size:14px;font-weight:700;color:#111827;cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between">Why 10% prepayment?<span style="color:#6B7280;font-size:18px;transition:transform .2s">+</span></summary>
       <p style="font-size:14px;color:#6B7280;line-height:1.6;margin:12px 0 0">The prepayment secures your date and guarantees Timur will reserve your spot. The remaining 90% you pay to the guide on tour day — cash or card, your choice.</p>
     </details>
     <details style="background:#fff;border-radius:12px;border:1px solid #E5E7EB;padding:16px 20px">
-      <summary style="font-size:14px;font-weight:700;color:#111827;cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between">Can I cancel?<span style="color:#9CA3AF;font-size:18px;transition:transform .2s">+</span></summary>
+      <summary style="font-size:14px;font-weight:700;color:#111827;cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between">Can I cancel?<span style="color:#6B7280;font-size:18px;transition:transform .2s">+</span></summary>
       <p style="font-size:14px;color:#6B7280;line-height:1.6;margin:12px 0 0">Yes, free cancellation 24 hours before the tour with full prepayment refund. Just message Timur on WhatsApp.</p>
     </details>
     <details style="background:#fff;border-radius:12px;border:1px solid #E5E7EB;padding:16px 20px">
-      <summary style="font-size:14px;font-weight:700;color:#111827;cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between">Why cheaper than marketplaces?<span style="color:#9CA3AF;font-size:18px;transition:transform .2s">+</span></summary>
+      <summary style="font-size:14px;font-weight:700;color:#111827;cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between">Why cheaper than marketplaces?<span style="color:#6B7280;font-size:18px;transition:transform .2s">+</span></summary>
       <p style="font-size:14px;color:#6B7280;line-height:1.6;margin:12px 0 0">Tripster, Viator, and other platforms charge 20-30% commission from guides. By booking directly, you get the same tour cheaper — the difference goes to the middleman.</p>
     </details>
     <details style="background:#fff;border-radius:12px;border:1px solid #E5E7EB;padding:16px 20px">
-      <summary style="font-size:14px;font-weight:700;color:#111827;cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between">Payment methods?<span style="color:#9CA3AF;font-size:18px;transition:transform .2s">+</span></summary>
+      <summary style="font-size:14px;font-weight:700;color:#111827;cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between">Payment methods?<span style="color:#6B7280;font-size:18px;transition:transform .2s">+</span></summary>
       <p style="font-size:14px;color:#6B7280;line-height:1.6;margin:12px 0 0">SBP (QR code for Russian banks), cryptocurrency (BTC, ETH, USDT via NOWPayments), Visa/Mastercard (via Bank of Georgia).</p>
     </details>
   </div>
@@ -506,11 +506,11 @@ function calSelect(dateStr, day) {
     } else if (status.status === 'few') {
       availLine = '<span style="color:#D97706">Only ' + status.spots + ' ' + (status.spots === 1 ? 'spot' : 'spots') + ' left in the group — book while available</span>';
     } else {
-      availLine = '<span style="color:#16A34A">Spots available in the group (' + status.spots + ')</span>';
+      availLine = '<span style="color:#15803D">Spots available in the group (' + status.spots + ')</span>';
     }
   } else {
     // No scheduled group — flexible private/individual tour
-    availLine = '<span style="color:#16A34A">Available for a private tour — we\'ll confirm a convenient time</span>';
+    availLine = '<span style="color:#15803D">Available for a private tour — we\'ll confirm a convenient time</span>';
   }
   info.innerHTML += '<div style="font-weight:600;margin-top:4px">' + availLine + '</div>';
   info.style.display = 'block';
@@ -755,7 +755,7 @@ ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webv
   <div style="background:#fff;border-radius:16px;max-width:760px;width:100%;max-height:88vh;display:flex;flex-direction:column;overflow:hidden">
     <div style="display:flex;align-items:center;justify-content:space-between;padding:16px 20px;border-bottom:1px solid #E5E7EB;flex-shrink:0">
       <strong style="font-size:16px;color:#111827">Public Offer (Terms)</strong>
-      <button type="button" onclick="closeOfertaModal()" aria-label="Close" style="background:none;border:none;font-size:26px;line-height:1;color:#9CA3AF;cursor:pointer;padding:0 4px">&times;</button>
+      <button type="button" onclick="closeOfertaModal()" aria-label="Close" style="background:none;border:none;font-size:26px;line-height:1;color:#6B7280;cursor:pointer;padding:0 4px">&times;</button>
     </div>
     <div id="oferta-body" style="flex:1;overflow-y:auto;padding:20px 24px;font-size:14px;line-height:1.6;color:#374151">Loading…</div>
     <div style="padding:14px 20px;border-top:1px solid #E5E7EB;display:flex;gap:10px;justify-content:flex-end;flex-shrink:0">
@@ -767,7 +767,7 @@ ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webv
 
 <div id="sbp-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:99999;align-items:center;justify-content:center;padding:20px" onclick="if(event.target===this)closeSbpModal()">
   <div style="background:#fff;border-radius:16px;max-width:360px;width:100%;padding:24px;text-align:center;position:relative;box-shadow:0 20px 60px rgba(0,0,0,.3)">
-    <button type="button" onclick="closeSbpModal()" aria-label="Close" style="position:absolute;top:10px;right:14px;border:none;background:none;font-size:26px;line-height:1;cursor:pointer;color:#9CA3AF">&times;</button>
+    <button type="button" onclick="closeSbpModal()" aria-label="Close" style="position:absolute;top:10px;right:14px;border:none;background:none;font-size:26px;line-height:1;cursor:pointer;color:#6B7280">&times;</button>
     <div style="font-size:18px;font-weight:700;color:#111827;margin-bottom:4px">Pay via SBP</div>
     <div style="font-size:13px;color:#6B7280;margin-bottom:16px">Scan the QR code in your banking app</div>
     <img src="/images/sbp-qr.png?v=1" alt="SBP QR code" width="220" height="220" style="width:220px;height:220px;margin:0 auto;display:block;border:1px solid #E5E7EB;border-radius:12px;padding:8px;box-sizing:border-box">
