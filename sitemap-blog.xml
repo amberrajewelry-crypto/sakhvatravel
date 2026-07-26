@@ -966,6 +966,9 @@
   <url>
     <loc>https://sakhva-travel.com/en/blog/things-to-see-kazbegi/</loc>
     <lastmod>2026-07-26</lastmod>
+      <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/things-to-see-kazbegi/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/things-to-see-kazbegi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/en/blog/things-to-see-kazbegi/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/blog/georgia-in-may/</loc>
@@ -1495,6 +1498,9 @@
   <url>
     <loc>https://sakhva-travel.com/en/blog/borjomi-from-tbilisi/</loc>
     <lastmod>2026-07-26</lastmod>
+      <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/borjomi-from-tbilisi/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/borjomi-from-tbilisi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/en/blog/borjomi-from-tbilisi/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/blog/kazbegi-solo-vs-guided/</loc>
@@ -1507,6 +1513,9 @@
   <url>
     <loc>https://sakhva-travel.com/en/blog/tbilisi-tours-guide/</loc>
     <lastmod>2026-07-26</lastmod>
+      <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/tbilisi-tours-guide/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/tbilisi-tours-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/en/blog/tbilisi-tours-guide/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/blog/tbilisi-rainy-day/</loc>
@@ -1535,6 +1544,9 @@
   <url>
     <loc>https://sakhva-travel.com/en/blog/georgia-budget-travel/</loc>
     <lastmod>2026-07-26</lastmod>
+      <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/blog/georgia-budget-travel/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/georgia-budget-travel/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/en/blog/georgia-budget-travel/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/blog/transfer-tbilisi-to-kazbegi/</loc>
