@@ -1971,24 +1971,6 @@
   ],
   "headers": [
     {
-      "source": "/ge/:path*",
-      "headers": [
-        {
-          "key": "Content-Language",
-          "value": "ka"
-        }
-      ]
-    },
-    {
-      "source": "/en/:path*",
-      "headers": [
-        {
-          "key": "Content-Language",
-          "value": "en"
-        }
-      ]
-    },
-    {
       "source": "/main.js",
       "headers": [
         {
