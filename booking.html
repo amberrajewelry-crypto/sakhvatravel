@@ -320,7 +320,7 @@ h1{font-size:clamp(26px,4vw,36px);font-weight:600;color:#111827;letter-spacing:-
       </div>
 
       <div id="pay-methods" style="font-size:13px;font-weight:600;color:#374151;margin-bottom:10px;margin-top:24px;scroll-margin-top:80px">Выберите способ оплаты</div>
-      <div id="pay-block" style="display:flex;flex-direction:column;gap:10px;margin-bottom:16px;opacity:.55;transition:opacity .2s">
+      <div id="pay-block" inert aria-hidden="true" style="display:flex;flex-direction:column;gap:10px;margin-bottom:16px;opacity:.55;transition:opacity .2s">
         <div style="display:flex;align-items:center;gap:14px;padding:16px;border:1px solid #E5E7EB;border-radius:14px;cursor:not-allowed;background:#F9FAFB;position:relative;opacity:.55;pointer-events:none">
           <!-- Card payment temporarily disabled -->
           <div style="width:44px;height:44px;border-radius:12px;background:#EFF6FF;display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A3D2E" stroke-width="2" stroke-linecap="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></div>
@@ -808,7 +808,7 @@ function ofertaOk() {
 function togglePayLock() {
   var ok = document.getElementById('oferta-accept').checked;
   var pb = document.getElementById('pay-block');
-  if (pb) pb.style.opacity = ok ? '1' : '.55';
+  if (pb) { pb.style.opacity = ok ? '1' : '.55'; if (ok) { pb.removeAttribute('inert'); pb.removeAttribute('aria-hidden'); } else { pb.setAttribute('inert',''); pb.setAttribute('aria-hidden','true'); } }
   var f = document.getElementById('oferta-field');
   if (f && ok) { f.style.borderColor = '#E5E7EB'; f.style.background = '#F9FAFB'; }
 }
