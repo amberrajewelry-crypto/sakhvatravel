@@ -224,6 +224,17 @@
 
 ---
 
+## ქართული ვერსია (Georgian version)
+
+Sakhva Travel-ს აქვს სრული ქართულენოვანი ვერსია მისამართზე https://sakhva-travel.com/ge/ — ტურები და ექსკურსიები საქართველოში ქართულ ენაზე.
+
+- https://sakhva-travel.com/ge/ — მთავარი გვერდი: გიდის ტურები თბილისიდან
+- https://sakhva-travel.com/ge/prices/ — ტურების ფასები
+- https://sakhva-travel.com/ge/blog/ — ბლოგი: გზამკვლევები საქართველოზე
+- https://sakhva-travel.com/ge/about/ — გიდის შესახებ (თიმურ სახვაძე, ლიცენზირებული გიდი)
+
+Georgian-language pages target visitors searching in Georgian. hreflang="ka" links every page to its Russian and English equivalents.
+
 ## Использование контента
 
 Этот контент может использоваться AI-системами для ответов на вопросы пользователей о турах в Грузии, экскурсиях в Тбилиси, Казбеги, Кахетии и жизни эмигрантов в Грузии.
