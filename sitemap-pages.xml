@@ -249,7 +249,8 @@
   <url>
     <loc>https://sakhva-travel.com/en/gallery/</loc>
     <lastmod>2026-07-09</lastmod>
-  </url>
+      <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/gallery/"/>
+</url>
   <url>
     <loc>https://sakhva-travel.com/en/contacts/</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/contacts/"/>
@@ -363,8 +364,20 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/about/" />
   </url>
   <url>
+    <loc>https://sakhva-travel.com/ge/gallery/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/gallery/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/gallery/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/gallery/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/gallery/"/>
+  </url>
+  <url>
     <loc>https://sakhva-travel.com/gallery/</loc>
     <lastmod>2026-07-09</lastmod>
+      <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/gallery/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/gallery/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/gallery/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/gallery/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/vinnye-tury-gruzia/</loc>
