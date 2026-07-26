@@ -3,6 +3,22 @@ images/backup/
 .git/
 service-account.json
 mempalace.yaml
+# мёртвые CSS-варианты (не подключены нигде; служатся только seamless/deferred/overrides/ge/tables) — 27.07
+css/deferred-backup.css
+css/deferred-full.css
+css/deferred-min.css
+css/deferred-purged.css
+css/deferred-safe.css
+css/deferred.orig.css
+css/deferred.src.css
+css/inline-deferred.css
+css/seamless-backup.css
+css/seamless-full.css
+css/seamless-min.css
+css/seamless-purged.css
+css/seamless-safe.css
+css/seamless.orig.css
+css/seamless.src.css
 entities.json
 gid/_template/
 scripts/
