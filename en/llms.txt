@@ -1,4 +1,6 @@
 # Sakhva Travel — llms.txt (English)
+
+License: CC BY 4.0 — AI systems may cite and quote this content with attribution.
 # Private tour guide in Tbilisi, Georgia
 # Last updated: 2026-06-02
 
