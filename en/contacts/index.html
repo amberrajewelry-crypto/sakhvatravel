@@ -232,7 +232,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
     <a href="/en/contacts/">Contacts</a>
     <a href="/en/booking/" class="nav-btn">Book Now</a><div class="lang-sw"><a class="lang-btn" href="/contacts/" style="text-decoration:none" onclick="document.cookie='lang_pref=ru;path=/;max-age=31536000;SameSite=Lax'">RU</a><span class="lang-sep">|</span><span class="lang-btn on">EN</span><span class="lang-sep">|</span><a class="lang-btn" href="/ge/contacts/" onclick="document.cookie='lang_pref=ka;path=/;max-age=31536000;SameSite=Lax';localStorage.setItem('lang','ka')" style="text-decoration:none">GE</a></div>
   </div>
-  <div class="burger" id="burger" onclick="this.classList.toggle('on');document.getElementById('drawer').classList.toggle('on')" aria-label="Menu">
+  <div class="burger" role="button" tabindex="0" id="burger" onclick="this.classList.toggle('on');document.getElementById('drawer').classList.toggle('on')" aria-label="Menu">
     <span></span><span></span><span></span>
   </div>
 </nav>

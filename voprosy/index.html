@@ -222,7 +222,7 @@ if(localStorage.getItem('cookies_v4')==='1'){gtag('consent','update',{analytics_
     <a href="/contacts/">Контакты</a>
     <a href="/booking/" class="nav-btn">Забронировать</a><div class="lang-sw"><span class="lang-btn on">RU</span><span class="lang-sep">|</span><a class="lang-btn" href="/en/faq/" style="text-decoration:none" onclick="document.cookie='lang_pref=en;path=/;max-age=31536000;SameSite=Lax'">EN</a><span class="lang-sep">|</span><a class="lang-btn" href="/ge/faq/" onclick="document.cookie='lang_pref=ka;path=/;max-age=31536000;SameSite=Lax';localStorage.setItem('lang','ka')" style="text-decoration:none">GE</a></div>
   </div>
-  <div class="burger" id="burger" onclick="this.classList.toggle('on');document.getElementById('drawer').classList.toggle('on')" aria-label="Меню">
+  <div class="burger" role="button" tabindex="0" id="burger" onclick="this.classList.toggle('on');document.getElementById('drawer').classList.toggle('on')" aria-label="Меню">
     <span></span><span></span><span></span>
   </div>
 </nav>
@@ -369,7 +369,7 @@ if(localStorage.getItem('cookies_v4')==='1'){gtag('consent','update',{analytics_
       <p class="foot-desc">Русскоязычный гид в Тбилиси. Казбеги, Кахетия, скрытые места. До 7 человек.</p>
     </div>
     <div>
-      <h4>Туры</h4>
+      <h3>Туры</h3>
       <div class="foot-links">
         <a href="/ekskursiya/ekskursiya-kazbegi-iz-tbilisi/">Казбеги — от ₾175</a>
         <a href="/ekskursiya/nochnaya-ekskursiya-tbilisi/">Ночной Тбилиси — от ₾100</a>
@@ -378,7 +378,7 @@ if(localStorage.getItem('cookies_v4')==='1'){gtag('consent','update',{analytics_
       </div>
     </div>
     <div>
-      <h4>Контакты</h4>
+      <h3>Контакты</h3>
       <div class="foot-links">
         <a href="https://wa.me/995511272623">WhatsApp +995 511 272 623</a>
         <a href="https://t.me/SakhvaGuideBot?start=site">Telegram</a>

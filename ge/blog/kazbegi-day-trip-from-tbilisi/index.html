@@ -143,7 +143,7 @@ ul{list-style:none}
 .foot-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:44px;margin-bottom:40px}
 .foot-brand{font-size:17px;font-weight:800;color:#fff;margin-bottom:8px}
 .foot-desc{font-size:13px;color:rgba(255,255,255,.65);line-height:1.8}
-.foot-grid div h4{font-size:12px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:14px}
+.foot-grid div h3{font-size:12px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:rgba(255,255,255,.7);margin-bottom:14px}
 .foot-links{display:flex;flex-direction:column;gap:9px}
 .foot-links a{font-size:13px;color:rgba(255,255,255,.5);transition:color .2s}
 .foot-links a:hover{color:#fff}
@@ -158,7 +158,7 @@ ul{list-style:none}
 .author-byline{display:flex;align-items:center;gap:12px;background:#F9FAFB;border:1px solid #E5E7EB;border-radius:12px;padding:14px 18px;margin-bottom:32px}.author-byline img{width:40px;height:40px;border-radius:50%;object-fit:cover;flex-shrink:0}.author-info{display:flex;flex-direction:column;gap:2px}.author-name{font-size:14px;font-weight:700;color:#111827;text-decoration:none}.author-name:hover{color:#1A3D2E}.author-creds{font-size:12px;color:#6B7280}
 .article-lead{background:#F0FDF4;border-left:3px solid #1A3D2E;border-radius:8px;padding:14px 18px;font-size:16px;color:#1e3a5f;line-height:1.75;margin-bottom:28px}
 .sources-block{background:#F0FDF4;border:1px solid #BBF7D0;border-radius:10px;padding:16px 20px;margin:32px 0}.sources-title{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#166534;margin-bottom:10px}.sources-block ul{margin:0;padding-left:0}.sources-block li{font-size:13px;color:#374151;padding-left:16px;position:relative;margin-bottom:6px}.sources-block li::before{content:"→";position:absolute;left:0;color:#16a34a}.sources-block a{color:#1A3D2E}
-h1,h2,h3,.section-title{font-family:'Lora',Georgia,serif !important;font-weight:400 !important}@media(max-width:768px){.foot-grid div h4{font-size:11px}.foot-copy,.foot-legal a{font-size:12px}.foot-links a{padding:8px 0;display:inline-block;min-height:44px;line-height:28px}.foot-legal{gap:0}.foot-legal a{padding:10px 12px;display:inline-block}.fa-inner{font-size:14px}.nav-links a{white-space:nowrap;font-size:12px}}
+h1,h2,h3,.section-title{font-family:'Lora',Georgia,serif !important;font-weight:400 !important}@media(max-width:768px){.foot-grid div h3{font-size:11px}.foot-copy,.foot-legal a{font-size:12px}.foot-links a{padding:8px 0;display:inline-block;min-height:44px;line-height:28px}.foot-legal{gap:0}.foot-legal a{padding:10px 12px;display:inline-block}.fa-inner{font-size:14px}.nav-links a{white-space:nowrap;font-size:12px}}
 body,h1,h2,h3,h4,h5,h6,p,a,span,div,li,td,th,label,input,textarea,button,blockquote{font-family:'Lora',Georgia,serif!important}
 .lang-sw{display:flex;align-items:center;gap:4px;margin-left:8px}
 .lang-btn{font-size:12px;font-weight:700;letter-spacing:.1em;color:rgba(255,255,255,.5);cursor:pointer;background:none;border:none;padding:2px 4px;text-decoration:none!important}
@@ -190,7 +190,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <link rel="preload" href="/fonts/noto-sans-georgian.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/css/ge.css"></head>
 <body>
 <nav id="nav">
-<a class="nav-logo" href="/en/">
+<a class="nav-logo" href="/en/" aria-label="Sakhva Travel">
 <svg aria-hidden="true" class="logo-svg" fill="none" viewbox="0 0 118 66" xmlns="http://www.w3.org/2000/svg">
 <circle cx="59" cy="20" fill="#F59E0B" opacity=".92" r="10"></circle>
 <line stroke="#F59E0B" stroke-linecap="round" stroke-width="1.5" x1="59" x2="59" y1="10" y2="5"></line>
@@ -465,8 +465,8 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <footer id="footer">
 <div class="foot-grid">
 <div><div class="foot-brand">Sakhva Travel</div><p class="foot-desc">კერძო ტურები საქართველოში 2026. თბილისი, ყაზბეგი, კახეთი.</p></div>
-<div><h4>ტურები</h4><div class="foot-links"><a href="/en/ekskursiya/ekskursiya-kazbegi-iz-tbilisi/">ყაზბეგის ერთდღიანი ტური — ₾175-დან</a><a href="/en/ekskursiya/nochnaya-ekskursiya-tbilisi/">ფარული თბილისი — ₾100-დან</a><a href="/en/ekskursiya/ekskursiya-kakheti-iz-tbilisi/">კახეთის ღვინის ტური — ₾170-დან</a></div></div>
-<div><h4>ბლოგი</h4><div class="foot-links"><a href="/en/blog/kazbegi-day-trip-from-tbilisi/">გზამკვლევი: ყაზბეგი 2026</a><a href="/en/blog/hidden-gems-tbilisi/">15 დამალული სიმდიდრე თბილისში</a><a href="/en/blog/georgia-visa-2026/">საქართველოს ვიზა 2026</a><a href="/en/blog/kakheti-wine-tour/">კახეთი 1 დღეში</a></div></div>
+<div><h3>ტურები</h3><div class="foot-links"><a href="/en/ekskursiya/ekskursiya-kazbegi-iz-tbilisi/">ყაზბეგის ერთდღიანი ტური — ₾175-დან</a><a href="/en/ekskursiya/nochnaya-ekskursiya-tbilisi/">ფარული თბილისი — ₾100-დან</a><a href="/en/ekskursiya/ekskursiya-kakheti-iz-tbilisi/">კახეთის ღვინის ტური — ₾170-დან</a></div></div>
+<div><h3>ბლოგი</h3><div class="foot-links"><a href="/en/blog/kazbegi-day-trip-from-tbilisi/">გზამკვლევი: ყაზბეგი 2026</a><a href="/en/blog/hidden-gems-tbilisi/">15 დამალული სიმდიდრე თბილისში</a><a href="/en/blog/georgia-visa-2026/">საქართველოს ვიზა 2026</a><a href="/en/blog/kakheti-wine-tour/">კახეთი 1 დღეში</a></div></div>
 </div>
 <div class="foot-bottom"><span class="foot-copy">© 2026 Sakhva Travel · თბილისი, საქართველო</span><div class="foot-legal"><a href="https://www.google.com/maps/search/Sakhva+Travel+Tbilisi" rel="noopener" target="_blank">დატოვეთ მიმოხილვა ★</a><a href="/en/">მთავარი</a><a href="mailto:help@sakhva-travel.com">კონტაქტი</a></div></div>
 </footer>

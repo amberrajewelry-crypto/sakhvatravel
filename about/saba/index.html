@@ -244,7 +244,7 @@ if(_ck){gtag('consent','update',{analytics_storage:(_ck||_gc)?'granted':'denied'
     .foot-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:44px;margin-bottom:40px}
     .foot-brand{font-size:17px;font-weight:800;color:#fff;margin-bottom:8px}
     .foot-desc{font-size:13px;color:rgba(255,255,255,.65);line-height:1.8;margin-bottom:18px}
-    .foot-grid div h4{font-size:9px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:14px}
+    .foot-grid div h3{font-size:9px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:rgba(255,255,255,.7);margin-bottom:14px}
     .foot-links{display:flex;flex-direction:column;gap:9px}
     .foot-links a{font-size:13px;color:rgba(255,255,255,.5);transition:color .2s}
     .foot-links a:hover{color:#fff}
@@ -274,7 +274,7 @@ if(_ck){gtag('consent','update',{analytics_storage:(_ck||_gc)?'granted':'denied'
       .tours-grid{grid-template-columns:1fr}
       .stats-row{gap:20px}
     }
-h1,h2,h3,.section-title{font-family:'Lora',Georgia,serif !important;font-weight:400 !important}  @media(max-width:768px){.foot-grid div h4{font-size:11px}.foot-copy,.foot-legal a{font-size:12px}.foot-links a{padding:8px 0;display:inline-block;min-height:44px;line-height:28px}.foot-legal{gap:0}.foot-legal a{padding:10px 12px;display:inline-block}}
+h1,h2,h3,.section-title{font-family:'Lora',Georgia,serif !important;font-weight:400 !important}  @media(max-width:768px){.foot-grid div h3{font-size:11px}.foot-copy,.foot-legal a{font-size:12px}.foot-links a{padding:8px 0;display:inline-block;min-height:44px;line-height:28px}.foot-legal{gap:0}.foot-legal a{padding:10px 12px;display:inline-block}}
 body,h1,h2,h3,h4,h5,h6,p,a,span,div,li,td,th,label,input,textarea,button,blockquote{font-family:'Lora',Georgia,serif!important}
 .lang-sw{display:flex;align-items:center;gap:4px;margin-left:8px}
 .lang-btn{font-size:12px;font-weight:700;letter-spacing:.1em;color:rgba(255,255,255,.5);cursor:pointer;background:none;border:none;padding:2px 4px;text-decoration:none!important}
@@ -325,7 +325,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
     <a href="/contacts/">Контакты</a>
     <a href="/booking/" class="nav-btn">Забронировать</a><div class="lang-sw"><span class="lang-btn on">RU</span><span class="lang-sep">|</span><a class="lang-btn" href="/en/about/saba/" style="text-decoration:none" onclick="document.cookie='lang_pref=en;path=/;max-age=31536000;SameSite=Lax'">EN</a><span class="lang-sep">|</span><a class="lang-btn" href="/ge/about/saba/" onclick="document.cookie='lang_pref=ka;path=/;max-age=31536000;SameSite=Lax';localStorage.setItem('lang','ka')" style="text-decoration:none">GE</a></div>
   </div>
-  <div class="burger" id="burger" onclick="this.classList.toggle('on');document.getElementById('drawer').classList.toggle('on')" aria-label="Меню">
+  <div class="burger" role="button" tabindex="0" id="burger" onclick="this.classList.toggle('on');document.getElementById('drawer').classList.toggle('on')" aria-label="Меню">
     <span></span><span></span><span></span>
   </div>
 </nav>
@@ -503,7 +503,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
       <p class="foot-desc">Команда лицензированных гидов в Грузии. Тбилиси, Казбеги, Кахетия, Батуми, Сванетия. До 7 человек.</p>
     </div>
     <div>
-      <h4>Туры</h4>
+      <h3>Туры</h3>
       <div class="foot-links">
         <a href="/ekskursiya/tur-batumi-iz-tbilisi/">Батуми из Тбилиси</a>
         <a href="/ekskursiya/ekskursiya-svaneti-iz-tbilisi/">Сванетия из Тбилиси</a>
@@ -512,7 +512,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
       </div>
     </div>
     <div>
-      <h4>Контакты</h4>
+      <h3>Контакты</h3>
       <div class="foot-links">
         <a href="https://wa.me/995511272623">WhatsApp +995 511 272 623</a>
         <a href="https://t.me/SakhvaGuideBot?start=site">Telegram</a>

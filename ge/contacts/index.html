@@ -161,7 +161,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
     <a href="/en/contacts/">კონტაქტები</a>
     <a href="/en/booking/" class="nav-btn">დაჯავშნა</a><div class="lang-sw"><a class="lang-btn" href="/contacts/" style="text-decoration:none" onclick="document.cookie='lang_pref=ru;path=/;max-age=31536000;SameSite=Lax'">RU</a><span class="lang-sep">|</span><a class="lang-btn" href="/en/contacts/" onclick="document.cookie='lang_pref=en;path=/;max-age=31536000;SameSite=Lax'" style="text-decoration:none">EN</a><span class="lang-sep">|</span><span class="lang-btn on">GE</span></div>
   </div>
-  <div class="burger" id="burger" onclick="this.classList.toggle('on');document.getElementById('drawer').classList.toggle('on')" aria-label="მენიუ">
+  <div class="burger" role="button" tabindex="0" id="burger" onclick="this.classList.toggle('on');document.getElementById('drawer').classList.toggle('on')" aria-label="მენიუ">
     <span></span><span></span><span></span>
   </div>
 </nav>

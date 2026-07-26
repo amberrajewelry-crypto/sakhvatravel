@@ -132,7 +132,7 @@ var _ck=localStorage.getItem('cookies_v4')==='1';if(_ck){gtag('consent','update'
     .foot-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:44px;margin-bottom:40px}
     .foot-brand{font-size:17px;font-weight:800;color:#fff;margin-bottom:8px}
     .foot-desc{font-size:13px;color:rgba(255,255,255,.65);line-height:1.8;margin-bottom:18px}
-    .foot-grid div h4{font-size:9px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:14px}
+    .foot-grid div h3{font-size:9px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:rgba(255,255,255,.7);margin-bottom:14px}
     .foot-links{display:flex;flex-direction:column;gap:9px}
     .foot-links a{font-size:13px;color:rgba(255,255,255,.5);transition:color .2s}
     .foot-links a:hover{color:#fff}
@@ -207,7 +207,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
     <a href="/en/contacts/">Contacts</a>
     <a href="/en/booking/" class="nav-btn">Book online</a><div class="lang-sw"><a class="lang-btn" href="/policy/" style="text-decoration:none">RU</a><span class="lang-sep">|</span><span class="lang-btn on">EN</span></div>
   </div>
-  <div class="burger" id="burger" onclick="this.classList.toggle('on');document.getElementById('drawer').classList.toggle('on')" aria-label="Menu">
+  <div class="burger" role="button" tabindex="0" id="burger" onclick="this.classList.toggle('on');document.getElementById('drawer').classList.toggle('on')" aria-label="Menu">
     <span></span><span></span><span></span>
   </div>
 </nav>
@@ -334,7 +334,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
       <div class="foot-desc">Private tours in Tbilisi and across Georgia. Tours in Russian and English. Kazbegi, Mtskheta, Kakheti, Batumi and other destinations.</div>
     </div>
     <div>
-      <h4>Tours</h4>
+      <h3>Tours</h3>
       <div class="foot-links">
         <a href="/en/ekskursiya/ekskursiya-kazbegi-iz-tbilisi/">Kazbegi from Tbilisi</a>
         <a href="/en/ekskursiya/ekskursiya-stary-tbilisi/">Old Tbilisi</a>
@@ -344,7 +344,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
       </div>
     </div>
     <div>
-      <h4>Information</h4>
+      <h3>Information</h3>
       <div class="foot-links">
         <a href="/en/about/">About us</a>
         <a href="/en/blog/">Georgia Blog</a>
