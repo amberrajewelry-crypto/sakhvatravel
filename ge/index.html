@@ -413,9 +413,9 @@ function declineCookies(){localStorage.setItem('cookies_v4','0');gtag('consent',
 (function(){
   var RATES={GEL:1,USD:0.38,EUR:0.35,RUB:34.5};
   var SYMS={GEL:'\u20BE',USD:'$',EUR:'\u20AC',RUB:'\u20BD'};
-  var reviews=['4.9 (26 reviews)','4.9 (460+ tours)','4.9 (98% recommend)'];
+  var reviews=['4.9 (26 შეფასება)','4.9 (460+ ტური)','4.9 (98% გირჩევენ)'];
   var curTag='all',curFormat='all',curCur='GEL',curPrice='all';
-  fetch('/data/catalog-en.json?v=20260627').then(function(r){return r.json()}).then(function(data){
+  fetch('/data/catalog-ge.json?v=20260726').then(function(r){return r.json()}).then(function(data){
     var items=data.excursions||[];
     var grid=document.getElementById('hp-grid');
     var pills=document.getElementById('hp-pills');
@@ -443,7 +443,7 @@ function declineCookies(){localStorage.setItem('cookies_v4','0');gtag('consent',
           +'<div style="position:relative;height:200px;overflow:hidden;background:#f3f4f6"><img src="'+img+'" alt="'+t.title+'" width="400" height="200" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover">'
           +'<span style="position:absolute;top:10px;left:10px;padding:4px 10px;border-radius:5px;font-size:11px;font-weight:600;color:#fff;background:'+badgeBg+'">'+badgeTxt+'</span>'
           +(t.durationText?'<span style="position:absolute;top:10px;right:10px;padding:4px 10px;border-radius:5px;font-size:11px;background:rgba(0,0,0,.5);color:#fff">'+t.durationText+'</span>':'')
-          +(disc?'<span style="position:absolute;bottom:10px;right:10px;padding:4px 10px;border-radius:6px;font-size:11px;font-weight:700;background:rgba(245,158,11,.95);color:#fff">from 4+ −10%</span>':'')
+          +(disc?'<span style="position:absolute;bottom:10px;right:10px;padding:4px 10px;border-radius:6px;font-size:11px;font-weight:700;background:rgba(245,158,11,.95);color:#fff">4+ კაცი −10%</span>':'')
           +'</div>'
           +'<div style="padding:14px 14px 16px">'
           +'<div style="font-size:15px;font-weight:600;margin-bottom:4px;line-height:1.3">'+t.title+'</div>'
@@ -465,7 +465,7 @@ function declineCookies(){localStorage.setItem('cookies_v4','0');gtag('consent',
     var tagMap={};
     items.forEach(function(t){t.tags.forEach(function(tg){tagMap[tg]=(tagMap[tg]||0)+1})});
     var sorted=Object.entries(tagMap).sort(function(a,b){return b[1]-a[1]});
-    var html='<button style="padding:8px 16px;border-radius:20px;border:1px solid #1A3D2E;background:#1A3D2E;font-size:13px;cursor:pointer;color:#fff;font-family:inherit" data-tag="all">All <span style="color:rgba(255,255,255,.6);margin-left:3px;font-size:12px">'+items.length+'</span></button>';
+    var html='<button style="padding:8px 16px;border-radius:20px;border:1px solid #1A3D2E;background:#1A3D2E;font-size:13px;cursor:pointer;color:#fff;font-family:inherit" data-tag="all">ყველა <span style="color:rgba(255,255,255,.6);margin-left:3px;font-size:12px">'+items.length+'</span></button>';
     sorted.forEach(function(e){
       html+='<button style="padding:8px 16px;border-radius:20px;border:1px solid #E5E7EB;background:#fff;font-size:13px;cursor:pointer;color:#374151;font-family:inherit;transition:all .15s" data-tag="'+e[0]+'">'+e[0]+' <span style="color:#6B7280;margin-left:3px;font-size:12px">'+e[1]+'</span></button>';
     });
@@ -2056,7 +2056,7 @@ function showRecs(a){
   }).join('');
 }
 // Load catalog for recommendations
-if(!window.__catalogData){fetch('/data/catalog-en.json?v=quiz').then(function(r){return r.json()}).then(function(d){window.__catalogData=d}).catch(function(){})}
+if(!window.__catalogData){fetch('/data/catalog-ge.json?v=quiz').then(function(r){return r.json()}).then(function(d){window.__catalogData=d}).catch(function(){})}
 })();
 </script>
 <script>
