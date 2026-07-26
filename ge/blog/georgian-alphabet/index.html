@@ -53,12 +53,12 @@ else{setTimeout(function(){document.head.appendChild(s)},2000)}})();
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:'Lora',საქართველო,serif;color:#111827;background:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased;padding-top:72px}
+body{font-family:'Lora',Georgia,serif;color:#111827;background:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased;padding-top:72px}
 a{text-decoration:none;color:inherit}
 img{max-width:100%;display:block;object-fit:cover}
 button{border:none;background:none;font-family:inherit;cursor:pointer}
 ul{list-style:none}
-#nav{position:fixed;top:0;მარცხნივ:0;მარჯვნივ:0;z-index:900;height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(16px,3.5vw,56px);background:#1F2937;box-shadow:none}
+#nav{position:fixed;top:0;left:0;right:0;z-index:900;height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(16px,3.5vw,56px);background:#1F2937;box-shadow:none}
 .nav-logo{display:flex;align-items:center;text-decoration:none;color:#fff;transition:color .3s}
 .logo-svg{width:148px;height:66px;display:block}
 .nav-links{display:flex;align-items:center;gap:24px}
@@ -71,7 +71,7 @@ ul{list-style:none}
 .burger.on span:nth-child(1){transform:translateY(7px) rotate(45deg)}
 .burger.on span:nth-child(2){opacity:0}
 .burger.on span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-.drawer{display:none;position:fixed;top:72px;მარცხნივ:0;მარჯვნივ:0;bottom:0;background:#fff;z-index:850;flex-direction:column;padding:28px 24px;border-top:1px solid #f3f4f6}
+.drawer{display:none;position:fixed;top:72px;left:0;right:0;bottom:0;background:#fff;z-index:850;flex-direction:column;padding:28px 24px;border-top:1px solid #f3f4f6}
 .drawer.on{display:flex}
 .drawer a{font-size:17px;font-weight:600;color:#111827;padding:15px 0;border-bottom:1px solid #f3f4f6;transition:color .2s}
 .drawer a:hover{color:#1A3D2E}
@@ -87,40 +87,40 @@ ul{list-style:none}
 .article-wrap{max-width:760px;margin:0 auto;padding:52px clamp(16px,3.5vw,32px)}
 .article-toc{background:#F0FDF4;border:1px solid #BFDBFE;border-radius:12px;padding:24px 28px;margin-bottom:40px}
 .article-toc h2{font-size:14px;font-weight:700;color:#1A3D2E;margin-bottom:12px;text-transform:uppercase;letter-spacing:.1em}
-.article-toc ol{padding-მარცხნივ:20px;display:flex;flex-direction:column;gap:2px;list-style:decimal}
+.article-toc ol{padding-left:20px;display:flex;flex-direction:column;gap:2px;list-style:decimal}
 .article-toc li a{font-size:14px;color:#1A3D2E;transition:color .2s;display:block;padding:6px 0;min-height:44px;line-height:1.5}
 .article-toc li a:hover{color:#1A3D2E}
 .article-body h2{font-size:clamp(20px,2.5vw,28px);font-weight:700!important;color:#111827;margin:40px 0 16px;padding-top:8px;border-top:2px solid #EFF6FF}
 .article-body h3{font-size:18px;font-weight:700!important;color:#111827;margin:28px 0 12px}
 .article-body p{font-size:16px;color:#374151;line-height:1.85;margin-bottom:16px}
-.article-body ul,.article-body ol{margin:16px 0 20px;padding-მარცხნივ:0;display:flex;flex-direction:column;gap:8px;list-style:none}
-.article-body li{font-size:16px;color:#374151;line-height:1.7;padding-მარცხნივ:20px;position:relative}
-.article-body li::before{content:'→';position:absolute;მარცხნივ:0;color:#1A3D2E;font-weight:700}
+.article-body ul,.article-body ol{margin:16px 0 20px;padding-left:0;display:flex;flex-direction:column;gap:8px;list-style:none}
+.article-body li{font-size:16px;color:#374151;line-height:1.7;padding-left:20px;position:relative}
+.article-body li::before{content:'→';position:absolute;left:0;color:#1A3D2E;font-weight:700}
 .article-body ol{counter-reset:item}
-.article-body ol li{counter-increment:item;padding-მარცხნივ:28px}
-.article-body ol li::before{content:counter(item)'.';position:absolute;მარცხნივ:0;color:#1A3D2E;font-weight:700;font-size:13px}
+.article-body ol li{counter-increment:item;padding-left:28px}
+.article-body ol li::before{content:counter(item)'.';position:absolute;left:0;color:#1A3D2E;font-weight:700;font-size:13px}
 .article-body strong{color:#111827;font-weight:700}
 .article-body a{color:#1A3D2E;text-decoration:underline;text-decoration-color:rgba(26,86,219,.3)}
 .article-body a:hover{text-decoration-color:#1A3D2E}
-.info-box{background:#F0FDF4;border-მარცხნივ:4px solid #1A3D2E;border-radius:0 8px 8px 0;padding:16px 20px;margin:24px 0;font-size:14px;color:#1A3D2E;line-height:1.7}
-.warn-box{background:#FEF3C7;border-მარცხნივ:4px solid #F59E0B;border-radius:0 8px 8px 0;padding:16px 20px;margin:24px 0;font-size:14px;color:#92400E;line-height:1.7}
+.info-box{background:#F0FDF4;border-left:4px solid #1A3D2E;border-radius:0 8px 8px 0;padding:16px 20px;margin:24px 0;font-size:14px;color:#1A3D2E;line-height:1.7}
+.warn-box{background:#FEF3C7;border-left:4px solid #F59E0B;border-radius:0 8px 8px 0;padding:16px 20px;margin:24px 0;font-size:14px;color:#92400E;line-height:1.7}
 .tip-box{background:#FFFBEB;border:1px solid #FDE68A;border-radius:16px;padding:24px 28px;margin:32px 0;position:relative}
 .tip-box-title{font-size:13px;font-weight:700;color:#92400E;text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px}
 .tip-box p{font-size:16px;color:#374151;line-height:1.8;margin:0}
 .review-quote{background:#FFFBEB;border:1px solid #FDE68A;border-radius:16px;padding:28px 28px 20px;margin:32px 0;position:relative}
-.review-quote::before{content:'\201C';font-size:64px;color:#F59E0B;line-height:1;position:absolute;top:-10px;მარცხნივ:20px;font-family:საქართველო,serif}
+.review-quote::before{content:'\201C';font-size:64px;color:#F59E0B;line-height:1;position:absolute;top:-10px;left:20px;font-family:Georgia,serif}
 .review-quote-text{font-size:16px;color:#374151;line-height:1.8;font-style:italic;padding-top:20px;margin-bottom:12px}
 .review-quote-author{font-size:12px;font-weight:700;color:#92400E;letter-spacing:.05em}
 .review-stars{color:#F59E0B;font-size:13px;margin-bottom:6px}
-.ფასი-table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:24px 0}
-.ფასი-table{width:100%;border-collapse:collapse;border-radius:8px;overflow:hidden;min-width:420px}
-.ფასი-table th{background:#1A3D2E;color:#fff;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:12px 16px;text-align:მარცხნივ}
-.ფასი-table td{padding:12px 16px;border-bottom:1px solid #F3F4F6;font-size:14px;color:#374151}
-.ფასი-table tr:last-child td{border-bottom:none}
-.ფასი-table tr:nth-child(even) td{background:#F9FAFB}
+.price-table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:24px 0}
+.price-table{width:100%;border-collapse:collapse;border-radius:8px;overflow:hidden;min-width:420px}
+.price-table th{background:#1A3D2E;color:#fff;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:12px 16px;text-align:left}
+.price-table td{padding:12px 16px;border-bottom:1px solid #F3F4F6;font-size:14px;color:#374151}
+.price-table tr:last-child td{border-bottom:none}
+.price-table tr:nth-child(even) td{background:#F9FAFB}
 .geo-char{font-size:22px;font-weight:700;color:#1A3D2E;text-align:center}
 .related{padding:48px clamp(16px,3.5vw,56px);background:#F9FAFB}
-.related h2{font-size:22px;font-weight:700;color:#111827;margin-bottom:28px;max-width:760px;margin-მარცხნივ:auto;margin-მარჯვნივ:auto}
+.related h2{font-size:22px;font-weight:700;color:#111827;margin-bottom:28px;max-width:760px;margin-left:auto;margin-right:auto}
 .related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:760px;margin:0 auto}
 .rc-card{background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:20px;transition:box-shadow .2s}
 .rc-card:hover{box-shadow:0 8px 24px rgba(0,0,0,.08)}
@@ -128,7 +128,7 @@ ul{list-style:none}
 .faq-inner{max-width:760px;margin:0 auto}
 .faq-inner h2{font-size:22px;font-weight:700;color:#111827;margin-bottom:28px}
 .fi{border-bottom:1px solid #E5E7EB}
-.fq{width:100%;text-align:მარცხნივ;padding:18px 0;display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:16px;font-weight:600;color:#111827;cursor:pointer;transition:color .2s}
+.fq{width:100%;text-align:left;padding:18px 0;display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:16px;font-weight:600;color:#111827;cursor:pointer;transition:color .2s}
 .fq:hover{color:#1A3D2E}
 .fq-ic{width:28px;height:28px;border-radius:50%;background:#F3F4F6;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:700;color:#1A3D2E;flex-shrink:0;transition:transform .3s,background .2s}
 .fi.open .fq-ic{transform:rotate(45deg);background:#1A3D2E;color:#fff}
@@ -153,20 +153,20 @@ ul{list-style:none}
 .author-name{font-size:14px;font-weight:700;color:#111827;text-decoration:none}
 .author-name:hover{color:#1A3D2E}
 .author-creds{font-size:12px;color:#6B7280}
-.article-lead{background:#F0FDF4;border-მარცხნივ:3px solid #1A3D2E;border-radius:8px;padding:14px 18px;font-size:16px;color:#1e3a5f;line-height:1.75;margin-bottom:28px}
+.article-lead{background:#F0FDF4;border-left:3px solid #1A3D2E;border-radius:8px;padding:14px 18px;font-size:16px;color:#1e3a5f;line-height:1.75;margin-bottom:28px}
 @media(max-width:960px){.nav-links{display:none}.burger{display:flex}.foot-grid{grid-template-columns:1fr;gap:28px}.related-grid{grid-template-columns:1fr}}
 @media(max-width:580px){.related-grid{grid-template-columns:1fr}}
-@media(max-width:480px){.ფასი-table{font-size:13px}.article-toc{padding:16px 18px}input,select,textarea{font-size:16px!important}}
-.lang-sw{display:flex;align-items:center;gap:4px;margin-მარცხნივ:8px}
+@media(max-width:480px){.price-table{font-size:13px}.article-toc{padding:16px 18px}input,select,textarea{font-size:16px!important}}
+.lang-sw{display:flex;align-items:center;gap:4px;margin-left:8px}
 .lang-btn{font-size:10px;font-weight:700;letter-spacing:.1em;color:#6B7280;background:none;border:none;cursor:pointer;padding:4px 2px;transition:color .2s;font-family:inherit}
 .lang-btn.on{color:#fff}
 .lang-sep{color:rgba(255,255,255,.3);font-size:10px}
 .d-lang{display:flex;gap:10px;padding:14px 0;border-bottom:1px solid #f3f4f6}
 .d-lang-btn{flex:1;padding:9px;border-radius:9999px;border:2px solid #1A3D2E;background:#fff;color:#1A3D2E;font-weight:700;font-size:12px;cursor:pointer;font-family:inherit;transition:all .2s}
 .d-lang-btn.on{background:#1A3D2E;color:#fff}
-h1,h2,h3,.section-title{font-family:'Lora',საქართველო,serif !important;font-weight:400 !important}
+h1,h2,h3,.section-title{font-family:'Lora',Georgia,serif !important;font-weight:400 !important}
 @media(max-width:768px){.foot-grid div h4{font-size:11px}.foot-copy,.foot-legal a{font-size:12px}.foot-links a{padding:8px 0;display:inline-block;min-height:44px;line-height:28px}.foot-legal{gap:0}.foot-legal a{padding:10px 12px;display:inline-block}.fa-inner{font-size:14px}.nav-links a{white-space:nowrap;font-size:12px}}
-body,h1,h2,h3,h4,h5,h6,p,a,span,div,li,td,th,label,input,textarea,button,blockquote{font-family:'Lora',საქართველო,serif!important}
+body,h1,h2,h3,h4,h5,h6,p,a,span,div,li,td,th,label,input,textarea,button,blockquote{font-family:'Lora',Georgia,serif!important}
 </style>
 <!-- PostHog -->
 <script>setTimeout(function(){
@@ -186,7 +186,7 @@ k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,function(c
 ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true})};
 if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{setTimeout(f,3000)}})();
 </script>
-<noscript><div><img alt="" src="https://mc.yandex.ru/watch/109038950" style="position:absolute;მარცხნივ:-9999px"/></div></noscript>
+<noscript><div><img alt="" src="https://mc.yandex.ru/watch/109038950" style="position:absolute;left:-9999px"/></div></noscript>
 <link href="/css/tables.css" rel="stylesheet"/>
 <link as="image" fetchpriority="high" href="/images/blog/gruzinskiy-alfavit.webp" rel="preload" type="image/webp"/>
 <link rel="preload" href="/fonts/noto-sans-georgian.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/css/ge.css"></head>
@@ -280,7 +280,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <div class="info-box"><strong>მოკლედ:</strong> მხედრულს აქვს <strong>33 ასო</strong> — 5 ხმოვანი და 28 თანხმოვანი. დიდი ასოები არ არსებობს, წერა მიდის მარცხნიდან მარჯვნივ, ისევე როგორც ინგლისურში. კითხულობ ზუსტად ისე, როგორც დაწერილია.</div>
 <h2 id="table">ყველა 33 ასო ტრანსლიტერაციით — ცხრილი</h2>
 <p>ქვემოთ მოცემულია ქართული ანბანის სრული ცხრილი: ასო, მისი სახელი, ლათინური ტრანსლიტერაცია და გამოთქმა. ხუთი ხმოვანი — ყველაზე მარტივი ნაწილია, იქიდან დაიწყე.</p>
-<div class="ფასი-table-wrap"><table class="ფასი-table">
+<div class="price-table-wrap"><table class="price-table">
 <thead><tr><th>ასო</th><th>სახელი</th><th>ტრანსლიტ.</th><th>როგორ ჟღერს</th></tr></thead>
 <tbody>
 <tr><td class="geo-char">ა</td><td>ანი</td><td>a</td><td>როგორც "ა" სიტყვაში "father"</td></tr>
@@ -342,7 +342,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 </div>
 <h2 id="words">სასარგებლო სიტყვები და ფრაზები მოგზაურებისთვის</h2>
 <p>ტურისტად სრული ანბანის სწავლა სავალდებულო არ არის, მაგრამ ათიოდე სიტყვა სასწაულებს ახდენს. ქართველები ნამდვილად ბრწყინავენ ენის სწავლის ნებისმიერ მცდელობაზე — მიღება მაშინვე თბილდება.</p>
-<div class="ფასი-table-wrap"><table class="ფასი-table">
+<div class="price-table-wrap"><table class="price-table">
 <thead><tr><th>ქართული</th><th>ტრანსლიტერაცია</th><th>მნიშვნელობა</th></tr></thead>
 <tbody>
 <tr><td class="geo-char">გამარჯობა</td><td>გამარჯობა</td><td>გამარჯობა</td></tr>
@@ -385,7 +385,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <li><strong>ნუ დაედევნები ეიექტივებს</strong> — გლოტალური ბგერები ვარჯიშითა და სმენით ვლინდება; თავდაპირველად დაახლოებითი გამოთქმა სავსებით საკმარისია.</li>
 </ul>
 <p>მოგზაურობისთვის რეალური მიზანი: ორ-სამ საღამოში ისწავლო ნიშნების კითხვა და 10–15 ზრდილობური სიტყვის დამახსოვრება. ეს სავსებით საკმარისია, რომ დაკარგულ ტურისტად კი არ გრძნობდე თავს, არამედ ადგილობრივად.</p>
-<div style="background:#F0FDF4;border-მარცხნივ:4px solid #16A34A;border-radius:12px;padding:20px 24px;margin:32px auto;max-width:760px">
+<div style="background:#F0FDF4;border-left:4px solid #16A34A;border-radius:12px;padding:20px 24px;margin:32px auto;max-width:760px">
 <p style="font-size:16px;font-weight:700;color:#111827;margin-bottom:8px">ჩაეძიე ენასა და კულტურაში გიდთან ერთად</p>
 <p style="font-size:14px;color:#374151;line-height:1.6;margin:0">
 <a href="/en/ekskursiya/ekskursiya-stary-tbilisi/" style="color:#16A34A;font-weight:600">ძველი თბილისი — ისტორია და წარწერები</a> ·
@@ -401,7 +401,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <a href="/en/booking/" style="display:inline-block;padding:11px 24px;background:#fff;color:#1A3D2E;font-size:13px;font-weight:700;border-radius:9999px">დაჯავშნა</a>
 </div>
 </div>
-<div style="background:#F0FDF4;border-მარცხნივ:4px solid #1A3D2E;border-radius:12px;padding:20px 24px;margin:32px auto;max-width:760px">
+<div style="background:#F0FDF4;border-left:4px solid #1A3D2E;border-radius:12px;padding:20px 24px;margin:32px auto;max-width:760px">
 <p style="font-size:16px;font-weight:700;color:#111827;margin-bottom:8px">ასევე წაიკითხეთ</p>
 <p style="font-size:14px;color:#374151;line-height:1.7;margin:0">
 <a href="/en/blog/georgian-toasts/" style="color:#1A3D2E;font-weight:600">ქართული სადღეგრძელოები და სუფრა →</a><br/>
@@ -418,7 +418,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 </div>
 <a href="https://www.tripadvisor.com/Attraction_Review-g294195-d15318013-Reviews-Sakhva_Travel-Tbilisi.html" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;padding:10px 20px;background:#00AA6C;color:#fff;font-size:13px;font-weight:700;border-radius:9999px;text-decoration:none;white-space:nowrap" target="_blank">წაიკითხეთ შეფასებები</a>
 </div>
-<div style="max-width:760px;margin:28px auto;padding:16px 20px;background:#f0fdf4;border-მარცხნივ:3px solid #1A3D2E;border-radius:8px">
+<div style="max-width:760px;margin:28px auto;padding:16px 20px;background:#f0fdf4;border-left:3px solid #1A3D2E;border-radius:8px">
 <p style="margin:0;font-size:15px;color:#1e3a5f"><strong>წაიკითხეთ ასევე:</strong> <a href="/en/blog/georgian-phrases-tourists/" style="color:#1A3D2E;font-weight:600">ქართული ფრაზები: 40 სიტყვა, რომელიც ყველა ტურისტს სჭირდება →</a></p>
 </div>
 <section id="faq">

@@ -45,11 +45,11 @@ else{setTimeout(function(){document.head.appendChild(s)},2000)}})();
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:'Lora',საქართველო,serif;color:#111827;background:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body{font-family:'Lora',Georgia,serif;color:#111827;background:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased}
 a{text-decoration:none;color:inherit}
 img{max-width:100%;display:block;object-fit:cover}
 button{border:none;background:none;font-family:inherit;cursor:pointer}
-#nav{position:fixed;top:0;მარცხნივ:0;მარჯვნივ:0;z-index:900;height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(16px,3.5vw,56px);background:rgba(255,255,255,.97);box-shadow:0 1px 12px rgba(0,0,0,.08)}
+#nav{position:fixed;top:0;left:0;right:0;z-index:900;height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(16px,3.5vw,56px);background:rgba(255,255,255,.97);box-shadow:0 1px 12px rgba(0,0,0,.08)}
 .nav-logo{display:flex;align-items:center;text-decoration:none;color:#1A3D2E}
 .logo-svg{width:148px;height:66px;display:block}
 .nav-links{display:flex;align-items:center;gap:24px}
@@ -62,24 +62,24 @@ button{border:none;background:none;font-family:inherit;cursor:pointer}
 .burger.on span:nth-child(1){transform:translateY(7px) rotate(45deg)}
 .burger.on span:nth-child(2){opacity:0}
 .burger.on span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-.drawer{display:none;position:fixed;top:72px;მარცხნივ:0;მარჯვნივ:0;bottom:0;background:#fff;z-index:850;flex-direction:column;padding:28px 24px;border-top:1px solid #f3f4f6}
+.drawer{display:none;position:fixed;top:72px;left:0;right:0;bottom:0;background:#fff;z-index:850;flex-direction:column;padding:28px 24px;border-top:1px solid #f3f4f6}
 .drawer.on{display:flex}
 .drawer a{font-size:17px;font-weight:600;color:#111827;padding:15px 0;border-bottom:1px solid #f3f4f6;transition:color .2s}
 .drawer a:hover{color:#1A3D2E}
 .drawer .d-btn{margin-top:20px;background:#1A3D2E;color:#fff;text-align:center;padding:15px;border-radius:9999px;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
-.ბლოგი-hero{background:#1A3D2E;padding:80px clamp(16px,3.5vw,56px) 64px;margin-top:72px}
-.ბლოგი-hero-inner{max-width:860px;margin:0 auto}
-.ბლოგი-label{font-size:10px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:#60A5FA;margin-bottom:12px}
-.ბლოგი-h1{font-size:clamp(28px,4vw,48px);font-weight:700;color:#fff;margin-bottom:12px;line-height:1.15}
-.ბლოგი-sub{font-size:15px;color:rgba(255,255,255,.5);line-height:1.7}
-.ბლოგი-wrap{max-width:1100px;margin:0 auto;padding:56px clamp(16px,3.5vw,56px)}
-.ბლოგი-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.blog-hero{background:#1A3D2E;padding:80px clamp(16px,3.5vw,56px) 64px;margin-top:72px}
+.blog-hero-inner{max-width:860px;margin:0 auto}
+.blog-label{font-size:10px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:#60A5FA;margin-bottom:12px}
+.blog-h1{font-size:clamp(28px,4vw,48px);font-weight:700;color:#fff;margin-bottom:12px;line-height:1.15}
+.blog-sub{font-size:15px;color:rgba(255,255,255,.5);line-height:1.7}
+.blog-wrap{max-width:1100px;margin:0 auto;padding:56px clamp(16px,3.5vw,56px)}
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
 .bc{display:flex;flex-direction:column;border:1px solid #E5E7EB;border-radius:12px;overflow:hidden;transition:box-shadow .25s,transform .25s}
 .bc:hover{box-shadow:0 12px 32px rgba(0,0,0,.1);transform:translateY(-3px)}
 .bc-img{height:200px;background:#F3F4F6;position:relative;overflow:hidden}
 .bc-img img{width:100%;height:100%;transition:transform .6s ease}
 .bc:hover .bc-img img{transform:scale(1.05)}
-.bc-tag{position:absolute;top:12px;მარცხნივ:12px;background:#1A3D2E;color:#fff;font-size:9px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;padding:4px 10px;border-radius:4px}
+.bc-tag{position:absolute;top:12px;left:12px;background:#1A3D2E;color:#fff;font-size:9px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;padding:4px 10px;border-radius:4px}
 .bc-tag.green{background:#059669}
 .bc-tag.red{background:#DC2626}
 .bc-body{padding:20px;flex:1;display:flex;flex-direction:column}
@@ -89,9 +89,9 @@ button{border:none;background:none;font-family:inherit;cursor:pointer}
 .bc-foot{display:flex;align-items:center;justify-content:space-between;padding-top:12px;border-top:1px solid #F3F4F6;margin-top:auto}
 .bc-read{font-size:11px;font-weight:700;color:#1A3D2E;letter-spacing:.06em;text-transform:uppercase}
 .bc-time{font-size:11px;color:#6B7280}
-.ბლოგი-cta{background:#EFF6FF;border:1px solid #BFDBFE;border-radius:16px;padding:32px 28px;margin:48px 0;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
-.ბლოგი-cta h3{font-size:20px;font-weight:700;color:#1A3D2E;margin-bottom:4px}
-.ბლოგი-cta p{font-size:13px;color:#3B82F6}
+.blog-cta{background:#EFF6FF;border:1px solid #BFDBFE;border-radius:16px;padding:32px 28px;margin:48px 0;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.blog-cta h3{font-size:20px;font-weight:700;color:#1A3D2E;margin-bottom:4px}
+.blog-cta p{font-size:13px;color:#3B82F6}
 .btn-primary{display:inline-flex;align-items:center;gap:8px;background:#1A3D2E;color:#fff;padding:13px 28px;border-radius:9999px;font-size:13px;font-weight:700;transition:background .2s}
 .btn-primary:hover{background:#1A3D2E}
 #footer{background:#111827;padding:52px clamp(16px,3.5vw,56px) 28px}
@@ -107,15 +107,15 @@ button{border:none;background:none;font-family:inherit;cursor:pointer}
 .foot-legal{display:flex;gap:16px}
 .foot-legal a{font-size:11px;color:rgba(255,255,255,.25);transition:color .2s}
 .foot-legal a:hover{color:rgba(255,255,255,.6)}
-#waf,#tgf{position:fixed;მარჯვნივ:20px;z-index:800;width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;transition:transform .2s;box-shadow:0 4px 16px rgba(0,0,0,.2)}
+#waf,#tgf{position:fixed;right:20px;z-index:800;width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;transition:transform .2s;box-shadow:0 4px 16px rgba(0,0,0,.2)}
 #waf{bottom:20px;background:#25D366}
 #tgf{bottom:80px;background:#229ED9}
 #waf:hover,#tgf:hover{transform:scale(1.1)}
-@media(max-width:960px){.nav-links{display:none}.burger{display:flex}.ბლოგი-grid{grid-template-columns:1fr 1fr}.foot-grid{grid-template-columns:1fr;gap:28px}}
-@media(max-width:580px){.ბლოგი-grid{grid-template-columns:1fr}.ბლოგი-cta{flex-direction:column;text-align:center}}
-h1,h2,h3,.section-title{font-family:'Lora',საქართველო,serif !important;font-weight:400 !important}
-body,h1,h2,h3,h4,h5,h6,p,a,span,div,li,td,th,label,input,textarea,button,blockquote{font-family:'Lora',საქართველო,serif!important}
-.lang-sw{display:flex;align-items:center;gap:4px;margin-მარცხნივ:8px}
+@media(max-width:960px){.nav-links{display:none}.burger{display:flex}.blog-grid{grid-template-columns:1fr 1fr}.foot-grid{grid-template-columns:1fr;gap:28px}}
+@media(max-width:580px){.blog-grid{grid-template-columns:1fr}.blog-cta{flex-direction:column;text-align:center}}
+h1,h2,h3,.section-title{font-family:'Lora',Georgia,serif !important;font-weight:400 !important}
+body,h1,h2,h3,h4,h5,h6,p,a,span,div,li,td,th,label,input,textarea,button,blockquote{font-family:'Lora',Georgia,serif!important}
+.lang-sw{display:flex;align-items:center;gap:4px;margin-left:8px}
 .lang-btn{font-size:12px;font-weight:700;letter-spacing:.1em;color:rgba(255,255,255,.5);cursor:pointer;background:none;border:none;padding:2px 4px;text-decoration:none!important}
 .lang-btn.on{color:#fff}
 .lang-sep{color:rgba(255,255,255,.3);font-size:12px}
@@ -138,7 +138,7 @@ k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,function(c
 ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true})};
 if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{setTimeout(f,3000)}})();
 </script>
-<noscript><div><img alt="" src="https://mc.yandex.ru/watch/109038950" style="position:absolute;მარცხნივ:-9999px"/></div></noscript><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><link rel="preconnect" href="https://mc.yandex.ru" crossorigin><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"საქართველოს სამოგზაურო ბლოგი — გზამკვლევები & რჩევები","url":"https://sakhva-travel.com/ge/blog/","description":"77 სტატია საქართველოს შესახებ: ყაზბეგი, კახეთი, თბილისი, ვიზები, ფასები, მარშრუტები. გზამკვლევები გიდი თიმურისგან.","datePublished":"2024-03-01","dateModified":"2026-06-03","inLanguage":"ka","isPartOf":{"@id":"https://sakhva-travel.com/#website"},"about":{"@id":"https://sakhva-travel.com/#business"}}</script>
+<noscript><div><img alt="" src="https://mc.yandex.ru/watch/109038950" style="position:absolute;left:-9999px"/></div></noscript><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><link rel="preconnect" href="https://mc.yandex.ru" crossorigin><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"საქართველოს სამოგზაურო ბლოგი — გზამკვლევები & რჩევები","url":"https://sakhva-travel.com/ge/blog/","description":"77 სტატია საქართველოს შესახებ: ყაზბეგი, კახეთი, თბილისი, ვიზები, ფასები, მარშრუტები. გზამკვლევები გიდი თიმურისგან.","datePublished":"2024-03-01","dateModified":"2026-06-03","inLanguage":"ka","isPartOf":{"@id":"https://sakhva-travel.com/#website"},"about":{"@id":"https://sakhva-travel.com/#business"}}</script>
 <link rel="preload" href="/fonts/noto-sans-georgian.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/css/ge.css"></head>
 <body>
 
@@ -179,19 +179,19 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
   <a href="/en/contacts/" onclick="closeDrawer()">კონტაქტები</a>
   </div>
 
-<div class="ბლოგი-hero">
-  <div class="ბლოგი-hero-inner">
-    <div class="ბლოგი-label">ბლოგი</div>
-    <h1 class="ბლოგი-h1">საქართველო & თბილისის სამოგზაურო გზამკვლევები</h1>
-    <p class="ბლოგი-sub">მე მქვია თიმური. ვარ კერძო გიდი თბილისში და 500-ზე მეტი ტური ჩამიტარებია. ამ ბლოგში ჩემი პირდაპირი პასუხებია იმ კითხვებზე, რომლებსაც ტურისტები ყველაზე ხშირად სვამენ.</p>
-    <p class="ბლოგი-sub" style="margin-top:12px;opacity:.8">გჭირდება ვიზა? როდის არის საუკეთესო დრო ყაზბეგის მოსანახულებლად? რომელი გოგირდის აბანოები ავირჩიო? სად ვიცხოვრო, თუ გადასახლდი? ვწერ პირადი გამოცდილებიდან, არა ინტერნეტიდან. ყველაფერი პირადად შემოწმებულია. ყოველკვირეულად განახლება.</p>
+<div class="blog-hero">
+  <div class="blog-hero-inner">
+    <div class="blog-label">ბლოგი</div>
+    <h1 class="blog-h1">საქართველო & თბილისის სამოგზაურო გზამკვლევები</h1>
+    <p class="blog-sub">მე მქვია თიმური. ვარ კერძო გიდი თბილისში და 500-ზე მეტი ტური ჩამიტარებია. ამ ბლოგში ჩემი პირდაპირი პასუხებია იმ კითხვებზე, რომლებსაც ტურისტები ყველაზე ხშირად სვამენ.</p>
+    <p class="blog-sub" style="margin-top:12px;opacity:.8">გჭირდება ვიზა? როდის არის საუკეთესო დრო ყაზბეგის მოსანახულებლად? რომელი გოგირდის აბანოები ავირჩიო? სად ვიცხოვრო, თუ გადასახლდი? ვწერ პირადი გამოცდილებიდან, არა ინტერნეტიდან. ყველაფერი პირადად შემოწმებულია. ყოველკვირეულად განახლება.</p>
     <p style="margin-top:18px"><a href="/en/georgia-travel-guide/" style="display:inline-flex;align-items:center;gap:8px;background:#F59E0B;color:#1A3D2E;padding:13px 32px;border-radius:9999px;font-size:15px;font-weight:700;text-decoration:none;box-shadow:0 4px 14px rgba(245,158,11,.3)">პირველად ხარ? დაიწყე საქართველოს სრული სამოგზაურო გზამკვლევით →</a></p>
   </div>
 </div>
 
-<div class="ბლოგი-wrap">
+<div class="blog-wrap">
 
-  <div class="ბლოგი-grid" id="blogGrid">
+  <div class="blog-grid" id="blogGrid">
 
     <a href="/en/blog/gifts-from-tbilisi/" class="bc">
       <div class="bc-img">
@@ -879,7 +879,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 
   </div>
 
-  <div class="ბლოგი-cta">
+  <div class="blog-cta">
     <div>
       <h3>გეგმავთ მოგზაურობას საქართველოში?</h3>
       <p>თიმური გიპასუხებს შენს კითხვებს და 15 წუთში სრულყოფილ ტურს იპოვის</p>
@@ -893,7 +893,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <section id="lead-magnet" style="position:relative;z-index:2;padding:32px clamp(16px,3.5vw,56px);background:#fff;border-top:1px solid #E8E0D8">
 <div style="max-width:760px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap">
 <p style="font-family:'Lora',serif;font-size:17px;font-weight:400;color:#111827;letter-spacing:-0.02em;margin:0">გზამკვლევი: 15 ადგილი თბილისში, რომელიც არ არის ვერც ერთ გზამკვლევში + 5%-ის ფასდაკლება</p>
-<form class="magnet-form" onsubmit="event.preventDefault();var f=this,e=f.querySelector('input').value;f.style.display='none';f.nextElementSibling.style.display='flex';fetch('/api/subscribe',{method:'POST',headers:{'Content-ტიპი':'application/json'},body:JSON.stringify({email:e,source:'footer-magnet',lang:document.documentElement.lang||'ru'})}).catch(function(){})" style="display:flex;gap:8px;flex-shrink:0">
+<form class="magnet-form" onsubmit="event.preventDefault();var f=this,e=f.querySelector('input').value;f.style.display='none';f.nextElementSibling.style.display='flex';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:e,source:'footer-magnet',lang:document.documentElement.lang||'ru'})}).catch(function(){})" style="display:flex;gap:8px;flex-shrink:0">
 <input type="email" placeholder="Email" required style="width:200px;padding:11px 16px;border:1px solid #E5E7EB;border-radius:8px;background:#fff;color:#111827;font-family:'Lora',serif;font-size:14px;outline:none">
 <button type="submit" style="padding:11px 20px;background:#1A3D2E;color:#fff;border:none;border-radius:8px;font-family:'Lora',serif;font-size:14px;cursor:pointer;white-space:nowrap">მიიღეთ</button>
 </form>
@@ -1538,6 +1538,6 @@ burger.addEventListener('click',()=>{const o=drawer.classList.toggle('on');burge
 function closeDrawer(){drawer.classList.remove('on');burger.classList.remove('on');document.body.style.overflow=''}
 </script>
 <script>document.addEventListener("click",function(e){var a=e.target.closest("a[href*='wa.me']");if(a){if(typeof gtag==="function"){gtag("event","generate_lead",{event_category:"whatsapp",event_label:a.href});gtag("event","whatsapp_click",{event_category:"contact",event_label:"whatsapp"})}if(typeof posthog!=="undefined"){posthog.capture("whatsapp_click")}}})</script>
-<div class="grain-overlay" aria-hidden="true" style="position:fixed;top:-50%;მარცხნივ:-50%;width:200%;height:200%;background-image:url('data:image/svg+xml,%3Csvg viewBox=%27 0 0 512 512%27  xmlns=%27 http://www.w3.org/2000/svg%27 %3E%3Cfilter id=%27 n%27 %3E%3CfeTurbulence type=%27 fractalNoise%27  baseFrequency=%27 0.65%27  numOctaves=%27 5%27  stitchTiles=%27 stitch%27 /%3E%3C/filter%3E%3Crect width=%27 100%25%27  height=%27 100%25%27  filter=%27 url(%23n)%27 /%3E%3C/svg%3E');opacity:0.045;pointer-events:none;z-index:9999"></div><script src="/js/chat-widget.js?v=33" defer></script>
+<div class="grain-overlay" aria-hidden="true" style="position:fixed;top:-50%;left:-50%;width:200%;height:200%;background-image:url('data:image/svg+xml,%3Csvg viewBox=%27 0 0 512 512%27  xmlns=%27 http://www.w3.org/2000/svg%27 %3E%3Cfilter id=%27 n%27 %3E%3CfeTurbulence type=%27 fractalNoise%27  baseFrequency=%27 0.65%27  numOctaves=%27 5%27  stitchTiles=%27 stitch%27 /%3E%3C/filter%3E%3Crect width=%27 100%25%27  height=%27 100%25%27  filter=%27 url(%23n)%27 /%3E%3C/svg%3E');opacity:0.045;pointer-events:none;z-index:9999"></div><script src="/js/chat-widget.js?v=33" defer></script>
 </body>
 </html>

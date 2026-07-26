@@ -53,12 +53,12 @@ else{setTimeout(function(){document.head.appendChild(s)},2000)}})();
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:'Lora',საქართველო,serif;color:#111827;background:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased;padding-top:72px}
+body{font-family:'Lora',Georgia,serif;color:#111827;background:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased;padding-top:72px}
 a{text-decoration:none;color:inherit}
 img{max-width:100%;display:block;object-fit:cover}
 button{border:none;background:none;font-family:inherit;cursor:pointer}
 ul{list-style:none}
-#nav{position:fixed;top:0;მარცხნივ:0;მარჯვნივ:0;z-index:900;height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(16px,3.5vw,56px);background:rgba(255,255,255,.97);box-shadow:0 1px 12px rgba(0,0,0,.08)}
+#nav{position:fixed;top:0;left:0;right:0;z-index:900;height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(16px,3.5vw,56px);background:rgba(255,255,255,.97);box-shadow:0 1px 12px rgba(0,0,0,.08)}
 .nav-logo{display:flex;align-items:center;text-decoration:none;color:#1A3D2E;transition:color .3s}
 .logo-svg{width:148px;height:66px;display:block}
 .nav-links{display:flex;align-items:center;gap:24px}
@@ -71,7 +71,7 @@ ul{list-style:none}
 .burger.on span:nth-child(1){transform:translateY(7px) rotate(45deg)}
 .burger.on span:nth-child(2){opacity:0}
 .burger.on span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-.drawer{display:none;position:fixed;top:72px;მარცხნივ:0;მარჯვნივ:0;bottom:0;background:#fff;z-index:850;flex-direction:column;padding:28px 24px;border-top:1px solid #f3f4f6}
+.drawer{display:none;position:fixed;top:72px;left:0;right:0;bottom:0;background:#fff;z-index:850;flex-direction:column;padding:28px 24px;border-top:1px solid #f3f4f6}
 .drawer.on{display:flex}
 .drawer a{font-size:17px;font-weight:600;color:#111827;padding:15px 0;border-bottom:1px solid #f3f4f6;transition:color .2s}
 .drawer a:hover{color:#1A3D2E}
@@ -86,30 +86,30 @@ ul{list-style:none}
 .article-wrap{max-width:760px;margin:0 auto;padding:52px clamp(16px,3.5vw,32px)}
 .article-toc{background:#F0FDF4;border:1px solid #BFDBFE;border-radius:12px;padding:24px 28px;margin-bottom:40px}
 .article-toc h2{font-size:14px;font-weight:700;color:#1A3D2E;margin-bottom:12px;text-transform:uppercase;letter-spacing:.1em}
-.article-toc ol{padding-მარცხნივ:20px;display:flex;flex-direction:column;gap:2px;list-style:decimal}
+.article-toc ol{padding-left:20px;display:flex;flex-direction:column;gap:2px;list-style:decimal}
 .article-toc li a{font-size:14px;color:#1A3D2E;transition:color .2s;display:block;padding:6px 0;min-height:44px;line-height:1.5}
 .article-body h2{font-size:clamp(20px,2.5vw,28px);font-weight:700!important;color:#111827;margin:40px 0 16px;padding-top:8px;border-top:2px solid #EFF6FF}
 .article-body h3{font-size:18px;font-weight:700!important;color:#111827;margin:28px 0 12px}
 .article-body p{font-size:16px;color:#374151;line-height:1.85;margin-bottom:16px}
-.article-body ul,.article-body ol{margin:16px 0 20px;padding-მარცხნივ:0;display:flex;flex-direction:column;gap:8px;list-style:none}
-.article-body li{font-size:16px;color:#374151;line-height:1.7;padding-მარცხნივ:20px;position:relative}
-.article-body li::before{content:'→';position:absolute;მარცხნივ:0;color:#1A3D2E;font-weight:700}
+.article-body ul,.article-body ol{margin:16px 0 20px;padding-left:0;display:flex;flex-direction:column;gap:8px;list-style:none}
+.article-body li{font-size:16px;color:#374151;line-height:1.7;padding-left:20px;position:relative}
+.article-body li::before{content:'→';position:absolute;left:0;color:#1A3D2E;font-weight:700}
 .article-body strong{color:#111827;font-weight:700}
 .article-body a{color:#1A3D2E;text-decoration:underline;text-decoration-color:rgba(26,86,219,.3)}
-.info-box{background:#F0FDF4;border-მარცხნივ:4px solid #1A3D2E;border-radius:0 8px 8px 0;padding:16px 20px;margin:24px 0;font-size:14px;color:#1A3D2E;line-height:1.7}
+.info-box{background:#F0FDF4;border-left:4px solid #1A3D2E;border-radius:0 8px 8px 0;padding:16px 20px;margin:24px 0;font-size:14px;color:#1A3D2E;line-height:1.7}
 .review-quote{background:#FFFBEB;border:1px solid #FDE68A;border-radius:16px;padding:28px 28px 20px;margin:32px 0;position:relative}
-.review-quote::before{content:'\201C';font-size:64px;color:#F59E0B;line-height:1;position:absolute;top:-10px;მარცხნივ:20px;font-family:საქართველო,serif}
+.review-quote::before{content:'\201C';font-size:64px;color:#F59E0B;line-height:1;position:absolute;top:-10px;left:20px;font-family:Georgia,serif}
 .review-quote-text{font-size:16px;color:#374151;line-height:1.8;font-style:italic;padding-top:20px;margin-bottom:12px}
 .review-quote-author{font-size:12px;font-weight:700;color:#92400E;letter-spacing:.05em}
 .review-stars{color:#F59E0B;font-size:13px;margin-bottom:6px}
-.ფასი-table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:24px 0}
-.ფასი-table{width:100%;border-collapse:collapse;border-radius:8px;overflow:hidden;min-width:420px}
-.ფასი-table th{background:#1A3D2E;color:#fff;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:12px 16px;text-align:მარცხნივ}
-.ფასი-table td{padding:12px 16px;border-bottom:1px solid #F3F4F6;font-size:14px;color:#374151}
-.ფასი-table tr:last-child td{border-bottom:none}
-.ფასი-table tr:nth-child(even) td{background:#F9FAFB}
+.price-table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:24px 0}
+.price-table{width:100%;border-collapse:collapse;border-radius:8px;overflow:hidden;min-width:420px}
+.price-table th{background:#1A3D2E;color:#fff;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:12px 16px;text-align:left}
+.price-table td{padding:12px 16px;border-bottom:1px solid #F3F4F6;font-size:14px;color:#374151}
+.price-table tr:last-child td{border-bottom:none}
+.price-table tr:nth-child(even) td{background:#F9FAFB}
 .related{padding:48px clamp(16px,3.5vw,56px);background:#F9FAFB}
-.related h2{font-size:22px;font-weight:700;color:#111827;margin-bottom:28px;max-width:760px;margin-მარცხნივ:auto;margin-მარჯვნივ:auto}
+.related h2{font-size:22px;font-weight:700;color:#111827;margin-bottom:28px;max-width:760px;margin-left:auto;margin-right:auto}
 .related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:760px;margin:0 auto}
 .rc-card{background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:20px;transition:box-shadow .2s}
 .rc-card:hover{box-shadow:0 8px 24px rgba(0,0,0,.08)}
@@ -121,7 +121,7 @@ ul{list-style:none}
 .faq-inner{max-width:760px;margin:0 auto}
 .faq-inner h2{font-size:22px;font-weight:700;color:#111827;margin-bottom:28px}
 .fi{border-bottom:1px solid #E5E7EB}
-.fq{width:100%;text-align:მარცხნივ;padding:18px 0;display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:16px;font-weight:600;color:#111827;cursor:pointer;transition:color .2s}
+.fq{width:100%;text-align:left;padding:18px 0;display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:16px;font-weight:600;color:#111827;cursor:pointer;transition:color .2s}
 .fq:hover{color:#1A3D2E}
 .fq-ic{width:28px;height:28px;border-radius:50%;background:#F3F4F6;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:700;color:#1A3D2E;flex-shrink:0;transition:transform .3s,background .2s}
 .fi.open .fq-ic{transform:rotate(45deg);background:#1A3D2E;color:#fff}
@@ -141,13 +141,13 @@ ul{list-style:none}
 .foot-legal a{font-size:11px;color:rgba(255,255,255,.25);transition:color .2s}
 .foot-legal a:hover{color:rgba(255,255,255,.6)}
 @media(max-width:960px){.nav-links{display:none}.burger{display:flex}.foot-grid{grid-template-columns:1fr;gap:28px}.related-grid{grid-template-columns:1fr}}
-@media(max-width:480px){.ფასი-table{font-size:13px}.article-toc{padding:16px 18px}}
+@media(max-width:480px){.price-table{font-size:13px}.article-toc{padding:16px 18px}}
 .author-byline{display:flex;align-items:center;gap:12px;background:#F9FAFB;border:1px solid #E5E7EB;border-radius:12px;padding:14px 18px;margin-bottom:32px}.author-byline img{width:40px;height:40px;border-radius:50%;object-fit:cover;flex-shrink:0}.author-info{display:flex;flex-direction:column;gap:2px}.author-name{font-size:14px;font-weight:700;color:#111827}.author-name:hover{color:#1A3D2E}.author-creds{font-size:12px;color:#6B7280}
-.article-lead{background:#F0FDF4;border-მარცხნივ:3px solid #1A3D2E;border-radius:8px;padding:14px 18px;font-size:16px;color:#1e3a5f;line-height:1.75;margin-bottom:28px}
-.sources-block{background:#F0FDF4;border:1px solid #BBF7D0;border-radius:10px;padding:16px 20px;margin:32px 0}.sources-title{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#166534;margin-bottom:10px}.sources-block ul{margin:0;padding-მარცხნივ:0}.sources-block li{font-size:13px;color:#374151;padding-მარცხნივ:16px;position:relative;margin-bottom:6px}.sources-block li::before{content:"→";position:absolute;მარცხნივ:0;color:#16a34a}.sources-block a{color:#1A3D2E}
-h1,h2,h3{font-family:'Lora',საქართველო,serif !important;font-weight:400 !important}
-body,h1,h2,h3,h4,h5,h6,p,a,span,div,li,td,th,label,input,textarea,button,blockquote{font-family:'Lora',საქართველო,serif!important}
-.lang-sw{display:flex;align-items:center;gap:4px;margin-მარცხნივ:8px}
+.article-lead{background:#F0FDF4;border-left:3px solid #1A3D2E;border-radius:8px;padding:14px 18px;font-size:16px;color:#1e3a5f;line-height:1.75;margin-bottom:28px}
+.sources-block{background:#F0FDF4;border:1px solid #BBF7D0;border-radius:10px;padding:16px 20px;margin:32px 0}.sources-title{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#166534;margin-bottom:10px}.sources-block ul{margin:0;padding-left:0}.sources-block li{font-size:13px;color:#374151;padding-left:16px;position:relative;margin-bottom:6px}.sources-block li::before{content:"→";position:absolute;left:0;color:#16a34a}.sources-block a{color:#1A3D2E}
+h1,h2,h3{font-family:'Lora',Georgia,serif !important;font-weight:400 !important}
+body,h1,h2,h3,h4,h5,h6,p,a,span,div,li,td,th,label,input,textarea,button,blockquote{font-family:'Lora',Georgia,serif!important}
+.lang-sw{display:flex;align-items:center;gap:4px;margin-left:8px}
 .lang-btn{font-size:12px;font-weight:700;letter-spacing:.1em;color:rgba(75,85,99,.5);cursor:pointer;background:none;border:none;padding:2px 4px;text-decoration:none!important}
 .lang-btn.on{color:#4B5563}
 .lang-sep{color:rgba(75,85,99,.3);font-size:12px}
@@ -262,7 +262,7 @@ posthog.init('phc_UqL7ychAdg6sU0vOBr2z8ACypL6NgvRUKQ9u9If99Il',{api_host:'https:
 <li><strong>ნეკრესის მონასტერი</strong> — მე-4 საუკუნის სამონასტრო კომპლექსი ტყიან ფერდობზე, საქართველოს ერთ-ერთი უძველესი. სოფლიდან მარშრუტკით მისასვლელი (4WD გზა). ხედი ალაზნის ველზე</li>
 </ul>
 <h2 id="prices">ტურის ფასები 2026</h2>
-<div class="ფასი-table-wrap"><table class="ფასი-table">
+<div class="price-table-wrap"><table class="price-table">
 <thead><tr><th>ვარიანტი</th><th>ფასი</th><th>რა შედის</th></tr></thead>
 <tbody>
 <tr><td>გიდიანი ტური (Sakhva)</td><td>₾170 / პირზე-დან</td><td>ტრანსფერი, 2-3 მარანი, სადილი, გიდი</td></tr>
@@ -297,7 +297,7 @@ posthog.init('phc_UqL7ychAdg6sU0vOBr2z8ACypL6NgvRUKQ9u9If99Il',{api_host:'https:
 <p class="review-quote-text">კახეთმა სრულიად შეცვალა ჩემი შეხედულება ღვინოზე. ოჯახური მარანი — ფერმერი ეზოში, ქვევრიდან პირდაპირ ასხამს ქარვისფერ რქაწითელს — ეს განცდა შეუდარებელია საფრანგეთსა თუ იტალიაში ნახულ ყველაფერს. სიღნაღი მზის ჩასვლისას მთებით ფონზე ერთ-ერთი ულამაზესი სანახავია ჩემს ცხოვრებაში. თიმური ტურს პირადი და გულწრფელი გამხადა.</p>
 <div class="review-quote-author">სერგი და ოლგა — სანქტ-პეტერბურგი, აპრილი 2026 · Google Maps ★★★★★</div>
 </div>
-<div style="background:#f0fdf4;border-მარცხნივ:3px solid #1A3D2E;padding:16px 20px;margin:24px 0;border-radius:0 8px 8px 0">
+<div style="background:#f0fdf4;border-left:3px solid #1A3D2E;padding:16px 20px;margin:24px 0;border-radius:0 8px 8px 0">
 <strong>დაჯავშნა:</strong> <a href="/en/ekskursiya/ekskursiya-kakheti-iz-tbilisi/" style="color:#1A3D2E;text-decoration:underline">კახეთის ღვინის ტური თბილისიდან — ₾170-დან გიდთან ერთად</a>
 </div>
 <div style="margin:32px 0;padding:16px 20px;background:#f9fafb;border-radius:8px;font-size:14px;color:#374151">
@@ -366,7 +366,7 @@ posthog.init('phc_UqL7ychAdg6sU0vOBr2z8ACypL6NgvRUKQ9u9If99Il',{api_host:'https:
 <section id="lead-magnet" style="position:relative;z-index:2;padding:32px clamp(16px,3.5vw,56px);background:#fff;border-top:1px solid #E8E0D8">
 <div style="max-width:760px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap">
 <p style="font-family:'Lora',serif;font-size:17px;font-weight:400;color:#111827;letter-spacing:-0.02em;margin:0">გზამკვლევი: 15 ადგილი თბილისში, რომელიც არ არის ვერც ერთ გზამკვლევში + 5%-ის ფასდაკლება</p>
-<form class="magnet-form" onsubmit="event.preventDefault();var f=this,e=f.querySelector('input').value;f.style.display='none';f.nextElementSibling.style.display='flex';fetch('/api/subscribe',{method:'POST',headers:{'Content-ტიპი':'application/json'},body:JSON.stringify({email:e,source:'footer-magnet',lang:'en'})}).catch(function(){})" style="display:flex;gap:8px;flex-shrink:0">
+<form class="magnet-form" onsubmit="event.preventDefault();var f=this,e=f.querySelector('input').value;f.style.display='none';f.nextElementSibling.style.display='flex';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:e,source:'footer-magnet',lang:'en'})}).catch(function(){})" style="display:flex;gap:8px;flex-shrink:0">
 <input placeholder="Email" required="" style="width:200px;padding:11px 16px;border:1px solid #E5E7EB;border-radius:8px;background:#fff;color:#111827;font-family:'Lora',serif;font-size:14px;outline:none" type="email"/>
 <button style="padding:11px 20px;background:#1A3D2E;color:#fff;border:none;border-radius:8px;font-family:'Lora',serif;font-size:14px;cursor:pointer;white-space:nowrap" type="submit">მიიღეთ</button>
 </form>
@@ -401,7 +401,7 @@ k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,function(c
 (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
 ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});
 </script>
-<noscript><div><img alt="" src="https://mc.yandex.ru/watch/109038950" style="position:absolute;მარცხნივ:-9999px"/></div></noscript>
+<noscript><div><img alt="" src="https://mc.yandex.ru/watch/109038950" style="position:absolute;left:-9999px"/></div></noscript>
 <script defer="" src="/js/chat-widget.js?v=33"></script>
 </body>
 </html>

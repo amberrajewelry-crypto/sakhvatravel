@@ -43,14 +43,14 @@ if(_ck){gtag('consent','update',{analytics_storage:(_ck||_gc)?'granted':'denied'
   <style>
     *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
     html{scroll-behavior:smooth}
-    body{font-family:'Lora',საქართველო,serif;color:#111827;background:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+    body{font-family:'Lora',Georgia,serif;color:#111827;background:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased}
     a{text-decoration:none;color:inherit}
     img{max-width:100%;display:block;object-fit:cover}
     button{border:none;background:none;font-family:inherit;cursor:pointer}
     ul{list-style:none}
 
     /* NAV */
-    #nav{position:fixed;top:0;მარცხნივ:0;მარჯვნივ:0;z-index:900;height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(16px,3.5vw,56px);background:rgba(255,255,255,.97);box-shadow:0 1px 12px rgba(0,0,0,.08)}
+    #nav{position:fixed;top:0;left:0;right:0;z-index:900;height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(16px,3.5vw,56px);background:rgba(255,255,255,.97);box-shadow:0 1px 12px rgba(0,0,0,.08)}
     .nav-logo{display:flex;align-items:center;text-decoration:none;color:#1A3D2E}
     .logo-svg{width:148px;height:66px;display:block}
     .nav-links{display:flex;align-items:center;gap:24px}
@@ -63,7 +63,7 @@ if(_ck){gtag('consent','update',{analytics_storage:(_ck||_gc)?'granted':'denied'
     .burger.on span:nth-child(1){transform:translateY(7px) rotate(45deg)}
     .burger.on span:nth-child(2){opacity:0}
     .burger.on span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-    .drawer{display:none;position:fixed;top:72px;მარცხნივ:0;მარჯვნივ:0;bottom:0;background:#fff;z-index:850;flex-direction:column;padding:28px 24px;border-top:1px solid #f3f4f6}
+    .drawer{display:none;position:fixed;top:72px;left:0;right:0;bottom:0;background:#fff;z-index:850;flex-direction:column;padding:28px 24px;border-top:1px solid #f3f4f6}
     .drawer.on{display:flex}
     .drawer a{font-size:17px;font-weight:600;color:#111827;padding:15px 0;border-bottom:1px solid #f3f4f6;transition:color .2s}
     .drawer a:hover{color:#1A3D2E}
@@ -102,7 +102,7 @@ if(_ck){gtag('consent','update',{analytics_storage:(_ck||_gc)?'granted':'denied'
     .hf-item strong{display:block;font-size:15px;font-weight:700;color:#111827;margin-bottom:2px}
     .hf-item span{font-size:13px;color:#6B7280;line-height:1.4}
     @media(max-width:768px){.hero-facts{grid-template-columns:1fr;gap:10px;margin-top:24px;padding-top:20px}
-    .about-photos{grid-template-columns:1fr !important;max-width:400px;margin-მარცხნივ:auto;margin-მარჯვნივ:auto}}
+    .about-photos{grid-template-columns:1fr !important;max-width:400px;margin-left:auto;margin-right:auto}}
 
     /* SECTIONS */
     .section{padding:clamp(48px,6vw,80px) clamp(16px,3.5vw,56px)}
@@ -139,15 +139,15 @@ if(_ck){gtag('consent','update',{analytics_storage:(_ck||_gc)?'granted':'denied'
     .faq-a a{color:#1D4ED8;text-decoration:underline}
 
     /* TOURS CTA */
-    .ტურები-cta{background:#111827;padding:clamp(48px,6vw,72px) clamp(16px,3.5vw,56px);text-align:center}
-    .ტურები-cta-label{font-size:10px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:12px}
-    .ტურები-cta-title{font-size:clamp(22px,3vw,34px);font-weight:800;color:#fff;margin-bottom:10px}
-    .ტურები-cta-sub{font-size:14px;color:rgba(255,255,255,.5);margin-bottom:32px}
-    .ტურები-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:900px;margin:0 auto 36px}
-    .ტური-link{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:16px 20px;text-align:მარცხნივ;transition:background .2s,border-color .2s}
-    .ტური-link:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.2)}
-    .ტური-link-name{font-size:14px;font-weight:700;color:#fff;margin-bottom:4px}
-    .ტური-link-ფასი{font-size:12px;color:rgba(255,255,255,.45)}
+    .tours-cta{background:#111827;padding:clamp(48px,6vw,72px) clamp(16px,3.5vw,56px);text-align:center}
+    .tours-cta-label{font-size:10px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:12px}
+    .tours-cta-title{font-size:clamp(22px,3vw,34px);font-weight:800;color:#fff;margin-bottom:10px}
+    .tours-cta-sub{font-size:14px;color:rgba(255,255,255,.5);margin-bottom:32px}
+    .tours-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:900px;margin:0 auto 36px}
+    .tour-link{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:16px 20px;text-align:left;transition:background .2s,border-color .2s}
+    .tour-link:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.2)}
+    .tour-link-name{font-size:14px;font-weight:700;color:#fff;margin-bottom:4px}
+    .tour-link-price{font-size:12px;color:rgba(255,255,255,.45)}
     .cta-btns{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
     .btn-tg{display:inline-flex;align-items:center;gap:8px;background:#229ED9;color:#fff;padding:14px 28px;border-radius:9999px;font-size:13px;font-weight:700;transition:background .2s}
     .btn-tg:hover{background:#1a8fc0}
@@ -172,26 +172,26 @@ if(_ck){gtag('consent','update',{analytics_storage:(_ck||_gc)?'granted':'denied'
     @media(max-width:900px){
       #nav{justify-content:center}
       .hero-inner{grid-template-columns:1fr;gap:36px;text-align:center}
-      .about-lead{margin-მარცხნივ:auto;margin-მარჯვნივ:auto}
+      .about-lead{margin-left:auto;margin-right:auto}
       .stats-row{justify-content:center}
       .hero-btns{justify-content:center}
       .breadcrumb{justify-content:center}
       .guide-photo{aspect-ratio:4/3;max-width:400px;margin:0 auto}
       .two-col{grid-template-columns:1fr;gap:28px}
       .values-grid{grid-template-columns:1fr 1fr}
-      .ტურები-grid{grid-template-columns:1fr 1fr}
+      .tours-grid{grid-template-columns:1fr 1fr}
       .foot-grid{grid-template-columns:1fr;gap:28px}
       .nav-links{display:none}
       .burger{display:flex}
     }
     @media(max-width:560px){
       .values-grid{grid-template-columns:1fr}
-      .ტურები-grid{grid-template-columns:1fr}
+      .tours-grid{grid-template-columns:1fr}
       .stats-row{gap:20px}
     }
-h1,h2,h3,.section-title{font-family:'Lora',საქართველო,serif !important;font-weight:400 !important}  @media(max-width:768px){.foot-grid div h4{font-size:11px}.foot-copy,.foot-legal a{font-size:12px}.foot-links a{padding:8px 0;display:inline-block;min-height:44px;line-height:28px}.foot-legal{gap:0}.foot-legal a{padding:10px 12px;display:inline-block}}
-body,h1,h2,h3,h4,h5,h6,p,a,span,div,li,td,th,label,input,textarea,button,blockquote{font-family:'Lora',საქართველო,serif!important}
-.lang-sw{display:flex;align-items:center;gap:4px;margin-მარცხნივ:8px}
+h1,h2,h3,.section-title{font-family:'Lora',Georgia,serif !important;font-weight:400 !important}  @media(max-width:768px){.foot-grid div h4{font-size:11px}.foot-copy,.foot-legal a{font-size:12px}.foot-links a{padding:8px 0;display:inline-block;min-height:44px;line-height:28px}.foot-legal{gap:0}.foot-legal a{padding:10px 12px;display:inline-block}}
+body,h1,h2,h3,h4,h5,h6,p,a,span,div,li,td,th,label,input,textarea,button,blockquote{font-family:'Lora',Georgia,serif!important}
+.lang-sw{display:flex;align-items:center;gap:4px;margin-left:8px}
 .lang-btn{font-size:12px;font-weight:700;letter-spacing:.1em;color:rgba(255,255,255,.5);cursor:pointer;background:none;border:none;padding:2px 4px;text-decoration:none!important}
 .lang-btn.on{color:#fff}
 .lang-sep{color:rgba(255,255,255,.3);font-size:12px}
@@ -209,7 +209,7 @@ k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,function(c
 ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true})};
 if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{setTimeout(f,3000)}})();
 </script>
-<noscript><div><img alt="" src="https://mc.yandex.ru/watch/109038950" style="position:absolute;მარცხნივ:-9999px"/></div></noscript><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><link rel="preconnect" href="https://mc.yandex.ru" crossorigin><link rel="preload" href="/fonts/noto-sans-georgian.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/css/ge.css"></head>
+<noscript><div><img alt="" src="https://mc.yandex.ru/watch/109038950" style="position:absolute;left:-9999px"/></div></noscript><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><link rel="preconnect" href="https://mc.yandex.ru" crossorigin><link rel="preload" href="/fonts/noto-sans-georgian.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/css/ge.css"></head>
 <body>
 
 <!-- NAV -->
@@ -347,34 +347,34 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 </section>
 
 <!-- SABA'S REGIONS (internal links to ტურები) -->
-<section class="ტურები-cta" id="ტურები">
-  <div class="ტურები-cta-label">საბას რეგიონები</div>
-  <h2 class="ტურები-cta-title">ბათუმი &amp; სვანეთი — ტურები</h2>
-  <p class="ტურები-cta-sub">აირჩიეთ მარშრუტი — საბა პირადად გაგიძღვება</p>
-  <div class="ტურები-grid">
-    <a href="/en/ekskursiya/tur-batumi-iz-tbilisi/" class="ტური-link">
-      <div class="ტური-link-name">ბათუმის ტური თბილისიდან</div>
-      <div class="ტური-link-ფასი">სანაპირო, ჩანჩქერები, ბოტანიკური ბაღი</div>
+<section class="tours-cta" id="ტურები">
+  <div class="tours-cta-label">საბას რეგიონები</div>
+  <h2 class="tours-cta-title">ბათუმი &amp; სვანეთი — ტურები</h2>
+  <p class="tours-cta-sub">აირჩიეთ მარშრუტი — საბა პირადად გაგიძღვება</p>
+  <div class="tours-grid">
+    <a href="/en/ekskursiya/tur-batumi-iz-tbilisi/" class="tour-link">
+      <div class="tour-link-name">ბათუმის ტური თბილისიდან</div>
+      <div class="tour-link-price">სანაპირო, ჩანჩქერები, ბოტანიკური ბაღი</div>
     </a>
-    <a href="/en/ekskursiya/tur-batumi-2-dnya/" class="ტური-link">
-      <div class="ტური-link-name">ბათუმი 2 დღეში</div>
-      <div class="ტური-link-ფასი">აჭარა ჩქარობის გარეშე</div>
+    <a href="/en/ekskursiya/tur-batumi-2-dnya/" class="tour-link">
+      <div class="tour-link-name">ბათუმი 2 დღეში</div>
+      <div class="tour-link-price">აჭარა ჩქარობის გარეშე</div>
     </a>
-    <a href="/en/blog/batumi-complete-guide/" class="ტური-link">
-      <div class="ტური-link-name">ბათუმის სრული სახელმძღვანელო</div>
-      <div class="ტური-link-ფასი">აჭარის ზღვა და მთები</div>
+    <a href="/en/blog/batumi-complete-guide/" class="tour-link">
+      <div class="tour-link-name">ბათუმის სრული სახელმძღვანელო</div>
+      <div class="tour-link-price">აჭარის ზღვა და მთები</div>
     </a>
-    <a href="/en/ekskursiya/ekskursiya-svaneti-iz-tbilisi/" class="ტური-link">
-      <div class="ტური-link-name">სვანეთის ტური თბილისიდან</div>
-      <div class="ტური-link-ფასი">მესტია, კოშკები, პანორამები</div>
+    <a href="/en/ekskursiya/ekskursiya-svaneti-iz-tbilisi/" class="tour-link">
+      <div class="tour-link-name">სვანეთის ტური თბილისიდან</div>
+      <div class="tour-link-price">მესტია, კოშკები, პანორამები</div>
     </a>
-    <a href="/en/ekskursiya/tur-svaneti-4-dnya/" class="ტური-link">
-      <div class="ტური-link-name">სვანეთი 4 დღეში</div>
-      <div class="ტური-link-ფასი">უშგული და მყინვარები</div>
+    <a href="/en/ekskursiya/tur-svaneti-4-dnya/" class="tour-link">
+      <div class="tour-link-name">სვანეთი 4 დღეში</div>
+      <div class="tour-link-price">უშგული და მყინვარები</div>
     </a>
-    <a href="/en/blog/svaneti-guide/" class="ტური-link">
-      <div class="ტური-link-name">სვანეთის სამოგზაურო სახელმძღვანელო</div>
-      <div class="ტური-link-ფასი">მთიანი საქართველო</div>
+    <a href="/en/blog/svaneti-guide/" class="tour-link">
+      <div class="tour-link-name">სვანეთის სამოგზაურო სახელმძღვანელო</div>
+      <div class="tour-link-price">მთიანი საქართველო</div>
     </a>
   </div>
   <div class="cta-btns">
@@ -445,6 +445,6 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 </footer>
 
 <script>document.addEventListener("click",function(e){var a=e.target.closest("a[href*='wa.me']");if(a){gtag("event","generate_lead",{event_category:"whatsapp",event_label:a.href});gtag("event","whatsapp_click",{event_category:"contact",event_label:"whatsapp"});if(typeof posthog!=="undefined"){posthog.capture("whatsapp_click")}}})</script>
-<div class="grain-overlay" aria-hidden="true" style="position:fixed;top:-50%;მარცხნივ:-50%;width:200%;height:200%;background-image:url('data:image/svg+xml,%3Csvg viewBox=%27 0 0 512 512%27  xmlns=%27 http://www.w3.org/2000/svg%27 %3E%3Cfilter id=%27 n%27 %3E%3CfeTurbulence type=%27 fractalNoise%27  baseFrequency=%27 0.65%27  numOctaves=%27 5%27  stitchTiles=%27 stitch%27 /%3E%3C/filter%3E%3Crect width=%27 100%25%27  height=%27 100%25%27  filter=%27 url(%23n)%27 /%3E%3C/svg%3E');opacity:0.045;pointer-events:none;z-index:9999"></div><script src="/js/chat-widget.js?v=33" defer></script>
+<div class="grain-overlay" aria-hidden="true" style="position:fixed;top:-50%;left:-50%;width:200%;height:200%;background-image:url('data:image/svg+xml,%3Csvg viewBox=%27 0 0 512 512%27  xmlns=%27 http://www.w3.org/2000/svg%27 %3E%3Cfilter id=%27 n%27 %3E%3CfeTurbulence type=%27 fractalNoise%27  baseFrequency=%27 0.65%27  numOctaves=%27 5%27  stitchTiles=%27 stitch%27 /%3E%3C/filter%3E%3Crect width=%27 100%25%27  height=%27 100%25%27  filter=%27 url(%23n)%27 /%3E%3C/svg%3E');opacity:0.045;pointer-events:none;z-index:9999"></div><script src="/js/chat-widget.js?v=33" defer></script>
 </body>
 </html>

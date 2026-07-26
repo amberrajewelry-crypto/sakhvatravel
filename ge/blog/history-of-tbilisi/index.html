@@ -57,12 +57,12 @@ else{setTimeout(function(){document.head.appendChild(s)},2000)}})();
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:'Lora',საქართველო,serif;color:#111827;background:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased;padding-top:72px}
+body{font-family:'Lora',Georgia,serif;color:#111827;background:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased;padding-top:72px}
 a{text-decoration:none;color:inherit}
 img{max-width:100%;display:block;object-fit:cover}
 button{border:none;background:none;font-family:inherit;cursor:pointer}
 ul{list-style:none}
-#nav{position:fixed;top:0;მარცხნივ:0;მარჯვნივ:0;z-index:900;height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(16px,3.5vw,56px);background:rgba(255,255,255,.97);box-shadow:0 1px 12px rgba(0,0,0,.08)}
+#nav{position:fixed;top:0;left:0;right:0;z-index:900;height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(16px,3.5vw,56px);background:rgba(255,255,255,.97);box-shadow:0 1px 12px rgba(0,0,0,.08)}
 .nav-logo{display:flex;align-items:center;text-decoration:none;color:#1A3D2E;transition:color .3s}
 .logo-svg{width:148px;height:66px;display:block}
 .nav-links{display:flex;align-items:center;gap:24px}
@@ -75,7 +75,7 @@ ul{list-style:none}
 .burger.on span:nth-child(1){transform:translateY(7px) rotate(45deg)}
 .burger.on span:nth-child(2){opacity:0}
 .burger.on span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-.drawer{display:none;position:fixed;top:72px;მარცხნივ:0;მარჯვნივ:0;bottom:0;background:#fff;z-index:850;flex-direction:column;padding:28px 24px;border-top:1px solid #f3f4f6}
+.drawer{display:none;position:fixed;top:72px;left:0;right:0;bottom:0;background:#fff;z-index:850;flex-direction:column;padding:28px 24px;border-top:1px solid #f3f4f6}
 .drawer.on{display:flex}
 .drawer a{font-size:17px;font-weight:600;color:#111827;padding:15px 0;border-bottom:1px solid #f3f4f6;transition:color .2s}
 .drawer a:hover{color:#1A3D2E}
@@ -91,31 +91,31 @@ ul{list-style:none}
 .article-wrap{max-width:760px;margin:0 auto;padding:52px clamp(16px,3.5vw,32px)}
 .article-toc{background:#F0FDF4;border:1px solid #BFDBFE;border-radius:12px;padding:24px 28px;margin-bottom:40px}
 .article-toc .toc-hd{font-size:14px;font-weight:700;color:#1A3D2E;margin-bottom:12px;text-transform:uppercase;letter-spacing:.1em}
-.article-toc ol{padding-მარცხნივ:20px;display:flex;flex-direction:column;gap:2px;list-style:decimal}
+.article-toc ol{padding-left:20px;display:flex;flex-direction:column;gap:2px;list-style:decimal}
 .article-toc li a{font-size:14px;color:#1A3D2E;transition:color .2s;display:block;padding:6px 0;min-height:44px;line-height:1.5}
 .article-toc li a:hover{color:#1A3D2E}
 .article-body h2{font-size:clamp(20px,2.5vw,28px);font-weight:700!important;color:#111827;margin:40px 0 16px;padding-top:8px;border-top:2px solid #EFF6FF}
 .article-body h3{font-size:18px;font-weight:700!important;color:#111827;margin:28px 0 12px}
-.article-body p{font-size:16px;color:#374151;line-height:1.85;margin-bottom:16px}.article-body ul{margin-bottom:16px;padding-მარცხნივ:8px}
-.article-body ul,.article-body ol{margin:16px 0 20px;padding-მარცხნივ:0;display:flex;flex-direction:column;gap:8px;list-style:none}
-.article-body li{font-size:16px;color:#374151;line-height:1.7;padding-მარცხნივ:20px;position:relative}
-.article-body li::before{content:'→';position:absolute;მარცხნივ:0;color:#1A3D2E;font-weight:700}
+.article-body p{font-size:16px;color:#374151;line-height:1.85;margin-bottom:16px}.article-body ul{margin-bottom:16px;padding-left:8px}
+.article-body ul,.article-body ol{margin:16px 0 20px;padding-left:0;display:flex;flex-direction:column;gap:8px;list-style:none}
+.article-body li{font-size:16px;color:#374151;line-height:1.7;padding-left:20px;position:relative}
+.article-body li::before{content:'→';position:absolute;left:0;color:#1A3D2E;font-weight:700}
 .article-body ol{counter-reset:item}
-.article-body ol li{counter-increment:item;padding-მარცხნივ:28px}
-.article-body ol li::before{content:counter(item)'.';position:absolute;მარცხნივ:0;color:#1A3D2E;font-weight:700;font-size:13px}
+.article-body ol li{counter-increment:item;padding-left:28px}
+.article-body ol li::before{content:counter(item)'.';position:absolute;left:0;color:#1A3D2E;font-weight:700;font-size:13px}
 .article-body strong{color:#111827;font-weight:700}
 .article-body a{color:#1A3D2E;text-decoration:underline;text-decoration-color:rgba(26,86,219,.3)}
 .article-body a:hover{text-decoration-color:#1A3D2E}
-.info-box{background:#F0FDF4;border-მარცხნივ:4px solid #1A3D2E;border-radius:0 8px 8px 0;padding:16px 20px;margin:24px 0;font-size:14px;color:#1A3D2E;line-height:1.7}
-.warn-box{background:#FEF3C7;border-მარცხნივ:4px solid #F59E0B;border-radius:0 8px 8px 0;padding:16px 20px;margin:24px 0;font-size:14px;color:#92400E;line-height:1.7}
-.ფასი-table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:24px 0}
-.ფასი-table{width:100%;border-collapse:collapse;border-radius:8px;overflow:hidden;min-width:420px}
-.ფასი-table th{background:#1A3D2E;color:#fff;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:12px 16px;text-align:მარცხნივ}
-.ფასი-table td{padding:12px 16px;border-bottom:1px solid #F3F4F6;font-size:14px;color:#374151}
-.ფასი-table tr:last-child td{border-bottom:none}
-.ფასი-table tr:nth-child(even) td{background:#F9FAFB}
+.info-box{background:#F0FDF4;border-left:4px solid #1A3D2E;border-radius:0 8px 8px 0;padding:16px 20px;margin:24px 0;font-size:14px;color:#1A3D2E;line-height:1.7}
+.warn-box{background:#FEF3C7;border-left:4px solid #F59E0B;border-radius:0 8px 8px 0;padding:16px 20px;margin:24px 0;font-size:14px;color:#92400E;line-height:1.7}
+.price-table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:24px 0}
+.price-table{width:100%;border-collapse:collapse;border-radius:8px;overflow:hidden;min-width:420px}
+.price-table th{background:#1A3D2E;color:#fff;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:12px 16px;text-align:left}
+.price-table td{padding:12px 16px;border-bottom:1px solid #F3F4F6;font-size:14px;color:#374151}
+.price-table tr:last-child td{border-bottom:none}
+.price-table tr:nth-child(even) td{background:#F9FAFB}
 .related{padding:48px clamp(16px,3.5vw,56px);background:#F9FAFB}
-.related h2{font-size:22px;font-weight:700;color:#111827;margin-bottom:28px;max-width:760px;margin-მარცხნივ:auto;margin-მარჯვნივ:auto}
+.related h2{font-size:22px;font-weight:700;color:#111827;margin-bottom:28px;max-width:760px;margin-left:auto;margin-right:auto}
 .related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:760px;margin:0 auto}
 .rc-card{background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:20px;transition:box-shadow .2s}
 .rc-card:hover{box-shadow:0 8px 24px rgba(0,0,0,.08)}
@@ -127,7 +127,7 @@ ul{list-style:none}
 .faq-inner{max-width:760px;margin:0 auto}
 .faq-inner h2{font-size:22px;font-weight:700;color:#111827;margin-bottom:28px}
 .fi{border-bottom:1px solid #E5E7EB}
-.fq{width:100%;text-align:მარცხნივ;padding:18px 0;display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:16px;font-weight:600;color:#111827;cursor:pointer;transition:color .2s}
+.fq{width:100%;text-align:left;padding:18px 0;display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:16px;font-weight:600;color:#111827;cursor:pointer;transition:color .2s}
 .fq:hover{color:#1A3D2E}
 .fq-ic{width:28px;height:28px;border-radius:50%;background:#F3F4F6;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:700;color:#1A3D2E;flex-shrink:0;transition:transform .3s,background .2s}
 .fi.open .fq-ic{transform:rotate(45deg);background:#1A3D2E;color:#fff}
@@ -146,7 +146,7 @@ ul{list-style:none}
 .foot-legal{display:flex;gap:16px}
 .foot-legal a{font-size:11px;color:rgba(255,255,255,.25);transition:color .2s}
 .foot-legal a:hover{color:rgba(255,255,255,.6)}
-.lang-sw{display:flex;align-items:center;gap:4px;margin-მარცხნივ:8px}
+.lang-sw{display:flex;align-items:center;gap:4px;margin-left:8px}
 .lang-btn{font-size:10px;font-weight:700;letter-spacing:.1em;color:#6B7280;background:none;border:none;cursor:pointer;padding:4px 2px;transition:color .2s;font-family:inherit}
 .lang-btn.on{color:#1A3D2E}
 .lang-sep{color:#D1D5DB;font-size:10px}
@@ -156,12 +156,12 @@ ul{list-style:none}
 .author-name{font-size:14px;font-weight:700;color:#111827;text-decoration:none}
 .author-name:hover{color:#1A3D2E}
 .author-creds{font-size:12px;color:#6B7280}
-.article-lead{background:#F0FDF4;border-მარცხნივ:3px solid #1A3D2E;border-radius:8px;padding:14px 18px;font-size:16px;color:#1e3a5f;line-height:1.75;margin-bottom:28px}
+.article-lead{background:#F0FDF4;border-left:3px solid #1A3D2E;border-radius:8px;padding:14px 18px;font-size:16px;color:#1e3a5f;line-height:1.75;margin-bottom:28px}
 @media(max-width:960px){.nav-links{display:none}.burger{display:flex}.foot-grid{grid-template-columns:1fr;gap:28px}.related-grid{grid-template-columns:1fr}}
 @media(max-width:580px){.related-grid{grid-template-columns:1fr}}
-@media(max-width:480px){.ფასი-table{font-size:13px}.article-toc{padding:16px 18px}input,select,textarea{font-size:16px!important}}
-h1,h2,h3,.section-title{font-family:'Lora',საქართველო,serif !important;font-weight:400 !important}@media(max-width:768px){.foot-grid div h4{font-size:11px}.foot-copy,.foot-legal a{font-size:12px}.foot-links a{padding:8px 0;display:inline-block;min-height:44px;line-height:28px}.foot-legal{gap:0}.foot-legal a{padding:10px 12px;display:inline-block}.fa-inner{font-size:14px}.nav-links a{white-space:nowrap;font-size:12px}}
-body,h1,h2,h3,h4,h5,h6,p,a,span,div,li,td,th,label,input,textarea,button,blockquote{font-family:'Lora',საქართველო,serif!important}
+@media(max-width:480px){.price-table{font-size:13px}.article-toc{padding:16px 18px}input,select,textarea{font-size:16px!important}}
+h1,h2,h3,.section-title{font-family:'Lora',Georgia,serif !important;font-weight:400 !important}@media(max-width:768px){.foot-grid div h4{font-size:11px}.foot-copy,.foot-legal a{font-size:12px}.foot-links a{padding:8px 0;display:inline-block;min-height:44px;line-height:28px}.foot-legal{gap:0}.foot-legal a{padding:10px 12px;display:inline-block}.fa-inner{font-size:14px}.nav-links a{white-space:nowrap;font-size:12px}}
+body,h1,h2,h3,h4,h5,h6,p,a,span,div,li,td,th,label,input,textarea,button,blockquote{font-family:'Lora',Georgia,serif!important}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://sakhva-travel.com/ge/blog/history-of-tbilisi/#article","inLanguage":"ka","image":{"@type":"ImageObject","url":"https://sakhva-travel.com/images/blog/istoriya-tbilisi.webp","width":1200,"height":630},"headline":"თბილისის ისტორია: გადმოცემიდან 2026 წლამდე","description":"თბილისის 1 500-წლიანი ამბავი: დაარსების გადმოცემა, საქართველოს დედაქალაქი, შემოჭრები, 1795 წლის დაცემა, რუსული და საბჭოთა მმართველობა, დამოუკიდებლობა — ადგილობრივი გიდისგან.","author":{"@type":"Person","name":"თიმურ სახვაძე","jobTitle":"Tbilisi Guide","url":"https://sakhva-travel.com/about/","@id":"https://sakhva-travel.com/#guide-timur","image":{"@type":"ImageObject","url":"https://sakhva-travel.com/images/timur.webp","width":72,"height":72},"hasCredential":{"@type":"EducationalOccupationalCredential","credentialCategory":"license","name":"საქართველოს გიდის ლიცენზია / Georgia Tour Guide Licence","identifier":"8247109128"}},"publisher":{"@type":"Organization","name":"Sakhva Travel","url":"https://sakhva-travel.com/","logo":{"@type":"ImageObject","url":"https://sakhva-travel.com/images/logo-schema.webp","width":300,"height":60}},"datePublished":"2026-06-13","dateModified":"2026-06-13","url":"https://sakhva-travel.com/ge/blog/history-of-tbilisi/","mainEntityOfPage":{"@type":"WebPage","@id":"https://sakhva-travel.com/ge/blog/history-of-tbilisi/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"მთავარი","item":"https://sakhva-travel.com/en/"},{"@type":"ListItem","position":2,"name":"ბლოგი","item":"https://sakhva-travel.com/en/blog/"},{"@type":"ListItem","position":3,"name":"თბილისის ისტორია","item":"https://sakhva-travel.com/ge/blog/history-of-tbilisi/"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"როდის დაარსდა თბილისი?","acceptedAnswer":{"@type":"Answer","text":"გადმოცემის თანახმად — V საუკუნეში მეფე ვახტანგ გორგასლის მიერ, რომელმაც სანადიროდ გასვლისას ცხელი გოგირდის წყაროები აღმოაჩინა. სახელი ქართული სიტყვიდან tbili მომდინარეობს, რაც სითბოს ნიშნავს. არქეოლოგიურად ადგილზე ჩამოყალიბება უფრო ადრე არსებობდა."}},{"@type":"Question","name":"რატომ გახდა თბილისი საქართველოს დედაქალაქი?","acceptedAnswer":{"@type":"Answer","text":"VI საუკუნეში მეფე დაჩიმ დედაქალაქი მცხეთიდან თბილისში გადაიტანა, მამის — ვახტანგ გორგასლის — სურვილის აღსრულებით. ქალაქი აბრეშუმის გზის სავაჭრო მარშრუტების გზათა გასაყარზე მდებარეობდა, რაც მას მდიდარსა და სტრატეგიულად სასიცოცხლოს ხდიდა."}},{"@type":"Question","name":"რამდენჯერ განადგურდა თბილისი?","acceptedAnswer":{"@type":"Answer","text":"ათობითჯერ 1 500 წლის განმავლობაში: სპარსელებმა, არაბებმა, მონღოლებმა და თემურ-ლენგმა. ყველაზე დამანგრეველი 1795 წელი იყო, როდესაც სპარსელმა აღა-მოჰამად-ხანმა ქალაქი ნიადაგს გაუსწორა. თბილისი ყოველ ჯერზე ხელახლა შენდებოდა."}}]}]}</script>
 <!-- PostHog -->
@@ -179,7 +179,7 @@ k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,function(c
 ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true})};
 if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{setTimeout(f,3000)}})();
 </script>
-<noscript><div><img alt="" src="https://mc.yandex.ru/watch/109038950" style="position:absolute;მარცხნივ:-9999px"/></div></noscript>
+<noscript><div><img alt="" src="https://mc.yandex.ru/watch/109038950" style="position:absolute;left:-9999px"/></div></noscript>
 <link href="/css/tables.css" rel="stylesheet"/>
 <link rel="preload" href="/fonts/noto-sans-georgian.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/css/ge.css"></head>
 <body>
@@ -301,7 +301,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 
 <h2 id="what-to-see">რა შემორჩა თითოეული ეპოქიდან</h2>
 <p>თბილისის ისტორია აბსტრაქცია კი არ არის — მას შეხება შეიძლება. აქ ჩამოთვლილია ის, რაც ნახვის ღირსია, ეპოქა-ეპოქად:</p>
-<div class="ფასი-table-wrap"><table class="ფასი-table">
+<div class="price-table-wrap"><table class="price-table">
 <thead><tr><th>ეპოქა</th><th>რა შემორჩა</th><th>სადაც</th></tr></thead>
 <tbody>
 <tr><td><strong>დაარსება (V ს.)</strong></td><td>აბანოთუბნის გოგირდის აბანოები</td><td>ნარიყალის ძირი</td></tr>
@@ -371,7 +371,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 </div>
 </div>
 </section>
-<div style="background:#F0FDF4;border-მარცხნივ:4px solid #16A34A;border-radius:12px;padding:16px 20px;margin:32px auto;max-width:760px">
+<div style="background:#F0FDF4;border-left:4px solid #16A34A;border-radius:12px;padding:16px 20px;margin:32px auto;max-width:760px">
 <p style="font-size:16px;font-weight:700;color:#111827;margin-bottom:6px">მზად ხართ თბილისის გასაცნობად?</p>
 <p style="font-size:14px;color:#374151;line-height:1.6;margin:0">
 <a href="/en/ekskursiya/ekskursiya-stary-tbilisi/" style="color:#16A34A;font-weight:600">ძველი თბილისის სასეირნო ტური</a> ·

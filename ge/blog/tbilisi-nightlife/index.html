@@ -57,12 +57,12 @@ else{setTimeout(function(){document.head.appendChild(s)},2000)}})();
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:'Lora',საქართველო,serif;color:#111827;background:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased;padding-top:72px}
+body{font-family:'Lora',Georgia,serif;color:#111827;background:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased;padding-top:72px}
 a{text-decoration:none;color:inherit}
 img{max-width:100%;display:block;object-fit:cover}
 button{border:none;background:none;font-family:inherit;cursor:pointer}
 ul{list-style:none}
-#nav{position:fixed;top:0;მარცხნივ:0;მარჯვნივ:0;z-index:900;height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(16px,3.5vw,56px);background:rgba(255,255,255,.97);box-shadow:0 1px 12px rgba(0,0,0,.08)}
+#nav{position:fixed;top:0;left:0;right:0;z-index:900;height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(16px,3.5vw,56px);background:rgba(255,255,255,.97);box-shadow:0 1px 12px rgba(0,0,0,.08)}
 .nav-logo{display:flex;align-items:center;text-decoration:none;color:#1A3D2E;transition:color .3s}
 .logo-svg{width:148px;height:66px;display:block}
 .nav-links{display:flex;align-items:center;gap:24px}
@@ -75,7 +75,7 @@ ul{list-style:none}
 .burger.on span:nth-child(1){transform:translateY(7px) rotate(45deg)}
 .burger.on span:nth-child(2){opacity:0}
 .burger.on span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-.drawer{display:none;position:fixed;top:72px;მარცხნივ:0;მარჯვნივ:0;bottom:0;background:#fff;z-index:850;flex-direction:column;padding:28px 24px;border-top:1px solid #f3f4f6}
+.drawer{display:none;position:fixed;top:72px;left:0;right:0;bottom:0;background:#fff;z-index:850;flex-direction:column;padding:28px 24px;border-top:1px solid #f3f4f6}
 .drawer.on{display:flex}
 .drawer a{font-size:17px;font-weight:600;color:#111827;padding:15px 0;border-bottom:1px solid #f3f4f6;transition:color .2s}
 .drawer a:hover{color:#1A3D2E}
@@ -91,25 +91,25 @@ ul{list-style:none}
 .article-wrap{max-width:760px;margin:0 auto;padding:52px clamp(16px,3.5vw,32px)}
 .article-toc{background:#F0FDF4;border:1px solid #BFDBFE;border-radius:12px;padding:24px 28px;margin-bottom:40px}
 .article-toc .toc-hd{font-size:14px;font-weight:700;color:#1A3D2E;margin-bottom:12px;text-transform:uppercase;letter-spacing:.1em}
-.article-toc ol{padding-მარცხნივ:20px;display:flex;flex-direction:column;gap:2px;list-style:decimal}
+.article-toc ol{padding-left:20px;display:flex;flex-direction:column;gap:2px;list-style:decimal}
 .article-toc li a{font-size:14px;color:#1A3D2E;transition:color .2s;display:block;padding:6px 0;min-height:44px;line-height:1.5}
 .article-toc li a:hover{color:#1A3D2E}
 .article-body h2{font-size:clamp(20px,2.5vw,28px);font-weight:700!important;color:#111827;margin:40px 0 16px;padding-top:8px;border-top:2px solid #EFF6FF}
 .article-body h3{font-size:18px;font-weight:700!important;color:#111827;margin:28px 0 12px}
-.article-body p{font-size:16px;color:#374151;line-height:1.85;margin-bottom:16px}.article-body ul{margin-bottom:16px;padding-მარცხნივ:8px}
-.article-body ul,.article-body ol{margin:16px 0 20px;padding-მარცხნივ:0;display:flex;flex-direction:column;gap:8px;list-style:none}
-.article-body li{font-size:16px;color:#374151;line-height:1.7;padding-მარცხნივ:20px;position:relative}
-.article-body li::before{content:'→';position:absolute;მარცხნივ:0;color:#1A3D2E;font-weight:700}
+.article-body p{font-size:16px;color:#374151;line-height:1.85;margin-bottom:16px}.article-body ul{margin-bottom:16px;padding-left:8px}
+.article-body ul,.article-body ol{margin:16px 0 20px;padding-left:0;display:flex;flex-direction:column;gap:8px;list-style:none}
+.article-body li{font-size:16px;color:#374151;line-height:1.7;padding-left:20px;position:relative}
+.article-body li::before{content:'→';position:absolute;left:0;color:#1A3D2E;font-weight:700}
 .article-body ol{counter-reset:item}
-.article-body ol li{counter-increment:item;padding-მარცხნივ:28px}
-.article-body ol li::before{content:counter(item)'.';position:absolute;მარცხნივ:0;color:#1A3D2E;font-weight:700;font-size:13px}
+.article-body ol li{counter-increment:item;padding-left:28px}
+.article-body ol li::before{content:counter(item)'.';position:absolute;left:0;color:#1A3D2E;font-weight:700;font-size:13px}
 .article-body strong{color:#111827;font-weight:700}
 .article-body a{color:#1A3D2E;text-decoration:underline;text-decoration-color:rgba(26,86,219,.3)}
 .article-body a:hover{text-decoration-color:#1A3D2E}
-.info-box{background:#F0FDF4;border-მარცხნივ:4px solid #1A3D2E;border-radius:0 8px 8px 0;padding:16px 20px;margin:24px 0;font-size:14px;color:#1A3D2E;line-height:1.7}
-.warn-box{background:#FEF3C7;border-მარცხნივ:4px solid #F59E0B;border-radius:0 8px 8px 0;padding:16px 20px;margin:24px 0;font-size:14px;color:#92400E;line-height:1.7}
+.info-box{background:#F0FDF4;border-left:4px solid #1A3D2E;border-radius:0 8px 8px 0;padding:16px 20px;margin:24px 0;font-size:14px;color:#1A3D2E;line-height:1.7}
+.warn-box{background:#FEF3C7;border-left:4px solid #F59E0B;border-radius:0 8px 8px 0;padding:16px 20px;margin:24px 0;font-size:14px;color:#92400E;line-height:1.7}
 .review-quote{background:#FFFBEB;border:1px solid #FDE68A;border-radius:16px;padding:28px 28px 20px;margin:32px 0;position:relative}
-.review-quote::before{content:'\201C';font-size:64px;color:#F59E0B;line-height:1;position:absolute;top:-10px;მარცხნივ:20px;font-family:საქართველო,serif}
+.review-quote::before{content:'\201C';font-size:64px;color:#F59E0B;line-height:1;position:absolute;top:-10px;left:20px;font-family:Georgia,serif}
 .review-quote-text{font-size:16px;color:#374151;line-height:1.8;font-style:italic;padding-top:20px;margin-bottom:12px}
 .review-quote-author{font-size:12px;font-weight:700;color:#92400E;letter-spacing:.05em}
 .review-stars{color:#F59E0B;font-size:13px;margin-bottom:6px}
@@ -117,14 +117,14 @@ ul{list-style:none}
 .venue-card-type{font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#1A3D2E;margin-bottom:4px}
 .venue-card-name{font-size:19px;font-weight:800;color:#111827;margin-bottom:6px}
 .venue-card-addr{font-size:12px;color:#6B7280;margin-bottom:8px}
-.venue-card-ფასი{display:inline-block;background:#F0FDF4;color:#1A3D2E;font-size:12px;font-weight:700;padding:4px 10px;border-radius:9999px;margin-bottom:10px}
+.venue-card-price{display:inline-block;background:#F0FDF4;color:#1A3D2E;font-size:12px;font-weight:700;padding:4px 10px;border-radius:9999px;margin-bottom:10px}
 .venue-card p{font-size:14px;color:#374151;line-height:1.8;margin-bottom:0}
-.ფასი-table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:24px 0}
-.ფასი-table{width:100%;border-collapse:collapse;border-radius:8px;overflow:hidden;min-width:420px}
-.ფასი-table th{background:#1A3D2E;color:#fff;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:12px 16px;text-align:მარცხნივ}
-.ფასი-table td{padding:12px 16px;border-bottom:1px solid #F3F4F6;font-size:14px;color:#374151}
-.ფასი-table tr:last-child td{border-bottom:none}
-.ფასი-table tr:nth-child(even) td{background:#F9FAFB}
+.price-table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:24px 0}
+.price-table{width:100%;border-collapse:collapse;border-radius:8px;overflow:hidden;min-width:420px}
+.price-table th{background:#1A3D2E;color:#fff;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:12px 16px;text-align:left}
+.price-table td{padding:12px 16px;border-bottom:1px solid #F3F4F6;font-size:14px;color:#374151}
+.price-table tr:last-child td{border-bottom:none}
+.price-table tr:nth-child(even) td{background:#F9FAFB}
 .article-cta{background:#1F2937;border-radius:16px;padding:32px 28px;margin:40px 0;text-align:center}
 .article-cta h3{font-size:22px;font-weight:700;color:#fff;margin-bottom:8px}
 .article-cta p{font-size:13px;color:rgba(255,255,255,.5);margin-bottom:20px}
@@ -133,7 +133,7 @@ ul{list-style:none}
 .btn-wa:hover{background:#1db954}
 .btn-tg{display:inline-flex;align-items:center;gap:8px;background:#229ED9;color:#fff;padding:13px 24px;border-radius:9999px;font-size:13px;font-weight:700;transition:background .2s}
 .related{padding:48px clamp(16px,3.5vw,56px);background:#F9FAFB}
-.related h2{font-size:22px;font-weight:700;color:#111827;margin-bottom:28px;max-width:760px;margin-მარცხნივ:auto;margin-მარჯვნივ:auto}
+.related h2{font-size:22px;font-weight:700;color:#111827;margin-bottom:28px;max-width:760px;margin-left:auto;margin-right:auto}
 .related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:760px;margin:0 auto}
 .rc-card{background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:20px;transition:box-shadow .2s}
 .rc-card:hover{box-shadow:0 8px 24px rgba(0,0,0,.08)}
@@ -145,7 +145,7 @@ ul{list-style:none}
 .faq-inner{max-width:760px;margin:0 auto}
 .faq-inner h2{font-size:22px;font-weight:700;color:#111827;margin-bottom:28px}
 .fi{border-bottom:1px solid #E5E7EB}
-.fq{width:100%;text-align:მარცხნივ;padding:18px 0;display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:16px;font-weight:600;color:#111827;cursor:pointer;transition:color .2s}
+.fq{width:100%;text-align:left;padding:18px 0;display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:16px;font-weight:600;color:#111827;cursor:pointer;transition:color .2s}
 .fq:hover{color:#1A3D2E}
 .fq-ic{width:28px;height:28px;border-radius:50%;background:#F3F4F6;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:700;color:#1A3D2E;flex-shrink:0;transition:transform .3s,background .2s}
 .fi.open .fq-ic{transform:rotate(45deg);background:#1A3D2E;color:#fff}
@@ -164,7 +164,7 @@ ul{list-style:none}
 .foot-legal{display:flex;gap:16px}
 .foot-legal a{font-size:11px;color:rgba(255,255,255,.25);transition:color .2s}
 .foot-legal a:hover{color:rgba(255,255,255,.6)}
-.lang-sw{display:flex;align-items:center;gap:4px;margin-მარცხნივ:8px}
+.lang-sw{display:flex;align-items:center;gap:4px;margin-left:8px}
 .lang-btn{font-size:10px;font-weight:700;letter-spacing:.1em;color:#6B7280;background:none;border:none;cursor:pointer;padding:4px 2px;transition:color .2s;font-family:inherit}
 .lang-btn.on{color:#1A3D2E}
 .lang-sep{color:#D1D5DB;font-size:10px}
@@ -174,12 +174,12 @@ ul{list-style:none}
 .author-name{font-size:14px;font-weight:700;color:#111827;text-decoration:none}
 .author-name:hover{color:#1A3D2E}
 .author-creds{font-size:12px;color:#6B7280}
-.article-lead{background:#F0FDF4;border-მარცხნივ:3px solid #1A3D2E;border-radius:8px;padding:14px 18px;font-size:16px;color:#1e3a5f;line-height:1.75;margin-bottom:28px}
+.article-lead{background:#F0FDF4;border-left:3px solid #1A3D2E;border-radius:8px;padding:14px 18px;font-size:16px;color:#1e3a5f;line-height:1.75;margin-bottom:28px}
 @media(max-width:960px){.nav-links{display:none}.burger{display:flex}.foot-grid{grid-template-columns:1fr;gap:28px}.related-grid{grid-template-columns:1fr}}
 @media(max-width:580px){.related-grid{grid-template-columns:1fr}}
-@media(max-width:480px){.ფასი-table{font-size:13px}.article-toc{padding:16px 18px}input,select,textarea{font-size:16px!important}}
-h1,h2,h3,.section-title{font-family:'Lora',საქართველო,serif !important;font-weight:400 !important}@media(max-width:768px){.foot-grid div h4{font-size:11px}.foot-copy,.foot-legal a{font-size:12px}.foot-links a{padding:8px 0;display:inline-block;min-height:44px;line-height:28px}.foot-legal{gap:0}.foot-legal a{padding:10px 12px;display:inline-block}.fa-inner{font-size:14px}.nav-links a{white-space:nowrap;font-size:12px}}
-body,h1,h2,h3,h4,h5,h6,p,a,span,div,li,td,th,label,input,textarea,button,blockquote{font-family:'Lora',საქართველო,serif!important}
+@media(max-width:480px){.price-table{font-size:13px}.article-toc{padding:16px 18px}input,select,textarea{font-size:16px!important}}
+h1,h2,h3,.section-title{font-family:'Lora',Georgia,serif !important;font-weight:400 !important}@media(max-width:768px){.foot-grid div h4{font-size:11px}.foot-copy,.foot-legal a{font-size:12px}.foot-links a{padding:8px 0;display:inline-block;min-height:44px;line-height:28px}.foot-legal{gap:0}.foot-legal a{padding:10px 12px;display:inline-block}.fa-inner{font-size:14px}.nav-links a{white-space:nowrap;font-size:12px}}
+body,h1,h2,h3,h4,h5,h6,p,a,span,div,li,td,th,label,input,textarea,button,blockquote{font-family:'Lora',Georgia,serif!important}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://sakhva-travel.com/ge/blog/tbilisi-nightlife/#article","image":{"@type":"ImageObject","url":"https://sakhva-travel.com/images/blog/nochnoy-tbilisi.webp","width":1200,"height":630},"headline":"თბილისის ღამის ცხოვრების გზამკვლევი 2026: ბარები, კლუბები, ღვინის ბარები და ღამის გასართობი","description":"სრული თბილისის ღამის ცხოვრების გზამკვლევი რეალური ფასებით, ადგილების მისამართებით და გულწრფელი","author":{"@type":"Person","name":"თიმურ სახვაძე","jobTitle":"Tbilisi Guide","url":"https://sakhva-travel.com/about/","@id":"https://sakhva-travel.com/#guide-timur","image":{"@type":"ImageObject","url":"https://sakhva-travel.com/images/timur.webp","width":72,"height":72},"hasCredential":{"@type":"EducationalOccupationalCredential","credentialCategory":"license","name":"საქართველოს გიდის ლიცენზია / Georgia Tour Guide Licence","identifier":"8247109128"}},"publisher":{"@type":"Organization","name":"Sakhva Travel","url":"https://sakhva-travel.com/","logo":{"@type":"ImageObject","url":"https://sakhva-travel.com/images/logo-schema.webp","width":300,"height":60}},"datePublished":"2026-04-26","dateModified":"2026-06-02","url":"https://sakhva-travel.com/ge/blog/tbilisi-nightlife/","mainEntityOfPage":{"@type":"WebPage","@id":"https://sakhva-travel.com/ge/blog/tbilisi-nightlife/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"მთავარი","item":"https://sakhva-travel.com/en/"},{"@type":"ListItem","position":2,"name":"ბლოგი","item":"https://sakhva-travel.com/en/blog/"},{"@type":"ListItem","position":3,"name":"თბილისის ღამის ცხოვრების გზამკვლევი 2026","item":"https://sakhva-travel.com/ge/blog/tbilisi-nightlife/"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"როგორია თბილისის ღამის ცხოვრება?","acceptedAnswer":{"@type":"Answer","text":"თბილისს ევროპის ყველაზე ენერგიული და ხელმისაწვდომი ღამის ცხოვრების სცენა აქვს. ის"}},{"@type":"Question","name":"როგორ მოვხვდე Bassiani-ში თბილისში?","acceptedAnswer":{"@type":"Answer","text":"Bassiani მდებარეობს დინამო არენის სტადიონის ქვეშ. შესვლა 20–40 GEL სახის კონტროლით"}},{"@type":"Question","name":"რომელი ბარები საუკეთესოა თბილისში?","acceptedAnswer":{"@type":"Answer","text":"თბილისის საუკეთესო ბარები კატეგორიების მიხედვით: ღვინის ბარები — Vino Underground (გორგასლის ქ., ბუნებრივი ღვინის სპეციალისტი"}},{"@type":"Question","name":"რა ღირს ღამის გასვლა თბილისში?","acceptedAnswer":{"@type":"Answer","text":"ბიუჯეტური ღამე: 50–80 GEL ($18–29) — სადილი ადგილობრივ რესტორანში, სასმელები"}},{"@type":"Question","name":"რა არის შარდენის ქუჩა თბილისში?","acceptedAnswer":{"@type":"Answer","text":"შარდენის ქუჩა (შარდენის ქუჩა) — ქვეითთა ქუჩაა ძველ ქალაქ თბილისში —"}}]}]}</script>
 <!-- PostHog -->
@@ -197,7 +197,7 @@ k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,function(c
 ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true})};
 if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{setTimeout(f,3000)}})();
 </script>
-<noscript><div><img alt="" src="https://mc.yandex.ru/watch/109038950" style="position:absolute;მარცხნივ:-9999px"/></div></noscript><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><link rel="preconnect" href="https://mc.yandex.ru" crossorigin>
+<noscript><div><img alt="" src="https://mc.yandex.ru/watch/109038950" style="position:absolute;left:-9999px"/></div></noscript><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><link rel="preconnect" href="https://mc.yandex.ru" crossorigin>
 <link href="/css/tables.css" rel="stylesheet"/>
 <link rel="preload" href="/fonts/noto-sans-georgian.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/css/ge.css"></head>
 <body>
@@ -311,28 +311,28 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <div class="venue-card-type">ბუნებრივი ღვინის ბარი</div>
 <div class="venue-card-name">Vino Underground</div>
 <div class="venue-card-addr">გორგასლის ქ. 3, ძველი ქალაქი · ყოველდღე 14:00-დან</div>
-<div class="venue-card-ფასი">ჭიქა 10–20 GEL · ბოთლი 35–120 GEL</div>
+<div class="venue-card-price">ჭიქა 10–20 GEL · ბოთლი 35–120 GEL</div>
 <p>ბუნებრივი ღვინის საცნობარო მისამართი თბილისში. სარდაფური სივრცე ძველ</p>
 </div>
 <div class="venue-card">
 <div class="venue-card-type">ღვინო Bar</div>
 <div class="venue-card-name">8000 Vintages</div>
 <div class="venue-card-addr">48 კოტე აფხაზის ქ., ძველი ქალაქი · ღია შუადღიდან</div>
-<div class="venue-card-ფასი">ჭიქა 8–16 GEL · ბოთლი 28–90 GEL</div>
+<div class="venue-card-price">ჭიქა 8–16 GEL · ბოთლი 28–90 GEL</div>
 <p>საქართველოს 8 000-წლიანი მევენახეობის ისტორიის სახელი ატარებს. Vino Underground-ზე კომერციულია</p>
 </div>
 <div class="venue-card">
 <div class="venue-card-type">ღვინის ბარი &amp; რესტორანი</div>
 <div class="venue-card-name">Kavkasia ღვინო Bar</div>
 <div class="venue-card-addr">შარდენის ქ., ძველი ქალაქი · ღია 11:00-დან</div>
-<div class="venue-card-ფასი">ჭიქა 10–18 GEL · ცოცხალი მუსიკის საღამოებით პარ-დან</div>
+<div class="venue-card-price">ჭიქა 10–18 GEL · ცოცხალი მუსიკის საღამოებით პარ-დან</div>
 <p>ერთ-ერთი შარდენის ადგილი, რომელიც ტურისტული პრემიუმის ღირსია. ეზო ყურძნის</p>
 </div>
 <div class="venue-card">
 <div class="venue-card-type">ღვინის მაღაზია &amp; ბარი</div>
 <div class="venue-card-name">Ghvino Underground</div>
 <div class="venue-card-addr">გორგასლის ქ. (მეტეხის ხიდთან) · სამ–კვი 14:00–შუაღამე</div>
-<div class="venue-card-ფასი">ჭიქა 7–14 GEL · დიდი საცალო არჩევანი გასაყვანად</div>
+<div class="venue-card-price">ჭიქა 7–14 GEL · დიდი საცალო არჩევანი გასაყვანად</div>
 <p>ჰიბრიდული ღვინის მაღაზია და ბარი, სადაც საცალო ფასები ვრცელდება</p>
 </div>
 <div class="info-box"><strong>ქართული ღვინის სახეობები ღვინის ბარებში შესაკვეთად:</strong> რქაწითელი ქვევრი (ქარვა, კანთან კონტაქტი) · ქისი ქვევრი (რთული ქარვა) · საფერავი</div>
@@ -342,21 +342,21 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <div class="venue-card-type">სახურავის ბარი</div>
 <div class="venue-card-name">ფაბრიკის სახურავი (კონტეინერის ტერასა)</div>
 <div class="venue-card-addr">8 დავით აღმაშენებლის გამზ., ჩუღურეთი · ყოველდღე გახსნილია გვიანამდე</div>
-<div class="venue-card-ფასი">ლუდი 7–10 GEL · კოქტეილები 14–20 GEL · შესვლის საფასური არ არის</div>
+<div class="venue-card-price">ლუდი 7–10 GEL · კოქტეილები 14–20 GEL · შესვლის საფასური არ არის</div>
 <p>ფაბრიკა — გადაკეთებული საბჭოური ტექსტილის ქარხანა, სადაც ახლა ბარები, რესტორნები, სტუდიები და ჰოსტელია განთავსებული სასაწყობო კომპლექსში. ტერასა და კონტეინერული ბარის ზონა ახალგაზრდა ექსპატ და შემოქმედებითი თბილისის სოციალური ცენტრია. ტექნიკურად სახურავი არ არის — უფრო ეზოს ტერასაა — მაგრამ ზაფხულის პარასკევს საღამოს 22:00 სახა სხვა. DJ-ები ჩვენთვის ხუთშაბათიდან უკრავენ. საჭმელი ხელმისაწვდომია მიმდებარე რესტორნებიდან გვიან ღამემდე.</p>
 </div>
 <div class="venue-card">
 <div class="venue-card-type">სახურავის ბარი</div>
 <div class="venue-card-name">Rooms სასტუმრო-ის სახურავი</div>
 <div class="venue-card-addr">14 კ. გამსახურდიას გამზ. · ღია არა-სტუმრებისთვის</div>
-<div class="venue-card-ფასი">კოქტეილები 22–32 GEL · ღვინის ჭიქა 14–20 GEL</div>
+<div class="venue-card-price">კოქტეილები 22–32 GEL · ღვინის ჭიქა 14–20 GEL</div>
 <p>ქალაქის ყველაზე ელეგანტური სახურავის ვარიანტი. სადიზაინო სასტუმროს ზედა სართულზე</p>
 </div>
 <div class="venue-card">
 <div class="venue-card-type">ტერასის ბარი</div>
 <div class="venue-card-name">ძველი უბანი (ძველი ქალაქის ტერასა)</div>
 <div class="venue-card-addr">სხვადასხვა ტერასები ლესელიძის ქ-ზე და შავთელის ქ-ზე</div>
-<div class="venue-card-ფასი">ადგილობრივი ღვინო 6–10 GEL · ლუდი 5–8 GEL</div>
+<div class="venue-card-price">ადგილობრივი ღვინო 6–10 GEL · ლუდი 5–8 GEL</div>
 <p>კონკრეტული ბარი კი არ არის, არამედ ზონა — რამდენიმე პატარა ტერასის ბარი და ღვინის ადგილი</p>
 </div>
 <h2 id="craft-beer">თბილისის ხელნაკეთი ლუდის სცენა</h2>
@@ -365,14 +365,14 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <div class="venue-card-type">ხელნაკეთი ლუდის ბარი</div>
 <div class="venue-card-name">შავი ლომი</div>
 <div class="venue-card-addr">მოსაშვილის ქ. 2, ვაკე · ყოველდღე შუადღიდან</div>
-<div class="venue-card-ფასი">პინტა 9–14 GEL · საჭმელი ხელმისაწვდომია, ქართული მენიუ</div>
+<div class="venue-card-price">პინტა 9–14 GEL · საჭმელი ხელმისაწვდომია, ქართული მენიუ</div>
 <p>თბილისის ყველაზე ცნობილი ხელნაკეთი ლუდის ადგილი, და სამართლიანად. ბარი თავად</p>
 </div>
 <div class="venue-card">
 <div class="venue-card-type">ხელნაკეთი ლუდის ბარი</div>
 <div class="venue-card-name">Hophead Taproom</div>
 <div class="venue-card-addr">ამ. ავლაბარი (ჩუღურეთი) · ყოველდღე 15:00–შუაღამე</div>
-<div class="venue-card-ფასი">პინტა 10–15 GEL · სტუმარი ონკანების კარგი არჩევანი</div>
+<div class="venue-card-price">პინტა 10–15 GEL · სტუმარი ონკანების კარგი არჩევანი</div>
 <p>ახალი ბარი ამ. ავლაბარზე ქართული და იმპორტირებული</p>
 </div>
 <h2 id="live-music">ცოცხალი მუსიკა თბილისში</h2>
@@ -381,21 +381,21 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <div class="venue-card-type">ჯაზ კლუბი</div>
 <div class="venue-card-name">ჯაზ კლუბი თბილისი</div>
 <div class="venue-card-addr">შარდენის ქუჩა, ძველი ქალაქი · ცოცხალი მუსიკა სამ–შაბ 21:00-დან</div>
-<div class="venue-card-ფასი">საფასური არ არის · სასმელები 10–18 GEL · მოდით 20:30-მდე მაგიდისთვის</div>
+<div class="venue-card-price">საფასური არ არის · სასმელები 10–18 GEL · მოდით 20:30-მდე მაგიდისთვის</div>
 <p>სერიოზული ჯაზ კლუბი ინტიმური სივრცეში შარდენის ქუჩის ბოლოში. მუსიკოსები თანმიმდევრულად კარგები არიან — ადგილობრივი ჯაზ შემსრულებლების მონაცვლეობადი შემადგენლობა, ზოგჯერ საერთაშორისო სტუმრებთან ერთად. ხმის სისტემა შესანიშნავია. ტურისტული კლასის ფონური მუსიკა არ არის: ეს ნამდვილი ჯაზია. მცირე ზომა ნიშნავს ატმოსფეროს კონცენტრაციას — კარგ ღამეს განსაკუთრებულია. შარდენის მდებარეობის მიუხედავად, სასმელების ფასები ადგილობრივ ტარიფებზე მხოლოდ ოდნავ მაღლაა.</p>
 </div>
 <div class="venue-card">
 <div class="venue-card-type">ხალხური მუსიკის ადგილი</div>
 <div class="venue-card-name">გაბრიაძის თეატრის კაფე</div>
 <div class="venue-card-addr">შავთელის ქ. 13, ძველი ქალაქი</div>
-<div class="venue-card-ფასი">მუსიკის საფასური არ არის · სადილი 30–60 GEL · წინასწარ დაჯავშნეთ საღამოებისთვის</div>
+<div class="venue-card-price">მუსიკის საფასური არ არის · სადილი 30–60 GEL · წინასწარ დაჯავშნეთ საღამოებისთვის</div>
 <p>რეზო გაბრიაძის ცნობილი თოჯინების თეატრთან ერთად. ზოგჯერ საღამოს სპექტაკლები</p>
 </div>
 <div class="venue-card">
 <div class="venue-card-type">მუსიკის ბარი</div>
 <div class="venue-card-name">მტკვრის ბარი (მტკვარზე)</div>
 <div class="venue-card-addr">მტკვრის სანაპირო, მეტეხის ხიდთან</div>
-<div class="venue-card-ფასი">ლუდი 6–9 GEL · ცოცხალი მუსიკა ზოგ შაბათ-კვირას</div>
+<div class="venue-card-price">ლუდი 6–9 GEL · ცოცხალი მუსიკა ზოგ შაბათ-კვირას</div>
 <p>ბარი მეტეხის კლდის ქვეშ მდინარის სანაპიროზე, რეგულარული აკუსტიკური სპექტაკლებით და</p>
 </div>
 <p><strong>ქართული მრავალხმიანი სიმღერა:</strong> თუ შაბათს ხართ თბილისში, ეძებეთ საღამოს სუფრის ღონისძიებები ან</p>
@@ -425,28 +425,28 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <div class="venue-card-type">კლუბი</div>
 <div class="venue-card-name">Khidi (ხიდი)</div>
 <div class="venue-card-addr">სარკინიგზო ხიდის ქვეშ, გლდანის მახლობლად — ტაქსით ხელმისაწვდომი</div>
-<div class="venue-card-ფასი">შესვლა 15–30 GEL · ღია პარ–კვი შუაღამიდან</div>
+<div class="venue-card-price">შესვლა 15–30 GEL · ღია პარ–კვი შუაღამიდან</div>
 <p>კლუბი სარკინიგზო ხიდის ქვეშ — ღია და ნახევრად დახურული სივრცე უხეში</p>
 </div>
 <div class="venue-card">
 <div class="venue-card-type">კლუბი</div>
 <div class="venue-card-name">კლუბი Corridor</div>
 <div class="venue-card-addr">ძველი ქალაქის ზონა · შეამოწმეთ Instagram-ი მიმდინარე მდებარეობისთვის</div>
-<div class="venue-card-ფასი">შესვლა 15–25 GEL</div>
+<div class="venue-card-price">შესვლა 15–25 GEL</div>
 <p>პატარა მიწისქვეშა ადგილი ელექტრონული მუსიკაზე ფოკუსირებული — ჰაუსი და ტექნო, ერთად</p>
 </div>
 <div class="venue-card">
 <div class="venue-card-type">ბარი &amp; კლუბი</div>
 <div class="venue-card-name">Cafe გალერეა</div>
 <div class="venue-card-addr">ელენე ახვლედიანის ქ. 4, ძველი ქალაქი · ყოველდღე 21:00-დან</div>
-<div class="venue-card-ფასი">საფასური არ არის · კოქტეილები 15–22 GEL</div>
+<div class="venue-card-price">საფასური არ არის · კოქტეილები 15–22 GEL</div>
 <p>ბარ-რესტორანი, რომელიც შუაღამის შემდეგ გვიანი ღამის სავარცხელ ადგილად გარდაიქმნება. ეს</p>
 </div>
 <div class="venue-card">
 <div class="venue-card-type">გვიანი ღამის ბარი</div>
 <div class="venue-card-name">Dive Bar თბილისი (სხვადასხვა ადგილი)</div>
 <div class="venue-card-addr">ამ. ავლაბარი და გვერდითი ქუჩები</div>
-<div class="venue-card-ფასი">ლუდი 5–8 GEL · საფასური არ არის</div>
+<div class="venue-card-price">ლუდი 5–8 GEL · საფასური არ არის</div>
 <p>შემთხვევით განფანტული ბარებია ბრუნვის ქუჩაზე და ამ. ავლაბარში — ეს</p>
 </div>
 <h2 id="night-food">სად ჭამოთ გვიან ღამით თბილისში</h2>
@@ -469,8 +469,8 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 </ul>
 <div class="warn-box"><strong>კლუბის ჩაცმულობის კოდი — რა არ შეუშვებს:</strong> Bassiანი-ში და მსგავს ადგილებში — ფეხბურთის მაისურები, აგრესიური ბრენდინგი, სიმთვრალე</div>
 <h2 id="prices">ფასები — სრული ანალიზი ღამის გასვლაზე თბილისში 2026</h2>
-<div class="ფასი-table-wrap">
-<table class="ფასი-table">
+<div class="price-table-wrap">
+<table class="price-table">
 <thead>
 <tr><th>პუნქტი</th><th>ფასი (ლარი)</th><th>USD ეკვივალენტი</th></tr>
 </thead>
@@ -567,14 +567,14 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <section id="lead-magnet" style="position:relative;z-index:2;padding:32px clamp(16px,3.5vw,56px);background:#fff;border-top:1px solid #E8E0D8">
 <div style="max-width:760px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap">
 <p style="font-family:'Lora',serif;font-size:17px;font-weight:400;color:#111827;letter-spacing:-0.02em;margin:0">გზამკვლევი: 15 ადგილი თბილისში, რომელიც არ არის ვერც ერთ გზამკვლევში + 5%-ის ფასდაკლება</p>
-<form class="magnet-form" onsubmit="event.preventDefault();var f=this,e=f.querySelector('input').value;f.style.display='none';f.nextElementSibling.style.display='flex';fetch('/api/subscribe',{method:'POST',headers:{'Content-ტიპი':'application/json'},body:JSON.stringify({email:e,source:'footer-magnet',lang:document.documentElement.lang||'ru'})}).catch(function(){})" style="display:flex;gap:8px;flex-shrink:0">
+<form class="magnet-form" onsubmit="event.preventDefault();var f=this,e=f.querySelector('input').value;f.style.display='none';f.nextElementSibling.style.display='flex';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:e,source:'footer-magnet',lang:document.documentElement.lang||'ru'})}).catch(function(){})" style="display:flex;gap:8px;flex-shrink:0">
 <input placeholder="Email" required="" style="width:200px;padding:11px 16px;border:1px solid #E5E7EB;border-radius:8px;background:#fff;color:#111827;font-family:'Lora',serif;font-size:14px;outline:none" type="email"/>
 <button style="padding:11px 20px;background:#1A3D2E;color:#fff;border:none;border-radius:8px;font-family:'Lora',serif;font-size:14px;cursor:pointer;white-space:nowrap" type="submit">მიიღეთ</button>
 </form>
 <div style="display:none;align-items:center;gap:8px"><svg fill="none" height="18" stroke="#1A3D2E" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg><span style="font-family:'Lora',serif;font-size:16px;color:#111827">გაიგზავნა — შეამოწმეთ ფოსტა</span></div>
 </div>
 </section>
-<div style="background:#F0FDF4;border-მარცხნივ:4px solid #16A34A;border-radius:12px;padding:16px 20px;margin:32px 0">
+<div style="background:#F0FDF4;border-left:4px solid #16A34A;border-radius:12px;padding:16px 20px;margin:32px 0">
 <p style="font-size:16px;font-weight:700;color:#111827;margin-bottom:6px">მზად ხართ საქართველოს შესასწავლად?</p>
 <p style="font-size:14px;color:#374151;line-height:1.6;margin:0">
 <a href="/en/tours-in-georgia/" style="color:#16A34A;font-weight:600">ნახეთ ყველა ტური საქართველოში</a> ·
@@ -630,7 +630,7 @@ function closeDrawer(){document.getElementById('drawer').classList.remove('on');
 document.getElementById('burger').addEventListener('click',function(){this.classList.toggle('on');document.getElementById('drawer').classList.toggle('on')});
 function toggleFaq(btn){var fi=btn.closest('.fi');var wasOpen=fi.classList.contains('open');document.querySelectorAll('.fi.open').forEach(function(el){el.classList.remove('open');el.querySelector('.fa').style.maxHeight=null});if(!wasOpen){fi.classList.add('open');fi.querySelector('.fa').style.maxHeight=fi.querySelector('.fa').scrollHeight+40+'px'}}
 </script>
-<div aria-hidden="true" class="grain-overlay" style="position:fixed;top:-50%;მარცხნივ:-50%;width:200%;height:200%;background-image:url('data:image/svg+xml,%3Csvg viewBox=%27 0 0 512 512%27  xmlns=%27 http://www.w3.org/2000/svg%27 %3E%3Cfilter id=%27 n%27 %3E%3CfeTurbulence type=%27 fractalNoise%27  baseFrequency=%27 0.65%27  numOctaves=%27 5%27  stitchTiles=%27 stitch%27 /%3E%3C/filter%3E%3Crect width=%27 100%25%27  height=%27 100%25%27  filter=%27 url(%23n)%27 /%3E%3C/svg%3E');opacity:0.045;pointer-events:none;z-index:9999"></div><p style="font-size:14px;color:#374151;margin:12px 0">იხილეთ ასევე: <a href="/en/blog/tbilisi-photo-spots/" style="color:#1A3D2E;font-weight:600">ფოტო-ადგილები თბილისში</a></p>
+<div aria-hidden="true" class="grain-overlay" style="position:fixed;top:-50%;left:-50%;width:200%;height:200%;background-image:url('data:image/svg+xml,%3Csvg viewBox=%27 0 0 512 512%27  xmlns=%27 http://www.w3.org/2000/svg%27 %3E%3Cfilter id=%27 n%27 %3E%3CfeTurbulence type=%27 fractalNoise%27  baseFrequency=%27 0.65%27  numOctaves=%27 5%27  stitchTiles=%27 stitch%27 /%3E%3C/filter%3E%3Crect width=%27 100%25%27  height=%27 100%25%27  filter=%27 url(%23n)%27 /%3E%3C/svg%3E');opacity:0.045;pointer-events:none;z-index:9999"></div><p style="font-size:14px;color:#374151;margin:12px 0">იხილეთ ასევე: <a href="/en/blog/tbilisi-photo-spots/" style="color:#1A3D2E;font-weight:600">ფოტო-ადგილები თბილისში</a></p>
 <script src="/scripts/partner.js?v=1"></script><script defer="" src="/js/chat-widget.js?v=33"></script>
 </body>
 </html>

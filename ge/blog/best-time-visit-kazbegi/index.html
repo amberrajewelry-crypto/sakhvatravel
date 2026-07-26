@@ -53,12 +53,12 @@ else{setTimeout(function(){document.head.appendChild(s)},2000)}})();
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:'Lora',საქართველო,serif;color:#111827;background:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased;padding-top:72px}
+body{font-family:'Lora',Georgia,serif;color:#111827;background:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased;padding-top:72px}
 a{text-decoration:none;color:inherit}
 img{max-width:100%;display:block;object-fit:cover}
 button{border:none;background:none;font-family:inherit;cursor:pointer}
 ul{list-style:none}
-#nav{position:fixed;top:0;მარცხნივ:0;მარჯვნივ:0;z-index:900;height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(16px,3.5vw,56px);background:rgba(255,255,255,.97);box-shadow:0 1px 12px rgba(0,0,0,.08)}
+#nav{position:fixed;top:0;left:0;right:0;z-index:900;height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(16px,3.5vw,56px);background:rgba(255,255,255,.97);box-shadow:0 1px 12px rgba(0,0,0,.08)}
 .nav-logo{display:flex;align-items:center;text-decoration:none;color:#1A3D2E;transition:color .3s}
 .logo-svg{width:148px;height:66px;display:block}
 .nav-links{display:flex;align-items:center;gap:24px}
@@ -71,7 +71,7 @@ ul{list-style:none}
 .burger.on span:nth-child(1){transform:translateY(7px) rotate(45deg)}
 .burger.on span:nth-child(2){opacity:0}
 .burger.on span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-.drawer{display:none;position:fixed;top:72px;მარცხნივ:0;მარჯვნივ:0;bottom:0;background:#fff;z-index:850;flex-direction:column;padding:28px 24px;border-top:1px solid #f3f4f6}
+.drawer{display:none;position:fixed;top:72px;left:0;right:0;bottom:0;background:#fff;z-index:850;flex-direction:column;padding:28px 24px;border-top:1px solid #f3f4f6}
 .drawer.on{display:flex}
 .drawer a{font-size:17px;font-weight:600;color:#111827;padding:15px 0;border-bottom:1px solid #f3f4f6;transition:color .2s}
 .drawer a:hover{color:#1A3D2E}
@@ -94,7 +94,7 @@ ul{list-style:none}
 .article-wrap ol{list-style:decimal}
 .article-wrap strong{color:#111827}
 table{width:100%;border-collapse:collapse;margin:24px 0 32px;font-size:14px}
-th{background:#1A3D2E;color:#fff;font-weight:700;padding:10px 12px;text-align:მარცხნივ}
+th{background:#1A3D2E;color:#fff;font-weight:700;padding:10px 12px;text-align:left}
 td{padding:9px 12px;border-bottom:1px solid #e5e7eb;color:#374151}
 tr:nth-child(even) td{background:#f9fafb}
 .badge{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 8px;border-radius:9999px;white-space:nowrap}
@@ -102,21 +102,21 @@ tr:nth-child(even) td{background:#f9fafb}
 .badge-good{background:#DBEAFE;color:#1E3A8A}
 .badge-ok{background:#FEF3C7;color:#92400E}
 .badge-hard{background:#FEE2E2;color:#991B1B}
-.info-box{background:#F0FDF4;border-მარცხნივ:4px solid #3B82F6;border-radius:0 8px 8px 0;padding:16px 20px;margin:24px 0;font-size:16px;line-height:1.7;color:#1E40AF}
-.warn-box{background:#FFF7ED;border-მარცხნივ:4px solid #F97316;border-radius:0 8px 8px 0;padding:16px 20px;margin:24px 0;font-size:16px;line-height:1.7;color:#9A3412}
-.tip-box{background:#F0FDF4;border-მარცხნივ:4px solid #22C55E;border-radius:0 8px 8px 0;padding:16px 20px;margin:24px 0;font-size:16px;line-height:1.7;color:#14532D}
-.სეზონი-card{border:1px solid #e5e7eb;border-radius:12px;padding:24px;margin:0 0 24px}
-.სეზონი-card h3{margin-top:0}
+.info-box{background:#F0FDF4;border-left:4px solid #3B82F6;border-radius:0 8px 8px 0;padding:16px 20px;margin:24px 0;font-size:16px;line-height:1.7;color:#1E40AF}
+.warn-box{background:#FFF7ED;border-left:4px solid #F97316;border-radius:0 8px 8px 0;padding:16px 20px;margin:24px 0;font-size:16px;line-height:1.7;color:#9A3412}
+.tip-box{background:#F0FDF4;border-left:4px solid #22C55E;border-radius:0 8px 8px 0;padding:16px 20px;margin:24px 0;font-size:16px;line-height:1.7;color:#14532D}
+.season-card{border:1px solid #e5e7eb;border-radius:12px;padding:24px;margin:0 0 24px}
+.season-card h3{margin-top:0}
 .cta-block{background:linear-gradient(135deg,#1A3D2E 0%,#1A3D2E 100%);border-radius:16px;padding:40px 32px;text-align:center;margin:48px 0;color:#fff}
 .cta-block p{color:rgba(255,255,255,.85);font-size:16px;margin-bottom:24px}
 .cta-block h2{font-size:clamp(22px,2.8vw,32px);margin:0 0 12px;color:#fff}
 .cta-wa{display:inline-flex;align-items:center;gap:10px;background:#25D366;color:#fff;font-weight:700;font-size:14px;letter-spacing:.08em;padding:14px 32px;border-radius:9999px;transition:opacity .2s;text-transform:uppercase}
 .cta-wa:hover{opacity:.88}
-.review-quote{background:#F9FAFB;border-radius:12px;padding:24px 28px;margin:32px 0;border-მარცხნივ:3px solid #1A3D2E}
+.review-quote{background:#F9FAFB;border-radius:12px;padding:24px 28px;margin:32px 0;border-left:3px solid #1A3D2E}
 .review-quote p{font-size:16px;font-style:italic;color:#374151;margin-bottom:8px}
 .review-quote cite{font-size:12px;color:#9CA3AF;font-style:normal}
 .faq-item{border-bottom:1px solid #e5e7eb}
-.faq-q{width:100%;text-align:მარცხნივ;padding:18px 0;font-size:16px;font-weight:600;color:#111827;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;font-family:'Lora',საქართველო,serif}
+.faq-q{width:100%;text-align:left;padding:18px 0;font-size:16px;font-weight:600;color:#111827;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;font-family:'Lora',Georgia,serif}
 .faq-q svg{flex-shrink:0;transition:transform .3s}
 .faq-q.open svg{transform:rotate(180deg)}
 .faq-a{display:none;padding:0 0 18px;font-size:16px;line-height:1.72;color:#374151}
@@ -134,7 +134,7 @@ footer{background:#111827;color:#9CA3AF;padding:40px clamp(16px,3.5vw,56px);font
 .footer-links{display:flex;gap:20px;flex-wrap:wrap}
 .footer-links a{color:#9CA3AF;font-size:12px;transition:color .2s}
 .footer-links a:hover{color:#fff}
-.music-btn{position:fixed;bottom:148px;მარჯვნივ:24px;z-index:800;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.92);display:flex;align-items:center;justify-content:center;box-shadow:0 2px 12px rgba(0,0,0,.14);transition:transform .2s;cursor:pointer}
+.music-btn{position:fixed;bottom:148px;right:24px;z-index:800;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.92);display:flex;align-items:center;justify-content:center;box-shadow:0 2px 12px rgba(0,0,0,.14);transition:transform .2s;cursor:pointer}
 .music-btn:hover{transform:scale(1.08)}
 .grain-overlay{position:fixed;inset:0;z-index:9999;pointer-events:none;opacity:.028;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
 .ru-link{text-align:center;margin:32px 0 0;font-size:13px;color:#9CA3AF}
@@ -147,8 +147,8 @@ footer{background:#111827;color:#9CA3AF;padding:40px clamp(16px,3.5vw,56px);font
   th,td{padding:8px 10px}
 }
 
-body,h1,h2,h3,h4,h5,h6,p,a,span,div,li,td,th,label,input,textarea,button,blockquote{font-family:'Lora',საქართველო,serif!important}
-.lang-sw{display:flex;align-items:center;gap:4px;margin-მარცხნივ:8px}
+body,h1,h2,h3,h4,h5,h6,p,a,span,div,li,td,th,label,input,textarea,button,blockquote{font-family:'Lora',Georgia,serif!important}
+.lang-sw{display:flex;align-items:center;gap:4px;margin-left:8px}
 .lang-btn{font-size:12px;font-weight:700;letter-spacing:.1em;color:rgba(255,255,255,.5);cursor:pointer;background:none;border:none;padding:2px 4px;text-decoration:none!important}
 .lang-btn.on{color:#fff}
 .lang-sep{color:rgba(255,255,255,.3);font-size:12px}
@@ -167,7 +167,7 @@ k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,function(c
 ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true})};
 if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{setTimeout(f,3000)}})();
 </script>
-<noscript><div><img alt="" src="https://mc.yandex.ru/watch/109038950" style="position:absolute;მარცხნივ:-9999px"/></div></noscript><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><link rel="preconnect" href="https://mc.yandex.ru" crossorigin>
+<noscript><div><img alt="" src="https://mc.yandex.ru/watch/109038950" style="position:absolute;left:-9999px"/></div></noscript><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><link rel="preconnect" href="https://mc.yandex.ru" crossorigin>
 <link as="image" fetchpriority="high" href="/images/blog/kazbegi-seasons.jpg" rel="preload" type="image/jpeg"/>
 <link rel="preload" href="/fonts/noto-sans-georgian.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/css/ge.css"></head>
 <body>
@@ -253,23 +253,23 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <strong>სიმაღლის შეხსენება:</strong> სტეფანწმინდის დასახლება 1,700 მ-ზეა. გერგეტის სამების ეკლესია 2,170 მ-ზეა — ეს 470 მ-ით უფრო მაღალია. ეკლესიასთან ტემპერატურა ყოველთვის 3–5°C-ით ცივია ხეობასთან შედარებით. ქარი კიდევ უფრო ცივად გრძნობინებს. ყოველთვის წაიღეთ ერთი ფენა მეტი, ვიდრე ფიქრობთ, რომ დაგჭირდებათ.
   </div>
 <h2>გაზაფხული: აპრილი – მაისი</h2>
-<div class="სეზონი-card">
+<div class="season-card">
 <h3>აპრილი — ზურმუხტოვანი ფერდობები, გაუთვალისწინებელი ამინდი</h3>
 <p>აპრილი არის ის დრო, როდესაც ხეობა თითქმის ერთ ღამეში მწვანდება. თოვლი დნება, მდინარე თერგი მაღლა და ფირუზისფრად მიედინება. პრობლემა: ღრუბლიანობა ხშირია და დილები 10–11 საათამდე ნაცრისფერი შეიძლება იყოს. შუადღისას ხილვადობა ჩვეულებრივ უმჯობესდება. გადასასვლელის გზა ღიაა, ხალხი მინიმალურია, სასტუმრო ფასები კი დაბალია. მოაგვარეთ თქვენი <a href="/en/blog/sim-card-internet-georgia/" style="color:#1A3D2E;font-weight:600">მობილური ინტერნეტი</a> გაფრენამდე — ადგილობრივი SIM ან eSIM 10-ჯერ იაფია, ვიდრე <a href="/en/blog/roaming-georgia/">როუმინგი</a> საქართველოში.</p>
 
 <p>რეკომენდებულია: მოგზაურებისთვის, ვისაც არ აშინებს ღრუბლიანობაზე ფსონი, და სურს ხეობა მარტოს ჰქონდეს.</p>
 </div>
-<div class="სეზონი-card">
+<div class="season-card">
 <h3>მაისი — პირველად მომსვლელთათვის სრულყოფილი პერიოდი</h3>
 <p>მაისი ჩემი საყვარელი თვეა სტუმრების ყაზბეგში წასაყვანად. ფერდობები ბრწყინვალედ მწვანეა, თოვლის ზღვარი კიდევ მწვერვალებზე დაბლაა, ამინდი კი ჩვეულებრივ სტაბილურია. დილები სუფთა და ნათელია — ის სახის სიწმინდე, რომელსაც ზაფხულში ვერ ნახავთ. ხალხი არის, მაგრამ გადაჭარბებული არ არის.</p>
 <p>მწვანე ხეობისა და თეთრი მწვერვალების კომბინაცია ისე ფოტოგენურია, რომ სხვა არცერთი თვე ვერ შედარდება. თუ ყაზბეგს პირველად სტუმრობთ და კლასიკური საფოსტო ბარათის კადრი გინდათ, მაისში მოდით.</p>
 </div>
 <h2>ზაფხული: ივნისი – აგვისტო</h2>
-<div class="სეზონი-card">
+<div class="season-card">
 <h3>ივნისი — ზაფხულის საუკეთესო ბალანსი</h3>
 <p>ივნისი გაძლევთ თბილ ტემპერატურას, გრძელ სინათლის საათებს და ჯერ კიდევ გასაძლებ ხალხს. მთები დილაობით ნათელია, ყვავილები ალპური მდელოებზე ყვავის, გერგეტამდე ლაშქრობა კი მსუბუქ ქურთუკში კომფორტულია.</p>
 </div>
-<div class="სეზონი-card">
+<div class="season-card">
 <h3>ივლისი – აგვისტო — პიკ სეზონი</h3>
 <p>ეს ყველაზე პოპულარული თვეებია — და კარგი მიზეზის გამო. ამინდი თბილია, მთები სრულად ხელმისაწვდომია, Truso-ს ხეობა და Gveleti-ს ჩანჩქერები საუკეთესო მდგომარეობაშია. მაგრამ კომპრომისებია:</p>
 <ul>
@@ -283,17 +283,17 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <strong>ჭექა-ქუხილის გაფრთხილება (ივლისი–აგვისტო):</strong> შუადღის შემდეგ ქარიშხლები 2,000 მ+-ზე სწრაფი და ინტენსიურია. დაგეგმეთ 14:00-მდე 1,800 მ-ს ქვემოთ დაბრუნება. გერგეტის ეკლესიამდე ლაშქრობის 7–8 საათზე დაწყება კომფორტულ სარეზერვო დროს გაძლევთ. ნუ შეეცდებით ღია ადგილას ჭექა-ქუხილს დაუცდეთ — დაუყოვნებლივ ჩამოდით, თუ ქარიშხლის ღრუბლები ჩნდება.
   </div>
 <h2>შემოდგომა: სექტემბერი – ოქტომბერი</h2>
-<div class="სეზონი-card">
+<div class="season-card">
 <h3>სექტემბერი — ოქროს სეზონი</h3>
 <p>სექტემბერი, სავარაუდოდ, წლის საუკეთესო თვეა ფოტოგრაფიისთვის. მთები ოქროსფერ და წითელ ფერს იღებს, სინათლე ზაფხულთან შედარებით უფრო რბილი და თბილია, ხალხი პიკთან შედარებით დაახლოებით 30%-ით მცირდება, ტემპერატურა კი ლაშქრობისთვის სრულყოფილია. ეკლესია შუადღის სინათლეში ისე ანათებს, რასაც ზაფხულის ტურისტები უბრალოდ ვერ ხედავენ.</p>
 <p>წლებია ვმუშაობ ყაზბეგში გიდად, და სექტემბერი ყოველთვის ის დროა, როდესაც საუკეთესო ფოტოებს ვიღებ — და ყველაზე ბედნიერ სტუმრებს.</p>
 </div>
-<div class="სეზონი-card">
+<div class="season-card">
 <h3>ოქტომბერი — მშვიდი და ხელმისაწვდომი</h3>
 <p>ოქტომბერში ხალხი მნიშვნელოვნად მცირდება. ხეობა ღრმა შემოდგომის ფერებს იღებს. ამინდი უფრო ცვალებადია — შეიძლება სამი სრულყოფილი დღე ზედიზედ გქონდეთ, ან ღრუბლიანობა გადაყაროთ. დილის ყინვები სიმაღლეზე იწყება. კარგი თვეა მათთვის, ვისაც სიჩუმე სიზუსტეზე მეტად ურჩევნია.</p>
 </div>
 <h2>ზამთარი: ნოემბერი – მარტი</h2>
-<div class="სეზონი-card">
+<div class="season-card">
 <h3>დეკემბერი – თებერვალი — თოვლი და მარტოობა</h3>
 <p>ყაზბეგი ზამთარში ნამდვილად ლამაზია — გერგეტის სამების ეკლესია, რომელიც დაბალი ღრუბლებიდან ამოჩნდება თოვლით დაფარული ხეობის თავზე, კავკასიონის ერთ-ერთი ყველაზე შთამბეჭდავი სანახავია. სასტუმროები თითქმის ცარიელია, ფასები 30–40%-ით ეცემა, ატმოსფერო კი ინტიმურია.</p>
 <p>რაზე ვაჭრობთ: გზის დახურვა. ჯვრის უღელტეხილი (საქართველოს სამხედრო გზა თბილისსა და ყაზბეგს შორის) შეიძლება 2–5 დღით დაიხუროს ნოემბრიდან მარტამდე თოვლისა და მეწყრის რისკის გამო. ეს ყოველ კვირა არ ხდება, მაგრამ საკმარისად რეგულარულად, რომ <strong>არასოდეს დაგეგმოთ ყაზბეგი საქართველოდან გამგზავრებამდე ბოლო დღეს</strong>.</p>
@@ -480,14 +480,14 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <section id="lead-magnet" style="position:relative;z-index:2;padding:32px clamp(16px,3.5vw,56px);background:#fff;border-top:1px solid #E8E0D8">
 <div style="max-width:760px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap">
 <p style="font-family:'Lora',serif;font-size:17px;font-weight:400;color:#111827;letter-spacing:-0.02em;margin:0">გზამკვლევი: 15 ადგილი თბილისში, რომელიც არ არის ვერც ერთ გზამკვლევში + 5%-ის ფასდაკლება</p>
-<form class="magnet-form" onsubmit="event.preventDefault();var f=this,e=f.querySelector('input').value;f.style.display='none';f.nextElementSibling.style.display='flex';fetch('/api/subscribe',{method:'POST',headers:{'Content-ტიპი':'application/json'},body:JSON.stringify({email:e,source:'footer-magnet',lang:document.documentElement.lang||'ru'})}).catch(function(){})" style="display:flex;gap:8px;flex-shrink:0">
+<form class="magnet-form" onsubmit="event.preventDefault();var f=this,e=f.querySelector('input').value;f.style.display='none';f.nextElementSibling.style.display='flex';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:e,source:'footer-magnet',lang:document.documentElement.lang||'ru'})}).catch(function(){})" style="display:flex;gap:8px;flex-shrink:0">
 <input placeholder="Email" required="" style="width:200px;padding:11px 16px;border:1px solid #E5E7EB;border-radius:8px;background:#fff;color:#111827;font-family:'Lora',serif;font-size:14px;outline:none" type="email"/>
 <button style="padding:11px 20px;background:#1A3D2E;color:#fff;border:none;border-radius:8px;font-family:'Lora',serif;font-size:14px;cursor:pointer;white-space:nowrap" type="submit">მიიღეთ</button>
 </form>
 <div style="display:none;align-items:center;gap:8px"><svg fill="none" height="18" stroke="#1A3D2E" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg><span style="font-family:'Lora',serif;font-size:16px;color:#111827">გაიგზავნა — შეამოწმეთ ფოსტა</span></div>
 </div>
 </section>
-<div style="background:#F0FDF4;border-მარცხნივ:4px solid #16A34A;border-radius:12px;padding:16px 20px;margin:32px 0">
+<div style="background:#F0FDF4;border-left:4px solid #16A34A;border-radius:12px;padding:16px 20px;margin:32px 0">
 <p style="font-size:16px;font-weight:700;color:#111827;margin-bottom:6px">მზად ხართ საქართველოს შესასწავლად?</p>
 <p style="font-size:14px;color:#374151;line-height:1.6;margin:0">
 <a href="/en/tours-in-georgia/" style="color:#16A34A;font-weight:600">ნახეთ ყველა ტური საქართველოში</a> ·

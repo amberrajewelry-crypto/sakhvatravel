@@ -57,12 +57,12 @@ else{setTimeout(function(){document.head.appendChild(s)},2000)}})();
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:'Lora',საქართველო,serif;color:#111827;background:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased;padding-top:72px}
+body{font-family:'Lora',Georgia,serif;color:#111827;background:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased;padding-top:72px}
 a{text-decoration:none;color:inherit}
 img{max-width:100%;display:block;object-fit:cover}
 button{border:none;background:none;font-family:inherit;cursor:pointer}
 ul{list-style:none}
-#nav{position:fixed;top:0;მარცხნივ:0;მარჯვნივ:0;z-index:900;height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(16px,3.5vw,56px);background:rgba(255,255,255,.97);box-shadow:0 1px 12px rgba(0,0,0,.08)}
+#nav{position:fixed;top:0;left:0;right:0;z-index:900;height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(16px,3.5vw,56px);background:rgba(255,255,255,.97);box-shadow:0 1px 12px rgba(0,0,0,.08)}
 .nav-logo{display:flex;align-items:center;text-decoration:none;color:#1A3D2E;transition:color .3s}
     .logo-svg{width:148px;height:66px;display:block}
 .nav-links{display:flex;align-items:center;gap:24px}
@@ -75,7 +75,7 @@ ul{list-style:none}
 .burger.on span:nth-child(1){transform:translateY(7px) rotate(45deg)}
 .burger.on span:nth-child(2){opacity:0}
 .burger.on span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-.drawer{display:none;position:fixed;top:72px;მარცხნივ:0;მარჯვნივ:0;bottom:0;background:#fff;z-index:850;flex-direction:column;padding:28px 24px;border-top:1px solid #f3f4f6}
+.drawer{display:none;position:fixed;top:72px;left:0;right:0;bottom:0;background:#fff;z-index:850;flex-direction:column;padding:28px 24px;border-top:1px solid #f3f4f6}
 .drawer.on{display:flex}
 .drawer a{font-size:17px;font-weight:600;color:#111827;padding:15px 0;border-bottom:1px solid #f3f4f6;transition:color .2s}
 .drawer a:hover{color:#1A3D2E}
@@ -91,26 +91,26 @@ ul{list-style:none}
 .article-wrap{max-width:760px;margin:0 auto;padding:52px clamp(16px,3.5vw,32px)}
 .article-toc{background:#F0FDF4;border:1px solid #BFDBFE;border-radius:12px;padding:24px 28px;margin-bottom:40px}
 .article-toc h2{font-size:14px;font-weight:700;color:#1A3D2E;margin-bottom:12px;text-transform:uppercase;letter-spacing:.1em}
-.article-toc ol{padding-მარცხნივ:20px;display:flex;flex-direction:column;gap:2px;list-style:decimal}
+.article-toc ol{padding-left:20px;display:flex;flex-direction:column;gap:2px;list-style:decimal}
 .article-toc li a{font-size:14px;color:#1A3D2E;transition:color .2s;display:block;padding:6px 0;min-height:44px;line-height:1.5}
 .article-toc li a:hover{color:#1A3D2E}
 .article-body h2{font-size:clamp(20px,2.5vw,28px);font-weight:700!important;color:#111827;margin:40px 0 16px;padding-top:8px;border-top:2px solid #EFF6FF}
 .article-body h3{font-size:18px;font-weight:700!important;color:#111827;margin:28px 0 12px}
-.article-body p{font-size:16px;color:#374151;line-height:1.85;margin-bottom:16px}.article-body ul{margin-bottom:16px;padding-მარცხნივ:8px}
-.article-body ul,.article-body ol{margin:16px 0 20px;padding-მარცხნივ:0;display:flex;flex-direction:column;gap:8px;list-style:none}
-.article-body li{font-size:16px;color:#374151;line-height:1.7;padding-მარცხნივ:20px;position:relative}
-.article-body li::before{content:'→';position:absolute;მარცხნივ:0;color:#1A3D2E;font-weight:700}
+.article-body p{font-size:16px;color:#374151;line-height:1.85;margin-bottom:16px}.article-body ul{margin-bottom:16px;padding-left:8px}
+.article-body ul,.article-body ol{margin:16px 0 20px;padding-left:0;display:flex;flex-direction:column;gap:8px;list-style:none}
+.article-body li{font-size:16px;color:#374151;line-height:1.7;padding-left:20px;position:relative}
+.article-body li::before{content:'→';position:absolute;left:0;color:#1A3D2E;font-weight:700}
 .article-body ol{counter-reset:item}
-.article-body ol li{counter-increment:item;padding-მარცხნივ:28px}
-.article-body ol li::before{content:counter(item)'.';position:absolute;მარცხნივ:0;color:#1A3D2E;font-weight:700;font-size:13px}
+.article-body ol li{counter-increment:item;padding-left:28px}
+.article-body ol li::before{content:counter(item)'.';position:absolute;left:0;color:#1A3D2E;font-weight:700;font-size:13px}
 .article-body strong{color:#111827;font-weight:700}
-.info-box{background:#F0FDF4;border-მარცხნივ:4px solid #1A3D2E;border-radius:0 8px 8px 0;padding:16px 20px;margin:24px 0;font-size:14px;color:#1A3D2E;line-height:1.7}
-.ფასი-table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:24px 0}
-.ფასი-table{width:100%;border-collapse:collapse;border-radius:8px;overflow:hidden;min-width:420px}
-.ფასი-table th{background:#1A3D2E;color:#fff;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:12px 16px;text-align:მარცხნივ}
-.ფასი-table td{padding:12px 16px;border-bottom:1px solid #F3F4F6;font-size:14px;color:#374151}
-.ფასი-table tr:last-child td{border-bottom:none}
-.ფასი-table tr:nth-child(even) td{background:#F9FAFB}
+.info-box{background:#F0FDF4;border-left:4px solid #1A3D2E;border-radius:0 8px 8px 0;padding:16px 20px;margin:24px 0;font-size:14px;color:#1A3D2E;line-height:1.7}
+.price-table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:24px 0}
+.price-table{width:100%;border-collapse:collapse;border-radius:8px;overflow:hidden;min-width:420px}
+.price-table th{background:#1A3D2E;color:#fff;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:12px 16px;text-align:left}
+.price-table td{padding:12px 16px;border-bottom:1px solid #F3F4F6;font-size:14px;color:#374151}
+.price-table tr:last-child td{border-bottom:none}
+.price-table tr:nth-child(even) td{background:#F9FAFB}
 .article-cta{background:#1F2937;border-radius:16px;padding:32px 28px;margin:40px 0;text-align:center}
 .article-cta h3{font-size:22px;font-weight:700;color:#fff;margin-bottom:8px}
 .article-cta p{font-size:13px;color:rgba(255,255,255,.5);margin-bottom:20px}
@@ -119,7 +119,7 @@ ul{list-style:none}
 .btn-wa:hover{background:#1db954}
 .btn-tg{display:inline-flex;align-items:center;gap:8px;background:#229ED9;color:#fff;padding:13px 24px;border-radius:9999px;font-size:13px;font-weight:700;transition:background .2s}
 .related{padding:48px clamp(16px,3.5vw,56px);background:#F9FAFB}
-.related h2{font-size:22px;font-weight:700;color:#111827;margin-bottom:28px;max-width:760px;margin-მარცხნივ:auto;margin-მარჯვნივ:auto}
+.related h2{font-size:22px;font-weight:700;color:#111827;margin-bottom:28px;max-width:760px;margin-left:auto;margin-right:auto}
 .related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:760px;margin:0 auto}
 .rc-card{background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:20px;transition:box-shadow .2s}
 .rc-card:hover{box-shadow:0 8px 24px rgba(0,0,0,.08)}
@@ -131,7 +131,7 @@ ul{list-style:none}
 .faq-inner{max-width:760px;margin:0 auto}
 .faq-inner h2{font-size:22px;font-weight:700;color:#111827;margin-bottom:28px}
 .fi{border-bottom:1px solid #E5E7EB}
-.fq{width:100%;text-align:მარცხნივ;padding:18px 0;display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:16px;font-weight:600;color:#111827;cursor:pointer;transition:color .2s}
+.fq{width:100%;text-align:left;padding:18px 0;display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:16px;font-weight:600;color:#111827;cursor:pointer;transition:color .2s}
 .fq:hover{color:#1A3D2E}
 .fq-ic{width:28px;height:28px;border-radius:50%;background:#F3F4F6;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:700;color:#1A3D2E;flex-shrink:0;transition:transform .3s,background .2s}
 .fi.open .fq-ic{transform:rotate(45deg);background:#1A3D2E;color:#fff}
@@ -150,18 +150,18 @@ ul{list-style:none}
 .foot-legal{display:flex;gap:16px}
 .foot-legal a{font-size:11px;color:rgba(255,255,255,.25);transition:color .2s}
 .foot-legal a:hover{color:rgba(255,255,255,.6)}
-@media(max-width:960px){.nav-links{display:none}.burger{display:flex}.foot-grid{grid-template-columns:1fr;gap:28px}.related-grid{grid-template-columns:1fr}.ფასი-table{font-size:12px}}
+@media(max-width:960px){.nav-links{display:none}.burger{display:flex}.foot-grid{grid-template-columns:1fr;gap:28px}.related-grid{grid-template-columns:1fr}.price-table{font-size:12px}}
 @media(max-width:580px){.related-grid{grid-template-columns:1fr}}
-@media(max-width:480px){.article-body{padding:32px 18px}.ფასი-table{font-size:13px}.article-toc{padding:16px 18px}input,select,textarea{font-size:16px!important}}
+@media(max-width:480px){.article-body{padding:32px 18px}.price-table{font-size:13px}.article-toc{padding:16px 18px}input,select,textarea{font-size:16px!important}}
 .author-byline{display:flex;align-items:center;gap:12px;background:#F9FAFB;border:1px solid #E5E7EB;border-radius:12px;padding:14px 18px;margin-bottom:32px}.author-byline img{width:40px;height:40px;border-radius:50%;object-fit:cover;flex-shrink:0}.author-info{display:flex;flex-direction:column;gap:2px}.author-name{font-size:14px;font-weight:700;color:#111827;text-decoration:none}.author-name:hover{color:#1A3D2E}.author-creds{font-size:12px;color:#6B7280}
-.article-lead{background:#F0FDF4;border-მარცხნივ:3px solid #1A3D2E;border-radius:8px;padding:14px 18px;font-size:16px;color:#1e3a5f;line-height:1.75;margin-bottom:28px}
-h1,h2,h3,.section-title{font-family:'Lora',საქართველო,serif !important;font-weight:400 !important}@media(max-width:768px){.foot-grid div h4{font-size:11px}.foot-copy,.foot-legal a{font-size:12px}.foot-links a{padding:8px 0;display:inline-block;min-height:44px;line-height:28px}.foot-legal{gap:0}.foot-legal a{padding:10px 12px;display:inline-block}.fa-inner{font-size:14px}.nav-links a{white-space:nowrap;font-size:12px}}
+.article-lead{background:#F0FDF4;border-left:3px solid #1A3D2E;border-radius:8px;padding:14px 18px;font-size:16px;color:#1e3a5f;line-height:1.75;margin-bottom:28px}
+h1,h2,h3,.section-title{font-family:'Lora',Georgia,serif !important;font-weight:400 !important}@media(max-width:768px){.foot-grid div h4{font-size:11px}.foot-copy,.foot-legal a{font-size:12px}.foot-links a{padding:8px 0;display:inline-block;min-height:44px;line-height:28px}.foot-legal{gap:0}.foot-legal a{padding:10px 12px;display:inline-block}.fa-inner{font-size:14px}.nav-links a{white-space:nowrap;font-size:12px}}
 .budget-card{background:#F9FAFB;border:1px solid #E5E7EB;border-radius:12px;padding:20px 24px;margin:20px 0}
 .budget-card h4{font-size:16px;font-weight:700;color:#111827;margin-bottom:12px}
 .budget-card .budget-total{font-size:22px;font-weight:700;color:#1A3D2E;margin-top:12px}
 
-body,h1,h2,h3,h4,h5,h6,p,a,span,div,li,td,th,label,input,textarea,button,blockquote{font-family:'Lora',საქართველო,serif!important}
-.lang-sw{display:flex;align-items:center;gap:4px;margin-მარცხნივ:8px}
+body,h1,h2,h3,h4,h5,h6,p,a,span,div,li,td,th,label,input,textarea,button,blockquote{font-family:'Lora',Georgia,serif!important}
+.lang-sw{display:flex;align-items:center;gap:4px;margin-left:8px}
 .lang-btn{font-size:12px;font-weight:700;letter-spacing:.1em;color:rgba(255,255,255,.5);cursor:pointer;background:none;border:none;padding:2px 4px;text-decoration:none!important}
 .lang-btn.on{color:#fff}
 .lang-sep{color:rgba(255,255,255,.3);font-size:12px}
@@ -185,7 +185,7 @@ k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,function(c
 ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true})};
 if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{setTimeout(f,3000)}})();
 </script>
-<noscript><div><img alt="" src="https://mc.yandex.ru/watch/109038950" style="position:absolute;მარცხნივ:-9999px"/></div></noscript><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><link rel="preconnect" href="https://mc.yandex.ru" crossorigin>
+<noscript><div><img alt="" src="https://mc.yandex.ru/watch/109038950" style="position:absolute;left:-9999px"/></div></noscript><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><link rel="preconnect" href="https://mc.yandex.ru" crossorigin>
 <link href="/css/tables.css" rel="stylesheet"/>
 <link rel="preload" href="/fonts/noto-sans-georgian.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/css/ge.css"></head>
 <body>
@@ -273,7 +273,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 </figure>
 <h2 id="currency">ვალუტა და გაცვლის კურსი 2026 წელს</h2>
 <p>საქართველოს ეროვნული ვალუტაა <strong>ლარი</strong> (GEL). მონეტებს თეთრი ეწოდება (100 თეთრი = 1 ლარი). მიმდინარე გაცვლის კურსები 2026 წლის მაისის მდგომარეობით:</p>
-<div class="ფასი-table-wrap"><table class="ფასი-table">
+<div class="price-table-wrap"><table class="price-table">
 <thead><tr><th>ვალუტა</th><th>კურსი (2026 წლის მაისი)</th><th>100 ერთეული = GEL</th></tr></thead>
 <tbody>
 <tr><td>1 USD (დოლარი)</td><td>2.72 GEL</td><td>272 GEL</td></tr>
@@ -286,7 +286,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <h2 id="accommodation">საცხოვრებელი: ჰოსტელებიდან ბუტიკ-სასტუმრომდე</h2>
 <p>საცხოვრებელი ბიუჯეტის ყველაზე მნიშვნელოვანი მუხლია. თბილისი გთავაზობს უზარმაზარ მრავალფეროვნებას: ჰოსტელებიდან 25 GEL-ად ხუთვარსკვლავიან სასტუმრომდე 800+ GEL. აქ არის 2026 წლის მაისის რეალური ფასები:</p>
 <h3>ჰოსტელები და სასტუმრო სახლები (ბიუჯეტური)</h3>
-<div class="ფასი-table-wrap"><table class="ფასი-table">
+<div class="price-table-wrap"><table class="price-table">
 <thead><tr><th>ტიპი</th><th>ფასი / ღამეში</th><th>აშშ დოლარში</th></tr></thead>
 <tbody>
 <tr><td>საძილე ადგილი (6-8 საწოლი)</td><td>25-40 GEL</td><td>$9-15</td></tr>
@@ -296,7 +296,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 </tbody></table></div>
 <p>საუკეთესო უბნები ბიუჯეტური გაჩერებისთვის: სოლოლაკი (წყნარი, ცენტრთან ახლოს), ვერა (ჰიპსტერული უბანი), ავლაბარი (მდინარის იქეთ ძველი ქალაქის გასწვრივ). მოერიდეთ ავტოსადგურების მახლობლად განთავსებულ ვარიანტებს — ხმაური და მნიშვნელოვნობებიდან შორს.</p>
 <h3>საშუალო კლასის სასტუმრო (კომფორტული)</h3>
-<div class="ფასი-table-wrap"><table class="ფასი-table">
+<div class="price-table-wrap"><table class="price-table">
 <thead><tr><th>ტიპი</th><th>ფასი / ღამეში</th><th>აშშ დოლარში</th></tr></thead>
 <tbody>
 <tr><td>3-ვარსკვლავიანი სასტუმრო, ცენტრი</td><td>120-200 GEL</td><td>$44-74</td></tr>
@@ -306,7 +306,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 </tbody></table></div>
 <p>კომფორტული დონე ნიშნავს სუფთა ოთახს გათბობა-გაგრილებით, გამართულ სანტექნიკით, საუზმით და Wi-Fi-ით. თბილისში, 150-200 GEL-ად გეძლევათ შესანიშნავი ვარიანტი ყველა მთავარი სეზები-ადგილის ფეხით სიარულის მანძილზე.</p>
 <h3>პრემიუმ სასტუმრო (ლუქსი)</h3>
-<div class="ფასი-table-wrap"><table class="ფასი-table">
+<div class="price-table-wrap"><table class="price-table">
 <thead><tr><th>ტიპი</th><th>ფასი / ღამეში</th><th>აშშ დოლარში</th></tr></thead>
 <tbody>
 <tr><td>4-ვარსკვლავიანი სასტუმრო (Rooms, Stamba)</td><td>350-600 GEL</td><td>$129-220</td></tr>
@@ -319,7 +319,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <h2 id="food">კვება: რესტორნები, კაფეები, ბაზრები</h2>
 <p>ქართული სამზარეულო ის მიზეზების ნახევარია, რის გამოც ხალხი ბრუნდება. სასიხარულო სიახლე: ის კვლავ ხელმისაწვდომია. პორციები უზარმაზარია — ორი ადამიანი ხშირად ინაწილებს ერთ თეფშ ხინკალს და ერთ ხაჭაპურს.</p>
 <h3>ქუჩის საკვები და ბიუჯეტური კვება</h3>
-<div class="ფასი-table-wrap"><table class="ფასი-table">
+<div class="price-table-wrap"><table class="price-table">
 <thead><tr><th>პუნქტი</th><th>ფასი (ლარი)</th><th>აშშ დოლარში</th></tr></thead>
 <tbody>
 <tr><td>ხინკალი (1 ცალი)</td><td>1.2-2.0</td><td>$0.45-0.75</td></tr>
@@ -333,7 +333,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 </tbody></table></div>
 <p>ბიუჯეტური კვება საქართველოში მარტივია. თონეები ყოველ კუთხეზეა: პური 1-2 GEL, ხაჭაპური 4-6 GEL, ლობიანი 4-5 GEL. ეს სრული საუზმეა 5-8 GEL-ად. დეზერტირების ბაზარზე ხილი, ბოსტნეული და ყველი ერთი დღისთვის 15-20 GEL ღირს ორისთვის.</p>
 <h3>საშუალო კლასის კვება (კომფორტული)</h3>
-<div class="ფასი-table-wrap"><table class="ფასი-table">
+<div class="price-table-wrap"><table class="price-table">
 <thead><tr><th>პუნქტი</th><th>ფასი (ლარი)</th><th>აშშ დოლარში</th></tr></thead>
 <tbody>
 <tr><td>ლანჩი კაფეში (მთავარი კერძი + სასმელი)</td><td>25-40</td><td>$9-15</td></tr>
@@ -346,7 +346,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 </tbody></table></div>
 <p>რეკომენდებული რესტორნები კარგი ფასი-ხარისხის თანაფარდობით: <strong>შავი ლომი</strong> (სოლოლაკი, თანამედროვე ქართული), <strong>ქეთო და კოტე</strong> (რუსთაველი, კლასიკური სამზარეულო), <strong>ბარბარესტანი</strong> (XIX საუკუნის რეცეპტების კერძები — ოდნავ ძვირია, მაგრამ უნიკალური). ორისთვის საშუალო ანგარიში ღვინით: 80-120 GEL.</p>
 <h3>ჯარიმა dინიng (ლუქსი)</h3>
-<div class="ფასი-table-wrap"><table class="ფასი-table">
+<div class="price-table-wrap"><table class="price-table">
 <thead><tr><th>პუნქტი</th><th>ფასი (ლარი)</th><th>აშშ დოლარში</th></tr></thead>
 <tbody>
 <tr><td>სადილი ორისთვის (fine dინიng)</td><td>200-400</td><td>$74-147</td></tr>
@@ -357,7 +357,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 </tbody></table></div>
 <p>თბილისის საუკეთესო რესტორნები: <strong>კულინარიუმი</strong> (ახალი ტალღის ქართული fine dინიng), <strong>შოთა</strong> (Rooms სასტუმრო-ში), <strong>ღვინის ბარი ღვინო</strong> (ქალაქის საუკეთესო ღვინის სია). იქ კიდეც ორისთვის ღვინით სადილი 250-350 GEL ღირს. ნიუ-იორკში ან ლონდონში ამ ფულად ერთ კერძს შეიძენდით.</p>
 <h3>ბაზრის პროდუქტები</h3>
-<div class="ფასი-table-wrap"><table class="ფასი-table">
+<div class="price-table-wrap"><table class="price-table">
 <thead><tr><th>პროდუქტი</th><th>ფასი (ლარი)</th><th>აშშ დოლარში</th></tr></thead>
 <tbody>
 <tr><td>პომიდვრები (1 კგ)</td><td>3-6</td><td>$1.1-2.2</td></tr>
@@ -371,7 +371,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <div class="info-box"><strong>მნიშვნელოვანი:</strong> ქართული რესტორნების პორციები უზარმაზარია. შეკვეთა წინამძღვარი + მთავარი კერძი + სალათი ერთ ადამიანზე — შეცდომაა. შეუკვეთეთ 2-3 კერძი ორისთვის + პური (ყოველთვის უფასო). ეს სავსებით საკმარისია. სერიოზულად.</div>
 <h2 id="transport">ტრანსპორტი: ტაქსები, მეტრო, მიკროავტობუსები</h2>
 <h3>ქალაქის ტრანსპორტი თბილისში</h3>
-<div class="ფასი-table-wrap"><table class="ფასი-table">
+<div class="price-table-wrap"><table class="price-table">
 <thead><tr><th>ტრანსპორტი</th><th>ფასი</th><th>შენიშვნები</th></tr></thead>
 <tbody>
 <tr><td>მეტრო (ერთი მოგზაურობა)</td><td>1 GEL ($0.37)</td><td>მეტრომანი ბარათი — 2 GEL დეპოზიტი</td></tr>
@@ -385,7 +385,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <p><strong>ოქროს წესი:</strong> ყოველთვის გამოიყენეთ Bolt ან Yandex Go. ქუჩის ტაქსები 2-5-ჯერ მეტს ახდევინებენ. Bolt იაფია, Yandex Go სწრაფად მოდის. დაუკავშირეთ ბარათი; მძღოლს ნაღდი ფულით ნუ გადაუხდით.</p>
 <p>მეტრო მუშაობს 06:00-დან შუაღამემდე, ორი ხაზი, 23 სადგური. სასარგებლოა გრძელი მარშრუტებისთვის (სადგურიდან ცენტრამდე). ცენტრში მოკლე მანძილებზე — ფეხით სიარული სწრაფია.</p>
 <h3>ქალაქებს შორის ტრანსპორტი</h3>
-<div class="ფასი-table-wrap"><table class="ფასი-table">
+<div class="price-table-wrap"><table class="price-table">
 <thead><tr><th>მარშრუტი</th><th>მარშრუტკა</th><th>ტაქსი / ტრანსფერი</th><th>ხანგრძლივობა</th></tr></thead>
 <tbody>
 <tr><td>თბილისი — ყაზბეგი (სტეფანწმინდა)</td><td>15 GEL ($5.5)</td><td>150-200 GEL ($55-74)</td><td>3 საათი</td></tr>
@@ -397,7 +397,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 </tbody></table></div>
 <p>მარშრუტკები (საერთო მიკროავტობუსები) გამოდიან ავტოსადგურებიდან: <strong>დიდუბე</strong> (დასავლეთი — ბათუმი, ქუთაისი, მესტია), <strong>სამგორი</strong> (აღმოსავლეთი — კახეთი, თელავი, სიღნაღი), <strong>ორთაჭალა</strong> (სამხრეთი — სომხეთი). ფიქსირებული განრიგი არ არის — ავტობუსი მიემგზავრება სავსე. პირველი გამგზავრებები: 07:00-08:00.</p>
 <h3>მანქანის დაქირავება</h3>
-<div class="ფასი-table-wrap"><table class="ფასი-table">
+<div class="price-table-wrap"><table class="price-table">
 <thead><tr><th>მანქანის ტიპი</th><th>ფასი / დღეში</th><th>აშშ დოლარში</th></tr></thead>
 <tbody>
 <tr><td>სედანი (Hyundai Accent)</td><td>80-120 GEL</td><td>$29-44</td></tr>
@@ -408,7 +408,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <p>მანქანის დაქირავება მიზანშეწონილია კახეთისთვის (ბევრი მარანი გზისგან მოშორებით) ან გრძელი ვიზიტებისთვის (5+ დღე). ყაზბეგში ან კახეთში ერთდღიანი გასვლებისთვის გიდიანი ტური სინამდვილეში უფრო იაფია: ტრანსპორტი, საწვავი, პარკინგი და მარშრუტის ცოდნა — ყველაფერი შედის ფასში.</p>
 <h2 id="ტურები">ტურები და აქტივობები</h2>
 <h3>ერთდღიანი ტურები თბილისიდან</h3>
-<div class="ფასი-table-wrap"><table class="ფასი-table">
+<div class="price-table-wrap"><table class="price-table">
 <thead><tr><th>ტური</th><th>ჯგუფი (პირზე)</th><th>კერძო</th><th>ხანგრძლივობა</th></tr></thead>
 <tbody>
 <tr><td><a href="/en/ekskursiya/ekskursiya-kazbegi-iz-tbilisi/">ყაზბეგი — მთები &amp; გერგეტი</a></td><td>$45-დან</td><td>175 GEL-დან ($64)</td><td>12 საათი</td></tr>
@@ -421,7 +421,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <p>კერძო <a href="/en/tours-in-georgia/">ტურები თბილისში</a> და მთელ საქართველოში ეს ნიშნავს, რომ გიდი გეგებება თქვენს სასტუმროში, დღეს ატარებთ კომფორტულ მანქანაში, მარშრუტი მოქნილია და ჩერდებით სადაც გინდათ. სხვაობა ჯგუფური ტურისგან ისეთია, როგორც ტაქსით გამგზავრება ავტობუსის ნაცვლად. წყვილებისა და ოჯახებისთვის კერძო ტური ხშირად უფრო იაფია ერთ სულზე (გაყოფილი 2-4 ადამიანზე).</p>
 <p><a href="/en/tours-in-georgia/">ერთდღიანი გასვლები თბილისიდან</a> — საუკეთესო ფორმატი მათთვის, ვისაც სურს მთები და ღვინო ერთ დღეში ღამის გათევის გარეშე.</p>
 <h3>აქტივობები და ღირსშესანიშნავობები</h3>
-<div class="ფასი-table-wrap"><table class="ფასი-table">
+<div class="price-table-wrap"><table class="price-table">
 <thead><tr><th>აქტივობა</th><th>ფასი (ლარი)</th><th>აშშ დოლარში</th></tr></thead>
 <tbody>
 <tr><td>გოგირდის აბანოები (კერძო ოთახი, 1 საათი)</td><td>50-120</td><td>$18-44</td></tr>
@@ -438,7 +438,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 </tbody></table></div>
 <p>თბილისის დიდი ნაწილი უფასოა: ძველ ქალაქში სეირნობა, მშრალი ხიდის სამაროვანი, მტკვრის სანაპირო, რიყის პარკი, ნარიყალაზე ლაშქრობა (საბაგიროს ზარმაცებისთვის), ეკლესიები და ტაძრები. ყველაზე ძვირი უფასო გამოცდილება უბრალოდ ხეტიალი და ყურებაა.</p>
 <h2 id="sim">SIM ბარათები და ინტერნეტი</h2>
-<div class="ფასი-table-wrap"><table class="ფასი-table">
+<div class="price-table-wrap"><table class="price-table">
 <thead><tr><th>სერვისი</th><th>ფასი (ლარი)</th><th>აშშ დოლარში</th></tr></thead>
 <tbody>
 <tr><td>Magti SIM (15 GB, 30 დღე)</td><td>20</td><td>$7.35</td></tr>
@@ -451,7 +451,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <p>სამი დღე — თბილისის გაცნობაა. ძველი ქალაქი, მთაწმინდა, გოგირდის აბანოები, ბაზრები, რესტორნები. ქალაქგარეთ გამოსვლა გათვალისწინებული არ არის.</p>
 <div class="budget-card">
 <h4>ბიუჯეტური (ორისთვის, 3 ღამე)</h4>
-<div class="ფასი-table-wrap"><table class="ფასი-table">
+<div class="price-table-wrap"><table class="price-table">
 <thead><tr><th>კატეგორია</th><th>GEL</th><th>USD</th></tr></thead>
 <tbody>
 <tr><td>საცხოვრებელი (ჰოსტელი / ჰაერიbnb ოთახი)</td><td>240-360</td><td>$88-132</td></tr>
@@ -464,7 +464,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 </div>
 <div class="budget-card">
 <h4>კომფორტული (ორისთვის, 3 ღამე)</h4>
-<div class="ფასი-table-wrap"><table class="ფასი-table">
+<div class="price-table-wrap"><table class="price-table">
 <thead><tr><th>კატეგორია</th><th>GEL</th><th>USD</th></tr></thead>
 <tbody>
 <tr><td>საცხოვრებელი (3-ვარსკვლავიანი სასტუმრო ან ბინა, ცენტრი)</td><td>450-600</td><td>$165-220</td></tr>
@@ -477,7 +477,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 </div>
 <div class="budget-card">
 <h4>ლუქსი (ორისთვის, 3 ღამე)</h4>
-<div class="ფასი-table-wrap"><table class="ფასი-table">
+<div class="price-table-wrap"><table class="price-table">
 <thead><tr><th>კატეგორია</th><th>GEL</th><th>USD</th></tr></thead>
 <tbody>
 <tr><td>საცხოვრებელი (ბუტიკ / 5-ვარსკვლავიანი სასტუმრო)</td><td>1,200-2,700</td><td>$441-993</td></tr>
@@ -492,7 +492,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <p>ხუთი დღე ნიშნავს თბილისს (3 დღე) + მთის ექსკურსია (ყაზბეგი, 1-2 დღე). იდეალური ფორმატი პირველი ვიზიტისთვის: ქალაქი + ბუნება. მეტი დეტალი მარშრუტის შესახებ ჩვენს <a href="/en/ekskursiya/ekskursiya-kazbegi-iz-tbilisi/">ყაზბეგის ტურის გიდი</a>.</p>
 <div class="budget-card">
 <h4>ბიუჯეტური (ორისთვის, 5 ღამე)</h4>
-<div class="ფასი-table-wrap"><table class="ფასი-table">
+<div class="price-table-wrap"><table class="price-table">
 <thead><tr><th>კატეგორია</th><th>GEL</th><th>USD</th></tr></thead>
 <tbody>
 <tr><td>საცხოვრებელი (თბილისი 3 ღამე + ყაზბეგი 2 ღამე)</td><td>500-750</td><td>$184-276</td></tr>
@@ -505,7 +505,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 </div>
 <div class="budget-card">
 <h4>კომფორტული (ორისთვის, 5 ღამე)</h4>
-<div class="ფასი-table-wrap"><table class="ფასი-table">
+<div class="price-table-wrap"><table class="price-table">
 <thead><tr><th>კატეგორია</th><th>GEL</th><th>USD</th></tr></thead>
 <tbody>
 <tr><td>საცხოვრებელი (3-4-ვარსკვლავიანი სასტუმროები ორივე ქალაქში)</td><td>900-1,400</td><td>$331-515</td></tr>
@@ -519,7 +519,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 </div>
 <div class="budget-card">
 <h4>ლუქსი (ორისთვის, 5 ღამე)</h4>
-<div class="ფასი-table-wrap"><table class="ფასი-table">
+<div class="price-table-wrap"><table class="price-table">
 <thead><tr><th>კატეგორია</th><th>GEL</th><th>USD</th></tr></thead>
 <tbody>
 <tr><td>საცხოვრებელი (Rooms სასტუმრო + ყაზბეგი Rooms)</td><td>2,500-4,000</td><td>$919-1,471</td></tr>
@@ -535,7 +535,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <p>ერთი კვირა იდეალური ხანგრძლივობაა პირველი ვიზიტისთვის. თბილისი (3 დღე) + ყაზბეგი (2 დღე) + კახეთი (2 დღე). ქალაქი, მთები, ღვინო — საქართველოს სამი სახე. კახეთისთვის მე გირჩევთ <a href="/en/ekskursiya/ekskursiya-kakheti-iz-tbilisi/">ტური გიდით</a>: მარნების ბევრია, მაგრამ საუკეთესოების პოვნა ადგილობრივის გარეშე თითქმის შეუძლებელია.</p>
 <div class="budget-card">
 <h4>ბიუჯეტური (ორისთვის, 7 ღამე)</h4>
-<div class="ფასი-table-wrap"><table class="ფასი-table">
+<div class="price-table-wrap"><table class="price-table">
 <thead><tr><th>კატეგორია</th><th>GEL</th><th>USD</th></tr></thead>
 <tbody>
 <tr><td>საცხოვრებელი (7 ღამე, ჰოსტელები + სასტუმრო სახლები)</td><td>700-1,050</td><td>$257-386</td></tr>
@@ -548,7 +548,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 </div>
 <div class="budget-card">
 <h4>კომფორტული (ორისთვის, 7 ღამე)</h4>
-<div class="ფასი-table-wrap"><table class="ფასი-table">
+<div class="price-table-wrap"><table class="price-table">
 <thead><tr><th>კატეგორია</th><th>GEL</th><th>USD</th></tr></thead>
 <tbody>
 <tr><td>საცხოვრებელი (სასტუმროები + ბუტიკ-სასტუმრო კახეთში)</td><td>1,200-2,000</td><td>$441-735</td></tr>
@@ -562,7 +562,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 </div>
 <div class="budget-card">
 <h4>ლუქსი (ორისთვის, 7 ღამე)</h4>
-<div class="ფასი-table-wrap"><table class="ფასი-table">
+<div class="price-table-wrap"><table class="price-table">
 <thead><tr><th>კატეგორია</th><th>GEL</th><th>USD</th></tr></thead>
 <tbody>
 <tr><td>საცხოვრებელი (5-ვარსკვლავიანი + შატო კახეთში)</td><td>3,500-6,000</td><td>$1,287-2,206</td></tr>
@@ -604,7 +604,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <div class="info-box"><strong>ყველაზე მნიშვნელოვანი რჩევა:</strong> ნუ დაზოგავთ ფულს ტურებზე. სერიოზულად. ყაზბეგი მარშრუტკით — უბრალოდ გზაა. ყაზბეგი გიდთან ერთად — ისტორიაა, ჩანჩქერებთან გაჩერებები, საიდუმლო ფოტო-ადგილები და ლანჩი იქ, სადაც მარტო ვერასდროს მიაგნებდით. $30-50-იანი სხვაობა სავსებით გამართლებულია გამოცდილებით.</div>
 <h2>საქართველო სხვა მიმართულებებთან: ხარჯების შედარება</h2>
 <p>იმის გასაგებად, რამდენად ხელმისაწვდომია საქართველო, აქ არის ორი ადამიანის (კომფორტული დონე) საშუალო დღიური ბიუჯეტების შედარება სხვა პოპულარულ მიმართულებებთან:</p>
-<div class="ფასი-table-wrap"><table class="ფასი-table">
+<div class="price-table-wrap"><table class="price-table">
 <thead><tr><th>ქვეყანა</th><th>ბიუჯეტი / დღეში ორისთვის</th><th>სხვაობა საქართველოსთან</th></tr></thead>
 <tbody>
 <tr><td><strong>საქართველო</strong></td><td>$180-280</td><td>—</td></tr>
@@ -626,7 +626,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 </ul>
 <h2>როდის არის საქართველოში მოგზაურობა ყველაზე იაფი?</h2>
 <p>სეზონურობა მნიშვნელოვნად მოქმედებს ბიუჯეტზე:</p>
-<div class="ფასი-table-wrap"><table class="ფასი-table">
+<div class="price-table-wrap"><table class="price-table">
 <thead><tr><th>სეზონი</th><th>თვეები</th><th>საცხოვრებლის ფასები</th><th>ამინდი</th></tr></thead>
 <tbody>
 <tr><td>დაბალი</td><td>ნოემბერი — თებერვალი (ახალი წლის გარდა)</td><td>-30-40% ზაფხულთან შედარებით</td><td>5-12°C, წვიმიანი</td></tr>
@@ -645,7 +645,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 </div>
 </div>
 </div>
-<div style="background:#F0FDF4;border-მარცხნივ:4px solid #1A3D2E;border-radius:12px;padding:20px 24px;margin:32px auto;max-width:760px">
+<div style="background:#F0FDF4;border-left:4px solid #1A3D2E;border-radius:12px;padding:20px 24px;margin:32px auto;max-width:760px">
 <p style="font-size:16px;font-weight:700;color:#111827;margin-bottom:8px">გჭირდებათ კერძო ტური საქართველოში?</p>
 <p style="font-size:14px;color:#374151;line-height:1.7;margin-bottom:12px">თიმური — კერძო ინგლისურენოვანი გზამკვლევი 4.9 რეიტინგით. 12 მარშრუტი თბილისსა და საქართველოში, ჯგუფები 7 კაცამდე, სასტუმროდან გამოყვანა ჩართულია.</p>
 <a href="/en/ekskursiya/nochnaya-ekskursiya-tbilisi/" style="font-size:14px;font-weight:700;color:#1A3D2E;text-decoration:underline">გაიგეთ მეტი კერძო ტურების შესახებ თბილისში →</a>
@@ -713,14 +713,14 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <section id="lead-magnet" style="position:relative;z-index:2;padding:32px clamp(16px,3.5vw,56px);background:#fff;border-top:1px solid #E8E0D8">
 <div style="max-width:760px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap">
 <p style="font-family:'Lora',serif;font-size:17px;font-weight:400;color:#111827;letter-spacing:-0.02em;margin:0">გზამკვლევი: 15 ადგილი თბილისში, რომელიც არ არის ვერც ერთ გზამკვლევში + 5%-ის ფასდაკლება</p>
-<form class="magnet-form" onsubmit="event.preventDefault();var f=this,e=f.querySelector('input').value;f.style.display='none';f.nextElementSibling.style.display='flex';fetch('/api/subscribe',{method:'POST',headers:{'Content-ტიპი':'application/json'},body:JSON.stringify({email:e,source:'footer-magnet',lang:document.documentElement.lang||'ru'})}).catch(function(){})" style="display:flex;gap:8px;flex-shrink:0">
+<form class="magnet-form" onsubmit="event.preventDefault();var f=this,e=f.querySelector('input').value;f.style.display='none';f.nextElementSibling.style.display='flex';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:e,source:'footer-magnet',lang:document.documentElement.lang||'ru'})}).catch(function(){})" style="display:flex;gap:8px;flex-shrink:0">
 <input placeholder="Email" required="" style="width:200px;padding:11px 16px;border:1px solid #E5E7EB;border-radius:8px;background:#fff;color:#111827;font-family:'Lora',serif;font-size:14px;outline:none" type="email"/>
 <button style="padding:11px 20px;background:#1A3D2E;color:#fff;border:none;border-radius:8px;font-family:'Lora',serif;font-size:14px;cursor:pointer;white-space:nowrap" type="submit">მიიღეთ</button>
 </form>
 <div style="display:none;align-items:center;gap:8px"><svg fill="none" height="18" stroke="#1A3D2E" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg><span style="font-family:'Lora',serif;font-size:16px;color:#111827">გაიგზავნა — შეამოწმეთ ფოსტა</span></div>
 </div>
 </section>
-<div style="background:#F0FDF4;border-მარცხნივ:4px solid #16A34A;border-radius:12px;padding:16px 20px;margin:32px 0">
+<div style="background:#F0FDF4;border-left:4px solid #16A34A;border-radius:12px;padding:16px 20px;margin:32px 0">
 <p style="font-size:16px;font-weight:700;color:#111827;margin-bottom:6px">მზად ხართ საქართველოს შესასწავლად?</p>
 <p style="font-size:14px;color:#374151;line-height:1.6;margin:0">
 <a href="/en/tours-in-georgia/" style="color:#16A34A;font-weight:600">ნახეთ ყველა ტური საქართველოში</a> ·
@@ -751,7 +751,7 @@ function closeDrawer(){drawer.classList.remove('on');burger.classList.remove('on
 function toggleFaq(btn){const item=btn.closest('.fi'),isOpen=item.classList.contains('open');document.querySelectorAll('.fi.open').forEach(i=>{i.classList.remove('open');i.querySelector('.fa').style.maxHeight=null});if(!isOpen){item.classList.add('open');const ans=item.querySelector('.fa');ans.style.maxHeight=ans.scrollHeight+'px'}}
 </script>
 <script>document.addEventListener("click",function(e){var a=e.target.closest("a[href*='wa.me']");if(a){if(typeof gtag==="function"){gtag("event","generate_lead",{event_category:"whatsapp",event_label:a.href});gtag("event","whatsapp_click",{event_category:"contact",event_label:"whatsapp"})}if(typeof posthog!=="undefined"){posthog.capture("whatsapp_click")}}})</script>
-<div aria-hidden="true" class="grain-overlay" style="position:fixed;top:-50%;მარცხნივ:-50%;width:200%;height:200%;background-image:url('data:image/svg+xml,%3Csvg viewBox=%27 0 0 512 512%27  xmlns=%27 http://www.w3.org/2000/svg%27 %3E%3Cfilter id=%27 n%27 %3E%3CfeTurbulence type=%27 fractalNoise%27  baseFrequency=%27 0.65%27  numOctaves=%27 5%27  stitchTiles=%27 stitch%27 /%3E%3C/filter%3E%3Crect width=%27 100%25%27  height=%27 100%25%27  filter=%27 url(%23n)%27 /%3E%3C/svg%3E');opacity:0.045;pointer-events:none;z-index:9999"></div>
+<div aria-hidden="true" class="grain-overlay" style="position:fixed;top:-50%;left:-50%;width:200%;height:200%;background-image:url('data:image/svg+xml,%3Csvg viewBox=%27 0 0 512 512%27  xmlns=%27 http://www.w3.org/2000/svg%27 %3E%3Cfilter id=%27 n%27 %3E%3CfeTurbulence type=%27 fractalNoise%27  baseFrequency=%27 0.65%27  numOctaves=%27 5%27  stitchTiles=%27 stitch%27 /%3E%3C/filter%3E%3Crect width=%27 100%25%27  height=%27 100%25%27  filter=%27 url(%23n)%27 /%3E%3C/svg%3E');opacity:0.045;pointer-events:none;z-index:9999"></div>
 <script src="/scripts/partner.js?v=1"></script><script defer="" src="/js/chat-widget.js?v=33"></script>
 </body>
 </html>
