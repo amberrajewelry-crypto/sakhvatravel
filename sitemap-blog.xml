@@ -1237,6 +1237,16 @@
   <url>
     <loc>https://sakhva-travel.com/blog/oteli-tbilisi-5-zvezd-v-centre/</loc>
     <lastmod>2026-07-26</lastmod>
+      <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/oteli-tbilisi-5-zvezd-v-centre/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/oteli-tbilisi-5-zvezd-v-centre/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/oteli-tbilisi-5-zvezd-v-centre/"/>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/blog/oteli-tbilisi-5-zvezd-v-centre/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/oteli-tbilisi-5-zvezd-v-centre/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/oteli-tbilisi-5-zvezd-v-centre/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/oteli-tbilisi-5-zvezd-v-centre/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/blog/hotels-tbilisi/</loc>
@@ -2151,6 +2161,16 @@
   <url>
     <loc>https://sakhva-travel.com/blog/basseyny-tbilisi/</loc>
     <lastmod>2026-07-26</lastmod>
+      <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/basseyny-tbilisi/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/basseyny-tbilisi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/basseyny-tbilisi/"/>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/blog/basseyny-tbilisi/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/blog/basseyny-tbilisi/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/blog/basseyny-tbilisi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/blog/basseyny-tbilisi/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/blog/poezd-tbilisi-batumi/</loc>

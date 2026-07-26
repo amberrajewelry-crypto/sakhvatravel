@@ -78,7 +78,8 @@ function checkHTML(filePath) {
     const _hasRu = /hreflang="ru"/.test(html), _hasEn = /hreflang="en"/.test(html);
     if (_hasRu && _hasEn) ok('GE: квадра hreflang ru+en+ka');
     else if (_hasEn) warn('GE: hreflang en+ka без ru — кластер EN+GE (нет RU-двойника), проверь намеренность');
-    else err('GE: неполная квадра hreflang (нет en)');
+    else if (_hasRu) warn('GE: hreflang ru+ka без en — кластер RU+GE (нет EN-двойника), проверь намеренность');
+    else err('GE: неполная квадра hreflang (нет ru и en)');
   }
 
   // 5. Проверка мёртвых CSS классов (определены но не используются в HTML)

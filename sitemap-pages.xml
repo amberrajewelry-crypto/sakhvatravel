@@ -35,6 +35,16 @@
   <url>
     <loc>https://sakhva-travel.com/mnogodnevnye-tury-gruzia/</loc>
     <lastmod>2026-07-09</lastmod>
+      <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/mnogodnevnye-tury-gruzia/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/mnogodnevnye-tury-gruzia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/mnogodnevnye-tury-gruzia/"/>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/mnogodnevnye-tury-gruzia/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/mnogodnevnye-tury-gruzia/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/mnogodnevnye-tury-gruzia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/mnogodnevnye-tury-gruzia/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/imereti/</loc>
@@ -93,6 +103,16 @@
   <url>
     <loc>https://sakhva-travel.com/gornye-tury-gruzia/</loc>
     <lastmod>2026-07-09</lastmod>
+      <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/gornye-tury-gruzia/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/gornye-tury-gruzia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/gornye-tury-gruzia/"/>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/gornye-tury-gruzia/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/gornye-tury-gruzia/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/gornye-tury-gruzia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/gornye-tury-gruzia/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/mtskheta-mtianeti/</loc>
@@ -233,6 +253,16 @@
   <url>
     <loc>https://sakhva-travel.com/avtorskie-tury-gruzia/</loc>
     <lastmod>2026-07-09</lastmod>
+      <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/avtorskie-tury-gruzia/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/avtorskie-tury-gruzia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/avtorskie-tury-gruzia/"/>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/avtorskie-tury-gruzia/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/avtorskie-tury-gruzia/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/avtorskie-tury-gruzia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/avtorskie-tury-gruzia/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/mtskheta-mtianeti/</loc>
@@ -422,11 +452,61 @@
   <url>
     <loc>https://sakhva-travel.com/tury-v-batumi/</loc>
     <lastmod>2026-07-09</lastmod>
+      <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/tury-v-batumi/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/tury-v-batumi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/tury-v-batumi/"/>
   </url>
-  <url><loc>https://sakhva-travel.com/ekskursionnye-tury-v-gruziyu/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://sakhva-travel.com/individualnyy-tur-v-gruziyu/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://sakhva-travel.com/tury-v-gruziyu-s-detmi/</loc><lastmod>2026-07-09</lastmod></url>
-  <url><loc>https://sakhva-travel.com/grupovye-tury-v-gruziyu/</loc><lastmod>2026-07-09</lastmod></url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/tury-v-batumi/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/tury-v-batumi/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/tury-v-batumi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/tury-v-batumi/"/>
+  </url>
+  <url><loc>https://sakhva-travel.com/ekskursionnye-tury-v-gruziyu/</loc><lastmod>2026-07-09</lastmod>    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursionnye-tury-v-gruziyu/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/ekskursionnye-tury-v-gruziyu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/ekskursionnye-tury-v-gruziyu/"/>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/ekskursionnye-tury-v-gruziyu/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursionnye-tury-v-gruziyu/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/ekskursionnye-tury-v-gruziyu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/ekskursionnye-tury-v-gruziyu/"/>
+  </url>
+  <url><loc>https://sakhva-travel.com/individualnyy-tur-v-gruziyu/</loc><lastmod>2026-07-09</lastmod>    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/individualnyy-tur-v-gruziyu/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/individualnyy-tur-v-gruziyu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/individualnyy-tur-v-gruziyu/"/>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/individualnyy-tur-v-gruziyu/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/individualnyy-tur-v-gruziyu/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/individualnyy-tur-v-gruziyu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/individualnyy-tur-v-gruziyu/"/>
+  </url>
+  <url><loc>https://sakhva-travel.com/tury-v-gruziyu-s-detmi/</loc><lastmod>2026-07-09</lastmod>    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/tury-v-gruziyu-s-detmi/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/tury-v-gruziyu-s-detmi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/tury-v-gruziyu-s-detmi/"/>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/tury-v-gruziyu-s-detmi/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/tury-v-gruziyu-s-detmi/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/tury-v-gruziyu-s-detmi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/tury-v-gruziyu-s-detmi/"/>
+  </url>
+  <url><loc>https://sakhva-travel.com/grupovye-tury-v-gruziyu/</loc><lastmod>2026-07-09</lastmod>    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/grupovye-tury-v-gruziyu/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/grupovye-tury-v-gruziyu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/grupovye-tury-v-gruziyu/"/>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/grupovye-tury-v-gruziyu/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/grupovye-tury-v-gruziyu/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/grupovye-tury-v-gruziyu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/grupovye-tury-v-gruziyu/"/>
+  </url>
   <url>
     <loc>https://sakhva-travel.com/en/georgia-travel-guide/</loc>
     <lastmod>2026-07-26</lastmod>
@@ -446,22 +526,72 @@
   <url>
     <loc>https://sakhva-travel.com/tury-na-kazbek/</loc>
     <lastmod>2026-07-09</lastmod>
+      <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/tury-na-kazbek/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/tury-na-kazbek/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/tury-na-kazbek/"/>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/tury-na-kazbek/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/tury-na-kazbek/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/tury-na-kazbek/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/tury-na-kazbek/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/tury-v-gruziyu-letom/</loc>
     <lastmod>2026-07-09</lastmod>
+      <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/tury-v-gruziyu-letom/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/tury-v-gruziyu-letom/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/tury-v-gruziyu-letom/"/>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/tury-v-gruziyu-letom/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/tury-v-gruziyu-letom/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/tury-v-gruziyu-letom/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/tury-v-gruziyu-letom/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/tury-v-gruziyu-zimoy/</loc>
     <lastmod>2026-07-09</lastmod>
+      <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/tury-v-gruziyu-zimoy/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/tury-v-gruziyu-zimoy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/tury-v-gruziyu-zimoy/"/>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/tury-v-gruziyu-zimoy/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/tury-v-gruziyu-zimoy/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/tury-v-gruziyu-zimoy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/tury-v-gruziyu-zimoy/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/tury-v-svaneti/</loc>
     <lastmod>2026-07-09</lastmod>
+      <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/tury-v-svaneti/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/tury-v-svaneti/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/tury-v-svaneti/"/>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/tury-v-svaneti/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/tury-v-svaneti/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/tury-v-svaneti/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/tury-v-svaneti/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/privacy/</loc>
     <lastmod>2026-07-09</lastmod>
+      <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/privacy/"/>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/privacy/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/privacy/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/en/terms/</loc>
