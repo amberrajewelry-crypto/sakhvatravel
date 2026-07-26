@@ -9,9 +9,20 @@
   // On the homepage the EN switch (main.js setLang) only writes localStorage['lang']
   // without touching <html lang>, so fall back to it.
   function curLang() {
+    if (document.documentElement.lang === 'ka') return 'ka';
     if (document.documentElement.lang === 'en') return 'en';
-    try { if (localStorage.getItem('lang') === 'en') return 'en'; } catch (e) {}
+    try {
+      const l = localStorage.getItem('lang');
+      if (l === 'ka') return 'ka';
+      if (l === 'en') return 'en';
+    } catch (e) {}
     return 'ru';
+  }
+
+  // Pick a string by current UI language (ru default, en, ka).
+  function L(ru, en, ka) {
+    const l = curLang();
+    return l === 'ka' ? ka : l === 'en' ? en : ru;
   }
 
   const CFG = {
@@ -171,8 +182,8 @@
     const fab = document.createElement('button');
     fab.className = 'sc-fab';
     fab.id = 'sc-fab';
-    fab.setAttribute('aria-label', 'Открыть чат');
-    fab.innerHTML = `<span class="sc-fab-tip">Подобрать тур за 30 секунд</span>${CHAT_BUBBLE}`;
+    fab.setAttribute('aria-label', L('Открыть чат', 'Open chat', 'ჩატის გახსნა'));
+    fab.innerHTML = `<span class="sc-fab-tip">${L('Подобрать тур за 30 секунд', 'Find a tour in 30 seconds', 'შეარჩიეთ ტური 30 წამში')}</span>${CHAT_BUBBLE}`;
     fab.addEventListener('click', toggle);
 
     const win = document.createElement('div');
@@ -181,15 +192,15 @@
     win.innerHTML = `
 <div class="sc-hdr">
   <div class="sc-av"><svg viewBox="0 0 24 24"><rect x="4" y="8" width="16" height="12" rx="3" stroke="#fff" stroke-width="1.5"/><circle cx="9" cy="14" r="1.5" fill="#86EFAC"/><circle cx="15" cy="14" r="1.5" fill="#86EFAC"/><path d="M10 18h4" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/><path d="M12 4v4" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/><circle cx="12" cy="3" r="1.5" fill="#86EFAC"/><path d="M2 13v2" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/><path d="M22 13v2" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/></svg></div>
-  <div class="sc-inf"><div class="sc-nm">${CFG.name}</div><div class="sc-st">Онлайн \u00b7 отвечает мгновенно</div></div>
-  <button class="sc-x" id="sc-close" aria-label="Закрыть чат">${CLOSE}</button>
+  <div class="sc-inf"><div class="sc-nm">${CFG.name}</div><div class="sc-st">${L('Онлайн \u00b7 отвечает мгновенно','Online \u00b7 replies instantly','ონლაინ \u00b7 პასუხობს მყისიერად')}</div></div>
+  <button class="sc-x" id="sc-close" aria-label="${L('Закрыть чат','Close chat','ჩატის დახურვა')}">${CLOSE}</button>
 </div>
 <div class="sc-body" id="sc-body"></div>
 <div class="sc-inp">
-  <input id="sc-input" placeholder="Напишите что хотите..." autocomplete="off">
-  <button class="sc-snd" id="sc-send" aria-label="Отправить сообщение">${SEND}</button>
+  <input id="sc-input" placeholder="${L('Напишите что хотите...','Type your message...','დაწერეთ, რა გსურთ...')}" autocomplete="off">
+  <button class="sc-snd" id="sc-send" aria-label="${L('Отправить сообщение','Send message','შეტყობინების გაგზავნა')}">${SEND}</button>
 </div>
-<div class="sc-hon">${CFG.name} \u2014 это умный помощник. Хотите живого Тимура? Напишите \u00abТимур\u00bb.</div>`;
+<div class="sc-hon">${L(CFG.name+' \u2014 это умный помощник. Хотите живого Тимура? Напишите \u00abТимур\u00bb.', CFG.name+' \u2014 is a smart assistant. Want the real Timur? Type \u00abTimur\u00bb.', CFG.name+' \u2014 ჭკვიანი ასისტენტია. გსურთ ცოცხალი თიმური? დაწერეთ \u00abთიმური\u00bb.')}</div>`;
 
     document.body.appendChild(fab);
     document.body.appendChild(win);
@@ -258,18 +269,21 @@
   function showGreeting() {
     const tourSlug = detectTourContext();
     const isEN = curLang() === 'en';
+    const isKA = curLang() === 'ka';
     const greeting = tourSlug
-      ? (isEN ? 'Hi! I see you\'re looking at this tour. Want to know details, available dates, or book it?' : 'Привет! Вижу вы смотрите этот тур. Хотите узнать подробности, свободные даты или забронировать?')
-      : (isEN ? 'Hi! I\'m Sakhva-AI, I\'ll help you find the perfect tour in Georgia in 30 seconds. Tell me briefly \u2014 who\'s traveling, how many days, and what do you want to see?' : CFG.greeting);
+      ? L('Привет! Вижу вы смотрите этот тур. Хотите узнать подробности, свободные даты или забронировать?', 'Hi! I see you\'re looking at this tour. Want to know details, available dates, or book it?', 'გამარჯობა! ვხედავ, ამ ტურს ათვალიერებთ. გსურთ დეტალები, თავისუფალი თარიღები თუ დაჯავშნა?')
+      : L(CFG.greeting, 'Hi! I\'m Sakhva-AI, I\'ll help you find the perfect tour in Georgia in 30 seconds. Tell me briefly \u2014 who\'s traveling, how many days, and what do you want to see?', 'გამარჯობა! მე ვარ Sakhva-AI, დაგეხმარებით იდეალური ტურის შერჩევაში საქართველოში 30 წამში. მოკლედ მითხარით \u2014 ვინ მოგზაურობთ, რამდენი დღით და რისი ნახვა გსურთ?');
     addBubble('ai', greeting);
 
     const quickRepliesEN = ['Couple, 4 days \u2014 wine & views', 'Family with kids \u2014 relaxed', 'Solo \u2014 what to see'];
+    const quickRepliesKA = ['წყვილი, 4 დღე \u2014 ღვინო და ხედები', 'ოჯახი ბავშვებით \u2014 მშვიდად', 'მარტო \u2014 რა ვნახო'];
     const tourQuickEN = ['Available dates', 'Price & discounts', 'Book now'];
+    const tourQuickKA = ['თავისუფალი თარიღები', 'ფასი და ფასდაკლებები', 'დაჯავშნა'];
     const tourQuickRU = ['\u0421\u0432\u043e\u0431\u043e\u0434\u043d\u044b\u0435 \u0434\u0430\u0442\u044b', '\u0426\u0435\u043d\u0430 \u0438 \u0441\u043a\u0438\u0434\u043a\u0438', '\u0417\u0430\u0431\u0440\u043e\u043d\u0438\u0440\u043e\u0432\u0430\u0442\u044c'];
 
     const replies = tourSlug
-      ? (isEN ? tourQuickEN : tourQuickRU)
-      : (isEN ? quickRepliesEN : CFG.quickReplies);
+      ? (isKA ? tourQuickKA : isEN ? tourQuickEN : tourQuickRU)
+      : (isKA ? quickRepliesKA : isEN ? quickRepliesEN : CFG.quickReplies);
 
     const qr = document.createElement('div');
     qr.className = 'sc-qr';

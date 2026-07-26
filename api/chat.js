@@ -475,11 +475,14 @@ export default async function handler(req) {
     })
   }
 
-  const isEN = lang === 'en' || (page && page.startsWith('/en/'))
+  const isKA = lang === 'ka' || (page && page.startsWith('/ge/'))
+  const isEN = !isKA && (lang === 'en' || (page && page.startsWith('/en/')))
   const origin = new URL(req.url).origin
   const tours = await getCatalog(origin)
 
-  const langNote = isEN
+  const langNote = isKA
+    ? '\n\nIMPORTANT: The client is on the Georgian (ქართული) version of the site. Reply in Georgian. Use the same tools and rules but respond in Georgian.'
+    : isEN
     ? '\n\nIMPORTANT: The client is on the English version of the site. Reply in English. Use the same tools and rules but respond in English.'
     : ''
 
