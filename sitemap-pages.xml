@@ -112,7 +112,11 @@
   </url>
   <url>
     <loc>https://sakhva-travel.com/tury-v-gruziyu/</loc>
-    <lastmod>2026-07-09</lastmod>
+    <lastmod>2026-07-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/tury-v-gruziyu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/georgia-travel-guide/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/georgia-travel-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/tury-v-gruziyu/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/kvemo-kartli/</loc>
@@ -421,7 +425,19 @@
   <url><loc>https://sakhva-travel.com/grupovye-tury-v-gruziyu/</loc><lastmod>2026-07-09</lastmod></url>
   <url>
     <loc>https://sakhva-travel.com/en/georgia-travel-guide/</loc>
-    <lastmod>2026-07-09</lastmod>
+    <lastmod>2026-07-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/tury-v-gruziyu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/georgia-travel-guide/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/georgia-travel-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/tury-v-gruziyu/"/>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/georgia-travel-guide/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/tury-v-gruziyu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/georgia-travel-guide/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/georgia-travel-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/tury-v-gruziyu/"/>
   </url>
   <url>
     <loc>https://sakhva-travel.com/tury-na-kazbek/</loc>

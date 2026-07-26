@@ -26,8 +26,8 @@
 @font-face{font-family:'Lora';font-style:normal;font-weight:600;font-display:სურვილისამებრი;src:url(/fonts/lora-14.woff2) format('woff2')}
 @font-face{font-family:'Lora';font-style:normal;font-weight:700;font-display:სურვილისამებრი;src:url(/fonts/lora-14.woff2) format('woff2')}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Lora',საქართველო,serif;background:#fff;color:#1a3d2e;min-height:100vh}
-#nav{position:fixed;top:0;მარცხნივ:0;მარჯვნივ:0;z-index:900;height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 24px;background:#fff;box-shadow:0 1px 8px rgba(0,0,0,.08)}
+body{font-family:'Lora',Georgia,serif;background:#fff;color:#1a3d2e;min-height:100vh}
+#nav{position:fixed;top:0;left:0;right:0;z-index:900;height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 24px;background:#fff;box-shadow:0 1px 8px rgba(0,0,0,.08)}
 .nav-logo{text-decoration:none;display:flex;align-items:center}
 .logo-svg{height:48px;width:auto}
 .nav-back{display:flex;align-items:center;gap:6px;text-decoration:none;color:#1a3d2e;font-size:14px;font-weight:600;padding:8px 16px;border-radius:8px;background:#f0f7f4;transition:background .2s}
@@ -36,13 +36,13 @@ body{font-family:'Lora',საქართველო,serif;background:#fff;col
 .cf-btn{padding:10px 18px;border:1px solid #D1D5DB;border-radius:8px;background:#fff;font-size:13px;font-family:inherit;cursor:pointer;display:flex;align-items:center;gap:6px;white-space:nowrap;transition:border-color .15s}
 .cf-btn:hover,.cf-wrap.open .cf-btn{border-color:#1A3D2E;color:#1A3D2E}
 .cf-btn svg{width:14px;height:14px;flex-shrink:0}
-.cf-dd{display:none;position:absolute;top:calc(100% + 4px);მარცხნივ:0;background:#fff;border:1px solid #E5E7EB;border-radius:10px;box-shadow:0 8px 30px rgba(0,0,0,.12);min-width:220px;z-index:50;padding:6px 0}
+.cf-dd{display:none;position:absolute;top:calc(100% + 4px);left:0;background:#fff;border:1px solid #E5E7EB;border-radius:10px;box-shadow:0 8px 30px rgba(0,0,0,.12);min-width:220px;z-index:50;padding:6px 0}
 .cf-wrap.open .cf-dd{display:block}
 .cf-item{padding:10px 18px;font-size:14px;cursor:pointer;transition:background .1s;color:#374151}
 .cf-item:hover{background:#F3F4F6}
 .cf-item.active{color:#1A3D2E;font-weight:600}
 .cf-item.active::before{content:'\2713 ';color:#1A3D2E}
-.cat-filters{display:flex;gap:10px;flex-wrap:wrap;max-width:1200px;margin-მარცხნივ:auto;margin-მარჯვნივ:auto;padding:0 clamp(16px,3.5vw,56px)}
+.cat-filters{display:flex;gap:10px;flex-wrap:wrap;max-width:1200px;margin-left:auto;margin-right:auto;padding:0 clamp(16px,3.5vw,56px)}
 .cf-btn-adv{background:#F9FAFB;border:1px dashed #D1D5DB;color:#374151;font-weight:600}
 .cf-btn-adv:hover{border-color:#1A3D2E;color:#1A3D2E;background:#F0FAF4}
 #hub-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:start;min-height:6400px;contain-intrinsic-size:auto 6400px}
