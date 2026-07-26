@@ -490,6 +490,6 @@ burger.addEventListener('click',()=>{const o=drawer.classList.toggle('on');burge
 function closeDrawer(){drawer.classList.remove('on');burger.classList.remove('on');document.body.style.overflow=''}
 function toggleFaq(btn){const item=btn.closest('.fi'),isOpen=item.classList.contains('open');document.querySelectorAll('.fi.open').forEach(i=>{i.classList.remove('open');i.querySelector('.fa').style.maxHeight=null});if(!isOpen){item.classList.add('open');const ans=item.querySelector('.fa');ans.style.maxHeight=ans.scrollHeight+'px'}}
 </script>
-<script defer="" src="/js/chat-widget.js?v=33"></script>
+<script defer="" src="/js/chat-widget.js?v=34"></script>
 </body>
 </html>
