@@ -111,7 +111,7 @@ svg{display:block}
         <label>Экскурсия</label>
         <div class="tourbox">
           <span class="ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9AA39C" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg></span>
-          <input class="inp lg" id="f-tour" list="tours" placeholder="Начните вводить название тура…" autocomplete="off" value="Казбеги из Тбилиси">
+          <input aria-label="Начните вводить название тура…" class="inp lg" id="f-tour" list="tours" placeholder="Начните вводить название тура…" autocomplete="off" value="Казбеги из Тбилиси">
         </div>
         <datalist id="tours"></datalist>
       </div>
@@ -119,8 +119,8 @@ svg{display:block}
       <div class="cols">
         <div>
           <div class="slab">Детали</div>
-          <div class="f"><label>Имя</label><input class="inp" placeholder="Ваше имя"></div>
-          <div class="f"><label>WhatsApp / Telegram</label><input class="inp" placeholder="+995 · @username"></div>
+          <div class="f"><label>Имя</label><input aria-label="Имя" class="inp" placeholder="Ваше имя"></div>
+          <div class="f"><label>WhatsApp / Telegram</label><input aria-label="WhatsApp / Telegram" class="inp" placeholder="+995 · @username"></div>
           <div class="f" style="margin-bottom:11px">
             <div class="datehead"><span class="mo">Дата · Июль 2026</span><button class="all" type="button">Весь месяц ▾</button></div>
             <div class="dates" id="dates"></div>
@@ -134,8 +134,8 @@ svg{display:block}
             <div class="opt" data-t="full"><div class="ot">Полная</div><div class="op" id="op-full">₾—</div></div>
             <div class="opt" data-t="custom"><div class="ot">Другая</div><div class="op">₾…</div></div>
           </div>
-          <input class="inp custom" id="f-custom" type="number" placeholder="Сумма в GEL" style="display:none">
-          <div class="f"><label>Email для чека</label><input class="inp" placeholder="email@example.com"></div>
+          <input aria-label="Сумма в GEL" class="inp custom" id="f-custom" type="number" placeholder="Сумма в GEL" style="display:none">
+          <div class="f"><label>Email для чека</label><input aria-label="Email для чека" class="inp" placeholder="email@example.com"></div>
           <div class="slab" style="margin-top:4px">Способ оплаты</div>
           <div class="ptabs" id="ptabs">
             <div class="ptab on"><div class="pi"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#15784f" stroke-width="1.4"><rect x="2" y="5" width="20" height="14" rx="2.5"/><path d="M2 10h20"/></svg></div><div class="pn">Visa·MC</div></div>

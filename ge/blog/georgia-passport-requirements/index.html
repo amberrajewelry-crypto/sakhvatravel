@@ -572,9 +572,9 @@ footer p a:not([class]){text-decoration:underline;text-underline-offset:2px}</st
 <button class="modal-close" onclick="document.getElementById('contact-modal').classList.remove('open')">×</button>
 <h2>დაჯავშნეთ ტური — 10% ფასდაკლება</h2>
 <p>დატოვეთ მონაცემები და თიმური 2 საათის განმავლობაში დაგიკავშირდებათ.</p>
-<input autocomplete="name" id="m-name" placeholder="თქვენი სახელი" type="text"/>
-<input autocomplete="tel" id="m-phone" placeholder="WhatsApp / Telegram ნომერი" type="tel"/>
-<select id="m-ტური">
+<input aria-label="თქვენი სახელი" autocomplete="name" id="m-name" placeholder="თქვენი სახელი" type="text"/>
+<input aria-label="WhatsApp / Telegram ნომერი" autocomplete="tel" id="m-phone" placeholder="WhatsApp / Telegram ნომერი" type="tel"/>
+<select aria-label="ტური" id="m-ტური">
 <option value="">აირჩიეთ ტური</option>
 <option>ყაზბეგის ერთდღიანი ტური</option>
 <option>კახეთის ღვინის ტური</option>
@@ -583,7 +583,7 @@ footer p a:not([class]){text-decoration:underline;text-underline-offset:2px}</st
 <option>ბათუმის ექსკურსია ერთ დღეში</option>
 <option>სხვა / ჯერ არ ვიცი</option>
 </select>
-<textarea id="m-msg" placeholder="გაქვთ კითხვები ან სპეციალური სურვილები?" rows="2"></textarea>
+<textarea aria-label="გაქვთ კითხვები ან სპეციალური სურვილები?" id="m-msg" placeholder="გაქვთ კითხვები ან სპეციალური სურვილები?" rows="2"></textarea>
 <button class="modal-submit" onclick="sendContact()">გაგზავნეთ მოთხოვნა</button>
 <div class="msg-ok" id="msg-ok">გმადლობთ! თიმური მალე დაგიკავშირდებათ.</div>
 </div>

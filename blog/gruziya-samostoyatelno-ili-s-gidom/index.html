@@ -161,8 +161,8 @@ ul{list-style:none}
 @media(max-width:480px){.price-table{font-size:13px}.article-toc{padding:16px 18px}input,select,textarea{font-size:16px!important}}
 
 .lang-sw{display:flex;align-items:center;gap:4px;margin-left:8px}
-.lang-btn{font-size:10px;font-weight:700;letter-spacing:.1em;color:#6B7280;background:none;border:none;cursor:pointer;padding:4px 2px;transition:color .2s;font-family:inherit}
-.lang-btn.on{color:#1A3D2E}
+.lang-btn{font-size:10px;font-weight:700;letter-spacing:.1em;color:#D1D5DB;background:none;border:none;cursor:pointer;padding:4px 2px;transition:color .2s;font-family:inherit}
+.lang-btn.on{color:#F59E0B}
 .lang-sep{color:#D1D5DB;font-size:10px}
 .d-lang{display:flex;gap:10px;padding:14px 0;border-bottom:1px solid #f3f4f6}
 .d-lang-btn{flex:1;padding:9px;border-radius:9999px;border:2px solid #1A3D2E;background:#fff;color:#1A3D2E;font-weight:700;font-size:12px;cursor:pointer;font-family:inherit;transition:all .2s}
@@ -503,9 +503,9 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <div style="font-size:22px;font-weight:800;color:#111;margin-bottom:4px">Забронировать экскурсию</div>
 <div style="font-size:14px;color:#6B7280;margin-bottom:20px">Оставьте контакт — Тимур свяжется с вами</div>
 <div id="cm-form">
-<div style="display:flex;flex-direction:column;gap:6px;margin-bottom:16px"><label style="font-size:13px;font-weight:600;color:#374151">Ваше имя</label><input id="cm-name" placeholder="Имя" style="padding:12px 16px;border:1px solid #E5E7EB;border-radius:12px;font-size:16px;font-family:inherit;outline:none" type="text"/></div>
-<div style="display:flex;flex-direction:column;gap:6px;margin-bottom:16px"><label style="font-size:13px;font-weight:600;color:#374151">Телефон или WhatsApp</label><input id="cm-phone" placeholder="+7 или +995..." required="" style="padding:12px 16px;border:1px solid #E5E7EB;border-radius:12px;font-size:16px;font-family:inherit;outline:none" type="tel"/></div>
-<div style="display:flex;flex-direction:column;gap:6px;margin-bottom:20px"><label style="font-size:13px;font-weight:600;color:#374151">Сообщение</label><textarea id="cm-msg" placeholder="Даты, количество людей..." rows="3" style="padding:12px 16px;border:1px solid #E5E7EB;border-radius:12px;font-size:16px;font-family:inherit;outline:none;resize:none"></textarea></div>
+<div style="display:flex;flex-direction:column;gap:6px;margin-bottom:16px"><label style="font-size:13px;font-weight:600;color:#374151">Ваше имя</label><input aria-label="Ваше имя" id="cm-name" placeholder="Имя" style="padding:12px 16px;border:1px solid #E5E7EB;border-radius:12px;font-size:16px;font-family:inherit;outline:none" type="text"/></div>
+<div style="display:flex;flex-direction:column;gap:6px;margin-bottom:16px"><label style="font-size:13px;font-weight:600;color:#374151">Телефон или WhatsApp</label><input aria-label="Телефон или WhatsApp" id="cm-phone" placeholder="+7 или +995..." required="" style="padding:12px 16px;border:1px solid #E5E7EB;border-radius:12px;font-size:16px;font-family:inherit;outline:none" type="tel"/></div>
+<div style="display:flex;flex-direction:column;gap:6px;margin-bottom:20px"><label style="font-size:13px;font-weight:600;color:#374151">Сообщение</label><textarea aria-label="Сообщение" id="cm-msg" placeholder="Даты, количество людей..." rows="3" style="padding:12px 16px;border:1px solid #E5E7EB;border-radius:12px;font-size:16px;font-family:inherit;outline:none;resize:none"></textarea></div>
 <button onclick="sendContact()" style="width:100%;padding:16px;background:#1A3D2E;color:#fff;border:none;border-radius:14px;font-size:16px;font-weight:700;cursor:pointer;font-family:inherit">Отправить →</button>
 </div>
 <div id="cm-success" style="display:none;text-align:center;padding:24px 0">

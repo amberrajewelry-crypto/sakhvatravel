@@ -600,11 +600,11 @@ footer p a:not([class]){text-decoration:underline;text-underline-offset:2px}</st
     <h2>Book the Telavi Tour</h2>
     <p>Leave your details — we will reply within 15 minutes</p>
     <form id="contact-form">
-      <input type="text" name="name" placeholder="Your name" required>
-      <input type="tel" name="phone" placeholder="WhatsApp / phone number" required>
-      <input type="text" name="date" placeholder="Preferred date">
-      <input type="number" name="guests" placeholder="Number of guests" min="1" max="7">
-      <textarea name="message" placeholder="Any questions or requests?"></textarea>
+      <input aria-label="Your name" type="text" name="name" placeholder="Your name" required>
+      <input aria-label="WhatsApp / phone number" type="tel" name="phone" placeholder="WhatsApp / phone number" required>
+      <input aria-label="Preferred date" type="text" name="date" placeholder="Preferred date">
+      <input aria-label="Number of guests" type="number" name="guests" placeholder="Number of guests" min="1" max="7">
+      <textarea aria-label="Any questions or requests?" name="message" placeholder="Any questions or requests?"></textarea>
       <button type="submit" class="submit-btn">Send request</button>
       <div class="success-msg" id="success-msg">Thank you! We will contact you shortly.</div>
     </form>

@@ -543,11 +543,11 @@ footer p a:not([class]){text-decoration:underline;text-underline-offset:2px}</st
     <h2>დაჯავშნეთ თელავის ტური</h2>
     <p>დატოვეთ თქვენი მონაცემები — ვუპასუხებთ 15 წუთში</p>
     <form id="contact-form">
-      <input type="text" name="name" placeholder="თქვენი სახელი" required>
-      <input type="tel" name="phone" placeholder="WhatsApp / ტელეფონის ნომერი" required>
-      <input type="text" name="date" placeholder="სასურველი თარიღი">
-      <input type="number" name="guests" placeholder="სტუმრების რაოდენობა" min="1" max="7">
-      <textarea name="message" placeholder="რაიმე კითხვა ან მოთხოვნა?"></textarea>
+      <input aria-label="თქვენი სახელი" type="text" name="name" placeholder="თქვენი სახელი" required>
+      <input aria-label="WhatsApp / ტელეფონის ნომერი" type="tel" name="phone" placeholder="WhatsApp / ტელეფონის ნომერი" required>
+      <input aria-label="სასურველი თარიღი" type="text" name="date" placeholder="სასურველი თარიღი">
+      <input aria-label="სტუმრების რაოდენობა" type="number" name="guests" placeholder="სტუმრების რაოდენობა" min="1" max="7">
+      <textarea aria-label="რაიმე კითხვა ან მოთხოვნა?" name="message" placeholder="რაიმე კითხვა ან მოთხოვნა?"></textarea>
       <button type="submit" class="submit-btn">მოთხოვნის გაგზავნა</button>
       <div class="success-msg" id="success-msg">გმადლობთ! მალე დაგიკავშირდებით.</div>
     </form>

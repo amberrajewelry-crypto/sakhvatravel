@@ -441,7 +441,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <div style="max-width:760px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap">
 <p style="font-family:'Lora',serif;font-size:17px;font-weight:400;color:#111827;letter-spacing:-0.02em;margin:0">გზამკვლევი: 15 ადგილი თბილისში, რომელიც არცერთ გიდში არ არის + 5% ფასდაკლება</p>
 <form class="magnet-form" onsubmit="event.preventDefault();var f=this,e=f.querySelector('input').value;f.style.display='none';f.nextElementSibling.style.display='flex';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:e,source:'footer-magnet',lang:'en'})}).catch(function(){})" style="display:flex;gap:8px;flex-shrink:0">
-<input placeholder="Email" required="" style="width:200px;padding:11px 16px;border:1px solid #E5E7EB;border-radius:8px;background:#fff;color:#111827;font-family:'Lora',serif;font-size:14px;outline:none" type="email"/>
+<input aria-label="Email" placeholder="Email" required="" style="width:200px;padding:11px 16px;border:1px solid #E5E7EB;border-radius:8px;background:#fff;color:#111827;font-family:'Lora',serif;font-size:14px;outline:none" type="email"/>
 <button style="padding:11px 20px;background:#1A3D2E;color:#fff;border:none;border-radius:8px;font-family:'Lora',serif;font-size:14px;cursor:pointer;white-space:nowrap" type="submit">მიღება</button>
 </form>
 <div style="display:none;align-items:center;gap:8px"><svg fill="none" height="18" stroke="#1A3D2E" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg><span style="font-family:'Lora',serif;font-size:16px;color:#111827">გაიგზავნა — შეამოწმეთ ფოსტა</span></div>
@@ -478,8 +478,8 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <p class="modal-title">მიიღეთ 10% ფასდაკლება პირველ ტურზე</p>
 <p class="modal-sub">დატოვეთ საკონტაქტო მონაცემები და თიმური 2 საათში დაგიკავშირდებათ პერსონალური შეთავაზებით.</p>
 <form class="modal-form" onsubmit="event.preventDefault();var f=this;f.innerHTML='&lt;p style=\'text-align:center;color:#1A3D2E;font-weight:700;padding:20px 0\'&gt;Thank you! We will be in touch soon.&lt;/p&gt;';fetch('/api/subscribe',{method:'POST',headers:{\'Content-Type\':\'application/json\'},body:JSON.stringify({name:f.querySelector(\'[name=name]\').value,phone:f.querySelector(\'[name=phone]\').value,source:\'discount-modal\',lang:\'en\'})}).catch(function(){})">
-<input name="name" placeholder="თქვენი სახელი" required="" type="text"/>
-<input name="phone" placeholder="WhatsApp ან ტელეფონის ნომერი" required="" type="tel"/>
+<input aria-label="თქვენი სახელი" name="name" placeholder="თქვენი სახელი" required="" type="text"/>
+<input aria-label="WhatsApp ან ტელეფონის ნომერი" name="phone" placeholder="WhatsApp ან ტელეფონის ნომერი" required="" type="tel"/>
 <button type="submit">განაცხადის გაგზავნა</button>
 </form>
 </div>

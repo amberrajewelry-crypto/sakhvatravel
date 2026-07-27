@@ -146,7 +146,7 @@ h1{font-size:clamp(26px,4vw,36px);font-weight:600;color:#111827;letter-spacing:-
     <form id="booking-form" onsubmit="return handleSubmit(event)">
       <div class="field">
         <label for="f-tour">Tour</label>
-        <input type="text" id="f-tour-search" list="tour-list" placeholder="Start typing tour name..." required autocomplete="off" style="width:100%;padding:12px 16px;border:1px solid #E5E7EB;border-radius:12px;font-size:15px;font-family:inherit;outline:none;transition:border-color .2s">
+        <input aria-label="Tour" type="text" id="f-tour-search" list="tour-list" placeholder="Start typing tour name..." required autocomplete="off" style="width:100%;padding:12px 16px;border:1px solid #E5E7EB;border-radius:12px;font-size:15px;font-family:inherit;outline:none;transition:border-color .2s">
         <datalist id="tour-list">
           <option value="Tbilisi Art Tour — from ₾145" data-id="art-tur-tbilisi" data-price="145" data-old="180">
           <option value="Chacha Masterclass — from ₾170" data-id="chacha-master-klass" data-price="170" data-old="215">
@@ -262,17 +262,17 @@ h1{font-size:clamp(26px,4vw,36px);font-weight:600;color:#111827;letter-spacing:-
         <label>Payment option</label>
         <div style="display:flex;flex-direction:column;gap:8px;margin-top:6px">
           <label style="display:flex;align-items:center;gap:10px;padding:12px 16px;border:2px solid #1A3D2E;border-radius:12px;cursor:pointer;background:#F0FDF4;transition:all .2s" id="opt-prepay-label">
-            <input type="radio" name="pay-type" value="prepay" checked style="accent-color:#1A3D2E;width:18px;height:18px" onchange="updatePrice()">
+            <input aria-label="Field" type="radio" name="pay-type" value="prepay" checked style="accent-color:#1A3D2E;width:18px;height:18px" onchange="updatePrice()">
             <div><strong style="font-size:14px;color:#111827">10% Prepayment</strong><br><span style="font-size:13px;color:#6B7280">Remaining — to the guide on tour day</span></div>
           </label>
           <label style="display:flex;align-items:center;gap:10px;padding:12px 16px;border:2px solid #E5E7EB;border-radius:12px;cursor:pointer;transition:all .2s" id="opt-full-label">
-            <input type="radio" name="pay-type" value="full" style="accent-color:#1A3D2E;width:18px;height:18px" onchange="updatePrice()">
+            <input aria-label="Field" type="radio" name="pay-type" value="full" style="accent-color:#1A3D2E;width:18px;height:18px" onchange="updatePrice()">
             <div><strong style="font-size:14px;color:#111827">Pay full amount</strong><br><span style="font-size:13px;color:#6B7280">Full payment online now</span></div>
           </label>
           <label style="display:flex;align-items:flex-start;gap:10px;padding:12px 16px;border:2px solid #E5E7EB;border-radius:12px;cursor:pointer;transition:all .2s" id="opt-custom-label">
-            <input type="radio" name="pay-type" value="custom" style="accent-color:#1A3D2E;width:18px;height:18px;margin-top:2px" onchange="updatePrice()">
+            <input aria-label="Field" type="radio" name="pay-type" value="custom" style="accent-color:#1A3D2E;width:18px;height:18px;margin-top:2px" onchange="updatePrice()">
             <div style="flex:1"><strong style="font-size:14px;color:#111827">Custom amount</strong><br><span style="font-size:13px;color:#6B7280">Pay any amount you wish</span>
-              <input type="number" id="f-custom-amount" min="1" step="1" placeholder="Amount in GEL" oninput="updatePrice()" style="display:none;margin-top:8px;width:170px;padding:8px 12px;border:1px solid #E5E7EB;border-radius:8px;font-size:14px;font-family:inherit;outline:none">
+              <input aria-label="Amount in GEL" type="number" id="f-custom-amount" min="1" step="1" placeholder="Amount in GEL" oninput="updatePrice()" style="display:none;margin-top:8px;width:170px;padding:8px 12px;border:1px solid #E5E7EB;border-radius:8px;font-size:14px;font-family:inherit;outline:none">
             </div>
           </label>
         </div>

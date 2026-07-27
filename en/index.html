@@ -1582,13 +1582,13 @@ update();
 <div class="bm-step-label">Step 3 of 3</div>
 <div class="bm-step-title">Your details</div>
 <div class="bm-row">
-<div class="bm-field"><label>Name</label><input type="text" id="bm-name" placeholder="Name" autocomplete="given-name"></div>
-<div class="bm-field"><label>People</label><select id="bm-guests"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option></select></div>
+<div class="bm-field"><label>Name</label><input aria-label="Name" type="text" id="bm-name" placeholder="Name" autocomplete="given-name"></div>
+<div class="bm-field"><label>People</label><select aria-label="People" id="bm-guests"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option></select></div>
 </div>
-<div class="bm-field"><label>Email</label><input type="email" id="bm-email" placeholder="your@email.com" autocomplete="email"></div>
-<div class="bm-field"><label>Phone / WhatsApp</label><input type="tel" id="bm-phone" placeholder="+7 / +995..." autocomplete="tel"></div>
-<div class="bm-field"><label>Preferences (optional)</label><input type="text" id="bm-note" placeholder="..."></div>
-<div class="bm-field" id="bm-promo-wrap" style="display:none"><label>Promo code</label><input type="text" id="bm-promo" readonly style="background:#F0FDF4;color:#15803D;font-weight:700;border-color:#86EFAC"></div>
+<div class="bm-field"><label>Email</label><input aria-label="Email" type="email" id="bm-email" placeholder="your@email.com" autocomplete="email"></div>
+<div class="bm-field"><label>Phone / WhatsApp</label><input aria-label="Phone / WhatsApp" type="tel" id="bm-phone" placeholder="+7 / +995..." autocomplete="tel"></div>
+<div class="bm-field"><label>Preferences (optional)</label><input aria-label="Preferences (optional)" type="text" id="bm-note" placeholder="..."></div>
+<div class="bm-field" id="bm-promo-wrap" style="display:none"><label>Promo code</label><input aria-label="Promo code" type="text" id="bm-promo" readonly style="background:#F0FDF4;color:#15803D;font-weight:700;border-color:#86EFAC"></div>
 <button class="bm-next" onclick="bmSubmit()">Book now →</button>
 <div style="text-align:center;font-size:11px;color:#4B5563;margin-top:8px">🔒 Free cancellation 24h · Pay on tour day</div>
 <button class="bm-back" onclick="bmStep(2)">← Back</button>
@@ -1657,11 +1657,11 @@ update();
 <p class="pm-warning-title">Note: cryptocurrency payments are non-refundable</p>
 <p class="pm-warning-text">Please verify the amount before paying. Once sent, the transaction cannot be reversed.</p>
 <label>
-<input type="checkbox" id="pm-crypto-agree" onchange="document.getElementById('pm-crypto-btn').disabled=!this.checked">
+<input aria-label="I agree to terms" type="checkbox" id="pm-crypto-agree" onchange="document.getElementById('pm-crypto-btn').disabled=!this.checked">
 <span>I understand that cryptocurrency payments are irreversible</span>
 </label>
 </div>
-<input type="number" id="pm-crypto-amount" class="pm-input" placeholder="Amount in USD" min="1" style="max-width:240px;margin:0 auto 14px">
+<input aria-label="Amount in USD" type="number" id="pm-crypto-amount" class="pm-input" placeholder="Amount in USD" min="1" style="max-width:240px;margin:0 auto 14px">
 <br>
 <button id="pm-crypto-btn" onclick="payCrypto()" class="pm-pay-btn" disabled>Create invoice</button>
 <p class="pm-hint">Rate locked for 20 minutes</p>
@@ -1670,7 +1670,7 @@ update();
 <button class="pm-back" onclick="pmBack()">&larr; <span>Back</span></button>
 <div class="pm-screen-title">SWIFT / Wise transfer</div>
 <p class="pm-screen-desc">Transfer the amount via Wise — automatic conversion, no hidden fees</p>
-<input type="number" id="pm-wise-amount" class="pm-input" placeholder="Amount in USD" min="1" style="max-width:240px;margin:0 auto 14px">
+<input aria-label="Amount in USD" type="number" id="pm-wise-amount" class="pm-input" placeholder="Amount in USD" min="1" style="max-width:240px;margin:0 auto 14px">
 <br>
 <a id="pm-wise-btn" href="https://wise.com/pay/business/amberra" target="_blank" rel="noopener noreferrer" class="pm-pay-btn" style="display:inline-flex;text-decoration:none" onclick="updateWiseLink()">Open Wise</a>
 <p class="pm-hint">After payment send confirmation to WhatsApp</p>
@@ -1686,10 +1686,10 @@ update();
 <div class="cm-title">Contact Timur</div>
 <div class="cm-sub">Leave your contact — Timur will contact you</div>
 <div id="cm-form">
-<div class="cm-field"><label>Your name</label><input type="text" id="cm-name" placeholder="Name"></div>
-<div class="cm-field"><label>Phone or WhatsApp</label><input type="tel" id="cm-phone" placeholder="+7 or +995..." required></div>
-<div class="cm-field"><label>Message (optional)</label><textarea id="cm-msg" placeholder="Dates, number of people, questions..."></textarea></div>
-<div class="cm-field" id="cm-promo-wrap" style="display:none"><label>Promo code</label><input type="text" id="cm-promo" readonly style="background:#F0FDF4;color:#15803D;font-weight:700;border:1px solid #86EFAC;padding:10px 14px;border-radius:8px;font-size:16px;width:100%;box-sizing:border-box"></div>
+<div class="cm-field"><label>Your name</label><input aria-label="Your name" type="text" id="cm-name" placeholder="Name"></div>
+<div class="cm-field"><label>Phone or WhatsApp</label><input aria-label="Phone or WhatsApp" type="tel" id="cm-phone" placeholder="+7 or +995..." required></div>
+<div class="cm-field"><label>Message (optional)</label><textarea aria-label="Message (optional)" id="cm-msg" placeholder="Dates, number of people, questions..."></textarea></div>
+<div class="cm-field" id="cm-promo-wrap" style="display:none"><label>Promo code</label><input aria-label="Promo code" type="text" id="cm-promo" readonly style="background:#F0FDF4;color:#15803D;font-weight:700;border:1px solid #86EFAC;padding:10px 14px;border-radius:8px;font-size:16px;width:100%;box-sizing:border-box"></div>
 <button class="cm-submit" id="cm-submit-btn">Send →</button>
 <script>document.getElementById('cm-submit-btn').addEventListener('click',function(){if(typeof sendContact==='function'){sendContact()}else{alert('Page loading, please wait')}})</script>
 </div>
@@ -1940,8 +1940,8 @@ setTimeout(loadPostHog,8000);
 <button class="on" onclick="qzChannel('wa',this)">WhatsApp</button>
 <button onclick="qzChannel('tg',this)">Telegram</button>
 </div>
-<input class="qz-input" id="qz-name" placeholder="Your name" style="margin-bottom:12px" autocomplete="given-name">
-<input class="qz-input" id="qz-contact" placeholder="+7 999 123 45 67" type="tel" style="margin-bottom:20px" autocomplete="tel">
+<input aria-label="Your name" class="qz-input" id="qz-name" placeholder="Your name" style="margin-bottom:12px" autocomplete="given-name">
+<input aria-label="+7 999 123 45 67" class="qz-input" id="qz-contact" placeholder="+7 999 123 45 67" type="tel" style="margin-bottom:20px" autocomplete="tel">
 <button class="qz-submit" id="qz-send" onclick="qzSubmit()">Get tour selection</button>
 <button class="qz-back" onclick="qzBack()">&larr; Back</button>
 </div>

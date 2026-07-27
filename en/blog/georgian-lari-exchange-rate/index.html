@@ -651,9 +651,9 @@ footer p a:not([class]){text-decoration:underline;text-underline-offset:2px}</st
     <button class="modal-close" onclick="document.getElementById('contact-modal').classList.remove('open')">&times;</button>
     <h2>Book a Tour — 10% Discount</h2>
     <p>Leave your details and Timur will contact you within 2 hours.</p>
-    <input type="text" id="m-name" placeholder="Your name" autocomplete="name">
-    <input type="tel" id="m-phone" placeholder="WhatsApp / Telegram number" autocomplete="tel">
-    <select id="m-tour">
+    <input aria-label="Your name" type="text" id="m-name" placeholder="Your name" autocomplete="name">
+    <input aria-label="WhatsApp / Telegram number" type="tel" id="m-phone" placeholder="WhatsApp / Telegram number" autocomplete="tel">
+    <select aria-label="Tour" id="m-tour">
       <option value="">Select a tour</option>
       <option>Kazbegi Day Trip</option>
       <option>Kakheti Wine Tour</option>
@@ -662,7 +662,7 @@ footer p a:not([class]){text-decoration:underline;text-underline-offset:2px}</st
       <option>Batumi Day Trip</option>
       <option>Other / Not sure yet</option>
     </select>
-    <textarea id="m-msg" rows="2" placeholder="Any questions or special requests?"></textarea>
+    <textarea aria-label="Any questions or special requests?" id="m-msg" rows="2" placeholder="Any questions or special requests?"></textarea>
     <button class="modal-submit" onclick="sendContact()">Send Request</button>
     <div class="msg-ok" id="msg-ok">Thank you! Timur will contact you shortly.</div>
   </div>

@@ -269,7 +269,7 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans
 
   <!-- Input -->
   <div class="sc-input-wrap">
-    <input class="sc-input" id="chatInput" placeholder="Напишите что хотите..." onkeydown="if(event.key==='Enter')sendMsg()">
+    <input aria-label="Напишите что хотите..." class="sc-input" id="chatInput" placeholder="Напишите что хотите..." onkeydown="if(event.key==='Enter')sendMsg()">
     <button class="sc-send" id="chatSend" onclick="sendMsg()">
       <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
     </button>

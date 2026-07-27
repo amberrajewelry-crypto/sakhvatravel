@@ -1582,13 +1582,13 @@ update();
 <div class="bm-step-label">ნაბიჯი 3 / 3</div>
 <div class="bm-step-title">თქვენი მონაცემები</div>
 <div class="bm-row">
-<div class="bm-field"><label>სახელი</label><input type="text" id="bm-name" placeholder="სახელი" autocomplete="given-name"></div>
-<div class="bm-field"><label>ადამიანები</label><select id="bm-guests"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option></select></div>
+<div class="bm-field"><label>სახელი</label><input aria-label="სახელი" type="text" id="bm-name" placeholder="სახელი" autocomplete="given-name"></div>
+<div class="bm-field"><label>ადამიანები</label><select aria-label="ადამიანები" id="bm-guests"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option></select></div>
 </div>
-<div class="bm-field"><label>Email</label><input type="email" id="bm-email" placeholder="your@email.com" autocomplete="email"></div>
-<div class="bm-field"><label>ტელეფონი / WhatsApp</label><input type="tel" id="bm-phone" placeholder="+7 / +995..." autocomplete="tel"></div>
-<div class="bm-field"><label>სურვილები (არასავალდებულო)</label><input type="text" id="bm-note" placeholder="..."></div>
-<div class="bm-field" id="bm-promo-wrap" style="display:none"><label>პრომოკოდი</label><input type="text" id="bm-promo" readonly style="background:#F0FDF4;color:#15803D;font-weight:700;border-color:#86EFAC"></div>
+<div class="bm-field"><label>Email</label><input aria-label="Email" type="email" id="bm-email" placeholder="your@email.com" autocomplete="email"></div>
+<div class="bm-field"><label>ტელეფონი / WhatsApp</label><input aria-label="ტელეფონი / WhatsApp" type="tel" id="bm-phone" placeholder="+7 / +995..." autocomplete="tel"></div>
+<div class="bm-field"><label>სურვილები (არასავალდებულო)</label><input aria-label="სურვილები (არასავალდებულო)" type="text" id="bm-note" placeholder="..."></div>
+<div class="bm-field" id="bm-promo-wrap" style="display:none"><label>პრომოკოდი</label><input aria-label="პრომოკოდი" type="text" id="bm-promo" readonly style="background:#F0FDF4;color:#15803D;font-weight:700;border-color:#86EFAC"></div>
 <button class="bm-next" onclick="bmSubmit()">დაჯავშნა →</button>
 <div style="text-align:center;font-size:11px;color:#4B5563;margin-top:8px">🔒 უფასო გაუქმება 24სთ · გადახდა ტურის დღეს</div>
 <button class="bm-back" onclick="bmStep(2)">← უკან</button>
@@ -1657,11 +1657,11 @@ update();
 <p class="pm-warning-title">გაითვალისწინეთ: კრიპტოგადახდები დაბრუნებას არ ექვემდებარება</p>
 <p class="pm-warning-text">გადახდამდე გადაამოწმეთ თანხა. გაგზავნის შემდეგ ტრანზაქცია შეუქცევადია.</p>
 <label>
-<input type="checkbox" id="pm-crypto-agree" onchange="document.getElementById('pm-crypto-btn').disabled=!this.checked">
+<input aria-label="ვეთანხმები პირობებს" type="checkbox" id="pm-crypto-agree" onchange="document.getElementById('pm-crypto-btn').disabled=!this.checked">
 <span>ვაცნობიერებ, რომ კრიპტოგადახდები შეუქცევადია</span>
 </label>
 </div>
-<input type="number" id="pm-crypto-amount" class="pm-input" placeholder="თანხა USD-ში" min="1" style="max-width:240px;margin:0 auto 14px">
+<input aria-label="თანხა USD-ში" type="number" id="pm-crypto-amount" class="pm-input" placeholder="თანხა USD-ში" min="1" style="max-width:240px;margin:0 auto 14px">
 <br>
 <button id="pm-crypto-btn" onclick="payCrypto()" class="pm-pay-btn" disabled>ინვოისის შექმნა</button>
 <p class="pm-hint">კურსი ფიქსირდება 20 წუთით</p>
@@ -1670,7 +1670,7 @@ update();
 <button class="pm-back" onclick="pmBack()">&larr; <span>უკან</span></button>
 <div class="pm-screen-title">SWIFT / Wise გადარიცხვა</div>
 <p class="pm-screen-desc">გადარიცხეთ თანხა Wise-ით — ავტომატური კონვერტაცია, ფარული საკომისიოს გარეშე</p>
-<input type="number" id="pm-wise-amount" class="pm-input" placeholder="თანხა USD-ში" min="1" style="max-width:240px;margin:0 auto 14px">
+<input aria-label="თანხა USD-ში" type="number" id="pm-wise-amount" class="pm-input" placeholder="თანხა USD-ში" min="1" style="max-width:240px;margin:0 auto 14px">
 <br>
 <a id="pm-wise-btn" href="https://wise.com/pay/business/amberra" target="_blank" rel="noopener noreferrer" class="pm-pay-btn" style="display:inline-flex;text-decoration:none" onclick="updateWiseLink()">Wise-ის გახსნა</a>
 <p class="pm-hint">გადახდის შემდეგ გამოაგზავნეთ დადასტურება WhatsApp-ზე</p>
@@ -1686,10 +1686,10 @@ update();
 <div class="cm-title">დაუკავშირდით თიმურს</div>
 <div class="cm-sub">დატოვეთ კონტაქტი — თიმური დაგიკავშირდებათ</div>
 <div id="cm-form">
-<div class="cm-field"><label>თქვენი სახელი</label><input type="text" id="cm-name" placeholder="სახელი"></div>
-<div class="cm-field"><label>ტელეფონი ან WhatsApp</label><input type="tel" id="cm-phone" placeholder="+7 ან +995..." required></div>
-<div class="cm-field"><label>შეტყობინება (არასავალდებულო)</label><textarea id="cm-msg" placeholder="თარიღები, ადამიანების რაოდენობა, კითხვები..."></textarea></div>
-<div class="cm-field" id="cm-promo-wrap" style="display:none"><label>პრომოკოდი</label><input type="text" id="cm-promo" readonly style="background:#F0FDF4;color:#15803D;font-weight:700;border:1px solid #86EFAC;padding:10px 14px;border-radius:8px;font-size:16px;width:100%;box-sizing:border-box"></div>
+<div class="cm-field"><label>თქვენი სახელი</label><input aria-label="თქვენი სახელი" type="text" id="cm-name" placeholder="სახელი"></div>
+<div class="cm-field"><label>ტელეფონი ან WhatsApp</label><input aria-label="ტელეფონი ან WhatsApp" type="tel" id="cm-phone" placeholder="+7 ან +995..." required></div>
+<div class="cm-field"><label>შეტყობინება (არასავალდებულო)</label><textarea aria-label="შეტყობინება (არასავალდებულო)" id="cm-msg" placeholder="თარიღები, ადამიანების რაოდენობა, კითხვები..."></textarea></div>
+<div class="cm-field" id="cm-promo-wrap" style="display:none"><label>პრომოკოდი</label><input aria-label="პრომოკოდი" type="text" id="cm-promo" readonly style="background:#F0FDF4;color:#15803D;font-weight:700;border:1px solid #86EFAC;padding:10px 14px;border-radius:8px;font-size:16px;width:100%;box-sizing:border-box"></div>
 <button class="cm-submit" id="cm-submit-btn">გაგზავნა →</button>
 <script>document.getElementById('cm-submit-btn').addEventListener('click',function(){if(typeof sendContact==='function'){sendContact()}else{alert('Page loading, please wait')}})</script>
 </div>
@@ -1940,8 +1940,8 @@ setTimeout(loadPostHog,8000);
 <button class="on" onclick="qzChannel('wa',this)">WhatsApp</button>
 <button onclick="qzChannel('tg',this)">Telegram</button>
 </div>
-<input class="qz-input" id="qz-name" placeholder="თქვენი სახელი" style="margin-bottom:12px" autocomplete="given-name">
-<input class="qz-input" id="qz-contact" placeholder="+7 999 123 45 67" type="tel" style="margin-bottom:20px" autocomplete="tel">
+<input aria-label="თქვენი სახელი" class="qz-input" id="qz-name" placeholder="თქვენი სახელი" style="margin-bottom:12px" autocomplete="given-name">
+<input aria-label="+7 999 123 45 67" class="qz-input" id="qz-contact" placeholder="+7 999 123 45 67" type="tel" style="margin-bottom:20px" autocomplete="tel">
 <button class="qz-submit" id="qz-send" onclick="qzSubmit()">მიიღეთ ტურების შერჩევა</button>
 <button class="qz-back" onclick="qzBack()">&larr; უკან</button>
 </div>
