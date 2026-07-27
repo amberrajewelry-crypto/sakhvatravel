@@ -15,12 +15,16 @@ SITEMAPS = ["sitemap-blog.xml", "sitemap-tours.xml",
             "sitemap-landing.xml", "sitemap-pages.xml"]
 
 def alts(ru, en, ka):
-    return ("".join([
-        f'\n    <xhtml:link rel="alternate" hreflang="ru" href="{ru}"/>',
-        f'\n    <xhtml:link rel="alternate" hreflang="en" href="{en}"/>',
-        f'\n    <xhtml:link rel="alternate" hreflang="ka" href="{ka}"/>',
-        f'\n    <xhtml:link rel="alternate" hreflang="x-default" href="{ru}"/>',
-    ]))
+    # Only emit links whose target actually exists — never write href="None"
+    # (a missing language version must be omitted, not linked to a dead URL).
+    # x-default prefers ru, then en, then ka.
+    xdef = ru or en or ka
+    out = []
+    if ru: out.append(f'\n    <xhtml:link rel="alternate" hreflang="ru" href="{ru}"/>')
+    if en: out.append(f'\n    <xhtml:link rel="alternate" hreflang="en" href="{en}"/>')
+    if ka: out.append(f'\n    <xhtml:link rel="alternate" hreflang="ka" href="{ka}"/>')
+    if xdef: out.append(f'\n    <xhtml:link rel="alternate" hreflang="x-default" href="{xdef}"/>')
+    return "".join(out)
 
 def ensure_ns(txt):
     if "xmlns:xhtml" in txt:
