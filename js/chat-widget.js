@@ -88,7 +88,7 @@
 .sc-fab-tip::after{content:'';position:absolute;right:-6px;top:50%;transform:translateY(-50%);border:6px solid transparent;border-left-color:#fff}
 .sc-fab:hover .sc-fab-tip{opacity:1}
 @keyframes scPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
-@media(max-width:768px){.sc-fab{width:44px;height:44px;bottom:calc(20px + env(safe-area-inset-bottom,0px));right:16px}.sc-fab svg{width:20px;height:20px}.sc-fab-tip{display:none}}
+@media(max-width:768px){.sc-fab{width:44px;height:44px;bottom:calc(20px + env(safe-area-inset-bottom,0px));right:16px}body.cookie-up .sc-fab{bottom:calc(76px + env(safe-area-inset-bottom,0px))!important}.sc-fab svg{width:20px;height:20px}.sc-fab-tip{display:none}}
 
 .sc-win{position:fixed;bottom:24px;right:24px;z-index:99991;width:288px;height:462px;background:#fff;border-radius:20px;box-shadow:0 8px 40px rgba(0,0,0,.18);display:flex;flex-direction:column;overflow:hidden;transform:scale(.95);opacity:0;pointer-events:none;transition:transform .25s cubic-bezier(.34,1.56,.64,1),opacity .2s ease}
 .sc-win.open{transform:scale(1);opacity:1;pointer-events:auto}
