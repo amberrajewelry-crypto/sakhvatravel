@@ -197,7 +197,7 @@
 </div>
 <div class="sc-body" id="sc-body"></div>
 <div class="sc-inp">
-  <input id="sc-input" placeholder="${L('Напишите что хотите...','Type your message...','დაწერეთ, რა გსურთ...')}" autocomplete="off">
+  <input id="sc-input" aria-label="${L('Сообщение чату','Chat message','ჩატის შეტყობინება')}" placeholder="${L('Напишите что хотите...','Type your message...','დაწერეთ, რა გსურთ...')}" autocomplete="off">
   <button class="sc-snd" id="sc-send" aria-label="${L('Отправить сообщение','Send message','შეტყობინების გაგზავნა')}">${SEND}</button>
 </div>
 <div class="sc-hon">${L(CFG.name+' \u2014 это умный помощник. Хотите живого Тимура? Напишите \u00abТимур\u00bb.', CFG.name+' \u2014 is a smart assistant. Want the real Timur? Type \u00abTimur\u00bb.', CFG.name+' \u2014 ჭკვიანი ასისტენტია. გსურთ ცოცხალი თიმური? დაწერეთ \u00abთიმური\u00bb.')}</div>`;
