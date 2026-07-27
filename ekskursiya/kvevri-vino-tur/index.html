@@ -494,6 +494,6 @@ function openContact(){document.getElementById('contact-modal').style.display='f
 function closeContact(){document.getElementById('contact-modal').style.display='none';document.body.style.overflow=''}
 function sendContact(){var name=document.getElementById('cm-name').value.trim();var phone=document.getElementById('cm-phone').value.trim();var msg=document.getElementById('cm-msg').value.trim();var dEl=document.getElementById('cm-date');var d=dEl&&dEl.value?dEl.value:'';if(!phone){document.getElementById('cm-phone').style.borderColor='#EF4444';return}var page=document.title;fetch('/api/booking/',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:name||'(tour)',phone:phone,tour:'Скидка 10% — '+page,note:(d?'Желаемая дата: '+d+'. ':'')+(msg||'Tour discount form')})}).then(function(){document.getElementById('cm-form').style.display='none';document.getElementById('cm-success').style.display='block';setTimeout(closeContact,3000)}).catch(function(){document.getElementById('cm-form').style.display='none';document.getElementById('cm-success').style.display='block';setTimeout(closeContact,3000)});try{fetch('https://formspree.io/f/mzdkyywe',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify({type:'tour_discount',name:name,phone:phone,page:page,message:msg,date:d})})}catch(e){}}
 </script>
-<script defer="" src="/js/chat-widget.js?v=34"></script>
+<script defer="" src="/js/chat-widget.js?v=35"></script>
 </body>
 </html>

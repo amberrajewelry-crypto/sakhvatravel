@@ -86,7 +86,7 @@ Home
 
 <section style="padding:88px 0 0;background:#fff">
 <div style="padding:32px clamp(16px,3.5vw,56px) 0;max-width:1200px;margin:0 auto">
-  <nav style="font-size:13px;color:#6B7280;margin-bottom:10px"><a href="/en/" style="color:#1A3D2E;text-decoration:underline;text-underline-offset:2px">Home</a> <span>›</span> Tours</nav>
+  <nav style="font-size:13px;color:#6B7280;margin-bottom:10px"><a href="/en/" style="color:#1A3D2E;text-decoration:underline;text-underline-offset:2px;display:inline-block;padding:4px 0">Home</a> <span>›</span> Tours</nav>
   <h1 style="font-size:clamp(28px,4vw,42px);font-weight:700;color:#111;margin-bottom:6px">Excursions & Tours in Georgia 2026 — 67 Routes</h1>
   <p style="font-size:15px;color:#6B7280;margin-bottom:16px">Private tours with English-speaking guide. Prices from $27 (77 GEL)</p>
   <div style="max-width:800px;font-size:14px;line-height:1.7;color:#4B5563;margin-bottom:28px">
@@ -319,14 +319,14 @@ Home
         var origPrice=Math.round(t.price*rate);
         var price=origPrice;
         var rev=reviews[i%reviews.length];
-        var badgeBg=t.format==='group'?'rgba(245,158,11,.88)':'rgba(26,61,46,.85)';
+        var badgeBg=t.format==='group'?'#B45309':'rgba(26,61,46,.85)';
         var badgeTxt=t.format==='group'?'Small group':'Private';
         var img=t.image||'/images/og-cover.jpg';
         return '<a href="'+t.url+'" style="border-radius:12px;overflow:hidden;border:1px solid #F3F4F6;background:#fff;text-decoration:none;display:block;color:inherit;transition:box-shadow .2s" onmouseover="this.style.boxShadow=\'0 4px 20px rgba(0,0,0,.08)\'" onmouseout="this.style.boxShadow=\'none\'">'
           +'<div style="position:relative;height:200px;overflow:hidden;background:#f3f4f6"><img src="'+img+'" alt="'+t.title+'" width="400" height="200" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover">'
           +'<span style="position:absolute;top:10px;left:10px;padding:4px 10px;border-radius:5px;font-size:12px;font-weight:600;color:#fff;background:'+badgeBg+'">'+badgeTxt+'</span>'
-          +(t.durationText?'<span style="position:absolute;top:10px;right:10px;padding:4px 10px;border-radius:5px;font-size:12px;background:rgba(0,0,0,.5);color:#fff">'+t.durationText+'</span>':'')
-          +(disc?'<span style="position:absolute;bottom:10px;right:10px;padding:4px 10px;border-radius:6px;font-size:11px;font-weight:700;background:rgba(245,158,11,.95);color:#fff">from 4+ −10%</span>':'')
+          +(t.durationText?'<span style="position:absolute;top:10px;right:10px;padding:4px 10px;border-radius:5px;font-size:12px;background:rgba(0,0,0,.62);color:#fff">'+t.durationText+'</span>':'')
+          +(disc?'<span style="position:absolute;bottom:10px;right:10px;padding:4px 10px;border-radius:6px;font-size:11px;font-weight:700;background:#B45309;color:#fff">from 4+ −10%</span>':'')
           +'</div>'
           +'<div style="padding:14px 14px 16px">'
           +'<div style="font-size:15px;font-weight:600;margin-bottom:4px;line-height:1.3">'+t.title+'</div>'
@@ -412,6 +412,6 @@ k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,function(c
 (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
 ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});
 </script>
-<script src="/js/chat-widget.js?v=34" defer></script>
+<script src="/js/chat-widget.js?v=35" defer></script>
 </body>
 </html>

@@ -122,7 +122,7 @@
 .sc-qr button:hover{background:#E8F5EE;border-color:${CFG.color}}
 
 .sc-typ{display:flex;gap:4px;padding:10px 14px;align-items:center}
-.sc-typ span{width:8px;height:8px;border-radius:50%;background:#9CA3AF;animation:scDot .6s ease infinite}
+.sc-typ span{width:8px;height:8px;border-radius:50%;background:#6B7280;animation:scDot .6s ease infinite}
 .sc-typ span:nth-child(2){animation-delay:.15s}
 .sc-typ span:nth-child(3){animation-delay:.3s}
 @keyframes scDot{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
@@ -136,7 +136,7 @@
 .sc-card-m{font-size:12px;color:#6B7280;margin-bottom:8px}
 .sc-card-p{display:flex;align-items:baseline;gap:6px;margin-bottom:10px}
 .sc-card-p strong{font-size:18px;color:${CFG.color};font-weight:700}
-.sc-card-p span{font-size:12px;color:#9CA3AF}
+.sc-card-p span{font-size:12px;color:#6B7280}
 .sc-card-btns{display:flex;gap:8px}
 .sc-card-btns .btn-b{flex:1;background:${CFG.color};color:#fff;border:none;padding:8px 0;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;transition:background .15s;font-family:inherit}
 .sc-card-btns .btn-b:hover{background:#153326}
@@ -159,13 +159,13 @@
 
 .sc-inp{display:flex;align-items:center;gap:8px;padding:10px 16px;border-top:1px solid #F3F4F6;background:#fff;flex-shrink:0}
 .sc-inp input{flex:1;border:none;outline:none;font-size:16px;padding:8px 0;color:#111;background:transparent;font-family:inherit}
-.sc-inp input::placeholder{color:#9CA3AF}
+.sc-inp input::placeholder{color:#6B7280}
 .sc-snd{width:40px;height:40px;border-radius:50%;border:none;background:${CFG.color};cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .15s,transform .1s;flex-shrink:0}
 .sc-snd:hover{background:#153326}
 .sc-snd:active{transform:scale(.95)}
 .sc-snd svg{width:18px;height:18px;fill:#fff}
 .sc-snd.off{background:#D1D5DB;pointer-events:none}
-.sc-hon{text-align:center;font-size:10px;color:#9CA3AF;padding:4px 16px 10px;background:#fff;flex-shrink:0}
+.sc-hon{text-align:center;font-size:10px;color:#6B7280;padding:4px 16px 10px;background:#fff;flex-shrink:0}
 `;
     document.head.appendChild(s);
   }
