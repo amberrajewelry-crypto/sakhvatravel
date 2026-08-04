@@ -3,6 +3,16 @@
   "trailingSlash": true,
   "redirects": [
     {
+      "source": "/ekskursiya/family-tour-tbilisi/",
+      "destination": "/ekskursiya/family-tur-tbilisi/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/ekskursiya/family-tour-tbilisi/",
+      "destination": "/en/ekskursiya/family-tur-tbilisi/",
+      "statusCode": 301
+    },
+    {
       "source": "/ekskursiya/ekskursiya-v-mtskhetu/",
       "destination": "/ekskursiya/ekskursiya-mtskheta-iz-tbilisi/",
       "statusCode": 301

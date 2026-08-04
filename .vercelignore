@@ -48,4 +48,7 @@ dashboard/DESIGN.md
 CLAUDE.md
 **/CLAUDE.md
 .claude/
+# внутренние артефакты — краулятся как мусор + утечка структуры (04.08)
+graphify-out/
+seo-audit/
 # --- GE untranslated (auto) ---
