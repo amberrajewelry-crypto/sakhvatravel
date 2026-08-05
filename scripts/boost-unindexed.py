@@ -50,15 +50,15 @@ def boost_indexnow(urls):
         "key": INDEXNOW_KEY,
         "keyLocation": f"https://sakhva-travel.com/{INDEXNOW_KEY}.txt",
         "urlList": urls,
-    }).encode()
-    req = urllib.request.Request(
-        "https://api.indexnow.org/indexnow", data=body,
-        headers={"Content-Type": "application/json; charset=utf-8"}, method="POST")
-    try:
-        with urllib.request.urlopen(req, timeout=30) as r:
-            return r.status
-    except urllib.error.HTTPError as e:
-        return e.code
+    })
+    # ponytail: curl вместо urllib — macOS Python не находит local CA bundle → SSL verify fail
+    r = subprocess.run(
+        ["curl", "-s", "-m", "30", "-o", "/dev/null", "-w", "%{http_code}",
+         "-X", "POST", "https://api.indexnow.org/indexnow",
+         "-H", "Content-Type: application/json; charset=utf-8",
+         "--data-binary", body],
+        capture_output=True, text=True)
+    return r.stdout.strip() or "curl-fail"
 
 
 def boost_yandex(token, url):

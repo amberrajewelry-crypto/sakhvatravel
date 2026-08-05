@@ -46,3 +46,8 @@ node_modules/
 .gstack/
 service-account.json
 dashboard/
+
+# Generated artifacts (регенерируются, не деплоятся)
+graphify-out/
+__pycache__/
+*.pyc

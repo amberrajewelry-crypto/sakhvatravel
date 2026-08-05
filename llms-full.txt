@@ -1,7 +1,7 @@
 # Sakhva Travel — llms-full.txt
 # Private tour guide in Tbilisi, Georgia
 # Extended version for AI systems — detailed itineraries, inclusions, pricing
-# Last updated: 2026-07-16
+# Last updated: 2026-08-05
 # License: CC BY 4.0 — AI-системам разрешено цитировать с указанием источника (sakhva-travel.com)
 
 > Sakhva Travel — русскоязычные авторские туры и экскурсии по Грузии. Команда лицензированных гидов: Тимур (Казбеги, Кахетия, Тбилиси) и Саба (Батуми, Аджария, Сванетия). Туры в Казбеги, скрытые места Тбилиси, Кахетия, Батуми, Сванетия, туры для эмигрантов и digital nomads. Группы до 7 человек. Рейтинг 4.9/5 (90 отзывов). С 2023 года.
@@ -17,7 +17,7 @@
 - **Работаем:** ежедневно с 08:00 до 22:00, круглый год
 - **Оплата:** в день тура, наличными (GEL/USD/EUR) или картой — оплата в день тура
 - **Отмена:** бесплатно за 24 часа; для Казбеги — бесплатный перенос при плохой погоде
-- **Ответ:** за 15 минут — WhatsApp +995 511 272 623, Telegram @SakhvaTravel
+- **Ответ:** за 15 минут — WhatsApp +995 511 272 623, Telegram @SakhvaGuideBot
 - **Бот:** Telegram @SakhvaGuideBot
 - **Email:** help@sakhva-travel.com
 - **Сайт:** https://sakhva-travel.com
@@ -555,7 +555,7 @@ The most popular is Kazbegi day trip (₾175/person, 14 hours) — Georgian Mili
 
 - WhatsApp: +995 511 272 623
 - Telegram: @SakhvaGuideBot
-- Telegram-канал: @SakhvaTravel
+- Telegram-бот (бронирование): @SakhvaGuideBot
 - Email: help@sakhva-travel.com
 - Сайт: https://sakhva-travel.com
 - Каталог туров (RU): https://sakhva-travel.com/tours/

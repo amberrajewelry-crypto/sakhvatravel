@@ -110,7 +110,7 @@ User-agent: CloudflareBrowserRenderingCrawler
 Disallow: /
 
 User-agent: meta-externalagent
-Disallow: /
+Allow: /
 
 User-agent: Applebot-Extended
 Allow: /
