@@ -1205,6 +1205,66 @@
    ],
    "type": "excursion",
    "url": "/ge/ekskursiya/konny-tur-stepantsminda/"
+  },
+  {
+   "slug": "ekskursii-iz-kutaisi",
+   "title": "ექსკურსიები ქუთაისიდან — ₾165-დან",
+   "description": "ექსკურსიები ქუთაისიდან: მარტვილისა და ოკაცეს კანიონები, პრომეთეს გამოქვაბული, გელათი. წამოყვანა ქუთაისის აეროპორტიდან. 7 კაცამდე.",
+   "price": 165,
+   "currency": "GEL",
+   "hours": 9,
+   "days": 0,
+   "durationText": "8–9h",
+   "image": "/images/kutaisi-tour-600.webp",
+   "format": "group",
+   "tags": [
+    "ერთდღიანი ტურები",
+    "ქუთაისი",
+    "აქტიური"
+   ],
+   "type": "excursion",
+   "url": "/ge/ekskursiya/ekskursii-iz-kutaisi/",
+   "discount": 10
+  },
+  {
+   "slug": "ekskursiya-batumi-kutaisi",
+   "title": "ექსკურსია ბათუმიდან ქუთაისში — ₾195-დან",
+   "description": "ერთდღიანი ექსკურსია ბათუმიდან ქუთაისში: მარტვილისა და ოკაცეს კანიონები, პრომეთეს გამოქვაბული, გელათი. წამოყვანა ბათუმის სასტუმროდან, საღამოს დაბრუნება.",
+   "price": 195,
+   "currency": "GEL",
+   "hours": 11,
+   "days": 0,
+   "durationText": "10–11h",
+   "image": "/images/kutaisi-tour-600.webp",
+   "format": "group",
+   "tags": [
+    "ერთდღიანი ტურები",
+    "ბათუმი",
+    "აქტიური"
+   ],
+   "type": "excursion",
+   "url": "/ge/ekskursiya/ekskursiya-batumi-kutaisi/",
+   "discount": 10
+  },
+  {
+   "slug": "pohod-v-gory-gruzia",
+   "title": "ლაშქრობა საქართველოს მთებში — ₾190-დან",
+   "description": "ლაშქრობა საქართველოს მთებში: ყაზბეგი, გერგეტი, ჯუთა, თრუსოს ხეობა. ერთდღიანი ტრეკინგი ნებისმიერი დონისთვის გიდთან ერთად.",
+   "price": 190,
+   "currency": "GEL",
+   "hours": 12,
+   "days": 0,
+   "durationText": "10–12h",
+   "image": "/images/kazbegi-tour-600.webp",
+   "format": "group",
+   "tags": [
+    "ერთდღიანი ტურები",
+    "მთები",
+    "აქტიური"
+   ],
+   "type": "excursion",
+   "url": "/ge/ekskursiya/pohod-v-gory-gruzia/",
+   "discount": 10
   }
  ]
 }

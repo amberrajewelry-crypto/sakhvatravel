@@ -3,6 +3,16 @@
   "trailingSlash": true,
   "redirects": [
     {
+      "source": "/miralinks-article",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/miralinks-article/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
       "source": "/ekskursiya/family-tour-tbilisi/",
       "destination": "/ekskursiya/family-tur-tbilisi/",
       "statusCode": 301

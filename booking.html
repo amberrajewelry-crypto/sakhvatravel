@@ -719,6 +719,11 @@ function getBookingData() {
   if (!form.reportValidity()) return null;
   var tourVal = document.getElementById('f-tour-search').value;
   var price = tourPrices[tourVal] || 0;
+  if (!price) {
+    document.getElementById('f-tour-search').focus();
+    alert('Выберите экскурсию из списка — начните вводить название и кликните вариант.');
+    return null;
+  }
   var people = parseInt(document.getElementById('f-people').value) || 1;
   var total = price * people;
   var prepay = Math.ceil(total * 0.1);
