@@ -960,4 +960,10 @@
     <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/partners/ge/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/partners/"/>
   </url>
+  <url>
+    <loc>https://sakhva-travel.com/otdyh-v-gruzii/</loc>
+    <lastmod>2026-08-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/otdyh-v-gruzii/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/otdyh-v-gruzii/"/>
+  </url>
 </urlset>
