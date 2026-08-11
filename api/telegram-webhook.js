@@ -1136,6 +1136,40 @@ export default async function handler(req) {
             'Дата первого контакта': new Date().toISOString().split('T')[0]
           }})
         }).catch(() => {})
+
+        // Attribute to the partner dashboard (Partner Leads table, read by /api/partner-leads).
+        // ponytail: partner promo codes are SLUG+'10' (scripts/partner.js). The '10' suffix
+        // distinguishes real partner refs from internal deep-links like 'book' — those get skipped.
+        if (/10$/.test(refSource)) {
+          const pslug = refSource.slice(0, -2).toLowerCase()
+          if (/^[a-z0-9-]{2,30}$/.test(pslug)) {
+            fetch(`https://api.airtable.com/v0/${baseId}/${encodeURIComponent('Partner Leads')}`, {
+              method: 'POST',
+              headers: { 'Authorization': `Bearer ${token}`, 'Content-Type': 'application/json' },
+              body: JSON.stringify({ records: [{ fields: {
+                Partner: pslug,
+                Channel: 'telegram',
+                Page: '/bot',
+                Date: new Date().toISOString().split('T')[0],
+                Timestamp: new Date().toISOString()
+              }}]})
+            }).catch(() => {})
+          }
+        }
+      }
+
+      // Partner attribution -> n8n store (Airtable-independent, read by /api/partner-leads).
+      // Runs regardless of AIRTABLE_TOKEN since Airtable Partner Leads is billing-blocked.
+      if (refSource && /10$/.test(refSource)) {
+        const pslug2 = refSource.slice(0, -2).toLowerCase()
+        if (/^[a-z0-9-]{2,30}$/.test(pslug2)) {
+          fetch('https://n8n-production-f095.up.railway.app/webhook/plead', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            // ref=tg:<chatId> dedups the same person opening the bot twice
+            body: JSON.stringify({ key: process.env.PARTNER_HOOK_SECRET, partner: pslug2, channel: 'telegram', ref: `tg:${cid}` })
+          }).catch(() => {})
+        }
       }
       return new Response('OK')
     }

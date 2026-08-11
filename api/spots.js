@@ -31,7 +31,10 @@ export default async function handler(req) {
   const headers = {
     'Access-Control-Allow-Origin': 'https://sakhva-travel.com',
     'Content-Type': 'application/json',
-    'Cache-Control': 'public, max-age=300'
+    // Edge-cache: N visits → 1 Airtable call per 5 min. ponytail: 5-min stale on
+    // availability is fine — booking flow re-checks before payment. Cuts the Team-plan
+    // API quota burn that was exhausting the workspace limit.
+    'Cache-Control': 'public, max-age=60, s-maxage=300, stale-while-revalidate=3600'
   }
 
   if (req.method === 'OPTIONS') {

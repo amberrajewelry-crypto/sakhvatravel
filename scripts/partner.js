@@ -6,6 +6,8 @@ var s=localStorage.getItem('partner');
 var ts=parseInt(localStorage.getItem('partner_ts')||'0');
 if(!s||Date.now()-ts>30*86400000){localStorage.removeItem('partner');localStorage.removeItem('partner_ts');return}
 var code=s.toUpperCase()+'10';
+// expose partner slug to server (booking.js reads it to attribute web bookings)
+try{document.cookie='sk_partner='+encodeURIComponent(s)+';max-age='+(30*86400)+';path=/;samesite=lax'}catch(e){}
 function patch(){
 document.querySelectorAll('a[href*="wa.me"]').forEach(function(a){
 if(a.href.indexOf(code)===-1){

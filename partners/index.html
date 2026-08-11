@@ -353,6 +353,7 @@
         <h2>Стать партнёром Sakhva</h2>
         <p style="color:rgba(255,255,255,.8);margin-top:.4rem;max-width:560px">Оставьте контакты — ответим на вопросы и откроем доступ к партнёрскому кабинету. Обычно отвечаем в течение дня.</p>
         <form onsubmit="submitApp(event)" style="margin-top:1.4rem;max-width:620px">
+          <input id="hp_website" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0" />
           <label for="name">Имя / контактное лицо *</label>
           <input id="name" required maxlength="120" placeholder="Как к вам обращаться" />
           <label for="contact">Контакт: телефон, email или Telegram *</label>
@@ -385,10 +386,12 @@
         contact: document.getElementById('contact').value.trim(),
         company: document.getElementById('company').value.trim() || null,
         note: document.getElementById('note').value.trim() || null,
+        website: document.getElementById('hp_website').value,
+        lang: 'ru',
       }
       btn.disabled = true
       try {
-        const r = await fetch('https://api.sakhva-travel.com/v1/partner-applications', {
+        const r = await fetch('/api/partner-application/', {
           method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body),
         })
         if (r.ok) {

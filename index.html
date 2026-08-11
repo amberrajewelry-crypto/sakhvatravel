@@ -118,7 +118,7 @@ footer p a:not([class]){text-decoration:underline;text-underline-offset:2px}</st
 <link rel="preload" href="/css/seamless.css?v=70" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/css/seamless.css?v=70"></noscript>
 <!-- Lora loaded locally via inline @font-face + all.css -->
 <link rel="preload" href="/css/overrides.css?v=1" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/css/overrides.css?v=1"></noscript>
-<style>@media(max-width:1400px){#nav .nav-links{display:none}#nav .burger{display:flex}}</style><style>/*a11y-hw*/#how .hw-title{color:#111827!important}#how .hw-text{color:#4B5563!important}</style><style>/*lcp-hero-fix*/#hero{height:90svh!important;min-height:520px!important}</style><style id="a11y-mobile-fix">@media(max-width:768px){.gf-title,.gf-sub,.bm-step-label,.tm-section-title,.col-name,small{font-size:12px!important}footer a,footer span,footer div,footer p,footer li,footer .col-name{font-size:12px!important}footer a{display:inline-block;padding:9px 0;line-height:1.35}.bt-item{min-height:38px;display:inline-flex;align-items:center;padding:8px 12px}}</style>
+<style>@media(max-width:1400px){#nav .nav-links{display:none}#nav .burger{display:flex}}</style><style>/*a11y-hw*/#how .hw-title{color:#111827!important}#how .hw-text{color:#4B5563!important}</style><style>/*lcp-hero-fix*/#hero{height:90svh!important;min-height:520px!important}</style><style id="a11y-mobile-fix">@media(max-width:768px){.gf-title,.gf-sub,.bm-step-label,.tm-section-title,.col-name,small{font-size:12px!important}footer a,footer span,footer div,footer p,footer li,footer .col-name{font-size:12px!important}footer a{display:inline-block;padding:9px 0;line-height:1.35}.bt-item{min-height:38px;display:inline-flex;align-items:center;padding:8px 12px}}</style><style>/*perf-cv: skip layout of off-screen sections to cut render delay & TBT on large DOM (2329 nodes). auto intrinsic-size self-corrects -> CLS stays 0. screen-only so print never clips.*/@media screen{.sec,.gallery-sec{content-visibility:auto;contain-intrinsic-size:auto 700px}}</style>
 </head>
 <body>
 <div id="scroll-progress"></div>
@@ -283,7 +283,7 @@ function declineCookies(){localStorage.setItem('cookies_v4','0');gtag('consent',
   <li><a href="/ekskursiya/ekskursiya-truso/">Ущелье Трусо — от ₾265</a></li>
   <li><a href="/ekskursiya/ekskursiya-david-gareji/">Давид Гареджи — от ₾225</a></li>
   <li><a href="/ekskursiya/ekskursiya-vardzia/">Вардзия — от ₾295</a></li>
-  <li><a href="/ekskursiya/ekskursiya-zugdidi/">Зугдиди — от ₾320</a></li>
+  <li><a href="/ekskursiya/ekskursiya-zugdidi/">Зугдиди — от ₾255</a></li>
   <li><a href="/ekskursiya/tur-dlya-emigrantov-tbilisi/">Тур для эмигрантов — от ₾123</a></li>
   <li><a href="/ekskursiya/tur-dlya-pensionerov-gruziya/">Тур для пенсионеров — от ₾145</a></li>
   <li><a href="/ekskursiya/svadebny-tur-gruziya/">Свадебный тур — от ₾1500</a></li>
@@ -1341,7 +1341,7 @@ gtag('event','generate_lead',{event_category:'contact',event_label:ch,value:ch==
 <script>
 (function(){
 function loadDeferred(src){var s=document.createElement('script');s.src=src;s.defer=true;document.body.appendChild(s)}
-var _ld=function(){loadDeferred('/main.js?v=54');loadDeferred('/scroll-effects.js?v=8')};
+var _ld=function(){loadDeferred('/main.js?v=54');loadDeferred('/scroll-effects.js?v=8');loadDeferred('/scripts/partner.js?v=2')};
 if('requestIdleCallback' in window){window.addEventListener('load',function(){requestIdleCallback(_ld,{timeout:2000})})}
 else{window.addEventListener('load',function(){setTimeout(_ld,300)})};
 })();

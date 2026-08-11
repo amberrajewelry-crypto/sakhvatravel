@@ -353,6 +353,7 @@
         <h2>Become a Sakhva partner</h2>
         <p style="color:rgba(255,255,255,.8);margin-top:.4rem;max-width:560px">Leave your contacts — we will reach out, answer your questions and send access. We usually reply within a day.</p>
         <form onsubmit="submitApp(event)" style="margin-top:1.4rem;max-width:620px">
+          <input id="hp_website" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0" />
           <label for="name">Name / contact person *</label>
           <input id="name" required maxlength="120" placeholder="How to address you" />
           <label for="contact">Contact: phone, email or Telegram *</label>
@@ -385,10 +386,12 @@
         contact: document.getElementById('contact').value.trim(),
         company: document.getElementById('company').value.trim() || null,
         note: document.getElementById('note').value.trim() || null,
+        website: document.getElementById('hp_website').value,
+        lang: 'en',
       }
       btn.disabled = true
       try {
-        const r = await fetch('https://api.sakhva-travel.com/v1/partner-applications', {
+        const r = await fetch('/api/partner-application/', {
           method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body),
         })
         if (r.ok) {

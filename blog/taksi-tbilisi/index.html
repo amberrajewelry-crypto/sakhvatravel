@@ -49,10 +49,7 @@ gtag('consent','update',{analytics_storage:(_ck||_gc)?'granted':'denied',ad_stor
 }
 </script>
 <script>
-(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-3X83YZHY6S';
-s.onload=function(){gtag('js',new Date());gtag('config','G-3X83YZHY6S');gtag('config','AW-8133499399')};
-if('requestIdleCallback' in window){requestIdleCallback(function(){document.head.appendChild(s)},{timeout:3000})}
-else{setTimeout(function(){document.head.appendChild(s)},2000)}})();
+(function(){function loadGA(){if(window._gaLoaded)return;window._gaLoaded=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-3X83YZHY6S';s.onload=function(){gtag('js',new Date());gtag('config','G-3X83YZHY6S');gtag('config','AW-8133499399')};document.head.appendChild(s)}['scroll','touchstart','mousemove','keydown','click'].forEach(function(e){document.addEventListener(e,loadGA,{once:true,passive:true})});setTimeout(loadGA,8000)})();
 </script>
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
@@ -434,7 +431,7 @@ if(_sl&&_sl==='en') setLang('en');
 <div style="background:#F0FDF4;border-left:4px solid #16A34A;border-radius:12px;padding:20px 24px;margin:32px auto;max-width:760px"><p style="font-size:16px;font-weight:700;color:#111827;margin-bottom:8px">Первый раз в Тбилиси? Закажите трансфер</p><p style="font-size:14px;color:#374151;line-height:1.7;margin-bottom:10px">Тимур встретит вас в аэропорту и отвезёт в отель. Без очередей и переплат.</p><a href="/ekskursiya/transfer-aeroport-tbilisi/" style="font-size:14px;font-weight:700;color:#15803D;text-decoration:underline">Заказать трансфер →</a></div>
 <p style="font-size:14px;color:#374151;margin:12px 0">Смотрите также: <a href="/ekskursiya/tur-gruziya-leto/" style="color:#1A3D2E;font-weight:600">Летний тур по Грузии</a></p>
 <p style="font-size:14px;color:#374151;margin:12px 0">Смотрите также: <a href="/ekskursiya/tur-dlya-pensionerov-gruziya/" style="color:#1A3D2E;font-weight:600">Тур для пенсионеров</a></p>
-<script defer="" src="/scripts/partner.js?v=1"></script>
+<script defer="" src="/scripts/partner.js?v=2"></script>
 <div aria-modal="true" id="contact-modal" role="dialog" style="display:none;position:fixed;inset:0;z-index:10000;align-items:center;justify-content:center;padding:20px">
 <div onclick="closeContact()" style="position:absolute;inset:0;background:rgba(0,0,0,.6);backdrop-filter:blur(4px)"></div>
 <div style="position:relative;background:#fff;border-radius:20px;padding:36px 32px;width:100%;max-width:480px;z-index:1">

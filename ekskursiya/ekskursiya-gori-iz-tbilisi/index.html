@@ -495,7 +495,7 @@ function closeDrawer(){drawer.classList.remove('on');burger.classList.remove('on
 function toggleFaq(btn){const item=btn.closest('.fi'),isOpen=item.classList.contains('open');document.querySelectorAll('.fi.open').forEach(i=>{i.classList.remove('open');i.querySelector('.fa').style.maxHeight=null});if(!isOpen){item.classList.add('open');const ans=item.querySelector('.fa');ans.style.maxHeight=ans.scrollHeight+'px'}}
 </script>
 <script>!function(){var n=document.getElementById('nav');if(!n)return;window.addEventListener('scroll',function(){n.classList.toggle('scrolled',window.scrollY>50)},{passive:true})}()</script>
-<script src="/scripts/partner.js?v=1"></script>
+<script src="/scripts/partner.js?v=2"></script>
 <div id="mobile-sticky-bar" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:899;background:rgba(255,255,255,.97);backdrop-filter:blur(12px);border-top:1px solid #e5e7eb;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));gap:10px;align-items:center;justify-content:center">
 <div style="display:flex;flex-direction:column;gap:1px;flex-shrink:0"><span style="font-size:10px;color:#6B7280;font-weight:500">Экскурсия</span><span style="font-size:18px;font-weight:700;color:#111827">от 155 лари</span></div>
 <a href="https://wa.me/995511272623?text=Хочу+забронировать+ekskursiya+gori+iz+tbilisi" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;background:#0C7C38;color:#fff;padding:13px 24px;border-radius:9999px;font-size:14px;font-weight:700;text-decoration:none;white-space:nowrap">

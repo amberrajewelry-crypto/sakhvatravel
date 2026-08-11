@@ -117,6 +117,27 @@ export default async function handler(req) {
     }
   }
 
+  // 3. Partner attribution -> n8n leads store (Airtable-independent). A web booking is a
+  // real conversion. Partner slug comes from the sk_partner cookie set by scripts/partner.js.
+  try {
+    const cookie = req.headers.get('cookie') || ''
+    const m = cookie.match(/(?:^|;\s*)sk_partner=([^;]+)/)
+    const pslug = m ? decodeURIComponent(m[1]).toLowerCase() : ''
+    if (/^[a-z0-9-]{2,30}$/.test(pslug)) {
+      // ref dedups accidental double-submit but keeps distinct bookings separate
+      const ref = `web:${String(phone || name || '').replace(/\s+/g, '')}:${tour}:${tourDate || ''}`.slice(0, 120)
+      const ctl = new AbortController()
+      const t = setTimeout(() => ctl.abort(), 6000)
+      await fetch('https://n8n-production-f095.up.railway.app/webhook/plead', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ key: process.env.PARTNER_HOOK_SECRET, partner: pslug, channel: 'web', ref }),
+        signal: ctl.signal
+      }).catch(() => {})
+      clearTimeout(t)
+    }
+  } catch (e) { /* non-blocking */ }
+
   // Return 200 if at least Telegram succeeded
   return new Response(
     JSON.stringify({ ok: results.telegram, ...results }),

@@ -43,10 +43,7 @@ gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user
 if(localStorage.getItem('cookies_v4')==='1'){gtag('consent','update',{analytics_storage:'granted',ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted'})}
 </script>
 <script>
-(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-3X83YZHY6S';
-s.onload=function(){gtag('js',new Date());gtag('config','G-3X83YZHY6S');gtag('config','AW-8133499399')};
-if('requestIdleCallback' in window){requestIdleCallback(function(){document.head.appendChild(s)},{timeout:3000})}
-else{setTimeout(function(){document.head.appendChild(s)},2000)}})();
+(function(){function loadGA(){if(window._gaLoaded)return;window._gaLoaded=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-3X83YZHY6S';s.onload=function(){gtag('js',new Date());gtag('config','G-3X83YZHY6S');gtag('config','AW-8133499399')};document.head.appendChild(s)}['scroll','touchstart','mousemove','keydown','click'].forEach(function(e){document.addEventListener(e,loadGA,{once:true,passive:true})});setTimeout(loadGA,8000)})();
 </script>
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
@@ -831,7 +828,7 @@ function setLang(l){localStorage.setItem('lang',l);if(l==='en'){window.location.
 var navEl=document.getElementById('nav');window.addEventListener('scroll',function(){if(window.scrollY>40){navEl.classList.add('scrolled')}else{navEl.classList.remove('scrolled')}},{passive:true})
 document.addEventListener('click',function(e){var a=e.target.closest('a');if(!a)return;var h=a.href||'';if(h.indexOf('wa.me')>-1){try{ym(109038950,'reachGoal','whatsapp_click')}catch(x){}}if(h.indexOf('tel:')===0){try{ym(109038950,'reachGoal','phone_click')}catch(x){}}},{passive:true})
 </script>
-<script src="/scripts/partner.js?v=1" defer></script>
+<script src="/scripts/partner.js?v=2" defer></script>
 
 <div id="contact-modal" role="dialog" aria-modal="true" style="display:none;position:fixed;inset:0;z-index:10000;align-items:center;justify-content:center;padding:20px">
   <div style="position:absolute;inset:0;background:rgba(0,0,0,.6);backdrop-filter:blur(4px)" onclick="closeContact()"></div>

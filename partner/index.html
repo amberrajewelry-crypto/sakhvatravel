@@ -17,8 +17,12 @@
 @font-face{font-family:'Lora';font-style:normal;font-weight:700;font-display:swap;src:url(/fonts/lora-14.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 
 *{margin:0;padding:0;box-sizing:border-box}
-html{background:#f5f5f0}
-body{font-family:'Lora',Georgia,serif;color:#1a1a1a;-webkit-font-smoothing:antialiased;min-height:100vh}
+html{background:#eef1ea}
+body{font-family:'Lora',Georgia,serif;color:#1a1a1a;-webkit-font-smoothing:antialiased;min-height:100dvh;
+  background:
+    radial-gradient(1200px 500px at 100% -5%,rgba(26,61,46,.10),transparent 60%),
+    radial-gradient(900px 500px at -10% 8%,rgba(180,83,9,.06),transparent 55%),
+    #eef1ea}
 
 .nav{height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(20px,4vw,48px);background:#1A3D2E;position:sticky;top:0;z-index:50}
 .nav-logo{color:#fff;font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;text-decoration:none}
@@ -71,16 +75,49 @@ body{font-family:'Lora',Georgia,serif;color:#1a1a1a;-webkit-font-smoothing:antia
 .dash>*:nth-child(7){animation-delay:.36s}
 .dash>*:nth-child(8){animation-delay:.42s}
 
-/* Header */
-.dash-head{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:36px;flex-wrap:wrap;gap:16px}
-.dash-name{font-size:clamp(26px,4.5vw,36px);color:#1a1a1a;font-weight:400;letter-spacing:-.03em;line-height:1.1}
-.dash-meta{display:flex;align-items:center;gap:10px;margin-top:8px}
-.dash-slug{color:#1A3D2E;font-size:12px;font-weight:600;background:rgba(26,61,46,.06);padding:4px 12px;border-radius:6px}
-.dash-date{color:#a3a3a3;font-size:11px}
-.dash-promo{text-align:right}
-.promo-code{font-size:24px;font-weight:700;color:#1A3D2E;letter-spacing:.22em;line-height:1}
-.promo-label{font-size:8px;color:#a3a3a3;letter-spacing:.15em;text-transform:uppercase;margin-top:6px}
-.divider{height:1px;background:linear-gradient(90deg,transparent,#e5e5e5 20%,#e5e5e5 80%,transparent);margin-bottom:36px}
+/* Premium hero */
+.hero{position:relative;overflow:hidden;border-radius:22px;padding:32px clamp(22px,4vw,40px);margin-bottom:20px;
+  background:
+    radial-gradient(120% 140% at 100% 0,#245a3f 0%,#1A3D2E 42%,#122b20 100%);
+  box-shadow:0 18px 50px -18px rgba(18,43,32,.55),0 2px 8px rgba(18,43,32,.25);
+  color:#fff}
+.hero::before{content:'';position:absolute;inset:0;pointer-events:none;opacity:.5;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.35'/%3E%3C/svg%3E")}
+.hero::after{content:'';position:absolute;right:-60px;top:-60px;width:240px;height:240px;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,255,255,.10),transparent 70%);pointer-events:none}
+.hero>*{position:relative;z-index:1}
+.hero-top{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:26px}
+.hero-hello{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:8px}
+.dash-name{font-size:clamp(28px,5vw,40px);color:#fff;font-weight:600;letter-spacing:-.03em;line-height:1.04}
+.dash-meta{display:flex;align-items:center;gap:10px;margin-top:12px;flex-wrap:wrap}
+.dash-slug{color:#cfe6d8;font-size:12px;font-weight:600;background:rgba(255,255,255,.10);padding:4px 12px;border-radius:6px}
+.dash-date{color:rgba(255,255,255,.45);font-size:11px}
+/* promo ticket */
+.dash-promo{position:relative;background:#fff;color:#1A3D2E;border-radius:14px;padding:14px 22px 12px;text-align:center;
+  box-shadow:0 10px 24px -8px rgba(0,0,0,.35);min-width:150px}
+.dash-promo::before,.dash-promo::after{content:'';position:absolute;top:50%;width:14px;height:14px;border-radius:50%;background:#183524;transform:translateY(-50%)}
+.dash-promo::before{left:-7px}.dash-promo::after{right:-7px}
+.promo-label{font-size:8px;color:#9aa39d;letter-spacing:.2em;text-transform:uppercase;margin-bottom:5px}
+.promo-code{font-size:26px;font-weight:700;color:#1A3D2E;letter-spacing:.14em;line-height:1}
+/* reference link bar inside hero */
+.reflink{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.14);
+  border-radius:14px;padding:12px 12px 12px 18px}
+.reflink-l{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:4px}
+.reflink-u{font-size:15px;font-weight:600;color:#fff;word-break:break-all;letter-spacing:.01em}
+.reflink-copy{margin-left:auto;flex-shrink:0;background:#fff;color:#1A3D2E;border:none;border-radius:10px;padding:11px 18px;
+  font-size:10px;font-weight:700;font-family:'Lora',serif;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;
+  display:inline-flex;align-items:center;gap:6px;transition:transform .18s,box-shadow .18s}
+.reflink-copy:hover{transform:translateY(-1px);box-shadow:0 8px 18px -6px rgba(0,0,0,.4)}
+.reflink-copy svg{width:13px;height:13px}
+
+/* Onboarding steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:32px}
+@media(max-width:600px){.steps{grid-template-columns:1fr}}
+.step{background:#fff;border:1px solid #e6e9e2;border-radius:14px;padding:16px 18px;display:flex;gap:13px;align-items:flex-start}
+.step-n{flex-shrink:0;width:26px;height:26px;border-radius:8px;background:#1A3D2E;color:#fff;font-size:13px;font-weight:700;
+  display:flex;align-items:center;justify-content:center;font-variant-numeric:tabular-nums}
+.step-t{font-size:13px;line-height:1.45;color:#3f463f}
+.step-t b{color:#1A3D2E;font-weight:600}
 
 /* Link bar */
 .link-bar{background:#fff;border:1px solid #ebebeb;border-radius:14px;padding:16px 22px;display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:32px;box-shadow:0 1px 3px rgba(0,0,0,.03)}
@@ -97,8 +134,9 @@ body{font-family:'Lora',Georgia,serif;color:#1a1a1a;-webkit-font-smoothing:antia
 .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:36px}
 @media(max-width:680px){.cards{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:420px){.cards{grid-template-columns:1fr}}
-.card{background:#fff;border:1px solid #ebebeb;border-radius:16px;padding:24px 20px 20px;text-align:center;box-shadow:0 1px 3px rgba(0,0,0,.03);transition:box-shadow .2s,transform .2s;position:relative}
-.card:hover{box-shadow:0 4px 20px rgba(0,0,0,.06);transform:translateY(-2px)}
+.card{background:#fff;border:1px solid #e6e9e2;border-radius:16px;padding:22px 20px 18px;text-align:center;box-shadow:0 1px 2px rgba(18,43,32,.04);transition:box-shadow .2s,transform .2s,border-color .2s;position:relative}
+.card:hover{box-shadow:0 12px 30px -12px rgba(18,43,32,.18);transform:translateY(-3px);border-color:#d3ddd0}
+.card.highlight{background:linear-gradient(180deg,#fbfdf9,#f3f7f0);border-color:#cfe0d3}
 .card-icon{margin:0 auto 12px;width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center}
 .card-icon svg{width:18px;height:18px}
 .card-icon.today{background:rgba(59,130,246,.08)}
@@ -109,7 +147,11 @@ body{font-family:'Lora',Georgia,serif;color:#1a1a1a;-webkit-font-smoothing:antia
 .card-icon.total svg{color:#B45309}
 .card-icon.leads{background:rgba(139,92,246,.08)}
 .card-icon.leads svg{color:#8b5cf6}
-.card-num{font-size:clamp(32px,7vw,44px);font-weight:700;color:#1a1a1a;line-height:1;letter-spacing:-.03em}
+.card-num{font-size:clamp(32px,7vw,44px);font-weight:700;color:#1a1a1a;line-height:1;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+/* Empty state */
+.empty-hint{display:none;background:linear-gradient(180deg,#fbfdf9,#f4f8f1);border:1px dashed #ccd8c9;border-radius:16px;padding:30px 24px;text-align:center;margin-bottom:32px}
+.empty-hint h3{font-size:17px;font-weight:600;color:#1A3D2E;margin-bottom:8px;letter-spacing:-.01em}
+.empty-hint p{font-size:13px;color:#6b746b;line-height:1.6;max-width:420px;margin:0 auto}
 .card-sub{font-size:8px;color:#a3a3a3;letter-spacing:.22em;text-transform:uppercase;margin-top:8px}
 .card-num.accent{color:#1A3D2E}
 .card.highlight{border-color:#ebebeb;border-width:1px;background:#fff}
@@ -239,21 +281,40 @@ setTimeout(loadYM,5000);
 
   <!-- Dashboard -->
   <div class="dash" id="dash-view">
-    <div class="dash-head">
-      <div>
-        <div class="dash-name" id="d-name"></div>
-        <div class="dash-meta">
-          <span class="dash-slug" id="d-slug"></span>
-          <span class="dash-date" id="d-date"></span>
+    <div class="hero">
+      <div class="hero-top">
+        <div>
+          <div class="hero-hello">Партнёрский кабинет</div>
+          <div class="dash-name" id="d-name"></div>
+          <div class="dash-meta">
+            <span class="dash-slug" id="d-slug"></span>
+            <span class="dash-date" id="d-date"></span>
+          </div>
+        </div>
+        <div class="dash-promo">
+          <div class="promo-label">Промокод для клиентов</div>
+          <div class="promo-code" id="d-promo"></div>
         </div>
       </div>
-      <div class="dash-promo">
-        <div class="promo-code" id="d-promo"></div>
-        <div class="promo-label">Промокод</div>
+      <div class="reflink">
+        <div>
+          <div class="reflink-l">Ваша ссылка</div>
+          <div class="reflink-u" id="d-refurl"></div>
+        </div>
+        <button class="reflink-copy copy-btn" onclick="copyLink()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>Копировать</button>
       </div>
     </div>
 
-    <div class="divider"></div>
+    <div class="steps">
+      <div class="step"><span class="step-n">1</span><span class="step-t">Скопируйте <b>ссылку</b> или <b>QR-код</b> ниже</span></div>
+      <div class="step"><span class="step-n">2</span><span class="step-t">Отправьте клиентам — <b>WhatsApp</b>, Instagram, визитка</span></div>
+      <div class="step"><span class="step-n">3</span><span class="step-t">Клиент бронирует со скидкой <b>10%</b> → вы получаете комиссию</span></div>
+    </div>
+
+    <div class="empty-hint" id="empty-hint">
+      <h3>Пока нет переходов</h3>
+      <p>Как только вы поделитесь ссылкой или промокодом, здесь появится статистика: переходы, страны, города и заявки.</p>
+    </div>
 
 
     <div class="cards">
@@ -278,8 +339,8 @@ setTimeout(loadYM,5000);
       <div class="card">
         <div class="card-icon leads"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4-4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div>
         <div class="card-num" id="d-leads">0</div>
-        <div class="card-sub">Лиды</div>
-        <div class="card-delta neutral" id="d-delta-leads">скоро</div>
+        <div class="card-sub">Заявки</div>
+        <div class="card-delta neutral" id="d-delta-leads">—</div>
       </div>
     </div>
 
@@ -314,7 +375,7 @@ setTimeout(loadYM,5000);
         <table class="tbl"><tbody id="tbl-devices"></tbody></table>
       </div>
       <div class="data-card" id="sec-referrers">
-        <div class="data-title">Источники</div>
+        <div class="data-title">Откуда переходят</div>
         <table class="tbl"><tbody id="tbl-referrers"></tbody></table>
       </div>
       <div class="data-card" id="sec-social">
@@ -394,8 +455,10 @@ function showDash(d){
   document.getElementById('d-slug').textContent='sakhva.link/'+d.slug;
   document.getElementById('d-date').textContent='с '+new Date(d.created).toLocaleDateString('ru-RU');
   document.getElementById('d-promo').textContent=promo;
+  document.getElementById('d-refurl').textContent='sakhva.link/'+d.slug;
 
   var today=d.today||0, month=d.last30days||0, total=d.totalClicks||0;
+  document.getElementById('empty-hint').style.display=total===0?'block':'none';
   animateNum('d-today',today,400);
   animateNum('d-month',month,600);
   animateNum('d-total',total,800);
@@ -454,8 +517,7 @@ function showDash(d){
   renderTable('sec-cities','tbl-cities',d.cities,month||total);
   renderTable('sec-browsers','tbl-browsers',d.browsers,month||total);
   renderTable('sec-devices','tbl-devices',d.os,month||total);
-  renderTable('sec-referrers','tbl-referrers',d.referrers,month||total);
-  renderTable('sec-social','tbl-social',d.social,month||total);
+  renderTable('sec-referrers','tbl-referrers',(d.sources&&d.sources.length)?d.sources:d.referrers,month||total);
 }
 
 function setDelta(id,current,previous){

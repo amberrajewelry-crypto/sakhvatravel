@@ -184,7 +184,7 @@ h1{font-size:clamp(26px,4vw,36px);font-weight:600;color:#111827;letter-spacing:-
           <option value="Тушетия — от ₾345" data-id="ekskursiya-tusheti" data-price="345" data-old="430">
           <option value="Уплисцихе из Тбилиси — от ₾175" data-id="ekskursiya-uplistsikhe-iz-tbilisi" data-price="175" data-old="220">
           <option value="Вардзия из Тбилиси — от ₾295" data-id="ekskursiya-vardzia" data-price="295" data-old="370">
-          <option value="Зугдиди — от ₾320" data-id="ekskursiya-zugdidi" data-price="320" data-old="400">
+          <option value="Зугдиди — от ₾255" data-id="ekskursiya-zugdidi" data-price="255" data-old="400">
           <option value="Семейный тур по Тбилиси — от ₾165" data-id="family-tur-tbilisi" data-price="165" data-old="205">
           <option value="Фототур по Тбилиси — от ₾145" data-id="fotosessiya-tbilisi" data-price="145" data-old="180">
           <option value="Гастротур по Тбилиси — от ₾165" data-id="gastronomicheskiy-tur-tbilisi" data-price="165" data-old="205">
@@ -732,6 +732,11 @@ function getBookingData() {
   var isFull = payTypeVal === 'full';
   var isCustom = payTypeVal === 'custom';
   var payAmount = isCustom ? (parseInt(document.getElementById('f-custom-amount').value) || 0) : (isFull ? total : prepay);
+  if (!(payAmount > 0)) {
+    if (isCustom) { document.getElementById('f-custom-amount').focus(); alert('Укажите сумму оплаты больше 0 в поле «Своя сумма».'); }
+    else { alert('Не удалось рассчитать сумму. Выберите предоплату или полную оплату.'); }
+    return null;
+  }
   return {
     tour: tourVal || 'Не указано',
     name: document.getElementById('f-name').value,

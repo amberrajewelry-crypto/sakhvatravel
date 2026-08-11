@@ -21,7 +21,8 @@ css/seamless.orig.css
 css/seamless.src.css
 entities.json
 gid/_template/
-scripts/
+scripts/*
+!scripts/partner.js
 qa-screenshots/
 docs/
 design-previews/

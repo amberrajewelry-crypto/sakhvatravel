@@ -45,10 +45,7 @@ var _ck=localStorage.getItem('cookies_v4')==='1',_gc=location.search.indexOf('gc
 if(_ck||_gc){gtag('consent','update',{analytics_storage:(_ck||_gc)?'granted':'denied',ad_storage:'granted',ad_user_data:'granted',ad_personalization:_ck?'granted':'denied'})}
 </script>
 <script>
-(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-3X83YZHY6S';
-s.onload=function(){gtag('js',new Date());gtag('config','G-3X83YZHY6S');gtag('config','AW-8133499399')};
-if('requestIdleCallback' in window){requestIdleCallback(function(){document.head.appendChild(s)},{timeout:3000})}
-else{setTimeout(function(){document.head.appendChild(s)},2000)}})();
+(function(){function loadGA(){if(window._gaLoaded)return;window._gaLoaded=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-3X83YZHY6S';s.onload=function(){gtag('js',new Date());gtag('config','G-3X83YZHY6S');gtag('config','AW-8133499399')};document.head.appendChild(s)}['scroll','touchstart','mousemove','keydown','click'].forEach(function(e){document.addEventListener(e,loadGA,{once:true,passive:true})});setTimeout(loadGA,8000)})();
 </script>
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
@@ -566,7 +563,7 @@ function toggleFaq(btn){const fi=btn.closest('.fi');fi.classList.toggle('open');
 </script>
 <script>document.addEventListener("click",function(e){var a=e.target.closest("a[href*='wa.me']");if(a){if(typeof gtag==="function"){gtag("event","generate_lead",{event_category:"whatsapp",event_label:a.href})}if(typeof posthog!=="undefined"){posthog.capture("whatsapp_click")}}})</script>
 <div aria-hidden="true" class="grain-overlay" style="position:fixed;top:-50%;left:-50%;width:200%;height:200%;background-image:url('data:image/svg+xml,%3Csvg viewBox=%270 0 512 512%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cfilter id=%27n%27%3E%3CfeTurbulence type=%27fractalNoise%27 baseFrequency=%270.65%27 numOctaves=%275%27 stitchTiles=%27stitch%27/%3E%3C/filter%3E%3Crect width=%27100%25%27 height=%27100%25%27 filter=%27url(%23n)%27/%3E%3C/svg%3E');opacity:0.045;pointer-events:none;z-index:9999"></div>
-<script defer="" src="/scripts/partner.js?v=1"></script>
+<script defer="" src="/scripts/partner.js?v=2"></script>
 <div aria-modal="true" id="contact-modal" role="dialog" style="display:none;position:fixed;inset:0;z-index:10000;align-items:center;justify-content:center;padding:20px">
 <div onclick="closeContact()" style="position:absolute;inset:0;background:rgba(0,0,0,.6);backdrop-filter:blur(4px)"></div>
 <div style="position:relative;background:#fff;border-radius:20px;padding:36px 32px;width:100%;max-width:480px;z-index:1">
