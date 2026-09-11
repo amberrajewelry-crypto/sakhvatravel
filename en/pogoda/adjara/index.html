@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><link rel="preconnect" href="https://mc.yandex.ru" crossorigin><link rel="preconnect" href="https://api.open-meteo.com" crossorigin>
+<meta charset="UTF-8">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Weather in Adjara: forecast & climate by season</title>
+<meta name="description" content="Weather in Adjara: daily forecast for the region's towns (Batumi, Khulo) and climate by season. When to visit, local guide's tips.">
+<meta name="author" content="Тимур — Sakhva Travel">
+<link rel="canonical" href="https://sakhva-travel.com/en/pogoda/adjara/">
+<link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/pogoda/adjara/">
+<link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/pogoda/adjara/">
+<link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/pogoda/adjara/">
+<link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/pogoda/adjara/">
+<script src="/js/al.js"></script>
+<meta property="og:type" content="website">
+<meta property="og:title" content="Weather in Adjara — Sakhva Travel">
+<meta property="og:description" content="Weather in Adjara: daily forecast for the region's towns (Batumi, Khulo) and climate by season. When to visit, local guide's tips.">
+<meta property="og:url" content="https://sakhva-travel.com/en/pogoda/adjara/">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Sakhva Travel">
+<meta property="og:image" content="https://sakhva-travel.com/images/og-cover.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Weather in Adjara">
+<meta name="twitter:description" content="Weather in Adjara: daily forecast for the region's towns (Batumi, Khulo) and climate by season. When to visit, local guide's tips.">
+<meta name="twitter:image" content="https://sakhva-travel.com/images/og-cover.jpg">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta name="theme-color" content="#FBFAF7">
+<link rel="preload" href="/fonts/lora-10.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Lora';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/lora-10.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:'Lora';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/lora-14.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Lora';font-style:normal;font-weight:700;font-display:swap;src:url(/fonts/lora-10.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:'Lora';font-style:normal;font-weight:700;font-display:swap;src:url(/fonts/lora-14.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+:root{--green:#1A3D2E;--amber:#B45309;--amber-l:#F59E0B;--ink:#111827}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{font-family:'Lora',Georgia,serif;color:var(--ink);background:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit}img{max-width:100%;display:block}button{border:none;background:none;font-family:inherit;cursor:pointer}ul{list-style:none}
+#nav{position:fixed;top:0;left:0;right:0;z-index:900;height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(16px,3.5vw,56px);transition:background .3s,box-shadow .3s;background:rgba(251,250,247,.92);box-shadow:0 1px 0 #ECECE4}
+#nav.scrolled{background:rgba(255,255,255,.97);box-shadow:0 1px 12px rgba(0,0,0,.08)}
+.nav-logo{display:flex;align-items:center;color:var(--green)}
+.logo-svg{width:148px;height:66px;display:block}
+.nav-links{display:flex;align-items:center;gap:24px}
+.nav-links a{white-space:nowrap;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#4B5563;transition:color .2s}
+.nav-links a:hover{color:var(--amber-l)}
+.lang-sw{display:flex;gap:8px}
+.lang-sw .ls{font-size:12px;font-weight:700;letter-spacing:.08em;color:#9CA3AF}
+.lang-sw .ls.active{color:var(--green)}
+.lang-sw .ls:hover{color:var(--amber-l)}
+.nav-btn{background:var(--green);color:#fff!important;padding:9px 22px;border-radius:9999px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;transition:background .2s!important}
+.nav-btn:hover{background:#145A38!important}
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;min-width:44px;min-height:44px;justify-content:center;align-items:center}
+.burger span{display:block;width:24px;height:2px;background:#111827;border-radius:2px;transition:.3s}
+.burger.on span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger.on span:nth-child(2){opacity:0}
+.burger.on span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.drawer{display:none;position:fixed;top:72px;left:0;right:0;bottom:0;background:#fff;z-index:850;flex-direction:column;padding:28px 24px;overflow-y:auto}
+.drawer.on{display:flex}
+.drawer a{font-size:17px;font-weight:600;color:#111827;padding:15px 0;border-bottom:1px solid #f3f4f6}
+.drawer .d-btn{margin-top:20px;background:var(--green);color:#fff;text-align:center;padding:15px;border-radius:9999px;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.drawer .d-lang{display:flex;gap:18px;margin-top:22px;border-bottom:none}
+.drawer .d-lang a{border:none;padding:0;font-size:14px;font-weight:700;color:#9CA3AF}
+.drawer .d-lang a.active{color:var(--green)}
+.wx-hero{position:relative;padding:116px clamp(16px,3.5vw,56px) 48px;overflow:hidden;background:#FBFAF7;border-bottom:1px solid #ECECE4}
+.wx-hero.sky-clear{background:linear-gradient(180deg,#F3F8FB,#FBFAF7 68%)}
+.wx-hero.sky-cloud{background:linear-gradient(180deg,#F2F4F5,#FBFAF7 68%)}
+.wx-hero.sky-night{background:linear-gradient(180deg,#F0F1F6,#FBFAF7 68%)}
+.hero-inner{position:relative;max-width:1000px;margin:0 auto}
+.wx-crumb{font-size:12px;color:#9CA3AF;margin-bottom:18px;display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.wx-crumb a{color:#9CA3AF}.wx-crumb a:hover{color:var(--green)}.wx-crumb strong{color:#6B7280;font-weight:600}
+.wx-kicker{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--amber);font-weight:700;margin-bottom:12px}
+.wx-h1{font-size:clamp(32px,5vw,54px);font-weight:700;color:var(--green);line-height:1.05;letter-spacing:-.01em;margin-bottom:12px}
+.wx-h1 em{font-style:italic;color:var(--amber)}
+.wx-lede{font-size:clamp(15px,1.7vw,17px);color:#6B7280;line-height:1.6;max-width:560px;margin-bottom:30px}
+.wx-feat{display:grid;grid-template-columns:1.15fr .85fr;gap:0;background:#fff;border:1px solid #ECECE4;border-radius:20px;overflow:hidden;box-shadow:0 12px 40px -22px rgba(26,61,46,.22)}
+.wx-feat-main{padding:30px 34px}
+.wx-feat-loc{display:flex;align-items:center;gap:7px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--green);font-weight:700;margin-bottom:5px}
+.wx-feat-loc svg{width:13px;height:13px;color:var(--amber)}
+.wx-feat-date{font-size:13px;color:#9CA3AF;margin-bottom:22px}
+.wx-feat-row{display:flex;align-items:center;gap:16px}
+.wx-feat-temp{font-size:clamp(60px,9vw,96px);font-weight:700;color:var(--ink);line-height:.86;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.wx-feat-temp sup{font-size:.32em;font-weight:400;vertical-align:top;top:.4em;position:relative;color:#9CA3AF}
+.wx-feat-ico{width:92px;height:92px;flex-shrink:0;margin-left:auto}
+.wx-feat-desc{font-size:18px;color:var(--ink);font-weight:700;margin-top:14px}
+.wx-feat-meta{font-size:14px;color:#6B7280;margin-top:3px}
+.wx-feat-fore{background:#FBFAF8;border-left:1px solid #ECECE4;padding:22px 22px;display:flex;flex-direction:column;justify-content:center;gap:2px}
+.wx-fore-h{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#9CA3AF;font-weight:700;margin-bottom:10px}
+.wx-fore-day{display:grid;grid-template-columns:44px 28px 1fr auto;align-items:center;gap:12px;padding:8px 0;border-bottom:1px solid #F2F2EC;opacity:0;transform:translateX(10px);animation:foreIn .5s forwards}
+.wx-fore-day:last-child{border-bottom:none}
+.wx-fore-dow{font-size:13px;color:#4B5563;font-weight:700}
+.wx-fore-ic{width:26px;height:26px}
+.wx-fore-bar{height:3px;border-radius:2px;background:linear-gradient(90deg,#cfe0ec,var(--amber-l));opacity:.75}
+.wx-fore-t{font-size:14px;color:var(--ink);font-weight:700;font-variant-numeric:tabular-nums;text-align:right}
+.wx-fore-t span{color:#9CA3AF;font-weight:400}
+@keyframes foreIn{to{opacity:1;transform:none}}
+.wx-body{max-width:1000px;margin:0 auto;padding:56px clamp(16px,3.5vw,32px) 0}
+.wx-sec{margin-bottom:56px}
+.wx-sec-head{margin-bottom:22px}
+.wx-sec-head h2{font-size:clamp(23px,3vw,32px);font-weight:700;color:var(--ink);line-height:1.15}
+.wx-sec-head p{font-size:15px;color:#6B7280;line-height:1.65;margin-top:8px;max-width:640px}
+.clim-wrap{overflow-x:auto;border-radius:16px;border:1px solid #ECECE4;box-shadow:0 1px 2px rgba(0,0,0,.03)}
+.clim{width:100%;border-collapse:collapse;font-size:14px;min-width:460px}
+.clim th,.clim td{padding:12px 16px;text-align:left;border-bottom:1px solid #F2F2EC}
+.clim thead th{background:var(--green);color:#fff;font-size:12px;letter-spacing:.05em;text-transform:uppercase;font-weight:700}
+.clim tbody th{background:#FAFAF8;color:var(--ink);font-weight:700;white-space:nowrap}
+.clim td{color:#4B5563;font-variant-numeric:tabular-nums}
+.clim tbody tr:last-child th,.clim tbody tr:last-child td{border-bottom:none}
+.clim th.best{color:#0C7C38}
+.clim th.best::before{content:'●';font-size:8px;vertical-align:middle;margin-right:6px;color:var(--amber-l)}
+.clim-note{font-size:12px;color:#9CA3AF;margin-top:12px}
+.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:8px}
+.cal-day{display:flex;flex-direction:column;align-items:center;gap:3px;padding:14px 6px;border:1px solid #ECECE4;border-radius:14px;background:linear-gradient(160deg,#fff,#fafaf7);text-align:center}
+.cal-day.today{border-color:#B45309;box-shadow:inset 0 0 0 1px #B45309}
+.cal-day.far{opacity:.6;background:#fbfaf7}
+.cal-dow{font-size:12px;font-weight:700;color:var(--green)}
+.cal-date{font-size:11px;color:#9CA3AF}
+.cal-ic{width:34px;height:34px;margin:2px 0}
+.cal-hi{font-size:18px;font-weight:700;color:var(--ink);font-variant-numeric:tabular-nums}
+.cal-lo{font-size:13px;color:#9CA3AF;font-variant-numeric:tabular-nums}
+.cal-pop{font-size:11px;color:#2563a8;font-weight:700}
+.cal-skel{height:120px;border-radius:14px;background:linear-gradient(90deg,#eee,#f6f6f2,#eee);background-size:200% 100%;animation:shim 1.3s infinite}
+@media(max-width:760px){.cal-grid{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:460px){.cal-grid{grid-template-columns:repeat(3,1fr)}}
+.mc-row{display:flex;align-items:center;gap:12px;padding:14px 0;border-bottom:1px solid #F2F2EC}
+.mc-row:last-child{border-bottom:none}
+.mc-city{min-width:120px;flex-shrink:0;font-weight:700;color:var(--green);font-size:15px}
+.mc-city a{color:var(--green)}.mc-city a:hover{color:var(--amber)}
+.mc-days{display:flex;gap:6px;overflow-x:auto;padding-bottom:2px}
+.mc-day{display:flex;flex-direction:column;align-items:center;gap:2px;min-width:54px;padding:8px 4px;border:1px solid #ECECE4;border-radius:10px;background:#fff}
+.mc-dow{font-size:11px;color:#9CA3AF;font-weight:700}
+.mc-ic{width:24px;height:24px}
+.mc-t{font-size:12px;font-weight:700;color:var(--ink);font-variant-numeric:tabular-nums}
+.mc-t span{color:#9CA3AF;font-weight:400}
+.wx-prose{max-width:720px}
+.wx-prose p{font-size:15px;color:#374151;line-height:1.85;margin-bottom:14px}
+.wx-prose strong{color:var(--ink)}
+.wx-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(184px,1fr));gap:14px}
+.wx-card{position:relative;display:flex;flex-direction:column;gap:14px;padding:18px 18px 16px;border-radius:18px;background:linear-gradient(160deg,#fff,#fafaf7);border:1px solid #ECECE4;box-shadow:0 1px 2px rgba(0,0,0,.03);transition:transform .28s cubic-bezier(.22,1,.36,1),box-shadow .28s,border-color .28s;overflow:hidden}
+.wx-card:hover{transform:translateY(-5px);box-shadow:0 16px 34px -14px rgba(26,61,46,.32);border-color:#D6E4DC}
+.wx-card-top{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.wx-card-name{font-size:15px;font-weight:700;color:var(--green);line-height:1.2}
+.wx-card-sub{font-size:11px;color:#9CA3AF;margin-top:2px}
+.wx-card-ic{width:40px;height:40px;flex-shrink:0}
+.wx-card-bot{display:flex;align-items:flex-end;justify-content:space-between}
+.wx-card-temp{font-size:32px;font-weight:700;color:var(--ink);line-height:1;font-variant-numeric:tabular-nums}
+.wx-card-temp sup{font-size:.4em;color:#9CA3AF;vertical-align:top;top:.2em;position:relative}
+.wx-card-mm{font-size:12px;color:#9CA3AF;text-align:right;font-variant-numeric:tabular-nums}
+.wx-card.load .wx-card-name,.wx-card.load .wx-card-temp,.wx-card.load .wx-card-ic,.wx-card.load .wx-card-mm{background:linear-gradient(90deg,#eee,#f6f6f2,#eee);background-size:200% 100%;animation:shim 1.3s infinite;color:transparent!important;border-radius:6px}
+.wx-card.load .wx-card-ic{border-radius:50%}
+@keyframes shim{to{background-position:-200% 0}}
+.wx-cta{position:relative;background:linear-gradient(140deg,var(--green),#0f2419);border-radius:22px;padding:44px 32px;text-align:center;overflow:hidden}
+.wx-cta::before{content:'';position:absolute;inset:0;background:radial-gradient(80% 120% at 100% 0,rgba(245,158,11,.18),transparent 55%)}
+.wx-cta h2{position:relative;font-size:clamp(22px,3vw,28px);font-weight:700;color:#fff;margin-bottom:10px}
+.wx-cta p{position:relative;font-size:14px;color:rgba(255,255,255,.62);margin-bottom:24px;max-width:520px;margin-left:auto;margin-right:auto}
+.cta-btns{position:relative;display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+.btn-tour{display:inline-flex;align-items:center;gap:8px;background:var(--amber-l);color:#3a2500;padding:14px 26px;border-radius:9999px;font-size:14px;font-weight:700;transition:transform .2s,background .2s}
+.btn-tour:hover{background:#ffb92e;transform:translateY(-2px)}
+.btn-wa{display:inline-flex;align-items:center;gap:8px;background:#0C7C38;color:#fff;padding:14px 26px;border-radius:9999px;font-size:14px;font-weight:700;transition:transform .2s,background .2s}
+.btn-wa:hover{background:#1db954;transform:translateY(-2px)}
+.wx-rel{font-size:14px;color:#6B7280;line-height:2;border-top:1px solid #ECECE4;padding-top:22px}
+.wx-rel a{color:var(--green);font-weight:600}.wx-rel a:hover{color:var(--amber)}
+.faq-wrap{margin:8px 0}
+.fi{border:1px solid #ECECE4;border-radius:14px;margin-bottom:10px;overflow:hidden;background:#fff;transition:border-color .2s}
+.fi.open{border-color:#D6E4DC}
+.fq{width:100%;text-align:left;padding:18px 22px;font-size:15px;font-weight:700;color:var(--ink);display:flex;justify-content:space-between;align-items:center;gap:16px;background:#FAFAF8;transition:background .15s}
+.fq:hover{background:#F0F7F4}
+.fq-ic{font-size:22px;color:#9CA3AF;transition:transform .3s;flex-shrink:0}
+.fi.open .fq-ic{transform:rotate(45deg);color:var(--amber)}
+.fa{max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.22,1,.36,1)}
+.fa-inner{padding:2px 22px 18px;font-size:14px;color:#4B5563;line-height:1.75}
+.ic-sun-core{transform-origin:center;animation:spin 24s linear infinite}
+.ic-rays{transform-origin:center;animation:spin 40s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.ic-cloud{animation:bob 4s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateX(0)}50%{transform:translateX(3px)}}
+.ic-drop{animation:drop 1.3s linear infinite}.ic-drop.d2{animation-delay:.4s}.ic-drop.d3{animation-delay:.8s}
+@keyframes drop{0%{opacity:0;transform:translateY(-3px)}30%{opacity:1}100%{opacity:0;transform:translateY(9px)}}
+.ic-flake{transform-origin:center;animation:flake 3s linear infinite}.ic-flake.f2{animation-delay:1s}.ic-flake.f3{animation-delay:2s}
+@keyframes flake{0%{opacity:0;transform:translateY(-3px) rotate(0)}30%{opacity:1}100%{opacity:0;transform:translateY(10px) rotate(180deg)}}
+#footer{background:#111827;padding:44px clamp(16px,3.5vw,56px) 30px;margin-top:16px}
+.foot-inner{max-width:1000px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.foot-copy{font-size:12px;color:rgba(255,255,255,.65)}
+.foot-copy a{color:rgba(255,255,255,.45);text-decoration:underline}
+@media(max-width:860px){.wx-feat{grid-template-columns:1fr}.wx-feat-fore{border-left:none;border-top:1px solid #ECECE4}}
+@media(max-width:768px){.nav-links{display:none}.burger{display:flex}.wx-grid{grid-template-columns:1fr 1fr}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
+gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',wait_for_update:500})
+var _ck=localStorage.getItem('cookies_v4')==='1',_gc=location.search.indexOf('gclid')>-1;
+if(_ck||_gc){gtag('consent','update',{analytics_storage:'granted',ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted'})}
+</script>
+<script>(function(){function loadGA(){if(window._gaLoaded)return;window._gaLoaded=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-3X83YZHY6S';s.onload=function(){gtag('js',new Date());gtag('config','G-3X83YZHY6S');gtag('config','AW-8133499399')};document.head.appendChild(s)}['scroll','touchstart','mousemove','keydown','click'].forEach(function(e){document.addEventListener(e,loadGA,{once:true,passive:true})});setTimeout(loadGA,8000)})()</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "url": "https://sakhva-travel.com/en/pogoda/adjara/", "name": "Weather in Adjara: forecast & climate by season", "description": "Weather in Adjara: daily forecast for the region's towns (Batumi, Khulo) and climate by season. When to visit, local guide's tips.", "inLanguage": "en", "isPartOf": {"@id": "https://sakhva-travel.com/#website"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://sakhva-travel.com/en/"}, {"@type": "ListItem", "position": 2, "name": "Weather in Georgia", "item": "https://sakhva-travel.com/en/pogoda/"}, {"@type": "ListItem", "position": 3, "name": "Weather in Adjara", "item": "https://sakhva-travel.com/en/pogoda/adjara/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "When is the best time to visit Adjara?", "acceptedAnswer": {"@type": "Answer", "text": "The most comfortable time is june, september: warm but without exhausting heat, and less rain. See the exact monthly figures in the climate table above."}}, {"@type": "Question", "name": "What's the weather in Adjara right now?", "acceptedAnswer": {"@type": "Answer", "text": "The current temperature and the 7-day forecast are shown by the live widget at the top of the page — the data updates automatically."}}, {"@type": "Question", "name": "Is it cold in Adjara in winter?", "acceptedAnswer": {"@type": "Answer", "text": "The winter is warm: around +11° by day in January, +3° at night — snow is rare."}}]}</script>
+</head>
+<body>
+<nav id="nav">
+<a href="/en/" class="nav-logo" aria-label="Sakhva Travel">
+<svg class="logo-svg" viewBox="0 0 400 170" fill="none" xmlns="http://www.w3.org/2000/svg"><g fill="currentColor"><path d="M125.5 95.3c-1.4-3-4.4-5-7.7-5h-5.6c-3.3 0-6.3 2-7.7 5L95 115.3h40l-9.5-20z" opacity=".15"/><path d="M148.5 95.3c-1.4-3-4.4-5-7.7-5h-5.6c-3.3 0-6.3 2-7.7 5L118 115.3h40l-9.5-20z" opacity=".3"/><path d="M171.5 95.3c-1.4-3-4.4-5-7.7-5h-5.6c-3.3 0-6.3 2-7.7 5L141 115.3h40l-9.5-20z" opacity=".5"/><path d="M200 60l-32 55.3h64L200 60z" fill="currentColor"/><circle cx="200" cy="52" r="6" fill="#F59E0B"/></g><text x="200" y="136" text-anchor="middle" font-family="Georgia,serif" font-size="28" font-weight="700" letter-spacing="6" fill="currentColor">SAKHVA</text><line x1="135" y1="143" x2="265" y2="143" stroke="#F59E0B" stroke-width="2"/><text x="200" y="158" text-anchor="middle" font-family="Georgia,serif" font-size="13" letter-spacing="8" fill="currentColor">TRAVEL</text></svg>
+</a>
+<div class="nav-links">
+<a href="/en/tours-in-georgia/">Georgia tours</a><a href="/en/tours-in-georgia/">Excursions</a><a href="/en/prices/">Prices</a><a href="/en/about/">About</a><a href="/en/blog/">Blog</a><a href="/en/pogoda/">Weather</a><a href="/en/#footer">Contacts</a>
+<span class="lang-sw"><a class="ls" href="https://sakhva-travel.com/pogoda/adjara/">RU</a><a class="ls active" href="https://sakhva-travel.com/en/pogoda/adjara/">EN</a><a class="ls" href="https://sakhva-travel.com/ge/pogoda/adjara/">GE</a></span>
+<a href="#" class="nav-btn" onclick="event.preventDefault();if(typeof openContact==='function')openContact();else window.location.href='https://wa.me/995511272623'">Pay online</a>
+</div>
+<button type="button" class="burger" id="burger" aria-label="Menu" onclick="var d=document.getElementById('drawer'),b=this,o=d.classList.toggle('on');b.classList.toggle('on',o);document.body.style.overflow=o?'hidden':''"><span></span><span></span><span></span></button>
+</nav>
+<div class="drawer" id="drawer">
+<script>function closeDrawer(){var d=document.getElementById('drawer'),b=document.getElementById('burger');d.classList.remove('on');b.classList.remove('on');document.body.style.overflow=''}</script>
+<a href="/en/tours-in-georgia/" onclick="closeDrawer()">Excursions</a><a href="/en/prices/" onclick="closeDrawer()">Prices</a><a href="/en/pogoda/" onclick="closeDrawer()">Weather in Georgia</a><a href="/en/blog/" onclick="closeDrawer()">Blog</a><a href="/en/booking/" class="d-btn">Book now</a>
+<div class="d-lang"><a class="ls" href="https://sakhva-travel.com/pogoda/adjara/">RU</a><a class="ls active" href="https://sakhva-travel.com/en/pogoda/adjara/">EN</a><a class="ls" href="https://sakhva-travel.com/ge/pogoda/adjara/">GE</a></div>
+</div>
+
+<main>
+<section class="wx-hero" id="hero">
+<div class="hero-inner">
+<div class="wx-crumb"><a href="/en/">Home</a><span>›</span><a href="/en/pogoda/">Weather in Georgia</a><span>›</span><strong>Adjara</strong></div>
+<div class="wx-kicker">Daily weather forecast · у моря</div>
+<h1 class="wx-h1">Weather in <em>Adjara</em></h1>
+<p class="wx-lede">Forecast for the week ahead and climate by month. Best time to visit — june, september, october.</p>
+<div class="wx-feat" id="feat" aria-live="polite">
+<div class="wx-feat-main">
+<div class="wx-feat-loc"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a7 7 0 00-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg><span>Adjara</span></div>
+<div class="wx-feat-date" id="feat-date">—</div>
+<div class="wx-feat-row"><div class="wx-feat-temp"><span id="feat-temp">--</span><sup>°C</sup></div><div class="wx-feat-ico" id="feat-ico"></div></div>
+<div class="wx-feat-desc" id="feat-desc">Loading forecast…</div>
+<div class="wx-feat-meta" id="feat-meta">&nbsp;</div>
+</div>
+<div class="wx-feat-fore"><div class="wx-fore-h">7-day forecast</div><div id="feat-fore"></div></div>
+</div>
+</div>
+</section>
+
+<div class="wx-body">
+<section class="wx-sec"><div class="wx-sec-head"><h2>Weather in Adjara by city for the week</h2><p>Daily forecast for the region's key towns — the climate of Adjara varies with altitude. Updated hourly.</p></div><div id="multi" class="mc-wrap"></div><p class="clim-note">Open-Meteo forecast. Current weather is in the widget above.</p></section><section class="wx-sec wx-prose"><div class="wx-sec-head"><h2>Adjara climate: how the towns differ</h2></div><p>The climate of Adjara changes with altitude. In summer it's warmest in Batumi — about +26° by day, cooler in Khulo (+24°). In winter Batumi holds +12°, while Khulo sits at +6°. The forecast for each town is in the table above; monthly normals are on the town pages.</p></section><section class="wx-sec wx-prose"><div class="wx-sec-head"><h2>What to do in Adjara by season</h2></div><p>The beach season in Adjara runs June to September: about +26° by day, a warm sea and a lively promenade. Spring and autumn (june, september, october) are quieter and cheaper — too cool to swim, but easy for sightseeing. The seaside route is <a href="/en/ekskursiya/tur-batumi-iz-tbilisi/">Batumi tour from Tbilisi</a>.</p></section><section class="wx-sec"><div class="wx-sec-head"><h2>Adjara climate: comparison by town</h2><p>Average daytime temperature by season at the region's key points — the climate of Adjara varies noticeably with altitude. Detailed forecast by town: <a href="/en/pogoda/batumi/">Batumi</a>.</p></div><div class="clim-wrap"><table class="clim"><thead><tr><th scope="col">Town</th><th scope="col">Winter</th><th scope="col">Spring</th><th scope="col">Summer</th><th scope="col">Autumn</th><th scope="col">Best time</th></tr></thead><tbody><tr><th scope="row"><a href="/en/pogoda/batumi/">Batumi</a></th><td>+12°</td><td>+18°</td><td>+26°</td><td>+21°</td><td>june, september</td></tr>
+<tr><th scope="row">Khulo</th><td>+6°</td><td>+14°</td><td>+24°</td><td>+17°</td><td>july, september</td></tr></tbody></table></div><p class="clim-note">Daytime, seasonal averages (Open-Meteo 2014–2023). Monthly data is on the town pages.</p></section><section class="wx-sec"><div class="wx-sec-head"><h2>Adjara climate by month</h2><p>Average day and night temperatures and the number of days with precipitation. The most comfortable months to visit are in green.</p></div><div class="clim-wrap"><table class="clim"><thead><tr><th scope="col">Month</th><th scope="col">Day</th><th scope="col">Night</th><th scope="col">Days with precip.</th></tr></thead><tbody><tr><th scope="row">January</th><td>+11°</td><td>+3°</td><td>14</td></tr>
+<tr><th scope="row">February</th><td>+12°</td><td>+4°</td><td>13</td></tr>
+<tr><th scope="row">March</th><td>+14°</td><td>+6°</td><td>16</td></tr>
+<tr><th scope="row">April</th><td>+18°</td><td>+9°</td><td>13</td></tr>
+<tr><th scope="row">May</th><td>+21°</td><td>+13°</td><td>14</td></tr>
+<tr><th scope="row" class="best">June</th><td>+24°</td><td>+18°</td><td>16</td></tr>
+<tr><th scope="row">July</th><td>+26°</td><td>+21°</td><td>18</td></tr>
+<tr><th scope="row">August</th><td>+27°</td><td>+22°</td><td>19</td></tr>
+<tr><th scope="row" class="best">September</th><td>+25°</td><td>+19°</td><td>16</td></tr>
+<tr><th scope="row" class="best">October</th><td>+21°</td><td>+14°</td><td>13</td></tr>
+<tr><th scope="row">November</th><td>+17°</td><td>+9°</td><td>13</td></tr>
+<tr><th scope="row">December</th><td>+13°</td><td>+5°</td><td>13</td></tr></tbody></table></div><p class="clim-note">Normals from Open-Meteo data (2014–2023 average). Live forecast is in the widget above.</p></section>
+
+<section class="wx-sec wx-prose">
+<div class="wx-sec-head"><h2>When to visit Adjara</h2></div>
+<p>Adjara is subtropical: it gets the most rainfall in Georgia, but also the mildest winter. The rain here is short and warm, often gone within an hour, so I don't recommend cancelling a beach day over the morning forecast — it usually clears by midday.</p>
+</section>
+
+<section class="wx-sec">
+<div class="wx-cta">
+<h2>Plan your trip around the weather</h2>
+<p>Guide Timur will pick the best dates and plan the route. Reply on WhatsApp within 15 minutes.</p>
+<div class="cta-btns">
+<a href="/en/ekskursiya/tur-batumi-iz-tbilisi/" class="btn-tour">Batumi tour from Tbilisi →</a>
+<a href="https://wa.me/995511272623?text=I+want+to+plan+a+trip+to+Adjara" class="btn-wa"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Message the guide</a>
+</div>
+</div>
+</section>
+
+<section class="wx-sec">
+<div class="wx-sec-head"><h2>Weather nearby</h2><p>Compare with neighbouring destinations.</p></div>
+<div class="wx-grid" id="wx-neighbors">
+<a class="wx-card load" data-region="batumi" href="/en/pogoda/batumi/"><div class="wx-card-top"><div><div class="wx-card-name">Batumi</div><div class="wx-card-sub">sea · Adjara</div></div><div class="wx-card-ic"></div></div><div class="wx-card-bot"><div class="wx-card-temp">--<sup>°</sup></div><div class="wx-card-mm">—</div></div></a>
+<a class="wx-card load" data-region="guria" href="/en/pogoda/guria/"><div class="wx-card-top"><div><div class="wx-card-name">Guria</div><div class="wx-card-sub">Ureki · black sand</div></div><div class="wx-card-ic"></div></div><div class="wx-card-bot"><div class="wx-card-temp">--<sup>°</sup></div><div class="wx-card-mm">—</div></div></a>
+<a class="wx-card load" data-region="imereti" href="/en/pogoda/imereti/"><div class="wx-card-top"><div><div class="wx-card-name">Imereti</div><div class="wx-card-sub">Kutaisi · canyons</div></div><div class="wx-card-ic"></div></div><div class="wx-card-bot"><div class="wx-card-temp">--<sup>°</sup></div><div class="wx-card-mm">—</div></div></a>
+</div>
+</section>
+
+<section class="wx-sec">
+<div class="wx-sec-head"><h2>Frequently asked questions</h2></div>
+<div class="faq-wrap">
+<div class="fi"><button class="fq" onclick="toggleFaq(this)"><span>When is the best time to visit Adjara?</span><span class="fq-ic">+</span></button><div class="fa"><div class="fa-inner">The most comfortable time is june, september: warm but without exhausting heat, and less rain. See the exact monthly figures in the climate table above.</div></div></div>
+<div class="fi"><button class="fq" onclick="toggleFaq(this)"><span>What's the weather in Adjara right now?</span><span class="fq-ic">+</span></button><div class="fa"><div class="fa-inner">The current temperature and the 7-day forecast are shown by the live widget at the top of the page — the data updates automatically.</div></div></div>
+<div class="fi"><button class="fq" onclick="toggleFaq(this)"><span>Is it cold in Adjara in winter?</span><span class="fq-ic">+</span></button><div class="fa"><div class="fa-inner">The winter is warm: around +11° by day in January, +3° at night — snow is rare.</div></div></div>
+</div>
+</section>
+
+<section class="wx-sec">
+<div class="wx-rel"><a href="/en/pogoda/batumi/">Weather in Batumi</a> · <a href="/en/pogoda/guria/">Weather in Guria</a> · <a href="/en/pogoda/imereti/">Weather in Imereti</a> · <a href="/en/pogoda/">All regions of Georgia</a></div>
+</section>
+</div>
+</main>
+
+<footer id="footer">
+<div class="foot-inner">
+<div class="foot-copy">&copy; 2024-2026 Sakhva Travel. <a href="/en/policy/">Privacy policy</a> · <a href="/en/pogoda/">Weather in Georgia</a></div>
+<div class="foot-copy">Guide Timur · +995 511 272 623</div>
+</div>
+</footer>
+
+<script>
+function toggleFaq(btn){var item=btn.closest('.fi'),isOpen=item.classList.contains('open');document.querySelectorAll('.fi.open').forEach(function(i){i.classList.remove('open');i.querySelector('.fa').style.maxHeight=null});if(!isOpen){item.classList.add('open');var ans=item.querySelector('.fa');ans.style.maxHeight=ans.scrollHeight+'px'}}
+!function(){var n=document.getElementById('nav');if(!n)return;window.addEventListener('scroll',function(){n.classList.toggle('scrolled',window.scrollY>50)},{passive:true})}();
+(function(){
+  var DOW=["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],MON=["", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],MONS=["", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],WL={"clear": "Clear", "pcloud": "Partly cloudy", "cloud": "Cloudy", "fog": "Fog", "drizzle": "Drizzle", "rain": "Rain", "snow": "Snow", "shower": "Showers", "snowfall": "Snowfall", "storm": "Thunderstorm"},TODAY='Today',UPDATED='updated';
+  var MODE='region',CMP=[{"slug": "batumi", "name": "Batumi", "link": "/en/pogoda/batumi/"}, {"slug": "_khulo", "name": "Khulo", "link": null}];
+  function sgn(n){return (n>0?'+':'')+n}
+  function meta(c){
+    if(c===0)return{t:'sun',l:WL.clear,sky:'sky-clear'};
+    if(c<=2)return{t:'part',l:WL.pcloud,sky:'sky-clear'};
+    if(c===3)return{t:'cloud',l:WL.cloud,sky:'sky-cloud'};
+    if(c<=48)return{t:'fog',l:WL.fog,sky:'sky-cloud'};
+    if(c<=57)return{t:'rain',l:WL.drizzle,sky:'sky-cloud'};
+    if(c<=67)return{t:'rain',l:WL.rain,sky:'sky-cloud'};
+    if(c<=77)return{t:'snow',l:WL.snow,sky:'sky-cloud'};
+    if(c<=82)return{t:'rain',l:WL.shower,sky:'sky-cloud'};
+    if(c<=86)return{t:'snow',l:WL.snowfall,sky:'sky-cloud'};
+    return{t:'storm',l:WL.storm,sky:'sky-cloud'};
+  }
+  function icon(t,s){
+    s=s||48;var S='<svg viewBox="0 0 64 64" width="'+s+'" height="'+s+'" xmlns="http://www.w3.org/2000/svg">';
+    var sun='<g class="ic-sun-core"><circle cx="32" cy="32" r="12" fill="#F59E0B"/></g><g class="ic-rays" stroke="#F59E0B" stroke-width="3" stroke-linecap="round">'+[0,45,90,135,180,225,270,315].map(function(a){var r=a*Math.PI/180,x1=32+Math.cos(r)*18,y1=32+Math.sin(r)*18,x2=32+Math.cos(r)*24,y2=32+Math.sin(r)*24;return '<line x1="'+x1.toFixed(1)+'" y1="'+y1.toFixed(1)+'" x2="'+x2.toFixed(1)+'" y2="'+y2.toFixed(1)+'"/>'}).join('')+'</g>';
+    var cloud='<g class="ic-cloud"><path d="M20 42a10 10 0 010-20 13 13 0 0125-3 9 9 0 01-2 23z" fill="#e3e8ec" stroke="#b3bfc9" stroke-width="1.5"/></g>';
+    var cloudD='<g class="ic-cloud"><path d="M20 40a10 10 0 010-20 13 13 0 0125-3 9 9 0 01-2 23z" fill="#b9c2cb"/></g>';
+    if(t==='sun')return S+sun+'</svg>';
+    if(t==='part')return S+'<g class="ic-sun-core" transform="translate(6,-4)"><circle cx="26" cy="26" r="9" fill="#F59E0B"/></g>'+cloud+'</svg>';
+    if(t==='cloud')return S+cloud+'</svg>';
+    if(t==='fog')return S+cloud+'<g stroke="#aab4bd" stroke-width="2.4" stroke-linecap="round"><line x1="16" y1="50" x2="46" y2="50"/><line x1="20" y1="56" x2="42" y2="56"/></g></svg>';
+    if(t==='rain')return S+cloudD+'<g stroke="#5aa9d6" stroke-width="3" stroke-linecap="round"><line class="ic-drop" x1="24" y1="46" x2="22" y2="52"/><line class="ic-drop d2" x1="33" y1="46" x2="31" y2="52"/><line class="ic-drop d3" x1="42" y1="46" x2="40" y2="52"/></g></svg>';
+    if(t==='snow')return S+cloudD+'<g fill="#8fb8d4"><circle class="ic-flake" cx="24" cy="50" r="2.4"/><circle class="ic-flake f2" cx="33" cy="50" r="2.4"/><circle class="ic-flake f3" cx="42" cy="50" r="2.4"/></g></svg>';
+    return S+cloudD+'<path class="ic-drop" d="M30 44l-5 9h6l-4 8" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+  }
+  function countUp(el,to){var st=null,d=800;to=Math.round(to);function step(ts){if(!st)st=ts;var p=Math.min((ts-st)/d,1),v=Math.round(to*p);el.textContent=(v>0?'+':'')+v;if(p<1)requestAnimationFrame(step)}requestAnimationFrame(step)}
+  function get(slug){return fetch('/api/weather/?region='+slug).then(function(r){return r.json()})}
+  function paintCard(card,d){
+    if(!d||!d.current||typeof d.current.temp!=='number'){card.classList.remove('load');return}
+    var m=meta(d.current.code);card.classList.remove('load');
+    card.querySelector('.wx-card-ic').innerHTML=icon(m.t,40);
+    var tEl=card.querySelector('.wx-card-temp');tEl.innerHTML='<sup>°</sup>';var num=document.createElement('span');tEl.insertBefore(num,tEl.firstChild);countUp(num,d.current.temp);
+    if(d.daily&&d.daily[0])card.querySelector('.wx-card-mm').innerHTML=m.l+'<br>'+(d.daily[0].max>0?'+':'')+d.daily[0].max+'° / '+(d.daily[0].min>0?'+':'')+d.daily[0].min+'°';
+  }
+  function paintFeat(d){
+    var el=function(id){return document.getElementById(id)};
+    if(!d||!d.current){el('feat-desc').textContent='Forecast temporarily unavailable';return}
+    var m=meta(d.current.code),now=new Date();
+    document.getElementById('hero').className='wx-hero '+((now.getHours()<6||now.getHours()>20)?'sky-night':m.sky);
+    var upd=d.current.time?(' · '+UPDATED+' '+d.current.time.slice(11,16)):'';
+    el('feat-date').textContent=DOW[now.getDay()]+', '+now.getDate()+' '+MON[now.getMonth()+1]+upd;
+    countUp(el('feat-temp'),d.current.temp);el('feat-ico').innerHTML=icon(m.t,92);el('feat-desc').textContent=m.l;
+    if(d.daily&&d.daily[0])el('feat-meta').textContent='Day up to '+(d.daily[0].max>0?'+':'')+d.daily[0].max+'° · night '+(d.daily[0].min>0?'+':'')+d.daily[0].min+'°';
+    var f=el('feat-fore');f.innerHTML='';
+    (d.daily||[]).slice(0,6).forEach(function(day,i){var dm=meta(i===0?d.current.code:day.code),dt=new Date(day.date+'T00:00'),row=document.createElement('div');row.className='wx-fore-day';row.style.animationDelay=(i*0.07)+'s';row.innerHTML='<span class="wx-fore-dow">'+(i===0?TODAY:DOW[dt.getDay()])+'</span><span class="wx-fore-ic">'+icon(dm.t,24)+'</span><span class="wx-fore-bar"></span><span class="wx-fore-t">'+(day.max>0?'+':'')+day.max+'°<span> / '+(day.min>0?'+':'')+day.min+'°</span></span>';f.appendChild(row)});
+  }
+  function buildCalendar(d){
+    var el=document.getElementById('cal');if(!el||!d||!d.daily)return;
+    el.innerHTML=d.daily.slice(0,14).map(function(day,i){
+      var m=meta(i===0&&d.current?d.current.code:day.code),dt=new Date(day.date+'T00:00');
+      var far=i>=7;
+      var pop=(!far&&day.pop!=null&&day.pop>=30)?'<div class="cal-pop">'+day.pop+'%</div>':'';
+      return '<div class="cal-day'+(i===0?' today':'')+(far?' far':'')+'"><div class="cal-dow">'+(i===0?TODAY:DOW[dt.getDay()])+'</div><div class="cal-date">'+dt.getDate()+' '+MONS[dt.getMonth()+1]+'</div><div class="cal-ic">'+icon(m.t,34)+'</div><div class="cal-hi">'+sgn(day.max)+'°</div><div class="cal-lo">'+sgn(day.min)+'°</div>'+pop+'</div>';
+    }).join('');
+  }
+  function buildMulti(){
+    var el=document.getElementById('multi');if(!el)return;
+    CMP.forEach(function(c){
+      var row=document.createElement('div');row.className='mc-row';
+      row.innerHTML='<div class="mc-city">'+(c.link?'<a href="'+c.link+'">'+c.name+'</a>':c.name)+'</div><div class="mc-days" style="color:#9CA3AF;font-size:13px">…</div>';
+      el.appendChild(row);
+      get(c.slug).then(function(d){
+        var box=row.querySelector('.mc-days');
+        if(!d||!d.daily){box.textContent='no data';return}
+        box.innerHTML=d.daily.slice(0,7).map(function(day,i){var m=meta(day.code),dt=new Date(day.date+'T00:00');return '<div class="mc-day"><span class="mc-dow">'+(i===0?TODAY:DOW[dt.getDay()])+'</span><span class="mc-ic">'+icon(m.t,24)+'</span><span class="mc-t">'+sgn(day.max)+'°<span>/'+sgn(day.min)+'°</span></span></div>'}).join('');
+      }).catch(function(){row.querySelector('.mc-days').textContent='no data'});
+    });
+  }
+  function run(){
+    get('adjara').then(function(d){paintFeat(d);if(MODE==='city')buildCalendar(d)}).catch(function(){document.getElementById('feat-desc').textContent='Forecast temporarily unavailable'});
+    if(MODE==='region')buildMulti();
+    document.querySelectorAll('.wx-card[data-region]').forEach(function(c,i){setTimeout(function(){get(c.getAttribute('data-region')).then(function(d){paintCard(c,d)}).catch(function(){c.classList.remove('load')})},80+i*80)});
+  }
+  if('requestIdleCallback'in window){requestIdleCallback(run,{timeout:2000})}else{setTimeout(run,300)}
+})();
+</script>
+<script>(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return}}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,function(c){'requestIdleCallback'in window?requestIdleCallback(c,{timeout:4000}):setTimeout(c,1500)}(function(){a.parentNode.insertBefore(k,a)})})(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});</script>
+<noscript><div><img alt="" src="https://mc.yandex.ru/watch/109038950" style="position:absolute;left:-9999px"/></div></noscript>
+</body>
+</html>
