@@ -20,7 +20,7 @@ Allow: /
 
 User-agent: YandexBot
 Allow: /
-Clean-param: gad_source&gad_campaignid&gad_adgroupid&gad_creative&gbraid&wbraid&gclid&utm_source&utm_medium&utm_campaign&utm_content&utm_term&yclid&fbclid&clsprobe&fix&v&b&n /
+Clean-param: gad_source&gad_campaignid&gad_adgroupid&gad_creative&gbraid&wbraid&gclid&utm_source&utm_medium&utm_campaign&utm_content&utm_term&yclid&fbclid&clsprobe&fix&v&b&n&brid&perf /
 
 User-agent: Bingbot
 Allow: /
