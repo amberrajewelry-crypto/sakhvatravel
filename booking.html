@@ -50,6 +50,7 @@ h1{font-size:clamp(26px,4vw,36px);font-weight:600;color:#111827;letter-spacing:-
 .field textarea{resize:none}
 .field-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 @media(max-width:480px){.field-row{grid-template-columns:1fr}}
+@media(max-width:768px){.field input,.field select,.field textarea{font-size:16px}main{padding-bottom:84px}}@media(max-width:480px){.pay-opt{gap:10px!important;padding:14px!important}.pay-badges{display:none!important}}.field select{-webkit-appearance:none;appearance:none;padding-right:40px;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%236B7280' stroke-width='2'%3E%3Cpath d='M4 6l4 4 4-4'/%3E%3C/svg%3E") no-repeat right 14px center}.field select:invalid{color:#9CA3AF}.field select option{color:#111827}.field select{text-overflow:ellipsis}
 .price-summary{background:#F0FDF4;border-radius:12px;padding:20px;margin-bottom:24px;border:1px solid #C8E6C9}
 .ps-row{display:flex;justify-content:space-between;font-size:14px;padding:6px 0}
 .ps-row:not(:last-child){border-bottom:1px solid #E8F5E9}
@@ -158,68 +159,87 @@ h1{font-size:clamp(26px,4vw,36px);font-weight:600;color:#111827;letter-spacing:-
     <form id="booking-form" onsubmit="return handleSubmit(event)">
       <div class="field">
         <label for="f-tour">Экскурсия</label>
-        <input aria-label="Экскурсия" type="text" id="f-tour-search" list="tour-list" placeholder="Начните вводить название..." required autocomplete="off" style="width:100%;padding:12px 16px;border:1px solid #E5E7EB;border-radius:12px;font-size:15px;font-family:inherit;outline:none;transition:border-color .2s">
-        <datalist id="tour-list">
-          <option value="Арт-тур по Тбилиси — от ₾145" data-id="art-tur-tbilisi" data-price="145" data-old="180">
-          <option value="Мастер-класс по чаче — от ₾170" data-id="chacha-master-klass" data-price="170" data-old="215">
-          <option value="Дегустация вина в Кахетии — от ₾225" data-id="degustatsiya-vina-kakheti" data-price="225" data-old="280">
-          <option value="Серные бани Тбилиси — от ₾135" data-id="ekskursiya-abanotubani" data-price="135" data-old="170">
-          <option value="Ананури из Тбилиси — от ₾175" data-id="ekskursiya-ananuri-iz-tbilisi" data-price="175" data-old="220">
-          <option value="Боржоми из Тбилиси — от ₾178" data-id="ekskursiya-borjomi-iz-tbilisi" data-price="178" data-old="225">
-          <option value="Давид Гареджи — от ₾225" data-id="ekskursiya-david-gareji" data-price="225" data-old="280">
-          <option value="Гомис Мта из Батуми — от ₾220" data-id="ekskursiya-gomis-mta-iz-batumi" data-price="220" data-old="275">
-          <option value="Гори и Уплисцихе — от ₾155" data-id="ekskursiya-gori-iz-tbilisi" data-price="155" data-old="195">
-          <option value="Гудаури из Тбилиси — от ₾225" data-id="ekskursiya-gudauri-iz-tbilisi" data-price="225" data-old="280">
-          <option value="Джвари из Тбилиси — от ₾145" data-id="ekskursiya-jvari-iz-tbilisi" data-price="145" data-old="180">
-          <option value="Кахетия из Тбилиси — от ₾170" data-id="ekskursiya-kakheti-iz-tbilisi" data-price="170" data-old="215">
-          <option value="Казбеги из Тбилиси — от ₾175" data-id="ekskursiya-kazbegi-iz-tbilisi" data-price="175" data-old="220">
-          <option value="Мтацминда — от ₾145" data-id="ekskursiya-mtatsminda" data-price="145" data-old="180">
-          <option value="Мцхета из Тбилиси — от ₾98" data-id="ekskursiya-mtskheta-iz-tbilisi" data-price="77" data-old="95">
-          <option value="Крепость Нарикала — от ₾135" data-id="ekskursiya-narikala" data-price="135" data-old="170">
-          <option value="Сигнахи из Тбилиси — от ₾175" data-id="ekskursiya-sighnaghi-iz-tbilisi" data-price="175" data-old="220">
-          <option value="Старый Тбилиси — от ₾135" data-id="ekskursiya-stary-tbilisi" data-price="135" data-old="170">
-          <option value="Сванетия из Тбилиси — от ₾345" data-id="ekskursiya-svaneti-iz-tbilisi" data-price="345" data-old="430">
-          <option value="Телави из Тбилиси — от ₾185" data-id="ekskursiya-telavi-iz-tbilisi" data-price="185" data-old="230">
-          <option value="Ущелье Трусо — от ₾265" data-id="ekskursiya-truso" data-price="265" data-old="330">
-          <option value="Тушетия — от ₾345" data-id="ekskursiya-tusheti" data-price="345" data-old="430">
-          <option value="Уплисцихе из Тбилиси — от ₾175" data-id="ekskursiya-uplistsikhe-iz-tbilisi" data-price="175" data-old="220">
-          <option value="Вардзия из Тбилиси — от ₾295" data-id="ekskursiya-vardzia" data-price="295" data-old="370">
-          <option value="Зугдиди — от ₾255" data-id="ekskursiya-zugdidi" data-price="255" data-old="400">
-          <option value="Семейный тур по Тбилиси — от ₾165" data-id="family-tur-tbilisi" data-price="165" data-old="205">
-          <option value="Фототур по Тбилиси — от ₾145" data-id="fotosessiya-tbilisi" data-price="145" data-old="180">
-          <option value="Гастротур по Тбилиси — от ₾165" data-id="gastronomicheskiy-tur-tbilisi" data-price="165" data-old="205">
-          <option value="Тур для группы 10+ человек — от ₾95" data-id="gruppa-10-chelovek-tbilisi" data-price="95" data-old="120">
-          <option value="Мастер-класс хачапури — от ₾145" data-id="khachapuri-master-klass" data-price="145" data-old="180">
-          <option value="Корпоративный тур — от ₾2200" data-id="korporativniy-tur-tbilisi" data-price="2200" data-old="2750">
-          <option value="Тур квеври — от ₾175" data-id="kvevri-vino-tur" data-price="175" data-old="220">
-          <option value="Ночной Тбилиси — от ₾100" data-id="nochnaya-ekskursiya-tbilisi" data-price="94" data-old="120">
-          <option value="Приключенческий тур — от ₾395" data-id="priklyuchencheskiy-tur-gruziya" data-price="395" data-old="495">
-          <option value="Романтический тур — от ₾165" data-id="romanticheskiy-tur-tbilisi" data-price="165" data-old="205">
-          <option value="Шоппинг-тур по Тбилиси — от ₾145" data-id="shopping-tur-tbilisi" data-price="145" data-old="180">
-          <option value="Советский Тбилиси — от ₾135" data-id="sovetskiy-tur-tbilisi" data-price="135" data-old="170">
-          <option value="Свадебный тур — от ₾1500" data-id="svadebny-tur-gruziya" data-price="1500" data-old="1875">
-          <option value="Трансфер аэропорт — от ₾60" data-id="transfer-aeroport-tbilisi" data-price="60" data-old="75">
-          <option value="Батуми 2 дня — от ₾650" data-id="tur-batumi-2-dnya" data-price="650" data-old="815" data-days="2">
-          <option value="Батуми из Тбилиси — от ₾250" data-id="tur-batumi-iz-tbilisi" data-price="250" data-old="315">
-          <option value="Детский тур Тбилиси — от ₾135" data-id="tur-dlya-detey-tbilisi" data-price="135" data-old="170">
-          <option value="Тур для релокантов — от ₾123" data-id="tur-dlya-emigrantov-tbilisi" data-price="123" data-old="155">
-          <option value="Тур для пенсионеров — от ₾145" data-id="tur-dlya-pensionerov-gruziya" data-price="145" data-old="180">
-          <option value="Грузия 10 дней — от ₾3200" data-id="tur-gruziya-10-dney" data-price="3200" data-old="4000" data-days="10">
-          <option value="Грузия 3 дня — от ₾450" data-id="tur-gruziya-3-dnya" data-price="450" data-old="565" data-days="3">
-          <option value="Грузия 5 дней — от ₾1200" data-id="tur-gruziya-5-dney" data-price="1200" data-old="1500" data-days="5">
-          <option value="Грузия 7 дней — от ₾595" data-id="tur-gruziya-7-dney" data-price="595" data-old="745" data-days="7">
-          <option value="Грузия + Армения — от ₾950" data-id="tur-gruziya-armeniya" data-price="950" data-old="1190" data-days="5">
-          <option value="Летний тур по Грузии — от ₾750" data-id="tur-gruziya-leto" data-price="750" data-old="940" data-days="5">
-          <option value="Новогодний тур — от ₾850" data-id="tur-gruziya-noviy-god" data-price="850" data-old="1065" data-days="4">
-          <option value="Казбеги + Кахетия 2 дня — от ₾550" data-id="tur-kazbegi-kakheti-2-dnya" data-price="550" data-old="690" data-days="2">
-          <option value="Кутаиси из Тбилиси — от ₾183" data-id="tur-kutaisi-iz-tbilisi" data-price="183" data-old="230">
-          <option value="Тур по храмам Тбилиси — от ₾145" data-id="tur-po-hramam-tbilisi" data-price="145" data-old="180">
-          <option value="Сванетия 4 дня — от ₾750" data-id="tur-svaneti-4-dnya" data-price="750" data-old="940" data-days="4">
-          <option value="Тур по всей Грузии — от ₾1400" data-id="tur-vsya-gruziya" data-price="1400" data-old="1750" data-days="14">
-          <option value="Алазанская долина — от ₾175" data-id="vinniy-marshrut-alazani" data-price="175" data-old="220">
-          <option value="Винный тур Тбилиси — от ₾165" data-id="vinniy-tur-tbilisi" data-price="165" data-old="205">
-          <option value="Винодельня Киндзмараули — от ₾225" data-id="vinodelie-kindzmarauli" data-price="225" data-old="280">
-        </datalist>
+        <select aria-label="Экскурсия" id="f-tour-search" required>
+          <option value="" disabled selected>Выберите экскурсию</option>
+          <option value="Абанотубани и серные бани — хамам и история района — от ₾135" data-id="ekskursiya-abanotubani" data-price="135" data-old="170">Абанотубани и серные бани — хамам и история района — от ₾135</option>
+          <option value="Алазанская долина — винный маршрут на полдня — от ₾175" data-id="vinniy-marshrut-alazani" data-price="175" data-old="220">Алазанская долина — винный маршрут на полдня — от ₾175</option>
+          <option value="Ананури из Тбилиси — крепость на водохранилище — от ₾175" data-id="ekskursiya-ananuri-iz-tbilisi" data-price="175" data-old="220">Ананури из Тбилиси — крепость на водохранилище — от ₾175</option>
+          <option value="Арт-тур по Тбилиси 2026 — от ₾145" data-id="art-tur-tbilisi" data-price="145" data-old="180">Арт-тур по Тбилиси 2026 — от ₾145</option>
+          <option value="Батуми за 1 день из Тбилиси — с гидом — от ₾250" data-id="tur-batumi-iz-tbilisi" data-price="250" data-old="315">Батуми за 1 день из Тбилиси — с гидом — от ₾250</option>
+          <option value="Винный тур по барам Тбилиси — натуральное вино — от ₾165" data-id="vinniy-tur-tbilisi" data-price="165" data-old="205">Винный тур по барам Тбилиси — натуральное вино — от ₾165</option>
+          <option value="Винодельня Киндзмараули — легендарное полусладкое — от ₾225" data-id="vinodelie-kindzmarauli" data-price="225" data-old="280">Винодельня Киндзмараули — легендарное полусладкое — от ₾225</option>
+          <option value="Гастрономический тур по Тбилиси — от ₾165" data-id="gastronomicheskiy-tur-tbilisi" data-price="165" data-old="205">Гастрономический тур по Тбилиси — от ₾165</option>
+          <option value="Гомис Мта и Мачахела из Батуми — горная Аджария — от ₾220" data-id="ekskursiya-gomis-mta-iz-batumi" data-price="220" data-old="275">Гомис Мта и Мачахела из Батуми — горная Аджария — от ₾220</option>
+          <option value="Гори и Уплисцихе из Тбилиси — музей Сталина и пещерный город — от ₾155" data-id="ekskursiya-gori-iz-tbilisi" data-price="155" data-old="195">Гори и Уплисцихе из Тбилиси — музей Сталина и пещерный город — от ₾155</option>
+          <option value="Гудаури из Тбилиси — горнолыжный курорт и Крестовый перевал — от ₾225" data-id="ekskursiya-gudauri-iz-tbilisi" data-price="225" data-old="280">Гудаури из Тбилиси — горнолыжный курорт и Крестовый перевал — от ₾225</option>
+          <option value="Дегустация вина в Кахетии — 3 винодельни за 1 день — от ₾225" data-id="degustatsiya-vina-kakheti" data-price="225" data-old="280">Дегустация вина в Кахетии — 3 винодельни за 1 день — от ₾225</option>
+          <option value="Детский тур по Тбилиси 2026 — от ₾135" data-id="tur-dlya-detey-tbilisi" data-price="135" data-old="170">Детский тур по Тбилиси 2026 — от ₾135</option>
+          <option value="Казбеги из Тбилиси — Гергети и Военно-Грузинская дорога — от ₾175" data-id="ekskursiya-kazbegi-iz-tbilisi" data-price="175" data-old="220">Казбеги из Тбилиси — Гергети и Военно-Грузинская дорога — от ₾175</option>
+          <option value="Каньоны Западной Грузии — Мартвили, Окаце, Прометей — от ₾180" data-id="ekskursiya-kanyony-zapadnoy-gruzii" data-price="180" data-old="225">Каньоны Западной Грузии — Мартвили, Окаце, Прометей — от ₾180</option>
+          <option value="Кахетия из Тбилиси — Сигнахи, Бодбе, Алазанская долина — от ₾170" data-id="ekskursiya-kakheti-iz-tbilisi" data-price="170" data-old="215">Кахетия из Тбилиси — Сигнахи, Бодбе, Алазанская долина — от ₾170</option>
+          <option value="Конный тур в Степанцминде — к Гергети верхом — от ₾240" data-id="konny-tur-stepantsminda" data-price="240" data-old="300">Конный тур в Степанцминде — к Гергети верхом — от ₾240</option>
+          <option value="Корпоративный тур по Тбилиси 2026 — от ₾2200" data-id="korporativniy-tur-tbilisi" data-price="2200" data-old="2750">Корпоративный тур по Тбилиси 2026 — от ₾2200</option>
+          <option value="Крепость Нарикала — канатка и вид на Куру — от ₾135" data-id="ekskursiya-narikala" data-price="135" data-old="170">Крепость Нарикала — канатка и вид на Куру — от ₾135</option>
+          <option value="Ледник Чалаади из Местии — джип + треккинг — от ₾400" data-id="lednik-chalaadi-mestia" data-price="400" data-old="500">Ледник Чалаади из Местии — джип + треккинг — от ₾400</option>
+          <option value="Летний тур по Грузии — от ₾750" data-id="tur-gruziya-leto" data-price="750" data-old="940" data-days="7">Летний тур по Грузии — от ₾750</option>
+          <option value="Мастер-класс по хачапури — от ₾145" data-id="khachapuri-master-klass" data-price="145" data-old="180">Мастер-класс по хачапури — от ₾145</option>
+          <option value="Мастер-класс по чаче в Кахетии — от ₾170" data-id="chacha-master-klass" data-price="170" data-old="215">Мастер-класс по чаче в Кахетии — от ₾170</option>
+          <option value="Мтацминда и фуникулёр — панорама Тбилиси с высоты — от ₾145" data-id="ekskursiya-mtatsminda" data-price="145" data-old="180">Мтацминда и фуникулёр — панорама Тбилиси с высоты — от ₾145</option>
+          <option value="Новогодний тур в Грузию — от ₾850" data-id="tur-gruziya-noviy-god" data-price="850" data-old="1065" data-days="5">Новогодний тур в Грузию — от ₾850</option>
+          <option value="Ночная экскурсия по Тбилиси — от ₾100" data-id="nochnaya-ekskursiya-tbilisi" data-price="100" data-old="125">Ночная экскурсия по Тбилиси — от ₾100</option>
+          <option value="Озёра Корульди из Местии на джипе — от ₾400" data-id="ozero-koruldi-mestia" data-price="400" data-old="500">Озёра Корульди из Местии на джипе — от ₾400</option>
+          <option value="Пешая экскурсия по Старому Тбилиси — полный маршрут — от ₾135" data-id="ekskursiya-stary-tbilisi" data-price="135" data-old="170">Пешая экскурсия по Старому Тбилиси — полный маршрут — от ₾135</option>
+          <option value="Поход в горы в Грузии — треккинг от ₾190 — от ₾190" data-id="pohod-v-gory-gruzia" data-price="190" data-old="240" data-days="4">Поход в горы в Грузии — треккинг от ₾190 — от ₾190</option>
+          <option value="Приключенческий тур по Грузии — рафтинг, треккинг — от ₾395" data-id="priklyuchencheskiy-tur-gruziya" data-price="395" data-old="495" data-days="3">Приключенческий тур по Грузии — рафтинг, треккинг — от ₾395</option>
+          <option value="Прогулка по Куре в Тбилиси — катер по реке — от ₾80" data-id="progulka-po-kure-tbilisi" data-price="80" data-old="100">Прогулка по Куре в Тбилиси — катер по реке — от ₾80</option>
+          <option value="Романтический тур по Тбилиси — от ₾165" data-id="romanticheskiy-tur-tbilisi" data-price="165" data-old="205">Романтический тур по Тбилиси — от ₾165</option>
+          <option value="Ртвели — сбор винограда в Кахетии — от ₾225" data-id="rtveli-sbor-vinograda" data-price="225" data-old="280">Ртвели — сбор винограда в Кахетии — от ₾225</option>
+          <option value="Свадебный тур в Грузию 2026 — от ₾1500" data-id="svadebny-tur-gruziya" data-price="1500" data-old="1875" data-days="3">Свадебный тур в Грузию 2026 — от ₾1500</option>
+          <option value="Сванетия из Тбилиси — башни и горы Кавказа — от ₾345" data-id="ekskursiya-svaneti-iz-tbilisi" data-price="345" data-old="430" data-days="3">Сванетия из Тбилиси — башни и горы Кавказа — от ₾345</option>
+          <option value="Семейный тур по Тбилиси с детьми 2026 — от ₾165" data-id="family-tur-tbilisi" data-price="165" data-old="205">Семейный тур по Тбилиси с детьми 2026 — от ₾165</option>
+          <option value="Сигнахи из Тбилиси — город любви и монастырь Бодбе — от ₾175" data-id="ekskursiya-sighnaghi-iz-tbilisi" data-price="175" data-old="220">Сигнахи из Тбилиси — город любви и монастырь Бодбе — от ₾175</option>
+          <option value="Советская архитектура Тбилиси — экскурсия от ₾135 — от ₾135" data-id="sovetskiy-tur-tbilisi" data-price="135" data-old="170">Советская архитектура Тбилиси — экскурсия от ₾135 — от ₾135</option>
+          <option value="Тбилиси + Казбеги + Кахетия — тур с гидом — от ₾550" data-id="tur-kazbegi-kakheti-2-dnya" data-price="550" data-old="690" data-days="4">Тбилиси + Казбеги + Кахетия — тур с гидом — от ₾550</option>
+          <option value="Тбилиси — Батуми тур на 2 дня — от ₾650" data-id="tur-batumi-2-dnya" data-price="650" data-old="815" data-days="2">Тбилиси — Батуми тур на 2 дня — от ₾650</option>
+          <option value="Тбилиси — Сванетия тур с гидом — от ₾750" data-id="tur-svaneti-4-dnya" data-price="750" data-old="940" data-days="5">Тбилиси — Сванетия тур с гидом — от ₾750</option>
+          <option value="Трансфер из аэропорта Тбилиси 2026 — от ₾90" data-id="transfer-aeroport-tbilisi" data-price="90" data-old="115">Трансфер из аэропорта Тбилиси 2026 — от ₾90</option>
+          <option value="Треккинг по долине Трусо из Казбеги — от ₾500" data-id="hayking-truso-iz-kazbegi" data-price="500" data-old="625">Треккинг по долине Трусо из Казбеги — от ₾500</option>
+          <option value="Тур в Рачу из Тбилиси — Никорцминда и вино Хванчкара — от ₾290" data-id="ekskursiya-racha-iz-tbilisi" data-price="290" data-old="365">Тур в Рачу из Тбилиси — Никорцминда и вино Хванчкара — от ₾290</option>
+          <option value="Тур в Уреки — магнитные пески Чёрного моря — от ₾180" data-id="ekskursiya-ureki-iz-tbilisi" data-price="180" data-old="225">Тур в Уреки — магнитные пески Чёрного моря — от ₾180</option>
+          <option value="Тур в Хевсуретию — Шатили и Муцо (джип) — от ₾340" data-id="ekskursiya-hevsuretia-shatili" data-price="340" data-old="425">Тур в Хевсуретию — Шатили и Муцо (джип) — от ₾340</option>
+          <option value="Тур Грузия + Армения — два Кавказа за одну поездку — от ₾950" data-id="tur-gruziya-armeniya" data-price="950" data-old="1190" data-days="7">Тур Грузия + Армения — два Кавказа за одну поездку — от ₾950</option>
+          <option value="Тур для группы 10+ человек 2026 — от ₾95" data-id="gruppa-10-chelovek-tbilisi" data-price="95" data-old="120">Тур для группы 10+ человек 2026 — от ₾95</option>
+          <option value="Тур для пенсионеров по Грузии — от ₾145" data-id="tur-dlya-pensionerov-gruziya" data-price="145" data-old="180">Тур для пенсионеров по Грузии — от ₾145</option>
+          <option value="Тур для эмигрантов в Тбилиси — знакомство с городом от ₾123 — от ₾123" data-id="tur-dlya-emigrantov-tbilisi" data-price="123" data-old="155">Тур для эмигрантов в Тбилиси — знакомство с городом от ₾123 — от ₾123</option>
+          <option value="Тур квеври — древнее виноделие в глиняных амфорах — от ₾175" data-id="kvevri-vino-tur" data-price="175" data-old="220">Тур квеври — древнее виноделие в глиняных амфорах — от ₾175</option>
+          <option value="Тур по всей Грузии — все регионы за одну поездку — от ₾1400" data-id="tur-vsya-gruziya" data-price="1400" data-old="1750" data-days="14">Тур по всей Грузии — все регионы за одну поездку — от ₾1400</option>
+          <option value="Тур по Грузии на 10 дней — полное погружение — от ₾3200" data-id="tur-gruziya-10-dney" data-price="3200" data-old="4000" data-days="10">Тур по Грузии на 10 дней — полное погружение — от ₾3200</option>
+          <option value="Тур по Грузии на 3 дня — Тбилиси, Казбеги, Кахетия — от ₾450" data-id="tur-gruziya-3-dnya" data-price="450" data-old="565" data-days="3">Тур по Грузии на 3 дня — Тбилиси, Казбеги, Кахетия — от ₾450</option>
+          <option value="Тур по Грузии на 5 дней — маршрут с гидом — от ₾1200" data-id="tur-gruziya-5-dney" data-price="1200" data-old="1500" data-days="5">Тур по Грузии на 5 дней — маршрут с гидом — от ₾1200</option>
+          <option value="Тур по Грузии на 7 дней — полный маршрут — от ₾595" data-id="tur-gruziya-7-dney" data-price="595" data-old="745" data-days="7">Тур по Грузии на 7 дней — полный маршрут — от ₾595</option>
+          <option value="Тур по храмам Тбилиси — от ₾145" data-id="tur-po-hramam-tbilisi" data-price="145" data-old="180">Тур по храмам Тбилиси — от ₾145</option>
+          <option value="Уплисцихе и Мцхета из Тбилиси — два древних города за 1 день — от ₾175" data-id="ekskursiya-uplistsikhe-iz-tbilisi" data-price="175" data-old="220">Уплисцихе и Мцхета из Тбилиси — два древних города за 1 день — от ₾175</option>
+          <option value="Ушгули и ледник Шхара из Местии — весь день — от ₾750" data-id="ushguli-shkhara-lednik" data-price="750" data-old="940">Ушгули и ледник Шхара из Местии — весь день — от ₾750</option>
+          <option value="Ушгули из Местии — село UNESCO под Шхарой — от ₾650" data-id="ushguli-iz-mestii" data-price="650" data-old="815">Ушгули из Местии — село UNESCO под Шхарой — от ₾650</option>
+          <option value="Ущелье Трусо — марсианские пейзажи и минеральные озёра — от ₾265" data-id="ekskursiya-truso" data-price="265" data-old="330">Ущелье Трусо — марсианские пейзажи и минеральные озёра — от ₾265</option>
+          <option value="Фототур по Тбилиси с гидом — от ₾145" data-id="fotosessiya-tbilisi" data-price="145" data-old="180">Фототур по Тбилиси с гидом — от ₾145</option>
+          <option value="Хайкинг Джута — Чаухи из Казбеги — от ₾500" data-id="hayking-juta-chaukhi-iz-kazbegi" data-price="500" data-old="625">Хайкинг Джута — Чаухи из Казбеги — от ₾500</option>
+          <option value="Хайкинг к водопаду Гвелети из Казбеги — от ₾350" data-id="hayking-gveleti-iz-kazbegi" data-price="350" data-old="440">Хайкинг к водопаду Гвелети из Казбеги — от ₾350</option>
+          <option value="Шоппинг-тур по Тбилиси 2026 — от ₾145" data-id="shopping-tur-tbilisi" data-price="145" data-old="180">Шоппинг-тур по Тбилиси 2026 — от ₾145</option>
+          <option value="Экскурсии из Кутаиси — от ₾165 с гидом — от ₾165" data-id="ekskursii-iz-kutaisi" data-price="165" data-old="205">Экскурсии из Кутаиси — от ₾165 с гидом — от ₾165</option>
+          <option value="Экскурсия Боржоми из Тбилиси — от ₾178" data-id="ekskursiya-borjomi-iz-tbilisi" data-price="178" data-old="225">Экскурсия Боржоми из Тбилиси — от ₾178</option>
+          <option value="Экскурсия в Бакуриани из Тбилиси — горы и узкоколейка — от ₾160" data-id="ekskursiya-bakuriani-iz-tbilisi" data-price="160" data-old="200">Экскурсия в Бакуриани из Тбилиси — горы и узкоколейка — от ₾160</option>
+          <option value="Экскурсия в Зугдиди 2026 — от ₾255" data-id="ekskursiya-zugdidi" data-price="255" data-old="320">Экскурсия в Зугдиди 2026 — от ₾255</option>
+          <option value="Экскурсия в Кутаиси из Тбилиси — с гидом — от ₾183" data-id="tur-kutaisi-iz-tbilisi" data-price="183" data-old="230">Экскурсия в Кутаиси из Тбилиси — с гидом — от ₾183</option>
+          <option value="Экскурсия в Телави из Тбилиси — винная столица Кахетии — от ₾185" data-id="ekskursiya-telavi-iz-tbilisi" data-price="185" data-old="230">Экскурсия в Телави из Тбилиси — винная столица Кахетии — от ₾185</option>
+          <option value="Экскурсия в Тушетию — от ₾345" data-id="ekskursiya-tusheti" data-price="345" data-old="430" data-days="2">Экскурсия в Тушетию — от ₾345</option>
+          <option value="Экскурсия Вардзия из Тбилиси 2026 — от ₾295" data-id="ekskursiya-vardzia" data-price="295" data-old="370">Экскурсия Вардзия из Тбилиси 2026 — от ₾295</option>
+          <option value="Экскурсия Давид Гареджи 2026 — от ₾225" data-id="ekskursiya-david-gareji" data-price="225" data-old="280">Экскурсия Давид Гареджи 2026 — от ₾225</option>
+          <option value="Экскурсия Дашбаши из Тбилиси — каньон и стеклянный мост — от ₾135" data-id="ekskursiya-dashbashi-iz-tbilisi" data-price="135" data-old="170">Экскурсия Дашбаши из Тбилиси — каньон и стеклянный мост — от ₾135</option>
+          <option value="Экскурсия Джвари из Тбилиси — от ₾145" data-id="ekskursiya-jvari-iz-tbilisi" data-price="145" data-old="180">Экскурсия Джвари из Тбилиси — от ₾145</option>
+          <option value="Экскурсия из Батуми в Кутаиси — от ₾195 — от ₾195" data-id="ekskursiya-batumi-kutaisi" data-price="195" data-old="245">Экскурсия из Батуми в Кутаиси — от ₾195 — от ₾195</option>
+          <option value="Экскурсия Мцхета из Тбилиси — от ₾98" data-id="ekskursiya-mtskheta-iz-tbilisi" data-price="98" data-old="125">Экскурсия Мцхета из Тбилиси — от ₾98</option>
+        </select>
         <div class="urgency-inline" id="tour-urgency" style="display:none"><span class="urgency-dot"></span> <span id="tour-urgency-text"></span></div>
       </div>
 
@@ -321,17 +341,17 @@ h1{font-size:clamp(26px,4vw,36px);font-weight:600;color:#111827;letter-spacing:-
 
       <div id="pay-methods" style="font-size:13px;font-weight:600;color:#374151;margin-bottom:10px;margin-top:24px;scroll-margin-top:80px">Выберите способ оплаты</div>
       <div id="pay-block" inert aria-hidden="true" style="display:flex;flex-direction:column;gap:10px;margin-bottom:16px;opacity:.55;transition:opacity .2s">
-        <div onclick="payWithCard()" style="display:flex;align-items:center;gap:14px;padding:16px;border:1px solid #E5E7EB;border-radius:14px;cursor:pointer;transition:all .15s;background:#fff;position:relative" onmouseover="this.style.borderColor='#1A3D2E';this.style.background='#F0FDF4'" onmouseout="this.style.borderColor='#E5E7EB';this.style.background='#fff'">
+        <div class="pay-opt" onclick="payWithCard()" style="display:flex;align-items:center;gap:14px;padding:16px;border:1px solid #E5E7EB;border-radius:14px;cursor:pointer;transition:all .15s;background:#fff;position:relative" onmouseover="this.style.borderColor='#1A3D2E';this.style.background='#F0FDF4'" onmouseout="this.style.borderColor='#E5E7EB';this.style.background='#fff'">
           <div style="width:44px;height:44px;border-radius:12px;background:#EFF6FF;display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A3D2E" stroke-width="2" stroke-linecap="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></div>
           <div style="flex:1"><div style="font-size:15px;font-weight:700;color:#111827">Visa / Mastercard</div><div style="font-size:13px;color:#6B7280;margin-top:2px">Оплата в лари (GEL) — Bank of Georgia</div></div>
-          <div style="display:flex;gap:4px;flex-shrink:0"><svg width="32" height="20" viewBox="0 0 32 20"><rect width="32" height="20" rx="3" fill="#fff" stroke="#E5E7EB"/><text x="16" y="13" text-anchor="middle" fill="#1A1F71" font-size="7" font-weight="700" font-family="sans-serif">VISA</text></svg><svg width="32" height="20" viewBox="0 0 32 20"><rect width="32" height="20" rx="3" fill="#fff" stroke="#E5E7EB"/><circle cx="13" cy="10" r="6" fill="#EB001B" opacity=".8"/><circle cx="19" cy="10" r="6" fill="#F79E1B" opacity=".8"/></svg></div>
+          <div class="pay-badges" style="display:flex;gap:4px;flex-shrink:0"><svg width="32" height="20" viewBox="0 0 32 20"><rect width="32" height="20" rx="3" fill="#fff" stroke="#E5E7EB"/><text x="16" y="13" text-anchor="middle" fill="#1A1F71" font-size="7" font-weight="700" font-family="sans-serif">VISA</text></svg><svg width="32" height="20" viewBox="0 0 32 20"><rect width="32" height="20" rx="3" fill="#fff" stroke="#E5E7EB"/><circle cx="13" cy="10" r="6" fill="#EB001B" opacity=".8"/><circle cx="19" cy="10" r="6" fill="#F79E1B" opacity=".8"/></svg></div>
         </div>
-        <div onclick="payWithCrypto()" style="display:flex;align-items:center;gap:14px;padding:16px;border:1px solid #E5E7EB;border-radius:14px;cursor:pointer;transition:all .15s;background:#fff" onmouseover="this.style.borderColor='#D97706';this.style.background='#FFFBEB'" onmouseout="this.style.borderColor='#E5E7EB';this.style.background='#fff'">
+        <div class="pay-opt" onclick="payWithCrypto()" style="display:flex;align-items:center;gap:14px;padding:16px;border:1px solid #E5E7EB;border-radius:14px;cursor:pointer;transition:all .15s;background:#fff" onmouseover="this.style.borderColor='#D97706';this.style.background='#FFFBEB'" onmouseout="this.style.borderColor='#E5E7EB';this.style.background='#fff'">
           <div style="width:44px;height:44px;border-radius:12px;background:#FEF3C7;display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v2m0 8v2M9 8h4.5a2.5 2.5 0 010 5H9m0 0h5.5a2.5 2.5 0 010 5H9"/></svg></div>
           <div style="flex:1"><div style="font-size:15px;font-weight:700;color:#111827">Криптовалюта</div><div style="font-size:13px;color:#6B7280;margin-top:2px">BTC, ETH, USDT — через NOWPayments</div></div>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9CA3AF" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
         </div>
-        <div onclick="payWithSBP()" style="display:flex;align-items:center;gap:14px;padding:16px;border:1px solid #E5E7EB;border-radius:14px;cursor:pointer;transition:all .15s;background:#fff" onmouseover="this.style.borderColor='#1A3D2E';this.style.background='#F0FDF4'" onmouseout="this.style.borderColor='#E5E7EB';this.style.background='#fff'">
+        <div class="pay-opt" onclick="payWithSBP()" style="display:flex;align-items:center;gap:14px;padding:16px;border:1px solid #E5E7EB;border-radius:14px;cursor:pointer;transition:all .15s;background:#fff" onmouseover="this.style.borderColor='#1A3D2E';this.style.background='#F0FDF4'" onmouseout="this.style.borderColor='#E5E7EB';this.style.background='#fff'">
           <div style="width:44px;height:44px;border-radius:12px;background:#EFF6FF;display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18.01"/></svg></div>
           <div style="flex:1"><div style="font-size:15px;font-weight:700;color:#111827">СБП по QR-коду</div><div style="font-size:13px;color:#6B7280;margin-top:2px">Быстрый перевод через Систему Быстрых Платежей</div></div>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9CA3AF" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
@@ -357,7 +377,7 @@ h1{font-size:clamp(26px,4vw,36px);font-weight:600;color:#111827;letter-spacing:-
     
     <div style="display:flex;gap:14px;padding:12px 0;position:relative">
       <div style="width:40px;height:40px;border-radius:50%;background:#1A3D2E;color:#fff;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:700;flex-shrink:0;z-index:1">1</div>
-      <div><div style="font-size:15px;font-weight:700;color:#111827">Выберите экскурсию и дату</div><div style="font-size:13px;color:#6B7280;margin-top:2px">59 маршрутов — от пешеходных до многодневных</div></div>
+      <div><div style="font-size:15px;font-weight:700;color:#111827">Выберите экскурсию и дату</div><div style="font-size:13px;color:#6B7280;margin-top:2px">75 маршрутов — от пешеходных до многодневных</div></div>
     </div>
     <div style="display:flex;gap:14px;padding:12px 0;position:relative">
       <div style="width:40px;height:40px;border-radius:50%;background:#1A3D2E;color:#fff;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:700;flex-shrink:0;z-index:1">2</div>
@@ -408,7 +428,7 @@ var tourPrices = {};
 var tourOldPrices = {};
 var tourIds = {};
 var tourDays = {};
-document.querySelectorAll('#tour-list option').forEach(function(o){
+document.querySelectorAll('#f-tour-search option').forEach(function(o){
   tourPrices[o.value] = parseInt(o.getAttribute('data-price') || '0');
   tourOldPrices[o.value] = parseInt(o.getAttribute('data-old') || '0');
   tourIds[o.value] = o.getAttribute('data-id') || '';
@@ -522,7 +542,7 @@ function renderCalendar() {
   var startDay = (first.getDay() + 6) % 7; // Monday=0
   var daysInMonth = new Date(calYear, calMonth + 1, 0).getDate();
   // Empty cells
-  for (var e = 0; e < startDay; e++) html += '';
+  for (var e = 0; e < startDay; e++) html += '<div class="cal-day empty"></div>';
   // Days
   for (var day = 1; day <= daysInMonth; day++) {
     var dt = new Date(calYear, calMonth, day);
@@ -621,7 +641,7 @@ loadCalendarData();
 renderCalendar();
 
 // Re-render calendar when tour changes (to filter by tour)
-document.getElementById('f-tour-search').addEventListener('input', function(){
+document.getElementById('f-tour-search').addEventListener('change', function(){
   updatePrice();
   renderCalendar();
 });
@@ -631,7 +651,7 @@ document.getElementById('f-people').addEventListener('input', updatePrice);
 var params = new URLSearchParams(location.search);
 var tourParam = params.get('tour');
 if (tourParam) {
-  var opts = document.querySelectorAll('#tour-list option');
+  var opts = document.querySelectorAll('#f-tour-search option');
   for (var i = 0; i < opts.length; i++) {
     if (opts[i].getAttribute('data-id') === tourParam) {
       document.getElementById('f-tour-search').value = opts[i].value;
@@ -721,7 +741,7 @@ function getBookingData() {
   var price = tourPrices[tourVal] || 0;
   if (!price) {
     document.getElementById('f-tour-search').focus();
-    alert('Выберите экскурсию из списка — начните вводить название и кликните вариант.');
+    alert('Выберите экскурсию из списка.');
     return null;
   }
   var people = parseInt(document.getElementById('f-people').value) || 1;
@@ -884,8 +904,7 @@ setTimeout(loadGA,8000);
 })();
 setTimeout(function(){(function(){
 function loadPostHog(){if(window._phLoaded)return;window._phLoaded=true;
-!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug getPageviewId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
-posthog.init('phc_UqL7ychAdg6sU0vOBr2z8ACypL6NgvRUKQ9u9If99Il',{api_host:'https://us.i.posthog.com',person_profiles:'identified_only',capture_pageview:true,capture_pageleave:true,autocapture:true});}
+}
 ['scroll','touchstart','mousemove','keydown','click'].forEach(function(e){document.addEventListener(e,loadPostHog,{once:true,passive:true})});
 setTimeout(loadPostHog,8000);
 })();},3500);

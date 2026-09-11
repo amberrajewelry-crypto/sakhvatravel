@@ -47,6 +47,7 @@ h1{font-size:clamp(26px,4vw,36px);font-weight:600;color:#111827;letter-spacing:-
 .field textarea{resize:none}
 .field-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 @media(max-width:480px){.field-row{grid-template-columns:1fr}}
+@media(max-width:768px){.field input,.field select,.field textarea{font-size:16px}main{padding-bottom:84px}}@media(max-width:480px){.pay-opt{gap:10px!important;padding:14px!important}.pay-badges{display:none!important}}.field select{-webkit-appearance:none;appearance:none;padding-right:40px;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%236B7280' stroke-width='2'%3E%3Cpath d='M4 6l4 4 4-4'/%3E%3C/svg%3E") no-repeat right 14px center}.field select:invalid{color:#9CA3AF}.field select option{color:#111827}.field select{text-overflow:ellipsis}
 .price-summary{background:#F0FDF4;border-radius:12px;padding:20px;margin-bottom:24px;border:1px solid #C8E6C9}
 .ps-row{display:flex;justify-content:space-between;font-size:14px;padding:6px 0}
 .ps-row:not(:last-child){border-bottom:1px solid #E8F5E9}
@@ -146,68 +147,87 @@ h1{font-size:clamp(26px,4vw,36px);font-weight:600;color:#111827;letter-spacing:-
     <form id="booking-form" onsubmit="return handleSubmit(event)">
       <div class="field">
         <label for="f-tour">ტური</label>
-        <input aria-label="ტური" type="text" id="f-tour-search" list="tour-list" placeholder="დაიწყეთ ტურის სახელის აკრეფა..." required autocomplete="off" style="width:100%;padding:12px 16px;border:1px solid #E5E7EB;border-radius:12px;font-size:15px;font-family:inherit;outline:none;transition:border-color .2s">
-        <datalist id="tour-list">
-          <option value="Tbilisi Art Tour — from ₾145" data-id="art-tur-tbilisi" data-price="145" data-old="180">
-          <option value="Chacha Masterclass — from ₾170" data-id="chacha-master-klass" data-price="170" data-old="215">
-          <option value="Wine Tasting in Kakheti — from ₾225" data-id="degustatsiya-vina-kakheti" data-price="225" data-old="280">
-          <option value="Tbilisi Sulfur Baths — from ₾135" data-id="ekskursiya-abanotubani" data-price="135" data-old="170">
-          <option value="Ananuri from Tbilisi — from ₾175" data-id="ekskursiya-ananuri-iz-tbilisi" data-price="175" data-old="220">
-          <option value="Borjomi from Tbilisi — from ₾178" data-id="ekskursiya-borjomi-iz-tbilisi" data-price="178" data-old="225">
-          <option value="David Gareja — from ₾225" data-id="ekskursiya-david-gareji" data-price="225" data-old="280">
-          <option value="Gomis Mta from Batumi — from ₾220" data-id="ekskursiya-gomis-mta-iz-batumi" data-price="220" data-old="275">
-          <option value="Gori & Uplistsikhe — from ₾155" data-id="ekskursiya-gori-iz-tbilisi" data-price="155" data-old="195">
-          <option value="Gudauri from Tbilisi — from ₾225" data-id="ekskursiya-gudauri-iz-tbilisi" data-price="225" data-old="280">
-          <option value="Jvari from Tbilisi — from ₾145" data-id="ekskursiya-jvari-iz-tbilisi" data-price="145" data-old="180">
-          <option value="Kakheti from Tbilisi — from ₾170" data-id="ekskursiya-kakheti-iz-tbilisi" data-price="170" data-old="215">
-          <option value="Kazbegi from Tbilisi — from ₾175" data-id="ekskursiya-kazbegi-iz-tbilisi" data-price="175" data-old="220">
-          <option value="Mtatsminda — from ₾145" data-id="ekskursiya-mtatsminda" data-price="145" data-old="180">
-          <option value="Mtskheta from Tbilisi — from ₾98" data-id="ekskursiya-mtskheta-iz-tbilisi" data-price="77" data-old="95">
-          <option value="Narikala Fortress — from ₾135" data-id="ekskursiya-narikala" data-price="135" data-old="170">
-          <option value="Sighnaghi from Tbilisi — from ₾175" data-id="ekskursiya-sighnaghi-iz-tbilisi" data-price="175" data-old="220">
-          <option value="Old Tbilisi — from ₾135" data-id="ekskursiya-stary-tbilisi" data-price="135" data-old="170">
-          <option value="Svaneti from Tbilisi — from ₾345" data-id="ekskursiya-svaneti-iz-tbilisi" data-price="345" data-old="430">
-          <option value="Telavi from Tbilisi — from ₾185" data-id="ekskursiya-telavi-iz-tbilisi" data-price="185" data-old="230">
-          <option value="Truso Valley — from ₾265" data-id="ekskursiya-truso" data-price="265" data-old="330">
-          <option value="Tusheti — from ₾345" data-id="ekskursiya-tusheti" data-price="345" data-old="430">
-          <option value="Uplistsikhe from Tbilisi — from ₾175" data-id="ekskursiya-uplistsikhe-iz-tbilisi" data-price="175" data-old="220">
-          <option value="Vardzia from Tbilisi — from ₾295" data-id="ekskursiya-vardzia" data-price="295" data-old="370">
-          <option value="Zugdidi — from ₾255" data-id="ekskursiya-zugdidi" data-price="255" data-old="400">
-          <option value="Tbilisi Family Tour — from ₾165" data-id="family-tur-tbilisi" data-price="165" data-old="205">
-          <option value="Tbilisi Photo Tour — from ₾145" data-id="fotosessiya-tbilisi" data-price="145" data-old="180">
-          <option value="Tbilisi Food Tour — from ₾165" data-id="gastronomicheskiy-tur-tbilisi" data-price="165" data-old="205">
-          <option value="Group Tour 10+ people — from ₾95" data-id="gruppa-10-chelovek-tbilisi" data-price="95" data-old="120">
-          <option value="Khachapuri Masterclass — from ₾145" data-id="khachapuri-master-klass" data-price="145" data-old="180">
-          <option value="Corporate Tour — from ₾2200" data-id="korporativniy-tur-tbilisi" data-price="2200" data-old="2750">
-          <option value="Qvevri Wine Tour — from ₾175" data-id="kvevri-vino-tur" data-price="175" data-old="220">
-          <option value="Tbilisi Night Tour — from ₾100" data-id="nochnaya-ekskursiya-tbilisi" data-price="94" data-old="120">
-          <option value="Adventure Tour — from ₾395" data-id="priklyuchencheskiy-tur-gruziya" data-price="395" data-old="495">
-          <option value="Romantic Tour — from ₾165" data-id="romanticheskiy-tur-tbilisi" data-price="165" data-old="205">
-          <option value="Tbilisi Shopping Tour — from ₾145" data-id="shopping-tur-tbilisi" data-price="145" data-old="180">
-          <option value="Soviet Tbilisi Tour — from ₾135" data-id="sovetskiy-tur-tbilisi" data-price="135" data-old="170">
-          <option value="Wedding Tour — from ₾1500" data-id="svadebny-tur-gruziya" data-price="1500" data-old="1875">
-          <option value="Airport Transfer — from ₾60" data-id="transfer-aeroport-tbilisi" data-price="60" data-old="75">
-          <option value="Batumi 2 days — from ₾650" data-id="tur-batumi-2-dnya" data-price="650" data-old="815">
-          <option value="Batumi from Tbilisi — from ₾250" data-id="tur-batumi-iz-tbilisi" data-price="250" data-old="315">
-          <option value="Tbilisi Kids Tour — from ₾135" data-id="tur-dlya-detey-tbilisi" data-price="135" data-old="170">
-          <option value="Relocation Tour — from ₾123" data-id="tur-dlya-emigrantov-tbilisi" data-price="123" data-old="155">
-          <option value="Senior Tour — from ₾145" data-id="tur-dlya-pensionerov-gruziya" data-price="145" data-old="180">
-          <option value="Georgia 10 days — from ₾3200" data-id="tur-gruziya-10-dney" data-price="3200" data-old="4000">
-          <option value="Georgia 3 days — from ₾450" data-id="tur-gruziya-3-dnya" data-price="450" data-old="565">
-          <option value="Georgia 5 days — from ₾1200" data-id="tur-gruziya-5-dney" data-price="1200" data-old="1500">
-          <option value="Georgia 7 days — from ₾595" data-id="tur-gruziya-7-dney" data-price="595" data-old="745">
-          <option value="Georgia + Armenia — from ₾950" data-id="tur-gruziya-armeniya" data-price="950" data-old="1190">
-          <option value="Georgia Summer Tour — from ₾750" data-id="tur-gruziya-leto" data-price="750" data-old="940">
-          <option value="New Year Tour — from ₾850" data-id="tur-gruziya-noviy-god" data-price="850" data-old="1065">
-          <option value="Kazbegi + Kakheti 2 days — from ₾550" data-id="tur-kazbegi-kakheti-2-dnya" data-price="550" data-old="690">
-          <option value="Kutaisi from Tbilisi — from ₾183" data-id="tur-kutaisi-iz-tbilisi" data-price="183" data-old="230">
-          <option value="Tbilisi Churches Tour — from ₾145" data-id="tur-po-hramam-tbilisi" data-price="145" data-old="180">
-          <option value="Svaneti 4 days — from ₾750" data-id="tur-svaneti-4-dnya" data-price="750" data-old="940">
-          <option value="All Georgia Tour — from ₾1400" data-id="tur-vsya-gruziya" data-price="1400" data-old="1750">
-          <option value="Alazani Valley — from ₾175" data-id="vinniy-marshrut-alazani" data-price="175" data-old="220">
-          <option value="Tbilisi Wine Tour — from ₾165" data-id="vinniy-tur-tbilisi" data-price="165" data-old="205">
-          <option value="Kindzmarauli Winery — from ₾225" data-id="vinodelie-kindzmarauli" data-price="225" data-old="280">
-        </datalist>
+        <select aria-label="ტური" id="f-tour-search" required>
+          <option value="" disabled selected>აირჩიეთ ტური</option>
+          <option value="5-დღიანი ტური თბილისიდან ბათუმამდე 2026 — ₾650-დან" data-id="tur-batumi-2-dnya" data-price="650" data-old="815" data-days="2">5-დღიანი ტური თბილისიდან ბათუმამდე 2026 — ₾650-დან</option>
+          <option value="7-დღიანი ტური საქართველოში 2026 — ₾595-დან" data-id="tur-gruziya-7-dney" data-price="595" data-old="745" data-days="7">7-დღიანი ტური საქართველოში 2026 — ₾595-დან</option>
+          <option value="აბანოთუბნის ტური — გოგირდის აბანოები, დამალული ჩანჩქერი და სამი სარწმუნოება — ₾135-დან" data-id="ekskursiya-abanotubani" data-price="135" data-old="170">აბანოთუბნის ტური — გოგირდის აბანოები, დამალული ჩანჩქერი და სამი სარწმუნოება — ₾135-დან</option>
+          <option value="აეროპორტის ტრანსფერი თბილისი — ₾90-დან" data-id="transfer-aeroport-tbilisi" data-price="90" data-old="115">აეროპორტის ტრანსფერი თბილისი — ₾90-დან</option>
+          <option value="ალაზნის ველის ღვინის მარშრუტი 2026 — ₾175-დან" data-id="vinniy-marshrut-alazani" data-price="175" data-old="220">ალაზნის ველის ღვინის მარშრუტი 2026 — ₾175-დან</option>
+          <option value="ანანურის ციხის ტური თბილისიდან — ₾175-დან" data-id="ekskursiya-ananuri-iz-tbilisi" data-price="175" data-old="220">ანანურის ციხის ტური თბილისიდან — ₾175-დან</option>
+          <option value="ბავშვების ტური თბილისში — ₾135-დან" data-id="tur-dlya-detey-tbilisi" data-price="135" data-old="170">ბავშვების ტური თბილისში — ₾135-დან</option>
+          <option value="ბათუმის ტური თბილისიდან 2026 — ₾250-დან" data-id="tur-batumi-iz-tbilisi" data-price="250" data-old="315">ბათუმის ტური თბილისიდან 2026 — ₾250-დან</option>
+          <option value="ბაკურიანის ტური თბილისიდან — მთის კურორტი და კბილანა მატარებელი — ₾160-დან" data-id="ekskursiya-bakuriani-iz-tbilisi" data-price="160" data-old="200">ბაკურიანის ტური თბილისიდან — მთის კურორტი და კბილანა მატარებელი — ₾160-დან</option>
+          <option value="ბორჯომის ტური თბილისიდან — მინერალური წყაროები, ეროვნული პარკი და რაბათის ციხე — ₾178-დან" data-id="ekskursiya-borjomi-iz-tbilisi" data-price="178" data-old="225">ბორჯომის ტური თბილისიდან — მინერალური წყაროები, ეროვნული პარკი და რაბათის ციხე — ₾178-დან</option>
+          <option value="გველეთის ჩანჩქერის ლაშქრობა ყაზბეგიდან — ₾350-დან" data-id="hayking-gveleti-iz-kazbegi" data-price="350" data-old="440">გველეთის ჩანჩქერის ლაშქრობა ყაზბეგიდან — ₾350-დან</option>
+          <option value="გომის მთა და მაჭახელა ბათუმიდან — ₾220-დან" data-id="ekskursiya-gomis-mta-iz-batumi" data-price="220" data-old="275">გომის მთა და მაჭახელა ბათუმიდან — ₾220-დან</option>
+          <option value="გორი და უფლისციხის ტური თბილისიდან — სრული დღე — ₾155-დან" data-id="ekskursiya-gori-iz-tbilisi" data-price="155" data-old="195">გორი და უფლისციხის ტური თბილისიდან — სრული დღე — ₾155-დან</option>
+          <option value="გუდაურის ტური თბილისიდან — საქართველოს სამხედრო გზა და მეგობრობის თაღი — ₾225-დან" data-id="ekskursiya-gudauri-iz-tbilisi" data-price="225" data-old="280">გუდაურის ტური თბილისიდან — საქართველოს სამხედრო გზა და მეგობრობის თაღი — ₾225-დან</option>
+          <option value="დავით გარეჯის ტური — გამოქვაბულის მონასტერი და შუასაუკუნეების ფრესკები უდაბნო ქედზე — ₾225-დან" data-id="ekskursiya-david-gareji" data-price="225" data-old="280">დავით გარეჯის ტური — გამოქვაბულის მონასტერი და შუასაუკუნეების ფრესკები უდაბნო ქედზე — ₾225-დან</option>
+          <option value="დასავლეთ საქართველოს კანიონების ტური — მარტვილი, ოკაცე &amp;amp; პრომეთეს მღვიმე — ₾180-დან" data-id="ekskursiya-kanyony-zapadnoy-gruzii" data-price="180" data-old="225">დასავლეთ საქართველოს კანიონების ტური — მარტვილი, ოკაცე &amp;amp; პრომეთეს მღვიმე — ₾180-დან</option>
+          <option value="დაშბაშის კანიონის ტური თბილისიდან — ბრილიანტის ჩანჩქერი და შუშის ხიდი — ₾135-დან" data-id="ekskursiya-dashbashi-iz-tbilisi" data-price="135" data-old="170">დაშბაშის კანიონის ტური თბილისიდან — ბრილიანტის ჩანჩქერი და შუშის ხიდი — ₾135-დან</option>
+          <option value="ექსკურსია ბათუმიდან ქუთაისში — ₾195-დან — ₾195-დან" data-id="ekskursiya-batumi-kutaisi" data-price="195" data-old="245">ექსკურსია ბათუმიდან ქუთაისში — ₾195-დან — ₾195-დან</option>
+          <option value="ექსკურსიები ქუთაისიდან — ₾165-დან — ₾165-დან" data-id="ekskursii-iz-kutaisi" data-price="165" data-old="205">ექსკურსიები ქუთაისიდან — ₾165-დან — ₾165-დან</option>
+          <option value="ვარძიის გამოქვაბულის მონასტერი ერთდღიანი ტური თბილისიდან — ₾295-დან" data-id="ekskursiya-vardzia" data-price="295" data-old="370">ვარძიის გამოქვაბულის მონასტერი ერთდღიანი ტური თბილისიდან — ₾295-დან</option>
+          <option value="ზუგდიდის ტური — დადიანების სასახლის ერთდღიანი ტური — ₾255-დან" data-id="ekskursiya-zugdidi" data-price="255" data-old="320">ზუგდიდის ტური — დადიანების სასახლის ერთდღიანი ტური — ₾255-დან</option>
+          <option value="თბილისი გასტრონომიული ტური 2026 — ₾165-დან" data-id="gastronomicheskiy-tur-tbilisi" data-price="165" data-old="205">თბილისი გასტრონომიული ტური 2026 — ₾165-დან</option>
+          <option value="თბილისის არტ-ტური 2026 — ₾145-დან" data-id="art-tur-tbilisi" data-price="145" data-old="180">თბილისის არტ-ტური 2026 — ₾145-დან</option>
+          <option value="თბილისის ეკლესიებისა &amp;amp; ტაძრების ტური — ₾145-დან" data-id="tur-po-hramam-tbilisi" data-price="145" data-old="180">თბილისის ეკლესიებისა &amp;amp; ტაძრების ტური — ₾145-დან</option>
+          <option value="თბილისის ფოტოტური 2026 — ₾145-დან" data-id="fotosessiya-tbilisi" data-price="145" data-old="180">თბილისის ფოტოტური 2026 — ₾145-დან</option>
+          <option value="თბილისის ღვინის ბარების ტური 2026 — ₾165-დან" data-id="vinniy-tur-tbilisi" data-price="165" data-old="205">თბილისის ღვინის ბარების ტური 2026 — ₾165-დან</option>
+          <option value="თელავის ტური თბილისიდან — კახეთის დედაქალაქი — ₾185-დან" data-id="ekskursiya-telavi-iz-tbilisi" data-price="185" data-old="230">თელავის ტური თბილისიდან — კახეთის დედაქალაქი — ₾185-დან</option>
+          <option value="თრუსოს ველის ლაშქრობა ყაზბეგიდან — ₾500-დან" data-id="hayking-truso-iz-kazbegi" data-price="500" data-old="625">თრუსოს ველის ლაშქრობა ყაზბეგიდან — ₾500-დან</option>
+          <option value="თრუსოს ხეობის ტური თბილისიდან — ₾265-დან" data-id="ekskursiya-truso" data-price="265" data-old="330">თრუსოს ხეობის ტური თბილისიდან — ₾265-დან</option>
+          <option value="თუშეთის ტური თბილისიდან — ₾345-დან" data-id="ekskursiya-tusheti" data-price="345" data-old="430" data-days="2">თუშეთის ტური თბილისიდან — ₾345-დან</option>
+          <option value="კორპორატიული ტური თბილისში — ₾2200-დან" data-id="korporativniy-tur-tbilisi" data-price="2200" data-old="2750">კორპორატიული ტური თბილისში — ₾2200-დან</option>
+          <option value="კორულდის ტბები მესტიიდან ჯიპით — ₾400-დან" data-id="ozero-koruldi-mestia" data-price="400" data-old="500">კორულდის ტბები მესტიიდან ჯიპით — ₾400-დან</option>
+          <option value="ლაშქრობა საქართველოს მთებში — ₾190-დან — ₾190-დან" data-id="pohod-v-gory-gruzia" data-price="190" data-old="240" data-days="4">ლაშქრობა საქართველოს მთებში — ₾190-დან — ₾190-დან</option>
+          <option value="მთაწმინდის ტური — თბილისი — ₾145-დან" data-id="ekskursiya-mtatsminda" data-price="145" data-old="180">მთაწმინდის ტური — თბილისი — ₾145-დან</option>
+          <option value="მთელი საქართველოს ტური 2026 — ₾1400-დან" data-id="tur-vsya-gruziya" data-price="1400" data-old="1750" data-days="14">მთელი საქართველოს ტური 2026 — ₾1400-დან</option>
+          <option value="ნავით სეირნობა მტკვარზე თბილისში — მზის ჩასვლის კრუიზი — ₾80-დან" data-id="progulka-po-kure-tbilisi" data-price="80" data-old="100">ნავით სეირნობა მტკვარზე თბილისში — მზის ჩასვლის კრუიზი — ₾80-დან</option>
+          <option value="ნარიყალას ციხის ტური — საბაგირო, პანორამა &amp;amp; ბოტანიკური ბაღის ჩანჩქერი — ₾135-დან" data-id="ekskursiya-narikala" data-price="135" data-old="170">ნარიყალას ციხის ტური — საბაგირო, პანორამა &amp;amp; ბოტანიკური ბაღის ჩანჩქერი — ₾135-დან</option>
+          <option value="ოჯახური ტური თბილისში — ₾165-დან" data-id="family-tur-tbilisi" data-price="165" data-old="205">ოჯახური ტური თბილისში — ₾165-დან</option>
+          <option value="რაჭის ტური თბილისიდან — ნიკორწმინდა, შაორის ტბა &amp;amp; ხვანჭკარას ღვინო — ₾290-დან" data-id="ekskursiya-racha-iz-tbilisi" data-price="290" data-old="365">რაჭის ტური თბილისიდან — ნიკორწმინდა, შაორის ტბა &amp;amp; ხვანჭკარას ღვინო — ₾290-დან</option>
+          <option value="რთველი — ყურძნის მოსავალი კახეთში — ₾225-დან" data-id="rtveli-grape-harvest" data-price="225" data-old="280">რთველი — ყურძნის მოსავალი კახეთში — ₾225-დან</option>
+          <option value="რომანტიკული ტური თბილისში — ₾165-დან" data-id="romanticheskiy-tur-tbilisi" data-price="165" data-old="205">რომანტიკული ტური თბილისში — ₾165-დან</option>
+          <option value="საბჭოთა არქიტექტურა თბილისში — ბრუტალიზმის საფეხმავლო ტური — ₾135-დან" data-id="sovetskiy-tur-tbilisi" data-price="135" data-old="170">საბჭოთა არქიტექტურა თბილისში — ბრუტალიზმის საფეხმავლო ტური — ₾135-დან</option>
+          <option value="საზაფხულო ტური საქართველოში — ₾750-დან" data-id="tur-gruziya-leto" data-price="750" data-old="940" data-days="7">საზაფხულო ტური საქართველოში — ₾750-დან</option>
+          <option value="სათავგადასავლო ტური საქართველოში — ₾395-დან" data-id="priklyuchencheskiy-tur-gruziya" data-price="395" data-old="495" data-days="3">სათავგადასავლო ტური საქართველოში — ₾395-დან</option>
+          <option value="საქართველო 10-დღიანი ტური 2026 — სრული ჩაძირვა — ₾3200-დან" data-id="tur-gruziya-10-dney" data-price="3200" data-old="4000" data-days="10">საქართველო 10-დღიანი ტური 2026 — სრული ჩაძირვა — ₾3200-დან</option>
+          <option value="საქართველოს 3-დღიანი ტური 2026 — ₾450-დან" data-id="tur-gruziya-3-dnya" data-price="450" data-old="565" data-days="3">საქართველოს 3-დღიანი ტური 2026 — ₾450-დან</option>
+          <option value="საქართველოს 5-დღიანი ტური 2026 — ₾1200-დან" data-id="tur-gruziya-5-dney" data-price="1200" data-old="1500" data-days="5">საქართველოს 5-დღიანი ტური 2026 — ₾1200-დან</option>
+          <option value="საქართველო–სომხეთის ტური — ₾950-დან" data-id="tur-gruziya-armeniya" data-price="950" data-old="1190" data-days="7">საქართველო–სომხეთის ტური — ₾950-დან</option>
+          <option value="საქორწინო ტური საქართველოში — ₾1500-დან" data-id="svadebny-tur-gruziya" data-price="1500" data-old="1875" data-days="3">საქორწინო ტური საქართველოში — ₾1500-დან</option>
+          <option value="სახალხო ახალი წლის ტური საქართველოში — ₾850-დან" data-id="tur-gruziya-noviy-god" data-price="850" data-old="1065" data-days="5">სახალხო ახალი წლის ტური საქართველოში — ₾850-დან</option>
+          <option value="სვანეთის ტური 2026 — ₾750-დან" data-id="tur-svaneti-4-dnya" data-price="750" data-old="940" data-days="5">სვანეთის ტური 2026 — ₾750-დან</option>
+          <option value="სვანეთის ტური თბილისიდან — ₾345-დან" data-id="ekskursiya-svaneti-iz-tbilisi" data-price="345" data-old="430" data-days="3">სვანეთის ტური თბილისიდან — ₾345-დან</option>
+          <option value="სიღნაღის ტური თბილისიდან — ₾175-დან" data-id="ekskursiya-sighnaghi-iz-tbilisi" data-price="175" data-old="220">სიღნაღის ტური თბილისიდან — ₾175-დან</option>
+          <option value="ტური კახეთში თბილისიდან — ღვინო, მონასტრები და სიღნაღი — ₾170-დან" data-id="ekskursiya-kakheti-iz-tbilisi" data-price="170" data-old="215">ტური კახეთში თბილისიდან — ღვინო, მონასტრები და სიღნაღი — ₾170-დან</option>
+          <option value="ტური მცხეთაში თბილისიდან — ₾98-დან" data-id="ekskursiya-mtskheta-iz-tbilisi" data-price="98" data-old="125">ტური მცხეთაში თბილისიდან — ₾98-დან</option>
+          <option value="ურეკის ტური თბილისიდან — შავი ზღვის მაგნიტური ქვიშის პლაჟი — ₾180-დან" data-id="ekskursiya-ureki-iz-tbilisi" data-price="180" data-old="225">ურეკის ტური თბილისიდან — შავი ზღვის მაგნიტური ქვიშის პლაჟი — ₾180-დან</option>
+          <option value="უფლისციხის გამოქვაბულთა ქალაქის ტური თბილისიდან — ₾175-დან" data-id="ekskursiya-uplistsikhe-iz-tbilisi" data-price="175" data-old="220">უფლისციხის გამოქვაბულთა ქალაქის ტური თბილისიდან — ₾175-დან</option>
+          <option value="უშგული და შხარას მყინვარი — მთელი დღე — ₾750-დან" data-id="ushguli-shkhara-lednik" data-price="750" data-old="940">უშგული და შხარას მყინვარი — მთელი დღე — ₾750-დან</option>
+          <option value="უშგული მესტიიდან — UNESCO სოფელი — ₾650-დან" data-id="ushguli-iz-mestii" data-price="650" data-old="815">უშგული მესტიიდან — UNESCO სოფელი — ₾650-დან</option>
+          <option value="ქვევრის ღვინის ტური: უძველესი ტრადიციები — ₾175-დან" data-id="kvevri-vino-tur" data-price="175" data-old="220">ქვევრის ღვინის ტური: უძველესი ტრადიციები — ₾175-დან</option>
+          <option value="ქუთაისის ტური თბილისიდან 2026 — ₾183-დან" data-id="tur-kutaisi-iz-tbilisi" data-price="183" data-old="230">ქუთაისის ტური თბილისიდან 2026 — ₾183-დან</option>
+          <option value="ღამის ტური თბილისში — ₾100-დან" data-id="nochnaya-ekskursiya-tbilisi" data-price="100" data-old="125">ღამის ტური თბილისში — ₾100-დან</option>
+          <option value="ღვინის დაგემოვნება კახეთში 2026 — ₾225-დან" data-id="degustatsiya-vina-kakheti" data-price="225" data-old="280">ღვინის დაგემოვნება კახეთში 2026 — ₾225-დან</option>
+          <option value="ყაზბეგი და კახეთი — ორდღიანი ტური 2026 — ₾550-დან" data-id="tur-kazbegi-kakheti-2-dnya" data-price="550" data-old="690" data-days="4">ყაზბეგი და კახეთი — ორდღიანი ტური 2026 — ₾550-დან</option>
+          <option value="ყაზბეგის ტური თბილისიდან — ₾175-დან" data-id="ekskursiya-kazbegi-iz-tbilisi" data-price="175" data-old="220">ყაზბეგის ტური თბილისიდან — ₾175-დან</option>
+          <option value="ყინძმარაულის მარნის ტური 2026 — ₾225-დან" data-id="vinodelie-kindzmarauli" data-price="225" data-old="280">ყინძმარაულის მარნის ტური 2026 — ₾225-დან</option>
+          <option value="შოპინგ ტური თბილისში — ₾145-დან" data-id="shopping-tur-tbilisi" data-price="145" data-old="180">შოპინგ ტური თბილისში — ₾145-დან</option>
+          <option value="ციფრული ნომადის მისამართვის ტური თბილისი — ქოვორქინგი &amp;amp; კაფეები — ₾123-დან" data-id="tur-dlya-emigrantov-tbilisi" data-price="123" data-old="155">ციფრული ნომადის მისამართვის ტური თბილისი — ქოვორქინგი &amp;amp; კაფეები — ₾123-დან</option>
+          <option value="ცხენით ტური სტეფანწმინდაში (ყაზბეგი) — ცხენით გერგეტისკენ — ₾240-დან" data-id="konny-tur-stepantsminda" data-price="240" data-old="300">ცხენით ტური სტეფანწმინდაში (ყაზბეგი) — ცხენით გერგეტისკენ — ₾240-დან</option>
+          <option value="ძველი თბილისის ფეხით ტური — დამალული ეზოები და 1500 წლიანი ისტორია — ₾135-დან" data-id="ekskursiya-stary-tbilisi" data-price="135" data-old="170">ძველი თბილისის ფეხით ტური — დამალული ეზოები და 1500 წლიანი ისტორია — ₾135-დან</option>
+          <option value="ჭალაადის მყინვარი მესტიიდან — ჯიპი და ლაშქრობა — ₾400-დან" data-id="lednik-chalaadi-mestia" data-price="400" data-old="500">ჭალაადის მყინვარი მესტიიდან — ჯიპი და ლაშქრობა — ₾400-დან</option>
+          <option value="ჭაჭის მასტერკლასი კახეთში 2026 — ₾170-დან" data-id="chacha-master-klass" data-price="170" data-old="215">ჭაჭის მასტერკლასი კახეთში 2026 — ₾170-დან</option>
+          <option value="ხანდაზმულთა ტური საქართველოში — ₾145-დან" data-id="tur-dlya-pensionerov-gruziya" data-price="145" data-old="180">ხანდაზმულთა ტური საქართველოში — ₾145-დან</option>
+          <option value="ხაჭაპურის მასტერკლასი თბილისში 2026 — ₾145-დან" data-id="khachapuri-master-klass" data-price="145" data-old="180">ხაჭაპურის მასტერკლასი თბილისში 2026 — ₾145-დან</option>
+          <option value="ხევსურეთის ტური თბილისიდან — შატილი და მუცო (4x4) — ₾340-დან" data-id="ekskursiya-hevsuretia-shatili" data-price="340" data-old="425">ხევსურეთის ტური თბილისიდან — შატილი და მუცო (4x4) — ₾340-დან</option>
+          <option value="ჯგუფური ტური თბილისი — 10+ ადამიანი — ₾95-დან" data-id="gruppa-10-chelovek-tbilisi" data-price="95" data-old="120">ჯგუფური ტური თბილისი — 10+ ადამიანი — ₾95-დან</option>
+          <option value="ჯვრის მონასტრის ტური თბილისიდან — ₾145-დან" data-id="ekskursiya-jvari-iz-tbilisi" data-price="145" data-old="180">ჯვრის მონასტრის ტური თბილისიდან — ₾145-დან</option>
+          <option value="ჯუთა–ჭაუხის ლაშქრობა ყაზბეგიდან — ₾500-დან" data-id="hayking-juta-chaukhi-iz-kazbegi" data-price="500" data-old="625">ჯუთა–ჭაუხის ლაშქრობა ყაზბეგიდან — ₾500-დან</option>
+        </select>
         <div class="urgency-inline" id="tour-urgency" style="display:none"><span class="urgency-dot"></span> <span id="tour-urgency-text"></span></div>
       </div>
 
@@ -298,17 +318,17 @@ h1{font-size:clamp(26px,4vw,36px);font-weight:600;color:#111827;letter-spacing:-
 
       <div id="pay-methods" style="font-size:13px;font-weight:600;color:#374151;margin-bottom:10px;margin-top:24px;scroll-margin-top:80px">აირჩიეთ გადახდის მეთოდი</div>
       <div id="pay-block" style="display:flex;flex-direction:column;gap:10px;margin-bottom:16px;opacity:.55;transition:opacity .2s">
-        <div onclick="payWithCard()" style="display:flex;align-items:center;gap:14px;padding:16px;border:1px solid #E5E7EB;border-radius:14px;cursor:pointer;transition:all .15s;background:#fff;position:relative" onmouseover="this.style.borderColor='#1A3D2E';this.style.background='#F0FDF4'" onmouseout="this.style.borderColor='#E5E7EB';this.style.background='#fff'">
+        <div class="pay-opt" onclick="payWithCard()" style="display:flex;align-items:center;gap:14px;padding:16px;border:1px solid #E5E7EB;border-radius:14px;cursor:pointer;transition:all .15s;background:#fff;position:relative" onmouseover="this.style.borderColor='#1A3D2E';this.style.background='#F0FDF4'" onmouseout="this.style.borderColor='#E5E7EB';this.style.background='#fff'">
           <div style="width:44px;height:44px;border-radius:12px;background:#EFF6FF;display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A3D2E" stroke-width="2" stroke-linecap="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></div>
           <div style="flex:1"><div style="font-size:15px;font-weight:700;color:#111827">Visa / Mastercard</div><div style="font-size:13px;color:#6B7280;margin-top:2px">გადახდა ლარში (GEL) — Bank of Georgia</div></div>
-          <div style="display:flex;gap:4px;flex-shrink:0"><svg width="32" height="20" viewBox="0 0 32 20"><rect width="32" height="20" rx="3" fill="#fff" stroke="#E5E7EB"/><text x="16" y="13" text-anchor="middle" fill="#1A1F71" font-size="7" font-weight="700" font-family="sans-serif">VISA</text></svg><svg width="32" height="20" viewBox="0 0 32 20"><rect width="32" height="20" rx="3" fill="#fff" stroke="#E5E7EB"/><circle cx="13" cy="10" r="6" fill="#EB001B" opacity=".8"/><circle cx="19" cy="10" r="6" fill="#F79E1B" opacity=".8"/></svg></div>
+          <div class="pay-badges" style="display:flex;gap:4px;flex-shrink:0"><svg width="32" height="20" viewBox="0 0 32 20"><rect width="32" height="20" rx="3" fill="#fff" stroke="#E5E7EB"/><text x="16" y="13" text-anchor="middle" fill="#1A1F71" font-size="7" font-weight="700" font-family="sans-serif">VISA</text></svg><svg width="32" height="20" viewBox="0 0 32 20"><rect width="32" height="20" rx="3" fill="#fff" stroke="#E5E7EB"/><circle cx="13" cy="10" r="6" fill="#EB001B" opacity=".8"/><circle cx="19" cy="10" r="6" fill="#F79E1B" opacity=".8"/></svg></div>
         </div>
-        <div onclick="payWithCrypto()" style="display:flex;align-items:center;gap:14px;padding:16px;border:1px solid #E5E7EB;border-radius:14px;cursor:pointer;transition:all .15s;background:#fff" onmouseover="this.style.borderColor='#D97706';this.style.background='#FFFBEB'" onmouseout="this.style.borderColor='#E5E7EB';this.style.background='#fff'">
+        <div class="pay-opt" onclick="payWithCrypto()" style="display:flex;align-items:center;gap:14px;padding:16px;border:1px solid #E5E7EB;border-radius:14px;cursor:pointer;transition:all .15s;background:#fff" onmouseover="this.style.borderColor='#D97706';this.style.background='#FFFBEB'" onmouseout="this.style.borderColor='#E5E7EB';this.style.background='#fff'">
           <div style="width:44px;height:44px;border-radius:12px;background:#FEF3C7;display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v2m0 8v2M9 8h4.5a2.5 2.5 0 010 5H9m0 0h5.5a2.5 2.5 0 010 5H9"/></svg></div>
           <div style="flex:1"><div style="font-size:15px;font-weight:700;color:#111827">კრიპტოვალუტა</div><div style="font-size:13px;color:#6B7280;margin-top:2px">BTC, ETH, USDT — NOWPayments-ის მეშვეობით</div></div>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9CA3AF" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
         </div>
-        <div onclick="payWithSBP()" style="display:flex;align-items:center;gap:14px;padding:16px;border:1px solid #E5E7EB;border-radius:14px;cursor:pointer;transition:all .15s;background:#fff" onmouseover="this.style.borderColor='#1A3D2E';this.style.background='#F0FDF4'" onmouseout="this.style.borderColor='#E5E7EB';this.style.background='#fff'">
+        <div class="pay-opt" onclick="payWithSBP()" style="display:flex;align-items:center;gap:14px;padding:16px;border:1px solid #E5E7EB;border-radius:14px;cursor:pointer;transition:all .15s;background:#fff" onmouseover="this.style.borderColor='#1A3D2E';this.style.background='#F0FDF4'" onmouseout="this.style.borderColor='#E5E7EB';this.style.background='#fff'">
           <div style="width:44px;height:44px;border-radius:12px;background:#EFF6FF;display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18.01"/></svg></div>
           <div style="flex:1"><div style="font-size:15px;font-weight:700;color:#111827">SBP QR კოდით</div><div style="font-size:13px;color:#6B7280;margin-top:2px">სწრაფი გადარიცხვა SBP-ით</div></div>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9CA3AF" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
@@ -334,7 +354,7 @@ h1{font-size:clamp(26px,4vw,36px);font-weight:600;color:#111827;letter-spacing:-
     <div style="position:absolute;left:19px;top:24px;bottom:24px;width:2px;background:#E5E7EB"></div>
     <div style="display:flex;gap:14px;padding:12px 0;position:relative">
       <div style="width:40px;height:40px;border-radius:50%;background:#1A3D2E;color:#fff;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:700;flex-shrink:0;z-index:1">1</div>
-      <div><div style="font-size:15px;font-weight:700;color:#111827">აირჩიეთ ტური და თარიღი</div><div style="font-size:13px;color:#6B7280;margin-top:2px">59 მარშრუტი — საფეხმავლოდან მრავალდღიანამდე</div></div>
+      <div><div style="font-size:15px;font-weight:700;color:#111827">აირჩიეთ ტური და თარიღი</div><div style="font-size:13px;color:#6B7280;margin-top:2px"75 მარშრუტი — საფეხმავლოდან მრავალდღიანამდე</div></div>
     </div>
     <div style="display:flex;gap:14px;padding:12px 0;position:relative">
       <div style="width:40px;height:40px;border-radius:50%;background:#1A3D2E;color:#fff;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:700;flex-shrink:0;z-index:1">2</div>
@@ -384,7 +404,7 @@ h1{font-size:clamp(26px,4vw,36px);font-weight:600;color:#111827;letter-spacing:-
 var tourPrices = {};
 var tourOldPrices = {};
 var tourIds = {};
-document.querySelectorAll('#tour-list option').forEach(function(o){
+document.querySelectorAll('#f-tour-search option').forEach(function(o){
   tourPrices[o.value] = parseInt(o.getAttribute('data-price') || '0');
   tourOldPrices[o.value] = parseInt(o.getAttribute('data-old') || '0');
   tourIds[o.value] = o.getAttribute('data-id') || '';
@@ -533,7 +553,7 @@ loadCalendarData();
 renderCalendar();
 
 // Re-render calendar when tour changes (to filter by tour)
-document.getElementById('f-tour-search').addEventListener('input', function(){
+document.getElementById('f-tour-search').addEventListener('change', function(){
   updatePrice();
   renderCalendar();
 });
@@ -543,7 +563,7 @@ document.getElementById('f-people').addEventListener('input', updatePrice);
 var params = new URLSearchParams(location.search);
 var tourParam = params.get('tour');
 if (tourParam) {
-  var opts = document.querySelectorAll('#tour-list option');
+  var opts = document.querySelectorAll('#f-tour-search option');
   for (var i = 0; i < opts.length; i++) {
     if (opts[i].getAttribute('data-id') === tourParam) {
       document.getElementById('f-tour-search').value = opts[i].value;
@@ -792,8 +812,7 @@ setTimeout(loadGA,8000);
 })();
 setTimeout(function(){(function(){
 function loadPostHog(){if(window._phLoaded)return;window._phLoaded=true;
-!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug getPageviewId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
-posthog.init('phc_UqL7ychAdg6sU0vOBr2z8ACypL6NgvRUKQ9u9If99Il',{api_host:'https://us.i.posthog.com',person_profiles:'identified_only',capture_pageview:true,capture_pageleave:true,autocapture:true});}
+}
 ['scroll','touchstart','mousemove','keydown','click'].forEach(function(e){document.addEventListener(e,loadPostHog,{once:true,passive:true})});
 setTimeout(loadPostHog,8000);
 })();},3500);
