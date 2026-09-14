@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ka">
-<head>
+<head><script>window.posthog={capture:function(){},init:function(){}};</script>
   <meta charset="UTF-8">
 <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
@@ -214,7 +214,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 
 <!-- NAV -->
 <nav id="nav">
-  <a href="/en/" class="nav-logo" aria-label="Sakhva Travel">
+  <a href="/ge/" class="nav-logo" aria-label="Sakhva Travel">
     <svg class="logo-svg" viewBox="0 0 118 66" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
        <circle cx="59" cy="20" r="10" fill="#F59E0B" opacity=".92"/>
        <line x1="59" y1="10" x2="59" y2="5" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round"/>
@@ -231,13 +231,13 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
      </svg>
   </a>
   <div class="nav-links">
-    <a href="/en/georgia-travel-guide/">ტურები საქართველოში</a><a href="/en/tours-in-georgia/">ექსკურსიები</a><a href="/en/prices/">ფასები</a>
-    <a href="/en/about/">ჩვენ შესახებ</a>
-    <a href="/en/#reviews">შეფასებები</a>
-    <a href="/en/blog/">ბლოგი</a>
-    <a href="/en/faq/">FAQ</a>
-    <a href="/en/contacts/">კონტაქტები</a>
-    <a href="/en/booking/" class="nav-btn">დაჯავშნა</a><div class="lang-sw"><a class="lang-btn" href="/about/saba/" style="text-decoration:none" onclick="document.cookie='lang_pref=ru;path=/;max-age=31536000;SameSite=Lax'">RU</a><span class="lang-sep">|</span><a class="lang-btn" href="/en/about/saba/" onclick="document.cookie='lang_pref=en;path=/;max-age=31536000;SameSite=Lax'" style="text-decoration:none">EN</a><span class="lang-sep">|</span><span class="lang-btn on">GE</span></div>
+    <a href="/ge/georgia-travel-guide/">ტურები საქართველოში</a><a href="/en/tours-in-georgia/">ექსკურსიები</a><a href="/ge/prices/">ფასები</a>
+    <a href="/ge/about/">ჩვენ შესახებ</a>
+    <a href="/ge/#reviews">შეფასებები</a>
+    <a href="/ge/blog/">ბლოგი</a>
+    <a href="/ge/faq/">FAQ</a>
+    <a href="/ge/contacts/">კონტაქტები</a>
+    <a href="/ge/booking/" class="nav-btn">დაჯავშნა</a><div class="lang-sw"><a class="lang-btn" href="/about/saba/" style="text-decoration:none" onclick="document.cookie='lang_pref=ru;path=/;max-age=31536000;SameSite=Lax'">RU</a><span class="lang-sep">|</span><a class="lang-btn" href="/en/about/saba/" onclick="document.cookie='lang_pref=en;path=/;max-age=31536000;SameSite=Lax'" style="text-decoration:none">EN</a><span class="lang-sep">|</span><span class="lang-btn on">GE</span></div>
   </div>
   <div class="burger" role="button" tabindex="0" id="burger" onclick="this.classList.toggle('on');document.getElementById('drawer').classList.toggle('on')" aria-label="მენიუ">
     <span></span><span></span><span></span>
@@ -245,11 +245,11 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 </nav>
 <main>
 <div class="drawer" id="drawer">
-  <a href="/en/georgia-travel-guide/" onclick="document.getElementById('drawer').classList.remove('on');document.getElementById('burger').classList.remove('on')">ტურები საქართველოში</a>
-  <a href="/en/about/" onclick="document.getElementById('drawer').classList.remove('on');document.getElementById('burger').classList.remove('on')">ჩვენი გუნდი</a>
-  <a href="/en/#reviews" onclick="document.getElementById('drawer').classList.remove('on');document.getElementById('burger').classList.remove('on')">შეფასებები</a>
-  <a href="/en/blog/" onclick="document.getElementById('drawer').classList.remove('on');document.getElementById('burger').classList.remove('on')">ბლოგი</a>
-  <a href="/en/booking/" class="d-btn">ონლაინ დაჯავშნა</a>
+  <a href="/ge/georgia-travel-guide/" onclick="document.getElementById('drawer').classList.remove('on');document.getElementById('burger').classList.remove('on')">ტურები საქართველოში</a>
+  <a href="/ge/about/" onclick="document.getElementById('drawer').classList.remove('on');document.getElementById('burger').classList.remove('on')">ჩვენი გუნდი</a>
+  <a href="/ge/#reviews" onclick="document.getElementById('drawer').classList.remove('on');document.getElementById('burger').classList.remove('on')">შეფასებები</a>
+  <a href="/ge/blog/" onclick="document.getElementById('drawer').classList.remove('on');document.getElementById('burger').classList.remove('on')">ბლოგი</a>
+  <a href="/ge/booking/" class="d-btn">ონლაინ დაჯავშნა</a>
 </div>
 
 <!-- HERO -->
@@ -257,8 +257,8 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
   <div class="hero-inner">
     <div>
       <ol class="breadcrumb">
-        <li><a href="/en/"><span>მთავარი</span></a></li>
-        <li><a href="/en/about/"><span>გუნდი</span></a></li>
+        <li><a href="/ge/"><span>მთავარი</span></a></li>
+        <li><a href="/ge/about/"><span>გუნდი</span></a></li>
         <li><span>გიდი საბა</span></li>
       </ol>
       <div class="about-badge">Sakhva Travel · ბათუმი &amp; სვანეთი</div>
@@ -353,27 +353,27 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
   <h2 class="tours-cta-title">ბათუმი &amp; სვანეთი — ტურები</h2>
   <p class="tours-cta-sub">აირჩიეთ მარშრუტი — საბა პირადად გაგიძღვება</p>
   <div class="tours-grid">
-    <a href="/en/ekskursiya/tur-batumi-iz-tbilisi/" class="tour-link">
+    <a href="/ge/ekskursiya/tur-batumi-iz-tbilisi/" class="tour-link">
       <div class="tour-link-name">ბათუმის ტური თბილისიდან</div>
       <div class="tour-link-price">სანაპირო, ჩანჩქერები, ბოტანიკური ბაღი</div>
     </a>
-    <a href="/en/ekskursiya/tur-batumi-2-dnya/" class="tour-link">
+    <a href="/ge/ekskursiya/tur-batumi-2-dnya/" class="tour-link">
       <div class="tour-link-name">ბათუმი 2 დღეში</div>
       <div class="tour-link-price">აჭარა ჩქარობის გარეშე</div>
     </a>
-    <a href="/en/blog/batumi-complete-guide/" class="tour-link">
+    <a href="/ge/blog/batumi-complete-guide/" class="tour-link">
       <div class="tour-link-name">ბათუმის სრული სახელმძღვანელო</div>
       <div class="tour-link-price">აჭარის ზღვა და მთები</div>
     </a>
-    <a href="/en/ekskursiya/ekskursiya-svaneti-iz-tbilisi/" class="tour-link">
+    <a href="/ge/ekskursiya/ekskursiya-svaneti-iz-tbilisi/" class="tour-link">
       <div class="tour-link-name">სვანეთის ტური თბილისიდან</div>
       <div class="tour-link-price">მესტია, კოშკები, პანორამები</div>
     </a>
-    <a href="/en/ekskursiya/tur-svaneti-4-dnya/" class="tour-link">
+    <a href="/ge/ekskursiya/tur-svaneti-4-dnya/" class="tour-link">
       <div class="tour-link-name">სვანეთი 4 დღეში</div>
       <div class="tour-link-price">უშგული და მყინვარები</div>
     </a>
-    <a href="/en/blog/svaneti-guide/" class="tour-link">
+    <a href="/ge/blog/svaneti-guide/" class="tour-link">
       <div class="tour-link-name">სვანეთის სამოგზაურო სახელმძღვანელო</div>
       <div class="tour-link-price">მთიანი საქართველო</div>
     </a>
@@ -381,7 +381,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
   <div class="cta-btns">
     <a href="https://wa.me/995511272623?text=Hi!+I%27d+like+a+Batumi+or+Svaneti+tour+with+Saba" class="btn-wa">მოგვწერეთ WhatsApp-ზე</a>
     <a href="https://t.me/SakhvaGuideBot?start=site" class="btn-tg">Telegram</a>
-    <a href="/en/about/" class="btn-outline-light">გაიცანი მთელი გუნდი</a>
+    <a href="/ge/about/" class="btn-outline-light">გაიცანი მთელი გუნდი</a>
   </div>
 </section>
 
@@ -421,10 +421,10 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
     <div>
       <h3>ტურები</h3>
       <div class="foot-links">
-        <a href="/en/ekskursiya/tur-batumi-iz-tbilisi/">ბათუმი თბილისიდან</a>
-        <a href="/en/ekskursiya/ekskursiya-svaneti-iz-tbilisi/">სვანეთი თბილისიდან</a>
-        <a href="/en/ekskursiya/ekskursiya-kazbegi-iz-tbilisi/">ყაზბეგის ტური</a>
-        <a href="/en/ekskursiya/ekskursiya-kakheti-iz-tbilisi/">კახეთის ღვინის ტური</a>
+        <a href="/ge/ekskursiya/tur-batumi-iz-tbilisi/">ბათუმი თბილისიდან</a>
+        <a href="/ge/ekskursiya/ekskursiya-svaneti-iz-tbilisi/">სვანეთი თბილისიდან</a>
+        <a href="/ge/ekskursiya/ekskursiya-kazbegi-iz-tbilisi/">ყაზბეგის ტური</a>
+        <a href="/ge/ekskursiya/ekskursiya-kakheti-iz-tbilisi/">კახეთის ღვინის ტური</a>
       </div>
     </div>
     <div>
@@ -433,20 +433,20 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
         <a href="https://wa.me/995511272623">WhatsApp +995 511 272 623</a>
         <a href="https://t.me/SakhvaGuideBot?start=site">Telegram</a>
         <a href="mailto:help@sakhva-travel.com">help@sakhva-travel.com</a>
-        <a href="/en/about/">ჩვენი გუნდი</a>
+        <a href="/ge/about/">ჩვენი გუნდი</a>
       </div>
     </div>
   </div>
   <div class="foot-bottom">
     <span class="foot-copy">© 2026 Sakhva Travel · თბილისი, საქართველო</span>
-    <div class="foot-legal"><a href="https://search.google.com/local/writereview?placeid=ChIJi4QUG8wHYEQR09WFra0y2cM" target="_blank" rel="noopener">დაწერეთ შეფასება ★</a>
+    <div class="foot-legal"><a href="https://maps.app.goo.gl/WcvnBvaPgYdQRxQ78" target="_blank" rel="noopener">დაწერეთ შეფასება ★</a>
       <a href="/privacy/">კონფიდენციალურობა</a>
-      <a href="/en/about/">გუნდი</a>
+      <a href="/ge/about/">გუნდი</a>
     </div>
   </div>
 </footer>
 
 <script>document.addEventListener("click",function(e){var a=e.target.closest("a[href*='wa.me']");if(a){gtag("event","generate_lead",{event_category:"whatsapp",event_label:a.href});gtag("event","whatsapp_click",{event_category:"contact",event_label:"whatsapp"});if(typeof posthog!=="undefined"){posthog.capture("whatsapp_click")}}})</script>
-<div class="grain-overlay" aria-hidden="true" style="position:fixed;top:-50%;left:-50%;width:200%;height:200%;background-image:url('data:image/svg+xml,%3Csvg viewBox=%27 0 0 512 512%27  xmlns=%27 http://www.w3.org/2000/svg%27 %3E%3Cfilter id=%27 n%27 %3E%3CfeTurbulence type=%27 fractalNoise%27  baseFrequency=%27 0.65%27  numOctaves=%27 5%27  stitchTiles=%27 stitch%27 /%3E%3C/filter%3E%3Crect width=%27 100%25%27  height=%27 100%25%27  filter=%27 url(%23n)%27 /%3E%3C/svg%3E');opacity:0.045;pointer-events:none;z-index:9999"></div><script src="/js/chat-widget.js?v=37" defer></script>
+<div class="grain-overlay" aria-hidden="true" style="position:fixed;top:-50%;left:-50%;width:200%;height:200%;background-image:url('data:image/svg+xml,%3Csvg viewBox=%27 0 0 512 512%27  xmlns=%27 http://www.w3.org/2000/svg%27 %3E%3Cfilter id=%27 n%27 %3E%3CfeTurbulence type=%27 fractalNoise%27  baseFrequency=%27 0.65%27  numOctaves=%27 5%27  stitchTiles=%27 stitch%27 /%3E%3C/filter%3E%3Crect width=%27 100%25%27  height=%27 100%25%27  filter=%27 url(%23n)%27 /%3E%3C/svg%3E');opacity:0.045;pointer-events:none;z-index:9999"></div><script src="/js/chat-widget.js?v=38" defer></script>
 </body>
 </html>
