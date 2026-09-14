@@ -28,6 +28,13 @@ export default async function handler(req) {
   }
 
   const siteUrl = process.env.SITE_URL || 'https://sakhva-travel.com'
+  // NOWPayments rejects success_url longer than ~255 chars (INTERNAL_ERROR),
+  // Cyrillic tour names URL-encode to 3x length — trim the tour param to fit
+  const successBase = `${siteUrl}/payment-success.html?order_id=${orderId}&amount=${amount}&tour=`
+  const MAX_URL = 250
+  let tour = description || ''
+  while (tour && (successBase + encodeURIComponent(tour)).length > MAX_URL) tour = tour.slice(0, -1)
+  const successUrl = successBase + encodeURIComponent(tour)
 
   try {
     const res = await fetch('https://api.nowpayments.io/v1/invoice', {
@@ -41,7 +48,7 @@ export default async function handler(req) {
         price_currency: 'usd',
         order_id: orderId,
         order_description: description || 'Sakhva Travel Tour',
-        success_url: `${siteUrl}/payment-success.html?order_id=${orderId}&amount=${amount}&tour=${encodeURIComponent(description || '')}`,
+        success_url: successUrl,
         cancel_url: `${siteUrl}/payment-fail.html?order_id=${orderId}`,
         ipn_callback_url: `${siteUrl}/api/nowpayments-callback`
       })
@@ -50,7 +57,7 @@ export default async function handler(req) {
     const data = await res.json()
 
     if (!res.ok) {
-      return new Response(JSON.stringify({ error: data.message || 'NOWPayments error' }), { status: 502 })
+      return new Response(JSON.stringify({ error: data.message || 'NOWPayments error' }), { status: 400 })
     }
 
     return new Response(JSON.stringify({ invoiceUrl: data.invoice_url }), {
