@@ -965,7 +965,7 @@ export default async function handler(req) {
         parse_mode: 'HTML',
         reply_markup: {
           inline_keyboard: [
-            [{ text: '⭐ Google Maps', url: 'https://g.page/r/CaUzuaJELU4aEB0/review' }],
+            [{ text: '⭐ Google Maps', url: 'https://maps.app.goo.gl/WcvnBvaPgYdQRxQ78' }],
             [{
               text: en ? '📤 Share with a friend' : '📤 Рекомендовать другу',
               url: 'https://t.me/share/url?url=https://t.me/SakhvaGuideBot&text=' +
@@ -1428,7 +1428,7 @@ export default async function handler(req) {
             }],
             [{
               text: en ? '⭐ Leave a Google review' : '⭐ Оставить отзыв на Google',
-              url: 'https://g.page/r/CaUzuaJELU4aEB0/review'
+              url: 'https://maps.app.goo.gl/WcvnBvaPgYdQRxQ78'
             }],
             [{ text: en ? '🗺 All tours' : '🗺 Все туры', callback_data: `${lang}.menu` }]
           ]
@@ -1636,7 +1636,7 @@ export default async function handler(req) {
                       : `Бронь: ${tour}, ${name}, ${date || 'дата?'}, ${guests} чел`)
                 }],
                 [
-                  { text: '⭐ Google', url: 'https://g.page/r/CaUzuaJELU4aEB0/review' },
+                  { text: '⭐ Google', url: 'https://maps.app.goo.gl/WcvnBvaPgYdQRxQ78' },
                   {
                     text: '🔗',
                     url: 'https://t.me/share/url?url=https://t.me/SakhvaGuideBot&text=' +
