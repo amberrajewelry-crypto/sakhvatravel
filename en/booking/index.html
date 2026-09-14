@@ -703,7 +703,7 @@ function payWithCrypto() {
   if (!ofertaOk()) return;
   var d = getBookingData(); if (!d) return;
   sendBookingNotification(d);
-  fetch('/api/create-payment', {
+  fetch('/api/create-payment/', {
     method: 'POST',
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify({amount: d.payAmount, orderId: 'SK-' + Date.now(), description: d.tour + ' | ' + d.date})
