@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ka">
-<head>
+<head><script>window.posthog={capture:function(){},init:function(){}};</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>დაგვიკავშირდით — გიდი თიმური, თბილისი | Sakhva Travel</title>
@@ -143,7 +143,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <body>
 
 <nav id="nav">
-  <a href="/en/" class="nav-logo" aria-label="Sakhva Travel — მთავარი">
+  <a href="/ge/" class="nav-logo" aria-label="Sakhva Travel — მთავარი">
     <svg class="logo-svg" viewBox="0 0 118 66" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <text x="59" y="28" text-anchor="middle" font-family="Raleway,system-ui,sans-serif" font-weight="800" font-size="19" letter-spacing="3" fill="#1A3D2E">SAKHVA</text>
       <line x1="4" y1="36" x2="114" y2="36" stroke="#1A3D2E" stroke-width=".8" stroke-linecap="round"/>
@@ -153,13 +153,13 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
     </svg>
   </a>
   <div class="nav-links">
-    <a href="/en/georgia-travel-guide/">ტურები საქართველოში</a><a href="/en/tours-in-georgia/">ექსკურსიები</a><a href="/en/prices/">ფასები</a>
-    <a href="/en/#guide">ჩვენ შესახებ</a>
-    <a href="/en/#reviews">შეფასებები</a>
-    <a href="/en/blog/">ბლოგი</a>
-    <a href="/en/faq/">FAQ</a>
-    <a href="/en/contacts/">კონტაქტები</a>
-    <a href="/en/booking/" class="nav-btn">დაჯავშნა</a><div class="lang-sw"><a class="lang-btn" href="/contacts/" style="text-decoration:none" onclick="document.cookie='lang_pref=ru;path=/;max-age=31536000;SameSite=Lax'">RU</a><span class="lang-sep">|</span><a class="lang-btn" href="/en/contacts/" onclick="document.cookie='lang_pref=en;path=/;max-age=31536000;SameSite=Lax'" style="text-decoration:none">EN</a><span class="lang-sep">|</span><span class="lang-btn on">GE</span></div>
+    <a href="/ge/georgia-travel-guide/">ტურები საქართველოში</a><a href="/en/tours-in-georgia/">ექსკურსიები</a><a href="/ge/prices/">ფასები</a>
+    <a href="/ge/#guide">ჩვენ შესახებ</a>
+    <a href="/ge/#reviews">შეფასებები</a>
+    <a href="/ge/blog/">ბლოგი</a>
+    <a href="/ge/faq/">FAQ</a>
+    <a href="/ge/contacts/">კონტაქტები</a>
+    <a href="/ge/booking/" class="nav-btn">დაჯავშნა</a><div class="lang-sw"><a class="lang-btn" href="/contacts/" style="text-decoration:none" onclick="document.cookie='lang_pref=ru;path=/;max-age=31536000;SameSite=Lax'">RU</a><span class="lang-sep">|</span><a class="lang-btn" href="/en/contacts/" onclick="document.cookie='lang_pref=en;path=/;max-age=31536000;SameSite=Lax'" style="text-decoration:none">EN</a><span class="lang-sep">|</span><span class="lang-btn on">GE</span></div>
   </div>
   <div class="burger" role="button" tabindex="0" id="burger" onclick="this.classList.toggle('on');document.getElementById('drawer').classList.toggle('on')" aria-label="მენიუ">
     <span></span><span></span><span></span>
@@ -167,18 +167,18 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 </nav>
 <main>
 <div class="drawer" id="drawer">
-  <a href="/en/georgia-travel-guide/" onclick="document.getElementById('drawer').classList.remove('on');document.getElementById('burger').classList.remove('on')">ტურები საქართველოში</a>
-  <a href="/en/about/" onclick="document.getElementById('drawer').classList.remove('on');document.getElementById('burger').classList.remove('on')">გიდი თიმური</a>
-  <a href="/en/#reviews" onclick="document.getElementById('drawer').classList.remove('on');document.getElementById('burger').classList.remove('on')">შეფასებები</a>
-  <a href="/en/blog/" onclick="document.getElementById('drawer').classList.remove('on');document.getElementById('burger').classList.remove('on')">ბლოგი</a>
-  <a href="/en/booking/" class="d-btn">დაჯავშნა</a>
+  <a href="/ge/georgia-travel-guide/" onclick="document.getElementById('drawer').classList.remove('on');document.getElementById('burger').classList.remove('on')">ტურები საქართველოში</a>
+  <a href="/ge/about/" onclick="document.getElementById('drawer').classList.remove('on');document.getElementById('burger').classList.remove('on')">გიდი თიმური</a>
+  <a href="/ge/#reviews" onclick="document.getElementById('drawer').classList.remove('on');document.getElementById('burger').classList.remove('on')">შეფასებები</a>
+  <a href="/ge/blog/" onclick="document.getElementById('drawer').classList.remove('on');document.getElementById('burger').classList.remove('on')">ბლოგი</a>
+  <a href="/ge/booking/" class="d-btn">დაჯავშნა</a>
 </div>
 
 <section class="contact-hero">
   <div class="hero-inner">
     <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
       <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-        <a href="/en/" itemprop="item"><span itemprop="name">მთავარი</span></a>
+        <a href="/ge/" itemprop="item"><span itemprop="name">მთავარი</span></a>
         <meta itemprop="position" content="1">
       </li>
       <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
@@ -322,16 +322,28 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
   </div>
 </section>
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"დაგვიკავშირდით","brand":{"@type":"Brand","name":"Sakhva Travel"},"offers":{"@type":"AggregateOffer","priceCurrency":"GEL","lowPrice":"98","highPrice":"595","availability":"https://schema.org/InStock","offerCount":"40","url":"https://sakhva-travel.com/ge/contacts/","priceValidUntil":"2027-12-31"},"aggregateRating":{"@type":"AggregateRating","ratingValue":4.8,"reviewCount":36,"bestRating":5,"worstRating":1},"review":[{"@type":"Review","author":{"@type":"Person","name":"Mikhail D."},"reviewRating":{"@type":"Rating","ratingValue":5,"bestRating":5,"worstRating":1},"reviewBody":"წელს ჯგუფურად ვიმოგზაურეთ საქართველოში. მადლობა თიმურსა და მთელ გუნდს — წარმოუდგენელი იყო!","datePublished":"2026-04-26"},{"@type":"Review","author":{"@type":"Person","name":"Vitaliy"},"reviewRating":{"@type":"Rating","ratingValue":5,"bestRating":5,"worstRating":1},"reviewBody":"ძალიან კარგი გიდი. შესანიშნავად გავატარეთ დრო! პროგრამა ჩვენზე იყო მორგებული, გირჩევთ!","datePublished":"2026-03-31"},{"@type":"Review","author":{"@type":"Person","name":"Nugo Shengelia"},"reviewRating":{"@type":"Rating","ratingValue":5,"bestRating":5,"worstRating":1},"reviewBody":"ძალიან გირჩევთ, თუ გსურთ საუკეთესო რჩევა და სამოგზაურო მომსახურება მთელ საქართველოში.","datePublished":"2025-12-27"},{"@type":"Review","author":{"@type":"Person","name":"Amovei"},"reviewRating":{"@type":"Rating","ratingValue":5,"bestRating":5,"worstRating":1},"reviewBody":"შესანიშნავი მოგზაურობა კახეთში! ღვინო საოცარი იყო — ყველამ ერთხელ მაინც უნდა ეწვიოს ქართულ ვენახებს.","datePublished":"2026-05-10"},{"@type":"Review","author":{"@type":"Person","name":"Sergey"},"reviewRating":{"@type":"Rating","ratingValue":5,"bestRating":5,"worstRating":1},"reviewBody":"დავჯავშნეთ კერძო ტური ოთხისთვის. თიმური ნამდვილი პროფესიონალია: იცის ისტორია და მომხიბლავად ჰყვება.","datePublished":"2026-01-19"},{"@type":"Review","author":{"@type":"Person","name":"Tigran M."},"reviewRating":{"@type":"Rating","ratingValue":5,"bestRating":5,"worstRating":1},"reviewBody":"შესანიშნავი ექსკურსია, დიდი მადლობა! ყველაფერი უმაღლეს დონეზე იყო.","datePublished":"2025-10-09"}],"url":"https://sakhva-travel.com/ge/contacts/","image":"https://sakhva-travel.com/images/og-cover.jpg"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"დაგვიკავშირდით","brand":{"@type":"Brand","name":"Sakhva Travel"},"offers":{"@type":"AggregateOffer","priceCurrency":"GEL","lowPrice":"98","highPrice":"595","availability":"https://schema.org/InStock","offerCount":"40","url":"https://sakhva-travel.com/ge/contacts/","priceValidUntil":"2027-12-31"},"url":"https://sakhva-travel.com/ge/contacts/","image":"https://sakhva-travel.com/images/og-cover.jpg"}</script>
 
+
+<details style="border-bottom:1px solid #E5E7EB;padding:14px 0"><summary style="font-weight:600;color:#111;cursor:pointer;list-style:none">რამდენ ხანში მიპასუხებთ?</summary><p style="margin-top:8px">WhatsApp-ში ვპასუხობთ ჩვეულებრივ რამდენიმე საათში, დილის 9-დან საღამოს 9-მდე (თბილისის დრო). დაჯავშნის დასადასტურებლად საკმარისია სასურველი თარიღი და მარშრუტი. გვწერეთ WhatsApp-ზე, Telegram-ზე ან ელფოსტით — რომელიც მოგახერხდებათ, პასუხს ერთსა და იმავე დღეს მიიღებთ.</p></details>
+<details style="border-bottom:1px solid #E5E7EB;padding:14px 0"><summary style="font-weight:600;color:#111;cursor:pointer;list-style:none">რა ენებზე გელაპარაკებით და როგორ იხდით?</summary><p style="margin-top:8px">ვმუშაობთ ინგლისურად და რუსულად. გადახდა შესაძლებელია ნაღდით ადგილზე ან ონლაინ ბარათით/გადარიცხვით წინასწარი დაჯავშნისას.</p></details>
+
+<details style="border-bottom:1px solid #E5E7EB;padding:14px 0"><summary style="font-weight:600;color:#111;cursor:pointer;list-style:none">სად ვხვდებით ტურის დაწყებისას?</summary><p style="margin-top:8px">გიხვდებით სასტუმროსთან ან თქვენთვის მოსახერხებელ ადგილას თბილისში; აეროპორტიდან ტრანსფერიც შესაძლებელია წინასწარი შეთანხმებით. ზუსტ ადგილს ვათანხმებთ WhatsApp-ში დაჯავშნის შემდეგ.</p></details>
+<details style="border-bottom:1px solid #E5E7EB;padding:14px 0"><summary style="font-weight:600;color:#111;cursor:pointer;list-style:none">შესაძლებელია თუ არა ბავშვებთან ერთად და ჯგუფებით?</summary><p style="margin-top:8px">დიახ, ტურები ოჯახებისთვისაც არის — მანქანაში დგება საბავშვო სავარძელი მოთხოვნისამებრ. 4 და მეტ ადამიანზე მოქმედებს 10% ფასდაკლება.</p></details>
+<details style="border-bottom:1px solid #E5E7EB;padding:14px 0"><summary style="font-weight:600;color:#111;cursor:pointer;list-style:none">გამომიწერთ ქვითარს?</summary><p style="margin-top:8px">დიახ, საჭიროებისამებრ გამოგიწერთ გადახდის დამადასტურებელ დოკუმენტს. უბრალოდ გვაცნობეთ დაჯავშნისას.</p></details>
+
+<details style="border-bottom:1px solid #E5E7EB;padding:14px 0"><summary style="font-weight:600;color:#111;cursor:pointer;list-style:none">როგორია გაუქმების პირობა?</summary><p style="margin-top:8px">ტურის უფასო გაუქმება შესაძლებელია დაწყებამდე 24 საათით ადრე — თანხა სრულად ბრუნდება. ამინდის მკვეთრი გაუარესებისას მთის მარშრუტს გადავიტანთ ან შევცვლით უსაფრთხო ალტერნატივით.</p></details>
+<details style="border-bottom:1px solid #E5E7EB;padding:14px 0"><summary style="font-weight:600;color:#111;cursor:pointer;list-style:none">მუშაობთ ზამთარშიც?</summary><p style="margin-top:8px">დიახ, ტურები მთელი წელი მიმდინარეობს. ზამთარში ვამოწმებთ მთის უღელტეხილების მდგომარეობას (ჯვრის უღელტეხილი ყაზბეგისკენ) და საჭიროებისას ვცვლით მარშრუტს უსაფრთხოებისთვის.</p></details>
+
+<details style="border-bottom:1px solid #E5E7EB;padding:14px 0"><summary style="font-weight:600;color:#111;cursor:pointer;list-style:none">შემიძლია მარშრუტის ჩემზე მორგება?</summary><p style="margin-top:8px">დიახ, ყოველი კერძო ტური იგება თქვენს ინტერესებზე — ისტორია, ღვინო, ბუნება თუ ფოტოადგილები. უბრალოდ დაწერეთ, რა გინდათ ნახოთ და რამდენი დღე გაქვთ, დანარჩენს ჩვენ დავგეგმავთ.</p></details>
 </main>
 <footer id="footer">
   <div class="foot-inner">
     <div class="foot-bottom">
       <span class="foot-copy">&copy; 2026 Sakhva Travel &middot; თბილისი, საქართველო</span>
       <div class="foot-legal">
-        <a href="/privacy/">კონფიდენციალურობა</a>
-        <a href="/en/about/">გიდი თიმური</a>
+        <a href="/ge/pogoda/">ამინდი საქართველოში</a><a href="/privacy/">კონფიდენციალურობა</a>
+        <a href="/ge/about/">გიდი თიმური</a>
         <a href="/contacts/">RU ვერსია</a>
       </div>
     </div>

@@ -418,7 +418,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <div><h3>Туры</h3><div class="foot-links"><a href="/ekskursiya/ekskursiya-kazbegi-iz-tbilisi/">Казбеги за 1 день — от ₾175</a><a href="/ekskursiya/nochnaya-ekskursiya-tbilisi/">Ночной Тбилиси — от ₾100</a><a href="/ekskursiya/ekskursiya-kakheti-iz-tbilisi/">Кахетия и Сигнаги — от ₾170</a></div></div>
 <div><h3>Блог</h3><div class="foot-links"><a href="/blog/oteli-tbilisi/">Отели Тбилиси: районы и цены</a><a href="/blog/rayony-tbilisi-gde-ostanovitsya/">Где остановиться в Тбилиси</a><a href="/blog/tbilisi-za-3-dnya/">Тбилиси за 3 дня</a></div></div>
 </div>
-<div class="foot-bottom"><span class="foot-copy">© 2026 Sakhva Travel · Тбилиси, Грузия</span><div class="foot-legal"><a href="/privacy/">Политика конфиденциальности</a><a href="/policy/">Политика отмены и возврата</a></div></div>
+<div class="foot-bottom"><span class="foot-copy">© 2026 Sakhva Travel · Тбилиси, Грузия</span><div class="foot-legal"><a href="/pogoda/">Погода в Грузии</a><a href="/privacy/">Политика конфиденциальности</a><a href="/policy/">Политика отмены и возврата</a></div></div>
 </footer>
 <script>
 const burger=document.getElementById('burger'),drawer=document.getElementById('drawer');
@@ -465,6 +465,6 @@ function openContact(){document.getElementById('contact-modal').style.display='f
 function closeContact(){document.getElementById('contact-modal').style.display='none';document.body.style.overflow=''}
 function sendContact(){var name=document.getElementById('cm-name').value.trim();var phone=document.getElementById('cm-phone').value.trim();var msg=document.getElementById('cm-msg').value.trim();if(!phone){document.getElementById('cm-phone').style.borderColor='#EF4444';return}var page=document.title;fetch('/api/booking/',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:name||'(blog)',phone:phone,tour:'Скидка 10% — блог: '+page,note:msg||'Blog discount form'})}).then(function(){document.getElementById('cm-form').style.display='none';document.getElementById('cm-success').style.display='block';setTimeout(closeContact,3000)}).catch(function(){document.getElementById('cm-form').style.display='none';document.getElementById('cm-success').style.display='block';setTimeout(closeContact,3000)});try{fetch('https://formspree.io/f/mzdkyywe',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify({type:'blog_discount',name:name,phone:phone,page:page,message:msg})})}catch(e){}}
 </script>
-<script defer="" src="/js/chat-widget.js?v=37"></script>
+<script defer="" src="/js/chat-widget.js?v=38"></script>
 </body>
 </html>
