@@ -30,7 +30,7 @@ export default async function handler(req) {
     return new Response(JSON.stringify({ error: 'Invalid JSON' }), { status: 400, headers: corsHeaders })
   }
 
-  const { name, phone, email, tour, tourDate, guests, note, orderId, payMethod, status: reqStatus, prepay, total } = body
+  const { name, phone, email, tour, tourDate, guests, note, orderId, payMethod, status: reqStatus, prepay, total, lang } = body
   if (!name || !tour) {
     return new Response(JSON.stringify({ error: 'Missing name or tour' }), { status: 400, headers: corsHeaders })
   }
@@ -41,7 +41,7 @@ export default async function handler(req) {
   const tgToken = process.env.TELEGRAM_BOT_TOKEN
   const tgChat = process.env.TELEGRAM_CHAT_ID
   results.telegram = await notifyBot('booking', { name, phone, email, tour, date: tourDate,
-    people: guests, note, orderId, payMethod, status: reqStatus, prepay, total })
+    people: guests, note, orderId, payMethod, status: reqStatus, prepay, total, lang })
   if (!results.telegram && tgToken && tgChat) {  // бот недоступен → старое уведомление
     const payInfo = payMethod ? `\n💳 Оплата: ${payMethod}` : ''
     const amountInfo = prepay ? `\n💰 Предоплата: ${prepay} GEL (из ${total || '?'} GEL)` : ''

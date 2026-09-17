@@ -769,7 +769,9 @@ function getBookingData() {
     time: selectedTime || '',
     oferta_accepted: !!document.getElementById('oferta-accept').checked,
     oferta_version: 'terms-v1 2026-06-18',
-    accepted_at: new Date().toISOString()
+    accepted_at: new Date().toISOString(),
+    orderId: 'SK-' + Date.now(),
+    lang: 'ru'
   };
 }
 
@@ -778,7 +780,8 @@ function sendBookingNotification(d) {
     method: 'POST',
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify({
-      name: d.name, phone: d.phone,
+      name: d.name, phone: d.phone, email: d.email, orderId: d.orderId, lang: d.lang,
+      tourDate: d.date + (d.time ? ' ' + d.time : ''), guests: d.people, prepay: d.payAmount, total: d.total,
       tour: d.tour + ' | ' + d.date + (d.time ? ' ' + d.time : '') + ' | ' + d.people + ' чел',
       note: (d.isFull ? 'Full ' : 'Prepay ') + d.payAmount + ' GEL. ' + (d.time ? 'Время: ' + d.time + '. ' : '') + (d.note || '') + (d.oferta_accepted ? ' | Оферта принята (' + d.oferta_version + ') ' + d.accepted_at : '')
     })
@@ -805,7 +808,7 @@ function payWithCrypto() {
   fetch('/api/create-payment/', {
     method: 'POST',
     headers: {'Content-Type': 'application/json'},
-    body: JSON.stringify({amount: d.payAmount, orderId: 'SK-' + Date.now(), description: d.tour + ' | ' + d.date})
+    body: JSON.stringify({amount: d.payAmount, orderId: d.orderId, description: d.tour + ' | ' + d.date})
   }).then(function(r){ return r.json() })
   .then(function(j){ var u = j.invoiceUrl || j.invoice_url; if (u) window.location.href = u; else alert('Ошибка: ' + (j.error || '')); })
   .catch(function(e){ alert('Ошибка: ' + e.message); });
@@ -819,7 +822,7 @@ function payWithCard() {
   fetch('/api/create-bog-payment/', {
     method: 'POST',
     headers: {'Content-Type': 'application/json'},
-    body: JSON.stringify({amount: d.payAmount, orderId: 'SK-' + Date.now(), description: (d.isFull ? 'FULL ' : 'PREPAY ') + d.tour + ', ' + d.date + ', ' + d.people + ' чел', email: d.email, lang: 'ru'})
+    body: JSON.stringify({amount: d.payAmount, orderId: d.orderId, description: (d.isFull ? 'FULL ' : 'PREPAY ') + d.tour + ', ' + d.date + ', ' + d.people + ' чел', email: d.email, lang: 'ru'})
   }).then(function(r){ return r.json() })
   .then(function(j){ if (j.checkout_url) window.location.href = j.checkout_url; else alert('Оплата картой временно недоступна. Используйте СБП или крипто.'); })
   .catch(function(){ alert('Ошибка. Попробуйте СБП или крипто.'); });

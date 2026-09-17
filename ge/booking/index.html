@@ -67,7 +67,7 @@ h1{font-size:clamp(26px,4vw,36px);font-weight:600;color:#111827;letter-spacing:-
 .footer-mini{text-align:center;padding:32px 24px;font-size:12px;color:#6B7280}
 .footer-mini a{color:#6B7280;text-decoration:none}
 .price-old{text-decoration:line-through;color:#6B7280;font-size:14px;font-weight:400}
-.price-badge{display:inline-block;background:#FEF3C7;color:#92400E;font-size:11px;font-weight:700;padding:2px 8px;border-radius:6px;margin-left:8px}
+.price-badge{display:inline-block;background:#FEF3C7;color:#92400E;font-size:12px;font-weight:700;padding:2px 8px;border-radius:6px;margin-left:8px}
 .urgency-inline{display:flex;align-items:center;gap:6px;font-size:13px;color:#d97706;font-weight:600;margin-top:6px}
 .urgency-dot{width:7px;height:7px;background:#d97706;border-radius:50%;animation:pulse-d 2s ease-in-out infinite}
 @keyframes pulse-d{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.7)}}
@@ -77,7 +77,7 @@ h1{font-size:clamp(26px,4vw,36px);font-weight:600;color:#111827;letter-spacing:-
 .cal-header button:hover{background:#E5E7EB}
 .cal-title{font-size:15px;font-weight:700;color:#111827}
 .cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:0}
-.cal-dow{font-size:11px;font-weight:600;color:#6B7280;text-align:center;padding:8px 0;text-transform:uppercase}
+.cal-dow{font-size:12px;font-weight:600;color:#6B7280;text-align:center;padding:8px 0;text-transform:uppercase}
 .cal-day{position:relative;display:flex;align-items:center;justify-content:center;aspect-ratio:1;font-size:14px;color:#374151;cursor:default;border-radius:0;transition:all .15s}
 .cal-day.empty{pointer-events:none}
 .cal-day.past{color:#767676;pointer-events:none}
@@ -87,16 +87,16 @@ h1{font-size:clamp(26px,4vw,36px);font-weight:600;color:#111827;letter-spacing:-
 .cal-day.few:hover{background:#FDE68A;box-shadow:inset 0 0 0 2px #D97706}
 .cal-day.full{color:#EF4444;text-decoration:line-through;pointer-events:none;background:#FEF2F2}
 .cal-day.selected{background:#1A3D2E!important;color:#fff!important;font-weight:700;border-radius:10px;box-shadow:0 2px 8px rgba(26,61,46,.3)}
-.cal-day .cal-spots{position:absolute;bottom:2px;left:50%;transform:translateX(-50%);font-size:8px;font-weight:700;white-space:nowrap}
+.cal-day .cal-spots{position:absolute;bottom:2px;left:50%;transform:translateX(-50%);font-size:12px;font-weight:700;white-space:nowrap}
 .cal-day.avail .cal-spots{color:#15803D}
 .cal-day.few .cal-spots{color:#D97706}
-.cal-legend{display:flex;align-items:center;justify-content:center;gap:16px;padding:10px;border-top:1px solid #E5E7EB;font-size:11px;color:#6B7280}
+.cal-legend{display:flex;align-items:center;justify-content:center;gap:16px;padding:10px;border-top:1px solid #E5E7EB;font-size:12px;color:#6B7280}
 .cal-legend span{display:flex;align-items:center;gap:4px}
 .cal-legend i{width:10px;height:10px;border-radius:3px;display:inline-block}
 .cal-loading{text-align:center;padding:40px;font-size:13px;color:#6B7280}
 #mobile-sticky{display:none;position:fixed;bottom:0;left:0;right:0;z-index:899;background:rgba(255,255,255,.97);backdrop-filter:blur(12px);border-top:1px solid #e5e7eb;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));align-items:center;justify-content:space-between;gap:12px}
 #mobile-sticky .ms-price{font-size:18px;font-weight:700;color:#1A3D2E}
-#mobile-sticky .ms-sub{font-size:11px;color:#6B7280}
+#mobile-sticky .ms-sub{font-size:12px;color:#6B7280}
 @media(min-width:769px){#mobile-sticky{display:none!important}}
 </style>
 <link rel="preload" href="/fonts/noto-sans-georgian.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/css/ge.css"></head>
@@ -303,7 +303,7 @@ h1{font-size:clamp(26px,4vw,36px);font-weight:600;color:#111827;letter-spacing:-
         <div class="ps-row"><span class="ps-label">პირდაპირი ფასი გიდისგან <span class="price-badge" id="ps-discount-badge"></span></span><span class="ps-value" id="ps-total-price" style="color:#1A3D2E"></span></div>
         <div class="ps-row" style="border-top:1px solid #C8E6C9;padding-top:10px;margin-top:4px"><span class="ps-label" id="ps-prepay-label" style="font-weight:700">წინასწარი გადახდა (10%)</span><span class="ps-value ps-total" id="ps-prepay"></span></div>
         <p class="ps-note" id="ps-note-text">ნაშთი გადაიხდება გიდს ტურის დღეს, ნაღდით ან ბარათით</p>
-        <p style="font-size:11px;color:#15803D;margin-top:6px;display:flex;align-items:center;gap:4px"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#16A34A" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> პლატფორმის საკომისიოს გარეშე — პირდაპირ გიდისგან</p>
+        <p style="font-size:12px;color:#15803D;margin-top:6px;display:flex;align-items:center;gap:4px"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#16A34A" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> პლატფორმის საკომისიოს გარეშე — პირდაპირ გიდისგან</p>
       </div>
 
       <!-- OFERTA ACCEPT -->
@@ -670,7 +670,9 @@ function getBookingData() {
     note: document.getElementById('f-note').value || '',
     oferta_accepted: !!document.getElementById('oferta-accept').checked,
     oferta_version: 'terms-v1 2026-06-18',
-    accepted_at: new Date().toISOString()
+    accepted_at: new Date().toISOString(),
+    orderId: 'SK-' + Date.now(),
+    lang: 'ka'
   };
 }
 
@@ -679,7 +681,8 @@ function sendBookingNotification(d) {
     method: 'POST',
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify({
-      name: d.name, phone: d.phone,
+      name: d.name, phone: d.phone, email: d.email, orderId: d.orderId, lang: d.lang,
+      tourDate: d.date + (d.time ? ' ' + d.time : ''), guests: d.people, prepay: d.payAmount, total: d.total,
       tour: d.tour + ', ' + d.date + ', ' + d.people + ' pax',
       note: (d.isFull ? 'Full ' : 'Prepay ') + d.payAmount + ' GEL. ' + (d.note || '') + (d.oferta_accepted ? ' | Offer accepted (' + d.oferta_version + ') ' + d.accepted_at : '')
     })
@@ -706,7 +709,7 @@ function payWithCrypto() {
   fetch('/api/create-payment/', {
     method: 'POST',
     headers: {'Content-Type': 'application/json'},
-    body: JSON.stringify({amount: d.payAmount, orderId: 'SK-' + Date.now(), description: d.tour + ' | ' + d.date})
+    body: JSON.stringify({amount: d.payAmount, orderId: d.orderId, description: d.tour + ' | ' + d.date})
   }).then(function(r){ return r.json() })
   .then(function(j){ var u = j.invoiceUrl || j.invoice_url; if (u) window.location.href = u; else alert('Error: ' + (j.error || '')); })
   .catch(function(e){ alert('Error: ' + e.message); });
@@ -720,7 +723,7 @@ function payWithCard() {
   fetch('/api/create-bog-payment/', {
     method: 'POST',
     headers: {'Content-Type': 'application/json'},
-    body: JSON.stringify({amount: d.payAmount, orderId: 'SK-' + Date.now(), description: (d.isFull ? 'FULL ' : 'PREPAY ') + d.tour + ', ' + d.date + ', ' + d.people + ' pax', email: d.email, lang: 'en'})
+    body: JSON.stringify({amount: d.payAmount, orderId: d.orderId, description: (d.isFull ? 'FULL ' : 'PREPAY ') + d.tour + ', ' + d.date + ', ' + d.people + ' pax', email: d.email, lang: 'en'})
   }).then(function(r){ return r.json() })
   .then(function(j){ if (j.checkout_url) window.location.href = j.checkout_url; else alert('Card payment is temporarily unavailable. Please use SBP or crypto.'); })
   .catch(function(){ alert('Error. Please try SBP or crypto.'); });
@@ -766,7 +769,7 @@ function handleSubmit(e) { e.preventDefault(); return false; }
 </script>
 <script>(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
 m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return}}
-k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,function(c){'requestIdleCallback'in window?requestIdleCallback(c,{timeout:4000}):setTimeout(c,1500)}(function(){a.parentNode.insertBefore(k,a)})})
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,function(c){var d=false,f=function(){if(d)return;d=true;c()};['scroll','touchstart','mousemove','keydown','click'].forEach(function(e){document.addEventListener(e,f,{once:true,passive:true})});setTimeout(f,5000)}(function(){a.parentNode.insertBefore(k,a)})})
 (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
 ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});
 </script>

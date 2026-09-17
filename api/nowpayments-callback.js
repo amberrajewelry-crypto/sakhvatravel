@@ -3,6 +3,8 @@
 // Configure in NOWPayments dashboard → Settings → IPN callback URL
 // Env vars: NOWPAYMENTS_IPN_SECRET, AIRTABLE_TOKEN, AIRTABLE_BASE_ID, TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID
 
+import { notifyBot } from './_bot.js'
+
 export const config = { runtime: 'edge' }
 
 const BASE_ID = process.env.AIRTABLE_BASE_ID || 'appvP72OjZeVJ0XWh'
@@ -66,6 +68,10 @@ export default async function handler(req) {
   if (!order_id) {
     return new Response('No order_id', { status: 200 })
   }
+
+  // бот-менеджер: карточка + WhatsApp-ваучер клиенту (привязка к брони по orderId)
+  await notifyBot('payment', { orderId: order_id, amount: price_amount, currency: price_currency,
+    note: `crypto ${actually_paid || pay_amount} ${pay_currency || ''}` })
 
   const token = process.env.AIRTABLE_TOKEN
   if (!token) {
