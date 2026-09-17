@@ -86,14 +86,8 @@ h1{font-size:28px;font-weight:600;color:#111827;margin-bottom:12px;letter-spacin
     if (tour) set('d-tour', decodeURIComponent(tour));
     if (date) set('d-date', decodeURIComponent(date));
   }
-  // Notify Airtable/n8n
-  if (oid) {
-    fetch('/api/booking/', {
-      method: 'POST',
-      headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({name:'BOG Payment', phone:'paid', tour: tour || 'unknown', note: 'Payment success, order ' + oid + ', amount ' + amt})
-    }).catch(function(){});
-  }
+  // Подтверждение оплаты идёт только из подписанного BOG-callback (api/bog-callback) —
+  // клиентский вызов /api/booking отсюда плодил дубли «BOG Payment/paid/unknown».
 })();
 </script>
 </body>

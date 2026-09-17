@@ -86,7 +86,7 @@ export default async function handler(req) {
     const amount = pu.request_amount || pu.transfer_amount || pu.total_amount || '?'
     const currency = pu.currency_code || pu.currency || 'GEL'
     // ref — телефон клиента из ссылки бота (/oplata/?ref=995…) → orderId PAY-…-995…
-    const ref = (String(orderId).match(/-(\d{9,15})$/) || [])[1] || ''
+    const ref = (String(orderId).match(/^PAY-\d+-(\d{9,15})$/) || [])[1] || ''  // без ref совпадал бы timestamp
     const desc = (pu.basket && pu.basket[0] && pu.basket[0].description) || ''
     const sent = await notifyBot('payment', { orderId, amount, currency, phone: ref, note: desc,
       bogOrderId: b.order_id || '' })
