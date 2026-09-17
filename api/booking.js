@@ -1,6 +1,8 @@
 // Сохранение бронирования: Telegram (primary) + Airtable CRM (secondary)
 // Env vars: AIRTABLE_TOKEN, TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID
 
+import { notifyBot } from './_bot.js'
+
 export const config = { runtime: 'edge' }
 
 const BASE_ID = process.env.AIRTABLE_BASE_ID || 'appvP72OjZeVJ0XWh'
@@ -38,7 +40,9 @@ export default async function handler(req) {
   // 1. Telegram notification — FIRST, always
   const tgToken = process.env.TELEGRAM_BOT_TOKEN
   const tgChat = process.env.TELEGRAM_CHAT_ID
-  if (tgToken && tgChat) {
+  results.telegram = await notifyBot('booking', { name, phone, email, tour, date: tourDate,
+    people: guests, note, orderId, payMethod, status: reqStatus, prepay, total })
+  if (!results.telegram && tgToken && tgChat) {  // бот недоступен → старое уведомление
     const payInfo = payMethod ? `\n💳 Оплата: ${payMethod}` : ''
     const amountInfo = prepay ? `\n💰 Предоплата: ${prepay} GEL (из ${total || '?'} GEL)` : ''
     const orderInfo = orderId ? `\n🔖 ${orderId}` : ''

@@ -1,6 +1,8 @@
 // Email subscription: Brevo + Airtable
 // Env vars: BREVO_API_KEY, AIRTABLE_TOKEN, AIRTABLE_BASE_ID
 
+import { notifyBot } from './_bot.js'
+
 export const config = { runtime: 'edge' }
 
 const BASE_ID = process.env.AIRTABLE_BASE_ID || 'appvP72OjZeVJ0XWh'
@@ -38,7 +40,8 @@ export default async function handler(req) {
   // 1. Telegram notification
   const tgToken = process.env.TELEGRAM_BOT_TOKEN
   const tgChat = process.env.TELEGRAM_CHAT_ID
-  if (tgToken && tgChat) {
+  results.telegram = await notifyBot('subscribe', { email, lang: lang || 'ru', source: src })
+  if (!results.telegram && tgToken && tgChat) {
     try {
       const text = `📩 Новый email\n\n${email}\nИсточник: ${src}\nЯзык: ${lang || 'ru'}`
       await fetch(`https://api.telegram.org/bot${tgToken}/sendMessage`, {

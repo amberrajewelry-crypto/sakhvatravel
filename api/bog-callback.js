@@ -10,6 +10,8 @@
 // Edge-runtime: req.text() даёт сырое тело (нужно для верификации подписи), WebCrypto — проверка.
 // Env vars: TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID
 
+import { notifyBot } from './_bot.js'
+
 export const config = { runtime: 'edge' }
 
 // Публичный ключ BOG для верификации подписи callback (из офиц. документации)
@@ -80,10 +82,15 @@ export default async function handler(req) {
   if (statusKey === 'completed') {
     const tgToken = process.env.TELEGRAM_BOT_TOKEN
     const tgChat = process.env.TELEGRAM_CHAT_ID
-    if (tgToken && tgChat) {
-      const pu = b.purchase_units || {}
-      const amount = pu.request_amount || pu.transfer_amount || pu.total_amount || '?'
-      const currency = pu.currency_code || pu.currency || 'GEL'
+    const pu = b.purchase_units || {}
+    const amount = pu.request_amount || pu.transfer_amount || pu.total_amount || '?'
+    const currency = pu.currency_code || pu.currency || 'GEL'
+    // ref — телефон клиента из ссылки бота (/oplata/?ref=995…) → orderId PAY-…-995…
+    const ref = (String(orderId).match(/-(\d{9,15})$/) || [])[1] || ''
+    const desc = (pu.basket && pu.basket[0] && pu.basket[0].description) || ''
+    const sent = await notifyBot('payment', { orderId, amount, currency, phone: ref, note: desc,
+      bogOrderId: b.order_id || '' })
+    if (!sent && tgToken && tgChat) {
       const msg = `💳 Оплата подтверждена (BOG)\n\n🔖 ${orderId}\n💰 ${amount} ${currency}\n🧾 order_id: ${b.order_id || '—'}`
       try {
         await fetch(`https://api.telegram.org/bot${tgToken}/sendMessage`, {

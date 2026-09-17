@@ -65,7 +65,7 @@ export default async function handler(req, res) {
       headers: {
         'Authorization': `Bearer ${token}`,
         'Content-Type': 'application/json',
-        'Accept-Language': lang === 'en' ? 'en' : 'ka',
+        'Accept-Language': ['en', 'ru'].includes(lang) ? lang : 'ka',
         'Idempotency-Key': (globalThis.crypto?.randomUUID?.() || String(orderId))
       },
       body: JSON.stringify({

@@ -1,3 +1,5 @@
+import { notifyBot } from './_bot.js'
+
 export const config = { runtime: 'edge' }
 
 export default async function handler(req) {
@@ -11,6 +13,9 @@ export default async function handler(req) {
       return new Response(JSON.stringify({ error: 'No text' }), { status: 400 })
     }
 
+    if (await notifyBot('quiz', { text })) {
+      return new Response(JSON.stringify({ ok: true }), { status: 200 })
+    }
     const token = process.env.TELEGRAM_BOT_TOKEN
     const chatId = process.env.TELEGRAM_CHAT_ID
 
