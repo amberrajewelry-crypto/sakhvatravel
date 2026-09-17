@@ -56,6 +56,9 @@ export default async function handler(req, res) {
 
   const siteUrl = process.env.SITE_URL || 'https://sakhva-travel.com'
   const desc = description || 'Sakhva Travel Tour'
+  // BOG checkout supports only ka/en ("Invalid language ru"); RU users get the EN checkout
+  const bogLang = lang === 'ka' ? 'ka' : 'en'
+  const uiLang = ['ru', 'en', 'ka'].includes(lang) ? lang : 'en'
 
   try {
     const token = await getAccessToken(clientId, clientSecret)
@@ -65,7 +68,7 @@ export default async function handler(req, res) {
       headers: {
         'Authorization': `Bearer ${token}`,
         'Content-Type': 'application/json',
-        'Accept-Language': ['en', 'ru'].includes(lang) ? lang : 'ka',
+        'Accept-Language': bogLang,
         'Idempotency-Key': (globalThis.crypto?.randomUUID?.() || String(orderId))
       },
       body: JSON.stringify({
@@ -79,8 +82,8 @@ export default async function handler(req, res) {
           ]
         },
         redirect_urls: {
-          success: `${siteUrl}/payment-success.html?order_id=${encodeURIComponent(orderId)}&amount=${total}`,
-          fail: `${siteUrl}/payment-fail.html?order_id=${encodeURIComponent(orderId)}`
+          success: `${siteUrl}/payment-success.html?order_id=${encodeURIComponent(orderId)}&amount=${total}&lang=${uiLang}`,
+          fail: `${siteUrl}/payment-fail.html?order_id=${encodeURIComponent(orderId)}&amount=${total}&lang=${uiLang}`
         },
         payment_method: ['card', 'google_pay', 'apple_pay']
       })

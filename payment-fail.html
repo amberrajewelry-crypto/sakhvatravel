@@ -77,7 +77,14 @@ h1{font-size:28px;font-weight:600;color:#111827;margin-bottom:12px;letter-spacin
   if (wa) wa.href = 'https://wa.me/995511272623?text=' + encodeURIComponent(t.waText);
   // Preserve booking params for retry
   var tour = p.get('tour') || '', amount = p.get('amount') || '';
-  if (tour || amount) {
+  var oid = p.get('order_id') || '';
+  if (oid.indexOf('PAY-') === 0) {
+    // card-link payment (PAY-<ts>-<ref>): retry on the pay page in the same language, same amount
+    var PAY = { ru: '/oplata/', en: '/en/pay/', ka: '/ge/gadakhda/' };
+    var ref = oid.split('-')[2] || '';
+    var rb2 = document.getElementById('retry-btn');
+    if (rb2) rb2.href = (PAY[code] || PAY.en) + '?amount=' + encodeURIComponent(amount) + (ref ? '&ref=' + ref : '');
+  } else if (tour || amount) {
     var retry = '/booking.html?';
     if (tour) retry += 'tour=' + encodeURIComponent(tour) + '&';
     if (amount) retry += 'amount=' + amount;
