@@ -1,0 +1,119 @@
+{
+ "summary": {
+  "health_score": 86,
+  "business_type": "Local tour guide / tour operator (Tbilisi) + content hub",
+  "top_findings": [
+   "Homepage language switches by browser locale, not URL",
+   "84 city landing pages with ~11% unique text (doorway risk)",
+   "hreflang ka missing on homepage (ru/en)",
+   "Duplicate <title> from inline SVG on 3 metro pages",
+   "Three overlapping floating elements on mobile"
+  ],
+  "quick_wins": [
+   "Add hreflang ka on / and /en/",
+   "SVG <title> -> <desc>",
+   "Single #business schema block",
+   "Sticky WhatsApp on blog mobile",
+   "Drop Product duplicate of TouristTrip"
+  ]
+ },
+ "categories": [
+  {
+   "name": "Technical SEO",
+   "score": 90,
+   "what_works": [],
+   "findings": []
+  },
+  {
+   "name": "Content Quality",
+   "score": 78,
+   "what_works": [],
+   "findings": []
+  },
+  {
+   "name": "On-Page SEO",
+   "score": 90,
+   "what_works": [],
+   "findings": []
+  },
+  {
+   "name": "Schema / Structured Data",
+   "score": 78,
+   "what_works": [],
+   "findings": []
+  },
+  {
+   "name": "Performance (CWV)",
+   "score": 94,
+   "what_works": [],
+   "findings": []
+  },
+  {
+   "name": "AI Search Readiness",
+   "score": 86,
+   "what_works": [],
+   "findings": []
+  },
+  {
+   "name": "Images",
+   "score": 90,
+   "what_works": [],
+   "findings": []
+  }
+ ],
+ "action_plan": {
+  "phases": [
+   {
+    "name": "Phase 1: Critical Fixes",
+    "timeframe": "Week 1",
+    "items": [
+     "Language from URL only",
+     "Decide on 84 geo landings",
+     "hreflang ka",
+     "SVG title",
+     "#business schema",
+     "Floating elements",
+     "Blog sticky CTA",
+     "Product duplicate"
+    ]
+   },
+   {
+    "name": "Phase 2: High-Impact Improvements",
+    "timeframe": "Weeks 2-3",
+    "items": [
+     "LCP/critical CSS/3rd-party defer",
+     "CDN HTML cache",
+     "/tours redirect",
+     "Guide profile landing",
+     "dateModified freshness",
+     "Thin pages",
+     "Pogoda tour block",
+     "Rating source",
+     "Guide photo/icons/hero",
+     "Striking-distance titles"
+    ]
+   },
+   {
+    "name": "Phase 3: Content & Authority",
+    "timeframe": "Month 2",
+    "items": [
+     "Link acquisition",
+     "Svaneti content",
+     "Long FAQ answers"
+    ]
+   },
+   {
+    "name": "Phase 4: Monitoring & Iteration",
+    "timeframe": "Ongoing",
+    "items": [
+     "Sitemap lastmod/image sitemap",
+     "GSC 90d + CrUX key + weekly PSI"
+    ]
+   }
+  ]
+ },
+ "artifacts": {
+  "findings_dir": "findings/",
+  "screenshots_dir": "screenshots/"
+ }
+}
