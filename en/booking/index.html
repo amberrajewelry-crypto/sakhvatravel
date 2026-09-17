@@ -508,6 +508,20 @@ function renderCalendar() {
   grid.innerHTML = html;
 }
 
+// Погода на выбранную дату по направлению тура (js/weather-line.js)
+var WX_RX=[['mestia',/сванет|местиа|ушгул|svaneti|mestia|ushguli|სვანეთ|მესტი|უშგულ/i],['kazbegi',/казбег|степанцминд|трусо|джут|гвелет|ананур|kazbeg|stepantsminda|truso|juta|gveleti|ananuri|ყაზბეგ|სტეფანწმინდ|ანანურ/i],['gudauri',/гудаур|gudauri|გუდაურ/i],['signagi',/сигнах|sighnaghi|სიღნაღ/i],['kakheti',/кахет|телав|ртвели|киндзмараул|алазан|квеври|чач|дегустац|винодел|kakheti|telavi|rtveli|kindzmarauli|alazani|kvevri|chacha|wine|კახეთ|თელავ|რთველ|ღვინ|ჭაჭ/i],['mtskheta',/мцхет|джвари|mtskheta|jvari|მცხეთ|ჯვარ/i],['bakuriani',/бакуриан|bakuriani|ბაკურიან/i],['borjomi',/боржом|borjomi|ბორჯომ/i],['batumi',/батум|уреки|batumi|ureki|ბათუმ|ურეკ/i],['kutaisi',/кутаис|мартвил|каньон|kutaisi|martvili|canyon|ქუთაის|მარტვილ|კანიონ/i],['kvemo-kartli',/дашбаш|dashbashi|დაშბაშ/i],['shida-kartli',/гори|уплисцих|gori|uplistsikhe|გორ|უფლისციხ/i],['samtskhe-javakheti',/вардзи|vardzia|ვარძი/i],['racha',/рача|racha|რაჭ/i],['tbilisi',/тбилис|нарикал|абанотубан|мтацминд|кур[аеы]|tbilisi|narikala|abanotubani|mtatsminda|kura|თბილის|ნარიყალ|აბანოთუბ|მთაწმინდ/i]];
+function showDateWeather(dateStr, info){
+  var old=document.getElementById('date-weather'); if(old) old.remove();
+  var tour=(document.getElementById('f-tour-search').value||'').toLowerCase(), reg='';
+  for(var i=0;i<WX_RX.length;i++){ if(WX_RX[i][1].test(tour)){ reg=WX_RX[i][0]; break } }
+  if(!reg||!window.swWeather) return;
+  window.swWeather(reg, function(d){
+    var t=window.swWeatherDay(d, dateStr, 'en'); if(!t) return;
+    var el=document.createElement('div'); el.id='date-weather'; el.style.cssText='font-weight:500;color:#4B5563;margin-top:4px'; el.textContent=t;
+    if(document.getElementById('f-date').value===dateStr) info.appendChild(el);
+  });
+}
+
 function calSelect(dateStr, day) {
   calSelected = dateStr;
   document.getElementById('f-date').value = dateStr;
@@ -536,6 +550,7 @@ function calSelect(dateStr, day) {
   }
   info.innerHTML += '<div style="font-weight:600;margin-top:4px">' + availLine + '</div>';
   info.style.display = 'block';
+  showDateWeather(dateStr, info);
   updatePrice();
 }
 
@@ -823,5 +838,6 @@ setTimeout(loadPostHog,8000);
 })();},3500);
 </script>
 </main>
+<script src="/js/weather-line.js?v=1" defer></script>
 </body>
 </html>
