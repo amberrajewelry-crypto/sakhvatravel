@@ -41,7 +41,7 @@ async function bogRefund(bogOrderId, amount) {
 
 export default async function handler(req, res) {
   res.setHeader('Cache-Control', 'no-store')
-  const q = req.method === 'GET' ? req.query : (req.body || {})
+  const q = { ...(req.query || {}), ...(req.method === 'POST' ? (req.body || {}) : {}) }
   const orderId = String(q.id || q.orderId || '')
   const t = String(q.t || '')
   if (!process.env.BOT_EVENT_TOKEN) return res.status(503).json({ error: 'not_configured' })
