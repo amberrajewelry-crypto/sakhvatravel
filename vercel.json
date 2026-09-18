@@ -3,6 +3,26 @@
   "trailingSlash": true,
   "redirects": [
     {
+      "source": "/gid/",
+      "destination": "/about/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gid",
+      "destination": "/about/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gidy-tbilisi/",
+      "destination": "/about/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gidy-tbilisi",
+      "destination": "/about/",
+      "statusCode": 301
+    },
+    {
       "source": "/miralinks-article",
       "destination": "/",
       "statusCode": 301
@@ -1009,8 +1029,33 @@
       "statusCode": 301
     },
     {
+      "source": "/blog/ushchelye-truso/",
+      "destination": "/blog/ushchelya-gruzii/",
+      "statusCode": 301
+    },
+    {
       "source": "/ru/blog/ushchelye-truso/",
-      "destination": "/blog/ushchelye-truso/",
+      "destination": "/blog/ushchelya-gruzii/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/blog/truso-valley-hike/",
+      "destination": "/en/blog/gorges-of-georgia/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ge/blog/truso-valley-hike/",
+      "destination": "/ge/blog/gorges-of-georgia/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ru/blog/truso-valley-hike/",
+      "destination": "/blog/ushchelya-gruzii/",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/truso-valley-hike/",
+      "destination": "/blog/ushchelya-gruzii/",
       "statusCode": 301
     },
     {
@@ -1987,6 +2032,446 @@
       "source": "/sitemap.xml",
       "destination": "/sitemap-index.xml",
       "statusCode": 301
+    },
+    {
+      "source": "/ekskursiya/kakheti-iz-tbilisi/",
+      "destination": "/ekskursiya/ekskursiya-kakheti-iz-tbilisi/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ekskursiya/kazbegi-iz-tbilisi/",
+      "destination": "/ekskursiya/ekskursiya-kazbegi-iz-tbilisi/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ekskursiya/khachapuri-masterclass/",
+      "destination": "/ekskursiya/khachapuri-master-klass/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ekskursiya/chacha-masterclass/",
+      "destination": "/ekskursiya/chacha-master-klass/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ekskursiya/art-tour-tbilisi/",
+      "destination": "/ekskursiya/art-tur-tbilisi/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ekskursiya/qvevri-wine-tour/",
+      "destination": "/ekskursiya/kvevri-vino-tur/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ekskursiya/tbilisi-kazbegi-kakheti-tour/",
+      "destination": "/ekskursiya/tur-kazbegi-kakheti-2-dnya/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ekskursiya/uplistsikhe-tour-from-tbilisi/",
+      "destination": "/ekskursiya/ekskursiya-uplistsikhe-iz-tbilisi/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ekskursiya/svaneti-tour-from-tbilisi/",
+      "destination": "/ekskursiya/ekskursiya-svaneti-iz-tbilisi/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ekskursiya/tbilisi-batumi-tour/",
+      "destination": "/ekskursiya/tur-batumi-iz-tbilisi/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ekskursiya/narikala-tour/",
+      "destination": "/ekskursiya/ekskursiya-narikala/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ekskursiya/obzornaya-ekskursiya-tbilisi/",
+      "destination": "/ekskursiya/ekskursiya-stary-tbilisi/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ekskursiya/walking-tour-tbilisi/",
+      "destination": "/ekskursiya/ekskursiya-stary-tbilisi/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ekskursiya/old-tbilisi-tour/",
+      "destination": "/ekskursiya/ekskursiya-stary-tbilisi/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ekskursiya/churches-tour-tbilisi/",
+      "destination": "/ekskursiya/tur-po-hramam-tbilisi/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ekskursiya/photo-tour-tbilisi/",
+      "destination": "/ekskursiya/fotosessiya-tbilisi/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ekskursiya/ananuri-tour-from-tbilisi/",
+      "destination": "/ekskursiya/ekskursiya-ananuri-iz-tbilisi/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ekskursiya/kids-tour-tbilisi/",
+      "destination": "/ekskursiya/tur-dlya-detey-tbilisi/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ekskursiya/group-tour-10-tbilisi/",
+      "destination": "/ekskursiya/gruppa-10-chelovek-tbilisi/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ekskursiya/kindzmarauli-winery-tour/",
+      "destination": "/ekskursiya/vinodelie-kindzmarauli/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ekskursiya/georgia-5-day-tour/",
+      "destination": "/ekskursiya/tur-gruziya-5-dney/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ekskursiya/georgia-10-day-tour/",
+      "destination": "/ekskursiya/tur-gruziya-10-dney/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ekskursiya/georgia-summer-tour/",
+      "destination": "/ekskursiya/tur-gruziya-leto/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ekskursiya/abanotubani-tour/",
+      "destination": "/ekskursiya/ekskursiya-abanotubani/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ekskursiya/tusheti-tour/",
+      "destination": "/ekskursiya/ekskursiya-tusheti/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ekskursiya/alazani-wine-route/",
+      "destination": "/ekskursiya/vinniy-marshrut-alazani/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ekskursiya/zugdidi-tour/",
+      "destination": "/ekskursiya/ekskursiya-zugdidi/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ekskursiya/wedding-tour-georgia/",
+      "destination": "/ekskursiya/svadebny-tur-gruziya/",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/kazbegi-iz-tbilisi/",
+      "destination": "/blog/kazbegi-iz-tbilisi-2026/",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/kakheti-tour/",
+      "destination": "/ekskursiya/ekskursiya-kakheti-iz-tbilisi/",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/chastniy-gid-tbilisi/",
+      "destination": "/blog/chastny-gid-ili-gruppa-tbilisi/",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/ceny-v-tbilisi/",
+      "destination": "/blog/tseny-v-tbilisi-2026/",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/skolko-deneg-brat-v-gruziyu/",
+      "destination": "/blog/skolko-stoit-otdyh-v-gruzii/",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/slow-travel/",
+      "destination": "/ekskursiya/tur-vsya-gruziya/",
+      "statusCode": 301
+    },
+    {
+      "source": "/tour/budzhetniy/",
+      "destination": "/blog/skolko-stoit-otdyh-v-gruzii/",
+      "statusCode": 301
+    },
+    {
+      "source": "/tour/walking/",
+      "destination": "/ekskursiya/ekskursiya-stary-tbilisi/",
+      "statusCode": 301
+    },
+    {
+      "source": "/tour/wine/",
+      "destination": "/ekskursiya/degustatsiya-vina-kakheti/",
+      "statusCode": 301
+    },
+    {
+      "source": "/tour/dashbashi/",
+      "destination": "/ekskursiya/ekskursiya-dashbashi-iz-tbilisi/",
+      "statusCode": 301
+    },
+    {
+      "source": "/tour/tusheti/",
+      "destination": "/ekskursiya/ekskursiya-tusheti/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/ekskursiya/svaneti-tour-from-tbilisi/",
+      "destination": "/en/ekskursiya/ekskursiya-svaneti-iz-tbilisi/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/ekskursiya/art-tour-tbilisi/",
+      "destination": "/en/ekskursiya/art-tur-tbilisi/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/ekskursiya/churches-tour-tbilisi/",
+      "destination": "/en/ekskursiya/tur-po-hramam-tbilisi/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/ekskursiya/georgia-summer-tour/",
+      "destination": "/en/ekskursiya/tur-gruziya-leto/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/ekskursiya/qvevri-wine-tour/",
+      "destination": "/en/ekskursiya/kvevri-vino-tur/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/ekskursiya/tbilisi-kazbegi-kakheti-tour/",
+      "destination": "/en/ekskursiya/tur-kazbegi-kakheti-2-dnya/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/ekskursiya/georgian-military-highway-tour/",
+      "destination": "/en/ekskursiya/ekskursiya-kazbegi-iz-tbilisi/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/ekskursiya/georgia-3-day-tour/",
+      "destination": "/en/ekskursiya/tur-gruziya-3-dnya/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/ekskursiya/all-georgia-tour/",
+      "destination": "/en/ekskursiya/tur-vsya-gruziya/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/ekskursiya/airport-transfer-tbilisi/",
+      "destination": "/en/ekskursiya/transfer-aeroport-tbilisi/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/ekskursiya/alazani-wine-route/",
+      "destination": "/en/ekskursiya/vinniy-marshrut-alazani/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/blog/tbilisi-at-night/",
+      "destination": "/en/blog/tbilisi-nightlife/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/blog/nochnoy-tbilisi/",
+      "destination": "/en/blog/tbilisi-nightlife/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/blog/uslugi-chastnogo-gida-tbilisi/",
+      "destination": "/en/blog/private-guide-services-tbilisi/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/blog/gid-tbilisi-vs-gid-gruziya/",
+      "destination": "/en/blog/tbilisi-guide-vs-georgia-guide/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/blog/gruziya-v-sentyabre/",
+      "destination": "/en/blog/georgia-in-september/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/blog/svanetiya/",
+      "destination": "/en/blog/svaneti-guide/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/blog/tbilisi-s-detmi-chto-posmotret/",
+      "destination": "/en/blog/tbilisi-with-kids-guide/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/blog/tbilisi-za-1-den/",
+      "destination": "/en/blog/tbilisi-one-day-itinerary/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/blog/tbilisi-za-3-dnya/",
+      "destination": "/en/blog/tbilisi-3-day-itinerary/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/blog/tseny-v-tbilisi-2026/",
+      "destination": "/en/blog/tbilisi-prices-2026/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/blog/aeroport-tbilisi/",
+      "destination": "/en/blog/tbilisi-airport-guide/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/blog/david-gareji/",
+      "destination": "/en/blog/david-gareja-monastery/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/blog/degustatsiya-vina-gruziya/",
+      "destination": "/en/blog/georgian-wine-guide/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/blog/gruziya-perviy-raz/",
+      "destination": "/en/blog/georgia-first-time-tips/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/blog/gruziya-zimoy/",
+      "destination": "/en/blog/georgia-in-winter/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/blog/kakheti-osenyu/",
+      "destination": "/en/blog/kakheti-in-autumn/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/blog/kazbegi-ili-kakheti/",
+      "destination": "/en/blog/kazbegi-vs-kakheti/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/blog/khachapuri-po-adzharski/",
+      "destination": "/en/blog/adjarian-khachapuri-guide/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/blog/mtskheta-iz-tbilisi/",
+      "destination": "/en/blog/mtskheta-day-trip/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/blog/oshibki-turistov-tbilisi/",
+      "destination": "/en/blog/tourist-mistakes-tbilisi/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/blog/restorany-tbilisi/",
+      "destination": "/en/blog/best-restaurants-tbilisi/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/blog/sovetskiy-tbilisi/",
+      "destination": "/en/blog/soviet-tbilisi-tour/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/blog/stamba-tbilisi/",
+      "destination": "/en/blog/stamba-hotel-tbilisi/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/blog/strahovka-v-gruziyu/",
+      "destination": "/en/blog/travel-insurance-georgia-2026/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/blog/tbilisi-besplatno/",
+      "destination": "/en/blog/free-things-tbilisi/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/blog/tbilisi-fotolokatsii/",
+      "destination": "/en/blog/tbilisi-photo-spots/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/blog/tbilisi-v-dozhd/",
+      "destination": "/en/blog/tbilisi-rainy-day/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/blog/kazbegi-day-trip/",
+      "destination": "/en/blog/kazbegi-day-trip-from-tbilisi/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/blog/noviy-god-v-gruzii/",
+      "destination": "/en/blog/new-year-in-georgia/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/blog/gruziya-samostoyatelno-ili-s-gidom/",
+      "destination": "/en/blog/georgia-guide-or-solo/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/blog/kazbegi-chto-posmotret/",
+      "destination": "/en/blog/things-to-see-kazbegi/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/blog/chto-posmotret-v-gruzii/",
+      "destination": "/en/blog/what-to-see-in-georgia/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/blog/chto-privezti-iz-gruzii/",
+      "destination": "/en/blog/what-to-buy-in-georgia/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/blog/gruzinskaya-kukhnya-chto-poprobovat/",
+      "destination": "/en/blog/georgian-food-guide/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/blog/gruzinskoe-vino-gid/",
+      "destination": "/en/blog/georgian-wine-guide/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/blog/ushchelye-truso/",
+      "destination": "/en/blog/truso-valley-hike/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/blog/zagranpasport-v-gruziyu/",
+      "destination": "/en/blog/georgia-passport-requirements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/blog/skolko-stoit-otdyh-v-gruzii/",
+      "destination": "/en/blog/georgia-trip-cost/",
+      "statusCode": 301
     }
   ],
   "headers": [
@@ -2112,7 +2597,7 @@
         },
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' https://analytics.ahrefs.com https://maps.googleapis.com https://cdn.jsdelivr.net https://www.googletagmanager.com https://www.clarity.ms https://c.clarity.ms https://scripts.clarity.ms https://z.clarity.ms https://c.bing.com https://www.google-analytics.com https://mc.yandex.ru https://mc.yandex.com https://us-assets.i.posthog.com https://static.cloudflareinsights.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://emrldtp.cc https://static.cherehapa.ru https://c31.travelpayouts.com https://tp.media https://tpwgt.com https://widget.kiwitaxi.com https://static.localrent.com https://travel.yandex.ru https://yastatic.net https://suggest-maps.yandex.ru; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com https://widget.kiwitaxi.com https://static.localrent.com https://yastatic.net; font-src 'self' https://fonts.gstatic.com https://widget.kiwitaxi.com; img-src 'self' data: blob: https://maps.gstatic.com https://maps.googleapis.com https://khms0.googleapis.com https://khms1.googleapis.com https://khms2.googleapis.com https://khms3.googleapis.com https://streetviewpixels-pa.googleapis.com https://geo0.ggpht.com https://geo1.ggpht.com https://geo2.ggpht.com https://geo3.ggpht.com https://www.google-analytics.com https://www.googletagmanager.com https://lh3.googleusercontent.com https://images.unsplash.com https://res.cloudinary.com https://c.clarity.ms https://c.bing.com https://pagead2.googlesyndication.com https://mc.yandex.ru https://mc.yandex.com https://i.pravatar.cc https://googleads.g.doubleclick.net https://www.googleadservices.com https://www.google.com https://www.google.ge https://tpwgt.com https://www.travelpayouts.com https://cdn.travelpayouts.com https://widget.kiwitaxi.com https://kiwitaxi.com https://kiwitaxistatic-a.akamaihd.net https://img.wway.io https://travel.yandex.ru https://yastatic.net https://avatars.mds.yandex.net; connect-src 'self' https://stats.g.doubleclick.net https://ad.doubleclick.net https://analytics.ahrefs.com https://maps.googleapis.com https://www.googletagmanager.com https://www.google-analytics.com https://analytics.google.com https://www.google.com https://www.clarity.ms https://c.clarity.ms https://z.clarity.ms https://l.clarity.ms https://j.clarity.ms https://n.clarity.ms https://v.clarity.ms https://formspree.io https://api.indexnow.org https://api.nowpayments.io https://api.yookassa.ru https://fonts.googleapis.com https://pagead2.googlesyndication.com https://mc.yandex.ru https://mc.yandex.com wss://mc.yandex.ru wss://mc.yandex.com https://us.i.posthog.com https://us-assets.i.posthog.com https://emrldtp.cc https://sentry.avs.io https://c31.travelpayouts.com https://tp.media https://tpwgt.com https://widget.kiwitaxi.com https://tpo.gg https://www.cherehapa.ru https://static.localrent.com https://localrent.com https://travel.yandex.ru https://yastatic.net https://suggest-maps.yandex.ru https://avatars.mds.yandex.net; frame-src https://www.google.com https://maps.google.com https://yookassa.ru https://cherehapa.ru https://www.cherehapa.ru https://c31.travelpayouts.com https://widget.kiwitaxi.com https://kiwitaxi.com https://localrent.com https://www.localrent.com https://static.localrent.com https://travel.yandex.ru https://yastatic.net; media-src 'self';"
+          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' https://analytics.ahrefs.com https://maps.googleapis.com https://cdn.jsdelivr.net https://www.googletagmanager.com https://www.clarity.ms https://c.clarity.ms https://scripts.clarity.ms https://z.clarity.ms https://c.bing.com https://www.google-analytics.com https://mc.yandex.ru https://mc.yandex.com https://us-assets.i.posthog.com https://static.cloudflareinsights.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://emrldtp.cc https://static.cherehapa.ru https://c31.travelpayouts.com https://tp.media https://tpwgt.com https://widget.kiwitaxi.com https://static.localrent.com https://travel.yandex.ru https://yastatic.net https://suggest-maps.yandex.ru; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com https://widget.kiwitaxi.com https://static.localrent.com https://yastatic.net; font-src 'self' https://fonts.gstatic.com https://widget.kiwitaxi.com; img-src 'self' data: blob: https://maps.gstatic.com https://maps.googleapis.com https://khms0.googleapis.com https://khms1.googleapis.com https://khms2.googleapis.com https://khms3.googleapis.com https://streetviewpixels-pa.googleapis.com https://geo0.ggpht.com https://geo1.ggpht.com https://geo2.ggpht.com https://geo3.ggpht.com https://www.google-analytics.com https://www.googletagmanager.com https://lh3.googleusercontent.com https://images.unsplash.com https://res.cloudinary.com https://c.clarity.ms https://c.bing.com https://pagead2.googlesyndication.com https://mc.yandex.ru https://mc.yandex.com https://i.pravatar.cc https://googleads.g.doubleclick.net https://www.googleadservices.com https://www.google.com https://www.google.ge https://tpwgt.com https://www.travelpayouts.com https://cdn.travelpayouts.com https://widget.kiwitaxi.com https://kiwitaxi.com https://kiwitaxistatic-a.akamaihd.net https://img.wway.io https://travel.yandex.ru https://yastatic.net https://avatars.mds.yandex.net; connect-src 'self' https://stats.g.doubleclick.net https://ad.doubleclick.net https://analytics.ahrefs.com https://maps.googleapis.com https://www.googletagmanager.com https://www.google-analytics.com https://analytics.google.com https://www.google.com https://www.clarity.ms https://c.clarity.ms https://z.clarity.ms https://l.clarity.ms https://j.clarity.ms https://n.clarity.ms https://v.clarity.ms https://formspree.io https://api.indexnow.org https://api.nowpayments.io https://api.yookassa.ru https://fonts.googleapis.com https://pagead2.googlesyndication.com https://mc.yandex.ru https://mc.yandex.com wss://mc.yandex.ru wss://mc.yandex.com https://us.i.posthog.com https://us-assets.i.posthog.com https://emrldtp.cc https://sentry.avs.io https://c31.travelpayouts.com https://tp.media https://tpwgt.com https://widget.kiwitaxi.com https://tpo.gg https://www.cherehapa.ru https://static.localrent.com https://localrent.com https://travel.yandex.ru https://yastatic.net https://suggest-maps.yandex.ru https://avatars.mds.yandex.net; frame-src https://www.youtube-nocookie.com https://www.google.com https://maps.google.com https://yookassa.ru https://cherehapa.ru https://www.cherehapa.ru https://c31.travelpayouts.com https://widget.kiwitaxi.com https://kiwitaxi.com https://localrent.com https://www.localrent.com https://static.localrent.com https://travel.yandex.ru https://yastatic.net; media-src 'self';"
         }
       ]
     }
