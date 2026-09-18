@@ -110,4 +110,4 @@ Sitemaps: 6 файлов, 875 URL, 0 ошибок; GSC не отдаёт «index
 - **7 ссылки/бренд**: sameAs на главной полный (Instagram, YouTube, Tripadvisor, Google Maps, Яндекс, FB, Telegram). Внешние 15 ссылок — ручная работа, список целей в google-tasks.md п.22.
 - Деплой ✅, IndexNow 200, Google Indexing 35/38 (3 — квота дня).
 
-Контроль 02.10: CTR 17 переписанных страниц + переходы статья→тур (GA4 event click по `.also-tour`).
+Контроль 02.10: `python3 scripts/gsc-ctr-check.py` (база 25 стр.: 1 976 кликов / 337 148 показов за 19.08–15.09) + письмо Google по тикету API.
