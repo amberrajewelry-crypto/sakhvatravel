@@ -1,0 +1,125 @@
+28d clicks 8669 impr 632476 ctr 1.37 pos 6.9
+90d clicks 16678 impr 1333821 ctr 1.25 pos 7.2
+prev28 clicks 5750 impr 437314 ctr 1.31 pos 7.2
+MONTHLY {'2026-04': [31, 889], '2026-05': [160, 12424], '2026-06': [939, 144173], '2026-07': [3272, 309546], '2026-08': [8118, 568705], '2026-09': [4792, 377253]}
+DEVICE [('MOBILE', 6647, 367867), ('DESKTOP', 1940, 260363), ('TABLET', 82, 4246)]
+COUNTRY top [('geo', 4207, 231530), ('rus', 895, 64385), ('usa', 270, 62478), ('deu', 246, 18715), ('isr', 234, 13246), ('gbr', 227, 38616), ('blr', 219, 10372), ('ukr', 215, 14907)]
+APPEARANCE [('REVIEW_SNIPPET', 202, 11258), ('VIDEO', 10, 666), ('TRANSLATED_RESULT', 23, 803), ('PRODUCT_SNIPPETS', 225, 11184)]
+TOP QUERIES 28d
+  318 2542 1.9 თბილისობა 2026
+  163 997 2.9 მარტვილის კანიონი ფასები 2026
+  127 1434 2.7 тбилисоба 2026
+  109 1106 2.8 tbilisoba 2026
+  108 9879 4.8 грузинский алфавит
+  54 127 1.7 თბილისი ყაზბეგი
+  47 1016 6.4 სადღეგრძელოები ქართულ სუფრაზე
+  35 292 2.5 тбилисоба 2026 когда
+  28 486 6.3 tbilisoba
+  28 1131 8.6 что привезти из грузии
+  27 79 1.6 თბილისი ყაზბეგი მარშუტკა
+  26 101 4.0 ტურები სვანეთში 2026
+  25 205 6.1 გოგირდის აბანოების ფასი
+  24 395 4.7 ქართული სადღეგრძელოები
+  23 1005 6.7 თბილისობა
+  23 624 6.2 ლამაზი სადღეგრძელოები
+  22 814 4.5 грузинский алфавит на русском
+  21 54 1.3 თბილისი ყაზბეგი ტრანსპორტი
+  21 68 2.1 თბილისობა 2026 თარიღი
+  19 195 4.1 georgia souvenirs
+  19 517 3.9 tbilisoba festival 2026
+  18 97 2.0 what to buy in georgia
+  18 4219 9.3 спасибо по грузински
+  17 516 7.3 სადღეგრძელოების სია
+  16 271 3.8 грузинский алфавит с русской транскрипцией
+  16 79 2.7 день города тбилиси 2026
+  16 280 6.6 ორიგინალური სადღეგრძელოები
+  15 43 1.1 თბილისი ყაზბეგი მგზავრობა
+  13 62 2.6 souvenirs from georgia
+  13 147 2.9 tbilisi to kazbegi bus
+BRAND (11, 44, 25.0)
+OPPORTUNITY impr>=200 pos 4-15 low ctr
+  108 9879 4.8 1.1% грузинский алфавит
+  18 4219 9.3 0.4% спасибо по грузински
+  8 4080 8.8 0.2% georgian alphabet
+  0 2950 5.1 0.0% georgia visa rules for russians 2025 2026 residence
+  3 2207 8.3 0.1% спасибо на грузинском
+  5 2029 10.8 0.2% narikala fortress
+  0 1705 6.5 0.0% what to do on a rainy day
+  4 1685 6.3 0.2% чача сколько градусов
+  0 1612 8.9 0.0% best parks for kids near me
+  4 1583 7.3 0.3% карта метро тбилиси
+  0 1420 7.6 0.0% museums open on monday
+  9 1382 9.8 0.7% მარტვილის კანიონი
+  4 1361 7.3 0.3% здравствуйте по грузински
+  7 1220 6.8 0.6% ქართული ანბანი
+  28 1131 8.6 2.5% что привезти из грузии
+  1 1123 9.9 0.1% tbilisi to batumi
+  2 1053 11.7 0.2% ურეკი
+  47 1016 6.4 4.6% სადღეგრძელოები ქართულ სუფრაზე
+  23 1005 6.7 2.3% თბილისობა
+  11 962 7.6 1.1% tbilisi to kazbegi
+  0 859 9.7 0.0% მეტროს რუკა
+  22 814 4.5 2.7% грузинский алфавит на русском
+  3 781 11.9 0.4% ბორჯომი
+  0 778 8.9 0.0% привет на грузинском
+  0 742 9.0 0.0% georgian script
+  2 734 5.4 0.3% сколько букв в грузинском алфавите
+  1 721 5.6 0.1% сколько градусов в чаче
+  6 678 4.9 0.9% алфавит грузинский
+  0 672 10.1 0.0% narikala
+  5 667 9.6 0.7% ყაზბეგი
+TOP PAGES 28d
+  540 6013 3.3 /ge/blog/tbilisoba/
+  537 8034 4.2 /en/blog/what-to-buy-in-georgia/
+  360 7551 6.3 /ge/blog/georgian-toasts/
+  339 43807 7.8 /blog/gruzinskie-frazy/
+  312 24889 5.3 /blog/gruzinskiy-alfavit/
+  303 2620 4.1 /ge/blog/transfer-tbilisi-to-kazbegi/
+  302 4945 4.2 /blog/tbilisoba/
+  258 7017 6.5 /ge/blog/martvili-canyon/
+  238 5249 4.6 /en/blog/tbilisoba/
+  177 9505 6.2 /en/blog/transfer-tbilisi-to-kazbegi/
+  165 34147 5.8 /en/blog/georgia-in-september/
+  163 3917 5.2 /blog/gruzinskie-tosty/
+  120 5054 9.2 /blog/restorany-tbilisi/
+  111 5129 7.7 /blog/chto-privezti-iz-gruzii/
+  103 7876 6.4 /blog/karty-nalichnye-gruziya/
+  100 7308 6.0 /blog/rouming-v-gruzii/
+  100 2338 6.1 /ge/blog/what-to-see-in-tbilisi/
+  94 3857 4.9 /en/blog/kazbegi-in-winter/
+  93 2155 7.2 /ge/blog/sulfur-baths-tbilisi/
+  91 12276 6.6 /en/blog/tbilisi-cable-car/
+  89 5513 6.5 /blog/ureki-plyazh/
+  87 6686 6.7 /en/blog/tbilisi-techno-scene/
+  81 3927 7.6 /blog/basseyny-tbilisi/
+  80 15812 5.5 /blog/metro-tbilisi/
+  79 5880 7.7 /blog/kanatnaya-doroga-tbilisi/
+LOSERS
+  -139 /ge/blog/georgian-toasts/
+  -37 /blog/tbilisi-v-dozhd/
+  -25 /en/blog/transfer-tbilisi-to-kazbegi/
+  -24 /en/blog/tbilisi-nightlife/
+  -22 /blog/kurs-lari-k-rublyu/
+  -17 /en/blog/sulfur-baths-tbilisi/
+  -14 /en/blog/kazbegi-day-trip-from-tbilisi/
+  -14 /ge/blog/tbilisi-batumi-train/
+  -13 /ge/tury-v-svaneti/
+  -11 /en/blog/truso-valley-hike/
+  -10 /en/blog/stamba-hotel-tbilisi/
+  -10 /en/blog/ureki-beach/
+GAINERS
+  52 /blog/karty-nalichnye-gruziya/
+  56 /en/blog/georgia-in-september/
+  58 /ge/blog/sulfur-baths-tbilisi/
+  63 /en/blog/kazbegi-in-winter/
+  110 /ge/blog/martvili-canyon/
+  113 /blog/gruzinskiy-alfavit/
+  117 /blog/gruzinskie-tosty/
+  170 /blog/tbilisoba/
+  215 /en/blog/tbilisoba/
+  237 /ge/blog/transfer-tbilisi-to-kazbegi/
+  258 /blog/gruzinskie-frazy/
+  499 /ge/blog/tbilisoba/
+PAGES 90d with 0 clicks: 1074 of 1707
+LANG clicks {'/ge/': 2619, '/en/': 2854, 'ru': 3222}
+SITEMAPS [('sitemap-pages.xml', '83', '0', '0', '0'), ('sitemap-tours.xml', '245', '0', '0', '0'), ('sitemap-index.xml', '875', '0', '0', '0'), ('sitemap-blog.xml', '357', '0', '0', '0'), ('sitemap-landing.xml', '124', '0', '0', '0'), ('sitemap.xml', '875', '0', '0', '0')]
