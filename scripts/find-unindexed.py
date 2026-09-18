@@ -22,7 +22,7 @@ SA_FILE = ROOT / "service-account.json"
 SITE = "https://sakhva-travel.com/"
 SCOPES = ["https://www.googleapis.com/auth/webmasters.readonly"]
 SUBMAPS = ["sitemap-blog.xml", "sitemap-tours.xml",
-           "sitemap-landing.xml", "sitemap-pages.xml"]
+           "sitemap-landing.xml", "sitemap-pages.xml", "sitemap-pogoda.xml"]
 NS = {"ns": "http://www.sitemaps.org/schemas/sitemap/0.9"}
 
 # coverageState values that mean "indexed" — everything else is a candidate

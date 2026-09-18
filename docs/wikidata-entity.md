@@ -181,3 +181,11 @@ Wikidata не имеет стандартного property для Google Maps CI
 - Google Maps: https://maps.google.com/?cid=14070083063461040701
 - Wikidata New Item: https://www.wikidata.org/wiki/Special:NewItem
 - Wikidata Property search: https://www.wikidata.org/wiki/Special:ListProperties
+
+---
+
+## Статус 18.09.2026 — СОЗДАНО
+
+Сущность существует: **Q140518485** (label «Sakhva Travel»; P31, P856, P17, P159).
+`sameAs` с этим Q-id добавлен в бизнес-узел на 154 страницах + `js/schema-ld.json`.
+Дальше: дописать в Wikidata P1329 (телефон), P2003 (Instagram), P3417/P... (Tripadvisor ID d15318013) — вручную в интерфейсе.

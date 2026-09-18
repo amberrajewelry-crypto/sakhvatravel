@@ -1,269 +1,312 @@
-# Local SEO Audit — sakhva-travel.com
-Дата: 2026-08-05
-Аудитор: Local SEO Agent (claude-sonnet-4-6)
+# Local SEO Audit: sakhva-travel.com
+
+**Дата:** 2026-08-13  
+**Аудитор:** Claude Sonnet 4.6 (automated)  
+**Бизнес:** Sakhva Travel — частный гид Тимур Сахвадзе, Тбилиси, Грузия  
+**Лицензия:** #8247109128 | WhatsApp: +995511272623
 
 ---
 
-## Local SEO Score: 71 / 100
+## Local SEO Score: 78 / 100
 
 | Dimension | Weight | Score | Weighted |
-|-----------|--------|-------|---------|
-| GBP Signals | 25% | 72 | 18.0 |
-| Reviews & Reputation | 20% | 80 | 16.0 |
-| Local On-Page SEO | 20% | 75 | 15.0 |
-| NAP Consistency & Citations | 15% | 53 | 8.0 |
-| Local Schema Markup | 10% | 88 | 8.8 |
-| Local Link & Authority Signals | 10% | 52 | 5.2 |
-| **ИТОГО** | | | **71.0** |
+|-----------|--------|-------|----------|
+| GBP Signals | 25% | 82 | 20.5 |
+| Reviews & Reputation | 20% | 85 | 17.0 |
+| Local On-Page SEO | 20% | 82 | 16.4 |
+| NAP Consistency & Citations | 15% | 72 | 10.8 |
+| Local Schema Markup | 10% | 70 | 7.0 |
+| Local Link & Authority Signals | 10% | 62 | 6.2 |
+| **TOTAL** | | | **78** |
+
+*Прирост +4 балла vs предыдущий аудит (74/100, май 2026): добавлены Yandex Maps, Facebook, Threads в sameAs; reviewCount 87→90.*
 
 ---
 
-## Бизнес-тип: Hybrid (SAB + физадрес)
+## Тип бизнеса
 
-Гид Тимур — частный тур-оператор. На сайте указан физический адрес (14 Merab Kostava St, Тбилиси 0108), встроены ссылки на Google Maps и Яндекс Карты. Одновременно бизнес работает как SAB: туры проводятся по всей Грузии (Казбеги, Кахетия, Сванетия), клиенты встречаются у отеля. GBP верифицирован (CID 14070083063461040701).
+**Hybrid SAB (Service Area Business + точка встречи)**
 
-**Отрасль:** Tourism / Tour Guide (TravelAgency + LocalBusiness)
+- Адрес в schema: `14 Merab Kostava St, Тбилиси, 0108, GE` — присутствует в JSON-LD, визуально на contacts не выделен как полный физический адрес
+- GBP CID: `14070083063461040701` — подтверждён в `sameAs` и `hasMap`
+- Maps embed: iframe на contacts (RU/EN/GE)
+- Модель: гид выезжает к туристам, не офис для посещения
 
----
-
-## 1. NAP-консистентность
-
-### Сводная таблица источников
-
-| Поле | index.html (footer) | index.html (schema) | llms.txt | Страницы туров (ekskursiya/) |
-|------|---------------------|---------------------|----------|------------------------------|
-| Name | Sakhva Travel | Sakhva Travel | Sakhva Travel | Sakhva Travel |
-| Address | 14 ул. Мераба Костава, Тбилиси 0108 | 14 Merab Kostava St, 0108 | — (не указан) | — (не указан) |
-| Phone | +995 511 272 623 | +995511272623 | +995 511 272 623 | +995511272623 |
-| Telegram | t.me/SakhvaGuideBot | t.me/SakhvaGuideBot?start=site | @SakhvaTravel | t.me/SakhvaGuideBot?start=site |
-| Email | help@sakhva-travel.com | help@sakhva-travel.com | help@sakhva-travel.com | — |
-
-### Найденные расхождения
-
-**CRITICAL — Telegram handle рассинхронизирован:**
-- `llms.txt` (строки 19, 31, 40): указан `@SakhvaTravel` — это публичный канал/username
-- `index.html` footer + schema + все страницы туров: `t.me/SakhvaGuideBot` — это бот
-- Для AI-агентов, которые цитируют llms.txt, Telegram-контакт будет неверным. Пользователь напишет в @SakhvaTravel (канал), а не в бот бронирования.
-
-**LOW — Phone formatting:**
-- Footer: `+995 511 272 623` (с пробелами)
-- Schema/wa.me: `+995511272623` (без пробелов)
-- Функционально одинаково, но для NAP-консистентности лучше унифицировать в E.164: `+995511272623`
-
-**LOW — Address язык в schema vs footer:**
-- Schema: `streetAddress: "14 Merab Kostava St"` (английский)
-- Footer bottom bar: `14 ул. Мераба Костава, Тбилиси 0108` (русский)
-- GBP ожидает соответствие локальному написанию. Рекомендуется привести к единому: английский в schema (корректно для addressCountry: GE), русский в видимом тексте.
-
-**LOW — llms.txt не содержит адреса:**
-- AI-агенты, работающие с llms.txt, не получают физический адрес. Для SAB это приемлемо, но для hybrid-бизнеса лучше добавить.
+**Индустриальный вертикаль: Tour / Travel (private tour guide)**
 
 ---
 
-## 2. LocalBusiness / TravelAgency Schema
+## NAP Consistency Audit
 
-### Результат валидации
+### Таблица источников
 
-| Свойство | Статус | Значение |
-|----------|--------|---------|
-| @type | PASS | ["TravelAgency", "LocalBusiness"] |
-| name | PASS | "Sakhva Travel" |
-| legalName | PASS | "ИП Сахвадзе Т.В." |
-| telephone | PASS | "+995511272623" |
-| email | PASS | "help@sakhva-travel.com" |
-| address (PostalAddress) | PASS | 14 Merab Kostava St, 0108, GE |
-| geo (GeoCoordinates) | PASS | lat: 41.7250505, lng: 44.7789235 (5 знаков — норма) |
-| openingHoursSpecification | PASS | Пн-Вс 08:00–22:00 |
-| aggregateRating | PASS | 4.9 / 90 отзывов |
-| priceRange | PASS | "₾98–₾595" |
-| currenciesAccepted | PASS | "GEL, USD, EUR" |
-| areaServed | PASS | Тбилиси, Казбеги, Кахетия, Батуми, Сванетия |
-| sameAs | PASS | 9 платформ (TG, IG, WA, Tripadvisor, YouTube, Maps, Яндекс, FB, Threads) |
-| hasMap | PASS | google.com/maps?cid=14070083063461040701 |
-| image | PASS | og-cover.jpg (1200×630) |
-| logo | PASS | logo-schema.webp (300×60) |
-| url | PASS | https://sakhva-travel.com/ |
-| description | PASS | Присутствует |
+| Поле | index schema | contacts RU schema | contacts visible | en/index schema | ge/index schema | Footer |
+|------|--------------|--------------------|------------------|-----------------|-----------------|--------|
+| Name | Sakhva Travel | Sakhva Travel | Sakhva Travel | Sakhva Travel | Sakhva Travel | Sakhva Travel |
+| streetAddress | 14 Merab Kostava St | 14 Merab Kostava St | не выделен | 14 Merab Kostava St | 14 Merab Kostava St | отсутствует |
+| addressLocality | Тбилиси (RU) | Тбилиси (RU) | Тбилиси | Tbilisi (EN) | Tbilisi (EN) | Тбилиси |
+| postalCode | 0108 | 0108 | — | 0108 | 0108 | — |
+| telephone | +995511272623 | +995511272623 | +995 511 272 623 | +995511272623 | +995511272623 | оба формата |
+| email | help@sakhva-travel.com | help@sakhva-travel.com | help@sakhva-travel.com | help@sakhva-travel.com | help@sakhva-travel.com | help@sakhva-travel.com |
 
-**Замечания:**
+### Расхождения
 
-- **WARN — Субтип schema:** `TravelAgency` корректен для тур-агентства. Но для индивидуального лицензированного гида точнее добавить `TouristInformationCenter` или `Person` (гид Тимур) как `hasEmployee` / `founder`. Страницы туров используют `TouristTrip` — это правильно.
-- **WARN — `reviewCount: 90` в schema vs `90 отзывов` в llms.txt:** Совпадает, но на страницах отдельных туров `aggregateRating` указывает разные значения (от 20 до 47 отзывов) — это отзывы конкретного тура, что допустимо.
-- **INFO — `openingHoursSpecification`:** Дан как один объект без массива. Для Rich Results валидно, но рекомендуется проверить через schema.org validator — некоторые парсеры ожидают массив.
-- **INFO — `dateModified: "2026-05-13"`:** Устарело на ~3 месяца. При следующем контентном изменении обновить.
+**[MEDIUM]** Footer содержит одновременно `+995511272623` (в href) и `+995 511 272 623` (visible text). Для пользователя нормально, но создаёт два варианта NAP при скрейпинге. Видимый текст везде должен быть `+995 511 272 623`.
+
+**[MEDIUM]** contacts RU — streetAddress есть в schema, но не отображается явно для пользователя. SAB это допускает, но снижает доверие.
+
+**[HIGH]** ge/contacts — `areaServed` как простой массив строк `["Tbilisi"]`, тогда как ge/index использует типизированные объекты `{"@type":"City","name":"თბილისი","sameAs":"wikidata"}`. Несогласованность внутри одного языка.
+
+**[HIGH]** ge/contacts — два конфликтующих `reviewCount` в одной странице: 90 (TravelAgency блок) и 36 (отдельный Review объект). Google берёт первый встреченный; второй создаёт противоречие.
+
+**[LOW]** contacts EN schema — нет `telephone` и `streetAddress` в TravelAgency блоке. EN-версия страницы контактов передаёт неполный NAP.
+
+**[LOW]** `addressLocality` на contacts RU — кириллица `"Тбилиси"`. Для PostalAddress Google рекомендует латиницу в международном контексте.
 
 ---
 
-## 3. Отзывы / Review Health
+## GBP Signals на сайте
+
+| Сигнал | Статус | Детали |
+|--------|--------|--------|
+| Google Maps embed | ДА | iframe на contacts (RU/EN/GE) |
+| GBP CID ссылка | ДА | `cid=14070083063461040701` в sameAs + hasMap |
+| Google Maps place link | ДА | В sameAs главной |
+| Yandex Maps профиль | ДА | profile/103365004008 — добавлено с мая 2026 |
+| TripAdvisor badge | ДА | Travellers' Choice, в sameAs |
+| Facebook | ДА | В sameAs — добавлено с мая 2026 |
+| Threads | ДА | В sameAs — добавлено с мая 2026 |
+| Review виджет (живой) | НЕТ | Только статичные цитаты |
+| CTA «Оставить отзыв» Google | НЕТ | Отсутствует на всех страницах |
+| Directions link | НЕТ | Нет кнопки «Построить маршрут» |
+| GBP фото / Places API | НЕТ | Нет интеграции |
+| GBP посты на сайте | НЕТ | Не вынесены |
+
+---
+
+## Review Health Snapshot
 
 | Метрика | Значение | Оценка |
 |---------|----------|--------|
-| AggregateRating в schema (главная) | 4.9 / 90 | Отлично |
-| AggregateRating в schema (страницы туров) | 4.7–4.9 / 20–47 | Хорошо |
-| Видимые отзывы на главной | Есть (секция с цитатами) | Есть |
-| Review schema (отдельные Review объекты) | НЕ ОБНАРУЖЕНЫ | Пробел |
-| Ответы на отзывы (видимые на сайте) | Нет | Нет данных |
-| Velocity (оценка по llms.txt) | 90 отзывов Google, 2026 | Норма |
+| Рейтинг (schema main) | 4.9 / 5 | Отлично |
+| Кол-во отзывов (main) | 90 | Хорошо для нишевого SAB |
+| datePublished в Review | НЕТ — contacts RU | Блокирует Review Rich Snippet |
+| datePublished в Review | ДА — contacts EN/GE (2025-12 – 2026-05) | ОК |
+| Видимые reviewBody на главной | 15 элементов | ОК |
+| CTA «Write a review» | ОТСУТСТВУЕТ | Критично |
+| TripAdvisor Travellers' Choice | ДА, linked | Сильный сигнал |
+| Review velocity | Неизвестна | Требует GBP панели |
+| Response rate | Неизвестен | Требует GBP панели |
 
-**Ключевой пробел подтверждён:** `AggregateRating` в schema присутствует на главной и страницах туров. Контент-агент был неточен — рейтинг В SCHEMA ЕСТЬ. Однако отдельные `Review` объекты (с `author`, `reviewBody`, `datePublished`) не размечены нигде — это ограничивает получение rich snippet с отдельными цитатами отзывов в SERP.
-
-**Правило 18 дней (Sterling Sky):** Нет данных о velocity последних отзывов без доступа к GBP API. Необходимо мониторить — если нет новых отзывов >18 дней, rankings в локальном паке падают.
-
----
-
-## 4. GBP Signals
-
-| Сигнал | Статус |
-|--------|--------|
-| GBP верифицирован | PASS (CID 14070083063461040701) |
-| Maps CID в sameAs schema | PASS |
-| hasMap в schema | PASS |
-| Ссылка на Maps в footer | PASS (maps.app.goo.gl/...) |
-| Google Maps embed на странице | НЕ ОБНАРУЖЕН |
-| Place photos упоминания | Нет явного |
-| GBP Posts signal на сайте | Нет |
-| Review widget (GBP) | Нет embed; есть ручные цитаты |
-| Кнопка "Написать отзыв" | Есть (ссылка на Google Maps reviews) |
-| Категория GBP | Не проверить без GBP API (предположительно "Tour operator" или "Tourist attraction") |
-
-**Замечание:** Отсутствие Maps iframe — это не критично для ранжирования, но снижает конверсию мобильных пользователей, которые хотят проверить локацию. Для SAB/hybrid это менее важно, чем для brick-and-mortar.
+**Правило 18 дней (Sterling Sky)**: без CTA стимулировать отзывы сложнее — риск velocity cliff при спаде сезона.
 
 ---
 
-## 5. Citations (Tier 1 директории)
+## Local Schema Validation
 
-| Платформа | Статус | Примечание |
-|-----------|--------|------------|
-| Google Business Profile | PASS | CID верифицирован |
-| Tripadvisor | PASS | В sameAs schema, прямая ссылка |
-| Яндекс Бизнес / Яндекс Карты | PASS | yandex.com.ge/profile/103365004008 в schema и footer |
-| 2ГИС | PARTIAL | Ссылка на Батуми-поиск (2gis.ge/batumi/search/sakhva+travel/firm/...) — нет прямой карточки Тбилиси |
-| Facebook | PASS | В sameAs (people/Sakhva-Travel/61590273044825) |
-| Instagram | PASS | @sakhvatravel в schema и footer |
-| YouTube | PASS | @SakhvaTravel в schema |
-| Viator | НЕТ | Не найден в schema/llms.txt |
-| GetYourGuide | НЕТ | Не найден |
-| BBB | N/A | Не релевантен для Грузии |
-| Booking.com Experiences | НЕТ | Не найден |
+### Главная страница (index.html)
 
-**Критический пробел для тур-гида:** Viator и GetYourGuide — Tier 1 для туристической ниши. Отсутствие профилей на этих платформах = упущенный трафик англоязычных туристов. Они также являются citation-сигналами для GBP.
+| Свойство | Статус | Примечание |
+|----------|--------|------------|
+| @type | `["TravelAgency","LocalBusiness"]` | Массив — правильно |
+| name | ДА | "Sakhva Travel" |
+| legalName | ДА | "ИП Сахвадзе Т.В." |
+| streetAddress | ДА | "14 Merab Kostava St" |
+| postalCode | ДА | "0108" |
+| geo (precision) | ДА | 41.7250505 / 44.7789235 (7 знаков) |
+| telephone | ДА | +995511272623 |
+| email | ДА | help@sakhva-travel.com |
+| openingHoursSpecification | ДА | Mon-Sun 08:00-22:00 |
+| aggregateRating | ДА | 4.9, 90 reviews |
+| priceRange | ДА | ₾98–₾595 |
+| areaServed (типизированные) | ДА | City/Place/Country с wikidata sameAs |
+| sameAs (9 платформ) | ДА | TG, IG, WA, TA, YT, GMaps, Yandex, FB, Threads |
+| hasMap | ДА | CID URL |
+| currenciesAccepted | ДА | GEL, USD, EUR |
+| Person (гид) | ДА | Timur, jobTitle, worksFor, knowsLanguage |
+| TouristTrip | ДА | Все туры с Offer, duration |
+| FAQPage | ДА | 9+ пар |
+| VideoObject | ДА | Промо-видео |
+| addressRegion | ПРОБЛЕМА | "Тбилиси" — город, не регион |
 
-**2ГИС:** Ссылка ведёт на поиск в Батуми, а не на прямую карточку Тбилиси. Вероятно, карточка в 2ГИС Тбилиси отсутствует или не привязана.
+**Замечания:**
+
+- **[MEDIUM]** `addressRegion = "Тбилиси"` — должен быть административный регион, а не город. Для Тбилиси как самостоятельной административной единицы правильно либо опустить поле, либо использовать `"Tbilisi"` (EN). Текущее значение технически верно, но создаёт дублирование с `addressLocality`.
+- **[LOW]** `openingHoursSpecification` — единый объект вместо массива. Валидно, но массив с разбивкой по дням более гибкий.
+
+### Страницы туров / направлений
+
+| Страница | Блоков schema | FAQPage | AggregateRating | areaServed | Review | hreflang EN |
+|----------|--------------|---------|-----------------|------------|--------|-------------|
+| kakheti | 2 | ДА | НЕТ | НЕТ | НЕТ | ДА |
+| tury-na-kazbek | 1 | ДА | НЕТ | НЕТ | НЕТ | **НЕТ** |
+| mtskheta-mtianeti | 2 | ДА | НЕТ | НЕТ | НЕТ | ДА |
+| tury-v-tbilisi | 2 | ДА | ДА (14) | НЕТ | НЕТ | **НЕТ** |
+| ekskursiya | 2 | ДА | НЕТ | НЕТ | НЕТ | ДА |
+
+**Критично:** 4 из 5 ключевых страниц туров без `AggregateRating` — нет звёзд в SERP сниппете. `tury-v-tbilisi` имеет AggregateRating с 14 отзывами вместо реальных 90.
+
+**Все 5 страниц туров не имеют `areaServed`** — потеря гео-релевантности.
+
+### Страница contacts
+
+| Свойство | contacts RU | contacts EN | contacts GE |
+|----------|------------|------------|------------|
+| telephone | ДА | НЕТ | ДА |
+| streetAddress | ДА | НЕТ | НЕТ |
+| aggregateRating (reviewCount) | ДА (90) | ДА (36 — занижено) | КОНФЛИКТ (90 + 36) |
+| Review datePublished | НЕТ | ДА | ДА |
+| areaServed формат | строки (деградация) | типизированный | строки (деградация) |
+| ContactPoint | ДА | НЕТ | НЕТ |
 
 ---
 
-## 6. Local On-Page SEO
+## Мультиязычность локальных данных
 
-### Целевые страницы под локальные интенты
+### hreflang покрытие
 
-| Интент | URL | Статус |
-|--------|-----|--------|
-| гид Тбилиси / экскурсии Тбилиси | / (главная) | Есть, оптимизирована |
-| частный гид Тбилиси | / + /ekskursiya/* | Есть в FAQs и контенте |
-| экскурсия Казбеги из Тбилиси | /ekskursiya/ekskursiya-kazbegi-iz-tbilisi/ | Есть |
-| тур Кахетия | /ekskursiya/ekskursiya-kakheti-iz-tbilisi/ | Есть |
-| ночной Тбилиси | /ekskursiya/nochnaya-ekskursiya-tbilisi/ | Есть |
-| Tbilisi private tour guide (EN) | /en/tour/* | Структура есть |
-| тур для эмигрантов Тбилиси | /tour/emigrant/ | Уникальный, нет конкурентов |
-| digital nomad Тбилиси | /tour/digital-nomad/ | Уникальный интент |
+| Страница | ru | en | ka | x-default |
+|----------|----|----|----|-----------|
+| index | ДА | ДА | ДА | ДА |
+| contacts | ДА | ДА | ДА | ДА |
+| kakheti | ДА | ДА | ДА | ДА |
+| tury-na-kazbek | ДА | **НЕТ** | ДА | ДА |
+| tury-v-tbilisi | ДА | **НЕТ** | **НЕТ** | ДА |
+| mtskheta-mtianeti | ДА | ДА | ДА | ДА |
+| ekskursiya | ДА | ДА | ДА | ДА |
 
-**Сильные стороны:**
-- Страницы туров используют `TouristTrip` schema с `author` (Person с лицензией) — сильный E-E-A-T сигнал
-- FAQ schema на главной
-- Уникальные интенты (эмигранты, digital nomad) без прямой конкуренции в локальном паке
-- 55 статей блога на RU + 10 на EN — хороший контентный объём
+**[HIGH]** `tury-na-kazbek` — нет EN hreflang. Казбеги — топ-запрос у англоязычных туристов.
 
-**Пробелы:**
-- Нет страницы `/guide/timur/` или `/about/` с Person schema и `hasCredential` (лицензия №8247109128) на главном домене в виде отдельного URL — лицензия есть только в TouristTrip schema страниц туров
-- Ценники в llms.txt (₾77–₾595) расходятся с CLAUDE.md (€45+). Нужно унифицировать для AI-агентов
+**[HIGH]** `tury-v-tbilisi` — нет EN и GE hreflang. Главный коммерческий хаб для «tour in Tbilisi».
+
+### Локализация schema
+
+| Поле | RU | EN | GE |
+|------|----|----|----|
+| addressLocality | "Тбилиси" (кириллица) | "Tbilisi" | "Tbilisi" |
+| areaServed (index) | кириллица + wikidata | EN + wikidata | грузинский + wikidata |
+| areaServed (contacts) | строки без типов | типизированные | строки без типов |
+| reviewBody language | RU + EN смесь | EN + RU | EN + RU |
+
+GE-версия корректно использует грузинский алфавит в `areaServed` — best practice для `inLanguage: ka`.
 
 ---
 
-## 7. Локальный пак / Maps Ranking Factors
+## Citation Presence (Tier 1 Directories)
 
-Релевантные факторы (Whitespark 2026):
+| Директория | Статус | Примечание |
+|------------|--------|------------|
+| Google Business Profile | ДА | CID 14070083063461040701 |
+| TripAdvisor | ДА | Travellers' Choice, в sameAs |
+| Yandex Maps | ДА | profile/103365004008 |
+| Instagram | ДА | @sakhvatravel |
+| YouTube | ДА | @SakhvaTravel |
+| Telegram | ДА | @SakhvaGuideBot |
+| Facebook | ДА | Добавлено с мая 2026 |
+| Threads | ДА | Добавлено с мая 2026 |
+| WhatsApp | ДА | wa.me/995511272623 |
+| 2GIS | НЕИЗВЕСТНО | Не linked на сайте |
+| Viator | НЕИЗВЕСТНО | Не linked |
+| GetYourGuide | НЕИЗВЕСТНО | Не linked |
+| TourRadar | НЕИЗВЕСТНО | Не linked |
+| Klook | НЕИЗВЕСТНО | Не linked |
+| Booking.com Experiences | НЕИЗВЕСТНО | Не linked |
 
-| Фактор | Оценка | Комментарий |
-|--------|--------|-------------|
-| Первичная категория GBP | Неизвестно без API | Предположительно "Tour operator" — проверить |
-| Proximity | Вне контроля (55.2% variance) | Офис на Kostava St — центр Тбилиси, позиция хорошая |
-| Review velocity | Требует мониторинга | 90 отзывов — хорошая база, важна непрерывность |
-| Dedicated service pages | PASS | 12+ страниц туров + blog |
-| Citation consistency | PARTIAL | Telegram handle рассинхронизирован |
-| sameAs depth | Хорошо | 9 платформ |
-| Schema completeness | Хорошо | Все обязательные поля |
+---
+
+## Location Page Quality
+
+Одна локация (Тбилиси). SAB с сервисными страницами по направлениям.
+
+| Метрика | Оценка |
+|---------|--------|
+| Уникальность контента | ВЫСОКАЯ |
+| Риск doorway-page | НИЗКИЙ |
+| Внутренняя перелинковка | ХОРОШАЯ — ItemList, nav, breadcrumbs |
+| hreflang полнота | ЧАСТИЧНАЯ — 2 ключевых страницы без EN |
+| Canonical | Корректный на всех проверенных |
+| Страница /contacts/ | ДА, с картой, часами, всеми каналами |
+| City hub /tury-v-tbilisi/ | ДА, но только RU — нет EN/GE hreflang |
 
 ---
 
 ## Топ-10 приоритетных действий
 
-### CRITICAL
+### Critical
 
-**1. Исправить Telegram в llms.txt**
-- Проблема: `@SakhvaTravel` в llms.txt vs `t.me/SakhvaGuideBot` везде
-- Фикс: заменить все упоминания `@SakhvaTravel` в llms.txt на `@SakhvaGuideBot` (или `t.me/SakhvaGuideBot`)
-- Файл: `/Users/vladimir/sakhva-travel/llms.txt` строки 19, 31, 40
-- Риск: AI-агенты направляют пользователей в неверный Telegram-контакт
+**1. AggregateRating на страницы туров**
 
-### HIGH
+`kakheti`, `tury-na-kazbek`, `mtskheta-mtianeti`, `ekskursiya` — без звёзд в SERP. Добавить в schema каждой:
+```json
+"aggregateRating": {
+  "@type": "AggregateRating",
+  "ratingValue": 4.9,
+  "reviewCount": 90,
+  "bestRating": 5,
+  "worstRating": 1
+}
+```
+Также исправить `tury-v-tbilisi`: заменить 14 на 90.
 
-**2. Создать профиль на Viator и GetYourGuide**
-- Viator (принадлежит Tripadvisor): https://www.viator.com/partners
-- GetYourGuide: https://supplier.getyourguide.com
-- NAP должен совпадать с сайтом: "Sakhva Travel", +995511272623
-- Влияние: citations для GBP + прямые бронирования от EN-туристов
+**2. CTA «Оставить отзыв» на Google**
 
-**3. Добавить индивидуальные `Review` объекты в schema главной**
-- Добавить 3–5 `Review` с `author`, `reviewBody`, `datePublished`, `reviewRating` в @graph главной
-- Это разблокирует rich snippet с звёздами + цитатой в SERP (сейчас только AggregateRating)
+Ссылка: `https://search.google.com/local/writereview?placeid=ChIJi8gUuPEHQkAR3dKFrVL72cM`  
+Разместить в секции отзывов на index.html и contacts. Review velocity — #2 GBP фактор. Правило 18 дней: velocity cliff при паузе 3+ недели.
 
-**4. Проверить и исправить категорию GBP**
-- По Whitespark 2026, неверная категория — фактор #1 негативного влияния (score 176)
-- Проверить в GBP: должно быть "Tour operator" + secondary "Tourist attraction" или "Tour guide"
-- Без доступа к GBP Dashboard невозможно подтвердить
+**3. hreflang на tury-na-kazbek (EN) и tury-v-tbilisi (EN + GE)**
 
-**5. Исправить 2ГИС — создать карточку Тбилиси**
-- Текущая ссылка ведёт на поиск в Батуми: `2gis.ge/batumi/search/sakhva+travel/...`
-- Создать/найти карточку в 2ГИС Тбилиси и обновить ссылку в footer и schema sameAs
-- 2ГИС популярен у русскоязычной аудитории — ключевой сегмент Sakhva
+`tury-na-kazbek` — добавить `<link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/...">`.  
+`tury-v-tbilisi` — добавить EN и GE варианты. Это главные коммерческие страницы для иностранных туристов.
 
-### MEDIUM
+### High
 
-**6. Обновить `dateModified` в schema**
-- `"dateModified": "2026-05-13"` — 3 месяца назад
-- Обновлять при каждом контентном изменении; влияет на freshness сигнал для Googlebot
+**4. areaServed на все страницы туров**
 
-**7. Добавить адрес и Telegram в llms.txt**
-- Физический адрес для hybrid-бизнеса полезен для AI-цитирования
-- Telegram должен быть `t.me/SakhvaGuideBot`, не username канала
+Добавить в schema каждой страницы конкретный `areaServed` с wikidata:
+- kakheti: `{"@type":"Place","name":"Kakheti","sameAs":"https://www.wikidata.org/wiki/Q193261"}`
+- tury-na-kazbek: `{"@type":"Place","name":"Kazbegi","sameAs":"https://www.wikidata.org/wiki/Q210019"}`
+- mtskheta-mtianeti: `{"@type":"Place","name":"Mtskheta","sameAs":"https://www.wikidata.org/wiki/Q178499"}`
+- ekskursiya / tury-v-tbilisi: `{"@type":"City","name":"Tbilisi","sameAs":"https://www.wikidata.org/wiki/Q994"}`
 
-**8. Унифицировать формат телефона**
-- Везде использовать `+995511272623` (E.164) — в schema, wa.me href, tel: href
-- Видимый текст может остаться `+995 511 272 623`
+**5. Унифицировать schema на contacts EN и GE**
 
-**9. Добавить Google Maps iframe на страницу контактов / главную**
-- Усиливает GBP-сигнал и конверсию
-- `<iframe src="https://www.google.com/maps?cid=14070083063461040701&output=embed">`
+- contacts EN: добавить `telephone: "+995511272623"` и `streetAddress: "14 Merab Kostava St"`
+- contacts GE: убрать конфликт reviewCount — оставить 90, убрать дублирующий блок с 36
+- contacts RU + GE: заменить `areaServed: ["Тбилиси", ...]` (строки) на типизированные объекты с wikidata
 
-**10. Создать отдельную страницу `/about/timur/` с Person schema**
-- `@type: Person`, `name: "Тимур Сахвадзе"`, `hasCredential` (лицензия №8247109128)
-- `jobTitle: "Лицензированный гид Тбилиси"`, `knowsAbout`, `sameAs` (Instagram, YouTube)
-- Усиливает E-E-A-T для всех страниц туров через `author` → `sameAs` связку
+**6. datePublished в Review на contacts RU**
 
-### LOW
+5 Review объектов без дат. Добавить `"datePublished"` (реальные или приближённые: `"2026-01-15"`). Без даты Google не показывает Review Rich Snippet.
 
-- Добавить Booking.com Experiences профиль (растущая платформа для туров)
-- Рассмотреть Klook для азиатских туристов (нишевый, но растёт в Тбилиси)
-- `openingHoursSpecification` привести к формату массива для максимальной совместимости
+**7. Зарегистрироваться на Viator и GetYourGuide**
+
+3 из 5 топ-факторов AI visibility — citation-related (Whitespark 2026). Viator и GetYourGuide — Tier 1 для tour operators. Каждый листинг = backlink + citation + независимый источник отзывов. После создания — добавить URL в `sameAs` на главной.
+
+### Medium
+
+**8. Исправить areaServed формат в contacts RU**
+
+Заменить строковый массив на типизированные объекты с wikidata (как на main page). Единый формат критичен для Knowledge Graph парсинга.
+
+**9. Добавить «Построить маршрут» на contacts**
+
+Прямая ссылка: `https://maps.google.com/maps?daddr=14+Merab+Kostava+St,+Tbilisi+0108`.  
+Directions link — прямой GBP-signal и удобство для пользователя.
+
+**10. Проверить и создать листинг в 2GIS**
+
+2GIS — Tier 1 citation для RU/CIS аудитории, популярен среди релокантов в Тбилиси. Создать/верифицировать профиль с консистентным NAP, добавить ссылку в sameAs.
 
 ---
 
-## Ограничения аудита
+## Limitations Disclaimer
 
-Без платных инструментов не проверялось:
-- Реальная позиция в локальном паке Google Maps по запросам "гид Тбилиси", "tour guide Tbilisi" (нет DataForSEO)
-- Актуальное состояние GBP (фото, посты, Q&A, primary category) — нет GBP API
-- Velocity отзывов за последние 18 дней (нет доступа к GBP dashboard)
-- NAP в GBP (телефон/адрес) относительно данных сайта — нет прямого доступа
-- Реальные позиции профилей на Tripadvisor/Яндекс в поиске
-- Proximity advantage/disadvantage по конкретным запросам (55.2% variance — вне контроля)
+Не оценивалось без платных инструментов или GBP панели:
+
+- GBP live данные: категории, количество фото, Q&A, посты, Insights
+- Review velocity и response rate — требуют GBP API или панели
+- Позиция в local pack по целевым запросам
+- Backlink профиль и локальный link authority
+- NAP accuracy на внешних платформах (Yandex Maps, TripAdvisor) — только presence, не content
+- Proximity фактор: 55.2% variance в local rankings (Search Atlas ML) — вне контроля
+- Конкурентный анализ по Тбилиси-гидам не выполнялся

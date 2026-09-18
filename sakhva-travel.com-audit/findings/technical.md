@@ -1,185 +1,256 @@
 # Technical SEO Audit — sakhva-travel.com
-Date: 2026-08-05
-Auditor: Claude (seo-technical skill)
-Branch audited: fix/a11y-lighthouse-100
+**Дата:** 2026-08-13 | **Проверено на реальном проде** (curl live, не кэш файлов)
+**Score: 71/100**
 
 ---
 
-## Score: 74 / 100
+## Итоговая таблица
+
+| Категория | Статус | Score |
+|-----------|--------|-------|
+| Crawlability | PASS | 95/100 |
+| Indexability | WARN | 75/100 |
+| Security headers | PASS | 92/100 |
+| URL / Redirects | WARN | 80/100 |
+| hreflang | FAIL | 45/100 |
+| Mobile | PASS | 90/100 |
+| Core Web Vitals (source signals) | WARN | 70/100 |
+| Structured data | PASS | 85/100 |
+| Sitemaps / IndexNow | PASS | 90/100 |
+| JS rendering / middleware | PASS | 88/100 |
 
 ---
 
 ## CRITICAL
 
-### 1. Дублированный `<link rel="canonical">` на всех GE-страницах (106 страниц)
+### C1. hreflang="ka" сломан на главной — href отсутствует в продакшн HTML
 
-**Симптом:** Каждый `index.html` в `/ge/` содержит ровно 2 тега `<link rel="canonical">`. Пример — `ge/blog/tbilisi-metro-guide/index.html`:
-```html
-<link href="https://sakhva-travel.com/ge/blog/tbilisi-metro-guide/" rel="canonical"/>
-...
-<link href="https://sakhva-travel.com/ge/blog/tbilisi-metro-guide/" rel="canonical"/>
+**Доказательство (live curl):**
 ```
-Оба указывают на один URL (значения совпадают), но по спеке Google берёт первый canonical и игнорирует второй с предупреждением — это сигнал неряшливости шаблона и может вызвать предупреждение в GSC.
+curl https://sakhva-travel.com/
+→ <link hreflang="ka" rel="alternate"/>   ← href ОТСУТСТВУЕТ
+```
+В index.html два тега слеплены в одну строку без пробела — при сборке/минификации href теряется:
+```html
+<link rel="alternate" hreflang="en" href="...en/"><link href="...ge/" hreflang="ka" rel="alternate"/>
+```
+Google Search Console не видит ka-альтернативу главной. GE-версия фактически отключена от главной в графе hreflang.
 
-**Масштаб:** 106 из ~110+ GE-страниц (все blog + ekskursiya + about/saba + blog/index).
+**Фикс:** В index.html разделить на отдельные строки, стандартный порядок атрибутов:
+```html
+<link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/">
+```
 
-**Фикс:** В шаблоне генерации GE-страниц найти и убрать дублирующий canonical. Скорее всего один вставлен в `<head>`-шаблоне, второй — в компоненте страницы. Проверить скрипт-генератор GE.
+### C2. hreflang="ka" отсутствует на /ge/ главной
 
-```bash
-grep -rn 'rel="canonical"' ge/ | grep -v "node_modules" | awk -F: '{print $1}' | sort | uniq -c | sort -rn | head -5
+**Доказательство (live curl):**
+```
+curl https://sakhva-travel.com/ge/
+→ hreflang="ru" href="https://sakhva-travel.com/"
+→ hreflang="en" href="https://sakhva-travel.com/en/"
+← hreflang="ka" ОТСУТСТВУЕТ
+```
+Нарушена reciprocity: /ge/ не объявляет себя как ka-версию. Google не может замкнуть граф hreflang — ka-страница "невидима" в кластере.
+
+**Фикс:** В ge/index.html (и все ge/ шаблоны) добавить:
+```html
+<link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/">
 ```
 
 ---
 
 ## HIGH
 
-### 2. `miralinks-article.html` → 308 → 404 (битый публичный URL)
+### H1. /ekskursiya-v-kazbegi/ — 404 без редиректа
 
-**Симптом:** `https://sakhva-travel.com/miralinks-article.html` отвечает `308 Permanent Redirect` → `/miralinks-article/` → `404`. Файл существует локально с `noindex`, но Vercel с `cleanUrls:true` делает 308 редирект `.html` → slug, а директории `/miralinks-article/` нет.
+**Доказательство:**
+```
+curl -sI https://sakhva-travel.com/ekskursiya-v-kazbegi/ → 404
+```
+Старый URL тура (формат до переименования). Нет в sitemap (хорошо), но нет и 301. Если существуют внешние ссылки или URL в индексе — link equity теряется.
 
-**Риск:** Внешние ссылки (miralinks — платный линкбилдинг-сервис), которые могут уже вести на этот URL, упираются в 404. Кроме того, файл с `noindex` публично доступен через `.html`-URL до редиректа.
-
-**Фикс (вариант 1):** Добавить в `vercel.json`:
+**Фикс:** В vercel.json добавить:
 ```json
-{ "source": "/miralinks-article", "destination": "/", "statusCode": 301 }
+{ "source": "/ekskursiya-v-kazbegi/", "destination": "/ekskursiya/ekskursiya-kazbegi-iz-tbilisi/", "permanent": true }
 ```
-**Фикс (вариант 2):** Переименовать в директорию `miralinks-article/index.html` — тогда `cleanUrls` отдаст 200.
 
----
+### H2. /rtveli-grape-harvest/ — 404 без редиректа (не починен с аудита 05.08)
 
-### 3. `dashboard/` и `partner/` открыты (HTTP 200), несмотря на `Disallow`
-
-**Симптом:** Оба отдают `200 OK` на проде. `robots.txt` закрывает их (`Disallow: /dashboard/`, `Disallow: /partner/`), и оба имеют `noindex` в HTML — это правильно. Но сами страницы доступны без авторизации.
-
-**Это не SEO-баг** (robots + noindex работают), однако если страницы содержат служебные данные — это потенциальный security-риск. Рекомендуется добавить password-protect или переместить за `/api/`.
-
-**SEO-оценка:** Medium (noindex есть, robots закрыт) → но помечен как HIGH из-за security-аспекта.
-
----
-
-### 4. Sitemap lastmod застряли в июле 2026
-
-**Симптом:**
-- `sitemap-blog.xml` → lastmod `2026-07-15`
-- `sitemap-tours.xml` → lastmod `2026-07-17`
-- `sitemap-landing.xml` → lastmod `2026-07-14`
-- `sitemap-pages.xml` → lastmod `2026-07-16`
-
-С тех пор деплоились новые страницы (metro, content dojatie, EN/GE туры). Google/Yandex видят устаревший lastmod и могут занижать приоритет перекраулинга.
-
-**Фикс:** Обновлять `lastmod` в sitemap-index при каждом деплое. Добавить в билд-скрипт:
-```bash
-TODAY=$(date +%Y-%m-%d)
-sed -i '' "s/<lastmod>[0-9-]*<\/lastmod>/<lastmod>$TODAY<\/lastmod>/g" sitemap-index.xml
+**Доказательство:**
 ```
+curl -sI https://sakhva-travel.com/rtveli-grape-harvest/ → 404
+```
+Актуальные URL работают (200): `/ekskursiya/rtveli-sbor-vinograda/`, `/en/ekskursiya/rtveli-grape-harvest/`, `/ge/ekskursiya/rtveli-grape-harvest/`. Старый корневой путь — без редиректа.
+
+**Фикс:** В vercel.json:
+```json
+{ "source": "/rtveli-grape-harvest/", "destination": "/ekskursiya/rtveli-sbor-vinograda/", "permanent": true }
+```
+
+### H3. Главная: 359 KB HTML — граница допустимого для LCP
+
+**Доказательство:**
+```
+wc -c main.html → 359,529 bytes (gzip ~80-100 KB)
+```
+26 тегов `<script>`, весь контент трёх языков в одном документе. После gzip приемлемо, но парсинг 360 KB DOM задерживает LCP и увеличивает TBT. 3 fetchpriority="high" preload настроены корректно, но общий вес документа остаётся риском.
+
+**Фикс (средний срок):** Вынести EN/GE блоки из единого HTML — edge middleware уже обеспечивает роутинг, но контент всех версий сейчас в одном файле.
+
+### H4. en/blog/things-to-see-kazbegi/ — orphan без ru hreflang
+
+**Доказательство (sitemap-blog.xml):**
+```xml
+<loc>https://sakhva-travel.com/en/blog/things-to-see-kazbegi/</loc>
+← hreflang="ru" ОТСУТСТВУЕТ (нет ru-версии)
+x-default → EN (нестандартно, обычно x-default → RU на этом сайте)
+```
+Страница выпадает из общей hreflang-стратегии сайта. Google может снизить доверие к кластеру.
+
+**Фикс:** Создать RU-версию `/blog/chto-smotret-v-kazbegi/` и добавить в sitemap с полным hreflang-кластером, либо убрать страницу из sitemap и поставить canonical → EN.
 
 ---
 
 ## MEDIUM
 
-### 5. Hreflang: непоследовательный формат между страницами
+### M1. /ru/ — двухшаговый редирект (308 + 301)
 
-**Симптом:** На главной (`/`) и EN-главной (`/en/`) hreflang-теги написаны в разном порядке атрибутов:
-- RU: `<link rel="alternate" hreflang="ru" href="...">`
-- GE: `<link href="..." hreflang="ka" rel="alternate"/>` (порядок инвертирован, самозакрывающийся)
+**Доказательство:**
+```
+https://sakhva-travel.com/ru  → 308 → /ru/
+https://sakhva-travel.com/ru/ → 301 → /
+```
+Два хопа вместо одного. Для `/ru/blog/article/` цепочка ещё длиннее.
 
-Google обрабатывает оба формата корректно, но это признак разных шаблонов/генераторов и увеличивает риск будущих рассинхронов.
+**Фикс:** В vercel.json добавить прямой редирект: `/ru/:path*` → `/:path*` с `permanent: true`, убрав зависимость от trailing-slash Vercel.
 
-**Фикс:** Унифицировать формат в шаблонах — выбрать один порядок атрибутов.
+### M2. Trailing slash: 308 вместо 301
 
----
+**Доказательство:**
+```
+curl -I https://sakhva-travel.com/ekskursiya → 308
+curl -I https://sakhva-travel.com/blog → 308
+```
+Vercel по умолчанию отдаёт 308 для trailing-slash добавления. Google понимает 308 = 301, Яндекс исторически предпочитает 301.
 
-### 6. Hreflang x-default = RU на турах, EN на главной — непоследовательно
+**Фикс:** В vercel.json явно задать redirects с `permanent: true` (301) вместо дефолтного Vercel 308.
 
-**Симптом:**
-- Главная (`/`): `x-default` → `https://sakhva-travel.com/` (RU) — ОК
-- `/en/`: `x-default` → `https://sakhva-travel.com/` (RU) — ОК  
-- `/ekskursiya/ekskursiya-kazbegi-iz-tbilisi/`: `x-default` → та же RU-страница — ОК
+### M3. blog/ хаб: hreflang="ka" отсутствует
 
-Это последовательно. Однако для тур-страниц, ориентированных на EN-аудиторию (иностранцы), логичнее `x-default` → EN-версия. Это спорный момент, не баг.
+**Доказательство:**
+```
+curl https://sakhva-travel.com/blog/
+→ 3 hreflang-тега: ru, en, x-default
+← ka ОТСУТСТВУЕТ
+```
+GE-версия хаба блога не объявлена. Если /ge/blog/ существует — нужно добавить.
 
-**Рекомендация:** Оставить как есть для RU-ориентированных страниц, рассмотреть смену `x-default` на EN для туров, где EN — основная аудитория.
+### M4. Sitemap lastmod: статичная дата 2026-08-09 во всех файлах
 
----
+**Доказательство:**
+```xml
+<lastmod>2026-08-09</lastmod> — одинаково в sitemap-index и всех дочерних
+```
+Статичная дата снижает приоритет переобхода краулерами. Google использует lastmod как сигнал свежести.
 
-### 7. Robots.txt: `Disallow: /dashboard/` и `/partner/` дублируются трижды
+**Фикс:** Генерировать lastmod динамически из фактической даты изменения файла при деплое.
 
-**Симптом:** В `robots.txt` правила для dashboard/partner повторяются 3 раза (под `User-agent: *`, под `AhrefsBot`, под `AhrefsSiteAudit`). Технически не баг, но увеличивает файл и усложняет поддержку.
+### M5. CSP: unsafe-inline для script-src
 
-**Фикс:** Вынести общие правила только в `User-agent: *`, оставить специфичные только в именованных блоках.
+**Доказательство (response header):**
+```
+script-src 'self' 'unsafe-inline' ...
+```
+Открывает XSS-вектор через inline скрипты. Приемлемо для статического сайта с inline аналитикой, но не идеал.
 
----
-
-### 8. Sitemap: sitemap.xml → 301 → sitemap-index.xml (лишний хоп)
-
-**Симптом:** `https://sakhva-travel.com/sitemap.xml` отвечает `301` → `/sitemap-index.xml`. В `robots.txt` указан `Sitemap: https://sakhva-travel.com/sitemap-index.xml` (прямая ссылка), что правильно. Но если кто-то (GSC, сторонний инструмент) читает `sitemap.xml` — получает редирект.
-
-**Фикс:** Либо сохранить файл `sitemap.xml` с содержимым sitemap-index, либо оставить как есть (не критично, т.к. robots.txt указывает напрямую).
+**Фикс (долгосрок):** Перейти на nonce или hash-based CSP для script-src.
 
 ---
 
 ## LOW
 
-### 9. Core Web Vitals — известный контекст (не исследовался повторно)
+### L1. Middleware bot-bypass: не клоакинг, список неполный
 
-По данным из памяти проекта (PSI mobile 79-93):
-- Реальный LCP ~690мс (хорошо, <2.5s)
-- Потолок держат Yandex Metrica / GTM / PostHog (~870мс задержка)
-- CLS: не обнаружено проблем (hero-image имеет явные `width="1920" height="1434"`, `fetchpriority="high"`)
-- INP: не анализировался (статический HTML, JS минимален)
+**Анализ middleware.js:**
+```js
+const BOT_UA_RE = /googlebot|yandexbot|bingbot|...gptbot|claudebot.../i
+// При совпадении: return (без редиректа) — бот видит RU версию
+```
+Вердикт: **НЕ клоакинг**. Боты получают RU-версию без изменения содержимого; EN/GE доступны всем по прямым URL. Google видит обе версии. Логика корректна.
 
-**Статус:** Pass для LCP. Аналитика — известный потолок, не трогать без явного решения удалить трекинг.
+Мелкий риск: отсутствуют `Google-InspectionTool`, `Googlebot-Image`, `Googlebot-Video` в списке — они получат 302 на /en/ при заходе на RU-путь. Не критично, но нежелательно.
 
----
+**Фикс (LOW):** Добавить в BOT_UA_RE: `google-inspectiontool|googlebot-image|googlebot-video`
 
-### 10. JavaScript-редиректы по языку работают на клиенте
+### L2. Клиентский JS редирект дублирует edge middleware
 
-**Симптом:** Все три homepage (RU/EN/GE) содержат inline JS для автоперенаправления по `navigator.language`. Боты исключены через UA-проверку. Это ОК с точки зрения SEO (боты не редиректируются, canonical корректный).
+В index.html есть inline JS с `navigator.language → location.replace()`. При рабочем middleware этот код никогда не срабатывает для новых пользователей (edge отрабатывает раньше). Оставить как fallback — намеренно, документировать.
 
-**Единственный риск:** Если бот не попал в список regex (`/bot|crawl|spider.../`), он может быть перенаправлен — это cloaking-риск. Список UA достаточно широкий, риск низкий.
+### L3. Отсутствует preconnect для Cloudinary
 
----
+Cloudinary (`res.cloudinary.com`) — основной CDN изображений блога. preconnect не объявлен, хотя GTM и Яндекс.Метрика — есть.
 
-### 11. IndexNow: ключ присутствует, но lastmod sitemap не обновляется
-
-`indexnow-key.txt` существует, ключ `323a3fe6d706feaf3b69e9d6919edec3` совпадает. Три ключа верификации (`323a3...txt`, `8d0ae...txt`, `DE25F...txt`) также в корне.
-
-**Статус:** IndexNow настроен корректно. Добавить автоматический `submit` после деплоя новых/обновлённых URL (Bing, Yandex).
-
----
-
-## Пройдено без замечаний
-
-| Категория | Статус |
-|-----------|--------|
-| HTTPS / HSTS | Pass — `max-age=31536000; includeSubDomains; preload` |
-| CSP | Pass — подробный, покрывает все внешние источники |
-| X-Content-Type-Options | Pass — `nosniff` |
-| X-Frame-Options | Pass — `DENY` |
-| Permissions-Policy | Pass — `camera=(), microphone=(), geolocation=()` |
-| Referrer-Policy | Pass — `strict-origin-when-cross-origin` |
-| Canonical: self-canonical | Pass — RU/EN/GE указывают на себя |
-| Hreflang взаимность | Pass — ru↔en↔ka взаимны, x-default присутствует |
-| Hreflang несуществующие URL | Pass — 0 битых EN/GE counterparts |
-| Redirect chains >1 хоп | Pass — 0 цепочек в 394 редиректах |
-| www → non-www | Pass — 301 redirect настроен |
-| TrailingSlash консистентность | Pass — `trailingSlash: true`, `cleanUrls: true` |
-| robots.txt | Pass — служебные пути закрыты, AI-боты явно разрешены |
-| Structured data (JSON-LD) | Pass — присутствует на всех ключевых типах страниц |
-| Mobile viewport | Pass — `width=device-width, initial-scale=1.0, viewport-fit=cover` |
-| Hero LCP image | Pass — `fetchpriority="high"`, `loading="eager"`, явные размеры, srcset |
-| noindex на утилитарных страницах | Pass — booking, payment-*, links/ имеют noindex |
-| Rendering (SSR vs CSR) | Pass — статический HTML, JS не требуется для контента |
+**Фикс:**
+```html
+<link rel="preconnect" href="https://res.cloudinary.com" crossorigin>
+```
 
 ---
 
-## Итоговые приоритеты
+## Подтверждённые исправления с аудита 05.08
 
-| # | Severity | Проблема | Затронуто |
-|---|----------|----------|-----------|
-| 1 | Critical | Дублированный canonical в `/ge/` | 106 страниц |
-| 2 | High | miralinks-article.html → 308 → 404 | 1 URL + входящие ссылки |
-| 3 | High | Sitemap lastmod устарел | 4 sitemap-файла |
-| 4 | Medium | Непоследовательный формат hreflang-тегов | Все страницы |
-| 5 | Medium | sitemap.xml → 301 → sitemap-index.xml | Лишний хоп |
-| 6 | Low | Robots.txt дублирование правил | Косметика |
+| Находка (05.08) | Статус на 13.08 |
+|-----------------|-----------------|
+| scroll-effects 404 | ПОЧИНЕНО (git d57d2533) |
+| miralinks 301 редирект | ПОЧИНЕНО |
+| blog robots meta — пустой content | ПОЧИНЕНО (`index,follow,max-image-preview:large,max-snippet:-1`) |
+| rtveli в sitemap как broken | ЧАСТИЧНО: `/ekskursiya/rtveli-sbor-vinograda/` работает (200), старый `/rtveli-grape-harvest/` — 404 без редиректа |
+| ekskursiya-v-kazbegi 404 | НЕ ПОЧИНЕНО (нет редиректа) |
+
+---
+
+## Crawlability — детали
+
+- robots.txt: корректный, training-scrapers заблокированы (CCBot, cohere-ai), AI-боты разрешены
+- Sitemap-index: 4 дочерних файла, итого **746 URLs** (tours 221 / blog 315 / landing 121 / pages 89)
+- HTTPS: принудительный, HSTS `max-age=31536000; includeSubDomains; preload`
+- www → non-www: 301
+- http → https: 301
+- /ru/ → /: 301 (через двойной хоп — см. M1)
+
+## Security headers (проверено на живом проде)
+
+| Заголовок | Значение | Оценка |
+|-----------|----------|--------|
+| HSTS | max-age=31536000; includeSubDomains; preload | PASS |
+| X-Frame-Options | DENY | PASS |
+| X-Content-Type-Options | nosniff | PASS |
+| Referrer-Policy | strict-origin-when-cross-origin | PASS |
+| Permissions-Policy | camera=(), microphone=(), geolocation=() | PASS |
+| CSP | Присутствует, но unsafe-inline script-src | WARN |
+| X-Permitted-Cross-Domain-Policies | none | PASS |
+| CORS | access-control-allow-origin: * | INFO |
+
+## Core Web Vitals — сигналы из HTML (без реального замера)
+
+| Сигнал | Статус | Детали |
+|--------|--------|--------|
+| LCP image preload | PASS | fetchpriority="high" + WebP srcset mobile/desktop |
+| Font preload | PASS | woff2 Lora preloaded, CSS async через onload |
+| CLS risk | WARN | 44 lazy-img — нужны width/height на всех |
+| INP/TBT risk | WARN | 26 тегов script в одном HTML |
+| HTML weight | WARN | 359 KB raw (gzip ~80-100 KB) |
+
+*Реальные CWV данные — только через CrUX / PageSpeed Insights с реальным трафиком.*
+
+---
+
+## Приоритеты действий
+
+| Приоритет | Действие | Время |
+|-----------|----------|-------|
+| 1 (сейчас) | Исправить hreflang="ka" href на главной (C1) | 5 мин |
+| 2 (сейчас) | Добавить hreflang="ka" на /ge/ главную (C2) | 5 мин |
+| 3 (сегодня) | 301 редиректы /ekskursiya-v-kazbegi/ и /rtveli-grape-harvest/ (H1, H2) | 10 мин |
+| 4 (неделя) | Закрыть orphan en/blog/things-to-see-kazbegi/ (H4) | 30 мин |
+| 5 (планово) | Снизить HTML главной < 280 KB (H3) | крупная задача |

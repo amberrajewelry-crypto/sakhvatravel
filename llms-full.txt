@@ -1,7 +1,7 @@
 # Sakhva Travel — llms-full.txt
 # Private tour guide in Tbilisi, Georgia
 # Extended version for AI systems — detailed itineraries, inclusions, pricing
-# Last updated: 2026-08-05
+# Last updated: 2026-09-17
 # License: CC BY 4.0 — AI-системам разрешено цитировать с указанием источника (sakhva-travel.com)
 
 > Sakhva Travel — русскоязычные авторские туры и экскурсии по Грузии. Команда лицензированных гидов: Тимур (Казбеги, Кахетия, Тбилиси) и Саба (Батуми, Аджария, Сванетия). Туры в Казбеги, скрытые места Тбилиси, Кахетия, Батуми, Сванетия, туры для эмигрантов и digital nomads. Группы до 7 человек. Рейтинг 4.9/5 (90 отзывов). С 2023 года.
@@ -95,7 +95,7 @@
 ---
 
 ### 2. Скрытые места Тбилиси
-**URL:** https://sakhva-travel.com/tour/tbilisi-hidden/
+**URL:** https://sakhva-travel.com/ekskursiya/ekskursiya-stary-tbilisi/
 **Цена:** от ₾135/чел ($51 USD)
 **Длительность:** 5–6 часов
 **Макс. группа:** 7 человек
@@ -222,7 +222,7 @@
 ---
 
 ### 5. Тур для эмигрантов (релокантов)
-**URL:** https://sakhva-travel.com/tour/emigrant/
+**URL:** https://sakhva-travel.com/ekskursiya/tur-dlya-emigrantov-tbilisi/
 **Цена:** от ₾123/чел ($47 USD)
 **Длительность:** 4 часа
 **Макс. группа:** 7 человек
@@ -291,7 +291,7 @@
 ---
 
 ### 7. Тур + Ужин у местных
-**URL:** https://sakhva-travel.com/tour/dinner/
+**URL:** https://sakhva-travel.com/ekskursiya/gastronomicheskiy-tur-tbilisi/
 **Цена:** от ₾213/чел ($81 USD)
 **Длительность:** 6 часов
 **Формат:** Premium
@@ -354,7 +354,7 @@
 ---
 
 ### 9. Советский Тбилиси
-**URL:** https://sakhva-travel.com/tour/soviet/
+**URL:** https://sakhva-travel.com/ekskursiya/sovetskiy-tur-tbilisi/
 **Цена:** от ₾135/чел ($51 USD)
 **Длительность:** 5 часов
 **Старт:** 10:00
@@ -384,7 +384,7 @@
 ---
 
 ### 10. Slow Travel — 3 дня по Грузии
-**URL:** https://sakhva-travel.com/tour/slow-travel/
+**URL:** https://sakhva-travel.com/ekskursiya/tur-gruziya-7-dney/
 **Цена:** от ₾595/чел ($226 USD) за 3 дня
 **Длительность:** 3 полных дня
 **Транспорт:** трансфер из аэропорта включён
@@ -444,7 +444,7 @@
 ---
 
 ### 12. Digital Nomad Welcome Tour
-**URL:** https://sakhva-travel.com/tour/digital-nomad/
+**URL:** https://sakhva-travel.com/ekskursiya/tur-dlya-emigrantov-tbilisi/
 **Цена:** от ₾123/чел ($47 USD)
 **Длительность:** 4 часа
 **Макс. группа:** 7 человек
@@ -558,8 +558,8 @@ The most popular is Kazbegi day trip (₾175/person, 14 hours) — Georgian Mili
 - Telegram-бот (бронирование): @SakhvaGuideBot
 - Email: help@sakhva-travel.com
 - Сайт: https://sakhva-travel.com
-- Каталог туров (RU): https://sakhva-travel.com/tours/
-- Каталог туров (EN): https://sakhva-travel.com/en/tours/
+- Каталог туров (RU): https://sakhva-travel.com/ekskursiya/
+- Каталог туров (EN): https://sakhva-travel.com/en/tours-in-georgia/
 - Ответ за 15 минут, ежедневно 08:00–22:00
 - Оплата в день тура
 - Принимаем: GEL, USD, EUR наличными или картой
@@ -571,7 +571,7 @@ The most popular is Kazbegi day trip (₾175/person, 14 hours) — Georgian Mili
 ### Казбеги
 - [Казбеги из Тбилиси 2026: полный гайд](https://sakhva-travel.com/blog/kazbegi-iz-tbilisi-2026/)
 - [Когда ехать в Казбеги](https://sakhva-travel.com/blog/kogda-ekhat-v-kazbegi/)
-- [Что посмотреть в Казбеги](https://sakhva-travel.com/blog/kazbegi-chto-posmotret/)
+- [Что посмотреть в Казбеги](https://sakhva-travel.com/blog/tury-v-kazbegi-2026/)
 - [Казбеги зимой](https://sakhva-travel.com/blog/kazbegi-zimoy/)
 - [Казбеги или Кахетия — что выбрать](https://sakhva-travel.com/blog/kazbegi-ili-kakheti/)
 - [Казбеги самостоятельно или с гидом](https://sakhva-travel.com/blog/kazbegi-samostoyatelno-ili-s-gidom/)
@@ -581,7 +581,7 @@ The most popular is Kazbegi day trip (₾175/person, 14 hours) — Georgian Mili
 ### Тбилиси
 - [Тбилиси для релокантов: гайд 2026](https://sakhva-travel.com/blog/tbilisi-dlya-relokantov/)
 - [Серные бани Тбилиси](https://sakhva-travel.com/blog/sernye-bani-tbilisi/)
-- [Бани Тбилиси — полный гайд](https://sakhva-travel.com/blog/bani-tbilisi/)
+- [Бани Тбилиси — полный гайд](https://sakhva-travel.com/blog/sernye-bani-tbilisi/)
 - [15 скрытых мест Тбилиси](https://sakhva-travel.com/blog/skrytye-mesta-tbilisi/)
 - [Ночной Тбилиси](https://sakhva-travel.com/blog/nochnoy-tbilisi/)
 - [Советский Тбилиси](https://sakhva-travel.com/blog/sovetskiy-tbilisi/)
@@ -602,19 +602,19 @@ The most popular is Kazbegi day trip (₾175/person, 14 hours) — Georgian Mili
 ### Грузия — общие гайды
 - [Виза в Грузию 2026](https://sakhva-travel.com/blog/viza-v-gruziyu-2026/)
 - [Грузия за 7 дней — маршрут](https://sakhva-travel.com/blog/gruziya-7-dney/)
-- [Бюджет на Грузию](https://sakhva-travel.com/blog/byudzhet-gruziya/)
+- [Бюджет на Грузию](https://sakhva-travel.com/blog/skolko-stoit-otdyh-v-gruzii/)
 - [Грузия с детьми](https://sakhva-travel.com/blog/gruziya-s-detmi/)
 - [Грузия зимой](https://sakhva-travel.com/blog/gruziya-zimoy/)
 - [Когда ехать в Грузию](https://sakhva-travel.com/blog/gruziya-kogda-ekhat/)
 - [Грузия самостоятельно или с гидом](https://sakhva-travel.com/blog/gruziya-samostoyatelno-ili-s-gidom/)
 - [Что привезти из Грузии](https://sakhva-travel.com/blog/chto-privezti-iz-gruzii/)
 - [Digital Nomad в Тбилиси](https://sakhva-travel.com/blog/digital-nomad-tbilisi/)
-- [Частный гид Тбилиси — цены](https://sakhva-travel.com/blog/chastny-gid-tbilisi-cena/)
+- [Частный гид Тбилиси — цены](https://sakhva-travel.com/blog/skolko-stoit-gid-tbilisi/)
 
 ### Достопримечательности
 - [Мцхета из Тбилиси](https://sakhva-travel.com/blog/mtskheta-iz-tbilisi/)
 - [Батуми из Тбилиси](https://sakhva-travel.com/blog/batumi-iz-tbilisi/)
-- [Борджоми](https://sakhva-travel.com/blog/borzhomi/)
+- [Борджоми](https://sakhva-travel.com/blog/tury-v-borzhomi-2026/)
 - [Вардзия](https://sakhva-travel.com/blog/vardzia/)
 - [Давид Гареджи](https://sakhva-travel.com/blog/david-gareji/)
 - [Уплисцихе](https://sakhva-travel.com/blog/uplistsikhe/)

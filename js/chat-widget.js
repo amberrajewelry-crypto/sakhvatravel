@@ -9,13 +9,19 @@
   // On the homepage the EN switch (main.js setLang) only writes localStorage['lang']
   // without touching <html lang>, so fall back to it.
   function curLang() {
-    if (document.documentElement.lang === 'ka') return 'ka';
-    if (document.documentElement.lang === 'en') return 'en';
-    try {
-      const l = localStorage.getItem('lang');
-      if (l === 'ka') return 'ka';
-      if (l === 'en') return 'en';
-    } catch (e) {}
+    // Georgian content is ONLY ever rendered under /ge/ (server sets <html lang="ka">).
+    // A stale localStorage['lang']='ka' from an earlier /ge/ visit must NOT make the
+    // widget speak Georgian on a Russian/English page (the reported bug).
+    const htmlLang = document.documentElement.lang;
+    const path = location.pathname;
+    if (htmlLang === 'ka' || path === '/ge' || path.indexOf('/ge/') === 0) return 'ka';
+    if (htmlLang === 'en' || path.indexOf('/en/') === 0) return 'en';
+    // Homepage EN switch (main.js) only writes localStorage['lang'] without touching <html lang>.
+    // Only the homepage has that client-side switch; every other RU URL is RU-only, so a stale
+    // 'en' left by a /en/ visit must not flip the widget there.
+    if (path === '/' || path === '/index.html') {
+      try { if (localStorage.getItem('lang') === 'en') return 'en'; } catch (e) {}
+    }
     return 'ru';
   }
 
@@ -87,19 +93,21 @@
 .sc-fab-tip{position:absolute;right:60px;top:50%;transform:translateY(-50%);background:#fff;color:#333;font-size:13px;font-weight:500;padding:8px 14px;border-radius:8px;white-space:nowrap;box-shadow:0 2px 8px rgba(0,0,0,.1);opacity:0;pointer-events:none;transition:opacity .2s}
 .sc-fab-tip::after{content:'';position:absolute;right:-6px;top:50%;transform:translateY(-50%);border:6px solid transparent;border-left-color:#fff}
 .sc-fab:hover .sc-fab-tip{opacity:1}
+/* tour pages: #mobile-sticky-bar toggles body.msb-on; keep floating buttons above it */
+body.msb-on .sc-fab,body.msb-on #music-toggle{bottom:calc(84px + env(safe-area-inset-bottom,0px))!important}
 @keyframes scPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
 @media(max-width:768px){.sc-fab{width:44px;height:44px;bottom:calc(20px + env(safe-area-inset-bottom,0px));right:16px}body.cookie-up .sc-fab{bottom:calc(76px + env(safe-area-inset-bottom,0px))!important}.sc-fab svg{width:20px;height:20px}.sc-fab-tip{display:none}}
 
 .sc-win{position:fixed;bottom:24px;right:24px;z-index:99991;width:288px;height:462px;background:#fff;border-radius:20px;box-shadow:0 8px 40px rgba(0,0,0,.18);display:flex;flex-direction:column;overflow:hidden;transform:scale(.95);opacity:0;pointer-events:none;transition:transform .25s cubic-bezier(.34,1.56,.64,1),opacity .2s ease}
 .sc-win.open{transform:scale(1);opacity:1;pointer-events:auto}
-@media(max-width:768px){.sc-win{width:56vw;height:42vh;bottom:72px;right:12px;left:auto;border-radius:16px;touch-action:manipulation}.sc-hon{display:none!important}.sc-bbl{font-size:13px!important;padding:8px 10px!important;max-width:none!important}.sc-qr{justify-content:center!important}.sc-qr button{font-size:11px!important;padding:6px 10px!important}.sc-body{padding:10px!important;align-items:stretch!important}.sc-inp{padding:6px 10px!important}.sc-inp input{font-size:16px!important;padding:6px 0!important}.sc-m-av{display:none!important}.sc-msg.ai,.sc-msg.user{max-width:100%!important}.sc-msg.ai .sc-bbl,.sc-msg.user .sc-bbl{max-width:100%!important}.sc-hdr{gap:8px!important;padding:8px 10px!important;height:50px!important}.sc-av{width:32px!important;height:32px!important}.sc-av svg{width:18px!important;height:18px!important}.sc-nm{font-size:13px!important}.sc-st{font-size:10px!important}.sc-x{width:26px!important;height:26px!important}}
+@media(max-width:768px){.sc-win{width:56vw;height:42vh;bottom:72px;right:12px;left:auto;border-radius:16px;touch-action:manipulation}.sc-hon{display:none!important}.sc-bbl{font-size:13px!important;padding:8px 10px!important;max-width:none!important}.sc-qr{justify-content:center!important}.sc-qr button{font-size:12px!important;padding:6px 10px!important}.sc-body{padding:10px!important;align-items:stretch!important}.sc-inp{padding:6px 10px!important}.sc-inp input{font-size:16px!important;padding:6px 0!important}.sc-m-av{display:none!important}.sc-msg.ai,.sc-msg.user{max-width:100%!important}.sc-msg.ai .sc-bbl,.sc-msg.user .sc-bbl{max-width:100%!important}.sc-hdr{gap:8px!important;padding:8px 10px!important;height:50px!important}.sc-av{width:32px!important;height:32px!important}.sc-av svg{width:18px!important;height:18px!important}.sc-nm{font-size:13px!important}.sc-st{font-size:12px!important}.sc-x{width:26px!important;height:26px!important}}
 
 .sc-hdr{display:flex;align-items:center;gap:8px;padding:6px 10px;background:${CFG.color};flex-shrink:0;height:44px}
 .sc-av{width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .sc-av svg{width:26px;height:26px;fill:none}
 .sc-inf{flex:1}
 .sc-nm{color:#fff;font-size:13px;font-weight:700;line-height:1.2}
-.sc-st{color:${CFG.colorLight};font-size:10px;display:flex;align-items:center;gap:5px}
+.sc-st{color:${CFG.colorLight};font-size:12px;display:flex;align-items:center;gap:5px}
 .sc-st::before{content:'';width:6px;height:6px;border-radius:50%;background:${CFG.colorLight};display:inline-block}
 .sc-x{width:32px;height:32px;border-radius:50%;border:none;background:rgba(255,255,255,.1);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .15s;flex-shrink:0}
 .sc-x:hover{background:rgba(255,255,255,.2)}
@@ -118,7 +126,7 @@
 .sc-msg.user .sc-bbl{background:${CFG.color};color:#fff;border-radius:16px 16px 4px 16px}
 
 .sc-qr{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
-.sc-qr button{background:#F3F4F6;border:1px solid #E5E7EB;padding:6px 10px;border-radius:9999px;font-size:11px;color:${CFG.color};font-weight:500;cursor:pointer;transition:background .15s,border-color .15s;font-family:inherit}
+.sc-qr button{background:#F3F4F6;border:1px solid #E5E7EB;padding:6px 10px;border-radius:9999px;font-size:12px;color:${CFG.color};font-weight:500;cursor:pointer;transition:background .15s,border-color .15s;font-family:inherit}
 .sc-qr button:hover{background:#E8F5EE;border-color:${CFG.color}}
 
 .sc-typ{display:flex;gap:4px;padding:10px 14px;align-items:center}
@@ -148,7 +156,7 @@
 .sc-cross-icon{width:36px;height:36px;border-radius:8px;background:#F0F7F4;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:18px}
 .sc-cross-body{flex:1;min-width:0}
 .sc-cross-t{font-size:13px;font-weight:600;color:#1a1a1a}
-.sc-cross-d{font-size:11px;color:#6B7280;margin-top:2px}
+.sc-cross-d{font-size:12px;color:#6B7280;margin-top:2px}
 .sc-cross-btn{background:${CFG.color};color:#fff;border:none;padding:6px 14px;border-radius:6px;font-size:12px;font-weight:600;cursor:pointer;flex-shrink:0;font-family:inherit}
 
 .sc-booking{background:#F0F7F4;border:1px solid #C6DDD7;border-radius:12px;padding:14px;margin-top:8px}
@@ -165,7 +173,7 @@
 .sc-snd:active{transform:scale(.95)}
 .sc-snd svg{width:18px;height:18px;fill:#fff}
 .sc-snd.off{background:#D1D5DB;pointer-events:none}
-.sc-hon{text-align:center;font-size:10px;color:#6B7280;padding:4px 16px 10px;background:#fff;flex-shrink:0}
+.sc-hon{text-align:center;font-size:12px;color:#6B7280;padding:4px 16px 10px;background:#fff;flex-shrink:0}
 `;
     document.head.appendChild(s);
   }
@@ -469,27 +477,9 @@ ${b.discount_percent ? `<div class="sc-booking-row"><span>Скидка</span><sp
   }
 
   // ─── PROACTIVE OPEN ───
-  function checkProactive() {
-    try {
-      const dismissed = parseInt(localStorage.getItem(CFG.dismissKey) || '0');
-      if (Date.now() - dismissed < 3600000) return; // dismissed < 1 hour ago
-
-      let visits = parseInt(localStorage.getItem(CFG.visitsKey) || '0');
-      const isTourPage = /\/ekskursiya\/[^/]+\//.test(location.pathname);
-      if (isTourPage) {
-        visits++;
-        localStorage.setItem(CFG.visitsKey, visits.toString());
-      }
-
-      // Proactive auto-open only on desktop — on mobile it covers content and raises bounce
-      const isMobile = window.matchMedia('(max-width:768px)').matches;
-      if (visits >= 2 && !isOpen && !isMobile) {
-        setTimeout(() => {
-          if (!isOpen) toggle();
-        }, 10000);
-      }
-    } catch {}
-  }
+  // Disabled by owner request (08.09.2026): the widget must open ONLY when the user
+  // clicks the FAB, never on its own. Kept as a no-op so init() stays unchanged.
+  function checkProactive() {}
 
   // ─── INIT ───
   function init() {
