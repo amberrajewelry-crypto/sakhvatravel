@@ -10,6 +10,11 @@ Disallow: /demo/
 Disallow: /dashboard/
 Disallow: /partner/
 Disallow: /scripts/
+Disallow: /design-previews/
+Disallow: /docs/
+Disallow: /graphify-out/
+Disallow: /gid/_template/
+Disallow: /hero3d-grass2.html
 Disallow: /service-account.json
 Disallow: /.worktrees/
 Disallow: /index.html.base-clean
@@ -23,6 +28,11 @@ Disallow: /demo/
 Disallow: /dashboard/
 Disallow: /partner/
 Disallow: /scripts/
+Disallow: /design-previews/
+Disallow: /docs/
+Disallow: /graphify-out/
+Disallow: /gid/_template/
+Disallow: /hero3d-grass2.html
 Disallow: /service-account.json
 Disallow: /.worktrees/
 Disallow: /index.html.base-clean
@@ -35,6 +45,11 @@ Disallow: /demo/
 Disallow: /dashboard/
 Disallow: /partner/
 Disallow: /scripts/
+Disallow: /design-previews/
+Disallow: /docs/
+Disallow: /graphify-out/
+Disallow: /gid/_template/
+Disallow: /hero3d-grass2.html
 Disallow: /service-account.json
 Disallow: /.worktrees/
 Disallow: /index.html.base-clean
@@ -48,6 +63,11 @@ Disallow: /demo/
 Disallow: /dashboard/
 Disallow: /partner/
 Disallow: /scripts/
+Disallow: /design-previews/
+Disallow: /docs/
+Disallow: /graphify-out/
+Disallow: /gid/_template/
+Disallow: /hero3d-grass2.html
 Disallow: /service-account.json
 Disallow: /.worktrees/
 Disallow: /index.html.base-clean
@@ -59,6 +79,11 @@ Disallow: /dashboard/
 Disallow: /partner/
 Disallow: /demo/
 Disallow: /scripts/
+Disallow: /design-previews/
+Disallow: /docs/
+Disallow: /graphify-out/
+Disallow: /gid/_template/
+Disallow: /hero3d-grass2.html
 
 User-agent: AhrefsSiteAudit
 Allow: /
@@ -66,6 +91,11 @@ Disallow: /dashboard/
 Disallow: /partner/
 Disallow: /demo/
 Disallow: /scripts/
+Disallow: /design-previews/
+Disallow: /docs/
+Disallow: /graphify-out/
+Disallow: /gid/_template/
+Disallow: /hero3d-grass2.html
 
 # AI Search crawlers — ALLOW (override Cloudflare blocks)
 User-agent: GPTBot

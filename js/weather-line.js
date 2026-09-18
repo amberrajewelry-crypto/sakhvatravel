@@ -38,7 +38,7 @@
     get(el.getAttribute('data-region'),function(d){
       var lang=el.getAttribute('data-lang')||'ru',s=window.swWeatherNow(d,lang);
       var tmr=d.daily[1];if(tmr){var t=L[lang]||L.ru;s+=' · '+(lang==='ru'?'завтра':lang==='en'?'tomorrow':'ხვალ')+' '+tmr.min+'…'+tmr.max+'°, '+t.w[wi(tmr.code)]}
-      el.textContent=s;el.style.display='';
+      el.textContent=s;el.style.display='';el.style.maxWidth='100%';el.style.whiteSpace='normal';el.style.overflowWrap='anywhere';
     });
   });
 })();
