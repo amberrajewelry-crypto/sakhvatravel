@@ -437,5 +437,6 @@ function sendContact(){var name=document.getElementById('cm-name').value.trim();
 Забронировать</a></div>
 <script>!function(){if(window.innerWidth>768)return;var bar=document.getElementById("mobile-sticky-bar");if(!bar)return;var shown=false;window.addEventListener("scroll",function(){var y=window.scrollY;if(y>600&&!shown){bar.style.display="flex";document.body.classList.add("msb-on");shown=true}else if(y<=600&&shown){bar.style.display="none";document.body.classList.remove("msb-on");shown=false}},{passive:true})}()</script>
 <script src="/js/weather-line.js?v=1" defer></script>
+<script>!function(){var n=document.getElementById("nav");if(!n)return;var h=document.querySelector(".page-hero,#hero,.hero,.tour-hero,.post-hero");function f(){n.classList.toggle("scrolled",window.scrollY>(h?Math.max(h.offsetHeight-80,40):40))}addEventListener("scroll",f,{passive:true});f()}();</script>
 </body>
 </html>
