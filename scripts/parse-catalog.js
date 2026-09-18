@@ -63,7 +63,8 @@ function parseSubpage(slug) {
   let title = titleMatch ? titleMatch[1].replace(/\s*\|.*$/, '').replace(/\s*2026\s*/, ' ').trim() : slug;
 
   // Meta description
-  const descMatch = html.match(/<meta\s+name="description"\s+content="([^"]+)"/);
+  const descMatch = html.match(/<meta\s+name="description"\s+content="([^"]+)"/)
+    || html.match(/<meta\s+content="([^"]+)"\s+name="description"/);
   const description = descMatch ? descMatch[1] : '';
 
   // Price from JSON-LD offers
@@ -83,7 +84,8 @@ function parseSubpage(slug) {
   if (durDMatch) days = parseInt(durDMatch[1]);
 
   // OG image, with fallback to hero <img src>
-  const imgMatch = html.match(/<meta\s+property="og:image"\s+content="([^"]+)"/);
+  const imgMatch = html.match(/<meta\s+property="og:image"\s+content="([^"]+)"/)
+    || html.match(/<meta\s+content="([^"]+)"\s+property="og:image"/);
   let image = imgMatch ? imgMatch[1] : '/images/og-cover.jpg';
 
   // Check if og:image file exists, fallback to hero img src

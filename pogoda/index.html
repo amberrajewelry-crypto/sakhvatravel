@@ -90,7 +90,7 @@ a{text-decoration:none;color:inherit}img{max-width:100%;display:block}button{bor
 .wx-feat-cta{display:inline-block;margin-top:16px;font-size:13px;font-weight:700;color:var(--green);border-bottom:1px solid var(--amber-l);padding-bottom:1px}
 .wx-feat-cta:hover{color:var(--amber)}
 .wx-feat-fore{background:#FBFAF8;border-left:1px solid #ECECE4;padding:22px 22px;display:flex;flex-direction:column;justify-content:center;gap:2px}
-.wx-fore-h{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#9CA3AF;font-weight:700;margin-bottom:10px}
+.wx-fore-h{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#9CA3AF;font-weight:700;margin-bottom:10px}
 .wx-fore-day{display:grid;grid-template-columns:44px 28px 1fr auto;align-items:center;gap:12px;padding:8px 0;border-bottom:1px solid #F2F2EC;opacity:0;transform:translateX(10px);animation:foreIn .5s forwards}
 .wx-fore-day:last-child{border-bottom:none}
 .wx-fore-dow{font-size:13px;color:#4B5563;font-weight:700}
@@ -110,7 +110,7 @@ a{text-decoration:none;color:inherit}img{max-width:100%;display:block}button{bor
 .wx-card:hover{transform:translateY(-5px);box-shadow:0 16px 34px -14px rgba(26,61,46,.32);border-color:#D6E4DC}
 .wx-card-top{display:flex;align-items:center;justify-content:space-between;gap:8px}
 .wx-card-name{font-size:15px;font-weight:700;color:var(--green);line-height:1.2}
-.wx-card-sub{font-size:11px;color:#9CA3AF;margin-top:2px}
+.wx-card-sub{font-size:12px;color:#9CA3AF;margin-top:2px}
 .wx-card-ic{width:40px;height:40px;flex-shrink:0}
 .wx-card-bot{display:flex;align-items:flex-end;justify-content:space-between}
 .wx-card-temp{font-size:32px;font-weight:700;color:var(--ink);line-height:1;font-variant-numeric:tabular-nums}
@@ -122,7 +122,7 @@ a{text-decoration:none;color:inherit}img{max-width:100%;display:block}button{bor
 .season-wrap{overflow-x:auto;border-radius:16px;border:1px solid #ECECE4;box-shadow:0 1px 2px rgba(0,0,0,.03)}
 .season-table{width:100%;border-collapse:collapse;font-size:13px;min-width:660px}
 .season-table th,.season-table td{padding:11px 14px;text-align:left;border-bottom:1px solid #F2F2EC}
-.season-table thead th{background:var(--green);color:#fff;font-size:11px;text-transform:uppercase;letter-spacing:.04em;font-weight:700}
+.season-table thead th{background:var(--green);color:#fff;font-size:12px;text-transform:uppercase;letter-spacing:.04em;font-weight:700}
 .season-table tbody th{background:#FAFAF8;font-weight:700;white-space:nowrap;color:var(--ink)}
 .season-table td{color:#6B7280}
 .season-table td.best{color:#0C7C38;font-weight:700;background:#F1FAF4}
@@ -327,7 +327,7 @@ function toggleFaq(btn){var item=btn.closest('.fi'),isOpen=item.classList.contai
     return S+cloudD+'<path class="ic-drop" d="M30 44l-5 9h6l-4 8" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>';
   }
   function countUp(el,to){var st=null,d=800;to=Math.round(to);function step(ts){if(!st)st=ts;var p=Math.min((ts-st)/d,1),v=Math.round(to*p);el.textContent=(v>0?'+':'')+v;if(p<1)requestAnimationFrame(step)}requestAnimationFrame(step)}
-  function get(slug){return fetch('/api/weather/?region='+slug).then(function(r){return r.json()})}
+  function get(slug){return fetch('/api/weather?region='+slug).then(function(r){return r.json()})}
   function paintCard(card,d){
     if(!d||!d.current||typeof d.current.temp!=='number'){card.classList.remove('load');card.querySelector('.wx-card-mm').textContent='';return}
     var m=meta(d.current.code);card.classList.remove('load');
@@ -359,7 +359,7 @@ function toggleFaq(btn){var item=btn.closest('.fi'),isOpen=item.classList.contai
   if('requestIdleCallback'in window){requestIdleCallback(run,{timeout:2500})}else{setTimeout(run,400)}
 })();
 </script>
-<script>(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return}}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,function(c){'requestIdleCallback'in window?requestIdleCallback(c,{timeout:4000}):setTimeout(c,1500)}(function(){a.parentNode.insertBefore(k,a)})})(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});</script>
+<script>(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return}}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,function(c){var d=false,f=function(){if(d)return;d=true;c()};['scroll','touchstart','mousemove','keydown','click'].forEach(function(e){document.addEventListener(e,f,{once:true,passive:true})});setTimeout(f,5000)}(function(){a.parentNode.insertBefore(k,a)})})(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});</script>
 <noscript><div><img alt="" src="https://mc.yandex.ru/watch/109038950" style="position:absolute;left:-9999px"/></div></noscript>
 </body>
 </html>

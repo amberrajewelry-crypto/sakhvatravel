@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" width="1200" height="760" font-family="Arial,Helvetica,sans-serif">
+<rect width="1200" height="760" fill="#fff"/>
+<text x="600.0" y="46" text-anchor="middle" font-size="28" font-weight="700" fill="#1A3D2E">Схема метро Тбилиси 2026</text>
+<text x="600.0" y="74" text-anchor="middle" font-size="15" fill="#555">2 линии · 23 станции · пересадка на Вокзальной площади · ₾1 за поездку · 6:00–24:00</text>
+<line x1="70" y1="300" x2="1130" y2="300" stroke="#D32F2F" stroke-width="12" stroke-linecap="round"/>
+<line x1="564.6666666666667" y1="300" x2="564.6666666666667" y2="650" stroke="#2E7D32" stroke-width="12" stroke-linecap="round"/>
+<circle cx="70" cy="300" r="9" fill="#fff" stroke="#D32F2F" stroke-width="4"/>
+<text transform="translate(70,278) rotate(-50)" font-size="15" fill="#222" font-weight="400">Ахметелис театри</text>
+<circle cx="141" cy="300" r="9" fill="#fff" stroke="#D32F2F" stroke-width="4"/>
+<text transform="translate(141,278) rotate(-50)" font-size="15" fill="#222" font-weight="400">Сараджишвили</text>
+<circle cx="211" cy="300" r="9" fill="#fff" stroke="#D32F2F" stroke-width="4"/>
+<text transform="translate(211,278) rotate(-50)" font-size="15" fill="#222" font-weight="400">Гурамишвили</text>
+<circle cx="282" cy="300" r="9" fill="#fff" stroke="#D32F2F" stroke-width="4"/>
+<text transform="translate(282,278) rotate(-50)" font-size="15" fill="#222" font-weight="400">Грмагеле</text>
+<circle cx="353" cy="300" r="9" fill="#fff" stroke="#D32F2F" stroke-width="4"/>
+<text transform="translate(353,278) rotate(-50)" font-size="15" fill="#222" font-weight="700">Дидубе</text>
+<circle cx="423" cy="300" r="9" fill="#fff" stroke="#D32F2F" stroke-width="4"/>
+<text transform="translate(423,278) rotate(-50)" font-size="15" fill="#222" font-weight="400">Гоциридзе</text>
+<circle cx="494" cy="300" r="9" fill="#fff" stroke="#D32F2F" stroke-width="4"/>
+<text transform="translate(494,278) rotate(-50)" font-size="15" fill="#222" font-weight="400">Надзаладеви</text>
+<circle cx="565" cy="300" r="13" fill="#fff" stroke="#1A3D2E" stroke-width="4"/>
+<text transform="translate(565,278) rotate(-50)" font-size="15" fill="#222" font-weight="700">Вокзальная площадь</text>
+<circle cx="635" cy="300" r="9" fill="#fff" stroke="#D32F2F" stroke-width="4"/>
+<text transform="translate(635,278) rotate(-50)" font-size="15" fill="#222" font-weight="400">Марджанишвили</text>
+<circle cx="706" cy="300" r="9" fill="#fff" stroke="#D32F2F" stroke-width="4"/>
+<text transform="translate(706,278) rotate(-50)" font-size="15" fill="#222" font-weight="700">Руставели</text>
+<circle cx="777" cy="300" r="9" fill="#fff" stroke="#D32F2F" stroke-width="4"/>
+<text transform="translate(777,278) rotate(-50)" font-size="15" fill="#222" font-weight="700">Площадь Свободы</text>
+<circle cx="847" cy="300" r="9" fill="#fff" stroke="#D32F2F" stroke-width="4"/>
+<text transform="translate(847,278) rotate(-50)" font-size="15" fill="#222" font-weight="700">Авлабари</text>
+<circle cx="918" cy="300" r="9" fill="#fff" stroke="#D32F2F" stroke-width="4"/>
+<text transform="translate(918,278) rotate(-50)" font-size="15" fill="#222" font-weight="400">300 Арагвели</text>
+<circle cx="989" cy="300" r="9" fill="#fff" stroke="#D32F2F" stroke-width="4"/>
+<text transform="translate(989,278) rotate(-50)" font-size="15" fill="#222" font-weight="400">Исани</text>
+<circle cx="1059" cy="300" r="9" fill="#fff" stroke="#D32F2F" stroke-width="4"/>
+<text transform="translate(1059,278) rotate(-50)" font-size="15" fill="#222" font-weight="400">Самгори</text>
+<circle cx="1130" cy="300" r="9" fill="#fff" stroke="#D32F2F" stroke-width="4"/>
+<text transform="translate(1130,278) rotate(-50)" font-size="15" fill="#222" font-weight="400">Варкетили</text>
+<circle cx="565" cy="355" r="9" fill="#fff" stroke="#2E7D32" stroke-width="4"/>
+<text x="585" y="360" font-size="15" fill="#222">Церетели</text>
+<circle cx="565" cy="410" r="9" fill="#fff" stroke="#2E7D32" stroke-width="4"/>
+<text x="585" y="415" font-size="15" fill="#222">Технический университет</text>
+<circle cx="565" cy="465" r="9" fill="#fff" stroke="#2E7D32" stroke-width="4"/>
+<text x="585" y="470" font-size="15" fill="#222">Медицинский университет</text>
+<circle cx="565" cy="520" r="9" fill="#fff" stroke="#2E7D32" stroke-width="4"/>
+<text x="585" y="525" font-size="15" fill="#222">Делиси</text>
+<circle cx="565" cy="575" r="9" fill="#fff" stroke="#2E7D32" stroke-width="4"/>
+<text x="585" y="580" font-size="15" fill="#222">Важа-Пшавела</text>
+<circle cx="565" cy="630" r="9" fill="#fff" stroke="#2E7D32" stroke-width="4"/>
+<text x="585" y="635" font-size="15" fill="#222">Государственный университет</text>
+<rect x="60" y="686" width="26" height="8" fill="#D32F2F"/><text x="94" y="694" font-size="14" fill="#333">Линия 1 — Ахметели-Варкетили (16 станций)</text>
+<rect x="440" y="686" width="26" height="8" fill="#2E7D32"/><text x="474" y="694" font-size="14" fill="#333">Линия 2 — Сабурталинская (7 станций)</text>
+<text x="1140" y="736" text-anchor="end" font-size="12" fill="#888">sakhva-travel.com · схема не в масштабе</text>
+</svg>
