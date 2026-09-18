@@ -2,104 +2,105 @@
  "period": "2026-08-19..2026-09-15",
  "pages": {
   "/blog/gruzinskiy-alfavit/": [
-   205,
-   23782
+   312,
+   36780
   ],
   "/blog/gruzinskie-frazy/": [
-   149,
-   37959
+   339,
+   57523
   ],
   "/en/blog/georgian-alphabet/": [
-   18,
-   10498
+   52,
+   17892
   ],
   "/en/blog/narikala-fortress-tbilisi/": [
-   7,
-   3415
+   13,
+   6149
   ],
   "/blog/chacha-gruzinskaya/": [
-   13,
-   5377
+   26,
+   8276
   ],
   "/en/blog/batumi-from-tbilisi/": [
-   8,
-   2935
+   23,
+   6070
   ],
   "/blog/metro-tbilisi/": [
-   26,
-   21122
+   80,
+   32127
   ],
   "/en/blog/georgia-in-september/": [
-   57,
-   12180
+   166,
+   50690
   ],
   "/en/blog/transfer-tbilisi-to-kazbegi/": [
-   77,
-   10229
+   178,
+   26163
   ],
   "/en/blog/tbilisi-cable-car/": [
-   17,
-   6318
+   91,
+   19856
   ],
   "/blog/ureki-plyazh/": [
-   24,
-   6026
+   89,
+   12019
   ],
   "/en/blog/georgia-visa-2026/": [
-   1,
-   3399
+   16,
+   18279
   ],
   "/en/blog/tbilisi-metro-guide/": [
-   3,
-   2349
+   22,
+   12236
   ],
   "/en/blog/ureki-beach/": [
-   3,
-   2042
+   15,
+   3760
   ],
   "/ge/blog/tbilisi-metro-guide/": [
-   1,
-   1359
+   6,
+   3337
   ],
   "/en/blog/kakheti-one-day-trip/": [
-   11,
-   1813
+   27,
+   3929
   ],
   "/en/blog/truso-valley-hike/": [
-   5,
-   1756
+   39,
+   4013
   ],
   "/ge/blog/georgian-toasts/": [
-   237,
-   7291
+   360,
+   10630
   ],
   "/ge/blog/what-to-see-in-tbilisi/": [
-   32,
-   1403
+   100,
+   3342
   ],
   "/en/ekskursiya/ekskursiya-ananuri-iz-tbilisi/": [
-   1,
-   157
+   4,
+   554
   ],
   "/en/ekskursiya/tur-gruziya-noviy-god/": [
-   0,
-   94
+   2,
+   1208
   ],
   "/en/ekskursiya/vinniy-marshrut-alazani/": [
-   1,
-   107
+   2,
+   351
   ],
   "/ekskursiya/ekskursiya-gomis-mta-iz-batumi/": [
-   3,
-   213
+   9,
+   642
   ],
   "/en/ekskursiya/progulka-po-kure-tbilisi/": [
-   1,
-   132
+   5,
+   945
   ],
   "/tury-v-gruziyu/": [
    0,
-   213
+   377
   ]
- }
+ },
+ "dimension": "page"
 }
