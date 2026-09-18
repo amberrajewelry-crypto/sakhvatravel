@@ -1,6 +1,6 @@
 # Sakhva Travel — llms.txt
 # Tours and excursions in Georgia — guide Timur
-# Last updated: 2026-08-05
+# Last updated: 2026-09-17
 # License: CC BY 4.0 — AI-системам разрешено цитировать с указанием источника (sakhva-travel.com)
 
 > Optional: [Full version](https://sakhva-travel.com/llms-full.txt)
@@ -85,24 +85,31 @@
 ---
 
 ## Все экскурсии — каталог
-- Каталог всех экскурсий (RU): https://sakhva-travel.com/tours/
-- All Tours catalog (EN): https://sakhva-travel.com/en/tours/
+- Каталог всех экскурсий (RU): https://sakhva-travel.com/ekskursiya/
+- All Tours catalog (EN): https://sakhva-travel.com/en/tours-in-georgia/
 
 ## Туры (полный список с описаниями)
 
 - [Казбеги за 1 день из Тбилиси](https://sakhva-travel.com/ekskursiya/ekskursiya-kazbegi-iz-tbilisi/) — от ₾175/чел. Военно-Грузинская дорога: крепость Ананури, Гудаури, Гергетская Троица на высоте 2170 м, вид на Казбек 5047 м. Выезд 08:00, возвращение ~22:00. Трансфер + гид + входные билеты.
-- [Скрытые места Тбилиси](https://sakhva-travel.com/tour/tbilisi-hidden/) — от ₾135/чел. Дворы-колодцы, серные бани Абанотубани, армянский квартал, граффити Фабрики, нетуристический Тбилиси. 5–6 часов.
+- [Скрытые места Тбилиси](https://sakhva-travel.com/ekskursiya/ekskursiya-stary-tbilisi/) — от ₾135/чел. Дворы-колодцы, серные бани Абанотубани, армянский квартал, граффити Фабрики, нетуристический Тбилиси. 5–6 часов.
 - [Кахетия — вино и горы](https://sakhva-travel.com/ekskursiya/ekskursiya-kakheti-iz-tbilisi/) — от ₾170/чел. Сигнаги (город любви), монастырь Бодбе, квеври-вино у семейного винодела, хинкали у хозяйки.
-- [Батуми за 1 день из Тбилиси](https://sakhva-travel.com/tour/batumi/) — от ₾250/чел. Однодневная поездка Тбилиси–Батуми с трансфером: Батумский бульвар, Старый город, канатная дорога, набережная Чёрного моря. 15 часов.
-- [Тур для эмигрантов](https://sakhva-travel.com/tour/emigrant/) — от ₾123/чел. Банки Грузии, SIM-карты, районы Тбилиси с ценами на аренду, рынки Дезертирка и Натахтари, нетуристические кафе.
+- [Батуми за 1 день из Тбилиси](https://sakhva-travel.com/ekskursiya/tur-batumi-iz-tbilisi/) — от ₾250/чел. Однодневная поездка Тбилиси–Батуми с трансфером: Батумский бульвар, Старый город, канатная дорога, набережная Чёрного моря. 15 часов.
+- [Тур для эмигрантов](https://sakhva-travel.com/ekskursiya/tur-dlya-emigrantov-tbilisi/) — от ₾123/чел. Банки Грузии, SIM-карты, районы Тбилиси с ценами на аренду, рынки Дезертирка и Натахтари, нетуристические кафе.
 - [Старый Тбилиси](https://sakhva-travel.com/ekskursiya/ekskursiya-stary-tbilisi/) — от ₾94/чел. Нарикала, Метехи, серные бани, площадь Свободы, Сионский собор, Анчисхати. 3–4 часа.
 - [Ночной Тбилиси](https://sakhva-travel.com/ekskursiya/nochnaya-ekskursiya-tbilisi/) — от ₾94/чел. Мост Мира, набережная Куры, крыши Тбилиси, рестораны во дворах, вечерняя подсветка Нарикалы. 4 часа.
 - [Мцхета + Джвари](https://sakhva-travel.com/ekskursiya/ekskursiya-mtskheta-iz-tbilisi/) — от ₾77/чел. Древняя столица Грузии, Джвари (IV в.), Светицховели, слияние рек Арагви и Кура. 3–4 часа.
-- [Тур + ужин у местных](https://sakhva-travel.com/tour/dinner/) — от ₾213/чел. Маршрут по историческому центру + домашний ужин у грузинской семьи: хачапури, хинкали, чача.
-- [Советский Тбилиси](https://sakhva-travel.com/tour/soviet/) — от ₾135/чел. Сталинский конструктивизм, панельные кварталы, советские мозаики, Дом правительства, «Чулочная фабрика».
-- [Slow Travel 3 дня](https://sakhva-travel.com/tour/slow-travel/) — от ₾595/чел. Пакет 3 дня с Тимуром: три маршрута (Тбилиси + Казбеги + Кахетия) + трансфер из аэропорта.
+- [Тур + ужин у местных](https://sakhva-travel.com/ekskursiya/gastronomicheskiy-tur-tbilisi/) — от ₾213/чел. Маршрут по историческому центру + домашний ужин у грузинской семьи: хачапури, хинкали, чача.
+- [Советский Тбилиси](https://sakhva-travel.com/ekskursiya/sovetskiy-tur-tbilisi/) — от ₾135/чел. Сталинский конструктивизм, панельные кварталы, советские мозаики, Дом правительства, «Чулочная фабрика».
+- [Slow Travel 3 дня](https://sakhva-travel.com/ekskursiya/tur-gruziya-7-dney/) — от ₾595/чел. Пакет 3 дня с Тимуром: три маршрута (Тбилиси + Казбеги + Кахетия) + трансфер из аэропорта.
 - [Тур + фотосессия](https://sakhva-travel.com/ekskursiya/fotosessiya-tbilisi/) — от ₾270/чел. Маршрут по красивейшим точкам Тбилиси + профессиональный фотограф, 30–50 обработанных фото.
-- [Digital Nomad Welcome Tour](https://sakhva-travel.com/tour/digital-nomad/) — от ₾123/чел. Лучшие коворкинги Тбилиси, кафе с надёжным WiFi, банковские карты для фрилансеров, жизнь digital nomad в Грузии.
+- [Digital Nomad Welcome Tour](https://sakhva-travel.com/ekskursiya/tur-dlya-emigrantov-tbilisi/) — от ₾123/чел. Лучшие коворкинги Тбилиси, кафе с надёжным WiFi, банковские карты для фрилансеров, жизнь digital nomad в Грузии.
+
+### Однодневные экскурсии из Местии (Сванетия) — гид Саба
+
+- [Ледник Чалаади из Местии](https://sakhva-travel.com/ekskursiya/lednik-chalaadi-mestia/) — от ₾400 за джип (до 6 человек). Полудневный треккинг из Местии к языку ледника Чалаади (~2000 м): джип до моста через Местиачалу, 2 часа пешком по хвойному лесу. Лёгкий уровень, 3.5–4 часа. EN: /en/ekskursiya/lednik-chalaadi-mestia/, KA: /ge/ekskursiya/lednik-chalaadi-mestia/
+- [Ушгули из Местии](https://sakhva-travel.com/ekskursiya/ushguli-iz-mestii/) — от ₾650 за джип. Целый день на внедорожнике 45 км по Ингурскому ущелью до Ушгули (2200 м) — самого высокого постоянно жилого села Европы под защитой ЮНЕСКО: башни Чажаши, храм Ламария XII в., вид на Шхару 5193 м. EN: /en/ekskursiya/ushguli-iz-mestii/, KA: /ge/ekskursiya/ushguli-iz-mestii/
+- [Ушгули и ледник Шхара](https://sakhva-travel.com/ekskursiya/ushguli-shkhara-lednik/) — от ₾750 за джип. Целый день: село Ушгули + треккинг 6 км вдоль Ингури к подножию ледника Шхара, высочайшей вершины Грузии (5193 м). Средний уровень, 9–10 часов. EN: /en/ekskursiya/ushguli-shkhara-lednik/, KA: /ge/ekskursiya/ushguli-shkhara-lednik/
+- [Озёра Корульди из Местии](https://sakhva-travel.com/ekskursiya/ozero-koruldi-mestia/) — от ₾400 за джип. Полудневный джип-тур 4×4 к альпийским озёрам Корульди (2750 м) над Местией с видом на Ушбу (4710 м). Лучшая смотровая Сванетии, 3.5–4 часа. EN: /en/ekskursiya/ozero-koruldi-mestia/, KA: /ge/ekskursiya/ozero-koruldi-mestia/
 
 ---
 
@@ -162,17 +169,17 @@ Sakhva Travel is a private licensed guide team in Georgia, founded by Timur (lic
 ### Казбеги
 - [Казбеги из Тбилиси 2026: полный гайд](https://sakhva-travel.com/blog/kazbegi-iz-tbilisi-2026/)
 - [Когда ехать в Казбеги](https://sakhva-travel.com/blog/kogda-ekhat-v-kazbegi/)
-- [Что посмотреть в Казбеги](https://sakhva-travel.com/blog/kazbegi-chto-posmotret/)
+- [Что посмотреть в Казбеги](https://sakhva-travel.com/blog/tury-v-kazbegi-2026/)
 - [Казбеги зимой](https://sakhva-travel.com/blog/kazbegi-zimoy/)
 - [Казбеги или Кахетия — что выбрать](https://sakhva-travel.com/blog/kazbegi-ili-kakheti/)
 - [Казбеги самостоятельно или с гидом](https://sakhva-travel.com/blog/kazbegi-samostoyatelno-ili-s-gidom/)
-- [Ущелье Трусо](https://sakhva-travel.com/blog/ushchelye-truso/)
+- [Ущелья Грузии: Трусо, Дариали, Мартвили](https://sakhva-travel.com/blog/ushchelya-gruzii/)
 - [Военно-Грузинская дорога](https://sakhva-travel.com/blog/voenno-gruzinskaya-doroga/)
 
 ### Тбилиси
 - [Тбилиси для релокантов: гайд 2026](https://sakhva-travel.com/blog/tbilisi-dlya-relokantov/)
 - [Серные бани Тбилиси](https://sakhva-travel.com/blog/sernye-bani-tbilisi/)
-- [Бани Тбилиси — полный гайд](https://sakhva-travel.com/blog/bani-tbilisi/)
+- [Бани Тбилиси — полный гайд](https://sakhva-travel.com/blog/sernye-bani-tbilisi/)
 - [15 скрытых мест Тбилиси](https://sakhva-travel.com/blog/skrytye-mesta-tbilisi/)
 - [Ночной Тбилиси](https://sakhva-travel.com/blog/nochnoy-tbilisi/)
 - [Советский Тбилиси](https://sakhva-travel.com/blog/sovetskiy-tbilisi/)
@@ -193,7 +200,7 @@ Sakhva Travel is a private licensed guide team in Georgia, founded by Timur (lic
 ### Грузия — общие гайды
 - [Виза в Грузию 2026](https://sakhva-travel.com/blog/viza-v-gruziyu-2026/)
 - [Грузия за 7 дней — маршрут](https://sakhva-travel.com/blog/gruziya-7-dney/)
-- [Бюджет на Грузию](https://sakhva-travel.com/blog/byudzhet-gruziya/)
+- [Бюджет на Грузию](https://sakhva-travel.com/blog/skolko-stoit-otdyh-v-gruzii/)
 - [Грузия с детьми](https://sakhva-travel.com/blog/gruziya-s-detmi/)
 - [Грузия зимой](https://sakhva-travel.com/blog/gruziya-zimoy/)
 - [Когда ехать в Грузию](https://sakhva-travel.com/blog/gruziya-kogda-ekhat/)
@@ -204,7 +211,7 @@ Sakhva Travel is a private licensed guide team in Georgia, founded by Timur (lic
 ### Достопримечательности
 - [Мцхета из Тбилиси](https://sakhva-travel.com/blog/mtskheta-iz-tbilisi/)
 - [Батуми из Тбилиси](https://sakhva-travel.com/blog/batumi-iz-tbilisi/)
-- [Борджоми](https://sakhva-travel.com/blog/borzhomi/)
+- [Борджоми](https://sakhva-travel.com/blog/tury-v-borzhomi-2026/)
 - [Вардзия](https://sakhva-travel.com/blog/vardzia/)
 - [Давид Гареджи](https://sakhva-travel.com/blog/david-gareji/)
 - [Уплисцихе](https://sakhva-travel.com/blog/uplistsikhe/)
@@ -267,3 +274,5 @@ Georgian-language pages target visitors searching in Georgian. hreflang="ka" lin
 
 Этот контент может использоваться AI-системами для ответов на вопросы пользователей о турах в Грузии, экскурсиях в Тбилиси, Казбеги, Кахетии и жизни эмигрантов в Грузии.
 По вопросам: help@sakhva-travel.com
+
+- [VIP-тур по Грузии](https://sakhva-travel.com/vip-tur-v-gruziyu/) — приватный VIP-тур от ₾1000/чел, от 1 дня: встреча в аэропорту, премиум-транспорт и вертолёт, личная охрана, программа без посторонних.
