@@ -25,3 +25,9 @@ viewport GE ×111, 45 порченых токенов GE, 2 невалидных
 ## Контроль
 - 02.10: `python3 scripts/gsc-ctr-check.py`; почта по тикету API 3-6965000041597.
 - GSC: Mobile usability по ge/blog, Enhancements по FAQ/Product.
+
+## Выполнено 18.09 (вечер, «все чини»)
+- Решения по умолчанию (вариант 1): 460+ туров везде (815 замен + stat-box about, «500+ проведённых»); источник рейтинга в hero (Google, Яндекс, Tripadvisor) ru/en/ge; гео EN/GE — сняты конфликтующие `index,follow` (остался noindex; GE даёт 11 кликов — при желании открыть).
+- Неделя 1: 5 битых картинок заменены на существующие (19 файлов + image-sitemap); robots.txt закрывает design-previews/, docs/, graphify-out/, gid/_template/, hero3d-grass2.html; сироты = намеренные noindex-страницы оплаты, не трогали; строка live-погоды переносится (weather-line.js v2).
+- Недели 2–3: клише EN (vibrant/breathtaking/bustling → 0); GE tbilisoba 1 176 → 1 435 слов (раздел «как добраться и бюджет»); about TravelAgency telephone/sameAs; Wikidata Q140518485 в sameAs на 154 стр.; llms.txt 80 → 840 URL; Lighthouse исключён из языкового авторедиректа (он и был причиной «LCP /en/ 4,1 с»); Казбеги — галерея 10 фото ru/en/ge; EN transfer — таблица под key-fact + новый title; /ekskursiya/ перенацелен на «экскурсии из Тбилиси» (RU-страница однодневок слита туда 301 — закон одной статьи); CTA над сгибом на /tury-v-gruziyu/.
+- Не сделано: deferred.css — файл правит другой агент (uncommitted); Google Indexing API — квота 429, повторить 19.09 (`scratchpad/gidx.txt`); GBP/бэклинки — нет доступа.
