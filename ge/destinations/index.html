@@ -73,7 +73,7 @@ ul{list-style:none}
 .country-h1{font-size:clamp(32px,5vw,54px);font-weight:700;color:#fff;line-height:1.12;margin-bottom:18px;text-shadow:0 2px 12px rgba(0,0,0,.3)}
 .country-facts{display:flex;gap:30px;flex-wrap:wrap}
 .cf-item{text-align:left}
-.cf-label{font-size:11px;color:rgba(255,255,255,.55);letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px}
+.cf-label{font-size:12px;color:rgba(255,255,255,.55);letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px}
 .cf-val{font-size:18px;font-weight:700;color:#B45309}
 .note-bar{max-width:760px;margin:0 auto;padding:0 clamp(16px,3.5vw,32px)}
 .note-inner{margin:24px 0 0;padding:14px 18px;background:#FFF7ED;border:1px solid #FED7AA;border-radius:12px;font-size:13.5px;color:#9A3412;line-height:1.6}
@@ -238,7 +238,7 @@ function toggleFaq(btn){var item=btn.closest('.fi'),isOpen=item.classList.contai
 </script>
 <script>(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
 m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return}}
-k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,function(c){'requestIdleCallback'in window?requestIdleCallback(c,{timeout:4000}):setTimeout(c,1500)}(function(){a.parentNode.insertBefore(k,a)})})
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,function(c){var d=false,f=function(){if(d)return;d=true;c()};['scroll','touchstart','mousemove','keydown','click'].forEach(function(e){document.addEventListener(e,f,{once:true,passive:true})});setTimeout(f,5000)}(function(){a.parentNode.insertBefore(k,a)})})
 (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
 ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});
 </script>

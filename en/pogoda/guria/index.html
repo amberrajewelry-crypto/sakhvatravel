@@ -88,7 +88,7 @@ a{text-decoration:none;color:inherit}img{max-width:100%;display:block}button{bor
 .wx-feat-desc{font-size:18px;color:var(--ink);font-weight:700;margin-top:14px}
 .wx-feat-meta{font-size:14px;color:#6B7280;margin-top:3px}
 .wx-feat-fore{background:#FBFAF8;border-left:1px solid #ECECE4;padding:22px 22px;display:flex;flex-direction:column;justify-content:center;gap:2px}
-.wx-fore-h{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#9CA3AF;font-weight:700;margin-bottom:10px}
+.wx-fore-h{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#9CA3AF;font-weight:700;margin-bottom:10px}
 .wx-fore-day{display:grid;grid-template-columns:44px 28px 1fr auto;align-items:center;gap:12px;padding:8px 0;border-bottom:1px solid #F2F2EC;opacity:0;transform:translateX(10px);animation:foreIn .5s forwards}
 .wx-fore-day:last-child{border-bottom:none}
 .wx-fore-dow{font-size:13px;color:#4B5563;font-weight:700}
@@ -110,18 +110,18 @@ a{text-decoration:none;color:inherit}img{max-width:100%;display:block}button{bor
 .clim td{color:#4B5563;font-variant-numeric:tabular-nums}
 .clim tbody tr:last-child th,.clim tbody tr:last-child td{border-bottom:none}
 .clim th.best{color:#0C7C38}
-.clim th.best::before{content:'●';font-size:8px;vertical-align:middle;margin-right:6px;color:var(--amber-l)}
+.clim th.best::before{content:'●';font-size:12px;vertical-align:middle;margin-right:6px;color:var(--amber-l)}
 .clim-note{font-size:12px;color:#9CA3AF;margin-top:12px}
 .cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:8px}
 .cal-day{display:flex;flex-direction:column;align-items:center;gap:3px;padding:14px 6px;border:1px solid #ECECE4;border-radius:14px;background:linear-gradient(160deg,#fff,#fafaf7);text-align:center}
 .cal-day.today{border-color:#B45309;box-shadow:inset 0 0 0 1px #B45309}
 .cal-day.far{opacity:.6;background:#fbfaf7}
 .cal-dow{font-size:12px;font-weight:700;color:var(--green)}
-.cal-date{font-size:11px;color:#9CA3AF}
+.cal-date{font-size:12px;color:#9CA3AF}
 .cal-ic{width:34px;height:34px;margin:2px 0}
 .cal-hi{font-size:18px;font-weight:700;color:var(--ink);font-variant-numeric:tabular-nums}
 .cal-lo{font-size:13px;color:#9CA3AF;font-variant-numeric:tabular-nums}
-.cal-pop{font-size:11px;color:#2563a8;font-weight:700}
+.cal-pop{font-size:12px;color:#2563a8;font-weight:700}
 .cal-skel{height:120px;border-radius:14px;background:linear-gradient(90deg,#eee,#f6f6f2,#eee);background-size:200% 100%;animation:shim 1.3s infinite}
 @media(max-width:760px){.cal-grid{grid-template-columns:repeat(4,1fr)}}
 @media(max-width:460px){.cal-grid{grid-template-columns:repeat(3,1fr)}}
@@ -131,7 +131,7 @@ a{text-decoration:none;color:inherit}img{max-width:100%;display:block}button{bor
 .mc-city a{color:var(--green)}.mc-city a:hover{color:var(--amber)}
 .mc-days{display:flex;gap:6px;overflow-x:auto;padding-bottom:2px}
 .mc-day{display:flex;flex-direction:column;align-items:center;gap:2px;min-width:54px;padding:8px 4px;border:1px solid #ECECE4;border-radius:10px;background:#fff}
-.mc-dow{font-size:11px;color:#9CA3AF;font-weight:700}
+.mc-dow{font-size:12px;color:#9CA3AF;font-weight:700}
 .mc-ic{width:24px;height:24px}
 .mc-t{font-size:12px;font-weight:700;color:var(--ink);font-variant-numeric:tabular-nums}
 .mc-t span{color:#9CA3AF;font-weight:400}
@@ -143,7 +143,7 @@ a{text-decoration:none;color:inherit}img{max-width:100%;display:block}button{bor
 .wx-card:hover{transform:translateY(-5px);box-shadow:0 16px 34px -14px rgba(26,61,46,.32);border-color:#D6E4DC}
 .wx-card-top{display:flex;align-items:center;justify-content:space-between;gap:8px}
 .wx-card-name{font-size:15px;font-weight:700;color:var(--green);line-height:1.2}
-.wx-card-sub{font-size:11px;color:#9CA3AF;margin-top:2px}
+.wx-card-sub{font-size:12px;color:#9CA3AF;margin-top:2px}
 .wx-card-ic{width:40px;height:40px;flex-shrink:0}
 .wx-card-bot{display:flex;align-items:flex-end;justify-content:space-between}
 .wx-card-temp{font-size:32px;font-weight:700;color:var(--ink);line-height:1;font-variant-numeric:tabular-nums}
@@ -152,6 +152,7 @@ a{text-decoration:none;color:inherit}img{max-width:100%;display:block}button{bor
 .wx-card.load .wx-card-name,.wx-card.load .wx-card-temp,.wx-card.load .wx-card-ic,.wx-card.load .wx-card-mm{background:linear-gradient(90deg,#eee,#f6f6f2,#eee);background-size:200% 100%;animation:shim 1.3s infinite;color:transparent!important;border-radius:6px}
 .wx-card.load .wx-card-ic{border-radius:50%}
 @keyframes shim{to{background-position:-200% 0}}
+.wx-bridge{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 20px;padding:14px 18px;border:1px solid #cfe3d6;border-radius:14px;background:#f2f8f4;color:#1A3D2E;font-weight:600;text-decoration:none;line-height:1.35}.wx-bridge:hover{background:#e6f2ea}.wx-bridge-arr{flex-shrink:0;font-size:20px}
 .wx-cta{position:relative;background:linear-gradient(140deg,var(--green),#0f2419);border-radius:22px;padding:44px 32px;text-align:center;overflow:hidden}
 .wx-cta::before{content:'';position:absolute;inset:0;background:radial-gradient(80% 120% at 100% 0,rgba(245,158,11,.18),transparent 55%)}
 .wx-cta h2{position:relative;font-size:clamp(22px,3vw,28px);font-weight:700;color:#fff;margin-bottom:10px}
@@ -196,7 +197,7 @@ var _ck=localStorage.getItem('cookies_v4')==='1',_gc=location.search.indexOf('gc
 if(_ck||_gc){gtag('consent','update',{analytics_storage:'granted',ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted'})}
 </script>
 <script>(function(){function loadGA(){if(window._gaLoaded)return;window._gaLoaded=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-3X83YZHY6S';s.onload=function(){gtag('js',new Date());gtag('config','G-3X83YZHY6S');gtag('config','AW-8133499399')};document.head.appendChild(s)}['scroll','touchstart','mousemove','keydown','click'].forEach(function(e){document.addEventListener(e,loadGA,{once:true,passive:true})});setTimeout(loadGA,8000)})()</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "url": "https://sakhva-travel.com/en/pogoda/guria/", "name": "Weather in Guria: forecast and climate by month 2026", "description": "Weather in Guria: forecast for the week ahead by day and climate by month — temperature, precipitation. Best time to visit: september, may, june.", "inLanguage": "en", "isPartOf": {"@id": "https://sakhva-travel.com/#website"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "url": "https://sakhva-travel.com/en/pogoda/guria/", "name": "Weather in Guria: forecast and climate by month 2026", "description": "Weather in Guria: forecast for the week ahead by day and climate by month — temperature, precipitation. Best time to visit: september, may, june.", "inLanguage": "en", "dateModified": "2026-09-17", "isPartOf": {"@id": "https://sakhva-travel.com/#website"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://sakhva-travel.com/en/"}, {"@type": "ListItem", "position": 2, "name": "Weather in Georgia", "item": "https://sakhva-travel.com/en/pogoda/"}, {"@type": "ListItem", "position": 3, "name": "Weather in Guria", "item": "https://sakhva-travel.com/en/pogoda/guria/"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "When is the best time to visit Guria?", "acceptedAnswer": {"@type": "Answer", "text": "The most comfortable time is september, may: warm but without exhausting heat, and less rain. See the exact monthly figures in the climate table above."}}, {"@type": "Question", "name": "What's the weather in Guria right now?", "acceptedAnswer": {"@type": "Answer", "text": "The current temperature and the 7-day forecast are shown by the live widget at the top of the page — the data updates automatically."}}, {"@type": "Question", "name": "Is it cold in Guria in winter?", "acceptedAnswer": {"@type": "Answer", "text": "The winter is mild: around +10° by day in January, +2° at night. Snow falls but melts quickly."}}, {"@type": "Question", "name": "What should I pack for Guria?", "acceptedAnswer": {"@type": "Answer", "text": "In summer it's up to +26° by day and about +19° at night: light clothes for the day, a jumper for the evening. In winter it's +11° by day and down to +3° at night — bring a warm coat."}}]}</script>
 </head>
@@ -206,7 +207,7 @@ if(_ck||_gc){gtag('consent','update',{analytics_storage:'granted',ad_storage:'gr
 <svg class="logo-svg" viewBox="0 0 400 170" fill="none" xmlns="http://www.w3.org/2000/svg"><g fill="currentColor"><path d="M125.5 95.3c-1.4-3-4.4-5-7.7-5h-5.6c-3.3 0-6.3 2-7.7 5L95 115.3h40l-9.5-20z" opacity=".15"/><path d="M148.5 95.3c-1.4-3-4.4-5-7.7-5h-5.6c-3.3 0-6.3 2-7.7 5L118 115.3h40l-9.5-20z" opacity=".3"/><path d="M171.5 95.3c-1.4-3-4.4-5-7.7-5h-5.6c-3.3 0-6.3 2-7.7 5L141 115.3h40l-9.5-20z" opacity=".5"/><path d="M200 60l-32 55.3h64L200 60z" fill="currentColor"/><circle cx="200" cy="52" r="6" fill="#F59E0B"/></g><text x="200" y="136" text-anchor="middle" font-family="Georgia,serif" font-size="28" font-weight="700" letter-spacing="6" fill="currentColor">SAKHVA</text><line x1="135" y1="143" x2="265" y2="143" stroke="#F59E0B" stroke-width="2"/><text x="200" y="158" text-anchor="middle" font-family="Georgia,serif" font-size="13" letter-spacing="8" fill="currentColor">TRAVEL</text></svg>
 </a>
 <div class="nav-links">
-<a href="/en/tours-in-georgia/">Georgia tours</a><a href="/en/tours-in-georgia/">Excursions</a><a href="/en/prices/">Prices</a><a href="/en/about/">About</a><a href="/en/blog/">Blog</a><a href="/en/pogoda/">Weather</a><a href="/en/#footer">Contacts</a>
+<a href="/en/tours-in-georgia/">Georgia tours</a><a href="/en/ekskursiya/">Excursions</a><a href="/en/prices/">Prices</a><a href="/en/about/">About</a><a href="/en/blog/">Blog</a><a href="/en/pogoda/">Weather</a><a href="/en/#footer">Contacts</a>
 <span class="lang-sw"><a class="ls" href="https://sakhva-travel.com/pogoda/guria/">RU</a><a class="ls active" href="https://sakhva-travel.com/en/pogoda/guria/">EN</a><a class="ls" href="https://sakhva-travel.com/ge/pogoda/guria/">GE</a></span>
 <a href="#" class="nav-btn" onclick="event.preventDefault();if(typeof openContact==='function')openContact();else window.location.href='https://wa.me/995511272623'">Pay online</a>
 </div>
@@ -214,7 +215,7 @@ if(_ck||_gc){gtag('consent','update',{analytics_storage:'granted',ad_storage:'gr
 </nav>
 <div class="drawer" id="drawer">
 <script>function closeDrawer(){var d=document.getElementById('drawer'),b=document.getElementById('burger');d.classList.remove('on');b.classList.remove('on');document.body.style.overflow=''}</script>
-<a href="/en/tours-in-georgia/" onclick="closeDrawer()">Excursions</a><a href="/en/prices/" onclick="closeDrawer()">Prices</a><a href="/en/pogoda/" onclick="closeDrawer()">Weather in Georgia</a><a href="/en/blog/" onclick="closeDrawer()">Blog</a><a href="/en/booking/" class="d-btn">Book now</a>
+<a href="/en/ekskursiya/" onclick="closeDrawer()">Excursions</a><a href="/en/prices/" onclick="closeDrawer()">Prices</a><a href="/en/pogoda/" onclick="closeDrawer()">Weather in Georgia</a><a href="/en/blog/" onclick="closeDrawer()">Blog</a><a href="/en/booking/" class="d-btn">Book now</a>
 <div class="d-lang"><a class="ls" href="https://sakhva-travel.com/pogoda/guria/">RU</a><a class="ls active" href="https://sakhva-travel.com/en/pogoda/guria/">EN</a><a class="ls" href="https://sakhva-travel.com/ge/pogoda/guria/">GE</a></div>
 </div>
 
@@ -239,7 +240,7 @@ if(_ck||_gc){gtag('consent','update',{analytics_storage:'granted',ad_storage:'gr
 </section>
 
 <div class="wx-body">
-<section class="wx-sec"><div class="wx-sec-head"><h2>Weather in Guria: daily forecast</h2><p>Forecast for the week ahead and a 2-week trend: day and night temperature, chance of precipitation. Updated hourly.</p></div><div id="cal" class="cal-grid"></div><p class="clim-note">The next 7 days are an accurate forecast; days 8–14 are a guide (Open-Meteo).</p></section><section class="wx-sec wx-prose"><div class="wx-sec-head"><h2>Guria climate: when to plan your trip</h2></div><p>In Guria the seasons run: about +11° by day in winter, +18° in spring, +26° in summer, +20° in autumn. The warmest month is august (up to +27° by day), the coolest is january (+10°). Most rainfall is in August. Detailed monthly normals are in the table below.</p><p>In summer it's up to +26° by day and about +19° at night: light clothes for the day, a jumper for the evening. In winter it's +11° by day and down to +3° at night — bring a warm coat. The driest month is February — the clearest time for walks and wide-open views.</p></section><section class="wx-sec wx-prose"><div class="wx-sec-head"><h2>What to do in Guria by season</h2></div><p>The beach season in Guria runs June to September: about +26° by day, a warm sea and a lively promenade. Spring and autumn (september, may, june) are quieter and cheaper — too cool to swim, but easy for sightseeing. The seaside route is <a href="/en/ekskursiya/ekskursiya-ureki-iz-tbilisi/">Ureki tour</a>.</p></section><section class="wx-sec"><div class="wx-sec-head"><h2>Guria climate by month</h2><p>Average day and night temperatures and the number of days with precipitation. The most comfortable months to visit are in green.</p></div><div class="clim-wrap"><table class="clim"><thead><tr><th scope="col">Month</th><th scope="col">Day</th><th scope="col">Night</th><th scope="col">Days with precip.</th></tr></thead><tbody><tr><th scope="row">January</th><td>+10°</td><td>+2°</td><td>14</td></tr>
+<a class="wx-bridge" href="/en/ekskursiya/ekskursiya-ureki-iz-tbilisi/"><span>Weather in Guria is no obstacle: tours with guide Timur from ₾80</span><span class="wx-bridge-arr">→</span></a><section class="wx-sec"><div class="wx-sec-head"><h2>Weather in Guria: daily forecast</h2><p>Forecast for the week ahead and a 2-week trend: day and night temperature, chance of precipitation. Updated hourly.</p></div><div id="cal" class="cal-grid"></div><p class="clim-note">The next 7 days are an accurate forecast; days 8–14 are a guide (Open-Meteo).</p></section><section class="wx-sec wx-prose"><div class="wx-sec-head"><h2>Guria climate: when to plan your trip</h2></div><p>In Guria the seasons run: about +11° by day in winter, +18° in spring, +26° in summer, +20° in autumn. The warmest month is august (up to +27° by day), the coolest is january (+10°). Most rainfall is in August. Detailed monthly normals are in the table below.</p><p>In summer it's up to +26° by day and about +19° at night: light clothes for the day, a jumper for the evening. In winter it's +11° by day and down to +3° at night — bring a warm coat. The driest month is February — the clearest time for walks and wide-open views.</p></section><section class="wx-sec wx-prose"><div class="wx-sec-head"><h2>What to do in Guria by season</h2></div><p>The beach season in Guria runs June to September: about +26° by day, a warm sea and a lively promenade. Spring and autumn (september, may, june) are quieter and cheaper — too cool to swim, but easy for sightseeing. The seaside route is <a href="/en/ekskursiya/ekskursiya-ureki-iz-tbilisi/">Ureki tour</a>.</p></section><section class="wx-sec"><div class="wx-sec-head"><h2>Guria climate by month</h2><p>Average day and night temperatures and the number of days with precipitation. The most comfortable months to visit are in green.</p></div><div class="clim-wrap"><table class="clim"><thead><tr><th scope="col">Month</th><th scope="col">Day</th><th scope="col">Night</th><th scope="col">Days with precip.</th></tr></thead><tbody><tr><th scope="row">January</th><td>+10°</td><td>+2°</td><td>14</td></tr>
 <tr><th scope="row">February</th><td>+12°</td><td>+3°</td><td>12</td></tr>
 <tr><th scope="row">March</th><td>+14°</td><td>+5°</td><td>17</td></tr>
 <tr><th scope="row">April</th><td>+18°</td><td>+8°</td><td>13</td></tr>
@@ -333,7 +334,7 @@ function toggleFaq(btn){var item=btn.closest('.fi'),isOpen=item.classList.contai
     return S+cloudD+'<path class="ic-drop" d="M30 44l-5 9h6l-4 8" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>';
   }
   function countUp(el,to){var st=null,d=800;to=Math.round(to);function step(ts){if(!st)st=ts;var p=Math.min((ts-st)/d,1),v=Math.round(to*p);el.textContent=(v>0?'+':'')+v;if(p<1)requestAnimationFrame(step)}requestAnimationFrame(step)}
-  function get(slug){return fetch('/api/weather/?region='+slug).then(function(r){return r.json()})}
+  function get(slug){return fetch('/api/weather?region='+slug).then(function(r){return r.json()})}
   function paintCard(card,d){
     if(!d||!d.current||typeof d.current.temp!=='number'){card.classList.remove('load');return}
     var m=meta(d.current.code);card.classList.remove('load');
@@ -383,7 +384,7 @@ function toggleFaq(btn){var item=btn.closest('.fi'),isOpen=item.classList.contai
   if('requestIdleCallback'in window){requestIdleCallback(run,{timeout:2000})}else{setTimeout(run,300)}
 })();
 </script>
-<script>(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return}}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,function(c){'requestIdleCallback'in window?requestIdleCallback(c,{timeout:4000}):setTimeout(c,1500)}(function(){a.parentNode.insertBefore(k,a)})})(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});</script>
+<script>(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return}}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,function(c){var d=false,f=function(){if(d)return;d=true;c()};['scroll','touchstart','mousemove','keydown','click'].forEach(function(e){document.addEventListener(e,f,{once:true,passive:true})});setTimeout(f,5000)}(function(){a.parentNode.insertBefore(k,a)})})(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});</script>
 <noscript><div><img alt="" src="https://mc.yandex.ru/watch/109038950" style="position:absolute;left:-9999px"/></div></noscript>
 </body>
 </html>

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head><link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><link rel="preconnect" href="https://mc.yandex.ru" crossorigin>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>ექსკურსიები და ტურები საქართველოში 2026 — 75 მარშრუტი</title>
+<meta name="description" content="Sakhva Travel-ის ყველა ტური საქართველოში: ყაზბეგი, კახეთი, მცხეთა, ბათუმი, სვანეთი. 75 მარშრუტი გიდ თიმურთან ერთად. ფასები $27-დან (77 ლარი).">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://sakhva-travel.com/ge/ekskursiya/"><link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/ekskursiya/"><link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/tours-in-georgia/"><link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/ekskursiya/"><link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/ekskursiya/">
+<script src="/js/al.js"></script>
+<meta property="og:title" content="ექსკურსიები და ტურები საქართველოში 2026 — 75 მარშრუტი">
+<meta property="og:description" content="ყაზბეგი, კახეთი, მცხეთა, ბათუმი, სვანეთი. ინდივიდუალური ტურები გიდთან ერთად $27-დან (77 ლარი).">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sakhva-travel.com/ge/ekskursiya/">
+<meta property="og:image" content="https://sakhva-travel.com/images/og-cover.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="75 ტური საქართველოში — Sakhva Travel">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ექსკურსიები და ტურები საქართველოში 2026 — 75 მარშრუტი">
+<meta name="twitter:description" content="ყაზბეგი, კახეთი, მცხეთა, ბათუმი, სვანეთი. ინდივიდუალური ტურები გიდთან ერთად $27-დან (77 ლარი).">
+<meta name="twitter:image" content="https://sakhva-travel.com/images/og-cover.jpg">
+<link rel="preload" href="/data/catalog-ge.json?v=20260905" as="fetch" crossorigin>
+<style>
+@font-face{font-family:'Lora';font-style:normal;font-weight:400;font-display:სურვილისამებრი;src:url(/fonts/lora-10.woff2) format('woff2')}
+@font-face{font-family:'Lora';font-style:normal;font-weight:600;font-display:სურვილისამებრი;src:url(/fonts/lora-14.woff2) format('woff2')}
+@font-face{font-family:'Lora';font-style:normal;font-weight:700;font-display:სურვილისამებრი;src:url(/fonts/lora-14.woff2) format('woff2')}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Lora',Georgia,serif;background:#fff;color:#1a3d2e;min-height:100vh}
+#nav{position:fixed;top:0;left:0;right:0;z-index:900;height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 24px;background:#fff;box-shadow:0 1px 8px rgba(0,0,0,.08)}
+.nav-logo{text-decoration:none;display:flex;align-items:center}
+.logo-svg{height:48px;width:auto}
+.nav-back{display:flex;align-items:center;gap:6px;text-decoration:none;color:#1a3d2e;font-size:14px;font-weight:600;padding:8px 16px;border-radius:8px;background:#f0f7f4;transition:background .2s}
+.nav-back:hover{background:#dceee5}
+.cf-wrap{position:relative}
+.cf-btn{padding:10px 18px;border:1px solid #D1D5DB;border-radius:8px;background:#fff;font-size:13px;font-family:inherit;cursor:pointer;display:flex;align-items:center;gap:6px;white-space:nowrap;transition:border-color .15s}
+.cf-btn:hover,.cf-wrap.open .cf-btn{border-color:#1A3D2E;color:#1A3D2E}
+.cf-btn svg{width:14px;height:14px;flex-shrink:0}
+.cf-dd{display:none;position:absolute;top:calc(100% + 4px);left:0;background:#fff;border:1px solid #E5E7EB;border-radius:10px;box-shadow:0 8px 30px rgba(0,0,0,.12);min-width:220px;z-index:50;padding:6px 0}
+.cf-wrap.open .cf-dd{display:block}
+.cf-item{padding:10px 18px;font-size:14px;cursor:pointer;transition:background .1s;color:#374151}
+.cf-item:hover{background:#F3F4F6}
+.cf-item.active{color:#1A3D2E;font-weight:600}
+.cf-item.active::before{content:'\2713 ';color:#1A3D2E}
+.cat-filters{display:flex;gap:10px;flex-wrap:wrap;max-width:1200px;margin-left:auto;margin-right:auto;padding:0 clamp(16px,3.5vw,56px)}
+.cf-btn-adv{background:#F9FAFB;border:1px dashed #D1D5DB;color:#374151;font-weight:600}
+.cf-btn-adv:hover{border-color:#1A3D2E;color:#1A3D2E;background:#F0FAF4}
+#hub-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:start;min-height:6400px;contain-intrinsic-size:auto 6400px}
+#hub-pills{min-height:90px}
+@media(max-width:900px){#hub-grid{grid-template-columns:repeat(2,1fr);min-height:9600px;contain-intrinsic-size:auto 9600px}}
+@media(max-width:600px){#hub-grid{grid-template-columns:1fr;min-height:19000px;contain-intrinsic-size:auto 19000px}}
+@media(max-width:640px){.cf-btn{padding:8px 12px;font-size:12px}}
+footer{background:#1a3d2e;color:#B7C3BD;text-align:center;padding:24px 20px;font-size:13px;margin-top:48px}
+footer a{color:#34E0A1;text-decoration:underline}
+footer p a:not([class]){text-decoration:underline;text-underline-offset:2px}</style>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"ტურები საქართველოში 2026 — ინდივიდუალური რუსულ- და ინგლისურენოვანი გიდი","description":"ინდივიდუალური ტურები და ექსკურსიები საქართველოში თბილისიდან გიდ თიმურთან ერთად. ყაზბეგი, კახეთი, სვანეთი და სხვა — მცირე ჯგუფები 7 კაცამდე.","url":"https://sakhva-travel.com/ge/ekskursiya/","image":"https://sakhva-travel.com/images/og-cover.jpg","brand":{"@type":"Brand","name":"Sakhva Travel"},"aggregateRating":{"@type":"AggregateRating","ratingValue":4.9,"reviewCount":37,"bestRating":5,"worstRating":1},"offers":{"@type":"AggregateOffer","priceCurrency":"EUR","lowPrice":"45","highPrice":"900","offerCount":"30","availability":"https://schema.org/InStock","termsOfService":"https://sakhva-travel.com/terms/","priceValidUntil":"2027-12-31"},"review":[{"@type":"Review","author":{"@type":"Person","name":"Mikhail D."},"reviewRating":{"@type":"Rating","ratingValue":5,"bestRating":5,"worstRating":1},"reviewBody":"წელს ჯგუფურად ვიმოგზაურეთ საქართველოში. მადლობა თიმურსა და მთელ გუნდს — წარმოუდგენელი იყო!","datePublished":"2026-05-28"},{"@type":"Review","author":{"@type":"Person","name":"Vitaliy"},"reviewRating":{"@type":"Rating","ratingValue":5,"bestRating":5,"worstRating":1},"reviewBody":"ძალიან კარგი გიდი. შესანიშნავად გავატარეთ დრო! პროგრამა ჩვენზე იყო მორგებული, გირჩევთ!","datePublished":"2026-04-28"},{"@type":"Review","author":{"@type":"Person","name":"ნუგო შენგელია"},"reviewRating":{"@type":"Rating","ratingValue":5,"bestRating":5,"worstRating":1},"reviewBody":"ძალიან გირჩევთ, თუ გსურთ საუკეთესო რჩევა და სამოგზაურო მომსახურება მთელ საქართველოში.","datePublished":"2026-02-09"},{"@type":"Review","author":{"@type":"Person","name":"ამოვეი"},"reviewRating":{"@type":"Rating","ratingValue":5,"bestRating":5,"worstRating":1},"reviewBody":"შესანიშნავი მოგზაურობა კახეთში! ღვინო საოცარი იყო — ყველამ ერთხელ მაინც უნდა ეწვიოს ქართულ ვენახებს.","datePublished":"2026-05-02"},{"@type":"Review","author":{"@type":"Person","name":"სერგეი"},"reviewRating":{"@type":"Rating","ratingValue":5,"bestRating":5,"worstRating":1},"reviewBody":"დავჯავშნეთ კერძო ტური ოთხისთვის. თიმური ნამდვილი პროფესიონალია: იცის ისტორია და მომხიბლავად ჰყვება.","datePublished":"2026-01-03"},{"@type":"Review","author":{"@type":"Person","name":"Tigran M."},"reviewRating":{"@type":"Rating","ratingValue":5,"bestRating":5,"worstRating":1},"reviewBody":"შესანიშნავი ექსკურსია, დიდი მადლობა! ყველაფერი უმაღლეს დონეზე იყო.","datePublished":"2025-10-13"}]}</script>
+<link rel="preload" href="/fonts/noto-sans-georgian.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/css/ge.css"></head>
+<body>
+<nav id="nav">
+<a href="/ge/" class="nav-logo" aria-label="Sakhva Travel">
+<svg class="logo-svg" viewBox="0 0 118 70" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<circle cx="59" cy="20" r="10" fill="#F59E0B" opacity=".92"/>
+<line x1="59" y1="10" x2="59" y2="5" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="65" y1="12" x2="68" y2="8" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="53" y1="12" x2="50" y2="8" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="69" y1="17" x2="73" y2="14" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="49" y1="17" x2="45" y2="14" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M4 34 L20 20 L32 27 L59 14 L86 27 L98 20 L114 34 Z" fill="#1A3D2E"/>
+<path d="M55 18 L59 14 L63 18 Z" fill="white" opacity=".85"/>
+<text x="59" y="53" text-anchor="middle" font-family="Raleway,system-ui,sans-serif" font-weight="800" font-size="18" letter-spacing="3" fill="#1A3D2E">SAKHVA</text>
+<line x1="4" y1="62" x2="30" y2="62" stroke="#F59E0B" stroke-width=".9" stroke-linecap="round"/>
+<text x="59" y="68" text-anchor="middle" font-family="Raleway,system-ui,sans-serif" font-weight="700" font-size="10" letter-spacing="2.5" fill="#F59E0B">TRAVEL</text>
+<line x1="88" y1="62" x2="114" y2="62" stroke="#F59E0B" stroke-width=".9" stroke-linecap="round"/>
+</svg>
+</a>
+<a href="/ge/" class="nav-back">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+მთავარი
+</a>
+</nav>
+<main>
+
+<section style="padding:88px 0 0;background:#fff">
+<div style="padding:32px clamp(16px,3.5vw,56px) 0;max-width:1200px;margin:0 auto">
+  <nav style="font-size:13px;color:#6B7280;margin-bottom:10px"><a href="/ge/" style="color:#1A3D2E;text-decoration:underline;text-underline-offset:2px;display:inline-block;padding:4px 0">მთავარი</a> <span>›</span> ტურები</nav>
+  <h1 style="font-size:clamp(28px,4vw,42px);font-weight:700;color:#111;margin-bottom:6px">ექსკურსიები და ტურები საქართველოში 2026 — 75 მარშრუტი</h1>
+  <p style="font-size:15px;color:#6B7280;margin-bottom:16px">ინდივიდუალური ტურები ინგლისურენოვან გიდთან ერთად. ფასები $27-დან (77 ლარი)</p>
+  <div style="max-width:800px;font-size:14px;line-height:1.7;color:#4B5563;margin-bottom:28px">
+    <p>71 ინდივიდუალური ტური საქართველოში გიდ თიმურთან ერთად — ძველი თბილისის სეირნობიდან სვანეთისა და თუშეთის მრავალდღიან მოგზაობამდე. თითოეული მარშრუტი შეიქმნა 2023 წლიდან ჩატარებული 500-ზე მეტი ტურის საფუძველზე.</p>
+    <p style="margin-top:8px">ყაზბეგი და საქართველოს სამხედრო გზა, კახეთის მარნები და ალაზნის ველი, აბანოთუბანი, ნარიყალა, უფლისციხე, მაჭახელას ხეობა — ყველა მარშრუტი იწყება თქვენი სასტუმროდან თბილისში. ჯგუფები 7 კაცამდე, გაუქმება უფასოა 24 საათით ადრე, გადახდა — ტურის დღეს.</p>
+    <p style="margin-top:8px">გამოიყენეთ ქვემოთ მოცემული ფილტრები: მიმართულების, ფორმატის (ინდივიდუალური ან მცირე ჯგუფი), ვალუტისა და ბიუჯეტის მიხედვით. Google Maps-ზე რეიტინგი 4.9/5 — 90-ზე მეტი შეფასებით.</p>
+    <p style="margin-top:8px">პირველად გეგმავთ მოგზაობას? წაიკითხეთ ჩვენი <a href="/en/georgia-travel-guide/" style="color:#1A3D2E;font-weight:600;text-decoration:underline;text-underline-offset:2px">სამოგზაურო გზამკვლევი საქართველოში</a> — ტურის ფორმატები, ფასები და როგორ აირჩიოთ მარშრუტი თქვენი თარიღებისთვის. დროის სიმცირე? იხილეთ <a href="/en/odnodnevnye-ekskursii-iz-tbilisi/" style="color:#1A3D2E;font-weight:600;text-decoration:underline;text-underline-offset:2px">ერთდღიანი ექსკურსიები თბილისიდან</a> — საუკეთესო ერთდღიანი მარშრუტები.</p>
+  </div>
+</div>
+<div id="hub-filters" class="cat-filters" style="margin-bottom:20px">
+  <div class="cf-wrap">
+    <button class="cf-btn" style="cursor:default">
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M2 6h12M5 2v2M11 2v2"/></svg>
+      <span>ნებისმიერი თარიღი, 1 კაცი</span>
+    </button>
+  </div>
+  <div class="cf-wrap">
+    <button class="cf-btn" onclick="this.parentElement.classList.toggle('open')">
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="5" r="3"/><path d="M2 14c0-3 2.5-5 6-5s6 2 6 5"/></svg>
+      <span id="hub-format-label">ტურის ფორმატი</span>
+      <svg viewBox="0 0 20 20" fill="currentColor" style="width:12px;height:12px"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg>
+    </button>
+    <div class="cf-dd" style="min-width:280px;padding:10px 0">
+      <div class="cf-item active" data-hub-format="all" style="padding:12px 18px"><strong>ყველა ფორმატი</strong></div>
+      <div class="cf-item" data-hub-format="individual" style="padding:12px 18px"><strong>კერძო</strong><br><span style="font-size:12px;color:#6B7280;font-weight:400">პირადი ტური გიდთან — მხოლოდ თქვენთვის</span></div>
+      <div class="cf-item" data-hub-format="group" style="padding:12px 18px"><strong>მცირე ჯგუფი</strong><br><span style="font-size:12px;color:#6B7280;font-weight:400">8 კაცამდე სხვა მონაწილეებთან ერთად</span></div>
+    </div>
+  </div>
+  <div class="cf-wrap">
+    <button class="cf-btn" onclick="this.parentElement.classList.toggle('open')">
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M4 8h4.5V4"/></svg>
+      <span id="hub-cur-label">$ ვალუტა</span>
+      <svg viewBox="0 0 20 20" fill="currentColor" style="width:12px;height:12px"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg>
+    </button>
+    <div class="cf-dd">
+      <div class="cf-item" data-hub-cur="GEL">₾ GEL — ლარი</div>
+      <div class="cf-item active" data-hub-cur="USD">$ USD — დოლარი</div>
+      <div class="cf-item" data-hub-cur="EUR">€ EUR — ევრო</div>
+      <div class="cf-item" data-hub-cur="RUB">₽ RUB — რუბლი</div>
+    </div>
+  </div>
+  <div class="cf-wrap">
+    <button class="cf-btn" onclick="this.parentElement.classList.toggle('open')">
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 4h12M4 8h8M6 12h4"/></svg>
+      <span id="hub-ფასი-label">ფასი</span>
+      <svg viewBox="0 0 20 20" fill="currentColor" style="width:12px;height:12px"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg>
+    </button>
+    <div class="cf-dd" style="min-width:200px;padding:10px 0">
+      <div class="cf-item active" data-hub-ფასი="all" style="padding:10px 18px"><strong>ნებისმიერი ფასი</strong></div>
+      <div class="cf-item" data-hub-ფასი="low" style="padding:10px 18px">$57-მდე</div>
+      <div class="cf-item" data-hub-ფასი="mid" style="padding:10px 18px">$57 — $114</div>
+      <div class="cf-item" data-hub-ფასი="high" style="padding:10px 18px">$114+</div>
+    </div>
+  </div>
+</div>
+<div id="hub-pills" style="display:flex;flex-wrap:wrap;gap:8px;max-width:1200px;margin:0 auto 20px;padding:0 clamp(16px,3.5vw,56px)"></div>
+<div style="max-width:1200px;margin:0 auto;padding:0 clamp(16px,3.5vw,56px) 48px">
+  <div id="hub-grid"></div>
+  <p id="hub-empty" style="display:none;text-align:center;padding:48px 0;color:#6B7280;font-size:16px">ვერაფერი მოიძებნა. სცადეთ ფილტრების შეცვლა.</p>
+  <noscript><div style="max-width:1200px;margin:24px auto;padding:20px"><h2 style="font-size:24px;margin-bottom:16px">ყველა ტური საქართველოში</h2><ul style="columns:2;gap:16px;list-style:none;padding:0">
+  <li><a href="/ge/ekskursiya/chacha-master-klass/">ჭაჭის მასტერკლასი კახეთში — ₾170-დან</a></li>
+  <li><a href="/ge/ekskursiya/degustatsiya-vina-kakheti/">კახეთის ღვინის დეგუსტაცია — 3 მარანი ერთ დღეში — ₾225-დან</a></li>
+  <li><a href="/ge/ekskursiya/rtveli-grape-harvest/">რთველი — ყურძნის კრეფა კახეთში (სექტემბერი–ოქტომბერი) — ₾225-დან</a></li>
+  <li><a href="/ge/ekskursiya/ekskursiya-ananuri-iz-tbilisi/">ანანური თბილისიდან — ₾175-დან</a></li>
+  <li><a href="/ge/ekskursiya/ekskursiya-borjomi-iz-tbilisi/">ბორჯომი — ერთდღიანი ტური თბილისიდან — ₾178-დან</a></li>
+  <li><a href="/ge/ekskursiya/ekskursiya-gori-iz-tbilisi/">გორი და უფლისციხე თბილისიდან — ₾155-დან</a></li>
+  <li><a href="/ge/ekskursiya/ekskursiya-gudauri-iz-tbilisi/">გუდაური თბილისიდან — სათხილამურო კურორტი და ჯვრის უღელტეხილი — ₾225-დან</a></li>
+  <li><a href="/ge/ekskursiya/ekskursiya-jvari-iz-tbilisi/">ჯვრის მონასტერი თბილისიდან — ₾145-დან</a></li>
+  <li><a href="/ge/ekskursiya/ekskursiya-kakheti-iz-tbilisi/">კახეთის სრული ტური თბილისიდან — ₾170-დან</a></li>
+  <li><a href="/ge/ekskursiya/ekskursiya-kazbegi-iz-tbilisi/">ყაზბეგი — ერთდღიანი ტური თბილისიდან — ₾175-დან</a></li>
+  <li><a href="/ge/ekskursiya/ekskursiya-mtskheta-iz-tbilisi/">მცხეთის ტური თბილისიდან — ₾98-დან</a></li>
+  <li><a href="/ge/ekskursiya/ekskursiya-sighnaghi-iz-tbilisi/">სიღნაღი თბილისიდან — სიყვარულის ქალაქი — ₾175-დან</a></li>
+  <li><a href="/ge/ekskursiya/ekskursiya-truso/">ტრუსოს ხეობის ლაშქრობის ტური — ₾265-დან</a></li>
+  <li><a href="/ge/ekskursiya/ekskursiya-tusheti/">თუშეთის სათავგადასავლო ტური — ₾345-დან</a></li>
+  <li><a href="/ge/ekskursiya/fotosessiya-tbilisi/">ფოტო-ტური თბილისში — ₾145-დან</a></li>
+  <li><a href="/ge/ekskursiya/gastronomicheskiy-tur-tbilisi/">საჭმლის ტური + სადილი ადგილობრივებთან — ₾165-დან</a></li>
+  <li><a href="/ge/ekskursiya/khachapuri-master-klass/">ხაჭაპურის სამზარეულოს კლასი — ₾145-დან</a></li>
+  <li><a href="/ge/ekskursiya/nochnaya-ekskursiya-tbilisi/">ღამის ტური თბილისში — ₾100-დან</a></li>
+  <li><a href="/ge/ekskursiya/priklyuchencheskiy-tur-gruziya/">სათავგადასავლო ტური საქართველოში — ₾395-დან</a></li>
+  <li><a href="/ge/ekskursiya/romanticheskiy-tur-tbilisi/">რომანტიული ტური თბილისში — ₾165-დან</a></li>
+  <li><a href="/ge/ekskursiya/sovetskiy-tur-tbilisi/">თბილისის ქალაქური ტური გიდთან ერთად — ₾135-დან</a></li>
+  <li><a href="/ge/ekskursiya/tur-batumi-iz-tbilisi/">ბათუმი — ერთდღიანი ტური თბილისიდან — ₾250-დან</a></li>
+  <li><a href="/ge/ekskursiya/tur-dlya-emigrantov-tbilisi/">ექსპატ-ტური: თბილისი ადგილობრივის თვალით — ₾123-დან</a></li>
+  <li><a href="/ge/ekskursiya/tur-dlya-pensionerov-gruziya/">ტური საქართველოში ხანდაზმული ტურისტებისთვის — ₾145-დან</a></li>
+  <li><a href="/ge/ekskursiya/tur-gruziya-leto/">ზაფხულის ტური საქართველოში — ₾750-დან</a></li>
+  <li><a href="/ge/ekskursiya/tur-gruziya-noviy-god/">ახალი წელი საქართველოში — ₾850-დან</a></li>
+  <li><a href="/ge/ekskursiya/tur-kutaisi-iz-tbilisi/">ქუთაისი — ერთდღიანი ტური თბილისიდან — ₾183-დან</a></li>
+  <li><a href="/ge/ekskursiya/tur-po-hramam-tbilisi/">თბილისის ეკლესიების ტური — ₾145-დან</a></li>
+  <li><a href="/ge/ekskursiya/tur-batumi-2-dnya/">თბილისი-ბათუმი 2-დღიანი ტური — ₾650-დან</a></li>
+  <li><a href="/ge/ekskursiya/vinniy-marshrut-alazani/">ალაზნის ველის ღვინის მარშრუტი — ₾175-დან</a></li>
+  <li><a href="/ge/ekskursiya/vinniy-tur-tbilisi/">თბილისის ღვინის სეირნობა — ₾165-დან</a></li>
+  <li><a href="/ge/ekskursiya/vinodelie-kindzmarauli/">ყინძმარაულის ღვინის დამზადების ტური — ₾225-დან</a></li>
+  <li><a href="/ge/ekskursiya/art-tur-tbilisi/">ხელოვნების ტური თბილისში — ₾145-დან</a></li>
+  <li><a href="/ge/ekskursiya/ekskursiya-abanotubani/">აბანოთუბანის გოგირდის აბანოების ტური — ₾135-დან</a></li>
+  <li><a href="/ge/ekskursiya/ekskursiya-david-gareji/">დავით გარეჯის მონასტერი — ₾225-დან</a></li>
+  <li><a href="/ge/ekskursiya/ekskursiya-mtatsminda/">მთაწმინდის პარკი და ფუნიკულიორი — ₾145-დან</a></li>
+  <li><a href="/ge/ekskursiya/ekskursiya-narikala/">ნარიყალას ციხის ტური — ₾135-დან</a></li>
+  <li><a href="/ge/ekskursiya/ekskursiya-stary-tbilisi/">ძველი თბილისის სეირნობის ტური — ₾135-დან</a></li>
+  <li><a href="/ge/ekskursiya/ekskursiya-uplistsikhe-iz-tbilisi/">უფლისციხის მღვიმეების ქალაქი თბილისიდან — ₾175-დან</a></li>
+  <li><a href="/ge/ekskursiya/ekskursiya-vardzia/">ვარძიის მღვიმეების მონასტრის ტური — ₾295-დან</a></li>
+  <li><a href="/ge/ekskursiya/ekskursiya-zugdidi/">ზუგდიდი და დადიანების სასახლე — ₾255-დან</a></li>
+  <li><a href="/ge/ekskursiya/family-tur-tbilisi/">ოჯახური ტური თბილისში — ₾165-დან</a></li>
+  <li><a href="/ge/ekskursiya/gruppa-10-chelovek-tbilisi/">ჯგუფური ტური 10-ზე მეტი კაცისთვის — ₾95-დან</a></li>
+  <li><a href="/ge/ekskursiya/korporativniy-tur-tbilisi/">კორპორატიული ტური თბილისში — ₾2200-დან</a></li>
+  <li><a href="/ge/ekskursiya/shopping-tur-tbilisi/">სავაჭრო ტური თბილისში — ₾145-დან</a></li>
+  <li><a href="/ge/ekskursiya/svadebny-tur-gruziya/">საქორწინო ტური საქართველოში — ₾1500-დან</a></li>
+  <li><a href="/ge/ekskursiya/transfer-aeroport-tbilisi/">ტრანსფერი აეროპორტიდან თბილისში — ₾90-დან</a></li>
+  <li><a href="/ge/ekskursiya/tur-dlya-detey-tbilisi/">ბავშვების ტური თბილისში — ₾135-დან</a></li>
+  <li><a href="/ge/ekskursiya/ekskursiya-svaneti-iz-tbilisi/">სვანეთის ტური თბილისიდან — ₾345-დან</a></li>
+  <li><a href="/ge/ekskursiya/lednik-chalaadi-mestia/">ჭალაადის მყინვარი მესტიიდან — ჯიპი და ლაშქრობა — ₾400-დან ჯიპზე</a></li>
+  <li><a href="/ge/ekskursiya/ozero-koruldi-mestia/">კორულდის ტბები მესტიიდან — სვანეთის საუკეთესო ხედი — ₾400-დან ჯიპზე</a></li>
+  <li><a href="/ge/ekskursiya/ushguli-iz-mestii/">უშგული მესტიიდან — UNESCO სოფელი — ₾650-დან ჯიპზე</a></li>
+  <li><a href="/ge/ekskursiya/ushguli-shkhara-lednik/">უშგული და შხარას მყინვარი — მთელი დღე — ₾750-დან ჯიპზე</a></li>
+  <li><a href="/ge/ekskursiya/tur-gruziya-3-dnya/">საქართველო 3 დღეში — ₾450-დან</a></li>
+  <li><a href="/ge/ekskursiya/tur-gruziya-5-dney/">საქართველო 5 დღეში — ₾1200-დან</a></li>
+  <li><a href="/ge/ekskursiya/tur-gruziya-7-dney/">ნელი მოგზაობა — 7 დღე საქართველოში — ₾595-დან</a></li>
+  <li><a href="/ge/ekskursiya/tur-gruziya-10-dney/">საქართველო 10 დღეში — ₾3200-დან</a></li>
+  <li><a href="/ge/ekskursiya/tur-gruziya-armeniya/">საქართველო + სომხეთის კომბინირებული ტური — ₾950-დან</a></li>
+  <li><a href="/ge/ekskursiya/tur-kazbegi-kakheti-2-dnya/">თბილისი-ყაზბეგი-კახეთის პაკეტი — ₾550-დან</a></li>
+  <li><a href="/ge/ekskursiya/tur-svaneti-4-dnya/">თბილისი-სვანეთის ტური — ₾750-დან</a></li>
+  <li><a href="/ge/ekskursiya/tur-vsya-gruziya/">მთელი საქართველოს ტური — ₾1400-დან</a></li>
+  <li><a href="/ge/ekskursiya/ekskursiya-telavi-iz-tbilisi/">თელავი თბილისიდან — კახეთის გული — ₾185-დან</a></li>
+  <li><a href="/ge/ekskursiya/ekskursiya-gomis-mta-iz-batumi/">გომის მთა ბათუმიდან — ₾220-დან</a></li>
+  <li><a href="/ge/ekskursiya/ekskursiya-dashbashi-iz-tbilisi/">დაშბაშის კანიონის ტური თბილისიდან — ₾135-დან</a></li>
+  <li><a href="/ge/ekskursiya/ekskursiya-kanyony-zapadnoy-gruzii/">დასავლეთ საქართველოს კანიონები — მარტვილი და ოკაცე — ₾180-დან</a></li>
+  <li><a href="/ge/ekskursiya/ekskursiya-racha-iz-tbilisi/">რაჭის ტური თბილისიდან — ნიკორწმინდა და ღვინო — ₾290-დან</a></li>
+  <li><a href="/ge/ekskursiya/ekskursiya-hevsuretia-shatili/">ხევსურეთის ტური — შატილი და მუწო (4x4) — ₾340-დან</a></li>
+  <li><a href="/ge/ekskursiya/ekskursiya-bakuriani-iz-tbilisi/">ბაკურიანის ტური თბილისიდან — მთის კურორტი — ₾160-დან</a></li>
+  <li><a href="/ge/ekskursiya/ekskursiya-ureki-iz-tbilisi/">ურეკის ტური — შავი ზღვის მაგნიტური ქვიშა — ₾180-დან</a></li>
+  <li><a href="/ge/ekskursiya/progulka-po-kure-tbilisi/">ნავით სეირნობა მტკვარზე თბილისში — ₾80-დან</a></li>
+  <li><a href="/ge/ekskursiya/konny-tur-stepantsminda/">ცხენოსნობის ტური სტეფანწმინდაში — ₾240-დან</a></li>
+  <li><a href="/ge/ekskursiya/ekskursii-iz-kutaisi/">ექსკურსიები ქუთაისიდან — ₾165-დან</a></li>
+  <li><a href="/ge/ekskursiya/ekskursiya-batumi-kutaisi/">ექსკურსია ბათუმიდან ქუთაისში — ₾195-დან</a></li>
+  <li><a href="/ge/ekskursiya/pohod-v-gory-gruzia/">ლაშქრობა საქართველოს მთებში — ₾190-დან</a></li>
+  </ul></div></noscript>
+</div>
+</section>
+
+<section style="max-width:760px;margin:40px auto 0;padding:0 24px;font-size:15px;line-height:1.75;color:#374151">
+  <h2 style="font-size:clamp(22px,3vw,30px);font-weight:700;color:#111;margin-bottom:14px">როგორ აირჩიოთ მარშრუტი თქვენი თარიღებისთვის</h2>
+  <p>სამი წლის განმავლობაში, 500-ზე მეტი გასვლის შემდეგ, გავიგე: სწორი არჩევანი დამოკიდებულია არა ადგილის რეიტინგზე, არამედ სეზონსა და მოგზაურების შემადგენლობაზე. გაზაფხული (აპრილი–მაისი) — მაღალმთიანეთისთვის საუკეთესო დრო: თოვლი დნება, ხეობები მწვანდება, გადასასვლელები იხსნება. ზაფხულის სიცხე მოგზაურებს წყლისკენ იზიდავს — შავი ზღვის სანაპირო, ჩრდილიანი კანიონები, გრილი ალპური ხეობები. შემოდგომა — მოსავლის დრო: ოჯახური მარნები სტუმრებს რთველის დროს ახალი ღვინითა და ახალი პურით ხვდებიან.</p>
+  <p style="margin-top:10px">ჯგუფის ზომაც მნიშვნელოვანია. წყვილები და მარტოდმოგზაური ტურისტები, როგორც წესი, ირჩევენ ინდივიდუალურ სეირნობას ძველ კვარტლებში, გოგირდის აბანოებში და საბაგიროზე. ბავშვებიანი ოჯახები და მეგობრების კომპანიები უპირატესობას ანიჭებენ მინი-ჯგუფს — ერთ სულზე იაფია და გზაში მხიარულია. კორპორატიული სტუმრები სიამოვნებით ეწევიან კორპორატიულ ღონისძიებებს დეგუსტაციებით; წყვილები ხშირად ამატებენ მზის ჩასვლის ფოტოსესიას.</p>
+  <p style="margin-top:10px">არ იცით, რა გამოგადგებათ? დამიწერეთ WhatsApp-ზე — გეტყვით თითოეული ვარიანტის უპირატესობებს თქვენი თარიღებისა და ბიუჯეტის გათვალისწინებით. კონსულტაცია უფასოა, ჯავშანი არ გავალდებულებთ. გაუქმება 24 საათამდე — ყოველგვარი ხარჯის გარეშე.</p>
+</section>
+
+<section style="max-width:760px;margin:48px auto 0;padding:0 24px;font-size:15px;line-height:1.75;color:#374151">
+  <h2 style="font-size:clamp(22px,3vw,30px);font-weight:700;color:#111;margin-bottom:14px">რა ნახოთ საქართველოში ერთ მოგზაობაში</h2>
+  <p>მოგზაურთა უმეტესობა დედაქალაქიდან იწყებს: საბაგირო ადის <a href="/ge/ekskursiya/ekskursiya-stary-tbilisi/">ნარიყალას ციხე</a>, აბანოთუბანის გოგირდის აბანოების აგურის გუმბათები, ძველი კვარტლების კარვილი აივნები. აქედან გზა მთებში ადის — <a href="/ge/ekskursiya/ekskursiya-kazbegi-iz-tbilisi/">სტეფანწმინდა და გერგეტის სამება</a> 5000-მეტრიანი მყინვარწვერის ძირში, საქართველოს სამხედრო გზის გასწვრივ შუა საუკუნეების კოშკები, ტბის ფიროსმანისეულ ფირუზისფერ წყალსაცავი — ანანური.</p>
+  <p style="margin-top:10px">ღვინის მოყვარულები მიემართებიან <a href="/ge/ekskursiya/degustatsiya-vina-kakheti/">კახეთი</a> — ალაზნის ველის ოჯახური მარნები, თიხის ქვევრები, გორაზე განლაგებული სიღნაღი. დასავლეთში კი — <a href="/ge/ekskursiya/ekskursiya-kanyony-zapadnoy-gruzii/">მარტვილისა და ოკაცეს კანიონები</a>, კლდის მონასტერი — <a href="/ge/ekskursiya/ekskursiya-vardzia/">ვარძია</a>, დამწვარი ქედები — <a href="/ge/ekskursiya/ekskursiya-david-gareji/">დავით გარეჯა</a> და სპა-ქალაქი — <a href="/ge/ekskursiya/ekskursiya-borjomi-iz-tbilisi/">ბორჯომი</a>. ვისაც კვირა აქვს, ამატებს მაღალმთიანეთს — <a href="/ge/ekskursiya/ekskursiya-svaneti-iz-tbilisi/">სვანეთი</a> უშგულის კოშკებით.</p>
+</section>
+
+<section style="max-width:760px;margin:40px auto 0;padding:0 24px;font-size:15px;line-height:1.75;color:#374151">
+  <h2 style="font-size:clamp(22px,3vw,30px);font-weight:700;color:#111;margin-bottom:14px">ექსკურსიის ფორმატების განსხვავება</h2>
+  <p>A <strong>ინდივიდუალური სეირნობა</strong> ნიშნავს, რომ ტურს მხოლოდ თქვენ და გიდი ესწრებით — ტემპი და გაჩერებები მორგებულია თქვენზე. ამ ფორმატს ირჩევენ წყვილები, ფოტოგრაფები და ის ვინც ხალხმრავლობას ერიდება. A <strong>მინი-ჯგუფი</strong> 7 კაცამდე — ერთ სულზე იაფი და გზაში მხიარული; პოპულარულია ოჯახებსა და მეგობრების კომპანიებს შორის. A <strong>მასტერკლასი</strong> (ჭაჭა, ხაჭაპური, ღვინო) — ნახევარი დღე სამზარეულოსა და დეგუსტაციის. A <strong>მრავალდღიანი მარშრუტი</strong> 3–10-დღიანი ღამისთევით ვარიანტი შესაფერისია მათთვის, ვისაც მთელი ქვეყნის ნახვა სურს და არა მხოლოდ ერთი რეგიონის.</p>
+  <p style="margin-top:10px">ნებისმიერი ტური ჯავშნდება 10%-იანი ავანსით; დანარჩენს გადაიხდით შეხვედრის დღეს. შეიცვალათ აზრი? გაუქმება უფასოა 24 საათით ადრე.</p>
+</section>
+
+<section style="max-width:760px;margin:40px auto 0;padding:0 24px">
+  <h2 style="font-size:clamp(22px,3vw,30px);font-weight:700;color:#111;margin-bottom:18px">ხშირად დასმული კითხვები</h2>
+  <div style="font-size:15px;line-height:1.7;color:#374151">
+    <div style="border-top:1px solid #E5E7EB;padding:14px 0"><strong style="color:#111">როგორ დავჯავშნო ექსკურსია?</strong><p style="margin-top:6px">დამიწერეთ WhatsApp-ზე ან გამოიყენეთ საიტის ფორმა — ვპასუხობ ერთ საათში. ჯავშნის დასაფიქსირებლად საჭიროა 10%-იანი ავანსი; ბალანსს ტურის დღეს გადაიხდით.</p></div>
+    <div style="border-top:1px solid #E5E7EB;padding:14px 0"><strong style="color:#111">რა ენებზე ტარდება ტურები?</strong><p style="margin-top:6px">ინგლისური და რუსული. მარშრუტი და კომენტარი სრულად ადაპტირდება ჯგუფის ენაზე.</p></div>
+    <div style="border-top:1px solid #E5E7EB;padding:14px 0"><strong style="color:#111">ინდივიდუალური თუ ჯგუფი?</strong><p style="margin-top:6px">ორივე ფორმატი ხელმისაწვდომია. ინდივიდუალური ნიშნავს მხოლოდ თქვენი ჯგუფი; მინი-ჯგუფი — 7 კაცამდე, ერთ სულზე იაფი.</p></div>
+    <div style="border-top:1px solid #E5E7EB;padding:14px 0"><strong style="color:#111">რა ღირს და როგორ გადავიხდი?</strong><p style="margin-top:6px">ფასები 55 ლარიდან. ჯავშნისას — 10%-იანი ავანსი, დანარჩენი — ნაღდად ან ბარათით ტურის დღეს.</p></div>
+    <div style="border-top:1px solid #E5E7EB;padding:14px 0"><strong style="color:#111">შეიძლება გაუქმება?</strong><p style="margin-top:6px">დიახ, უფასოდ, დაწყებამდე 24 საათით ადრე. ავანსი სრულად გიბრუნდებათ.</p></div>
+    <div style="border-top:1px solid #E5E7EB;padding:14px 0"><strong style="color:#111">სად იწყება ექსკურსიები?</strong><p style="margin-top:6px">თქვენი სასტუმროდან ან ბინიდან თბილისში, ან შეთანხმებული შეხვედრის წერტილიდან. მიმოსვლა ტურის ფასში შედის.</p></div>
+    <div style="border-top:1px solid #E5E7EB;border-bottom:1px solid #E5E7EB;padding:14px 0"><strong style="color:#111">მარშრუტები შესაფერისია ბავშვებისთვის?</strong><p style="margin-top:6px">დიახ, არსებობს ოჯახური პროგრამები ნელი ტემპითა და გაჩერებებით. შემოგთავაზებ თქვენი შვილის ასაკისთვის შესაფერის ვარიანტს.</p></div>
+  </div>
+</section>
+
+<section style="max-width:880px;margin:44px auto 0;padding:0 24px">
+  <h2 style="font-size:clamp(22px,3vw,30px);font-weight:700;color:#111;margin-bottom:18px;text-align:center">მოგზაურთა შეფასებები</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px">
+    <figure style="margin:0;background:#F9FAFB;border-radius:14px;padding:18px"><blockquote style="margin:0;font-size:14px;line-height:1.7;color:#374151">"კახეთში მოგზაობა ჯადოსნური იყო! ღვინო განსაკუთრებული, ყველამ ერთხელ მაინც უნდა ნახოს ქართული ვენახები."</blockquote><figcaption style="margin-top:10px;font-size:13px;font-weight:600;color:#111">ამოვეი <span style="color:#B45309">★★★★★</span></figcaption></figure>
+    <figure style="margin:0;background:#F9FAFB;border-radius:14px;padding:18px"><blockquote style="margin:0;font-size:14px;line-height:1.7;color:#374151">"დაუვიწყარი ტური! გმადლობთ, თიმური და გუნდი — ყოველ წამს ვტკბებოდი."</blockquote><figcaption style="margin-top:10px;font-size:13px;font-weight:600;color:#111">Amber R <span style="color:#B45309">★★★★★</span></figcaption></figure>
+    <figure style="margin:0;background:#F9FAFB;border-radius:14px;padding:18px"><blockquote style="margin:0;font-size:14px;line-height:1.7;color:#374151">"ვერ წარმოიდგენთ, რამდენად მომეწონა! სასიამოვნო დაღლილობა, კარგი ხალხი, გემრიელი საჭმელი. გმადლობთ!"</blockquote><figcaption style="margin-top:10px;font-size:13px;font-weight:600;color:#111">მიხაილ დ <span style="color:#B45309">★★★★★</span></figcaption></figure>
+    <figure style="margin:0;background:#F9FAFB;border-radius:14px;padding:18px"><blockquote style="margin:0;font-size:14px;line-height:1.7;color:#374151">"გულით ვურჩევ, თუ გსურთ საუკეთესო რჩევები და სერვისი საქართველოში მოგზაობისთვის."</blockquote><figcaption style="margin-top:10px;font-size:13px;font-weight:600;color:#111">ნუგო შენგელია <span style="color:#B45309">★★★★★</span></figcaption></figure>
+  </div>
+</section>
+
+<div style="max-width:760px;margin:32px auto 16px;padding:20px 28px;text-align:center">
+  <p style="font-size:14px;color:#6B7280">იხილეთ ასევე: <a href="/en/odnodnevnye-ekskursii-iz-tbilisi/" style="color:#1A3D2E;text-decoration:underline">ერთდღიანი ექსკურსიები თბილისიდან</a> · <a href="/en/gallery/" style="color:#1A3D2E;text-decoration:underline">ფოტო გალერეა</a></p>
+</div>
+
+<div style="max-width:760px;margin:32px auto;padding:24px 28px;background:#1A3D2E;border-radius:16px;text-align:center">
+  <h3 style="font-size:20px;font-weight:700;color:#fff;margin-bottom:8px">გეგმავთ მოგზაურობას საქართველოში?</h3>
+  <p style="font-size:14px;color:rgba(255,255,255,.6);margin-bottom:16px">შეადარეთ ყველა ტურის ფორმატი — პაკეტი, ექსკურსია და ინდივიდუალური. ფასები $27-დან.</p>
+  <a href="/ge/" style="display:inline-block;background:#F59E0B;color:#111827;padding:12px 28px;border-radius:9999px;font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;text-decoration:none">მთავარი გვერდი →</a>
+</div>
+
+</main>
+<footer>
+<p>&copy; 2026 <a href="/ge/">Sakhva Travel</a> · თბილისი, საქართველო</p>
+</footer>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"როგორ დავჯავშნო ექსკურსია?","acceptedAnswer":{"@type":"Answer","text":"დამიწერეთ WhatsApp-ზე ან გამოიყენეთ საიტის ფორმა — ვპასუხობ ერთ საათში. ჯავშნის დასაფიქსირებლად საჭიროა 10%-იანი ავანსი; ბალანსს ტურის დღეს გადაიხდით."}},{"@type":"Question","name":"რა ენებზე ტარდება ტურები?","acceptedAnswer":{"@type":"Answer","text":"ინგლისური და რუსული. მარშრუტი და კომენტარი სრულად ადაპტირდება ჯგუფის ენაზე."}},{"@type":"Question","name":"ინდივიდუალური თუ ჯგუფი?","acceptedAnswer":{"@type":"Answer","text":"ორივე ფორმატი ხელმისაწვდომია. ინდივიდუალური ნიშნავს მხოლოდ თქვენი ჯგუფი; მინი-ჯგუფი — 7 კაცამდე, ერთ სულზე იაფი."}},{"@type":"Question","name":"რა ღირს და როგორ გადავიხდი?","acceptedAnswer":{"@type":"Answer","text":"ფასები 55 ლარიდან. ჯავშნისას — 10%-იანი ავანსი, დანარჩენი — ნაღდად ან ბარათით ტურის დღეს."}},{"@type":"Question","name":"შეიძლება გაუქმება?","acceptedAnswer":{"@type":"Answer","text":"დიახ, უფასოდ, დაწყებამდე 24 საათით ადრე. ავანსი სრულად გიბრუნდებათ."}},{"@type":"Question","name":"სად იწყება ექსკურსიები?","acceptedAnswer":{"@type":"Answer","text":"თქვენი სასტუმროდან ან ბინიდან თბილისში, ან შეთანხმებული შეხვედრის წერტილიდან. მიმოსვლა ტურის ფასში შედის."}},{"@type":"Question","name":"მარშრუტები შესაფერისია ბავშვებისთვის?","acceptedAnswer":{"@type":"Answer","text":"დიახ, არსებობს ოჯახური პროგრამები ნელი ტემპითა და გაჩერებებით."}}]}</script>
+
+<script>
+(function(){
+  var RATES={GEL:1,USD:0.38,EUR:0.35,RUB:34.5};
+  var SYMS={GEL:'\u20BE',USD:'$',EUR:'\u20AC',RUB:'\u20BD'};
+  var reviews=['4.9 (26 reviews)','4.9 (460+ tours)','4.9 (98% recommend)'];
+  var curTag='all',curFormat='all',curCur='USD',curPrice='all';
+  fetch('/data/catalog-ge.json?v=20260905').then(function(r){return r.json()}).then(function(data){
+    var items=data.excursions||[];
+    var grid=document.getElementById('hub-grid');
+    var pills=document.getElementById('hub-pills');
+    var empty=document.getElementById('hub-empty');
+    function render(){
+      var filtered=items.filter(function(t){
+        if(curTag!=='all'&&t.tags.indexOf(curTag)===-1)return false;
+        if(curFormat!=='all'&&t.format!==curFormat)return false;
+        if(curPrice!=='all'){
+          var usd=t.price*0.38;
+          if(curPrice==='low'&&usd>=57)return false;
+          if(curPrice==='mid'&&(usd<57||usd>114))return false;
+          if(curPrice==='high'&&usd<=114)return false;
+        }
+        return true;
+      });
+      var rate=RATES[curCur]||1;var sym=SYMS[curCur]||'$';
+      if(filtered.length===0){grid.style.display='none';empty.style.display='block';return}
+      grid.style.display='grid';empty.style.display='none';
+      grid.innerHTML=filtered.map(function(t,i){
+        var disc=t.discount||0;
+        var origPrice=Math.round(t.price*rate);
+        var price=origPrice;
+        var rev=reviews[i%reviews.length];
+        var badgeBg=t.format==='group'?'#B45309':'rgba(26,61,46,.85)';
+        var badgeTxt=t.format==='group'?'Small group':'Private';
+        var img=t.image||'/images/og-cover.jpg';
+        return '<a href="'+t.url+'" style="border-radius:12px;overflow:hidden;border:1px solid #F3F4F6;background:#fff;text-decoration:none;display:block;color:inherit;transition:box-shadow .2s" onmouseover="this.style.boxShadow=\'0 4px 20px rgba(0,0,0,.08)\'" onmouseout="this.style.boxShadow=\'none\'">'
+          +'<div style="position:relative;height:200px;overflow:hidden;background:#f3f4f6"><img src="'+img+'" alt="'+t.title+'" width="400" height="200" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover">'
+          +'<span style="position:absolute;top:10px;left:10px;padding:4px 10px;border-radius:5px;font-size:12px;font-weight:600;color:#fff;background:'+badgeBg+'">'+badgeTxt+'</span>'
+          +(t.durationText?'<span style="position:absolute;top:10px;right:10px;padding:4px 10px;border-radius:5px;font-size:12px;background:rgba(0,0,0,.62);color:#fff">'+t.durationText+'</span>':'')
+          +(disc?'<span style="position:absolute;bottom:10px;right:10px;padding:4px 10px;border-radius:6px;font-size:11px;font-weight:700;background:#B45309;color:#fff">from 4+ −10%</span>':'')
+          +'</div>'
+          +'<div style="padding:14px 14px 16px">'
+          +'<div style="font-size:15px;font-weight:600;margin-bottom:4px;line-height:1.3">'+t.title+'</div>'
+          +'<div style="font-size:12px;color:#6B7280;margin-bottom:12px;line-height:1.45;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">'+t.description+'</div>'
+          +'<div style="display:flex;justify-content:space-between;align-items:center">'
+          +'<span style="font-size:17px;font-weight:700;color:#1A3D2E">'+('')+sym+price+'</span>'
+          +'<span style="font-size:12px;color:#6B7280"><span style="color:#B45309">\u2605</span> '+rev+'</span>'
+          +'</div></div></a>';
+      }).join('');
+      grid.style.minHeight='0';
+    }
+    // Pills
+    var tagMap={};
+    items.forEach(function(t){t.tags.forEach(function(tg){tagMap[tg]=(tagMap[tg]||0)+1})});
+    var sorted=Object.entries(tagMap).sort(function(a,b){return b[1]-a[1]});
+    var html='<button style="padding:8px 16px;border-radius:20px;border:1px solid #1A3D2E;background:#1A3D2E;font-size:13px;cursor:pointer;color:#fff;font-family:inherit" data-tag="all">All <span style="color:rgba(255,255,255,.6);margin-left:3px;font-size:12px">'+items.length+'</span></button>';
+    sorted.forEach(function(e){
+      html+='<button style="padding:8px 16px;border-radius:20px;border:1px solid #E5E7EB;background:#fff;font-size:13px;cursor:pointer;color:#374151;font-family:inherit;transition:all .15s" data-tag="'+e[0]+'">'+e[0]+' <span style="color:#6B7280;margin-left:3px;font-size:12px">'+e[1]+'</span></button>';
+    });
+    pills.innerHTML=html;
+    pills.addEventListener('click',function(e){
+      var btn=e.target.closest('[data-tag]');if(!btn)return;
+      pills.querySelectorAll('[data-tag]').forEach(function(b){b.style.background='#fff';b.style.color='#374151';b.style.borderColor='#E5E7EB'});
+      btn.style.background='#1A3D2E';btn.style.color='#fff';btn.style.borderColor='#1A3D2E';
+      curTag=btn.getAttribute('data-tag');
+      render();
+    });
+    // Format filter
+    document.querySelectorAll('[data-hub-format]').forEach(function(el){
+      el.addEventListener('click',function(){
+        var dd=el.closest('.cf-dd');
+        dd.querySelectorAll('.cf-item').forEach(function(i){i.classList.remove('active')});
+        el.classList.add('active');
+        curFormat=el.getAttribute('data-hub-format');
+        document.getElementById('hub-format-label').textContent=curFormat==='all'?'Tour format':el.querySelector('strong').textContent;
+        el.closest('.cf-wrap').classList.remove('open');
+        render();
+      });
+    });
+    // Currency filter
+    document.querySelectorAll('[data-hub-cur]').forEach(function(el){
+      el.addEventListener('click',function(){
+        var dd=el.closest('.cf-dd');
+        dd.querySelectorAll('.cf-item').forEach(function(i){i.classList.remove('active')});
+        el.classList.add('active');
+        curCur=el.getAttribute('data-hub-cur');
+        var syms={GEL:'\u20BE Currency',USD:'$ USD',EUR:'\u20AC EUR',RUB:'\u20BD RUB'};
+        document.getElementById('hub-cur-label').textContent=syms[curCur]||'$ Currency';
+        el.closest('.cf-wrap').classList.remove('open');
+        render();
+      });
+    });
+    // Price filter
+    document.querySelectorAll('[data-hub-price]').forEach(function(el){
+      el.addEventListener('click',function(){
+        var dd=el.closest('.cf-dd');
+        dd.querySelectorAll('.cf-item').forEach(function(i){i.classList.remove('active')});
+        el.classList.add('active');
+        curPrice=el.getAttribute('data-hub-price');
+        var labels={all:'Price',low:'under $57',mid:'$57\u2013114',high:'$114+'};
+        document.getElementById('hub-price-label').textContent=labels[curPrice]||'Price';
+        el.closest('.cf-wrap').classList.remove('open');
+        render();
+      });
+    });
+    render();
+  });
+  // Close dropdowns on outside click
+  document.addEventListener('click',function(e){
+    if(!e.target.closest('#hub-filters .cf-wrap')){
+      document.querySelectorAll('#hub-filters .cf-wrap.open').forEach(function(w){w.classList.remove('open')});
+    }
+  });
+})();
+</script>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://sakhva-travel.com/ge/ekskursiya/#webpage","url":"https://sakhva-travel.com/ge/ekskursiya/","name":"ექსკურსიები და ტურები საქართველოში 2026 — 75 მარშრუტი | Sakhva Travel","description":"71 ინდივიდუალური ტური საქართველოში ინგლისურენოვან გიდ თიმურთან","isPartOf":{"@id":"https://sakhva-travel.com/#website"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"მთავარი","item":"https://sakhva-travel.com/ge/"},{"@type":"ListItem","position":2,"name":"ტურები საქართველოში"}]},{"@type":"ItemList","name":"ტურები საქართველოში","description":"71 ინდივიდუალური ტური საქართველოში ინგლისურენოვან გიდ თიმურთან","numberOfItems":10,"itemListElement":[{"@type":"ListItem","position":1,"url":"https://sakhva-travel.com/en/ekskursiya/ekskursiya-kazbegi-iz-tbilisi/","name":"ყაზბეგის ექსკურსია თბილისიდან"},{"@type":"ListItem","position":2,"url":"https://sakhva-travel.com/en/ekskursiya/ekskursiya-kakheti-iz-tbilisi/","name":"კახეთის სრული ტური თბილისიდან"},{"@type":"ListItem","position":3,"url":"https://sakhva-travel.com/en/ekskursiya/ekskursiya-mtskheta-iz-tbilisi/","name":"ტური მცხეთაში თბილისიდან"},{"@type":"ListItem","position":4,"url":"https://sakhva-travel.com/en/ekskursiya/nochnaya-ekskursiya-tbilisi/","name":"ღამის თბილისის ტური"},{"@type":"ListItem","position":5,"url":"https://sakhva-travel.com/en/ekskursiya/ekskursiya-sighnaghi-iz-tbilisi/","name":"სიღნაღი თბილისიდან"},{"@type":"ListItem","position":6,"url":"https://sakhva-travel.com/en/ekskursiya/tur-batumi-iz-tbilisi/","name":"ბათუმი — ერთდღიანი ტური თბილისიდან"},{"@type":"ListItem","position":7,"url":"https://sakhva-travel.com/en/ekskursiya/ekskursiya-stary-tbilisi/","name":"ძველი თბილისის საფეხმავლო ტური"},{"@type":"ListItem","position":8,"url":"https://sakhva-travel.com/en/ekskursiya/gastronomicheskiy-tur-tbilisi/","name":"საჭმლის ტური თბილისში"},{"@type":"ListItem","position":9,"url":"https://sakhva-travel.com/en/ekskursiya/degustatsiya-vina-kakheti/","name":"ღვინის დეგუსტაცია კახეთში"},{"@type":"ListItem","position":10,"url":"https://sakhva-travel.com/en/ekskursiya/tur-gruziya-3-dnya/","name":"საქართველო 3 დღეში"}]}]}</script>
+<script>(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return}}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,function(c){'requestIdleCallback'in window?requestIdleCallback(c,{timeout:4000}):setTimeout(c,1500)}(function(){a.parentNode.insertBefore(k,a)})})
+(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});
+</script>
+<script src="/js/chat-widget.js?v=37" defer></script>
+</body>
+</html>

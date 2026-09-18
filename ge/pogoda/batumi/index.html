@@ -88,7 +88,7 @@ a{text-decoration:none;color:inherit}img{max-width:100%;display:block}button{bor
 .wx-feat-desc{font-size:18px;color:var(--ink);font-weight:700;margin-top:14px}
 .wx-feat-meta{font-size:14px;color:#6B7280;margin-top:3px}
 .wx-feat-fore{background:#FBFAF8;border-left:1px solid #ECECE4;padding:22px 22px;display:flex;flex-direction:column;justify-content:center;gap:2px}
-.wx-fore-h{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#9CA3AF;font-weight:700;margin-bottom:10px}
+.wx-fore-h{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#9CA3AF;font-weight:700;margin-bottom:10px}
 .wx-fore-day{display:grid;grid-template-columns:44px 28px 1fr auto;align-items:center;gap:12px;padding:8px 0;border-bottom:1px solid #F2F2EC;opacity:0;transform:translateX(10px);animation:foreIn .5s forwards}
 .wx-fore-day:last-child{border-bottom:none}
 .wx-fore-dow{font-size:13px;color:#4B5563;font-weight:700}
@@ -110,18 +110,18 @@ a{text-decoration:none;color:inherit}img{max-width:100%;display:block}button{bor
 .clim td{color:#4B5563;font-variant-numeric:tabular-nums}
 .clim tbody tr:last-child th,.clim tbody tr:last-child td{border-bottom:none}
 .clim th.best{color:#0C7C38}
-.clim th.best::before{content:'●';font-size:8px;vertical-align:middle;margin-right:6px;color:var(--amber-l)}
+.clim th.best::before{content:'●';font-size:12px;vertical-align:middle;margin-right:6px;color:var(--amber-l)}
 .clim-note{font-size:12px;color:#9CA3AF;margin-top:12px}
 .cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:8px}
 .cal-day{display:flex;flex-direction:column;align-items:center;gap:3px;padding:14px 6px;border:1px solid #ECECE4;border-radius:14px;background:linear-gradient(160deg,#fff,#fafaf7);text-align:center}
 .cal-day.today{border-color:#B45309;box-shadow:inset 0 0 0 1px #B45309}
 .cal-day.far{opacity:.6;background:#fbfaf7}
 .cal-dow{font-size:12px;font-weight:700;color:var(--green)}
-.cal-date{font-size:11px;color:#9CA3AF}
+.cal-date{font-size:12px;color:#9CA3AF}
 .cal-ic{width:34px;height:34px;margin:2px 0}
 .cal-hi{font-size:18px;font-weight:700;color:var(--ink);font-variant-numeric:tabular-nums}
 .cal-lo{font-size:13px;color:#9CA3AF;font-variant-numeric:tabular-nums}
-.cal-pop{font-size:11px;color:#2563a8;font-weight:700}
+.cal-pop{font-size:12px;color:#2563a8;font-weight:700}
 .cal-skel{height:120px;border-radius:14px;background:linear-gradient(90deg,#eee,#f6f6f2,#eee);background-size:200% 100%;animation:shim 1.3s infinite}
 @media(max-width:760px){.cal-grid{grid-template-columns:repeat(4,1fr)}}
 @media(max-width:460px){.cal-grid{grid-template-columns:repeat(3,1fr)}}
@@ -131,7 +131,7 @@ a{text-decoration:none;color:inherit}img{max-width:100%;display:block}button{bor
 .mc-city a{color:var(--green)}.mc-city a:hover{color:var(--amber)}
 .mc-days{display:flex;gap:6px;overflow-x:auto;padding-bottom:2px}
 .mc-day{display:flex;flex-direction:column;align-items:center;gap:2px;min-width:54px;padding:8px 4px;border:1px solid #ECECE4;border-radius:10px;background:#fff}
-.mc-dow{font-size:11px;color:#9CA3AF;font-weight:700}
+.mc-dow{font-size:12px;color:#9CA3AF;font-weight:700}
 .mc-ic{width:24px;height:24px}
 .mc-t{font-size:12px;font-weight:700;color:var(--ink);font-variant-numeric:tabular-nums}
 .mc-t span{color:#9CA3AF;font-weight:400}
@@ -143,7 +143,7 @@ a{text-decoration:none;color:inherit}img{max-width:100%;display:block}button{bor
 .wx-card:hover{transform:translateY(-5px);box-shadow:0 16px 34px -14px rgba(26,61,46,.32);border-color:#D6E4DC}
 .wx-card-top{display:flex;align-items:center;justify-content:space-between;gap:8px}
 .wx-card-name{font-size:15px;font-weight:700;color:var(--green);line-height:1.2}
-.wx-card-sub{font-size:11px;color:#9CA3AF;margin-top:2px}
+.wx-card-sub{font-size:12px;color:#9CA3AF;margin-top:2px}
 .wx-card-ic{width:40px;height:40px;flex-shrink:0}
 .wx-card-bot{display:flex;align-items:flex-end;justify-content:space-between}
 .wx-card-temp{font-size:32px;font-weight:700;color:var(--ink);line-height:1;font-variant-numeric:tabular-nums}
@@ -152,6 +152,7 @@ a{text-decoration:none;color:inherit}img{max-width:100%;display:block}button{bor
 .wx-card.load .wx-card-name,.wx-card.load .wx-card-temp,.wx-card.load .wx-card-ic,.wx-card.load .wx-card-mm{background:linear-gradient(90deg,#eee,#f6f6f2,#eee);background-size:200% 100%;animation:shim 1.3s infinite;color:transparent!important;border-radius:6px}
 .wx-card.load .wx-card-ic{border-radius:50%}
 @keyframes shim{to{background-position:-200% 0}}
+.wx-bridge{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 20px;padding:14px 18px;border:1px solid #cfe3d6;border-radius:14px;background:#f2f8f4;color:#1A3D2E;font-weight:600;text-decoration:none;line-height:1.35}.wx-bridge:hover{background:#e6f2ea}.wx-bridge-arr{flex-shrink:0;font-size:20px}
 .wx-cta{position:relative;background:linear-gradient(140deg,var(--green),#0f2419);border-radius:22px;padding:44px 32px;text-align:center;overflow:hidden}
 .wx-cta::before{content:'';position:absolute;inset:0;background:radial-gradient(80% 120% at 100% 0,rgba(245,158,11,.18),transparent 55%)}
 .wx-cta h2{position:relative;font-size:clamp(22px,3vw,28px);font-weight:700;color:#fff;margin-bottom:10px}
@@ -196,7 +197,7 @@ var _ck=localStorage.getItem('cookies_v4')==='1',_gc=location.search.indexOf('gc
 if(_ck||_gc){gtag('consent','update',{analytics_storage:'granted',ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted'})}
 </script>
 <script>(function(){function loadGA(){if(window._gaLoaded)return;window._gaLoaded=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-3X83YZHY6S';s.onload=function(){gtag('js',new Date());gtag('config','G-3X83YZHY6S');gtag('config','AW-8133499399')};document.head.appendChild(s)}['scroll','touchstart','mousemove','keydown','click'].forEach(function(e){document.addEventListener(e,loadGA,{once:true,passive:true})});setTimeout(loadGA,8000)})()</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "url": "https://sakhva-travel.com/ge/pogoda/batumi/", "name": "ამინდი — ბათუმში: პროგნოზი და კლიმატი თვეებით", "description": "ამინდი — ბათუმში: პროგნოზი კვირით წინ დღეების მიხედვით და კლიმატი თვეებით — ტემპერატურა, ნალექი. საუკეთესო დროა: ივნისი, სექტემბერი, ოქტომბერი.", "inLanguage": "ka", "isPartOf": {"@id": "https://sakhva-travel.com/#website"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "url": "https://sakhva-travel.com/ge/pogoda/batumi/", "name": "ამინდი — ბათუმში: პროგნოზი და კლიმატი თვეებით", "description": "ამინდი — ბათუმში: პროგნოზი კვირით წინ დღეების მიხედვით და კლიმატი თვეებით — ტემპერატურა, ნალექი. საუკეთესო დროა: ივნისი, სექტემბერი, ოქტომბერი.", "inLanguage": "ka", "dateModified": "2026-09-17", "isPartOf": {"@id": "https://sakhva-travel.com/#website"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "მთავარი", "item": "https://sakhva-travel.com/ge/"}, {"@type": "ListItem", "position": 2, "name": "ამინდი საქართველოში", "item": "https://sakhva-travel.com/ge/pogoda/"}, {"@type": "ListItem", "position": 3, "name": "ამინდი — აჭარაში", "item": "https://sakhva-travel.com/ge/pogoda/adjara/"}, {"@type": "ListItem", "position": 4, "name": "ამინდი — ბათუმში", "item": "https://sakhva-travel.com/ge/pogoda/batumi/"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "როდის ჯობია ბათუმში ჩასვლა?", "acceptedAnswer": {"@type": "Answer", "text": "ყველაზე კომფორტული დროა ივნისი, სექტემბერი: თბილა, მაგრამ დამქანცველი სიცხის გარეშე, და ნაკლები წვიმა. ზუსტი ციფრები თვეების მიხედვით — ზემოთ კლიმატის ცხრილში."}}, {"@type": "Question", "name": "როგორია ამინდი ბათუმში ახლა?", "acceptedAnswer": {"@type": "Answer", "text": "მიმდინარე ტემპერატურას და კვირის პროგნოზს აჩვენებს ცოცხალი ვიჯეტი გვერდის ზემოთ — მონაცემები ავტომატურად ახლდება."}}, {"@type": "Question", "name": "ცივა ბათუმში ზამთარში?", "acceptedAnswer": {"@type": "Answer", "text": "ზამთარი თბილია: იანვარში დღისით დაახლოებით +11°, ღამით +3° — თოვლი თითქმის არ არის."}}, {"@type": "Question", "name": "რა წავიღოთ თან — ბათუმში?", "acceptedAnswer": {"@type": "Answer", "text": "ზაფხულში დღისით +26°-მდე, ღამით დაახლოებით +20°: დღისით — მსუბუქი ტანსაცმელი, საღამოს გამოგადგებათ სვიტერი. ზამთარში დღისით +12°, ღამით +4°-მდე — დაგჭირდებათ თბილი ქურთუკი."}}]}</script>
 <link rel="preload" href="/fonts/noto-sans-georgian.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/css/ge.css"></head>
@@ -239,7 +240,7 @@ if(_ck||_gc){gtag('consent','update',{analytics_storage:'granted',ad_storage:'gr
 </section>
 
 <div class="wx-body">
-<section class="wx-sec"><div class="wx-sec-head"><h2>ამინდი — ბათუმში: დღიური პროგნოზი</h2><p>პროგნოზი კვირით წინ და ტენდენცია 2 კვირით: ტემპერატურა დღისით და ღამით, ნალექის ალბათობა. ახლდება ყოველ საათს.</p></div><div id="cal" class="cal-grid"></div><p class="clim-note">უახლოესი 7 დღე — ზუსტი პროგნოზი, დღეები 8–14 — ორიენტირი (Open-Meteo).</p></section><section class="wx-sec wx-prose"><div class="wx-sec-head"><h2>ბათუმის კლიმატი: როდის დაგეგმოთ მოგზაურობა</h2></div><p>ბათუმში სეზონების მიხედვით: ზამთარში დაახლოებით +12° დღისით, გაზაფხულზე +18°, ზაფხულში +26°, შემოდგომაზე +21°. ყველაზე თბილი თვეა აგვისტო (დღისით +27°-მდე), ყველაზე გრილი — იანვარი (+11°). ყველაზე მეტი ნალექი აგვისტოში. დეტალური ნორმები თვეების მიხედვით — ქვემოთ ცხრილში.</p><p>ზაფხულში დღისით +26°-მდე, ღამით დაახლოებით +20°: დღისით — მსუბუქი ტანსაცმელი, საღამოს გამოგადგებათ სვიტერი. ზამთარში დღისით +12°, ღამით +4°-მდე — დაგჭირდებათ თბილი ქურთუკი. ყველაზე ცოტა წვიმა — თებერვალში: ყველაზე მოწმენდილი თვეებია სასეირნოდ და პანორამული ხედებისთვის.</p></section><section class="wx-sec wx-prose"><div class="wx-sec-head"><h2>რით დაკავდეთ ბათუმში სეზონების მიხედვით</h2></div><p>სანაპირო სეზონი ბათუმში — ივნისიდან სექტემბრამდე: დღისით დაახლოებით +26°, ზღვა თბება, ცოცხლდება ბულვარი და კაფეები. გაზაფხულსა და შემოდგომაზე (ივნისი, სექტემბერი, ოქტომბერი) უფრო წყნარია — საბანაოდ გრილა, სამაგიეროდ მოსახერხებელია ღირსშესანიშნაობების დათვალიერება. ზღვის მარშრუტი — <a href="/ge/ekskursiya/tur-batumi-iz-tbilisi/">ბათუმის ტური თბილისიდან</a>.</p></section><section class="wx-sec"><div class="wx-sec-head"><h2>ბათუმის კლიმატი თვეების მიხედვით</h2><p>საშუალო ტემპერატურა დღისით და ღამით და ნალექიანი დღეების რაოდენობა. მწვანედ — ვიზიტისთვის ყველაზე კომფორტული თვეები.</p></div><div class="clim-wrap"><table class="clim"><thead><tr><th scope="col">თვე</th><th scope="col">დღისით</th><th scope="col">ღამით</th><th scope="col">ნალექიანი დღეები</th></tr></thead><tbody><tr><th scope="row">იანვარი</th><td>+11°</td><td>+3°</td><td>14</td></tr>
+<a class="wx-bridge" href="/ge/ekskursiya/tur-batumi-iz-tbilisi/"><span>ამინდი — ბათუმში — არ არის დაბრკოლება: ტური გიდ თიმურთან ₾80-დან</span><span class="wx-bridge-arr">→</span></a><section class="wx-sec"><div class="wx-sec-head"><h2>ამინდი — ბათუმში: დღიური პროგნოზი</h2><p>პროგნოზი კვირით წინ და ტენდენცია 2 კვირით: ტემპერატურა დღისით და ღამით, ნალექის ალბათობა. ახლდება ყოველ საათს.</p></div><div id="cal" class="cal-grid"></div><p class="clim-note">უახლოესი 7 დღე — ზუსტი პროგნოზი, დღეები 8–14 — ორიენტირი (Open-Meteo).</p></section><section class="wx-sec wx-prose"><div class="wx-sec-head"><h2>ბათუმის კლიმატი: როდის დაგეგმოთ მოგზაურობა</h2></div><p>ბათუმში სეზონების მიხედვით: ზამთარში დაახლოებით +12° დღისით, გაზაფხულზე +18°, ზაფხულში +26°, შემოდგომაზე +21°. ყველაზე თბილი თვეა აგვისტო (დღისით +27°-მდე), ყველაზე გრილი — იანვარი (+11°). ყველაზე მეტი ნალექი აგვისტოში. დეტალური ნორმები თვეების მიხედვით — ქვემოთ ცხრილში.</p><p>ზაფხულში დღისით +26°-მდე, ღამით დაახლოებით +20°: დღისით — მსუბუქი ტანსაცმელი, საღამოს გამოგადგებათ სვიტერი. ზამთარში დღისით +12°, ღამით +4°-მდე — დაგჭირდებათ თბილი ქურთუკი. ყველაზე ცოტა წვიმა — თებერვალში: ყველაზე მოწმენდილი თვეებია სასეირნოდ და პანორამული ხედებისთვის.</p></section><section class="wx-sec wx-prose"><div class="wx-sec-head"><h2>რით დაკავდეთ ბათუმში სეზონების მიხედვით</h2></div><p>სანაპირო სეზონი ბათუმში — ივნისიდან სექტემბრამდე: დღისით დაახლოებით +26°, ზღვა თბება, ცოცხლდება ბულვარი და კაფეები. გაზაფხულსა და შემოდგომაზე (ივნისი, სექტემბერი, ოქტომბერი) უფრო წყნარია — საბანაოდ გრილა, სამაგიეროდ მოსახერხებელია ღირსშესანიშნაობების დათვალიერება. ზღვის მარშრუტი — <a href="/ge/ekskursiya/tur-batumi-iz-tbilisi/">ბათუმის ტური თბილისიდან</a>.</p></section><section class="wx-sec"><div class="wx-sec-head"><h2>ბათუმის კლიმატი თვეების მიხედვით</h2><p>საშუალო ტემპერატურა დღისით და ღამით და ნალექიანი დღეების რაოდენობა. მწვანედ — ვიზიტისთვის ყველაზე კომფორტული თვეები.</p></div><div class="clim-wrap"><table class="clim"><thead><tr><th scope="col">თვე</th><th scope="col">დღისით</th><th scope="col">ღამით</th><th scope="col">ნალექიანი დღეები</th></tr></thead><tbody><tr><th scope="row">იანვარი</th><td>+11°</td><td>+3°</td><td>14</td></tr>
 <tr><th scope="row">თებერვალი</th><td>+12°</td><td>+4°</td><td>13</td></tr>
 <tr><th scope="row">მარტი</th><td>+14°</td><td>+6°</td><td>16</td></tr>
 <tr><th scope="row">აპრილი</th><td>+18°</td><td>+9°</td><td>13</td></tr>
@@ -333,7 +334,7 @@ function toggleFaq(btn){var item=btn.closest('.fi'),isOpen=item.classList.contai
     return S+cloudD+'<path class="ic-drop" d="M30 44l-5 9h6l-4 8" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>';
   }
   function countUp(el,to){var st=null,d=800;to=Math.round(to);function step(ts){if(!st)st=ts;var p=Math.min((ts-st)/d,1),v=Math.round(to*p);el.textContent=(v>0?'+':'')+v;if(p<1)requestAnimationFrame(step)}requestAnimationFrame(step)}
-  function get(slug){return fetch('/api/weather/?region='+slug).then(function(r){return r.json()})}
+  function get(slug){return fetch('/api/weather?region='+slug).then(function(r){return r.json()})}
   function paintCard(card,d){
     if(!d||!d.current||typeof d.current.temp!=='number'){card.classList.remove('load');return}
     var m=meta(d.current.code);card.classList.remove('load');
@@ -383,7 +384,7 @@ function toggleFaq(btn){var item=btn.closest('.fi'),isOpen=item.classList.contai
   if('requestIdleCallback'in window){requestIdleCallback(run,{timeout:2000})}else{setTimeout(run,300)}
 })();
 </script>
-<script>(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return}}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,function(c){'requestIdleCallback'in window?requestIdleCallback(c,{timeout:4000}):setTimeout(c,1500)}(function(){a.parentNode.insertBefore(k,a)})})(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});</script>
+<script>(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return}}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,function(c){var d=false,f=function(){if(d)return;d=true;c()};['scroll','touchstart','mousemove','keydown','click'].forEach(function(e){document.addEventListener(e,f,{once:true,passive:true})});setTimeout(f,5000)}(function(){a.parentNode.insertBefore(k,a)})})(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});</script>
 <noscript><div><img alt="" src="https://mc.yandex.ru/watch/109038950" style="position:absolute;left:-9999px"/></div></noscript>
 </body>
 </html>
