@@ -210,7 +210,7 @@ def build_schema(lang, ru_slug, en_slug, headline, desc, hero, pub, mod, bc_last
                 "logo": {"@type": "ImageObject", "url": f"{BASE}/images/logo-schema.webp", "width": 300, "height": 60},
                 "sameAs": [
                     "https://www.tripadvisor.com/Attraction_Review-g294195-d15318013-Reviews-Sakhva_Travel-Tbilisi.html",
-                    "https://www.google.com/maps?cid=14070083063461040701",
+                    "https://www.google.com/maps?cid=14112587239859278397",
                     "https://www.instagram.com/sakhvatravel/",
                 ],
             },

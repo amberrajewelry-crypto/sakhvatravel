@@ -36,7 +36,7 @@ cd /Users/vladimir/sakhva-travel && npx vercel deploy --prod --scope amberrajewe
 - Airtable CRM: base appvP72OjZeVJ0XWh
 - n8n: Railway (5 воркфлоу)
 - Cloudinary: cloud dtfq3xq3t, папка sakhva-travel/blog/
-- GBP: верифицирован CID 14070083063461040701
+- GBP: верифицирован CID 14112587239859278397
 
 ## Запреты
 - НИКОГДА не удалять статьи блога

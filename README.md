@@ -57,7 +57,7 @@ node scripts/predeploy-check.js index.html
 - n8n (Railway): 5 workflows
 - NOWPayments (crypto)
 - Cloudinary: dtfq3xq3t
-- GBP: CID 14070083063461040701
+- GBP: CID 14112587239859278397
 
 ## Guide
 
