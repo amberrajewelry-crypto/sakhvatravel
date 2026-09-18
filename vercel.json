@@ -1865,72 +1865,72 @@
     },
     {
       "source": "/en/tury-v-gruziyu-iz-kazani/",
-      "destination": "/tury-v-gruziyu-iz-kazani/",
+      "destination": "/en/tours-from-kazan/",
       "statusCode": 301
     },
     {
       "source": "/en/tury-v-gruziyu-iz-nalchika/",
-      "destination": "/tury-v-gruziyu-iz-nalchika/",
+      "destination": "/en/tours-from-nalchik/",
       "statusCode": 301
     },
     {
       "source": "/en/tury-v-gruziyu-iz-kazahstana/",
-      "destination": "/tury-v-gruziyu-iz-kazahstana/",
+      "destination": "/en/tours-from-kazakhstan/",
       "statusCode": 301
     },
     {
       "source": "/en/tury-v-gruziyu-iz-erevana/",
-      "destination": "/tury-v-gruziyu-iz-erevana/",
+      "destination": "/en/tours-from-yerevan/",
       "statusCode": 301
     },
     {
       "source": "/en/tury-v-gruziyu-iz-novosibirska/",
-      "destination": "/tury-v-gruziyu-iz-novosibirska/",
+      "destination": "/en/tours-from-novosibirsk/",
       "statusCode": 301
     },
     {
       "source": "/en/tury-v-gruziyu-iz-tashkenta/",
-      "destination": "/tury-v-gruziyu-iz-tashkenta/",
+      "destination": "/en/tours-from-tashkent/",
       "statusCode": 301
     },
     {
       "source": "/en/tury-v-gruziyu-iz-pyatigorska/",
-      "destination": "/tury-v-gruziyu-iz-pyatigorska/",
+      "destination": "/en/tours-from-pyatigorsk/",
       "statusCode": 301
     },
     {
       "source": "/en/tury-v-gruziyu-iz-vladikavkaza/",
-      "destination": "/tury-v-gruziyu-iz-vladikavkaza/",
+      "destination": "/en/tours-from-vladikavkaz/",
       "statusCode": 301
     },
     {
       "source": "/en/tury-v-gruziyu-iz-minska/",
-      "destination": "/tury-v-gruziyu-iz-minska/",
+      "destination": "/en/tours-from-minsk/",
       "statusCode": 301
     },
     {
       "source": "/en/tury-v-gruziyu-iz-ekaterinburga/",
-      "destination": "/tury-v-gruziyu-iz-ekaterinburga/",
+      "destination": "/en/tours-from-yekaterinburg/",
       "statusCode": 301
     },
     {
       "source": "/en/tury-v-gruziyu-iz-moskvy/",
-      "destination": "/tury-v-gruziyu-iz-moskvy/",
+      "destination": "/en/tours-from-moscow/",
       "statusCode": 301
     },
     {
       "source": "/en/tury-v-gruziyu-iz-kislovodska/",
-      "destination": "/tury-v-gruziyu-iz-kislovodska/",
+      "destination": "/en/tours-from-kislovodsk/",
       "statusCode": 301
     },
     {
       "source": "/en/tury-v-gruziyu-iz-spb/",
-      "destination": "/tury-v-gruziyu-iz-spb/",
+      "destination": "/en/tours-from-saint-petersburg/",
       "statusCode": 301
     },
     {
       "source": "/en/tury-v-gruziyu-iz-krasnodara/",
-      "destination": "/tury-v-gruziyu-iz-krasnodara/",
+      "destination": "/en/tours-from-krasnodar/",
       "statusCode": 301
     },
     {
