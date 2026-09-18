@@ -865,24 +865,6 @@
       "url": "/ekskursiya/transfer-aeroport-tbilisi/"
     },
     {
-      "slug": "transfer-tbilisi-batumi",
-      "title": "Трансфер Тбилиси — Батуми",
-      "description": "Трансфер Тбилиси — Батуми от ₾280 за автомобиль. 5–6 часов, остановки по пути (Боржоми, Уплисцихе) по желанию, до 4 человек.",
-      "price": 280,
-      "currency": "GEL",
-      "hours": 6,
-      "days": 0,
-      "durationText": "6ч",
-      "image": "/images/batumi-tour-600.webp",
-      "format": "individual",
-      "tags": [
-        "За городом",
-        "Батуми"
-      ],
-      "type": "excursion",
-      "url": "/ekskursiya/transfer-tbilisi-batumi/"
-    },
-    {
       "slug": "tur-dlya-detey-tbilisi",
       "title": "Детский тур по Тбилиси 2026",
       "description": "Детский тур по Тбилиси от ₾135. Интерактивная программа для детей 5–14 лет: крепость, канатная дорога, мороженое, легенды.",
