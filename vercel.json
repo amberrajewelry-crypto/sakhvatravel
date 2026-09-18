@@ -1674,7 +1674,7 @@
       "statusCode": 301
     },
     {
-      "source": "/ru/blog/gifts-from-tbilisi/",
+      "source": "/blog/gifts-from-tbilisi/",
       "destination": "/blog/chto-podarit-iz-tbilisi/",
       "statusCode": 301
     },
