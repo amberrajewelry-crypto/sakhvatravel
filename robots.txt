@@ -17,13 +17,40 @@ Disallow: /index.html.base-clean
 # Search engines
 User-agent: Googlebot
 Allow: /
+Disallow: /CLAUDE.md
+Disallow: /README.md
+Disallow: /demo/
+Disallow: /dashboard/
+Disallow: /partner/
+Disallow: /scripts/
+Disallow: /service-account.json
+Disallow: /.worktrees/
+Disallow: /index.html.base-clean
 
 User-agent: YandexBot
 Allow: /
+Disallow: /CLAUDE.md
+Disallow: /README.md
+Disallow: /demo/
+Disallow: /dashboard/
+Disallow: /partner/
+Disallow: /scripts/
+Disallow: /service-account.json
+Disallow: /.worktrees/
+Disallow: /index.html.base-clean
 Clean-param: gad_source&gad_campaignid&gad_adgroupid&gad_creative&gbraid&wbraid&gclid&utm_source&utm_medium&utm_campaign&utm_content&utm_term&yclid&fbclid&clsprobe&fix&v&b&n&brid&perf /
 
 User-agent: Bingbot
 Allow: /
+Disallow: /CLAUDE.md
+Disallow: /README.md
+Disallow: /demo/
+Disallow: /dashboard/
+Disallow: /partner/
+Disallow: /scripts/
+Disallow: /service-account.json
+Disallow: /.worktrees/
+Disallow: /index.html.base-clean
 
 # SEO-аудит краулеры — явно открыть весь сайт (кроме служебного)
 User-agent: AhrefsBot
@@ -82,7 +109,7 @@ User-agent: CCBot
 Disallow: /
 
 User-agent: anthropic-ai
-Allow: /
+Disallow: /
 
 User-agent: cohere-ai
 Disallow: /
@@ -116,3 +143,6 @@ User-agent: Applebot-Extended
 Allow: /
 
 Sitemap: https://sakhva-travel.com/sitemap-index.xml
+
+# Really Simple Licensing (RSL 1.0)
+License: https://sakhva-travel.com/rsl.xml
