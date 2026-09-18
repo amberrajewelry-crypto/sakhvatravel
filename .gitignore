@@ -54,3 +54,4 @@ __pycache__/
 .venv-index/
 .playwright-mcp/
 *.bak
+scripts/_gidx_pending.txt
