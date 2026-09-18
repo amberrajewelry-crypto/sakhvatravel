@@ -104,6 +104,25 @@ export default async function handler(req) {
     }
   }
 
+  // Отказ банка: в TG причину, иначе «оплата не проходит» у клиента невидима (18.09: клиент из ОАЭ, 5000 ₾)
+  if (statusKey === 'rejected') {
+    const tgToken = process.env.TELEGRAM_BOT_TOKEN
+    const tgChat = process.env.TELEGRAM_CHAT_ID
+    const pd = b.payment_detail || {}
+    const amount = b.purchase_units?.request_amount || '?'
+    const msg = `❌ Оплата ОТКЛОНЕНА (BOG)\n\n🔖 ${orderId}\n💰 ${amount} GEL\n` +
+      `Причина: ${b.reject_reason || '—'} / ${pd.code || '—'} ${pd.code_description || ''}\n` +
+      `Карта: ${pd.card_type || '—'} ${pd.payer_identifier || ''}\n🧾 order_id: ${b.order_id || '—'}`
+    if (tgToken && tgChat) {
+      try {
+        await fetch(`https://api.telegram.org/bot${tgToken}/sendMessage`, {
+          method: 'POST', headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ chat_id: tgChat, text: msg })
+        })
+      } catch (e) { console.error('BOG reject Telegram error:', e.message) }
+    }
+  }
+
   // BOG ожидает 200 OK
   return new Response('OK', { status: 200 })
 }
