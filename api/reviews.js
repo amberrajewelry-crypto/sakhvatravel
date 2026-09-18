@@ -1,5 +1,5 @@
-// Static reviews endpoint — returns verified Google reviews
-// TODO: connect to Google Places API when API key is available
+// Reviews endpoint: live Google reviews via Places API (New) when GOOGLE_PLACES_API_KEY
+// is set and billing is enabled; otherwise the verified static set below.
 
 export const config = { runtime: 'edge' }
 
@@ -75,18 +75,60 @@ const REVIEWS_GE = [
   }
 ]
 
-export default function handler(req) {
+const LANG = { ru: 'ru', en: 'en', ge: 'ka' }
+const MONTHS = {
+  ru: ['январь','февраль','март','апрель','май','июнь','июль','август','сентябрь','октябрь','ноябрь','декабрь'],
+  en: ['January','February','March','April','May','June','July','August','September','October','November','December'],
+  ge: ['იანვარი','თებერვალი','მარტი','აპრილი','მაისი','ივნისი','ივლისი','აგვისტო','სექტემბერი','ოქტომბერი','ნოემბერი','დეკემბერი']
+}
+const FALLBACK = { rating: 4.9, total: 87 }
+
+async function livePlaces(lang) {
+  const key = process.env.GOOGLE_PLACES_API_KEY
+  if (!key) return null
+  const h = { 'X-Goog-Api-Key': key, 'Content-Type': 'application/json' }
+  let id = process.env.GOOGLE_PLACE_ID
+  if (!id) {
+    const r = await fetch('https://places.googleapis.com/v1/places:searchText', {
+      method: 'POST', headers: { ...h, 'X-Goog-FieldMask': 'places.id' },
+      body: JSON.stringify({ textQuery: 'Sakhva Travel Tbilisi' })
+    })
+    const j = r.ok ? await r.json() : null
+    id = j && j.places && j.places[0] && j.places[0].id
+    if (!id) return null
+  }
+  const r = await fetch(`https://places.googleapis.com/v1/places/${id}?languageCode=${LANG[lang]}`, {
+    headers: { ...h, 'X-Goog-FieldMask': 'rating,userRatingCount,reviews' }
+  })
+  if (!r.ok) return null
+  const j = await r.json()
+  if (!j.reviews || !j.reviews.length) return null
+  const m = MONTHS[lang]
+  const reviews = j.reviews
+    .filter(x => x.rating >= 4 && x.text && x.text.text)
+    .map(x => {
+      const d = new Date(x.publishTime)
+      return {
+        name: (x.authorAttribution && x.authorAttribution.displayName) || '',
+        avatar: (x.authorAttribution && x.authorAttribution.photoUri) || null,
+        time: `${m[d.getMonth()]} ${d.getFullYear()}`,
+        rating: x.rating,
+        text: x.text.text
+      }
+    })
+  return reviews.length ? { rating: j.rating, total: j.userRatingCount, reviews } : null
+}
+
+export default async function handler(req) {
   const referer = req.headers.get('referer') || ''
   const langParam = new URL(req.url).searchParams.get('lang') || ''
   const isGe = langParam === 'ge' || referer.includes('/ge/')
   const isEn = langParam === 'en' || referer.includes('/en/')
-  const reviews = isGe ? REVIEWS_GE : isEn ? REVIEWS_EN : REVIEWS_RU
-
-  return new Response(JSON.stringify({
-    rating: 4.9,
-    total: 87,
-    reviews
-  }), {
+  const lang = isGe ? 'ge' : isEn ? 'en' : 'ru'
+  const statik = { ...FALLBACK, reviews: isGe ? REVIEWS_GE : isEn ? REVIEWS_EN : REVIEWS_RU }
+  let body = null
+  try { body = await livePlaces(lang) } catch (e) { body = null }
+  return new Response(JSON.stringify(body || statik), {
     status: 200,
     headers: {
       'Content-Type': 'application/json',
