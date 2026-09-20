@@ -90,7 +90,8 @@ node scripts/predeploy-check.js <изменённый файл> index.html
 - Bing: sakhvatravel3231259ca6306569.txt ✅
 - NOWPayments: NOWPAYMENTS_API_KEY в Vercel env ✅
 - Google Places: GOOGLE_PLACES_API_KEY в Vercel env ✅
-- IndexNow: DE25F3FA51D1F1E934763682A270AF53.txt ✅
+- IndexNow: DE25F3FA51D1F1E934763682A270AF53.txt ✅ — `node scripts/indexnow-ping.js <файлы/URL>` (Bing+Яндекс, один POST до 10k URL, без квоты)
+- Google Indexing API: `service-account.json` в корне проекта (SA — владелец GSC, scope `indexing`) ✅ — переиндексация через `urlNotifications().publish({url,type:"URL_UPDATED"})`; квота ~200 URL/день (сбрасывается). Скрипты: `scripts/_reindex_batch.py`, `scripts/boost-unindexed.py`. ПРАВИЛО: для переиндексации ВСЕГДА тянуть отсюда, НЕ спрашивать «есть ли доступ» — доступ есть
 - llms.txt ✅
 - Airtable CRM: base appvP72OjZeVJ0XWh ✅
 - n8n Railway: n8n-production-f095.up.railway.app ✅
