@@ -65,9 +65,12 @@ h1{font-size:28px;font-weight:600;color:#111827;margin-bottom:12px;letter-spacin
     ka:{lang:'ka',title:'გადახდის შეცდომა | Sakhva Travel',h1:'გადახდა ვერ შესრულდა',sub:'გადახდა არ დასრულდა. თანხა არ ჩამოგეჭრათ — სცადეთ თავიდან ან დაგვიკავშირდით.',causes:'შესაძლო მიზეზები:',c1:'ბარათზე არასაკმარისი თანხა',c2:'ბანკმა უარყო ტრანზაქცია (3D Secure)',c3:'დრო ამოიწურა',c4:'სცადეთ სხვა ბარათი',retry:'თავიდან ცდა',wa:'მოგვწერეთ WhatsApp-ზე',home:'მთავარი',trust:'Sakhva Travel · გადახდას ამუშავებს Bank of Georgia',waText:'გადახდის პრობლემა, დამეხმარეთ'}
   };
   var p = new URLSearchParams(location.search);
-  var code = (p.get('lang') || navigator.language || 'en').toLowerCase().slice(0,2);
+  var code = (p.get('lang') || navigator.language || 'en').toLowerCase().slice(0,2); if (code === 'ge') code = 'ka';
   var t = I18N[code] || I18N.en;
   document.documentElement.lang = t.lang;
+  var pfx = t.lang === 'ru' ? '' : (t.lang === 'ka' ? '/ge' : '/en');
+  var _h = document.getElementById('t-home'); if (_h) _h.href = pfx + '/';
+  var _p = document.getElementById('t-policy'); if (_p) _p.href = pfx + '/policy/';
   document.title = t.title;
   function set(id,v){ var el = document.getElementById(id); if (el) el.textContent = v; }
   set('t-h1',t.h1); set('t-sub',t.sub); set('t-causes',t.causes);

@@ -66,9 +66,12 @@ h1{font-size:28px;font-weight:600;color:#111827;margin-bottom:12px;letter-spacin
     ka:{lang:'ka',title:'გადახდა წარმატებით შესრულდა | Sakhva Travel',h1:'გადახდა წარმატებით შესრულდა',sub:'ინდივიდუალური ტურის ჯავშანი დადასტურებულია. ვაუჩერი დეტალებით გამოგეგზავნათ WhatsApp-ზე. თუ ჯგუფურ ტურში შეერთება გსურდათ — ადგილების არსებობას გადავამოწმებთ და ცალკე მოგწერთ. დარჩენილი — გიდს ტურის დღეს, გაუქმება უფასოა 24 საათით ადრე.',order:'შეკვეთა #',amount:'თანხა',tour:'ტური',date:'თარიღი',status:'სტატუსი',paid:'გადახდილია',wa:'მოგვწერეთ WhatsApp-ზე',home:'მთავარი',policy:'გადახდის პოლიტიკა',waText:'გადახდა შესრულდა, მაქვს კითხვა ტურზე'}
   };
   var p = new URLSearchParams(location.search);
-  var code = (p.get('lang') || navigator.language || 'en').toLowerCase().slice(0,2);
+  var code = (p.get('lang') || navigator.language || 'en').toLowerCase().slice(0,2); if (code === 'ge') code = 'ka';
   var t = I18N[code] || I18N.en;
   document.documentElement.lang = t.lang;
+  var pfx = t.lang === 'ru' ? '' : (t.lang === 'ka' ? '/ge' : '/en');
+  var _h = document.getElementById('t-home'); if (_h) _h.href = pfx + '/';
+  var _p = document.getElementById('t-policy'); if (_p) _p.href = pfx + '/policy/';
   document.title = t.title;
   function set(id,v){ var el = document.getElementById(id); if (el) el.textContent = v; }
   set('t-h1',t.h1); set('t-sub',t.sub);

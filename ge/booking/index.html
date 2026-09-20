@@ -740,7 +740,7 @@ function payWithCard() {
   fetch('/api/create-bog-payment/', {
     method: 'POST',
     headers: {'Content-Type': 'application/json'},
-    body: JSON.stringify({amount: d.payAmount, orderId: d.orderId, description: (d.isFull ? 'FULL ' : 'PREPAY ') + d.tour + ', ' + d.date + ', ' + d.people + ' pax', email: d.email, lang: 'en'})
+    body: JSON.stringify({amount: d.payAmount, orderId: d.orderId, description: (d.isFull ? 'FULL ' : 'PREPAY ') + d.tour + ', ' + d.date + ', ' + d.people + ' pax', email: d.email, lang: 'ka'})
   }).then(function(r){ return r.json() })
   .then(function(j){ if (j.checkout_url) window.location.href = j.checkout_url; else alert('Card payment is temporarily unavailable. Please use SBP or crypto.'); })
   .catch(function(){ alert('Error. Please try SBP or crypto.'); });
