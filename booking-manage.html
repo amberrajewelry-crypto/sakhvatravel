@@ -75,19 +75,19 @@ button:disabled{opacity:.5;cursor:default}
 <script>
 (function(){
   var T = {
-    ru:{h1:'Управление бронью',loading:'Загружаем данные брони…',tour:'Тур',date:'Дата и время',people:'Человек',amount:'Предоплата',status:'Статус',
+    ru:{policy:'Политика оплаты',h1:'Управление бронью',loading:'Загружаем данные брони…',tour:'Тур',date:'Дата и время',people:'Человек',amount:'Предоплата',status:'Статус',
         active:'Подтверждена',cancelled:'Отменена',resched:'Перенести дату',cancel:'Отменить бронь',wa:'Написать Тимуру',newdate:'Новая дата',newtime:'Время выезда',confirm:'Подтвердить перенос',
         hint_ok:'Перенос — бесплатно на любую дату не раньше чем через 24 часа. Отмена за 24 часа и более — предоплата вернётся на карту. Отмена менее чем за 24 часа — предоплата не возвращается.',
         hint_late:'До тура меньше 24 часов: перенос и возврат — только через Тимура в WhatsApp.',
         sure:'Отменить бронь? Это действие нельзя отменить.',done_cancel:'Бронь отменена. Подтверждение отправлено в WhatsApp.',refund_yes:' Возврат предоплаты запрошен в банке (3–5 рабочих дней).',refund_no:' Возврат не предусмотрен: до тура меньше 24 часов.',refund_manual:' Возврат оформим вручную и напишем в WhatsApp.',refund_fail:' Возврат не прошёл автоматически — оформим вручную.',
         done_resched:'Бронь перенесена. Подтверждение отправлено в WhatsApp.',err_late:'До тура меньше 24 часов — напишите Тимуру.',err_date:'Выберите дату не раньше чем через 24 часа.',err_link:'Ссылка недействительна. Откройте ссылку из WhatsApp-ваучера или напишите Тимуру.',err:'Не получилось. Попробуйте ещё раз или напишите Тимуру.',inactive:'Эта бронь уже неактивна.'},
-    en:{h1:'Manage booking',loading:'Loading your booking…',tour:'Tour',date:'Date & time',people:'People',amount:'Deposit',status:'Status',
+    en:{policy:'Payment policy',h1:'Manage booking',loading:'Loading your booking…',tour:'Tour',date:'Date & time',people:'People',amount:'Deposit',status:'Status',
         active:'Confirmed',cancelled:'Cancelled',resched:'Reschedule',cancel:'Cancel booking',wa:'Message Timur',newdate:'New date',newtime:'Departure time',confirm:'Confirm new date',
         hint_ok:'Rescheduling is free to any date at least 24 hours ahead. Cancel 24+ hours before the tour — the deposit is refunded to your card. Less than 24 hours — the deposit is non-refundable.',
         hint_late:'Less than 24 hours before the tour: rescheduling and refunds only via Timur on WhatsApp.',
         sure:'Cancel this booking? This cannot be undone.',done_cancel:'Booking cancelled. Confirmation sent to WhatsApp.',refund_yes:' Refund requested from the bank (3–5 business days).',refund_no:' No refund: less than 24 hours before the tour.',refund_manual:' We will process the refund manually and message you on WhatsApp.',refund_fail:' Automatic refund failed — we will process it manually.',
         done_resched:'Booking rescheduled. Confirmation sent to WhatsApp.',err_late:'Less than 24 hours before the tour — please message Timur.',err_date:'Choose a date at least 24 hours ahead.',err_link:'This link is invalid. Open the link from your WhatsApp voucher or message Timur.',err:'Something went wrong. Try again or message Timur.',inactive:'This booking is no longer active.'},
-    ge:{h1:'ჯავშნის მართვა',loading:'ვტვირთავთ ჯავშნის მონაცემებს…',tour:'ტური',date:'თარიღი და დრო',people:'ადამიანი',amount:'წინასწარი გადახდა',status:'სტატუსი',
+    ge:{policy:'გადახდის პოლიტიკა',h1:'ჯავშნის მართვა',loading:'ვტვირთავთ ჯავშნის მონაცემებს…',tour:'ტური',date:'თარიღი და დრო',people:'ადამიანი',amount:'წინასწარი გადახდა',status:'სტატუსი',
         active:'დადასტურებულია',cancelled:'გაუქმებულია',resched:'თარიღის გადატანა',cancel:'ჯავშნის გაუქმება',wa:'მისწერეთ თიმურს',newdate:'ახალი თარიღი',newtime:'გასვლის დრო',confirm:'გადატანის დადასტურება',
         hint_ok:'გადატანა უფასოა ნებისმიერ თარიღზე, არანაკლებ 24 საათით ადრე. გაუქმება ტურამდე 24+ საათით ადრე — წინასწარი გადახდა ბარათზე დაგიბრუნდებათ. 24 საათზე ნაკლებ დროში — არ ბრუნდება.',
         hint_late:'ტურამდე 24 საათზე ნაკლებია: გადატანა და დაბრუნება — მხოლოდ თიმურთან WhatsApp-ით.',
@@ -99,6 +99,8 @@ button:disabled{opacity:.5;cursor:default}
   var $ = function(i){ return document.getElementById(i) };
   function apply(){
     document.documentElement.lang = t === T.ge ? 'ka' : (t === T.en ? 'en' : 'ru');
+    var lc = document.documentElement.lang; document.title = t.h1 + ' | Sakhva Travel';
+    $('t-policy').textContent = t.policy; $('t-policy').href = (lc === 'ru' ? '' : '/' + (lc === 'ka' ? 'ge' : 'en')) + '/policy/';
     $('t-h1').textContent = t.h1; $('t-l-tour').textContent = t.tour; $('t-l-date').textContent = t.date; $('t-l-people').textContent = t.people;
     $('t-l-amount').textContent = t.amount; $('t-l-status').textContent = t.status; $('btn-resched').textContent = t.resched; $('btn-cancel').textContent = t.cancel;
     $('wa-btn').textContent = t.wa; $('t-l-newdate').textContent = t.newdate; $('t-l-newtime').textContent = t.newtime; $('resched-ok').textContent = t.confirm;
@@ -116,6 +118,18 @@ button:disabled{opacity:.5;cursor:default}
     $('btn-cancel').style.display = b.active ? '' : 'none';
     $('resched-form').style.display = 'none';
   }
+  function localizeTour(lc){
+    // booking stores the RU catalog title ("<title> — от ₾N"); map it to the slug, then to the EN/GE title
+    var ruTitle = String(b.tour || '').replace(/\s+—\s+от\s+₾?\s*\d+.*$/, '').trim();
+    fetch('/data/catalog.json').then(function(r){ return r.json() }).then(function(c){
+      var hit = (c.excursions || []).filter(function(x){ return x.title === ruTitle })[0];
+      if (!hit) return;
+      return fetch('/data/catalog-' + lc + '.json').then(function(r){ return r.json() }).then(function(c2){
+        var loc = (c2.excursions || []).filter(function(x){ return x.slug === hit.slug })[0];
+        if (loc && loc.title) $('d-tour').textContent = loc.title;
+      });
+    }).catch(function(){});
+  }
   function api(method, body){
     var u = '/api/booking-manage/?id=' + encodeURIComponent(id) + '&t=' + encodeURIComponent(tok);
     return fetch(u, {method: method, headers: {'Content-Type': 'application/json'}, body: body ? JSON.stringify(Object.assign({id: id, t: tok}, body)) : undefined}).then(function(r){ return r.json() });
@@ -125,6 +139,7 @@ button:disabled{opacity:.5;cursor:default}
   api('GET').then(function(j){
     if (j.error) { $('t-sub').textContent = j.error === 'bad_link' || j.error === 'not_found' ? t.err_link : t.err; return; }
     b = j; var L = p.get('lang') || b.lang; t = T[L] || (L === 'ka' ? T.ge : T.en); apply(); render();
+    if (t !== T.ru) localizeTour(t === T.ge ? 'ge' : 'en');
   }).catch(function(){ $('t-sub').textContent = t.err; });
   $('btn-resched').onclick = function(){
     var f = $('resched-form'); f.style.display = f.style.display === 'block' ? 'none' : 'block';
