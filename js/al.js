@@ -3,7 +3,7 @@
    already picked a language manually (lang_pref cookie) are excluded so
    SEO indexation of /en/ and /ge/ is never broken. */
 (function(){try{
-  if(/bot|crawl|spider|slurp|bing|google|yandex|duckduck|baidu|facebookexternalhit|embedly|telegram|whatsapp/i.test(navigator.userAgent||''))return;
+  if(/bot|crawl|spider|slurp|bing|google|yandex|lighthouse|pagespeed|duckduck|baidu|facebookexternalhit|embedly|telegram|whatsapp/i.test(navigator.userAgent||''))return;
   if(/lang_pref=/.test(document.cookie))return;
   if(sessionStorage.getItem('lredir'))return;
   sessionStorage.setItem('lredir','1');
