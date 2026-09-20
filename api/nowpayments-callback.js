@@ -1,3 +1,4 @@
+import { tgFan } from './_tgfan.js'
 // NOWPayments IPN callback
 // Webhook URL: https://sakhva-travel.com/api/nowpayments-callback
 // Configure in NOWPayments dashboard → Settings → IPN callback URL
@@ -115,7 +116,7 @@ export default async function handler(req) {
       const tgChat = (process.env.TELEGRAM_MANAGER_CHAT || process.env.TELEGRAM_CHAT_ID)
       if (tgToken && tgChat) {
         const msg = `💰 Крипто-оплата получена!\n\n🔖 ${order_id}\n🚐 ${tourName}\n💵 ${actually_paid || pay_amount} ${pay_currency || price_currency}\n💲 Сумма: ${price_amount} ${price_currency}\n✅ Статус: оплачена`
-        await fetch(`https://api.telegram.org/bot${tgToken}/sendMessage`, {
+        await tgFan(`https://api.telegram.org/bot${tgToken}/sendMessage`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ chat_id: tgChat, text: msg })

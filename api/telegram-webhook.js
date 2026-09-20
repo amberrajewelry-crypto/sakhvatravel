@@ -485,6 +485,9 @@ export default async function handler(req) {
   const BOT = process.env.TELEGRAM_BOT_TOKEN
   const NOTIFY = process.env.TELEGRAM_MANAGER_CHAT || process.env.TELEGRAM_CHAT_ID
   const MGR = process.env.TELEGRAM_MANAGER_TOKEN || BOT  // manager alerts go to whatsapp_manager bot
+  // manager alerts → both bots (whatsapp_manager + @SakhvaGuideBot), deduped
+  const MGR_TARGETS = [[MGR, NOTIFY], [BOT, process.env.TELEGRAM_CHAT_ID]]
+    .filter(([t, c], i, a) => t && c && a.findIndex(([t2, c2]) => t2 === t && c2 === c) === i)
   if (!BOT) return new Response('No token', { status: 500 })
 
   let upd
@@ -1334,8 +1337,8 @@ export default async function handler(req) {
 
           // Notify Timur
           if (NOTIFY) {
-            await tg(MGR, 'sendMessage', {
-              chat_id: NOTIFY,
+            for (const [tok, cid] of MGR_TARGETS) await tg(tok, 'sendMessage', {
+              chat_id: cid,
               text: [
                 '🗓 <b>Новая бронь из Telegram!</b>',
                 '',
@@ -1391,8 +1394,8 @@ export default async function handler(req) {
           })
 
           if (NOTIFY) {
-            await tg(MGR, 'sendMessage', {
-              chat_id: NOTIFY,
+            for (const [tok, cid] of MGR_TARGETS) await tg(tok, 'sendMessage', {
+              chat_id: cid,
               text: `🗓 Бронь: ${booking.tour}\n👤 ${booking.name}\n📱 ${booking.phone || '—'}\n📅 ${booking.date || '—'}\n👥 ${booking.guests} чел.\n💬 @${uname || '—'}`,
               parse_mode: 'HTML'
             })

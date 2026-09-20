@@ -1,3 +1,4 @@
+import { tgFan } from './_tgfan.js'
 // Bank of Georgia (BOG) — callback (webhook о статусе платежа)
 // Docs: https://api.bog.ge/docs/en/payments/standard-process/callback
 //
@@ -93,7 +94,7 @@ export default async function handler(req) {
     if (!sent && tgToken && tgChat) {
       const msg = `💳 Оплата подтверждена (BOG)\n\n🔖 ${orderId}\n💰 ${amount} ${currency}\n🧾 order_id: ${b.order_id || '—'}`
       try {
-        await fetch(`https://api.telegram.org/bot${tgToken}/sendMessage`, {
+        await tgFan(`https://api.telegram.org/bot${tgToken}/sendMessage`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ chat_id: tgChat, text: msg })
@@ -115,7 +116,7 @@ export default async function handler(req) {
       `Карта: ${pd.card_type || '—'} ${pd.payer_identifier || ''}\n🧾 order_id: ${b.order_id || '—'}`
     if (tgToken && tgChat) {
       try {
-        await fetch(`https://api.telegram.org/bot${tgToken}/sendMessage`, {
+        await tgFan(`https://api.telegram.org/bot${tgToken}/sendMessage`, {
           method: 'POST', headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ chat_id: tgChat, text: msg })
         })

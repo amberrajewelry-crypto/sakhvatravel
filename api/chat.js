@@ -1,3 +1,4 @@
+import { tgFan } from './_tgfan.js'
 // Sakhva AI Chat v2 — GPT-4o-mini with function calling
 // Tools: search_tours, get_tour_details, create_booking_draft,
 //        get_cross_sell, escalate_to_timur
@@ -409,7 +410,7 @@ async function sendTelegramEscalation(params, history) {
   ].filter(Boolean).join('\n')
 
   try {
-    await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+    await tgFan(`https://api.telegram.org/bot${botToken}/sendMessage`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ chat_id: chatId, text, parse_mode: 'HTML' })

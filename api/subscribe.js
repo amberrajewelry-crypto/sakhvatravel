@@ -1,3 +1,4 @@
+import { tgFan } from './_tgfan.js'
 // Email subscription: Brevo + Airtable
 // Env vars: BREVO_API_KEY, AIRTABLE_TOKEN, AIRTABLE_BASE_ID
 
@@ -44,7 +45,7 @@ export default async function handler(req) {
   if (!results.telegram && tgToken && tgChat) {
     try {
       const text = `📩 Новый email\n\n${email}\nИсточник: ${src}\nЯзык: ${lang || 'ru'}`
-      await fetch(`https://api.telegram.org/bot${tgToken}/sendMessage`, {
+      await tgFan(`https://api.telegram.org/bot${tgToken}/sendMessage`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ chat_id: tgChat, text })

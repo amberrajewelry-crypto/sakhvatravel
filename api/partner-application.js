@@ -1,3 +1,4 @@
+import { tgFan } from './_tgfan.js'
 export const config = { runtime: 'edge' }
 
 // Partner application form → Telegram. Env: TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID
@@ -43,7 +44,7 @@ export default async function handler(req) {
     if (company) text += `<b>Компания:</b> ${esc(company)}\n`
     if (note) text += `<b>О себе:</b> ${esc(note)}\n`
 
-    const tgRes = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+    const tgRes = await tgFan(`https://api.telegram.org/bot${token}/sendMessage`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ chat_id: chatId, text, parse_mode: 'HTML' }),

@@ -1,3 +1,4 @@
+import { tgFan } from './_tgfan.js'
 // Сохранение бронирования: Telegram (primary) + Airtable CRM (secondary)
 // Env vars: AIRTABLE_TOKEN, TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID
 
@@ -49,7 +50,7 @@ export default async function handler(req) {
     const statusIcon = reqStatus === 'подтверждена' ? '✅' : reqStatus === 'ожидает_оплаты_спб' ? '⏳' : '🗓'
     const msg = `${statusIcon} Новая бронь с сайта\n\n👤 ${name}\n📱 ${phone || '—'}\n📧 ${email || '—'}\n🚐 ${tour}\n📅 ${tourDate || '—'}\n👥 ${guests || '?'} чел.${payInfo}${amountInfo}${orderInfo}\n💬 ${note || '—'}`
     try {
-      const tgRes = await fetch(`https://api.telegram.org/bot${tgToken}/sendMessage`, {
+      const tgRes = await tgFan(`https://api.telegram.org/bot${tgToken}/sendMessage`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ chat_id: tgChat, text: msg })

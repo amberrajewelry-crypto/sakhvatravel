@@ -1,3 +1,4 @@
+import { tgFan } from './_tgfan.js'
 import { notifyBot } from './_bot.js'
 
 export const config = { runtime: 'edge' }
@@ -23,7 +24,7 @@ export default async function handler(req) {
       return new Response(JSON.stringify({ error: 'TG not configured' }), { status: 500 })
     }
 
-    const tgRes = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+    const tgRes = await tgFan(`https://api.telegram.org/bot${token}/sendMessage`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
