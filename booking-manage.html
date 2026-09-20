@@ -95,13 +95,14 @@ button:disabled{opacity:.5;cursor:default}
         done_resched:'ჯავშანი გადატანილია. დადასტურება გამოგზავნილია WhatsApp-ზე.',err_late:'ტურამდე 24 საათზე ნაკლებია — მისწერეთ თიმურს.',err_date:'აირჩიეთ თარიღი არანაკლებ 24 საათით ადრე.',err_link:'ბმული არასწორია. გახსენით ბმული WhatsApp-ვაუჩერიდან ან მისწერეთ თიმურს.',err:'ვერ მოხერხდა. სცადეთ ხელახლა ან მისწერეთ თიმურს.',inactive:'ეს ჯავშანი უკვე აქტიური არ არის.'}
   };
   var p = new URLSearchParams(location.search), id = p.get('id') || '', tok = p.get('t') || '';
-  var t = T.ru, b = null;
+  var L0 = p.get('lang') || (location.pathname.indexOf('/en/') === 0 ? 'en' : location.pathname.indexOf('/ge/') === 0 ? 'ge' : 'ru');
+  var t = T[L0] || (L0 === 'ka' ? T.ge : T.ru), b = null;
   var $ = function(i){ return document.getElementById(i) };
   function apply(){
     document.documentElement.lang = t === T.ge ? 'ka' : (t === T.en ? 'en' : 'ru');
     var lc = document.documentElement.lang; document.title = t.h1 + ' | Sakhva Travel';
     $('t-policy').textContent = t.policy; $('t-policy').href = (lc === 'ru' ? '' : '/' + (lc === 'ka' ? 'ge' : 'en')) + '/policy/';
-    $('t-h1').textContent = t.h1; $('t-l-tour').textContent = t.tour; $('t-l-date').textContent = t.date; $('t-l-people').textContent = t.people;
+    $('t-h1').textContent = t.h1; if (!b) $('t-sub').textContent = t.loading; $('t-l-tour').textContent = t.tour; $('t-l-date').textContent = t.date; $('t-l-people').textContent = t.people;
     $('t-l-amount').textContent = t.amount; $('t-l-status').textContent = t.status; $('btn-resched').textContent = t.resched; $('btn-cancel').textContent = t.cancel;
     $('wa-btn').textContent = t.wa; $('t-l-newdate').textContent = t.newdate; $('t-l-newtime').textContent = t.newtime; $('resched-ok').textContent = t.confirm;
   }
