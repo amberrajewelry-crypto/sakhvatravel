@@ -80,8 +80,8 @@ export default async function handler(req) {
   const orderId = b.external_order_id || b.order_id || '—'
 
   if (statusKey === 'completed') {
-    const tgToken = process.env.TELEGRAM_BOT_TOKEN
-    const tgChat = process.env.TELEGRAM_CHAT_ID
+    const tgToken = (process.env.TELEGRAM_MANAGER_TOKEN || process.env.TELEGRAM_BOT_TOKEN)
+    const tgChat = (process.env.TELEGRAM_MANAGER_CHAT || process.env.TELEGRAM_CHAT_ID)
     const pu = b.purchase_units || {}
     const amount = pu.request_amount || pu.transfer_amount || pu.total_amount || '?'
     const currency = pu.currency_code || pu.currency || 'GEL'
@@ -106,8 +106,8 @@ export default async function handler(req) {
 
   // Отказ банка: в TG причину, иначе «оплата не проходит» у клиента невидима (18.09: клиент из ОАЭ, 5000 ₾)
   if (statusKey === 'rejected') {
-    const tgToken = process.env.TELEGRAM_BOT_TOKEN
-    const tgChat = process.env.TELEGRAM_CHAT_ID
+    const tgToken = (process.env.TELEGRAM_MANAGER_TOKEN || process.env.TELEGRAM_BOT_TOKEN)
+    const tgChat = (process.env.TELEGRAM_MANAGER_CHAT || process.env.TELEGRAM_CHAT_ID)
     const pd = b.payment_detail || {}
     const amount = b.purchase_units?.request_amount || '?'
     const msg = `❌ Оплата ОТКЛОНЕНА (BOG)\n\n🔖 ${orderId}\n💰 ${amount} GEL\n` +

@@ -38,8 +38,8 @@ export default async function handler(req) {
   const results = { telegram: false, brevo: false, airtable: false }
 
   // 1. Telegram notification
-  const tgToken = process.env.TELEGRAM_BOT_TOKEN
-  const tgChat = process.env.TELEGRAM_CHAT_ID
+  const tgToken = (process.env.TELEGRAM_MANAGER_TOKEN || process.env.TELEGRAM_BOT_TOKEN)
+  const tgChat = (process.env.TELEGRAM_MANAGER_CHAT || process.env.TELEGRAM_CHAT_ID)
   results.telegram = await notifyBot('subscribe', { email, lang: lang || 'ru', source: src })
   if (!results.telegram && tgToken && tgChat) {
     try {

@@ -111,8 +111,8 @@ export default async function handler(req) {
       )
 
       // Telegram notification
-      const tgToken = process.env.TELEGRAM_BOT_TOKEN
-      const tgChat = process.env.TELEGRAM_CHAT_ID
+      const tgToken = (process.env.TELEGRAM_MANAGER_TOKEN || process.env.TELEGRAM_BOT_TOKEN)
+      const tgChat = (process.env.TELEGRAM_MANAGER_CHAT || process.env.TELEGRAM_CHAT_ID)
       if (tgToken && tgChat) {
         const msg = `💰 Крипто-оплата получена!\n\n🔖 ${order_id}\n🚐 ${tourName}\n💵 ${actually_paid || pay_amount} ${pay_currency || price_currency}\n💲 Сумма: ${price_amount} ${price_currency}\n✅ Статус: оплачена`
         await fetch(`https://api.telegram.org/bot${tgToken}/sendMessage`, {

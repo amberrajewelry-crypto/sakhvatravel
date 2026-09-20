@@ -38,8 +38,8 @@ export default async function handler(req) {
   const results = { telegram: false, airtable: false }
 
   // 1. Telegram notification — FIRST, always
-  const tgToken = process.env.TELEGRAM_BOT_TOKEN
-  const tgChat = process.env.TELEGRAM_CHAT_ID
+  const tgToken = (process.env.TELEGRAM_MANAGER_TOKEN || process.env.TELEGRAM_BOT_TOKEN)
+  const tgChat = (process.env.TELEGRAM_MANAGER_CHAT || process.env.TELEGRAM_CHAT_ID)
   results.telegram = await notifyBot('booking', { name, phone, email, tour, date: tourDate,
     people: guests, note, orderId, payMethod, status: reqStatus, prepay, total, lang })
   if (!results.telegram && tgToken && tgChat) {  // бот недоступен → старое уведомление

@@ -32,8 +32,8 @@ export default async function handler(req) {
       return new Response(JSON.stringify({ error: 'name and contact required' }), { status: 400 })
     }
 
-    const token = process.env.TELEGRAM_BOT_TOKEN
-    const chatId = process.env.TELEGRAM_CHAT_ID
+    const token = (process.env.TELEGRAM_MANAGER_TOKEN || process.env.TELEGRAM_BOT_TOKEN)
+    const chatId = (process.env.TELEGRAM_MANAGER_CHAT || process.env.TELEGRAM_CHAT_ID)
     if (!token || !chatId) {
       return new Response(JSON.stringify({ error: 'TG not configured' }), { status: 500 })
     }

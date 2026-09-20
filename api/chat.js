@@ -386,8 +386,8 @@ function getCrossSell(params) {
 }
 
 async function sendTelegramEscalation(params, history) {
-  const botToken = process.env.TELEGRAM_BOT_TOKEN
-  const chatId = process.env.TELEGRAM_CHAT_ID
+  const botToken = (process.env.TELEGRAM_MANAGER_TOKEN || process.env.TELEGRAM_BOT_TOKEN)
+  const chatId = (process.env.TELEGRAM_MANAGER_CHAT || process.env.TELEGRAM_CHAT_ID)
   if (!botToken || !chatId) return false
 
   const historyText = history
