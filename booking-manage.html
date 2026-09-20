@@ -124,7 +124,7 @@ button:disabled{opacity:.5;cursor:default}
   if (!id || !tok) { $('t-sub').textContent = t.err_link; return; }
   api('GET').then(function(j){
     if (j.error) { $('t-sub').textContent = j.error === 'bad_link' || j.error === 'not_found' ? t.err_link : t.err; return; }
-    b = j; t = T[b.lang] || T.en; apply(); render();
+    b = j; t = T[b.lang] || (b.lang === 'ka' ? T.ge : T.en); apply(); render();
   }).catch(function(){ $('t-sub').textContent = t.err; });
   $('btn-resched').onclick = function(){
     var f = $('resched-form'); f.style.display = f.style.display === 'block' ? 'none' : 'block';
