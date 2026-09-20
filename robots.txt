@@ -173,6 +173,3 @@ User-agent: Applebot-Extended
 Allow: /
 
 Sitemap: https://sakhva-travel.com/sitemap-index.xml
-
-# Really Simple Licensing (RSL 1.0)
-License: https://sakhva-travel.com/rsl.xml
