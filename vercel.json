@@ -1750,7 +1750,7 @@
     },
     {
       "source": "/en/blog/fabrika-tbilisi/",
-      "destination": "/blog/fabrika-tbilisi/",
+      "destination": "/en/blog/fabrika-tbilisi-guide/",
       "statusCode": 301
     },
     {
@@ -1840,7 +1840,7 @@
     },
     {
       "source": "/en/vinnye-tury-gruzia/",
-      "destination": "/vinnye-tury-gruzia/",
+      "destination": "/en/wine-tours-georgia/",
       "statusCode": 301
     },
     {
