@@ -23,7 +23,6 @@ try{
   ok('todo: «Нет водителя»',k.some(x=>x.startsWith('Нет водителя|')&&x.includes('QA')));
   ok('гид — select',await pg.$eval('#fGui',e=>e.tagName==='SELECT'));
   await pg.evaluate(id=>openById(id),ID);await pg.waitForTimeout(400);
-  ok('карточка помечена «учебная»',await pg.$$eval('#upL .card',e=>e.some(c=>c.textContent.includes('QA')&&c.textContent.includes('учебная'))));
   ok('чек-лист на карточке',await pg.$$eval('#upL .card',e=>e.some(c=>c.textContent.includes('QA')&&c.querySelector('.ck'))));
   await pg.selectOption('#fGui','Тимур');await pg.fill('#fFee','120');await pg.check('#fGok');await pg.selectOption('#fCh','Сарафан');
   await pg.fill('#fPrice','60');await pg.waitForTimeout(100);
@@ -47,9 +46,7 @@ try{
   await pg.keyboard.press('Escape');await pg.waitForTimeout(200);
   ok('Esc закрывает только верхнюю модалку',await pg.evaluate(()=>!document.getElementById('payModal').classList.contains('active')&&document.getElementById('modal').classList.contains('active')));
   await pg.evaluate(()=>closeM());
-  ok('учебная бронь не в финансах/выплатах',await pg.evaluate(()=>{guiOpen();const t=document.getElementById('gdSum').textContent;guiClose();return !t.includes('120');}));
-  // выплата: учебные брони в расчёт не входят — на время проверки снимаем префикс (реальные брони не трогаем)
-  await AT('PATCH','/'+ID,{fields:{'Тур':'ZZ проверка выплаты','Клиент':'Проверка'}});await pg.click('text=Обновить');await pg.waitForTimeout(3500);
+  await pg.click('text=Обновить');await pg.waitForTimeout(3500);
   await pg.click('text=Гиды');await pg.waitForTimeout(400);
   ok('сводка: к выплате 120',(await pg.$eval('#gdSum',e=>e.textContent)).includes('120'));
   ok('менеджер: кнопки «Выплачено» нет',!(await pg.$('#gdList button.qbtn-ok')));
@@ -64,7 +61,7 @@ try{
   ok('после выплаты к выплате 0',await pg.$eval('#gdSum',e=>/к выплате\s*0/.test(e.textContent.replace(/\s+/g,' '))));
   await pg.evaluate(()=>guiClose());
   ok('регламент грузится из md',await pg.evaluate(async()=>{regOpen();await regLoad();return regLoad._done===true;}));
-  k=await kinds();ok('после подтверждения карточки гида ушли',!k.some(x=>x.includes('проверка')&&/^Гид/.test(x)));
+  k=await kinds();ok('после подтверждения карточки гида ушли',!k.some(x=>x.includes('QA')&&/^Гид/.test(x)));
   ok('нет JS-ошибок',errs.length===0);if(errs.length)R.push('  '+errs.join(' | ').slice(0,300));
 }finally{await b.close();await AT('DELETE','/'+ID);}
 console.log(R.join('\n'));console.log(fails?`\n${fails} FAIL`:'\nALL PASS');process.exit(fails?1:0);
