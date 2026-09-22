@@ -67,7 +67,7 @@ export default async function handler(req) {
     ${tourLine} Бронь ещё доступна, и мы держим для вас лучшие даты.
   </p>
   <p style="color:#374151;font-size:15px;line-height:1.6">
-    Скидка 10% при группе от 4 человек. Бесплатная отмена за 24 часа.
+    Скидка 10% при группе от 4 человек. Бесплатная отмена за 48 часов.
   </p>
   <div style="text-align:center;margin:28px 0">
     <a href="https://sakhva-travel.com/ekskursiya/?utm_source=followup&utm_medium=email" style="background:#1A3D2E;color:#fff;padding:14px 32px;border-radius:9999px;text-decoration:none;font-size:15px;font-weight:700;display:inline-block">Выбрать тур</a>

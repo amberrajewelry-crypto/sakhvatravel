@@ -408,8 +408,8 @@ function matchConversation(lower, name, lang) {
   if (/оплат|как платить|карт|нал|cash|pay|предоплат|payment/.test(lower)) {
     return {
       text: en
-        ? '💳 <b>Payment:</b>\n\n• Pay on tour day\n• Cash (GEL/EUR/USD)\n• Bank transfer\n• Crypto (BTC, ETH, USDT)\n\nFree cancellation 24h before.'
-        : '💳 <b>Оплата:</b>\n\n• Оплата в день тура\n• Наличные (лари/евро/доллар)\n• Перевод на карту\n• Крипто (BTC, ETH, USDT)\n\nОтмена бесплатно за 24 часа.'
+        ? '💳 <b>Payment:</b>\n\n• Pay on tour day\n• Cash (GEL/EUR/USD)\n• Bank transfer\n• Crypto (BTC, ETH, USDT)\n\nFree cancellation 48h before.'
+        : '💳 <b>Оплата:</b>\n\n• Оплата в день тура\n• Наличные (лари/евро/доллар)\n• Перевод на карту\n• Крипто (BTC, ETH, USDT)\n\nОтмена бесплатно за 48 часов.'
     }
   }
   if (/отзыв|review|рейтинг|rating/.test(lower)) {
@@ -576,7 +576,7 @@ export default async function handler(req) {
         '',
         en ? '✅ Transfer + guide + tickets included' : '✅ Трансфер + гид + входные включены',
         en ? '✅ Pay on tour day' : '✅ Оплата в день тура',
-        en ? '✅ Free cancellation 24h before' : '✅ Отмена бесплатно за 24ч'
+        en ? '✅ Free cancellation 48h before' : '✅ Отмена бесплатно за 48ч'
       ].join('\n')
 
       const buttons = [
@@ -1004,7 +1004,7 @@ export default async function handler(req) {
               'No. Pay on tour day — cash, card, or crypto.',
               '',
               '<b>Can I cancel?</b>',
-              'Yes, free cancellation 24h before.',
+              'Yes, free cancellation 48h before.',
               '',
               "<b>What's included?</b>",
               'Transfer, guide, tickets. Food is extra (except dinner tour).',

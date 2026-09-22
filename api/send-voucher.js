@@ -73,7 +73,7 @@ export default async function handler(req) {
     <a href="https://wa.me/995511272623" style="display:inline-block;background:#1A3D2E;color:#fff;padding:12px 32px;border-radius:9999px;text-decoration:none;font-size:14px;font-weight:700">Написать Тимуру в WhatsApp</a>
   </div>
   <div style="border-top:1px solid #E5E7EB;padding:16px 0 0;text-align:center;font-size:12px;color:#9CA3AF">
-    <p style="margin:0">Бесплатная отмена за 24 часа · <a href="https://sakhva-travel.com/policy/" style="color:#6B7280">Политика отмены</a></p>
+    <p style="margin:0">Бесплатная отмена за 48 часов · <a href="https://sakhva-travel.com/policy/" style="color:#6B7280">Политика отмены</a></p>
     <p style="margin:8px 0 0">&copy; 2026 Sakhva Travel · Тбилиси, Грузия</p>
   </div>
 </body>
