@@ -2,7 +2,7 @@
 // GET  → детали брони (из бота-менеджера, источник — база броней)
 // POST {action:'cancel'} | {action:'reschedule', date, time}
 // Подпись t = HMAC-SHA256(orderId, BOT_EVENT_TOKEN)[:32] — та же, что ставит бот в ваучер.
-// Возврат при отмене ≥24 ч: BOG refund по bogOrderId (только карта; крипто/СБП — вручную).
+// Возврат при отмене ≥48 ч: BOG refund по bogOrderId (только карта; крипто/СБП — вручную).
 import crypto from 'crypto'
 import { notifyBot } from './_bot.js'
 

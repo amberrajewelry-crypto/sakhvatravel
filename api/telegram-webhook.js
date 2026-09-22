@@ -408,8 +408,8 @@ function matchConversation(lower, name, lang) {
   if (/оплат|как платить|карт|нал|cash|pay|предоплат|payment/.test(lower)) {
     return {
       text: en
-        ? '💳 <b>Payment:</b>\n\n• Pay on tour day\n• Cash (GEL/EUR/USD)\n• Bank transfer\n• Crypto (BTC, ETH, USDT)\n\nFree cancellation 48h before.'
-        : '💳 <b>Оплата:</b>\n\n• Оплата в день тура\n• Наличные (лари/евро/доллар)\n• Перевод на карту\n• Крипто (BTC, ETH, USDT)\n\nОтмена бесплатно за 48 часов.'
+        ? '💳 <b>Payment:</b>\n\n• 10% deposit to book, the rest on tour day\n• Cash (GEL/EUR/USD)\n• Bank transfer\n• Crypto (BTC, ETH, USDT)\n\nFree cancellation 48h before.'
+        : '💳 <b>Оплата:</b>\n\n• Предоплата 10% при бронировании, остаток в день тура\n• Наличные (лари/евро/доллар)\n• Перевод на карту\n• Крипто (BTC, ETH, USDT)\n\nОтмена бесплатно за 48 часов.'
     }
   }
   if (/отзыв|review|рейтинг|rating/.test(lower)) {
@@ -575,7 +575,7 @@ export default async function handler(req) {
         `⏱ ${tourDur(t, lang)}`,
         '',
         en ? '✅ Transfer + guide + tickets included' : '✅ Трансфер + гид + входные включены',
-        en ? '✅ Pay on tour day' : '✅ Оплата в день тура',
+        en ? '✅ 10% deposit, the rest on tour day' : '✅ Предоплата 10%, остаток в день тура',
         en ? '✅ Free cancellation 48h before' : '✅ Отмена бесплатно за 48ч'
       ].join('\n')
 
@@ -629,8 +629,8 @@ export default async function handler(req) {
         txt += `${t.emoji} ${tourName(t, lang)} — ${en ? 'from ' : 'от '}${tourPrice(t, lang)}\n`
       }
       txt += en
-        ? '\n✅ Transfer + guide + tickets\n✅ Pay on tour day'
-        : '\n✅ Трансфер + гид + входные\n✅ Оплата в день тура'
+        ? '\n✅ Transfer + guide + tickets\n✅ 10% deposit, the rest on tour day'
+        : '\n✅ Трансфер + гид + входные\n✅ Предоплата 10%, остаток в день тура'
       await tg(BOT, 'sendMessage', {
         chat_id: cid, text: txt, parse_mode: 'HTML',
         reply_markup: tourGrid(lang)
@@ -818,7 +818,7 @@ export default async function handler(req) {
               t.desc,
               '',
               `⏱ ${t.duration}`,
-              '✅ Всё включено. Оплата в день тура.',
+              '✅ Всё включено. Предоплата 10%, остаток в день тура.',
               '',
               `🔗 Подробнее: https://${t.url}`,
               '📅 Забронировать: https://t.me/SakhvaGuideBot'
@@ -912,8 +912,8 @@ export default async function handler(req) {
         p += `${t.emoji} ${tourName(t, lang)} — ${en ? 'from ' : 'от '}${tourPrice(t, lang)}\n`
       }
       p += en
-        ? '\n✅ Pay on tour day.'
-        : '\n✅ Оплата в день тура.'
+        ? '\n✅ 10% deposit, the rest on tour day.'
+        : '\n✅ Предоплата 10%, остаток в день тура.'
       await tg(BOT, 'sendMessage', {
         chat_id: cid, text: p, parse_mode: 'HTML', reply_markup: tourGrid(lang)
       })
@@ -1001,10 +1001,10 @@ export default async function handler(req) {
               '❓ <b>FAQ:</b>',
               '',
               '<b>Is prepayment required?</b>',
-              'No. Pay on tour day — cash, card, or crypto.',
+              'Yes, 10% to book. The rest on tour day — cash, card, or crypto.',
               '',
               '<b>Can I cancel?</b>',
-              'Yes, free cancellation 48h before.',
+              'Yes, free cancellation 48h before. Later — free reschedule within 6 months.',
               '',
               "<b>What's included?</b>",
               'Transfer, guide, tickets. Food is extra (except dinner tour).',
@@ -1025,10 +1025,10 @@ export default async function handler(req) {
               '❓ <b>Частые вопросы:</b>',
               '',
               '<b>Нужна ли предоплата?</b>',
-              'Нет. Оплата в день тура наличными, картой или крипто.',
+              'Да, 10% при бронировании. Остаток в день тура наличными, картой или крипто.',
               '',
               '<b>Можно ли отменить?</b>',
-              'Да, бесплатно за 24 часа.',
+              'Да, бесплатно за 48 часов. Позже — бесплатный перенос в течение 6 месяцев.',
               '',
               '<b>Что включено в цену?</b>',
               'Трансфер, гид, входные билеты. Еда — за ваш счёт (кроме тура с ужином).',
@@ -1154,7 +1154,7 @@ export default async function handler(req) {
       for (const [, t] of Object.entries(TOURS)) {
         p += `${t.emoji} ${t.name} — от ${t.gel}\n`
       }
-      p += '\n✅ Оплата в день тура.'
+      p += '\n✅ Предоплата 10%, остаток в день тура.'
       await tg(BOT, 'sendMessage', {
         chat_id: cid, text: p, parse_mode: 'HTML', reply_markup: tourGrid('r')
       })
