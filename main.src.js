@@ -97,7 +97,7 @@ const TOURS={
   },
   kazbegi:{
     badge:'live',img:'/images/kazbegi-tour.webp',
-    cat:'Выезд · 12 ч',name:'Казбеги за 1 день',gel:'₾205',usd:'$78',
+    cat:'Выезд · 12 ч',name:'Казбеги за 1 день',gel:'₾175',usd:'$67',
     cat_en:'Day trip · 12 h',name_en:'Kazbegi in 1 day',
     desc:'Военно-Грузинская дорога, крепость Ананури, Гергетская Троица с видом на Казбек 5047м. Один из лучших однодневных маршрутов в мире. Выезд на рассвете — возвращение вечером.',
     desc_en:'Georgian Military Highway, Ananuri fortress, Gergeti Trinity with views of Mt. Kazbek 5047m. One of the world\'s best day trips. Leave at dawn — back in the evening.',
@@ -133,7 +133,7 @@ const TOURS={
   },
   kakheti:{
     badge:'live',img:'/images/kakheti-tour.webp',
-    cat:'Выезд · 10–12 ч',name:'Сигнаги и Кахетия',gel:'₾195',usd:'$74',
+    cat:'Выезд · 10–12 ч',name:'Сигнаги и Кахетия',gel:'₾170',usd:'$65',
     cat_en:'Day trip · 10–12 h',name_en:'Signagi & Kakheti',
     desc:'Город любви Сигнаги, монастырь Бодбе, дегустация квеври-вина в семейном марани и обед у хозяйки. Самый живописный регион Грузии — виноградники, горы, золотая осень круглый год.',
     desc_en:'City of love Signagi, Bodbe monastery, qvevri wine tasting at a family winery, and lunch at a local home. Georgia\'s most scenic region — vineyards, mountains, golden landscapes.',
@@ -420,10 +420,10 @@ function loadSpots(){
 const FORMSPREE_ID='mzdkyywe'
 
 const BK_TOURS=[
-  {id:'kazbegi',      icon:'🏔️',name:'Казбеги за 1 день',         name_en:'Kazbegi in 1 day',           price:'₾205 / чел.', price_en:'$78 / person',  price_usd:78,  price_rub:7200},
+  {id:'kazbegi',      icon:'🏔️',name:'Казбеги за 1 день',         name_en:'Kazbegi in 1 day',           price:'₾175 / чел.', price_en:'$67 / person',  price_usd:78,  price_rub:7200},
   {id:'tbilisi-hidden',icon:'🏙️',name:'Скрытые места Тбилиси',  name_en:'Hidden Tbilisi',              price:'от ₾165 / чел.',price_en:'from $63 / person',price_usd:63,price_rub:5800},
   {id:'kutaisi',      icon:'🏛️',name:'Кутаиси за 1 день',        name_en:'Kutaisi in 1 day',            price:'₾215 / чел.',  price_en:'$70 / person',  price_usd:70,  price_rub:7500},
-  {id:'kakheti',      icon:'🍷',name:'Кахетия — вино и природа', name_en:'Kakheti — wine & nature',     price:'₾195 / чел.', price_en:'$74 / person',  price_usd:74,  price_rub:6900},
+  {id:'kakheti',      icon:'🍷',name:'Кахетия — вино и природа', name_en:'Kakheti — wine & nature',     price:'₾170 / чел.', price_en:'$65 / person',  price_usd:74,  price_rub:6900},
   {id:'batumi',       icon:'🌊',name:'Батуми за 1 день',          name_en:'Batumi in 1 day',             price:'₾237 / чел.',  price_en:'$85 / person',  price_usd:85,  price_rub:8300},
   {id:'borjomi',      icon:'🏔️',name:'Боржоми',                   name_en:'Borjomi',         price:'₾178 / чел.',  price_en:'$68 / person',  price_usd:68,  price_rub:6200},
   {id:'night-tbilisi',icon:'🌙',name:'Ночной Тбилиси',          name_en:'Night Tbilisi',                price:'₾110 / чел.',  price_en:'$42 / person',  price_usd:42,  price_rub:3900},
