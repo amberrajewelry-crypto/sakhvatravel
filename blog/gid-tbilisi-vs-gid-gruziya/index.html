@@ -162,7 +162,7 @@ ul{list-style:none}
 .article-lead{background:#F0FDF4;border-left:3px solid #1A3D2E;border-radius:8px;padding:14px 18px;font-size:16px;color:#1e3a5f;line-height:1.75;margin-bottom:28px}
 h1,h2,h3,.section-title{font-family:'Lora',Georgia,serif !important;font-weight:400 !important}@media(max-width:768px){.foot-grid div h3{font-size:12px}.foot-copy,.foot-legal a{font-size:12px}.foot-links a{padding:8px 0;display:inline-block;min-height:44px;line-height:28px}.foot-legal{gap:0}.foot-legal a{padding:10px 12px;display:inline-block}.fa-inner{font-size:14px}.nav-links a{white-space:nowrap;font-size:12px}}
 body,h1,h2,h3,h4,h5,h6,p,a,span,div,li,td,th,label,input,textarea,button,blockquote{font-family:'Lora',Georgia,serif!important}
-footer p a:not([class]){text-decoration:underline;text-underline-offset:2px}</style>
+footer p a:not([class]){text-decoration:underline;text-underline-offset:2px}@media(max-width:1199px){.nav-links{display:none}.burger{display:flex}}@media(min-width:1200px) and (max-width:1439px){.nav-links{gap:10px}.nav-links a{letter-spacing:.05em;font-size:12px}}</style>
 <!-- PostHog -->
 <script>setTimeout(function(){
 
@@ -449,13 +449,6 @@ function setLang(lang){
   } else {
     var cEn=document.getElementById('content-en');
     if(cEn){ cEn.style.display=''; cRu.style.display='none'; return; }
-    fetch('en.json').then(r=>r.json()).then(d=>{
-      var div=document.createElement('div');
-      div.id='content-en';
-      div.innerHTML=d.html;
-      cRu.parentNode.insertBefore(div,cRu.nextSibling);
-      cRu.style.display='none';
-    }).catch(()=>{ cRu.style.display=''; });
   }
 }
 var _sl=localStorage.getItem('lang');
