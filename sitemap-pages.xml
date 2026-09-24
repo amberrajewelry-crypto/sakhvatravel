@@ -621,4 +621,18 @@
     <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/faq/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/voprosy/"/>
   </url>
+  <url>
+    <loc>https://sakhva-travel.com/razgovornik/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/razgovornik/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/inglisuri-sasaubro/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/razgovornik/"/>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/ge/inglisuri-sasaubro/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/razgovornik/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/inglisuri-sasaubro/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/razgovornik/"/>
+  </url>
 </urlset>
