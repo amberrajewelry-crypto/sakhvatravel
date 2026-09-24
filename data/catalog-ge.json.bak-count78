@@ -1,0 +1,1345 @@
+{
+  "excursions": [
+    {
+      "slug": "rtveli-grape-harvest",
+      "title": "რთველი — ყურძნის მოსავალი კახეთში",
+      "description": "შემოუერთდით რთველს — ყურძნის კრეფას კახეთში: დაწურეთ საწნახელში, დააგემოვნეთ ქვევრის ახალგაზრდა ღვინო. სექ–ოქტ, 7 კაცამდე, 225 ₾-დან.",
+      "price": 225,
+      "currency": "GEL",
+      "hours": 10,
+      "days": 0,
+      "durationText": "10h",
+      "image": "/images/rtveli-vineyard-600.webp",
+      "format": "group",
+      "tags": [
+        "ერთდღიანი ტურები",
+        "კახეთი",
+        "ღვინო",
+        "სეზონური",
+        "კულინარია"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/rtveli-grape-harvest/",
+      "discount": 10
+    },
+    {
+      "slug": "chacha-master-klass",
+      "title": "ჭაჭის მასტერკლასი კახეთში 2026",
+      "description": "ჭაჭის დისტილაციის მასტერკლასი კახეთში ₾170-დან. სრული დღე 09:00. ოჯახური მარანი, სპილენძის ალამბიკი, დააგემოვნეთ 4-5 სახეობა. მხოლოდ ზრდასრულთათვის. კერძო ტური.",
+      "price": 170,
+      "currency": "GEL",
+      "hours": 10,
+      "days": 0,
+      "durationText": "10h",
+      "image": "/images/chacha-tour-600.webp",
+      "format": "group",
+      "tags": [
+        "კულინარია",
+        "მასტერკლასი"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/chacha-master-klass/"
+    },
+    {
+      "slug": "degustatsiya-vina-kakheti",
+      "title": "ღვინის დაგემოვნება კახეთში 2026",
+      "description": "კახეთის ღვინის დაგემოვნების ტური ₾225-დან. 9-10 საათი. 3 მარანი, 6-10 ღვინო, სადილი შედის. თელავის ოჯახური მარანი, წინანდლის მამული. კერძო ტური.",
+      "price": 225,
+      "currency": "GEL",
+      "hours": 11,
+      "days": 0,
+      "durationText": "11h",
+      "image": "/images/degustatsiya-tour-600.webp",
+      "format": "group",
+      "tags": [
+        "კულინარია",
+        "კახეთი"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/degustatsiya-vina-kakheti/",
+      "discount": 10
+    },
+    {
+      "slug": "ekskursiya-ananuri-iz-tbilisi",
+      "title": "ანანურის ციხის ტური თბილისიდან",
+      "description": "ანანურის ციხის ტური თბილისიდან კერძო გიდით ₾175-დან. XVI ს. ციხე, ჟინვალის წყალსაცავი, საქართველოს სამხედრო გზა. 4–5 საათი, 7 ადამიანამდე.",
+      "price": 175,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5h",
+      "image": "/images/ananuri-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "ყაზბეგი"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/ekskursiya-ananuri-iz-tbilisi/",
+      "discount": 10
+    },
+    {
+      "slug": "ekskursiya-borjomi-iz-tbilisi",
+      "title": "ბორჯომის ტური თბილისიდან — მინერალური წყაროები, ეროვნული პარკი და რაბათის ციხე",
+      "description": "ბორჯომის ერთდღიანი ტური თბილისიდან კერძო გიდით ₾178-დან. ცენტრალური პარკი, მინერალური წყაროები, რაბათის ციხე ახალციხე. 10–11 საათი.",
+      "price": 178,
+      "currency": "GEL",
+      "hours": 12,
+      "days": 0,
+      "durationText": "12h",
+      "image": "/images/borjomi-tour-600.webp",
+      "format": "group",
+      "tags": [
+        "ერთდღიანი ტურები"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/ekskursiya-borjomi-iz-tbilisi/",
+      "discount": 10
+    },
+    {
+      "slug": "ekskursiya-gori-iz-tbilisi",
+      "title": "გორი და უფლისციხის ტური თბილისიდან — სრული დღე",
+      "description": "გორის ერთდღიანი ტური თბილისიდან კერძო გიდით ₾155-დან. უფლისციხე გამოქვაბულთა ქალაქი (ჩ.წ.-მდე VI ს.), გორის ციხე, სტალინის მუზეუმი. 7–8 საათი, 7 ადამიანამდე.",
+      "price": 155,
+      "currency": "GEL",
+      "hours": 8,
+      "days": 0,
+      "durationText": "8h",
+      "image": "/images/gori-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "ერთდღიანი ტურები"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/ekskursiya-gori-iz-tbilisi/"
+    },
+    {
+      "slug": "ekskursiya-gudauri-iz-tbilisi",
+      "title": "გუდაურის ტური თბილისიდან — საქართველოს სამხედრო გზა და მეგობრობის თაღი",
+      "description": "გუდაურის ერთდღიანი ტური თბილისიდან კერძო გიდით ₾225-დან. საქართველოს სამხედრო გზა, ანანურის ციხე, მეგობრობის თაღი, სათხილამურო კურორტი 2196 მ. 5–6 საათი.",
+      "price": 225,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5h",
+      "image": "/images/gudauri-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "ყაზბეგი"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/ekskursiya-gudauri-iz-tbilisi/"
+    },
+    {
+      "slug": "ekskursiya-jvari-iz-tbilisi",
+      "title": "ჯვრის მონასტრის ტური თბილისიდან",
+      "description": "ჯვრის მონასტრის ერთდღიანი ტური თბილისიდან კერძო გიდით, ₾145-დან. VI საუკუნის UNESCO-ს ეკლესია მტკვარ-არაგვის შესართავის თავზე. 4 საათი, 7 ადამიანამდე.",
+      "price": 145,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5h",
+      "image": "/images/jvari-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "ყაზბეგი"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/ekskursiya-jvari-iz-tbilisi/"
+    },
+    {
+      "slug": "ekskursiya-kakheti-iz-tbilisi",
+      "title": "ტური კახეთში თბილისიდან — ღვინო, მონასტრები და სიღნაღი",
+      "description": "ერთდღიანი ტური კახეთის ღვინის რეგიონში თბილისიდან კერძო გიდით ₾170-დან. სიღნაღი, ბოდბის მონასტერი, ღვინის დეგუსტაცია. 10–11 საათი, 7 ადამიანამდე.",
+      "price": 170,
+      "currency": "GEL",
+      "hours": 11,
+      "days": 0,
+      "durationText": "11h",
+      "image": "/images/kakheti-tour-600.webp",
+      "format": "group",
+      "tags": [
+        "კახეთი"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/ekskursiya-kakheti-iz-tbilisi/",
+      "discount": 10
+    },
+    {
+      "slug": "ekskursiya-kazbegi-iz-tbilisi",
+      "title": "ყაზბეგის ტური თბილისიდან",
+      "description": "ერთდღიანი ტური ყაზბეგში თბილისიდან კერძო გიდით ₾175-დან. გერგეტის სამების ეკლესია 2170 მ, ჯვრის უღელტეხილი, ანანურის ციხე. 11–12 საათი, 7 ადამიანამდე.",
+      "price": 175,
+      "currency": "GEL",
+      "hours": 14,
+      "days": 0,
+      "durationText": "14h",
+      "image": "/images/kazbegi-tour-600.webp",
+      "format": "group",
+      "tags": [
+        "ყაზბეგი"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/ekskursiya-kazbegi-iz-tbilisi/",
+      "discount": 10
+    },
+    {
+      "slug": "ekskursiya-mtskheta-iz-tbilisi",
+      "title": "ტური მცხეთაში თბილისიდან",
+      "description": "ერთდღიანი ტური მცხეთაში თბილისიდან კერძო გიდით ₾98-დან. საქართველოს უძველესი დედაქალაქი, სვეტიცხოვლის ტაძარი, ჯვრის მონასტერი. 3–4 საათი, 7 ადამიანამდე.",
+      "price": 98,
+      "currency": "GEL",
+      "hours": 4,
+      "days": 0,
+      "durationText": "4h",
+      "image": "/images/mtskheta-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "ერთდღიანი ტურები"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/ekskursiya-mtskheta-iz-tbilisi/",
+      "discount": 10
+    },
+    {
+      "slug": "ekskursiya-sighnaghi-iz-tbilisi",
+      "title": "სიღნაღის ტური თბილისიდან",
+      "description": "სიღნაღის ერთდღიანი ტური თბილისიდან კერძო ტურით ₾175-დან. სიყვარულის ქალაქი კახეთში, ბოდბის მონასტერი, ალაზნის ველის ხედები. 5–6 საათი, 7 ადამიანამდე.",
+      "price": 175,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5h",
+      "image": "/images/sighnaghi-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "კახეთი"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/ekskursiya-sighnaghi-iz-tbilisi/",
+      "discount": 10
+    },
+    {
+      "slug": "ekskursiya-truso",
+      "title": "თრუსოს ხეობის ტური თბილისიდან",
+      "description": "თრუსოს ხეობის ტური თბილისიდან კერძო ტურით ₾265-დან. მინერალური წყაროები, ტრავერტინის ტბები, შუა საუკუნეების სოფელი ზაქაგორი. 14 საათი, 7 ადამიანამდე.",
+      "price": 265,
+      "currency": "GEL",
+      "hours": 14,
+      "days": 0,
+      "durationText": "14h",
+      "image": "/images/truso-tour-600.webp",
+      "format": "group",
+      "tags": [
+        "ყაზბეგი"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/ekskursiya-truso/"
+    },
+    {
+      "slug": "ekskursiya-tusheti",
+      "title": "თუშეთის ტური თბილისიდან",
+      "description": "თუშეთის ტური თბილისიდან კერძო ტურით ₾345-დან/დღეში. აბანოს უღელტეხილი 2926 მ, ომალო 1850 მ, 26 საგუშაგო კოშკი, ღიაა ივნისი–ოქტომბერი. 7 ადამიანამდე.",
+      "price": 345,
+      "currency": "GEL",
+      "hours": 0,
+      "days": 2,
+      "durationText": "48h",
+      "image": "/images/tusheti-tour-600.webp",
+      "format": "group",
+      "tags": [
+        "ერთდღიანი ტურები"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/ekskursiya-tusheti/"
+    },
+    {
+      "slug": "fotosessiya-tbilisi",
+      "title": "თბილისის ფოტოტური 2026",
+      "description": "ოქროს საათის ფოტოტური თბილისში ₾145-დან. 3-4 საათი 06:00-დან. აბანოთუბანი, ძველი ქალაქის აივნები, ნარიყალა, მშვიდობის ხიდი. კერძო ტური.",
+      "price": 145,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5h",
+      "image": "https://sakhva-travel.com/images/photo-tour.webp",
+      "format": "individual",
+      "tags": [
+        "ფოტო"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/fotosessiya-tbilisi/"
+    },
+    {
+      "slug": "gastronomicheskiy-tur-tbilisi",
+      "title": "თბილისი გასტრონომიული ტური 2026",
+      "description": "თბილისის გასტრო-ტური ₾165-დან. 4 საათი. დეზერტირკის ბაზარი, ხაჭაპურის საცხობი, სახინკლე, Barbarestan. საკვები შედის. კერძო ტური.",
+      "price": 165,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5h",
+      "image": "/images/dinner-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "კულინარია"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/gastronomicheskiy-tur-tbilisi/",
+      "discount": 5
+    },
+    {
+      "slug": "khachapuri-master-klass",
+      "title": "ხაჭაპურის მასტერკლასი თბილისში 2026",
+      "description": "ხაჭაპურის სამზარეულო კლასი თბილისში ₾145-დან. 3 საათი კერძო სოლოლაკის სამზარეულოში. ისწავლეთ 3 სახე: იმერული, მეგრული, აჭარული. ქართული ღვინით.",
+      "price": 145,
+      "currency": "GEL",
+      "hours": 4,
+      "days": 0,
+      "durationText": "4h",
+      "image": "/images/khachapuri-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "კულინარია",
+        "მასტერკლასი"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/khachapuri-master-klass/"
+    },
+    {
+      "slug": "kvevri-vino-tur",
+      "title": "ქვევრის ღვინის ტური: უძველესი ტრადიციები",
+      "description": "ქვევრის ღვინის ტური კახეთში კერძო ტურით ₾175-დან. თიხის ამფორები, 8000-წლიანი ტრადიცია, ქარვისფერი ღვინის დეგუსტაცია. 10 საათი, 7 ადამიანამდე.",
+      "price": 175,
+      "currency": "GEL",
+      "hours": 10,
+      "days": 0,
+      "durationText": "10h",
+      "image": "/images/kvevri-tour-600.webp",
+      "format": "group",
+      "tags": [
+        "ღვინო"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/kvevri-vino-tur/"
+    },
+    {
+      "slug": "nochnaya-ekskursiya-tbilisi",
+      "title": "ღამის ტური თბილისში",
+      "description": "ღამის ექსკურსია თბილისში კერძო ტურით ₾100-დან. განათებული ძველი ქალაქი, მშვიდობის ხიდი, ნარიყალა ღამით. 2–3 საათი, დაწყება 20:00.",
+      "price": 100,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5h",
+      "image": "/images/night-tbilisi-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "ღამის"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/nochnaya-ekskursiya-tbilisi/",
+      "discount": 5
+    },
+    {
+      "slug": "priklyuchencheskiy-tur-gruziya",
+      "title": "სათავგადასავლო ტური საქართველოში",
+      "description": "სათავგადასავლო ტური საქართველოში კერძო ტურით ₾395-დან. ყაზბეგის მთები, სვანეთი, რაფტინგი, ლაშქრობა, ზიპლაინი. 1–3 დღე, 7 ადამიანამდე.",
+      "price": 395,
+      "currency": "GEL",
+      "hours": 0,
+      "days": 3,
+      "durationText": "72h",
+      "image": "/images/priklyuchenie-tour-600.webp",
+      "format": "group",
+      "tags": [
+        "აქტიური"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/priklyuchencheskiy-tur-gruziya/"
+    },
+    {
+      "slug": "romanticheskiy-tur-tbilisi",
+      "title": "რომანტიკული ტური თბილისში",
+      "description": "რომანტიკული საღამოს ტური თბილისში წყვილებისთვის ₾165-დან. ვახშამი სანთლების შუქზე, ნარიყალას ციხე მზის ჩასვლისას, ღვინო ძველ ქალაქში. დაწყება 19:00, 4–5 საათი.",
+      "price": 165,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5h",
+      "image": "https://sakhva-travel.com/images/night-tbilisi-tour.webp",
+      "format": "individual",
+      "tags": [
+        "რომანტიკა"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/romanticheskiy-tur-tbilisi/"
+    },
+    {
+      "slug": "sovetskiy-tur-tbilisi",
+      "title": "საბჭოთა არქიტექტურა თბილისში — ბრუტალიზმის საფეხმავლო ტური",
+      "description": "საბჭოთა თბილისის ტური კერძო ტურით ₾135-დან/ადამიანი. ბრუტალიზმი, საბჭოთა მოზაიკები, მეტროს ხელოვნება, საწესჩვეულებო სასახლე. 4–5 საათი, იწყება 10:00.",
+      "price": 135,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5h",
+      "image": "/images/soviet-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "ძველი თბილისი"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/sovetskiy-tur-tbilisi/"
+    },
+    {
+      "slug": "tur-batumi-iz-tbilisi",
+      "title": "ბათუმის ტური თბილისიდან 2026",
+      "description": "ბათუმის ტური თბილისიდან კერძო ტურით ₾250-დან. შავი ზღვის სანაპირო, გონიოს ციხე, ბოტანიკური ბაღი. 2 დღე, 7 ადამიანამდე.",
+      "price": 250,
+      "currency": "GEL",
+      "hours": 15,
+      "days": 0,
+      "durationText": "15h",
+      "image": "/images/batumi-tour-600.webp",
+      "format": "group",
+      "tags": [
+        "ბათუმი"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/tur-batumi-iz-tbilisi/",
+      "discount": 15
+    },
+    {
+      "slug": "tur-dlya-emigrantov-tbilisi",
+      "title": "ციფრული ნომადის მისამართვის ტური თბილისი — ქოვორქინგი &amp; კაფეები",
+      "description": "თბილისის ორიენტაციის ტური ემიგრანტებისა და ციფრული მომთაბარეებისათვის ₾123-დან. უბნები, ბანკები, SIM ბარათები, ქოვორქინგი, ადგილობრივი ცხოვრება.",
+      "price": 123,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5h",
+      "image": "/images/digital-nomad-tour.webp",
+      "format": "individual",
+      "tags": [
+        "ექსპატები"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/tur-dlya-emigrantov-tbilisi/"
+    },
+    {
+      "slug": "tur-dlya-pensionerov-gruziya",
+      "title": "ხანდაზმულთა ტური საქართველოში",
+      "description": "ხანდაზმულთათვის მოსახერხებელი ტური საქართველოში კერძო ტურით ₾145-დან. კომფორტული ტემპი, კულტურული სიღრმე, აჩქარების გარეშე. 4–8 საათი, 4 ადამიანამდე.",
+      "price": 145,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5h",
+      "image": "/images/pensionery-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "ოჯახური"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/tur-dlya-pensionerov-gruziya/"
+    },
+    {
+      "slug": "tur-gruziya-leto",
+      "title": "საზაფხულო ტური საქართველოში",
+      "description": "საზაფხულო ტური საქართველოში კერძო ტურით ₾750-დან. თბილისის გოგირდის აბანოები, ყაზბეგის მთები, კახეთის ღვინო, ბათუმის პლაჟი. 6–8 დღე, 7 ადამიანამდე.",
+      "price": 750,
+      "currency": "GEL",
+      "hours": 0,
+      "days": 7,
+      "durationText": "168h",
+      "image": "/images/leto-batumi-tour-600.webp",
+      "format": "group",
+      "tags": [
+        "სეზონური"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/tur-gruziya-leto/"
+    },
+    {
+      "slug": "tur-gruziya-noviy-god",
+      "title": "სახალხო ახალი წლის ტური საქართველოში",
+      "description": "ახალი წლის ტური საქართველოში კერძო ექსკურსიით ₾850-დან. ფეიერვერკი თბილისში, ყაზბეგი ან გუდაური, თოვლიანი კახეთი. 5–7 დღე. ადრე დაჯავშნეთ.",
+      "price": 850,
+      "currency": "GEL",
+      "hours": 0,
+      "days": 5,
+      "durationText": "120h",
+      "image": "/images/noviy-god-tour-600.webp",
+      "format": "group",
+      "tags": [
+        "სეზონური"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/tur-gruziya-noviy-god/"
+    },
+    {
+      "slug": "tur-kutaisi-iz-tbilisi",
+      "title": "ქუთაისის ტური თბილისიდან 2026",
+      "description": "ერთდღიანი ტური ქუთაისში თბილისიდან კერძო გიდთან ₾183-დან. გელათის UNESCO-ს ტაძარი, პრომეთეს გამოქვაბული, ოკაცეს კანიონი. 12-13 საათი.",
+      "price": 183,
+      "currency": "GEL",
+      "hours": 13,
+      "days": 0,
+      "durationText": "13h",
+      "image": "/images/kutaisi-tour-600.webp",
+      "format": "group",
+      "tags": [
+        "ერთდღიანი ტურები"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/tur-kutaisi-iz-tbilisi/"
+    },
+    {
+      "slug": "tur-po-hramam-tbilisi",
+      "title": "თბილისის ეკლესიებისა &amp; ტაძრების ტური",
+      "description": "თბილისის ეკლესიებისა და ტაძრების კერძო ტური ₾145-დან. სიონი, მეტეხი, სამება, ანჩისხატი. მართლმადიდებლური ქრისტიანობის ისტორია საქართველოში. 3–4 საათი.",
+      "price": 145,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5h",
+      "image": "/images/hramy-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "საფეხმავლო"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/tur-po-hramam-tbilisi/"
+    },
+    {
+      "slug": "tur-batumi-2-dnya",
+      "title": "5-დღიანი ტური თბილისიდან ბათუმამდე 2026",
+      "description": "5-დღიანი ტური თბილისიდან ბათუმამდე კერძო გიდით ₾650-დან. გორი, ბორჯომი, ქუთაისი, შავი ზღვა. სასტუმრო შედის, მაქსიმუმ 7 ადამიანი.",
+      "price": 650,
+      "currency": "GEL",
+      "hours": 15,
+      "days": 2,
+      "durationText": "2 days",
+      "image": "/images/tbilisi-batumi-tour-600.webp",
+      "format": "group",
+      "tags": [
+        "ბათუმი"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/tur-batumi-2-dnya/"
+    },
+    {
+      "slug": "vinniy-marshrut-alazani",
+      "title": "ალაზნის ველის ღვინის მარშრუტი 2026",
+      "description": "ალაზნის ველის ღვინის მარშრუტი ₾175-დან. სრული დღე 08:00. თელავი, წინანდალი, ყინძმარაული. 2-3 მარანი, 8-10 ღვინო, სადილი შედის. კერძო ტური.",
+      "price": 175,
+      "currency": "GEL",
+      "hours": 4,
+      "days": 0,
+      "durationText": "4h",
+      "image": "/images/alazani-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "ღვინო",
+        "კახეთი"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/vinniy-marshrut-alazani/"
+    },
+    {
+      "slug": "vinniy-tur-tbilisi",
+      "title": "თბილისის ღვინის ბარების ტური 2026",
+      "description": "საღამოს ღვინის ბარების ტური თბილისში ₾165-დან. 4 საათი. 3-4 ღვინის ბარი ფეხით: ღვინო Underground, Vino Underground, g.Vino. ქართული ნატურალური ღვინო.",
+      "price": 165,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5h",
+      "image": "/images/vinniy-bar-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "ღვინო"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/vinniy-tur-tbilisi/"
+    },
+    {
+      "slug": "vinodelie-kindzmarauli",
+      "title": "ყინძმარაულის მარნის ტური 2026",
+      "description": "ყინძმარაულის მარნის ტური კახეთში კერძო ტურით ₾225-დან. ლეგენდარული ნახევრადტკბილი ღვინო, ალაზნის ველი, 6 ჯიშის დეგუსტაცია. 10 საათი.",
+      "price": 225,
+      "currency": "GEL",
+      "hours": 10,
+      "days": 0,
+      "durationText": "10h",
+      "image": "/images/kindzmarauli-tour-600.webp",
+      "format": "group",
+      "tags": [
+        "ღვინო",
+        "კახეთი"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/vinodelie-kindzmarauli/"
+    },
+    {
+      "slug": "art-tur-tbilisi",
+      "title": "თბილისის არტ-ტური 2026",
+      "description": "თბილისის ქუჩისა და თანამედროვე ხელოვნების ტური ₾145-დან. 4 საათი. ჩუღურეთის მიურალები, Fabrika, საქართველოს ეროვნული გალერეა (ფიროსმანი). კერძო ტური.",
+      "price": 145,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5h",
+      "image": "/images/art-tur-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "საფეხმავლო",
+        "ძველი თბილისი"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/art-tur-tbilisi/"
+    },
+    {
+      "slug": "ekskursiya-abanotubani",
+      "title": "აბანოთუბნის ტური — გოგირდის აბანოები, დამალული ჩანჩქერი და სამი სარწმუნოება",
+      "description": "აბანოთუბნის გოგირდის აბანოების უბნის ტური თბილისში კერძო გიდით ₾135-დან. აგურის გუმბათები, ლეღვთახევის ჩანჩქერი, მეჩეთი და სინაგოგა. 3 საათი.",
+      "price": 135,
+      "currency": "GEL",
+      "hours": 3,
+      "days": 0,
+      "durationText": "3h",
+      "image": "/images/abanotubani-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "ძველი თბილისი"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/ekskursiya-abanotubani/"
+    },
+    {
+      "slug": "ekskursiya-david-gareji",
+      "title": "დავით გარეჯის ტური — გამოქვაბულის მონასტერი და შუასაუკუნეების ფრესკები უდაბნო ქედზე",
+      "description": "დავით გარეჯის გამოქვაბულის მონასტრის ერთდღიანი ტური თბილისიდან კერძო გიდით ₾225-დან. VI საუკუნის ლავრა, უდაბნოს ფრესკები საქართველო-აზერბაიჯანის საზღვარზე.",
+      "price": 225,
+      "currency": "GEL",
+      "hours": 12,
+      "days": 0,
+      "durationText": "12h",
+      "image": "/images/david-gareji-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "ერთდღიანი ტურები"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/ekskursiya-david-gareji/",
+      "discount": 5
+    },
+    {
+      "slug": "ekskursiya-mtatsminda",
+      "title": "მთაწმინდის ტური — თბილისი",
+      "description": "მთაწმინდის მთის ტური თბილისში კერძო ტურით ₾145-დან. ფუნიკულიორი 1905, პანთეონი, პანორამული ხედები 770 მ-ზე. 3-4 საათი, 7 ადამიანამდე.",
+      "price": 145,
+      "currency": "GEL",
+      "hours": 3,
+      "days": 0,
+      "durationText": "3h",
+      "image": "/images/mtatsminda-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "ძველი თბილისი"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/ekskursiya-mtatsminda/"
+    },
+    {
+      "slug": "ekskursiya-narikala",
+      "title": "ნარიყალას ციხის ტური — საბაგირო, პანორამა &amp; ბოტანიკური ბაღის ჩანჩქერი",
+      "description": "ნარიყალას ციხის ტური თბილისში კერძო ტურით ₾135-დან. IV საუკუნის ციტადელი, საბაგირო რიყის პარკიდან, პანორამული ხედები. 3 საათი.",
+      "price": 135,
+      "currency": "GEL",
+      "hours": 3,
+      "days": 0,
+      "durationText": "3h",
+      "image": "/images/narikala-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "ძველი თბილისი"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/ekskursiya-narikala/"
+    },
+    {
+      "slug": "ekskursiya-stary-tbilisi",
+      "title": "ძველი თბილისის ფეხით ტური — დამალული ეზოები და 1500 წლიანი ისტორია",
+      "description": "ძველი თბილისის ფეხით ტური კერძო გიდით ₾135-დან. თავისუფლების მოედანი, სიონის ტაძარი, აბანოთუბანი, ნარიყალა, მეტეხი. 5 საათი.",
+      "price": 135,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5h",
+      "image": "https://sakhva-travel.com/images/old-tbilisi-tour.webp",
+      "format": "individual",
+      "tags": [
+        "ძველი თბილისი",
+        "მასტერკლასი",
+        "საფეხმავლო"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/ekskursiya-stary-tbilisi/",
+      "discount": 15
+    },
+    {
+      "slug": "ekskursiya-uplistsikhe-iz-tbilisi",
+      "title": "უფლისციხის გამოქვაბულთა ქალაქის ტური თბილისიდან",
+      "description": "უფლისციხის გამოქვაბულთა ქალაქის ტური თბილისიდან კერძო ტურით ₾175-დან. 3000 წლის გამოქვაბულთა კომპლექსი, გორი, სურვილისამებრ მცხეთა. 7-8 საათი, 7 ადამიანამდე.",
+      "price": 175,
+      "currency": "GEL",
+      "hours": 10,
+      "days": 0,
+      "durationText": "10h",
+      "image": "/images/uplistsikhe-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "ერთდღიანი ტურები"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/ekskursiya-uplistsikhe-iz-tbilisi/"
+    },
+    {
+      "slug": "ekskursiya-vardzia",
+      "title": "ვარძიის გამოქვაბულის მონასტერი ერთდღიანი ტური თბილისიდან",
+      "description": "ვარძიის გამოქვაბულის მონასტერი ერთდღიანი ტური თბილისიდან კერძო ტურით ₾295-დან. XII საუკუნის მონასტერი, 3000 გამოქვაბული, რაბათის ციხე. სრული დღის ტური.",
+      "price": 295,
+      "currency": "GEL",
+      "hours": 14,
+      "days": 0,
+      "durationText": "14h",
+      "image": "/images/vardzia-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "ერთდღიანი ტურები"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/ekskursiya-vardzia/"
+    },
+    {
+      "slug": "ekskursiya-zugdidi",
+      "title": "ზუგდიდის ტური — დადიანების სასახლის ერთდღიანი ტური",
+      "description": "ზუგდიდის ერთდღიანი ტური თბილისიდან კერძო ტურით ₾255-დან. დადიანების სასახლე, ბოტანიკური ბაღი, სვანეთის კარიბჭე. სრული დღის ტური.",
+      "price": 255,
+      "currency": "GEL",
+      "hours": 14,
+      "days": 0,
+      "durationText": "14h",
+      "image": "/images/zugdidi-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "ერთდღიანი ტურები"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/ekskursiya-zugdidi/"
+    },
+    {
+      "slug": "family-tur-tbilisi",
+      "title": "ოჯახური ტური თბილისში",
+      "description": "ოჯახური ტური თბილისში კერძო ტურით ₾165-დან. ბავშვებისთვის მოსახერხებელი მარშრუტი: ნარიყალას ციხე, გოგირდის აბანოები, თოჯინების თეატრი. 5–6 საათი, 8 ადამიანამდე.",
+      "price": 165,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5h",
+      "image": "/images/family-tur-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "ოჯახური"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/family-tur-tbilisi/"
+    },
+    {
+      "slug": "gruppa-10-chelovek-tbilisi",
+      "title": "ჯგუფური ტური თბილისი — 10+ ადამიანი",
+      "description": "ჯგუფური ტური თბილისში 10+-ისთვის ₾95-დან/ადამიანი. ყაზბეგი, მცხეთა, ღვინის მხარე. სრული დღე კერძო ტურით. სკოლები, კორპორატიული, ოჯახები.",
+      "price": 95,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5h",
+      "image": "/images/gruppa-tour-600.webp",
+      "format": "group",
+      "tags": [
+        "ერთდღიანი ტურები"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/gruppa-10-chelovek-tbilisi/"
+    },
+    {
+      "slug": "korporativniy-tur-tbilisi",
+      "title": "კორპორატიული ტური თბილისში",
+      "description": "კორპორატიული ტური თბილისში 5–30 კაციანი ჯგუფებისთვის ₾2200-დან. თიმბილდინგი, ღვინის დეგუსტაცია, კულტურული პროგრამა, კერძო ტური. სრული დღე.",
+      "price": 2200,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5h",
+      "image": "/images/korporativ-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "მასტერკლასი"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/korporativniy-tur-tbilisi/"
+    },
+    {
+      "slug": "shopping-tur-tbilisi",
+      "title": "შოპინგ ტური თბილისში",
+      "description": "შოპინგ ტური თბილისში კერძო ტურით ₾145-დან. მშრალი ხიდის ბაზრობა, ხელოსნების სახელოსნოები, სანელებლების ბაზარი, ადგილობრივი მოდა. 4 საათი, 4 ადამიანამდე.",
+      "price": 145,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5h",
+      "image": "/images/shopping-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "ძველი თბილისი"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/shopping-tur-tbilisi/"
+    },
+    {
+      "slug": "svadebny-tur-gruziya",
+      "title": "საქორწინო ტური საქართველოში",
+      "description": "საქართველოში საქორწინო ტური კერძო ტურით ₾1500-დან. თბილისი, მცხეთა, ყაზბეგი. ცერემონიის ორგანიზება, რომანტიკული პროგრამა, 20 სტუმრამდე. 1–3 დღე.",
+      "price": 1500,
+      "currency": "GEL",
+      "hours": 0,
+      "days": 3,
+      "durationText": "72h",
+      "image": "/images/svadba-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "ფოტო",
+        "რომანტიკა"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/svadebny-tur-gruziya/"
+    },
+    {
+      "slug": "transfer-aeroport-tbilisi",
+      "title": "აეროპორტის ტრანსფერი თბილისი",
+      "description": "დაჯავშნეთ ტრანსფერები საქართველოში ონლაინ — თბილისის აეროპორტი $25-დან, ყაზბეგი, ბათუმი, ქუთაისი, ბორჯომი. ფიქსირებული ფასი, დახვედრა, ფრენის თვალყურის დევნება.",
+      "price": 90,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5h",
+      "image": "/images/transfer-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "ერთდღიანი ტურები"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/transfer-aeroport-tbilisi/"
+    },
+    {
+      "slug": "tur-dlya-detey-tbilisi",
+      "title": "ბავშვების ტური თბილისში",
+      "description": "ოჯახისთვის გამოსადეგი თბილისის ტური კერძო ტურთან ერთად — თბილისის ზოოპარკი, ბოტანიკური ბაღი, საბაგირო, თოჯინების თეატრი, ბავშვებს მოეწონება რესტორნები.",
+      "price": 135,
+      "currency": "GEL",
+      "hours": 5,
+      "days": 0,
+      "durationText": "5h",
+      "image": "/images/deti-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "ოჯახური",
+        "აქტიური"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/tur-dlya-detey-tbilisi/"
+    },
+    {
+      "slug": "ekskursiya-svaneti-iz-tbilisi",
+      "title": "სვანეთის ტური თბილისიდან",
+      "description": "სვანეთის ტური თბილისიდან კერძო ტურით ₾345-დან/დღეში. UNESCO სვანური კოშკები XI-XII ს., მესტია 1500 მ, მყინვარები 4000 მ+. 2-3 დღე, 7 ადამიანამდე.",
+      "price": 345,
+      "currency": "GEL",
+      "hours": 0,
+      "days": 3,
+      "durationText": "2-3 days",
+      "image": "/images/svaneti-tour-600.webp",
+      "format": "group",
+      "tags": [
+        "ერთდღიანი ტურები",
+        "მთა"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/ekskursiya-svaneti-iz-tbilisi/",
+      "discount": 15
+    },
+    {
+      "slug": "lednik-chalaadi-mestia",
+      "title": "ჭალაადის მყინვარი მესტიიდან — ჯიპი და ლაშქრობა",
+      "description": "ჭალაადის მყინვარი მესტიიდან ნახევარ დღეში: ჯიპი ხიდამდე, შემდეგ ~2 საათი ფეხით ტყეში მყინვარის ენამდე. ₾400-დან ჯიპზე 6 კაცამდე.",
+      "price": 400,
+      "currency": "GEL",
+      "hours": 4,
+      "days": 0,
+      "durationText": "4სთ",
+      "image": "/images/chalaadi-tour-600.webp",
+      "format": "group",
+      "tags": [
+        "ერთდღიანი ტურები",
+        "მთა",
+        "აქტიური"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/lednik-chalaadi-mestia/"
+    },
+    {
+      "slug": "ushguli-iz-mestii",
+      "title": "უშგული მესტიიდან — UNESCO სოფელი",
+      "description": "უშგული მესტიიდან ჯიპით: ევროპის ყველაზე მაღალმთიანი დასახლებული სოფელი (2200 მ), UNESCO-ს სვანური კოშკები, ლამარიას ტაძარი. ₾650-დან ჯიპზე.",
+      "price": 650,
+      "currency": "GEL",
+      "hours": 9,
+      "days": 0,
+      "durationText": "9სთ",
+      "image": "/images/ushguli-tour-600.webp",
+      "format": "group",
+      "tags": [
+        "ერთდღიანი ტურები",
+        "მთა"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/ushguli-iz-mestii/"
+    },
+    {
+      "slug": "ushguli-shkhara-lednik",
+      "title": "უშგული და შხარას მყინვარი — მთელი დღე",
+      "description": "უშგული და შხარას მყინვარის ლაშქრობა: UNESCO სოფელი 2200 მ და საქართველოს უმაღლესი მწვერვალის (5193 მ) ძირი ერთ დღეში. ₾750-დან ჯიპზე.",
+      "price": 750,
+      "currency": "GEL",
+      "hours": 10,
+      "days": 0,
+      "durationText": "10სთ",
+      "image": "/images/shkhara-tour-600.webp",
+      "format": "group",
+      "tags": [
+        "ერთდღიანი ტურები",
+        "მთა",
+        "აქტიური"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/ushguli-shkhara-lednik/"
+    },
+    {
+      "slug": "ozero-koruldi-mestia",
+      "title": "კორულდის ტბები მესტიიდან ჯიპით",
+      "description": "კორულდის ტბები მესტიიდან: ალპური პლატო 2750 მ ხედით უშბასა და თეთნულდზე, სვანეთის საუკეთესო ხედი. ჯიპი 4×4 ციცაბო გზაზე. ₾400-დან ჯიპზე.",
+      "price": 400,
+      "currency": "GEL",
+      "hours": 4,
+      "days": 0,
+      "durationText": "4სთ",
+      "image": "/images/koruldi-tour-600.webp",
+      "format": "group",
+      "tags": [
+        "ერთდღიანი ტურები",
+        "მთა",
+        "აქტიური"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/ozero-koruldi-mestia/"
+    },
+    {
+      "slug": "tur-gruziya-3-dnya",
+      "title": "საქართველოს 3-დღიანი ტური 2026",
+      "description": "3-დღიანი საქართველოს ტური თბილისიდან ₾450-დან. თბილისი ქალაქი, ყაზბეგის მთები (გერგეტი 2170 მ), კახეთის ღვინის რეგიონი. კერძო ტური, სასტუმროები შედის.",
+      "price": 450,
+      "currency": "GEL",
+      "hours": 0,
+      "days": 3,
+      "durationText": "3 days",
+      "image": "/images/3-dnya-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "მრავალდღიანი"
+      ],
+      "type": "tour",
+      "url": "/ge/ekskursiya/tur-gruziya-3-dnya/",
+      "discount": 10
+    },
+    {
+      "slug": "tur-gruziya-5-dney",
+      "title": "საქართველოს 5-დღიანი ტური 2026",
+      "description": "5-დღიანი საქართველოს ტური ₾1200-დან. თბილისი, მცხეთა, გორი, ყაზბეგი, კახეთი, დეზერტირების ბაზარი. კერძო ტური, სასტუმროები შედის.",
+      "price": 1200,
+      "currency": "GEL",
+      "hours": 0,
+      "days": 5,
+      "durationText": "5 days",
+      "image": "/images/5-dney-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "მრავალდღიანი"
+      ],
+      "type": "tour",
+      "url": "/ge/ekskursiya/tur-gruziya-5-dney/"
+    },
+    {
+      "slug": "tur-gruziya-7-dney",
+      "title": "7-დღიანი ტური საქართველოში 2026",
+      "description": "7-დღიანი ტური საქართველოში ₾595-დან. სასტუმრო და საუზმე შედის ღირებულებაში. თბილისი, ყაზბეგი, კახეთი, ბათუმი, ქუთაისი. 2 ღვინის დეგუსტაცია. პირადი ტური.",
+      "price": 595,
+      "currency": "GEL",
+      "hours": 0,
+      "days": 7,
+      "durationText": "7 days",
+      "image": "/images/7-dney-tour-600.webp",
+      "format": "group",
+      "tags": [
+        "მრავალდღიანი"
+      ],
+      "type": "tour",
+      "url": "/ge/ekskursiya/tur-gruziya-7-dney/"
+    },
+    {
+      "slug": "tur-gruziya-10-dney",
+      "title": "საქართველო 10-დღიანი ტური 2026 — სრული ჩაძირვა",
+      "description": "10-დღიანი ტური საქართველოში ₾3200-დან. 6 რეგიონი: თბილისი, მცხეთა, გორი, ყაზბეგი, კახეთი, სვანეთი, ბათუმი. სასტუმრო შეტანილია. კერძო ტური.",
+      "price": 3200,
+      "currency": "GEL",
+      "hours": 0,
+      "days": 10,
+      "durationText": "10 days",
+      "image": "/images/10-dney-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "მრავალდღიანი"
+      ],
+      "type": "tour",
+      "url": "/ge/ekskursiya/tur-gruziya-10-dney/"
+    },
+    {
+      "slug": "tur-gruziya-armeniya",
+      "title": "საქართველო–სომხეთის ტური",
+      "description": "საქართველო–სომხეთის ტური კერძო ექსკურსიით ₾950-დან. თბილისი, ყაზბეგი, ერევანი, გარნი, გეღარდი, სევანის ტბა. 7–10 დღე, მაქსიმუმ 7 ადამიანი.",
+      "price": 950,
+      "currency": "GEL",
+      "hours": 0,
+      "days": 7,
+      "durationText": "7-10 days",
+      "image": "/images/armeniya-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "მრავალდღიანი"
+      ],
+      "type": "tour",
+      "url": "/ge/ekskursiya/tur-gruziya-armeniya/"
+    },
+    {
+      "slug": "tur-kazbegi-kakheti-2-dnya",
+      "title": "ყაზბეგი და კახეთი — ორდღიანი ტური 2026",
+      "description": "ორდღიანი ტური: ყაზბეგის მთები (გერგეტის ტაძარი 2170მ) + კახეთის სამეღვინეო რეგიონი (სიღნაღი). კერძო ტური ₾550-დან. სასტუმრო შედის ფასში.",
+      "price": 550,
+      "currency": "GEL",
+      "hours": 0,
+      "days": 4,
+      "durationText": "3-4 days",
+      "image": "/images/tbilisi-kazbegi-kakheti-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "მრავალდღიანი"
+      ],
+      "type": "tour",
+      "url": "/ge/ekskursiya/tur-kazbegi-kakheti-2-dnya/"
+    },
+    {
+      "slug": "tur-svaneti-4-dnya",
+      "title": "სვანეთის ტური 2026",
+      "description": "4–5-დღიანი ტური სვანეთში თბილისიდან ₾750-დან. მესტია, სვანური კოშკები, ჭალაათის მყინვარი, უშგული (2200 მ). ღიაა მაისი–ოქტომბერი. კერძო ტური.",
+      "price": 750,
+      "currency": "GEL",
+      "hours": 0,
+      "days": 5,
+      "durationText": "4-5 days",
+      "image": "/images/svaneti-4day-600.webp",
+      "format": "individual",
+      "tags": [
+        "მრავალდღიანი",
+        "მთა"
+      ],
+      "type": "tour",
+      "url": "/ge/ekskursiya/tur-svaneti-4-dnya/"
+    },
+    {
+      "slug": "tur-vsya-gruziya",
+      "title": "მთელი საქართველოს ტური 2026",
+      "description": "მთელი საქართველოს მოდულური ტური ₾1400-დან. 10-14 დღე: თბილისი, მცხეთა, ყაზბეგი, კახეთი, ბორჯომი, ვარძია, ქუთაისი, სვანეთი, ბათუმი. კერძო ტური.",
+      "price": 1400,
+      "currency": "GEL",
+      "hours": 0,
+      "days": 14,
+      "durationText": "10-14 days",
+      "image": "/images/vsya-gruziya-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "მრავალდღიანი"
+      ],
+      "type": "tour",
+      "url": "/ge/ekskursiya/tur-vsya-gruziya/"
+    },
+    {
+      "slug": "ekskursiya-telavi-iz-tbilisi",
+      "title": "თელავის ტური თბილისიდან — კახეთის დედაქალაქი",
+      "description": "თელავის ტური თბილისიდან კერძო ტურით ₾185-დან. ალავერდის ტაძარი, ბატონისციხე, ოჯახური მარანი. 11 საათი, 7 ადამიანამდე.",
+      "price": 185,
+      "currency": "GEL",
+      "hours": 11,
+      "days": 0,
+      "durationText": "11h",
+      "image": "/images/telavi-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "ერთდღიანი ტურები",
+        "კახეთი",
+        "ღვინო"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/ekskursiya-telavi-iz-tbilisi/",
+      "discount": 10
+    },
+    {
+      "slug": "ekskursiya-gomis-mta-iz-batumi",
+      "title": "გომის მთა და მაჭახელა ბათუმიდან",
+      "description": "ერთდღიანი ტური გომის მთაზე (2755მ) და მაჭახელას ხეობაზე ბათუმიდან. მთის მწვერვალები შავი ზღვის თავზე, ჩანჩქერები, შუასაუკუნეების ხიდები. კერძო ტური ₾220-დან.",
+      "price": 220,
+      "currency": "GEL",
+      "hours": 9,
+      "days": 0,
+      "durationText": "9h",
+      "image": "/images/gomis-mta-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "ერთდღიანი ტურები",
+        "ბათუმი",
+        "აქტიური",
+        "მთა"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/ekskursiya-gomis-mta-iz-batumi/"
+    },
+    {
+      "slug": "ekskursiya-dashbashi-iz-tbilisi",
+      "title": "დაშბაშის კანიონის ტური თბილისიდან — ბრილიანტის ჩანჩქერი და შუშის ხიდი",
+      "description": "დაშბაშის კანიონის ერთდღიანი ტური თბილისიდან კერძო გიდით ₾135-დან. ბრილიანტის ჩანჩქერი, შუშის ხიდი, წალკის წყალსაცავი. 8–9 საათი, 7 ადამიანამდე.",
+      "price": 135,
+      "currency": "GEL",
+      "hours": 9,
+      "days": 0,
+      "durationText": "8–9h",
+      "image": "/images/dashbashi-canyon-tour.webp",
+      "format": "group",
+      "tags": [
+        "ერთდღიანი ტურები",
+        "აქტიური"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/ekskursiya-dashbashi-iz-tbilisi/"
+    },
+    {
+      "slug": "ekskursiya-kanyony-zapadnoy-gruzii",
+      "title": "დასავლეთ საქართველოს კანიონების ტური — მარტვილი, ოკაცე &amp; პრომეთეს მღვიმე",
+      "description": "დასავლეთ საქართველოს კანიონების ერთდღიანი ტური თბილისიდან გიდით ₾180-დან. მარტვილში ნავით სეირნობა, ოკაცეს კანიონი, კინჩხის ჩანჩქერი და პრომეთეს მღვიმე.",
+      "price": 180,
+      "currency": "GEL",
+      "hours": 13,
+      "days": 0,
+      "durationText": "12–13h",
+      "image": "/images/kanyony-zapadnoy-gruzii-tour.webp",
+      "format": "group",
+      "tags": [
+        "ერთდღიანი ტურები",
+        "აქტიური"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/ekskursiya-kanyony-zapadnoy-gruzii/"
+    },
+    {
+      "slug": "ekskursiya-racha-iz-tbilisi",
+      "title": "რაჭის ტური თბილისიდან — ნიკორწმინდა, შაორის ტბა &amp; ხვანჭკარას ღვინო",
+      "description": "რაჭის ერთდღიანი ტური თბილისიდან გიდით ₾290-დან. კვეთილი ნიკორწმინდის ეკლესია, შაორის ტბა, მთის სოფლები და ხვანჭკარას ღვინო. 12–13 სთ.",
+      "price": 290,
+      "currency": "GEL",
+      "hours": 13,
+      "days": 0,
+      "durationText": "12–13h",
+      "image": "/images/racha-tur-nikortsminda.webp",
+      "format": "group",
+      "tags": [
+        "ერთდღიანი ტურები",
+        "მთა",
+        "ღვინო"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/ekskursiya-racha-iz-tbilisi/"
+    },
+    {
+      "slug": "ekskursiya-hevsuretia-shatili",
+      "title": "ხევსურეთის ტური თბილისიდან — შატილი და მუცო (4x4)",
+      "description": "ხევსურეთის 4x4 ერთდღიანი ტური თბილისიდან კერძო გიდით ₾340-დან. შატილის შუასაუკუნეების კოშკები, მუცოს ციხე, დათვისჯვრის უღელტეხილი.",
+      "price": 340,
+      "currency": "GEL",
+      "hours": 14,
+      "days": 0,
+      "durationText": "13–14h",
+      "image": "/images/hevsureti-shatili-tour.webp",
+      "format": "group",
+      "tags": [
+        "ერთდღიანი ტურები",
+        "მთა",
+        "აქტიური"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/ekskursiya-hevsuretia-shatili/"
+    },
+    {
+      "slug": "ekskursiya-bakuriani-iz-tbilisi",
+      "title": "ბაკურიანის ტური თბილისიდან — მთის კურორტი და კბილანა მატარებელი",
+      "description": "ბაკურიანის ერთდღიანი ტური თბილისიდან გიდით ₾160-დან. მთის კურორტი, ისტორიული ვიწროლიანდაგიანი რკინიგზა, საბაგიროები და ფიჭვნარი. 9–10 სთ.",
+      "price": 160,
+      "currency": "GEL",
+      "hours": 10,
+      "days": 0,
+      "durationText": "9–10h",
+      "image": "/images/bakuriani-tour.webp",
+      "format": "group",
+      "tags": [
+        "ერთდღიანი ტურები",
+        "მთა",
+        "ოჯახური"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/ekskursiya-bakuriani-iz-tbilisi/"
+    },
+    {
+      "slug": "ekskursiya-ureki-iz-tbilisi",
+      "title": "ურეკის ტური თბილისიდან — შავი ზღვის მაგნიტური ქვიშის პლაჟი",
+      "description": "ურეკის ერთდღიანი ტური თბილისიდან კერძო ტურით ₾180-დან. შავი მაგნიტური ქვიშა, თბილი არაღრმა შავი ზღვა და ოჯახური პლაჟი. 12 საათი, 7 ადამიანამდე.",
+      "price": 180,
+      "currency": "GEL",
+      "hours": 12,
+      "days": 0,
+      "durationText": "12h",
+      "image": "/images/ureki-magnitnye-peski.webp",
+      "format": "group",
+      "tags": [
+        "ერთდღიანი ტურები",
+        "ოჯახური",
+        "სეზონური"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/ekskursiya-ureki-iz-tbilisi/"
+    },
+    {
+      "slug": "progulka-po-kure-tbilisi",
+      "title": "ნავით სეირნობა მტკვარზე თბილისში — მზის ჩასვლის კრუიზი",
+      "description": "ნავით სეირნობა მდინარე მტკვარზე თბილისში გიდით ₾80-დან. მეტეხი, მშვიდობის ხიდი და ნარიყალა წყლიდან. 30 წუთი, საუკეთესოა მზის ჩასვლისას.",
+      "price": 80,
+      "currency": "GEL",
+      "hours": 2,
+      "days": 0,
+      "durationText": "1.5–2h",
+      "image": "/images/progulka-po-kure-tbilisi.webp",
+      "format": "group",
+      "tags": [
+        "ძველი თბილისი",
+        "რომანტიკა"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/progulka-po-kure-tbilisi/"
+    },
+    {
+      "slug": "konny-tur-stepantsminda",
+      "title": "ცხენით ტური სტეფანწმინდაში (ყაზბეგი) — ცხენით გერგეტისკენ",
+      "description": "ცხენით ტური სტეფანწმინდაში თბილისიდან გიდით ₾240-დან. იარეთ გერგეტის ხეობაში ყაზბეგის მთის ხედებით. გამოცდილება საჭირო არ არის. 11–12 სთ.",
+      "price": 240,
+      "currency": "GEL",
+      "hours": 12,
+      "days": 0,
+      "durationText": "11–12h",
+      "image": "/images/konny-tur-stepantsminda.webp",
+      "format": "group",
+      "tags": [
+        "ერთდღიანი ტურები",
+        "ყაზბეგი",
+        "აქტიური"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/konny-tur-stepantsminda/"
+    },
+    {
+      "slug": "ekskursii-iz-kutaisi",
+      "title": "ექსკურსიები ქუთაისიდან — ₾165-დან",
+      "description": "ექსკურსიები ქუთაისიდან: მარტვილისა და ოკაცეს კანიონები, პრომეთეს გამოქვაბული, გელათი. წამოყვანა ქუთაისის აეროპორტიდან. 7 კაცამდე.",
+      "price": 165,
+      "currency": "GEL",
+      "hours": 9,
+      "days": 0,
+      "durationText": "8–9h",
+      "image": "/images/kutaisi-region-600.webp",
+      "format": "group",
+      "tags": [
+        "ერთდღიანი ტურები",
+        "ქუთაისი",
+        "აქტიური"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/ekskursii-iz-kutaisi/",
+      "discount": 10
+    },
+    {
+      "slug": "ekskursiya-batumi-kutaisi",
+      "title": "ექსკურსია ბათუმიდან ქუთაისში — ₾195-დან",
+      "description": "ერთდღიანი ექსკურსია ბათუმიდან ქუთაისში: მარტვილისა და ოკაცეს კანიონები, პრომეთეს გამოქვაბული, გელათი. წამოყვანა ბათუმის სასტუმროდან, საღამოს დაბრუნება.",
+      "price": 195,
+      "currency": "GEL",
+      "hours": 11,
+      "days": 0,
+      "durationText": "10–11h",
+      "image": "/images/batumi-kutaisi-600.webp",
+      "format": "group",
+      "tags": [
+        "ერთდღიანი ტურები",
+        "ბათუმი",
+        "აქტიური"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/ekskursiya-batumi-kutaisi/",
+      "discount": 10
+    },
+    {
+      "slug": "pohod-v-gory-gruzia",
+      "title": "ლაშქრობა საქართველოს მთებში — ₾190-დან",
+      "description": "ლაშქრობა საქართველოს მთებში: ყაზბეგი, გერგეტი, ჯუთა, თრუსოს ხეობა. ერთდღიანი ტრეკინგი ნებისმიერი დონისთვის გიდთან ერთად.",
+      "price": 190,
+      "currency": "GEL",
+      "hours": 0,
+      "days": 4,
+      "durationText": "1–4 დღე",
+      "image": "/images/hiking-gruzia-600.webp",
+      "format": "group",
+      "tags": [
+        "ერთდღიანი ტურები",
+        "მთები",
+        "აქტიური"
+      ],
+      "type": "excursion",
+      "url": "/ge/ekskursiya/pohod-v-gory-gruzia/",
+      "discount": 10
+    }
+  ]
+}

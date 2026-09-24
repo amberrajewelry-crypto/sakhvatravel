@@ -1,0 +1,121 @@
+# Sakhva Travel — robots.txt
+# Priority: specific user-agent rules override generic ones
+
+# Default: allow all
+User-agent: *
+Allow: /
+Disallow: /CLAUDE.md
+Disallow: /README.md
+Disallow: /demo/
+Disallow: /dashboard/
+Disallow: /partner/
+Disallow: /scripts/
+Disallow: /service-account.json
+Disallow: /.worktrees/
+Disallow: /index.html.base-clean
+
+# Search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+Clean-param: gad_source&gad_campaignid&gad_adgroupid&gad_creative&gbraid&wbraid&gclid&utm_source&utm_medium&utm_campaign&utm_content&utm_term&yclid&fbclid&clsprobe&fix&v&b&n&brid&perf /
+
+User-agent: Bingbot
+Allow: /
+
+# SEO-аудит краулеры — явно открыть весь сайт (кроме служебного)
+User-agent: AhrefsBot
+Allow: /
+Disallow: /dashboard/
+Disallow: /partner/
+Disallow: /demo/
+Disallow: /scripts/
+
+User-agent: AhrefsSiteAudit
+Allow: /
+Disallow: /dashboard/
+Disallow: /partner/
+Disallow: /demo/
+Disallow: /scripts/
+
+# AI Search crawlers — ALLOW (override Cloudflare blocks)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: YandexGPT
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: AppleBot
+Allow: /
+
+User-agent: DataForSeoBot
+Allow: /
+
+# Training-only scrapers — block
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+# Bad bots — block
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: serpstatbot
+Disallow: /
+
+User-agent: CloudflareBrowserRenderingCrawler
+Disallow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://sakhva-travel.com/sitemap-index.xml
+
+# Really Simple Licensing (RSL 1.0)
+License: https://sakhva-travel.com/rsl.xml

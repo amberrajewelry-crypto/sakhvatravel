@@ -1,0 +1,60 @@
+wing: sakhva_travel
+rooms:
+- name: screenshots
+  description: Files from screenshots/
+  keywords:
+  - screenshots
+  - screenshots
+- name: privacy
+  description: Files from privacy/
+  keywords:
+  - privacy
+  - privacy
+- name: images
+  description: Files from images/
+  keywords:
+  - images
+  - images
+- name: yandex_59a834df1510fae1
+  description: Files from yandex_59a834df1510fae1/
+  keywords:
+  - yandex_59a834df1510fae1
+  - yandex_59a834df1510fae1
+- name: about
+  description: Files from about/
+  keywords:
+  - about
+  - about
+- name: blog
+  description: Files from blog/
+  keywords:
+  - blog
+  - blog
+- name: schema
+  description: Files from schema/
+  keywords:
+  - schema
+  - schema
+- name: scripts
+  description: Files from scripts/
+  keywords:
+  - scripts
+  - scripts
+- name: tour
+  description: Files from tour/
+  keywords:
+  - tour
+  - tour
+- name: backend
+  description: Files from api/
+  keywords:
+  - backend
+  - api
+- name: yandex_verify
+  description: Files from yandex-verify/
+  keywords:
+  - yandex_verify
+  - yandex-verify
+- name: general
+  description: Files that don't fit other rooms
+  keywords: []

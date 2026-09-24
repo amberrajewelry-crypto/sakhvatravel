@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rsl xmlns="https://rslstandard.org/rsl">
+  <content url="https://sakhva-travel.com/">
+    <license>
+      <permits type="usage">search</permits>
+      <permits type="usage">ai-summarize</permits>
+      <prohibits type="usage">ai-train</prohibits>
+      <legal type="terms">https://sakhva-travel.com/terms/</legal>
+      <standard>https://creativecommons.org/licenses/by/4.0/</standard>
+    </license>
+    <copyright type="organization">Sakhva Travel</copyright>
+  </content>
+</rsl>
