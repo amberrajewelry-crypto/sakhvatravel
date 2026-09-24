@@ -1,0 +1,1723 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head><link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><link rel="preconnect" href="https://mc.yandex.ru" crossorigin>
+  <meta name="robots" content="noindex,nofollow" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<title>Sakhva Travel — Туры в Грузию с местным гидом</title>
+<style>
+		@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+
+		*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+		:root {
+			--color-accent:  rgba(240, 160, 64, 0.95);
+			--color-heading: #f8f0e4;
+			--color-label:   rgba(240, 160, 64, 0.80);
+			--color-body:    rgba(230, 210, 185, 0.68);
+		}
+
+		html, body {
+			width: 100%;
+			min-height: 100%;
+			background: #000;
+			overflow-x: hidden;
+			font-family: 'Inter', system-ui, sans-serif;
+			color: #f0ebe0;
+		}
+
+		canvas {
+			position: fixed;
+			top: 0; left: 0;
+			width: 100vw; height: 100vh;
+			z-index: 0;
+		}
+
+		#scroll-container {
+			position: relative;
+			z-index: 1;
+			pointer-events: none;
+			will-change: transform;
+		}
+
+		.section {
+			position: relative;
+			min-height: 100vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 80px 40px;
+			pointer-events: none;
+		}
+
+		.section * { pointer-events: auto; }
+
+		.hero {
+			min-height: 110vh;
+			flex-direction: column;
+			gap: 20px;
+			text-align: center;
+			justify-content: flex-start;
+			padding-top: 6vh;
+		}
+
+		.hero-tag {
+			font-size: 11px;
+			letter-spacing: 4px;
+			text-transform: uppercase;
+			opacity: 0;
+			transform: translateY(30px);
+			color: var(--color-label);
+			font-weight: 500;
+			text-shadow: 0 1px 16px rgba(0,0,0,0.5);
+		}
+
+		.hero h1 {
+			font-family: 'Playfair Display', serif;
+			font-size: clamp(48px, 8vw, 110px);
+			font-weight: 400;
+			line-height: 1.05;
+			letter-spacing: -1px;
+			opacity: 0;
+			transform: translateY(40px);
+			color: var(--color-heading);
+			text-shadow: 0 2px 30px rgba(0,0,0,0.6), 0 0px 80px rgba(0,0,0,0.4);
+		}
+
+		.hero h1 em {
+			font-style: italic;
+			color: var(--color-accent);
+			text-shadow: 0 0 30px rgba(230, 245, 120, 0.25), 0 0 60px rgba(230, 245, 120, 0.1);
+		}
+
+		.hero-sub {
+			font-size: clamp(14px, 1.5vw, 18px);
+			line-height: 1.7;
+			max-width: 520px;
+			opacity: 0;
+			transform: translateY(30px);
+			color: var(--color-body);
+			font-weight: 300;
+		}
+
+		.wind-btn {
+			display: inline-flex;
+			align-items: center;
+			gap: 8px;
+			padding: 10px 24px;
+			border: 1px solid rgba(240, 160, 64, 0.30);
+			border-radius: 32px;
+			background: rgba(20, 14, 6, 0.40);
+			backdrop-filter: blur(12px);
+			color: var(--color-accent);
+			font-size: 12px;
+			font-weight: 500;
+			letter-spacing: 1.5px;
+			text-transform: uppercase;
+			cursor: pointer;
+			transition: all 0.4s;
+			opacity: 0;
+			transform: translateY(20px);
+		}
+
+		.wind-btn:hover {
+			background: rgba(60, 35, 10, 0.55);
+			border-color: rgba(240, 160, 64, 0.55);
+			transform: translateY(-2px) !important;
+		}
+
+		.wind-btn svg {
+			width: 18px;
+			height: 18px;
+			fill: none;
+			stroke: currentColor;
+			stroke-width: 1.5;
+			stroke-linecap: round;
+			stroke-linejoin: round;
+		}
+
+		.scroll-hint {
+			position: relative;
+			margin-top: auto;
+			margin-bottom: 12vh;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 8px;
+			opacity: 0;
+			transform: translateY(0);
+		}
+
+		/* Scroll snapping */
+		html {
+			scroll-snap-type: y proximity;
+		}
+
+		.section {
+			scroll-snap-align: start;
+		}
+
+		.scroll-hint span {
+			font-size: 10px;
+			letter-spacing: 3px;
+			text-transform: uppercase;
+			color: var(--color-label);
+			text-shadow: 0 1px 12px rgba(0,0,0,0.7), 0 0 24px rgba(0,0,0,0.5);
+		}
+
+		.scroll-line {
+			width: 1px;
+			height: 40px;
+			background: linear-gradient(to bottom, rgba(240, 160, 64, 0.5), transparent);
+			animation: scrollPulse 2s ease-in-out infinite;
+		}
+
+		@keyframes scrollPulse {
+			0%, 100% { opacity: 0.3; transform: scaleY(0.6); }
+			50% { opacity: 1; transform: scaleY(1); }
+		}
+
+		.manifesto {
+			flex-direction: column;
+			gap: 40px;
+			text-align: center;
+		}
+
+		.manifesto-label {
+			font-size: 10px;
+			letter-spacing: 4px;
+			text-transform: uppercase;
+			color: var(--color-label);
+			opacity: 0;
+			transform: translateY(20px);
+			text-shadow: 0 1px 12px rgba(0,0,0,0.5);
+		}
+
+		.manifesto h2 {
+			font-family: 'Playfair Display', serif;
+			font-size: clamp(28px, 4vw, 56px);
+			font-weight: 400;
+			line-height: 1.3;
+			max-width: 800px;
+			opacity: 0;
+			transform: translateY(40px);
+			color: var(--color-heading);
+			text-shadow: 0 2px 30px rgba(0,0,0,0.7), 0 0 60px rgba(0,0,0,0.4);
+		}
+
+		.manifesto h2 em {
+			font-style: italic;
+			color: var(--color-accent);
+			text-shadow: 0 0 25px rgba(230, 245, 120, 0.2), 0 0 50px rgba(230, 245, 120, 0.08);
+		}
+
+		.pillars {
+			flex-direction: column;
+			gap: 60px;
+		}
+
+		.pillars-header {
+			text-align: center;
+			opacity: 0;
+			transform: translateY(20px);
+		}
+
+		.pillars-header span {
+			font-size: 10px;
+			letter-spacing: 4px;
+			text-transform: uppercase;
+			color: var(--color-label);
+		}
+
+		.pillar-grid {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 30px;
+			max-width: 960px;
+			width: 100%;
+		}
+
+		@media (max-width: 768px) {
+			.pillar-grid { grid-template-columns: 1fr; max-width: 400px; }
+		}
+
+		.pillar-card {
+			border: 1px solid rgba(240, 160, 64, 0.12);
+			border-radius: 16px;
+			padding: 36px 28px;
+			background: rgba(16, 10, 4, 0.60);
+			backdrop-filter: blur(16px);
+			opacity: 0;
+			transform: translateY(40px);
+			transition: border-color 0.4s, background 0.4s;
+			box-shadow: 0 8px 40px rgba(0,0,0,0.4);
+		}
+
+		.pillar-card:hover {
+			border-color: rgba(240, 160, 64, 0.30);
+			background: rgba(30, 18, 6, 0.50);
+		}
+
+		.pillar-num {
+			font-size: 11px;
+			letter-spacing: 2px;
+			color: var(--color-accent);
+			margin-bottom: 16px;
+			font-weight: 500;
+		}
+
+		.pillar-card h3 {
+			font-family: 'Playfair Display', serif;
+			font-size: 22px;
+			font-weight: 400;
+			margin-bottom: 12px;
+			color: var(--color-heading);
+			text-shadow: 0 1px 12px rgba(0,0,0,0.4);
+		}
+
+		.pillar-card p {
+			font-size: 13px;
+			line-height: 1.7;
+			color: var(--color-body);
+			font-weight: 300;
+		}
+
+		.stats-section {
+			flex-direction: column;
+			gap: 50px;
+			text-align: center;
+		}
+
+		.stats-label {
+			font-size: 10px;
+			letter-spacing: 4px;
+			text-transform: uppercase;
+			color: var(--color-label);
+			opacity: 0;
+			transform: translateY(20px);
+			text-shadow: 0 1px 12px rgba(0,0,0,0.5);
+		}
+
+		.stats-grid {
+			display: flex;
+			gap: 60px;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		.stat-item {
+			opacity: 0;
+			transform: translateY(30px);
+			text-align: center;
+		}
+
+		.stat-num {
+			font-family: 'Playfair Display', serif;
+			font-size: clamp(40px, 5vw, 64px);
+			font-weight: 400;
+			color: var(--color-accent);
+			line-height: 1;
+			text-shadow: 0 2px 24px rgba(0,0,0,0.6), 0 0 40px rgba(230, 245, 120, 0.15);
+		}
+
+		.stat-unit {
+			font-size: 14px;
+			letter-spacing: 1px;
+			color: var(--color-body);
+			margin-top: 8px;
+			font-weight: 300;
+		}
+
+		.quote-section {
+			flex-direction: column;
+			gap: 20px;
+			text-align: center;
+			min-height: 80vh;
+		}
+
+		.quote-section blockquote {
+			font-family: 'Playfair Display', serif;
+			font-size: clamp(22px, 3.5vw, 42px);
+			font-weight: 400;
+			font-style: italic;
+			line-height: 1.4;
+			max-width: 720px;
+			color: var(--color-heading);
+			opacity: 0;
+			transform: translateY(40px);
+			text-shadow: 0 2px 30px rgba(0,0,0,0.7), 0 0 60px rgba(0,0,0,0.4);
+		}
+
+		.quote-attr {
+			font-size: 12px;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+			color: var(--color-label);
+			opacity: 0;
+			transform: translateY(20px);
+		}
+
+		.cta-section {
+			flex-direction: column;
+			gap: 30px;
+			text-align: center;
+			align-items: center;
+			justify-content: center;
+			min-height: 100vh;
+			padding: 0 40px;
+			margin-bottom: 0;
+		}
+
+		.cta-section h2 {
+			font-family: 'Playfair Display', serif;
+			font-size: clamp(32px, 5vw, 60px);
+			font-weight: 400;
+			line-height: 1.2;
+			opacity: 0;
+			transform: translateY(30px);
+			text-align: center;
+		}
+
+		.cta-section h2 em {
+			font-style: italic;
+			color: var(--color-accent);
+			text-shadow: 0 0 30px rgba(230, 245, 120, 0.3), 0 0 60px rgba(230, 245, 120, 0.12);
+		}
+
+		.cta-sub {
+			font-size: 15px;
+			color: var(--color-body);
+			max-width: 420px;
+			line-height: 1.7;
+			font-weight: 300;
+			opacity: 0;
+			transform: translateY(20px);
+		}
+
+		.cta-btn {
+			display: inline-flex;
+			align-items: center;
+			gap: 10px;
+			padding: 14px 36px;
+			border: 1px solid rgba(240, 160, 64, 0.40);
+			border-radius: 40px;
+			background: rgba(30, 18, 6, 0.45);
+			color: var(--color-accent);
+			font-size: 13px;
+			font-weight: 500;
+			letter-spacing: 1.5px;
+			text-transform: uppercase;
+			text-decoration: none;
+			cursor: pointer;
+			transition: all 0.4s;
+			opacity: 0;
+			transform: translateY(20px);
+			backdrop-filter: blur(10px);
+		}
+
+		.cta-btn:hover {
+			background: rgba(60, 35, 8, 0.55);
+			border-color: rgba(240, 160, 64, 0.70);
+			transform: translateY(-2px) !important;
+		}
+
+		.footer {
+			min-height: 0;
+			padding: 0;
+			display: none;
+		}
+
+		.site-footer {
+			position: relative;
+			z-index: 2;
+			border-top: 1px solid rgba(240, 160, 64, 0.08);
+			background: #000000;
+			padding: 60px 40px 40px;
+			margin-top: 0;
+			/* Footer is outside scroll-container, in normal document flow,
+			   so it naturally pushes below all sections */
+		}
+
+		.site-footer-inner {
+			max-width: 1100px;
+			margin: 0 auto;
+			display: grid;
+			grid-template-columns: 1.5fr 1fr 1fr 1fr;
+			gap: 40px;
+		}
+
+		@media (max-width: 768px) {
+			.site-footer-inner { grid-template-columns: 1fr 1fr; gap: 30px; }
+		}
+
+		@media (max-width: 480px) {
+			.site-footer-inner { grid-template-columns: 1fr; }
+		}
+
+		.sf-brand {
+			display: flex;
+			flex-direction: column;
+			gap: 14px;
+		}
+
+		.sf-brand-name {
+			font-family: 'Playfair Display', serif;
+			font-size: 22px;
+			color: var(--color-heading, rgba(240, 250, 220, 0.7));
+			letter-spacing: 1px;
+		}
+
+		.sf-brand-desc {
+			font-size: 12px;
+			line-height: 1.7;
+			color: var(--color-body, rgba(215, 230, 190, 0.4));
+			font-weight: 300;
+			max-width: 260px;
+		}
+
+		.sf-col-title {
+			font-size: 10px;
+			letter-spacing: 3px;
+			text-transform: uppercase;
+			color: var(--color-label);
+			margin-bottom: 16px;
+			font-weight: 500;
+		}
+
+		.sf-col a {
+			display: block;
+			font-size: 12px;
+			color: var(--color-body, rgba(215, 230, 190, 0.5));
+			text-decoration: none;
+			margin-bottom: 10px;
+			transition: color 0.3s;
+			font-weight: 300;
+		}
+
+		.sf-col a:hover { color: var(--color-accent); }
+
+		.sf-bottom {
+			max-width: 1100px;
+			margin: 40px auto 0;
+			padding-top: 24px;
+			border-top: 1px solid rgba(140, 180, 120, 0.06);
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-wrap: wrap;
+			gap: 12px;
+		}
+
+		.sf-copy {
+			font-size: 11px;
+			color: var(--color-body, rgba(215, 230, 190, 0.25));
+			letter-spacing: 0.5px;
+		}
+
+		.sf-socials {
+			display: flex;
+			gap: 18px;
+		}
+
+		.sf-socials a {
+			font-size: 11px;
+			color: var(--color-body, rgba(215, 230, 190, 0.35));
+			text-decoration: none;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			transition: color 0.3s;
+		}
+
+		.sf-socials a:hover { color: var(--color-accent); }
+
+		/* ── Settings Panel ── */
+		.settings-panel {
+			position: fixed;
+			top: 50%;
+			right: 24px;
+			transform: translateY(-50%) translateX(12px) scale(0.95);
+			width: 340px;
+			max-height: 85vh;
+			overflow-y: auto;
+			background: rgba(8, 16, 8, 0.88);
+			backdrop-filter: blur(20px);
+			border: 1px solid rgba(140, 180, 120, 0.15);
+			border-radius: 16px;
+			padding: 24px 22px;
+			z-index: 300;
+			pointer-events: auto;
+			opacity: 0;
+			visibility: hidden;
+			transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+		}
+		.settings-panel.open {
+			opacity: 1;
+			transform: translateY(-50%) translateX(0) scale(1);
+			visibility: visible;
+		}
+		.settings-panel::-webkit-scrollbar { width: 4px; }
+		.settings-panel::-webkit-scrollbar-track { background: transparent; }
+		.settings-panel::-webkit-scrollbar-thumb { background: rgba(140, 180, 120, 0.2); border-radius: 2px; }
+
+		.sp-section { margin-bottom: 18px; }
+		.sp-section-title {
+			font-size: 9px;
+			letter-spacing: 3px;
+			text-transform: uppercase;
+			color: rgba(180, 210, 140, 0.4);
+			margin-bottom: 12px;
+			padding-bottom: 6px;
+			border-bottom: 1px solid rgba(140, 180, 120, 0.08);
+		}
+		.sp-row {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 2px;
+		}
+		.sp-label {
+			font-size: 11px;
+			color: rgba(200, 215, 185, 0.55);
+			font-weight: 400;
+		}
+		.sp-val {
+			font-size: 10px;
+			color: rgba(200, 220, 140, 0.5);
+			min-width: 32px;
+			text-align: right;
+			font-variant-numeric: tabular-nums;
+		}
+		.sp-slider {
+			width: 100%;
+			margin-top: 0;
+			margin-bottom: 12px;
+			-webkit-appearance: none;
+			appearance: none;
+			height: 3px;
+			border-radius: 2px;
+			background: rgba(140, 180, 120, 0.12);
+			outline: none;
+		}
+		.sp-slider::-webkit-slider-thumb {
+			-webkit-appearance: none;
+			width: 12px;
+			height: 12px;
+			border-radius: 50%;
+			background: rgba(180, 210, 140, 0.6);
+			cursor: pointer;
+			transition: background 0.2s;
+		}
+		.sp-slider::-webkit-slider-thumb:hover {
+			background: rgba(200, 220, 140, 0.9);
+		}
+		.sp-toggle-row {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 10px;
+		}
+		.sp-toggle {
+			position: relative;
+			width: 36px;
+			height: 20px;
+			border-radius: 10px;
+			background: rgba(140, 180, 120, 0.15);
+			cursor: pointer;
+			transition: background 0.3s;
+		}
+		.sp-toggle.active { background: rgba(120, 180, 80, 0.5); }
+		.sp-toggle::after {
+			content: '';
+			position: absolute;
+			top: 3px;
+			left: 3px;
+			width: 14px;
+			height: 14px;
+			border-radius: 50%;
+			background: rgba(200, 220, 160, 0.7);
+			transition: transform 0.3s;
+		}
+		.sp-toggle.active::after { transform: translateX(16px); }
+
+		.sp-color-row {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 10px;
+		}
+		.sp-color-input {
+			-webkit-appearance: none;
+			appearance: none;
+			width: 32px;
+			height: 20px;
+			border: 1px solid rgba(140, 180, 120, 0.2);
+			border-radius: 4px;
+			background: none;
+			cursor: pointer;
+			padding: 0;
+		}
+		.sp-color-input::-webkit-color-swatch-wrapper { padding: 0; }
+		.sp-color-input::-webkit-color-swatch { border: none; border-radius: 3px; }
+
+		/* ── Nav (floating) ── */
+		.nav-float {
+			position: fixed;
+			top: 24px;
+			left: 0;
+			right: 0;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 0 40px;
+			z-index: 100;
+			pointer-events: none;
+			opacity: 0;
+			transition: opacity 0.6s;
+		}
+
+		.nav-float.visible { opacity: 1; }
+
+		.nav-logo {
+			font-family: 'Playfair Display', serif;
+			font-size: 18px;
+			color: var(--color-heading);
+			letter-spacing: 1px;
+			pointer-events: auto;
+		}
+
+		.nav-links {
+			display: flex;
+			gap: 28px;
+			pointer-events: auto;
+		}
+
+		.nav-links a {
+			font-size: 11px;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+			color: var(--color-body);
+			text-decoration: none;
+			transition: color 0.3s;
+			font-weight: 500;
+		}
+
+		.nav-links a:hover { color: var(--color-accent); }
+
+		/* Hamburger button */
+		.nav-hamburger {
+			display: none;
+			pointer-events: auto;
+			width: 36px;
+			height: 36px;
+			background: rgba(15, 25, 15, 0.4);
+			backdrop-filter: blur(12px);
+			border: 1px solid rgba(240, 160, 64, 0.18);
+			border-radius: 8px;
+			cursor: pointer;
+			position: relative;
+			flex-shrink: 0;
+			transition: background 0.3s, border-color 0.3s;
+		}
+
+		.nav-hamburger:hover {
+			background: rgba(60, 35, 8, 0.5);
+			border-color: rgba(240, 160, 64, 0.40);
+		}
+
+		.nav-hamburger span {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 16px;
+			height: 1.5px;
+			background: var(--color-body, rgba(215, 230, 190, 0.7));
+			border-radius: 1px;
+			transition: transform 0.3s, opacity 0.3s;
+		}
+
+		.nav-hamburger span:nth-child(1) { top: 10px; }
+		.nav-hamburger span:nth-child(2) { top: 17px; }
+		.nav-hamburger span:nth-child(3) { top: 24px; }
+
+		.nav-hamburger.open span:nth-child(1) {
+			transform: translateX(-50%) translateY(7px) rotate(45deg);
+		}
+		.nav-hamburger.open span:nth-child(2) {
+			opacity: 0;
+			transform: translateX(-50%);
+		}
+		.nav-hamburger.open span:nth-child(3) {
+			transform: translateX(-50%) translateY(-7px) rotate(-45deg);
+		}
+
+		/* Settings gear button */
+		.settings-gear {
+			position: fixed;
+			bottom: 20px;
+			right: 20px;
+			z-index: 200;
+			width: 32px;
+			height: 32px;
+			border-radius: 50%;
+			background: rgba(15, 25, 15, 0.45);
+			backdrop-filter: blur(12px);
+			border: 1px solid rgba(240, 160, 64, 0.15);
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			transition: background 0.3s, border-color 0.3s, transform 0.3s;
+			pointer-events: auto;
+			opacity: 0.5;
+		}
+		.settings-gear:hover {
+			opacity: 1;
+			background: rgba(60, 35, 8, 0.5);
+			border-color: rgba(240, 160, 64, 0.40);
+			transform: rotate(30deg);
+		}
+		.settings-gear.active {
+			opacity: 1;
+			border-color: rgba(240, 160, 64, 0.50);
+		}
+		.settings-gear svg {
+			width: 16px;
+			height: 16px;
+			fill: none;
+			stroke: rgba(240, 160, 64, 0.65);
+			stroke-width: 1.5;
+			stroke-linecap: round;
+			stroke-linejoin: round;
+		}
+
+		/* Mobile overlay menu */
+		.nav-mobile-overlay {
+			position: fixed;
+			top: 0;
+			right: 0;
+			width: 100%;
+			height: 100vh;
+			background: rgba(0, 0, 0, 0.85);
+			backdrop-filter: blur(24px);
+			z-index: 99;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 32px;
+			opacity: 0;
+			visibility: hidden;
+			transition: opacity 0.35s ease, visibility 0.35s;
+			pointer-events: none;
+		}
+
+		.nav-mobile-overlay.open {
+			opacity: 1;
+			visibility: visible;
+			pointer-events: auto;
+		}
+
+		.nav-mobile-overlay a {
+			font-size: 14px;
+			letter-spacing: 3px;
+			text-transform: uppercase;
+			color: var(--color-body);
+			text-decoration: none;
+			transition: color 0.3s, transform 0.3s;
+			font-weight: 500;
+			transform: translateY(10px);
+			opacity: 0;
+		}
+
+		.nav-mobile-overlay.open a {
+			opacity: 1;
+			transform: translateY(0);
+		}
+
+		.nav-mobile-overlay.open a:nth-child(1) { transition-delay: 0.06s; }
+		.nav-mobile-overlay.open a:nth-child(2) { transition-delay: 0.12s; }
+		.nav-mobile-overlay.open a:nth-child(3) { transition-delay: 0.18s; }
+		.nav-mobile-overlay.open a:nth-child(4) { transition-delay: 0.24s; }
+
+		.nav-mobile-overlay a:hover {
+			color: var(--color-accent);
+		}
+
+		@media (max-width: 768px) {
+			.nav-links { display: none; }
+			.nav-hamburger { display: block; }
+			.nav-float { padding: 0 24px; }
+		}
+
+		.progress-bar {
+			position: fixed;
+			top: 0; left: 0;
+			height: 2px;
+			background: rgba(240, 160, 64, 0.7);
+			z-index: 200;
+			width: 0;
+			transition: width 0.1s linear;
+		}
+
+		.revealed {
+			opacity: 1 !important;
+			transform: translateY(0) !important;
+			transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+						transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+		}
+
+		.delay-1 { transition-delay: 0.1s !important; }
+		.delay-2 { transition-delay: 0.25s !important; }
+		.delay-3 { transition-delay: 0.4s !important; }
+		.delay-4 { transition-delay: 0.55s !important; }
+	</style>
+<script type="importmap">
+		{
+			"imports": {
+				"three": "https://unpkg.com/three@0.183.0/build/three.webgpu.js",
+				"three/webgpu": "https://unpkg.com/three@0.183.0/build/three.webgpu.js",
+				"three/tsl": "https://unpkg.com/three@0.183.0/build/three.tsl.js",
+				"three/addons/": "https://unpkg.com/three@0.183.0/examples/jsm/"
+			}
+		}
+	</script>
+</head>
+<body>
+<div class="progress-bar" id="progressBar"></div>
+<nav class="nav-float" id="navFloat">
+<div class="nav-logo">Sakhva <em style="font-style:italic;color:var(--color-accent);">Travel</em></div>
+<div class="nav-links">
+<a data-nav="1" href="javascript:void(0)">О гиде</a>
+<a data-nav="2" href="javascript:void(0)">Туры</a>
+<a data-nav="3" href="javascript:void(0)">Цифры</a>
+<a href="/ekskursiya/ekskursiya-kazbegi-iz-tbilisi/" style="color:var(--color-accent);font-weight:600;">Забронировать</a>
+</div>
+<button aria-label="Menu" class="nav-hamburger" id="navHamburger">
+<span></span><span></span><span></span>
+</button>
+</nav>
+<div class="nav-mobile-overlay" id="navMobileOverlay">
+<a data-nav-mobile="1" href="javascript:void(0)">О гиде</a>
+<a data-nav-mobile="2" href="javascript:void(0)">Туры</a>
+<a data-nav-mobile="3" href="javascript:void(0)">Цифры</a>
+<a href="https://wa.me/995511272623" target="_blank">Забронировать</a>
+</div>
+<button aria-label="Settings" class="settings-gear" id="settingsGear">
+<svg viewbox="0 0 24 24"><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z"></path></svg>
+</button>
+<div class="settings-panel" id="settingsPanel"></div>
+<div id="scroll-container">
+<section class="section hero" data-stage="0" id="heroSection">
+<span class="hero-tag" data-delay="1" data-reveal="">Тбилиси · Грузия · с 2014</span>
+<h1 data-delay="2" data-reveal="">Откройте<br/><em>Грузию</em></h1>
+<p class="hero-sub" data-delay="3" data-reveal="">Частные туры с местным гидом Тимуром. Казбеги, Кахетия, Мцхета и секретные места Тбилиси — от €15 за тур.</p>
+<a class="wind-btn" data-delay="3" data-reveal="" href="https://wa.me/995511272623" target="_blank">
+<svg viewbox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+				Написать Тимуру
+			</a>
+<div class="scroll-hint" data-delay="4" data-reveal="">
+<span>Листай вниз</span>
+<div class="scroll-line"></div>
+</div>
+</section>
+<section class="section manifesto" data-stage="1">
+<span class="manifesto-label" data-reveal="">Философия тура</span>
+<h2 data-delay="1" data-reveal="">Настоящая Грузия — не в путеводителях. Она в запахе свежего хлеба из тоне, в разговорах за бокалом домашнего вина, в <em>людях</em>, которые здесь живут.</h2>
+</section>
+<section class="section pillars" data-stage="2">
+<div class="pillars-header" data-reveal="">
+<span>Популярные маршруты</span>
+</div>
+<div class="pillar-grid">
+<div class="pillar-card" data-delay="1" data-reveal="">
+<div class="pillar-num">от €62</div>
+<h3>Казбеги</h3>
+<p>Церковь Гергети, военно-грузинская дорога, заснеженные вершины Кавказа. Полный день с трансфером из Тбилиси.</p>
+</div>
+<div class="pillar-card" data-delay="2" data-reveal="">
+<div class="pillar-num">от €49</div>
+<h3>Кахетия</h3>
+<p>Колыбель вина. Монастырь Алаверди, крепость Греми, дегустация в семейном марани. Настоящая грузинская сельская жизнь.</p>
+</div>
+<div class="pillar-card" data-delay="3" data-reveal="">
+<div class="pillar-num">от €27</div>
+<h3>Старый Тбилиси</h3>
+<p>Сернистые бани, балконы с резьбой, кварталы Абанотубани и скрытые дворики, которые не показывают туристам.</p>
+</div>
+</div>
+</section>
+<section class="section stats-section" data-stage="3">
+<span class="stats-label" data-reveal="">Тимур в цифрах</span>
+<div class="stats-grid">
+<div class="stat-item" data-delay="1" data-reveal="">
+<div class="stat-num">500+</div>
+<div class="stat-unit">туристов</div>
+</div>
+<div class="stat-item" data-delay="2" data-reveal="">
+<div class="stat-num">4.9</div>
+<div class="stat-unit">рейтинг</div>
+</div>
+<div class="stat-item" data-delay="3" data-reveal="">
+<div class="stat-num">12</div>
+<div class="stat-unit">маршрутов</div>
+</div>
+<div class="stat-item" data-delay="4" data-reveal="">
+<div class="stat-num">10</div>
+<div class="stat-unit">лет в Тбилиси</div>
+</div>
+</div>
+</section>
+<section class="section quote-section" data-stage="4">
+<blockquote data-reveal="">«Тимур показал нам Тбилиси таким, каким его не увидишь в одиночку — живым, настоящим, немного диким и очень тёплым.»</blockquote>
+<span class="quote-attr" data-delay="1" data-reveal="">— Анна К., Москва · тур «Ночной Тбилиси»</span>
+</section>
+<section class="section cta-section" data-stage="5">
+<h2 data-reveal="">Ваш тур<br/>по <em>Грузии</em></h2>
+<p class="cta-sub" data-delay="1" data-reveal="">Небольшие группы до 7 человек. Гибкий маршрут. Написать и забронировать можно прямо сейчас.</p>
+<a class="cta-btn" data-delay="2" data-reveal="" href="https://wa.me/995511272623" target="_blank">Написать в WhatsApp →</a>
+</section>
+<section class="section footer" data-stage="6">
+</section>
+</div>
+<footer class="site-footer">
+<div class="site-footer-inner">
+<div class="sf-brand">
+<div class="sf-brand-name">Sakhva Travel</div>
+<p class="sf-brand-desc">Частные туры по Грузии с местным гидом Тимуром. Тбилиси, Казбеги, Кахетия и другие маршруты.</p>
+</div>
+<div class="sf-col">
+<div class="sf-col-title">Туры</div>
+<a href="/ekskursiya/ekskursiya-kazbegi-iz-tbilisi/">Казбеги</a>
+<a href="/ekskursiya/ekskursiya-kakheti-iz-tbilisi/">Кахетия</a>
+<a href="/ekskursiya/ekskursiya-stary-tbilisi/">Старый Тбилиси</a>
+<a href="/ekskursiya/nochnaya-ekskursiya-tbilisi/">Ночной Тбилиси</a>
+</div>
+<div class="sf-col">
+<div class="sf-col-title">Ещё туры</div>
+<a href="/ekskursiya/ekskursiya-mtskheta-iz-tbilisi/">Мцхета</a>
+<a href="/ekskursiya/nochnaya-ekskursiya-tbilisi/">Ночной Тбилиси</a>
+<a href="/ekskursiya/gastronomicheskiy-tur-tbilisi/">Ужин у местных</a>
+<a href="/blog/">Блог о Грузии</a>
+</div>
+<div class="sf-col">
+<div class="sf-col-title">Контакты</div>
+<a href="https://wa.me/995511272623" target="_blank">WhatsApp</a>
+<a href="https://t.me/SakhvaGuideBot?start=site" target="_blank">Telegram</a>
+<a href="/about/">О гиде Тимуре</a>
+<a href="/pogoda/">Погода в Грузии</a><a href="/">На главную</a>
+</div>
+</div>
+<div class="sf-bottom">
+<span class="sf-copy">© 2026 Sakhva Travel · Тбилиси, Грузия</span>
+<div class="sf-socials">
+<a href="https://wa.me/995511272623" target="_blank">WhatsApp</a>
+<a href="https://t.me/SakhvaGuideBot?start=site" target="_blank">Telegram</a>
+</div>
+</div>
+</footer>
+<script type="module">
+		import * as THREE from 'three/webgpu';
+		import {
+			Fn, uniform, float, vec3, instancedArray, instanceIndex, uv,
+			positionWorld, positionLocal, normalWorld, sin, cos, pow, smoothstep, mix,
+			sqrt, select, hash, time, deltaTime, PI, mx_noise_float,
+			pass, mrt, output, transformedNormalView, normalize, max, dot,
+		} from 'three/tsl';
+		import { dof } from 'three/addons/tsl/display/DepthOfFieldNode.js';
+
+		// ── Constants ───────────────────────────────────────────────────────
+		const SNOW_COUNT   = 90000;
+		const FIELD_SIZE   = 280;
+		const MTN_SEGS     = 180;
+		const MTN_AMP      = 82;
+		const SNOW_VOLUME  = { w: 260, h: 90, d: 260 };
+
+		// ── Sky ─────────────────────────────────────────────────────────────
+		const skyColors = {
+			top:     new THREE.Color('#020510'),
+			midHigh: new THREE.Color('#08152e'),
+			midLow:  new THREE.Color('#152848'),
+			horizon: new THREE.Color('#2a4870'),
+		};
+
+		function buildSkyTexture() {
+			const w = 2, h = 512;
+			const c = document.createElement('canvas'); c.width = w; c.height = h;
+			const ctx = c.getContext('2d');
+			const g = ctx.createLinearGradient(0, 0, 0, h);
+			g.addColorStop(0.0,  '#' + skyColors.top.getHexString());
+			g.addColorStop(0.35, '#' + skyColors.midHigh.getHexString());
+			g.addColorStop(0.65, '#' + skyColors.midLow.getHexString());
+			g.addColorStop(1.0,  '#' + skyColors.horizon.getHexString());
+			ctx.fillStyle = g; ctx.fillRect(0, 0, w, h);
+			const tex = new THREE.CanvasTexture(c);
+			tex.mapping = THREE.EquirectangularReflectionMapping;
+			tex.colorSpace = THREE.SRGBColorSpace;
+			tex.needsUpdate = true;
+			return tex;
+		}
+
+		// ── Scene ────────────────────────────────────────────────────────────
+		const scene = new THREE.Scene();
+		scene.background = buildSkyTexture();
+		scene.fog = new THREE.FogExp2('#0a1828', 0.0028);
+
+		const camera = new THREE.PerspectiveCamera(42, innerWidth / innerHeight, 0.5, 900);
+		camera.position.set(0, 90, 200);
+		camera.lookAt(0, 30, 0);
+
+		const renderer = new THREE.WebGPURenderer({ antialias: true });
+		const isMobile = window.innerWidth < 768;
+		const maxDPR   = window.innerWidth < 1200 ? 1.5 : Math.min(devicePixelRatio, 2);
+		renderer.setPixelRatio(maxDPR);
+		renderer.setSize(innerWidth, innerHeight);
+		renderer.toneMapping = THREE.ACESFilmicToneMapping;
+		renderer.toneMappingExposure = 1.05;
+		renderer.shadowMap.enabled = true;
+		renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+		document.body.appendChild(renderer.domElement);
+		await renderer.init();
+
+		// ── Noise helper ─────────────────────────────────────────────────────
+		const noise2D = Fn(([x, z]) => mx_noise_float(vec3(x, float(0), z)).mul(0.5).add(0.5));
+
+		// ── Mountain terrain ─────────────────────────────────────────────────
+		// CPU heightfield
+		function getH(x, z) {
+			const cx = x / FIELD_SIZE, cz = z / FIELD_SIZE;
+			const r2 = cx * cx + cz * cz;
+			const peak = Math.exp(-r2 * 3.2) * MTN_AMP * 0.65;
+			const n1 = Math.sin(x * 0.012 + 0.3) * Math.cos(z * 0.010 - 0.7) * MTN_AMP * 0.35;
+			const n2 = Math.sin(x * 0.028 - 1.1) * Math.cos(z * 0.025 + 0.5) * MTN_AMP * 0.20;
+			const n3 = Math.sin(x * 0.055 + 0.8) * Math.cos(z * 0.060 - 1.2) * MTN_AMP * 0.10;
+			const ridge = Math.abs(Math.sin(x * 0.018 + z * 0.012)) * MTN_AMP * 0.18;
+			const detail = Math.sin(x * 0.11 + z * 0.13 * 1.7) * 2.8 + Math.cos(x * 0.19 - z * 0.09) * 1.6;
+			return peak + n1 + n2 + n3 + ridge * 0.5 + detail;
+		}
+
+		// Build terrain geometry
+		const mtnGeo = new THREE.PlaneGeometry(FIELD_SIZE, FIELD_SIZE, MTN_SEGS, MTN_SEGS);
+		mtnGeo.rotateX(-Math.PI / 2);
+		{
+			const pos = mtnGeo.attributes.position;
+			for (let i = 0; i < pos.count; i++) {
+				pos.setY(i, getH(pos.getX(i), pos.getZ(i)));
+			}
+			mtnGeo.computeVertexNormals();
+		}
+
+		// Terrain shader uniforms
+		const uSnowLine = uniform(38.0);
+		const uRockLine = uniform(18.0);
+		const uForestLine = uniform(5.0);
+		const sunDir = uniform(new THREE.Vector3(0.55, 0.72, 0.38).normalize());
+
+		const mtnMat = new THREE.MeshStandardNodeMaterial({ roughness: 0.88, metalness: 0.0 });
+		mtnMat.colorNode = Fn(() => {
+			const wx = positionWorld.x, wz = positionWorld.z, wy = positionWorld.y;
+			const wn = normalize(normalWorld);
+
+			// Noise layers for texture variation
+			const n1 = mx_noise_float(vec3(wx.mul(0.08), float(0), wz.mul(0.08))).mul(0.5).add(0.5);
+			const n2 = mx_noise_float(vec3(wx.mul(0.22), float(1), wz.mul(0.22))).mul(0.5).add(0.5);
+			const nd = mx_noise_float(vec3(wx.mul(0.9),  float(2), wz.mul(0.9))).mul(0.5).add(0.5);
+
+			// Slope: 0 = flat, 1 = vertical
+			const slope = float(1).sub(max(float(0), wn.y));
+
+			// Biome blending
+			const tForest = smoothstep(uForestLine.sub(float(3)), uForestLine.add(float(4)), wy);
+			const tRock   = smoothstep(uRockLine.sub(float(4)),   uRockLine.add(float(5)),   wy);
+			const tSnow   = smoothstep(uSnowLine.sub(float(5)),   uSnowLine.add(float(8)),   wy);
+			const tSlope  = smoothstep(float(0.30), float(0.60), slope);
+
+			// Colors
+			const cGrass1 = vec3(0.20, 0.36, 0.10);
+			const cGrass2 = vec3(0.16, 0.28, 0.08);
+			const cForest = mix(cGrass1, cGrass2, n1);
+
+			const cRock1  = vec3(0.42, 0.38, 0.34);
+			const cRock2  = vec3(0.32, 0.28, 0.24);
+			const cRock   = mix(cRock1, cRock2, n2);
+
+			const cSnow1  = vec3(0.88, 0.92, 0.96);
+			const cSnow2  = vec3(0.76, 0.84, 0.92);
+			const cSnow   = mix(cSnow1, cSnow2, nd);
+
+			// Blend biomes
+			const biome   = mix(mix(cForest, cRock, tRock), cSnow, tSnow);
+			// Steep slopes always rocky
+			const withSlope = mix(biome, cRock, tSlope);
+			// Micro brightness variation
+			const detail = nd.mul(float(0.14)).add(float(0.93));
+			return withSlope.mul(detail);
+		})();
+
+		const mtnMesh = new THREE.Mesh(mtnGeo, mtnMat);
+		mtnMesh.receiveShadow = true;
+		mtnMesh.castShadow = true;
+		scene.add(mtnMesh);
+
+		// ── Lighting ─────────────────────────────────────────────────────────
+		scene.add(new THREE.HemisphereLight(0xb8d0f8, 0x3a2818, 0.75));
+		const dirLight = new THREE.DirectionalLight(0xfff0d8, 3.8);
+		dirLight.position.set(80, 140, 60);
+		dirLight.castShadow = true;
+		dirLight.shadow.mapSize.set(2048, 2048);
+		Object.assign(dirLight.shadow.camera, { near: 1, far: 600, left: -180, right: 180, top: 180, bottom: -180 });
+		dirLight.shadow.bias = -0.0008;
+		scene.add(dirLight);
+		const fillLight = new THREE.DirectionalLight(0x8ab0d8, 0.45);
+		fillLight.position.set(-60, 40, -80);
+		scene.add(fillLight);
+
+		// ── GPU Snow Particles ────────────────────────────────────────────────
+		const snowPos   = instancedArray(SNOW_COUNT, 'vec4');  // x,y,z, phase
+		const snowState = instancedArray(SNOW_COUNT, 'vec2');  // vx drift, size
+
+		// Uniforms
+		const windDir    = uniform(new THREE.Vector2(0.6, 0.4));
+		const windSpeed  = uniform(1.4);
+		const snowFall   = uniform(18.0);  // fall speed
+		const snowRadius = uniform(130.0); // spawn radius
+		const snowHeight = uniform(90.0);  // spawn height
+		const snowMin    = uniform(-4.0);  // reset below this y
+		const snowDensity = uniform(1.0);
+		const snowSize   = uniform(0.18);
+		const snowOpacity = uniform(0.72);
+		const fogStart   = uniform(30.0);
+		const fogEnd     = uniform(90.0);
+		const fogIntensity = uniform(1.0);
+		const fogColorU  = uniform(new THREE.Color('#0a1828'));
+
+		// Init: scatter snow in a cylinder above mountain
+		const computeInit = Fn(() => {
+			const p = snowPos.element(instanceIndex);
+			const h = hash(instanceIndex);
+			const h2 = hash(instanceIndex.add(1337));
+			const h3 = hash(instanceIndex.add(2674));
+			const angle = h.mul(PI.mul(2));
+			const r = sqrt(h2).mul(snowRadius);
+			p.x.assign(cos(angle).mul(r));
+			p.z.assign(sin(angle).mul(r));
+			p.y.assign(h3.mul(snowHeight));
+			p.w.assign(hash(instanceIndex.add(9999)).mul(PI.mul(2)));  // phase
+
+			const s = snowState.element(instanceIndex);
+			s.x.assign(hash(instanceIndex.add(4444)).sub(0.5).mul(0.8)); // drift x
+			s.y.assign(float(0.06).add(hash(instanceIndex.add(5555)).mul(0.18))); // size var
+		})().compute(SNOW_COUNT);
+
+		const computeUpdate = Fn(() => {
+			const p = snowPos.element(instanceIndex);
+			const s = snowState.element(instanceIndex);
+			const dt = deltaTime.min(0.05);
+
+			// Phase oscillation for gentle sway
+			p.w.assign(p.w.add(dt.mul(1.8).add(s.x.abs().mul(0.6))));
+
+			// Drift
+			const driftX = sin(p.w).mul(0.6).add(windDir.x.mul(windSpeed));
+			const driftZ = cos(p.w.mul(0.7)).mul(0.5).add(windDir.y.mul(windSpeed));
+
+			p.x.assign(p.x.add(driftX.mul(dt)));
+			p.z.assign(p.z.add(driftZ.mul(dt)));
+			p.y.assign(p.y.sub(snowFall.mul(dt)));
+
+			// Reset when fallen below ground or too far
+			const dist = sqrt(p.x.mul(p.x).add(p.z.mul(p.z)));
+			const reset = p.y.lessThan(snowMin).or(dist.greaterThan(snowRadius.mul(1.4)));
+			const rh = hash(instanceIndex.add(p.w.toInt()));
+			const rh2 = hash(instanceIndex.add(p.w.toInt()).add(111));
+			const newAngle = rh.mul(PI.mul(2));
+			const newR = sqrt(rh2).mul(snowRadius);
+			p.x.assign(select(reset, cos(newAngle).mul(newR), p.x));
+			p.z.assign(select(reset, sin(newAngle).mul(newR), p.z));
+			p.y.assign(select(reset, snowHeight, p.y));
+		})().compute(SNOW_COUNT);
+
+		// Snow billboard material
+		const snowMat = new THREE.MeshBasicNodeMaterial({ transparent: true, depthWrite: false, fog: false });
+
+		snowMat.positionNode = Fn(() => {
+			const p     = snowPos.element(instanceIndex);
+			const s     = snowState.element(instanceIndex);
+			const vis   = select(hash(instanceIndex.add(7777)).lessThan(snowDensity), float(1), float(0));
+			const scale = snowSize.add(s.y).mul(vis);
+			// Billboard: local xy offset, world position
+			const ox = positionLocal.x.mul(scale);
+			const oy = positionLocal.y.mul(scale);
+			return vec3(p.x.add(ox), p.y.add(oy), p.z);
+		})();
+
+		snowMat.colorNode = Fn(() => {
+			// Radial gradient — bright centre
+			const d  = uv().sub(0.5).length().mul(2);
+			const alpha = smoothstep(float(1.0), float(0.0), d).mul(snowOpacity);
+			const bright = smoothstep(float(0.5), float(0.0), d).mul(0.4);
+			const base = vec3(float(0.82).add(bright), float(0.88).add(bright), float(0.96).add(bright));
+			// Fog fade by distance to origin (approx camera dist)
+			const p = snowPos.element(instanceIndex);
+			const dist = sqrt(p.x.mul(p.x).add(p.z.mul(p.z)));
+			const ff = smoothstep(fogEnd.sub(float(20)), fogEnd, dist).mul(fogIntensity);
+			return mix(base, vec3(fogColorU.r, fogColorU.g, fogColorU.b), ff);
+		})();
+
+		snowMat.opacityNode = Fn(() => {
+			const d = uv().sub(0.5).length().mul(2);
+			return smoothstep(float(1.0), float(0.1), d).mul(snowOpacity);
+		})();
+		snowMat.transparent = true;
+
+		// Instances
+		const snowGeo = new THREE.PlaneGeometry(1, 1);
+		const snow    = new THREE.InstancedMesh(snowGeo, snowMat, SNOW_COUNT);
+		snow.frustumCulled = false;
+		scene.add(snow);
+		const _dummy = new THREE.Object3D();
+		for (let i = 0; i < SNOW_COUNT; i++) snow.setMatrixAt(i, _dummy.matrix);
+		snow.instanceMatrix.needsUpdate = true;
+
+		// ── DoF ──────────────────────────────────────────────────────────────
+		const focusDistanceU = uniform(90.0);
+		const focalLengthU   = uniform(12.0);
+		const bokehScaleU    = uniform(10.0);
+		let dofEnabled = !isMobile;
+		let globalDofEnabled = !isMobile;
+
+		const postProcessing = new THREE.PostProcessing(renderer);
+		const scenePass = pass(scene, camera);
+		scenePass.setMRT(mrt({ output, normal: transformedNormalView }));
+		const sceneColor = scenePass.getTextureNode('output');
+		const sceneViewZ = scenePass.getViewZNode();
+		const dofOutput  = dof(sceneColor, sceneViewZ, focusDistanceU, focalLengthU, bokehScaleU);
+		postProcessing.outputNode = dofEnabled ? dofOutput : sceneColor;
+		postProcessing.needsUpdate = true;
+
+		function rebuildPipeline() {
+			postProcessing.outputNode = dofEnabled ? dofOutput : sceneColor;
+			postProcessing.needsUpdate = true;
+		}
+
+		// ── Camera Path ───────────────────────────────────────────────────────
+		// [scroll, posX, posY, posZ, lookX, lookY, lookZ, focusDist, autoFocus, dofOn, focalLen, bokehScale, afSpeed, afMin, afMax]
+		const stageNames = ['Hero', 'О гиде', 'Туры', 'Цифры', 'Отзыв', 'CTA', 'Footer'];
+
+		const cameraPath = [
+			[0.00,  18, 88, 195,   0, 22,   0,  120, 0, 1,  12, 10, 5, 5, 200],  // Hero — далёкая панорама
+			[0.14,  12, 72, 155,   0, 18,   0,   90, 0, 1,  10,  9, 5, 5, 180],  // О гиде — приближение
+			[0.28, -20, 55, 115,   5, 14,   0,   65, 0, 1,   9,  8, 5, 5, 150],  // Туры — средний план
+			[0.43,  14, 40,  78,   0, 10,   0,   48, 0, 1,   8, 11, 5, 5, 120],  // Цифры — ближе
+			[0.57,  -8, 26,  44,  -2,  6,   0,   30, 0, 1,   7, 14, 6, 3,  80],  // Отзыв — снег крупный
+			[0.78,   4, 14,  20,   0,  2,   0,   14, 0, 0,  14, 16,19,3,  30],  // CTA — вплотную
+			[1.00,   0, 95, 205,   0, 28,   5,   95, 0, 1,  13,  8,17,5, 210],  // Footer — отъезд
+		];
+
+		// ── Per-Stage Params ──────────────────────────────────────────────────
+		const stageParamDefs = {
+			fogStart:      { u: fogStart,      def: 30,    min: 0,   max: 120, step: 1,   label: 'Fog Start',      group: 'Fog' },
+			fogEnd:        { u: fogEnd,        def: 90,    min: 10,  max: 200, step: 1,   label: 'Fog End',        group: 'Fog' },
+			fogIntensity:  { u: fogIntensity,  def: 1.0,   min: 0,   max: 1,   step: 0.01,label: 'Fog Intensity',  group: 'Fog' },
+			fogR:          { def: 0.039, min:0, max:1, step:0.01, label:'Fog R', group:'Fog', isColor:'fogColor', ch:'r' },
+			fogG:          { def: 0.094, min:0, max:1, step:0.01, label:'Fog G', group:'Fog', isColor:'fogColor', ch:'g' },
+			fogB:          { def: 0.157, min:0, max:1, step:0.01, label:'Fog B', group:'Fog', isColor:'fogColor', ch:'b' },
+			snowDensity:   { u: snowDensity,   def: 1.0,   min: 0,   max: 1,   step: 0.01,label: 'Density',        group: 'Snow' },
+			snowSize:      { u: snowSize,      def: 0.18,  min: 0.02,max: 0.6, step: 0.01,label: 'Flake Size',     group: 'Snow' },
+			snowFallSpeed: { u: snowFall,      def: 18,    min: 0,   max: 60,  step: 0.5, label: 'Fall Speed',     group: 'Snow' },
+			snowOpacity:   { u: snowOpacity,   def: 0.72,  min: 0,   max: 1,   step: 0.01,label: 'Opacity',        group: 'Snow' },
+			windX:         { def: 0.6,   min:-2, max:2, step:0.05, label:'Wind X',    group:'Wind', noDirect:true },
+			windZ:         { def: 0.4,   min:-2, max:2, step:0.05, label:'Wind Z',    group:'Wind', noDirect:true },
+			windSpeedV:    { u: windSpeed, def: 1.4,  min:0, max:4, step:0.1, label:'Wind Speed', group:'Wind' },
+			snowLine:      { u: uSnowLine, def: 38,   min:5, max:80, step:1, label:'Snow Line Y',  group:'Terrain' },
+			rockLine:      { u: uRockLine, def: 18,   min:0, max:60, step:1, label:'Rock Line Y',  group:'Terrain' },
+		};
+		const stageParamKeys = Object.keys(stageParamDefs);
+		const colorUniformMap = { fogColor: fogColorU };
+
+		function getDefaultParams() {
+			const p = {};
+			stageParamKeys.forEach(k => {
+				const d = stageParamDefs[k];
+				if (d.isColor && d.ch) {
+					const cu = colorUniformMap[d.isColor];
+					if (cu) p[k] = cu.value[d.ch];
+					else p[k] = d.def;
+				} else {
+					p[k] = d.def;
+				}
+			});
+			return p;
+		}
+
+		const stageParams = cameraPath.map(() => getDefaultParams());
+
+		// Per-stage overrides
+		(function() {
+			const ov = [
+				// Hero — густой снег, дальний туман
+				{ snowDensity:1.0, snowSize:0.22, snowFallSpeed:16, fogStart:40, fogEnd:110 },
+				// О гиде — плавный снег
+				{ snowDensity:0.9, snowSize:0.19, snowFallSpeed:16, fogStart:35, fogEnd:95 },
+				// Туры — сильный ветер
+				{ snowDensity:1.0, snowSize:0.20, windX:1.2, windZ:0.6, windSpeedV:2.2, fogStart:28, fogEnd:80 },
+				// Цифры — крупные хлопья
+				{ snowDensity:0.85, snowSize:0.28, snowFallSpeed:14, fogStart:22, fogEnd:70 },
+				// Отзыв — медленный снег, поэтично
+				{ snowDensity:0.75, snowSize:0.32, snowFallSpeed:10, windX:0.3, windSpeedV:0.8, fogStart:18, fogEnd:55 },
+				// CTA — снег прямо в лицо
+				{ snowDensity:1.0, snowSize:0.40, snowFallSpeed:22, windX:0.8, windSpeedV:1.8, fogStart:10, fogEnd:35 },
+				// Footer — редкий снег, отъезд
+				{ snowDensity:0.5, snowSize:0.18, snowFallSpeed:14, fogStart:35, fogEnd:100 },
+			];
+			ov.forEach((overrides, i) => {
+				Object.keys(overrides).forEach(k => {
+					if (k in stageParams[i]) stageParams[i][k] = overrides[k];
+				});
+			});
+		})();
+
+		function lerpCam(scrollT) {
+			const snap = 0.005;
+			for (let j = 0; j < cameraPath.length; j++) {
+				if (Math.abs(cameraPath[j][0] - scrollT) < snap) {
+					const kf = cameraPath[j];
+					return { px:kf[1],py:kf[2],pz:kf[3],lx:kf[4],ly:kf[5],lz:kf[6],
+						fd:kf[7],af:kf[8],dofOn:kf[9],fl:kf[10],bk:kf[11],afSpd:kf[12],afMin:kf[13],afMax:kf[14],
+						params:{...stageParams[j]} };
+				}
+			}
+			let i = 0;
+			for (let j = 1; j < cameraPath.length; j++) {
+				if (cameraPath[j][0] >= scrollT) { i = j - 1; break; }
+				if (j === cameraPath.length - 1) i = j - 1;
+			}
+			const a = cameraPath[i], b = cameraPath[Math.min(i+1, cameraPath.length-1)];
+			const range = b[0] - a[0];
+			const t = range > 0 ? Math.max(0, Math.min(1, (scrollT - a[0]) / range)) : 0;
+			const e = t * t * (3 - 2 * t);
+			const iB = Math.min(i+1, cameraPath.length-1);
+			const pA = stageParams[i], pB = stageParams[iB];
+			const lp = {};
+			stageParamKeys.forEach(k => { lp[k] = pA[k] + (pB[k] - pA[k]) * e; });
+			return { px:a[1]+(b[1]-a[1])*e, py:a[2]+(b[2]-a[2])*e, pz:a[3]+(b[3]-a[3])*e,
+				lx:a[4]+(b[4]-a[4])*e, ly:a[5]+(b[5]-a[5])*e, lz:a[6]+(b[6]-a[6])*e,
+				fd:a[7]+(b[7]-a[7])*e, af:a[8]+(b[8]-a[8])*e, dofOn:a[9]+(b[9]-a[9])*e,
+				fl:a[10]+(b[10]-a[10])*e, bk:a[11]+(b[11]-a[11])*e,
+				afSpd:a[12]+(b[12]-a[12])*e, afMin:a[13]+(b[13]-a[13])*e, afMax:a[14]+(b[14]-a[14])*e,
+				params:lp };
+		}
+
+		// ── Settings Panel ────────────────────────────────────────────────────
+		const settingsPanel = document.getElementById('settingsPanel');
+		const settingsGear  = document.getElementById('settingsGear');
+		let settingsOpen = false;
+		let editorMode  = 'scroll';
+		let cameraOverride = -1;
+		let activeStage = -1;
+
+		function toggleSettings() {
+			settingsOpen = !settingsOpen;
+			settingsPanel.classList.toggle('open', settingsOpen);
+			settingsGear.classList.toggle('active', settingsOpen);
+		}
+		settingsGear.addEventListener('click', toggleSettings);
+		window.addEventListener('keydown', e => {
+			if ((e.key==='s'||e.key==='S') && e.target.tagName!=='INPUT') toggleSettings();
+		});
+
+		function buildSettings() {
+			let html = '';
+			// Global DoF
+			html += `<div class="sp-section"><div class="sp-section-title">Rendering</div>`;
+			html += `<div class="sp-toggle-row"><span class="sp-label">Depth of Field</span><div class="sp-toggle ${globalDofEnabled?'active':''}" id="globalDofToggle"></div></div>`;
+			html += `<div class="sp-toggle-row"><span class="sp-label">FPS Counter</span><div class="sp-toggle" id="fpsToggle"></div></div>`;
+			html += `</div>`;
+
+			// Sky
+			html += `<div class="sp-section"><div class="sp-section-title">Sky Gradient</div>`;
+			[{l:'Zenith',k:'top'},{l:'Mid High',k:'midHigh'},{l:'Mid Low',k:'midLow'},{l:'Horizon',k:'horizon'}].forEach((c,i)=>{
+				html += `<div class="sp-color-row"><span class="sp-label">${c.l}</span><input type="color" class="sp-color-input" id="sp_sky_${i}" value="#${'0'+skyColors[c.k].getHexString()}"></div>`;
+			});
+			html += `</div>`;
+
+			// Camera Path
+			html += `<div class="sp-section"><div class="sp-section-title">Camera Path</div>`;
+			html += `<div style="display:flex;gap:6px;margin-bottom:12px;">`;
+			html += `<button id="modeScrollBtn" style="flex:1;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;padding:7px 0;border:1px solid rgba(240,160,64,0.3);border-radius:6px;background:rgba(240,160,64,0.15);color:rgba(240,160,64,0.9);cursor:pointer;font-weight:500;">⏵ Scroll</button>`;
+			html += `<button id="modeEditBtn" style="flex:1;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;padding:7px 0;border:1px solid rgba(240,160,64,0.12);border-radius:6px;background:rgba(240,160,64,0.04);color:rgba(240,160,64,0.4);cursor:pointer;font-weight:500;">✎ Edit</button>`;
+			html += `</div>`;
+			html += `<div id="modeHint" style="font-size:10px;color:rgba(240,160,64,0.3);margin-bottom:10px;line-height:1.5;">Scroll mode — camera follows scroll.</div>`;
+
+			cameraPath.forEach((kf,i) => {
+				const name = stageNames[i] || `Stage ${i}`;
+				html += `<div id="cp_stage_${i}" data-stage="${i}" style="margin-bottom:8px;border:1px solid rgba(240,160,64,0.08);border-radius:8px;overflow:hidden;cursor:pointer;">`;
+				html += `<div class="cp-header" data-stage="${i}" style="display:flex;justify-content:space-between;align-items:center;padding:8px 10px;background:rgba(240,160,64,0.04);">`;
+				html += `<span class="sp-label" style="color:rgba(240,160,64,0.5);font-weight:500;pointer-events:none;">${name}</span>`;
+				html += `<span style="font-size:9px;color:rgba(240,160,64,0.25);pointer-events:none;" id="cp_${i}_arrow">▸</span></div>`;
+				html += `<div id="cp_${i}_controls" style="display:none;padding:6px 10px 10px;">`;
+				[['px',1,'Pos X',-20,20],['py',2,'Pos Y',0,120],['pz',3,'Pos Z',0,230],['lx',4,'Look X',-20,20],['ly',5,'Look Y',-5,50],['lz',6,'Look Z',-20,20]].forEach(([k,idx,l,mn,mx])=>{
+					html += `<div class="sp-row"><span class="sp-label">${l}</span><span class="sp-val" id="cp_${i}_${k}_v">${kf[idx].toFixed(1)}</span></div>`;
+					html += `<input type="range" class="sp-slider" id="cp_${i}_${k}" min="${mn}" max="${mx}" step="0.5" value="${kf[idx]}">`;
+				});
+				html += `<div class="sp-row" style="margin-top:8px;"><span class="sp-label" style="font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(240,160,64,0.3);">Depth of Field</span></div>`;
+				html += `<div class="sp-toggle-row"><span class="sp-label">DoF On</span><div class="sp-toggle ${kf[9]?'active':''}" id="cp_${i}_dof"></div></div>`;
+				html += `<div class="sp-row"><span class="sp-label">Focus Dist</span><span class="sp-val" id="cp_${i}_fd_v">${kf[7].toFixed(1)}</span></div>`;
+				html += `<input type="range" class="sp-slider" id="cp_${i}_fd" min="1" max="250" step="1" value="${kf[7]}">`;
+				html += `<div class="sp-row"><span class="sp-label">Focal Length</span><span class="sp-val" id="cp_${i}_fl_v">${kf[10].toFixed(1)}</span></div>`;
+				html += `<input type="range" class="sp-slider" id="cp_${i}_fl" min="0.5" max="25" step="0.5" value="${kf[10]}">`;
+				html += `<div class="sp-row"><span class="sp-label">Bokeh Scale</span><span class="sp-val" id="cp_${i}_bk_v">${kf[11].toFixed(1)}</span></div>`;
+				html += `<input type="range" class="sp-slider" id="cp_${i}_bk" min="0" max="40" step="0.5" value="${kf[11]}">`;
+				html += `</div></div>`;
+			});
+			html += `</div>`;
+
+			settingsPanel.innerHTML = html;
+
+			// Wire global toggles
+			document.getElementById('globalDofToggle').addEventListener('click', function() {
+				globalDofEnabled = !globalDofEnabled;
+				this.classList.toggle('active', globalDofEnabled);
+				dofEnabled = globalDofEnabled;
+				rebuildPipeline();
+			});
+			let fpsEnabled = false;
+			document.getElementById('fpsToggle').addEventListener('click', function() {
+				fpsEnabled = !fpsEnabled;
+				this.classList.toggle('active', fpsEnabled);
+				if (fpsOverlay) fpsOverlay.style.display = fpsEnabled ? 'block' : 'none';
+			});
+
+			// Wire sky pickers
+			[{l:'Zenith',k:'top'},{l:'Mid High',k:'midHigh'},{l:'Mid Low',k:'midLow'},{l:'Horizon',k:'horizon'}].forEach((c,i)=>{
+				document.getElementById(`sp_sky_${i}`).addEventListener('input', function() {
+					skyColors[c.k].set(this.value);
+					scene.background = buildSkyTexture();
+					scene.fog.color.set(skyColors.horizon);
+				});
+			});
+
+			// Wire camera path
+			let expandedStage = -1;
+			function setMode(mode) {
+				editorMode = mode;
+				const sb = document.getElementById('modeScrollBtn'), eb = document.getElementById('modeEditBtn');
+				const hint = document.getElementById('modeHint');
+				if (mode === 'scroll') {
+					sb.style.background = 'rgba(240,160,64,0.15)'; sb.style.color = 'rgba(240,160,64,0.9)';
+					eb.style.background = 'rgba(240,160,64,0.04)'; eb.style.color = 'rgba(240,160,64,0.4)';
+					hint.textContent = 'Scroll mode — camera follows scroll.';
+					activeStage = -1; cameraOverride = -1;
+					cameraPath.forEach((_,j) => { const el = document.getElementById(`cp_stage_${j}`); if(el){el.style.opacity='0.5';el.style.pointerEvents='none';} });
+				} else {
+					eb.style.background = 'rgba(240,160,64,0.15)'; eb.style.color = 'rgba(240,160,64,0.9)';
+					sb.style.background = 'rgba(240,160,64,0.04)'; sb.style.color = 'rgba(240,160,64,0.4)';
+					hint.textContent = 'Edit mode — click a stage to lock camera.';
+					cameraPath.forEach((_,j) => { const el = document.getElementById(`cp_stage_${j}`); if(el){el.style.opacity='1';el.style.pointerEvents='auto';} });
+					selectStage(activeStage >= 0 ? activeStage : 0);
+				}
+			}
+			function selectStage(i) {
+				if (activeStage >= 0 && activeStage !== i) document.getElementById(`cp_stage_${activeStage}`).style.borderColor = 'rgba(240,160,64,0.08)';
+				document.getElementById(`cp_stage_${i}`).style.borderColor = 'rgba(240,160,64,0.40)';
+				activeStage = i; cameraOverride = i;
+				document.getElementById('modeHint').textContent = `Editing: ${stageNames[i]}`;
+			}
+			document.getElementById('modeScrollBtn').addEventListener('click', () => setMode('scroll'));
+			document.getElementById('modeEditBtn').addEventListener('click', () => setMode('edit'));
+			setMode('scroll');
+
+			cameraPath.forEach((kf,i) => {
+				const header = document.querySelector(`#cp_stage_${i} .cp-header`);
+				const controls = document.getElementById(`cp_${i}_controls`);
+				const arrow = document.getElementById(`cp_${i}_arrow`);
+				header.addEventListener('click', () => {
+					if (editorMode !== 'edit') return;
+					if (activeStage === i) {
+						if (expandedStage === i) { controls.style.display='none'; arrow.textContent='▸'; expandedStage=-1; }
+						else { controls.style.display='block'; arrow.textContent='▾'; expandedStage=i; }
+					} else selectStage(i);
+				});
+				[['px',1],['py',2],['pz',3],['lx',4],['ly',5],['lz',6]].forEach(([k,idx]) => {
+					const sl = document.getElementById(`cp_${i}_${k}`), vl = document.getElementById(`cp_${i}_${k}_v`);
+					if(sl) sl.addEventListener('input', () => { kf[idx]=parseFloat(sl.value); vl.textContent=kf[idx].toFixed(1); });
+				});
+				const dofEl = document.getElementById(`cp_${i}_dof`);
+				dofEl.addEventListener('click', () => { kf[9]=kf[9]?0:1; dofEl.classList.toggle('active',!!kf[9]); });
+				const fdEl = document.getElementById(`cp_${i}_fd`), fdV = document.getElementById(`cp_${i}_fd_v`);
+				fdEl.addEventListener('input', () => { kf[7]=parseFloat(fdEl.value); fdV.textContent=kf[7].toFixed(1); });
+				const flEl = document.getElementById(`cp_${i}_fl`), flV = document.getElementById(`cp_${i}_fl_v`);
+				flEl.addEventListener('input', () => { kf[10]=parseFloat(flEl.value); flV.textContent=kf[10].toFixed(1); });
+				const bkEl = document.getElementById(`cp_${i}_bk`), bkV = document.getElementById(`cp_${i}_bk_v`);
+				bkEl.addEventListener('input', () => { kf[11]=parseFloat(bkEl.value); bkV.textContent=kf[11].toFixed(1); });
+			});
+		}
+
+		// ── Scroll ────────────────────────────────────────────────────────────
+		let currentScrollT = 0, targetScrollT = 0, _scrollDirty = false;
+		window.addEventListener('scroll',     () => { _scrollDirty = true; }, { passive: true });
+		window.addEventListener('touchmove',  () => { _scrollDirty = true; }, { passive: true });
+
+		function getScrollProgress() {
+			const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+			const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+			return scrollable > 0 ? Math.min(1, Math.max(0, scrollTop / scrollable)) : 0;
+		}
+
+		function syncCameraPathToDOM() {
+			const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+			if (scrollable <= 0) return;
+			cameraPath.forEach((kf, i) => {
+				const sec = document.querySelector(`.section[data-stage="${i}"]`);
+				if (sec) kf[0] = Math.min(1, Math.max(0, sec.offsetTop / scrollable));
+			});
+			cameraPath[cameraPath.length - 1][0] = 1.0;
+		}
+		syncCameraPathToDOM();
+		window.addEventListener('resize', () => setTimeout(syncCameraPathToDOM, 100));
+		window.addEventListener('load',   () => { setTimeout(syncCameraPathToDOM, 200); setTimeout(syncCameraPathToDOM, 1000); });
+
+		// ── Reveal Observer ───────────────────────────────────────────────────
+		const progressBar = document.getElementById('progressBar');
+		const navFloat    = document.getElementById('navFloat');
+		const revealObserver = new IntersectionObserver(entries => {
+			entries.forEach(e => {
+				if (e.isIntersecting) {
+					const el = e.target, d = el.dataset.delay || '0';
+					el.classList.add('revealed', `delay-${d}`);
+					revealObserver.unobserve(el);
+				}
+			});
+		}, { threshold: 0.1, rootMargin: '0px 0px -18% 0px' });
+		document.querySelectorAll('[data-reveal]').forEach(el => revealObserver.observe(el));
+		setTimeout(() => {
+			const hint = document.querySelector('.scroll-hint');
+			if (hint && !hint.classList.contains('revealed')) hint.classList.add('revealed', 'delay-4');
+		}, 800);
+
+		// Nav clicks
+		document.querySelectorAll('[data-nav]').forEach(l => l.addEventListener('click', e => {
+			e.preventDefault();
+			const sec = document.querySelector(`.section[data-stage="${l.dataset.nav}"]`);
+			if (sec) sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+		}));
+		const navHamburger = document.getElementById('navHamburger');
+		const navMobileOverlay = document.getElementById('navMobileOverlay');
+		navHamburger.addEventListener('click', () => { navHamburger.classList.toggle('open'); navMobileOverlay.classList.toggle('open'); });
+		document.querySelectorAll('[data-nav-mobile]').forEach(l => l.addEventListener('click', e => {
+			e.preventDefault();
+			navHamburger.classList.remove('open'); navMobileOverlay.classList.remove('open');
+			const sec = document.querySelector(`.section[data-stage="${l.dataset.navMobile}"]`);
+			if (sec) sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+		}));
+
+		// ── FPS ───────────────────────────────────────────────────────────────
+		const fpsOverlay = document.createElement('div');
+		fpsOverlay.style.cssText = 'position:fixed;top:10px;left:10px;z-index:400;font:12px/1 "Inter",monospace;color:rgba(240,160,64,0.7);background:rgba(0,0,0,0.4);padding:5px 10px;border-radius:6px;pointer-events:none;display:none;';
+		document.body.appendChild(fpsOverlay);
+		let fpsFrames = 0, fpsLast = performance.now();
+
+		// ── Mouse (optional — remove snow near cursor) ────────────────────────
+		// (no grass push needed for snow scene, kept for future)
+
+		window.addEventListener('resize', () => {
+			clearTimeout(window._rsz);
+			window._rsz = setTimeout(() => {
+				camera.aspect = innerWidth / innerHeight;
+				camera.updateProjectionMatrix();
+				const dpr = window.innerWidth < 1200 ? 1.5 : Math.min(devicePixelRatio, 2);
+				renderer.setPixelRatio(dpr);
+				renderer.setSize(innerWidth, innerHeight);
+			}, 100);
+		});
+
+		// ── Boot ──────────────────────────────────────────────────────────────
+		buildSettings();
+		await renderer.computeAsync(computeInit);
+
+		renderer.domElement.style.opacity = '0';
+		renderer.domElement.style.transition = 'opacity 0.5s ease';
+		for (let i = 0; i < 3; i++) {
+			renderer.compute(computeUpdate);
+			postProcessing.render();
+			await new Promise(r => requestAnimationFrame(r));
+		}
+		renderer.domElement.style.opacity = '1';
+
+		const clock = new THREE.Clock();
+		const lookTarget = new THREE.Vector3();
+		const _siteFooter = document.querySelector('.site-footer');
+		const _scrollHint = document.querySelector('.scroll-hint');
+
+		// ── Animate ───────────────────────────────────────────────────────────
+		function animate() {
+			const dt = Math.min(clock.getDelta(), 0.05);
+
+			if (_scrollDirty) { targetScrollT = getScrollProgress(); _scrollDirty = false; }
+			currentScrollT += (targetScrollT - currentScrollT) * Math.min(1, dt * 6);
+
+			const override = (editorMode === 'edit') ? cameraOverride : -1;
+			let cam;
+			if (override >= 0) {
+				const kf = cameraPath[override];
+				cam = { px:kf[1],py:kf[2],pz:kf[3],lx:kf[4],ly:kf[5],lz:kf[6],
+					fd:kf[7],dofOn:kf[9],fl:kf[10],bk:kf[11],params:stageParams[override] };
+			} else {
+				cam = lerpCam(currentScrollT);
+			}
+
+			camera.position.set(cam.px, cam.py, cam.pz);
+			lookTarget.set(cam.lx, cam.ly, cam.lz);
+			camera.lookAt(lookTarget);
+
+			// Apply per-stage params
+			if (cam.params) {
+				const p = cam.params;
+				fogStart.value  = p.fogStart;
+				fogEnd.value    = p.fogEnd;
+				fogIntensity.value = p.fogIntensity;
+				fogColorU.value.setRGB(p.fogR, p.fogG, p.fogB);
+				if (scene.fog) scene.fog.color.setRGB(p.fogR, p.fogG, p.fogB);
+				snowDensity.value = p.snowDensity;
+				snowSize.value    = p.snowSize;
+				snowFall.value    = p.snowFallSpeed;
+				snowOpacity.value = p.snowOpacity;
+				windDir.value.set(p.windX, p.windZ);
+				windSpeed.value   = p.windSpeedV;
+				uSnowLine.value   = p.snowLine;
+				uRockLine.value   = p.rockLine;
+				// DoF
+				const shouldDof = !!kf && kf[9] > 0.5 && globalDofEnabled;
+				if (shouldDof !== dofEnabled) { dofEnabled = shouldDof; rebuildPipeline(); }
+				if (dofEnabled) { focusDistanceU.value = cam.fd; focalLengthU.value = cam.fl; bokehScaleU.value = cam.bk; }
+			}
+
+			// Directional light follow camera XZ loosely
+			dirLight.position.set(camera.position.x + 80, 140, camera.position.z + 60);
+
+			// Footer push-up
+			if (_siteFooter) {
+				const ft = _siteFooter.getBoundingClientRect().top;
+				renderer.domElement.style.transform = ft < window.innerHeight ? `translateY(-${window.innerHeight - ft}px)` : '';
+			}
+
+			progressBar.style.width = (currentScrollT * 100) + '%';
+			navFloat.classList.toggle('visible', currentScrollT > 0.06);
+			if (_scrollHint) _scrollHint.style.opacity = Math.max(0, 1 - currentScrollT * 14);
+
+			// FPS
+			fpsFrames++;
+			const now = performance.now();
+			if (now - fpsLast > 1000) {
+				fpsOverlay.textContent = Math.round(fpsFrames * 1000 / (now - fpsLast)) + ' fps';
+				fpsFrames = 0; fpsLast = now;
+			}
+
+			renderer.compute(computeUpdate);
+			postProcessing.render();
+		}
+
+		renderer.setAnimationLoop(animate);
+	</script>
+</body>
+</html>

@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head><link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><link rel="preconnect" href="https://mc.yandex.ru" crossorigin>
+  <meta name="robots" content="noindex,nofollow" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sakhva Travel — Туры в Грузию</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: auto; }
+    body { background: #0a1015; font-family: 'Inter', sans-serif; }
+
+    canvas {
+      position: fixed !important;
+      top: 0; left: 0; width: 100%; height: 100%; z-index: 1;
+    }
+
+    #scroll-container {
+      position: relative;
+      height: 700vh;
+      z-index: 10;
+      pointer-events: none;
+    }
+
+    /* ── Header ── */
+    #header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      padding: 20px 32px;
+      display: flex; align-items: center; justify-content: space-between;
+      pointer-events: auto;
+    }
+    .logo {
+      font-size: 20px; font-weight: 700; color: white; letter-spacing: -0.5px;
+      text-shadow: 0 2px 12px rgba(0,0,0,0.5);
+    }
+    .logo span { color: #f0a040; }
+    .nav-btn {
+      background: rgba(240, 160, 64, 0.9);
+      color: #1a0e00;
+      padding: 10px 22px; border-radius: 100px;
+      font-size: 14px; font-weight: 600;
+      cursor: pointer; text-decoration: none;
+      transition: all 0.2s; border: none;
+    }
+    .nav-btn:hover { background: #ffb84a; transform: scale(1.03); }
+
+    /* ── Progress bar ── */
+    #progress-bar {
+      position: fixed; top: 0; left: 0; height: 3px;
+      background: linear-gradient(90deg, #f0a040, #ff6b35);
+      z-index: 200; transition: width 0.1s; width: 0%;
+    }
+
+    /* ── Scroll hint ── */
+    #scroll-hint {
+      position: fixed; bottom: 32px; left: 50%; transform: translateX(-50%);
+      z-index: 100;
+      display: flex; flex-direction: column; align-items: center; gap: 8px;
+      color: rgba(255,255,255,0.65);
+      font-size: 11px; font-weight: 500; letter-spacing: 2px; text-transform: uppercase;
+      pointer-events: none; transition: opacity 0.6s;
+    }
+    .scroll-arrow {
+      width: 20px; height: 20px;
+      border-right: 2px solid rgba(255,255,255,0.4);
+      border-bottom: 2px solid rgba(255,255,255,0.4);
+      transform: rotate(45deg);
+      animation: bounce 1.6s infinite;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: rotate(45deg) translateY(0); }
+      50% { transform: rotate(45deg) translateY(6px); }
+    }
+
+    /* ── Tour cards ── */
+    .tour-card {
+      position: fixed; left: 32px; top: 50%;
+      transform: translateY(-50%) translateX(-24px);
+      z-index: 100; width: 300px;
+      background: rgba(10, 14, 20, 0.78);
+      backdrop-filter: blur(22px);
+      border: 1px solid rgba(255,255,255,0.09);
+      border-radius: 20px; padding: 26px;
+      pointer-events: auto;
+      opacity: 0; transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    .tour-card.visible {
+      opacity: 1; transform: translateY(-50%) translateX(0);
+    }
+    .card-tag {
+      font-size: 10px; font-weight: 600; letter-spacing: 2px;
+      text-transform: uppercase; color: #f0a040; margin-bottom: 10px;
+    }
+    .card-title {
+      font-size: 30px; font-weight: 700; color: white;
+      line-height: 1.1; margin-bottom: 8px;
+    }
+    .card-sub {
+      font-size: 13px; color: rgba(255,255,255,0.5);
+      margin-bottom: 18px; line-height: 1.55;
+    }
+    .card-price {
+      font-size: 24px; font-weight: 700; color: white; margin-bottom: 16px;
+    }
+    .card-price small {
+      font-size: 12px; font-weight: 400; color: rgba(255,255,255,0.35);
+    }
+    .card-cta {
+      display: block; background: #f0a040; color: #1a0e00;
+      padding: 12px; border-radius: 12px;
+      text-align: center; font-size: 14px; font-weight: 600;
+      text-decoration: none; transition: background 0.2s;
+    }
+    .card-cta:hover { background: #ffb84a; }
+
+    /* ── Waypoint dots ── */
+    #wp-dots {
+      position: fixed; right: 24px; top: 50%; transform: translateY(-50%);
+      z-index: 100; display: flex; flex-direction: column; gap: 10px;
+      pointer-events: none;
+    }
+    .wp-dot {
+      width: 7px; height: 7px; border-radius: 50%;
+      background: rgba(255,255,255,0.25);
+      border: 1.5px solid rgba(255,255,255,0.35);
+      transition: all 0.3s;
+    }
+    .wp-dot.active {
+      background: #f0a040; border-color: #f0a040; transform: scale(1.5);
+    }
+
+    /* ── Speed indicator ── */
+    #speed-hud {
+      position: fixed; bottom: 28px; right: 28px; z-index: 100;
+      background: rgba(10,14,20,0.7); backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 14px; padding: 10px 16px;
+      color: rgba(200,220,240,0.7); font-size: 11px;
+      font-family: 'JetBrains Mono', monospace;
+      pointer-events: none;
+    }
+
+    /* ── End CTA ── */
+    #end-cta {
+      position: fixed; inset: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: center;
+      pointer-events: none; opacity: 0; transition: opacity 0.8s;
+    }
+    #end-cta.visible { opacity: 1; pointer-events: auto; }
+    .cta-box {
+      text-align: center; max-width: 460px; padding: 48px 44px;
+      background: rgba(8,12,18,0.88); backdrop-filter: blur(28px);
+      border: 1px solid rgba(255,255,255,0.1); border-radius: 28px;
+    }
+    .cta-box h2 { font-size: 34px; font-weight: 700; color: white; margin-bottom: 12px; line-height: 1.1; }
+    .cta-box p { font-size: 14px; color: rgba(255,255,255,0.45); margin-bottom: 28px; line-height: 1.7; }
+    .cta-box a {
+      display: inline-block; background: #f0a040; color: #1a0e00;
+      padding: 14px 40px; border-radius: 100px;
+      font-size: 15px; font-weight: 700; text-decoration: none;
+      transition: all 0.2s;
+    }
+    .cta-box a:hover { background: #ffb84a; transform: scale(1.02); }
+
+    /* ── Loader ── */
+    #loader {
+      position: fixed; inset: 0; z-index: 9999; background: #080e14;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      font-family: 'Inter', sans-serif; color: white; transition: opacity 0.8s;
+    }
+    .loader-brand { font-size: 26px; font-weight: 700; margin-bottom: 36px; letter-spacing: -0.5px; }
+    .loader-brand span { color: #f0a040; }
+    .loader-spin {
+      width: 38px; height: 38px; border-radius: 50%;
+      border: 3px solid rgba(255,255,255,0.08); border-top-color: #f0a040;
+      animation: spin 0.8s linear infinite; margin-bottom: 22px;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .loader-status { font-size: 12px; color: rgba(255,255,255,0.35); margin-bottom: 14px; }
+    .loader-track { width: 160px; height: 2px; border-radius: 2px; background: rgba(255,255,255,0.08); }
+    .loader-fill { height: 100%; border-radius: 2px; background: #f0a040; width: 0%; transition: width 0.4s; }
+  </style>
+
+  <style>@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap');</style>
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.183.1/build/three.webgpu.js",
+      "three/webgpu": "https://cdn.jsdelivr.net/npm/three@0.183.1/build/three.webgpu.js",
+      "three/tsl": "https://cdn.jsdelivr.net/npm/three@0.183.1/build/three.tsl.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.183.1/examples/jsm/",
+      "three/examples/jsm/": "https://cdn.jsdelivr.net/npm/three@0.183.1/examples/jsm/",
+      "@dimforge/rapier3d-compat": "https://cdn.jsdelivr.net/npm/@dimforge/rapier3d-compat@0.14.0/+esm"
+    }
+  }
+  </script>
+</head>
+<body>
+
+<div id="loader">
+  <div class="loader-brand">Sakhva <span>Travel</span></div>
+  <div class="loader-spin"></div>
+  <div class="loader-status" id="l-status">Загрузка…</div>
+  <div class="loader-track"><div class="loader-fill" id="l-bar"></div></div>
+</div>
+
+<div id="progress-bar"></div>
+
+<header id="header">
+  <div class="logo">Sakhva <span>Travel</span></div>
+  <a href="https://sakhva-travel.com" class="nav-btn">Выбрать тур</a>
+</header>
+
+<div id="scroll-hint">
+  <span>Прокрути вниз</span>
+  <div class="scroll-arrow"></div>
+</div>
+
+<div id="tour-cards"></div>
+<div id="wp-dots"></div>
+<div id="speed-hud">— km/h</div>
+
+<div id="end-cta">
+  <div class="cta-box">
+    <h2>Готов к приключению?</h2>
+    <p>12 уникальных маршрутов по Грузии с гидом Тимуром.<br>Группы до 7 человек · Рейтинг 4.9 ★ · 500+ туристов</p>
+    <a href="https://sakhva-travel.com">Смотреть все туры →</a>
+  </div>
+</div>
+
+<div id="scroll-container"></div>
+
+<script type="module">
+import RAPIER from '@dimforge/rapier3d-compat'
+import * as THREE from 'three/webgpu'
+import { ImprovedNoise } from 'three/addons/math/ImprovedNoise.js'
+import {
+  Fn, uniform, float, vec3, positionWorld, normalWorld,
+  smoothstep, mix, mx_noise_float, time,
+  dot, max, pow, normalize, positionLocal,
+} from 'three/tsl'
+
+/* ── WAYPOINTS ────────────────────────────────────────────────────── */
+const WAYPOINTS = [
+  { id: 'tbilisi',  scrollStart: 0.05, scrollEnd: 0.22,
+    tag: 'Старый Тбилиси', title: 'Тбилиси',
+    sub: 'Серные бани · Нарикала · Мтацминда', price: '$27',
+    url: 'https://sakhva-travel.com/tour/old-tbilisi' },
+  { id: 'kazbegi',  scrollStart: 0.28, scrollEnd: 0.45,
+    tag: 'Горный тур', title: 'Казбеги',
+    sub: 'Церковь Гергети · Военно-Грузинская дорога', price: '$49',
+    url: 'https://sakhva-travel.com/tour/kazbegi' },
+  { id: 'kakheti',  scrollStart: 0.52, scrollEnd: 0.68,
+    tag: 'Вино и природа', title: 'Кахетия',
+    sub: 'Монастырь Алаверди · Дегустации · Виноградники', price: '$49',
+    url: 'https://sakhva-travel.com/tour/kakheti' },
+  { id: 'mtskheta', scrollStart: 0.75, scrollEnd: 0.90,
+    tag: 'Древняя столица', title: 'Мцхета',
+    sub: 'Собор Светицховели · Джвари · ЮНЕСКО', price: '$15',
+    url: 'https://sakhva-travel.com/tour/mtskheta' },
+]
+
+const cardsContainer = document.getElementById('tour-cards')
+const wpDotsEl = document.getElementById('wp-dots')
+const cardEls = {}, dotEls = {}
+
+WAYPOINTS.forEach(wp => {
+  const card = document.createElement('div')
+  card.className = 'tour-card'
+  card.innerHTML = `
+    <div class="card-tag">${wp.tag}</div>
+    <div class="card-title">${wp.title}</div>
+    <div class="card-sub">${wp.sub}</div>
+    <div class="card-price">${wp.price} <small>с человека</small></div>
+    <a href="${wp.url}" class="card-cta">Подробнее о туре →</a>
+  `
+  cardsContainer.appendChild(card)
+  cardEls[wp.id] = card
+
+  const dot = document.createElement('div')
+  dot.className = 'wp-dot'
+  wpDotsEl.appendChild(dot)
+  dotEls[wp.id] = dot
+})
+
+/* ── SCROLL STATE ─────────────────────────────────────────────────── */
+let scrollY = 0, smoothScrollY = 0, prevSmooth = 0
+window.addEventListener('scroll', () => { scrollY = window.scrollY }, { passive: true })
+
+function getScrollPct() {
+  const max = document.documentElement.scrollHeight - window.innerHeight
+  return max > 0 ? Math.min(1, scrollY / max) : 0
+}
+
+/* ── LOADER ───────────────────────────────────────────────────────── */
+const loaderEl = document.getElementById('loader')
+const lStatus  = document.getElementById('l-status')
+const lBar     = document.getElementById('l-bar')
+function setLoading(txt, pct) { lStatus.textContent = txt; lBar.style.width = pct + '%' }
+
+setLoading('Инициализация физики…', 10)
+await RAPIER.init()
+setLoading('Физика готова', 25)
+
+/* ── SCENE ────────────────────────────────────────────────────────── */
+const GROUND_SIZE = 400, GROUND_SEGS = 200, GROUND_Y = -0.15, GROUND_SNAP = 8
+const HF_SIZE = 600, HF_RES = 200, HF_RETHRESH = 150
+
+const scene = new THREE.Scene()
+scene.fog   = new THREE.FogExp2('#b0c8d8', 0.0032)
+
+const camera = new THREE.PerspectiveCamera(55, innerWidth / innerHeight, 0.1, 500)
+camera.position.set(-8, 5, 0)
+
+const renderer = new THREE.WebGPURenderer({ antialias: true })
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2))
+renderer.setSize(innerWidth, innerHeight)
+renderer.shadowMap.enabled = true
+renderer.shadowMap.type = THREE.PCFSoftShadowMap
+renderer.toneMapping = THREE.ACESFilmicToneMapping
+renderer.toneMappingExposure = 1.04
+document.body.appendChild(renderer.domElement)
+await renderer.init()
+
+/* ── SKY ──────────────────────────────────────────────────────────── */
+{
+  const skyMat = new THREE.MeshBasicNodeMaterial({ side: THREE.BackSide, depthWrite: false })
+  skyMat.colorNode = Fn(() => {
+    const vdir = normalize(positionLocal)
+    const elev = vdir.y
+    // Зенит → горизонт → земля
+    const tUp    = smoothstep(float(-0.05), float(0.55), elev)
+    const tHoriz = smoothstep(float(0.55),  float(1.0),  elev)
+    const cHoriz = vec3(0.72, 0.86, 0.96)  // светлый горизонт
+    const cZenit = vec3(0.22, 0.44, 0.74)  // тёмно-синий зенит
+    const cLow   = vec3(0.62, 0.78, 0.90)  // молочно-белый у земли
+    const skyCol = mix(mix(cLow, cHoriz, tUp), cZenit, tHoriz)
+    // Солнечный диск + гало
+    const sunDir = normalize(vec3(0.55, 0.38, 0.42))
+    const sunDot = max(float(0), dot(vdir, sunDir))
+    const disc   = smoothstep(float(0.9985), float(1.0),  sunDot)
+    const halo   = pow(sunDot, float(8.0)).mul(float(0.14))
+    const sunCol = vec3(1.0, 0.92, 0.72)
+    // Атмосферная дымка у горизонта
+    const hazeT  = smoothstep(float(0.0), float(0.18), elev.oneMinus())
+    const hazeC  = vec3(0.88, 0.92, 0.96)
+    return mix(skyCol, hazeC, hazeT.mul(float(0.4))).add(sunCol.mul(disc.add(halo)))
+  })()
+  const skyMesh = new THREE.Mesh(new THREE.SphereGeometry(450, 24, 12), skyMat)
+  scene.add(skyMesh)
+}
+
+/* ── TERRAIN ──────────────────────────────────────────────────────── */
+const perlin = new ImprovedNoise()
+function getH(x, z) {
+  const s = 0.004, a = 24
+  return perlin.noise(x*s,0,z*s)*a + perlin.noise(x*s*2,1,z*s*2)*a*0.5 + perlin.noise(x*s*4,2,z*s*4)*a*0.25
+}
+
+const WATER_LEVEL = -8.0, SAND_END = -3.0, DIRT_END = 10.0
+
+// Caucasus mountain palette uniforms
+const uWater = uniform(WATER_LEVEL), uSand = uniform(SAND_END)
+const uDirt  = uniform(DIRT_END),    uTrans = uniform(2.5)
+const cSand1 = uniform(new THREE.Color('#6aaa38'))  // lowland meadow
+const cSand2 = uniform(new THREE.Color('#7dc040'))
+const cDirt1 = uniform(new THREE.Color('#2a6020'))  // mountain forest
+const cDirt2 = uniform(new THREE.Color('#3a7030'))
+const cGrass1 = uniform(new THREE.Color('#8a8070')) // alpine rocky
+const cGrass2 = uniform(new THREE.Color('#7a7060'))
+const cWater  = uniform(new THREE.Color('#4888c0'))  // mountain river
+const cWaterD = uniform(new THREE.Color('#1c4a88'))
+
+// Snow shader uniform for high peaks
+const uSnow = uniform(16.0)
+const cSnow1 = uniform(new THREE.Color('#dde8ec'))
+const cSnow2 = uniform(new THREE.Color('#e8eef2'))
+
+const groundMat = new THREE.MeshStandardNodeMaterial({ roughness: 0.88, metalness: 0 })
+groundMat.colorNode = Fn(() => {
+  const wx = positionWorld.x, wz = positionWorld.z, h = positionWorld.y
+
+  // Шумовые коэффициенты
+  const n  = mx_noise_float(vec3(wx.mul(0.12), float(0), wz.mul(0.12))).mul(0.5).add(0.5)
+  const n2 = mx_noise_float(vec3(wx.mul(0.38), float(1), wz.mul(0.38))).mul(0.5).add(0.5) // средний детальный
+  const nd = mx_noise_float(vec3(wx.mul(1.4),  float(2), wz.mul(1.4))).mul(0.5).add(0.5)  // микро-деталь
+  const tn = mx_noise_float(vec3(wx.mul(0.05), float(0), wz.mul(0.05))).mul(uTrans)
+  const ah = h.add(tn), hw = uTrans.mul(0.5)
+
+  // Биомы по высоте
+  const sT  = smoothstep(uSand.sub(hw),       uSand.add(hw),       ah) // луг → лес
+  const gT  = smoothstep(uDirt.sub(hw),       uDirt.add(hw),       ah) // лес → альпийский
+  const snT = smoothstep(uSnow.sub(float(1.5)), uSnow.add(float(2.5)), h) // снег
+
+  const biome = mix(mix(mix(cSand1, cSand2, n), mix(cDirt1, cDirt2, n2), sT), mix(cGrass1, cGrass2, n), gT)
+
+  // Склоновые скалы: крутой откос → серый гранит
+  const wn    = normalize(normalWorld)
+  const slope = float(1.0).sub(max(float(0), wn.y))
+  const slopeT = smoothstep(float(0.38), float(0.65), slope)
+  const cRock1 = vec3(0.52, 0.48, 0.44), cRock2 = vec3(0.40, 0.36, 0.32)
+  const rock   = mix(cRock1, cRock2, n2)
+  const withSlope = mix(biome, rock, slopeT)
+
+  // Снежные шапки
+  const withSnow = mix(withSlope, mix(cSnow1, cSnow2, nd), snT)
+
+  // Микро-вариация яркости поверхности
+  const detail = nd.mul(float(0.18)).add(float(0.91))
+  const surface = withSnow.mul(detail)
+
+  // Подводное затемнение
+  const udk = smoothstep(uWater.add(float(0.8)), uWater.sub(float(2.5)), h)
+  return mix(surface, vec3(0.03, 0.06, 0.11), udk)
+})()
+
+const groundGeo  = new THREE.PlaneGeometry(GROUND_SIZE, GROUND_SIZE, GROUND_SEGS, GROUND_SEGS)
+const groundMesh = new THREE.Mesh(groundGeo, groundMat)
+groundMesh.rotation.x = -Math.PI / 2
+groundMesh.receiveShadow = true
+scene.add(groundMesh)
+
+// ── Ground streaming (double-buffered) ──
+const _gsP1 = GROUND_SEGS + 1
+let _gPending = false, _gTX = 0, _gTZ = 0, _gRow = 0
+let _gBuf = new Float32Array(_gsP1 * _gsP1)
+
+function updateGroundAsync(px, pz) { _gTX = px; _gTZ = pz; _gRow = 0; _gPending = true }
+function tickGround() {
+  if (!_gPending) return
+  const pos = groundGeo.attributes.position
+  const end = Math.min(_gsP1, _gRow + 80)
+  for (let r = _gRow; r < end; r++)
+    for (let c = 0; c < _gsP1; c++) {
+      const i = r * _gsP1 + c
+      _gBuf[i] = getH(pos.getX(i) + _gTX, _gTZ - pos.getY(i)) + GROUND_Y
+    }
+  _gRow = end
+  if (_gRow >= _gsP1) {
+    for (let i = 0; i < _gsP1 * _gsP1; i++) pos.setZ(i, _gBuf[i])
+    pos.needsUpdate = true
+    groundMesh.position.x = _gTX; groundMesh.position.z = _gTZ
+    groundGeo.computeVertexNormals(); _gPending = false
+  }
+}
+function updateGroundSync(px, pz) {
+  groundMesh.position.x = px; groundMesh.position.z = pz
+  const pos = groundGeo.attributes.position
+  for (let i = 0; i < pos.count; i++)
+    pos.setZ(i, getH(pos.getX(i) + px, pz - pos.getY(i)) + GROUND_Y)
+  pos.needsUpdate = true; groundGeo.computeVertexNormals()
+}
+updateGroundSync(0, 0)
+
+// ── Water ──
+const waterMat = new THREE.MeshStandardNodeMaterial({ transparent: true, opacity: 0.72, roughness: 0.03, metalness: 0.45, side: THREE.DoubleSide })
+waterMat.colorNode = Fn(() => {
+  const wx = positionWorld.x, wz = positionWorld.z
+  // Два слоя волн для анимации
+  const w1 = mx_noise_float(vec3(wx.mul(0.06).add(time.mul(0.20)), float(0), wz.mul(0.06).add(time.mul(0.14)))).mul(0.5).add(0.5)
+  const w2 = mx_noise_float(vec3(wx.mul(0.13).sub(time.mul(0.10)), float(1), wz.mul(0.10).add(time.mul(0.08)))).mul(0.5).add(0.5)
+  const wave = mix(w1, w2, float(0.5))
+  // Фреснель-эффект: мелко → бирюзовый, глубоко → тёмно-синий
+  const cDeep    = vec3(0.03, 0.10, 0.28)
+  const cShallow = vec3(0.20, 0.60, 0.82)
+  const cFoam    = vec3(0.82, 0.92, 1.00)
+  const baseCol  = mix(cDeep, cShallow, wave.mul(0.75))
+  // Гребни волн — светлая пена
+  const foam = smoothstep(float(0.80), float(1.0), wave)
+  return mix(baseCol, cFoam, foam.mul(0.35))
+})()
+waterMat.normalNode = Fn(() => {
+  const wx = positionWorld.x, wz = positionWorld.z
+  const nx = mx_noise_float(vec3(wx.mul(0.14).add(time.mul(0.24)), float(4), wz.mul(0.14).add(time.mul(0.17))))
+  const nz = mx_noise_float(vec3(wx.mul(0.14).sub(time.mul(0.19)), float(5), wz.mul(0.09).add(time.mul(0.12))))
+  return normalize(vec3(nx.mul(0.22), float(1.0), nz.mul(0.22)))
+})()
+const waterMesh = new THREE.Mesh(new THREE.PlaneGeometry(GROUND_SIZE + 100, GROUND_SIZE + 100, 2, 2), waterMat)
+waterMesh.rotation.x = -Math.PI / 2; waterMesh.position.y = WATER_LEVEL
+scene.add(waterMesh)
+
+/* ── LIGHTING ─────────────────────────────────────────────────────── */
+// Небо: тёплый голубой сверху, тёплая земля снизу
+scene.add(new THREE.HemisphereLight(0xc0d8f8, 0x6a5040, 0.80))
+// Основное солнце — золотисто-белое
+const dirLight = new THREE.DirectionalLight(0xffe898, 4.2)
+dirLight.position.set(14, 28, 10); dirLight.castShadow = true
+dirLight.shadow.mapSize.set(2048, 2048)
+Object.assign(dirLight.shadow.camera, { near: 0.5, far: 110, left: -70, right: 70, top: 70, bottom: -70 })
+dirLight.shadow.bias = -0.0008; dirLight.shadow.normalBias = 0.018
+scene.add(dirLight); scene.add(dirLight.target)
+// Контровой свет — холодный синий с противоположной стороны
+const fillLight = new THREE.DirectionalLight(0x88aacc, 0.60)
+fillLight.position.set(-12, 10, -10)
+scene.add(fillLight)
+// Мягкий рассеянный свет неба
+scene.add(new THREE.AmbientLight(0xfff0e0, 0.22))
+
+/* ── PHYSICS ──────────────────────────────────────────────────────── */
+const world = new RAPIER.World({ x: 0, y: -9.81, z: 0 })
+world.timestep = 1 / 60
+
+// Heightfield
+let hfBody = null, hfColl = null, hfCenter = { x: 0, z: 0 }
+let _hfPend = false, _hfCx = 0, _hfCz = 0, _hfH = null, _hfRow = 0
+let _hfStage = 0, _hfSH = null, _hfSCx = 0, _hfSCz = 0
+
+function buildHF(cx, cz) { _hfCx = cx; _hfCz = cz; _hfH = new Float32Array((HF_RES+1)*(HF_RES+1)); _hfRow = 0; _hfPend = true }
+function _finalHF() { _hfSH = _hfH; _hfSCx = _hfCx; _hfSCz = _hfCz; _hfStage = 1; _hfPend = false; _hfH = null }
+
+function tickHF() {
+  if (!_hfPend) return
+  const end = Math.min(HF_RES + 1, _hfRow + 20)
+  for (let r = _hfRow; r < end; r++)
+    for (let c = 0; c <= HF_RES; c++)
+      _hfH[r + c*(HF_RES+1)] = getH(_hfCx + (c/HF_RES - 0.5)*HF_SIZE, _hfCz + (r/HF_RES - 0.5)*HF_SIZE) + GROUND_Y
+  _hfRow = end
+  if (_hfRow > HF_RES) _finalHF()
+}
+
+function tickHFFinalize() {
+  if (_hfStage === 0) return
+  if (_hfStage === 1) { if (hfColl) { try { world.removeCollider(hfColl, false) } catch(e){} hfColl = null } _hfStage = 2; return }
+  if (_hfStage === 2) { if (hfBody) { try { world.removeRigidBody(hfBody) } catch(e){} hfBody = null } _hfStage = 3; return }
+  if (_hfStage === 3) {
+    hfBody = world.createRigidBody(RAPIER.RigidBodyDesc.fixed().setTranslation(_hfSCx, 0, _hfSCz))
+    hfColl = world.createCollider(
+      RAPIER.ColliderDesc.heightfield(HF_RES, HF_RES, _hfSH, { x: HF_SIZE, y: 1, z: HF_SIZE }).setFriction(0.8).setRestitution(0.1), hfBody)
+    hfCenter = { x: _hfSCx, z: _hfSCz }; _hfSH = null; _hfStage = 0
+  }
+}
+
+// Sync build for startup
+function buildHFSync(cx, cz) {
+  buildHF(cx, cz); _hfRow = HF_RES + 1
+  for (let r = 0; r <= HF_RES; r++)
+    for (let c = 0; c <= HF_RES; c++)
+      _hfH[r + c*(HF_RES+1)] = getH(_hfCx + (c/HF_RES - 0.5)*HF_SIZE, _hfCz + (r/HF_RES - 0.5)*HF_SIZE) + GROUND_Y
+  _finalHF()
+  // Immediately finalize all 3 stages
+  for (let s = 1; s <= 3; s++) tickHFFinalize()
+}
+buildHFSync(0, 0)
+
+/* ── CAR ──────────────────────────────────────────────────────────── */
+setLoading('Сборка автомобиля…', 55)
+
+// Toyota Sienna 2021 — серебристый минивэн
+// model rotation.y = PI/2 → model +Z = world +X (направление движения)
+// Колёса в физике: x=±1.0 (перед/зад), z=±0.8 (лево/право)
+// → в model space: z=∓0.31 (при scale 3.2), x=±0.25
+function makeChassis() {
+  const g = new THREE.Group()
+
+  const mSilver = new THREE.MeshPhysicalMaterial({ color: '#c2c6ca', roughness: 0.22, metalness: 0.78, clearcoat: 1.0, clearcoatRoughness: 0.10, reflectivity: 0.95 })
+  const mDark   = new THREE.MeshStandardMaterial({ color: '#1e2024', roughness: 0.65, metalness: 0.12 })
+  const mGlass  = new THREE.MeshStandardMaterial({ color: '#38556a', roughness: 0.04, metalness: 0.35, transparent: true, opacity: 0.60 })
+  const mChrome = new THREE.MeshStandardMaterial({ color: '#cdd1d5', roughness: 0.08, metalness: 0.95 })
+  const mLight  = new THREE.MeshStandardMaterial({ color: '#fff8e4', emissive: '#ffffc0', emissiveIntensity: 0.4, roughness: 0.05 })
+  const mTail   = new THREE.MeshStandardMaterial({ color: '#cc1818', emissive: '#660000', emissiveIntensity: 0.3, roughness: 0.1 })
+
+  const add = (geo, mat, px, py, pz, rx=0, ry=0, rz=0) => {
+    const m = new THREE.Mesh(geo, mat)
+    m.position.set(px, py, pz); m.rotation.set(rx, ry, rz)
+    m.castShadow = true; m.receiveShadow = true; g.add(m)
+  }
+
+  // ── Кузов ──────────────────────────────────────────────────────
+  add(new THREE.BoxGeometry(1.40, 0.42, 2.20), mSilver,  0,  0.02,  0)     // нижняя часть
+  add(new THREE.BoxGeometry(1.36, 0.66, 2.00), mSilver,  0,  0.60,  0)     // верхняя кабина
+  add(new THREE.BoxGeometry(1.24, 0.09, 1.88), mSilver,  0,  0.94,  0)     // крыша
+
+  // ── Лобовое стекло (наклонное, характерный ракурс Sienna) ──────
+  add(new THREE.BoxGeometry(1.20, 0.42, 0.08), mGlass,   0,  0.64,  0.96,  0.30, 0, 0)
+  // ── Заднее стекло ──────────────────────────────────────────────
+  add(new THREE.BoxGeometry(1.14, 0.38, 0.08), mGlass,   0,  0.64, -0.94, -0.22, 0, 0)
+
+  // ── Боковые стёкла (оба борта) ─────────────────────────────────
+  for (const sx of [0.70, -0.70]) {
+    add(new THREE.BoxGeometry(0.08, 0.34, 0.40), mGlass, sx, 0.66,  0.56)  // переднее
+    add(new THREE.BoxGeometry(0.08, 0.36, 0.54), mGlass, sx, 0.66, -0.02)  // сдвижная дверь
+    add(new THREE.BoxGeometry(0.08, 0.30, 0.32), mGlass, sx, 0.64, -0.60)  // заднее
+  }
+
+  // ── Решётка + бамперы ──────────────────────────────────────────
+  add(new THREE.BoxGeometry(1.30, 0.16, 0.09), mDark,    0,  0.12,  1.11) // решётка
+  add(new THREE.BoxGeometry(1.42, 0.28, 0.11), mDark,    0, -0.12,  1.10) // передний бампер
+  add(new THREE.BoxGeometry(1.40, 0.25, 0.10), mDark,    0, -0.12, -1.10) // задний бампер
+
+  // ── Тонкие LED-фары Sienna 2021 ────────────────────────────────
+  for (const sx of [0.45, -0.45]) {
+    add(new THREE.BoxGeometry(0.28, 0.065, 0.09), mLight, sx,  0.22,  1.12) // передние
+    add(new THREE.BoxGeometry(0.24, 0.105, 0.08), mTail,  sx,  0.14, -1.12) // задние
+  }
+
+  // ── Рейлинги крыши ─────────────────────────────────────────────
+  for (const sx of [0.58, -0.58]) {
+    add(new THREE.BoxGeometry(0.038, 0.032, 1.72), mChrome, sx, 0.99, 0)
+  }
+
+  // ── Пороги ─────────────────────────────────────────────────────
+  for (const sx of [0.73, -0.73]) {
+    add(new THREE.BoxGeometry(0.065, 0.10, 1.90), mDark, sx, -0.17, 0)
+  }
+
+  // ── Арки колёс (визуальные) ────────────────────────────────────
+  for (const sz of [0.35, -0.35]) {
+    for (const sx of [0.73, -0.73]) {
+      const arc = new THREE.Mesh(new THREE.TorusGeometry(0.185, 0.020, 6, 20, Math.PI), mDark)
+      arc.rotation.z = sx > 0 ? Math.PI/2 : -Math.PI/2
+      arc.position.set(sx, -0.07, sz)
+      arc.castShadow = true; g.add(arc)
+    }
+  }
+
+  return g
+}
+
+// Sienna 2021 — 18" алюминиевые диски
+function makeTire() {
+  const g = new THREE.Group()
+  // Покрышка
+  const tGeo = new THREE.CylinderGeometry(0.175, 0.175, 0.13, 22); tGeo.rotateX(Math.PI/2)
+  g.add(new THREE.Mesh(tGeo, new THREE.MeshStandardMaterial({ color: '#0c0c0c', roughness: 0.96 })))
+  // Обод
+  const rGeo = new THREE.CylinderGeometry(0.128, 0.128, 0.135, 7); rGeo.rotateX(Math.PI/2)
+  g.add(new THREE.Mesh(rGeo, new THREE.MeshStandardMaterial({ color: '#9a9ea2', roughness: 0.18, metalness: 0.88 })))
+  // Ступица
+  const hGeo = new THREE.CylinderGeometry(0.032, 0.032, 0.14, 8); hGeo.rotateX(Math.PI/2)
+  g.add(new THREE.Mesh(hGeo, new THREE.MeshStandardMaterial({ color: '#d0d4d8', roughness: 0.06, metalness: 0.95 })))
+  return g
+}
+
+const CHASSIS_HW = 1.05, CHASSIS_HH = 0.38, CHASSIS_HD = 0.65
+const startH = getH(0, 0) + 4.5
+const chassisBody = world.createRigidBody(RAPIER.RigidBodyDesc.dynamic().setTranslation(0, startH, 0).setCanSleep(false))
+world.createCollider(
+  RAPIER.ColliderDesc.cuboid(CHASSIS_HW, CHASSIS_HH, CHASSIS_HD)
+    .setMassProperties(2.5, { x:0,y:-0.3,z:0 }, { x:0.4,y:1.1,z:0.9 }, { x:0,y:0,z:0,w:1 })
+    .setFriction(0.5),
+  chassisBody)
+
+const chassisGroup = new THREE.Group()
+const chassisModel = makeChassis()
+chassisModel.rotation.y = Math.PI / 2
+chassisModel.scale.setScalar(3.0)
+chassisGroup.add(chassisModel)
+scene.add(chassisGroup)
+
+const vehicle = world.createVehicleController(chassisBody)
+const WHEEL_R = 0.45, SUSP_REST = 0.6
+const WHEEL_OFF = { x: 1.0, y: 0.1, z: 0.8 }
+const wheelConns = [
+  { x:  WHEEL_OFF.x, y: WHEEL_OFF.y, z:  WHEEL_OFF.z },
+  { x:  WHEEL_OFF.x, y: WHEEL_OFF.y, z: -WHEEL_OFF.z },
+  { x: -WHEEL_OFF.x, y: WHEEL_OFF.y, z:  WHEEL_OFF.z },
+  { x: -WHEEL_OFF.x, y: WHEEL_OFF.y, z: -WHEEL_OFF.z },
+]
+const dirCs = { x:0, y:-1, z:0 }, axleCs = { x:0, y:0, z:1 }
+const wheelMeshes = [], wheelSpins = [0,0,0,0]
+const UP = new THREE.Vector3(0,1,0), SPIN = new THREE.Vector3(0,0,1)
+
+for (let i = 0; i < 4; i++) {
+  vehicle.addWheel(wheelConns[i], dirCs, axleCs, SUSP_REST, WHEEL_R)
+  vehicle.setWheelFrictionSlip(i, 1.6)
+  vehicle.setWheelSuspensionStiffness(i, 12)
+  vehicle.setWheelMaxSuspensionForce(i, 300)
+  vehicle.setWheelMaxSuspensionTravel(i, 1.2)
+  vehicle.setWheelSuspensionCompression(i, 1.8)
+  vehicle.setWheelSuspensionRelaxation(i, 4.5)
+  vehicle.setWheelSideFrictionStiffness(i, 2.0)
+
+  const wg = new THREE.Group()
+  const tm = makeTire()
+  tm.rotation.y = (i % 2 === 0) ? -Math.PI/2 : Math.PI/2
+  tm.scale.setScalar(2.9); wg.add(tm)
+  scene.add(wg); wheelMeshes.push(wg)
+}
+
+/* ── DUST PARTICLES ───────────────────────────────────────────────── */
+const DUST_N = 700
+const dustData = Array.from({ length: DUST_N }, () => ({ life:0, maxLife:0, x:0, y:-999, z:0, vx:0, vy:0, vz:0, size:0 }))
+const dustTex = (() => {
+  const c = document.createElement('canvas'); c.width = c.height = 64
+  const ctx = c.getContext('2d'), g = ctx.createRadialGradient(32,32,0,32,32,32)
+  g.addColorStop(0,   'rgba(220,180,120,1)')
+  g.addColorStop(0.3, 'rgba(200,160,100,0.7)')
+  g.addColorStop(0.7, 'rgba(180,140,80,0.2)')
+  g.addColorStop(1,   'rgba(160,120,60,0)')
+  ctx.fillStyle = g; ctx.fillRect(0,0,64,64)
+  return new THREE.CanvasTexture(c)
+})()
+const dustMesh = new THREE.InstancedMesh(
+  new THREE.PlaneGeometry(1,1),
+  new THREE.MeshBasicMaterial({ map: dustTex, transparent: true, depthWrite: false, side: THREE.DoubleSide }),
+  DUST_N)
+dustMesh.frustumCulled = false
+dustMesh.instanceMatrix.setUsage(THREE.DynamicDrawUsage)
+scene.add(dustMesh)
+const _dm4 = new THREE.Matrix4(), _dp = new THREE.Vector3(), _ds = new THREE.Vector3()
+for (let i = 0; i < DUST_N; i++) { _dm4.makeScale(0,0,0); dustMesh.setMatrixAt(i, _dm4) }
+dustMesh.instanceMatrix.needsUpdate = true
+
+let dustIdx = 0
+function emitDust(wx, wy, wz, vx, vz) {
+  for (let n = 0; n < 2; n++) {
+    const i = dustIdx++ % DUST_N, d = dustData[i]
+    d.x = wx+(Math.random()-.5)*.8; d.y = wy - WHEEL_R*.8; d.z = wz+(Math.random()-.5)*.8
+    d.vx = vx*.08+(Math.random()-.5)*1.2; d.vy = .5+Math.random()*1.8; d.vz = vz*.08+(Math.random()-.5)*1.2
+    d.maxLife = .8+Math.random()*1.2; d.life = d.maxLife; d.size = .15+Math.random()*.3
+  }
+}
+function tickDust(dt) {
+  for (let i = 0; i < DUST_N; i++) {
+    const d = dustData[i]
+    if (d.life <= 0) { _dm4.makeScale(0,0,0); dustMesh.setMatrixAt(i, _dm4); continue }
+    d.life -= dt; d.x += d.vx*dt; d.y += d.vy*dt; d.z += d.vz*dt
+    d.vx *= .97; d.vz *= .97
+    const t = Math.max(0, d.life/d.maxLife), s = d.size*(1+(1-t)*2)*t*t*(3-2*t)
+    _dp.set(d.x,d.y,d.z); _ds.set(s,s,s)
+    _dm4.compose(_dp, camera.quaternion, _ds); dustMesh.setMatrixAt(i, _dm4)
+  }
+  dustMesh.instanceMatrix.needsUpdate = true
+}
+
+/* ── ROCKS & BUSHES ───────────────────────────────────────────────── */
+const _rgc = [] // rock geo cache
+function getRockGeo(seed) {
+  if (_rgc.length < 8) {
+    for (let g = 0; g < 8; g++) {
+      const geo = new THREE.SphereGeometry(1, 18, 12)
+      const pos = geo.attributes.position
+      for (let i = 0; i < pos.count; i++) {
+        const nx=pos.getX(i), ny=pos.getY(i), nz=pos.getZ(i)
+        const l=Math.sqrt(nx*nx+ny*ny+nz*nz)||1
+        const d = Math.sin(nx/l*(1.5+g*.3)+nz/l*(2.8+g*.2)+g)*Math.cos(ny/l*(1.5+g*.3)*1.3+g*.7)*.12
+        pos.setX(i, nx*(1+d)); pos.setY(i, ny*(.45+(Math.sin(g*2.1)+1)*.2)*(1+d*.5)); pos.setZ(i, nz*(1+d))
+      }
+      geo.computeVertexNormals(); _rgc.push(geo)
+    }
+  }
+  return _rgc[Math.floor(((seed*7.31)%1+1)%1*8)]
+}
+const rMats = ['#9a8a78','#8a7a68','#7d6d58'].map(c => new THREE.MeshStandardMaterial({ color: c, roughness: .92 }))
+const bMats = ['#3d6b2a','#4a7835','#527d3a'].map(c => new THREE.MeshStandardMaterial({ color: c, roughness: .88 }))
+
+// ── Хвойные деревья ──
+const _coniferTrunkMat = new THREE.MeshStandardMaterial({ color: '#3a2818', roughness: 0.96 })
+const _coniferFolMats  = ['#1a4215','#22521c','#1e4a1a'].map(c => new THREE.MeshStandardMaterial({ color: c, roughness: 0.85 }))
+function makeConifer(seed) {
+  const g = new THREE.Group()
+  const trunkH = 0.85 + sRand(seed, seed*1.3, 20) * 0.55
+  const trunkR = 0.055 + sRand(seed, seed*1.7, 21) * 0.028
+  const trunk  = new THREE.Mesh(new THREE.CylinderGeometry(trunkR * 0.55, trunkR, trunkH, 6), _coniferTrunkMat)
+  trunk.position.y = trunkH * 0.5; trunk.castShadow = true; g.add(trunk)
+  const fol = _coniferFolMats[Math.floor(sRand(seed, seed, 29) * 3)]
+  const tiers = 3
+  for (let t = 0; t < tiers; t++) {
+    const r = (0.60 - t * 0.13) * (0.85 + sRand(seed, t, 22) * 0.3)
+    const h = 0.72 - t * 0.10
+    const y = trunkH * 0.55 + t * h * 0.72
+    const cone = new THREE.Mesh(new THREE.ConeGeometry(r, h, 7), fol)
+    cone.position.y = y; cone.castShadow = true; cone.receiveShadow = true; g.add(cone)
+  }
+  return g
+}
+
+const scatterG = new THREE.Group(); scene.add(scatterG)
+const scatterCells = new Map()
+const SCELL = 14, SRANGE = 10
+
+function sRand(x, z, s) { const n = Math.sin(x*12.9898+z*78.233+s*43.1234)*43758.5453; return n-Math.floor(n) }
+
+function buildCell(cx, cz) {
+  const key = cx+','+cz; if (scatterCells.has(key)) return
+  const objs = [], wx0 = cx*SCELL, wz0 = cz*SCELL
+  const r1 = sRand(wx0,wz0,1), r2 = sRand(wx0,wz0,2)
+  if (r1 < .32) {
+    const wx = wx0+(sRand(wx0,wz0,3)-.5)*SCELL*.8, wz = wz0+(sRand(wx0,wz0,4)-.5)*SCELL*.8
+    const h = getH(wx,wz)+GROUND_Y
+    if (h >= WATER_LEVEL-.5) {
+      const sc = .3+sRand(wx0,wz0,5)*1.2
+      const m = new THREE.Mesh(getRockGeo(r1), rMats[Math.floor(sRand(wx0,wz0,6)*3)])
+      m.position.set(wx, h-.15*sc, wz)
+      m.rotation.set(sRand(wx0,wz0,7)*.4, sRand(wx0,wz0,8)*Math.PI*2, sRand(wx0,wz0,9)*.3)
+      m.scale.set(sc, sc*(.5+sRand(wx0,wz0,10)*.6), sc)
+      m.castShadow = true; m.receiveShadow = true; scatterG.add(m); objs.push(m)
+    }
+  }
+  if (r2 < .28) {
+    const wx = wx0+(sRand(wx0,wz0,11)-.5)*SCELL*.8, wz = wz0+(sRand(wx0,wz0,12)-.5)*SCELL*.8
+    const h = getH(wx,wz)+GROUND_Y
+    if (h >= SAND_END-.5) {
+      const sc = .5+sRand(wx0,wz0,13)*.9, bg = new THREE.Group()
+      const cnt = 2+Math.floor(sRand(wx0,wz0,16)*3)
+      for (let s = 0; s < cnt; s++) {
+        const r = .28+sRand(wx0+s,wz0+s,17)*.32
+        const sph = new THREE.Mesh(new THREE.SphereGeometry(r,8,6), bMats[s%3])
+        sph.position.set((sRand(wx0+s,wz0,18)-.5)*.55, r*.6, (sRand(wx0,wz0+s,19)-.5)*.55)
+        sph.castShadow = true; bg.add(sph)
+      }
+      bg.position.set(wx, h-.05, wz); bg.scale.setScalar(sc)
+      bg.rotation.y = sRand(wx0,wz0,15)*Math.PI*2
+      scatterG.add(bg); objs.push(bg)
+    }
+  }
+  // ── Хвойное дерево (лесной биом) ──
+  const r3 = sRand(wx0, wz0, 27)
+  if (r3 < 0.30) {
+    const wx = wx0 + (sRand(wx0, wz0, 28) - 0.5) * SCELL * 0.85
+    const wz = wz0 + (sRand(wx0, wz0, 29) - 0.5) * SCELL * 0.85
+    const h = getH(wx, wz) + GROUND_Y
+    if (h >= SAND_END - 0.5 && h <= DIRT_END + 4) {
+      const sc = 1.0 + sRand(wx0, wz0, 30) * 1.4
+      const tree = makeConifer(r3)
+      tree.position.set(wx, h, wz)
+      tree.scale.setScalar(sc)
+      tree.rotation.y = sRand(wx0, wz0, 31) * Math.PI * 2
+      scatterG.add(tree); objs.push(tree)
+    }
+  }
+
+  scatterCells.set(key, objs)
+}
+
+function removeCell(key) {
+  const objs = scatterCells.get(key); if (!objs) return
+  for (const o of objs) { scatterG.remove(o); o.traverse(c => { if (c.geometry && !_rgc.includes(c.geometry)) c.geometry.dispose() }) }
+  scatterCells.delete(key)
+}
+
+let _lSCX = null, _lSCZ = null, _sQueue = []
+function updateScatter(px, pz) {
+  const cx = Math.round(px/SCELL), cz = Math.round(pz/SCELL)
+  if (cx === _lSCX && cz === _lSCZ) return; _lSCX = cx; _lSCZ = cz
+  for (const k of [...scatterCells.keys()]) {
+    const i = k.indexOf(','), kx = parseInt(k.substring(0,i)), kz = parseInt(k.substring(i+1))
+    if (Math.abs(kx-cx)>SRANGE+2||Math.abs(kz-cz)>SRANGE+2) removeCell(k)
+  }
+  _sQueue = []
+  for (let gx = -SRANGE; gx <= SRANGE; gx++)
+    for (let gz = -SRANGE; gz <= SRANGE; gz++) {
+      const k = (cx+gx)+','+(cz+gz)
+      if (!scatterCells.has(k)) _sQueue.push({ cx: cx+gx, cz: cz+gz, d: gx*gx+gz*gz })
+    }
+  _sQueue.sort((a,b)=>a.d-b.d); if (_sQueue.length>60) _sQueue.length = 60
+}
+function tickScatter() {
+  for (let i = 0; i < 2 && _sQueue.length; i++) {
+    const { cx, cz } = _sQueue.shift(); const k = cx+','+cz
+    if (!scatterCells.has(k)) buildCell(cx, cz)
+  }
+}
+updateScatter(0,0); while (_sQueue.length) tickScatter()
+
+/* ── GAME LOOP ────────────────────────────────────────────────────── */
+const chassisPos  = new THREE.Vector3()
+const chassisQuat = new THREE.Quaternion()
+const tmpV = new THREE.Vector3(), tmpQ = new THREE.Quaternion(), tmpQ2 = new THREE.Quaternion()
+const camIdeal = new THREE.Vector3()
+let lastGX = 0, lastGZ = 0, _sFrame = 0
+
+const progressEl = document.getElementById('progress-bar')
+const hintEl     = document.getElementById('scroll-hint')
+const ctaEl      = document.getElementById('end-cta')
+const speedEl    = document.getElementById('speed-hud')
+
+function updateUI(pct) {
+  progressEl.style.width = (pct * 100).toFixed(1) + '%'
+  hintEl.style.opacity = pct > 0.02 ? '0' : '1'
+  ctaEl.classList.toggle('visible', pct > 0.92)
+  WAYPOINTS.forEach(wp => {
+    const active = pct >= wp.scrollStart && pct <= wp.scrollEnd
+    cardEls[wp.id].classList.toggle('visible', active)
+    dotEls[wp.id].classList.toggle('active', active)
+  })
+}
+
+const DT = 1 / 60
+
+async function animate() {
+  try {
+    /* ── Scroll → speed ── */
+    smoothScrollY += (scrollY - smoothScrollY) * 0.22
+    const delta = smoothScrollY - prevSmooth
+    prevSmooth = smoothScrollY
+
+    // engineForce proportional to scroll delta, capped
+    const rawForce = delta * 3.0
+    const engineForce = Math.sign(rawForce) * Math.min(Math.abs(rawForce), 18)
+    const brake = Math.abs(delta) < 0.3 ? 0.12 : 0
+
+    // Auto-steer — gentle sine so car naturally curves through landscape
+    const vel   = chassisBody.linvel()
+    const fwd   = tmpV.set(1, 0, 0).applyQuaternion(chassisQuat)
+    const fwdSpd = fwd.x*vel.x + fwd.y*vel.y + fwd.z*vel.z
+    const dist  = Math.sqrt(chassisPos.x**2 + chassisPos.z**2)
+    const steer = Math.sin(dist * 0.042 + fwdSpd * 0.05) * 0.32
+
+    vehicle.setWheelSteering(0, steer); vehicle.setWheelSteering(1, steer)
+    for (let i = 0; i < 4; i++) {
+      vehicle.setWheelEngineForce(i, engineForce)
+      vehicle.setWheelBrake(i, brake)
+      vehicle.setWheelFrictionSlip(i, 1.7)
+    }
+
+    /* ── Physics step ── */
+    try { vehicle.updateVehicle(DT) } catch(e) {}
+    try { world.step() } catch(e) {}
+
+    const p = chassisBody.translation(), r = chassisBody.rotation()
+    chassisPos.set(p.x, p.y, p.z); chassisQuat.set(r.x, r.y, r.z, r.w)
+    chassisGroup.position.copy(chassisPos); chassisGroup.quaternion.copy(chassisQuat)
+
+    // Fell off world → reset at current XZ
+    if (chassisPos.y < -30) {
+      chassisBody.setTranslation({ x: chassisPos.x, y: getH(chassisPos.x, chassisPos.z) + 3, z: chassisPos.z }, true)
+      chassisBody.setLinvel({ x:0,y:0,z:0 }, true); chassisBody.setRotation({ x:0,y:0,z:0,w:1 }, true)
+    }
+
+    /* ── Wheels ── */
+    for (let i = 0; i < 4; i++) {
+      const conn = wheelConns[i]
+      const inC  = vehicle.wheelIsInContact(i)
+      const susp = inC ? (vehicle.wheelSuspensionLength(i) ?? SUSP_REST) : SUSP_REST
+      tmpV.set(conn.x, conn.y - susp, conn.z).applyQuaternion(chassisQuat).add(chassisPos)
+      wheelMeshes[i].position.x = tmpV.x
+      wheelMeshes[i].position.y = THREE.MathUtils.lerp(wheelMeshes[i].position.y, tmpV.y, 0.3)
+      wheelMeshes[i].position.z = tmpV.z
+      tmpQ.copy(chassisQuat)
+      if (i < 2) tmpQ.multiply(tmpQ2.setFromAxisAngle(UP, steer))
+      if (inC) wheelSpins[i] -= (fwdSpd / WHEEL_R) * DT
+      tmpQ.multiply(tmpQ2.setFromAxisAngle(SPIN, wheelSpins[i]))
+      wheelMeshes[i].quaternion.slerp(tmpQ, 0.3)
+    }
+
+    /* ── Terrain streaming ── */
+    const sx = Math.round(chassisPos.x / GROUND_SNAP) * GROUND_SNAP
+    const sz = Math.round(chassisPos.z / GROUND_SNAP) * GROUND_SNAP
+    if (sx !== lastGX || sz !== lastGZ) { lastGX = sx; lastGZ = sz; updateGroundAsync(sx, sz) }
+    tickGround(); tickHF(); tickHFFinalize()
+    if (++_sFrame % 20 === 0) updateScatter(chassisPos.x, chassisPos.z)
+    tickScatter()
+    const dx = chassisPos.x - hfCenter.x, dz = chassisPos.z - hfCenter.z
+    if (!_hfPend && _hfStage === 0 && dx*dx+dz*dz > HF_RETHRESH*HF_RETHRESH) buildHF(chassisPos.x, chassisPos.z)
+    waterMesh.position.x = chassisPos.x; waterMesh.position.z = chassisPos.z
+
+    /* ── Light follow ── */
+    dirLight.position.set(chassisPos.x + 14, chassisPos.y + 28, chassisPos.z + 10)
+    dirLight.target.position.copy(chassisPos); dirLight.target.updateMatrixWorld()
+
+    /* ── Dust ── */
+    const gspd = Math.sqrt(vel.x**2 + vel.z**2)
+    let onGround = 0; for (let i = 0; i < 4; i++) if (vehicle.wheelIsInContact(i)) onGround++
+    if (onGround >= 2 && gspd > 1.2 && chassisPos.y > WATER_LEVEL + 1) {
+      for (let i = 0; i < 4; i++)
+        if (vehicle.wheelIsInContact(i))
+          emitDust(wheelMeshes[i].position.x, wheelMeshes[i].position.y, wheelMeshes[i].position.z, -vel.x, -vel.z)
+    }
+    tickDust(DT)
+
+    /* ── Camera follow ── */
+    const cfwd = tmpV.set(1, 0, 0).applyQuaternion(chassisQuat)
+    camIdeal.copy(chassisPos).addScaledVector(cfwd, -9); camIdeal.y = chassisPos.y + 5
+    camera.position.lerp(camIdeal, 0.05)
+    camera.lookAt(chassisPos.x, chassisPos.y + 1, chassisPos.z)
+
+    /* ── UI ── */
+    const kmh = Math.round(gspd * 3.6)
+    speedEl.textContent = kmh + ' km/h'
+    updateUI(getScrollPct())
+
+    renderer.render(scene, camera)
+  } catch(e) { console.error(e) }
+}
+
+setLoading('Готово!', 100)
+setTimeout(() => { loaderEl.style.opacity = '0'; setTimeout(() => loaderEl.remove(), 800) }, 400)
+
+renderer.setAnimationLoop(animate)
+addEventListener('resize', () => {
+  camera.aspect = innerWidth / innerHeight; camera.updateProjectionMatrix()
+  renderer.setPixelRatio(Math.min(devicePixelRatio, 2)); renderer.setSize(innerWidth, innerHeight)
+})
+</script>
+</body>
+</html>
