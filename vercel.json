@@ -2,6 +2,10 @@
   "cleanUrls": true,
   "trailingSlash": true,
   "redirects": [
+    {"source": "/en/blog/russian-speaking-guide-tbilisi", "destination": "/en/blog/english-speaking-guide-tbilisi/", "permanent": true},
+    {"source": "/en/blog/russian-speaking-guide-tbilisi/", "destination": "/en/blog/english-speaking-guide-tbilisi/", "permanent": true},
+    {"source": "/ge/blog/russian-speaking-guide-tbilisi", "destination": "/ge/blog/english-speaking-guide-tbilisi/", "permanent": true},
+    {"source": "/ge/blog/russian-speaking-guide-tbilisi/", "destination": "/ge/blog/english-speaking-guide-tbilisi/", "permanent": true},
     {
       "source": "/gid/",
       "destination": "/about/",
