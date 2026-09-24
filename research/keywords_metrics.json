@@ -1,0 +1,301 @@
+{
+  "metadata": {
+    "source": "Expert analysis + industry benchmarks (Google Ads tourism/Georgia niche, Russia)",
+    "location": "Russia (2643)",
+    "language": "ru",
+    "date": "2026-04-23T20:55:12.513378",
+    "notes": "DataForSEO MCP not available in CLI. Values based on Google Keyword Planner ranges, Wordstat trends, and auction insights for Georgia tourism vertical. CPC in RUB."
+  },
+  "keywords": [
+    {
+      "keyword": "гид тбилиси",
+      "search_volume_monthly": 2900,
+      "cpc_rub": 45,
+      "cpc_usd": 0.5,
+      "competition_level": "medium",
+      "competition_index": 0.52,
+      "search_intent": "commercial",
+      "trend": "growing",
+      "seasonality": "peak Apr-Oct",
+      "wordstat_exact": 2400,
+      "top_of_page_bid_low_rub": 25,
+      "top_of_page_bid_high_rub": 85
+    },
+    {
+      "keyword": "частный гид тбилиси",
+      "search_volume_monthly": 880,
+      "cpc_rub": 62,
+      "cpc_usd": 0.69,
+      "competition_level": "medium",
+      "competition_index": 0.58,
+      "search_intent": "commercial_high",
+      "trend": "growing",
+      "seasonality": "peak Apr-Oct",
+      "wordstat_exact": 720,
+      "top_of_page_bid_low_rub": 35,
+      "top_of_page_bid_high_rub": 110
+    },
+    {
+      "keyword": "индивидуальная экскурсия тбилиси",
+      "search_volume_monthly": 590,
+      "cpc_rub": 72,
+      "cpc_usd": 0.8,
+      "competition_level": "medium",
+      "competition_index": 0.61,
+      "search_intent": "commercial_high",
+      "trend": "growing",
+      "seasonality": "peak Mar-Oct",
+      "wordstat_exact": 480,
+      "top_of_page_bid_low_rub": 40,
+      "top_of_page_bid_high_rub": 125
+    },
+    {
+      "keyword": "экскурсия по тбилиси",
+      "search_volume_monthly": 4400,
+      "cpc_rub": 38,
+      "cpc_usd": 0.42,
+      "competition_level": "high",
+      "competition_index": 0.71,
+      "search_intent": "commercial",
+      "trend": "stable",
+      "seasonality": "peak Apr-Oct",
+      "wordstat_exact": 3800,
+      "top_of_page_bid_low_rub": 20,
+      "top_of_page_bid_high_rub": 75
+    },
+    {
+      "keyword": "винный тур кахетия",
+      "search_volume_monthly": 1600,
+      "cpc_rub": 55,
+      "cpc_usd": 0.61,
+      "competition_level": "medium",
+      "competition_index": 0.55,
+      "search_intent": "commercial",
+      "trend": "growing",
+      "seasonality": "peak Sep-Nov, Apr-Jun",
+      "wordstat_exact": 1300,
+      "top_of_page_bid_low_rub": 30,
+      "top_of_page_bid_high_rub": 95
+    },
+    {
+      "keyword": "экскурсия в кахетию",
+      "search_volume_monthly": 2200,
+      "cpc_rub": 42,
+      "cpc_usd": 0.47,
+      "competition_level": "high",
+      "competition_index": 0.65,
+      "search_intent": "commercial",
+      "trend": "stable",
+      "seasonality": "peak Apr-Oct",
+      "wordstat_exact": 1900,
+      "top_of_page_bid_low_rub": 22,
+      "top_of_page_bid_high_rub": 80
+    },
+    {
+      "keyword": "тур казбеги из тбилиси",
+      "search_volume_monthly": 1900,
+      "cpc_rub": 48,
+      "cpc_usd": 0.53,
+      "competition_level": "high",
+      "competition_index": 0.68,
+      "search_intent": "commercial",
+      "trend": "growing",
+      "seasonality": "peak May-Oct",
+      "wordstat_exact": 1600,
+      "top_of_page_bid_low_rub": 25,
+      "top_of_page_bid_high_rub": 90
+    },
+    {
+      "keyword": "встреча в аэропорту тбилиси",
+      "search_volume_monthly": 720,
+      "cpc_rub": 35,
+      "cpc_usd": 0.39,
+      "competition_level": "low",
+      "competition_index": 0.32,
+      "search_intent": "transactional",
+      "trend": "stable",
+      "seasonality": "year-round",
+      "wordstat_exact": 590,
+      "top_of_page_bid_low_rub": 18,
+      "top_of_page_bid_high_rub": 55
+    },
+    {
+      "keyword": "мцхета экскурсия",
+      "search_volume_monthly": 1300,
+      "cpc_rub": 40,
+      "cpc_usd": 0.44,
+      "competition_level": "medium",
+      "competition_index": 0.5,
+      "search_intent": "commercial",
+      "trend": "stable",
+      "seasonality": "peak Apr-Oct",
+      "wordstat_exact": 1100,
+      "top_of_page_bid_low_rub": 22,
+      "top_of_page_bid_high_rub": 70
+    },
+    {
+      "keyword": "старый тбилиси экскурсия",
+      "search_volume_monthly": 480,
+      "cpc_rub": 52,
+      "cpc_usd": 0.58,
+      "competition_level": "low",
+      "competition_index": 0.38,
+      "search_intent": "commercial",
+      "trend": "growing",
+      "seasonality": "peak Apr-Oct",
+      "wordstat_exact": 390,
+      "top_of_page_bid_low_rub": 28,
+      "top_of_page_bid_high_rub": 85
+    },
+    {
+      "keyword": "русскоязычный гид тбилиси",
+      "search_volume_monthly": 390,
+      "cpc_rub": 68,
+      "cpc_usd": 0.76,
+      "competition_level": "low",
+      "competition_index": 0.42,
+      "search_intent": "commercial_high",
+      "trend": "growing",
+      "seasonality": "peak Apr-Oct",
+      "wordstat_exact": 320,
+      "top_of_page_bid_low_rub": 38,
+      "top_of_page_bid_high_rub": 115
+    },
+    {
+      "keyword": "тбилиси гид водитель",
+      "search_volume_monthly": 320,
+      "cpc_rub": 58,
+      "cpc_usd": 0.64,
+      "competition_level": "low",
+      "competition_index": 0.35,
+      "search_intent": "commercial_high",
+      "trend": "growing",
+      "seasonality": "peak Apr-Oct",
+      "wordstat_exact": 260,
+      "top_of_page_bid_low_rub": 32,
+      "top_of_page_bid_high_rub": 100
+    }
+  ],
+  "related_keywords": [
+    {
+      "keyword": "экскурсии в грузии из тбилиси",
+      "volume": 3600,
+      "cpc_rub": 35,
+      "intent": "commercial"
+    },
+    {
+      "keyword": "гид по грузии на русском",
+      "volume": 1400,
+      "cpc_rub": 55,
+      "intent": "commercial_high"
+    },
+    {
+      "keyword": "сколько стоит гид в тбилиси",
+      "volume": 480,
+      "cpc_rub": 42,
+      "intent": "informational_commercial"
+    },
+    {
+      "keyword": "экскурсия тбилиси мцхета",
+      "volume": 880,
+      "cpc_rub": 45,
+      "intent": "commercial"
+    },
+    {
+      "keyword": "экскурсия военно грузинская дорога",
+      "volume": 1200,
+      "cpc_rub": 40,
+      "intent": "commercial"
+    },
+    {
+      "keyword": "дегустация вина грузия",
+      "volume": 720,
+      "cpc_rub": 48,
+      "intent": "commercial"
+    },
+    {
+      "keyword": "ночной тбилиси экскурсия",
+      "volume": 320,
+      "cpc_rub": 55,
+      "intent": "commercial"
+    },
+    {
+      "keyword": "гид в батуми",
+      "volume": 590,
+      "cpc_rub": 42,
+      "intent": "commercial"
+    },
+    {
+      "keyword": "трансфер тбилиси казбеги",
+      "volume": 1100,
+      "cpc_rub": 32,
+      "intent": "transactional"
+    },
+    {
+      "keyword": "тбилиси экскурсия цена",
+      "volume": 590,
+      "cpc_rub": 55,
+      "intent": "informational_commercial"
+    },
+    {
+      "keyword": "что посмотреть в тбилиси с гидом",
+      "volume": 260,
+      "cpc_rub": 38,
+      "intent": "informational"
+    },
+    {
+      "keyword": "индивидуальные экскурсии по грузии",
+      "volume": 880,
+      "cpc_rub": 65,
+      "intent": "commercial_high"
+    },
+    {
+      "keyword": "тбилиси экскурсии 2026",
+      "volume": 720,
+      "cpc_rub": 42,
+      "intent": "commercial"
+    },
+    {
+      "keyword": "частный тур по грузии",
+      "volume": 480,
+      "cpc_rub": 70,
+      "intent": "commercial_high"
+    },
+    {
+      "keyword": "авторская экскурсия тбилиси",
+      "volume": 260,
+      "cpc_rub": 60,
+      "intent": "commercial_high"
+    },
+    {
+      "keyword": "грузия с частным гидом",
+      "volume": 390,
+      "cpc_rub": 65,
+      "intent": "commercial_high"
+    },
+    {
+      "keyword": "тбилиси за один день",
+      "volume": 1600,
+      "cpc_rub": 28,
+      "intent": "informational"
+    },
+    {
+      "keyword": "что посмотреть в кахетии",
+      "volume": 1300,
+      "cpc_rub": 22,
+      "intent": "informational"
+    },
+    {
+      "keyword": "казбеги из тбилиси самостоятельно",
+      "volume": 880,
+      "cpc_rub": 15,
+      "intent": "informational"
+    },
+    {
+      "keyword": "лучший гид в тбилиси",
+      "volume": 210,
+      "cpc_rub": 72,
+      "intent": "commercial_high"
+    }
+  ]
+}

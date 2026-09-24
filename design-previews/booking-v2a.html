@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>V2a · Pure Minimal — Бронирование</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#F2F3F0; --card:#FFFFFF; --ink:#0D1411; --ink2:#5A655C; --ink3:#9AA39C;
+  --line:#E7E9E4; --green:#0E5C3F; --green2:#15784F; --lime:#CFEF55; --mist:#F5F7F3;
+  --ease:cubic-bezier(.32,.72,0,1);
+  --soft:0 24px 60px -34px rgba(13,20,17,.22);
+}
+html{background:var(--bg);-webkit-font-smoothing:antialiased;scroll-behavior:smooth}
+body{font-family:'Plus Jakarta Sans',sans-serif;color:var(--ink);min-height:100dvh}
+/* nav: logo + single CTA */
+nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:center;padding:18px 16px}
+.np{width:100%;max-width:560px;display:flex;align-items:center;justify-content:space-between;padding:9px 9px 9px 20px;border-radius:999px;background:rgba(255,255,255,.78);backdrop-filter:blur(18px);border:1px solid var(--line);box-shadow:var(--soft)}
+.brand{font-weight:800;font-size:16px;letter-spacing:-.02em}.brand span{color:var(--green2)}
+.cta{padding:9px 17px;border-radius:999px;background:var(--green);color:#fff;font-size:13px;font-weight:700;text-decoration:none;transition:transform .4s var(--ease),background .4s var(--ease)}
+.cta:hover{background:var(--green2);transform:scale(1.04)}
+.cta:active{transform:scale(.97)}
+
+.wrap{max-width:560px;margin:0 auto;padding:108px 20px 90px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border-radius:999px;background:#fff;border:1px solid var(--line);font-size:10.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--green2);margin-bottom:18px}
+.eyebrow i{width:6px;height:6px;border-radius:50%;background:var(--lime);box-shadow:0 0 0 3px rgba(207,239,85,.35)}
+h1{font-size:clamp(32px,8vw,46px);font-weight:800;line-height:.98;letter-spacing:-.04em;margin-bottom:10px}
+h1 span{color:var(--ink3)}
+.sub{font-size:15px;color:var(--ink2);line-height:1.6;margin-bottom:30px}
+
+/* compact tour strip */
+.tour{display:flex;align-items:center;gap:16px;padding:14px;border-radius:24px;background:var(--card);border:1px solid var(--line);box-shadow:var(--soft);margin-bottom:14px}
+.tour .thumb{width:70px;height:70px;border-radius:18px;flex-shrink:0;position:relative;overflow:hidden;background:radial-gradient(120% 90% at 20% 0%,#1c8a5c,transparent 60%),linear-gradient(150deg,#0c4a33,#0e5c3f)}
+.tour .thumb b{position:absolute;left:0;right:0;bottom:6px;text-align:center;color:var(--lime);font-size:10px;font-weight:700;letter-spacing:.06em}
+.tour .ti .lab{font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3)}
+.tour .ti h2{font-size:18px;font-weight:800;letter-spacing:-.02em;margin-top:2px}
+.tour .ti .meta{font-size:12.5px;color:var(--ink2);margin-top:3px}
+.tour .price{margin-left:auto;text-align:right;flex-shrink:0}
+.tour .price b{font-size:20px;font-weight:800;letter-spacing:-.02em;color:var(--green)}
+.tour .price s{display:block;font-size:12px;color:var(--ink3)}
+
+.card{background:var(--card);border:1px solid var(--line);border-radius:26px;box-shadow:var(--soft);padding:26px}
+.slab{font-size:10.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ink3);margin:6px 0 14px}
+.f{margin-bottom:15px}
+.f label{display:block;font-size:13px;font-weight:700;margin-bottom:7px}
+.inp{width:100%;padding:14px 16px;border:1.5px solid var(--line);border-radius:15px;background:var(--mist);font-family:inherit;font-size:15px;font-weight:500;color:var(--ink);outline:none;transition:.3s var(--ease)}
+.inp::placeholder{color:var(--ink3)}
+.inp:focus{border-color:var(--green2);background:#fff;box-shadow:0 0 0 4px rgba(21,120,79,.1)}
+.r2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:440px){.r2{grid-template-columns:1fr}}
+
+.cal{border:1px solid var(--line);border-radius:18px;background:var(--mist);padding:12px 12px 14px}
+.cal-h{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;padding:2px 2px 0}
+.cal-h .m{font-weight:700;font-size:14.5px}
+.cal-h button{width:30px;height:30px;border:none;background:#fff;border-radius:10px;cursor:pointer;font-size:14px;color:var(--ink);transition:.25s var(--ease);box-shadow:0 4px 10px -6px rgba(13,20,17,.3)}
+.cal-h button:hover{background:var(--green);color:#fff}
+.cg{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
+.cg .d{font-size:9.5px;font-weight:700;text-transform:uppercase;color:var(--ink3);text-align:center;padding:3px 0}
+.cg .c{aspect-ratio:1;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;border-radius:12px;cursor:pointer;background:#fff;transition:transform .22s var(--ease),background .22s var(--ease),color .22s var(--ease)}
+.cg .c.mut{background:transparent;color:#cdd4cc;cursor:default}
+.cg .c.free:hover{background:#e2f1e9;transform:translateY(-2px)}
+.cg .c.few{color:#b06a12;background:#fbf3dd}
+.cg .c.sel{background:var(--green);color:#fff;transform:scale(1.06);box-shadow:0 12px 22px -8px rgba(14,92,63,.65)}
+
+.seg{display:grid;grid-template-columns:1fr 1fr 1fr;gap:9px}
+@media(max-width:440px){.seg{grid-template-columns:1fr}}
+.opt{border:1.5px solid var(--line);border-radius:16px;padding:14px;cursor:pointer;background:var(--mist);transition:.3s var(--ease)}
+.opt .ot{font-size:13px;font-weight:800}
+.opt .op{font-size:20px;font-weight:800;letter-spacing:-.02em;margin-top:5px;color:var(--green2)}
+.opt .os{font-size:11px;color:var(--ink2);margin-top:2px}
+.opt.on{border-color:var(--green);background:#fff;box-shadow:0 16px 32px -22px rgba(14,92,63,.55);transform:translateY(-2px)}
+
+.ledger{margin:22px 0;padding:22px;border-radius:20px;background:linear-gradient(160deg,#0e5c3f,#0c4a33);color:#fff;position:relative;overflow:hidden}
+.ledger::after{content:'';position:absolute;right:-30px;top:-40px;width:160px;height:160px;border-radius:50%;background:radial-gradient(circle,rgba(207,239,85,.3),transparent 70%);filter:blur(14px)}
+.lr{display:flex;justify-content:space-between;align-items:baseline;padding:6px 0;font-size:14px;position:relative}
+.lr .k{color:rgba(255,255,255,.68)}.lr .v{font-weight:700}
+.lr .strike{text-decoration:line-through;color:rgba(255,255,255,.42);font-weight:500}
+.lr.tot{margin-top:8px;padding-top:15px;border-top:1px solid rgba(255,255,255,.16)}
+.lr.tot .k{font-weight:600}.lr.tot .v{font-size:34px;font-weight:800;letter-spacing:-.03em}
+.save{margin-top:11px;display:inline-block;padding:6px 12px;border-radius:999px;background:var(--lime);color:#0c4a33;font-size:11px;font-weight:800;position:relative}
+
+.pm{display:flex;flex-direction:column;gap:10px}
+.method{display:flex;align-items:center;gap:13px;padding:15px;border-radius:16px;border:1.5px solid var(--line);background:var(--mist);cursor:pointer;transition:transform .4s var(--ease),box-shadow .4s var(--ease),border-color .4s var(--ease),background .4s var(--ease)}
+.method:hover{transform:translateY(-3px);border-color:var(--green2);box-shadow:0 22px 40px -26px rgba(14,92,63,.5);background:#fff}
+.method:active{transform:translateY(-1px) scale(.99)}
+.mi{width:44px;height:44px;border-radius:13px;background:#fff;border:1.5px solid var(--line);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.mt{font-size:14.5px;font-weight:700}.ms{font-size:12px;color:var(--ink2);margin-top:1px}
+.go{margin-left:auto;width:32px;height:32px;border-radius:50%;background:var(--ink);display:flex;align-items:center;justify-content:center;transition:transform .4s var(--ease),background .4s var(--ease)}
+.method:hover .go{transform:translate(3px,-2px);background:var(--green)}
+.method.primary{background:var(--green);border-color:var(--green)}
+.method.primary .mt{color:#fff}.method.primary .ms{color:rgba(255,255,255,.65)}
+.method.primary .mi{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.2)}
+.method.primary .go{background:var(--lime)}.method.primary .go svg{stroke:#0c4a33}
+
+.secure{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:18px;font-size:12px;font-weight:600;color:var(--ink2)}
+.note{text-align:center;font-size:10.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ink3);padding:24px 0 30px}
+svg{display:block}
+[data-rv]{opacity:0;transform:translateY(22px);filter:blur(6px);transition:opacity .8s var(--ease),transform .8s var(--ease),filter .8s var(--ease)}
+[data-rv].in{opacity:1;transform:none;filter:none}
+</style>
+</head>
+<body>
+<nav><div class="np"><span class="brand">sakhva<span>·</span>travel</span><a href="#" class="cta">Связаться</a></div></nav>
+
+<div class="wrap">
+  <span class="eyebrow" data-rv><i></i> Онлайн-бронирование</span>
+  <h1 data-rv>Бронь <span>за минуту.</span></h1>
+  <p class="sub" data-rv>Частный тур без групп. Предоплата 10% — остаток гиду в день поездки.</p>
+
+  <div class="tour" data-rv>
+    <div class="thumb"><b>2170 м</b></div>
+    <div class="ti"><div class="lab">Маршрут</div><h2>Казбеги из Тбилиси</h2><div class="meta">12 часов · ★ 4.9 · до 7 гостей</div></div>
+    <div class="price"><b>₾175</b><s>₾220</s></div>
+  </div>
+
+  <div class="card" data-rv>
+    <div class="slab">Детали поездки</div>
+    <div class="f"><label>Экскурсия</label><input aria-label="Экскурсия" class="inp" value="Казбеги из Тбилиси — от ₾175" readonly></div>
+    <div class="r2"><div class="f"><label>Имя</label><input aria-label="Имя" class="inp" placeholder="Ваше имя"></div><div class="f"><label>WhatsApp / Telegram</label><input aria-label="WhatsApp / Telegram" class="inp" placeholder="+995 · @username"></div></div>
+
+    <div class="f"><label>Дата</label>
+      <div class="cal">
+        <div class="cal-h"><span class="m">Июль 2026</span><div style="display:flex;gap:7px"><button>‹</button><button>›</button></div></div>
+        <div class="cg">
+          <span class="d">п</span><span class="d">в</span><span class="d">с</span><span class="d">ч</span><span class="d">п</span><span class="d">с</span><span class="d">в</span>
+          <span class="c mut">30</span><span class="c free">1</span><span class="c free">2</span><span class="c free">3</span><span class="c free">4</span><span class="c free">5</span><span class="c free">6</span>
+          <span class="c free">7</span><span class="c free">8</span><span class="c free">9</span><span class="c free">10</span><span class="c few">11</span><span class="c sel">12</span><span class="c free">13</span>
+          <span class="c free">14</span><span class="c free">15</span><span class="c free">16</span><span class="c free">17</span><span class="c few">18</span><span class="c free">19</span><span class="c free">20</span>
+          <span class="c free">21</span><span class="c free">22</span><span class="c free">23</span><span class="c free">24</span><span class="c free">25</span><span class="c free">26</span><span class="c free">27</span>
+        </div>
+      </div>
+    </div>
+    <div class="r2"><div class="f"><label>Гостей</label><input aria-label="Гостей" class="inp" type="number" value="2"></div><div class="f"><label>Email для чека</label><input aria-label="Email для чека" class="inp" placeholder="email@example.com"></div></div>
+
+    <div class="slab" style="margin-top:8px">Вариант оплаты</div>
+    <div class="seg">
+      <div class="opt on"><div class="ot">Предоплата</div><div class="op">₾35</div><div class="os">10% сейчас</div></div>
+      <div class="opt"><div class="ot">Полная</div><div class="op">₾350</div><div class="os">всё онлайн</div></div>
+      <div class="opt"><div class="ot">Другая</div><div class="op">₾—</div><div class="os">своя сумма</div></div>
+    </div>
+
+    <div class="ledger">
+      <div class="lr"><span class="k">Маркетплейс</span><span class="v strike">₾220</span></div>
+      <div class="lr"><span class="k">Прямая цена · 2 гостя</span><span class="v">₾350</span></div>
+      <div class="lr tot"><span class="k">К оплате</span><span class="v">₾35</span></div>
+      <span class="save">↓ Экономия ₾90 без комиссий</span>
+    </div>
+
+    <div class="slab">Способ оплаты</div>
+    <div class="pm">
+      <div class="method primary"><div class="mi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.4"><rect x="2" y="5" width="20" height="14" rx="2.5"/><path d="M2 10h20"/></svg></div><div><div class="mt">Visa · Mastercard</div><div class="ms">Безопасно через Flitt</div></div><span class="go"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0c4a33" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+      <div class="method"><div class="mi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#15784f" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><path d="M9 8h4.5a2.5 2.5 0 010 5H9m0 0h5.5a2.5 2.5 0 010 5H9M12 6v2m0 8v2"/></svg></div><div><div class="mt">Криптовалюта</div><div class="ms">BTC · ETH · USDT</div></div><span class="go"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+      <div class="method"><div class="mi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0e5c3f" stroke-width="1.4"><rect x="4" y="3" width="16" height="18" rx="2.5"/><path d="M9 7h6M9 11h6M12 17v.01"/></svg></div><div><div class="mt">СБП по QR-коду</div><div class="ms">Перевод из банка РФ</div></div><span class="go"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+    </div>
+
+    <div class="secure"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#15784f" stroke-width="1.6"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 018 0v3"/></svg> SSL 256-bit · Бесплатная отмена за 24 часа</div>
+  </div>
+</div>
+<div class="note">Sakhva Travel — V2a Pure Minimal</div>
+
+<script>
+document.querySelectorAll('.opt').forEach(function(o){o.addEventListener('click',function(){document.querySelectorAll('.opt').forEach(function(x){x.classList.remove('on')});o.classList.add('on')})});
+document.querySelectorAll('.cg .c.free,.cg .c.few').forEach(function(c){c.addEventListener('click',function(){document.querySelectorAll('.cg .c').forEach(function(x){x.classList.remove('sel')});c.classList.add('sel')})});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1});
+document.querySelectorAll('[data-rv]').forEach(function(el,i){el.style.transitionDelay=(Math.min(i,7)*70)+'ms';io.observe(el)});
+</script>
+</body>
+</html>

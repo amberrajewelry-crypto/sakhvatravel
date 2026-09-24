@@ -1,7 +1,103 @@
+# Sakhva Travel — robots.txt
+# Priority: specific user-agent rules override generic ones
+
+# Default: allow all
 User-agent: *
 Allow: /
+Disallow: /CLAUDE.md
+Disallow: /README.md
+Disallow: /demo/
+Disallow: /dashboard/
+Disallow: /partner/
+Disallow: /scripts/
+Disallow: /design-previews/
+Disallow: /docs/
+Disallow: /graphify-out/
+Disallow: /gid/_template/
+Disallow: /hero3d-grass2.html
+Disallow: /service-account.json
+Disallow: /.worktrees/
+Disallow: /index.html.base-clean
 
-# AI Search crawlers — allow for visibility in ChatGPT, Perplexity, Bing Copilot
+# Search engines
+User-agent: Googlebot
+Allow: /
+Disallow: /CLAUDE.md
+Disallow: /README.md
+Disallow: /demo/
+Disallow: /dashboard/
+Disallow: /partner/
+Disallow: /scripts/
+Disallow: /design-previews/
+Disallow: /docs/
+Disallow: /graphify-out/
+Disallow: /gid/_template/
+Disallow: /hero3d-grass2.html
+Disallow: /service-account.json
+Disallow: /.worktrees/
+Disallow: /index.html.base-clean
+
+User-agent: YandexBot
+Allow: /
+Disallow: /CLAUDE.md
+Disallow: /README.md
+Disallow: /demo/
+Disallow: /dashboard/
+Disallow: /partner/
+Disallow: /scripts/
+Disallow: /design-previews/
+Disallow: /docs/
+Disallow: /graphify-out/
+Disallow: /gid/_template/
+Disallow: /hero3d-grass2.html
+Disallow: /service-account.json
+Disallow: /.worktrees/
+Disallow: /index.html.base-clean
+Clean-param: gad_source&gad_campaignid&gad_adgroupid&gad_creative&gbraid&wbraid&gclid&utm_source&utm_medium&utm_campaign&utm_content&utm_term&yclid&fbclid&clsprobe&fix&v&b&n&brid&perf /
+
+User-agent: Bingbot
+Allow: /
+Disallow: /CLAUDE.md
+Disallow: /README.md
+Disallow: /demo/
+Disallow: /dashboard/
+Disallow: /partner/
+Disallow: /scripts/
+Disallow: /design-previews/
+Disallow: /docs/
+Disallow: /graphify-out/
+Disallow: /gid/_template/
+Disallow: /hero3d-grass2.html
+Disallow: /service-account.json
+Disallow: /.worktrees/
+Disallow: /index.html.base-clean
+
+# SEO-аудит краулеры — явно открыть весь сайт (кроме служебного)
+User-agent: AhrefsBot
+Allow: /
+Disallow: /dashboard/
+Disallow: /partner/
+Disallow: /demo/
+Disallow: /scripts/
+Disallow: /design-previews/
+Disallow: /docs/
+Disallow: /graphify-out/
+Disallow: /gid/_template/
+Disallow: /hero3d-grass2.html
+
+User-agent: AhrefsSiteAudit
+Allow: /
+Disallow: /dashboard/
+Disallow: /partner/
+Disallow: /demo/
+Disallow: /scripts/
+Disallow: /design-previews/
+Disallow: /docs/
+Disallow: /graphify-out/
+Disallow: /gid/_template/
+Disallow: /hero3d-grass2.html
+
+# AI Search crawlers — ALLOW (override Cloudflare blocks)
 User-agent: GPTBot
 Allow: /
 
@@ -20,7 +116,22 @@ Allow: /
 User-agent: Claude-Web
 Allow: /
 
+User-agent: Google-Extended
+Allow: /
+
 User-agent: GoogleOther
+Allow: /
+
+User-agent: YandexGPT
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: AppleBot
+Allow: /
+
+User-agent: DataForSeoBot
 Allow: /
 
 # Training-only scrapers — block
@@ -33,7 +144,7 @@ Disallow: /
 User-agent: cohere-ai
 Disallow: /
 
-# Bad bots
+# Bad bots — block
 User-agent: MJ12bot
 Disallow: /
 
@@ -41,9 +152,6 @@ User-agent: DotBot
 Disallow: /
 
 User-agent: BLEXBot
-Disallow: /
-
-User-agent: DataForSeoBot
 Disallow: /
 
 User-agent: PetalBot
@@ -55,14 +163,13 @@ Disallow: /
 User-agent: serpstatbot
 Disallow: /
 
-User-agent: Amazonbot
+User-agent: CloudflareBrowserRenderingCrawler
 Disallow: /
 
+User-agent: meta-externalagent
+Allow: /
 
-# Verification files — exclude from index
-User-agent: *
-Disallow: /yandex_54a6ffc3cdb9742e.html
-Disallow: /yandex_59a834df1510fae1.html
-Disallow: /google8598dd92e7bc33ca.html
+User-agent: Applebot-Extended
+Allow: /
 
-Sitemap: https://sakhva-travel.com/sitemap.xml
+Sitemap: https://sakhva-travel.com/sitemap-index.xml

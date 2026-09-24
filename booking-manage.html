@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head><link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><link rel="preconnect" href="https://mc.yandex.ru" crossorigin>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Управление бронью | Sakhva Travel</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
+<link rel="stylesheet" href="/fonts/lora.css">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{background:#f9fafb}
+body{font-family:'Lora',Georgia,serif;color:#111827;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px}
+.card{background:#fff;border-radius:20px;padding:48px 40px;max-width:520px;width:100%;text-align:center;box-shadow:0 4px 24px rgba(0,0,0,.06);border:1px solid #E5E7EB}
+.icon{width:72px;height:72px;border-radius:50%;background:#F0FDF4;display:flex;align-items:center;justify-content:center;margin:0 auto 24px}
+.icon svg{width:36px;height:36px;stroke:#16A34A;stroke-width:2.5;fill:none}
+h1{font-size:28px;font-weight:600;color:#111827;margin-bottom:12px;letter-spacing:-0.02em}
+.sub{font-size:15px;color:#6B7280;line-height:1.7;margin-bottom:28px}
+.order-id{display:inline-block;background:#F0FDF4;color:#16A34A;font-size:13px;font-weight:700;padding:6px 16px;border-radius:8px;margin-bottom:24px;letter-spacing:.02em}
+.details{text-align:left;background:#F9FAFB;border-radius:12px;padding:20px;margin-bottom:28px;border:1px solid #E5E7EB}
+.details-row{display:flex;justify-content:space-between;padding:8px 0;font-size:14px}
+.details-row:not(:last-child){border-bottom:1px solid #E5E7EB}
+.details-label{color:#6B7280}
+.details-value{color:#111827;font-weight:600}
+.btns{display:flex;flex-direction:column;gap:10px}
+.btn-primary{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:#1A3D2E;color:#fff;padding:14px 32px;border-radius:9999px;font-size:14px;font-weight:700;text-decoration:none;transition:background .2s}
+.btn-primary:hover{background:#245a3f}
+.btn-secondary{display:inline-flex;align-items:center;justify-content:center;gap:8px;color:#1A3D2E;padding:12px 32px;border-radius:9999px;font-size:14px;font-weight:600;text-decoration:none;border:1px solid #E5E7EB;transition:background .2s}
+.btn-secondary:hover{background:#F0F7F4}
+.trust{margin-top:28px;font-size:12px;color:#9CA3AF}
+.trust a{color:#6B7280}
+@media(max-width:480px){.card{padding:32px 24px}h1{font-size:24px}}
+
+.btn-danger{display:inline-flex;align-items:center;justify-content:center;color:#B91C1C;padding:12px 32px;border-radius:9999px;font-size:14px;font-weight:600;border:1px solid #FECACA;background:#fff;cursor:pointer;font-family:inherit}
+.btn-danger:hover{background:#FEF2F2}
+.btn-primary,.btn-secondary{cursor:pointer;font-family:inherit;border:0}
+.btn-secondary{border:1px solid #E5E7EB;background:#fff}
+button:disabled{opacity:.5;cursor:default}
+.form{display:none;text-align:left;background:#F9FAFB;border:1px solid #E5E7EB;border-radius:12px;padding:16px;margin-bottom:16px}
+.form label{display:block;font-size:13px;color:#4B5563;margin:8px 0 4px}
+.form input,.form select{width:100%;padding:10px 12px;border:1px solid #D1D5DB;border-radius:8px;font-size:15px;font-family:inherit;background:#fff}
+.msg{font-size:14px;line-height:1.6;color:#111827;background:#F0FDF4;border:1px solid #BBF7D0;border-radius:12px;padding:14px;margin-bottom:16px;display:none}
+.msg.err{background:#FEF2F2;border-color:#FECACA;color:#991B1B}
+.hint{font-size:12px;color:#6B7280;margin-bottom:16px;line-height:1.6}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
+  <h1 id="t-h1">Управление бронью</h1>
+  <p class="sub" id="t-sub">Загружаем данные брони…</p>
+  <div class="order-id" id="order-display" style="display:none"></div>
+  <div class="details" id="details-block" style="display:none">
+    <div class="details-row"><span class="details-label" id="t-l-tour">Тур</span><span class="details-value" id="d-tour"></span></div>
+    <div class="details-row"><span class="details-label" id="t-l-date">Дата и время</span><span class="details-value" id="d-date"></span></div>
+    <div class="details-row"><span class="details-label" id="t-l-people">Человек</span><span class="details-value" id="d-people"></span></div>
+    <div class="details-row"><span class="details-label" id="t-l-amount">Предоплата</span><span class="details-value" id="d-amount"></span></div>
+    <div class="details-row"><span class="details-label" id="t-l-status">Статус</span><span class="details-value" id="d-status"></span></div>
+  </div>
+  <p class="hint" id="t-hint"></p>
+  <div class="msg" id="msg"></div>
+  <div class="form" id="resched-form">
+    <label id="t-l-newdate">Новая дата</label><input type="date" id="f-date">
+    <label id="t-l-newtime">Время выезда</label>
+    <select id="f-time"><option>08:00</option><option>09:00</option><option>10:00</option><option>11:00</option><option>14:00</option><option>16:00</option><option>18:00</option></select>
+    <div class="btns" style="margin-top:12px"><button class="btn-primary" id="resched-ok"></button></div>
+  </div>
+  <div class="btns" id="actions" style="display:none">
+    <button class="btn-primary" id="btn-resched"></button>
+    <button class="btn-danger" id="btn-cancel"></button>
+    <a class="btn-secondary" id="wa-btn" href="https://wa.me/995511272623"></a>
+  </div>
+  <p class="trust">Sakhva Travel &middot; <a href="/policy/" id="t-policy">Политика оплаты</a></p>
+</div>
+<script>
+(function(){
+  var T = {
+    ru:{policy:'Политика оплаты',h1:'Управление бронью',loading:'Загружаем данные брони…',tour:'Тур',date:'Дата и время',people:'Человек',amount:'Предоплата',status:'Статус',
+        active:'Подтверждена',cancelled:'Отменена',resched:'Перенести дату',cancel:'Отменить бронь',wa:'Написать Тимуру',newdate:'Новая дата',newtime:'Время выезда',confirm:'Подтвердить перенос',
+        hint_ok:'Перенос — бесплатно на любую дату не раньше чем через 24 часа. Отмена за 48 часов и более — предоплата вернётся на карту. Отмена менее чем за 48 часов — предоплата не возвращается, но тур можно бесплатно перенести на любую дату в течение 6 месяцев.',
+        hint_late:'До тура меньше 24 часов: перенос — только через Тимура в WhatsApp.',
+        sure:'Отменить бронь? Это действие нельзя отменить.',done_cancel:'Бронь отменена. Подтверждение отправлено в WhatsApp.',refund_yes:' Возврат предоплаты запрошен в банке (5–10 рабочих дней).',refund_no:' Предоплата не возвращается: до тура меньше 48 часов. Перенос на любую дату в течение 6 месяцев — бесплатно, напишите Тимуру.',refund_multi:' Многодневный тур: возврат по шкале — рассчитаем и напишем в WhatsApp.',hint_multi:'Перенос — бесплатно на любую дату не раньше чем через 24 часа. Отмена многодневного тура: за 14+ дней — полный возврат за вычетом невозвратных расходов, за 7–13 дней удерживается 30%, за 3–6 дней — 50%, менее 3 дней — без возврата.',refund_manual:' Возврат оформим вручную и напишем в WhatsApp.',refund_fail:' Возврат не прошёл автоматически — оформим вручную.',
+        done_resched:'Бронь перенесена. Подтверждение отправлено в WhatsApp.',err_late:'До тура меньше 24 часов — напишите Тимуру.',err_date:'Выберите дату не раньше чем через 24 часа.',err_link:'Ссылка недействительна. Откройте ссылку из WhatsApp-ваучера или напишите Тимуру.',err:'Не получилось. Попробуйте ещё раз или напишите Тимуру.',inactive:'Эта бронь уже неактивна.'},
+    en:{policy:'Payment policy',h1:'Manage booking',loading:'Loading your booking…',tour:'Tour',date:'Date & time',people:'People',amount:'Deposit',status:'Status',
+        active:'Confirmed',cancelled:'Cancelled',resched:'Reschedule',cancel:'Cancel booking',wa:'Message Timur',newdate:'New date',newtime:'Departure time',confirm:'Confirm new date',
+        hint_ok:'Rescheduling is free to any date at least 24 hours ahead. Cancel 48+ hours before the tour — the deposit is refunded to your card. Less than 48 hours — the deposit is non-refundable, but you can reschedule free of charge to any date within 6 months.',
+        hint_late:'Less than 24 hours before the tour: rescheduling only via Timur on WhatsApp.',
+        sure:'Cancel this booking? This cannot be undone.',done_cancel:'Booking cancelled. Confirmation sent to WhatsApp.',refund_yes:' Refund requested from the bank (5–10 business days).',refund_no:' The deposit is non-refundable: less than 48 hours before the tour. Rescheduling to any date within 6 months is free — message Timur.',refund_multi:' Multi-day tour: the refund follows the scale — we will calculate it and message you on WhatsApp.',hint_multi:'Rescheduling is free to any date at least 24 hours ahead. Cancelling a multi-day tour: 14+ days before — full refund minus non-refundable costs, 7–13 days — 30% withheld, 3–6 days — 50%, under 3 days — no refund.',refund_manual:' We will process the refund manually and message you on WhatsApp.',refund_fail:' Automatic refund failed — we will process it manually.',
+        done_resched:'Booking rescheduled. Confirmation sent to WhatsApp.',err_late:'Less than 24 hours before the tour — please message Timur.',err_date:'Choose a date at least 24 hours ahead.',err_link:'This link is invalid. Open the link from your WhatsApp voucher or message Timur.',err:'Something went wrong. Try again or message Timur.',inactive:'This booking is no longer active.'},
+    ge:{policy:'გადახდის პოლიტიკა',h1:'ჯავშნის მართვა',loading:'ვტვირთავთ ჯავშნის მონაცემებს…',tour:'ტური',date:'თარიღი და დრო',people:'ადამიანი',amount:'წინასწარი გადახდა',status:'სტატუსი',
+        active:'დადასტურებულია',cancelled:'გაუქმებულია',resched:'თარიღის გადატანა',cancel:'ჯავშნის გაუქმება',wa:'მისწერეთ თიმურს',newdate:'ახალი თარიღი',newtime:'გასვლის დრო',confirm:'გადატანის დადასტურება',
+        hint_ok:'გადატანა უფასოა ნებისმიერ თარიღზე, არანაკლებ 24 საათით ადრე. გაუქმება ტურამდე 48 ან მეტი საათით ადრე — წინასწარი გადახდა ბარათზე დაგიბრუნდებათ. 48 საათზე ნაკლებ დროში — არ ბრუნდება, მაგრამ ტური უფასოდ შეგიძლიათ გადაიტანოთ ნებისმიერ თარიღზე 6 თვის განმავლობაში.',
+        hint_late:'ტურამდე 24 საათზე ნაკლებია: გადატანა — მხოლოდ თიმურთან WhatsApp-ით.',
+        sure:'გავაუქმოთ ჯავშანი? ამის დაბრუნება შეუძლებელია.',done_cancel:'ჯავშანი გაუქმებულია. დადასტურება გამოგზავნილია WhatsApp-ზე.',refund_yes:' თანხის დაბრუნება მოთხოვნილია ბანკში (5–10 სამუშაო დღე).',refund_no:' წინასწარი გადახდა არ ბრუნდება: ტურამდე 48 საათზე ნაკლებია. გადატანა ნებისმიერ თარიღზე 6 თვის განმავლობაში უფასოა — მისწერეთ თიმურს.',refund_multi:' მრავალდღიანი ტური: დაბრუნება შკალით — გამოვთვლით და WhatsApp-ზე მოგწერთ.',hint_multi:'გადატანა უფასოა ნებისმიერ თარიღზე, არანაკლებ 24 საათით ადრე. მრავალდღიანი ტურის გაუქმება: 14+ დღით ადრე — სრული დაბრუნება დაუბრუნებელი ხარჯების გამოკლებით, 7–13 დღე — იკავება 30%, 3–6 დღე — 50%, 3 დღეზე ნაკლები — არ ბრუნდება.',refund_manual:' დაბრუნებას ხელით გავაფორმებთ და WhatsApp-ზე მოგწერთ.',refund_fail:' ავტომატური დაბრუნება ვერ შესრულდა — ხელით გავაფორმებთ.',
+        done_resched:'ჯავშანი გადატანილია. დადასტურება გამოგზავნილია WhatsApp-ზე.',err_late:'ტურამდე 24 საათზე ნაკლებია — მისწერეთ თიმურს.',err_date:'აირჩიეთ თარიღი არანაკლებ 24 საათით ადრე.',err_link:'ბმული არასწორია. გახსენით ბმული WhatsApp-ვაუჩერიდან ან მისწერეთ თიმურს.',err:'ვერ მოხერხდა. სცადეთ ხელახლა ან მისწერეთ თიმურს.',inactive:'ეს ჯავშანი უკვე აქტიური არ არის.'}
+  };
+  var p = new URLSearchParams(location.search), id = p.get('id') || '', tok = p.get('t') || '';
+  var L0 = p.get('lang') || (location.pathname.indexOf('/en/') === 0 ? 'en' : location.pathname.indexOf('/ge/') === 0 ? 'ge' : 'ru');
+  var t = T[L0] || (L0 === 'ka' ? T.ge : T.ru), b = null;
+  var $ = function(i){ return document.getElementById(i) };
+  function apply(){
+    document.documentElement.lang = t === T.ge ? 'ka' : (t === T.en ? 'en' : 'ru');
+    var lc = document.documentElement.lang; document.title = t.h1 + ' | Sakhva Travel';
+    $('t-policy').textContent = t.policy; $('t-policy').href = (lc === 'ru' ? '' : '/' + (lc === 'ka' ? 'ge' : 'en')) + '/policy/';
+    $('t-h1').textContent = t.h1; if (!b) $('t-sub').textContent = t.loading; $('t-l-tour').textContent = t.tour; $('t-l-date').textContent = t.date; $('t-l-people').textContent = t.people;
+    $('t-l-amount').textContent = t.amount; $('t-l-status').textContent = t.status; $('btn-resched').textContent = t.resched; $('btn-cancel').textContent = t.cancel;
+    $('wa-btn').textContent = t.wa; $('t-l-newdate').textContent = t.newdate; $('t-l-newtime').textContent = t.newtime; $('resched-ok').textContent = t.confirm;
+  }
+  function show(msg, err){ var m = $('msg'); m.textContent = msg; m.className = 'msg' + (err ? ' err' : ''); m.style.display = 'block'; }
+  function render(){
+    $('order-display').textContent = b.orderId; $('order-display').style.display = 'inline-block';
+    $('d-tour').textContent = b.tour; $('d-date').textContent = b.date + (b.time ? ' ' + b.time : ''); $('d-people').textContent = b.people || '—';
+    $('d-amount').textContent = b.amount + ' ₾'; $('d-status').textContent = b.active ? t.active : t.cancelled; $('d-status').style.color = b.active ? '#16A34A' : '#B91C1C';
+    $('details-block').style.display = 'block'; $('t-sub').style.display = 'none';
+    $('actions').style.display = 'flex';
+    var late = b.hoursLeft < 24;
+    $('t-hint').textContent = b.active ? (late ? t.hint_late : (b.multiday ? t.hint_multi : t.hint_ok)) : t.inactive;
+    $('btn-resched').style.display = b.active && !late ? '' : 'none';
+    $('btn-cancel').style.display = b.active ? '' : 'none';
+    $('resched-form').style.display = 'none';
+  }
+  function localizeTour(lc){
+    // booking stores the RU catalog title ("<title> — от ₾N"); map it to the slug, then to the EN/GE title
+    var ruTitle = String(b.tour || '').replace(/\s+—\s+от\s+₾?\s*\d+.*$/, '').trim();
+    fetch('/data/catalog.json').then(function(r){ return r.json() }).then(function(c){
+      var hit = (c.excursions || []).filter(function(x){ return x.title === ruTitle })[0];
+      if (!hit) return;
+      return fetch('/data/catalog-' + lc + '.json').then(function(r){ return r.json() }).then(function(c2){
+        var loc = (c2.excursions || []).filter(function(x){ return x.slug === hit.slug })[0];
+        if (loc && loc.title) $('d-tour').textContent = loc.title;
+      });
+    }).catch(function(){});
+  }
+  function api(method, body){
+    var u = '/api/booking-manage/?id=' + encodeURIComponent(id) + '&t=' + encodeURIComponent(tok);
+    return fetch(u, {method: method, headers: {'Content-Type': 'application/json'}, body: body ? JSON.stringify(Object.assign({id: id, t: tok}, body)) : undefined}).then(function(r){ return r.json() });
+  }
+  apply();
+  if (!id || !tok) { $('t-sub').textContent = t.err_link; return; }
+  api('GET').then(function(j){
+    if (j.error) { $('t-sub').textContent = j.error === 'bad_link' || j.error === 'not_found' ? t.err_link : t.err; return; }
+    b = j; var L = p.get('lang') || b.lang; t = T[L] || (L === 'ka' ? T.ge : T.en); apply(); render();
+    if (t !== T.ru) localizeTour(t === T.ge ? 'ge' : 'en');
+  }).catch(function(){ $('t-sub').textContent = t.err; });
+  $('btn-resched').onclick = function(){
+    var f = $('resched-form'); f.style.display = f.style.display === 'block' ? 'none' : 'block';
+    var d = new Date(Date.now() + 26*3600*1000); $('f-date').min = d.toISOString().slice(0,10);
+    if (b.time) $('f-time').value = b.time;
+  };
+  $('resched-ok').onclick = function(){
+    var d = $('f-date').value; if (!d) { show(t.err_date, true); return; }
+    this.disabled = true; var self = this;
+    api('POST', {action: 'reschedule', date: d, time: $('f-time').value}).then(function(j){
+      self.disabled = false;
+      if (j.ok) { b = j; render(); show(t.done_resched); }
+      else show(j.error === 'too_late' ? t.err_late : (j.error === 'bad_date' ? t.err_date : t.err), true);
+    }).catch(function(){ self.disabled = false; show(t.err, true); });
+  };
+  $('btn-cancel').onclick = function(){
+    if (!confirm(t.sure)) return;
+    this.disabled = true; var self = this;
+    api('POST', {action: 'cancel'}).then(function(j){
+      self.disabled = false;
+      if (j.ok) {
+        b = j; render();
+        var r = j.multiday ? t.refund_multi : j.refund === 'requested' ? t.refund_yes : (j.refund === 'failed' ? t.refund_fail : (j.card ? (j.hoursLeft < 48 ? t.refund_no : '') : t.refund_manual));
+        show(t.done_cancel + r);
+      } else show(j.active === false ? t.inactive : t.err, true);
+    }).catch(function(){ self.disabled = false; show(t.err, true); });
+  };
+})();
+</script>
+</body>
+</html>

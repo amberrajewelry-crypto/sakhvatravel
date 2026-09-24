@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head><link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><link rel="preconnect" href="https://mc.yandex.ru" crossorigin>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Партнёрский кабинет — Sakhva Travel</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="/favicon.ico">
+<link rel="preload" href="/fonts/lora-10.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/lora-14.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Lora';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/lora-10.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:'Lora';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/lora-14.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Lora';font-style:normal;font-weight:600;font-display:swap;src:url(/fonts/lora-10.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:'Lora';font-style:normal;font-weight:600;font-display:swap;src:url(/fonts/lora-14.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Lora';font-style:normal;font-weight:700;font-display:swap;src:url(/fonts/lora-10.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:'Lora';font-style:normal;font-weight:700;font-display:swap;src:url(/fonts/lora-14.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{background:#eef1ea}
+body{font-family:'Lora',Georgia,serif;color:#1a1a1a;-webkit-font-smoothing:antialiased;min-height:100dvh;
+  background:
+    radial-gradient(1200px 500px at 100% -5%,rgba(26,61,46,.10),transparent 60%),
+    radial-gradient(900px 500px at -10% 8%,rgba(180,83,9,.06),transparent 55%),
+    #eef1ea}
+
+.nav{height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(20px,4vw,48px);background:#1A3D2E;position:sticky;top:0;z-index:50}
+.nav-logo{color:#fff;font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;text-decoration:none}
+.nav-tag{font-size:12px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.4);border:1px solid rgba(255,255,255,.15);padding:3px 10px;border-radius:4px}
+
+.wrap{max-width:820px;margin:0 auto;padding:48px clamp(20px,4vw,48px) 120px}
+
+/* Login */
+.login{text-align:center;padding:120px 0 60px}
+.login h1{font-size:clamp(28px,5vw,42px);color:#1A3D2E;font-weight:400;margin-bottom:12px;letter-spacing:-.03em}
+.login p{color:#a3a3a3;font-size:14px;margin-bottom:44px;letter-spacing:.02em}
+.login-field{display:flex;flex-direction:column;align-items:center;gap:14px}
+.login-input{width:100%;max-width:400px;padding:18px 28px;border:1.5px solid #e5e5e5;border-radius:14px;background:#fff;color:#1a1a1a;font-size:17px;font-family:'Lora',serif;text-align:center;outline:none;letter-spacing:.08em;transition:all .25s;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+.login-input:focus{border-color:#1A3D2E;box-shadow:0 0 0 3px rgba(26,61,46,.08)}
+.login-input::placeholder{color:#d4d4d4}
+.login-btn{width:100%;max-width:400px;padding:16px;background:#1A3D2E;color:#fff;border:none;border-radius:14px;font-size:13px;font-weight:700;font-family:'Lora',serif;cursor:pointer;letter-spacing:.12em;text-transform:uppercase;transition:all .2s;box-shadow:0 4px 16px rgba(26,61,46,.25)}
+.login-btn:hover{background:#245a3f;box-shadow:0 6px 24px rgba(26,61,46,.3);transform:translateY(-1px)}
+.login-btn:disabled{opacity:.6;cursor:default;transform:none}
+.login-err{color:#dc2626;font-size:13px;margin-top:12px;display:none}
+
+/* Dashboard */
+.dash{display:none}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+@keyframes countUp{from{opacity:0;transform:scale(.8)}to{opacity:1;transform:scale(1)}}
+@keyframes slideIn{from{opacity:0;transform:translateX(-12px)}to{opacity:1;transform:translateX(0)}}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(26,61,46,.15)}50%{box-shadow:0 0 0 8px rgba(26,61,46,0)}}
+@keyframes barGrow{from{width:0}to{width:var(--w)}}
+.card-num{animation:countUp .6s ease-out both}
+.card:nth-child(1) .card-num{animation-delay:.2s}
+.card:nth-child(2) .card-num{animation-delay:.35s}
+.card:nth-child(3) .card-num{animation-delay:.5s}
+.card:nth-child(4) .card-num{animation-delay:.65s}
+.data-card{animation:fadeUp .5s ease-out both}
+.data-card:nth-child(1){animation-delay:.3s}
+.data-card:nth-child(2){animation-delay:.38s}
+.data-card:nth-child(3){animation-delay:.46s}
+.data-card:nth-child(4){animation-delay:.54s}
+.data-card:nth-child(5){animation-delay:.62s}
+.data-card:nth-child(6){animation-delay:.7s}
+.activity-item{animation:slideIn .4s ease-out both}
+.qr-img{animation:pulse 2s ease-in-out 1s 3}
+.chart-bar{animation:fadeUp .3s ease-out both}
+.dash>*{animation:fadeUp .5s ease-out both}
+.dash>*:nth-child(1){animation-delay:0s}
+.dash>*:nth-child(2){animation-delay:.06s}
+.dash>*:nth-child(3){animation-delay:.12s}
+.dash>*:nth-child(4){animation-delay:.18s}
+.dash>*:nth-child(5){animation-delay:.24s}
+.dash>*:nth-child(6){animation-delay:.30s}
+.dash>*:nth-child(7){animation-delay:.36s}
+.dash>*:nth-child(8){animation-delay:.42s}
+
+/* Premium hero */
+.hero{position:relative;overflow:hidden;border-radius:22px;padding:32px clamp(22px,4vw,40px);margin-bottom:20px;
+  background:
+    radial-gradient(120% 140% at 100% 0,#245a3f 0%,#1A3D2E 42%,#122b20 100%);
+  box-shadow:0 18px 50px -18px rgba(18,43,32,.55),0 2px 8px rgba(18,43,32,.25);
+  color:#fff}
+.hero::before{content:'';position:absolute;inset:0;pointer-events:none;opacity:.5;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.35'/%3E%3C/svg%3E")}
+.hero::after{content:'';position:absolute;right:-60px;top:-60px;width:240px;height:240px;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,255,255,.10),transparent 70%);pointer-events:none}
+.hero>*{position:relative;z-index:1}
+.hero-top{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:26px}
+.hero-hello{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:8px}
+.dash-name{font-size:clamp(28px,5vw,40px);color:#fff;font-weight:600;letter-spacing:-.03em;line-height:1.04}
+.dash-meta{display:flex;align-items:center;gap:10px;margin-top:12px;flex-wrap:wrap}
+.dash-slug{color:#cfe6d8;font-size:12px;font-weight:600;background:rgba(255,255,255,.10);padding:4px 12px;border-radius:6px}
+.dash-date{color:rgba(255,255,255,.45);font-size:12px}
+/* promo ticket */
+.dash-promo{position:relative;background:#fff;color:#1A3D2E;border-radius:14px;padding:14px 22px 12px;text-align:center;
+  box-shadow:0 10px 24px -8px rgba(0,0,0,.35);min-width:150px}
+.dash-promo::before,.dash-promo::after{content:'';position:absolute;top:50%;width:14px;height:14px;border-radius:50%;background:#183524;transform:translateY(-50%)}
+.dash-promo::before{left:-7px}.dash-promo::after{right:-7px}
+.promo-label{font-size:12px;color:#9aa39d;letter-spacing:.2em;text-transform:uppercase;margin-bottom:5px}
+.promo-code{font-size:26px;font-weight:700;color:#1A3D2E;letter-spacing:.14em;line-height:1}
+/* reference link bar inside hero */
+.reflink{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.14);
+  border-radius:14px;padding:12px 12px 12px 18px}
+.reflink-l{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.8);margin-bottom:4px}
+.reflink-u{font-size:15px;font-weight:600;color:#fff;word-break:break-all;letter-spacing:.01em}
+.reflink-copy{margin-left:auto;flex-shrink:0;background:#fff;color:#1A3D2E;border:none;border-radius:10px;padding:11px 18px;
+  font-size:12px;font-weight:700;font-family:'Lora',serif;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;
+  display:inline-flex;align-items:center;gap:6px;transition:transform .18s,box-shadow .18s}
+.reflink-copy:hover{transform:translateY(-1px);box-shadow:0 8px 18px -6px rgba(0,0,0,.4)}
+.reflink-copy svg{width:13px;height:13px}
+
+/* Onboarding steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:32px}
+@media(max-width:600px){.steps{grid-template-columns:1fr}}
+.step{background:#fff;border:1px solid #e6e9e2;border-radius:14px;padding:16px 18px;display:flex;gap:13px;align-items:flex-start}
+.step-n{flex-shrink:0;width:26px;height:26px;border-radius:8px;background:#1A3D2E;color:#fff;font-size:13px;font-weight:700;
+  display:flex;align-items:center;justify-content:center;font-variant-numeric:tabular-nums}
+.step-t{font-size:13px;line-height:1.45;color:#3f463f}
+.step-t b{color:#1A3D2E;font-weight:600}
+
+/* Link bar */
+.link-bar{background:#fff;border:1px solid #ebebeb;border-radius:14px;padding:16px 22px;display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:32px;box-shadow:0 1px 3px rgba(0,0,0,.03)}
+.link-url{color:#1A3D2E;font-size:14px;font-weight:600;word-break:break-all;letter-spacing:.01em}
+.link-actions{display:flex;gap:8px;flex-shrink:0}
+.copy-btn,.share-wa-btn{background:#1A3D2E;color:#fff;border:none;padding:9px 18px;border-radius:10px;font-size:12px;font-weight:700;cursor:pointer;white-space:nowrap;font-family:'Lora',serif;letter-spacing:.08em;text-transform:uppercase;transition:all .2s;box-shadow:0 2px 8px rgba(26,61,46,.2);display:inline-flex;align-items:center;gap:6px}
+.copy-btn:hover,.share-wa-btn:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(26,61,46,.25)}
+.copy-btn:hover{background:#245a3f}
+.share-wa-btn{background:#0C7C38}
+.share-wa-btn:hover{background:#1fb855}
+.copy-btn svg,.share-wa-btn svg{width:13px;height:13px;flex-shrink:0}
+
+/* Cards */
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:36px}
+@media(max-width:680px){.cards{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:420px){.cards{grid-template-columns:1fr}}
+.card{background:#fff;border:1px solid #e6e9e2;border-radius:16px;padding:22px 20px 18px;text-align:center;box-shadow:0 1px 2px rgba(18,43,32,.04);transition:box-shadow .2s,transform .2s,border-color .2s;position:relative}
+.card:hover{box-shadow:0 12px 30px -12px rgba(18,43,32,.18);transform:translateY(-3px);border-color:#d3ddd0}
+.card.highlight{background:linear-gradient(180deg,#fbfdf9,#f3f7f0);border-color:#cfe0d3}
+.card-icon{margin:0 auto 12px;width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center}
+.card-icon svg{width:18px;height:18px}
+.card-icon.today{background:rgba(59,130,246,.08)}
+.card-icon.today svg{color:#3b82f6}
+.card-icon.month{background:rgba(26,61,46,.08)}
+.card-icon.month svg{color:#1A3D2E}
+.card-icon.total{background:rgba(245,158,11,.08)}
+.card-icon.total svg{color:#B45309}
+.card-icon.leads{background:rgba(139,92,246,.08)}
+.card-icon.leads svg{color:#8b5cf6}
+.card-num{font-size:clamp(32px,7vw,44px);font-weight:700;color:#1a1a1a;line-height:1;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+/* Empty state */
+.empty-hint{display:none;background:linear-gradient(180deg,#fbfdf9,#f4f8f1);border:1px dashed #ccd8c9;border-radius:16px;padding:30px 24px;text-align:center;margin-bottom:32px}
+.empty-hint h3{font-size:17px;font-weight:600;color:#1A3D2E;margin-bottom:8px;letter-spacing:-.01em}
+.empty-hint p{font-size:13px;color:#6b746b;line-height:1.6;max-width:420px;margin:0 auto}
+.card-sub{font-size:12px;color:#a3a3a3;letter-spacing:.22em;text-transform:uppercase;margin-top:8px}
+.card-num.accent{color:#1A3D2E}
+.card.highlight{border-color:#ebebeb;border-width:1px;background:#fff}
+.card-delta{font-size:12px;font-weight:600;margin-top:6px;display:inline-flex;align-items:center;gap:3px;padding:2px 8px;border-radius:6px}
+.card-delta.up{color:#059669;background:rgba(5,150,105,.06)}
+.card-delta.down{color:#dc2626;background:rgba(220,38,38,.06)}
+.card-delta.neutral{color:#a3a3a3;background:rgba(163,163,163,.06)}
+.card-delta svg{width:10px;height:10px}
+
+/* Chart */
+.chart-section{background:#fff;border:1px solid #ebebeb;border-radius:16px;padding:28px;margin-bottom:32px;box-shadow:0 1px 3px rgba(0,0,0,.03);display:none}
+.chart-head{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:24px}
+.chart-title{font-size:18px;color:#1a1a1a;font-weight:500;letter-spacing:-.01em}
+.chart-period{font-size:12px;color:#a3a3a3;letter-spacing:.08em;text-transform:uppercase}
+.chart-area{position:relative}
+.chart-grid{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:space-between;pointer-events:none}
+.chart-grid-line{height:1px;background:repeating-linear-gradient(90deg,#f0f0f0 0,#f0f0f0 4px,transparent 4px,transparent 8px);position:relative}
+.chart-grid-label{position:absolute;right:100%;margin-right:8px;top:-5px;font-size:12px;color:#d4d4d4;white-space:nowrap}
+.chart{display:flex;align-items:flex-end;gap:2px;height:140px;position:relative;z-index:1}
+.chart-bar{flex:1;background:linear-gradient(180deg,#d4e8dc 0%,#e8f0ec 100%);border-radius:4px 4px 0 0;min-height:2px;transition:all .2s;position:relative;cursor:default}
+.chart-bar:hover{background:linear-gradient(180deg,#1A3D2E 0%,#2d6b4f 100%)}
+.chart-bar .tip{display:none;position:absolute;bottom:100%;left:50%;transform:translateX(-50%);background:#1a1a1a;color:#fff;font-size:12px;padding:5px 12px;border-radius:8px;white-space:nowrap;margin-bottom:8px;z-index:5;box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.chart-bar .tip::after{content:'';position:absolute;top:100%;left:50%;margin-left:-4px;border:4px solid transparent;border-top-color:#1a1a1a}
+.chart-bar:hover .tip{display:block}
+.chart-dates{display:flex;justify-content:space-between;margin-top:10px}
+.chart-dates span{font-size:12px;color:#d4d4d4}
+.chart-summary{display:flex;gap:24px;margin-top:16px;padding-top:16px;border-top:1px solid #f5f5f5;flex-wrap:wrap}
+.chart-stat{font-size:12px;color:#a3a3a3}
+.chart-stat strong{color:#1a1a1a;font-weight:700;font-size:13px;margin-right:4px}
+
+/* Data grid */
+.data-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+@media(max-width:560px){.data-grid{grid-template-columns:1fr}}
+.data-card{background:#fff;border:1px solid #ebebeb;border-radius:16px;padding:22px;box-shadow:0 1px 3px rgba(0,0,0,.03);display:none}
+.data-title{font-size:12px;font-weight:700;color:#a3a3a3;letter-spacing:.15em;text-transform:uppercase;margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.data-title::before{content:'';width:3px;height:12px;background:#1A3D2E;border-radius:2px}
+.tbl{width:100%;border-collapse:collapse}
+.tbl td{padding:9px 0;border-bottom:1px solid #f5f5f5;font-size:13px;color:#525252}
+.tbl tr:last-child td{border:none}
+.tbl td:nth-child(1){color:#1a1a1a;font-weight:500}
+.tbl td:nth-child(2){text-align:right;font-weight:700;color:#1a1a1a;font-size:15px;width:50px}
+.tbl td:nth-child(3){text-align:right;color:#d4d4d4;font-size:12px;width:36px}
+.bar-cell{width:28%}
+.bar-wrap{background:#f0f0f0;border-radius:3px;height:4px;width:100%}
+.bar{background:linear-gradient(90deg,#1A3D2E,#3d8b5e);height:4px;border-radius:3px;min-width:2px}
+
+/* Empty state */
+.empty{text-align:center;padding:32px 20px;color:#d4d4d4;font-size:13px;font-style:italic}
+
+/* Share panel */
+.share-panel{background:#fff;border:1px solid #ebebeb;border-radius:16px;padding:24px;box-shadow:0 1px 3px rgba(0,0,0,.03);margin-bottom:16px}
+.share-label{font-size:12px;font-weight:700;color:#a3a3a3;letter-spacing:.15em;text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.share-label::before{content:'';width:3px;height:12px;background:#0C7C38;border-radius:2px}
+.share-text{font-size:13px;color:#525252;line-height:1.7;background:#fafaf8;border-radius:10px;padding:16px 20px;border:1px solid #f0f0f0;position:relative}
+.share-copy{position:absolute;top:10px;right:10px;background:#fff;border:1px solid #ebebeb;border-radius:6px;padding:4px 10px;font-size:12px;font-weight:700;font-family:'Lora',serif;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;color:#a3a3a3;transition:all .15s}
+.share-copy:hover{color:#1a1a1a;border-color:#ccc}
+.share-channels{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+.share-ch{display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:10px;font-size:12px;font-weight:600;font-family:'Lora',serif;cursor:pointer;border:none;transition:all .15s;text-decoration:none;color:#fff}
+.share-ch:hover{transform:translateY(-1px)}
+.share-ch.wa{background:#0C7C38}
+.share-ch.tg{background:#146D9E}
+.share-ch svg{width:14px;height:14px}
+
+/* QR section */
+.qr-section{background:#fff;border:1px solid #ebebeb;border-radius:16px;padding:24px;box-shadow:0 1px 3px rgba(0,0,0,.03);margin-bottom:16px;display:flex;align-items:center;gap:24px}
+@media(max-width:520px){.qr-section{flex-direction:column;text-align:center}}
+.qr-img{width:140px;height:140px;border-radius:10px;border:1px solid #f0f0f0;flex-shrink:0}
+.qr-info{}
+.qr-title{font-size:12px;font-weight:700;color:#a3a3a3;letter-spacing:.15em;text-transform:uppercase;margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.qr-title::before{content:'';width:3px;height:12px;background:#1A3D2E;border-radius:2px}
+@media(max-width:520px){.qr-title{justify-content:center}}
+.qr-desc{font-size:13px;color:#525252;line-height:1.6;margin-bottom:14px}
+.qr-download{display:inline-flex;align-items:center;gap:6px;background:#1A3D2E;color:#fff;border:none;padding:9px 20px;border-radius:10px;font-size:12px;font-weight:700;font-family:'Lora',serif;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;transition:all .2s;text-decoration:none;box-shadow:0 2px 8px rgba(26,61,46,.2)}
+.qr-download:hover{background:#245a3f;transform:translateY(-1px)}
+.qr-download svg{width:13px;height:13px}
+
+/* Activity feed */
+.activity-section{background:#fff;border:1px solid #ebebeb;border-radius:16px;padding:24px;box-shadow:0 1px 3px rgba(0,0,0,.03);margin-bottom:16px;display:none}
+.activity-title{font-size:12px;font-weight:700;color:#a3a3a3;letter-spacing:.15em;text-transform:uppercase;margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.activity-title::before{content:'';width:3px;height:12px;background:#3b82f6;border-radius:2px}
+.activity-list{list-style:none}
+.activity-item{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid #f5f5f5;font-size:13px}
+.activity-item:last-child{border:none}
+.activity-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.activity-dot.green{background:#059669}
+.activity-dot.gray{background:#d4d4d4}
+.activity-date{color:#a3a3a3;font-size:12px;min-width:50px}
+.activity-text{color:#1a1a1a;font-weight:500}
+.activity-detail{color:#a3a3a3;font-size:12px;margin-left:auto}
+
+/* Footer */
+.dash-footer{text-align:center;margin-top:48px;padding-top:28px;border-top:1px solid #ebebeb}
+.logout-btn{background:transparent;color:#a3a3a3;border:none;font-size:12px;font-weight:600;font-family:'Lora',serif;cursor:pointer;letter-spacing:.1em;text-transform:uppercase;transition:color .2s;padding:8px 20px}
+.logout-btn:hover{color:#1a1a1a}
+.dash-footer-text{font-size:12px;color:#d4d4d4;margin-top:10px;letter-spacing:.05em}
+</style>
+<noscript><div><img alt="" src="https://mc.yandex.ru/watch/109038950" style="position:absolute;left:-9999px"/></div></noscript>
+<script>(function(){
+function loadYM(){if(window._ymLoaded)return;window._ymLoaded=true;
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,function(c){var d=false,f=function(){if(d)return;d=true;c()};['scroll','touchstart','mousemove','keydown','click'].forEach(function(e){document.addEventListener(e,f,{once:true,passive:true})});setTimeout(f,5000)}(function(){a.parentNode.insertBefore(k,a)})})
+(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true})}
+['scroll','touchstart','mousemove','keydown','click'].forEach(function(e){
+document.addEventListener(e,loadYM,{once:true,passive:true})});
+setTimeout(loadYM,12000);
+})();
+</script>
+<meta name="twitter:card" content="summary_large_image"/>
+</head>
+<body>
+<div class="nav">
+  <a href="/" class="nav-logo" aria-label="Sakhva Travel">Sakhva Travel</a>
+  <span class="nav-tag">Partner</span>
+</div>
+<div class="wrap">
+  <!-- Login -->
+  <div class="login" id="login-view">
+    <h1>Партнёрский кабинет</h1>
+    <p>Введите код для просмотра статистики</p>
+    <div class="login-field">
+      <input aria-label="Код партнёра" type="text" class="login-input" id="slug-input" placeholder="Код партнёра" autocomplete="off" autofocus>
+      <button class="login-btn" id="login-btn" onclick="loadStats()">Войти</button>
+    </div>
+    <div class="login-err" id="login-err">Партнёр не найден. Проверьте код.</div>
+  </div>
+
+  <!-- Dashboard -->
+  <div class="dash" id="dash-view">
+    <div class="hero">
+      <div class="hero-top">
+        <div>
+          <div class="hero-hello">Партнёрский кабинет</div>
+          <div class="dash-name" id="d-name"></div>
+          <div class="dash-meta">
+            <span class="dash-slug" id="d-slug"></span>
+            <span class="dash-date" id="d-date"></span>
+          </div>
+        </div>
+        <div class="dash-promo">
+          <div class="promo-label">Промокод для клиентов</div>
+          <div class="promo-code" id="d-promo"></div>
+        </div>
+      </div>
+      <div class="reflink">
+        <div>
+          <div class="reflink-l">Ваша ссылка</div>
+          <div class="reflink-u" id="d-refurl"></div>
+        </div>
+        <button class="reflink-copy copy-btn" onclick="copyLink()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>Копировать</button>
+      </div>
+    </div>
+
+    <div class="steps">
+      <div class="step"><span class="step-n">1</span><span class="step-t">Скопируйте <b>ссылку</b> или <b>QR-код</b> ниже</span></div>
+      <div class="step"><span class="step-n">2</span><span class="step-t">Отправьте клиентам — <b>WhatsApp</b>, Instagram, визитка</span></div>
+      <div class="step"><span class="step-n">3</span><span class="step-t">Клиент бронирует со скидкой <b>10%</b> → вы получаете комиссию</span></div>
+    </div>
+
+    <div class="empty-hint" id="empty-hint">
+      <h3>Пока нет переходов</h3>
+      <p>Как только вы поделитесь ссылкой или промокодом, здесь появится статистика: переходы, страны, города и заявки.</p>
+    </div>
+
+
+    <div class="cards">
+      <div class="card">
+        <div class="card-icon today"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <div class="card-num" id="d-today">0</div>
+        <div class="card-sub">Сегодня</div>
+        <div class="card-delta neutral" id="d-delta-today">--</div>
+      </div>
+      <div class="card highlight">
+        <div class="card-icon month"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+        <div class="card-num accent" id="d-month">0</div>
+        <div class="card-sub">За 30 дней</div>
+        <div class="card-delta neutral" id="d-delta-month">--</div>
+      </div>
+      <div class="card">
+        <div class="card-icon total"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+        <div class="card-num" id="d-total">0</div>
+        <div class="card-sub">Всего</div>
+        <div class="card-delta neutral" id="d-delta-total">--</div>
+      </div>
+      <div class="card">
+        <div class="card-icon leads"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4-4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div>
+        <div class="card-num" id="d-leads">0</div>
+        <div class="card-sub">Заявки</div>
+        <div class="card-delta neutral" id="d-delta-leads">—</div>
+      </div>
+    </div>
+
+    <div class="chart-section" id="chart-section">
+      <div class="chart-head">
+        <div class="chart-title">Клики</div>
+        <div class="chart-period">Последние 30 дней</div>
+      </div>
+      <div class="chart-area">
+        <div class="chart-grid" id="chart-grid"></div>
+        <div class="chart" id="chart"></div>
+      </div>
+      <div class="chart-dates" id="chart-dates"></div>
+      <div class="chart-summary" id="chart-summary"></div>
+    </div>
+
+    <div class="data-grid">
+      <div class="data-card" id="sec-countries">
+        <div class="data-title">Страны</div>
+        <table class="tbl"><tbody id="tbl-countries"></tbody></table>
+      </div>
+      <div class="data-card" id="sec-cities">
+        <div class="data-title">Города</div>
+        <table class="tbl"><tbody id="tbl-cities"></tbody></table>
+      </div>
+      <div class="data-card" id="sec-browsers">
+        <div class="data-title">Браузеры</div>
+        <table class="tbl"><tbody id="tbl-browsers"></tbody></table>
+      </div>
+      <div class="data-card" id="sec-devices">
+        <div class="data-title">Устройства</div>
+        <table class="tbl"><tbody id="tbl-devices"></tbody></table>
+      </div>
+      <div class="data-card" id="sec-referrers">
+        <div class="data-title">Откуда переходят</div>
+        <table class="tbl"><tbody id="tbl-referrers"></tbody></table>
+      </div>
+      <div class="data-card" id="sec-social">
+        <div class="data-title">Соцсети</div>
+        <table class="tbl"><tbody id="tbl-social"></tbody></table>
+      </div>
+    </div>
+
+    <!-- QR Code -->
+    <div class="qr-section" id="qr-section">
+      <img class="qr-img" id="qr-img" alt="QR code" src="">
+      <div class="qr-info">
+        <div class="qr-title">QR-код вашей ссылки</div>
+        <div class="qr-desc">Распечатайте или покажите на экране — клиенты отсканируют камерой и перейдут на сайт с вашим промокодом</div>
+        <a class="qr-download" id="qr-download" href="#" download="sakhva-qr.png"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Скачать PNG</a>
+      </div>
+    </div>
+
+    <!-- Activity feed -->
+    <div class="activity-section" id="activity-section">
+      <div class="activity-title">Последняя активность</div>
+      <ul class="activity-list" id="activity-list"></ul>
+    </div>
+
+    <div class="share-panel" id="share-panel">
+      <div class="share-label">Поделиться</div>
+      <div class="share-text" id="share-text">
+        <span id="share-msg"></span>
+        <button class="share-copy" onclick="copyShareText()">Копировать</button>
+      </div>
+      <div class="share-channels" id="share-channels"></div>
+    </div>
+
+    <div class="dash-footer">
+      <button class="logout-btn" onclick="logout()">Выйти</button>
+      <div class="dash-footer-text">Sakhva Travel Partner Program</div>
+    </div>
+  </div>
+</div>
+
+<script>
+var _slug='',_data=null;
+var inp=document.getElementById('slug-input');
+inp.addEventListener('keydown',function(e){if(e.key==='Enter')loadStats()});
+var saved=localStorage.getItem('partner_dash');
+if(saved){inp.value=saved;loadStats()}
+
+function loadStats(){
+  var s=inp.value.trim().toLowerCase();
+  if(!s)return inp.focus();
+  _slug=s;
+  document.getElementById('login-err').style.display='none';
+  var btn=document.getElementById('login-btn');
+  btn.textContent='ЗАГРУЗКА...';btn.disabled=true;
+
+  fetch('/api/partner-stats?slug='+encodeURIComponent(s))
+    .then(function(r){return r.json()})
+    .then(function(d){
+      btn.textContent='ВОЙТИ';btn.disabled=false;
+      if(d.error){document.getElementById('login-err').style.display='block';return}
+      localStorage.setItem('partner_dash',s);
+      _data=d;
+      showDash(d);
+    })
+    .catch(function(){
+      btn.textContent='ВОЙТИ';btn.disabled=false;
+      document.getElementById('login-err').style.display='block';
+    });
+}
+
+function showDash(d){
+  document.getElementById('login-view').style.display='none';
+  document.getElementById('dash-view').style.display='block';
+
+  var promo=_slug.toUpperCase()+'10';
+  document.getElementById('d-name').textContent=d.partner;
+  document.getElementById('d-slug').textContent='sakhva.link/'+d.slug;
+  document.getElementById('d-date').textContent='с '+new Date(d.created).toLocaleDateString('ru-RU');
+  document.getElementById('d-promo').textContent=promo;
+  document.getElementById('d-refurl').textContent='sakhva.link/'+d.slug;
+
+  var today=d.today||0, month=d.last30days||0, total=d.totalClicks||0;
+  document.getElementById('empty-hint').style.display=total===0?'block':'none';
+  animateNum('d-today',today,400);
+  animateNum('d-month',month,600);
+  animateNum('d-total',total,800);
+
+  // Deltas
+  var timeline=d.timeline||[];
+  if(timeline.length>1){
+    // Yesterday
+    var yesterday=timeline.length>=2?timeline[timeline.length-2].clicks||0:0;
+    setDelta('d-delta-today',today,yesterday);
+    // First vs second half of month
+    var half=Math.floor(timeline.length/2);
+    var first=0,second=0;
+    for(var i=0;i<timeline.length;i++){
+      if(i<half)first+=(timeline[i].clicks||0);
+      else second+=(timeline[i].clicks||0);
+    }
+    setDelta('d-delta-month',second,first);
+  }
+  // Total delta — show date
+  var created=new Date(d.created);
+  var months=['янв','фев','мар','апр','мая','июн','июл','авг','сен','окт','ноя','дек'];
+  document.getElementById('d-delta-total').textContent='с '+months[created.getMonth()]+' '+created.getFullYear();
+  document.getElementById('d-delta-total').className='card-delta neutral';
+
+  // WA link
+  var shareMsg='Привет! Планируешь поездку в Грузию? Закажи тур у Sakhva Travel по моей ссылке и получи скидку 10% с промокодом '+promo+' — https://sakhva.link/'+d.slug;
+  document.getElementById('share-msg').textContent=shareMsg;
+
+  // Share channels
+  var ch=document.getElementById('share-channels');
+  ch.innerHTML='<a class="share-ch wa" href="https://wa.me/?text='+encodeURIComponent(shareMsg)+'" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>WhatsApp</a>'
+  +'<a class="share-ch tg" href="https://t.me/share/url?url=https://sakhva.link/'+d.slug+'&text='+encodeURIComponent('Закажи тур у Sakhva Travel со скидкой 10% — промокод '+promo)+'" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg>Telegram</a>';
+
+  // QR code
+  var qrUrl='/api/qr?url='+encodeURIComponent('https://sakhva.link/'+d.slug);
+  document.getElementById('qr-img').src=qrUrl;
+  document.getElementById('qr-download').href=qrUrl;
+
+  // Activity feed from timeline
+  renderActivity(timeline);
+
+  // Fetch leads
+  fetch('/api/partner-leads?slug='+encodeURIComponent(d.slug))
+    .then(function(r){return r.json()})
+    .then(function(ld){
+      animateNum('d-leads',ld.leads||0,500);
+      if(ld.leads>0){
+        document.getElementById('d-delta-leads').innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>'+ld.leads;
+        document.getElementById('d-delta-leads').className='card-delta up';
+      }
+    }).catch(function(){});
+
+  renderChart(timeline);
+  renderTable('sec-countries','tbl-countries',d.countries,month||total);
+  renderTable('sec-cities','tbl-cities',d.cities,month||total);
+  renderTable('sec-browsers','tbl-browsers',d.browsers,month||total);
+  renderTable('sec-devices','tbl-devices',d.os,month||total);
+  renderTable('sec-referrers','tbl-referrers',(d.sources&&d.sources.length)?d.sources:d.referrers,month||total);
+}
+
+function setDelta(id,current,previous){
+  var el=document.getElementById(id);
+  if(previous===0&&current===0){el.textContent='--';el.className='card-delta neutral';return}
+  if(previous===0){el.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>новый';el.className='card-delta up';return}
+  var pct=Math.round((current-previous)/previous*100);
+  var arrow=pct>=0?'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>':'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>';
+  el.innerHTML=arrow+(pct>=0?'+':'')+pct+'%';
+  el.className='card-delta '+(pct>=0?'up':'down');
+}
+
+function animateNum(id,target,duration){
+  var el=document.getElementById(id);
+  if(!target||target<2){el.textContent=target;return}
+  var start=performance.now();
+  function step(now){
+    var t=Math.min((now-start)/duration,1);
+    var ease=1-Math.pow(1-t,3);
+    el.textContent=Math.round(ease*target);
+    if(t<1)requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+
+function renderActivity(timeline){
+  if(!timeline||!timeline.length)return;
+  var active=timeline.filter(function(d){return(d.clicks||0)>0}).reverse().slice(0,10);
+  if(!active.length)return;
+  document.getElementById('activity-section').style.display='';
+  var list=document.getElementById('activity-list');
+  list.innerHTML='';
+  var months=['янв','фев','мар','апр','мая','июн','июл','авг','сен','окт','ноя','дек'];
+  active.forEach(function(item){
+    var clicks=item.clicks||0;
+    var parts=(item.date||'').split('-');
+    var day=parts[2]||'';
+    var mon=months[parseInt(parts[1]||1)-1]||'';
+    var isToday=item.date===(new Date().toISOString().slice(0,10));
+    var li=document.createElement('li');
+    li.className='activity-item';
+    li.innerHTML='<span class="activity-dot '+(isToday?'green':'gray')+'"></span>'
+      +'<span class="activity-date">'+day+' '+mon+'</span>'
+      +'<span class="activity-text">'+clicks+' '+(clicks===1?'клик':clicks<5?'клика':'кликов')+'</span>'
+      +'<span class="activity-detail">'+(isToday?'сегодня':'')+'</span>';
+    list.appendChild(li);
+  });
+}
+
+function renderChart(timeline){
+  if(!timeline||!timeline.length)return;
+  document.getElementById('chart-section').style.display='';
+  var el=document.getElementById('chart');
+  el.innerHTML='';
+  var grid=document.getElementById('chart-grid');
+  grid.innerHTML='';
+  var max=Math.max.apply(null,timeline.map(function(x){return x.clicks||0}));
+  if(max===0)max=1;
+
+  // Y-axis grid
+  for(var g=0;g<=4;g++){
+    var line=document.createElement('div');
+    line.className='chart-grid-line';
+    var val=Math.round(max*(1-g/4));
+    line.innerHTML='<span class="chart-grid-label">'+val+'</span>';
+    grid.appendChild(line);
+  }
+
+  var totalClicks=0,activeDays=0,peakDay=0;
+  timeline.forEach(function(item){
+    var clicks=item.clicks||0;
+    totalClicks+=clicks;
+    if(clicks>0)activeDays++;
+    if(clicks>peakDay)peakDay=clicks;
+    var h=Math.max(2,Math.round(clicks/max*130));
+    var date=item.date||'';
+    var parts=date.split('-');
+    var short=parts.length>=3?(parts[2]+'.'+parts[1]):'';
+    var bar=document.createElement('div');
+    bar.className='chart-bar';
+    bar.style.height=h+'px';
+    bar.innerHTML='<span class="tip">'+short+': '+clicks+'</span>';
+    el.appendChild(bar);
+  });
+
+  var dates=document.getElementById('chart-dates');
+  if(timeline.length>1){
+    var fmt=function(d){var p=d.split('-');return p.length>=3?(p[2]+'.'+p[1]):d};
+    dates.innerHTML='<span>'+fmt(timeline[0].date||'')+'</span><span>'+fmt(timeline[timeline.length-1].date||'')+'</span>';
+  }
+
+  var avg=(totalClicks/timeline.length).toFixed(1);
+  document.getElementById('chart-summary').innerHTML=
+    '<div class="chart-stat"><strong>'+avg+'</strong>клик/день</div>'+
+    '<div class="chart-stat"><strong>'+peakDay+'</strong>пик за день</div>'+
+    '<div class="chart-stat"><strong>'+activeDays+'</strong>активных дней</div>';
+}
+
+function renderTable(secId,tblId,data,total){
+  var sec=document.getElementById(secId);
+  if(!data||!data.length){sec.style.display='none';return}
+  sec.style.display='';
+  var tb=document.getElementById(tblId);
+  tb.innerHTML='';
+  var max=Math.max.apply(null,data.map(function(x){return x.count||0}));
+  data.slice(0,8).forEach(function(item,idx){
+    var name=item.name||'Прямой';
+    var count=item.count||0;
+    var pct=total>0?Math.round(count/total*100):0;
+    var barW=max>0?Math.round(count/max*100):0;
+    var tr=document.createElement('tr');
+    tr.innerHTML='<td>'+name+'</td><td>'+count+'</td><td>'+pct+'%</td><td class="bar-cell"><div class="bar-wrap"><div class="bar" style="--w:'+barW+'%;width:0;animation:barGrow .6s ease-out '+(0.3+idx*0.1)+'s forwards"></div></div></td>';
+    tb.appendChild(tr);
+  });
+}
+
+function copyLink(){
+  var url='https://sakhva.link/'+_slug;
+  navigator.clipboard.writeText(url).then(function(){
+    var btn=document.querySelector('.copy-btn');
+    btn.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Готово!';
+    btn.style.background='#059669';
+    setTimeout(function(){btn.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>Копировать';btn.style.background=''},1500);
+  });
+}
+
+function copyShareText(){
+  var text=document.getElementById('share-msg').textContent;
+  navigator.clipboard.writeText(text).then(function(){
+    var btn=document.querySelector('.share-copy');
+    btn.textContent='Готово!';
+    setTimeout(function(){btn.textContent='Копировать'},1500);
+  });
+}
+
+function logout(){
+  localStorage.removeItem('partner_dash');
+  document.getElementById('dash-view').style.display='none';
+  document.getElementById('login-view').style.display='block';
+  inp.value='';inp.focus();
+}
+</script>
+</body>
+</html>

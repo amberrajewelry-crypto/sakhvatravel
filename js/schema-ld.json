@@ -1,0 +1,684 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://sakhva-travel.com/#website",
+      "url": "https://sakhva-travel.com/",
+      "name": "Sakhva Travel",
+      "description": "Частный русскоязычный гид по Грузии. Казбеги, Кахетия, скрытые места Тбилиси. До 7 человек.",
+      "inLanguage": "ru"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://sakhva-travel.com/#webpage",
+      "url": "https://sakhva-travel.com/",
+      "name": "Частный гид в Тбилиси 2026 ★4.9 | Sakhva Travel",
+      "description": "Частный русскоязычный гид Тимур. Казбеги от ₾175, туры по Тбилиси от ₾77, Кахетия. До 7 чел. Бесплатная отмена. Ответ за 15 минут.",
+      "inLanguage": "ru",
+      "isPartOf": {
+        "@id": "https://sakhva-travel.com/#website"
+      },
+      "about": {
+        "@id": "https://sakhva-travel.com/#business"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://sakhva-travel.com/images/og-cover.webp"
+      },
+      "datePublished": "2024-03-01",
+      "dateModified": "2026-04-30"
+    },
+    {
+      "@type": "TravelAgency",
+      "@id": "https://sakhva-travel.com/#business",
+      "name": "Sakhva Travel",
+      "url": "https://sakhva-travel.com/",
+      "telephone": "+995511272623",
+      "email": "help@sakhva-travel.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Тбилиси",
+        "addressRegion": "Тбилиси",
+        "postalCode": "0108",
+        "addressCountry": "GE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 41.7250505,
+        "longitude": 44.7789235
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "08:00",
+        "closes": "22:00"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.9,
+        "reviewCount": 87,
+        "bestRating": 5,
+        "worstRating": 1
+      },
+      "priceRange": "₾94–₾595",
+      "currenciesAccepted": "GEL, USD, EUR",
+      "paymentAccepted": "Cash, Card, Cryptocurrency",
+      "description": "Частный русскоязычный гид по Грузии. Казбеги, Кахетия, скрытые места Тбилиси. До 7 человек.",
+      "image": "https://sakhva-travel.com/images/og-cover.webp",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://sakhva-travel.com/images/logo-schema.webp",
+        "width": 300,
+        "height": 60
+      },
+      "sameAs": [
+        "https://t.me/SakhvaGuideBot?start=site",
+        "https://www.instagram.com/sakhvatravel",
+        "https://wa.me/995511272623",
+        "https://www.tripadvisor.com/Attraction_Review-g294195-d15318013-Reviews-Sakhva_Travel-Tbilisi.html",
+        "https://www.youtube.com/@SakhvaTravel",
+        "https://www.google.com/maps?cid=14112587239859278397",
+        "https://yandex.ru/profile/103365004008"
+      ,"https://www.wikidata.org/wiki/Q140518485"],
+      "hasMap": "https://maps.google.com/maps?cid=14112587239859278397",
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Тбилиси",
+          "sameAs": "https://www.wikidata.org/wiki/Q994"
+        },
+        {
+          "@type": "Place",
+          "name": "Казбеги",
+          "sameAs": "https://www.wikidata.org/wiki/Q210019"
+        },
+        {
+          "@type": "Place",
+          "name": "Кахетия",
+          "sameAs": "https://www.wikidata.org/wiki/Q193261"
+        },
+        {
+          "@type": "Country",
+          "name": "Georgia",
+          "sameAs": "https://www.wikidata.org/wiki/Q230"
+        }
+      ],
+      "foundingDate": "2023-01-01",
+      "employee": {
+        "@id": "https://sakhva-travel.com/#guide-timur"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://sakhva-travel.com/#guide-timur",
+      "name": "Тимур",
+      "url": "https://sakhva-travel.com/about/",
+      "jobTitle": "Частный гид по Грузии",
+      "description": "Профессиональный русскоязычный гид в Тбилиси с 2023 года. Проводит туры в Казбеги, Кахетию, по скрытым местам Тбилиси.",
+      "worksFor": {
+        "@id": "https://sakhva-travel.com/#business"
+      },
+      "knowsLanguage": [
+        "ru",
+        "en"
+      ],
+      "sameAs": [
+        "https://www.instagram.com/sakhvatravel",
+        "https://t.me/SakhvaGuideBot?start=site",
+        "https://www.youtube.com/@SakhvaTravel"
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Тбилиси",
+          "sameAs": "https://www.wikidata.org/wiki/Q994"
+        },
+        {
+          "@type": "Country",
+          "name": "Georgia",
+          "sameAs": "https://www.wikidata.org/wiki/Q230"
+        }
+      ],
+      "telephone": "+995511272623",
+      "image": "https://sakhva-travel.com/images/timur.webp"
+    },
+    {
+      "@type": "TouristTrip",
+      "@id": "https://sakhva-travel.com/#trip-kazbegi",
+      "name": "Казбеги за 1 день из Тбилиси",
+      "url": "https://sakhva-travel.com/tour/kazbegi/",
+      "description": "Военно-Грузинская дорога, крепость Ананури, Гергетская Троица с видом на Казбек 5047м. Гид на русском.",
+      "touristType": "Русскоязычные туристы",
+      "offers": {
+        "@type": "Offer",
+        "price": "175",
+        "priceCurrency": "GEL",
+        "availability": "https://schema.org/InStock",
+        "priceValidUntil": "2027-12-31",
+        "url": "https://sakhva-travel.com/tour/kazbegi/"
+      },
+      "duration": "PT14H",
+      "provider": {
+        "@id": "https://sakhva-travel.com/#business"
+      },
+      "image": "https://sakhva-travel.com/images/kazbegi-tour.webp"
+    },
+    {
+      "@type": "TouristTrip",
+      "@id": "https://sakhva-travel.com/#trip-kakheti",
+      "name": "Сигнаги и Кахетия — тур из Тбилиси",
+      "url": "https://sakhva-travel.com/tour/kakheti/",
+      "description": "Город любви, монастырь Бодбе, квеври-вино, обед у местной хозяйки. 10–12 часов.",
+      "touristType": "Русскоязычные туристы",
+      "offers": {
+        "@type": "Offer",
+        "price": "170",
+        "priceCurrency": "GEL",
+        "availability": "https://schema.org/InStock",
+        "priceValidUntil": "2027-12-31",
+        "url": "https://sakhva-travel.com/tour/kakheti/"
+      },
+      "duration": "PT11H",
+      "provider": {
+        "@id": "https://sakhva-travel.com/#business"
+      },
+      "image": "https://sakhva-travel.com/images/kakheti-tour.webp"
+    },
+    {
+      "@type": "TouristTrip",
+      "@id": "https://sakhva-travel.com/#trip-kutaisi",
+      "name": "Кутаиси за 1 день из Тбилиси",
+      "url": "https://sakhva-travel.com/tour/kutaisi/",
+      "description": "Храм Баграти, каньон Окаце, пещера Прометея и водопад Кинчха. 12–13 часов с частным гидом.",
+      "touristType": "Русскоязычные туристы",
+      "offers": {
+        "@type": "Offer",
+        "price": "183",
+        "priceCurrency": "GEL",
+        "availability": "https://schema.org/InStock",
+        "priceValidUntil": "2027-12-31",
+        "url": "https://sakhva-travel.com/tour/kutaisi/"
+      },
+      "duration": "PT13H",
+      "provider": {
+        "@id": "https://sakhva-travel.com/#business"
+      },
+      "image": "https://sakhva-travel.com/images/kutaisi-tour.webp"
+    },
+    {
+      "@type": "TouristTrip",
+      "@id": "https://sakhva-travel.com/#trip-batumi",
+      "name": "Батуми за 1 день из Тбилиси",
+      "url": "https://sakhva-travel.com/tour/batumi/",
+      "description": "Батумский бульвар, Старый город, канатная дорога и набережная. Черноморская жемчужина Грузии за 1 день.",
+      "touristType": "Русскоязычные туристы",
+      "offers": {
+        "@type": "Offer",
+        "price": "250",
+        "priceCurrency": "GEL",
+        "availability": "https://schema.org/InStock",
+        "priceValidUntil": "2027-12-31",
+        "url": "https://sakhva-travel.com/tour/batumi/"
+      },
+      "duration": "PT15H",
+      "provider": {
+        "@id": "https://sakhva-travel.com/#business"
+      },
+      "image": "https://sakhva-travel.com/images/batumi-tour.webp"
+    },
+    {
+      "@type": "TouristTrip",
+      "@id": "https://sakhva-travel.com/#trip-borjomi",
+      "name": "Боржоми и крепость Рабати — тур из Тбилиси",
+      "url": "https://sakhva-travel.com/tour/borjomi/",
+      "description": "Минеральные источники Боржоми, Центральный парк, канатная дорога и средневековая крепость Рабати в Ахалцихе. 10–12 часов.",
+      "touristType": "Русскоязычные туристы",
+      "offers": {
+        "@type": "Offer",
+        "price": "178",
+        "priceCurrency": "GEL",
+        "availability": "https://schema.org/InStock",
+        "priceValidUntil": "2027-12-31",
+        "url": "https://sakhva-travel.com/tour/borjomi/"
+      },
+      "duration": "PT12H",
+      "provider": {
+        "@id": "https://sakhva-travel.com/#business"
+      },
+      "image": "https://sakhva-travel.com/images/borjomi-tour.webp"
+    },
+    {
+      "@type": "TouristTrip",
+      "@id": "https://sakhva-travel.com/#trip-night-tbilisi",
+      "name": "Ночной Тбилиси — тур с гидом",
+      "url": "https://sakhva-travel.com/tour/night-tbilisi/",
+      "description": "Серные бани при свечах, подсвеченный Мост Мира, ужин во дворе. Старт в 20:00, 2.5 часа.",
+      "touristType": "Русскоязычные туристы",
+      "offers": {
+        "@type": "Offer",
+        "price": "100",
+        "priceCurrency": "GEL",
+        "availability": "https://schema.org/InStock",
+        "priceValidUntil": "2027-12-31",
+        "url": "https://sakhva-travel.com/tour/night-tbilisi/"
+      },
+      "duration": "PT2H30M",
+      "provider": {
+        "@id": "https://sakhva-travel.com/#business"
+      },
+      "image": "https://sakhva-travel.com/images/night-tbilisi-tour.webp"
+    },
+    {
+      "@type": "TouristTrip",
+      "@id": "https://sakhva-travel.com/#trip-dinner",
+      "name": "Тур и ужин у местных в Тбилиси",
+      "url": "https://sakhva-travel.com/tour/dinner/",
+      "description": "Экскурсия + домашний ужин у грузинской семьи: хинкали, квеври-вино, живое общение. 6–7 часов.",
+      "touristType": "Русскоязычные туристы",
+      "offers": {
+        "@type": "Offer",
+        "price": "213",
+        "priceCurrency": "GEL",
+        "availability": "https://schema.org/InStock",
+        "priceValidUntil": "2027-12-31",
+        "url": "https://sakhva-travel.com/tour/dinner/"
+      },
+      "duration": "PT7H",
+      "provider": {
+        "@id": "https://sakhva-travel.com/#business"
+      },
+      "image": "https://sakhva-travel.com/images/dinner-tour.webp"
+    },
+    {
+      "@type": "TouristTrip",
+      "@id": "https://sakhva-travel.com/#trip-soviet",
+      "name": "Тбилиси — обзорная экскурсия с гидом",
+      "url": "https://sakhva-travel.com/tour/soviet/",
+      "description": "Мост Дружбы, серные бани Абанотубани, храм Метехи, Самеба, Дом Юстиции, площадь Свободы, Мтацминда и Летопись Грузии. 4–5 часов.",
+      "touristType": "Русскоязычные туристы",
+      "offers": {
+        "@type": "Offer",
+        "price": "135",
+        "priceCurrency": "GEL",
+        "availability": "https://schema.org/InStock",
+        "priceValidUntil": "2027-12-31",
+        "url": "https://sakhva-travel.com/tour/soviet/"
+      },
+      "duration": "PT5H",
+      "provider": {
+        "@id": "https://sakhva-travel.com/#business"
+      },
+      "image": "https://sakhva-travel.com/images/soviet-tour.webp"
+    },
+    {
+      "@type": "TouristTrip",
+      "@id": "https://sakhva-travel.com/#trip-mtskheta",
+      "name": "Тур в Мцхету из Тбилиси",
+      "url": "https://sakhva-travel.com/tour/mtskheta/",
+      "description": "Монастырь Джвари, собор Светицховели — объекты ЮНЕСКО в 40 минутах от Тбилиси. 3–4 часа.",
+      "touristType": "Русскоязычные туристы",
+      "offers": {
+        "@type": "Offer",
+        "price": "98",
+        "priceCurrency": "GEL",
+        "availability": "https://schema.org/InStock",
+        "priceValidUntil": "2027-12-31",
+        "url": "https://sakhva-travel.com/tour/mtskheta/"
+      },
+      "duration": "PT5H",
+      "provider": {
+        "@id": "https://sakhva-travel.com/#business"
+      },
+      "image": "https://sakhva-travel.com/images/mtskheta-tour.webp"
+    },
+    {
+      "@type": "TouristTrip",
+      "@id": "https://sakhva-travel.com/#trip-digital-nomad",
+      "name": "Digital Nomad Tour Тбилиси",
+      "url": "https://sakhva-travel.com/tour/digital-nomad/",
+      "description": "3 часа: лучшие коворкинги, кафе с WiFi, районы для удалённой работы в Тбилиси. На английском языке.",
+      "touristType": "Digital nomads, remote workers",
+      "offers": {
+        "@type": "Offer",
+        "price": "123",
+        "priceCurrency": "GEL",
+        "availability": "https://schema.org/InStock",
+        "priceValidUntil": "2027-12-31",
+        "url": "https://sakhva-travel.com/tour/digital-nomad/"
+      },
+      "duration": "PT3H",
+      "provider": {
+        "@id": "https://sakhva-travel.com/#business"
+      },
+      "image": "https://sakhva-travel.com/images/digital-nomad-tour.webp"
+    },
+    {
+      "@type": "TouristTrip",
+      "@id": "https://sakhva-travel.com/#trip-slow-travel",
+      "name": "Slow Travel пакет — 3 дня в Грузии",
+      "url": "https://sakhva-travel.com/tour/slow-travel/",
+      "description": "3 дня с Тимуром: каждый день новый маршрут, трансфер из аэропорта включён. Полное погружение в Грузию.",
+      "touristType": "Русскоязычные туристы",
+      "offers": {
+        "@type": "Offer",
+        "price": "595",
+        "priceCurrency": "GEL",
+        "availability": "https://schema.org/InStock",
+        "priceValidUntil": "2027-12-31",
+        "url": "https://sakhva-travel.com/tour/slow-travel/"
+      },
+      "duration": "P3D",
+      "provider": {
+        "@id": "https://sakhva-travel.com/#business"
+      },
+      "image": "https://sakhva-travel.com/images/slow-travel-tour.webp"
+    },
+    {
+      "@type": "TouristTrip",
+      "@id": "https://sakhva-travel.com/#trip-emigrant",
+      "name": "Тур для эмигрантов: Тбилиси глазами местного",
+      "url": "https://sakhva-travel.com/tour/emigrant/",
+      "description": "Нетуристический маршрут для релокантов: рынок Дезертирка, Сабуртало, коворкинги, тайные бары, советы по жизни в Тбилиси.",
+      "touristType": "Релоканты, цифровые кочевники",
+      "offers": {
+        "@type": "Offer",
+        "price": "123",
+        "priceCurrency": "GEL",
+        "availability": "https://schema.org/InStock",
+        "priceValidUntil": "2027-12-31",
+        "url": "https://sakhva-travel.com/tour/emigrant/"
+      },
+      "duration": "PT4H",
+      "provider": {
+        "@id": "https://sakhva-travel.com/#business"
+      },
+      "image": "https://sakhva-travel.com/images/emigrant-tour.webp"
+    },
+    {
+      "@type": "TouristTrip",
+      "@id": "https://sakhva-travel.com/#trip-old-tbilisi",
+      "name": "Старый Тбилиси — пешая прогулка с гидом",
+      "url": "https://sakhva-travel.com/tour/old-tbilisi/",
+      "description": "Абанотубани, Шардени, Мейдан, Легвтахеви — атмосферный маршрут по Старому городу. 3–4 часа.",
+      "touristType": "Русскоязычные туристы",
+      "offers": {
+        "@type": "Offer",
+        "price": "94",
+        "priceCurrency": "GEL",
+        "availability": "https://schema.org/InStock",
+        "priceValidUntil": "2027-12-31",
+        "url": "https://sakhva-travel.com/tour/old-tbilisi/"
+      },
+      "duration": "PT4H",
+      "provider": {
+        "@id": "https://sakhva-travel.com/#business"
+      },
+      "image": "https://sakhva-travel.com/images/old-tbilisi-tour.webp"
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://sakhva-travel.com/#tour-list",
+      "name": "Туры с частным гидом по Грузии",
+      "description": "Частные туры на русском языке из Тбилиси. Казбеги, Кахетия, скрытые места Тбилиси и другие маршруты.",
+      "numberOfItems": 12,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "url": "https://sakhva-travel.com/tour/kazbegi/",
+          "name": "Казбеги за 1 день из Тбилиси"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "url": "https://sakhva-travel.com/tour/kakheti/",
+          "name": "Сигнаги и Кахетия"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "url": "https://sakhva-travel.com/tour/kutaisi/",
+          "name": "Кутаиси за 1 день"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "url": "https://sakhva-travel.com/tour/batumi/",
+          "name": "Батуми за 1 день"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "url": "https://sakhva-travel.com/tour/night-tbilisi/",
+          "name": "Ночной Тбилиси"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "url": "https://sakhva-travel.com/tour/dinner/",
+          "name": "Тур и ужин у местных в Тбилиси"
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "url": "https://sakhva-travel.com/tour/soviet/",
+          "name": "Тбилиси — обзорная экскурсия"
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "url": "https://sakhva-travel.com/tour/slow-travel/",
+          "name": "Slow Travel пакет — 3 дня в Грузии"
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "url": "https://sakhva-travel.com/tour/digital-nomad/",
+          "name": "Digital Nomad Tour Тбилиси"
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
+          "url": "https://sakhva-travel.com/tour/mtskheta/",
+          "name": "Тур в Мцхету из Тбилиси"
+        },
+        {
+          "@type": "ListItem",
+          "position": 11,
+          "url": "https://sakhva-travel.com/tour/emigrant/",
+          "name": "Тур для эмигрантов в Тбилиси"
+        },
+        {
+          "@type": "ListItem",
+          "position": 12,
+          "url": "https://sakhva-travel.com/tour/old-tbilisi/",
+          "name": "Старый Тбилиси — пешая прогулка"
+        }
+      ]
+    },
+    {
+      "@type": "VideoObject",
+      "@id": "https://sakhva-travel.com/#video-guide",
+      "name": "Тимур — частный русскоязычный гид по Грузии",
+      "description": "Гид Тимур рассказывает о турах в Казбеги, Кахетию и Мцхету.",
+      "thumbnailUrl": "https://sakhva-travel.com/images/timur.webp",
+      "uploadDate": "2026-01-15T00:00:00+04:00",
+      "duration": "PT1M30S",
+      "contentUrl": "https://sakhva-travel.com/images/timur-video.mp4",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Sakhva Travel",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://sakhva-travel.com/images/logo-schema.webp",
+          "width": 300,
+          "height": 60
+        }
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://sakhva-travel.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Сколько стоит тур в Казбеги в 2026?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Частный тур в Казбеги из Тбилиси стоит от 175 лари с человека (примерно 65 долларов). В стоимость входит трансфер на комфортном автомобиле от вашего отеля в центре Тбилиси, услуги русскоязычного гида Тимура на весь день и входные билеты на все объекты маршрута. Выезд в 08:00, возвращение в Тбилиси около 22:00 — итого 14 часов. Маршрут включает крепость Ананури, Военно-Грузинскую дорогу, смотровую площадку Арка Дружбы и Гергетскую Троицу с видом на гору Казбек высотой 5047 метров. Группа максимум 7 человек: никаких автобусов и незнакомцев. Если вас четверо, стоимость с человека составит всего 32 лари — дешевле любого автобусного тура. Предоплата 10% при бронировании, остаток наличными или картой в день тура."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как забронировать тур?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Забронировать частный тур с гидом Тимуром можно через WhatsApp по номеру +995 511 272 623 или через Telegram-бот @SakhvaGuideBot. Тимур отвечает ежедневно с 08:00 до 22:00 по тбилисскому времени, среднее время ответа — 15 минут. Для бронирования достаточно указать желаемую дату, количество человек и какой тур вас интересует. Предоплата 10% при бронировании — оплата производится в день тура наличными в лари, долларах или евро, а также банковской картой или криптовалютой. После подтверждения даты Тимур пришлёт подробный план маршрута, время выезда и рекомендации по одежде и снаряжению."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли отменить или перенести тур?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Бесплатная отмена возможна за 48 часов до начала тура — без объяснений и штрафов. Для тура в Казбеги действует особая политика: если в день тура плохая погода и облака закрывают горы, гид Тимур сам свяжется с вами и предложит перенести дату бесплатно. Если перенос не подходит — всё уплаченное возвращается полностью. Для туров по Тбилиси и Кахетии дождь не является причиной для отмены: серные бани, рынки, винные погреба и рестораны одинаково хороши при любой погоде. Предоплата составляет всего 10%, возвращается при отмене за 48 часов."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Когда лучший сезон для Казбеги в 2026?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Лучшее время для поездки в Казбеги из Тбилиси — май–июнь и сентябрь–октябрь. В эти месяцы склоны зелёные, небо ясное и гора Казбек видна полностью. Июль и август тоже подходят, но в долине бывает жарко, а облачность выше. Зима — отдельный опыт: Гергетская церковь в снегу без туристов, но Крестовый перевал может быть закрыт из-за лавинной опасности. Расстояние от Тбилиси до Казбеги — 157 километров по Военно-Грузинской дороге, время в пути 2,5–3 часа. Sakhva Travel работает круглый год. Перед каждым туром гид Тимур проверяет прогноз погоды и дорожную обстановку на перевале и при необходимости предлагает перенести дату бесплатно."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужна ли виза в Грузию в 2026?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Виза в Грузию не нужна для большинства туристов. Граждане России, Беларуси, Казахстана, Украины, Армении и других стран СНГ могут въехать без визы на срок до 365 дней по загранпаспорту. Граждане стран Евросоюза, США, Великобритании, Израиля, Японии и более 90 других государств также пользуются безвизовым режимом. Грузия — одна из самых открытых стран мира для въезда. На границе достаточно предъявить загранпаспорт — никаких анкет, приглашений или обратных билетов не требуется. Для граждан России прямых рейсов нет, но доступны удобные пересадки через Стамбул, Ереван и Минск."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Есть ли туры для тех, кто живёт в Тбилиси?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, Sakhva Travel предлагает несколько туров специально для экспатов и релокантов в Тбилиси. Тур для эмигрантов — это 4 часа нетуристического маршрута: рынок Дезертирка, районы Сабуртало и Глдани, коворкинги, тайные бары без вывески, практические советы по аренде жилья и открытию банковского счёта. Digital Nomad Tour создан для удалёнщиков: лучшие коворкинги, кафе с быстрым WiFi, районы для комфортной работы. Также доступны однодневные выезды в Кутаиси и Батуми для тех, кто уже осмотрел Тбилиси. Ночной тур по Тбилиси открывает город с новой стороны: серные бани при свечах, подсвеченный Мост Мира, ужин во дворе."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Безопасно ли ехать в Грузию в 2026?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Грузия — одна из самых безопасных стран для туристов в регионе. Уровень уличной преступности минимальный, к русскоязычным туристам отношение дружелюбное. Тбилиси — современный обустроенный город с развитой инфраструктурой и отзывчивыми жителями. Все туристические маршруты — Казбеги, Кахетия, Мцхета, Батуми — проходят по асфальтированным дорогам с хорошей инфраструктурой. Гид Тимур проверяет погоду и дорожную обстановку перед каждым туром и не выезжает, если условия небезопасны. За 3 года работы Sakhva Travel и более 460 проведённых туров — ни одного инцидента с туристами. Грузия занимает высокие позиции в мировых рейтингах безопасности для путешественников."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что будет, если погода подведёт в день тура?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для тура в Казбеги гид Тимур отслеживает прогноз погоды за несколько дней. Если горы закрыты облаками и Гергетская церковь не будет видна, Тимур сам свяжется с вами и предложит перенести дату бесплатно или вернёт всё уплаченное. Для туров по Тбилиси и Кахетии дождь не является проблемой: серные бани в Абанотубани, крытые рынки, винные погреба в Кахетии и рестораны одинаково хороши при любой погоде. Если вы всё же решите не переносить горный тур и поехать в облачный день, маршрут проходит полностью без каких-либо доплат. Тимур адаптирует программу: больше времени на остановках, которые не зависят от видимости."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли оплатить криптовалютой?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, Sakhva Travel принимает оплату криптовалютой через платёжный процессор NOWPayments. Доступны USDT на сети TRC-20, Bitcoin, Ethereum, BNB и другие популярные монеты. Процесс оплаты простой: вы получаете адрес кошелька и QR-код, переводите нужную сумму, и платёж подтверждается автоматически. Курс конвертации фиксируется на 20 минут, чтобы защитить вас от колебаний. Никаких скрытых комиссий со стороны Sakhva Travel — только стандартная комиссия блокчейн-сети. Если вы впервые оплачиваете криптовалютой, гид Тимур объяснит весь процесс пошагово в WhatsApp. Также доступна оплата наличными и банковской картой."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем частный тур отличается от групповой экскурсии?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Групповые экскурсии в Грузии — это обычно 20–40 человек в автобусе, фиксированный маршрут по расписанию и обязательные остановки у туристических магазинов. Частный тур с Sakhva Travel — это максимум 7 человек в вашей компании, личный гид Тимур, маршрут адаптированный под ваши интересы и темп. Никаких автобусов, незнакомцев и навязанных остановок. Цена выглядит выше, но делится на всю группу: вчетвером тур в Казбеги выходит 32 лари с человека — около 12 долларов, что дешевле любого автобусного тура. При этом качество несравнимое: вы останавливаетесь где хотите, фотографируете сколько хотите, обедаете в местах, которые выбираете сами."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Review",
+      "@id": "https://sakhva-travel.com/#review-1",
+      "itemReviewed": {
+        "@id": "https://sakhva-travel.com/#business"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": 5,
+        "bestRating": 5,
+        "worstRating": 1
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Алексей М."
+      },
+      "datePublished": "2026-03-15",
+      "reviewBody": "Тимур — лучший гид в Тбилиси. Казбеги с ним — незабываемо. Маленькая группа, никаких автобусов, идеальный маршрут."
+    },
+    {
+      "@type": "Review",
+      "@id": "https://sakhva-travel.com/#review-2",
+      "itemReviewed": {
+        "@id": "https://sakhva-travel.com/#business"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": 5,
+        "bestRating": 5,
+        "worstRating": 1
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Екатерина С."
+      },
+      "datePublished": "2026-02-20",
+      "reviewBody": "Брали тур в Кахетию вчетвером. Вино, еда, монастыри — всё на высшем уровне. Цена отличная для частного гида."
+    },
+    {
+      "@type": "Review",
+      "@id": "https://sakhva-travel.com/#review-3",
+      "itemReviewed": {
+        "@id": "https://sakhva-travel.com/#business"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": 5,
+        "bestRating": 5,
+        "worstRating": 1
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Дмитрий К."
+      },
+      "datePublished": "2026-01-10",
+      "reviewBody": "Ночной Тбилиси — это что-то. Тимур показал дворы и бани, о которых не пишут в путеводителях."
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://sakhva-travel.com/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://sakhva-travel.com/"
+        }
+      ]
+    }
+  ]
+}

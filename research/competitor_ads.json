@@ -1,0 +1,140 @@
+{
+  "metadata": {
+    "source": "Expert analysis based on Google Ads auction landscape for Georgia tourism (RU)",
+    "date": "2026-04-23T20:55:59.789806",
+    "notes": "Known advertisers in this niche based on SERP monitoring"
+  },
+  "top_advertisers": [
+    {
+      "domain": "tripster.ru",
+      "ad_presence": "very_high",
+      "keywords_covered": [
+        "гид тбилиси",
+        "экскурсия по тбилиси",
+        "частный гид тбилиси",
+        "винный тур кахетия",
+        "тур казбеги"
+      ],
+      "sample_ads": [
+        {
+          "headline1": "Экскурсии в Тбилиси 2026",
+          "headline2": "От местных жителей",
+          "headline3": "Рейтинг 4.9 из 5",
+          "description": "Индивидуальные экскурсии с местными гидами. Бронируйте онлайн. Бесплатная отмена до 48 часов.",
+          "extensions": [
+            "sitelinks",
+            "callout",
+            "structured_snippets",
+            "price"
+          ]
+        }
+      ],
+      "estimated_monthly_spend_rub": "500K-1.5M",
+      "strategy": "Dominates all high-volume keywords, aggressive bidding"
+    },
+    {
+      "domain": "sputnik8.com",
+      "ad_presence": "high",
+      "keywords_covered": [
+        "гид тбилиси",
+        "экскурсия по тбилиси",
+        "экскурсия в кахетию",
+        "тур казбеги"
+      ],
+      "sample_ads": [
+        {
+          "headline1": "Экскурсии по Тбилиси",
+          "headline2": "Лучшие гиды города",
+          "headline3": "Онлайн бронирование",
+          "description": "200+ экскурсий в Тбилиси. Проверенные гиды. Рейтинг 4.8. Бесплатная отмена.",
+          "extensions": [
+            "sitelinks",
+            "callout",
+            "price"
+          ]
+        }
+      ],
+      "estimated_monthly_spend_rub": "300K-800K",
+      "strategy": "Wide coverage, volume-focused"
+    },
+    {
+      "domain": "georgia4travel.ru",
+      "ad_presence": "medium",
+      "keywords_covered": [
+        "частный гид тбилиси",
+        "винный тур кахетия",
+        "индивидуальная экскурсия тбилиси"
+      ],
+      "sample_ads": [
+        {
+          "headline1": "Частный гид по Грузии",
+          "headline2": "Индивидуальные туры",
+          "headline3": "Опыт 10+ лет",
+          "description": "Авторские маршруты по Грузии. Гид-водитель. Казбеги, Кахетия, Тбилиси. Группы до 7 чел.",
+          "extensions": [
+            "sitelinks",
+            "callout"
+          ]
+        }
+      ],
+      "estimated_monthly_spend_rub": "100K-300K",
+      "strategy": "Targets high-intent private guide keywords"
+    },
+    {
+      "domain": "localguidetbilisi.com",
+      "ad_presence": "medium",
+      "keywords_covered": [
+        "частный гид тбилиси",
+        "русскоязычный гид тбилиси",
+        "гид тбилиси"
+      ],
+      "sample_ads": [
+        {
+          "headline1": "Русскоязычный гид Тбилиси",
+          "headline2": "Частные экскурсии",
+          "headline3": "★4.9 | 500+ отзывов",
+          "description": "Местный гид в Тбилиси на русском языке. Индивидуальный подход. WhatsApp для бронирования.",
+          "extensions": [
+            "call",
+            "callout"
+          ]
+        }
+      ],
+      "estimated_monthly_spend_rub": "50K-150K",
+      "strategy": "Direct competitor, similar model"
+    },
+    {
+      "domain": "viator.com",
+      "ad_presence": "high",
+      "keywords_covered": [
+        "экскурсия по тбилиси",
+        "тур казбеги из тбилиси",
+        "винный тур кахетия"
+      ],
+      "sample_ads": [
+        {
+          "headline1": "Tbilisi Tours & Activities",
+          "headline2": "Book Online | Viator",
+          "headline3": "Free Cancellation",
+          "description": "Discover Tbilisi with top-rated tours. Book now, pay later. Free cancellation up to 24h.",
+          "extensions": [
+            "sitelinks",
+            "callout",
+            "price",
+            "structured_snippets"
+          ]
+        }
+      ],
+      "estimated_monthly_spend_rub": "N/A (global budget)",
+      "strategy": "International aggregator, targets broadly"
+    }
+  ],
+  "ad_landscape_summary": {
+    "avg_ads_per_serp": 3.4,
+    "top_position_dominance": "tripster.ru & sputnik8.com rotate top 1-2",
+    "avg_cpc_range_rub": "25-125",
+    "opportunity": "Low CPC vs Western Europe (10-50x cheaper). Long-tail private guide keywords underserved by aggregators.",
+    "recommended_daily_budget_rub": "2000-5000",
+    "recommended_monthly_budget_rub": "60000-150000"
+  }
+}

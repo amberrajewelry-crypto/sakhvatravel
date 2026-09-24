@@ -1,1 +1,57 @@
 .vercel
+
+# Secrets — mempalace exclude
+.env
+.env.*
+*.env
+config.py
+*secret*
+*token*
+*credential*
+*password*
+*private_key*
+*.pem
+*.key
+
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dev-debug.log
+# Dependency directories
+node_modules/
+# Environment variables
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+# OS specific
+.DS_Store
+
+# Task files
+# tasks.json
+# tasks/ 
+.worktrees/
+.env*.local
+
+# Local Netlify folder
+.netlify
+.gstack/
+service-account.json
+dashboard/
+
+# Generated artifacts (регенерируются, не деплоятся)
+graphify-out/
+__pycache__/
+*.pyc
+.venv-index/
+.playwright-mcp/
+*.bak
+scripts/_gidx_pending.txt

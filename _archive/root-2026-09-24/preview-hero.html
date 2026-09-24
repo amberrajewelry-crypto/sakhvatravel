@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sakhva Travel — путешествия по Грузии с гидом</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Lora',Georgia,serif}
+/* tab-title mock */
+.tabbar{height:38px;background:#dfe1e5;display:flex;align-items:flex-end;padding-left:12px;font-family:Arial,sans-serif}
+.tab{background:#fff;border-radius:10px 10px 0 0;padding:8px 16px;font-size:13px;color:#202124;display:flex;align-items:center;gap:8px;max-width:340px;box-shadow:0 -1px 3px rgba(0,0,0,.08)}
+.tab .fav{width:14px;height:14px;border-radius:3px;background:#1A3D2E;display:inline-block;flex-shrink:0}
+.tab span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+/* nav */
+#nav{position:absolute;top:38px;left:0;right:0;z-index:900;height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(16px,3.5vw,56px);background:rgba(0,0,0,.35)}
+.nav-logo{color:#fff;font-size:22px;font-weight:700;letter-spacing:.02em}
+.nav-logo b{color:#F59E0B}
+.nav-links{display:flex;align-items:center;gap:24px}
+.nav-links a{font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.5)}
+.nav-btn{background:#1a3d2e;color:#fff;padding:9px 22px;border-radius:9999px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+/* hero */
+#hero{position:relative;height:640px;overflow:hidden;display:flex;align-items:center;justify-content:center;
+background:linear-gradient(180deg,rgba(0,0,0,.18),rgba(0,0,0,.28) 60%,rgba(0,0,0,.42)),
+url('https://images.unsplash.com/photo-1565008576549-57569a49371d?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat,#0a1628}
+.hero-wrap{position:relative;z-index:20;text-align:center;padding:0 clamp(20px,5vw,80px);max-width:980px;width:100%}
+.hero-stats-inline{display:flex;flex-wrap:wrap;justify-content:center;gap:clamp(20px,5vw,56px);margin-bottom:20px}
+.hs-val{font-size:28px;font-weight:800;color:#F59E0B;line-height:1;display:block;text-shadow:0 1px 8px rgba(0,0,0,.3)}
+.hs-lbl{font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.7);margin-top:4px;display:block;text-shadow:0 1px 4px rgba(0,0,0,.3)}
+.hero-h1{font-size:clamp(26px,4vw,52px);font-weight:700;color:#F59E0B;line-height:1.1;letter-spacing:-.01em;margin:0 auto 14px;text-shadow:0 2px 16px rgba(0,0,0,.35)}
+.hero-sub{font-size:clamp(16px,2.2vw,22px);font-weight:400;color:#F59E0B;margin-bottom:28px;text-shadow:0 1px 8px rgba(0,0,0,.3)}
+.hero-btns{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:24px}
+.btn-primary{display:inline-flex;align-items:center;gap:8px;background:#1A3D2E;color:#fff;padding:14px 32px;border-radius:9999px;font-size:13px;font-weight:700;letter-spacing:.04em;box-shadow:0 4px 14px rgba(26,61,46,.35)}
+.btn-outline-hero{display:inline-flex;align-items:center;gap:8px;background:transparent;border:1.5px solid rgba(255,255,255,.7);color:#fff;padding:13px 28px;border-radius:9999px;font-size:13px;font-weight:600}
+.hero-micro{font-size:13px;color:rgba(255,255,255,.9);margin-top:14px;text-shadow:0 1px 6px rgba(0,0,0,.4)}
+</style>
+</head>
+<body>
+<div class="tabbar"><div class="tab"><i class="fav"></i><span>Sakhva Travel — путешествия по Грузии с гидом</span></div></div>
+<nav id="nav">
+  <div class="nav-logo">Sakhva<b>.</b>Travel</div>
+  <div class="nav-links">
+    <a>Туры</a><a>Экскурсии</a><a>Гид</a><a>Отзывы</a>
+    <span class="nav-btn">Написать</span>
+  </div>
+</nav>
+<section id="hero">
+  <div class="hero-wrap">
+    <div class="hero-stats-inline">
+      <div><span class="hs-val">4.9★</span><span class="hs-lbl">90 отзывов</span></div>
+      <div><span class="hs-val">7 лет</span><span class="hs-lbl">в Грузии</span></div>
+      <div><span class="hs-val">₾77</span><span class="hs-lbl">от цены</span></div>
+    </div>
+    <h1 class="hero-h1">Sakhva Travel — путешествия по Грузии с гидом</h1>
+    <p class="hero-sub">Не экскурсия по расписанию, а день с местным другом</p>
+    <div class="hero-btns">
+      <span class="btn-primary">Смотреть туры</span>
+      <span class="btn-outline-hero">Написать в WhatsApp</span>
+    </div>
+    <p class="hero-micro">Бесплатная отмена за 24ч · Ответим за 15 минут</p>
+  </div>
+</section>
+</body>
+</html>

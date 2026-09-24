@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>ბარათით გადახდა — Sakhva Travel</title>
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#F0FDF4;color:#1A3D2E;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px}
+.card{background:#fff;border-radius:20px;padding:32px;box-shadow:0 4px 24px rgba(0,0,0,.06);border:1px solid #E5E7EB;width:100%;max-width:440px}
+h1{font-size:22px;margin-bottom:6px}
+.sub{font-size:14px;color:#6B7280;margin-bottom:24px}
+.field{margin-bottom:18px}
+label{display:block;font-size:13px;font-weight:600;margin-bottom:6px;color:#374151}
+input,textarea{width:100%;padding:12px 16px;border:1px solid #E5E7EB;border-radius:12px;font-size:15px;font-family:inherit;outline:none;transition:border-color .2s;background:#fff}
+input:focus,textarea:focus{border-color:#1A3D2E}
+textarea{resize:vertical;min-height:70px}
+.amount-wrap{position:relative}
+.amount-wrap input{padding-left:34px;font-size:20px;font-weight:700}
+.amount-wrap .cur{position:absolute;left:16px;top:50%;transform:translateY(-50%);font-size:18px;font-weight:700;color:#6B7280}
+.pay-methods{display:flex;align-items:center;justify-content:center;gap:12px;margin:20px 0;padding:14px;background:#F9FAFB;border-radius:12px;border:1px solid #E5E7EB;font-size:12px;color:#6B7280;font-weight:600}
+.btn{display:block;width:100%;padding:16px;background:#1A3D2E;color:#fff;border:none;border-radius:14px;font-size:16px;font-weight:700;cursor:pointer;font-family:inherit;transition:background .2s}
+.btn:hover{background:#245a3f}
+.btn:disabled{background:#9CA3AF;cursor:not-allowed}
+.err{color:#DC2626;font-size:13px;margin-top:10px;text-align:center;display:none}
+.foot{margin-top:20px;font-size:12px;color:#9CA3AF;text-align:center;line-height:1.6}
+.foot a{color:#6B7280}
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>ბარათით გადახდა</h1>
+  <p class="sub">Bank of Georgia · Visa · Mastercard · Apple Pay · Google Pay</p>
+
+  <div class="field">
+    <label for="amount">თანხა</label>
+    <div class="amount-wrap">
+      <span class="cur">₾</span>
+      <input id="amount" type="number" min="1" step="0.5" inputmode="decimal" placeholder="0" autofocus>
+    </div>
+  </div>
+
+  <div class="field">
+    <label for="desc">დანიშნულება / სახელი (არასავალდებულო)</label>
+    <textarea id="desc" placeholder="მაგ.: ტური ყაზბეგში, ნინო, 12 სექტემბერი"></textarea>
+  </div>
+
+  <div class="field">
+    <label for="email">ელფოსტა ქვითრისთვის (არასავალდებულო)</label>
+    <input id="email" type="email" placeholder="you@example.com">
+  </div>
+
+  <div class="pay-methods">🔒 გადახდა ბანკის დაცულ გვერდზე</div>
+
+  <button id="pay" class="btn">გადახდა</button>
+  <p id="err" class="err"></p>
+
+  <p class="foot">
+    „გადახდაზე" დაჭერით თქვენ ეთანხმებით <a href="/ge/terms/" target="_blank" rel="noopener">საჯარო ოფერტას</a>.<br>
+    Sakhva Travel · თბილისი, საქართველო
+  </p>
+</div>
+
+<script>
+// ссылка от бота: /?amount=57.5&ref=995…  — сумма предзаполнена (можно править),
+// ref (телефон клиента) уезжает в orderId, чтобы оплата привязалась к лиду в CRM
+var Q = new URLSearchParams(location.search);
+var REF = (Q.get('ref') || '').replace(/\D/g, '').slice(0, 15);
+var PRE = parseFloat(Q.get('amount'));
+if (PRE > 0) { document.getElementById('amount').value = PRE; }
+var btn = document.getElementById('pay');
+var errEl = document.getElementById('err');
+
+function showErr(msg){ errEl.textContent = msg; errEl.style.display = 'block'; }
+
+btn.addEventListener('click', function(){
+  errEl.style.display = 'none';
+  var amount = parseFloat(document.getElementById('amount').value);
+  if (!(amount > 0)) { showErr('შეიყვანეთ ნულზე მეტი თანხა.'); return; }
+  var desc = (document.getElementById('desc').value || '').trim() || 'Sakhva Travel — გადახდა';
+  var email = (document.getElementById('email').value || '').trim();
+
+  btn.disabled = true;
+  btn.textContent = 'გადამისამართება გადახდაზე…';
+
+  fetch('/api/create-bog-payment/', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({
+      amount: amount,
+      orderId: 'PAY-' + Date.now() + (REF ? '-' + REF : ''),
+      description: desc,
+      email: email,
+      lang: 'ka'
+    })
+  }).then(function(r){ return r.json(); })
+  .then(function(j){
+    if (j.checkout_url) { window.location.href = j.checkout_url; }
+    else { showErr('გადახდა დროებით მიუწვდომელია. დაგვიკავშირდით: +995 511 272 623'); btn.disabled = false; btn.textContent = 'გადახდა'; }
+  })
+  .catch(function(){ showErr('ქსელის შეცდომა. სცადეთ თავიდან.'); btn.disabled = false; btn.textContent = 'გადახდა'; });
+});
+</script>
+</body>
+</html>

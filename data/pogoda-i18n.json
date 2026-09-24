@@ -1,0 +1,86 @@
+{
+  "tbilisi": {
+    "en": {"name":"Tbilisi","prep":"Tbilisi","sub":"Capital","tour_title":"Old Tbilisi walking tour","guide":"Tbilisi sits in a basin on the Kura river, so summers here run 3–4°C hotter than the surrounding mountains. I take guests through the Old Town early in the morning or after 5 pm — in the July heat the cobblestones of Abanotubani bake, and the shade of the narrow lanes is a relief."},
+    "ka": {"name":"თბილისი","prep":"თბილისში","sub":"დედაქალაქი","tour_title":"ძველი თბილისის ტური","guide":"თბილისი მდინარე მტკვრის ხეობაშია, ამიტომ ზაფხულში აქ 3–4°C-ით უფრო ცხელა, ვიდრე მიმდებარე მთებში. სტუმრებს ძველ ქალაქში დილით ადრე ან 17:00-ის შემდეგ ვატარებ — ივლისის სიცხეში აბანოთუბნის ქვაფენილი ცხელდება, ვიწრო ქუჩების ჩრდილი კი შვებაა."}
+  },
+  "adjara": {
+    "en": {"name":"Adjara","prep":"Adjara","sub":"Batumi · sea","tour_title":"Batumi tour from Tbilisi","guide":"Adjara is subtropical: it gets the most rainfall in Georgia, but also the mildest winter. The rain here is short and warm, often gone within an hour, so I don't recommend cancelling a beach day over the morning forecast — it usually clears by midday."},
+    "ka": {"name":"აჭარა","prep":"აჭარაში","sub":"ბათუმი · ზღვა","tour_title":"ბათუმის ტური თბილისიდან","guide":"აჭარა სუბტროპიკულია: აქ საქართველოში ყველაზე მეტი ნალექი მოდის, მაგრამ ზამთარიც ყველაზე რბილია. წვიმა მოკლე და თბილია, ხშირად საათში გადის, ამიტომ დილის პროგნოზის გამო ზღვის დღის გაუქმებას არ გირჩევთ — შუადღისთვის ჩვეულებრივ ნათდება."}
+  },
+  "kakheti": {
+    "en": {"name":"Kakheti","prep":"Kakheti","sub":"wine · Alazani valley","tour_title":"Kakheti wine tour","guide":"The Alazani valley is dry and sunny — a climate made for grapes. The best time for Kakheti is September and early October, the rtveli (grape harvest): still +25°C by day, warm evenings, and everyone treats you to young wine straight from the press."},
+    "ka": {"name":"კახეთი","prep":"კახეთში","sub":"ღვინო · ალაზნის ველი","tour_title":"კახეთის ღვინის ტური","guide":"ალაზნის ველი მშრალი და მზიანია — ყურძნისთვის შექმნილი კლიმატი. კახეთისთვის საუკეთესო დროა სექტემბერი და ოქტომბრის დასაწყისი, რთველი: დღისით ჯერ კიდევ +25°C, თბილი საღამოები, და ყველგან გახდით ახალგაზრდა ღვინოს პირდაპირ საწნახელიდან."}
+  },
+  "imereti": {
+    "en": {"name":"Imereti","prep":"Imereti","sub":"Kutaisi · canyons","tour_title":"Kutaisi tour","guide":"Imereti is wetter than eastern Georgia and green all year. The Martvili and Okatse canyons are at their best in May–June when the water is high; in the August heat the turquoise pools are especially welcome, but after heavy rain canyon tours are sometimes closed due to water levels."},
+    "ka": {"name":"იმერეთი","prep":"იმერეთში","sub":"ქუთაისი · კანიონები","tour_title":"ქუთაისის ტური","guide":"იმერეთი აღმოსავლეთ საქართველოზე უფრო ნოტიოა და მთელი წელი მწვანეა. მარტვილისა და ოკაცეს კანიონები საუკეთესოა მაისსა და ივნისში, როცა წყალი მაღალია; აგვისტოს სიცხეში ფირუზისფერი ტბები განსაკუთრებით სასიამოვნოა, თუმცა ძლიერი წვიმის შემდეგ კანიონების ტურები ზოგჯერ იკეტება."}
+  },
+  "mtskheta-mtianeti": {
+    "en": {"name":"Mtskheta-Mtianeti","prep":"Mtskheta-Mtianeti","sub":"Kazbegi · Military Road","tour_title":"Kazbegi tour","guide":"This is a region of contrasts: warm down by Mtskheta, but a different world up at the Gudauri pass (2200 m). Even in summer I bring a jacket on the Georgian Military Road — the Cross Pass can be windy and +10°C while it's +32°C in Tbilisi the same day."},
+    "ka": {"name":"მცხეთა-მთიანეთი","prep":"მცხეთა-მთიანეთში","sub":"ყაზბეგი · სამხედრო გზა","tour_title":"ყაზბეგის ტური","guide":"ეს კონტრასტების მხარეა: ქვევით, მცხეთასთან, თბილა, ხოლო გუდაურის უღელტეხილზე (2200 მ) სულ სხვა სამყაროა. ზაფხულშიც კი ქურთუკს ვიღებ სამხედრო გზაზე — ჯვრის უღელტეხილზე შეიძლება ქარი და +10°C იყოს, მაშინ როცა თბილისში იმავე დღეს +32°C-ია."}
+  },
+  "samegrelo": {
+    "en": {"name":"Samegrelo & Svaneti","prep":"Samegrelo","sub":"Mestia · Ushguli","tour_title":"Svaneti tour","guide":"Lowland Samegrelo near Zugdidi is warm and humid, while Upper Svaneti — with the towers of Mestia and Ushguli — is high mountains with a real winter. People go to Svaneti from June to October; in winter the pass road can close, and that has to be built into the plan."},
+    "ka": {"name":"სამეგრელო და სვანეთი","prep":"სამეგრელოში","sub":"მესტია · უშგული","tour_title":"სვანეთის ტური","guide":"ბარის სამეგრელო ზუგდიდთან თბილი და ნოტიოა, ზემო სვანეთი კი — მესტიისა და უშგულის კოშკებით — ნამდვილი ზამთრის მქონე მაღალმთიანეთია. სვანეთში ივნისიდან ოქტომბრამდე მიდიან; ზამთარში უღელტეხილის გზა შეიძლება დაიხუროს, და ეს გეგმაში უნდა გაითვალისწინოთ."}
+  },
+  "samtskhe-javakheti": {
+    "en": {"name":"Samtskhe-Javakheti","prep":"Samtskhe-Javakheti","sub":"Borjomi · Vardzia","tour_title":"Borjomi tour","guide":"The Samtskhe-Javakheti highland is cooler than the rest of Georgia — even in July it's fresh in the pine park of Borjomi. The cave city of Vardzia is open year-round, but spring and autumn are most comfortable there: in summer the sun beats down on the open terraces."},
+    "ka": {"name":"სამცხე-ჯავახეთი","prep":"სამცხე-ჯავახეთში","sub":"ბორჯომი · ვარძია","tour_title":"ბორჯომის ტური","guide":"სამცხე-ჯავახეთის მაღალმთიანეთი დანარჩენ საქართველოზე გრილია — ივლისშიც კი ბორჯომის ფიჭვნარ პარკში სიგრილეა. ქვაბულების ქალაქი ვარძია მთელი წელი ღიაა, მაგრამ გაზაფხული და შემოდგომა ყველაზე კომფორტულია: ზაფხულში ღია ტერასებზე მზე აწვება."}
+  },
+  "shida-kartli": {
+    "en": {"name":"Shida Kartli","prep":"Shida Kartli","sub":"Gori · Uplistsikhe","tour_title":"Gori tour","guide":"The Kartli plain is dry and continental: hot summers, crisp winters. The cave town of Uplistsikhe stands on an open slope with no shade, so in summer I take groups there before noon — the rock heats up fast, while in spring and autumn it's a pleasure to walk."},
+    "ka": {"name":"შიდა ქართლი","prep":"შიდა ქართლში","sub":"გორი · უფლისციხე","tour_title":"გორის ტური","guide":"ქართლის ველი მშრალი და კონტინენტურია: ცხელი ზაფხული, გამჭვირვალე ზამთარი. ქვაბულების ქალაქი უფლისციხე ღია ფერდობზეა, ჩრდილის გარეშე, ამიტომ ზაფხულში ჯგუფებს შუადღემდე ვატარებ — ქვა სწრაფად ცხელდება, გაზაფხულსა და შემოდგომაზე კი სიარული სიამოვნებაა."}
+  },
+  "kvemo-kartli": {
+    "en": {"name":"Kvemo Kartli","prep":"Kvemo Kartli","sub":"Dashbashi canyon","tour_title":"Dashbashi canyon tour","guide":"It's hot on the plain near Rustavi in summer, but the Dashbashi canyon lies higher and is always a few degrees cooler and windier. The glass bridge with its waterfall is most striking on a clear day — in fog the view into the gorge simply disappears, so come here when the forecast is good."},
+    "ka": {"name":"ქვემო ქართლი","prep":"ქვემო ქართლში","sub":"დაშბაშის კანიონი","tour_title":"დაშბაშის კანიონის ტური","guide":"ზაფხულში რუსთავთან ველზე ცხელა, მაგრამ დაშბაშის კანიონი უფრო მაღლაა და ყოველთვის რამდენიმე გრადუსით გრილი და ქარიანია. მინის ხიდი ჩანჩქერით ყველაზე ეფექტურია მზიან დღეს — ნისლში უფსკრულის ხედი უბრალოდ ქრება, ამიტომ აქ კარგი პროგნოზისას ჩამოდით."}
+  },
+  "guria": {
+    "en": {"name":"Guria","prep":"Guria","sub":"Ureki · black sand","tour_title":"Ureki tour","guide":"Guria is humid subtropics and home to the famous magnetic black sand of Ureki. The beach season here runs June to September; the black sand heats up faster than ordinary sand, so families with children love Ureki even in early June, when the sea at Batumi is still cool for swimming."},
+    "ka": {"name":"გურია","prep":"გურიაში","sub":"ურეკი · შავი ქვიშა","tour_title":"ურეკის ტური","guide":"გურია ნოტიო სუბტროპიკებია და ურეკის ცნობილი მაგნიტური შავი ქვიშის სამშობლო. სანაპირო სეზონი აქ ივნისიდან სექტემბრამდეა; შავი ქვიშა ჩვეულებრივზე სწრაფად ცხელდება, ამიტომ ბავშვებიან ოჯახებს ურეკი ივნისის დასაწყისშიც უყვართ, როცა ბათუმში ზღვა ჯერ ცივია საბანაოდ."}
+  },
+  "racha": {
+    "en": {"name":"Racha-Lechkhumi","prep":"Racha","sub":"mountains · Shaori","tour_title":"Racha tour","guide":"Racha is a quiet mountain region with a mild summer and a beautiful golden autumn. The roads here are winding, and I plan trips only for dry days: after rain the dirt sections toward Lake Shaori and Nikortsminda monastery wash out, and the views are lost in cloud."},
+    "ka": {"name":"რაჭა-ლეჩხუმი","prep":"რაჭაში","sub":"მთები · შაორი","tour_title":"რაჭის ტური","guide":"რაჭა მშვიდი მთის მხარეა რბილი ზაფხულითა და ლამაზი ოქროსფერი შემოდგომით. გზები აქ ხვეულია და მოგზაურობას მხოლოდ მშრალ დღეებზე ვგეგმავ: წვიმის შემდეგ შაორის ტბისა და ნიკორწმინდის მონასტრისკენ მიმავალი გრუნტის მონაკვეთები ირეცხება და ხედები ღრუბლებში იკარგება."}
+  },
+  "batumi": {
+    "en": {"name":"Batumi","prep":"Batumi","sub":"sea · Adjara","tour_title":"Batumi tour from Tbilisi","guide":"Batumi is the warmest and rainiest city in Georgia. The sea warms to +24–26°C by July and holds its heat until the end of September — that's the velvet season. The rains here are short downpours; you need an umbrella more than a raincoat, and the sun usually comes back after a thunderstorm."},
+    "ka": {"name":"ბათუმი","prep":"ბათუმში","sub":"ზღვა · აჭარა","tour_title":"ბათუმის ტური თბილისიდან","guide":"ბათუმი საქართველოს ყველაზე თბილი და წვიმიანი ქალაქია. ზღვა ივლისისთვის +24–26°C-მდე თბება და სექტემბრის ბოლომდე ინარჩუნებს სითბოს — ეს ხავერდის სეზონია. წვიმა აქ მოკლე კოკისპირულია; ქოლგა უფრო გჭირდებათ, ვიდრე წვიმის ქურთუკი, და ჭექა-ქუხილის შემდეგ მზე ჩვეულებრივ ბრუნდება."}
+  },
+  "kazbegi": {
+    "en": {"name":"Kazbegi","prep":"Kazbegi","sub":"mountains · 1740 m","tour_title":"Kazbegi tour","guide":"Stepantsminda lies at 1740 m, so it's always cooler than Tbilisi and the weather changes several times a day. It's best to catch the Gergeti Trinity church with its view of Mount Kazbek in the morning: by midday the peak is often wrapped in cloud. If the mountains are closed, we reschedule the trip for free."},
+    "ka": {"name":"ყაზბეგი","prep":"ყაზბეგში","sub":"მთები · 1740 მ","tour_title":"ყაზბეგის ტური","guide":"სტეფანწმინდა 1740 მ სიმაღლეზეა, ამიტომ თბილისზე ყოველთვის გრილა და ამინდი დღეში რამდენჯერმე იცვლება. გერგეტის სამების ეკლესია ყაზბეგის მწვერვალის ხედით უმჯობესია დილით დაიჭიროთ: შუადღისთვის მწვერვალი ხშირად ღრუბლებშია. თუ მთები დახურულია, მოგზაურობას უფასოდ გადავიტანთ."}
+  },
+  "kutaisi": {
+    "en": {"name":"Kutaisi","prep":"Kutaisi","sub":"Imereti","tour_title":"Kutaisi tour","guide":"Kutaisi stands in a warm, humid lowland; the winter is mild with almost no snow. From here it's easy to visit the canyons and the Prometheus Cave, where it's +14°C year-round — a great refuge in the summer heat, though it's worth bringing a jacket inside even in August."},
+    "ka": {"name":"ქუთაისი","prep":"ქუთაისში","sub":"იმერეთი","tour_title":"ქუთაისის ტური","guide":"ქუთაისი თბილ, ნოტიო ბარშია; ზამთარი რბილია, თითქმის უთოვლო. აქედან მოსახერხებელია კანიონებსა და პრომეთეს გამოქვაბულში მისვლა, სადაც მთელი წელი +14°C-ია — შესანიშნავი თავშესაფარი ზაფხულის სიცხეში, თუმცა ქურთუკის შიგნით წაღება აგვისტოშიც ღირს."}
+  },
+  "mestia": {
+    "en": {"name":"Mestia","prep":"Mestia","sub":"Svaneti · 1500 m","tour_title":"Svaneti tour","guide":"Mestia is the heart of Upper Svaneti at 1500 m, with its towers and views of snowy peaks. The hiking season to the Koruldi lakes and to Ushguli runs June to October. In winter it's a ski resort, but the pass road sometimes closes, so I always check dates against the forecast."},
+    "ka": {"name":"მესტია","prep":"მესტიაში","sub":"სვანეთი · 1500 მ","tour_title":"სვანეთის ტური","guide":"მესტია ზემო სვანეთის გულია 1500 მ სიმაღლეზე, კოშკებითა და თოვლიანი მწვერვალების ხედებით. კორულდის ტბებამდე და უშგულამდე ლაშქრობის სეზონი ივნისიდან ოქტომბრამდეა. ზამთარში ეს სათხილამურო კურორტია, მაგრამ უღელტეხილის გზა ზოგჯერ იკეტება, ამიტომ თარიღებს ყოველთვის პროგნოზს ვუდარებ."}
+  },
+  "gudauri": {
+    "en": {"name":"Gudauri","prep":"Gudauri","sub":"skiing · 2200 m","tour_title":"Gudauri tour","guide":"Gudauri at 2200 m is Georgia's main ski resort, with snow from December to April. In summer the slopes turn green and people come for paragliding and the cool air. It's always windy on the pass: bring a windbreaker even on a warm day — the difference from Tbilisi can easily reach 20 degrees."},
+    "ka": {"name":"გუდაური","prep":"გუდაურში","sub":"თხილამური · 2200 მ","tour_title":"გუდაურის ტური","guide":"გუდაური 2200 მ სიმაღლეზე საქართველოს მთავარი სათხილამურო კურორტია, თოვლით დეკემბრიდან აპრილამდე. ზაფხულში ფერდობები მწვანდება და აქ პარაპლანერიზმისა და სიგრილისთვის ჩამოდიან. უღელტეხილზე ყოველთვის ქარია: ქარსაფარი თბილ დღესაც წაიღეთ — თბილისთან სხვაობა ადვილად 20 გრადუსს აღწევს."}
+  },
+  "bakuriani": {
+    "en": {"name":"Bakuriani","prep":"Bakuriani","sub":"skiing · 1700 m","tour_title":"Bakuriani tour","guide":"Bakuriani, in pine mountains at 1700 m, is a family ski resort — gentler and lower than Gudauri, which is why families with children love it. The snow season runs December to March. In summer there's healing dry air and cool weather, an escape from the Tbilisi heat."},
+    "ka": {"name":"ბაკურიანი","prep":"ბაკურიანში","sub":"თხილამური · 1700 მ","tour_title":"ბაკურიანის ტური","guide":"ბაკურიანი ფიჭვნარ მთებში 1700 მ სიმაღლეზე საოჯახო სათხილამურო კურორტია — გუდაურზე უფრო რბილი და დაბალი, ამიტომ ბავშვებიან ოჯახებს უყვართ. თოვლის სეზონი დეკემბრიდან მარტამდეა. ზაფხულში სამკურნალო მშრალი ჰაერი და სიგრილეა, თბილისის სიცხისგან თავშესაფარი."}
+  },
+  "borjomi": {
+    "en": {"name":"Borjomi","prep":"Borjomi","sub":"mineral waters","tour_title":"Borjomi tour","guide":"Borjomi lies in a pine gorge at 800 m and is always cooler and fresher than the plain. It's pleasant to walk to the warm spring in the central park in any weather, but plan the cable car and the panorama trail for a clear day — the forest stays damp for a long time after rain."},
+    "ka": {"name":"ბორჯომი","prep":"ბორჯომში","sub":"მინერალური წყლები","tour_title":"ბორჯომის ტური","guide":"ბორჯომი ფიჭვნარ ხეობაშია 800 მ სიმაღლეზე და ველზე ყოველთვის უფრო გრილი და სუფთაა. ცენტრალურ პარკში თბილ წყაროსთან სიარული ნებისმიერ ამინდში სასიამოვნოა, მაგრამ საბაგირო და პანორამული ბილიკი მზიან დღეს დაგეგმეთ — ტყე წვიმის შემდეგ დიდხანს ინარჩუნებს ნესტს."}
+  },
+  "signagi": {
+    "en": {"name":"Sighnaghi","prep":"Sighnaghi","sub":"city of love · Kakheti","tour_title":"Sighnaghi tour","guide":"Sighnaghi stands on a hill above the Alazani valley, and the main thing here is the view of the Caucasus range from the fortress wall. On a clear spring or autumn day you can see the snowy peaks across the valley; in summer haze often hides the mountains, so for the panorama I recommend coming in May or September."},
+    "ka": {"name":"სიღნაღი","prep":"სიღნაღში","sub":"სიყვარულის ქალაქი · კახეთი","tour_title":"სიღნაღის ტური","guide":"სიღნაღი ალაზნის ველის ზემოთ გორაზეა, და მთავარი აქ ციხის კედლიდან კავკასიონის ქედის ხედია. მზიან საგაზაფხულო ან საშემოდგომო დღეს ველის მიღმა თოვლიანი მწვერვალები ჩანს; ზაფხულში ბურუსი ხშირად მალავს მთებს, ამიტომ პანორამისთვის მაისში ან სექტემბერში ჩამოსვლას გირჩევთ."}
+  },
+  "telavi": {
+    "en": {"name":"Telavi","prep":"Telavi","sub":"capital of Kakheti","tour_title":"Telavi tour","guide":"Telavi is the unofficial capital of wine, with the dry sunny climate of the Alazani valley. September and October are ideal: the grape harvest, warm days and cool evenings. In summer it can climb past +30°C by day, so tastings in the cool marani cellars are an especial joy."},
+    "ka": {"name":"თელავი","prep":"თელავში","sub":"კახეთის დედაქალაქი","tour_title":"თელავის ტური","guide":"თელავი ღვინის არაფორმალური დედაქალაქია, ალაზნის ველის მშრალი მზიანი კლიმატით. სექტემბერი და ოქტომბერი იდეალურია: რთველი, თბილი დღეები და გრილი საღამოები. ზაფხულში დღისით +30°C-ს გადააჭარბებს, ამიტომ დეგუსტაცია გრილ მარნებში განსაკუთრებით სასიამოვნოა."}
+  },
+  "mtskheta": {
+    "en": {"name":"Mtskheta","prep":"Mtskheta","sub":"ancient capital · UNESCO","tour_title":"Mtskheta tour","guide":"Mtskheta is just 20 minutes from Tbilisi, so the weather is almost the same as the capital's. Jvari Monastery stands on an open hill above the confluence of the Kura and Aragvi — it's always windy there and the views are best on a clear day. In summer, Svetitskhoveli Cathedral offers a saving coolness in the midday heat."},
+    "ka": {"name":"მცხეთა","prep":"მცხეთაში","sub":"უძველესი დედაქალაქი · UNESCO","tour_title":"მცხეთის ტური","guide":"მცხეთა თბილისიდან სულ 20 წუთშია, ამიტომ ამინდი თითქმის დედაქალაქის მსგავსია. ჯვრის მონასტერი მტკვრისა და არაგვის შესართავის ზემოთ ღია გორაზეა — იქ ყოველთვის ქარია და ხედები მზიან დღეს უკეთესია. ზაფხულში სვეტიცხოვლის ტაძარი შუადღის სიცხეში მაცხოვნებელ სიგრილეს გთავაზობთ."}
+  }
+}

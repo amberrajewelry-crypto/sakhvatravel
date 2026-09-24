@@ -1,0 +1,45 @@
+/* Georgian (ka) type + layout overrides — грузится ТОЛЬКО на /ge/ страницах.
+   Lora/Raleway не покрывают Mkhedruli (U+10A0-10FF) → Noto Sans Georgian.
+   unicode-range = доп-защита: файл не качается, пока на странице нет грузинских глифов. */
+@font-face {
+  font-family: 'Noto Sans Georgian';
+  font-style: normal;
+  font-weight: 400 700;                 /* вариативный файл покрывает весь диапазон */
+  font-display: swap;
+  src: url(/fonts/noto-sans-georgian.woff2) format('woff2');
+  unicode-range: U+10A0-10FF;
+}
+
+/* Каскад шрифта: грузинский первым, Lora/Raleway как латино-кириллический фолбэк */
+html[lang="ka"] body,
+html[lang="ka"] h1, html[lang="ka"] h2, html[lang="ka"] h3,
+html[lang="ka"] .nav-links a, html[lang="ka"] .nav-btn,
+html[lang="ka"] .btn-primary, html[lang="ka"] .btn-outline-hero,
+html[lang="ka"] .tg-info h3, html[lang="ka"] .sec-title,
+html[lang="ka"] .hero-h1, html[lang="ka"] .tours-pinned-h2 {
+  /* !important — оверрайд-слой: инлайновый CSS страниц (.hero-h1, .nav .nav-links a)
+     выше по специфичности; без него Noto проигрывает и вязь падает в системный serif */
+  font-family: 'Noto Sans Georgian', 'Lora', 'Raleway', Georgia, serif !important;
+}
+
+/* Грузинский на 15-20% длиннее — снимаем nowrap там, где текст мог бы обрезаться */
+html[lang="ka"] .nav-links a,
+html[lang="ka"] .btn-primary,
+html[lang="ka"] .btn-outline-hero,
+html[lang="ka"] .nav-btn {
+  white-space: normal;
+}
+
+/* Кнопки CTA: чуть больше воздуха, чтобы длинная вязь влезала */
+html[lang="ka"] .btn-primary,
+html[lang="ka"] .btn-outline-hero {
+  padding-left: 26px;
+  padding-right: 26px;
+  line-height: 1.25;
+}
+
+/* Карточки туров: перенос названий, без обрезки на мобиле */
+html[lang="ka"] .tg-info h3 {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}

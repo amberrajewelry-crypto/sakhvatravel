@@ -1,0 +1,760 @@
+{
+  "generated_at": "2026-05-23",
+  "region_id": 213,
+  "region_name": "Москва",
+  "target_domain": "sakhva-travel.com",
+  "total_queries": 30,
+  "found_count": 11,
+  "queries": [
+    {
+      "query": "гид в тбилиси",
+      "region": 213,
+      "sakhva_position": 29,
+      "sakhva_url": "https://sakhva-travel.com/",
+      "found_in_top": 29,
+      "total_results": 100,
+      "top3_competitors": [
+        {
+          "position": 1,
+          "domain": "www.avito.ru",
+          "url": "https://www.avito.ru/tbilisi?q=%D0%B3%D0%B8%D0%B4+%D0%BF%D0%BE+%D1%82%D0%B1%D0%B"
+        },
+        {
+          "position": 2,
+          "domain": "experience.tripster.ru",
+          "url": "https://experience.tripster.ru/experience/Tbilisi/guides/"
+        },
+        {
+          "position": 3,
+          "domain": "www.avito.ru",
+          "url": "https://www.avito.ru/all?q=%D0%B3%D0%B8%D0%B4+%D0%BF%D0%BE+%D1%82%D0%B1%D0%B8%D0"
+        }
+      ]
+    },
+    {
+      "query": "частный гид в тбилиси",
+      "region": 213,
+      "sakhva_position": 2,
+      "sakhva_url": "https://sakhva-travel.com/",
+      "found_in_top": 2,
+      "total_results": 100,
+      "top3_competitors": [
+        {
+          "position": 1,
+          "domain": "www.avito.ru",
+          "url": "https://www.avito.ru/tbilisi?q=%D0%B3%D0%B8%D0%B4+%D0%BF%D0%BE+%D1%82%D0%B1%D0%B"
+        },
+        {
+          "position": 2,
+          "domain": "sakhva-travel.com",
+          "url": "https://sakhva-travel.com/"
+        },
+        {
+          "position": 3,
+          "domain": "www.sputnik8.com",
+          "url": "https://www.sputnik8.com/ru/tbilisi/private-guides"
+        }
+      ]
+    },
+    {
+      "query": "русскоязычный гид тбилиси",
+      "region": 213,
+      "sakhva_position": 16,
+      "sakhva_url": "https://sakhva-travel.com/",
+      "found_in_top": 16,
+      "total_results": 100,
+      "top3_competitors": [
+        {
+          "position": 1,
+          "domain": "experience.tripster.ru",
+          "url": "https://experience.tripster.ru/experience/Tbilisi/guides/"
+        },
+        {
+          "position": 2,
+          "domain": "www.avito.ru",
+          "url": "https://www.avito.ru/tbilisi?q=%D0%B3%D0%B8%D0%B4+%D0%BF%D0%BE+%D1%82%D0%B1%D0%B"
+        },
+        {
+          "position": 3,
+          "domain": "www.sputnik8.com",
+          "url": "https://www.sputnik8.com/ru/tbilisi/private-guides"
+        }
+      ]
+    },
+    {
+      "query": "экскурсии в тбилиси",
+      "region": 213,
+      "sakhva_position": 43,
+      "sakhva_url": "https://sakhva-travel.com/",
+      "found_in_top": 43,
+      "total_results": 100,
+      "top3_competitors": [
+        {
+          "position": 1,
+          "domain": "www.sputnik8.com",
+          "url": "https://www.sputnik8.com/ru/tbilisi"
+        },
+        {
+          "position": 2,
+          "domain": "experience.tripster.ru",
+          "url": "https://experience.tripster.ru/experience/Tbilisi/"
+        },
+        {
+          "position": 3,
+          "domain": "www.sputnik8.com",
+          "url": "https://www.sputnik8.com/ru/tbilisi/category/odnodnevnye"
+        }
+      ]
+    },
+    {
+      "query": "экскурсии из тбилиси",
+      "region": 213,
+      "sakhva_position": null,
+      "sakhva_url": null,
+      "found_in_top": null,
+      "total_results": 100,
+      "top3_competitors": [
+        {
+          "position": 1,
+          "domain": "www.sputnik8.com",
+          "url": "https://www.sputnik8.com/ru/tbilisi/category/odnodnevnye"
+        },
+        {
+          "position": 2,
+          "domain": "www.sputnik8.com",
+          "url": "https://www.sputnik8.com/ru/tbilisi/category/iz-tbilisi-po-gruzii"
+        },
+        {
+          "position": 3,
+          "domain": "tbilisi-tours.ru",
+          "url": "https://tbilisi-tours.ru/tag/v-drugoj-gorod/13"
+        }
+      ]
+    },
+    {
+      "query": "экскурсии по тбилиси",
+      "region": 213,
+      "sakhva_position": null,
+      "sakhva_url": null,
+      "found_in_top": null,
+      "total_results": 100,
+      "top3_competitors": [
+        {
+          "position": 1,
+          "domain": "experience.tripster.ru",
+          "url": "https://experience.tripster.ru/experience/Tbilisi/"
+        },
+        {
+          "position": 2,
+          "domain": "www.sputnik8.com",
+          "url": "https://www.sputnik8.com/ru/tbilisi"
+        },
+        {
+          "position": 3,
+          "domain": "experience.tripster.ru",
+          "url": "https://experience.tripster.ru/experience/Tbilisi/19386-private/"
+        }
+      ]
+    },
+    {
+      "query": "туры по грузии",
+      "region": 213,
+      "sakhva_position": null,
+      "sakhva_url": null,
+      "found_in_top": null,
+      "total_results": 100,
+      "top3_competitors": [
+        {
+          "position": 1,
+          "domain": "intourist.ru",
+          "url": "https://intourist.ru/info/georgia/excursions"
+        },
+        {
+          "position": 2,
+          "domain": "youtravel.me",
+          "url": "https://youtravel.me/tours/country/%D0%B3%D1%80%D1%83%D0%B7%D0%B8%D1%8F"
+        },
+        {
+          "position": 3,
+          "domain": "experience.tripster.ru",
+          "url": "https://experience.tripster.ru/tours/georgia/"
+        }
+      ]
+    },
+    {
+      "query": "тур по грузии",
+      "region": 213,
+      "sakhva_position": null,
+      "sakhva_url": null,
+      "found_in_top": null,
+      "total_results": 100,
+      "top3_competitors": [
+        {
+          "position": 1,
+          "domain": "youtravel.me",
+          "url": "https://youtravel.me/tours/country/%D0%B3%D1%80%D1%83%D0%B7%D0%B8%D1%8F"
+        },
+        {
+          "position": 2,
+          "domain": "intourist.ru",
+          "url": "https://intourist.ru/info/georgia/excursions"
+        },
+        {
+          "position": 3,
+          "domain": "experience.tripster.ru",
+          "url": "https://experience.tripster.ru/tours/georgia/tags/combined/"
+        }
+      ]
+    },
+    {
+      "query": "тур по тбилиси",
+      "region": 213,
+      "sakhva_position": null,
+      "sakhva_url": null,
+      "found_in_top": null,
+      "total_results": 100,
+      "top3_competitors": [
+        {
+          "position": 1,
+          "domain": "www.sputnik8.com",
+          "url": "https://www.sputnik8.com/ru/tbilisi"
+        },
+        {
+          "position": 2,
+          "domain": "experience.tripster.ru",
+          "url": "https://experience.tripster.ru/experience/Tbilisi/"
+        },
+        {
+          "position": 3,
+          "domain": "experience.tripster.ru",
+          "url": "https://experience.tripster.ru/experience/Tbilisi/21028-po-gruzii/"
+        }
+      ]
+    },
+    {
+      "query": "тур в кахетию из тбилиси",
+      "region": 213,
+      "sakhva_position": 88,
+      "sakhva_url": "https://sakhva-travel.com/tour/kakheti/",
+      "found_in_top": 88,
+      "total_results": 100,
+      "top3_competitors": [
+        {
+          "position": 1,
+          "domain": "www.sputnik8.com",
+          "url": "https://www.sputnik8.com/ru/tbilisi/category/kahetiya"
+        },
+        {
+          "position": 2,
+          "domain": "experience.tripster.ru",
+          "url": "https://experience.tripster.ru/experience/Tbilisi/7016-ekslkursii-v-kahetiyu/"
+        },
+        {
+          "position": 3,
+          "domain": "experience.tripster.ru",
+          "url": "https://experience.tripster.ru/experience/84590/"
+        }
+      ]
+    },
+    {
+      "query": "тур в казбеги из тбилиси",
+      "region": 213,
+      "sakhva_position": null,
+      "sakhva_url": null,
+      "found_in_top": null,
+      "total_results": 100,
+      "top3_competitors": [
+        {
+          "position": 1,
+          "domain": "www.sputnik8.com",
+          "url": "https://www.sputnik8.com/ru/tbilisi/to/kazbegi"
+        },
+        {
+          "position": 2,
+          "domain": "experience.tripster.ru",
+          "url": "https://experience.tripster.ru/experience/Tbilisi/7358-ekskursii-v-kazbegi/"
+        },
+        {
+          "position": 3,
+          "domain": "experience.tripster.ru",
+          "url": "https://experience.tripster.ru/experience/43855/"
+        }
+      ]
+    },
+    {
+      "query": "экскурсия в кахетию",
+      "region": 213,
+      "sakhva_position": null,
+      "sakhva_url": null,
+      "found_in_top": null,
+      "total_results": 100,
+      "top3_competitors": [
+        {
+          "position": 1,
+          "domain": "www.sputnik8.com",
+          "url": "https://www.sputnik8.com/ru/tbilisi/category/kahetiya"
+        },
+        {
+          "position": 2,
+          "domain": "experience.tripster.ru",
+          "url": "https://experience.tripster.ru/experience/Tbilisi/7016-ekslkursii-v-kahetiyu/"
+        },
+        {
+          "position": 3,
+          "domain": "experience.tripster.ru",
+          "url": "https://experience.tripster.ru/experience/53382/"
+        }
+      ]
+    },
+    {
+      "query": "экскурсия в казбеги",
+      "region": 213,
+      "sakhva_position": null,
+      "sakhva_url": null,
+      "found_in_top": null,
+      "total_results": 100,
+      "top3_competitors": [
+        {
+          "position": 1,
+          "domain": "experience.tripster.ru",
+          "url": "https://experience.tripster.ru/experience/Tbilisi/7358-ekskursii-v-kazbegi/"
+        },
+        {
+          "position": 2,
+          "domain": "www.sputnik8.com",
+          "url": "https://www.sputnik8.com/ru/tbilisi/to/kazbegi"
+        },
+        {
+          "position": 3,
+          "domain": "experience.tripster.ru",
+          "url": "https://experience.tripster.ru/experience/43855/"
+        }
+      ]
+    },
+    {
+      "query": "экскурсия по тбилиси",
+      "region": 213,
+      "sakhva_position": null,
+      "sakhva_url": null,
+      "found_in_top": null,
+      "total_results": 100,
+      "top3_competitors": [
+        {
+          "position": 1,
+          "domain": "www.sputnik8.com",
+          "url": "https://www.sputnik8.com/ru/tbilisi"
+        },
+        {
+          "position": 2,
+          "domain": "experience.tripster.ru",
+          "url": "https://experience.tripster.ru/experience/Tbilisi/"
+        },
+        {
+          "position": 3,
+          "domain": "experience.tripster.ru",
+          "url": "https://experience.tripster.ru/experience/Tbilisi/28560-top/"
+        }
+      ]
+    },
+    {
+      "query": "экскурсия в мцхету",
+      "region": 213,
+      "sakhva_position": null,
+      "sakhva_url": null,
+      "found_in_top": null,
+      "total_results": 100,
+      "top3_competitors": [
+        {
+          "position": 1,
+          "domain": "experience.tripster.ru",
+          "url": "https://experience.tripster.ru/experience/Tbilisi/7359-ekskursii-v-mchetu/"
+        },
+        {
+          "position": 2,
+          "domain": "www.sputnik8.com",
+          "url": "https://www.sputnik8.com/ru/tbilisi/to/mtskheta"
+        },
+        {
+          "position": 3,
+          "domain": "experience.tripster.ru",
+          "url": "https://experience.tripster.ru/experience/114753/"
+        }
+      ]
+    },
+    {
+      "query": "экскурсия в вардзию",
+      "region": 213,
+      "sakhva_position": null,
+      "sakhva_url": null,
+      "found_in_top": null,
+      "total_results": 100,
+      "top3_competitors": [
+        {
+          "position": 1,
+          "domain": "www.sputnik8.com",
+          "url": "https://www.sputnik8.com/ru/tbilisi/sights/vardziya"
+        },
+        {
+          "position": 2,
+          "domain": "experience.tripster.ru",
+          "url": "https://experience.tripster.ru/experience/Tbilisi/9175-vardziya/"
+        },
+        {
+          "position": 3,
+          "domain": "experience.tripster.ru",
+          "url": "https://experience.tripster.ru/experience/45707/"
+        }
+      ]
+    },
+    {
+      "query": "винный тур по грузии",
+      "region": 213,
+      "sakhva_position": null,
+      "sakhva_url": null,
+      "found_in_top": null,
+      "total_results": 100,
+      "top3_competitors": [
+        {
+          "position": 1,
+          "domain": "klubgidov.ru",
+          "url": "https://klubgidov.ru/gruziya/vinnye-tury"
+        },
+        {
+          "position": 2,
+          "domain": "experience.tripster.ru",
+          "url": "https://experience.tripster.ru/tours/georgia/tags/vinnye/"
+        },
+        {
+          "position": 3,
+          "domain": "r-express.ru",
+          "url": "https://r-express.ru/guide/georgia/tours/vinnyj-tur-po-gruzii/"
+        }
+      ]
+    },
+    {
+      "query": "винные туры грузия",
+      "region": 213,
+      "sakhva_position": null,
+      "sakhva_url": null,
+      "found_in_top": null,
+      "total_results": 100,
+      "top3_competitors": [
+        {
+          "position": 1,
+          "domain": "experience.tripster.ru",
+          "url": "https://experience.tripster.ru/tours/georgia/tags/vinnye/"
+        },
+        {
+          "position": 2,
+          "domain": "klubgidov.ru",
+          "url": "https://klubgidov.ru/gruziya/vinnye-tury"
+        },
+        {
+          "position": 3,
+          "domain": "experience.tripster.ru",
+          "url": "https://experience.tripster.ru/experience/Tbilisi/21037-vinodelni/"
+        }
+      ]
+    },
+    {
+      "query": "ночной тбилиси экскурсия",
+      "region": 213,
+      "sakhva_position": 1,
+      "sakhva_url": "https://sakhva-travel.com/tour/night-tbilisi/",
+      "found_in_top": 1,
+      "total_results": 100,
+      "top3_competitors": [
+        {
+          "position": 1,
+          "domain": "sakhva-travel.com",
+          "url": "https://sakhva-travel.com/tour/night-tbilisi/"
+        },
+        {
+          "position": 2,
+          "domain": "experience.tripster.ru",
+          "url": "https://experience.tripster.ru/experience/Tbilisi/9211-nochnye/"
+        },
+        {
+          "position": 3,
+          "domain": "www.sputnik8.com",
+          "url": "https://www.sputnik8.com/ru/tbilisi/category/nochnye-ekskursii"
+        }
+      ]
+    },
+    {
+      "query": "ночная экскурсия по тбилиси",
+      "region": 213,
+      "sakhva_position": 4,
+      "sakhva_url": "https://sakhva-travel.com/tour/night-tbilisi/",
+      "found_in_top": 4,
+      "total_results": 100,
+      "top3_competitors": [
+        {
+          "position": 1,
+          "domain": "www.sputnik8.com",
+          "url": "https://www.sputnik8.com/ru/tbilisi/category/nochnye-ekskursii"
+        },
+        {
+          "position": 2,
+          "domain": "experience.tripster.ru",
+          "url": "https://experience.tripster.ru/experience/Tbilisi/9211-nochnye/"
+        },
+        {
+          "position": 3,
+          "domain": "www.sputnik8.com",
+          "url": "https://www.sputnik8.com/ru/tbilisi/category/vechernie-ekskursii"
+        }
+      ]
+    },
+    {
+      "query": "тур по старому тбилиси",
+      "region": 213,
+      "sakhva_position": null,
+      "sakhva_url": null,
+      "found_in_top": null,
+      "total_results": 100,
+      "top3_competitors": [
+        {
+          "position": 1,
+          "domain": "experience.tripster.ru",
+          "url": "https://experience.tripster.ru/experience/Tbilisi/21032-staryj-tbilisi/"
+        },
+        {
+          "position": 2,
+          "domain": "www.sputnik8.com",
+          "url": "https://www.sputnik8.com/ru/tbilisi/sights/stariy-gorod"
+        },
+        {
+          "position": 3,
+          "domain": "experience.tripster.ru",
+          "url": "https://experience.tripster.ru/experience/40549/"
+        }
+      ]
+    },
+    {
+      "query": "экскурсия с гидом тбилиси",
+      "region": 213,
+      "sakhva_position": 44,
+      "sakhva_url": "https://sakhva-travel.com/",
+      "found_in_top": 44,
+      "total_results": 100,
+      "top3_competitors": [
+        {
+          "position": 1,
+          "domain": "www.sputnik8.com",
+          "url": "https://www.sputnik8.com/ru/tbilisi"
+        },
+        {
+          "position": 2,
+          "domain": "experience.tripster.ru",
+          "url": "https://experience.tripster.ru/experience/Tbilisi/19386-private/"
+        },
+        {
+          "position": 3,
+          "domain": "experience.tripster.ru",
+          "url": "https://experience.tripster.ru/experience/Tbilisi/guides/"
+        }
+      ]
+    },
+    {
+      "query": "групповая экскурсия тбилиси",
+      "region": 213,
+      "sakhva_position": null,
+      "sakhva_url": null,
+      "found_in_top": null,
+      "total_results": 100,
+      "top3_competitors": [
+        {
+          "position": 1,
+          "domain": "www.sputnik8.com",
+          "url": "https://www.sputnik8.com/ru/tbilisi/category/group"
+        },
+        {
+          "position": 2,
+          "domain": "experience.tripster.ru",
+          "url": "https://experience.tripster.ru/experience/Tbilisi/group/"
+        },
+        {
+          "position": 3,
+          "domain": "www.sputnik8.com",
+          "url": "https://www.sputnik8.com/ru/tbilisi"
+        }
+      ]
+    },
+    {
+      "query": "индивидуальная экскурсия тбилиси",
+      "region": 213,
+      "sakhva_position": 28,
+      "sakhva_url": "https://sakhva-travel.com/",
+      "found_in_top": 28,
+      "total_results": 100,
+      "top3_competitors": [
+        {
+          "position": 1,
+          "domain": "experience.tripster.ru",
+          "url": "https://experience.tripster.ru/experience/Tbilisi/19386-private/"
+        },
+        {
+          "position": 2,
+          "domain": "www.sputnik8.com",
+          "url": "https://www.sputnik8.com/ru/tbilisi/category/individual"
+        },
+        {
+          "position": 3,
+          "domain": "experience.tripster.ru",
+          "url": "https://experience.tripster.ru/tours/georgia/tags/individualnye-tury/"
+        }
+      ]
+    },
+    {
+      "query": "однодневная экскурсия тбилиси",
+      "region": 213,
+      "sakhva_position": null,
+      "sakhva_url": null,
+      "found_in_top": null,
+      "total_results": 100,
+      "top3_competitors": [
+        {
+          "position": 1,
+          "domain": "www.sputnik8.com",
+          "url": "https://www.sputnik8.com/ru/tbilisi/category/odnodnevnye"
+        },
+        {
+          "position": 2,
+          "domain": "tbilisi-tours.ru",
+          "url": "https://tbilisi-tours.ru/tag/v-drugoj-gorod/13"
+        },
+        {
+          "position": 3,
+          "domain": "experience.tripster.ru",
+          "url": "https://experience.tripster.ru/experience/Tbilisi/4066-v-drugoj-gorod/"
+        }
+      ]
+    },
+    {
+      "query": "экскурсия из тбилиси на 1 день",
+      "region": 213,
+      "sakhva_position": 61,
+      "sakhva_url": "https://sakhva-travel.com/ekskursiya/ekskursiya-gori-iz-tbilisi/",
+      "found_in_top": 61,
+      "total_results": 100,
+      "top3_competitors": [
+        {
+          "position": 1,
+          "domain": "www.sputnik8.com",
+          "url": "https://www.sputnik8.com/ru/tbilisi/category/odnodnevnye"
+        },
+        {
+          "position": 2,
+          "domain": "tbilisi-tours.ru",
+          "url": "https://tbilisi-tours.ru/tag/v-drugoj-gorod/13"
+        },
+        {
+          "position": 3,
+          "domain": "experience.tripster.ru",
+          "url": "https://experience.tripster.ru/experience/Tbilisi/4066-v-drugoj-gorod/"
+        }
+      ]
+    },
+    {
+      "query": "тур в батуми из тбилиси",
+      "region": 213,
+      "sakhva_position": 93,
+      "sakhva_url": "https://sakhva-travel.com/blog/tury-v-batumi-2026/",
+      "found_in_top": 93,
+      "total_results": 100,
+      "top3_competitors": [
+        {
+          "position": 1,
+          "domain": "www.sputnik8.com",
+          "url": "https://www.sputnik8.com/ru/tbilisi/to/batumi"
+        },
+        {
+          "position": 2,
+          "domain": "experience.tripster.ru",
+          "url": "https://experience.tripster.ru/experience/87905/"
+        },
+        {
+          "position": 3,
+          "domain": "magput.ru",
+          "url": "https://magput.ru/?viewprog=13152"
+        }
+      ]
+    },
+    {
+      "query": "тур в мцхету",
+      "region": 213,
+      "sakhva_position": null,
+      "sakhva_url": null,
+      "found_in_top": null,
+      "total_results": 100,
+      "top3_competitors": [
+        {
+          "position": 1,
+          "domain": "experience.tripster.ru",
+          "url": "https://experience.tripster.ru/experience/Tbilisi/7359-ekskursii-v-mchetu/"
+        },
+        {
+          "position": 2,
+          "domain": "experience.tripster.ru",
+          "url": "https://experience.tripster.ru/tours/georgia/tags/ekskursii-v-mchetu/"
+        },
+        {
+          "position": 3,
+          "domain": "experience.tripster.ru",
+          "url": "https://experience.tripster.ru/experience/114753/"
+        }
+      ]
+    },
+    {
+      "query": "винная дегустация кахетия",
+      "region": 213,
+      "sakhva_position": null,
+      "sakhva_url": null,
+      "found_in_top": null,
+      "total_results": 100,
+      "top3_competitors": [
+        {
+          "position": 1,
+          "domain": "experience.tripster.ru",
+          "url": "https://experience.tripster.ru/experience/44706/"
+        },
+        {
+          "position": 2,
+          "domain": "experience.tripster.ru",
+          "url": "https://experience.tripster.ru/experience/44499/"
+        },
+        {
+          "position": 3,
+          "domain": "www.tripadvisor.ru",
+          "url": "https://www.tripadvisor.ru/Attractions-g3575926-Activities-c36-Kakheti_Region.ht"
+        }
+      ]
+    },
+    {
+      "query": "цена экскурсии тбилиси",
+      "region": 213,
+      "sakhva_position": null,
+      "sakhva_url": null,
+      "found_in_top": null,
+      "total_results": 100,
+      "top3_competitors": [
+        {
+          "position": 1,
+          "domain": "www.sputnik8.com",
+          "url": "https://www.sputnik8.com/ru/tbilisi"
+        },
+        {
+          "position": 2,
+          "domain": "www.sputnik8.com",
+          "url": "https://www.sputnik8.com/ru/tbilisi/category/odnodnevnye"
+        },
+        {
+          "position": 3,
+          "domain": "experience.tripster.ru",
+          "url": "https://experience.tripster.ru/experience/Tbilisi/"
+        }
+      ]
+    }
+  ]
+}

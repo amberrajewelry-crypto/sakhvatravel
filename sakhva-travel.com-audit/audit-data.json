@@ -1,0 +1,143 @@
+{
+  "summary": {
+    "health_score": 73,
+    "business_type": "Local Service — частный тур-гид (Тбилиси, Грузия), мультиязычный RU/EN/GE",
+    "audited_at": "2026-08-05",
+    "pages_scope": "~733 URL в 5 sitemap-файлах (index + pages/blog/tours/landing), 3 языка",
+    "top_findings": [
+      "Перекрёстно дублированные отзывы на страницах туров — риск спам-фильтра Google, обесценивает AggregateRating (нет звёзд в SERP)",
+      "Рассинхрон Telegram-контакта: llms.txt @SakhvaTravel vs сайт @SakhvaGuideBot — AI отправляет к неверному контакту",
+      "Дублированный <link rel=canonical> на 106 GE-блог страницах (ge/blog/*, баг шаблона GE-блога; RU/EN блог чисто)",
+      "Рецикл отзывов: одни и те же авторы/тексты (Елена, Mikhail D, Giorgi V., Виталий, Nugo Shengelia) на большинстве из 68 туров — риск обесценивания Review-разметки",
+      "Telegram-рассинхрон @SakhvaTravel/@SakhvaGuideBot — ИСПРАВЛЕНО (унифицировано на @SakhvaGuideBot во всех llms-файлах)",
+      "GE-блог canonical ×106 — ИСПРАВЛЕНО (дедуп, 0 дублей, hreflang цел)",
+      "miralinks-article.html → 308 → 404 (в .vercelignore; проблема только если на него ведёт живой платный бэклинк)"
+    ],
+    "quick_wins": [
+      "301 miralinks-article.html → целевая страница в vercel.json (если есть бэклинк)",
+      "Разблокировать meta-externalagent в robots.txt (Meta AI)",
+      "Синхронизировать число отзывов/даты между llms.txt, en/llms.txt, llms-full.txt"
+    ],
+    "strict_recheck_note": "Строгая перепроверка (прямое чтение HTML + HTTP-свип 737 loc + 732 hreflang): ОПРОВЕРГНУТЫ как ложные — «17 orphan», «rtveli 404», «AggregateRating нет», «Offer dup-url», sitemap «4 файла» (их 5). ПОДТВЕРЖДЕНЫ — GE-canonical ×106, перекрёстные/само-отзывы, Telegram (исправлен). Сайт технически чище, чем показал первичный аудит агентов."
+  },
+  "categories": [
+    {
+      "name": "Technical SEO",
+      "score": 74,
+      "what_works": ["HTTPS/HSTS/CSP/security headers", "hreflang взаимность ru↔en↔ka", "0 цепочек редиректов >1 хоп из 394", "self-canonical на всех языках", "noindex на утилитарных"],
+      "findings": [
+        {"title": "Дублированный canonical на 106 GE-страницах — ИСПРАВЛЕНО", "severity": "Info", "description": "Было: 106 из 253 GE-страниц с 2 <link rel=canonical> (баг: второй canonical вклинен в hreflang-блок; 2 формата тегов). Исправлено скриптом: удалён дубль в 106 файлах, оставлен 1 self-canonical, hreflang (en/ka/ru/x-default) цел, RU/EN не затронуты. Контроль: 0 GE-страниц с 2+ canonical", "recommendation": "Задеплоить; проверить, что генератор GE-блога не вернёт дубль при перегенерации"},
+        {"title": "miralinks-article.html → 308 → 404", "severity": "High", "description": "cleanUrls редиректит .html на slug, директории нет — платные входящие ссылки с miralinks упираются в 404", "recommendation": "301 в vercel.json на целевую статью или воссоздать директорию"},
+        {"title": "sitemap lastmod застрял на июле", "severity": "High", "description": "4 sitemap-файла с lastmod июль, контент деплоился позже — снижает приоритет перекраула", "recommendation": "sed по lastmod в билд-скрипте на дату деплоя"},
+        {"title": "Непоследовательный формат hreflang", "severity": "Medium", "description": "RU и GE страницы используют разный порядок атрибутов/самозакрытие тега", "recommendation": "Унифицировать шаблон hreflang во всех генераторах"}
+      ]
+    },
+    {
+      "name": "Content Quality / E-E-A-T",
+      "score": 68,
+      "what_works": ["Person-схема с лицензией на всех постах", "сигналы опыта от первого лица на 102 постах", "FAQPage на постах >1500w", "мультиязычный паритет свежих статей RU/EN/GE"],
+      "findings": [
+        {"title": "5 тонких RU-статей без FAQ", "severity": "High", "description": "gruzinskie-sladosti (602w), karty-nalichnye-gruziya (623w), taksi-tbilisi (657w), chaevye-v-gruzii (662w), gruzinskie-frazy (941w) — FAQ-интент без FAQPage-схемы", "recommendation": "Расширить до 1200-1500w + FAQPage-схема + глубина в H2"},
+        {"title": "Каннибализация 2 пар", "severity": "Medium", "description": "oteli-tbilisi vs rayony-tbilisi-gde-ostanovitsya (оба «где остановиться»); arenda-avto-tbilisi vs arenda-avto-gruziya (split кластера)", "recommendation": "Консолидировать/дифференцировать интенты, canonical или объединение"},
+        {"title": "About: нет отзывов и sameAs", "severity": "Medium", "description": "About-страница 1192w с Person-схемой, но без отзывов и sameAs на Tripadvisor/Viator/Google Business", "recommendation": "Добавить блок отзывов + sameAs в Person"},
+        {"title": "22 пограничных поста dateModified=datePublished", "severity": "Low", "description": "1000-1499w посты с сигналом «забытого контента»", "recommendation": "Обновить контент + dateModified при дожатии"},
+        {"title": "GE систематически тоньше EN", "severity": "Low", "description": "8 GE-страниц <1000w vs 3 EN — компрессия при переводе", "recommendation": "Довести GE-переводы до паритета по объёму"}
+      ]
+    },
+    {
+      "name": "On-Page / SXO",
+      "score": 70,
+      "what_works": ["/blog/metro-tbilisi/ — тип совпадает с SERP (aligned)", "уникальные интенты (релоканты, digital nomad) без конкуренции"],
+      "findings": [
+        {"title": "/tury-v-gruziyu/ — page-type mismatch", "severity": "Critical", "description": "SERP «туры в Грузию» = 100% каталоги с checkout; страница оформлена как инфо-статья, CTA после 4000px скролла", "recommendation": "Верхний блок — 3-5 карточек туров с ценой + WhatsApp; аналитический текст вниз"},
+        {"title": "/tury-v-gruziyu-iz-moskvy/ — product-intent mismatch", "severity": "High", "description": "Пользователь ищет пакет с перелётом, страница предлагает «приедь сам, встречу» — трение с первого абзаца", "recommendation": "Дисклеймер в первом абзаце + deeplink на авиабилеты (Aviasales) + отзыв клиента из Москвы"},
+        {"title": "/en/ — generic вместо guide-profile", "severity": "High", "description": "EN-SERP «Tbilisi private tour guide» = ToursByLocals/TripAdvisor с verified guide photo+credentials+отзывы; H1 «Georgia Tours & Excursions» generic", "recommendation": "H1 → «Private Guide in Tbilisi — Timur»; Person schema + sameAs; виджет отзывов"}
+      ]
+    },
+    {
+      "name": "Schema / Structured Data",
+      "score": 80,
+      "what_works": ["68 страниц /ekskursiya/* имеют Product+AggregateRating+Review+BreadcrumbList+TouristTrip+VideoObject", "главная TravelAgency+LocalBusiness dual-type", "hasCredential с номером лицензии"],
+      "findings": [
+        {"title": "Перекрёстно дублированные Review на турах", "severity": "High", "description": "ПРОВЕРЕНО прямым сравнением JSON-LD: 5 из 6 reviewBody идентичны между /tur-batumi-iz-tbilisi/ и /ekskursiya-kazbegi-iz-tbilisi/ (Елена, Mikhail D, Giorgi V., Виталий, Nugo Shengelia); reviewBody «Поехали в Казбеги...» физически стоит на странице тура в Батуми. Google классифицирует как манипуляцию Review schema → игнор разметки, нет звёзд в SERP", "recommendation": "Уникальные тематически релевантные отзывы на каждый тур"},
+        {"title": "[СНЯТО] Гид как автор Review", "severity": "Info", "description": "Тезис ОПРОВЕРГНУТ точным разбором JSON-LD на 3 турах: авторы Review — только клиенты (Елена, Mikhail D, Giorgi V. и др.); «Тимур Сахвадзе» — автор контента тура (TouristTrip/Article), что корректно. Ошибка возникла из-за grep, смешавшего автора-контента с авторами отзывов", "recommendation": "Действий не требуется"},
+        {"title": "Проверить видимость reviewBody в DOM", "severity": "High", "description": "reviewBody должен отображаться пользователю (Google требует); строки совпадают дважды в HTML — убедиться что это видимый HTML, не второй JSON-LD", "recommendation": "Вывести reviewBody в видимый блок отзывов на странице"},
+        {"title": "Дублирующийся ключ url в Offer", "severity": "Info", "description": "НЕ ВОСПРОИЗВЕДЕНО при строгой проверке (0 Offer с 2× url на проверенных турах; 0 JSON-LD parse-ошибок по всем 745 страницам). Тезис агента снят", "recommendation": "Точечно проверить при правке генератора; сейчас не проблема"}
+      ]
+    },
+    {
+      "name": "Performance (CWV)",
+      "score": 82,
+      "what_works": ["TTFB 180-325мс desktop", "hero fetchpriority+webp/async", "аналитика отложена на interaction", "inline-SVG метро лёгкий, без влияния на LCP/CLS"],
+      "findings": [
+        {"title": "Главная 358 KB HTML", "severity": "Medium", "description": "Крупный inline-документ (CSS+весь контент), время парсинга DOM на mobile", "recommendation": "Below-fold секции в отложенную загрузку, сократить критический HTML (−100-150 KB)"},
+        {"title": "8 render-blocking stylesheet на главной", "severity": "Medium", "description": "8 rel=stylesheet + 2 внешних script в head — цепочка блокирующих запросов", "recommendation": "Не-критические CSS через media=print+onload swap/preload, консолидация"}
+      ]
+    },
+    {
+      "name": "AI Search Readiness (GEO)",
+      "score": 74,
+      "what_works": ["llms.txt RU один из лучших в нише (12 Q&A, прямой ответ в 40 слов, конкретные числа)", "AI-краулеры разрешены (GPTBot/ClaudeBot/Perplexity/YandexGPT)", "speakable schema"],
+      "findings": [
+        {"title": "Рассинхрон Telegram-контакта", "severity": "Critical", "description": "llms.txt @SakhvaTravel vs сайт/llms-full @SakhvaGuideBot — AI даёт противоречивый/неверный контакт", "recommendation": "Выбрать один верный, заменить во всех файлах (llms.txt строки 19/31/40)"},
+        {"title": "meta-externalagent заблокирован", "severity": "High", "description": "robots.txt Disallow:/ блокирует Meta AI (Llama-поиск), Meta AI score 20/100", "recommendation": "Заменить на Allow с общими исключениями"},
+        {"title": "EN llms.txt без EUR-цен", "severity": "High", "description": "EN-файл даёт GEL/USD; западный турист ищет в EUR, ChatGPT не цитирует GEL", "recommendation": "Добавить EUR-колонку в таблицу и Q&A"},
+        {"title": "Рассинхрон данных между файлами", "severity": "High", "description": "llms.txt: 90 отзывов/2026-07-27; en/llms.txt: 87/2026-06-02; llms-full: 2026-07-16 — три значения, AI видит противоречие", "recommendation": "Единый источник чисел/дат во всех llms-файлах"},
+        {"title": "EN AI-видимость слабая", "severity": "Medium", "description": "10 EN-статей vs 55 RU — для западного туриста бренд почти невидим в ChatGPT/Perplexity EN (52-55/100)", "recommendation": "Наращивать EN-контент (структурный долг), Reddit-присутствие в r/Tbilisi/r/georgia"}
+      ]
+    },
+    {
+      "name": "Sitemap / Indexation",
+      "score": 92,
+      "what_works": ["737 <loc> + 732 hreflang-цели — ВСЕ 200 (прямой HTTP-свип), 0 битых URL", "5 файлов (index+pages/blog/tours/landing), XML валиден, мусора нет", "экскурсии имеют собственный <loc> ×3 языка (RU/GE/EN)", "ЛОЖНЫЕ находки агента опровергнуты: «17 orphan» (у всех есть <loc>) и «rtveli-grape-harvest 404» (это EN/GE-слаг, RU-слаг rtveli-sbor-vinograda — все три 200)"],
+      "findings": [
+        {"title": "/en/tours-in-georgia/ без loc", "severity": "Medium", "description": "200 + участвует в hreflang, но нет собственного <loc>", "recommendation": "Добавить в sitemap"},
+        {"title": "28 гео-лендингов ×3 языка — doorway-риск", "severity": "Medium", "description": "tury-v-gruziyu-iz-* если отличаются только городом — риск doorway penalty", "recommendation": "Проверить уникальность контента гео-лендингов"},
+        {"title": "6 off-topic лендингов в sitemap", "severity": "Low", "description": "turkey/egypt/uae/thailand/maldives/vietnam/cyprus — вне тематики Georgia-guide", "recommendation": "Если thin — noindex или убрать из sitemap"}
+      ]
+    },
+    {
+      "name": "Local SEO",
+      "score": 71,
+      "what_works": ["GBP верифицирован (CID)", "schema главной полная (geo, openingHours, AggregateRating 4.9/90, priceRange, areaServed, sameAs 9)", "лицензия гида в hasCredential"],
+      "findings": [
+        {"title": "Viator/GetYourGuide — нет профилей", "severity": "High", "description": "Tier-1 citations для тур-гида + EN-аудитория отсутствуют", "recommendation": "Создать профили с консистентным NAP"},
+        {"title": "2ГИС ведёт на Батуми, не Тбилиси", "severity": "Medium", "description": "Ссылка на поиск в Батуми вместо карточки Тбилиси", "recommendation": "Исправить на карточку Тбилиси"},
+        {"title": "Individual Review объекты не размечены", "severity": "Medium", "description": "Нет rich snippet с цитатами отзывов", "recommendation": "Разметить Review с видимым reviewBody (см. Schema)"}
+      ]
+    }
+  ],
+  "action_plan": {
+    "phases": [
+      {"name": "Phase 1: Critical Fixes", "timeframe": "Неделя 1", "items": [
+        "Убрать битый rtveli-grape-harvest из sitemap-tours.xml + добавить 17 orphan-экскурсий",
+        "Дедуп canonical на 106 GE-страницах (фикс GE-генератора)",
+        "Уникализировать перекрёстные отзывы на турах (или хотя бы дедуп по тексту) — вернуть звёзды в SERP",
+        "Синхронизировать Telegram-контакт + число отзывов/даты во всех llms-файлах (нужно подтверждение верного TG у Владимира)",
+        "301 miralinks-article.html в vercel.json"
+      ]},
+      {"name": "Phase 2: High-Impact", "timeframe": "Недели 2-3", "items": [
+        "/tury-v-gruziyu/ — каталог-first layout (карточки+цена+WA вверх)",
+        "/tury-v-gruziyu-iz-moskvy/ — дисклеймер + deeplink авиабилеты",
+        "/en/ — guide-profile H1 + Person schema + виджет отзывов",
+        "5 тонких RU-статей → расширить + FAQPage",
+        "Разблокировать meta-externalagent; EUR-цены в en/llms.txt",
+        "Обновить sitemap lastmod в билд-скрипте"
+      ]},
+      {"name": "Phase 3: Content & Authority", "timeframe": "Месяц 2", "items": [
+        "Разрешить каннибализацию (oteli/rayony, arenda-avto)",
+        "Viator/GetYourGuide профили + фикс 2ГИС",
+        "About: отзывы + sameAs",
+        "Наращивание EN-контента (структурный долг для западной аудитории)",
+        "Reddit-присутствие r/Tbilisi/r/georgia/r/digitalnomad"
+      ]},
+      {"name": "Phase 4: Monitoring", "timeframe": "Постоянно", "items": [
+        "Проверять уникальность гео-лендингов (doorway-риск)",
+        "GE-паритет по объёму при новых переводах",
+        "Процесс проверки фактов при зеркалировании RU→EN→GE",
+        "Мониторинг возврата звёзд в SERP после уникализации отзывов"
+      ]}
+    ]
+  },
+  "artifacts": {"findings_dir": "findings/", "screenshots_dir": "screenshots/"}
+}

@@ -1,0 +1,21 @@
+profile_name,os,browser,proxy_country,proxy_city,timezone,language,persona
+MSK_relocant_yoga_01,Windows 11,Stealthfox,RU,Moscow,Europe/Moscow,"ru-RU,ru;q=0.9,en;q=0.8",relocant
+MSK_business_finance_02,macOS Sonoma,Mizu,RU,Moscow,Europe/Moscow,"ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",business
+SPB_relocant_wine_03,Windows 11,Stealthfox,RU,Saint Petersburg,Europe/Moscow,"ru-RU,ru;q=0.9,en;q=0.8",relocant
+SPB_tourist_photo_04,macOS Sonoma,Mizu,RU,Saint Petersburg,Europe/Moscow,"ru-RU,ru;q=0.9,en;q=0.8",tourist
+KZN_family_kids_05,Windows 11,Stealthfox,RU,Kazan,Europe/Moscow,"ru-RU,ru;q=0.9",family
+NSK_tourist_hiking_06,Windows 11,Stealthfox,RU,Novosibirsk,Asia/Novosibirsk,"ru-RU,ru;q=0.9,en;q=0.7",tourist
+EKB_relocant_cafe_07,Windows 10,Stealthfox,RU,Yekaterinburg,Asia/Yekaterinburg,"ru-RU,ru;q=0.9,en;q=0.7",relocant
+KRD_family_wine_08,Android 14,Mizu,RU,Krasnodar,Europe/Moscow,"ru-RU,ru;q=0.9",family
+MSK_backpacker_hostel_09,Android 14,Mizu,RU,Moscow,Europe/Moscow,"ru-RU,ru;q=0.9,en;q=0.8",backpacker
+SPB_business_flights_10,macOS Sonoma,Mizu,RU,Saint Petersburg,Europe/Moscow,"ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",business
+MSK_tourist_wine_11,Windows 11,Stealthfox,RU,Moscow,Europe/Moscow,"ru-RU,ru;q=0.9,en;q=0.8",tourist
+EKB_family_parks_12,Windows 10,Stealthfox,RU,Yekaterinburg,Asia/Yekaterinburg,"ru-RU,ru;q=0.9",family
+BER_relocant_yoga_13,macOS Sonoma,Mizu,DE,Berlin,Europe/Berlin,"en-US,en;q=0.9,de;q=0.8",relocant
+LDN_tourist_wine_14,Windows 11,Stealthfox,GB,London,Europe/London,"en-GB,en;q=0.9",tourist
+PAR_tourist_photo_15,macOS Sonoma,Mizu,FR,Paris,Europe/Paris,"en-US,en;q=0.9,fr;q=0.8",tourist
+IST_backpacker_hostel_16,Android 14,Mizu,TR,Istanbul,Europe/Istanbul,"en-US,en;q=0.9,tr;q=0.7",backpacker
+DXB_business_finance_17,macOS Sonoma,Mizu,AE,Dubai,Asia/Dubai,"en-US,en;q=0.9,ar;q=0.5",business
+NYC_tourist_history_18,Windows 11,Stealthfox,US,New York,America/New_York,"en-US,en;q=0.9",tourist
+BER_backpacker_hike_19,Windows 11,Stealthfox,DE,Berlin,Europe/Berlin,"en-US,en;q=0.9,de;q=0.7",backpacker
+LDN_business_wine_20,macOS Sonoma,Mizu,GB,London,Europe/London,"en-GB,en;q=0.9",business

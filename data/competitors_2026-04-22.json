@@ -1,0 +1,68 @@
+{
+  "date": "2026-04-22",
+  "query": "гид тбилиси",
+  "conclusion": "Топ-5 = агрегаторы DR 40-70+. Цель: #6-9 органика + топ-3 Local Pack",
+  "weak_link": "tbilisi-tours.ru (#9) — одиночный сайт, можно вытеснить",
+  "competitors": [
+    {
+      "pos": 1,
+      "domain": "experience.tripster.ru",
+      "type": "агрегатор",
+      "notes": "DR 70+, крупнейший"
+    },
+    {
+      "pos": 2,
+      "domain": "needguide.ru",
+      "type": "агрегатор",
+      "notes": "каталог гидов"
+    },
+    {
+      "pos": 3,
+      "domain": "instagram.com",
+      "type": "соцсеть",
+      "notes": "профиль конкурента @gid_po_tbilisi"
+    },
+    {
+      "pos": 4,
+      "domain": "sputnik8.com",
+      "type": "агрегатор",
+      "notes": "DR 60+"
+    },
+    {
+      "pos": 5,
+      "domain": "georgiantravelguide.com",
+      "type": "каталог",
+      "notes": "локальный, DR 20-30"
+    },
+    {
+      "pos": 6,
+      "domain": "travel-mania.org",
+      "type": "каталог",
+      "notes": "отзывы и цены"
+    },
+    {
+      "pos": 7,
+      "domain": "experts-tourister.ru",
+      "type": "агрегатор",
+      "notes": "DR 50+"
+    },
+    {
+      "pos": 8,
+      "domain": "excursio.com",
+      "type": "агрегатор",
+      "notes": "DR 40+"
+    },
+    {
+      "pos": 9,
+      "domain": "tbilisi-tours.ru",
+      "type": "одиночный сайт",
+      "notes": "СЛАБОЕ ЗВЕНО — цель для вытеснения"
+    },
+    {
+      "pos": 10,
+      "domain": "tripzaza.com",
+      "type": "агрегатор",
+      "notes": "DR 30-40"
+    }
+  ]
+}

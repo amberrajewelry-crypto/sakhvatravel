@@ -1,0 +1,37 @@
+.price-table-wrap,
+.cookie-table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 0 -16px;
+  padding: 0 16px;
+}
+.price-table,
+.cookie-table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+  table-layout: auto;
+  word-break: break-word;
+}
+.price-table th,
+.price-table td,
+.cookie-table th,
+.cookie-table td {
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+@media (max-width: 768px) {
+  .price-table,
+  .cookie-table {
+    font-size: 13px;
+    min-width: 0;
+  }
+  .price-table th,
+  .price-table td,
+  .cookie-table th,
+  .cookie-table td {
+    padding: 8px 6px;
+  }
+}

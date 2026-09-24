@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>V4b · Calendly Split (live) — Бронирование</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--ink:#0D1411;--ink2:#566159;--ink3:#9AA39C;--line:#E6E9E3;--green:#0E5C3F;--green2:#15784F;--lime:#CFEF55;--mist:#F5F7F3;--ease:cubic-bezier(.32,.72,0,1)}
+html,body{height:100%}
+body{font-family:'Plus Jakarta Sans',sans-serif;color:var(--ink);background:#0C1410;-webkit-font-smoothing:antialiased;overflow:hidden}
+.stage{height:100dvh;display:grid;grid-template-columns:0.82fr 1.18fr}
+@media(max-width:860px){body{overflow:auto}.stage{grid-template-columns:1fr;height:auto;min-height:100dvh}}
+.left{position:relative;padding:40px 44px;color:#fff;display:flex;flex-direction:column;overflow:hidden;background:radial-gradient(90% 60% at 15% 0%,rgba(52,160,110,.4),transparent 55%),radial-gradient(80% 60% at 100% 100%,rgba(207,239,85,.12),transparent 55%),linear-gradient(160deg,#0e5c3f,#0c2a1d)}
+@media(max-width:860px){.left{padding:34px 26px}}
+.brand{font-weight:800;font-size:16px;letter-spacing:-.02em}.brand span{color:var(--lime)}
+.tag{display:inline-flex;align-items:center;gap:8px;padding:6px 13px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--lime);margin:auto 0 16px}
+.tag i{width:5px;height:5px;border-radius:50%;background:var(--lime);box-shadow:0 0 8px var(--lime)}
+.left h1{font-size:clamp(28px,3.4vw,42px);font-weight:800;line-height:1.0;letter-spacing:-.035em;margin-bottom:8px;transition:opacity .35s var(--ease)}
+.left .price-big{font-size:15px;color:rgba(255,255,255,.62);margin-bottom:20px}
+.left .price-big b{color:#fff;font-weight:800}.left .price-big s{color:rgba(255,255,255,.4);margin-left:6px}
+.chips{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:22px}
+.chip{padding:6px 12px;border-radius:999px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.13);font-size:11.5px;color:rgba(255,255,255,.85)}
+.guide{display:flex;align-items:center;gap:12px;padding:13px 15px;border-radius:16px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);margin-top:auto}
+.gav{width:40px;height:40px;border-radius:13px;background:linear-gradient(135deg,var(--green2),var(--lime));display:flex;align-items:center;justify-content:center;font-weight:800;color:#0c2a1d}
+.gn{font-size:13.5px;font-weight:700}.gs{font-size:11.5px;color:rgba(255,255,255,.55);margin-top:1px}
+.grate{margin-left:auto;color:var(--lime);font-weight:700;font-size:13.5px}
+
+.right{background:#fff;border-radius:32px 0 0 32px;padding:36px 44px;display:flex;flex-direction:column;justify-content:center;overflow:auto}
+@media(max-width:860px){.right{border-radius:30px 30px 0 0;padding:30px 24px}}
+.slab{font-size:10.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ink3);margin-bottom:11px}
+.f{margin-bottom:13px}
+.f label{display:block;font-size:12px;font-weight:700;margin-bottom:6px}
+.tourbox{position:relative;margin-bottom:14px}
+.tourbox label{display:block;font-size:12px;font-weight:700;margin-bottom:6px}
+.tourbox .ico{position:absolute;left:14px;top:35px;pointer-events:none}
+.inp{width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:13px;background:var(--mist);font-family:inherit;font-size:14.5px;font-weight:500;color:var(--ink);outline:none;transition:.3s var(--ease)}
+.inp::placeholder{color:var(--ink3)}
+.inp:focus{border-color:var(--green2);background:#fff;box-shadow:0 0 0 4px rgba(21,120,79,.1)}
+.inp.lg{padding:13px 14px 13px 42px;font-weight:600}
+.r2{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-bottom:13px}
+@media(max-width:440px){.r2{grid-template-columns:1fr}}
+
+.datehead{display:flex;align-items:center;justify-content:space-between;margin-bottom:7px}
+.datehead .mo{font-size:12px;font-weight:700}
+.datehead .all{font-size:11px;font-weight:700;color:var(--green2);cursor:pointer;background:none;border:none;font-family:inherit}
+.dates{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px;margin-bottom:14px;scrollbar-width:none}
+.dates::-webkit-scrollbar{display:none}
+.date{flex:0 0 auto;width:50px;padding:9px 0;border:1.5px solid var(--line);border-radius:14px;background:var(--mist);cursor:pointer;text-align:center;transition:transform .25s var(--ease),background .25s,border-color .25s}
+.date span{display:block;font-size:10px;font-weight:700;text-transform:uppercase;color:var(--ink3)}
+.date b{display:block;font-size:16px;font-weight:800;margin-top:2px}
+.date.few b{color:#b06a12}
+.date:hover{transform:translateY(-2px);background:#eef6f0}
+.date.on{background:var(--green);border-color:var(--green);transform:translateY(-2px);box-shadow:0 12px 22px -8px rgba(14,92,63,.6)}
+.date.on span,.date.on b{color:#fff}
+
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-bottom:15px}
+@media(max-width:440px){.grid2{grid-template-columns:1fr}}
+.step{display:flex;align-items:center;justify-content:space-between;border:1.5px solid var(--line);border-radius:13px;background:var(--mist);padding:6px 8px}
+.step button{width:34px;height:34px;border:none;border-radius:10px;background:#fff;cursor:pointer;font-size:18px;color:var(--green);box-shadow:0 3px 8px -4px rgba(13,20,17,.3);transition:.2s var(--ease)}
+.step button:hover{background:var(--green);color:#fff}
+.step .val{font-size:17px;font-weight:800}.step .vl{font-size:10px;color:var(--ink3);font-weight:700;text-transform:uppercase;margin-left:4px}
+
+.seg{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:11px}
+.opt{border:1.5px solid var(--line);border-radius:13px;padding:11px 8px;cursor:pointer;background:var(--mist);text-align:center;transition:.3s var(--ease)}
+.opt .ot{font-size:11.5px;font-weight:800}.opt .op{font-size:17px;font-weight:800;color:var(--green2);margin-top:3px}
+.opt.on{border-color:var(--green);background:#fff;box-shadow:0 14px 28px -20px rgba(14,92,63,.5)}
+.custom{margin-bottom:11px}
+
+.ptabs{display:grid;grid-template-columns:1fr 1fr 1fr;gap:9px;margin-bottom:18px}
+.ptab{border:1.5px solid var(--line);border-radius:15px;padding:13px 8px;cursor:pointer;background:var(--mist);display:flex;flex-direction:column;align-items:center;gap:7px;transition:transform .35s var(--ease),border-color .35s,background .35s}
+.ptab:hover{transform:translateY(-2px);background:#fff}
+.ptab .pi{width:38px;height:38px;border-radius:12px;background:#fff;border:1.5px solid var(--line);display:flex;align-items:center;justify-content:center}
+.ptab .pn{font-size:11.5px;font-weight:700}
+.ptab.on{border-color:var(--green);background:#fff;box-shadow:0 14px 28px -20px rgba(14,92,63,.5)}
+.ptab.on .pi{background:var(--green);border-color:var(--green)}.ptab.on .pi svg{stroke:#fff}
+
+.foot{display:flex;align-items:center;gap:16px;border-top:1px solid var(--line);padding-top:18px}
+.tot .k{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--ink3)}
+.tot .v{font-size:30px;font-weight:800;letter-spacing:-.03em;line-height:1}
+.pay{margin-left:auto;display:flex;align-items:center;gap:12px;padding:15px 16px 15px 24px;border-radius:999px;background:var(--green);color:#fff;border:none;font-family:inherit;font-size:15px;font-weight:700;cursor:pointer;transition:transform .4s var(--ease),background .4s}
+.pay:hover{background:var(--green2);transform:scale(1.03)}.pay:active{transform:scale(.98)}
+.pay .pc{width:34px;height:34px;border-radius:50%;background:var(--lime);display:flex;align-items:center;justify-content:center;transition:transform .4s var(--ease)}
+.pay:hover .pc{transform:translate(3px,-2px)}
+.secure{font-size:11px;color:var(--ink3);font-weight:600;margin-top:12px;display:flex;align-items:center;gap:6px}
+svg{display:block}
+[data-rv]{opacity:0;transform:translateY(18px);filter:blur(5px);transition:opacity .7s var(--ease),transform .7s var(--ease),filter .7s var(--ease)}
+[data-rv].in{opacity:1;transform:none;filter:none}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="left">
+    <div class="brand" data-rv>sakhva<span>·</span>travel</div>
+    <span class="tag" data-rv><i></i> Онлайн-бронирование</span>
+    <h1 id="L-name" data-rv>Казбеги из Тбилиси</h1>
+    <div class="price-big" data-rv>от <b id="L-price">₾175</b><s id="L-old">₾220</s> · за гостя</div>
+    <div class="chips" data-rv><span class="chip">12 часов</span><span class="chip">★ 4.9</span><span class="chip">До 7 гостей</span><span class="chip">Отмена 24ч</span></div>
+    <div class="guide" data-rv><div class="gav">Т</div><div><div class="gn">Тимур</div><div class="gs">Частный гид · ответ за 15 мин</div></div><div class="grate">★ 4.9</div></div>
+  </div>
+
+  <div class="right">
+    <div class="tourbox" data-rv>
+      <label>Экскурсия</label>
+      <span class="ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9AA39C" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg></span>
+      <input aria-label="Начните вводить название тура…" class="inp lg" id="f-tour" list="tours" placeholder="Начните вводить название тура…" autocomplete="off" value="Казбеги из Тбилиси">
+      <datalist id="tours"></datalist>
+    </div>
+    <div class="r2" data-rv>
+      <div class="f" style="margin:0"><label>Имя</label><input aria-label="Имя" class="inp" placeholder="Ваше имя"></div>
+      <div class="f" style="margin:0"><label>WhatsApp / Telegram</label><input aria-label="WhatsApp / Telegram" class="inp" placeholder="+995 · @username"></div>
+    </div>
+
+    <div data-rv>
+      <div class="datehead"><span class="mo">Дата · Июль 2026</span><button class="all" type="button">Весь месяц ▾</button></div>
+      <div class="dates" id="dates"></div>
+    </div>
+
+    <div class="grid2" data-rv>
+      <div class="f" style="margin:0"><label>Гостей</label><div class="step"><button type="button" id="g-minus">−</button><span><span class="val" id="g-val">2</span><span class="vl">чел</span></span><button type="button" id="g-plus">+</button></div></div>
+      <div class="f" style="margin:0"><label>Email для чека</label><input aria-label="Email для чека" class="inp" placeholder="email@example.com"></div>
+    </div>
+
+    <div class="slab" data-rv>Вариант оплаты</div>
+    <div class="seg" id="seg" data-rv>
+      <div class="opt on" data-t="prepay"><div class="ot">Предоплата</div><div class="op" id="op-prepay">₾35</div></div>
+      <div class="opt" data-t="full"><div class="ot">Полная</div><div class="op" id="op-full">₾350</div></div>
+      <div class="opt" data-t="custom"><div class="ot">Другая</div><div class="op">₾…</div></div>
+    </div>
+    <input aria-label="Сумма в GEL" class="inp custom" id="f-custom" type="number" placeholder="Сумма в GEL" style="display:none">
+
+    <div class="slab" data-rv>Способ оплаты</div>
+    <div class="ptabs" id="ptabs" data-rv>
+      <div class="ptab on"><div class="pi"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#15784f" stroke-width="1.4"><rect x="2" y="5" width="20" height="14" rx="2.5"/><path d="M2 10h20"/></svg></div><div class="pn">Visa · MC</div></div>
+      <div class="ptab"><div class="pi"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#15784f" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><path d="M9 8h4.5a2.5 2.5 0 010 5H9m0 0h5.5a2.5 2.5 0 010 5H9M12 6v2m0 8v2"/></svg></div><div class="pn">Крипто</div></div>
+      <div class="ptab"><div class="pi"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#15784f" stroke-width="1.4"><rect x="4" y="3" width="16" height="18" rx="2.5"/><path d="M9 7h6M9 11h6M12 17v.01"/></svg></div><div class="pn">СБП · QR</div></div>
+    </div>
+
+    <div class="foot" data-rv>
+      <div class="tot"><div class="k">К оплате</div><div class="v" id="due">₾35</div></div>
+      <button class="pay" id="paybtn">Оплатить картой <span class="pc"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0c2a1d" stroke-width="1.7"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+    </div>
+    <div class="secure"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#15784f" stroke-width="1.6"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 018 0v3"/></svg> SSL 256-bit · Пока ничего не спишется без подтверждения</div>
+  </div>
+</div>
+
+<script>
+var TOURS=[["Казбеги из Тбилиси",175,220],["Кахетия из Тбилиси",170,215],["Мцхета из Тбилиси",77,95],["Дегустация вина в Кахетии",225,280],["Боржоми из Тбилиси",178,225],["Гудаури из Тбилиси",225,280],["Сванетия из Тбилиси",345,430],["Давид Гареджи",225,280],["Ананури из Тбилиси",175,220],["Батуми из Тбилиси",250,315],["Ночной Тбилиси",94,120],["Старый Тбилиси",135,170],["Сигнахи из Тбилиси",175,220],["Вардзия из Тбилиси",295,370],["Гори и Уплисцихе",155,195],["Винный тур Тбилиси",165,205],["Тушетия",345,430],["Серные бани Тбилиси",135,170]];
+var pmap={},omap={},dl=document.getElementById('tours');
+TOURS.forEach(function(t){var o=document.createElement('option');o.value=t[0]+' — от ₾'+t[1];dl.appendChild(o);pmap[t[0]]=t[1];omap[t[0]]=t[2]});
+var DOW=['пн','вт','ср','чт','пт','сб','вс'],ds=document.getElementById('dates'),base=new Date(2026,6,7);
+for(var i=0;i<24;i++){var d=new Date(base.getTime()+i*86400000);var el=document.createElement('div');el.className='date'+(i===5?' on':'')+([4,11,18].indexOf(i)>=0?' few':'');el.innerHTML='<span>'+DOW[(d.getDay()+6)%7]+'</span><b>'+d.getDate()+'</b>';ds.appendChild(el)}
+var guests=2,payType='prepay';
+function curTour(){var v=document.getElementById('f-tour').value;var n=v.split(' — ')[0].trim();return pmap[n]?n:null}
+function f(n){return '₾'+n}
+function recalc(){
+  var n=curTour();var Ln=document.getElementById('L-name'),Lp=document.getElementById('L-price'),Lo=document.getElementById('L-old');
+  if(!n){Ln.textContent='Выберите тур';Lp.textContent='₾—';Lo.textContent='';document.getElementById('op-prepay').textContent='₾—';document.getElementById('op-full').textContent='₾—';document.getElementById('due').textContent='₾—';return}
+  var per=pmap[n],oldper=omap[n],total=per*guests,prepay=Math.round(total*0.1);
+  Ln.textContent=n;Lp.textContent=f(per);Lo.textContent=f(oldper);
+  document.getElementById('op-prepay').textContent=f(prepay);document.getElementById('op-full').textContent=f(total);
+  var due=payType==='prepay'?prepay:(payType==='full'?total:(parseInt(document.getElementById('f-custom').value)||0));
+  document.getElementById('due').textContent=f(due);
+}
+document.getElementById('f-tour').addEventListener('input',recalc);
+document.getElementById('g-plus').addEventListener('click',function(){if(guests<20)guests++;document.getElementById('g-val').textContent=guests;recalc()});
+document.getElementById('g-minus').addEventListener('click',function(){if(guests>1)guests--;document.getElementById('g-val').textContent=guests;recalc()});
+document.getElementById('f-custom').addEventListener('input',recalc);
+document.querySelectorAll('#seg .opt').forEach(function(o){o.addEventListener('click',function(){document.querySelectorAll('#seg .opt').forEach(function(x){x.classList.remove('on')});o.classList.add('on');payType=o.getAttribute('data-t');document.getElementById('f-custom').style.display=payType==='custom'?'block':'none';recalc()})});
+document.querySelectorAll('#dates .date').forEach(function(o){o.addEventListener('click',function(){document.querySelectorAll('#dates .date').forEach(function(x){x.classList.remove('on')});o.classList.add('on')})});
+document.querySelectorAll('#ptabs .ptab').forEach(function(o,i){o.addEventListener('click',function(){document.querySelectorAll('#ptabs .ptab').forEach(function(x){x.classList.remove('on')});o.classList.add('on');document.getElementById('paybtn').firstChild.textContent=(i===0?'Оплатить картой ':i===1?'Оплатить криптой ':'Оплатить по СБП ')})});
+recalc();
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.05});
+document.querySelectorAll('[data-rv]').forEach(function(el,i){el.style.transitionDelay=(Math.min(i,9)*55)+'ms';io.observe(el)});
+</script>
+</body>
+</html>

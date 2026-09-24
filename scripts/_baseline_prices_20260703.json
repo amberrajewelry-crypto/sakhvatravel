@@ -1,0 +1,16 @@
+{
+  "page": "/prices/",
+  "source": "yandex_webmaster",
+  "snapshot_date": "2026-07-03",
+  "window_days": 28,
+  "total_impressions": 11,
+  "total_clicks": 11,
+  "ctr_pct": 100.0,
+  "queries_count": 1,
+  "top_queries": {
+    "цены на экскурсии в грузии цена sakhva-travel": {
+      "imp": 11,
+      "pos": 1.4
+    }
+  }
+}

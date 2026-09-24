@@ -1,0 +1,811 @@
+{
+ "date": "2026-07-22",
+ "captured_for": "internal-linking-sweep",
+ "pages": {
+  "https://sakhva-travel.com/ekskursiya/ekskursiya-gomis-mta-iz-batumi/": {
+   "clicks": 8,
+   "impr": 605,
+   "pos": 8.8
+  },
+  "https://sakhva-travel.com/ekskursiya/ekskursiya-kakheti-iz-tbilisi/": {
+   "clicks": 8,
+   "impr": 1058,
+   "pos": 23.1
+  },
+  "https://sakhva-travel.com/ekskursiya/ekskursiya-ureki-iz-tbilisi/": {
+   "clicks": 7,
+   "impr": 139,
+   "pos": 13.6
+  },
+  "https://sakhva-travel.com/en/ekskursiya/tur-dlya-pensionerov-gruziya/": {
+   "clicks": 7,
+   "impr": 135,
+   "pos": 6.0
+  },
+  "https://sakhva-travel.com/ekskursiya/ekskursiya-svaneti-iz-tbilisi/": {
+   "clicks": 6,
+   "impr": 206,
+   "pos": 7.9
+  },
+  "https://sakhva-travel.com/ekskursiya/progulka-po-kure-tbilisi/": {
+   "clicks": 6,
+   "impr": 175,
+   "pos": 7.6
+  },
+  "https://sakhva-travel.com/ekskursiya/vinodelie-kindzmarauli/": {
+   "clicks": 6,
+   "impr": 144,
+   "pos": 6.5
+  },
+  "https://sakhva-travel.com/en/ekskursiya/progulka-po-kure-tbilisi/": {
+   "clicks": 6,
+   "impr": 464,
+   "pos": 7.0
+  },
+  "https://sakhva-travel.com/ekskursiya/tur-batumi-iz-tbilisi/": {
+   "clicks": 5,
+   "impr": 1065,
+   "pos": 23.3
+  },
+  "https://sakhva-travel.com/ekskursiya/tur-dlya-pensionerov-gruziya/": {
+   "clicks": 5,
+   "impr": 376,
+   "pos": 5.7
+  },
+  "https://sakhva-travel.com/en/ekskursiya/ekskursiya-tusheti/": {
+   "clicks": 5,
+   "impr": 191,
+   "pos": 7.8
+  },
+  "https://sakhva-travel.com/en/ekskursiya/tur-batumi-iz-tbilisi/": {
+   "clicks": 5,
+   "impr": 389,
+   "pos": 6.7
+  },
+  "https://sakhva-travel.com/tury-v-gruziyu-iz-nalchika/": {
+   "clicks": 5,
+   "impr": 489,
+   "pos": 10.1
+  },
+  "https://sakhva-travel.com/tury-v-gruziyu-iz-tashkenta/": {
+   "clicks": 5,
+   "impr": 382,
+   "pos": 10.4
+  },
+  "https://sakhva-travel.com/ekskursiya/ekskursiya-kazbegi-iz-tbilisi/": {
+   "clicks": 4,
+   "impr": 337,
+   "pos": 19.3
+  },
+  "https://sakhva-travel.com/ekskursiya/tur-gruziya-7-dney/": {
+   "clicks": 4,
+   "impr": 635,
+   "pos": 5.4
+  },
+  "https://sakhva-travel.com/ekskursiya/vinniy-marshrut-alazani/": {
+   "clicks": 4,
+   "impr": 300,
+   "pos": 7.5
+  },
+  "https://sakhva-travel.com/en/ekskursiya/ekskursiya-gomis-mta-iz-batumi/": {
+   "clicks": 4,
+   "impr": 137,
+   "pos": 6.5
+  },
+  "https://sakhva-travel.com/en/ekskursiya/ekskursiya-hevsuretia-shatili/": {
+   "clicks": 4,
+   "impr": 133,
+   "pos": 6.7
+  },
+  "https://sakhva-travel.com/ekskursiya/ekskursiya-dashbashi-iz-tbilisi/": {
+   "clicks": 3,
+   "impr": 135,
+   "pos": 7.1
+  },
+  "https://sakhva-travel.com/ekskursiya/konny-tur-stepantsminda/": {
+   "clicks": 3,
+   "impr": 71,
+   "pos": 7.9
+  },
+  "https://sakhva-travel.com/ekskursiya/sovetskiy-tur-tbilisi/": {
+   "clicks": 3,
+   "impr": 82,
+   "pos": 8
+  },
+  "https://sakhva-travel.com/ekskursiya/tur-kutaisi-iz-tbilisi/": {
+   "clicks": 3,
+   "impr": 152,
+   "pos": 17.7
+  },
+  "https://sakhva-travel.com/en/ekskursiya/konny-tur-stepantsminda/": {
+   "clicks": 3,
+   "impr": 144,
+   "pos": 8.5
+  },
+  "https://sakhva-travel.com/tury-v-gruziyu-iz-kislovodska/": {
+   "clicks": 3,
+   "impr": 408,
+   "pos": 8.7
+  },
+  "https://sakhva-travel.com/ekskursiya/ekskursiya-mtskheta-iz-tbilisi/": {
+   "clicks": 2,
+   "impr": 400,
+   "pos": 14.2
+  },
+  "https://sakhva-travel.com/ekskursiya/ekskursiya-tusheti/": {
+   "clicks": 2,
+   "impr": 73,
+   "pos": 11.4
+  },
+  "https://sakhva-travel.com/ekskursiya/ekskursiya-uplistsikhe-iz-tbilisi/": {
+   "clicks": 2,
+   "impr": 102,
+   "pos": 12.1
+  },
+  "https://sakhva-travel.com/ekskursiya/khachapuri-master-klass/": {
+   "clicks": 2,
+   "impr": 74,
+   "pos": 7.1
+  },
+  "https://sakhva-travel.com/ekskursiya/kvevri-vino-tur/": {
+   "clicks": 2,
+   "impr": 63,
+   "pos": 5.5
+  },
+  "https://sakhva-travel.com/ekskursiya/priklyuchencheskiy-tur-gruziya/": {
+   "clicks": 2,
+   "impr": 140,
+   "pos": 7.7
+  },
+  "https://sakhva-travel.com/ekskursiya/romanticheskiy-tur-tbilisi/": {
+   "clicks": 2,
+   "impr": 85,
+   "pos": 6.7
+  },
+  "https://sakhva-travel.com/ekskursiya/tur-gruziya-3-dnya/": {
+   "clicks": 2,
+   "impr": 278,
+   "pos": 5.9
+  },
+  "https://sakhva-travel.com/en/ekskursiya/ekskursiya-dashbashi-iz-tbilisi/": {
+   "clicks": 2,
+   "impr": 185,
+   "pos": 10.3
+  },
+  "https://sakhva-travel.com/en/ekskursiya/ekskursiya-kanyony-zapadnoy-gruzii/": {
+   "clicks": 2,
+   "impr": 325,
+   "pos": 8.1
+  },
+  "https://sakhva-travel.com/en/ekskursiya/ekskursiya-truso/": {
+   "clicks": 2,
+   "impr": 166,
+   "pos": 7.8
+  },
+  "https://sakhva-travel.com/en/ekskursiya/ekskursiya-uplistsikhe-iz-tbilisi/": {
+   "clicks": 2,
+   "impr": 121,
+   "pos": 5.4
+  },
+  "https://sakhva-travel.com/en/ekskursiya/fotosessiya-tbilisi/": {
+   "clicks": 2,
+   "impr": 24,
+   "pos": 9.5
+  },
+  "https://sakhva-travel.com/ekskursiya/": {
+   "clicks": 1,
+   "impr": 158,
+   "pos": 7.2
+  },
+  "https://sakhva-travel.com/ekskursiya/art-tur-tbilisi/": {
+   "clicks": 1,
+   "impr": 31,
+   "pos": 15.5
+  },
+  "https://sakhva-travel.com/ekskursiya/ekskursiya-bakuriani-iz-tbilisi/": {
+   "clicks": 1,
+   "impr": 27,
+   "pos": 6.9
+  },
+  "https://sakhva-travel.com/ekskursiya/ekskursiya-racha-iz-tbilisi/": {
+   "clicks": 1,
+   "impr": 41,
+   "pos": 7.5
+  },
+  "https://sakhva-travel.com/ekskursiya/ekskursiya-stary-tbilisi/": {
+   "clicks": 1,
+   "impr": 53,
+   "pos": 10.6
+  },
+  "https://sakhva-travel.com/ekskursiya/ekskursiya-truso/": {
+   "clicks": 1,
+   "impr": 64,
+   "pos": 10.8
+  },
+  "https://sakhva-travel.com/ekskursiya/ekskursiya-vardzia/": {
+   "clicks": 1,
+   "impr": 205,
+   "pos": 7.5
+  },
+  "https://sakhva-travel.com/ekskursiya/ekskursiya-zugdidi/": {
+   "clicks": 1,
+   "impr": 86,
+   "pos": 7.7
+  },
+  "https://sakhva-travel.com/ekskursiya/family-tur-tbilisi/": {
+   "clicks": 1,
+   "impr": 37,
+   "pos": 6.8
+  },
+  "https://sakhva-travel.com/ekskursiya/gastronomicheskiy-tur-tbilisi/": {
+   "clicks": 1,
+   "impr": 414,
+   "pos": 12.1
+  },
+  "https://sakhva-travel.com/ekskursiya/korporativniy-tur-tbilisi/": {
+   "clicks": 1,
+   "impr": 43,
+   "pos": 7.7
+  },
+  "https://sakhva-travel.com/ekskursiya/svadebny-tur-gruziya/": {
+   "clicks": 1,
+   "impr": 35,
+   "pos": 10.9
+  },
+  "https://sakhva-travel.com/ekskursiya/tur-kazbegi-kakheti-2-dnya/": {
+   "clicks": 1,
+   "impr": 59,
+   "pos": 6.3
+  },
+  "https://sakhva-travel.com/ekskursiya/tur-po-hramam-tbilisi/": {
+   "clicks": 1,
+   "impr": 25,
+   "pos": 7.1
+  },
+  "https://sakhva-travel.com/en/ekskursiya/chacha-master-klass/": {
+   "clicks": 1,
+   "impr": 40,
+   "pos": 6.0
+  },
+  "https://sakhva-travel.com/en/ekskursiya/ekskursiya-ananuri-iz-tbilisi/": {
+   "clicks": 1,
+   "impr": 450,
+   "pos": 7.2
+  },
+  "https://sakhva-travel.com/en/ekskursiya/ekskursiya-gori-iz-tbilisi/": {
+   "clicks": 1,
+   "impr": 78,
+   "pos": 8.2
+  },
+  "https://sakhva-travel.com/en/ekskursiya/ekskursiya-kakheti-iz-tbilisi/": {
+   "clicks": 1,
+   "impr": 269,
+   "pos": 6.7
+  },
+  "https://sakhva-travel.com/en/ekskursiya/ekskursiya-mtskheta-iz-tbilisi/": {
+   "clicks": 1,
+   "impr": 269,
+   "pos": 13.5
+  },
+  "https://sakhva-travel.com/en/ekskursiya/ekskursiya-narikala/": {
+   "clicks": 1,
+   "impr": 751,
+   "pos": 11.2
+  },
+  "https://sakhva-travel.com/en/ekskursiya/ekskursiya-racha-iz-tbilisi/": {
+   "clicks": 1,
+   "impr": 100,
+   "pos": 8.2
+  },
+  "https://sakhva-travel.com/en/ekskursiya/ekskursiya-svaneti-iz-tbilisi/": {
+   "clicks": 1,
+   "impr": 179,
+   "pos": 5.9
+  },
+  "https://sakhva-travel.com/en/ekskursiya/ekskursiya-vardzia/": {
+   "clicks": 1,
+   "impr": 150,
+   "pos": 7.2
+  },
+  "https://sakhva-travel.com/en/ekskursiya/khachapuri-master-klass/": {
+   "clicks": 1,
+   "impr": 24,
+   "pos": 7.0
+  },
+  "https://sakhva-travel.com/en/ekskursiya/kvevri-vino-tur/": {
+   "clicks": 1,
+   "impr": 42,
+   "pos": 6.8
+  },
+  "https://sakhva-travel.com/en/ekskursiya/shopping-tur-tbilisi/": {
+   "clicks": 1,
+   "impr": 216,
+   "pos": 7.9
+  },
+  "https://sakhva-travel.com/en/ekskursiya/svadebny-tur-gruziya/": {
+   "clicks": 1,
+   "impr": 132,
+   "pos": 10.8
+  },
+  "https://sakhva-travel.com/en/ekskursiya/tur-gruziya-leto/": {
+   "clicks": 1,
+   "impr": 309,
+   "pos": 6.3
+  },
+  "https://sakhva-travel.com/en/ekskursiya/tur-kazbegi-kakheti-2-dnya/": {
+   "clicks": 1,
+   "impr": 132,
+   "pos": 4.3
+  },
+  "https://sakhva-travel.com/tury-v-gruziyu-iz-chelyabinska/": {
+   "clicks": 1,
+   "impr": 342,
+   "pos": 5.0
+  },
+  "https://sakhva-travel.com/tury-v-gruziyu-iz-ekaterinburga/": {
+   "clicks": 1,
+   "impr": 21,
+   "pos": 1.8
+  },
+  "https://sakhva-travel.com/tury-v-gruziyu-iz-kazahstana/": {
+   "clicks": 1,
+   "impr": 324,
+   "pos": 4.5
+  },
+  "https://sakhva-travel.com/tury-v-gruziyu-iz-minska/": {
+   "clicks": 1,
+   "impr": 312,
+   "pos": 6.3
+  },
+  "https://sakhva-travel.com/tury-v-gruziyu-iz-moskvy/": {
+   "clicks": 1,
+   "impr": 22,
+   "pos": 1.6
+  },
+  "https://sakhva-travel.com/ekskursiya/chacha-master-klass/": {
+   "clicks": 0,
+   "impr": 134,
+   "pos": 5.6
+  },
+  "https://sakhva-travel.com/ekskursiya/degustatsiya-vina-kakheti/": {
+   "clicks": 0,
+   "impr": 58,
+   "pos": 9.5
+  },
+  "https://sakhva-travel.com/ekskursiya/ekskursiya-abanotubani/": {
+   "clicks": 0,
+   "impr": 136,
+   "pos": 12.4
+  },
+  "https://sakhva-travel.com/ekskursiya/ekskursiya-ananuri-iz-tbilisi/": {
+   "clicks": 0,
+   "impr": 114,
+   "pos": 7.5
+  },
+  "https://sakhva-travel.com/ekskursiya/ekskursiya-borjomi-iz-tbilisi/": {
+   "clicks": 0,
+   "impr": 149,
+   "pos": 21.8
+  },
+  "https://sakhva-travel.com/ekskursiya/ekskursiya-david-gareji/": {
+   "clicks": 0,
+   "impr": 53,
+   "pos": 4.7
+  },
+  "https://sakhva-travel.com/ekskursiya/ekskursiya-gori-iz-tbilisi/": {
+   "clicks": 0,
+   "impr": 151,
+   "pos": 11.1
+  },
+  "https://sakhva-travel.com/ekskursiya/ekskursiya-gudauri-iz-tbilisi/": {
+   "clicks": 0,
+   "impr": 47,
+   "pos": 5.7
+  },
+  "https://sakhva-travel.com/ekskursiya/ekskursiya-hevsuretia-shatili/": {
+   "clicks": 0,
+   "impr": 18,
+   "pos": 22.4
+  },
+  "https://sakhva-travel.com/ekskursiya/ekskursiya-jvari-iz-tbilisi/": {
+   "clicks": 0,
+   "impr": 72,
+   "pos": 7.2
+  },
+  "https://sakhva-travel.com/ekskursiya/ekskursiya-kanyony-zapadnoy-gruzii/": {
+   "clicks": 0,
+   "impr": 100,
+   "pos": 7.5
+  },
+  "https://sakhva-travel.com/ekskursiya/ekskursiya-mtatsminda/": {
+   "clicks": 0,
+   "impr": 100,
+   "pos": 10.8
+  },
+  "https://sakhva-travel.com/ekskursiya/ekskursiya-narikala/": {
+   "clicks": 0,
+   "impr": 110,
+   "pos": 9.8
+  },
+  "https://sakhva-travel.com/ekskursiya/ekskursiya-sighnaghi-iz-tbilisi/": {
+   "clicks": 0,
+   "impr": 32,
+   "pos": 5.3
+  },
+  "https://sakhva-travel.com/ekskursiya/ekskursiya-telavi-iz-tbilisi/": {
+   "clicks": 0,
+   "impr": 103,
+   "pos": 6.5
+  },
+  "https://sakhva-travel.com/ekskursiya/fotosessiya-tbilisi/": {
+   "clicks": 0,
+   "impr": 32,
+   "pos": 7.4
+  },
+  "https://sakhva-travel.com/ekskursiya/gruppa-10-chelovek-tbilisi/": {
+   "clicks": 0,
+   "impr": 34,
+   "pos": 8.1
+  },
+  "https://sakhva-travel.com/ekskursiya/nochnaya-ekskursiya-tbilisi/": {
+   "clicks": 0,
+   "impr": 55,
+   "pos": 8.3
+  },
+  "https://sakhva-travel.com/ekskursiya/shopping-tur-tbilisi/": {
+   "clicks": 0,
+   "impr": 52,
+   "pos": 16.2
+  },
+  "https://sakhva-travel.com/ekskursiya/transfer-aeroport-tbilisi/": {
+   "clicks": 0,
+   "impr": 41,
+   "pos": 8.4
+  },
+  "https://sakhva-travel.com/ekskursiya/tur-batumi-2-dnya/": {
+   "clicks": 0,
+   "impr": 19,
+   "pos": 6.7
+  },
+  "https://sakhva-travel.com/ekskursiya/tur-dlya-detey-tbilisi/": {
+   "clicks": 0,
+   "impr": 37,
+   "pos": 6.1
+  },
+  "https://sakhva-travel.com/ekskursiya/tur-dlya-emigrantov-tbilisi/": {
+   "clicks": 0,
+   "impr": 35,
+   "pos": 8.3
+  },
+  "https://sakhva-travel.com/ekskursiya/tur-gruziya-10-dney/": {
+   "clicks": 0,
+   "impr": 100,
+   "pos": 8.8
+  },
+  "https://sakhva-travel.com/ekskursiya/tur-gruziya-5-dney/": {
+   "clicks": 0,
+   "impr": 110,
+   "pos": 7.2
+  },
+  "https://sakhva-travel.com/ekskursiya/tur-gruziya-armeniya/": {
+   "clicks": 0,
+   "impr": 188,
+   "pos": 7.1
+  },
+  "https://sakhva-travel.com/ekskursiya/tur-gruziya-leto/": {
+   "clicks": 0,
+   "impr": 293,
+   "pos": 6.3
+  },
+  "https://sakhva-travel.com/ekskursiya/tur-gruziya-noviy-god/": {
+   "clicks": 0,
+   "impr": 20,
+   "pos": 7.2
+  },
+  "https://sakhva-travel.com/ekskursiya/tur-vsya-gruziya/": {
+   "clicks": 0,
+   "impr": 295,
+   "pos": 6.9
+  },
+  "https://sakhva-travel.com/ekskursiya/vinniy-tur-tbilisi/": {
+   "clicks": 0,
+   "impr": 13,
+   "pos": 19.6
+  },
+  "https://sakhva-travel.com/en/ekskursiya/art-tur-tbilisi/": {
+   "clicks": 0,
+   "impr": 113,
+   "pos": 7.3
+  },
+  "https://sakhva-travel.com/en/ekskursiya/degustatsiya-vina-kakheti/": {
+   "clicks": 0,
+   "impr": 172,
+   "pos": 7.2
+  },
+  "https://sakhva-travel.com/en/ekskursiya/ekskursiya-abanotubani/": {
+   "clicks": 0,
+   "impr": 151,
+   "pos": 8.8
+  },
+  "https://sakhva-travel.com/en/ekskursiya/ekskursiya-bakuriani-iz-tbilisi/": {
+   "clicks": 0,
+   "impr": 115,
+   "pos": 8.7
+  },
+  "https://sakhva-travel.com/en/ekskursiya/ekskursiya-borjomi-iz-tbilisi/": {
+   "clicks": 0,
+   "impr": 53,
+   "pos": 20.5
+  },
+  "https://sakhva-travel.com/en/ekskursiya/ekskursiya-david-gareji/": {
+   "clicks": 0,
+   "impr": 387,
+   "pos": 6.6
+  },
+  "https://sakhva-travel.com/en/ekskursiya/ekskursiya-gudauri-iz-tbilisi/": {
+   "clicks": 0,
+   "impr": 51,
+   "pos": 10.5
+  },
+  "https://sakhva-travel.com/en/ekskursiya/ekskursiya-jvari-iz-tbilisi/": {
+   "clicks": 0,
+   "impr": 13,
+   "pos": 9.3
+  },
+  "https://sakhva-travel.com/en/ekskursiya/ekskursiya-kazbegi-iz-tbilisi/": {
+   "clicks": 0,
+   "impr": 71,
+   "pos": 6.2
+  },
+  "https://sakhva-travel.com/en/ekskursiya/ekskursiya-mtatsminda/": {
+   "clicks": 0,
+   "impr": 211,
+   "pos": 7.0
+  },
+  "https://sakhva-travel.com/en/ekskursiya/ekskursiya-sighnaghi-iz-tbilisi/": {
+   "clicks": 0,
+   "impr": 149,
+   "pos": 8.4
+  },
+  "https://sakhva-travel.com/en/ekskursiya/ekskursiya-stary-tbilisi/": {
+   "clicks": 0,
+   "impr": 239,
+   "pos": 7.5
+  },
+  "https://sakhva-travel.com/en/ekskursiya/ekskursiya-telavi-iz-tbilisi/": {
+   "clicks": 0,
+   "impr": 63,
+   "pos": 12.1
+  },
+  "https://sakhva-travel.com/en/ekskursiya/ekskursiya-ureki-iz-tbilisi/": {
+   "clicks": 0,
+   "impr": 234,
+   "pos": 7.7
+  },
+  "https://sakhva-travel.com/en/ekskursiya/ekskursiya-zugdidi/": {
+   "clicks": 0,
+   "impr": 51,
+   "pos": 7.4
+  },
+  "https://sakhva-travel.com/en/ekskursiya/family-tur-tbilisi/": {
+   "clicks": 0,
+   "impr": 60,
+   "pos": 7.5
+  },
+  "https://sakhva-travel.com/en/ekskursiya/gastronomicheskiy-tur-tbilisi/": {
+   "clicks": 0,
+   "impr": 59,
+   "pos": 8.7
+  },
+  "https://sakhva-travel.com/en/ekskursiya/gruppa-10-chelovek-tbilisi/": {
+   "clicks": 0,
+   "impr": 12,
+   "pos": 19.6
+  },
+  "https://sakhva-travel.com/en/ekskursiya/korporativniy-tur-tbilisi/": {
+   "clicks": 0,
+   "impr": 28,
+   "pos": 6.2
+  },
+  "https://sakhva-travel.com/en/ekskursiya/nochnaya-ekskursiya-tbilisi/": {
+   "clicks": 0,
+   "impr": 111,
+   "pos": 5.9
+  },
+  "https://sakhva-travel.com/en/ekskursiya/priklyuchencheskiy-tur-gruziya/": {
+   "clicks": 0,
+   "impr": 146,
+   "pos": 7.1
+  },
+  "https://sakhva-travel.com/en/ekskursiya/romanticheskiy-tur-tbilisi/": {
+   "clicks": 0,
+   "impr": 30,
+   "pos": 8.7
+  },
+  "https://sakhva-travel.com/en/ekskursiya/sovetskiy-tur-tbilisi/": {
+   "clicks": 0,
+   "impr": 170,
+   "pos": 7.9
+  },
+  "https://sakhva-travel.com/en/ekskursiya/transfer-aeroport-tbilisi/": {
+   "clicks": 0,
+   "impr": 72,
+   "pos": 7.3
+  },
+  "https://sakhva-travel.com/en/ekskursiya/tur-batumi-2-dnya/": {
+   "clicks": 0,
+   "impr": 17,
+   "pos": 5.3
+  },
+  "https://sakhva-travel.com/en/ekskursiya/tur-dlya-detey-tbilisi/": {
+   "clicks": 0,
+   "impr": 41,
+   "pos": 10.0
+  },
+  "https://sakhva-travel.com/en/ekskursiya/tur-dlya-emigrantov-tbilisi/": {
+   "clicks": 0,
+   "impr": 40,
+   "pos": 8.3
+  },
+  "https://sakhva-travel.com/en/ekskursiya/tur-gruziya-10-dney/": {
+   "clicks": 0,
+   "impr": 53,
+   "pos": 9.6
+  },
+  "https://sakhva-travel.com/en/ekskursiya/tur-gruziya-3-dnya/": {
+   "clicks": 0,
+   "impr": 21,
+   "pos": 6.9
+  },
+  "https://sakhva-travel.com/en/ekskursiya/tur-gruziya-5-dney/": {
+   "clicks": 0,
+   "impr": 39,
+   "pos": 6.3
+  },
+  "https://sakhva-travel.com/en/ekskursiya/tur-gruziya-7-dney/": {
+   "clicks": 0,
+   "impr": 135,
+   "pos": 7.0
+  },
+  "https://sakhva-travel.com/en/ekskursiya/tur-gruziya-armeniya/": {
+   "clicks": 0,
+   "impr": 48,
+   "pos": 7.5
+  },
+  "https://sakhva-travel.com/en/ekskursiya/tur-gruziya-noviy-god/": {
+   "clicks": 0,
+   "impr": 80,
+   "pos": 6.3
+  },
+  "https://sakhva-travel.com/en/ekskursiya/tur-kutaisi-iz-tbilisi/": {
+   "clicks": 0,
+   "impr": 88,
+   "pos": 6.5
+  },
+  "https://sakhva-travel.com/en/ekskursiya/tur-po-hramam-tbilisi/": {
+   "clicks": 0,
+   "impr": 123,
+   "pos": 8.5
+  },
+  "https://sakhva-travel.com/en/ekskursiya/tur-svaneti-4-dnya/": {
+   "clicks": 0,
+   "impr": 6,
+   "pos": 7.8
+  },
+  "https://sakhva-travel.com/en/ekskursiya/tur-vsya-gruziya/": {
+   "clicks": 0,
+   "impr": 109,
+   "pos": 8.1
+  },
+  "https://sakhva-travel.com/en/ekskursiya/vinniy-marshrut-alazani/": {
+   "clicks": 0,
+   "impr": 121,
+   "pos": 6.1
+  },
+  "https://sakhva-travel.com/en/ekskursiya/vinniy-tur-tbilisi/": {
+   "clicks": 0,
+   "impr": 94,
+   "pos": 7.1
+  },
+  "https://sakhva-travel.com/en/ekskursiya/vinodelie-kindzmarauli/": {
+   "clicks": 0,
+   "impr": 55,
+   "pos": 6.6
+  },
+  "https://sakhva-travel.com/en/tury-v-gruziyu-iz-ekaterinburga/": {
+   "clicks": 0,
+   "impr": 12,
+   "pos": 7.4
+  },
+  "https://sakhva-travel.com/tury-v-gruziyu-iz-erevana/": {
+   "clicks": 0,
+   "impr": 279,
+   "pos": 6.5
+  },
+  "https://sakhva-travel.com/tury-v-gruziyu-iz-kazani/": {
+   "clicks": 0,
+   "impr": 88,
+   "pos": 3.9
+  },
+  "https://sakhva-travel.com/tury-v-gruziyu-iz-krasnodara/": {
+   "clicks": 0,
+   "impr": 75,
+   "pos": 6.5
+  },
+  "https://sakhva-travel.com/tury-v-gruziyu-iz-mahachkaly/": {
+   "clicks": 0,
+   "impr": 1,
+   "pos": 9
+  },
+  "https://sakhva-travel.com/tury-v-gruziyu-iz-nizhnego-novgoroda/": {
+   "clicks": 0,
+   "impr": 2,
+   "pos": 3.5
+  },
+  "https://sakhva-travel.com/tury-v-gruziyu-iz-novosibirska/": {
+   "clicks": 0,
+   "impr": 21,
+   "pos": 2.2
+  },
+  "https://sakhva-travel.com/tury-v-gruziyu-iz-permi/": {
+   "clicks": 0,
+   "impr": 20,
+   "pos": 5.8
+  },
+  "https://sakhva-travel.com/tury-v-gruziyu-iz-pyatigorska/": {
+   "clicks": 0,
+   "impr": 457,
+   "pos": 8.0
+  },
+  "https://sakhva-travel.com/tury-v-gruziyu-iz-rostova/": {
+   "clicks": 0,
+   "impr": 5,
+   "pos": 7
+  },
+  "https://sakhva-travel.com/tury-v-gruziyu-iz-samary/": {
+   "clicks": 0,
+   "impr": 21,
+   "pos": 1.8
+  },
+  "https://sakhva-travel.com/tury-v-gruziyu-iz-saratova/": {
+   "clicks": 0,
+   "impr": 1,
+   "pos": 10
+  },
+  "https://sakhva-travel.com/tury-v-gruziyu-iz-sochi/": {
+   "clicks": 0,
+   "impr": 21,
+   "pos": 2.0
+  },
+  "https://sakhva-travel.com/tury-v-gruziyu-iz-spb/": {
+   "clicks": 0,
+   "impr": 60,
+   "pos": 3.9
+  },
+  "https://sakhva-travel.com/tury-v-gruziyu-iz-stavropolya/": {
+   "clicks": 0,
+   "impr": 3,
+   "pos": 4.7
+  },
+  "https://sakhva-travel.com/tury-v-gruziyu-iz-tyumeni/": {
+   "clicks": 0,
+   "impr": 8,
+   "pos": 7.6
+  },
+  "https://sakhva-travel.com/tury-v-gruziyu-iz-ufy/": {
+   "clicks": 0,
+   "impr": 5,
+   "pos": 19.6
+  },
+  "https://sakhva-travel.com/tury-v-gruziyu-iz-vladikavkaza/": {
+   "clicks": 0,
+   "impr": 26,
+   "pos": 2.9
+  },
+  "https://sakhva-travel.com/tury-v-gruziyu-iz-voronezha/": {
+   "clicks": 0,
+   "impr": 23,
+   "pos": 3.6
+  }
+ }
+}

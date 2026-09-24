@@ -1,0 +1,59 @@
+{
+  "profiles": {
+    "profile-01": {
+      "name": "Марина, 28, релокант",
+      "geo": "moscow",
+      "lang": "ru",
+      "gmail": true,
+      "persona": "relocant",
+      "interests": ["yoga", "cafe", "coworking"],
+      "homeCity": "Москва",
+      "searchStyle": "long"
+    },
+    "profile-02": {
+      "name": "Alex, 34, digital nomad",
+      "geo": "berlin",
+      "lang": "en",
+      "gmail": true,
+      "persona": "tourist",
+      "interests": ["hiking", "wine", "photography"],
+      "homeCity": "Berlin",
+      "searchStyle": "short"
+    },
+    "profile-03": {
+      "name": "Дмитрий, 42, бизнесмен",
+      "geo": "spb",
+      "lang": "ru",
+      "gmail": true,
+      "persona": "business",
+      "interests": ["finance", "restaurants", "flights"],
+      "homeCity": "Санкт-Петербург",
+      "searchStyle": "precise"
+    },
+    "profile-04": {
+      "name": "Sarah, 26, backpacker",
+      "geo": "london",
+      "lang": "en",
+      "gmail": false,
+      "persona": "backpacker",
+      "interests": ["hostels", "street-food", "history"],
+      "homeCity": "London",
+      "searchStyle": "long"
+    },
+    "profile-05": {
+      "name": "Анна, 31, мама в декрете",
+      "geo": "kazan",
+      "lang": "ru",
+      "gmail": true,
+      "persona": "family",
+      "interests": ["kids", "parks", "shopping"],
+      "homeCity": "Казань",
+      "searchStyle": "long"
+    }
+  },
+  "settings": {
+    "parallelLimit": 3,
+    "dayGapHours": 24,
+    "telegramNotify": true
+  }
+}
