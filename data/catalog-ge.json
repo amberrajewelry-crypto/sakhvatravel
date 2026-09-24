@@ -191,9 +191,9 @@
    "description": "ერთდღიანი ტური ყაზბეგში თბილისიდან კერძო გიდით ₾175-დან. გერგეტის სამების ეკლესია 2170 მ, ჯვრის უღელტეხილი, ანანურის ციხე. 11–12 საათი, 7 ადამიანამდე.",
    "price": 175,
    "currency": "GEL",
-   "hours": 14,
+   "hours": 12,
    "days": 0,
-   "durationText": "14h",
+   "durationText": "12h",
    "image": "/images/kazbegi-tour-600.webp",
    "format": "group",
    "tags": [
@@ -403,7 +403,7 @@
    "currency": "GEL",
    "hours": 5,
    "days": 0,
-   "durationText": "5h",
+   "durationText": "4–5h",
    "image": "/images/soviet-tour-600.webp",
    "format": "individual",
    "tags": [

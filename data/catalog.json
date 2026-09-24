@@ -192,9 +192,9 @@
       "description": "Экскурсия Казбеги по Военно-Грузинской дороге от ₾175. Гора Казбек, церковь Гергети, Ананури, Крестовый перевал. Полный день, до 7 человек.",
       "price": 175,
       "currency": "GEL",
-      "hours": 14,
+      "hours": 12,
       "days": 0,
-      "durationText": "14ч",
+      "durationText": "12ч",
       "image": "/images/kazbegi-tour-600.webp",
       "format": "group",
       "tags": [
@@ -404,7 +404,7 @@
       "currency": "GEL",
       "hours": 5,
       "days": 0,
-      "durationText": "5ч",
+      "durationText": "4–5ч",
       "image": "/images/soviet-tour-600.webp",
       "format": "individual",
       "tags": [

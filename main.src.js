@@ -97,8 +97,8 @@ const TOURS={
   },
   kazbegi:{
     badge:'live',img:'/images/kazbegi-tour.webp',
-    cat:'Выезд · 12–14 ч',name:'Казбеги за 1 день',gel:'₾205',usd:'$78',
-    cat_en:'Day trip · 12–14 h',name_en:'Kazbegi in 1 day',
+    cat:'Выезд · 12 ч',name:'Казбеги за 1 день',gel:'₾205',usd:'$78',
+    cat_en:'Day trip · 12 h',name_en:'Kazbegi in 1 day',
     desc:'Военно-Грузинская дорога, крепость Ананури, Гергетская Троица с видом на Казбек 5047м. Один из лучших однодневных маршрутов в мире. Выезд на рассвете — возвращение вечером.',
     desc_en:'Georgian Military Highway, Ananuri fortress, Gergeti Trinity with views of Mt. Kazbek 5047m. One of the world\'s best day trips. Leave at dawn — back in the evening.',
     includes:['Комфортный трансфер туда-обратно','Гид Тимур на весь маршрут','Остановки для фото','Рекомендации по ресторанам в Казбеги'],

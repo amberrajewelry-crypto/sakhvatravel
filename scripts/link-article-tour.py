@@ -40,7 +40,7 @@ PAIRS = [
     ("en", "en/blog/ureki-beach", "en/ekskursiya/ekskursiya-ureki-iz-tbilisi",
      "Ureki day tour from Tbilisi", "12 h", 180, "Ureki Beach: magnetic black sand, season & stays"),
     ("en", "en/blog/kazbegi-day-trip-from-tbilisi", "en/ekskursiya/ekskursiya-kazbegi-iz-tbilisi",
-     "Kazbegi day tour from Tbilisi", "11–12 h", 175, "Kazbegi day trip from Tbilisi: route, cost & tips"),
+     "Kazbegi day tour from Tbilisi", "12 h", 175, "Kazbegi day trip from Tbilisi: route, cost & tips"),
     ("en", "en/blog/kakheti-one-day-trip", "en/ekskursiya/ekskursiya-kakheti-iz-tbilisi",
      "Kakheti wine tour from Tbilisi", "10–11 h", 170, "Tbilisi to Kakheti day trip: route & wineries"),
     ("ru", "blog/ureki-plyazh", "ekskursiya/ekskursiya-ureki-iz-tbilisi",
@@ -52,7 +52,7 @@ PAIRS = [
     ("ru", "blog/sernye-bani-tbilisi", "ekskursiya/ekskursiya-abanotubani",
      "Экскурсия по Абанотубани и серным баням", "3 ч", 135, "Абанотубани: история серных бань Тбилиси"),
     ("ru", "blog/kazbegi-iz-tbilisi-2026", "ekskursiya/ekskursiya-kazbegi-iz-tbilisi",
-     "Экскурсия в Казбеги из Тбилиси", "11–12 ч", 175, "Казбеги: что посмотреть по дороге"),
+     "Экскурсия в Казбеги из Тбилиси", "12 ч", 175, "Казбеги: что посмотреть по дороге"),
 ]
 
 WRAP_RE = re.compile(r'<(div|main) class="article-wrap">')

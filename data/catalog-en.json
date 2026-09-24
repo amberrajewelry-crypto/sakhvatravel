@@ -191,9 +191,9 @@
    "description": "Kazbegi day trip — Gergeti Trinity Church, Georgian Military Highway, Ananuri Fortress. Full day, up to 7 people.",
    "price": 175,
    "currency": "GEL",
-   "hours": 14,
+   "hours": 12,
    "days": 0,
-   "durationText": "14h",
+   "durationText": "12h",
    "image": "/images/kazbegi-tour-600.webp",
    "format": "group",
    "tags": [
@@ -397,13 +397,13 @@
   },
   {
    "slug": "sovetskiy-tur-tbilisi",
-   "title": "Tbilisi City Tour with Guide",
+   "title": "Soviet Architecture in Tbilisi — Brutalism Walking Tour",
    "description": "Tbilisi city tour — Soviet architecture, modernist landmarks, brutalist buildings, history walk. 5 hours.",
    "price": 135,
    "currency": "GEL",
    "hours": 5,
    "days": 0,
-   "durationText": "5h",
+   "durationText": "4–5h",
    "image": "/images/soviet-tour-600.webp",
    "format": "individual",
    "tags": [
