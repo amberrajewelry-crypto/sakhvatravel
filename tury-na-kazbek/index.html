@@ -225,7 +225,48 @@ ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webv
 if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{setTimeout(f,3000)}})();
 </script>
 
-<main><section style="padding:clamp(100px,14vw,160px) clamp(16px,3.5vw,56px) 48px;background:linear-gradient(135deg,#1A3D2E 0%,#2D5A40 100%);text-align:center">
+<nav id="nav">
+  <a href="/" class="nav-logo" aria-label="Sakhva Travel">
+    <svg class="logo-svg" viewBox="0 0 118 70" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<circle cx="59" cy="20" r="10" fill="#F59E0B" opacity=".92"/>
+<line x1="59" y1="10" x2="59" y2="5" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="65" y1="12" x2="68" y2="8" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="53" y1="12" x2="50" y2="8" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="69" y1="17" x2="73" y2="14" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="49" y1="17" x2="45" y2="14" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M4 34 L20 20 L32 27 L59 14 L86 27 L98 20 L114 34 Z" fill="#1A3D2E"/>
+<path d="M55 18 L59 14 L63 18 Z" fill="white" opacity=".85"/>
+<text x="59" y="53" text-anchor="middle" font-family="SakhvaLogo,Raleway,system-ui,sans-serif" font-weight="800" font-size="18" letter-spacing="3" fill="#1A3D2E">SAKHVA</text>
+<line x1="4" y1="62" x2="30" y2="62" stroke="#F59E0B" stroke-width=".9" stroke-linecap="round"/>
+<text x="59" y="68" text-anchor="middle" font-family="SakhvaLogo,Raleway,system-ui,sans-serif" font-weight="700" font-size="10" letter-spacing="2.5" fill="#F59E0B">TRAVEL</text>
+<line x1="88" y1="62" x2="114" y2="62" stroke="#F59E0B" stroke-width=".9" stroke-linecap="round"/>
+</svg>
+  </a>
+  <div class="nav-links">
+    <a href="/tury-v-gruziyu/">Туры в Грузию</a>
+    <a href="/#tours">Экскурсии</a>
+    <a href="/#guide">О нас</a>
+    <a href="/#reviews">Отзывы</a>
+    <a href="/blog/">Блог</a>
+    <a href="/voprosy/">Вопросы</a>
+    <a href="/contacts/">Контакты</a>
+    <a href="/booking/" class="nav-btn">Забронировать</a>
+  </div>
+  <div class="burger" onclick="this.classList.toggle('on');document.querySelector('.drawer').classList.toggle('on')">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<main>
+<div class="drawer">
+  <a href="/">Главная</a>
+  <a href="/tury-v-gruziyu/">Туры в Грузию</a>
+  <a href="/ekskursiya/">Экскурсии</a><a href="/prices/">Цены</a>
+  <a href="/blog/">Блог</a>
+  <a href="/about/">О гиде</a>
+  <a href="/contacts/">Контакты</a>
+  <a href="/booking/" class="d-btn">Забронировать онлайн</a>
+</div>
+<section style="padding:clamp(100px,14vw,160px) clamp(16px,3.5vw,56px) 48px;background:linear-gradient(135deg,#1A3D2E 0%,#2D5A40 100%);text-align:center">
 <h1 style="font-size:clamp(26px,3.8vw,46px);font-weight:800;color:#fff;margin:0 0 12px;line-height:1.2">Туры на Казбек из Тбилиси 2026</h1>
 <p style="font-size:clamp(14px,1.6vw,18px);color:rgba(255,255,255,.65);max-width:700px;margin:0 auto;line-height:1.6">Однодневные и двухдневные экскурсии с гидом. Гергетская Троица, Военно-Грузинская дорога, долина Трусо.</p>
 </section>
@@ -239,7 +280,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
       <div class="tour-body">
         <h3>Казбеги — Гергетская Троица за 1 день</h3>
         <p class="tour-unique">Тимур показывает: маршрут на Гергетскую Троицу с видом, которого нет в туристических буклетах — через пастбища горцев.</p>
-        <p class="tour-desc">Выезд в 7:00. Замок Ананури, Жинвальское водохранилище, Гудаури (опционально), Степанцминда. Гергетская Троица — на джипе или пешком. Вид на Казбек (5047 м). Обед в местном ресторане. Возвращение около 21:00.</p>
+        <p class="tour-desc">Выезд в 9:00. Замок Ананури, Жинвальское водохранилище, Гудаури (опционально), Степанцминда. Гергетская Троица — на джипе или пешком. Вид на Казбек (5047 м). Обед в местном ресторане. Возвращение около 21:00.</p>
         <div class="tour-meta">
           <span>&#9202; 12 часов</span>
           <span>&#9968; 2170 м</span>
@@ -398,7 +439,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
     <div class="usp-item">
       <div class="usp-icon">&#9728;</div>
       <h3>Лето (июнь–август)</h3>
-      <p>Зелёные альпийские луга, Казбек полностью виден. Июль–август — пик: очереди на джипы к Гергетской Троице. Выезд в 7:00 спасает. Температура в Казбеги: +18–22°C — идеально после тбилисской жары.</p>
+      <p>Зелёные альпийские луга, Казбек полностью виден. Июль–август — пик: очереди на джипы к Гергетской Троице. Ранний выезд спасает. Температура в Казбеги: +18–22°C — идеально после тбилисской жары.</p>
     </div>
     <div class="usp-item">
       <div class="usp-icon">&#127810;</div>

@@ -351,8 +351,11 @@ document.addEventListener('keydown',function(e){
 })
 // Restore saved language — redirect if on wrong version
 var savedLang=localStorage.getItem('lang')
-if(savedLang==='en'&&location.pathname.indexOf('/en/')!==0){location.replace('/en'+location.pathname)}
-else if(savedLang&&savedLang!=='ru') setLang(savedLang)
+// Redirect by saved language only from RU pages; 'ka' (GE switchers) == 'ge'; never rewrite a page into another language
+;(function(){var p=location.pathname,pl=p.indexOf('/en/')===0?'en':p.indexOf('/ge/')===0?'ge':'ru',sl=savedLang==='ka'?'ge':savedLang
+if(pl==='ru'&&sl==='en')location.replace('/en'+p)
+else if(pl==='ru'&&sl==='ge')location.replace('/ge'+p)
+else if(sl&&sl!=='ru'&&sl===pl)setLang(sl)})()
 
 // ── COOKIE ──
 function acceptCookies(){
