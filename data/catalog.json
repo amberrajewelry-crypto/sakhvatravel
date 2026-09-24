@@ -350,9 +350,9 @@
       "description": "Ночная экскурсия по Тбилиси от ₾100. Светящаяся крепость Нарикала, мост Мира, ужин в ресторане с видом. 3 часа, до 7 человек.",
       "price": 100,
       "currency": "GEL",
-      "hours": 5,
+      "hours": 3,
       "days": 0,
-      "durationText": "5ч",
+      "durationText": "2–3ч",
       "image": "/images/night-tbilisi-tour-600.webp",
       "format": "individual",
       "tags": [

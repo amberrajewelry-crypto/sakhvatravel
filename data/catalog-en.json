@@ -346,12 +346,12 @@
   {
    "slug": "nochnaya-ekskursiya-tbilisi",
    "title": "Night Tbilisi Tour",
-   "description": "Night Tbilisi tour — illuminated Old Town, sulfur baths district, Narikala Fortress, wine bars. 5 hours.",
+   "description": "Night Tbilisi tour — illuminated Old Town, sulfur baths district, Narikala Fortress, wine bars. 2–3 hours.",
    "price": 100,
    "currency": "GEL",
-   "hours": 5,
+   "hours": 3,
    "days": 0,
-   "durationText": "5h",
+   "durationText": "2–3h",
    "image": "/images/night-tbilisi-tour-600.webp",
    "format": "individual",
    "tags": [

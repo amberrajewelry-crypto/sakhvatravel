@@ -349,9 +349,9 @@
    "description": "ღამის ექსკურსია თბილისში კერძო ტურით ₾100-დან. განათებული ძველი ქალაქი, მშვიდობის ხიდი, ნარიყალა ღამით. 2–3 საათი, დაწყება 20:00.",
    "price": 100,
    "currency": "GEL",
-   "hours": 5,
+   "hours": 3,
    "days": 0,
-   "durationText": "5h",
+   "durationText": "2–3h",
    "image": "/images/night-tbilisi-tour-600.webp",
    "format": "individual",
    "tags": [
