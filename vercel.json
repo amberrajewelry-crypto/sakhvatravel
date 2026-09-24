@@ -555,7 +555,7 @@
     },
     {
       "source": "/chastniy-gid-tbilisi/",
-      "destination": "/ekskursiya/",
+      "destination": "/about/",
       "statusCode": 301
     },
     {
