@@ -858,30 +858,30 @@ document.querySelectorAll('.btn-primary,.btn-wa').forEach(btn=>{
 
 !function(){
   var tours=[
-    {name:'Скрытые места Тбилиси',gel:100,img:'/images/tbilisi-hidden.webp',url:'/tour/tbilisi-hidden/'},
-    {name:'Казбеги за 1 день',gel:128,img:'/images/kazbegi-tour.webp',url:'/tour/kazbegi/'},
-    {name:'Сигнаги и Кахетия',gel:128,img:'/images/kakheti-tour.webp',url:'/tour/kakheti/'},
-    {name:'Кутаиси за 1 день',gel:215,img:'/images/kutaisi-tour.webp',url:'/tour/kutaisi/'},
-    {name:'Батуми за 1 день',gel:237,img:'/images/batumi-tour.webp',url:'/tour/batumi/'},
-    {name:'Ночной Тбилиси',gel:71,img:'/images/night-tbilisi-tour.webp',url:'/tour/night-tbilisi/'},
-    {name:'Тур + ужин у местных',gel:185,img:'/images/dinner-tour.webp',url:'/tour/dinner/'},
-    {name:'Советский Тбилиси',gel:86,img:'/images/soviet-tour.webp',url:'/tour/soviet/'},
-    {name:'Тур + фотосессия',gel:196,img:'/images/photo-tour.webp',url:'/tour/photo/'}
+    {name:'Скрытые места Тбилиси',gel:100,img:'/images/tbilisi-hidden.webp',url:'/ekskursiya/ekskursiya-stary-tbilisi/'},
+    {name:'Казбеги за 1 день',gel:128,img:'/images/kazbegi-tour.webp',url:'/ekskursiya/ekskursiya-kazbegi-iz-tbilisi/'},
+    {name:'Сигнаги и Кахетия',gel:128,img:'/images/kakheti-tour.webp',url:'/ekskursiya/ekskursiya-kakheti-iz-tbilisi/'},
+    {name:'Кутаиси за 1 день',gel:215,img:'/images/kutaisi-tour.webp',url:'/ekskursiya/tur-kutaisi-iz-tbilisi/'},
+    {name:'Батуми за 1 день',gel:237,img:'/images/batumi-tour.webp',url:'/ekskursiya/tur-batumi-iz-tbilisi/'},
+    {name:'Ночной Тбилиси',gel:71,img:'/images/night-tbilisi-tour.webp',url:'/ekskursiya/nochnaya-ekskursiya-tbilisi/'},
+    {name:'Тур + ужин у местных',gel:185,img:'/images/dinner-tour.webp',url:'/ekskursiya/gastronomicheskiy-tur-tbilisi/'},
+    {name:'Советский Тбилиси',gel:86,img:'/images/soviet-tour.webp',url:'/ekskursiya/sovetskiy-tur-tbilisi/'},
+    {name:'Тур + фотосессия',gel:196,img:'/images/photo-tour.webp',url:'/ekskursiya/fotosessiya-tbilisi/'}
   ]
 }()
 
 // ── FORTUNE CARD ──
 !function(){
   var tours=[
-    {name:'Скрытые места Тбилиси',gel:100,rub:3500,img:'/images/tbilisi-hidden.webp',url:'/tour/tbilisi-hidden/'},
-    {name:'Казбеги за 1 день',gel:128,rub:4500,img:'/images/kazbegi-tour.webp',url:'/tour/kazbegi/'},
-    {name:'Сигнаги и Кахетия',gel:128,rub:4500,img:'/images/kakheti-tour.webp',url:'/tour/kakheti/'},
-    {name:'Кутаиси за 1 день',gel:215,rub:7500,img:'/images/kutaisi-tour.webp',url:'/tour/kutaisi/'},
-    {name:'Батуми за 1 день',gel:237,rub:8300,img:'/images/batumi-tour.webp',url:'/tour/batumi/'},
-    {name:'Ночной Тбилиси',gel:71,rub:2500,img:'/images/night-tbilisi-tour.webp',url:'/tour/night-tbilisi/'},
-    {name:'Тур + ужин у местных',gel:185,rub:6500,img:'/images/dinner-tour.webp',url:'/tour/dinner/'},
-    {name:'Советский Тбилиси',gel:86,rub:2900,img:'/images/soviet-tour.webp',url:'/tour/soviet/'},
-    {name:'Тур + фотосессия',gel:196,rub:6900,img:'/images/photo-tour.webp',url:'/tour/photo/'}
+    {name:'Скрытые места Тбилиси',gel:100,rub:3500,img:'/images/tbilisi-hidden.webp',url:'/ekskursiya/ekskursiya-stary-tbilisi/'},
+    {name:'Казбеги за 1 день',gel:128,rub:4500,img:'/images/kazbegi-tour.webp',url:'/ekskursiya/ekskursiya-kazbegi-iz-tbilisi/'},
+    {name:'Сигнаги и Кахетия',gel:128,rub:4500,img:'/images/kakheti-tour.webp',url:'/ekskursiya/ekskursiya-kakheti-iz-tbilisi/'},
+    {name:'Кутаиси за 1 день',gel:215,rub:7500,img:'/images/kutaisi-tour.webp',url:'/ekskursiya/tur-kutaisi-iz-tbilisi/'},
+    {name:'Батуми за 1 день',gel:237,rub:8300,img:'/images/batumi-tour.webp',url:'/ekskursiya/tur-batumi-iz-tbilisi/'},
+    {name:'Ночной Тбилиси',gel:71,rub:2500,img:'/images/night-tbilisi-tour.webp',url:'/ekskursiya/nochnaya-ekskursiya-tbilisi/'},
+    {name:'Тур + ужин у местных',gel:185,rub:6500,img:'/images/dinner-tour.webp',url:'/ekskursiya/gastronomicheskiy-tur-tbilisi/'},
+    {name:'Советский Тбилиси',gel:86,rub:2900,img:'/images/soviet-tour.webp',url:'/ekskursiya/sovetskiy-tur-tbilisi/'},
+    {name:'Тур + фотосессия',gel:196,rub:6900,img:'/images/photo-tour.webp',url:'/ekskursiya/fotosessiya-tbilisi/'}
   ]
   var card=document.getElementById('fortuneCard')
   if(!card) return

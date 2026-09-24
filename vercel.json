@@ -203,6 +203,26 @@
       "statusCode": 301
     },
     {
+      "source": "/strahovka/",
+      "destination": "/blog/strahovka-v-gruziyu/",
+      "statusCode": 301
+    },
+    {
+      "source": "/strahovka",
+      "destination": "/blog/strahovka-v-gruziyu/",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/ureki/",
+      "destination": "/blog/ureki-plyazh/",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/ureki",
+      "destination": "/blog/ureki-plyazh/",
+      "statusCode": 301
+    },
+    {
       "source": "/en/ekskursiya/group-tour-10-tbilisi/",
       "destination": "/en/ekskursiya/gruppa-10-chelovek-tbilisi/",
       "statusCode": 301
