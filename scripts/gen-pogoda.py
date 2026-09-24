@@ -276,7 +276,13 @@ def season_day(c, months):
 def np_gen(prep, lang):
     """Родительный падеж названия для ka: prep = name+'ში' (локатив) → name+'ის'.
     Для ru/en возвращает исходную форму (шаблоны падежей не добавляют)."""
-    return prep[:-2] + "ის" if lang == "ka" and prep.endswith("ში") else prep
+    if lang != "ka" or not prep.endswith("ში"):
+        return prep
+    stem = prep[:-2]
+    # -ა drops the vowel (აჭარა → აჭარის), -ო/-ე/-უ take -ს (სამეგრელო → სამეგრელოს)
+    if stem.endswith("ა"):
+        return stem[:-1] + "ის"
+    return stem + "ს" if stem[-1] in "ოეუ" else stem + "ის"
 
 
 MON_LOC_RU = ["", "январе", "феврале", "марте", "апреле", "мае", "июне", "июле",
