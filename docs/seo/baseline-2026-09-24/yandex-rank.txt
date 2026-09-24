@@ -1,0 +1,48 @@
+ 10277  >30  гурия                                        /guria/
+   213  >30  гурия                                        /guria/
+ 10277    3  аджария                                      /adjara/
+   213   13  аджария                                      /adjara/
+ 10277  >30  мтацминда                                    /ekskursiya/ekskursiya-mtatsminda/
+   213  >30  мтацминда                                    /ekskursiya/ekskursiya-mtatsminda/
+ 10277    8  имеретия                                     /imereti/
+   213   17  имеретия                                     /imereti/
+ 10277   10  трансфер тбилиси                             /ekskursiya/transfer-tbilisi-batumi/
+   213   19  трансфер тбилиси                             /ekskursiya/transfer-tbilisi-batumi/
+ 10277    1  туры в грузию из москвы                      /tury-v-gruziyu-iz-moskvy/
+   213  >30  туры в грузию из москвы                      /tury-v-gruziyu-iz-moskvy/
+ 10277    2  крепость нарикала                            /ekskursiya/ekskursiya-narikala/
+   213    9  крепость нарикала                            /ekskursiya/ekskursiya-narikala/
+ 10277    2  квемо картли                                 /kvemo-kartli/
+   213  >30  квемо картли                                 /kvemo-kartli/
+ 10277    4  шида картли                                  /shida-kartli/
+   213    7  шида картли                                  /shida-kartli/
+ 10277   14  туры в грузию из новосибирска                /tury-v-gruziyu-iz-novosibirska/
+   213   14  туры в грузию из новосибирска                /tury-v-gruziyu-iz-novosibirska/
+ 10277  >30  туры в грузию из перми                       /tury-v-gruziyu-iz-permi/
+   213   26  туры в грузию из перми                       /tury-v-gruziyu-iz-permi/
+ 10277    1  экскурсия в кахетию из тбилиси               /ekskursiya/ekskursiya-kakheti-iz-tbilisi/
+   213   25  экскурсия в кахетию из тбилиси               /ekskursiya/ekskursiya-kakheti-iz-tbilisi/
+ 10277   22  гид в тбилиси                                /about/
+   213  >30  гид в тбилиси                                /about/
+ 10277  >30  рача-лечхуми                                 /racha/
+   213  >30  рача-лечхуми                                 /racha/
+ 10277    1  туры в сванетию                              /tury-v-svaneti/
+   213  >30  туры в сванетию                              /tury-v-svaneti/
+ 10277    7  новогодний тур в грузию                      /ekskursiya/tur-gruziya-noviy-god/
+   213  >30  новогодний тур в грузию                      /ekskursiya/tur-gruziya-noviy-god/
+ 10277   14  туры в грузию из махачкалы                   /tury-v-gruziyu-iz-mahachkaly/
+   213   12  туры в грузию из махачкалы                   /tury-v-gruziyu-iz-mahachkaly/
+ 10277  >30  туры в грузию из воронежа                    /tury-v-gruziyu-iz-voronezha/
+   213   15  туры в грузию из воронежа                    /tury-v-gruziyu-iz-voronezha/
+ 10277    1  мастер-класс по хачапури                     /ekskursiya/khachapuri-master-klass/
+   213   27  мастер-класс по хачапури                     /ekskursiya/khachapuri-master-klass/
+ 10277    1  экскурсия в мцхету из тбилиси                /ekskursiya/ekskursiya-mtskheta-iz-tbilisi/
+   213   11  экскурсия в мцхету из тбилиси                /ekskursiya/ekskursiya-mtskheta-iz-tbilisi/
+ 10277    1  групповой тур в грузию                       /grupovye-tury-v-gruziyu/
+   213    4  групповой тур в грузию                       /grupovye-tury-v-gruziyu/
+ 10277  >30  туры в грузию из тюмени                      /tury-v-gruziyu-iz-tyumeni/
+   213  >30  туры в грузию из тюмени                      /tury-v-gruziyu-iz-tyumeni/
+ 10277   13  туры в грузию из ставрополя                  /tury-v-gruziyu-iz-stavropolya/
+   213  >30  туры в грузию из ставрополя                  /tury-v-gruziyu-iz-stavropolya/
+
+46 замеров дописано в /Users/vladimir/sakhva-travel/data/yandex-ranks.jsonl

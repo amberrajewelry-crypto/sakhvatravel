@@ -17,7 +17,10 @@
 import argparse, csv, json, os, re, subprocess, sys, datetime
 import concurrent.futures as cf
 
-SKILL = os.path.expanduser('~/.claude-data/skills/yandex-search-api')
+# Mac keeps skills in ~/.claude/skills, VPS in ~/.claude-data/skills
+SKILL = next((p for p in map(os.path.expanduser, ('~/.claude/skills/yandex-search-api',
+                                                  '~/.claude-data/skills/yandex-search-api'))
+              if os.path.isdir(p)), os.path.expanduser('~/.claude/skills/yandex-search-api'))
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HIST = os.path.join(ROOT, 'data', 'yandex-ranks.jsonl')
 DOMAIN = 'sakhva-travel.com'
