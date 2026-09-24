@@ -143,7 +143,7 @@ ul{list-style:none}
 .foot-links a:hover{color:#fff}
 .foot-bottom{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding-top:22px;border-top:1px solid rgba(255,255,255,.08);flex-wrap:wrap;gap:8px}
 .foot-copy{font-size:12px;color:rgba(255,255,255,.65)}
-.foot-legal{display:flex;gap:16px}
+.foot-legal{display:flex;flex-wrap:wrap;gap:8px 16px}
 .foot-legal a{font-size:12px;color:rgba(255,255,255,.7);transition:color .2s}
 .foot-legal a:hover{color:rgba(255,255,255,.6)}
 @media(max-width:960px){.nav-links{display:none}.burger{display:flex}.foot-grid{grid-template-columns:1fr;gap:28px}.related-grid{grid-template-columns:1fr}.price-table{font-size:12px}}
@@ -197,7 +197,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <line stroke="#F59E0B" stroke-linecap="round" stroke-width=".9" x1="88" x2="114" y1="60" y2="60"></line>
 </svg></a>
 <div class="nav-links">
-<a href="/ge/georgia-travel-guide/">ტურები საქართველოში</a><a href="/en/tours-in-georgia/">ექსკურსიები</a>
+<a href="/ge/georgia-travel-guide/">ტურები საქართველოში</a><a href="/ge/ekskursiya/">ექსკურსიები</a>
 <a href="/ge/#guide">ჩვენ შესახებ</a>
 <a href="/ge/#reviews">შეფასებები</a>
 <a href="/ge/blog/">ბლოგი</a>
@@ -205,7 +205,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <a href="/ge/contacts/">კონტაქტები</a>
 <a class="nav-btn" href="/ge/booking/">დაჯავშნა</a>
 <div class="lang-sw">
-<a class="lang-btn" href="/blog/gruziya-perviy-raz/" onclick="document.cookie='lang_pref=ru;path=/;max-age=31536000;SameSite=Lax'" style="text-decoration:none">RU</a>
+<a class="lang-btn" href="/blog/chto-podarit-iz-tbilisi/" onclick="document.cookie='lang_pref=ru;path=/;max-age=31536000;SameSite=Lax'" style="text-decoration:none">RU</a>
 <span class="lang-sep">|</span>
 <a class="lang-btn" href="/en/blog/gifts-from-tbilisi/" onclick="document.cookie='lang_pref=en;path=/;max-age=31536000;SameSite=Lax'" style="text-decoration:none">EN</a><span class="lang-sep">|</span><span class="lang-btn on">GE</span>
 </div>
@@ -214,15 +214,15 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 </nav>
 <main>
 <div class="drawer" id="drawer">
-<a href="/ge/georgia-travel-guide/" onclick="closeDrawer()">ტურები საქართველოში</a><a href="/en/tours-in-georgia/" onclick="closeDrawer()">ექსკურსიები</a>
+<a href="/ge/georgia-travel-guide/" onclick="closeDrawer()">ტურები საქართველოში</a><a href="/ge/ekskursiya/" onclick="closeDrawer()">ექსკურსიები</a>
 <a href="/ge/#guide" onclick="closeDrawer()">ჩვენ შესახებ</a>
 <a href="/ge/#reviews" onclick="closeDrawer()">შეფასებები</a>
 <a href="/ge/blog/" onclick="closeDrawer()">ბლოგი</a>
 <a href="/ge/faq/" onclick="closeDrawer()">FAQ</a>
 <a href="/ge/contacts/" onclick="closeDrawer()">კონტაქტები</a>
 <div class="d-lang" style="display:flex;gap:10px;padding:14px 0">
-<a class="d-lang-btn" href="/blog/gruziya-perviy-raz/" style="text-align:center;text-decoration:none">RU</a>
-<span class="d-lang-btn on" style="text-align:center">EN</span>
+<a class="d-lang-btn" href="/blog/chto-podarit-iz-tbilisi/" style="text-align:center;text-decoration:none">RU</a>
+<a class="d-lang-btn" href="/en/blog/gifts-from-tbilisi/" style="text-align:center;text-decoration:none">EN</a> <span class="d-lang-btn on" style="text-align:center">GE</span>
 </div>
 <a class="d-btn" href="/ge/booking/">დაჯავშნა</a>
 </div>
@@ -281,7 +281,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <tr><td>ვარდის მურაბა, მთის ჩაი</td><td>10–30</td><td>თბილი გემრიელი საჩუქარი</td></tr>
 </tbody>
 </table>
-<div class="info-box"><p>მინანქარი იყიდება როგორც ძველი ქალაქის გალერეებში, ასევე მეტროს მახლობლად ნებისმიერ ადგილას — ხარისხი და ფასი შეიძლება ორჯერ განსხვავდებოდეს. ხელნაკეთი და მასობრივი წარმოების ერთმანეთისგან ყველაზე ადვილად გამოარჩევს ის, ვინც აქ ცხოვრობს: <a href="/en/tours-in-georgia/">თბილისის ტური</a> სანდო ადგილებს ვაჩვენებ.</p></div>
+<div class="info-box"><p>მინანქარი იყიდება როგორც ძველი ქალაქის გალერეებში, ასევე მეტროს მახლობლად ნებისმიერ ადგილას — ხარისხი და ფასი შეიძლება ორჯერ განსხვავდებოდეს. ხელნაკეთი და მასობრივი წარმოების ერთმანეთისგან ყველაზე ადვილად გამოარჩევს ის, ვინც აქ ცხოვრობს: <a href="/ge/ekskursiya/">თბილისის ტური</a> სანდო ადგილებს ვაჩვენებ.</p></div>
 <h2 id="for-him">საჩუქრები მისთვის და მამისთვის</h2>
 <p>მამაკაცისთვის ქართული საჩუქარი თითქმის ყოველთვის სუფრის გარდა სხვა არ ვარგა. ნათელი და საიმედო არჩევანია <strong>ჭაჭა</strong> (ქართული ყურძნის სპირტი) დიზაინერულ ბოთლში, ან <strong>ქვევრის ღვინო</strong> წითელი საპერავისგან. ქეიფის მოყვარულისთვის — <strong>კანცი</strong>, ნამდვილი სასმისი რქისგან, გალაქური სუვენირი კი არ არის. მამებისთვის ხელნაკეთი ნარდი ან ქართული დანა — ყოველთვის სწორი არჩევანია.</p>
 <table class="price-table">
@@ -307,7 +307,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <div class="info-box"><p>ჩურჩხელა შეიძლება იყოს ახალი ან „რეზინა" — ბაზარზე ძველს ადვილად წააწყდები. როგორ ავირჩიოთ და რით განსხვავდება ქართული ტკბილეული — აქ: <a href="/ge/blog/georgian-sweets-desserts/">ქართული ტკბილეული და დესერტები →</a>.</p></div>
 <h2 id="foodie">კვების ან ღვინის მოყვარულისთვის</h2>
 <p>თუ ადამიანი მცოდნეა, სუპერმარკეტის ბოთლი ვერ მოხიბლავს. მიართვი <strong>ქვევრის ღვინო ხის ყუთში</strong> ან 3–4 ჯიშის მინი-დეგუსტაციის ნაკრები (საპერავი, რქაწითელი, კისი, ოჯალეში). ღვინო კარგად ეხამება <strong>ტყემალი</strong> (ტყემლის სოუსი) და ქართული ზეითუნის ან კაკლის ზეთი. კოლექციონერისთვის — კერამიკული მინი-ქვევრი ან თიხის ქოთანი.</p>
-<p>ეს სუვენირის კიოსკში კი არ იყიდო, ღვინის მაღაზიაში — იქ გამეგობრდებიან და რეგიონსა და ვინტაჟს გირჩევენ. კიდევ უკეთეს საჩუქარი — განცდა: <a href="/en/tours-in-georgia/">გასტრონომიული ტური</a> მარნის დეგუსტაციით, რათა ადამიანი ისტორიის მქონე ბოთლით წავიდეს, და არა უბრალო ეტიკეტით.</p>
+<p>ეს სუვენირის კიოსკში კი არ იყიდო, ღვინის მაღაზიაში — იქ გამეგობრდებიან და რეგიონსა და ვინტაჟს გირჩევენ. კიდევ უკეთეს საჩუქარი — განცდა: <a href="/ge/ekskursiya/">გასტრონომიული ტური</a> მარნის დეგუსტაციით, რათა ადამიანი ისტორიის მქონე ბოთლით წავიდეს, და არა უბრალო ეტიკეტით.</p>
 <h2 id="by-budget">საჩუქრები ბიუჯეტის მიხედვით: 20-მდე, 50-მდე, პრემიუმ</h2>
 <p>სწრაფი სახელმძღვანელო, თუ ადამიანზე კი არა, თანხაზე ამოდიხარ. ფასები აქ და ყველა ცხრილში — 2026 წლის სახელმძღვანელო ქართულ ლარებში (₾); ბაზრებზე ვაჭრობა 10–20%-ს ამცირებს, ძველი ქალაქის სამოგზაურო კიოსკები კი მეტს ითხოვენ.</p>
 <table class="price-table">
@@ -350,7 +350,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <h3>გინდა ერთ გამოსვლაში საჩუქრები შეარჩიო და ქალაქიც ნახო?</h3>
 <p>გავივლით სანდო სუვენირების ადგილებს და თბილისს ვიმოგზაურებთ. ჯგუფი 7 კაცამდე, სასტუმროდან გამოსვლა.</p>
 <div class="cta-btns">
-<a class="btn-wa" href="/en/tours-in-georgia/">ტურის დეტალები →</a>
+<a class="btn-wa" href="/ge/ekskursiya/">ტურის დეტალები →</a>
 <a class="btn-tg" href="https://wa.me/995511272623?text=I+want+a+Tbilisi+shopping+tour">WhatsApp</a>
 </div>
 </div>
@@ -362,7 +362,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <a href="/ge/blog/what-to-buy-in-georgia/" style="display:block;color:#1A3D2E;padding:4px 0">საქართველოში რა ვიყიდოთ: 20 სუვენირის იდეა →</a>
 <a href="/ge/blog/georgian-wine-guide/" style="display:block;color:#1A3D2E;padding:4px 0">ქართული ღვინო: როგორ ავირჩიოთ და არ შევცდეთ →</a>
 <a href="/ge/blog/georgian-sweets-desserts/" style="display:block;color:#1A3D2E;padding:4px 0">ქართული ტკბილეული და დესერტები →</a>
-<a href="/en/tours-in-georgia/" style="display:block;color:#1A3D2E;padding:4px 0">ტურები საქართველოში გიდთან ერთად →</a>
+<a href="/ge/ekskursiya/" style="display:block;color:#1A3D2E;padding:4px 0">ტურები საქართველოში გიდთან ერთად →</a>
 </div>
 <section class="related">
 <div class="related-grid">
@@ -382,7 +382,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <div class="rc-card-label">ტური</div>
 <h3>თბილისის ტური</h3>
 <p>გაიარე სანდო საჩუქრების ადგილები და ქალაქი ადგილობრივ გიდთან ერთად.</p>
-<a href="/en/tours-in-georgia/">დეტალები →</a>
+<a href="/ge/ekskursiya/">დეტალები →</a>
 </div>
 </div>
 </section>

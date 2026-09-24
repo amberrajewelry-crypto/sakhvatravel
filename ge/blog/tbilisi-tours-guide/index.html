@@ -144,7 +144,7 @@ ul{list-style:none}
 .foot-links a:hover{color:#fff}
 .foot-bottom{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding-top:22px;border-top:1px solid rgba(255,255,255,.08);flex-wrap:wrap;gap:8px}
 .foot-copy{font-size:12px;color:rgba(255,255,255,.65)}
-.foot-legal{display:flex;gap:16px}
+.foot-legal{display:flex;flex-wrap:wrap;gap:8px 16px}
 .foot-legal a{font-size:12px;color:rgba(255,255,255,.7);transition:color .2s}
 .foot-legal a:hover{color:rgba(255,255,255,.6)}
 @media(max-width:960px){.nav-links{display:none}.burger{display:flex}.foot-grid{grid-template-columns:1fr;gap:28px}.related-grid{grid-template-columns:1fr}.price-table{font-size:12px}}
@@ -200,7 +200,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 </svg>
 </a>
 <div class="nav-links">
-<a href="/ge/georgia-travel-guide/">ტურები საქართველოში</a><a href="/en/tours-in-georgia/">ექსკურსიები</a><a href="/ge/prices/">ფასები</a>
+<a href="/ge/georgia-travel-guide/">ტურები საქართველოში</a><a href="/ge/ekskursiya/">ექსკურსიები</a><a href="/ge/prices/">ფასები</a>
 <a href="/ge/#guide">ჩვენ შესახებ</a>
 <a href="/ge/#reviews">შეფასებები</a>
 <a href="/ge/blog/">ბლოგი</a>
@@ -212,7 +212,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 </nav>
 <main>
 <div class="drawer" id="drawer">
-<a href="/ge/georgia-travel-guide/" onclick="closeDrawer()">ტურები საქართველოში</a><a href="/en/tours-in-georgia/" onclick="closeDrawer()">ექსკურსიები</a>
+<a href="/ge/georgia-travel-guide/" onclick="closeDrawer()">ტურები საქართველოში</a><a href="/ge/ekskursiya/" onclick="closeDrawer()">ექსკურსიები</a>
 <a href="/ge/#guide" onclick="closeDrawer()">ჩვენ შესახებ</a>
 <a href="/ge/#reviews" onclick="closeDrawer()">შეფასებები</a>
 <a href="/ge/blog/" onclick="closeDrawer()">ბლოგი</a>
@@ -350,12 +350,12 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <div class="price-table-wrap"><table class="price-table">
 <thead><tr><th>ფორმატი</th><th>რა შედის</th><th>ფასი (ლარი)</th><th>ფასი (EUR)</th></tr></thead>
 <tbody>
-<tr><td><a href="/en/tours-in-georgia/">ჯგუფური ღვინის ტური</a> (კახეთი)</td><td>2-3 მარანი, სადილი, ტრანსფერი</td><td>150-220/ადამიანი</td><td>55-81/ადამიანი</td></tr>
+<tr><td><a href="/ge/ekskursiya/">ჯგუფური ღვინის ტური</a> (კახეთი)</td><td>2-3 მარანი, სადილი, ტრანსფერი</td><td>150-220/ადამიანი</td><td>55-81/ადამიანი</td></tr>
 <tr><td>კერძო ღვინის ტური (კახეთი)</td><td>2-4 მარანი, სადილი, ტრანსფერი</td><td>500-800/ჯგუფზე</td><td>185-296/ჯგუფზე</td></tr>
 <tr><td>თბილისის ღვინის ტური</td><td>3-4 ბარი, 8-12 ღვინო, სნეკები</td><td>200-350/ადამიანი</td><td>74-130/ადამიანი</td></tr>
 <tr><td>მეღვინეობის მასტერკლასი</td><td>პრაქტიკული მევენახეობა, სადილი</td><td>150-250/ადამიანი</td><td>55-92/ადამიანი</td></tr>
 </tbody></table></div>
-<p>ყველა ფასი: <a href="/en/tours-in-georgia/">ტურები თბილისში</a> Sakhva Travel-ის ტურები — ტურების გვერდზე, განახლებული ფასებით და ონლაინ ჯავშნით.</p>
+<p>ყველა ფასი: <a href="/ge/ekskursiya/">ტურები თბილისში</a> Sakhva Travel-ის ტურები — ტურების გვერდზე, განახლებული ფასებით და ონლაინ ჯავშნით.</p>
 <h2 id="comparison">პლატფორმების შედარება: Tripster vs GetYourGuide vs კერძო ტური.</h2>
 <p>ეს ყველაზე ხშირი კითხვაა. პატიოსნად დავყოფ — ჩემი ტურები პლატფორმებზეც არის და პირდაპირ ვყიდი, ამიტომ ორივე მხარეს ვხედავ.</p>
 <div class="price-table-wrap"><table class="price-table">
@@ -413,7 +413,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <h2 id="routes">საუკეთესო მარშრუტები სხვადასხვა მოგზაურებისთვის</h2>
 <p>ყველა ტური ყველა ადამიანს თანაბრად არ შეეფერება. აქ მოცემულია ჩემი რეკომენდაციები მოგზაურის ტიპის მიხედვით — 500+ ჯგუფის გამოხმაურებაზე დაყრდნობით.</p>
 <h3>პირველად თბილისში (1-2 დღე)</h3>
-<p><strong>აუცილებელი:</strong> an <a href="/en/tours-in-georgia/">მიმოხილვის ფეხით ტური</a> ძველი ქალაქის. 3-4 საათი, ძირითადი გაჩერებები: მეიდნის მოედანი, აბანოთუბანი, ნარიყალა, ლეღვთახევის ჩანჩქერი, სიონის საკათედრო ტაძარი, მშვიდობის ხიდი. ეს ის ჩარჩოა, რომელზეც ყველაფერი სხვა ეფარება.</p>
+<p><strong>აუცილებელი:</strong> an <a href="/ge/ekskursiya/">მიმოხილვის ფეხით ტური</a> ძველი ქალაქის. 3-4 საათი, ძირითადი გაჩერებები: მეიდნის მოედანი, აბანოთუბანი, ნარიყალა, ლეღვთახევის ჩანჩქერი, სიონის საკათედრო ტაძარი, მშვიდობის ხიდი. ეს ის ჩარჩოა, რომელზეც ყველაფერი სხვა ეფარება.</p>
 <p><strong>ფორმატი:</strong> კერძო (250-400 GEL/ჯგუფი) ან ჯგუფური (60-120 GEL/ პირზე). თუ 3+ ხართ, კერძო ტური უფრო იაფი და კომფორტულია.</p>
 <p><strong>როდის:</strong> დილით (09:00-10:00) — ნაკლები ხალხი, ზაფხულში კომფორტული ტემპერატურა. ან საღამოს — სხვა ატმოსფერო, განათება.</p>
 <h3>წყვილები და რომანტიკული მოგზაურობა</h3>
@@ -424,7 +424,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <p><strong>რა არ მუშაობს:</strong> მთელი დღის ტურები (ყაზბეგი — 12 საათი მანქანაში ბავშვთან = ტანჯვა ყველასთვის). ჯგუფური ტურები — ტემპი ბავშვთან ვერ შეერგება.</p>
 <p><strong>ფორმატი:</strong> მხოლოდ კერძო. ჰკითხე: გიდს ბავშვის სავარძელი აქვს? მზადაა ტემპი მოარგოს?</p>
 <h3>ღვინის მოყვარულები</h3>
-<p><strong>მარშრუტი:</strong> <a href="/en/tours-in-georgia/">კახეთის ღვინის ტური</a>სულ მცირე 2-3 მარანი: ერთი დიდი (შუმი, ხარება, წინანდალი), ერთი ოჯახური (ნამდვილი ქვევრის ღვინო), ერთი ბუტიკური. სოფლის სადილი შედის.</p>
+<p><strong>მარშრუტი:</strong> <a href="/ge/ekskursiya/">კახეთის ღვინის ტური</a>სულ მცირე 2-3 მარანი: ერთი დიდი (შუმი, ხარება, წინანდალი), ერთი ოჯახური (ნამდვილი ქვევრის ღვინო), ერთი ბუტიკური. სოფლის სადილი შედის.</p>
 <p><strong>რა ჰკითხოთ გიდს:</strong> ოჯახურ მარანში სტუმრობისთვის (პატარა ღვინის მწარმოებელი, სადაც მეპატრონე ქვევრში ღვინოს ამზადებს). ეს გამოცდილება ჯგუფური ტურებისთვის მიუწვდომელია — ისინი მხოლოდ დიდ კომერციულ მარნებს სტუმრობენ.</p>
 <p><strong>რჩევა:</strong> ირჩიე კერძო ტური. ჯგუფში თითოეულ მარანში 30 წუთს გაატარებ — ეს სიჩქარეა. კერძო ტურში შეიძლება დასხდე, მეღვინესთან ისაუბრო, 4-5 ღვინის მაგივრად 10-15 სცადო.</p>
 <h3>ბუნებისა და მთის მოყვარულები</h3>
@@ -479,7 +479,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <h3>ეძებთ სერტიფიცირებულ გიდს თბილისში?</h3>
 <p>460+ ტური, 4.9/5 რეიტინგი, ჯგუფები 7 კაციამდე. მარგებელი მარშრუტები შენს ინტერესებზე მორგებული.</p>
 <div class="cta-btns">
-<a class="btn-wa" href="/en/tours-in-georgia/">ყველა ტური →</a>
+<a class="btn-wa" href="/ge/ekskursiya/">ყველა ტური →</a>
 <a class="btn-tg" href="https://wa.me/995511272623?text=I+want+to+book+a+tour+in+Tbilisi">WhatsApp</a>
 </div>
 </div>
@@ -538,7 +538,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <li><strong>ექსპატების ტურები:</strong> სად ვიცხოვრო, როგორ გახსნა საბანკო ანგარიში, უბნები, სკოლები, თემები.</li>
 </ul>
 <h3>ექსკურსიები თბილისიდან: მიმართულებების სრული სია</h3>
-<p>თბილისიდან ათობით ადგილი ხელმისაწვდომია ერთი დღის ფარგლებში. აქ არის ყველა ძირითადი <a href="/en/tours-in-georgia/">ერთდღიანი ტურის მარშრუტები</a>:</p>
+<p>თბილისიდან ათობით ადგილი ხელმისაწვდომია ერთი დღის ფარგლებში. აქ არის ყველა ძირითადი <a href="/ge/ekskursiya/">ერთდღიანი ტურის მარშრუტები</a>:</p>
 <div class="price-table-wrap"><table class="price-table">
 <thead><tr><th>მიმართულება</th><th>მანძილი</th><th>მგზავრობის დრო</th><th>რას ნახავთ</th></tr></thead>
 <tbody>
@@ -563,7 +563,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <h3>მზად ხართ ტურის ასარჩევად?</h3>
 <p>12 მარშრუტი თბილისსა და საქართველოში. კერძო, ჯგუფები 7 კაციამდე, სასტუმროდან ტრანსფერი შედის.</p>
 <div class="cta-btns">
-<a class="btn-wa" href="/en/tours-in-georgia/">ყველა ტურის ნახვა →</a>
+<a class="btn-wa" href="/ge/ekskursiya/">ყველა ტურის ნახვა →</a>
 <a class="btn-tg" href="https://wa.me/995511272623?text=I+want+to+choose+a+tour+in+Tbilisi">აირჩიეთ ტური WhatsApp-ზე</a>
 </div>
 </div>
@@ -573,7 +573,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <div style="background:#F0FDF4;border-left:4px solid #1A3D2E;border-radius:12px;padding:20px 24px;margin:32px auto;max-width:760px">
 <p style="font-size:16px;font-weight:700;color:#111827;margin-bottom:8px">გჭირდებათ კერძო ტური საქართველოში?</p>
 <p style="font-size:14px;color:#374151;line-height:1.7;margin-bottom:12px">თიმური — კერძო ინგლისურენოვანი გზამკვლევი 4.9 რეიტინგით. 12 მარშრუტი თბილისსა და საქართველოში, ჯგუფები 7 კაცამდე, სასტუმროდან გამოყვანა ჩართულია.</p>
-<a href="/en/tours-in-georgia/" style="font-size:14px;font-weight:700;color:#1A3D2E;text-decoration:underline">ნახეთ ტურები თბილისში →</a>
+<a href="/ge/ekskursiya/" style="font-size:14px;font-weight:700;color:#1A3D2E;text-decoration:underline">ნახეთ ტურები თბილისში →</a>
 </div>
 <section class="related">
 <h2>შეიძლება მოგეწონოთ</h2>
@@ -626,7 +626,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 </div>
 <div class="fi">
 <button class="fq" onclick="toggleFaq(this)">რომელი ტურებია ყველაზე პოპულარული თბილისიდან?<span class="fq-ic">+</span></button>
-<div class="fa"><div class="fa-inner">საუკეთესო 5: ძველი ქალაქის სასეირნო ტური (3-4 საათი), ყაზბეგი და საქართველოს სამხედრო გზატკეცილი (მთელი დღე), კახეთი ღვინის დეგუსტაციით (მთელი დღე), ღამის თბილისი (2-3 საათი), მცხეთა და ჯვარი (ნახევარი დღე). <a href="/en/tours-in-georgia/">ყველა ტური →</a></div></div>
+<div class="fa"><div class="fa-inner">საუკეთესო 5: ძველი ქალაქის სასეირნო ტური (3-4 საათი), ყაზბეგი და საქართველოს სამხედრო გზატკეცილი (მთელი დღე), კახეთი ღვინის დეგუსტაციით (მთელი დღე), ღამის თბილისი (2-3 საათი), მცხეთა და ჯვარი (ნახევარი დღე). <a href="/ge/ekskursiya/">ყველა ტური →</a></div></div>
 </div>
 <div class="fi">
 <button class="fq" onclick="toggleFaq(this)">კერძო ტურები უსაფრთხოა?<span class="fq-ic">+</span></button>
@@ -656,8 +656,8 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <div style="background:#F0FDF4;border-left:4px solid #16A34A;border-radius:12px;padding:16px 20px;margin:32px 0">
 <p style="font-size:16px;font-weight:700;color:#111827;margin-bottom:6px">მზად ხართ საქართველოს შესასწავლად?</p>
 <p style="font-size:14px;color:#374151;line-height:1.6;margin:0">
-<a href="/en/tours-in-georgia/" style="color:#15803D;font-weight:600">ნახეთ ყველა ტური საქართველოში</a> ·
-    <a href="/en/tours-in-georgia/" style="color:#15803D;font-weight:600">ტურები თბილისში</a> ·
+<a href="/ge/ekskursiya/" style="color:#15803D;font-weight:600">ნახეთ ყველა ტური საქართველოში</a> ·
+    <a href="/ge/ekskursiya/" style="color:#15803D;font-weight:600">ტურები თბილისში</a> ·
     <a href="/ge/wine-tours-georgia/" style="color:#15803D;font-weight:600">ღვინის ტურები</a>
 </p>
 </div>
