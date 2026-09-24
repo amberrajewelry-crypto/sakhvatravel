@@ -53,7 +53,16 @@ body{font-family:'Lora',Georgia,serif;background:#fff;color:#1a3d2e;min-height:1
 footer{background:#1a3d2e;color:#B7C3BD;text-align:center;padding:24px 20px;font-size:13px;margin-top:48px}
 footer a{color:#34E0A1;text-decoration:underline}
 footer p a:not([class]){text-decoration:underline;text-underline-offset:2px}</style>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}</script>
+<script>
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments)}
+gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',wait_for_update:500})
+var _ck=localStorage.getItem('cookies_v4')==='1',_gc=location.search.indexOf('gclid')>-1;
+if(_ck||_gc){
+gtag('consent','update',{analytics_storage:_ck?'granted':'denied',ad_storage:'granted',ad_user_data:'granted',ad_personalization:_ck?'granted':'denied'})
+}
+</script>
+<script>(function(){function loadGA(){if(window._gaLoaded)return;window._gaLoaded=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-3X83YZHY6S';s.onload=function(){gtag('js',new Date());gtag('config','G-3X83YZHY6S');gtag('config','AW-8133499399')};document.head.appendChild(s)}['scroll','touchstart','mousemove','keydown','click'].forEach(function(e){document.addEventListener(e,loadGA,{once:true,passive:true})});setTimeout(loadGA,13000)})()</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"ტურები საქართველოში 2026 — ინდივიდუალური ინგლისურენოვანი გიდი","description":"ინდივიდუალური ტურები და ექსკურსიები საქართველოში თბილისიდან გიდ თიმურთან ერთად. ყაზბეგი, კახეთი, სვანეთი და სხვა — მცირე ჯგუფები 7 კაცამდე.","url":"https://sakhva-travel.com/ge/ekskursiya/","image":"https://sakhva-travel.com/images/og-cover.jpg","brand":{"@type":"Brand","name":"Sakhva Travel"},"offers":{"@type":"AggregateOffer","priceCurrency":"GEL","lowPrice":"80","highPrice":"3200","offerCount":"77","availability":"https://schema.org/InStock","termsOfService":"https://sakhva-travel.com/terms/","priceValidUntil":"2027-12-31"}}</script>
 <link rel="preload" href="/fonts/noto-sans-georgian.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/css/ge.css"><style>@font-face{font-family:'SakhvaLogo';font-weight:100 900;font-display:swap;src:url(/fonts/raleway-logo.woff2?v=2) format('woff2')}</style>
 </head>

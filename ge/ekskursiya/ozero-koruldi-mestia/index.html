@@ -420,6 +420,17 @@ function sendContact(){var name=document.getElementById('cm-name').value.trim();
 დაჯავშნა</a></div>
 <script>!function(){if(window.innerWidth>768)return;var bar=document.getElementById("mobile-sticky-bar");if(!bar)return;var shown=false;window.addEventListener("scroll",function(){var y=window.scrollY;if(y>600&&!shown){bar.style.display="flex";document.body.classList.add("msb-on");shown=true}else if(y<=600&&shown){bar.style.display="none";document.body.classList.remove("msb-on");shown=false}},{passive:true})}()</script>
 <script src="/js/weather-line.js?v=2" defer></script>
+<!-- Yandex.Metrika (deferred) -->
+<script type="text/javascript">
+(function(){var f=function(){(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();
+for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return}}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,function(c){var d=false,f=function(){if(d)return;d=true;c()};['scroll','touchstart','mousemove','keydown','click'].forEach(function(e){document.addEventListener(e,f,{once:true,passive:true})});setTimeout(f,5000)}(function(){a.parentNode.insertBefore(k,a)})})
+(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true})};
+if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{setTimeout(f,3000)}})();
+</script>
+<noscript><div><img alt="" src="https://mc.yandex.ru/watch/109038950" style="position:absolute;left:-9999px"/></div></noscript>
 </body>
 <script>(function(){var n=document.getElementById("nav");if(!n)return;function u(){n.classList.toggle("scrolled",(window.scrollY||window.pageYOffset||0)>60)}u();window.addEventListener("scroll",u,{passive:true})})();</script>
 </html>

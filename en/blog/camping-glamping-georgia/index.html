@@ -427,5 +427,15 @@ body,h1,h2,h3,h4,h5,h6,p,a,span,div,li,td,th,label,input,textarea,button,blockqu
 function set(on){d.classList.toggle('on',on);b.classList.toggle('on',on);b.setAttribute('aria-expanded',on);document.body.style.overflow=on?'hidden':''}
 b.addEventListener('click',function(){set(!d.classList.contains('on'))});
 d.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){set(false)})})})();</script>
+<!-- Yandex.Metrika (deferred) -->
+<script type="text/javascript">
+(function(){var f=function(){(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();
+for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return}}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,function(c){var d=false,f=function(){if(d)return;d=true;c()};['scroll','touchstart','mousemove','keydown','click'].forEach(function(e){document.addEventListener(e,f,{once:true,passive:true})});setTimeout(f,5000)}(function(){a.parentNode.insertBefore(k,a)})})
+(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+ym(109038950,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true})};
+if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{setTimeout(f,3000)}})();
+</script>
 </body>
 </html>
