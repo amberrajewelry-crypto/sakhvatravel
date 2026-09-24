@@ -55,3 +55,61 @@ seo-audit/
 # --- GE untranslated (auto) ---
 .venv-index/
 .playwright-mcp/
+# --- SEO-чистка 24.09: служебные файлы, открытые на проде ---
+# ПДн клиентов и служебное дашборда
+dashboard/backups/
+dashboard/api/
+dashboard/tests/
+dashboard/docs/
+dashboard/backup.sh
+dashboard/vercel.json
+dashboard/*.bak*
+# служебные папки
+.agents/
+.firecrawl/
+.netlify/
+.superpowers/
+.taskmaster/
+ads/
+ai-gen/
+airtable-dump/
+design-review/
+music/
+netlify/
+obsidian/
+parasite-seo-v2/
+parasite-seo-v3/
+parasite-seo-wave2/
+research/
+sakhva-travel-audit/
+sakhva-travel.com-audit/
+schema/
+screenshots/
+shots/
+test-results/
+# внутренние данные (каталоги и погода остаются)
+data/baseline_*
+data/competitors_*
+data/semantic-core*
+data/yandex-*
+# типы рабочих файлов в любом месте
+*.md
+*.csv
+*.tsv
+*.xlsx
+*.py
+*.log
+*.tgz
+*.zip
+*.bak*
+*.orig*
+*.yaml
+*.yml
+*.jsonl
+index.html.*
+_baseline_*
+seo-baseline-*
+_google_pending.txt
+skills-lock.json
+pg-prod.jpeg
+preview-*.png
