@@ -40,7 +40,7 @@ const REVIEWS_EN = [
     avatar: null,
     time: 'April 2026',
     rating: 5,
-    text: 'Excellent guide. Showed and told us everything about sunny Georgia. Speaks perfect English.'
+    text: 'Excellent guide. Showed and told us everything about sunny Georgia. Speaks excellent Russian.'
   },
   {
     name: 'Nugo S.',
@@ -64,7 +64,7 @@ const REVIEWS_GE = [
     avatar: null,
     time: 'აპრილი 2026',
     rating: 5,
-    text: 'შესანიშნავი გიდი. ყველაფერი მოგვიყვა და გვაჩვენა მზიან საქართველოზე. სრულყოფილად საუბრობს.'
+    text: 'შესანიშნავი გიდი. ყველაფერი მოგვიყვა და გვაჩვენა მზიან საქართველოზე. შესანიშნავად საუბრობს რუსულად.'
   },
   {
     name: 'ნუგო შენგელია',
