@@ -114,3 +114,7 @@ skills-lock.json
 pg-prod.jpeg
 preview-*.png
 _archive/
+
+# unreferenced *-backup assets (were publicly served, ~28 MB) — kept in repo, not deployed (25.09)
+images/*-backup.*
+fonts/*-backup.*
