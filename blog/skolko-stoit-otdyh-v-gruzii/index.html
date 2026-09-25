@@ -265,6 +265,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <nav class="article-toc">
 <p class="toc-hd">Содержание</p>
 <ol>
+<li><a href="#trip-calc">Калькулятор бюджета</a></li>
 <li><a href="#kurs">Валюта и курс 2026</a></li>
 <li><a href="#zhilyo">Жильё: от хостела до бутик-отеля</a></li>
 <li><a href="#eda">Еда: рестораны, кафе, рынки</a></li>
@@ -284,6 +285,10 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
 <figure style="margin:0 0 24px;border-radius:12px;overflow:hidden">
 <img alt="Вид на Тбилиси с крепости Нарикала — старый город, река Кура и мост Мира" fetchpriority="high" height="630" loading="eager" src="/images/blog/skolko-stoit-otdyh-v-gruzii.webp" style="width:100%;display:block" width="1200"/>
 </figure>
+<!-- trip-calc:start -->
+<div id="trip-calc" data-trip-calc data-days="7"></div>
+<script src="/js/trip-calc.js?v=af92641d" defer></script>
+<!-- trip-calc:end -->
 <h2 id="kurs">Валюта и курс лари в 2026 году</h2>
 <p>Национальная валюта Грузии — <strong>лари</strong> (GEL, международный знак). Монеты — тетри (100 тетри = 1 лари). Актуальный курс на май 2026: Заранее решите вопрос со <a href="/blog/svyaz-i-internet-v-gruzii/" style="color:#1A3D2E;font-weight:600">связью и интернетом</a> — в Грузии выгоднее купить eSIM или местную SIM, чем пользоваться <a href="/blog/rouming-v-gruzii/">роумингом</a>.</p>
 
@@ -733,7 +738,7 @@ function closeContact(){document.getElementById('contact-modal').style.display='
 function sendContact(){var name=document.getElementById('cm-name').value.trim();var phone=document.getElementById('cm-phone').value.trim();var msg=document.getElementById('cm-msg').value.trim();if(!phone){document.getElementById('cm-phone').style.borderColor='#EF4444';return}var page=document.title;fetch('/api/booking/',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:name||'(blog)',phone:phone,tour:'Скидка 10% — блог: '+page,note:msg||'Blog discount form'})}).then(function(){document.getElementById('cm-form').style.display='none';document.getElementById('cm-success').style.display='block';setTimeout(closeContact,3000)}).catch(function(){document.getElementById('cm-form').style.display='none';document.getElementById('cm-success').style.display='block';setTimeout(closeContact,3000)});try{fetch('https://formspree.io/f/mzdkyywe',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify({type:'blog_discount',name:name,phone:phone,page:page,message:msg})})}catch(e){}}
 </script>
 <script>function setLang(l){localStorage.setItem('lang',l);if(l==='en'){window.location.href='/en/blog/georgia-trip-cost/'}else{document.getElementById('btnRu').classList.add('on');document.getElementById('btnEn').classList.remove('on');document.getElementById('dBtnRu').classList.add('on');document.getElementById('dBtnEn').classList.remove('on')}}</script>
-<script defer="" src="/js/chat-widget.js?v=40"></script>
+<script defer="" src="/js/chat-widget.js?v=41"></script>
 </main>
 <footer id="footer">
 <div class="foot-grid">
