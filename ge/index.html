@@ -1430,19 +1430,9 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeGallery
 <button id="fab-main" onclick="(function(){var o=document.getElementById('fab-overlay');o.classList.toggle('open');o.style.display=o.classList.contains('open')?'flex':'none'})()" aria-label="კონტაქტი">💬</button>
 <script>document.addEventListener('click',function(e){if(!e.target.closest('#fab-main')&&!e.target.closest('#fab-overlay')){var o=document.getElementById('fab-overlay');if(o){o.classList.remove('open');o.style.display='none'}}});</script>
 <script>
-document.addEventListener('click',function(e){
-var a=e.target.closest('a[href*="wa.me"],a[href*="t.me"]');
-if(!a) return;
-var ch=a.href.indexOf('t.me')!==-1?'telegram':'whatsapp';
-if(typeof gtag==='function'){
-gtag('event','generate_lead',{event_category:'contact',event_label:ch,value:ch==='whatsapp'?5:3});
-}
-});
-</script>
-<script>
 (function(){
 function loadDeferred(src){var s=document.createElement('script');s.src=src;s.defer=true;document.body.appendChild(s)}
-var _ld=function(){loadDeferred('/main.js?v=58');loadDeferred('/scroll-effects.js?v=8')};
+var _ld=function(){loadDeferred('/main.js?v=59');loadDeferred('/scroll-effects.js?v=8')};
 if('requestIdleCallback' in window){window.addEventListener('load',function(){requestIdleCallback(_ld,{timeout:2000})})}
 else{window.addEventListener('load',function(){setTimeout(_ld,300)})};
 })();
