@@ -730,9 +730,7 @@ if("requestIdleCallback" in window){requestIdleCallback(f,{timeout:4000})}else{s
     video.style.cssText='position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:inherit;z-index:3';
     var src=window.innerWidth<=768?'/images/guide-video-en-mobile.mp4':'/images/guide-video-en.mp4';
     video.src=src;
-    var tr=document.createElement('track');tr.kind='subtitles';tr.srclang='ka';tr.label='ქართული';tr.src='/images/guide-video-ka.vtt';tr.default=true;video.appendChild(tr);
     wrap.appendChild(video);
-    video.textTracks[0]&&(video.textTracks[0].mode='showing');
     video.addEventListener('play',function(){if(poster)poster.style.opacity='0';if(playBtn)playBtn.style.display='none'});
     video.addEventListener('pause',function(){if(playBtn)playBtn.style.display='flex'});
   }
