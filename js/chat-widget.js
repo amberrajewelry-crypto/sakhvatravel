@@ -516,6 +516,18 @@ ${b.discount_percent ? `<div class="sc-booking-row"><span>Скидка</span><sp
     checkProactive();
   }
 
+  // WhatsApp/Telegram click -> GA4 lead on pages that do not track it yet.
+  // Home pages track via ui-deferred.js, ~200 blog pages via an inline listener: skip those, no doubles.
+  function tracksLeadsItself() {
+    if (document.querySelector('script[src*="ui-deferred"]')) return true;
+    return [].some.call(document.scripts, function (s) { return !s.src && s.text.indexOf('generate_lead') > -1; });
+  }
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href*="wa.me"],a[href*="t.me"]');
+    if (!a || typeof gtag !== 'function' || tracksLeadsItself()) return;
+    gtag('event', 'generate_lead', { event_category: a.href.indexOf('wa.me') > -1 ? 'whatsapp' : 'telegram', event_label: a.href });
+  });
+
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
   } else {
