@@ -53,7 +53,7 @@ Disallow: /hero3d-grass2.html
 Disallow: /service-account.json
 Disallow: /.worktrees/
 Disallow: /index.html.base-clean
-Clean-param: gad_source&gad_campaignid&gad_adgroupid&gad_creative&gbraid&wbraid&gclid&utm_source&utm_medium&utm_campaign&utm_content&utm_term&yclid&fbclid&clsprobe&fix&v&b&n&brid&perf /
+Clean-param: gad_source&gad_campaignid&gad_adgroupid&gad_creative&gbraid&wbraid&gclid&utm_source&utm_medium&utm_campaign&utm_content&utm_term&yclid&fbclid&clsprobe&fix&v&b&n&brid&perf&cb&lh&hl /
 
 User-agent: Bingbot
 Allow: /
