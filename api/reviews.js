@@ -33,7 +33,7 @@ const REVIEWS_EN = [
     avatar: null,
     time: 'April 2026',
     rating: 5,
-    text: 'Amazing tour, thank you so much! Timur showed us places we would never have found on our own.'
+    text: 'A wonderful tour, thank you so much! (translated from Russian)'
   },
   {
     name: 'Giorgi V.',
