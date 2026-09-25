@@ -46,25 +46,25 @@ PKG_TITLE = {
 PKG_DAYS = {EAST: 2, "tur-gruziya-3-dnya": 3, "tur-gruziya-5-dney": 5, "tur-batumi-2-dnya": 2}
 
 T = {
-    "ru": dict(h="Группа или частный выезд", g="В группе", gu="с человека",
-               gb=["до 7 человек в минивэне", "выезд по расписанию", "выгоднее всего для 1–3 человек"],
+    "ru": dict(h="Мини-группа или частный выезд", g="Мини-группа", gu="с человека",
+               gb=["до 7 человек в минивэне — не автобус на 40 мест", "гид Тимур или гид команды, выезд по расписанию", "выгоднее всего для 1–3 человек"],
                gc="Выбрать дату", p="Частный выезд", pu="за 1–2 человек", pu34="за 3–4 человек",
                pb=["только ваша компания", "время старта и остановки — под вас", "одна цена за машину и гида"],
-               pc="Узнать о частном", wa="Здравствуйте! Интересует частный выезд: {t}. Нас человек: , дата: ",
+               pc="Узнать о частном", wa="Здравствуйте! Интересует частный выезд: {t}. Нас человек: , дата: \n[{src}]",
                note="От 5 человек частный выезд не нужен — действует групповая цена за каждого. Предоплата 10% фиксирует дату, отмена бесплатна за 48 часов.",
                uh="Продлите поездку", ul="Чаще всего к этому туру добавляют:", pp="с человека", d="дн.", from_="от"),
-    "en": dict(h="Shared group or private trip", g="Shared group", gu="per person",
-               gb=["up to 7 people in a minivan", "scheduled departures", "best value for 1–3 people"],
+    "en": dict(h="Small group or private trip", g="Small group", gu="per person",
+               gb=["up to 7 people in a minivan — not a 40-seat bus", "scheduled departures with a local guide", "best value for 1–3 people"],
                gc="Pick a date", p="Private trip", pu="for 1–2 people", pu34="for 3–4 people",
                pb=["just your party", "your start time and stops", "one price for car and guide"],
-               pc="Ask about private", wa="Hi! I'm interested in a private trip: {t}. People: , date: ",
+               pc="Ask about private", wa="Hi! I'm interested in a private trip: {t}. People: , date: \n[{src}]",
                note="From 5 people a private trip isn't needed — the group rate applies per person. A 10% deposit secures the date, free cancellation up to 48 hours before.",
                uh="Extend your trip", ul="Most guests add to this tour:", pp="per person", d="days", from_="from"),
-    "ka": dict(h="ჯგუფური თუ კერძო ტური", g="ჯგუფში", gu="ერთ ადამიანზე",
-               gb=["7 ადამიანამდე მინივენში", "გასვლა განრიგით", "ყველაზე ხელსაყრელი 1–3 ადამიანისთვის"],
+    "ka": dict(h="მცირე ჯგუფი თუ კერძო ტური", g="მცირე ჯგუფი", gu="ერთ ადამიანზე",
+               gb=["7 ადამიანამდე მინივენში — არა 40-ადგილიანი ავტობუსი", "გასვლა განრიგით ადგილობრივ გიდთან ერთად", "ყველაზე ხელსაყრელი 1–3 ადამიანისთვის"],
                gc="თარიღის არჩევა", p="კერძო ტური", pu="1–2 ადამიანზე", pu34="3–4 ადამიანზე",
                pb=["მხოლოდ თქვენი კომპანია", "დაწყების დრო და გაჩერებები — თქვენზე", "ერთი ფასი მანქანასა და გიდზე"],
-               pc="კერძო ტურის შესახებ", wa="გამარჯობა! მაინტერესებს კერძო ტური: {t}. ადამიანები: , თარიღი: ",
+               pc="კერძო ტურის შესახებ", wa="გამარჯობა! მაინტერესებს კერძო ტური: {t}. ადამიანები: , თარიღი: \n[{src}]",
                note="5 ადამიანიდან კერძო ტური არ არის საჭირო — მოქმედებს ჯგუფური ფასი თითოეულზე. 10% წინასწარი გადახდა ადასტურებს თარიღს, გაუქმება უფასოა 48 საათით ადრე.",
                uh="გააგრძელეთ მოგზაურობა", ul="ამ ტურს ყველაზე ხშირად ამატებენ:", pp="ერთ ადამიანზე", d="დღე", from_=""),
 }
@@ -81,7 +81,7 @@ def price_str(lang, n):
 def block(lang, slug, tour_title):
     t, pr = T[lang], next(p for p in prices if p["slug"] == slug)
     g, p12, p34 = pr["group_price"], pr["private"]["1-2"], pr["private"]["3-4"]
-    wa = f"https://wa.me/{WA}?text=" + urllib.parse.quote(t["wa"].format(t=tour_title))
+    wa = f"https://wa.me/{WA}?text=" + urllib.parse.quote(t["wa"].format(t=tour_title, src=f"site:{lang}:{slug}:private"))
     li = lambda xs: "".join(f'<li style="margin:2px 0">{x}</li>' for x in xs)
     pk = ""
     for ps in UPSELL[slug]:
