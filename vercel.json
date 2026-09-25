@@ -2505,6 +2505,15 @@
   ],
   "headers": [
     {
+      "source": "/(.*llms.*\\.txt)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex"
+        }
+      ]
+    },
+    {
       "source": "/main.js",
       "headers": [
         {
