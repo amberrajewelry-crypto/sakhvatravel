@@ -563,8 +563,8 @@ function declineCookies(){localStorage.setItem('cookies_v4','0');gtag('consent',
 <div class="guide-img" style="position:relative;cursor:pointer" id="guide-video-wrap">
 <img src="/images/timur.webp?v=4" alt="გიდი თიმური — საქართველოს ტურების ავტორი" width="600" height="600" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;border-radius:inherit" id="guide-poster">
 <video id="guide-video" preload="none" playsinline loop style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:inherit;z-index:1;display:none">
-  <source data-src="/images/guide-video-mobile.mp4" type="video/mp4" media="(max-width:768px)">
-  <source data-src="/images/guide-video.mp4" type="video/mp4">
+  <source data-src="/images/guide-video-en-mobile.mp4" type="video/mp4" media="(max-width:768px)">
+  <source data-src="/images/guide-video-en.mp4" type="video/mp4">
 </video>
 <div id="guide-play" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.15);border-radius:inherit;transition:background .2s;z-index:2" onmouseover="this.style.background='rgba(0,0,0,.25)'" onmouseout="this.style.background='rgba(0,0,0,.15)'">
   <div style="width:64px;height:64px;border-radius:50%;background:rgba(255,255,255,.95);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(0,0,0,.25)">
@@ -2095,37 +2095,6 @@ function showRecs(a){
 }
 // Load catalog for recommendations
 if(!window.__catalogData){fetch('/data/catalog-ge.json?v=20260906').then(function(r){return r.json()}).then(function(d){window.__catalogData=d}).catch(function(){})}
-})();
-</script>
-<script>
-(function(){
-  var wrap=document.getElementById('guide-video-wrap');
-  var video;
-  var playBtn=document.getElementById('guide-play');
-  var poster=document.getElementById('guide-poster');
-  if(!wrap)return;
-  var loaded=false,playing=false;
-  function loadV(){
-    if(loaded)return;loaded=true;
-    video=document.createElement('video');
-    video.playsinline=true;video.loop=true;
-    video.style.cssText='position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:inherit;z-index:3';
-    var src=window.innerWidth<=768?'/images/guide-video-en-mobile.mp4':'/images/guide-video-en.mp4';
-    video.src=src;
-    wrap.appendChild(video);
-    video.addEventListener('play',function(){if(poster)poster.style.opacity='0';if(playBtn)playBtn.style.display='none'});
-    video.addEventListener('pause',function(){if(playBtn)playBtn.style.display='flex'});
-  }
-  function startPlay(){
-    loadV();video.muted=false;
-    video.play().then(function(){playing=true;if(poster)poster.style.opacity='0';if(playBtn)playBtn.style.display='none'}).catch(function(){
-      video.muted=true;video.play().then(function(){playing=true;if(poster)poster.style.opacity='0';if(playBtn)playBtn.style.display='none'}).catch(function(){})
-    });
-  }
-  wrap.addEventListener('click',function(){
-    if(!loaded){startPlay();return}
-    if(video.paused){video.play()}else{video.pause()}
-  });
 })();
 </script>
 <script>window.addEventListener("load",function(){var s=document.createElement("script");s.src="/js/chat-widget.js?v=41";document.body.appendChild(s)})</script>

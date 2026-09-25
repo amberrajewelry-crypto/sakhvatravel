@@ -2096,37 +2096,6 @@ function showRecs(a){
 if(!window.__catalogData){fetch('/data/catalog-en.json?v=20260906').then(function(r){return r.json()}).then(function(d){window.__catalogData=d}).catch(function(){})}
 })();
 </script>
-<script>
-(function(){
-  var wrap=document.getElementById('guide-video-wrap');
-  var video;
-  var playBtn=document.getElementById('guide-play');
-  var poster=document.getElementById('guide-poster');
-  if(!wrap)return;
-  var loaded=false,playing=false;
-  function loadV(){
-    if(loaded)return;loaded=true;
-    video=document.createElement('video');
-    video.playsinline=true;video.loop=true;
-    video.style.cssText='position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:inherit;z-index:3';
-    var src=window.innerWidth<=768?'/images/guide-video-en-mobile.mp4':'/images/guide-video-en.mp4';
-    video.src=src;
-    wrap.appendChild(video);
-    video.addEventListener('play',function(){if(poster)poster.style.opacity='0';if(playBtn)playBtn.style.display='none'});
-    video.addEventListener('pause',function(){if(playBtn)playBtn.style.display='flex'});
-  }
-  function startPlay(){
-    loadV();video.muted=false;
-    video.play().then(function(){playing=true;if(poster)poster.style.opacity='0';if(playBtn)playBtn.style.display='none'}).catch(function(){
-      video.muted=true;video.play().then(function(){playing=true;if(poster)poster.style.opacity='0';if(playBtn)playBtn.style.display='none'}).catch(function(){})
-    });
-  }
-  wrap.addEventListener('click',function(){
-    if(!loaded){startPlay();return}
-    if(video.paused){video.play()}else{video.pause()}
-  });
-})();
-</script>
 <script>window.addEventListener("load",function(){var s=document.createElement("script");s.src="/js/chat-widget.js?v=41";document.body.appendChild(s)})</script>
 </body>
 </html>
