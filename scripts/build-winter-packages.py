@@ -49,7 +49,7 @@ UI = {
 
 PACKAGES = {
     "tur-gudauri-kazbegi-2-dnya": {
-        "price": 580, "img": "gudauri-tour-600", "img_wh": (600, 400), "video": "gudauri-drone.mp4", "night_place": {
+        "price": 580, "img": "winter-gudauri-kazbegi", "img_wh": (1024, 538), "video": "gudauri-drone.mp4", "night_place": {
             "ru": "Гудаури", "en": "Gudauri", "ge": "გუდაური"},
         "ru": {
             "title": "Гудаури и Казбеги за 2 дня — зимний тур с ночёвкой от ₾580",
@@ -259,7 +259,7 @@ PACKAGES = {
         },
     },
     "tur-borjomi-bakuriani-2-dnya": {
-        "price": 520, "img": "borjomi-tour-600", "img_wh": (800, 450), "video": "borjomi-drone.mp4", "night_place": {
+        "price": 520, "img": "winter-borjomi-bakuriani", "img_wh": (1024, 538), "video": "borjomi-drone.mp4", "night_place": {
             "ru": "Боржоми", "en": "Borjomi", "ge": "ბორჯომი"},
         "ru": {
             "title": "Боржоми и Бакуриани за 2 дня — зимний тур с ночёвкой от ₾520",
