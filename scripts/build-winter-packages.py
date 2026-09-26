@@ -564,7 +564,7 @@ def build_main(lang, slug, pk, c):
     rel = " · ".join(f'<a href="{h}">{e(t)}</a>' for h, t in RELATED[slug][lang])
     li = lambda xs: "".join(f"<li>{e(x)}</li>" for x in xs)
     return f"""<section class="page-hero">
-<img alt="{e(c['name'])}" fetchpriority="high" height="400" src="/images/{pk['img']}.webp" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0" width="600"/>
+<img alt="{e(c['name'])}" fetchpriority="high" height="400" src="/images/{pk['img']}.webp?v=2" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0" width="600"/>
 <div aria-hidden="true" style="position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(0,0,0,.1) 0%,rgba(0,0,0,.35) 45%,rgba(0,0,0,.72) 100%)"></div>
 <div class="hero-inner">
 <h1 class="hero-h1">{e(c['h1'])}</h1>
@@ -579,7 +579,7 @@ def build_main(lang, slug, pk, c):
 <div class="key-fact" style="background:#f0f7f4;border-left:4px solid #2E7D32;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0;font-size:16px;line-height:1.6"><strong>{e(u['short'])}</strong> {e(c['short'])}</div>
 <p>{e(c['intro'])}</p>
 <figure class="tour-video" style="position:relative;margin:26px 0;border-radius:16px;overflow:hidden;aspect-ratio:16/9;background:#0F241A">
-<video muted loop playsinline autoplay preload="none" poster="/images/{pk['img']}.webp" aria-label="{e(c['name'])}" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover"><source src="/images/{pk['video']}" type="video/mp4"></video>
+<video muted loop playsinline autoplay preload="none" poster="/images/{pk['img']}.webp?v=2" aria-label="{e(c['name'])}" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover"><source src="/images/{pk['video']}" type="video/mp4"></video>
 </figure>
 </div></div>
 <section class="section" style="background:#fff"><div class="sec-inner">
@@ -664,6 +664,7 @@ def build_page(lang, slug, pk):
     head = head.replace("tbilisi-kazbegi-kakheti-tour-600", pk["img"])
     out = build_head(head, lang, slug, pk, c) + body
     out = out.replace(TPL_SLUG, slug)
+    out = out.replace(f'/images/{pk["img"]}.webp"', f'/images/{pk["img"]}.webp?v=2"')
     dst = ROOT / PREFIX[lang].lstrip("/") / "ekskursiya" / slug / "index.html"
     dst.parent.mkdir(parents=True, exist_ok=True)
     dst.write_text(out)
