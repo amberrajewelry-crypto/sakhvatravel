@@ -66,6 +66,8 @@ PAGE = {KZ: [
 GLOBAL = [  # repeated snippets across the site
     ("Трансфер Тбилиси — Батуми от ₾280 за автомобиль", "Трансфер Тбилиси — Батуми от ₾280 с человека или ₾650 за всю машину"),
     ("private car with a driver: from ₾190,", "transfer with a driver: from ₾190 per person or ₾450 for the whole car,"),
+    ('">private car with a driver</a>: from ₾190, door-to-door pickup, any departure time, up to 4 passengers, free photo stops.',
+     '">transfer with a driver</a>: from ₾190 per person or ₾450 for the whole car, door-to-door pickup, any departure time, free photo stops.'),
 ]
 
 
