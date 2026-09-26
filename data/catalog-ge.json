@@ -1079,6 +1079,40 @@
    "url": "/ge/ekskursiya/tur-kazbegi-kakheti-2-dnya/"
   },
   {
+   "slug": "tur-borjomi-bakuriani-2-dnya",
+   "title": "ბორჯომი + ბაკურიანი — ზამთრის ორდღიანი ტური",
+   "description": "ზამთრის ორდღიანი ტური თბილისიდან ₾520-დან ერთ ადამიანზე: ბორჯომის თბილი გოგირდის აუზები თოვლში, ღამე ბორჯომში, „კუკუშკა“ და ბაკურიანი. სასტუმრო შედის ფასში.",
+   "price": 520,
+   "currency": "GEL",
+   "hours": 0,
+   "days": 2,
+   "durationText": "2 დღე",
+   "image": "/images/borjomi-tour-600.webp",
+   "format": "individual",
+   "tags": [
+    "მრავალდღიანი"
+   ],
+   "type": "tour",
+   "url": "/ge/ekskursiya/tur-borjomi-bakuriani-2-dnya/"
+  },
+  {
+   "slug": "tur-gudauri-kazbegi-2-dnya",
+   "title": "გუდაური + ყაზბეგი — ზამთრის ორდღიანი ტური",
+   "description": "ზამთრის ორდღიანი ტური თბილისიდან ₾580-დან ერთ ადამიანზე: თხილამური გუდაურში, ღამე მთაში, ჯვრის უღელტეხილი და თოვლიანი გერგეტი. სასტუმრო საუზმით შედის ფასში.",
+   "price": 580,
+   "currency": "GEL",
+   "hours": 0,
+   "days": 2,
+   "durationText": "2 დღე",
+   "image": "/images/gudauri-tour-600.webp",
+   "format": "individual",
+   "tags": [
+    "მრავალდღიანი"
+   ],
+   "type": "tour",
+   "url": "/ge/ekskursiya/tur-gudauri-kazbegi-2-dnya/"
+  },
+  {
    "slug": "tur-svaneti-4-dnya",
    "title": "სვანეთის ტური 2026",
    "description": "4–5-დღიანი ტური სვანეთში თბილისიდან ₾750-დან. მესტია, სვანური კოშკები, ჭალაათის მყინვარი, უშგული (2200 მ). ღიაა მაისი–ოქტომბერი. კერძო ტური.",
