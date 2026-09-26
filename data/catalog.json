@@ -1080,6 +1080,40 @@
       "url": "/ekskursiya/tur-kazbegi-kakheti-2-dnya/"
     },
     {
+      "slug": "tur-borjomi-bakuriani-2-dnya",
+      "title": "Боржоми + Бакуриани за 2 дня зимой",
+      "description": "Зимний тур на 2 дня из Тбилиси от ₾520 с человека: тёплые серные бассейны Боржоми под снегом, ночь в Боржоми, узкоколейка «Кукушка» и Бакуриани. Отель включён.",
+      "price": 520,
+      "currency": "GEL",
+      "hours": 0,
+      "days": 2,
+      "durationText": "2 дня",
+      "image": "/images/borjomi-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "Многодневные"
+      ],
+      "type": "tour",
+      "url": "/ekskursiya/tur-borjomi-bakuriani-2-dnya/"
+    },
+    {
+      "slug": "tur-gudauri-kazbegi-2-dnya",
+      "title": "Гудаури + Казбеги за 2 дня зимой",
+      "description": "Зимний тур на 2 дня из Тбилиси от ₾580 с человека: лыжи или прогулка в Гудаури, ночь в горах, Крестовый перевал и Гергети в снегу. Отель с завтраком включён.",
+      "price": 580,
+      "currency": "GEL",
+      "hours": 0,
+      "days": 2,
+      "durationText": "2 дня",
+      "image": "/images/gudauri-tour-600.webp",
+      "format": "individual",
+      "tags": [
+        "Многодневные"
+      ],
+      "type": "tour",
+      "url": "/ekskursiya/tur-gudauri-kazbegi-2-dnya/"
+    },
+    {
       "slug": "tur-svaneti-4-dnya",
       "title": "Тбилиси — Сванетия тур с гидом",
       "description": "Тур Тбилиси — Сванетия от ₾750. Перелёт или дорога, Местиа, башни, ледники, горные маршруты. 4–5 дней.",
@@ -1426,8 +1460,8 @@
   ],
   "stats": {
     "totalExcursions": 80,
-    "totalTours": 7,
-    "total": 87,
+    "totalTours": 10,
+    "total": 81,
     "skippedNoImage": 20
   },
   "generated": "2026-06-24T18:30:00.000Z"

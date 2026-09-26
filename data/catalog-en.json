@@ -1079,6 +1079,40 @@
    "url": "/en/ekskursiya/tur-kazbegi-kakheti-2-dnya/"
   },
   {
+   "slug": "tur-borjomi-bakuriani-2-dnya",
+   "title": "Borjomi & Bakuriani 2-Day Winter Tour",
+   "description": "2-day winter tour from Tbilisi from ₾520 per person: warm sulfur pools of Borjomi in the snow, a night in Borjomi, the Kukushka narrow-gauge train and Bakuriani.",
+   "price": 520,
+   "currency": "GEL",
+   "hours": 0,
+   "days": 2,
+   "durationText": "2 days",
+   "image": "/images/borjomi-tour-600.webp",
+   "format": "individual",
+   "tags": [
+    "Multi-day"
+   ],
+   "type": "tour",
+   "url": "/en/ekskursiya/tur-borjomi-bakuriani-2-dnya/"
+  },
+  {
+   "slug": "tur-gudauri-kazbegi-2-dnya",
+   "title": "Gudauri & Kazbegi 2-Day Winter Tour",
+   "description": "2-day winter tour from Tbilisi from ₾580 per person: skiing or a snow day in Gudauri, a night in the mountains, the Cross Pass and snowy Gergeti. Hotel included.",
+   "price": 580,
+   "currency": "GEL",
+   "hours": 0,
+   "days": 2,
+   "durationText": "2 days",
+   "image": "/images/gudauri-tour-600.webp",
+   "format": "individual",
+   "tags": [
+    "Multi-day"
+   ],
+   "type": "tour",
+   "url": "/en/ekskursiya/tur-gudauri-kazbegi-2-dnya/"
+  },
+  {
    "slug": "tur-svaneti-4-dnya",
    "title": "Tbilisi to Svaneti Tour",
    "description": "Tbilisi to Svaneti tour — Mestia, Ushguli, Caucasus glaciers. 4-5 day adventure.",
