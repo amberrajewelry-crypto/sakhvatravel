@@ -102,7 +102,7 @@ def block(lang, slug, tour_title):
 <span style="font-size:28px;font-weight:700;color:#1A3D2E">{price_str(lang, p12)} <span style="font-size:14px;font-weight:400;color:#6B7280">{t['pu']}</span></span>
 <span style="font-size:14px;color:#374151">{price_str(lang, p34)} {t['pu34']}</span>
 <ul style="margin:0;padding-left:18px;font-size:14px;color:#374151">{li(t['pb'])}</ul>
-<a href="{wa}" target="_blank" rel="noopener" data-track="wa-private" style="margin-top:auto;text-align:center;background:#25D366;color:#fff;padding:12px 18px;border-radius:9999px;font-weight:700;text-decoration:none">{t['pc']}</a></div>
+<a href="{wa}" target="_blank" rel="noopener" data-track="wa-private" style="margin-top:auto;text-align:center;background:#0E7C61;color:#fff;padding:12px 18px;border-radius:9999px;font-weight:700;text-decoration:none">{t['pc']}</a></div>
 </div>
 <p style="font-size:13px;color:#6B7280;margin:10px 0 0">{t['note']}</p>
 <h3 style="font-size:20px;margin:24px 0 6px;color:#1A3D2E">{t['uh']}</h3>
