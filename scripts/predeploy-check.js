@@ -52,11 +52,11 @@ function checkHTML(filePath) {
   Object.entries(seo).forEach(([k,v]) => v ? ok(`SEO: ${k}`) : warn(`SEO отсутствует: ${k}`));
 
   // 4. Обязательные UI элементы (для страниц туров)
-  if (filePath.includes('/tour/')) {
+  if (filePath.includes('/ekskursiya/')) {
     const ui = {
-      'burger menu':       html.includes('closeDrawer'),
-      'footer':            html.includes('id="footer"'),
-      'breadcrumbs':       html.includes('breadcrumb'),
+      'burger menu':       /closeDrawer|id="burger"|class="[^"]*(burger|nav-toggle|menu-btn|hamburger)/.test(html),
+      'footer':            html.includes('<footer'),
+      'breadcrumbs':       /BreadcrumbList|breadcrumb/i.test(html),
       'WhatsApp CTA':      html.includes('wa.me/995511272623'),
     };
     Object.entries(ui).forEach(([k,v]) => v ? ok(`UI: ${k}`) : err(`UI отсутствует: ${k}`));
@@ -111,7 +111,7 @@ function checkHTML(filePath) {
 
   // 7. Размер файла (главная может быть крупнее)
   const kb = Buffer.byteLength(html)/1024;
-  const isMain = filePath.endsWith('index.html') && !filePath.includes('/tour/') && !filePath.includes('/blog/');
+  const isMain = filePath.endsWith('index.html') && !filePath.includes('/ekskursiya/') && !filePath.includes('/blog/');
   // Limit is UNCOMPRESSED size; Vercel serves brotli/gzip (~1/6 on the wire).
   // Main pages carry a large JSON-LD graph (~67KB) + inlined critical JS, so 360KB
   // uncompressed (~60KB transferred) is the ceiling; real bloat (400KB+) still fails.
@@ -138,11 +138,13 @@ if (args.length > 0) {
   filesToCheck = args.map(a => path.resolve(a));
 } else {
   // Проверяем все ключевые файлы
+  // Home pages + every tour page in ru/en/ge (tours live in <lang>/ekskursiya/<slug>/)
+  const tourDirs = ['ekskursiya', 'en/ekskursiya', 'ge/ekskursiya'].map(d => path.join(ROOT, d));
   filesToCheck = [
-    path.join(ROOT, 'index.html'),
-    ...fs.readdirSync(path.join(ROOT, 'tour'))
-      .map(d => path.join(ROOT, 'tour', d, 'index.html'))
-      .filter(f => fs.existsSync(f)),
+    ...['index.html', 'en/index.html', 'ge/index.html'].map(f => path.join(ROOT, f)),
+    ...tourDirs.flatMap(dir => fs.readdirSync(dir)
+      .map(d => path.join(dir, d, 'index.html'))
+      .filter(f => fs.existsSync(f))),
   ];
 }
 
