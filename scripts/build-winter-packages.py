@@ -48,7 +48,7 @@ UI = {
 
 PACKAGES = {
     "tur-gudauri-kazbegi-2-dnya": {
-        "price": 580, "img": "gudauri-tour-600", "video": "gudauri-drone.mp4", "night_place": {
+        "price": 580, "img": "gudauri-tour-600", "img_wh": (600, 400), "video": "gudauri-drone.mp4", "night_place": {
             "ru": "Гудаури", "en": "Gudauri", "ge": "გუდაური"},
         "ru": {
             "title": "Гудаури и Казбеги за 2 дня — зимний тур с ночёвкой от ₾580",
@@ -258,7 +258,7 @@ PACKAGES = {
         },
     },
     "tur-borjomi-bakuriani-2-dnya": {
-        "price": 520, "img": "borjomi-tour-600", "video": "bakuriani-drone.mp4", "night_place": {
+        "price": 520, "img": "borjomi-tour-600", "img_wh": (800, 450), "video": "bakuriani-drone.mp4", "night_place": {
             "ru": "Боржоми", "en": "Borjomi", "ge": "ბორჯომი"},
         "ru": {
             "title": "Боржоми и Бакуриани за 2 дня — зимний тур с ночёвкой от ₾520",
@@ -600,6 +600,11 @@ def build_head(head, lang, slug, pk, c):
     for attr in ('property="og:title"', 'name="twitter:title"'):
         head = re.sub(rf'<meta content="[^"]*" {attr}/>', f'<meta content="{e(c["title"])}" {attr}/>', head)
     head = re.sub(r'<meta content="[^"]*" property="og:image"/>', f'<meta content="{img}" property="og:image"/>', head)
+    head = re.sub(r'<meta content="[^"]*" property="og:image:alt"/>',
+                  f'<meta content="{e(c["name"])}" property="og:image:alt"/>', head)
+    w, h = pk["img_wh"]
+    head = re.sub(r'<meta content="\d+" property="og:image:width"/>', f'<meta content="{w}" property="og:image:width"/>', head)
+    head = re.sub(r'<meta content="\d+" property="og:image:height"/>', f'<meta content="{h}" property="og:image:height"/>', head)
     head = re.sub(r'<meta content="[^"]*" name="twitter:image"/>',
                   f'<meta content="{SITE}/images/{pk["img"]}.webp" name="twitter:image"/>', head)
     blocks = re.findall(r'<script type="application/ld\+json">.*?</script>', head, flags=re.S)
