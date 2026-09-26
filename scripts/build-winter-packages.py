@@ -49,14 +49,14 @@ UI = {
 
 PACKAGES = {
     "tur-gudauri-kazbegi-2-dnya": {
-        "price": 580, "img": "winter-gudauri-kazbegi", "img_wh": (1024, 538), "video": "gudauri-drone.mp4", "night_place": {
+        "price": 520, "img": "gudauri-zima", "img_wh": (1600, 840), "video": "gudauri-drone.mp4", "night_place": {
             "ru": "Гудаури", "en": "Gudauri", "ge": "გუდაური"},
         "ru": {
-            "title": "Гудаури и Казбеги за 2 дня — зимний тур с ночёвкой от ₾580",
+            "title": "Гудаури и Казбеги за 2 дня — зимний тур с ночёвкой от ₾520",
             "h1": "Гудаури + Казбеги: зимний тур на 2 дня",
             "name": "Гудаури + Казбеги за 2 дня зимой",
-            "desc": "Зимний тур на 2 дня из Тбилиси от ₾580: лыжи в Гудаури, ночь в горах, Крестовый перевал и Гергети в снегу. Отель с завтраком включён.",
-            "short": "Гудаури + Казбеги — зимний тур на 2 дня из Тбилиси с ночёвкой в Гудаури, от ₾580 "
+            "desc": "Зимний тур на 2 дня из Тбилиси от ₾520: лыжи в Гудаури, ночь в горах, Крестовый перевал и Гергети в снегу. Отель с завтраком включён.",
+            "short": "Гудаури + Казбеги — зимний тур на 2 дня из Тбилиси с ночёвкой в Гудаури, от ₾520 "
                      "с человека, группа до 7 человек. День 1 — склоны Гудаури, день 2 — Крестовый "
                      "перевал, Степанцминда и Гергети. Сезон — обычно с конца декабря до начала апреля.",
             "intro": "Однодневной поездки в Гудаури зимой мало: 4–5 часов дороги туда-обратно съедают "
@@ -103,10 +103,10 @@ PACKAGES = {
             "faq": [
                 ("Чем этот тур отличается от однодневной экскурсии в Гудаури?",
                  "Однодневная экскурсия в Гудаури стоит от ₾225 и возвращается в Тбилиси вечером — на "
-                 "склонах остаётся 4–5 часов. В двухдневном туре за ₾580 вы ночуете в Гудаури, "
+                 "склонах остаётся 4–5 часов. В двухдневном туре за ₾520 вы ночуете в Гудаури, "
                  "катаетесь полный день и на второй день видите Казбеги и Гергети."),
                 ("Сколько стоит тур Гудаури + Казбеги на 2 дня и что входит?",
-                 "От ₾580 с человека: транспорт на оба дня, гид-водитель и ночь в отеле Гудаури с "
+                 "От ₾520 с человека: транспорт на оба дня, гид-водитель и ночь в отеле Гудаури с "
                  "завтраком. Ски-пасс, прокат, обеды и джип до Гергети оплачиваются на месте."),
                 ("Нужно ли уметь кататься на лыжах?",
                  "Нет. Новичкам берём инструктора на 1–2 часа, а тем, кто не катается, предлагаем "
@@ -121,12 +121,12 @@ PACKAGES = {
             ],
         },
         "en": {
-            "title": "Gudauri & Kazbegi 2-Day Winter Tour from Tbilisi — ₾580",
+            "title": "Gudauri & Kazbegi 2-Day Winter Tour from Tbilisi — ₾520",
             "h1": "Gudauri & Kazbegi 2-Day Winter Tour",
             "name": "Gudauri & Kazbegi 2-Day Winter Tour",
-            "desc": "2-day winter tour from Tbilisi from ₾580 per person: skiing in Gudauri, a night in the mountains, the Cross Pass and snowy Gergeti. Hotel included.",
+            "desc": "2-day winter tour from Tbilisi from ₾520 per person: skiing in Gudauri, a night in the mountains, the Cross Pass and snowy Gergeti. Hotel included.",
             "short": "Gudauri & Kazbegi is a 2-day winter tour from Tbilisi with a night in Gudauri, "
-                     "from ₾580 per person, up to 7 people. Day 1 — Gudauri slopes, day 2 — the Cross "
+                     "from ₾520 per person, up to 7 people. Day 1 — Gudauri slopes, day 2 — the Cross "
                      "Pass, Stepantsminda and Gergeti. Season: usually late December to early April.",
             "intro": "A Gudauri day trip in winter is short: 4–5 hours on the road eat half of your "
                      "ski time. On this 2-day tour you sleep next to the slopes, ski a full day, and "
@@ -171,10 +171,10 @@ PACKAGES = {
             "faq": [
                 ("How is this different from the Gudauri day trip?",
                  "The Gudauri day trip costs from ₾225 and returns to Tbilisi the same evening, "
-                 "leaving 4–5 hours on the slopes. The 2-day tour (₾580) includes a night in Gudauri, "
+                 "leaving 4–5 hours on the slopes. The 2-day tour (₾520) includes a night in Gudauri, "
                  "a full ski day and Kazbegi with Gergeti on day two."),
                 ("How much is the Gudauri & Kazbegi 2-day tour and what is included?",
-                 "From ₾580 per person: transport for both days, a driver-guide and a night in a "
+                 "From ₾520 per person: transport for both days, a driver-guide and a night in a "
                  "Gudauri hotel with breakfast. Ski pass, rental, meals and the 4x4 to Gergeti are "
                  "paid on the spot."),
                 ("Do I need to know how to ski?",
@@ -190,12 +190,12 @@ PACKAGES = {
             ],
         },
         "ge": {
-            "title": "გუდაური და ყაზბეგი 2 დღეში — ზამთრის ტური ₾580-დან",
+            "title": "გუდაური და ყაზბეგი 2 დღეში — ზამთრის ტური ₾520-დან",
             "h1": "გუდაური + ყაზბეგი: ზამთრის ტური 2 დღით",
             "name": "გუდაური + ყაზბეგი — ზამთრის ორდღიანი ტური",
-            "desc": "ზამთრის ორდღიანი ტური თბილისიდან ₾580-დან: თხილამური გუდაურში, ღამე მთაში, ჯვრის უღელტეხილი და თოვლიანი გერგეტი. სასტუმრო შედის.",
+            "desc": "ზამთრის ორდღიანი ტური თბილისიდან ₾520-დან: თხილამური გუდაურში, ღამე მთაში, ჯვრის უღელტეხილი და თოვლიანი გერგეტი. სასტუმრო შედის.",
             "short": "გუდაური + ყაზბეგი — ზამთრის ორდღიანი ტური თბილისიდან, ღამისთევით გუდაურში, "
-                     "₾580-დან ერთ ადამიანზე, 7 ადამიანამდე. 1-ლი დღე — გუდაურის ფერდობები, მე-2 დღე — "
+                     "₾520-დან ერთ ადამიანზე, 7 ადამიანამდე. 1-ლი დღე — გუდაურის ფერდობები, მე-2 დღე — "
                      "ჯვრის უღელტეხილი, სტეფანწმინდა და გერგეტი. სეზონი: ჩვეულებრივ დეკემბრის ბოლოდან "
                      "აპრილის დასაწყისამდე.",
             "intro": "ზამთარში გუდაურში ერთდღიანი მოგზაურობა მოკლეა: 4–5 საათი გზაში სრიალის დროის "
@@ -240,10 +240,10 @@ PACKAGES = {
             "faq": [
                 ("რით განსხვავდება ეს ტური გუდაურის ერთდღიანი ექსკურსიისგან?",
                  "ერთდღიანი ექსკურსია გუდაურში ₾225-დან ღირს და საღამოს თბილისში ბრუნდება — "
-                 "ფერდობზე 4–5 საათი რჩება. ორდღიან ტურში (₾580) ღამეს გუდაურში ათევთ, მთელ დღეს "
+                 "ფერდობზე 4–5 საათი რჩება. ორდღიან ტურში (₾520) ღამეს გუდაურში ათევთ, მთელ დღეს "
                  "სრიალებთ და მეორე დღეს ყაზბეგსა და გერგეტს ნახულობთ."),
                 ("რა ღირს გუდაური + ყაზბეგის ორდღიანი ტური და რა შედის ფასში?",
-                 "₾580-დან ერთ ადამიანზე: ტრანსპორტი ორივე დღეს, გიდი-მძღოლი და ღამე გუდაურის "
+                 "₾520-დან ერთ ადამიანზე: ტრანსპორტი ორივე დღეს, გიდი-მძღოლი და ღამე გუდაურის "
                  "სასტუმროში საუზმით. სკიპასი, აღჭურვილობა, კვება და ჯიპი ადგილზე იხდება."),
                 ("უნდა ვიცოდე თხილამურებით სრიალი?",
                  "არა. დამწყებთათვის ინსტრუქტორს ვიღებთ 1–2 საათით, ვინც არ სრიალებს — საბაგირო, "
@@ -259,7 +259,7 @@ PACKAGES = {
         },
     },
     "tur-borjomi-bakuriani-2-dnya": {
-        "price": 520, "img": "winter-borjomi-bakuriani", "img_wh": (1024, 538), "video": "borjomi-drone.mp4", "night_place": {
+        "price": 520, "img": "bakuriani-zima", "img_wh": (1600, 840), "video": "borjomi-drone.mp4", "night_place": {
             "ru": "Боржоми", "en": "Borjomi", "ge": "ბორჯომი"},
         "ru": {
             "title": "Боржоми и Бакуриани за 2 дня — зимний тур с ночёвкой от ₾520",
@@ -464,16 +464,19 @@ RELATED = {
         "ru": [("/ekskursiya/ekskursiya-gudauri-iz-tbilisi/", "Гудаури за 1 день"),
                ("/ekskursiya/ekskursiya-kazbegi-iz-tbilisi/", "Казбеги за 1 день"),
                ("/ekskursiya/tur-kazbegi-kakheti-2-dnya/", "Казбеги + Кахетия за 2 дня"),
+               ("/ekskursiya/tur-gruziya-noviy-god/", "Новогодний тур на 5–7 дней"),
                ("/tury-v-gruziyu-zimoy/", "Все туры в Грузию зимой"),
                ("/blog/kazbegi-zimoy/", "Казбеги зимой: дорога и погода")],
         "en": [("/en/ekskursiya/ekskursiya-gudauri-iz-tbilisi/", "Gudauri day trip"),
                ("/en/ekskursiya/ekskursiya-kazbegi-iz-tbilisi/", "Kazbegi day trip"),
                ("/en/ekskursiya/tur-kazbegi-kakheti-2-dnya/", "Kazbegi + Kakheti 2 days"),
+               ("/en/ekskursiya/tur-gruziya-noviy-god/", "New Year tour, 5–7 days"),
                ("/en/blog/kazbegi-in-winter/", "Kazbegi in winter guide"),
                ("/en/tury-v-gruziyu-zimoy/", "All winter tours in Georgia")],
         "ge": [("/ge/ekskursiya/ekskursiya-gudauri-iz-tbilisi/", "გუდაური 1 დღეში"),
                ("/ge/ekskursiya/ekskursiya-kazbegi-iz-tbilisi/", "ყაზბეგი 1 დღეში"),
                ("/ge/ekskursiya/tur-kazbegi-kakheti-2-dnya/", "ყაზბეგი + კახეთი 2 დღეში"),
+               ("/ge/ekskursiya/tur-gruziya-noviy-god/", "ახალი წლის ტური 5–7 დღე"),
                ("/ge/tury-v-gruziyu-zimoy/", "ზამთრის ტურები"),
                ("/ge/blog/kazbegi-in-winter/", "ყაზბეგი ზამთარში")],
     },
