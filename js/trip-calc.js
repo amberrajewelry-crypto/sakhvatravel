@@ -5,7 +5,7 @@
 (function (root) {
   'use strict';
   /* gen:start */
-  var DATA = {"rub": 32.4, "rateDate": "24.09.2026", "rateSrc": "Нацбанк Грузии", "tours": [{"slug": "ekskursiya-kazbegi-iz-tbilisi", "name": "Казбеги", "price": 175}, {"slug": "ekskursiya-kakheti-iz-tbilisi", "name": "Кахетия", "price": 170}, {"slug": "ekskursiya-mtskheta-iz-tbilisi", "name": "Мцхета", "price": 98}, {"slug": "ekskursiya-stary-tbilisi", "name": "Старый Тбилиси", "price": 135}, {"slug": "nochnaya-ekskursiya-tbilisi", "name": "Ночной Тбилиси", "price": 100}, {"slug": "ekskursiya-david-gareji", "name": "Давид-Гареджа", "price": 225}, {"slug": "degustatsiya-vina-kakheti", "name": "Дегустация вина", "price": 225}, {"slug": "ekskursiya-borjomi-iz-tbilisi", "name": "Боржоми", "price": 178}]};
+  var DATA = {"rub": 32.3, "rateDate": "25.09.2026", "rateSrc": "Нацбанк Грузии", "tours": [{"slug": "ekskursiya-kazbegi-iz-tbilisi", "name": "Казбеги", "price": 175}, {"slug": "ekskursiya-kakheti-iz-tbilisi", "name": "Кахетия", "price": 170}, {"slug": "ekskursiya-mtskheta-iz-tbilisi", "name": "Мцхета", "price": 98}, {"slug": "ekskursiya-stary-tbilisi", "name": "Старый Тбилиси", "price": 135}, {"slug": "nochnaya-ekskursiya-tbilisi", "name": "Ночной Тбилиси", "price": 100}, {"slug": "ekskursiya-david-gareji", "name": "Давид-Гареджа", "price": 225}, {"slug": "degustatsiya-vina-kakheti", "name": "Дегустация вина", "price": 225}, {"slug": "ekskursiya-borjomi-iz-tbilisi", "name": "Боржоми", "price": 178}]};
   /* gen:end */
   // [min, max] in GEL. room = one double room per night; the rest per person per day
   var LEVELS = {
