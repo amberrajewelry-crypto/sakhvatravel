@@ -555,7 +555,7 @@ def build_main(lang, slug, pk, c):
     wa_text = f"{u['wa']} {c['name']}".replace(" ", "+")
     stats = "".join(
         f'<div class="stat-item"><span class="stat-val">{v}</span><span class="stat-lab" style="color:rgba(255,255,255,.9);text-shadow:0 1px 3px rgba(0,0,0,.6)">{lab}</span></div>'
-        for v, lab in [(f"{'от ' if lang == 'ru' else ''}₾{p}", u["pp"]), (u["days"], u["dur"]),
+        for v, lab in [(PRICE_FMT[lang].format(p=p), u["pp"]), (u["days"], u["dur"]),
                        (u["grp"], u["grp_l"]), (e(pk["night_place"][lang]), u["night"]),
                        ("14+", u["cancel"])])
     days = "".join(

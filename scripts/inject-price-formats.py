@@ -95,12 +95,12 @@ def block(lang, slug, tour_title):
 <h2 style="font-size:24px;margin:0 0 14px;color:#1A3D2E">{t['h']}</h2>
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px">
 <div style="{CARD}"><span style="font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#6B7280">{t['g']}</span>
-<span style="font-size:28px;font-weight:700;color:#1A3D2E">₾{g} <span style="font-size:14px;font-weight:400;color:#6B7280">{t['gu']}</span></span>
+<span style="font-size:28px;font-weight:700;color:#1A3D2E">{price_str(lang, g)} <span style="font-size:14px;font-weight:400;color:#6B7280">{t['gu']}</span></span>
 <ul style="margin:0;padding-left:18px;font-size:14px;color:#374151">{li(t['gb'])}</ul>
 <a href="/booking/?tour={slug}" style="margin-top:auto;text-align:center;background:#1A3D2E;color:#fff;padding:12px 18px;border-radius:9999px;font-weight:700;text-decoration:none">{t['gc']}</a></div>
 <div style="{CARD};border-color:#F59E0B"><span style="font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#B45309">{t['p']}</span>
-<span style="font-size:28px;font-weight:700;color:#1A3D2E">₾{p12} <span style="font-size:14px;font-weight:400;color:#6B7280">{t['pu']}</span></span>
-<span style="font-size:14px;color:#374151">₾{p34} {t['pu34']}</span>
+<span style="font-size:28px;font-weight:700;color:#1A3D2E">{price_str(lang, p12)} <span style="font-size:14px;font-weight:400;color:#6B7280">{t['pu']}</span></span>
+<span style="font-size:14px;color:#374151">{price_str(lang, p34)} {t['pu34']}</span>
 <ul style="margin:0;padding-left:18px;font-size:14px;color:#374151">{li(t['pb'])}</ul>
 <a href="{wa}" target="_blank" rel="noopener" data-track="wa-private" style="margin-top:auto;text-align:center;background:#25D366;color:#fff;padding:12px 18px;border-radius:9999px;font-weight:700;text-decoration:none">{t['pc']}</a></div>
 </div>
