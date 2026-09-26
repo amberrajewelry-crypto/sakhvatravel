@@ -33,22 +33,22 @@ CARD = """
 """
 
 CARDS = {
-    "ru": [dict(href="/ekskursiya/tur-gudauri-kazbegi-2-dnya/", img="winter-gudauri-kazbegi.webp?v=2",
+    "ru": [dict(href="/ekskursiya/tur-gudauri-kazbegi-2-dnya/", img="gudauri-zima.webp",
                 badge="2 дня · ночёвка", h3="Гудаури + Казбеги за 2 дня",
                 desc="День на склонах Гудаури, ночь в горах, утром — Крестовый перевал и Гергети в снегу. "
                      "Отель с завтраком включён, план Б при закрытом перевале.",
-                dur="2 дня", night="ночь в Гудаури", price="от ₾580", pp="/ чел", more="Подробнее"),
-           dict(href="/ekskursiya/tur-borjomi-bakuriani-2-dnya/", img="winter-borjomi-bakuriani.webp?v=2",
+                dur="2 дня", night="ночь в Гудаури", price="от ₾520", pp="/ чел", more="Подробнее"),
+           dict(href="/ekskursiya/tur-borjomi-bakuriani-2-dnya/", img="bakuriani-zima.webp",
                 badge="2 дня · семьям", h3="Боржоми + Бакуриани за 2 дня",
                 desc="Тёплые серные бассейны Боржоми под открытым небом, ночь в Боржоми, утром — санки и "
                      "пологие трассы Бакуриани. Без высоких перевалов.",
                 dur="2 дня", night="ночь в Боржоми", price="от ₾520", pp="/ чел", more="Подробнее")],
-    "ge": [dict(href="/ge/ekskursiya/tur-gudauri-kazbegi-2-dnya/", img="winter-gudauri-kazbegi.webp?v=2",
+    "ge": [dict(href="/ge/ekskursiya/tur-gudauri-kazbegi-2-dnya/", img="gudauri-zima.webp",
                 badge="2 დღე · ღამისთევა", h3="გუდაური + ყაზბეგი 2 დღეში",
                 desc="დღე გუდაურის ფერდობებზე, ღამე მთაში, დილით — ჯვრის უღელტეხილი და თოვლიანი გერგეტი. "
                      "სასტუმრო საუზმით შედის ფასში.",
-                dur="2 დღე", night="ღამე გუდაურში", price="₾580", pp="/ კაცი", more="დეტალურად"),
-           dict(href="/ge/ekskursiya/tur-borjomi-bakuriani-2-dnya/", img="winter-borjomi-bakuriani.webp?v=2",
+                dur="2 დღე", night="ღამე გუდაურში", price="₾520", pp="/ კაცი", more="დეტალურად"),
+           dict(href="/ge/ekskursiya/tur-borjomi-bakuriani-2-dnya/", img="bakuriani-zima.webp",
                 badge="2 დღე · ოჯახებს", h3="ბორჯომი + ბაკურიანი 2 დღეში",
                 desc="ბორჯომის თბილი გოგირდის აუზები ღია ცის ქვეშ, ღამე ბორჯომში, დილით — ციგა და "
                      "ბაკურიანის რბილი ტრასები.",
@@ -129,12 +129,12 @@ EN_TITLE = "Winter Tours in Georgia 2026–27 — Gudauri, Kazbegi, Borjomi"
 EN_DESC = ("Winter tours in Georgia: Gudauri skiing, snowy Kazbegi, Borjomi warm "
            "pools, New Year in Tbilisi. Day trips from ₾135, 2-day tours from ₾520.")
 EN_CARDS = [
-    dict(href="/en/ekskursiya/tur-gudauri-kazbegi-2-dnya/", img="winter-gudauri-kazbegi.webp?v=2",
+    dict(href="/en/ekskursiya/tur-gudauri-kazbegi-2-dnya/", img="gudauri-zima.webp",
          badge="2 days · overnight", h3="Gudauri + Kazbegi, 2 days",
          desc="A full day on the Gudauri slopes, a night in the mountains, then the Cross Pass and snowy "
               "Gergeti. Hotel with breakfast included, plan B if the pass closes.",
-         dur="2 days", night="night in Gudauri", price="from ₾580", pp="/ person", more="Details"),
-    dict(href="/en/ekskursiya/tur-borjomi-bakuriani-2-dnya/", img="winter-borjomi-bakuriani.webp?v=2",
+         dur="2 days", night="night in Gudauri", price="from ₾520", pp="/ person", more="Details"),
+    dict(href="/en/ekskursiya/tur-borjomi-bakuriani-2-dnya/", img="bakuriani-zima.webp",
          badge="2 days · families", h3="Borjomi + Bakuriani, 2 days",
          desc="Open-air warm sulfur pools in Borjomi, a night in Borjomi, then sledding and gentle slopes "
               "in Bakuriani. No high passes.",
@@ -205,8 +205,8 @@ def build_en():
         f'<meta property="og:title" content="{e(EN_TITLE)}"/>',
         f'<meta property="og:description" content="{e(EN_DESC)}"/>',
         f'<meta property="og:url" content="{url}"/>',
-        f'<meta property="og:image" content="{SITE}/images/winter-gudauri-kazbegi.jpg"/>',
-        '<meta property="og:image:width" content="1024"/><meta property="og:image:height" content="538"/>',
+        f'<meta property="og:image" content="{SITE}/images/gudauri-zima.jpg"/>',
+        '<meta property="og:image:width" content="1600"/><meta property="og:image:height" content="840"/>',
         '<meta property="og:locale" content="en_US"/><meta property="og:site_name" content="Sakhva Travel"/>',
         '<meta name="twitter:card" content="summary_large_image"/>',
     ]
