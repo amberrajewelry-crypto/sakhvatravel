@@ -527,6 +527,15 @@
     <loc>https://sakhva-travel.com/tury-v-gruziyu-zimoy/</loc>
     <lastmod>2026-09-26</lastmod>
       <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/tury-v-gruziyu-zimoy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/tury-v-gruziyu-zimoy/"/>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/tury-v-gruziyu-zimoy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/tury-v-gruziyu-zimoy/"/>
+  </url>
+  <url>
+    <loc>https://sakhva-travel.com/en/tury-v-gruziyu-zimoy/</loc>
+    <lastmod>2026-09-26</lastmod>
+      <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/tury-v-gruziyu-zimoy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/tury-v-gruziyu-zimoy/"/>
     <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/tury-v-gruziyu-zimoy/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/tury-v-gruziyu-zimoy/"/>
   </url>
@@ -534,6 +543,7 @@
     <loc>https://sakhva-travel.com/ge/tury-v-gruziyu-zimoy/</loc>
     <lastmod>2026-09-26</lastmod>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sakhva-travel.com/tury-v-gruziyu-zimoy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sakhva-travel.com/en/tury-v-gruziyu-zimoy/"/>
     <xhtml:link rel="alternate" hreflang="ka" href="https://sakhva-travel.com/ge/tury-v-gruziyu-zimoy/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sakhva-travel.com/tury-v-gruziyu-zimoy/"/>
   </url>
