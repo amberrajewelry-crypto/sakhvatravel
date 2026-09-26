@@ -12,6 +12,7 @@ Run: python3 scripts/build-winter-packages.py
 import html
 import json
 import re
+import zlib
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -54,11 +55,10 @@ PACKAGES = {
             "title": "Гудаури и Казбеги за 2 дня — зимний тур с ночёвкой от ₾580",
             "h1": "Гудаури + Казбеги: зимний тур на 2 дня",
             "name": "Гудаури + Казбеги за 2 дня зимой",
-            "desc": "Зимний тур на 2 дня из Тбилиси от ₾580 с человека: лыжи или прогулка в Гудаури, "
-                    "ночь в горах, Крестовый перевал и Гергети в снегу. Отель с завтраком включён.",
+            "desc": "Зимний тур на 2 дня из Тбилиси от ₾580: лыжи в Гудаури, ночь в горах, Крестовый перевал и Гергети в снегу. Отель с завтраком включён.",
             "short": "Гудаури + Казбеги — зимний тур на 2 дня из Тбилиси с ночёвкой в Гудаури, от ₾580 "
                      "с человека, группа до 7 человек. День 1 — склоны Гудаури, день 2 — Крестовый "
-                     "перевал, Степанцминда и Гергети. Сезон — с середины декабря до конца марта.",
+                     "перевал, Степанцминда и Гергети. Сезон — обычно с конца декабря до начала апреля.",
             "intro": "Однодневной поездки в Гудаури зимой мало: 4–5 часов дороги туда-обратно съедают "
                      "половину катания. В двухдневном туре вы ночуете прямо у склонов, катаетесь полный "
                      "день, а утром второго дня едете через Крестовый перевал к Казбеку — пока дорога "
@@ -115,7 +115,8 @@ PACKAGES = {
                  "Меняем программу без доплаты: второй день катания в Гудаури или Ананури и Мцхета. "
                  "Казбеги можно перенести на другой день."),
                 ("Когда сезон в Гудаури?",
-                 "Обычно с середины декабря до конца марта — начало и конец зависят от снега. На "
+                 "Обычно с конца декабря до начала апреля — в сезоне 2025/26 подъёмники открылись "
+                 "27 декабря. Точные даты зависят от снега. На "
                  "новогодние праздники места в отелях лучше бронировать за 3–4 недели."),
             ],
         },
@@ -123,11 +124,10 @@ PACKAGES = {
             "title": "Gudauri & Kazbegi 2-Day Winter Tour from Tbilisi — ₾580",
             "h1": "Gudauri & Kazbegi 2-Day Winter Tour",
             "name": "Gudauri & Kazbegi 2-Day Winter Tour",
-            "desc": "2-day winter tour from Tbilisi from ₾580 per person: skiing or a snow day in "
-                    "Gudauri, a night in the mountains, the Cross Pass and snowy Gergeti. Hotel included.",
+            "desc": "2-day winter tour from Tbilisi from ₾580 per person: skiing in Gudauri, a night in the mountains, the Cross Pass and snowy Gergeti. Hotel included.",
             "short": "Gudauri & Kazbegi is a 2-day winter tour from Tbilisi with a night in Gudauri, "
                      "from ₾580 per person, up to 7 people. Day 1 — Gudauri slopes, day 2 — the Cross "
-                     "Pass, Stepantsminda and Gergeti. Season: mid-December to late March.",
+                     "Pass, Stepantsminda and Gergeti. Season: usually late December to early April.",
             "intro": "A Gudauri day trip in winter is short: 4–5 hours on the road eat half of your "
                      "ski time. On this 2-day tour you sleep next to the slopes, ski a full day, and "
                      "the next morning drive over the Cross Pass to Mount Kazbek while the road is clear "
@@ -184,7 +184,8 @@ PACKAGES = {
                  "We change the plan at no extra cost: a second ski day in Gudauri, or Ananuri and "
                  "Mtskheta. Kazbegi can be moved to another day."),
                 ("When is the ski season in Gudauri?",
-                 "Usually mid-December to late March, depending on snow. For New Year holidays book "
+                 "Usually late December to early April — in 2025/26 the lifts opened on December 27. "
+                 "Exact dates depend on snow. For New Year holidays book "
                  "hotels 3–4 weeks ahead."),
             ],
         },
@@ -192,12 +193,11 @@ PACKAGES = {
             "title": "გუდაური და ყაზბეგი 2 დღეში — ზამთრის ტური ₾580-დან",
             "h1": "გუდაური + ყაზბეგი: ზამთრის ტური 2 დღით",
             "name": "გუდაური + ყაზბეგი — ზამთრის ორდღიანი ტური",
-            "desc": "ზამთრის ორდღიანი ტური თბილისიდან ₾580-დან ერთ ადამიანზე: თხილამური გუდაურში, "
-                    "ღამე მთაში, ჯვრის უღელტეხილი და თოვლიანი გერგეტი. სასტუმრო საუზმით შედის ფასში.",
+            "desc": "ზამთრის ორდღიანი ტური თბილისიდან ₾580-დან: თხილამური გუდაურში, ღამე მთაში, ჯვრის უღელტეხილი და თოვლიანი გერგეტი. სასტუმრო შედის.",
             "short": "გუდაური + ყაზბეგი — ზამთრის ორდღიანი ტური თბილისიდან, ღამისთევით გუდაურში, "
                      "₾580-დან ერთ ადამიანზე, 7 ადამიანამდე. 1-ლი დღე — გუდაურის ფერდობები, მე-2 დღე — "
-                     "ჯვრის უღელტეხილი, სტეფანწმინდა და გერგეტი. სეზონი: დეკემბრის შუა რიცხვებიდან "
-                     "მარტის ბოლომდე.",
+                     "ჯვრის უღელტეხილი, სტეფანწმინდა და გერგეტი. სეზონი: ჩვეულებრივ დეკემბრის ბოლოდან "
+                     "აპრილის დასაწყისამდე.",
             "intro": "ზამთარში გუდაურში ერთდღიანი მოგზაურობა მოკლეა: 4–5 საათი გზაში სრიალის დროის "
                      "ნახევარს ჭამს. ორდღიან ტურში ღამეს ფერდობებთან ათევთ, მთელ დღეს სრიალებთ, მეორე "
                      "დილით კი ჯვრის უღელტეხილით ყაზბეგისკენ მიდიხართ, როცა გზა სუფთაა და ცა ხშირად "
@@ -252,32 +252,32 @@ PACKAGES = {
                  "პროგრამას დამატებითი გადასახადის გარეშე ვცვლით: მეორე დღე გუდაურში ან ანანური და "
                  "მცხეთა. ყაზბეგი სხვა დღეზე გადაიტანება."),
                 ("როდის არის სეზონი გუდაურში?",
-                 "ჩვეულებრივ დეკემბრის შუა რიცხვებიდან მარტის ბოლომდე, თოვლის მიხედვით. საახალწლოდ "
+                 "ჩვეულებრივ დეკემბრის ბოლოდან აპრილის დასაწყისამდე — 2025/26 სეზონში საბაგიროები "
+                 "27 დეკემბერს გაიხსნა. ზუსტი თარიღები თოვლზეა დამოკიდებული. საახალწლოდ "
                  "სასტუმრო 3–4 კვირით ადრე დაჯავშნეთ."),
             ],
         },
     },
     "tur-borjomi-bakuriani-2-dnya": {
-        "price": 520, "img": "borjomi-tour-600", "img_wh": (800, 450), "video": "bakuriani-drone.mp4", "night_place": {
+        "price": 520, "img": "borjomi-tour-600", "img_wh": (800, 450), "video": "borjomi-drone.mp4", "night_place": {
             "ru": "Боржоми", "en": "Borjomi", "ge": "ბორჯომი"},
         "ru": {
             "title": "Боржоми и Бакуриани за 2 дня — зимний тур с ночёвкой от ₾520",
             "h1": "Боржоми + Бакуриани: зимний тур на 2 дня",
             "name": "Боржоми + Бакуриани за 2 дня зимой",
-            "desc": "Зимний тур на 2 дня из Тбилиси от ₾520 с человека: тёплые серные бассейны "
-                    "Боржоми под снегом, ночь в Боржоми, узкоколейка «Кукушка» и Бакуриани. Отель включён.",
+            "desc": "Зимний тур на 2 дня из Тбилиси от ₾520: тёплые серные бассейны Боржоми под снегом, ночь в Боржоми и курорт Бакуриани. Отель с завтраком.",
             "short": "Боржоми + Бакуриани — зимний тур на 2 дня из Тбилиси с ночёвкой в Боржоми, от "
                      "₾520 с человека, группа до 7 человек. День 1 — парк и тёплые бассейны Боржоми, "
-                     "день 2 — поезд «Кукушка» и курорт Бакуриани. Спокойный темп, подходит для семей.",
+                     "день 2 — курорт Бакуриани: санки, лыжи, снегоходы. Спокойный темп, подходит для семей.",
             "intro": "Это самый мягкий зимний маршрут по Грузии: без высоких перевалов и закрытых дорог, "
-                     "с тёплыми минеральными бассейнами под открытым небом и игрушечным поездом через "
-                     "заснеженный лес. Подходит для семей с детьми и тех, кто не катается на лыжах.",
+                     "с тёплыми минеральными бассейнами под открытым небом и серпантином через "
+                     "заснеженный сосновый лес. Подходит для семей с детьми и тех, кто не катается на лыжах.",
             "days": [
                 ("День 1 — Боржоми", "Тбилиси → Боржоми (160 км, около 2,5 часа). Центральный парк, "
                  "минеральный источник, канатка на плато, купание в тёплых серных бассейнах под снегом. "
                  "Ночь в отеле Боржоми."),
-                ("День 2 — Бакуриани", "Узкоколейка «Кукушка» Боржоми — Бакуриани (или 40 минут на "
-                 "машине) → Бакуриани (1700 м): санки, лыжи, снегоходы. Возвращение в Тбилиси к "
+                ("День 2 — Бакуриани", "Серпантин через Цагвери, 30 км и около 40 минут → Бакуриани "
+                 "(1700 м): санки, лыжи, снегоходы. Возвращение в Тбилиси к "
                  "19:00–20:00."),
             ],
             "details": [
@@ -285,12 +285,12 @@ PACKAGES = {
                  "Выезд из Тбилиси в 09:00, к полудню вы в Боржоми (около 800 м). Центральный парк в "
                  "ущелье, источник минеральной воды «Боржоми» — пить можно бесплатно прямо из крана, "
                  "канатка на плато над городом. Главное зимнее удовольствие — тёплые серные бассейны "
-                 "под открытым небом над парком: вода около +30…+38 °C, вокруг снег. Вечером — ужин и "
+                 "под открытым небом над парком: вода +32…+38 °C, вокруг снег. Вечером — ужин и "
                  "ночь в отеле Боржоми, завтрак включён."),
-                ("Второй день: «Кукушка» и Бакуриани",
-                 "Узкоколейная железная дорога Боржоми — Бакуриани работает с начала XX века: 37 км "
-                 "через лес и мосты, около 2,5 часа в пути. Поезд ходит по расписанию дважды в день — "
-                 "подгоняем программу под него, а если время неудобное, едем 40 минут на машине. "
+                ("Второй день: Бакуриани",
+                 "После завтрака — 40 минут по серпантину через сосновый лес и Цагвери. Узкоколейка "
+                 "«Кукушка» с сезона 2025/26 закрыта на реконструкцию, запуск обещают около января "
+                 "2027 года: если поезд пойдёт, включим поездку в программу. "
                  "Бакуриани (1700 м) — семейный курорт: пологие трассы Дидвели и Кохта, санки, "
                  "снегоходы, прокат снаряжения. После обеда — дорога в Тбилиси, приезд к 19:00–20:00."),
                 ("Почему этот маршрут надёжный зимой",
@@ -300,27 +300,27 @@ PACKAGES = {
             ],
             "tips": ["Купальник и шлёпанцы для бассейнов, полотенце можно взять в отеле",
                      "Тёплая обувь и одежда — в Бакуриани заметно холоднее, чем в Тбилиси",
-                     "Наличные ₾80–150 на бассейны, канатку, поезд и обед",
+                     "Наличные ₾80–150 на бассейны, канатку и обед",
                      "Детям — санки можно взять в прокате в Бакуриани"],
             "inc": ["Минивэн на зимней резине на оба дня", "Гид-водитель на русском языке",
-                    "Ночь в отеле Боржоми (2-местный номер, завтрак)", "Переезд в Бакуриани на машине, "
-                    "если не едем поездом"],
-            "exc": ["Вход в бассейны, канатка, билет на «Кукушку»", "Обеды и ужины",
+                    "Ночь в отеле Боржоми (2-местный номер, завтрак)", "Переезд Боржоми — Бакуриани и "
+                    "обратно в Тбилиси"],
+            "exc": ["Вход в бассейны и канатка", "Обеды и ужины",
                     "Ски-пасс, прокат, санки, снегоходы"],
             "faq": [
                 ("Чем этот тур отличается от однодневных экскурсий в Боржоми или Бакуриани?",
                  "Однодневная экскурсия в Боржоми стоит от ₾178, в Бакуриани — отдельный выезд. За 1 день "
-                 "не успеть и бассейны, и «Кукушку». В двухдневном туре за ₾520 — ночь в Боржоми, "
+                 "не успеть и бассейны, и Бакуриани. В двухдневном туре за ₾520 — ночь в Боржоми, "
                  "бассейны вечером и Бакуриани на свежую голову утром."),
                 ("Сколько стоит тур Боржоми + Бакуриани на 2 дня и что входит?",
                  "От ₾520 с человека: транспорт на оба дня, гид-водитель и ночь в отеле Боржоми с "
-                 "завтраком. Бассейны, канатка, поезд, питание и катание оплачиваются на месте."),
+                 "завтраком. Бассейны, канатка, питание и катание оплачиваются на месте."),
                 ("Работают ли серные бассейны Боржоми зимой?",
                  "Да, круглый год. Зимой это самое атмосферное место: тёплая вода под открытым небом "
                  "и снег вокруг."),
                 ("Подходит ли тур для детей?",
-                 "Да, это самый спокойный зимний маршрут: без высоких перевалов, с поездом, санками и "
-                 "пологими трассами Бакуриани."),
+                 "Да, это самый спокойный зимний маршрут: без высоких перевалов, с санками и пологими "
+                 "трассами Бакуриани и тёплыми бассейнами Боржоми."),
                 ("Когда лучше ехать?",
                  "Снег в Бакуриани обычно лежит с конца декабря до середины марта. Боржоми и бассейны "
                  "хороши весь год."),
@@ -330,32 +330,31 @@ PACKAGES = {
             "title": "Borjomi & Bakuriani 2-Day Winter Tour from Tbilisi — ₾520",
             "h1": "Borjomi & Bakuriani 2-Day Winter Tour",
             "name": "Borjomi & Bakuriani 2-Day Winter Tour",
-            "desc": "2-day winter tour from Tbilisi from ₾520 per person: warm sulfur pools of Borjomi "
-                    "in the snow, a night in Borjomi, the Kukushka narrow-gauge train and Bakuriani.",
+            "desc": "2-day winter tour from Tbilisi from ₾520 per person: warm Borjomi sulfur pools in the snow, a night in Borjomi and Bakuriani ski resort.",
             "short": "Borjomi & Bakuriani is a 2-day winter tour from Tbilisi with a night in Borjomi, "
                      "from ₾520 per person, up to 7 people. Day 1 — Borjomi park and warm pools, day 2 — "
-                     "the Kukushka train and Bakuriani resort. Easy pace, family-friendly.",
+                     "Bakuriani resort: sledding, skiing, snowmobiles. Easy pace, family-friendly.",
             "intro": "This is the gentlest winter route in Georgia: no high passes and road closures, "
-                     "open-air mineral pools in the snow and a toy-like train through a snowy forest. "
+                     "open-air mineral pools in the snow and a winding road through a snowy pine forest. "
                      "Great for families with kids and for travellers who don't ski.",
             "days": [
                 ("Day 1 — Borjomi", "Tbilisi → Borjomi (160 km, about 2.5 h). Central Park, the "
                  "mineral spring, cable car to the plateau and a swim in warm sulfur pools in the snow. "
                  "Night in a Borjomi hotel."),
-                ("Day 2 — Bakuriani", "Kukushka narrow-gauge train Borjomi — Bakuriani (or 40 minutes by "
-                 "car) → Bakuriani (1,700 m): sledding, skiing, snowmobiles. Back in Tbilisi by 7–8 pm."),
+                ("Day 2 — Bakuriani", "Mountain road via Tsagveri, 30 km, about 40 minutes → Bakuriani "
+                 "(1,700 m): sledding, skiing, snowmobiles. Back in Tbilisi by 7–8 pm."),
             ],
             "details": [
                 ("Day one: Borjomi park and warm pools",
                  "We leave Tbilisi at 9:00 and reach Borjomi (about 800 m) by noon. Central Park in the "
                  "gorge, the Borjomi mineral spring — free to drink straight from the tap — and the cable "
                  "car to the plateau above town. The winter highlight is the open-air sulfur pools above "
-                 "the park: water around 30–38 °C with snow all around. Dinner and a night in a Borjomi "
+                 "the park: water 32–38 °C with snow all around. Dinner and a night in a Borjomi "
                  "hotel, breakfast included."),
-                ("Day two: Kukushka train and Bakuriani",
-                 "The Borjomi — Bakuriani narrow-gauge railway has run since the early 20th century: 37 km "
-                 "through forest and over bridges, about 2.5 hours. The train runs twice a day, so we fit "
-                 "the plan to its timetable — or drive 40 minutes if the time is inconvenient. Bakuriani "
+                ("Day two: Bakuriani",
+                 "After breakfast — 40 minutes up a winding road through pine forest and Tsagveri. The "
+                 "Kukushka narrow-gauge train has been closed for restoration since the 2025/26 season, "
+                 "with a restart announced for around January 2027: if it runs, we add the ride. Bakuriani "
                  "(1,700 m) is a family resort with gentle Didveli and Kokhta runs, sledding, snowmobiles "
                  "and gear rental. After lunch we drive back, arriving in Tbilisi by 7–8 pm."),
                 ("Why this route is reliable in winter",
@@ -365,28 +364,28 @@ PACKAGES = {
             ],
             "tips": ["Swimsuit and flip-flops for the pools; towels are usually available at the hotel",
                      "Warm boots and layers — Bakuriani is much colder than Tbilisi",
-                     "Cash ₾80–150 for pools, cable car, train and lunch",
+                     "Cash ₾80–150 for pools, cable car and lunch",
                      "Sleds for kids can be rented in Bakuriani"],
             "inc": ["Minivan with winter tyres for both days", "English/Russian-speaking driver-guide",
                     "1 night in a Borjomi hotel (double room, breakfast)",
-                    "Car transfer to Bakuriani if we skip the train"],
-            "exc": ["Pools, cable car, Kukushka ticket", "Lunches and dinners",
+                    "Borjomi — Bakuriani drive and return to Tbilisi"],
+            "exc": ["Pools and cable car", "Lunches and dinners",
                     "Ski pass, rental, sleds, snowmobiles"],
             "faq": [
                 ("How is this different from the Borjomi or Bakuriani day trips?",
                  "The Borjomi day trip starts at ₾178 and Bakuriani is a separate day out — in one day "
-                 "you can't do both the pools and the Kukushka train. The 2-day tour (₾520) adds a night "
+                 "you can't do both the pools and Bakuriani. The 2-day tour (₾520) adds a night "
                  "in Borjomi: pools in the evening, Bakuriani fresh in the morning."),
                 ("How much is the Borjomi & Bakuriani 2-day tour and what is included?",
                  "From ₾520 per person: transport for both days, a driver-guide and a night in a Borjomi "
-                 "hotel with breakfast. Pools, cable car, train, meals and ski activities are paid on "
+                 "hotel with breakfast. Pools, cable car, meals and ski activities are paid on "
                  "the spot."),
                 ("Are the Borjomi sulfur pools open in winter?",
                  "Yes, all year round. Winter is the most atmospheric time: warm water outdoors with snow "
                  "around."),
                 ("Is the tour good for kids?",
-                 "Yes, it is the easiest winter route: no high passes, a train ride, sledding and gentle "
-                 "slopes in Bakuriani."),
+                 "Yes, it is the easiest winter route: no high passes, sledding and gentle slopes in "
+                 "Bakuriani, warm pools in Borjomi."),
                 ("When is the best time to go?",
                  "Snow in Bakuriani usually lasts from late December to mid-March. Borjomi and the pools "
                  "are good all year."),
@@ -396,20 +395,19 @@ PACKAGES = {
             "title": "ბორჯომი და ბაკურიანი 2 დღეში — ზამთრის ტური ₾520-დან",
             "h1": "ბორჯომი + ბაკურიანი: ზამთრის ტური 2 დღით",
             "name": "ბორჯომი + ბაკურიანი — ზამთრის ორდღიანი ტური",
-            "desc": "ზამთრის ორდღიანი ტური თბილისიდან ₾520-დან ერთ ადამიანზე: ბორჯომის თბილი გოგირდის "
-                    "აუზები თოვლში, ღამე ბორჯომში, „კუკუშკა“ და ბაკურიანი. სასტუმრო შედის ფასში.",
+            "desc": "ზამთრის ორდღიანი ტური თბილისიდან ₾520-დან: ბორჯომის თბილი გოგირდის აუზები თოვლში, ღამე ბორჯომში და ბაკურიანი. სასტუმრო შედის.",
             "short": "ბორჯომი + ბაკურიანი — ზამთრის ორდღიანი ტური თბილისიდან, ღამისთევით ბორჯომში, "
                      "₾520-დან ერთ ადამიანზე, 7 ადამიანამდე. 1-ლი დღე — ბორჯომის პარკი და თბილი "
-                     "აუზები, მე-2 დღე — მატარებელი „კუკუშკა“ და ბაკურიანი. მშვიდი ტემპი, ოჯახებისთვის.",
+                     "აუზები, მე-2 დღე — ბაკურიანი: ციგა, თხილამური, თოვლმავალი. მშვიდი ტემპი, ოჯახებისთვის.",
             "intro": "ეს ყველაზე რბილი ზამთრის მარშრუტია საქართველოში: მაღალი უღელტეხილებისა და "
-                     "დაკეტილი გზების გარეშე, ღია ცის ქვეშ თბილი მინერალური აუზებით და პატარა "
-                     "მატარებლით თოვლიან ტყეში. შესაფერისია ოჯახებისთვის და მათთვის, ვინც არ სრიალებს.",
+                     "დაკეტილი გზების გარეშე, ღია ცის ქვეშ თბილი მინერალური აუზებით და "
+                     "მთის გზით თოვლიან ფიჭვნარში. შესაფერისია ოჯახებისთვის და მათთვის, ვინც არ სრიალებს.",
             "days": [
                 ("დღე 1 — ბორჯომი", "თბილისი → ბორჯომი (160 კმ, დაახლოებით 2,5 საათი). ცენტრალური "
                  "პარკი, მინერალური წყარო, საბაგირო პლატოზე და ბანაობა თბილ გოგირდის აუზებში თოვლში. "
                  "ღამე ბორჯომის სასტუმროში."),
-                ("დღე 2 — ბაკურიანი", "ვიწროლიანდაგიანი „კუკუშკა“ ბორჯომი — ბაკურიანი (ან 40 წუთი "
-                 "მანქანით) → ბაკურიანი (1700 მ): ციგა, თხილამური, თოვლმავალი. თბილისში დაბრუნება "
+                ("დღე 2 — ბაკურიანი", "მთის გზა წაღვერის გავლით, 30 კმ, დაახლოებით 40 წუთი → "
+                 "ბაკურიანი (1700 მ): ციგა, თხილამური, თოვლმავალი. თბილისში დაბრუნება "
                  "19:00–20:00-ზე."),
             ],
             "details": [
@@ -417,12 +415,12 @@ PACKAGES = {
                  "თბილისიდან გავდივართ 09:00-ზე, შუადღისთვის ბორჯომში ხართ (დაახლოებით 800 მ). "
                  "ცენტრალური პარკი ხეობაში, „ბორჯომის“ მინერალური წყარო — უფასოდ, პირდაპირ ონკანიდან, "
                  "და საბაგირო ქალაქის თავზე პლატოზე. ზამთრის მთავარი სიამოვნება — ღია ცის ქვეშ "
-                 "გოგირდის აუზები პარკის ზემოთ: წყალი დაახლოებით +30…+38 °C, გარშემო თოვლი. ვახშამი "
+                 "გოგირდის აუზები პარკის ზემოთ: წყალი +32…+38 °C, გარშემო თოვლი. ვახშამი "
                  "და ღამე ბორჯომის სასტუმროში, საუზმე შედის ფასში."),
-                ("მეორე დღე: „კუკუშკა“ და ბაკურიანი",
-                 "ბორჯომი — ბაკურიანის ვიწროლიანდაგიანი რკინიგზა XX საუკუნის დასაწყისიდან მუშაობს: "
-                 "37 კმ ტყესა და ხიდებზე, დაახლოებით 2,5 საათი. მატარებელი დღეში ორჯერ დადის — "
-                 "პროგრამას მის განრიგს ვუსადაგებთ, მოუხერხებელ დროს კი 40 წუთში მანქანით მივდივართ. "
+                ("მეორე დღე: ბაკურიანი",
+                 "საუზმის შემდეგ — 40 წუთი მთის გზით ფიჭვნარსა და წაღვერში. ვიწროლიანდაგიანი "
+                 "„კუკუშკა“ 2025/26 სეზონიდან რეკონსტრუქციაზეა, გახსნა დაახლოებით 2027 წლის "
+                 "იანვრისთვისაა დაანონსებული: თუ იმუშავებს, პროგრამაში ჩავრთავთ. "
                  "ბაკურიანი (1700 მ) საოჯახო კურორტია: დიდველისა და კოხტის რბილი ტრასები, ციგა, "
                  "თოვლმავალი, აღჭურვილობის ქირაობა. სადილის შემდეგ — თბილისში, 19:00–20:00-ზე."),
                 ("რატომ არის ეს მარშრუტი საიმედო ზამთარში",
@@ -431,27 +429,27 @@ PACKAGES = {
                  "ბაკურიანს მწვანე მონასტრითა და ლიკანის რომანოვების სასახლით ვცვლით."),
             ],
             "tips": ["საცურაო კოსტიუმი და ჩუსტები აუზებისთვის", "თბილი ფეხსაცმელი და ტანსაცმელი — "
-                     "ბაკურიანში თბილისზე ბევრად ცივა", "ნაღდი ფული ₾80–150 აუზების, საბაგიროს, "
-                     "მატარებლისა და სადილისთვის", "ბავშვებისთვის ციგის ქირაობა ბაკურიანშია"],
+                     "ბაკურიანში თბილისზე ბევრად ცივა", "ნაღდი ფული ₾80–150 აუზების, საბაგიროს "
+                     "და სადილისთვის", "ბავშვებისთვის ციგის ქირაობა ბაკურიანშია"],
             "inc": ["მინივენი ზამთრის საბურავებით ორივე დღეს", "გიდი-მძღოლი",
                     "ერთი ღამე ბორჯომის სასტუმროში (ორადგილიანი ნომერი, საუზმე)",
-                    "ბაკურიანამდე მანქანით, თუ მატარებლით არ მივდივართ"],
-            "exc": ["აუზები, საბაგირო, „კუკუშკას“ ბილეთი", "სადილი და ვახშამი",
+                    "გზა ბორჯომი — ბაკურიანი და დაბრუნება თბილისში"],
+            "exc": ["აუზები და საბაგირო", "სადილი და ვახშამი",
                     "სკიპასი, აღჭურვილობა, ციგა, თოვლმავალი"],
             "faq": [
                 ("რით განსხვავდება ეს ტური ბორჯომის ან ბაკურიანის ერთდღიანი ექსკურსიისგან?",
                  "ერთდღიანი ექსკურსია ბორჯომში ₾178-დან ღირს, ბაკურიანი ცალკე გასვლაა — ერთ დღეში "
-                 "აუზებსაც და „კუკუშკასაც“ ვერ მოასწრებთ. ორდღიან ტურში (₾520) ღამე ბორჯომშია: "
+                 "აუზებსაც და ბაკურიანსაც ვერ მოასწრებთ. ორდღიან ტურში (₾520) ღამე ბორჯომშია: "
                  "აუზები საღამოს, ბაკურიანი დილით."),
                 ("რა ღირს ბორჯომი + ბაკურიანის ორდღიანი ტური და რა შედის ფასში?",
                  "₾520-დან ერთ ადამიანზე: ტრანსპორტი ორივე დღეს, გიდი-მძღოლი და ღამე ბორჯომის "
-                 "სასტუმროში საუზმით. აუზები, საბაგირო, მატარებელი, კვება და სრიალი ადგილზე იხდება."),
+                 "სასტუმროში საუზმით. აუზები, საბაგირო, კვება და სრიალი ადგილზე იხდება."),
                 ("მუშაობს ბორჯომის გოგირდის აუზები ზამთარში?",
                  "დიახ, მთელი წლის განმავლობაში. ზამთარში ყველაზე ატმოსფერულია: თბილი წყალი ღია ცის "
                  "ქვეშ და თოვლი გარშემო."),
                 ("შესაფერისია ტური ბავშვებისთვის?",
-                 "დიახ, ეს ყველაზე მშვიდი ზამთრის მარშრუტია: მატარებელი, ციგა და ბაკურიანის რბილი "
-                 "ტრასები."),
+                 "დიახ, ეს ყველაზე მშვიდი ზამთრის მარშრუტია: ციგა, ბაკურიანის რბილი ტრასები და "
+                 "ბორჯომის თბილი აუზები."),
                 ("როდის ჯობია წასვლა?",
                  "ბაკურიანში თოვლი ჩვეულებრივ დეკემბრის ბოლოდან მარტის შუა რიცხვებამდე დევს. ბორჯომი "
                  "და აუზები მთელი წელი კარგია."),
@@ -472,7 +470,7 @@ RELATED = {
                ("/en/ekskursiya/ekskursiya-kazbegi-iz-tbilisi/", "Kazbegi day trip"),
                ("/en/ekskursiya/tur-kazbegi-kakheti-2-dnya/", "Kazbegi + Kakheti 2 days"),
                ("/en/blog/kazbegi-in-winter/", "Kazbegi in winter guide"),
-               ("/en/blog/georgia-in-winter/", "Georgia in winter")],
+               ("/en/tury-v-gruziyu-zimoy/", "All winter tours in Georgia")],
         "ge": [("/ge/ekskursiya/ekskursiya-gudauri-iz-tbilisi/", "გუდაური 1 დღეში"),
                ("/ge/ekskursiya/ekskursiya-kazbegi-iz-tbilisi/", "ყაზბეგი 1 დღეში"),
                ("/ge/ekskursiya/tur-kazbegi-kakheti-2-dnya/", "ყაზბეგი + კახეთი 2 დღეში"),
@@ -489,7 +487,7 @@ RELATED = {
                ("/en/ekskursiya/ekskursiya-bakuriani-iz-tbilisi/", "Bakuriani day trip"),
                ("/en/ekskursiya/tur-gudauri-kazbegi-2-dnya/", "Gudauri + Kazbegi 2 days"),
                ("/en/blog/borjomi-complete-guide/", "Borjomi complete guide"),
-               ("/en/blog/georgia-in-winter/", "Georgia in winter")],
+               ("/en/tury-v-gruziyu-zimoy/", "All winter tours in Georgia")],
         "ge": [("/ge/ekskursiya/ekskursiya-borjomi-iz-tbilisi/", "ბორჯომი 1 დღეში"),
                ("/ge/ekskursiya/ekskursiya-bakuriani-iz-tbilisi/", "ბაკურიანი 1 დღეში"),
                ("/ge/ekskursiya/tur-gudauri-kazbegi-2-dnya/", "გუდაური + ყაზბეგი 2 დღეში"),
@@ -506,7 +504,6 @@ INBOUND = {
     "ekskursiya/ekskursiya-borjomi-iz-tbilisi": ["tur-borjomi-bakuriani-2-dnya"],
     "ekskursiya/ekskursiya-bakuriani-iz-tbilisi": ["tur-borjomi-bakuriani-2-dnya"],
     "ekskursiya/tur-gruziya-noviy-god": ["tur-gudauri-kazbegi-2-dnya", "tur-borjomi-bakuriani-2-dnya"],
-    "tury-v-gruziyu-zimoy": ["tur-gudauri-kazbegi-2-dnya", "tur-borjomi-bakuriani-2-dnya"],
     "blog/gruziya-zimoy": ["tur-gudauri-kazbegi-2-dnya", "tur-borjomi-bakuriani-2-dnya"],
     "blog/kazbegi-zimoy": ["tur-gudauri-kazbegi-2-dnya"],
     "blog/noviy-god-v-gruzii": ["tur-gudauri-kazbegi-2-dnya", "tur-borjomi-bakuriani-2-dnya"],
@@ -517,6 +514,24 @@ INBOUND = {
     "blog/borjomi-from-tbilisi": ["tur-borjomi-bakuriani-2-dnya"],
     "blog/tury-v-borzhomi-2026": ["tur-borjomi-bakuriani-2-dnya"],
 }
+ANCHORS = {
+    "tur-gudauri-kazbegi-2-dnya": {
+        "ru": ["Гудаури + Казбеги за 2 дня", "зимний тур в Гудаури с ночёвкой",
+               "два дня: лыжи в Гудаури и Казбеги в снегу"],
+        "en": ["Gudauri & Kazbegi 2-day winter tour", "Gudauri ski trip with an overnight stay",
+               "two days: Gudauri slopes and snowy Kazbegi"],
+        "ge": ["გუდაური + ყაზბეგი 2 დღეში", "ზამთრის ტური გუდაურში ღამისთევით",
+               "ორი დღე: გუდაურის ფერდობები და თოვლიანი ყაზბეგი"]},
+    "tur-borjomi-bakuriani-2-dnya": {
+        "ru": ["Боржоми + Бакуриани за 2 дня", "Боржоми и Бакуриани с ночёвкой",
+               "два дня: тёплые бассейны Боржоми и снег Бакуриани"],
+        "en": ["Borjomi & Bakuriani 2-day winter tour", "Borjomi and Bakuriani with an overnight stay",
+               "two days: Borjomi warm pools and Bakuriani snow"],
+        "ge": ["ბორჯომი + ბაკურიანი 2 დღეში", "ბორჯომი და ბაკურიანი ღამისთევით",
+               "ორი დღე: ბორჯომის თბილი აუზები და ბაკურიანის თოვლი"]},
+}
+PRICE_FMT = {"ru": "от ₾{p}", "en": "from ₾{p}", "ge": "₾{p}-დან"}
+HUB_TAIL = {"en": ' · <a href="/en/tury-v-gruziyu-zimoy/" style="color:#1A3D2E">all winter tours</a>'}
 INBOUND_LEAD = {"ru": "Зимой с ночёвкой:", "en": "Winter, with an overnight stay:",
                 "ge": "ზამთარში, ღამისთევით:"}
 
@@ -536,7 +551,7 @@ def build_main(lang, slug, pk, c):
     u, p = UI[lang], pk["price"]
     wa_text = f"{u['wa']} {c['name']}".replace(" ", "+")
     stats = "".join(
-        f'<div class="stat-item"><span class="stat-val">{v}</span><span class="stat-lab">{lab}</span></div>'
+        f'<div class="stat-item"><span class="stat-val">{v}</span><span class="stat-lab" style="color:rgba(255,255,255,.9);text-shadow:0 1px 3px rgba(0,0,0,.6)">{lab}</span></div>'
         for v, lab in [(f"{'от ' if lang == 'ru' else ''}₾{p}", u["pp"]), (u["days"], u["dur"]),
                        (u["grp"], u["grp_l"]), (e(pk["night_place"][lang]), u["night"]),
                        ("14+", u["cancel"])])
@@ -550,6 +565,7 @@ def build_main(lang, slug, pk, c):
     li = lambda xs: "".join(f"<li>{e(x)}</li>" for x in xs)
     return f"""<section class="page-hero">
 <img alt="{e(c['name'])}" fetchpriority="high" height="400" src="/images/{pk['img']}.webp" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0" width="600"/>
+<div aria-hidden="true" style="position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(0,0,0,.1) 0%,rgba(0,0,0,.35) 45%,rgba(0,0,0,.72) 100%)"></div>
 <div class="hero-inner">
 <h1 class="hero-h1">{e(c['h1'])}</h1>
 <div class="hero-stats">{stats}</div>
@@ -662,14 +678,15 @@ def inbound_links():
             if not f.exists():
                 continue
             s = f.read_text()
-            if MARK in s:
-                continue
+            s = re.sub(r'<p data-sk="winter-2d"[^>]*>.*?</p>\n', "", s)
+            k = zlib.crc32(rel.encode()) % 3
             links = " · ".join(
                 f'<a href="{PREFIX[lang]}/ekskursiya/{sl}/" style="color:#1A3D2E;font-weight:600">'
-                f'{e(PACKAGES[sl][lang]["name"])} — ₾{PACKAGES[sl]["price"]}</a>' for sl in slugs)
+                f'{e(ANCHORS[sl][lang][k])}</a> ({PRICE_FMT[lang].format(p=PACKAGES[sl]["price"])})'
+                for sl in slugs)
             block = (f'<p {MARK} style="margin:20px auto;max-width:720px;padding:14px 18px;'
                      f'background:#EFF6FF;border-radius:8px;font-size:15px;color:#374151">'
-                     f'{e(INBOUND_LEAD[lang])} {links}</p>\n')
+                     f'{e(INBOUND_LEAD[lang])} {links}{HUB_TAIL.get(lang, "")}</p>\n')
             anchor = "<!-- trv:start -->" if "<!-- trv:start -->" in s else "</main>"
             if anchor not in s:
                 continue

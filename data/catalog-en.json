@@ -1081,7 +1081,7 @@
   {
    "slug": "tur-borjomi-bakuriani-2-dnya",
    "title": "Borjomi & Bakuriani 2-Day Winter Tour",
-   "description": "2-day winter tour from Tbilisi from ₾520 per person: warm sulfur pools of Borjomi in the snow, a night in Borjomi, the Kukushka narrow-gauge train and Bakuriani.",
+   "description": "2-day winter tour from Tbilisi from ₾520 per person: warm Borjomi sulfur pools in the snow, a night in Borjomi and Bakuriani ski resort.",
    "price": 520,
    "currency": "GEL",
    "hours": 0,
@@ -1098,7 +1098,7 @@
   {
    "slug": "tur-gudauri-kazbegi-2-dnya",
    "title": "Gudauri & Kazbegi 2-Day Winter Tour",
-   "description": "2-day winter tour from Tbilisi from ₾580 per person: skiing or a snow day in Gudauri, a night in the mountains, the Cross Pass and snowy Gergeti. Hotel included.",
+   "description": "2-day winter tour from Tbilisi from ₾580 per person: skiing in Gudauri, a night in the mountains, the Cross Pass and snowy Gergeti. Hotel included.",
    "price": 580,
    "currency": "GEL",
    "hours": 0,
@@ -1263,8 +1263,8 @@
   },
   {
    "slug": "ekskursiya-bakuriani-iz-tbilisi",
-   "title": "Bakuriani Tour from Tbilisi — Mountain Resort",
-   "description": "Bakuriani day trip from ₾160. Mountain resort, the historic narrow-gauge railway, cable cars and pine forests. 9–10 h.",
+   "title": "Bakuriani Day Trip from Tbilisi",
+   "description": "Bakuriani day trip from ₾160. Mountain resort, cable cars, pine forests and sledding. 9–10 h.",
    "price": 160,
    "currency": "GEL",
    "hours": 10,
